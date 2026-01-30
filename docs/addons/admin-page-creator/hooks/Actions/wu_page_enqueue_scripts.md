@@ -1,0 +1,23 @@
+---
+id: wu_page_enqueue_scripts
+title: "Action - wu_page_enqueue_scripts"
+sidebar_label: "wu_page_enqueue_scripts"
+---
+
+# Action: wu_page_enqueue_scripts
+
+Adding a custom action here so we have a place to enqueue the scripts and styles as needed\ and make sure they only get loaded on the right pages
+
+## Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| $ | `\WU_Page` | The current admin page |
+
+### Since
+
+- 1.3.0
+### Source
+
+Defined in [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1153) at line 1153
+

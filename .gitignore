@@ -2,6 +2,7 @@ node_modules/
 build/
 .docusaurus/
 wp-hooks-docs/
+.hooks-tmp/
 .cache-loader/
 /ultimate-multisite/
 /addons/

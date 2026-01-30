@@ -25,18 +25,51 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Checkout main plugin (for hook generation)
+      - name: Checkout main plugin
         uses: actions/checkout@v4
         with:
           repository: Ultimate-Multisite/ultimate-multisite
           path: ultimate-multisite
+          token: ${{ secrets.DOCS_DISPATCH_TOKEN }}
 
-      - name: Checkout addons (for changelogs)
-        uses: actions/checkout@v4
-        with:
-          repository: Ultimate-Multisite/addons
-          path: addons
-        continue-on-error: true
+      - name: Checkout addons
+        run: |
+          mkdir -p addons
+          repos=(
+            ultimate-multisite-woocommerce
+            ultimate-multisite-site-exporter
+            ultimate-multisite-affiliatewp
+            ultimate-multisite-ai-site-builder
+            ultimate-multisite-analytics
+            ultimate-multisite-captcha
+            ultimate-multisite-chuck-norris-facts
+            ultimate-multisite-content-sync
+            ultimate-multisite-domain-seller
+            ultimate-multisite-fluent-forms
+            ultimate-multisite-gocardless
+            ultimate-multisite-gravity-forms
+            ultimate-multisite-language-selector
+            ultimate-multisite-loco-translate
+            ultimate-multisite-mailchimp
+            ultimate-multisite-mailster
+            ultimate-multisite-metered-plans
+            ultimate-multisite-multinetwork
+            ultimate-multisite-multi-tenancy
+            ultimate-multisite-payfast
+            ultimate-multisite-plugin-and-theme-manager
+            ultimate-multisite-support-agents
+            ultimate-multisite-support-tickets
+            ultimate-multisite-vat
+            ultimate-multisite-admin-page-creator
+            ultimate-multisite-addon-template
+            tutor-multisite-compatibility
+            material-wp
+          )
+          for repo in "${repos[@]}"; do
+            echo "Cloning $repo..."
+            git clone --depth 1 "https://x-access-token:${{ secrets.DOCS_DISPATCH_TOKEN }}@github.com/Ultimate-Multisite/$repo.git" "addons/$repo" 2>/dev/null || echo "  Skipped $repo (not found)"
+          done
+        shell: bash
 
       - name: Update addon changelogs
         run: python3 scripts/update-changelogs.py
