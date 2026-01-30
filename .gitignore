@@ -1,0 +1,7 @@
+node_modules/
+build/
+.docusaurus/
+wp-hooks-docs/
+.cache-loader/
+/ultimate-multisite/
+/addons/

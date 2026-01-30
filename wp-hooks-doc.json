@@ -1,0 +1,14 @@
+{
+  "input": "/home/dave/multisite/ultimate-multisite/inc/",
+  "outputDir": "/home/dave/multisite/docs/wp-hooks-docs/",
+  "ignoreFiles": ["/vendor/", "/node_modules/", "/tests/"],
+  "ignoreHooks": [],
+  "title": "Ultimate Multisite Hooks Reference",
+  "tagline": "Actions and Filters reference for Ultimate Multisite",
+  "url": "https://ultimatemultisite.com",
+  "baseUrl": "/docs/developer/hooks/",
+  "repoUrl": "https://github.com/Ultimate-Multisite/ultimate-multisite",
+  "organizationName": "Ultimate-Multisite",
+  "projectName": "ultimate-multisite",
+  "clean": true
+}
