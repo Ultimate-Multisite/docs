@@ -1,88 +1,64 @@
 ---
 title: "Managing Payments and Invoices"
-sidebar_position: 14
+sidebar_position: 15
 ---
 
 # Managing Payments and Invoices
 
-Manage payments in Ultimate Multisite is as easy as it gets. You can set the auto-renew, allow trials and configure invoices. In version 2.0 you can set different payment gateways to fulfill your customers needs. Currently, you can enable payments via Stripe, Stripe Checkout, PayPal or receive manually.
+## Payment Settings
 
-## General Payment Settings
+Before you start receiving payments, you'll need to configure the payment-related settings. Navigate to **Ultimate Multisite → Settings** and click on the **Payment** tab.
 
-To access your payment settings go to your Ultimate Multisite Settings page and navigate to the Payments tab.
+![Payment settings tab](/img/admin/settings-payments-top.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FMFCBQ03jj.png)
+### General Payment Options
 
-There you will find the general options to your payments management.  
-The options affect how prices are displayed on the frontend, the backend and in reports.
+In the general settings you can configure:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0qiSSeZUrw.png)  
-**Force Auto-Renew:** Toggle this option to create new memberships with auto-renew activated (if the gateway supports it) or deactivated. When deactivated an auto-renew option will be shown during checkout.
+- **Currency** — The default currency used for transactions
+- **Currency Position** — Where the currency symbol appears (before/after the amount)
 
-**Allow Trials without Payment Method:** Enable this option to only ask for a payment method when the trial period is over.
+![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-**Send Invoice on Payment Confirmation:** Enabling this option will attach a PDF invoice (marked paid) with the payment confirmation email.
+### Payment Gateways
 
-**Invoice Numbering Scheme:** Decide what kind of numbering scheme should be used on the invoices. You can choose between Payment Code or Sequential Number. If you choose the last option, define the next invoice number and the invoice number prefix.
+Ultimate Multisite supports multiple payment gateways. You can enable and configure each one from the Payment settings tab.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iT6fhrbw0Y.png)
+![Payment gateway configuration](/img/admin/settings-payments-gateways.png)
 
-## Enabling Payment Gateways
+Available gateways include:
 
-You can activate up to four methods of payment on our payment settings page: Stripe, Stripe Checkout, PayPal and Manual.
+- **Stripe** — Credit card payments via Stripe
+- **PayPal** — PayPal payments
+- **Manual** — For offline or custom payment processing
 
-**Stripe:** Toggle this option to activate Stripe payment. Fill the blanks with the Stripe Publishable and Secret Key and save. This method will show a space to insert the credit card number during the checkout.
+Each gateway has its own configuration section where you enter API keys and other settings.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ILRw0MlWJw.png)
+![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-**Stripe Checkout:** Toggle this option to activate Stripe Checkout payment. Fill the blanks with the Stripe Publishable and Secret Key and save. This method will redirect the customer to a Stripe Checkout page during the checkout.
+### Sandbox Mode
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qjt6371Y6i.png)
+You can enable **Sandbox Mode** to test your payment integration before going live. When sandbox mode is active, no real charges will be made.
 
-**PayPal:** Toggle this option to activate PayPal as a payment method. Fill the blanks with PayPal credentials that you can get in your PayPal account dashboard. This method will redirect the customer to a PayPal payment page during the checkout.
+## Viewing Payments
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LUHL1QLZOD.png)
+Navigate to the **Payments** page under Ultimate Multisite to see all transactions across your network.
 
-_**Note:** you can activate Sandbox mode on all these gateways to test if the payment method is working_
+![Payments list](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DRymmzOvY3.png)
+You can filter payments by status (completed, pending, failed, refunded) and search for specific transactions.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2xQUGWrTT.png)
+Click on a payment to see its full details including the line items, associated membership, customer information, and payment gateway data.
 
-**Manual:** Toggle this option to enable manual payments from your customers. You should write the payment instructions on the box. The message will be displayed to the customer on the “Thank you” page, after the checkout.
+## Invoices
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-cJiNLmbwJC.png)
+Ultimate Multisite can automatically generate invoices for payments. You can customize the invoice template and numbering format from the Payment settings.
 
-### Confirming manual payments
+Invoice customization options include:
 
-To confirm a manual payment, go to the Payments menu on the left bar. There you can see all the payments on your network and their details, including their status. A manual payment will always have a Pending status until you manually change it.
+- **Company name and address** displayed on invoices
+- **Invoice numbering** format and sequence
+- **Logo** displayed on the invoice header
+- **Custom footer text** for terms, notes, or legal information
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-A36lX76aJs.png)
-
-Enter the payment page by clicking the reference code. On this page you have all the details of the pending payment, such as reference ID, products, timestamps and more.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BG4unpR9B1.png)
-
-On the right column, you can alter the status of the payment. Changing it to Completed and toggling the Activate Membership option will enable your customer’s site and their membership will be active.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Fo979Vpbco.png)
-
-You can also generate the payment's invoice by clicking on the button on the top of the page.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5Z77YxPR48.png)
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TRfMFpzH2z.png)
-
-### 
-
-### Customizing Invoices
-
-Ultimate Multisite allows you to customize the invoices you send to your customers.
-
-To do it, navigate to Payments page. On the right column, on the Invoices box, click to Go to Customizer.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5MqAivRwR8.png)
-
-On the right side, you can alter general configurations (text on the paid tag, font-family, and content on footer), colors, and images, where you can alter the logo.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Zu0WkcoWF2.png)You can see the changes immediately on the template preview and save them clicking to Save Invoice Template, on the right column.
+To customize the invoice template, go to **Ultimate Multisite → Settings → Payment** and look for the invoice-related settings.

@@ -3,74 +3,58 @@ title: "Dashboard Overview"
 sidebar_position: 8
 ---
 
-# Understanding your Dashboard (v2)
+# Dashboard Overview
 
-_**IMPORTANT NOTE: This article refers to Ultimate Multisite version 2.x.**_
+Ultimate Multisite has a dedicated **Dashboard** under the Ultimate Multisite menu, and also adds widgets to the Network Dashboard. This article covers what you'll see in both places.
 
-Ultimate Multisite v2 has a dedicated **Dashboard** under the Ultimate Multisite menu, but it also adds some sections to the Network Dashboard. This article will explain the sections you will see both on the Network and the Ultimate Multisite Dashboards.
+## The Network Dashboard
 
-## The Network Dashboard:
+Ultimate Multisite injects useful widgets into the network-level dashboard found at **My Sites → Network Admin → Dashboard**.
 
-Ultimate Multisite injects a few useful widgets into the network-level dashboard. This dashboard is found by navigating to **My Sites > Network Admin > Dashboard**. The widgets are designed to provide easy access to information and common operations for the network administrator. This is how the network dashboard should look:
+![Network Dashboard with Ultimate Multisite widgets](/img/admin/network-dashboard-full.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pwJc0Mgd3l.png)
+Here's what each widget provides:
 
-Now, let's take a look at each widget of the network dashboard:
+**First Steps:** Appears on a fresh installation and reminds you to complete setup tasks like configuring a payment method and creating a test account.
 
-**First Steps:** This widget predominantly appears on a fresh installation of Ultimate Multisite such as ours and reminds the network administrator to complete additional tasks, like configuring a payment method and create a test account.
+![First Steps widget](/img/admin/network-dashboard-first-steps.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Jtiq6tiSGk.png)
+**Summary:** Reports the number of signups and revenue for the day. The MRR (Monthly Recurring Revenue) indicates a projected total across customers with revenue-generating memberships.
 
-**Summary:** The summary widget reports the number of signups and the revenue for the day. The MRR (Monthly Recurring Revenue) indicates a projected total across customers with revenue-generating memberships.
+![Summary widget](/img/admin/network-dashboard-summary.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-169qHa0DyY.png)
+**Activity Stream:** Reports on events across Ultimate Multisite — signups, cancellations, site creations, deletions, and other activities.
 
-**Activity Stream:** This widget reports on events across Ultimate Multisite for which there is a variety to report on. Events could include aspects such as signups, cancellations, creations, and deletions of sites and other activities.
+![Activity Stream widget](/img/admin/network-dashboard-activity-stream.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VauK7uGvG4.png)
+**Right Now:** Displays a short summary of users and sites in the network with shortcuts to create new sites or users.
 
-**Right Now:** This utility widget displays a short summary of users and sites in the network. Handy shortcuts at the top allow for one-click access to create new sites or users.
+![Right Now widget](/img/admin/network-dashboard-right-now.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDfVORWUys.png)
+**News & Discussions:** Fetches and displays the latest Ultimate Multisite news including updates, critical bugs, and security fixes.
 
-**News & Discussions:** This widget fetches and displays the latest Ultimate Multisite news. It is advantageous to keep an eye on this widget for information about updates, critical bugs, and security fixes.
+![News widget](/img/admin/network-dashboard-news.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vywHpdIdHj.png)
+## The Ultimate Multisite Dashboard
 
-## **The Ultimate Multisite Dashboard:**
+While the network dashboard presents holistic information about the network, the Ultimate Multisite dashboard (at the top-level of the Ultimate Multisite menu) presents information about the service.
 
-While the network dashboard presents holistic information about the network, the Ultimate Multisite dashboard located at the top-level of the Ultimate Multisite menu presents information about the service.
+![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7dcQ9MDkoZ.png)
+**Monthly Recurring Revenue Growth:** Displays a monthly breakdown of revenue over a 12-month calendar period. New revenue is shown in blue while cancellations appear in red.
 
-#### Welcome Tour:
+![MRR Growth chart](/img/admin/um-dashboard-mrr.png)
 
-On a fresh installation of Ultimate Multisite v2 a brief welcome tour is displayed familiarizing the network administrator with the dashboard and its new functions.
+**Date-range Support:** Filter dashboard data by time period to focus on the information you need. The date range controls what's displayed in the widgets below.
 
-**Documentation:** At the top of the dashboard lies the **Documentation** link. The documentation (this documentation) contains a wealth of information regarding the installation, operation, support, and maintenance of Ultimate Multisite as well as ancillary information designed to be helpful to the network administrator.
+![Date range and dashboard stats](/img/admin/um-dashboard-date-range.png)
 
-The documentation link is prevalent on most Ultimate Multisite pages providing contextual help when called upon. Thus when working with sites, for example, the documentation link will provide help related to the creation and management of network sites.
+The dashboard widgets include:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AvuWqzBqqU.png)
+- **Revenue** — Total revenue for the period with MRR and per-product breakdowns
+- **New Memberships** — How many new memberships were created in the selected period
+- **Signups by Countries** — Geographic breakdown of signups
+- **Signups by Forms** — How many customers signed up via each checkout form vs. added by admins
+- **Most Visited Sites** — The most visited sites on your network (requires enabling visit counting at **Ultimate Multisite → Settings → Sites → Enable Visits Limitation and Counting**)
 
-**Monthly Recurring Revenue Growth:** Leading from the network-level widget the MRR (Monthly Recurring Revenue) displays a monthly breakdown of revenue over a 12 month calendar period. New revenue is shown in blue while cancellations, in red.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MEAWe6433p.png)
-
-**Date-range Support:** Depending on the number of customers, activity, and type of information statistics soon become overwhelming, difficult to find, and difficult to interpret. The date-range support built into the dashboard allows the network administrator to focus on only the information and information period required.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kSDDQabu6f.png)
-
-The date range governs the period of the information displayed by the widgets directly below.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mBzZltoWZT.png)
-
-**Revenue:** The total revenue for the period. MRR stands for Monthly Recurring Revenue. You also have a detailed description of the revenue per product.
-
-**New Memberships:** How many new memberships were created on your network for the period you have selected.
-
-**Signups by Countries:** An overview of how many users signed up to your network are on each country.
-
-**Signups by Forms:** On this section you can see how many customers signed up to your network using your main checkout form - and any other checkout form that you have - and how many were added by the super admin(s) of the network.
-
-**Most Visited Sites:** The most visited websites of your network. To make this function work, you need to enable the visit counting function at **Ultimate Multisite > Settings > Sites > Enable Visits Limitation and Counting**.
+![Dashboard statistics](/img/admin/um-dashboard-stats.png)

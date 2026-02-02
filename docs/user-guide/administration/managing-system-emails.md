@@ -5,40 +5,34 @@ sidebar_position: 13
 
 # Managing System Emails
 
-# Reseting & Importing system emails
+Ultimate Multisite sends various system emails for events like signup confirmations, payment receipts, and membership changes. You can customize these email templates to match your brand.
 
-New Ultimate Multisite versions, as well as add-ons, can and will register new emails from time to time.
+## Viewing System Emails
 
-To prevent conflicts and other issues, we won't add the new email templates as System Emails on your install automatically, unless they are crucial to the correct functioning of a given feature.
+Navigate to **Ultimate Multisite → Settings** and click on the **Emails** tab to see email-related settings.
 
-However, super admins and agents can import this newly registered emails via the importer tool. That process will create a new system email with the content and configuration of the new email template, allowing the super admin to make any modifications they want or keep them as is.
+![Settings - Emails tab](/img/admin/settings-emails.png)
 
-## How to import system emails
+From there, you can access the **System Emails** page to see all email templates.
 
-Go to your Ultimate Multisite Settings page and head to the Emails tab.
+![System Emails list](/img/admin/system-emails-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+## Importing New Email Templates
 
-Then, on the sidebar, click on the Customize System Emails button.
+New Ultimate Multisite versions and add-ons may register new email templates. To prevent conflicts, new templates are not automatically added — you need to import them manually.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+To import new email templates:
 
-On the System Emails page, you'll see the Reset & Import action button on the top. Clicking that button should open the import and reset modal window.
+1. Go to the **System Emails** page
+2. Click the **Reset & Import** button at the top of the page
+3. Toggle the **Import Emails** option to see available templates
+4. Select the templates you want to import and confirm
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+## Resetting Email Templates
 
-Then, you can toggle the Import Emails options to see which system emails are available to be imported.
+If you've customized an email template and want to revert to the default content, you have two options:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+1. **Delete and re-import** — Delete the system email and import it again (this erases send metrics)
+2. **Reset via the tool** — Use the **Reset & Import** tool, toggle the **Reset** option, and select the emails you want to reset
 
-## Reseting System Emails
-
-Other times, you'll realize that the changes you made to a given email template are not working for you anymore and you'd like to reset it to their default state.
-
-In such cases, you have two options: you can simply delete the system email and import it back (using the instructions above) - which will erase send metrics and other things, which makes this method least preferred.
-
-Or you can use the Reset & Import tool to reset that email template.
-
-To reset an email template, you can follow the steps above until you reach the Reset & Import tool, and then, toggle the Reset option and select the emails you want to reset back to their default content.
-
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+The Reset option is preferred as it preserves send metrics and other metadata while restoring the default content.

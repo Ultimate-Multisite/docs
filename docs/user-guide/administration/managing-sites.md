@@ -5,53 +5,65 @@ sidebar_position: 14
 
 # Managing Sites
 
-Sites or Subsites are basically the bread and butter of your business. In this article, we will discuss how to manage and distinguish each type of site as well as what information is linked or connected to it.
+Sites (or subsites) are the core of your WaaS business. Ultimate Multisite has 3 types of sites:
 
-Ultimate Multisite has 3 types of sites: **Customer-owned** which are sites under specific customers; **Site templates** which are your pre-defined sites that customers select as boilerplate; and **Regular WP sites** which are plain regular subsites in your multisite installation.
+- **Customer-owned** — Sites belonging to specific customers
+- **Site Templates** — Pre-defined sites that customers can select as a starting point
+- **Main Site** — Your primary network site
 
-## How to add a new site
+## Viewing Sites
 
-To add a new site, you just simply click the **Add Site** button and a modal window will appear. You need to fill in the site title, site domain/path and choose the site type.
+Navigate to **Ultimate Multisite → Sites** to see all subsites in your network. Each site is labeled by type and you can filter by All Sites, Customer-Owned, Templates, or Pending.
 
-![add new site](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-qFR32nvv2k.png)
+![Sites list page](/img/admin/sites-list.png)
 
-The **Copy Site** toggle button will allow you to create a new site based on a site template. If you choose to enable this field, you will be given an additional field to select a site template.
+## Adding a New Site
 
-![add new site](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-h04smoFEsm.png)
+Click the **Add Site** button to create a new site. You'll need to provide:
 
-Make sure that the **Copy Media on Duplication** option is enabled then click the **Add new Site** button to complete the process.
+- **Site Title** — The name of the new site
+- **Site URL** — The domain/path for the site
+- **Site Type** — Whether it's a customer site, template, or regular site
 
-## How to manage existing sites
+The **Copy Site** option lets you create a new site based on an existing site template. When enabled, you can select which template to use as a starting point. Make sure **Copy Media on Duplication** is enabled to include media files.
 
-To manage the Sites, you can go to Ultimate Multisite menu and find the **Sites** option. This will bring up the Sites page which will show the list of subsites within your network. Notice that each site is labeled based on its type.
+## Managing an Existing Site
 
-![sites page](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-va1CHZcPCa.png)
+Click **Manage** on any site to open the **Edit Site** page. Here you'll find:
 
-Then click the **Manage** button to get to the **Edit Site** page.
+### Basic Information
 
-On this page, basic information will be displayed, like the **site name** , **site typ** **e** , **site ID** , **description**. It will also show the mapped domain, the membership or plan it is under, and the customer account that owns the site.
+The site name, type, site ID, and description. You'll also see the mapped domain, associated membership, and the customer account that owns the site.
 
-The **Site Options** section will allow you to manage the site's capabilities. These include setting limits and quotas for the site. By default, it follows the limits and quotas set on the membership level. Setting the limits on the site level will supersede the membership settings. These include limiting the number of site visits, the number of user accounts per user roles, limiting user roles and disk space, and enabling custom domain or domain mapping.
+### Site Options
 
-![site options](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-u5V4VPLvz5.png)
+Configure the site's capabilities and limits:
 
-In this section, you can also set how the plugins and themes will behave under this site. You can configure whether it will be **visible** or **hidden** and whether it will be pre-activated or just available for the user to have an option to use it.
+- **Visit limits** — Maximum number of site visits
+- **User account limits** — Per user role limits
+- **Disk space** — Storage quota for the site
+- **Custom domain** — Enable domain mapping for this site
+- **Plugin and theme visibility** — Control which plugins and themes are visible, hidden, or pre-activated
 
-Right below the site options is some information about the mapped domains associated with the site, the membership plan the site is under, and the customer account linked to the site. This section will help you to easily navigate through the associated or linked entities to the site.
+By default, sites follow the limits set at the membership level. Setting limits on the site level will override the membership settings.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-nESKvf6h4d.png)
+### Associations
 
-On the right-hand side, you can enable or disable the site there is a toggle button that will allow you to easily enable or disable the site.
+Below the site options you'll find information about:
 
-![site activation](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VmeUB2oeet.png)
+- **Mapped domains** associated with the site
+- **Membership** the site is under
+- **Customer account** linked to the site
 
-You can also find a metabox that will allow you to change the site type or reassign the site to another owner or user.
+### Right Sidebar
 
-![site type](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hlQy2qbod8.png)
+On the right side you can:
 
-There is also an option to set the **site imag** **e** or **thumbnail** , which is the image that will show on the front end if the site is a site template.
+- **Enable/disable the site** with a toggle button
+- **Change the site type** or reassign ownership
+- **Set a site image/thumbnail** (displayed on the frontend for site templates)
+- **Delete the site** permanently
 
-![site image](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WvnckXchqM.png)
-
-Should you need to delete the site, there is a button that will allow you to do it, just note that **this action is irreversible** which means that the site cannot be reinstated once it is deleted.  
-![delete site](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zrMaZgz3RM.png)
+:::warning
+Deleting a site is irreversible. The site and all its content will be permanently removed.
+:::
