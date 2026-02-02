@@ -96,7 +96,7 @@ const config = {
             title: 'Documentation',
             items: [
               { label: 'User Guide', to: '/user-guide/getting-started/ultimate-multisite-101' },
-              { label: 'Developer Docs', to: '/developer/hooks' },
+              { label: 'Developer Docs', to: '/developer' },
               { label: 'Addons', to: '/addons' },
             ],
           },

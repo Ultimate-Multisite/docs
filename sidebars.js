@@ -165,6 +165,7 @@ const sidebars = {
   ],
 
   developerSidebar: [
+    'developer/index',
     {
       type: 'category',
       label: 'Hooks Reference',
@@ -180,6 +181,22 @@ const sidebars = {
       label: 'REST API',
       items: [
         'developer/rest-api/overview',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Integration Guide',
+      items: [
+        'developer/integration-guide/index',
+        'developer/integration-guide/custom-gateway',
+        'developer/integration-guide/webhooks',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Code Examples',
+      items: [
+        'developer/code-examples/index',
       ],
     },
     {
