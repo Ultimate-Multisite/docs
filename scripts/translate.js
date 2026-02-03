@@ -335,6 +335,11 @@ async function translateWithRetry(text, targetLocale, opts, context = {}, retrie
 		try {
 			return await translate(text, targetLocale, opts, context);
 		} catch (err) {
+			// Fail immediately on auth/config errors - retrying won't help
+			if (err.message.includes('API error 401') || err.message.includes('API error 403')) {
+				console.error(`  ✖ Authentication failed for "${contextDesc}": ${err.message}`);
+				throw err;
+			}
 			if (attempt === retries) throw err;
 			// Exponential backoff: 5s, 10s, 20s, 40s... capped at 5 minutes
 			const baseDelay = 5000;
