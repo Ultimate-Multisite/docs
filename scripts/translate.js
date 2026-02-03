@@ -43,7 +43,7 @@ function parseArgs() {
 		concurrency: 5,
 		dryRun: false,
 		debug: false,
-		timeout: parseInt(process.env.OPENAI_TIMEOUT, 10) || 600000, // 10 minutes default
+		timeout: parseInt(process.env.OPENAI_TIMEOUT, 10) || 900000, // 15 minutes default
 		model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
 		baseUrl: process.env.OPENAI_API_BASE || 'https://api.openai.com/v1',
 		apiKey: process.env.OPENAI_API_KEY || '',
@@ -195,6 +195,7 @@ CRITICAL RULES:
 			'Content-Type': 'application/json',
 			'Authorization': `Bearer ${opts.apiKey}`,
 		},
+		signal: AbortSignal.timeout(opts.timeout),
 		body: JSON.stringify({
 			model: opts.model,
 			temperature: 0.1,
@@ -327,7 +328,7 @@ async function translateFile(srcPath, targetLocale, opts) {
 	return {file: relPath, status: 'translated', size: fileSize, duration: totalTime};
 }
 
-async function translateWithRetry(text, targetLocale, opts, context = {}, retries = 20) {
+async function translateWithRetry(text, targetLocale, opts, context = {}, retries = 3) {
 	const textSize = formatBytes(Buffer.byteLength(text, 'utf-8'));
 	const contextDesc = context.file ? `${context.file}${context.field ? ` [${context.field}]` : ''}` : 'unknown';
 
