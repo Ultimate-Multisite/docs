@@ -45,6 +45,10 @@ JSONEOF
     find "$DOCS_DIR/docs/developer/hooks/" -name "*.md" -exec sed -i "s|$MAIN_PLUGIN_DIR/||g" {} +
     find "$DOCS_DIR/docs/developer/hooks/" -name "*.md" -exec sed -i -E \
       's|Defined in `(.+)` at line ([0-9]+)|Defined in [`\1`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/\1#L\2) at line \2|g' {} +
+    # Add unique sidebar keys to prevent translation conflicts
+    echo '{"label":"hooks","key":"developer-hooks"}' > "$DOCS_DIR/docs/developer/hooks/_category_.json"
+    [[ -d "$DOCS_DIR/docs/developer/hooks/Actions" ]] && echo '{"label":"Actions","key":"developer-actions"}' > "$DOCS_DIR/docs/developer/hooks/Actions/_category_.json"
+    [[ -d "$DOCS_DIR/docs/developer/hooks/Filters" ]] && echo '{"label":"Filters","key":"developer-filters"}' > "$DOCS_DIR/docs/developer/hooks/Filters/_category_.json"
     echo "Main plugin hooks copied to docs/developer/hooks/"
   else
     echo "WARNING: No hooks generated for main plugin"
@@ -131,6 +135,11 @@ JSONEOF
     find "$hooks_dir" -name "*.md" -exec sed -i "s|$addon_path/||g" {} +
     find "$hooks_dir" -name "*.md" -exec sed -i -E \
       "s|Defined in \`(.+)\` at line ([0-9]+)|Defined in [\`\1\`](https://github.com/Ultimate-Multisite/$repo_name/blob/main/\1#L\2) at line \2|g" {} +
+
+    # Add unique sidebar keys to prevent translation conflicts
+    echo "{\"label\":\"hooks\",\"key\":\"${doc_slug}-hooks\"}" > "$hooks_dir/_category_.json"
+    [[ -d "$hooks_dir/Actions" ]] && echo "{\"label\":\"Actions\",\"key\":\"${doc_slug}-actions\"}" > "$hooks_dir/Actions/_category_.json"
+    [[ -d "$hooks_dir/Filters" ]] && echo "{\"label\":\"Filters\",\"key\":\"${doc_slug}-filters\"}" > "$hooks_dir/Filters/_category_.json"
 
     hook_count=$(find "$hooks_dir" -name "*.md" -not -name "index.md" | wc -l)
     echo "  $hook_count hooks copied to addons/$doc_slug/hooks/"
