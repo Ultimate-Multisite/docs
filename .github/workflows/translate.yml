@@ -53,7 +53,7 @@ jobs:
             ARGS="$ARGS --debug"
           fi
 
-          node scripts/translate.js $ARGS
+          node scripts/translate.js --concurrency 3 $ARGS
 
       - name: Commit translations
         run: |
