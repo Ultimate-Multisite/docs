@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: 6bdd5faf453a0b33010bfd1064e0f2b8
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardless Pago
+
+¡Permite a tus clientes pagar por membresías y productos de Multisite Ultimate con domiciliación bancaria utilizando GoCardless!
+
+## Instalación
+
+1. Sube 'ultimate-multisite-gocardless' al directorio '/wp-content/plugins/'
+2. Activa el plugin a través del menú 'Plugins' en WordPress
+3. Sigue el asistente paso a paso para configurar el plugin
+
+## Guía de Uso
+
+_GoCardless_ es una pasarela de pago disponible en **Europa y en el Reino Unido** que permite pagos con **Domiciliación bancaria**.
+
+La **Ultimate Multisite: GoCardless Gateway** añade soporte de _GoCardless_ a Ultimate Multisite, permitiéndote cobrar a tus clientes en esa región utilizando Domiciliación bancaria.
+
+Este tutorial cubrirá cómo configurar _GoCardless_ para comenzar a aceptar pagos a través de él en tu red Ultimate Multisite.
+
+_**Nota: GoCardless solo funciona con las siguientes monedas:**_ **EUR, GBP, AUD, SEK y DKK.**
+
+## Instalación del Complemento
+
+En primer lugar, necesitarás instalar el complemento GoCardless para Ultimate Multisite. Puedes hacerlo yendo a **Ultimate Multisite > Settings > Add-ons (en la barra lateral)**. Y seleccionando el complemento GoCardless en esa lista.
+
+Después de que el complemento esté instalado y activado, ve a **Ultimate Multisite > Settings > Payments**, activa la opción GoCardless y guarda.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VRRNzphbjJ.png)
+
+## Obtención de un Token de Acceso
+
+Crea una cuenta en _GoCardless_ (o en el sandbox de _GoCardless_, si quieres **probarlo primero**, lo cual se recomienda). Luego, después de iniciar sesión, navega al elemento del menú **Developers**.
+
+![Developers menu position](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kENJK2VMJy.png)
+
+En la página **Developers**, haz clic en el botón **Create** en la esquina superior derecha de la pantalla, luego haz clic en la opción **Access Token**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UrGjq2m5TX.png)
+
+Esto abrirá una nueva ventana modal, permitiéndote crear un nuevo token. Dale un nombre reconocible y asegúrate de seleccionar la opción **Read-write access** en el menú **Scope**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDY7J5ylvj.png)
+
+El token de acceso aparecerá en la pantalla. Copia ese token y pégalo en tu menú **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Asegúrate de colocarla en el campo correcto. Si es un **live toke** **n**, desactiva el **sandbox mode** antes de pegar el token.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3DsJSYPv1Z.png)
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FlMS0mucqq.png)
+
+Eso es todo para el primer paso. A continuación, necesitas configurar un receptor de webhook.
+
+## Configuración del Receptor de Webhook
+
+Al tratar con suscripciones, Ultimate Multisite necesita recibir información sobre cambios en el estado de la suscripción, nuevos pagos realizados y otras cosas similares.
+
+La forma en que las pasarelas de pago notifican a Ultimate Multisite de esos cambios es mediante **webhook calls**. Por esa razón, para que la integración funcione al 100 %, necesitamos decirle a _GoCardless_ qué URL llamar con toda esa información.
+
+Regresa a tu panel **GoCardless > Developers** y haz clic en el botón Create nuevamente, pero esta vez, selecciona la opción **Webhook endpoint**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p3PuOhRO6b.png)Se abrirá una nueva ventana con las opciones del endpoint de webhook. Pide la URL del webhook, así que vuelve a tu **Ultimate Multisite settings > Payments > GoCardless** y copia la URL del webhook listada allí:
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7GKJY7tRgV.png)
+
+Además, puedes ingresar un **webhook secret** que se usará para firmar tus llamadas de webhook. Lo que ingreses en ese campo, también deberás ingresarlo en el campo **Ultimate Multisite Webhook Secret**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICXNY1PnA6.png)
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIJv3UFhhz.png)
+
+Finaliza guardando el endpoint haciendo clic en el botón **Create webhook endpoint** y luego **guarda también tus ajustes de Ultimate Multisite**.
+
+¡Deberías estar listo para aceptar _GoCardless_ ahora!

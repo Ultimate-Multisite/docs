@@ -19,7 +19,34 @@ const config = {
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: [
+      'en',
+      'af', 'am', 'ar', 'as', 'az', 'azb', 'be', 'bg', 'bn', 'bs',
+      'ca', 'ceb', 'ckb', 'cs', 'cy', 'da', 'de', 'el', 'eo', 'es',
+      'et', 'eu', 'fa', 'fi', 'fil', 'fr', 'ga', 'gd', 'gl', 'gu',
+      'ha', 'he', 'hi', 'hmn', 'hr', 'ht', 'hu', 'hy', 'id', 'ig',
+      'is', 'it', 'ja', 'jv', 'ka', 'kk', 'km', 'kn', 'ko', 'ku',
+      'ky', 'la', 'lb', 'lo', 'lt', 'lv', 'mg', 'mi', 'mk', 'ml',
+      'mn', 'mr', 'ms', 'mt', 'my', 'ne', 'nl', 'no', 'ny', 'or',
+      'pa', 'pl', 'ps', 'pt', 'pt-BR', 'ro', 'ru', 'rw', 'sd', 'si',
+      'sk', 'sl', 'sn', 'snd', 'so', 'sq', 'sr', 'st', 'su', 'sv',
+      'sw', 'ta', 'te', 'tg', 'th', 'tk', 'tl', 'tr', 'tt', 'ug',
+      'uk', 'ur', 'uz', 'vi', 'xh', 'yi', 'yo', 'zh-Hans', 'zh-Hant',
+      'zu',
+    ],
+    localeConfigs: {
+      ar: {label: 'العربية', direction: 'rtl'},
+      he: {label: 'עברית', direction: 'rtl'},
+      fa: {label: 'فارسی', direction: 'rtl'},
+      ur: {label: 'اردو', direction: 'rtl'},
+      ckb: {label: 'کوردی', direction: 'rtl'},
+      ps: {label: 'پښتو', direction: 'rtl'},
+      snd: {label: 'سنڌي', direction: 'rtl'},
+      ug: {label: 'ئۇيغۇرچە', direction: 'rtl'},
+      azb: {label: 'تۆرکجه', direction: 'rtl'},
+      yi: {label: 'ייִדיש', direction: 'rtl'},
+      sd: {label: 'سنڌي', direction: 'rtl'},
+    },
   },
   presets: [
     [
@@ -85,6 +112,10 @@ const config = {
           {
             href: 'https://github.com/Ultimate-Multisite/ultimate-multisite',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],

@@ -1,0 +1,72 @@
+name: Translate Documentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      languages:
+        description: 'Languages to translate (comma-separated, e.g., "es,fr,de" or "all")'
+        required: false
+        default: 'all'
+      force:
+        description: 'Force re-translation of all files'
+        required: false
+        default: 'false'
+        type: boolean
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run translation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL || 'https://api.openai.com/v1' }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL || 'gpt-4o-mini' }}
+        run: |
+          ARGS=""
+
+          if [ "${{ inputs.languages }}" != "all" ]; then
+            ARGS="$ARGS --languages ${{ inputs.languages }}"
+          fi
+
+          if [ "${{ inputs.force }}" == "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+
+          if [ "${{ inputs.debug }}" == "true" ]; then
+            ARGS="$ARGS --debug"
+          fi
+
+          node scripts/translate.js $ARGS
+
+      - name: Commit translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add i18n/
+
+          if git diff --staged --quiet; then
+            echo "No translation changes to commit"
+          else
+            git commit -m "Update translations
+
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+            git push
+          fi

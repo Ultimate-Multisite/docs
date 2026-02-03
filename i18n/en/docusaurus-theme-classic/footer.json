@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.User Guide": {
+    "message": "User Guide",
+    "description": "The label of footer link with label=User Guide linking to /user-guide/getting-started/ultimate-multisite-101"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Developer Docs",
+    "description": "The label of footer link with label=Developer Docs linking to /developer"
+  },
+  "link.item.label.Addons": {
+    "message": "Addons",
+    "description": "The label of footer link with label=Addons linking to /addons"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "The label of footer link with label=GitHub Discussions linking to https://github.com/Ultimate-Multisite/ultimate-multisite/discussions"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "The label of footer link with label=WordPress.org linking to https://wordpress.org/plugins/ultimate-multisite/"
+  },
+  "link.item.label.Website": {
+    "message": "Website",
+    "description": "The label of footer link with label=Website linking to https://ultimatemultisite.com"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Ultimate-Multisite/ultimate-multisite"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "The footer copyright"
+  }
+}

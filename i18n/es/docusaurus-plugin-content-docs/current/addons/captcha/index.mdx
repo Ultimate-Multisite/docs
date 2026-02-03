@@ -1,0 +1,91 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: 79f5501c86764d57aa650cbd3509884d
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Detén a los bots. Protege tus ingresos. Sin complicaciones de configuración.**
+
+¿Estás gestionando una red multisite con dominios personalizados? Conoces el problema: Google reCAPTCHA y hCaptcha requieren que registres *cada dominio* en su consola de administración. ¿Añades un nuevo sitio de cliente? Actualizas la configuración del captcha. ¿Mapeas un dominio personalizado? Actualizas de nuevo. Nunca termina.
+
+**Ultimate Multisite: Captcha cambia todo.**
+
+## Cap Captcha: Protección autoalojada que simplemente funciona
+
+Nuestro nuevo proveedor **Cap Captcha** es un cambio de juego para redes multisite:
+
+* **Configuración Cero** — Activa el addon y ya estás protegido. No hay claves API, no hay cuenta de Google, no hay panel de hCaptcha, no hay lista blanca de dominios.
+* **Funciona en cada dominio automáticamente** — Subdominios, dominios mapeados, dominios de clientes—todos están protegidos al instante.
+* **Autoalojado y privado** — Tus datos nunca salen de tu servidor. Totalmente compatible con GDPR sin rastreo de terceros.
+* **Prueba de trabajo invisible** — Los usuarios resuelven un rompecabezas computacional en segundo plano. No hay que hacer clic en hidrantes, ni en cuadrículas de imágenes frustrantes.
+* **Ligero** — Solo 20KB. No ralentizará tu proceso de pago.
+
+## Protección contra pruebas de tarjetas en WooCommerce
+
+Los ataques de prueba de tarjetas cuestan a los comerciantes miles de millones anualmente. Los estafadores usan bots para validar tarjetas de crédito robadas contra tu proceso de pago en WooCommerce—tú pagas las tarifas de procesamiento, ellos obtienen números de tarjeta válidos.
+
+**Protegemos donde más importa:**
+
+* **Protección de la API de la tienda** — Bloquea ataques de bots en `/wp-json/wc/store/v1/checkout` que evitan los captchas tradicionales de formularios
+* **Compatible con PayPal Payments** — Funciona sin problemas con WooCommerce PayPal Payments
+* **Estadísticas en tiempo real** — Ve exactamente cuántos ataques estás bloqueando
+
+## ¿Aún necesitas Google reCAPTCHA o hCaptcha?
+
+Te cubrimos. Soporte completo para:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Cambia entre proveedores en cualquier momento desde la configuración de tu red.
+
+## Diseñado para Escalar
+
+* Configuraciones a nivel de red con anulaciones por sitio
+* Panel de estadísticas para monitorear la protección
+* Niveles de seguridad ajustables (Rápido, Medio, Máximo)
+* Amigable para desarrolladores con arquitectura de proveedores extensible
+
+## Instalación
+
+1. Sube `ultimate-multisite-captcha` a tu directorio `/wp-content/plugins/`
+2. Activa el plugin en la red
+3. **Eso es todo. Estás protegido.**
+
+Cap Captcha se activa automáticamente—sin configuraciones, sin claves API. Cada punto final soportado en toda tu red está protegido en cuanto lo activas.
+
+**Opcional:** Para usar Google reCAPTCHA o hCaptcha en su lugar, navega a **Ultimate Multisite → Settings → Captcha** y selecciona tu proveedor preferido.
+
+## Preguntas Frecuentes
+
+### ¿Necesito configurar algo?
+
+¡No! Cap Captcha se habilita automáticamente cuando activas el addon. Toda tu red está protegida inmediatamente—sin configuraciones, sin claves API.
+
+### ¿Necesito claves API para Cap Captcha?
+
+No. Cap Captcha es completamente autoalojado. No hay cuentas externas, no hay registro de dominios, no hay dolores de cabeza de configuración.
+
+### ¿Esto ralentizará mi proceso de pago?
+
+Cap Captcha solo pesa 20KB y ejecuta desafíos de prueba de trabajo en segundo plano. Tus clientes no notarán ningún retraso.
+
+### ¿Esto protege contra ataques de prueba de tarjetas?
+
+¡Sí! A diferencia de los captchas tradicionales que solo protegen formularios HTML, nuestra integración con WooCommerce se conecta directamente a la API de la tienda para bloquear ataques de bots a nivel de API—donde ocurren la mayoría de los ataques de prueba de tarjetas.
+
+### ¿Puedo usar diferentes proveedores de captcha en distintos sitios?
+
+El proveedor de captcha se establece a nivel de red, pero puedes ajustar la configuración de dificultad según tus necesidades.
+
+### ¿Es compatible con GDPR?
+
+Cap Captcha es 100% autoalojado sin enviar datos a servicios externos. Para Google reCAPTCHA y hCaptcha, revisa sus respectivas políticas de privacidad.
