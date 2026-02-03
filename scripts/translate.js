@@ -336,8 +336,8 @@ async function translateWithRetry(text, targetLocale, opts, context = {}, retrie
 			return await translate(text, targetLocale, opts, context);
 		} catch (err) {
 			// Fail immediately on auth/config errors - retrying won't help
-			if (err.message.includes('API error 401') || err.message.includes('API error 403')) {
-				console.error(`  ✖ Authentication failed for "${contextDesc}": ${err.message}`);
+			if (/API error (401|403|404)/.test(err.message)) {
+				console.error(`  ✖ Fatal error for "${contextDesc}": ${err.message}`);
 				throw err;
 			}
 			if (attempt === retries) throw err;
