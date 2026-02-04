@@ -47,11 +47,7 @@ jobs:
           ARGS=""
 
           if [ "${{ inputs.languages }}" != "all" ]; then
-            ARGS="$ARGS --languages ${{ inputs.languages }}"
-          fi
-
-          if [ "${{ inputs.force }}" == "true" ]; then
-            ARGS="$ARGS --force"
+            ARGS="$ARGS --locales ${{ inputs.languages }}"
           fi
 
           if [ "${{ inputs.debug }}" == "true" ]; then
@@ -61,4 +57,5 @@ jobs:
           node scripts/translate.js --concurrency 2 --commit $ARGS
 
       - name: Push translations
+        if: always() && !cancelled()
         run: git push

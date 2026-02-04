@@ -349,7 +349,7 @@ async function translateFile(srcPath, targetLocale, opts) {
 	return {file: relPath, status: 'translated', size: fileSize, duration: totalTime};
 }
 
-async function translateWithRetry(text, targetLocale, opts, context = {}, retries = 3) {
+async function translateWithRetry(text, targetLocale, opts, context = {}, retries = 12) {
 	const textSize = formatBytes(Buffer.byteLength(text, 'utf-8'));
 	const contextDesc = context.file ? `${context.file}${context.field ? ` [${context.field}]` : ''}` : 'unknown';
 
@@ -518,41 +518,67 @@ async function main() {
 	console.log(`Found ${files.length} doc files`);
 	console.log('');
 
+	let totalErrors = 0;
+
 	for (const locale of locales) {
 		console.log(`\n=== Translating to ${getLocaleName(locale)} (${locale}) ===`);
 
 		let translated = 0;
 		let skipped = 0;
+		let failed = 0;
 		let needsTranslation = 0;
 
 		// Translate doc files with concurrency
 		const results = await pMap(
 			files,
 			async (file) => {
-				const result = await translateFile(file, locale, opts);
-				if (result.status === 'translated') {
-					translated++;
-					console.log(`  ✓ ${result.file} (${formatBytes(result.size)}, ${formatDuration(result.duration)})`);
-				} else if (result.status === 'skipped') {
-					skipped++;
-				} else {
-					needsTranslation++;
+				try {
+					const result = await translateFile(file, locale, opts);
+					if (result.status === 'translated') {
+						translated++;
+						console.log(`  ✓ ${result.file} (${formatBytes(result.size)}, ${formatDuration(result.duration)})`);
+					} else if (result.status === 'skipped') {
+						skipped++;
+					} else {
+						needsTranslation++;
+					}
+					return result;
+				} catch (err) {
+					failed++;
+					const relPath = path.relative(DOCS_DIR, file);
+					console.error(`  ✖ ${relPath}: ${err.message}`);
+					return {file: relPath, status: 'error', error: err.message};
 				}
-				return result;
 			},
 			opts.concurrency
 		);
 
 		// Translate theme JSON and sidebar labels
-		await translateThemeJSON(locale, opts);
-		await translateSidebarJSON(locale, opts);
+		try {
+			await translateThemeJSON(locale, opts);
+		} catch (err) {
+			console.error(`  ✖ theme JSON: ${err.message}`);
+			failed++;
+		}
+		try {
+			await translateSidebarJSON(locale, opts);
+		} catch (err) {
+			console.error(`  ✖ sidebar JSON: ${err.message}`);
+			failed++;
+		}
 
 		if (opts.dryRun) {
 			console.log(`  Files needing translation: ${needsTranslation}`);
 			console.log(`  Files up to date: ${skipped}`);
 		} else {
-			console.log(`  Translated: ${translated}, Skipped: ${skipped}`);
+			console.log(`  Translated: ${translated}, Skipped: ${skipped}, Failed: ${failed}`);
 		}
+		totalErrors += failed;
+	}
+
+	if (totalErrors > 0) {
+		console.error(`\nDone with ${totalErrors} error(s).`);
+		process.exit(1);
 	}
 
 	console.log('\nDone!');
