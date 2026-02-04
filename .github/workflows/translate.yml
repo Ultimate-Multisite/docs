@@ -33,6 +33,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Run translation
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -53,20 +58,7 @@ jobs:
             ARGS="$ARGS --debug"
           fi
 
-          node scripts/translate.js --concurrency 3 $ARGS
+          node scripts/translate.js --concurrency 2 --commit $ARGS
 
-      - name: Commit translations
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add i18n/
-
-          if git diff --staged --quiet; then
-            echo "No translation changes to commit"
-          else
-            git commit -m "Update translations
-
-          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-            git push
-          fi
+      - name: Push translations
+        run: git push

@@ -21,6 +21,7 @@ const path = require('path');
 const crypto = require('crypto');
 const matter = require('gray-matter');
 const fg = require('fast-glob');
+const {execSync} = require('child_process');
 
 // ---------------------------------------------------------------------------
 // Config & CLI args
@@ -75,6 +76,9 @@ function parseArgs() {
 			case '--timeout':
 				opts.timeout = parseInt(args[++i], 10) * 1000; // Convert seconds to ms
 				break;
+			case '--commit':
+				opts.commit = true;
+				break;
 		}
 	}
 
@@ -114,6 +118,18 @@ function getLocaleName(code) {
 		return display.of(code) || code;
 	} catch {
 		return code;
+	}
+}
+
+/**
+ * Commit a translated file to git immediately.
+ */
+function gitCommitFile(filePath, locale, relPath) {
+	try {
+		execSync(`git add "${filePath}"`, {cwd: DOCS_ROOT, stdio: 'pipe'});
+		execSync(`git commit -m "translate(${locale}): ${relPath}" --no-verify`, {cwd: DOCS_ROOT, stdio: 'pipe'});
+	} catch {
+		// Ignore commit errors (e.g. nothing to commit)
 	}
 }
 
@@ -324,6 +340,11 @@ async function translateFile(srcPath, targetLocale, opts) {
 	const output = matter.stringify(translatedBody, translatedFm);
 	await fs.ensureDir(path.dirname(destPath));
 	await fs.writeFile(destPath, output, 'utf-8');
+
+	// Commit immediately if --commit flag is set
+	if (opts.commit) {
+		gitCommitFile(destPath, targetLocale, relPath);
+	}
 
 	return {file: relPath, status: 'translated', size: fileSize, duration: totalTime};
 }
