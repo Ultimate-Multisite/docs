@@ -508,12 +508,12 @@ async function main() {
 	console.log(`Debug: ${opts.debug}`);
 	console.log('');
 
-	// Find all doc files
-	const files = await fg(['**/*.md', '**/*.mdx'], {
+	// Find all doc files (dedupe to guard against glob returning overlapping results)
+	const files = [...new Set(await fg(['**/*.md', '**/*.mdx'], {
 		cwd: DOCS_DIR,
 		absolute: true,
 		ignore: ['**/node_modules/**'],
-	});
+	}))];
 
 	console.log(`Found ${files.length} doc files`);
 	console.log('');
