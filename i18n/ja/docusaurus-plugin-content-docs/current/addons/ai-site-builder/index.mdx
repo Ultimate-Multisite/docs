@@ -1,0 +1,123 @@
+---
+title: AI サイトビルダー
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI サイトビルダー
+
+ultimate-multisite-ai-site-builder
+
+## 要件
+
+- WordPress 5.3 以上
+- PHP 7.4 以上
+- Multisite Ultimate プラグイン（有効）
+
+## インストール
+
+1. addon ファイルを `/wp-content/plugins/` ディレクトリにアップロードします。
+2. WordPress の 'プラグイン' メニューからプラグインを有効化します。
+3. ネットワーク管理画面で addon の設定を構成します。
+
+## 開発
+
+### セットアップ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### プロジェクト構成
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### テスト
+
+addon には包括的なテストフレームワークが含まれています：
+
+- **ユニットテスト**：WordPress テストスイートを使用した PHPUnit ベースのテスト
+- **ベーステストクラス**：一般的なテストシナリオ用のヘルパーメソッドを提供します
+- **テストカバレッジ**：コードカバレッジを追跡するように設定されています
+- **マルチサイトテスト**：マルチサイト環境でテストが実行されます
+
+### コード標準
+
+- **WordPress コーディング標準**：PHPCS で強制されます
+- **PHP 7.4+ 互換性**：最新の PHP 機能がサポートされています
+- **静的解析**：型チェックのための PHPStan 統合
+- **コードモダナイズ**：PHP アップグレード用の Rector ルール
+
+### ビルドシステム
+
+- **アセット処理**：CSS/JS ファイルのミニファイ
+- **翻訳**：POT ファイル生成
+- **パッケージング**：配布用アーカイブ作成
+- **開発モード**：デバッグ用にミニファイされていないアセット
+
+## 設定
+
+addon はネットワーク管理画面からアクセスできるさまざまな設定オプションをサポートしています。
+
+## フックとフィルタ
+
+### アクション
+
+- `ultimate-multisite-ai-site-builder_init` - addon の初期化後に発火します
+- `ultimate-multisite-ai-site-builder_loaded` - すべての addon ファイルが読み込まれた後に発火します
+
+### フィルタ
+
+- `ultimate-multisite-ai-site-builder_settings` - addon の設定を変更します
+- `ultimate-multisite-ai-site-builder_enabled` - addon の有効/無効状態を上書きします
+
+## ライセンス
+
+この addon は GPL v3 以降でライセンスされています。
+
+## サポート
+
+サポートとドキュメントについては、[MultisiteUltimate.com](https://multisiteultimate.com) をご覧ください
+
+## 変更履歴
+
+- バージョン 1.0.1 (2025-09-28)：プレフィックスを ultimate-multisite に変更、テキストドメインを更新、バージョンを上げました。
+- バージョン (2025-09-28)：プレフィックスを ultimate-multisite に変更、テキストドメインを更新、バージョンを上げました。

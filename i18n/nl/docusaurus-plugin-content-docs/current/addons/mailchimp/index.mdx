@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimp Integratie
+
+Integreer je Multisite Ultimate netwerk met je Mailchimp. Je kunt bepaalde plannen koppelen aan Mailchimp-lijsten en abonnees automatisch toevoegen aan die lijsten bij registratie.
+
+## Installatie
+
+1. Upload 'ultimate-multisite-mailchimp' naar de map '/wp-content/plugins/'
+2. Activeer de plugin via het menu 'Plugins' in je WordPress Network Admin
+
+## Usage Guide
+
+Syncen van e-mails van abonnees met je Mailchimp-lijsten is heel eenvoudig met onze Ultimate Multisite: MailChimp Integration Add-on. Deze tutorial is bedoeld om je te helpen alles op te zetten!
+
+## Getting an API key
+
+Voordat we beginnen met de verschillende beschikbare instellingen, hebben we een MailChimp API-sleutel nodig. Hiermee kan Ultimate Multisite communiceren met de MailChimp API om lijsten, groepen op te halen en e-mailadressen toe te voegen aan die lijsten en groepen wanneer gebruikers zich registreren.
+
+Volg deze tutorial om je eigen MailChimp API-sleutel te verkrijgen: [Over API-sleutels | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-zimbKYFZo-B4D1E28C-1203-4E9A-AC7B-D8E9B5659B93.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-zimbKYFZo-B4D1E28C-1203-4E9A-AC7B-D8E9B5659B93.png)
+
+_Voeg je MailChimp API-sleutel toe op_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integration Mode
+
+De MailChimp Integration add-on biedt twee “integratie-modus”, wat betekent dat er twee verschillende manieren zijn waarop je de add-on kunt gebruiken om e-mailadressen te synchroniseren.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-mc8dVzW5S-B7A9495E-05B8-4FBB-8954-80EBF4A9CB3B.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-mc8dVzW5S-B7A9495E-05B8-4FBB-8954-80EBF4A9CB3B.png)
+
+_Twee integratie-modus voor grotere flexibiliteit!_
+
+### Mode 1: Multiple Lists
+
+De standaardmodus maakt gebruik van **Multiple Lists**. Deze modus stelt je in staat om meerdere MailChimp-lijsten te selecteren voor elk van de plannen. Dit is de beste optie als je je gebruikers in verschillende lijsten segmenten.
+
+Bijvoorbeeld, stel dat je 3 verschillende lijsten hebt op je MailChimp-account: **Newsletter**, **Plan A** en **Plan B**. Je wilt dat alle gebruikers, ongeacht hun plan, ook op de Newsletter-lijst staan, zodat ze je updates niet missen.
+
+Om dat te bereiken, kun je de Multiple Lists-modus gebruiken om zowel de lijsten **Newsletter** als **Plan A** toe te voegen aan de Plan A MailChimp Settings, en **Newsletter** en **Plan B** aan de Plan B MailChimp Settings.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-kZS8-S_eh-4145C1B8-B903-4DFF-9D92-AF7E0A61445E.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/6017c85715d41b7c717cdcf9/images/6021265efb34b55df443e4ad/60212659ac2f834ec53865f3-kZS8-S%5Feh-4145C1B8-B903-4DFF-9D92-AF7E0A61445E.png)
+
+_Selecteer de standaardlijsten voor nieuwe accounts en voor geannuleerde accounts_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp stelt je in staat om je lijst in te delen in kleinere groepen gebruikers genaamd **Groups**. Dit geeft je meer controle, omdat je een campagne kunt sturen naar een specifieke subset van je abonnees zonder meerdere kopieën van dezelfde campagne op MailChimp te maken (wat het moeilijk maakt om de statistieken van die campagne later te analyseren).
+
+Bijvoorbeeld, je kunt een enkele lijst hebben genaamd **My Network Subscribers**, en daarbinnen groepen hebben voor **Plan A** en **Plan B**.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-tOsErbJy6-A468DB31-B539-493E-AF5F-F44A4F90A974.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-tOsErbJy6-A468DB31-B539-493E-AF5F-F44A4F90A974.png)
+
+_Selecteer de standaardlijsten en groepen, als je de “single list + multiple groups” integratiemodus gebruikt_
+
+## Default Lists and Groups
+
+Na het selecteren welke integratiemodus het meest zinvol is voor jouw specifieke use case, is het tijd om de standaardlijsten (en groepen, afhankelijk van de modus) te selecteren. De standaardlijst wordt gebruikt wanneer een bepaald plan geen specifieke lijst heeft geselecteerd.
+
+Je kunt ook de standaardlijst voor geannuleerde accounts selecteren. Wanneer een gebruiker zijn of haar abonnement beëindigt en zijn of haar account uit je netwerk verwijdert, wordt het e-mailadres naar de lijst voor geannuleerde accounts verplaatst.
+
+## Enabling Double Subscription
+
+Op dezelfde instellingenpagina kun je **Double Subscription** inschakelen. Deze optie voegt de gebruiker toe aan zowel de geselecteerde standaardlijst als de lijst die aan het plan van die gebruiker is gekoppeld. Als deze optie niet is ingeschakeld, wordt de gebruiker alleen toegevoegd aan de lijst die voor het plan van de gebruiker is geselecteerd. Als er geen lijst is ingesteld voor dat specifieke plan, wordt de gebruiker toegevoegd aan de geselecteerde standaardlijst.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-OPUDRnO94-5D4C267A-14EB-43B4-B86F-0328D330B521.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-OPUDRnO94-5D4C267A-14EB-43B4-B86F-0328D330B521.png)
+
+_Je kunt je gebruikers laten abonneren op zowel de standaardlijst als de lijst van het plan bij registratie_
+
+## Selecting Lists and Groups for each of the Plans
+
+Ga naar je **Plans** en selecteer het plan dat je wilt bewerken. Merk op dat in de **Advanced Options** meta-box een nieuwe tab genaamd MailChimp beschikbaar zal zijn.
+
+Op die tab kun je meerdere lijsten of een enkele lijst en meerdere groepen (afhankelijk van de integratiemodus) selecteren voor dat plan.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-BMHjubpN5-C3183A30-687C-4837-8350-842CF959BB06.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-BMHjubpN5-C3183A30-687C-4837-8350-842CF959BB06.png)
+
+_Selecteer de lijsten en groepen die je voor elk van je plannen wilt gebruiken_
+
+Wanneer een nieuwe gebruiker zich registreert voor dat plan, wordt zijn e-mailadres toegevoegd aan de geselecteerde lijsten en groepen!

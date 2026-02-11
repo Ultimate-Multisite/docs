@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: 6bdd5faf453a0b33010bfd1064e0f2b8
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardless Payment
+
+고객이 Direct Debit을 사용하여 GoCardless로 Multisite Ultimate 멤버십 및 제품을 결제할 수 있도록 허용합니다!
+
+## Installation
+
+1. 'ultimate-multisite-gocardless'를 '/wp-content/plugins/' 디렉터리에 업로드합니다  
+2. WordPress의 'Plugins' 메뉴를 통해 플러그인을 활성화합니다  
+3. 단계별 마법사를 따라 플러그인을 설정합니다
+
+## Usage Guide
+
+_GoCardless_는 **유럽 및 영국**에서 사용 가능한 결제 게이트웨이로, **Direct Debit** 결제를 허용합니다.  
+
+**Ultimate Multisite: GoCardless Gateway**는 _GoCardless_ 지원을 Ultimate Multisite에 추가하여 해당 지역에서 Direct Debit을 사용해 고객을 청구할 수 있도록 합니다.  
+
+이 튜토리얼은 _GoCardless_를 설정하여 Ultimate Multisite 네트워크에서 결제를 수락하는 방법을 다룹니다.  
+
+_**참고: GoCardless는 다음 통화만 지원합니다:**_ **EUR, GBP, AUD, SEK, DKK.**
+
+## Installing the Add-on
+
+우선, Ultimate Multisite용 GoCardless 애드온을 설치해야 합니다. **Ultimate Multisite > Settings > Add-ons (사이드바에서)** 로 이동하여 해당 목록에서 GoCardless 애드온을 선택하면 됩니다.  
+
+애드온이 설치되고 활성화되면 **Ultimate Multisite > Settings > Payments** 로 이동하여 GoCardless 옵션을 토글하고 저장합니다.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VRRNzphbjJ.png)
+
+## Getting an Access Token
+
+_GoCardless_ (또는 _GoCardless_ 샌드박스)에서 계정을 생성합니다 (먼저 **테스트**하려면 권장됩니다). 로그인 후 **Developers** 메뉴 항목으로 이동합니다.
+
+![Developers menu position](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kENJK2VMJy.png)
+
+**Developers** 페이지에서 화면 오른쪽 상단의 **Create** 버튼을 클릭한 다음 **Access Token** 옵션을 클릭합니다.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UrGjq2m5TX.png)
+
+새 토큰을 생성할 수 있는 모달 창이 열립니다. 인지 가능한 이름을 지정하고 **Scope** 메뉴에서 **Read-write access** 옵션을 선택했는지 확인합니다.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDY7J5ylvj.png)
+
+액세스 토큰이 화면에 표시됩니다. 해당 토큰을 복사하여 **Ultimate Multisite > Settings > Payments > GoCardless** 메뉴에 붙여넣습니다.
+
+올바른 필드에 입력했는지 확인하십시오. **live toke n**인 경우 토큰을 붙여넣기 전에 **sandbox mode**를 끄십시오.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3DsJSYPv1Z.png)
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FlMS0mucqq.png)
+
+첫 번째 단계는 여기까지입니다. 다음으로 웹훅 리스너를 설정해야 합니다.
+
+## Setting up the Webhook Listener
+
+구독을 다룰 때, Ultimate Multisite는 구독 상태 변경, 신규 결제 발생 및 기타 관련 정보를 받아야 합니다.  
+
+결제 게이트웨이가 이러한 변화를 Ultimate Multisite에 알리는 방식은 **webhook 호출**을 사용하는 것입니다. 따라서 통합이 100% 동작하려면 _GoCardless_에게 모든 정보를 호출할 URL을 알려야 합니다.  
+
+**GoCardless > Developers** 패널로 돌아가서 다시 **Create** 버튼을 클릭한 다음 이번에는 **Webhook endpoint** 옵션을 선택합니다.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p3PuOhRO6b.png)A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7GKJY7tRgV.png)
+
+또한 웹훅 호출에 서명하는 데 사용되는 **webhook secret**를 입력할 수 있습니다. 해당 필드에 입력한 내용은 **Ultimate Multisite Webhook Secret field**에도 입력해야 합니다.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICXNY1PnA6.png)
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIJv3UFhhz.png)
+
+**Create webhook endpoint** 버튼을 클릭하여 엔드포인트를 저장한 다음 **Ultimate Multisite 설정도 저장**합니다.
+
+이제 _GoCardless_ 결제를 수락할 준비가 된 것입니다!

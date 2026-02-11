@@ -1,0 +1,189 @@
+---
+title: フックリファレンス
+sidebar_position: 1
+_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+---
+# Hooks Reference
+
+Auto-generated documentation for all **59 actions** and **115 filters** in Ultimate Multisite.
+
+## Actions
+
+- [auth_redirect](./Actions/auth_redirect) — 認証リダイレクトの前に発火します。
+- [set_auth_cookie](./Actions/set_auth_cookie) — 認証クッキーが設定される直前に発火します。
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ログイン済み認証クッキーが設定される直前に発火します。
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — 開発者が wp プラグインを介して独自のホストプロバイダー統合を追加できるようにします。
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — すべての依存関係が読み込まれたときにトリガーされます。
+- [wu_activation](./Actions/wu_activation) — プラグインの他の部分が有効化ルーチンを追加できるようにします。
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — ユーザーまたはスーパー管理者がサイトテンプレートを切り替えた後に関数をフックできるようにします。
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — 場合によっては、アクションを処理するために追加のリソースを読み込む必要があります。
+- [wu_before_search_models](./Actions/wu_before_search_models) — 検索リクエストの処理前に発火します。
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — 開発者がチェックアウトオブジェクトに追加の変更を加えることを許可します。
+- [wu_cart_setup](./Actions/wu_cart_setup) — 開発者がチェックアウトオブジェクトに追加の変更を加えることを許可します。
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — フィールドがチェックアウトフォームに追加される前に発火します。
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — 開発者が追加のフックをトリガーできるようにします。
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — チェックアウトを処理する前に。
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — チェックアウト注文が完全に組み立てられた後に発火します。
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — プラグイン開発者がネットワークダッシュボードパネルにウィジェットを追加できるようにします。
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — プラグイン開発者がネットワークダッシュボードパネルにウィジェットを追加できるようにします。
+- [wu_deactivation](./Actions/wu_deactivation) — プラグインの他の部分が無効化ルーチンを追加できるようにします。
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — プラグイン開発者が削除プロセスにアクションを追加できるようにします。
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ドメインがサイトのプライマリドメインになると発火します。
+- [wu_domain_created](./Actions/wu_domain_created) — 新しいドメインマッピングが追加されたときにトリガーされます。
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — コアのドメインマッピングが読み込まれた後に発火します。
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — 一部のプラグインは、マッピングが有効になる前にURLを保存するか、含まれていない別の方法でURLを構築します。
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — サイトの複製が行われた後にフックできるようにします。
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — プラグイン開発者が追加のフックを追加できるようにします。
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — 追加のクリーニング用フックです。
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — 新しいドメインモーダルリクエストを処理する前に発火します。
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — プラグイン開発者が必要に応じてメタデータを別の方法で保存できるようにします。
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — プラグイン開発者が必要に応じてユーザーメタデータを別の方法で保存できるようにします。
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — 無効なマジックリンクトークンが検出されたときに発火します。
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ユーザーがマジックリンクでログインした後に発火します。
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — 顧客が追加されたときにプラグイン開発者が追加の処理を行えるようにします。
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — MCP 能力がエンティティに登録された後に発火します。
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP アダプタが初期化された後に発火します。
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — メンバーシップがキャンセルされた後にトリガーされます。
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — メンバーシップの更新後にトリガーされます。
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — メンバーシップがキャンセルされる前にトリガーされます。
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — メンバーシップの更新前にトリガーされます。
+- [wu_model_post_save](./Actions/wu_model_post_save) — オブジェクトがデータベースに保存された後に発火します。
+- [wu_page_added](./Actions/wu_page_added) — ページが登録されたときにプラグイン開発者が追加の処理を実行できるようにします。
+- [wu_page_after_render](./Actions/wu_page_after_render) — ページを表示した後に追加コンテンツを追加できるようにします。
+- [wu_page_before_render](./Actions/wu_page_before_render) — ページを表示する前に追加コンテンツを追加できるようにします。
+- [wu_page_load](./Actions/wu_page_load) — ページに追加のフックを追加できるようにします。
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — ページを表示した後に追加コンテンツを追加できるようにします。
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — ページを表示する前に追加コンテンツを追加できるようにします。
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — ページに追加のフックを追加できるようにします。
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — このページのウィジェットが登録された後に発火します。
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — アドオンが統合に機能モジュールを追加できるように発火します。
+- [wu_register_integrations](./Actions/wu_register_integrations) — 統合が自身を登録できるように発火します。
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — 追加のルートを登録できるようにします。
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — 保存プロセスにアクションを追加できるようにします。
+- [wu_site_created](./Actions/wu_site_created) — サイトが初めて作成された後に発火します。
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — 必要に応じて追加のフックを追加できるようにします。
+- [wu_template_previewer](./Actions/wu_template_previewer) — テンプレートプレビューコンテキスト内で実行されます。
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue スクリプトフックをトリガーします。
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — オブジェクトがデータベースに保存された後に発火します。
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — オブジェクトがデータベースに保存された後に発火します。
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — オブジェクトがデータベースに保存された後に発火します。
+- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — オブジェクトがデータベースに保存された後に発火します。
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — ロック解除プロセスにアクションを追加できるようにします。
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 認証クッキーの有効期限の期間をフィルタリングします。
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 認証リダイレクトスキームをフィルタリングします。
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — 元の WP フィルタをここに再現しています。
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — プレビューで使用される URL をフィルタリングできるようにします。
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — 認証クッキーを HTTPS のみで送信するかどうかをフィルタリングします。
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — 安全な認証リダイレクトを使用するかどうかをフィルタリングします。
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — ログイン済みクッキーを HTTPS のみで送信するかどうかをフィルタリングします。
+- [send_auth_cookies](./Filters/send_auth_cookies) — 認証クッキーが実際にクライアントに送信されるのを防止できるようにします。
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — リダイレクト URL を設定します。
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — フィルタを介して追加ステップを追加します。
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — プラグイン開発者がレンダリングコンテキストにグローバルに追加変数を追加できるようにします。
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — 開発者がこのチェックを短絡できるようにします。
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — 新しいドメインモーダルのフィールドをフィルタリングします。
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — 開発者がセットアップ料金ラインアイテムを変更できるようにします。
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ultimate Multisite が追加した管理者通知をフィルタリングできるようにします。
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — 変更後にフィルタリングします。
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — 現在、すべてのタイプを扱います。
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — プラグイン開発者が制限を短絡できるようにします。
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — サインアップ料金を適用するかどうかをフィルタリングします。
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — 元の API 引数をフィルタリングします。
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — 請求先住所フィールドをフィルタリングできるようにします。
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — 出力をバイパスして新しいものを設定できるようにします。
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — 現在のユーザーを解除するコードをバイパスできるようにします。
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — 「継続金額」の合計をフィルタリングします。
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — 「初期金額」の合計をフィルタリングします。
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — 「初期金額」の合計をフィルタリングします。
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — プラグイン開発者がクレジット値を操作できるようにします。
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — 新しいフィールドテンプレートを追加する API がここにフックします。
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — 新しいフィールドタイプを追加する API がここにフックします。
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — エラーメッセージをフィルタリングします。
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — フィールドが自動送信可能かどうかのチェックをバイパスできるようにします。
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — フォームバリデータにカスタムエイリアスを追加できるようにします。
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — バリデーションルールをフィルタリングできるようにします。
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — 不要なパラメータを解除します。
+- [wu_contains_element](./Filters/wu_contains_element) — 初期検索結果を変更できるようにします。
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — ホストプロバイダーが定数を別の方法でインストールできるようにします。
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — 国の行政区分の見やすい名前を返します。
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — 国の州にある都市のリストを返します。
+- [wu_country_get_states](./Filters/wu_country_get_states) — この国の州のリストを返します。
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — デフォルトの動作を変更し、現在の顧客を別の方法で設定できるようにします。
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — デフォルトの動作を変更し、現在のメンバーシップを別の方法で設定できるようにします。
+- [wu_current_set_site](./Filters/wu_current_set_site) — デフォルトの動作を変更し、現在のサイトを別の方法で設定できるようにします。
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — サイト管理 URL のパラメータを変更できるようにします。
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — リンクをフィルタリングできるようにします。
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — 結果を定義するために新しいチェックを追加できるようにします。
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — 後で追加ブロックが必要になる場合があります。
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — 追加のビルダーやプラグインを扱うために開発者がパーサーを拡張できる汎用フィルタを追加します。
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — 追加のパスワードルールを強制するかどうかをフィルタリングします。
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — 生成された顧客ユーザー名をフィルタリングします。
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — チェックアウトページのプリセットをフィルタリングできるようにします。
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — この挙動をバイパスするために新しいフォームスラッグを追加できるようにします。
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — 開発者とアドオンが新しい移行ステップを追加できるようにします。
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — このフィルタについては、同じメソッドの下でさらに詳しく説明します。
+- [wu_get_post_types](./Filters/wu_get_post_types) — 表示する投稿タイプを選択できるようにします。
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — 行を返します。フィルタ可能です。
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ドメイン/パスペアを操作できるようにします。
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — ホスティング統合セットアップのウィザードセクションをフィルタリングします。
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — フォームのフィールドをフィルタリングします。フォームはフィルタ名の ID で識別されます。
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — 独立した請求サイクルを持つ製品タイプをフィルタリングします。
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — API の特定の状態を強制できるようにします。
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — 開発モード用に追加テストを追加できるようにします。
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — MCP アダプタの特定の状態を強制できるようにします。
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — セキュリティ上の理由から、フックできるアクションの数を制限しています。このフィルタは開発者が拡張できるようにします。
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — このプランで特定の投稿タイプが許可されているかをチェックします。開発者が戻り値をフィルタリングできます。
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP アドレス検証を強制するかどうかをフィルタリングします。
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — ユーザーエージェント検証を強制するかどうかをフィルタリングします。
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — 生成されたマジックリンク URL をフィルタリングします。
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — マジックリンクが有効かどうかをフィルタリングします。
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — ドメインをプライマリにした後のリダイレクト URL をフィルタリングします。
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — 自動リダイレクトを防止するパラメータの除外リストを作成します。
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP 能力の包含決定を上書きするフィルタです。
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — 計算された有効期限をフィルタリングします。
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — 更新後に設定される計算済み有効期限をフィルタリングします。
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — 開発者が新しい更新フォームスラッグを追加できるようにします。
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — 最小パスワード長をフィルタリングします。
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — 必要な最小パスワード強度（zxcvbn スコア）をフィルタリングします。
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — プラグイン開発者と私たち自身が編集ページにアクションリンクを追加できるようにします。
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — パスワードに小文字を必須にするかどうかをフィルタリングします。
+- [wu_password_require_number](./Filters/wu_password_require_number) — パスワードに数字を必須にするかどうかをフィルタリングします。
+- [wu_password_require_special](./Filters/wu_password_require_special) — パスワードに特殊文字を必須にするかどうかをフィルタリングします。
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — パスワードに大文字を必須にするかどうかをフィルタリングします。
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — 保留中の支払いに関するメッセージを変更できるようにします。
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — プランとして扱うべき製品タイプをフィルタリングします。
+- [wu_post_count](./Filters/wu_post_count) — 総数を変更できるようにします。
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — カウント対象となる投稿ステータスを変更できるようにします。デフォルトでは公開と非公開投稿がカウントされます。
+- [wu_post_default_status](./Filters/wu_post_default_status) — オブジェクトデータがデータベースに保存される前にフィルタリングします。
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite による保存前に設定をフィルタリングできるようにします。
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — リクエストを進めるかどうかをフィルタリングします。
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — リクエストを進めるかどうかをフィルタリングします。
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — リクエストを進めるかどうかをフィルタリングします。
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — リクエストを進めるかどうかをフィルタリングします。
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — リクエストを進めるかどうかをフィルタリングします。
+- [wu_return_url](./Filters/wu_return_url) — チェックアウト後に使用されるゲートウェイリターン URL を変更できるようにします。
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — プラグイン開発者が検索モデル関数を追加できるようにします。
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — 開発者が追加のセットアップウィザードステップを追加できるようにします。
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — リダイレクトを短絡して発生を防止できるようにします。
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — ハンドラを書き換えることを許可します。
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — サイトに利用可能な一括操作をフィルタリングします。
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — ネットワーク内の get pluginssites の値を変更するフィルタです。
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — クロスドメインシングルサインオン機能を有効/無効にします。
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe サブスクリプションデータをフィルタリングします。success_url や cancel_url を上書きできます。
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — 支払い意図の引数をフィルタリングします。
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — 確認対象のプラン ID をフィルタリングします。存在する場合、新しいサブスクリプションはこのプランを使用します。
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — 確認対象の製品 ID をフィルタリングします。存在する場合、新しいサブスクリプションはこの製品を使用します。
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe 料金オプションとともに送信される idempotency_key 値をフィルタリングします。
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — この Webhook に関連付けられたメンバーシップレコードをフィルタリングします。
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — データメタをシリアライズしてデータベースに保存する前にフィルタリングします。
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — オブジェクトデータがデータベースに保存される前にフィルタリングします。
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — アップグレードしてロック解除する URL を変更できるようにします。
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — マッピングを使用するかどうかを決定します。
+- [wu_username_from_email](./Filters/wu_username_from_email) — 新しい顧客ユーザー名をフィルタリングします。
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — メンバーシップユーザー制限に関するメッセージを変更できるようにします。
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — 置換可能リストに追加フォルダーを追加できるようにします。
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — このエンティティで有効なサブコマンドをフィルタリングします。
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — 定数を注入できる場所を特定する際に、3 つのパターンを確認します。

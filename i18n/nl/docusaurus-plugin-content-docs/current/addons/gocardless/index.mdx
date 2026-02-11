@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: 6bdd5faf453a0b33010bfd1064e0f2b8
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardless Betaling
+
+Laat uw klanten betalen voor Multisite Ultimate lidmaatschappen en producten met automatische incasso via GoCardless!
+
+## Installation
+
+1. Upload 'ultimate-multisite-gocardless' naar de map '/wp-content/plugins/'
+2. Activeer de plugin via het 'Plugins' menu in WordPress
+3. Volg de stapsgewijze Wizard om de plugin in te stellen
+
+## Usage Guide
+
+_GoCardless_ is een betaalgateway beschikbaar in **Europa en het VK** die **automatische incasso** betalingen mogelijk maakt.
+
+De **Ultimate Multisite: GoCardless Gateway** voegt _GoCardless_ ondersteuning toe aan Ultimate Multisite, waardoor u uw klanten in die regio kunt factureren met automatische incasso.
+
+Deze tutorial behandelt hoe u _GoCardless_ instelt om betalingen via het te accepteren op uw Ultimate Multisite netwerk.
+
+_**Opmerking: GoCardless werkt alleen met de volgende valuta's:**_ **EUR, GBP, AUD, SEK, en DKK.**
+
+## Installing the Add-on
+
+Allereerst moet u de GoCardless add-on voor Ultimate Multisite installeren. U kunt dit doen door naar **Ultimate Multisite > Settings > Add-ons (aan de zijbalk)** te gaan. En kies de GoCardless add-on in die lijst.
+
+Nadat de add-on is geïnstalleerd en geactiveerd, ga naar **Ultimate Multisite > Settings > Payments**, schakel de GoCardless optie in en sla op.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VRRNzphbjJ.png)
+
+## Getting an Access Token
+
+Maak een account aan op _GoCardless_ (of op de _GoCardless_ sandbox, als u het eerst **wil testen**, wat wordt aanbevolen). Vervolgens, na het inloggen, navigeer naar het menu-item **Developers**.
+
+![Developers menu position](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kENJK2VMJy.png)
+
+Op de pagina **Developers**, klik op de knop **Create** in de rechterbovenhoek van het scherm, en klik vervolgens op de optie **Access Token**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UrGjq2m5TX.png)
+
+Dit opent een nieuw modaal venster, waarmee u een nieuwe token kunt maken. Geef het een herkenbare naam en zorg ervoor dat u de optie **Read-write access** selecteert in het **Scope** menu.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDY7J5ylvj.png)
+
+De toegangstoken verschijnt op het scherm. Kopieer die en plak hem in uw **Ultimate Multisite > Settings > Payments > GoCardless** menu.
+
+Zorg ervoor dat u het in het juiste veld plaatst. Als het een **live token** is, schakel dan de **sandbox mode** uit voordat u de token plakt.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3DsJSYPv1Z.png)
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FlMS0mucqq.png)
+
+Dat is het voor de eerste stap. Vervolgens moet u een webhook listener instellen.
+
+## Setting up the Webhook Listener
+
+Bij het omgaan met abonnementen moet Ultimate Multisite op de hoogte zijn van wijzigingen in de abonnementsstatus, nieuwe betalingen en dergelijke.
+
+De manier waarop betaalgateways Ultimate Multisite op de hoogte brengen van die wijzigingen is via **webhook calls**. Om de integratie 100% te laten werken, moeten we _GoCardless_ vertellen welke URL we moeten aanroepen met alle informatie.
+
+Ga terug naar uw **GoCardless > Developers** paneel en klik opnieuw op de Create knop, maar kies deze keer de optie **Webhook endpoint**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p3PuOhRO6b.png)Een nieuw venster opent met de webhook endpoint opties. Het vraagt om de webhook URL, dus ga terug naar uw **Ultimate Multisite settings > Payments > GoCardless** en kopieer de webhook URL die daar staat:
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7GKJY7tRgV.png)
+
+Daarnaast kunt u een **webhook secret** invoeren die wordt gebruikt om uw webhook calls te ondertekenen. Wat u ook invoert in dat veld, moet u ook invoeren in het **Ultimate Multisite Webhook Secret field**.
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICXNY1PnA6.png)
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIJv3UFhhz.png)
+
+Sluit af door het endpoint op te slaan door op de knop **Create webhook endpoint** te klikken en vervolgens **uw Ultimate Multisite instellingen op te slaan**.
+
+U zou nu klaar moeten zijn om _GoCardless_ te accepteren!

@@ -1,0 +1,117 @@
+---
+title: Tutor マルチサイト互換性
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+WordPress プラグインで、マルチサイト環境における Tutor LMS の互換性修正を追加します。
+
+## Description
+
+このプラグインは、WordPress マルチサイトネットワーク上で Tutor LMS を実行するための不可欠な互換性修正を提供します。ユーザー登録、講師管理、コース制限、およびその他のマルチサイト固有の機能を処理します。
+
+## Features
+
+- **Database Table Management**: マルチサイトの外部キー制約により失敗した Tutor LMS テーブルを自動で検出し、欠落しているテーブルを作成します。
+- **Multisite User Enrollment**: ネットワークサイト間でユーザー登録を管理するためのカスタム AJAX ハンドラを提供します。
+- **Instructor Role Management**: マルチサイト環境で講師ロールの自動割り当てと管理を行います。
+- **Course Limitations**: サイトプランに基づくコースおよびファネル作成制限を管理するために Ultimate Multisite と統合します。
+- **Custom Admin Views**: マルチサイト対応の講師リストと管理インターフェースを提供します。
+- **Admin Tools**: ネットワークおよびサイト管理者向けのデータベース管理インターフェースです。
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (automatically enforced via `Requires Plugins` header)
+- WordPress Multisite installation
+- Ultimate Multisite plugin (for course limitations functionality)
+
+## Installation
+
+1. プラグインファイルを `/wp-content/plugins/tutor-multisite-compatibility/` にアップロードします。
+2. Tutor LMS がインストールされ、アクティブ化されていることを確認してください。
+3. WordPress の 'Plugins' メニューからプラグインを有効化します。
+4. プラグインは自動的に Tutor LMS と統合されます。
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+このプラグインは、以前 `wp-content/mu-plugins/daves.php` にあった機能を含みます：
+
+- コースステータス変更制限
+- コース作成制限  
+- CartFlows 統合と制限
+- Tutor 講師ロール管理
+- マルチサイトユーザー登録処理
+- コース製品 ID 表示
+
+## Database Management
+
+### The Problem
+
+WordPress マルチサイト環境では、Tutor LMS のテーブル作成がユーザーテーブルへの外部キー制約により失敗します。これは次の理由で発生します：
+
+- サイト固有のテーブルは `wp_2_tutor_carts` のようなプレフィックスを使用します。
+- 外部キーは `wp_2_users`（存在しない）を参照します。
+- 実際のユーザーテーブルは `wp_users`（ネットワーク全体で共有）です。
+
+### The Solution
+
+このプラグインは自動で次を行います：
+
+1. **Detects Missing Tables**: 外部キー制約により作成に失敗したテーブルを確認します。
+2. **Creates Tables with Correct References**: 適切なユーザーテーブル名（マルチサイトでは `wp_users`）を使用します。
+3. **Handles Multiple Scenarios**:
+   - プラグインの有効化/再有効化
+   - ネットワーク内での新規サイト作成
+   - 管理インターフェースでの手動テーブル確認
+
+### Affected Tables
+
+- `tutor_coupon_usages` - ユーザーテーブルへの外部キーを含む
+- `tutor_carts` - ユーザーテーブルへの外部キーを含む  
+- `tutor_notification_preferences` - TutorPro テーブルでユーザーテーブルへの外部キーを含む
+
+### Admin Interface
+
+データベース管理ツールにアクセスするには：
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+インターフェースでは次が可能です：
+
+- すべてのサイトで欠落しているテーブルを表示します。
+- 手動でテーブル作成をトリガーします。
+- データベース設定を確認します。
+- 詳細なステータス情報を表示します。
+
+## Support
+
+このプラグインは KursoPro プラットフォーム専用に設計されています。技術サポートが必要な場合は、開発チームにお問い合わせください。

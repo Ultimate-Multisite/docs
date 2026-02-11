@@ -1,0 +1,91 @@
+---
+title: 验证码
+sidebar_position: 1
+_i18n_hash: 79f5501c86764d57aa650cbd3509884d
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**阻止机器人。保护收入。零配置麻烦。**
+
+在自定义域名的多站点网络中运行？你一定知道痛点：Google reCAPTCHA 和 hCaptcha 需要你在它们的管理控制台注册*每一个域名*。添加新客户站点？更新验证码配置。映射自定义域名？再次更新。永无止境。
+
+**Ultimate Multisite：Captcha 改变一切。**
+
+## Cap Captcha：自托管保护，轻松上手
+
+我们的新 **Cap Captcha** 提供商是多站点网络的游戏规则改变者：
+
+* **零配置** — 激活插件即可获得保护。无需 API 密钥、Google 账户、hCaptcha 仪表盘或域名白名单。
+* **自动在每个域名上工作** — 子域、映射域、客户域名——全部即时受保护。
+* **自托管 & 私有** — 你的数据永不离开服务器。完全符合 GDPR，无第三方跟踪。
+* **隐形工作量证明** — 用户在后台解决计算难题。无需点击消防栓，也不必面对令人沮丧的图像网格。
+* **轻量级** — 仅 20KB。不会拖慢你的结账。
+
+## WooCommerce 卡片测试保护
+
+卡片测试攻击每年给商家造成数十亿美元的损失。欺诈者使用机器人验证被盗信用卡与您的 WooCommerce 结账——你支付处理费用，他们获得有效卡号。
+
+**我们在最重要的地方提供保护：**
+
+* **Store API 保护** — 阻止针对 `/wp-json/wc/store/v1/checkout` 的机器人攻击，绕过传统表单验证码
+* **PayPal Payments 兼容** — 与 WooCommerce PayPal Payments 无缝配合
+* **实时统计** — 精确查看你阻止了多少攻击
+
+## 仍需要 Google reCAPTCHA 或 hCaptcha？
+
+我们已为你准备好。完整支持：
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+随时在网络设置中切换提供商。
+
+## 为规模而建
+
+* 网络范围设置，支持每站点覆盖
+* 统计仪表盘，用于监控保护
+* 可调节安全级别（快速、中等、最大）
+* 开发者友好，支持可扩展的提供商架构
+
+## 安装
+
+1. 将 `ultimate-multisite-captcha` 上传到你的 `/wp-content/plugins/` 目录
+2. 网络激活插件
+3. **就这样。你已受到保护。**
+
+Cap Captcha 自动激活——无需配置设置，无需输入 API 密钥。整个网络中每个受支持的端点在你激活时即被保护。
+
+**可选：** 若想使用 Google reCAPTCHA 或 hCaptcha，请导航至 **Ultimate Multisite → Settings → Captcha** 并选择你偏好的提供商。
+
+## 常见问题解答
+
+### 我需要配置任何东西吗？
+
+不！Cap Captcha 在你激活插件时会自动启用。整个网络立即受到保护——无需配置设置，无需输入 API 密钥。
+
+### 我需要为 Cap Captcha 提供 API 密钥吗？
+
+不。Cap Captcha 完全自托管。无需外部账户，无需域名注册，无需配置麻烦。
+
+### 这会减慢我的结账速度吗？
+
+Cap Captcha 仅 20KB，并在后台运行工作量证明挑战。你的客户不会注意到任何延迟。
+
+### 这能防止卡片测试攻击吗？
+
+是的！与仅保护 HTML 表单的传统验证码不同，我们的 WooCommerce 集成直接挂钩到 Store API，以 API 级别阻止机器人攻击——大多数卡片测试攻击发生的地方。
+
+### 我可以在不同站点使用不同的验证码提供商吗？
+
+验证码提供商在网络范围内设置，但你可以根据需要调整难度设置。
+
+### 这符合 GDPR 吗？
+
+Cap Captcha 100% 自托管，未将任何数据发送到外部服务。关于 Google reCAPTCHA 和 hCaptcha，请查看它们各自的隐私政策。

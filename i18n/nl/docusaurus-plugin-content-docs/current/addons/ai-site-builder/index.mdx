@@ -1,0 +1,123 @@
+---
+title: AI Sitebouwer
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Vereisten
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Multisite Ultimate plugin (active)
+
+## Installatie
+
+1. Upload de addon-bestanden naar je `/wp-content/plugins/` map
+2. Activeer de plugin via het 'Plugins'-menu in WordPress
+3. Configureer de addon-instellingen in de netwerkbeheer
+
+## Ontwikkeling
+
+### Instellen
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projectstructuur
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Testen
+
+The addon includes a comprehensive testing framework:
+
+- **Unit Tests**: PHPUnit-gebaseerde tests met de WordPress test suite
+- **Base Test Class**: Biedt hulpmethoden voor veelvoorkomende testscenario's
+- **Test Coverage**: Geconfigureerd om code coverage te volgen
+- **Multisite Testing**: Tests draaien in een multisite-omgeving
+
+### Code Standaarden
+
+- **WordPress Coding Standards**: Afgedwongen via PHPCS
+- **PHP 7.4+ Compatibility**: Moderne PHP-functies ondersteund
+- **Static Analysis**: PHPStan-integratie voor type-checking
+- **Code Modernization**: Rector-regels voor PHP-upgrades
+
+### Bouwsysteem
+
+- **Asset Processing**: Minificatie voor CSS/JS-bestanden
+- **Translation**: POT-bestandsgeneratie
+- **Packaging**: Archiefcreatie voor distributie
+- **Development Mode**: Ongecomprimeerde assets voor debugging
+
+## Configuratie
+
+De addon ondersteunt verschillende configuratieopties die toegankelijk zijn via de netwerkbeheerinterface.
+
+## Hooks en Filters
+
+### Acties
+
+- `ultimate-multisite-ai-site-builder_init` - Fired after addon initialization
+- `ultimate-multisite-ai-site-builder_loaded` - Fired after all addon files are loaded
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Modify addon settings
+- `ultimate-multisite-ai-site-builder_enabled` - Override addon enable/disable status
+
+## Licentie
+
+Deze addon is gelicentieerd onder de GPL v3 of later.
+
+## Ondersteuning
+
+For support and documentation, visit [MultisiteUltimate.com](https://multisiteultimate.com)
+
+## Changelog
+
+- Versie 1.0.1 (2025-09-28): prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
+- Versie (2025-09-28): prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.

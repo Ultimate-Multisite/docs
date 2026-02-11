@@ -1,0 +1,188 @@
+---
+title: Hooks Referentie
+sidebar_position: 1
+_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+---
+# Hooks Referentie
+
+Auto-gegenereerde documentatie voor alle **59 acties** en **115 filters** in Ultimate Multisite.
+
+## Acties
+
+- [auth_redirect](./Actions/auth_redirect) — Activeert vóór de authenticatie-redirect.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Activeert onmiddellijk vóór het instellen van de authenticatiecookie.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Activeert onmiddellijk vóór het instellen van de ingelogde authenticatiecookie.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Stelt ontwikkelaars in staat om hun eigen hostprovider-integraties toe te voegen via wp-plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Activeert wanneer alle afhankelijkheden zijn geladen.
+- [wu_activation](./Actions/wu_activation) — Laat andere delen van de plugin hun routines voor activatie koppelen.
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Stelt pluginontwikkelaars in staat functies te koppelen nadat een gebruiker of superadmin het site-sjabloon heeft gewijzigd.
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — In sommige gevallen moeten we extra middelen laden om acties af te handelen.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Activeert vóór de verwerking van het zoekverzoek.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Stelt ontwikkelaars in staat extra wijzigingen aan het afrekenobject aan te brengen.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Stelt ontwikkelaars in staat extra wijzigingen aan het afrekenobject aan te brengen.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Activeert vóór een veld wordt toegevoegd aan het afrekenformulier.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Stelt ontwikkelaars in staat extra hooks te activeren.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Voordat we de afrekening verwerken.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Activeert nadat de afrekenorder volledig is samengesteld.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Stelt pluginontwikkelaars in staat widgets toe te voegen aan het Netwerk Dashboard Paneel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Stelt pluginontwikkelaars in staat widgets toe te voegen aan het Netwerk Dashboard Paneel.
+- [wu_deactivation](./Actions/wu_deactivation) — Laat andere delen van de plugin hun routines voor deactivatie koppelen.
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Stelt pluginontwikkelaars in staat acties toe te voegen aan het verwijderingsproces.
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Activeert wanneer een domein het primaire domein voor een site wordt.
+- [wu_domain_created](./Actions/wu_domain_created) — Activeert wanneer een nieuwe domeinmapping wordt toegevoegd.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Activeert nadat onze core Domain Mapping is geladen.
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Sommige plugins zullen de URL opslaan voordat de mapping actief was of zullen URLs op een andere manier bouwen die niet is inbegrepen o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Stelt ontwikkelaars in staat om te koppelen na een siteduplicatie.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Stelt pluginontwikkelaars in staat extra hooks toe te voegen.
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook voor extra schoonmaak.
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Activeert vóór het afhandelen van het verzoek voor het toevoegen van een nieuw domeinmodal.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Stelt pluginontwikkelaars in staat meta-gegevens op verschillende manieren op te slaan indien nodig.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Stelt pluginontwikkelaars in staat gebruikersmeta-gegevens op verschillende manieren op te slaan indien nodig.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Activeert wanneer een ongeldig magic link-token wordt aangetroffen.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Activeert nadat een gebruiker is ingelogd via magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Stelt pluginontwikkelaars in staat extra acties uit te voeren wanneer de klant wordt toegevoegd.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Activeert nadat MCP-mogelijkheden zijn geregistreerd voor een entiteit.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Activeert nadat de MCP-adapter is geïnitialiseerd.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Activeert nadat het lidmaatschap is geannuleerd.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Activeert na de lidmaatschapsvernieuwing.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Activeert vóór het lidmaatschap wordt geannuleerd.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Activeert vóór de lidmaatschapsvernieuwing.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Activeert nadat een object in de database is opgeslagen.
+- [wu_page_added](./Actions/wu_page_added) — Stelt pluginontwikkelaars in staat extra acties uit te voeren wanneer pagina's worden geregistreerd.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Stelt pluginontwikkelaars in staat extra inhoud toe te voegen nadat we de pagina afdrukken.
+- [wu_page_before_render](./Actions/wu_page_before_render) — Stelt pluginontwikkelaars in staat extra inhoud toe te voegen voordat we de pagina afdrukken.
+- [wu_page_load](./Actions/wu_page_load) — Stelt pluginontwikkelaars in staat extra hooks toe te voegen aan onze pagina's.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Stelt pluginontwikkelaars in staat extra inhoud toe te voegen nadat we de pagina afdrukken.
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Stelt pluginontwikkelaars in staat extra inhoud toe te voegen voordat we de pagina afdrukken.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Stelt pluginontwikkelaars in staat extra hooks toe te voegen aan onze pagina's.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Activeert nadat widgets zijn geregistreerd voor deze pagina.
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Activeert om addons toe te staan capaciteitsmodules aan integraties te koppelen.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Activeert om integraties zichzelf te laten registreren.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Stelt extra routes in staat geregistreerd te worden.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Stelt pluginontwikkelaars in staat acties toe te voegen aan het opslaanproces.
+- [wu_site_created](./Actions/wu_site_created) — Activeert nadat een site voor het eerst is aangemaakt.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Stelt pluginontwikkelaars in staat extra hooks toe te voegen indien nodig.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Wordt uitgevoerd wanneer je binnen de template previewer context bent.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Activeert de enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Activeert nadat een object in de database is opgeslagen.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Activeert nadat een object in de database is opgeslagen.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Activeert nadat een object in de database is opgeslagen.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Stelt pluginontwikkelaars in staat acties toe te voegen aan het ontgrendelingsproces.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtert de duur van de vervaldatum van de authenticatiecookie.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtert het authenticatie-redirect-schemata.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Repliceert hier het oorspronkelijke WP-filter, voor de zekerheid.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Stelt pluginontwikkelaars in staat de URL die in de previewer wordt gebruikt te filteren.
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtert of de auth-cookie alleen over HTTPS moet worden verzonden.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtert of een beveiligde authenticatie-redirect moet worden gebruikt.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtert of de ingelogde cookie alleen over HTTPS moet worden verzonden.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Staat het voorkomen van auth-cookies toe dat daadwerkelijk naar de client worden verzonden.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Stelt de redirect-URL in.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Voeg extra stappen toe via filters.
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Stelt pluginontwikkelaars in staat een extra variabele toe te voegen aan de rendercontext globaal.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Stelt ontwikkelaars in staat deze controle te omzeilen.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtert de velden voor het toevoegen van een nieuw domeinmodal.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Stelt ontwikkelaars in staat wijzigingen aan te brengen aan het setup fee line item.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Stelt ontwikkelaars in staat admin notices die door Ultimate Multisite zijn toegevoegd te filteren.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filter na wijziging.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nu behandelen we alle types.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Stelt pluginontwikkelaars in staat de beperkingen te omzeilen.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtert of de inschrijvingsvergoeding al dan niet moet worden toegepast.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtert de oorspronkelijke API-argumenten.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Stelt ontwikkelaars in staat de factuuradresvelden te filteren.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Stelt ontwikkelaars in staat de output te omzeilen en een nieuwe in te stellen.
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Stelt ontwikkelaars in staat de code voor het unsetten van de huidige gebruiker te omzeilen.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtert het totaal van het “recurring amount”.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtert het totaal van het “initial amount”.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtert het totaal van het “initial amount”.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Stelt pluginontwikkelaars in staat om te bemoeien met de kredietwaarde.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Onze API's om nieuwe veldtemplates toe te voegen, koppelen hier aan.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Onze API's om nieuwe veldtypes toe te voegen, koppelen hier aan.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filter de foutmeldingen.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Stelt ontwikkelaars in staat de controle te omzeilen als een veld automatisch kan worden ingediend.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Stelt pluginontwikkelaars in staat aangepaste aliasen toe te voegen in de formuliervalidator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Stelt ontwikkelaars in staat de validatieregels te filteren.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Unset ongewenste parameters.
+- [wu_contains_element](./Filters/wu_contains_element) — Stelt ontwikkelaars in staat de resultaten van de initiële zoekopdracht te wijzigen.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Stelt hostproviders in staat de constante op een andere manier te installeren.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Geeft een mooie naam van de administratieve sub-onderdelen van het land.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Geeft de lijst met steden voor een staat in een land.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Geeft de lijst met staten voor dit land.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Stelt ontwikkelaars in staat het standaardgedrag te wijzigen en de huidige klant anders in te stellen.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Stelt ontwikkelaars in staat het standaardgedrag te wijzigen en het huidige lidmaatschap anders in te stellen.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Stelt ontwikkelaars in staat het standaardgedrag te wijzigen en de huidige site anders in te stellen.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Stelt ontwikkelaars in staat de beheer-site-URL-parameters te wijzigen.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Stelt pluginontwikkelaars in staat de links te filteren.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Stelt pluginontwikkelaars in staat nieuwe controles toe te voegen om de resultaten te definiëren.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — We kunnen later extra blokken toevoegen.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Voegt een algemene filter toe om ontwikkelaars in staat te stellen deze parser uit te breiden voor extra builders of plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtert of extra wachtwoordregels moeten worden afgedwongen.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtert gegenereerde klantgebruikersnaam.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Stelt pluginontwikkelaars in staat de voorinstellingen van een afrekenpagina te filteren.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Stelt ontwikkelaars in staat nieuwe formulier-slugs toe te voegen om dit gedrag te omzeilen.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Stelt ontwikkelaars en add-ons in staat nieuwe migratiestappen toe te voegen.
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Zie hieronder meer over deze filter, op dezelfde methode.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Stelt ontwikkelaars in staat te kiezen welke berichttypen moeten worden weergegeven.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Retourneer regels, filterbaar.
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Stelt ontwikkelaars in staat de domein/padparen te manipuleren.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtert de wizard-secties voor hostingintegratie-instellingen.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtert de velden op een formulier. Het formulier wordt geïdentificeerd door de ID in de filternaam.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtert de producttypen die onafhankelijke factureringscycli hebben.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Stelt pluginontwikkelaars in staat een bepaalde staat voor de API af te dwingen.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Stelt ontwikkelaars in staat extra tests toe te voegen voor ontwikkelingsmodus.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Stelt ontwikkelaars in staat een bepaalde staat voor de MCP-adapter af te dwingen.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Om veiligheidsredenen beperken we het aantal acties dat kan worden gekoppeld. Deze filter stelt ontwikkelaars in staat uit te breiden.
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Controleert of een bepaald berichttype is toegestaan op dit plan. Stelt pluginontwikkelaars in staat de geretourneerde waarde te filteren.
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtert of IP-adresverificatie moet worden afgedwongen.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtert of user-agentverificatie moet worden afgedwongen.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtert de gegenereerde magic link-URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtert of magic links zijn ingeschakeld.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtert de redirect-URL na het maken van een domein primair.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Maak een uitsluitingslijst van parameters die de automatische redirect voorkomen.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter om de MCP-mogelijkheid inclusie beslissing te overschrijven.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtert de berekende vervaldatum.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtert de berekende vervaldatum die na de vernieuwing moet worden ingesteld.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Stelt ontwikkelaars in staat nieuwe updateformulier-slugs toe te voegen.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtert de minimale wachtwoordlengte.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtert de minimale wachtwoordsterkte vereist (zxcvbn-score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Stelt pluginontwikkelaars en onszelf in staat actie-links toe te voegen aan onze bewerkpagina's.
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtert of kleine letters vereist zijn in wachtwoorden.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtert of cijfers vereist zijn in wachtwoorden.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtert of speciale tekens vereist zijn in wachtwoorden.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtert of hoofdletters vereist zijn in wachtwoorden.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Stelt gebruiker in staat het bericht over lopende betalingen te wijzigen.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtert de producttypen die als plannen moeten worden behandeld.
+- [wu_post_count](./Filters/wu_post_count) — Stelt ontwikkelaars in staat het totale aantal te wijzigen.
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Stelt ontwikkelaars in staat te bepalen welke berichtstatus moet worden geteld. Standaard worden gepubliceerde en privéberichten geteld.
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtert de objectgegevens voordat ze in de database worden opgeslagen.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Stelt ontwikkelaars in staat instellingen te filteren voordat ze door Ultimate Multisite worden opgeslagen.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtert of het is toegestaan om door te gaan met het verzoek of niet.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtert of het is toegestaan om door te gaan met het verzoek of niet.
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtert of het is toegestaan om door te gaan met het verzoek of niet.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtert of het is toegestaan om door te gaan met het verzoek of niet.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtert of het is toegestaan om door te gaan met het verzoek of niet.
+- [wu_return_url](./Filters/wu_return_url) — Stelt ontwikkelaars in staat de gateway-return-URL te wijzigen die na afrekenprocessen wordt gebruikt.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Stelt pluginontwikkelaars in staat meer zoekmodelfuncties toe te voegen.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Stelt ontwikkelaars in staat extra stappen toe te voegen aan de setup wizard.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Stelt ontwikkelaars in staat de omleiding te omzeilen, waardoor deze niet plaatsvindt.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Staat herschrijven van handler toe.
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filter de bulkacties die beschikbaar zijn voor sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter om de waarde te wijzigen voor get pluginssites binnen het netwerk.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Inschakelen/uitschakelen van cross-domain single-sign-on functionaliteit.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filter Stripe Subscription-gegevens. Kan success_url of cancel_url overschrijven.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtert de betalingsintent-argumenten.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtert de ID van het plan om te controleren. Als dit bestaat, gebruikt het nieuwe abonnement dit plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtert de ID van het product om te controleren. Als dit bestaat, gebruikt het nieuwe abonnement dit product.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtert de idempotency_key-waarde die wordt verzonden met de Stripe-kostenopties.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtert het lidmaatschaprecord dat aan deze webhook is gekoppeld.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtert de datameta voordat deze wordt geserialiseerd om in de database op te slaan.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtert de datameta voordat deze wordt geserialiseerd om in de database op te slaan.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Stelt ontwikkelaars in staat de upgrade-to-unlock URL te wijzigen.
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Bepaal of een mapping moet worden gebruikt.
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filter nieuwe klantgebruikersnaam.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Stelt ontwikkelaars in staat het bericht over de limiet voor lidmaatschapgebruikers te wijzigen.
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Stelt ontwikkelaars in staat extra mappen toe te voegen aan de vervangbare lijst.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtert welke sub_commands zijn ingeschakeld voor deze entiteit.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — We controleren op drie patronen wanneer we proberen te achterhalen waar we onze constanten kunnen injecteren.

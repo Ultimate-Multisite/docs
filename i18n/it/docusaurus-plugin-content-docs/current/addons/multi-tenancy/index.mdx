@@ -1,0 +1,124 @@
+---
+title: Multi-tenant
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Distribuisci i sottositi tra server e database per prestazioni e sicurezza
+
+## Requisiti
+
+- WordPress 5.3 o superiore
+- PHP 7.4 o superiore
+- Multisite Ultimate plugin (attivo)
+
+## Installazione
+
+1. Carica i file dell'addon nella directory `/wp-content/plugins/`
+2. Attiva il plugin tramite il menu 'Plugins' in WordPress
+3. Configura le impostazioni dell'addon nell'amministrazione di rete
+
+## Sviluppo
+
+### Configurazione
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struttura del progetto
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Test
+
+L'addon include un framework di test completo:
+
+- **Test Unitari**: test basati su PHPUnit con la suite di test di WordPress
+- **Classe di Test Base**: Fornisce metodi di supporto per scenari di test comuni
+- **Copertura dei Test**: Configurato per tracciare la copertura del codice
+- **Test Multisite**: I test vengono eseguiti in un ambiente multisito
+
+### Standard di Codice
+
+- **WordPress Coding Standards**: Applicati tramite PHPCS
+- **PHP 7.4+ Compatibility**: Funzionalità PHP moderne supportate
+- **Static Analysis**: Integrazione PHPStan per il controllo dei tipi
+- **Code Modernization**: Regole Rector per gli aggiornamenti PHP
+
+### Sistema di Build
+
+- **Asset Processing**: Minificazione per file CSS/JS
+- **Translation**: Generazione di file POT
+- **Packaging**: Creazione di archivi per la distribuzione
+- **Development Mode**: Asset non minificati per il debug
+
+## Configurazione
+
+L'addon supporta varie opzioni di configurazione accessibili tramite l'interfaccia di amministrazione di rete.
+
+## Hook e Filtri
+
+### Azioni
+
+- `ultimate-multisite-addon-template_init` - Attivato dopo l'inizializzazione dell'addon
+- `ultimate-multisite-addon-template_loaded` - Attivato dopo il caricamento di tutti i file dell'addon
+
+### Filtri
+
+- `ultimate-multisite-addon-template_settings` - Modifica le impostazioni dell'addon
+- `ultimate-multisite-addon-template_enabled` - Sovrascrive lo stato di abilitazione/disabilitazione dell'addon
+
+## Licenza
+
+Questo addon è concesso in licenza sotto GPL v3 o successivo.
+
+## Supporto
+
+Per supporto e documentazione, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+
+## Registro delle modifiche
+
+- Versione 1.0.1 (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incrementa la versione.
+
+- Versione  (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incrementa la versione.

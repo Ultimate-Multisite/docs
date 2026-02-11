@@ -1,0 +1,123 @@
+---
+title: マルチテナンシー
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# マルチテナンシー
+
+パフォーマンスとセキュリティ向上のため、サブサイトをサーバーとデータベースに分散します
+
+## 要件
+
+- WordPress 5.3 以上
+- PHP 7.4 以上
+- Multisite Ultimate plugin (有効)
+
+## インストール
+
+1. アドオンファイルを `/wp-content/plugins/` ディレクトリにアップロードします
+2. WordPress の 'プラグイン' メニューからプラグインを有効化します
+3. ネットワーク管理画面でアドオン設定を構成します
+
+## 開発
+
+### セットアップ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### プロジェクト構成
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### テスト
+
+アドオンには包括的なテストフレームワークが含まれています：
+
+- **ユニットテスト**: PHPUnit ベースのテストで WordPress テストスイートを使用
+- **ベーステストクラス**: 共通テストシナリオ用のヘルパーメソッドを提供
+- **テストカバレッジ**: コードカバレッジを追跡するように設定
+- **マルチサイトテスト**: マルチサイト環境でテストが実行されます
+
+### コード標準
+
+- **WordPress コーディング標準**: PHPCS で強制
+- **PHP 7.4+ 互換性**: 最新の PHP 機能がサポート
+- **静的解析**: PHPStan 統合で型チェック
+- **コードモダナイズ**: Rector ルールで PHP アップグレード
+
+### ビルドシステム
+
+- **アセット処理**: CSS/JS ファイルのミニファイ
+- **翻訳**: POT ファイル生成
+- **パッケージング**: 配布用アーカイブ作成
+- **開発モード**: デバッグ用にミニファイされていないアセット
+
+## 設定
+
+アドオンはネットワーク管理画面のインターフェースからアクセスできるさまざまな設定オプションをサポートします。
+
+## フックとフィルタ
+
+### アクション
+
+- `ultimate-multisite-addon-template_init` - アドオン初期化後に発火
+- `ultimate-multisite-addon-template_loaded` - すべてのアドオンファイルが読み込まれた後に発火
+
+### フィルタ
+
+- `ultimate-multisite-addon-template_settings` - アドオン設定を変更
+- `ultimate-multisite-addon-template_enabled` - アドオンの有効/無効状態を上書き
+
+## ライセンス
+
+このアドオンは GPL v3 以上でライセンスされています。
+
+## サポート
+
+サポートとドキュメントについては [MultisiteUltimate.com](https://multisiteultimate.com) をご覧ください。
+
+## 変更履歴
+
+- バージョン 1.0.1 (2025-09-28): プレフィックスを ultimate-multisite に変更; テキストドメインを更新; バージョンを更新
+- バージョン (2025-09-28): プレフィックスを ultimate-multisite に変更; テキストドメインを更新; バージョンを更新

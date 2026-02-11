@@ -1,0 +1,187 @@
+---
+title: 훅 참조
+sidebar_position: 1
+_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+---
+# 훅스 레퍼런스
+
+## 액션
+
+- [auth_redirect](./Actions/auth_redirect) — 인증 리다이렉트 전에 실행됩니다.
+- [set_auth_cookie](./Actions/set_auth_cookie) — 인증 쿠키가 설정되기 직전에 실행됩니다.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — 로그인 인증 쿠키가 설정되기 직전에 실행됩니다.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — 개발자가 wp 플러그인을 통해 자체 호스트 제공업체 통합을 추가할 수 있도록 허용합니다.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — 모든 종속성이 로드되면 트리거됩니다.
+- [wu_activation](./Actions/wu_activation) — 플러그인의 다른 부분이 활성화 루틴을 연결하도록 허용합니다.
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — 플러그인 개발자가 사용자 또는 슈퍼 관리자가 사이트 템플릿을 전환한 후 함수를 후크하도록 허용합니다.
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — 경우에 따라 액션을 처리하기 위해 추가 자원을 로드해야 할 수 있습니다.
+- [wu_before_search_models](./Actions/wu_before_search_models) — 검색 요청 처리 전에 실행됩니다.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — 개발자가 결제 객체에 추가 변경을 할 수 있도록 허용합니다.
+- [wu_cart_setup](./Actions/wu_cart_setup) — 개발자가 결제 객체에 추가 변경을 할 수 있도록 허용합니다.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — 결제 양식에 필드가 추가되기 전에 실행됩니다.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — 개발자가 추가 후크를 트리거하도록 허용합니다.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — 우리가 결제를 처리하기 전에.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — 결제 주문이 완전히 조립된 후 실행됩니다.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — 플러그인 개발자가 네트워크 대시보드 패널에 위젯을 추가하도록 허용합니다.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — 플러그인 개발자가 네트워크 대시보드 패널에 위젯을 추가하도록 허용합니다.
+- [wu_deactivation](./Actions/wu_deactivation) — 플러그인의 다른 부분이 비활성화 루틴을 연결하도록 허용합니다.
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — 플러그인 개발자가 삭제 프로세스에 액션을 추가하도록 허용합니다.
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — 도메인이 사이트의 기본 도메인이 될 때 실행됩니다.
+- [wu_domain_created](./Actions/wu_domain_created) — 새 도메인 매핑이 추가될 때 트리거됩니다.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — 우리 핵심 도메인 매핑이 로드된 후 실행됩니다.
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — 일부 플러그인은 매핑이 활성화되기 전에 URL을 저장하거나 포함되지 않은 다른 방식으로 URL을 생성합니다.
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — 개발자가 사이트 복제 후에 후크하도록 허용합니다.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — 플러그인 개발자가 추가 후크를 추가하도록 허용합니다.
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — 추가 정리를 위한 후크
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — 새 도메인 모달 요청을 처리하기 전에 실행됩니다.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — 필요한 경우 플러그인 개발자가 메타 데이터를 다른 방식으로 저장하도록 허용합니다.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — 필요한 경우 플러그인 개발자가 사용자 메타 데이터를 다른 방식으로 저장하도록 허용합니다.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — 유효하지 않은 매직 링크 토큰이 발견되면 실행됩니다.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — 사용자가 매직 링크를 통해 로그인한 후 실행됩니다.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — 고객이 추가될 때 플러그인 개발자가 추가 작업을 수행하도록 허용합니다.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — MCP 능력이 엔터티에 등록된 후 실행됩니다.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP 어댑터가 초기화된 후 실행됩니다.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — 멤버십이 취소된 후 트리거됩니다.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — 멤버십 갱신 후 트리거됩니다.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — 멤버십이 취소되기 전에 트리거됩니다.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — 멤버십 갱신 전에 트리거됩니다.
+- [wu_model_post_save](./Actions/wu_model_post_save) — 객체가 데이터베이스에 저장된 후 실행됩니다.
+- [wu_page_added](./Actions/wu_page_added) — 페이지가 등록될 때 플러그인 개발자가 추가 작업을 실행하도록 허용합니다.
+- [wu_page_after_render](./Actions/wu_page_after_render) — 페이지를 출력한 후 플러그인 개발자가 추가 콘텐츠를 추가하도록 허용합니다.
+- [wu_page_before_render](./Actions/wu_page_before_render) — 페이지를 출력하기 전에 플러그인 개발자가 추가 콘텐츠를 추가하도록 허용합니다.
+- [wu_page_load](./Actions/wu_page_load) — 플러그인 개발자가 우리 페이지에 추가 후크를 추가하도록 허용합니다.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — 페이지를 출력한 후 플러그인 개발자가 추가 콘텐츠를 추가하도록 허용합니다.
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — 페이지를 출력하기 전에 플러그인 개발자가 추가 콘텐츠를 추가하도록 허용합니다.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — 플러그인 개발자가 우리 페이지에 추가 후크를 추가하도록 허용합니다.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — 이 페이지에 위젯이 등록된 후 실행됩니다.
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — 애드온이 통합에 기능 모듈을 연결하도록 허용하는 트리거입니다.
+- [wu_register_integrations](./Actions/wu_register_integrations) — 통합이 자신을 등록하도록 허용하는 트리거입니다.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — 추가 라우트가 등록되도록 허용합니다.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — 플러그인 개발자가 저장 프로세스에 액션을 추가하도록 허용합니다.
+- [wu_site_created](./Actions/wu_site_created) — 사이트가 처음 생성된 후 실행됩니다.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — 필요한 경우 플러그인 개발자가 추가 후크를 추가하도록 허용합니다.
+- [wu_template_previewer](./Actions/wu_template_previewer) — 템플릿 미리보기 컨텍스트 내부에서 실행됩니다.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — 스크립트 enqueue 후크를 트리거합니다.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — 객체가 데이터베이스에 저장된 후 실행됩니다.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — 객체가 데이터베이스에 저장된 후 실행됩니다.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 객체가 데이터베이스에 저장된 후 실행됩니다.
+- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — 객체가 데이터베이스에 저장되기 전에 필터링합니다.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 플러그인 개발자가 잠금 해제 프로세스에 액션을 추가하도록 허용합니다.
+
+## 필터
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 인증 쿠키 만료 기간을 필터링합니다.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 인증 리다이렉트 스킴을 필터링합니다.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — 원본 WP 필터를 여기서 복제합니다.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — 플러그인 개발자가 미리보기에서 사용되는 URL을 필터링하도록 허용합니다.
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — 인증 쿠키가 HTTPS를 통해서만 전송되어야 하는지 필터링합니다.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — 보안 인증 리다이렉트를 사용할지 필터링합니다.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — 로그인 쿠키가 HTTPS를 통해서만 전송되어야 하는지 필터링합니다.
+- [send_auth_cookies](./Filters/send_auth_cookies) — 인증 쿠키가 실제로 클라이언트에 전송되는 것을 방지하도록 허용합니다.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — 리다이렉트 URL을 설정합니다.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — 필터를 통해 추가 단계를 추가합니다.
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — 플러그인 개발자가 렌더 컨텍스트에 전역 변수를 추가하도록 허용합니다.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — 개발자가 이 검사를 단축하도록 허용합니다.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — 새 도메인 모달의 필드를 필터링합니다.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — 개발자가 설정 수수료 라인 항목을 변경하도록 허용합니다.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ultimate Multisite에서 추가된 관리자 알림을 필터링하도록 개발자를 허용합니다.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — 변경 후 필터링합니다.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — 이제 모든 유형을 처리합니다.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — 플러그인 개발자가 제한을 단축하도록 허용합니다.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — 가입 수수료가 적용되어야 하는지 여부를 필터링합니다.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — 원본 API 인수를 필터링합니다.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — 플러그인 개발자가 청구 주소 필드를 필터링하도록 허용합니다.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — 개발자가 출력을 우회하고 새 출력을 설정하도록 허용합니다.
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — 개발자가 현재 사용자 해제 코드를 우회하도록 허용합니다.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — “반복 금액” 합계를 필터링합니다.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — “초기 금액” 합계를 필터링합니다.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — “초기 금액” 합계를 필터링합니다.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — 플러그인 개발자가 신용 금액을 조작하도록 허용합니다.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — 새 필드 템플릿을 추가하는 API가 여기에서 후크됩니다.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — 새 필드 유형을 추가하는 API가 여기에서 후크됩니다.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — 오류 메시지를 필터링합니다.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — 필드가 자동 제출 가능할 때 검사를 우회하도록 개발자를 허용합니다.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — 플러그인 개발자가 양식 검증기에서 사용자 정의 별칭을 추가하도록 허용합니다.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — 플러그인 개발자가 검증 규칙을 필터링하도록 허용합니다.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — 원하지 않는 매개변수를 해제합니다.
+- [wu_contains_element](./Filters/wu_contains_element) — 개발자가 초기 검색 결과를 변경하도록 허용합니다.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — 호스트 제공업체가 상수를 다르게 설치하도록 허용합니다.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — 국가 행정 하위 구역의 멋진 이름을 반환합니다.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — 국가의 주에 대한 도시 목록을 반환합니다.
+- [wu_country_get_states](./Filters/wu_country_get_states) — 이 국가의 주 목록을 반환합니다.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — 개발자가 기본 동작을 수정하고 현재 고객을 다르게 설정하도록 허용합니다.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — 개발자가 기본 동작을 수정하고 현재 멤버십을 다르게 설정하도록 허용합니다.
+- [wu_current_set_site](./Filters/wu_current_set_site) — 개발자가 기본 동작을 수정하고 현재 사이트를 다르게 설정하도록 허용합니다.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — 개발자가 사이트 관리 URL 매개변수를 수정하도록 허용합니다.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — 플러그인 개발자가 링크를 필터링하도록 허용합니다.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — 플러그인 개발자가 결과를 정의하기 위해 새로운 검사를 추가하도록 허용합니다.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — 나중에 추가 블록을 추가해야 할 수도 있습니다.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — 개발자가 추가 빌더나 플러그인을 처리하도록 이 파서를 확장할 수 있는 일반 필터를 추가합니다.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — 추가 비밀번호 규칙을 적용할지 여부를 필터링합니다.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — 생성된 고객 사용자 이름을 필터링합니다.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — 플러그인 개발자가 결제 페이지의 사전 설정을 필터링하도록 허용합니다.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — 개발자가 이 동작을 우회하도록 새로운 양식 슬러그를 추가하도록 허용합니다.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — 개발자와 애드온이 새로운 마이그레이션 단계를 추가하도록 허용합니다.
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — 이 필터에 대한 자세한 내용은 아래와 같은 동일한 메서드에서 확인하세요.
+- [wu_get_post_types](./Filters/wu_get_post_types) — 개발자가 표시할 포스트 유형을 선택하도록 허용합니다.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — 라인을 반환합니다. 필터링 가능
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — 개발자가 도메인/경로 쌍을 조작하도록 허용합니다.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — 호스팅 통합 설정용 마법사 섹션을 필터링합니다.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — 양식의 필드를 필터링합니다. 양식은 필터 이름에 있는 ID로 식별됩니다.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — 독립 청구 주기를 가진 제품 유형을 필터링합니다.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — 플러그인 개발자가 API에 대한 특정 상태를 강제하도록 허용합니다.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — 플러그인 개발자가 개발 모드에 대한 추가 테스트를 추가하도록 허용합니다.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — 플러그인 개발자가 MCP 어댑터에 대한 특정 상태를 강제하도록 허용합니다.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — 보안상의 이유로 후크 가능한 액션 수를 제한합니다. 이 필터는 개발자가 확장하도록 허용합니다.
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — 이 플랜에서 특정 포스트 유형이 허용되는지 확인합니다. 플러그인 개발자가 반환 값을 필터링하도록 허용합니다.
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP 주소 확인을 적용할지 여부를 필터링합니다.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — 사용자 에이전트 확인을 적용할지 여부를 필터링합니다.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — 생성된 매직 링크 URL을 필터링합니다.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — 매직 링크가 활성화되어 있는지 여부를 필터링합니다.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — 도메인을 기본으로 설정한 후 리다이렉트 URL을 필터링합니다.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — 자동 리다이렉트를 방지하는 매개변수 제외 목록을 만듭니다.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP 능력 포함 결정을 재정의하는 필터입니다.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — 계산된 만료 날짜를 필터링합니다.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — 갱신 후 설정될 계산된 만료 날짜를 필터링합니다.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — 개발자가 새로운 업데이트 양식 슬러그를 추가하도록 허용합니다.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — 최소 비밀번호 길이를 필터링합니다.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — 최소 비밀번호 강도( zxcvbn 점수)를 필터링합니다.
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — 플러그인 개발자와 우리 자신이 편집 페이지에 액션 링크를 추가하도록 허용합니다.
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — 비밀번호에 소문자 필요 여부를 필터링합니다.
+- [wu_password_require_number](./Filters/wu_password_require_number) — 비밀번호에 숫자 필요 여부를 필터링합니다.
+- [wu_password_require_special](./Filters/wu_password_require_special) — 비밀번호에 특수 문자 필요 여부를 필터링합니다.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — 비밀번호에 대문자 필요 여부를 필터링합니다.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — 사용자가 보류 중인 결제에 대한 메시지를 변경하도록 허용합니다.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — 계획으로 처리해야 할 제품 유형을 필터링합니다.
+- [wu_post_count](./Filters/wu_post_count) — 플러그인 개발자가 총 개수를 변경하도록 허용합니다.
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — 플러그인 개발자가 어떤 포스트 상태를 카운트할지 변경하도록 허용합니다. 기본적으로 게시된 게시물과 비공개 게시물이 카운트됩니다.
+- [wu_post_default_status](./Filters/wu_post_default_status) — 객체가 데이터베이스에 저장되기 전에 필터링합니다.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite가 저장하기 전에 설정을 필터링하도록 개발자를 허용합니다.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — 요청을 진행할 수 있는지 여부를 필터링합니다.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — 요청을 진행할 수 있는지 여부를 필터링합니다.
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — 요청을 진행할 수 있는지 여부를 필터링합니다.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — 요청을 진행할 수 있는지 여부를 필터링합니다.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — 요청을 진행할 수 있는지 여부를 필터링합니다.
+- [wu_return_url](./Filters/wu_return_url) — 결제 프로세스 후에 사용되는 게이트웨이 반환 URL을 변경하도록 개발자를 허용합니다.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — 플러그인 개발자가 더 많은 검색 모델 함수를 추가하도록 허용합니다.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — 개발자가 추가 설정 마법사 단계를 추가하도록 허용합니다.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — 개발자가 리다이렉션을 단축하도록 허용합니다.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — 핸들러 재작성 허용
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — 사이트에 사용 가능한 대량 작업을 필터링합니다.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — 네트워크 내부에서 get pluginssites의 값을 변경하도록 필터링합니다.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — 교차 도메인 싱글 사인온 기능을 활성화/비활성화합니다.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe 구독 데이터를 필터링합니다. success_url 또는 cancel_url을 재정의할 수 있습니다.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — 결제 의도 인수를 필터링합니다.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — 확인할 플랜 ID를 필터링합니다. 이 ID가 존재하면 새 구독이 이 플랜을 사용합니다.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — 확인할 제품 ID를 필터링합니다. 이 ID가 존재하면 새 구독이 이 제품을 사용합니다.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe 청구 옵션과 함께 전송되는 idempotency_key 값을 필터링합니다.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — 이 웹후크와 연결된 멤버십 기록을 필터링합니다.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — 데이터 메타가 직렬화되어 데이터베이스에 저장되기 전에 필터링합니다.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — 객체가 데이터베이스에 저장되기 전에 필터링합니다.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — 개발자가 업그레이드 해제 URL을 변경하도록 허용합니다.
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — 매핑을 사용해야 하는지 여부를 결정합니다.
+- [wu_username_from_email](./Filters/wu_username_from_email) — 새 고객 사용자 이름을 필터링합니다.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — 멤버십 사용자 제한에 대한 메시지를 변경하도록 개발자를 허용합니다.
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — 개발자가 교체 가능한 목록에 추가 폴더를 추가하도록 허용합니다.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — 개발자가 이 엔터티에 대해 활성화된 하위 명령을 필터링하도록 허용합니다.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — 우리는 상수를 삽입할 수 있는 위치를 찾으려 할 때 세 가지 패턴을 확인합니다.

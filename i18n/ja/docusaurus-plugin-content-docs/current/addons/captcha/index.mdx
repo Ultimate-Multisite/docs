@@ -1,0 +1,91 @@
+---
+title: キャプチャ
+sidebar_position: 1
+_i18n_hash: 79f5501c86764d57aa650cbd3509884d
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**ボットを止める。収益を守る。設定不要で手間なし。**
+
+カスタムドメインを使用したマルチサイトネットワークを運営していますか？その痛みはご存知でしょう：Google reCAPTCHA と hCaptcha は管理コンソールで *すべてのドメイン* を登録する必要があります。新しい顧客サイトを追加しますか？キャプチャ設定を更新します。カスタムドメインをマッピングしますか？再度更新します。終わりがありません。
+
+**Ultimate Multisite: Captcha がすべてを変える。**
+
+## Cap Captcha: 自前ホスト型保護がすぐに機能する
+
+私たちの新しい **Cap Captcha** プロバイダーは、マルチサイトネットワークにとってゲームチェンジャーです:
+
+* **Zero Configuration** — アドオンを有効化すると保護されます。API キーも Google アカウントも hCaptcha ダッシュボードもドメインホワイトリストも不要です。
+* **Works on Every Domain Automatically** — サブドメイン、マッピングドメイン、顧客ドメイン、すべてが即座に保護されます。
+* **Self-Hosted & Private** — データはサーバーから外に出ることはありません。第三者追跡なしで完全に GDPR 対応です。
+* **Invisible Proof-of-Work** — ユーザーはバックグラウンドで計算パズルを解きます。火災栓をクリックする必要も、イメージグリッドでイライラする必要もありません。
+* **Lightweight** — 20KB だけです。チェックアウトを遅くしません。
+
+## WooCommerce カードテスト対策
+
+カードテスト攻撃は年間数十億ドルの損失をもたらします。詐欺師はボットを使って盗まれたクレジットカードをあなたの WooCommerce チェックアウトで検証します。あなたは処理手数料を支払い、彼らは有効なカード番号を手に入れます。
+
+**私たちは最も重要な場所を守ります：**
+
+* **Store API Protection** — 従来のフォームキャプチャを回避する `/wp-json/wc/store/v1/checkout` でのボット攻撃をブロックします
+* **PayPal Payments Compatible** — WooCommerce PayPal Payments とシームレスに連携します
+* **Real-Time Statistics** — ブロックしている攻撃数を正確に確認できます
+
+## Google reCAPTCHA または hCaptcha がまだ必要ですか？
+
+ご安心ください。以下の完全サポートがあります：
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+ネットワーク設定からいつでもプロバイダーを切り替えられます。
+
+## スケールに合わせて構築
+
+* ネットワーク全体の設定にサイトごとのオーバーライドが可能
+* 保護状況を監視する統計ダッシュボード
+* 調整可能なセキュリティレベル（Fast, Medium, Maximum）
+* 開発者に優しく、拡張可能なプロバイダーアーキテクチャ
+
+## インストール
+
+1. `ultimate-multisite-captcha` を `/wp-content/plugins/` ディレクトリにアップロードします
+2. ネットワークでプラグインを有効化します
+3. **これで完了です。保護されます。**
+
+Cap Captcha は自動で有効化されます—設定は不要で、API キーも入力不要です。ネットワーク全体のサポート対象エンドポイントは有効化と同時に保護されます。
+
+**オプション**：Google reCAPTCHA または hCaptcha を使用したい場合は、**Ultimate Multisite → Settings → Captcha** に移動し、希望するプロバイダーを選択してください。
+
+## よくある質問
+
+### 何か設定する必要がありますか？
+
+いいえ！Cap Captcha はアドオンを有効化すると自動で有効になります。ネットワーク全体が即座に保護されます—設定は不要で、API キーも入力不要です。
+
+### Cap Captcha に API キーは必要ですか？
+
+いいえ。Cap Captcha は完全に自前ホストです。外部アカウントもドメイン登録も設定の頭痛はありません。
+
+### これでチェックアウトが遅くなりますか？
+
+Cap Captcha はわずか20KBで、バックグラウンドで Proof-of-Work チャレンジを実行します。顧客は遅延を感じません。
+
+### これでカードテスト攻撃から保護されますか？
+
+はい！従来のキャプチャは HTML フォームのみを保護しますが、私たちの WooCommerce 統合は Store API に直接フックし、API レベルでボット攻撃をブロックします—カードテスト攻撃の多くがここで発生します。
+
+### サイトごとに異なるキャプチャプロバイダーを使用できますか？
+
+キャプチャプロバイダーはネットワーク全体で設定されますが、ニーズに応じて難易度設定を調整できます。
+
+### これは GDPR に準拠していますか？
+
+Cap Captcha は 100% 自前ホストで、外部サービスにデータを送信しません。Google reCAPTCHA と hCaptcha については、それぞれのプライバシーポリシーをご確認ください。

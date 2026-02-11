@@ -1,0 +1,123 @@
+---
+title: Costruttore di siti AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Requisiti
+
+- WordPress 5.3 o superiore
+- PHP 7.4 o superiore
+- Multisite Ultimate plugin (attivo)
+
+## Installazione
+
+1. Carica i file dell'addon nella tua directory `/wp-content/plugins/`
+2. Attiva il plugin tramite il menu 'Plugins' in WordPress
+3. Configura le impostazioni dell'addon nell'amministrazione di rete
+
+## Sviluppo
+
+### Configurazione
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struttura del progetto
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Classi PHP e inclusioni
+│   ├── class-multisite-ultimate-updater.php  # Gestore di aggiornamenti
+│   └── class-ai_site_builder-main.php             # Funzionalità principale
+├── tests/                        # Test unitari
+│   ├── bootstrap.php            # Bootstrap dei test
+│   ├── class-*-base.php         # Classe di base dei test
+│   └── class-*-test.php         # Casi di test
+├── views/                       # File di template
+├── assets/                      # Asset statici
+│   ├── css/                     # Fogli di stile
+│   ├── js/                      # File JavaScript
+│   └── images/                  # Immagini
+├── lang/                        # File di lingua
+├── composer.json                # Dipendenze PHP
+├── package.json                 # Dipendenze Node.js
+├── phpunit.xml.dist             # Configurazione PHPUnit
+├── .phpcs.xml.dist              # Configurazione degli standard di codice
+└── rector.php                   # Regole di modernizzazione del codice
+```
+
+### Test
+
+L'addon include un framework di test completo:
+
+- **Test unitari**: test basati su PHPUnit con il test suite di WordPress
+- **Classe di base dei test**: fornisce metodi di supporto per scenari di test comuni
+- **Copertura dei test**: configurata per tracciare la copertura del codice
+- **Test multisito**: i test vengono eseguiti in un ambiente multisito
+
+### Standard di Codice
+
+- **Standard di codifica WordPress**: applicati tramite PHPCS
+- **Compatibilità PHP 7.4+**: supportate le funzionalità PHP moderne
+- **Analisi statica**: integrazione PHPStan per il controllo dei tipi
+- **Modernizzazione del codice**: regole Rector per gli aggiornamenti PHP
+
+### Sistema di Build
+
+- **Elaborazione degli asset**: minificazione per file CSS/JS
+- **Traduzione**: generazione di file POT
+- **Imballaggio**: creazione di archivi per la distribuzione
+- **Modalità sviluppo**: asset non minificati per il debug
+
+## Configurazione
+
+L'addon supporta varie opzioni di configurazione accessibili tramite l'interfaccia di amministrazione di rete.
+
+## Hooks e Filtri
+
+### Azioni
+
+- `ultimate-multisite-ai-site-builder_init` - Scatenato dopo l'inizializzazione dell'addon
+- `ultimate-multisite-ai-site-builder_loaded` - Scatenato dopo il caricamento di tutti i file dell'addon
+
+### Filtri
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifica le impostazioni dell'addon
+- `ultimate-multisite-ai-site-builder_enabled` - Sovrascrive lo stato di abilitazione/disabilitazione dell'addon
+
+## Licenza
+
+Questo addon è concesso in licenza sotto GPL v3 o successiva.
+
+## Supporto
+
+Per supporto e documentazione, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+
+## Changelog
+
+- Versione 1.0.1 (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incremento di versione.
+- Versione (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incremento di versione.

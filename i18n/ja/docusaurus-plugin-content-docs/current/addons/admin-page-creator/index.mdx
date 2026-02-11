@@ -1,0 +1,168 @@
+---
+title: 管理ページ作成ツール
+sidebar_position: 1
+_i18n_hash: bc8e5ecae78e265ce24e236664d8032e
+---
+**Solution Explanation**
+
+For every test case we are given
+
+* `N` – the number of students  
+* `M` – the number of pairs of students that are friends  
+* `M` pairs `(u , v)` – the friendship relation is undirected
+
+The friendship relation is transitive:  
+if `a` is friends with `b` and `b` is friends with `c` then `a` and `c`
+are also friends.  
+Therefore the whole set of students is split into several *connected
+components* (friend circles).  
+The task is to output the number of connected components.
+
+
+
+--------------------------------------------------------------------
+
+#### Algorithm
+For each test case
+
+```
+read N, M
+create a Union‑Find (Disjoint Set Union) structure with N elements
+for i = 1 … M
+        read u, v
+        union(u , v)          // merge the two sets
+answer = number of distinct parents in the DSU
+output answer
+```
+
+--------------------------------------------------------------------
+
+#### Correctness Proof  
+
+We prove that the algorithm outputs the correct number of friend circles.
+
+---
+
+##### Lemma 1  
+After processing all `M` pairs, two students belong to the same set in the
+DSU **iff** they are in the same friend circle.
+
+**Proof.**
+
+*If part* –  
+When a pair `(u , v)` is read, `union(u , v)` merges the sets that contain
+`u` and `v`.  
+Thus after processing all pairs, every pair of directly connected
+students is in the same set.
+
+*Only‑if part* –  
+The DSU never splits a set.  
+Therefore if two students are in the same set, there exists a sequence of
+pairs that connects them, i.e. a path in the friendship graph.
+Consequently they are in the same connected component, i.e. the same
+friend circle. ∎
+
+
+
+##### Lemma 2  
+The number of distinct parents in the DSU after all unions equals the
+number of connected components of the friendship graph.
+
+**Proof.**
+
+By Lemma&nbsp;1 each connected component corresponds to exactly one set
+in the DSU, and different components correspond to different sets.
+Thus the number of sets equals the number of components. ∎
+
+
+
+##### Theorem  
+For every test case the algorithm outputs the number of friend circles.
+
+**Proof.**
+
+The algorithm outputs the number of distinct parents in the DSU.
+By Lemma&nbsp;2 this number equals the number of connected components,
+which is exactly the number of friend circles. ∎
+
+
+
+--------------------------------------------------------------------
+
+#### Complexity Analysis
+
+Let `α(N)` be the inverse Ackermann function (very small, < 5 for all
+reasonable `N`).
+
+For each test case:
+
+* `M` union operations – `O(M α(N))`
+* Counting distinct parents – `O(N)`
+
+Hence the total time is `O((N + M) α(N))`  
+and the memory consumption is `O(N)`.
+
+
+
+--------------------------------------------------------------------
+
+#### Reference Implementation  (Python 3)
+
+```python
+import sys
+
+# ---------- Union Find ----------
+class DSU:
+    __slots__ = ("parent", "rank", "cnt")
+
+    def __init__(self, n: int):
+        self.parent = list(range(n))
+        self.rank = [0] * n
+        self.cnt = n                     # number of disjoint sets
+
+    def find(self, x: int) -> int:
+        # path compression
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]
+            x = self.parent[x]
+        return x
+
+    def union(self, a: int, b: int) -> None:
+        ra, rb = self.find(a), self.find(b)
+        if ra == rb:
+            return
+        # union by rank
+        if self.rank[ra] < self.rank[rb]:
+            self.parent[ra] = rb
+        elif self.rank[ra] > self.rank[rb]:
+            self.parent[rb] = ra
+        else:
+            self.parent[rb] = ra
+            self.rank[ra] += 1
+        self.cnt -= 1
+
+# ---------- Main ----------
+def solve() -> None:
+    data = list(map(int, sys.stdin.buffer.read().split()))
+    it = iter(data)
+    t = next(it)
+    out_lines = []
+
+    for _ in range(t):
+        n = next(it)
+        m = next(it)
+        dsu = DSU(n)
+        for _ in range(m):
+            u = next(it) - 1          # convert to 0‑based
+            v = next(it) - 1
+            dsu.union(u, v)
+        out_lines.append(str(dsu.cnt))
+
+    sys.stdout.write("\n".join(out_lines))
+
+if __name__ == "__main__":
+    solve()
+```
+
+The program follows exactly the algorithm proven correct above and
+conforms to the required input/output format.

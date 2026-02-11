@@ -1,0 +1,97 @@
+---
+title: WooCommerce統合
+sidebar_position: 1
+_i18n_hash: 58f0a02be92223c785c1086def91b0fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration は、Manual Gateway と非常に似た方法で動作します。  
+ユーザーに多くの柔軟性を提供し、WooCommerce のインストールで利用可能な支払いフォームのいずれかを選択できるようにします。  
+そしてシンプルです：ユーザーの請求期間が終了すると、ユーザーのサブスクリプションは保留状態になります。  
+同時に、ネットワークのメインサイトにある WooCommerce のインストールに注文が作成されます。  
+ユーザーはメールで請求書を受け取り、支払いを行うリンクが添付されます。  
+支払いが受領されると、サブスクリプションが更新されます。
+
+## Features
+
+- Ultimate Multisite と WooCommerce の簡単な統合
+- 複数の支払い方法が利用可能
+- WooCommerce Subscriptions を使用した完全自動化プロセス
+
+## Documentation
+
+**Setting Up The WooCommerce Integration**  
+**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+
+## Installation
+
+1. 『ultimate-multisite-woocommerce』を '/wp-content/plugins/' ディレクトリにアップロードします  
+2. WordPress の『Plugins』メニューからプラグインを有効化します  
+3. ウィザードに従ってプラグインを設定します
+
+## Usage Guide
+
+_**重要な注意：この記事は Ultimate Multisite バージョン 2.x を対象としています。**_  
+_**注意：Ultimate Multisite: WooCommerce Integration では、少なくともメインサイトで WooCommerce を有効化する必要があります。**_
+
+Stripe と PayPal が一部の国で利用できないことを理解しています。これにより、Ultimate Multisite のユーザーがプラグインを効果的に使用できなくなる場合があります。そこで、WooCommerce を統合するアドオンを作成しました。  
+
+WooCommerce は非常に人気のある eCommerce プラグインです。世界中の開発者がさまざまな支払いゲートウェイを統合するアドオンを作成しました。これを活用して、Ultimate Multisite の請求システムで使用できる支払いゲートウェイを拡張しました。
+
+## Setting It Up
+
+まず、ライセンスユーザー向けに **無料** の WooCommerce Integration アドオンをインストールする必要があります。インストールするには、スーパ管理者ダッシュボードで Ultimate Multisite をクリックし、**Add-ons** を選択します。  
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RRyV5DYA9v.png)
+
+ここで、Ultimate Multisite のすべてのアドオンを確認できます。**Ultimate Multisite: WooCommerce Integration** アドオンをクリックします。  
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4AiiRzTKme.png)
+
+アドオンの詳細が表示されたウィンドウがポップアップします。**Install Now** をクリックしてください。  
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMfodJJZN5.png)
+
+インストールが完了すると、プラグインページにリダイレクトされます。ここで、**Network Activate** をクリックすると、WooCommerce アドオンがネットワーク上で有効化されます。  
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LQkSxAF1Sn.png)
+
+有効化後、まだ WooCommerce プラグインがサイトにインストールされていない場合は、**リマインダーが届きます**。  
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1U4DaZPAiR.png)
+
+インストール後、Ultimate Multisite の支払い設定に追加オプションが表示されます。そこで **WooCommerce** オプションを有効にできます。  
+
+![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HDQ1SG1pYO.png)
+
+フロントエンドに表示される表示名や、チェックアウトフローでユーザーを案内する指示など、基本設定を構成できます。次に、**メインサイトの WooCommerce 設定** に移動し、使用したい支払いゲートウェイを有効化して構成します。
+
+## How to manage the payment
+
+WooCommerce Integration は、Manual Gateway と非常に似た方法で動作します。欠点は、請求期間の終了時にすべての支払いを手動で行う必要があることです。フローは次のようになります：  
+
+* ユーザーの請求サイクルが終了すると、メンバーシップは **保留** されます。同時に、ネットワークのメインサイトにある WooCommerce インストールに注文が作成されます。  
+
+* ユーザーはメールで請求書を受け取り、支払いを行うリンク（リンクはサブサイトのダッシュボードの請求履歴にも表示されます）を受け取ります。そのリンクはユーザーを WooCommerce の **checkout** にリダイレクトし、そこでユーザーは **利用可能な WooCommerce ゲートウェイ** のいずれかを選択して支払いを処理できます。  
+
+* 支払いが受領されると、メンバーシップは **更新** され、支払いは Ultimate Multisite にログされ、注文は完了に設定されます。  
+
+### Some Important Notes:
+
+* Ultimate Multisite のデフォルト機能は、この統合フォームでも動作します。たとえば、**Subscription Management** 画面から **返金** を発行すると、WooCommerce と通信して選択した支払いフォームを使用して返金が発行されます。  
+
+* Ultimate Multisite: WooCommerce Integration は WP-Cron に依存しています。通常はうまく機能しますが、サイトのトラフィックが低い場合、cron がスケジュールされたイベントを確認するように促されず、イベントが見逃される可能性があり、実行遅延を引き起こすことがあります。  
+
+## Woocommerce Subscriptions Plugin
+
+毎月手動で支払いを開始することは、サブスクリプションが自動的に毎請求サイクルで繰り返されることを期待されるため、エンドユーザーにとって理想的ではありません。そこで、WooCommerce Integration アドオンを **WooCommerce Subscriptions プラグイン** を **サポート** するよう設計しました。これにより、支払いが自動化され、エンドユーザーにとって取引が容易になります。  
+
+必要なのは、Woocommerce Subscriptions プラグインを **インストール** し、メインサイトで **有効化** することです。次に、Ultimate Multisite の支払い設定に戻り、**統合** を有効にします。  
+
+そしてそれだけです。エンドユーザーは請求サイクルの終了時に手動で支払いを行う必要がなくなります。  
+
+メインサイトの WooCommerce に注文が作成されるだけでなく、各アカウントにサブスクリプションも作成されます。

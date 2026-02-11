@@ -1,0 +1,40 @@
+---
+title: コンテンツ同期
+sidebar_position: 1
+_i18n_hash: 48333aecfa57a9cf6daf84a8d8322ef2
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-content-sync" name="Content Sync" />
+
+# Content Sync
+
+Multisite Ultimate: Content Sync
+
+このアドオンは Multisite Ultimate 用で、ネットワーク管理者が任意のサイトからネットワーク内の他のサイトへコンテンツを同期できるようにします。投稿、ページ、カスタム投稿タイプ、Elementor テンプレートを含むすべての投稿タイプをサポートします。アドオンには、コンテンツと対象サイトを選択するマルチステップウィザードインターフェースがあり、バッチ処理とリアルタイムの進捗フィードバックが可能です。
+
+## Features
+
+* コンテンツ選択: サムネイル付きのカードグリッドと投稿タイプフィルタリング
+* すべての投稿タイプ: 投稿、ページ、商品、Elementor テンプレート、任意のカスタム投稿タイプを同期
+* サイト選択: コンテンツを同期するサイトを選択し、ソースサイトの除外と子サイトの事前選択を行う
+* バッチ処理: 1回に10サイトまで同期し、進捗を更新
+* メディア同期: 投稿コンテンツからメディアファイル（画像、動画）を自動でコピーし、ターゲットサイトに再マッピング
+* タクソノミー同期: カテゴリ、タグ、カスタムタクソノミーを保持
+* Elementor サポート: CSS再生成とテンプレートID再マッピングを含むElementor テンプレートの完全サポート
+* コンフリクト解決: 既存コンテンツを置き換えるかスキップするオプション
+* キャッシュ管理: 同期後にターゲットサイトのElementorキャッシュを自動でクリア
+
+## Requirements
+
+* WordPress 5.3 以上
+* PHP 7.4 以上
+* Multisite Ultimate プラグイン（有効）
+* Elementor プラグイン（任意、Elementor テンプレート同期に必要）
+
+## Installation
+
+1. 'ultimate-multisite-content-sync' を '/wp-content/plugins/' ディレクトリにアップロード
+2. WordPress ネットワーク管理の 'Plugins' メニューからプラグインを有効化
+3. Ultimate Multisite → Settings → Content Sync で設定を構成
+4. Ultimate Multisite → Content Sync に移動して同期を開始

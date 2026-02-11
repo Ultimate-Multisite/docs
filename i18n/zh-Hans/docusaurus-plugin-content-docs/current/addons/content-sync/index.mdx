@@ -1,0 +1,40 @@
+---
+title: 内容同步
+sidebar_position: 1
+_i18n_hash: 48333aecfa57a9cf6daf84a8d8322ef2
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-content-sync" name="Content Sync" />
+
+# 内容同步
+
+Multisite Ultimate：内容同步
+
+此插件为 Multisite Ultimate 提供网络管理员将任意站点的内容同步到网络中其他站点的功能。它支持所有文章类型，包括文章、页面、自定义文章类型和 Elementor 模板。插件包含一个多步骤向导界面，用于选择内容和目标站点，并提供批量处理和实时进度反馈。
+
+## 功能
+
+* 内容选择：带缩略图和文章类型过滤的可视化卡片网格
+* 所有文章类型：同步文章、页面、产品、Elementor 模板以及任何自定义文章类型
+* 站点选择：选择要同步内容的站点，支持排除源站点并预先选择子站点
+* 批量处理：一次同步至 10 个站点并提供进度更新
+* 媒体同步：自动复制并重新映射媒体文件（图片、视频）从文章内容到目标站点
+* 分类同步：保留分类、标签和自定义分类法
+* Elementor 支持：完整支持 Elementor 模板，包含 CSS 重新生成和模板 ID 重新映射
+* 冲突解决：可选择替换现有内容或跳过
+* 缓存管理：同步后自动清除目标站点的 Elementor 缓存
+
+## 需求
+
+* WordPress 5.3 或更高
+* PHP 7.4 或更高
+* Multisite Ultimate 插件（已激活）
+* Elementor 插件（可选，Elementor 模板同步必需）
+
+## 安装
+
+1. 将 'ultimate-multisite-content-sync' 上传到 '/wp-content/plugins/' 目录
+2. 通过 WordPress 网络管理员的 '插件' 菜单激活插件
+3. 在 Ultimate Multisite → 设置 → 内容同步中配置设置
+4. 导航至 Ultimate Multisite → 内容同步开始同步

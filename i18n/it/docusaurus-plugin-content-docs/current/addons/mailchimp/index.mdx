@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimp Integration
+
+Integra la tua rete Multisite Ultimate con Mailchimp. Puoi collegare determinati piani a Mailchimp Lists e aggiungere automaticamente gli iscritti a quelle liste al momento della registrazione.
+
+## Installation
+
+1. Carica 'ultimate-multisite-mailchimp' nella directory '/wp-content/plugins/'
+2. Attiva il plugin tramite il menu 'Plugins' nell'admin di rete WordPress
+
+## Usage Guide
+
+Sincronizzare le email degli iscritti con le tue Mailchimp Lists è davvero semplice con il nostro Ultimate Multisite: MailChimp Integration Add-on. Questo tutorial mira ad aiutarti a configurare tutto!
+
+## Getting an API key
+
+Prima di iniziare a esaminare le diverse impostazioni disponibili, abbiamo bisogno di una MailChimp API key. Questo permetterà a Ultimate Multisite di comunicare con l'API MailChimp per recuperare liste, gruppi e aggiungere indirizzi email a quelle liste e gruppi quando gli utenti si registrano.
+
+Segui questo tutorial per ottenere la tua MailChimp API key: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-zimbKYFZo-B4D1E28C-1203-4E9A-AC7B-D8E9B5659B93.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-zimbKYFZo-B4D1E28C-1203-4E9A-AC7B-D8E9B5659B93.png)
+
+_Add your MailChimp API key on_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integration Mode
+
+Il MailChimp Integration add-on offre due “modalità di integrazione”, il che significa che ci sono due modi diversi per utilizzare l'add-on per sincronizzare gli indirizzi email.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-mc8dVzW5S-B7A9495E-05B8-4FBB-8954-80EBF4A9CB3B.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-mc8dVzW5S-B7A9495E-05B8-4FBB-8954-80EBF4A9CB3B.png)
+
+_Two integration modes for greater flexibility!_
+
+### Mode 1: Multiple Lists
+
+La modalità predefinita utilizza **Multiple Lists**. Questa modalità ti permetterà di selezionare più Mailchimp Lists per ciascun piano. È la migliore opzione se segmenti i tuoi utenti in liste diverse.
+
+Per esempio, supponiamo di avere 3 liste diverse sul tuo account Mailchimp: **Newsletter**, **Plan A** e **Plan B**. Vuoi che tutti gli utenti, indipendentemente dal loro piano, siano anche inclusi nella lista Newsletter, così non perderanno i tuoi aggiornamenti.
+
+Per raggiungere questo obiettivo, puoi usare la modalità Multiple Lists per aggiungere entrambe le liste **Newsletter** e **Plan A** alle impostazioni Mailchimp del Piano A, e **Newsletter** e **Plan B** alle impostazioni Mailchimp del Piano B.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-kZS8-S_eh-4145C1B8-B903-4DFF-9D92-AF7E0A61445E.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/6017c85715d41b7c717cdcf9/images/6021265efb34b55df443e4ad/60212659ac2f834ec53865f3-kZS8-S%5Feh-4145C1B8-B903-4DFF-9D92-AF7E0A61445E.png)
+
+_Select the default lists for new accounts and for canceled accounts_
+
+### Mode 2: Single List + Multiple Groups
+
+Mailchimp ti consente di segmentare la tua lista in gruppi più piccoli di utenti chiamati **Groups**. Questo ti permette di avere più controllo poiché puoi inviare una campagna a un sottoinsieme specifico dei tuoi iscritti senza dover creare più copie della stessa campagna su Mailchimp (il che rende difficile analizzare le metriche di quella campagna successivamente).
+
+Per esempio, puoi avere una singola lista chiamata **My Network Subscribers**, e al suo interno avere gruppi per **Plan A** e **Plan B**.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-tOsErbJy6-A468DB31-B539-493E-AF5F-F44A4F90A974.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-tOsErbJy6-A468DB31-B539-493E-AF5F-F44A4F90A974.png)
+
+_Select the default lists and groups, if using the “single list + multiple groups” integration mode_
+
+## Default Lists and Groups
+
+Dopo aver selezionato quale modalità di integrazione abbia più senso per il tuo caso d'uso particolare, è il momento di selezionare le liste predefinite (e i gruppi, a seconda della modalità). La lista predefinita verrà utilizzata quando un determinato piano non ha una lista specifica selezionata.
+
+Puoi anche selezionare la lista predefinita per gli account cancellati. Ogni volta che un utente termina la propria iscrizione e rimuove il proprio account dalla tua rete, il suo indirizzo email verrà spostato nella lista impostata per gli account cancellati.
+
+## Enabling Double Subscription
+
+Nella stessa pagina delle impostazioni, potrai abilitare **Double Subscription**. Questa opzione aggiungerà l'utente sia alla lista predefinita selezionata che alla lista selezionata per il piano dell'utente. Se questa opzione non è abilitata, l'utente verrà aggiunto solo alla lista selezionata per il piano dell'utente. Se non è impostata per quel piano particolare, l'utente verrà aggiunto alla lista predefinita selezionata.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-OPUDRnO94-5D4C267A-14EB-43B4-B86F-0328D330B521.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-OPUDRnO94-5D4C267A-14EB-43B4-B86F-0328D330B521.png)
+
+_You can have your users subscribed to both the default list and the plan’s list on sign-up_
+
+## Selecting Lists and Groups for each of the Plans
+
+Vai ai tuoi **Plans** e seleziona il piano che desideri modificare. Nota che nella meta-box **Advanced Options**, sarà disponibile una nuova scheda chiamata MailChimp.
+
+Su quella scheda, potrai selezionare più liste o una singola lista e più gruppi (a seconda della modalità di integrazione) per quel piano.
+
+[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-BMHjubpN5-C3183A30-687C-4837-8350-842CF959BB06.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212659ac2f834ec53865f3-BMHjubpN5-C3183A30-687C-4837-8350-842CF959BB06.png)
+
+_Select the Lists and Groups you want to use for each of your plans_
+
+Quando un nuovo utente si registra per quel piano, il suo indirizzo email verrà aggiunto alle liste e ai gruppi selezionati!

@@ -1,0 +1,124 @@
+---
+title: AI 网站构建器
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## 需求
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Multisite Ultimate plugin (active)
+
+## 安装
+
+1. Upload the addon files to your `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Configure the addon settings in the network admin
+
+## 开发
+
+### 设置
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### 项目结构
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### 测试
+
+The addon includes a comprehensive testing framework:
+
+- **Unit Tests**: PHPUnit-based tests with WordPress test suite
+- **Base Test Class**: Provides helper methods for common test scenarios
+- **Test Coverage**: Configured to track code coverage
+- **Multisite Testing**: Tests run in multisite environment
+
+### 代码标准
+
+- **WordPress Coding Standards**: Enforced via PHPCS
+- **PHP 7.4+ Compatibility**: Modern PHP features supported
+- **Static Analysis**: PHPStan integration for type checking
+- **Code Modernization**: Rector rules for PHP upgrades
+
+### 构建系统
+
+- **Asset Processing**: Minification for CSS/JS files
+- **Translation**: POT file generation
+- **Packaging**: Archive creation for distribution
+- **Development Mode**: Unminified assets for debugging
+
+## 配置
+
+The addon supports various configuration options accessible through the network admin interface.
+
+## 挂钩与过滤器
+
+### 动作
+
+- `ultimate-multisite-ai-site-builder_init` - Fired after addon initialization
+- `ultimate-multisite-ai-site-builder_loaded` - Fired after all addon files are loaded
+
+### 过滤器
+
+- `ultimate-multisite-ai-site-builder_settings` - Modify addon settings
+- `ultimate-multisite-ai-site-builder_enabled` - Override addon enable/disable status
+
+## 许可证
+
+This addon is licensed under the GPL v3 or later.
+
+## 支持
+
+For support and documentation, visit [MultisiteUltimate.com](https://multisiteultimate.com)
+
+## 更新日志
+
+- 版本 1.0.1 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本升级。
+
+- 版本 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本升级。

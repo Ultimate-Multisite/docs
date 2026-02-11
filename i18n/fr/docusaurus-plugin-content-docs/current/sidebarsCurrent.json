@@ -1,0 +1,190 @@
+{
+  "sidebar.userGuideSidebar.category.Getting Started": {
+    "message": "Commencer",
+    "description": "The label for category Getting Started in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Administration": {
+    "message": "Administration",
+    "description": "The label for category Administration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Mapping": {
+    "message": "Mapping de domaine",
+    "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Host Integrations": {
+    "message": "Intégrations d'hébergement",
+    "description": "The label for category Host Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Payment Gateways": {
+    "message": "Passerelles de paiement",
+    "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Client Management": {
+    "message": "Gestion des clients",
+    "description": "The label for category Client Management in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Integrations": {
+    "message": "Intégrations",
+    "description": "The label for category Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Customization": {
+    "message": "Personnalisation",
+    "description": "The label for category Customization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Development": {
+    "message": "Développement",
+    "description": "The label for category Development in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Localization": {
+    "message": "Localisation",
+    "description": "The label for category Localization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Troubleshooting": {
+    "message": "Dépannage",
+    "description": "The label for category Troubleshooting in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Migration": {
+    "message": "Migration",
+    "description": "The label for category Migration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Miscellaneous": {
+    "message": "Divers",
+    "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
+  },
+  "sidebar.developerSidebar.category.Hooks Reference": {
+    "message": "Référence des Hooks",
+    "description": "The label for category Hooks Reference in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.REST API": {
+    "message": "API REST",
+    "description": "The label for category REST API in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Integration Guide": {
+    "message": "Guide d'intégration",
+    "description": "The label for category Integration Guide in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Code Examples": {
+    "message": "Exemples de code",
+    "description": "The label for category Code Examples in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Addon Development": {
+    "message": "Développement d'Addon",
+    "description": "The label for category Addon Development in sidebar developerSidebar"
+  },
+  "sidebar.addonsSidebar.category.WooCommerce Integration": {
+    "message": "Intégration WooCommerce",
+    "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Site Exporter": {
+    "message": "Exportateur de site",
+    "description": "The label for category Site Exporter in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AffiliateWP": {
+    "message": "AffiliateWP",
+    "description": "The label for category AffiliateWP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Site Builder": {
+    "message": "Constructeur de site IA",
+    "description": "The label for category AI Site Builder in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Analytics": {
+    "message": "Analyse",
+    "description": "The label for category Analytics in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Captcha": {
+    "message": "Captcha",
+    "description": "The label for category Captcha in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Chuck Norris Facts": {
+    "message": "Faits sur Chuck Norris",
+    "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Content Sync": {
+    "message": "Synchronisation du contenu",
+    "description": "The label for category Content Sync in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Domain Seller": {
+    "message": "Vendeur de domaines",
+    "description": "The label for category Domain Seller in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Fluent Forms": {
+    "message": "Fluent Forms",
+    "description": "The label for category Fluent Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.GoCardless": {
+    "message": "GoCardless",
+    "description": "The label for category GoCardless in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gravity Forms": {
+    "message": "Gravity Forms",
+    "description": "The label for category Gravity Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Language Selector": {
+    "message": "Sélecteur de langue",
+    "description": "The label for category Language Selector in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Loco Translate": {
+    "message": "Loco Translate",
+    "description": "The label for category Loco Translate in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailchimp": {
+    "message": "Mailchimp",
+    "description": "The label for category Mailchimp in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailster": {
+    "message": "Mailster",
+    "description": "The label for category Mailster in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Metered Plans": {
+    "message": "Plans à tarif métré",
+    "description": "The label for category Metered Plans in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Network": {
+    "message": "Multi‑Réseau",
+    "description": "The label for category Multi-Network in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Tenancy": {
+    "message": "Multi-Tenancy",
+    "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.PayFast": {
+    "message": "PayFast",
+    "description": "The label for category PayFast in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
+    "message": "Gestionnaire de plugins et de thèmes",
+    "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Agents": {
+    "message": "Agents de support",
+    "description": "The label for category Support Agents in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Tickets": {
+    "message": "Tickets de support",
+    "description": "The label for category Support Tickets in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.VAT": {
+    "message": "TVA",
+    "description": "The label for category VAT in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Admin Page Creator": {
+    "message": "Créateur de page d'administration",
+    "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Addon Template": {
+    "message": "Modèle d'Addon",
+    "description": "The label for category Addon Template in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
+    "message": "Compatibilité Tutor Multisite",
+    "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Material WP": {
+    "message": "Material WP",
+    "description": "The label for category Material WP in sidebar addonsSidebar"
+  }
+}
