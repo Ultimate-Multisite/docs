@@ -23,7 +23,7 @@ Ultimate Multisite는 다음을 필요로 합니다:
 **PHP Version** : 7.4.x (8.0 이상 지원 예정)  
 **MySQL Version** : v5+ (권장: 버전 5.6, 호스팅 제공업체에서 8.0을 사용할 수 없을 경우)
 
-_Multisite (서브도메인 또는 서브디렉터리)도 활성화되어야 합니다._ [WordPress 멀티사이트 설치 방법](/docs/user-guide/getting-started/how-to-install-wordpress-multisite).
+_Multisite (서브도메인 또는 서브디렉터리)도 활성화되어야 합니다._ [WordPress 멀티사이트 설치 방법](/user-guide/getting-started/how-to-install-wordpress-multisite).
 
   * **Ultimate Multisite가 서브디렉터리 멀티사이트와 함께 동작하나요?**
 

@@ -23,7 +23,7 @@ Ultimate Multisite 需要：
 **PHP 版本** : 7.4.x（>8.0 的支持即将推出）  
 **MySQL 版本** : v5+（推荐：5.6 版，以防您的主机不支持 8.0）  
 
-_Multisite (子域名或子目录) 也需要激活。_ [如何安装 WordPress 多站点](/docs/user-guide/getting-started/how-to-install-wordpress-multisite)。
+_Multisite (子域名或子目录) 也需要激活。_ [如何安装 WordPress 多站点](/user-guide/getting-started/how-to-install-wordpress-multisite)。
 
   * **Ultimate Multisite 能与子目录多站点一起使用吗？**
 

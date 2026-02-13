@@ -23,7 +23,7 @@ O Ultimate Multisite requer:
 **Versão do PHP** : 7.4.x (Suporte a > 8.0 em breve)  
 **Versão do MySQL** : v5+ (Recomendado: Versão 5.6, caso você não tenha 8.0 disponível no seu provedor de hospedagem)
 
-_Multisite (subdomain or subdirectory) também precisa ser ativado._ [How to Install WordPress Multisite](/docs/user-guide/getting-started/how-to-install-wordpress-multisite).
+_Multisite (subdomain or subdirectory) também precisa ser ativado._ [How to Install WordPress Multisite](/user-guide/getting-started/how-to-install-wordpress-multisite).
 
   * **O Ultimate Multisite funcionará com Multisite com Subdiretórios?**
 
