@@ -56,11 +56,11 @@
     "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
   },
   "sidebar.developerSidebar.category.Hooks Reference": {
-    "message": "Hooks 参考",
+    "message": "挂钩参考",
     "description": "The label for category Hooks Reference in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.REST API": {
-    "message": "REST API",
+    "message": "REST API（RESTful API）",
     "description": "The label for category REST API in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Integration Guide": {
@@ -100,7 +100,7 @@
     "description": "The label for category Captcha in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Chuck Norris Facts": {
-    "message": "查克·诺里斯的事实",
+    "message": "查克·诺里斯事实",
     "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Content Sync": {
@@ -140,7 +140,7 @@
     "description": "The label for category Mailster in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Metered Plans": {
-    "message": "计费计划",
+    "message": "计量计划",
     "description": "The label for category Metered Plans in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Network": {

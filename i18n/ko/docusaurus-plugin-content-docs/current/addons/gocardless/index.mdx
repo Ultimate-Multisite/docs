@@ -35,29 +35,29 @@ _**참고: GoCardless는 다음 통화만 지원합니다:**_ **EUR, GBP, AUD, S
 
 애드온이 설치되고 활성화되면 **Ultimate Multisite > Settings > Payments** 로 이동하여 GoCardless 옵션을 토글하고 저장합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VRRNzphbjJ.png)
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
 ## Getting an Access Token
 
 _GoCardless_ (또는 _GoCardless_ 샌드박스)에서 계정을 생성합니다 (먼저 **테스트**하려면 권장됩니다). 로그인 후 **Developers** 메뉴 항목으로 이동합니다.
 
-![Developers menu position](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kENJK2VMJy.png)
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
 
 **Developers** 페이지에서 화면 오른쪽 상단의 **Create** 버튼을 클릭한 다음 **Access Token** 옵션을 클릭합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UrGjq2m5TX.png)
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
 
 새 토큰을 생성할 수 있는 모달 창이 열립니다. 인지 가능한 이름을 지정하고 **Scope** 메뉴에서 **Read-write access** 옵션을 선택했는지 확인합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDY7J5ylvj.png)
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
 
 액세스 토큰이 화면에 표시됩니다. 해당 토큰을 복사하여 **Ultimate Multisite > Settings > Payments > GoCardless** 메뉴에 붙여넣습니다.
 
 올바른 필드에 입력했는지 확인하십시오. **live toke n**인 경우 토큰을 붙여넣기 전에 **sandbox mode**를 끄십시오.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3DsJSYPv1Z.png)
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FlMS0mucqq.png)
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
 
 첫 번째 단계는 여기까지입니다. 다음으로 웹훅 리스너를 설정해야 합니다.
 
@@ -69,15 +69,15 @@ _GoCardless_ (또는 _GoCardless_ 샌드박스)에서 계정을 생성합니다 
 
 **GoCardless > Developers** 패널로 돌아가서 다시 **Create** 버튼을 클릭한 다음 이번에는 **Webhook endpoint** 옵션을 선택합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p3PuOhRO6b.png)A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7GKJY7tRgV.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
 
 또한 웹훅 호출에 서명하는 데 사용되는 **webhook secret**를 입력할 수 있습니다. 해당 필드에 입력한 내용은 **Ultimate Multisite Webhook Secret field**에도 입력해야 합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICXNY1PnA6.png)
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIJv3UFhhz.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
 
 **Create webhook endpoint** 버튼을 클릭하여 엔드포인트를 저장한 다음 **Ultimate Multisite 설정도 저장**합니다.
 

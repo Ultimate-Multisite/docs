@@ -17,19 +17,19 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 ユーザーが登録ページに到達した後（通常は **Sign in** または **Buy now** ボタンをクリックした時）、そこで登録フォームを見ることになります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 必要なのは、必須項目（メール、ユーザー名、パスワードなど）をすべて入力し、プランの料金を支払うか、無料プランや試用期間付きの有料プランで支払い情報なしに登録する場合はメールアドレスを確認することです。
 
 「Thank you」ページで、メールアドレスの確認が必要か、またはウェブサイトがすでに有効化されているかを知らせるメッセージが表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 メールアドレスの確認が必要な場合、メール受信箱にアクセスして確認リンクをクリックする必要があります。メールアドレスが確認されないと、ウェブサイトは有効化されません。
 
 有料プランに登録した場合や、ネットワークでメール確認が必須でない場合、チェックアウト直後にウェブサイトが有効化され、ダッシュボードにサインインするリンクが表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## 共有リンクを使用する場合：
 
@@ -43,30 +43,30 @@ PayPal、Stripe、またはUltimate Multisiteやそのアドオン統合で提�
 
 登録プロセスは上記と同じですが、登録ページで顧客は支払いを完了するための追加指示が記載されたメールを受け取るというメッセージを見ることになります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 登録が完了した後、設定した支払い指示が表示され（そしてメールでも受け取ります）。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 支払い指示は **Ultimate Multisite > Settings > Payments** で **Manual** 支払いオプションを有効にした後、変更できます：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 顧客が手動決済を完了し確認を送信した後、**手動で支払いを確認**して顧客のメンバーシップとウェブサイトを有効化する必要があります。
 
 これを行うには、**Ultimate Multisite > Payments** に移動し、顧客の支払いを見つけます。まだ **Pending** ステータスが表示されているはずです。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 支払い番号をクリックすると、ステータスを **Completed** に変更できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 ステータスを **Completed** に変更した後、**Activate membership** メッセージが表示されます。このオプションを **on** に切り替えて、顧客に関連付けられたメンバーシップとウェブサイトを有効化します。次に、**Save Payment** をクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 顧客はダッシュボードと購読したすべての機能にアクセスできるようになります。

@@ -16,7 +16,7 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 
 このプロセスには API 認証情報が必要です。取得するには、ネットワーク管理パネルに移動し、**Ultimate Multisite > Settings** > **API & Webhooks,** を選択し、API Settings セクションを探します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzcShcSVgI.png)
+![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
 
 **Enable API** を選択し、API 認証情報を取得します。
 
@@ -84,27 +84,27 @@ Zapier で登録エンドポイントを使用する方法をより具体的に�
 
 Google Forms で、ネットワークに新しい会員を作成するために必要な最小限のフィールドを持つフォームを作成します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xaVRQkloWg.png)
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
 Zapier で新しい Zap を作成し、データが保存されているスプレッドシートを介して Google で作成したフォームを接続します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-67iVl1XK46.png)
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
 完了です！ Google Forms のフォームが Zapier と接続され、ネットワークへの統合準備が整いました。次に、Google Forms が入力されるたびにトリガーされるアクションに進みましょう。
 
 新しい Ultimate Multisite アプリを見つけて選択します。この種の Zap では Register オプションを選択します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hq2yHGYR31.png)
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
-この最初のステップの後、Zap に接続されるアカウントを選択します。![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BuyTLt0JUM.png)
+After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
 これはプロセス全体で最も重要な部分です。Google Forms から送られるフィールドを、この記事の前のセクションで示した登録エンドポイントに必要な最小限のフィールドと一致させる必要があります。
 
 この例では、ユーザー名、メールアドレス、パスワード、名前、ウェブサイトの URL のみを設定すれば十分です。残りは事前に決定されており、Google Forms で生成されるすべての会員が同じ製品とステータスのパターンに従うようになっています。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4pjTVOmauz.png)
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
-情報を設定したら、最終テストに進みます。最後の画面で、エンドポイントに送信されるすべてのフィールド、その情報、および空で送信されるフィールドが確認できます。![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fD2A9dYbDs.png)
+With the information set up, proceed to the final test. On the last screen you can see all the fields that will be sent to the endpoint, their respective information and the fields that will be sent empty.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
 
 新しい Zap をテストし、正常に完了するはずです。エラーが発生した場合は、すべてのフィールドが正しく送信されているか確認してください。情報量が多いため、見落としが発生することがあります。
 

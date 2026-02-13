@@ -1,9 +1,6 @@
 ---
 id: wu_hosting_integration_wizard_sections
-title: >-
-  I’m ready to translate the document, but I need the actual Markdown/MDX
-  content to work with. Could you please provide the text that needs to be
-  translated?
+title: 필터 - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
@@ -27,4 +24,4 @@ _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 
 ### Source
 
-다음에서 정의됨: [`inc/admin-pages/class-hosting-integration-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-hosting-integration-wizard-admin-page.php#L196) (라인 196)
+Defined in [`inc/admin-pages/class-hosting-integration-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-hosting-integration-wizard-admin-page.php#L196) at line 196

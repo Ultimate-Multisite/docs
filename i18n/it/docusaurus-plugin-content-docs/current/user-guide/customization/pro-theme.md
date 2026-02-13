@@ -11,7 +11,7 @@ PRO Theme è un tema amministrativo sviluppato per aiutarti quando personalizzi 
 
 Dopo averlo installato, vai alla pagina _Plugins_ e fai clic per attivarlo sulla tua rete.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _Attivalo a livello di rete nella tua pagina Plugins_
 
@@ -19,29 +19,29 @@ _Attivalo a livello di rete nella tua pagina Plugins_
 
 Ora hai la tua interfaccia di amministrazione completamente ridisegnata! Hai anche un nuovo menu nella colonna sinistra chiamato PRO Theme.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 _Un aspetto completamente nuovo per il tuo pannello di amministrazione_
 
 In questo menu avrai accesso a cinque schede:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 _Styling Settings_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 _Functionality_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 _Custom CSS_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 _Import/Export_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 _Activate PRO Theme_
 
@@ -49,10 +49,10 @@ In ognuna di esse, puoi abilitare e disabilitare elementi di stile, consentire o
 
 Ecco un esempio di ciò che puoi ottenere dopo alcuni aggiustamenti:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 _Dashboard del tuo cliente_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 _Una pagina di login personalizzata_

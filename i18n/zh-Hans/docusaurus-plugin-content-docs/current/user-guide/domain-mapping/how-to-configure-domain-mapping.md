@@ -19,7 +19,7 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 在 Ultimate Multisite 安装期间，向导会自动将 **sunrise.php** 复制并安装到指定文件夹。**向导在此步骤完成之前不会允许您继续**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zrBdFs13Dy.png)
+![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
 
 这意味着，一旦 Ultimate Multisite 安装向导完成网络设置，您就可以立即开始映射自定义域名。
 
@@ -27,7 +27,7 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 如果您需要禁用 Ultimate Multisite 域映射以使用其他域映射解决方案，可以在 **Ultimate Multisite > Settings > Domain Mapping** 下禁用此功能。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbrC47pTcX.png)
+![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
 
 在此选项下方，您还可以看到 **Force Admin Redirect** 选项。此选项允许您控制客户是否可以在自定义域名和子域名上都访问其管理仪表盘，还是仅在其中一个上访问。
 
@@ -37,7 +37,7 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 而选项 **Allow access to the admin by both mapped domain domain and network domain** 允许他们在子域名和自定义域名上都访问其管理仪表盘。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JYwHPWhYwV.png)
+![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
 
 映射自定义域名有两种方式。第一种是通过网络管理员仪表盘以超级管理员身份映射域名，第二种是通过子站点管理员仪表盘的账户页面映射。
 
@@ -59,11 +59,11 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 当您以超级管理员身份登录网络时，您可以轻松添加和管理自定义域名，方法是转到 **Ultimate Multisite > Domains**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5XxtXP622s.png)
+![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
 
 在此页面，您可以点击顶部的 **Add Domain** 按钮，这将弹出一个模态窗口，您可以在其中设置并填写 **custom domain name**、您希望将自定义域名应用到的 **subsite**，并决定是否将其设置为 **primary domain**（请注意，您可以将 **multiple domain names to one subsite**）。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rD6fnbzRe9.png)
+![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
 
 输入所有信息后，您可以点击底部的 **Add Existing Domain** 按钮。
 
@@ -71,13 +71,13 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 **Stage** 或状态应从 **Checking DNS** 更改为 **Ready**，如果一切设置正确。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3g2mkrlk75we98uhscagnr3ini0s)
+![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5dIPdYQfZi.png)
+![Domain with Ready status in domains list](/img/admin/domains-list.png)
 
 如果您点击域名，您将能够看到其中的一些选项。让我们快速查看一下：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5tCiNUIKih.png)
+![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
 
 **Stage:** 这是域名所在的阶段。当您首次添加域名时，它可能在 **Checking DNS** 阶段。该过程将检查 DNS 条目并确认它们。然后，域名将进入 **Checking SSL** 阶段。Ultimate Multisite 将检查域名是否具有 SSL，并将您的域名分类为 **Ready** 或 **Ready (without SSL)**。
 
@@ -95,7 +95,7 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 首先，您需要确保在 **Domain mapping** 设置下启用此选项。请参阅下面的截图。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M3MO6RKBWe.png)
+![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
 
 您还可以在 **Plan** 级别或 **Ultimate Multisite > Products** 上的产品选项中设置或配置此选项。
 
@@ -115,8 +115,8 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 您需要在 Ultimate Multisite 设置的 **Integration** 选项卡下激活此集成。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-k6i46r4x2yddii0op4x343jizq20)
+![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMADuxaH62.png)
+![Domains metabox on the subsite account page](/img/admin/domains-list.png)
 
 请注意，如果您的托管提供商不是上述提到的任何提供商，**您需要手动同步或将域名添加到您的托管账户**。

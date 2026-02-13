@@ -17,26 +17,26 @@ First, go to **Ultimate Multisite > Settings > Payments**. Below **Payment Gatew
 
 Add to this box the information your customer will need to make the payment. It can be your bank account details and your email so the customer can send you the payment confirmation, for example.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U0K40VsARU.png)
+![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
 
 After setting it up, just click on **Save Settings** and it is done. When users register to your network, they will see a message telling them that they will receive your instructions to complete the purchase.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-drAYOHh331.png)
+![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
 
 And they will also receive a message on your **Thank You** page with your payment instructions.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Nf6HTYbu2g.png)
+![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
 
 ## Confirming manual payments
 
 To confirm a manual payment, go to the **Payments** menu on the left bar. There you can see all the payments on your network and their details, including their **status**. A manual payment will always have a **Pending** status until you manually change it.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C3U9LgT2Ev.png)
+![Payments list showing pending manual payment](/img/admin/payments-list.png)
 
 Enter the payment page by clicking the **reference code**. On this page you have all the details of the pending payment, such as reference ID, products, timestamps and more.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sXfbxcYFs6.png)
+![Payment details page with reference code and products](/img/admin/payments-list.png)
 
 On the right column, you can alter the status of the payment. Changing it to **Completed** and **toggling the Activate Membership** option will enable your customer’s site and their membership will be active.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-q5hHRxdhfg.png)
+![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)

@@ -1,6 +1,6 @@
 {
   "sidebar.userGuideSidebar.category.Getting Started": {
-    "message": "Getting Started",
+    "message": "Erste Schritte",
     "description": "The label for category Getting Started in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Administration": {
@@ -20,11 +20,11 @@
     "description": "The label for category Host Integrations in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Payment Gateways": {
-    "message": "Zahlungs‑Gateways",
+    "message": "Zahlungs-Gateways",
     "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Client Management": {
-    "message": "Kundenverwaltung",
+    "message": "Client Management",
     "description": "The label for category Client Management in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Integrations": {
@@ -56,7 +56,7 @@
     "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
   },
   "sidebar.developerSidebar.category.Hooks Reference": {
-    "message": "Hooks-Referenz",
+    "message": "Hooks Referenz",
     "description": "The label for category Hooks Reference in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.REST API": {
@@ -68,7 +68,7 @@
     "description": "The label for category Integration Guide in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Code Examples": {
-    "message": "Codebeispiele",
+    "message": "Code-Beispiele",
     "description": "The label for category Code Examples in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Addon Development": {
@@ -80,7 +80,7 @@
     "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Site Exporter": {
-    "message": "Site Exporter",
+    "message": "Site-Exporter",
     "description": "The label for category Site Exporter in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.AffiliateWP": {
@@ -88,7 +88,7 @@
     "description": "The label for category AffiliateWP in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.AI Site Builder": {
-    "message": "KI-Webseiten-Builder",
+    "message": "KI-Website-Builder",
     "description": "The label for category AI Site Builder in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Analytics": {
@@ -104,7 +104,7 @@
     "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Content Sync": {
-    "message": "Inhalts‑Synchronisierung",
+    "message": "Inhaltssynchronisierung",
     "description": "The label for category Content Sync in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Domain Seller": {
@@ -140,7 +140,7 @@
     "description": "The label for category Mailster in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Metered Plans": {
-    "message": "Metered Plans",
+    "message": "Messbasierte Pläne",
     "description": "The label for category Metered Plans in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Network": {
@@ -176,11 +176,11 @@
     "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Addon Template": {
-    "message": "Add-on-Vorlage",
+    "message": "Addon-Vorlage",
     "description": "The label for category Addon Template in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
-    "message": "Tutor Multisite Kompatibilität",
+    "message": "Tutor Multisite-Kompatibilität",
     "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Material WP": {

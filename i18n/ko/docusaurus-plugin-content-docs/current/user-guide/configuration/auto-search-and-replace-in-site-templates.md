@@ -25,8 +25,8 @@ Ultimate Multisite는 고객이 제공한 데이터로 자리 표시자를 자�
 
 **Ultimate Multisite > Settings > Sites**로 이동한 다음 사이드바에서 Edit Placeholders 링크를 클릭하면 템플릿 자리 표시자 편집기에 접근할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 이렇게 하면 자리 표시자 콘텐츠 편집기로 이동하며, 여기에서 자리 표시자와 해당 콘텐츠를 추가할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

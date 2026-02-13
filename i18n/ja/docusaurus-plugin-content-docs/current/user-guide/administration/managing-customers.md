@@ -1,39 +1,39 @@
 ---
-title: '# 顧客管理'
+title: 顧客管理
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Managing Customers
+# 顧客管理
 
-The **Customers** page shows the list of members registered in your network. This page displays basic user information including name, email address, last login, and a **switch to** link that lets you log into the user's subsite as a site administrator.
+**Customers** ページは、ネットワークに登録されたメンバーのリストを表示します。このページでは、名前、メールアドレス、最終ログインなどの基本的なユーザー情報と、サイト管理者としてユーザーのサブサイトにログインできる **switch to** リンクを表示します。
 
-![Customers list page](/img/admin/customers-list.png)
+![顧客一覧ページ](/img/admin/customers-list.png)
 
-Click **Manage** below a customer's card to see detailed information about that customer.
+顧客カードの下にある **Manage** をクリックすると、その顧客の詳細情報が表示されます。
 
-On the customer detail page, the **At a Glance** block shows the customer ID, last login time, and total amount spent by this customer.
+顧客詳細ページでは、**At a Glance** ブロックに顧客ID、最終ログイン時間、そしてこの顧客が支払った総額が表示されます。
 
-The **Customer Options** block lets you set this customer as a **VIP** (a tag to make them easier to find). The **Billing Info** tab shows billing information such as email, address, and country.
+**Customer Options** ブロックでは、この顧客を **VIP** に設定できます（検索しやすくするタグです）。**Billing Info** タブには、メール、住所、国などの請求情報が表示されます。
 
-The **Fields** block shows the customer username, email, and lets you change the **Email Verification** status.
+**Fields** ブロックには、顧客のユーザー名、メールアドレスが表示され、**Email Verification** のステータスを変更できます。
 
-Below the Customer Options block you'll find four additional blocks:
+Customer Options ブロックの下に、以下の4つの追加ブロックがあります：
 
-- **Memberships** — Current subscriptions the customer is subscribed to
-- **Payments** — The customer's payment history
-- **Sites** — Sites this customer owns
-- **Events** — Events related to this customer (email verification, billing changes, etc.)
+- **Memberships** — 顧客が現在加入しているサブスクリプション
+- **Payments** — 顧客の支払い履歴
+- **Sites** — 顧客が所有するサイト
+- **Events** — この顧客に関連するイベント（メール確認、請求変更など）
 
-Click the arrow icon (→) next to any item to navigate to its detail page. For example, clicking the arrow next to a site takes you to the site edit page where you can modify the membership association, site type, and active status.
+任意の項目の横にある矢印アイコン（→）をクリックすると、その詳細ページに移動します。例えば、サイトの横にある矢印をクリックすると、サイト編集ページに移動し、メンバーシップの関連付け、サイトタイプ、アクティブ状態を変更できます。
 
-The same applies to memberships and payments — each links to detail pages where you can edit membership status, associated customer, products, payment gateway settings, and even process refunds.
+メンバーシップと支払いにも同様で、各項目は詳細ページにリンクしており、メンバーシップのステータス、関連顧客、商品、支払いゲートウェイ設定を編集したり、返金処理を行ったりできます。
 
-On the right side of the customer page, you'll find:
+顧客ページの右側には、以下の項目があります：
 
-- **Last Login & IPs** — Last login time, IP address, and country
-- **Timestamps** — When the customer account was created and last modified
-- **Delete** — Option to permanently delete the customer
+- **Last Login & IPs** — 最終ログイン時間、IPアドレス、国
+- **Timestamps** — 顧客アカウントが作成された日時と最後に変更された日時
+- **Delete** — 顧客を完全に削除するオプション
 
 :::warning
-Deleting a customer is permanent and cannot be undone.
+顧客を削除すると、完全に削除され、元に戻すことはできません。
 :::

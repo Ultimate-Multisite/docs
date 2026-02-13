@@ -57,7 +57,7 @@ WordPress Multisite では、すべてのネットワークサイトが同じデ
 
 この理解に基づくと、ユーザーを作成することを許可することは望ましくない場合があります。そのため、WordPress Multisite はサイト管理者からこの機能を削除し、ネットワーク管理者に移動します。ネットワーク管理者は、サイト管理者に必要な権限を委譲して、独自のサイトにユーザーアカウントを作成できるようにします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zg50L2qdJEphzPcgwlo_pqNiYDknE6wiJo4zQUlhQwBCtDeAef2_aTzBBMx76YvTweROsbUH4uvosFRitBj8kgatWzCi_C822oJPWr5bKpwLuoBvTIZ5M9O1nFxOepiav1FkRHNv)
+<!-- Screenshot unavailable: WordPress Multisite network user management interface -->
 
 上記の声明を繰り返すと、ユーザーアカウントはサイトに関連しているように見えますが、実際にはネットワークに割り当てられ、したがってネットワーク全体で一意である必要があります。このため、ユーザー名が登録できない場合があります。
 
@@ -77,11 +77,11 @@ WordPress Multisite では、すべてのネットワークサイトが同じデ
 
 投稿の場合、メインサイトには衝突を防ぐために必須の /blog/ パスが追加されます。したがって、'Post name' のような美しいパーマリンクは domain.name/blog/post-name/ と表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-QUlDfXAzHqImjngoE7UsJHa6DOl6XbQWV17LYthxpxDBy-k453GE5TlJVBA6-sOootX3Fsi34sHv5nSgi1kZmlUD1iMneztCc_HQvZmXpbZEdX2a1il8GJQqxUT8aVPgW5ikR5uG)
+<!-- Screenshot unavailable: WordPress permalink settings showing /blog/ path in subdirectory configuration -->
 
 **サブドメイン** 構成では、この操作は不要です。各ネットワークサイトは完全にドメインを分離しているため、単一のパスに依存する必要はありません。代わりに、各ネットワークサイトは独自の **サブドメイン** に基づく別々のパスを維持します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-2wgqTosYo3GAa3jwaBlPADbFiMbZ-kKUTuQtk0gv5pvkj81UfxnxSyA8R-jD1EZmRMBLjJFoWZJOirTSe8K9OQKeoSYeDj602XBHRrZeRFABE1sw-JERzJzEzMd7FmvrM9G1L9MP)
+<!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
 #### Static Pages
 
@@ -89,7 +89,7 @@ WordPress Multisite では、すべてのネットワークサイトが同じデ
 
 これを防ぐために、WordPress は特定のサイト名をブラックリストに登録する手段を提供し、最初のサイトの名前と衝突しないようにします。通常、ネットワーク管理者はメインサイトのページのルートパスを入力します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-sqwI-k_-3krK0_ortenskDcdGrKpgOD6itvwDc2KEuGk1gZO-rqo_OF9yTqclSmQdrOBwsGPiiOc1oF6c0GMyNELJ-7gbyQNE81juSM3IvgTdWqhZ_UEVt06xJRu8Z8oyAKfLLz-)
+<!-- Screenshot unavailable: WordPress network settings showing banned site names to prevent conflicts -->
 
 **サブドメイン** 構成では、命名衝突の可能性は **サブドメイン** によって緩和されます。これはネットワークサイトに固有であり、メインサイトとは何ら関係ありません。
 
@@ -97,11 +97,11 @@ WordPress Multisite では、すべてのネットワークサイトが同じデ
 
 WordPress Multisite のネットワーク設定では、複数の新規および既存ユーザーがサイトを作成できるようにする新しいユーザー登録オプションがいくつか利用可能です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-nbH9Ka0YhI7nvo3nnKvOr_FoI_FpdAy5hz-f199CW-PV1D-tNKGawhIK_YwlUvM19TjLnhVb6Ro6J0ZpI6s2TRUaHgyGPc4qQI06eQ2O2jeMb_SaktkKwPUw3BSyaNegZYSjXMVX)
+<!-- Screenshot unavailable: WordPress Multisite network settings showing registration options -->
 
 単体の WordPress インストールとは対照的に、ネットワークサイトはユーザー登録を許可するオプションや、これらの登録をロールに割り当てるオプションを保持しません。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-7I21vdReE43e0Utj_KWdnuWA08ZXz7PX33rjSEjwf6T8NDiCBYbeP9GH0J36ekFNkmsXXLBYAWjQJo4vo_kWqL6hXJuFzd9RyA52zy13lT-mMsaK-JdVivUkd5SJF3UF13r2hj28)
+<!-- Screenshot unavailable: WordPress standalone site user registration settings showing limited options -->
 
 ユーザーアカウントが作成されると、これらのアカウントはネットワークレベルで生成されます。したがって、特定のサイトに属するのではなく、ネットワーク全体に属します。これにはいくつかの明確な利点と欠点があります。
 
@@ -153,15 +153,15 @@ Ultimate Multisite は、Website as a Service（WaaS）を作成する際のス�
 
 サイト作成を厳密に管理したいエージェンシーは、Ultimate Multisite のストリームラインされたインターフェースを通じて、サイトを作成し、顧客やプランと関連付けることが容易であると評価します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+![Ultimate Multisite site management interface](/img/admin/sites-list.png)
 
 プラグインとテーマの厳密な管理は、Ultimate Multisite の直感的なインターフェースを通じて、製品ごとに管理され、プラグインとテーマを利用可能または非表示にし、新しいサイトでインスタンス化されたときの有効化状態を設定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-VVpPcr8bvKd2qf9zPB_1SBiVpEYdtmskG_iO0tNCJOm2RXbU6kSC1czyLV1CaU5Mw2fWd-k2r1bnQV_yA4zOL6qnYKLWohnI-EDYhXcpxD_4n-rabGlxjQO8iyjtOgXhuDL5r2y7)
+![Product plugin limitations interface](/img/config/product-plugins.png)
 
 テーマは同様の機能を提供し、サイト作成時に特定のテーマを有効化または非表示にできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3CEl6U5CPdKatlXAcG5B9jJux_iWOYpUTI4crCgW15EFkhh4pODF7hYlMyzc3na8QAefadz1kcnY_T7Yn6ZyxbBMJdfRfa16IFZma_-u7NHTtMbLZwJ9f7JbqG1QTh0y1l9WWj5z)
+![Product theme limitations interface](/img/config/product-themes.png)
 
 エージェンシーは、Ultimate Multisite を使用して卓越したウェブサイトを設計することに集中できるため、安心感を得られます。
 
@@ -265,7 +265,7 @@ WordPress で問題を解決できないものはほぼありません。外部�
 
 マルチサイトの **サブドメイン** モードでのドメイン名については、ほぼすべてのネットワーク管理者にとってワイルドカード DNS エントリを使用するのが最も一般的な解決策です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GwkLVUQ9Wb.png)
+![Wildcard DNS entry configuration example](/img/config/settings-domain-mapping.png)
 
 このタイプの DNS エントリは、site1.domain.com や site2.domain.com などの **サブドメイン** を 1.2.3.4 の IP アドレスに正しく解決し、Ultimate Multisite と WordPress Multisite の **サブドメイン** モードをサポートします。
 

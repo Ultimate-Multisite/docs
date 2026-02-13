@@ -1,22 +1,20 @@
 ---
 id: wu_template_previewer
-title: >-
-  I’m ready to translate the content, but I need the actual Markdown/MDX text
-  you’d like me to translate. Could you please provide the file’s contents?
+title: Action - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer
+# Action : wu_template_previewer
 
-Exécute lorsqu'on se trouve dans le contexte du visualiseur de modèles.
+S'exécute lorsqu'on est dans le contexte du prévisualiseur de modèles.
 
 ## Parameters
 
-| Name | Type | Description |
+| Nom | Type | Description |
 |------|------|-------------|
-| $template_previewer | `self` | Instance de la classe actuelle. |
+| $template_previewer | `self` | Instance de la classe courante. |
 
-### Since
+### Depuis
 
 - 2.0.4
 ### Source

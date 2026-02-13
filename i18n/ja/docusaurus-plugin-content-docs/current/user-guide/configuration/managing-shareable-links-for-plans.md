@@ -7,7 +7,7 @@ _i18n_hash: c891b25549cd81c8f45ba60ee6e74105
 
 Ultimate Multisite では、プランリンクをクライアントと直接共有するオプションを提供しています。これを行うには、任意のプラン編集ページに移動し、_Click to copy the Shareable Link_ ボタンをクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2DJoMvapXh.png)
+![Product edit page with shareable link button](/img/config/product-edit-full.png)
 
 _プラン編集ページで、共有リンクを作成するボタンが見つかります_
 

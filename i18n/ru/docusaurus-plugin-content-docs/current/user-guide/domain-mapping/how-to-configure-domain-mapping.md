@@ -19,7 +19,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Во время установки Ultimate Multisite мастер автоматически скопирует и установит файл **sunrise.php** в назначенную папку. **Мастер не позволит вам продолжить до завершения этого шага**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zrBdFs13Dy.png)
+![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
 
 Это означает, что как только мастер установки Ultimate Multisite завершит настройку вашей сети, вы можете сразу начать привязывать пользовательский домен.
 
@@ -27,7 +27,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Если вам нужно отключить привязку домена Ultimate Multisite, чтобы уступить место другим решениям для привязки доменов, вы можете отключить эту функцию в **Ultimate Multisite > Settings > Domain Mapping**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbrC47pTcX.png)
+![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
 
 Ниже этого параметра вы также увидите опцию **Force Admin Redirect**. Эта опция позволяет вам контролировать, смогут ли ваши клиенты получить доступ к своей админ-панели как на их пользовательском домене, так и на поддомене, или только на одном из них.
 
@@ -37,7 +37,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 А опция **Allow access to the admin by both mapped domain domain and network domain** позволяет им получать доступ к админ-панелям как на поддомене, так и на пользовательском домене.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JYwHPWhYwV.png)
+![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
 
 Существует два способа привязки пользовательского домена. Первый — привязка имени домена из панели администратора сети в качестве супер‑администратора, а второй — через панель администратора подсайта на странице аккаунта.
 
@@ -57,11 +57,11 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Когда вы вошли в систему как супер‑администратор сети, вы можете легко добавлять и управлять пользовательскими доменами, перейдя в **Ultimate Multisite > Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5XxtXP622s.png)
+![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
 
 На этой странице вы можете нажать кнопку **Add Domain** вверху, и откроется модальное окно, где вы можете задать и заполнить **custom domain name**, **подсайт**, к которому хотите применить пользовательский домен, и решить, хотите ли вы установить его как **primary domain** или нет (обратите внимание, что вы можете привязать **несколько доменов к одному подсайту**).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rD6fnbzRe9.png)
+![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
 
 После ввода всей информации вы можете нажать кнопку **Add Existing Domain** внизу.
 
@@ -69,13 +69,13 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 **Stage** или статус должен измениться с **Checking DNS** на **Ready**, если всё настроено правильно.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3g2mkrlk75we98uhscagnr3ini0s)
+![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5dIPdYQfZi.png)
+![Domain with Ready status in domains list](/img/admin/domains-list.png)
 
 Если вы нажмете на имя домена, вы сможете увидеть некоторые опции внутри него. Давайте быстро посмотрим на них:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5tCiNUIKih.png)
+![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
 
 **Stage:** Это стадия, на которой находится домен. Когда вы впервые добавляете домен, он, вероятно, будет находиться на стадии **Checking DNS**. Процесс проверит записи DNS и подтвердит, что они правильные. Затем домен перейдет на стадию **Checking SSL**. Ultimate Multisite проверит, есть ли у домена SSL, и классифицирует ваш домен как **Ready** или **Ready (without SSL)**.
 
@@ -93,25 +93,25 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Сначала убедитесь, что вы включили эту опцию в настройках **Domain mapping**. См. скриншот ниже.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M3MO6RKBWe.png)
+![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
 
 Вы также можете установить или настроить эту опцию на уровне **Plan** или в опциях продукта в **Ultimate Multisite > Products**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JRqx7Uhqsa.png)
+![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
 
 Когда любая из этих опций включена и пользователь подсайта разрешено привязывать пользовательские домены, пользователь подсайта должен увидеть метабокс на странице **Account** под названием **Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DUeHUY66yP.png)
+![Domains metabox on the subsite account page](/img/admin/domains-list.png)
 
 Пользователь может нажать кнопку **Add Domain**, и откроется модальное окно с некоторыми инструкциями.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-n5mNhDpL38.png)
+![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
 
 Пользователь затем может нажать **Next Step** и продолжить добавление пользовательского домена. Он также может выбрать, будет ли это основным доменом или нет.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0vlbs2dcaz.png)
+![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zez2zeiqz8mi67o7izkg3d7x43ve)Нажатие **Add Domain** начнет процесс проверки и получения информации DNS пользовательского домена.
+![Click Add Domain to start DNS verification](/img/admin/domains-list.png)Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
 
 ### О синхронизации доменов
 
@@ -121,8 +121,8 @@ Domain Syncing — это процесс, при котором Ultimate Multisi
 
 Вам нужно активировать эту интеграцию в настройках Ultimate Multisite во вкладке **Integration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-k6i46r4x2yddii0op4x343jizq20)
+![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMADuxaH62.png)
+![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
 
 _Обратите внимание, что если ваш хостинг‑провайдер не является одним из упомянутых выше, **вам понадобится вручную синхронизировать или добавить имя домена** в ваш хостинг‑аккаунт._

@@ -15,7 +15,7 @@ Ultimate Multisite no presenta ni remite impuestos en su nombre al gobierno; sim
 
 La recolección de impuestos no está habilitada por defecto. Para activarla, debe ir a **Ultimate Multisite > Settings > Taxes** y activar la opción Enable Taxes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICSEhm7yhk.png)
+![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Impuesto excluido vs. impuesto incluido
 
@@ -23,7 +23,7 @@ Por defecto, todos los precios de sus productos están excluidos de impuestos, l
 
 Si prefiere que los impuestos estén incluidos en el precio de su producto, puede hacerlo habilitando la opción **Inclusive Tax**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xiiaIXYI2c.png)
+![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
 
 No olvide **guardar** los cambios que haya realizado.
 
@@ -33,11 +33,11 @@ Después de habilitar la recolección de impuestos, deberá crear tasas de impue
 
 Puede acceder al editor haciendo clic en el botón **Manage Tax Rates** en la barra lateral de la página de configuración de impuestos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UZb6g2rvrs.png)
+![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
 
 En la página del editor de tasas de impuestos, puede agregar nuevas Tasas de Impuestos haciendo clic en el botón **Add new Row**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZyJCSI6zLZ.png)
+![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
 
 Deberá asignar a cada tasa de impuesto un **title** (utilizado en las facturas). Luego puede elegir el **country** (obligatorio), el **state** y la **city** (ambos opcionales) donde se cobrará este impuesto. Finalmente, añada la **tax rate in percents**.
 
@@ -47,19 +47,19 @@ También puede crear múltiples Categorías de Impuestos, para añadir diferente
 
 Haga clic en **Add new Tax Category**, luego escriba el nombre de su categoría y presione **Create**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-73biI4o8lj.png)
+![Add new Tax Category button](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YhH2hLLvEC.png)
+![Creating a new tax category](/img/config/settings-taxes.png)
 
 Para navegar por las categorías, haga clic en **Switch** y seleccione la categoría a la que desea agregar nuevos impuestos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xjghTq6ta4.png)
+![Switch between tax categories](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E5YLXeIsWH.png)
+![Selecting a tax category to view](/img/config/settings-taxes.png)
 
 Puede establecer la categoría de impuesto para un producto en particular yendo a la **Product edit page** y luego a la pestaña Taxes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vkh5NXKplU.png)
+![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
 
 En esa misma pantalla, puede desactivar el interruptor **Is Taxable?** para indicar a Ultimate Multisite que no debe recaudar impuestos sobre ese producto.
 
@@ -74,21 +74,21 @@ Nuestras herramientas de IVA ayudan con un par de cosas importantes:
 
 Para instalar ese add-on, vaya a **Ultimate Multisite > Settings** y luego haga clic en el enlace de la barra lateral **Check our Add-ons**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AsMyAH5HKC.png)
+![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
 
 Será redirigido a nuestra página de complementos. Allí, puede buscar el **Ultimate Multisite VAT add-on** y instalarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AQ6gWfdY5G.png)
+![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iz8uncHiYa.png)
+![VAT add-on install dialog](/img/config/settings-taxes.png)
 
 Luego, vaya a **Network Admin > Plugins** y active ese add-on a nivel de red.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PkWGMWlgVu.png)
+![Network Activate the VAT add-on](/img/config/settings-taxes.png)
 
 Si vuelve a la pestaña **Tax Settings**, verá nuevas opciones disponibles. Active la opción **Enable VAT Support** para habilitar las nuevas herramientas de IVA. ¡No olvide **guardar** sus ajustes!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Gn1SspQZ0S.png)
+![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Descargando tasas de impuestos de IVA
 
@@ -96,7 +96,7 @@ Una de las herramientas que añade nuestra integración es la capacidad de carga
 
 En la parte inferior de la página, verá las opciones de descarga de IVA. Seleccionar un tipo de tasa y hacer clic en el botón **Update EU VAT Rates** descargará y completará automáticamente la tabla con las tasas de impuestos para cada estado miembro de la UE. Luego, solo necesita guardarla.
 
-### ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZKEqPBX5E.png)
+### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
 
 También puede editar los valores después de descargarlos. Para hacerlo, simplemente edite la línea de la tabla que necesite y haga clic para guardar los nuevos valores.
 
@@ -104,6 +104,6 @@ También puede editar los valores después de descargarlos. Para hacerlo, simple
 
 Cuando el soporte de IVA está habilitado, Ultimate Multisite agregará un campo adicional al formulario de pago, debajo del campo de dirección de facturación. El campo solo aparecerá para clientes ubicados en la UE.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ITUbFOIM4r.png)
+![VAT number field on the checkout form](/img/config/settings-taxes.png)
 
 Ultimate Multisite luego validará el número de IVA y, si resulta ser válido, se aplicará el mecanismo de cargo inverso y la tasa de impuesto se establecerá en 0% en ese pedido.

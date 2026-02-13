@@ -1,6 +1,6 @@
 ---
 id: wu_pending_payment_message
-title: Could you please provide the Markdown/MDX content that needs to be translated?
+title: 过滤器 - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
@@ -22,4 +22,4 @@ _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 
 ### 源码
 
-定义在 [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) 在第 244 行
+在 [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) 的第 244 行定义。

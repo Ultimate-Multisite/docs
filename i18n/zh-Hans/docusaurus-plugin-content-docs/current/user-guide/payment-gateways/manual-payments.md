@@ -17,26 +17,26 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 在此框中添加客户完成付款所需的信息，例如您的银行账户详情和电子邮件，以便客户向您发送付款确认。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U0K40VsARU.png)
+![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
 
 设置完成后，只需点击 **Save Settings**，即可完成。当用户注册到您的网络时，他们会看到一条消息，告知他们将收到完成购买的说明。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-drAYOHh331.png)
+![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
 
 他们还会在您的 **Thank You** 页面收到一条包含付款说明的消息。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Nf6HTYbu2g.png)
+![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
 
 ## 确认手动支付
 
 要确认手动支付，请在左侧栏的 **Payments** 菜单中操作。您可以在此查看网络中所有支付及其详细信息，包括 **status**。手动支付始终处于 **Pending** 状态，直到您手动更改。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C3U9LgT2Ev.png)
+![Payments list showing pending manual payment](/img/admin/payments-list.png)
 
 点击 **reference code** 进入支付页面。在此页面中，您可以查看待处理支付的所有细节，例如参考 ID、产品、时间戳等。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sXfbxcYFs6.png)
+![Payment details page with reference code and products](/img/admin/payments-list.png)
 
 在右侧栏中，您可以更改支付状态。将其改为 **Completed** 并 **toggling the Activate Membership** 选项，将启用客户的网站并激活其会员资格。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-q5hHRxdhfg.png)
+![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)

@@ -19,7 +19,7 @@ El mapeo de dominio requiere cierta configuración de tu parte para funcionar. A
 
 Durante la instalación de Ultimate Multisite, el asistente copiará e instalará automáticamente el **sunrise.php** en la carpeta designada. **El asistente no te permitirá continuar hasta que este paso esté completado**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zrBdFs13Dy.png)
+![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
 
 Esto significa que una vez que el asistente de instalación de Ultimate Multisite haya completado la configuración de tu red, puedes comenzar a mapear el dominio personalizado de inmediato.
 
@@ -27,7 +27,7 @@ Ten en cuenta que el mapeo de dominio en Ultimate Multisite no es obligatorio. T
 
 Si necesitas desactivar el mapeo de dominio de Ultimate Multisite para dar paso a otras soluciones de mapeo de dominio, puedes desactivar esta función en **Ultimate Multisite > Settings > Domain Mapping**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbrC47pTcX.png)
+![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
 
 Justo debajo de esta opción, también puedes ver la opción **Force Admin Redirect**. Esta opción te permite controlar si tus clientes podrán acceder a su panel de administración tanto en su dominio personalizado como en su subdominio o solo en uno de ellos.
 
@@ -37,7 +37,7 @@ La opción **Force redirect to** **network domain** hará exactamente lo contrar
 
 Y la opción **Allow access to the admin by both mapped domain domain and network domain** les permite acceder a sus paneles de administración tanto en el subdominio como en el dominio personalizado.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JYwHPWhYwV.png)
+![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
 
 Hay dos formas de mapear un dominio personalizado. La primera es mapear el nombre de dominio desde el panel de administración de la red como super administrador y la segunda es a través del panel de administración del subsitio bajo la página de cuenta.
 
@@ -57,11 +57,11 @@ Si planeas permitir que tus clientes mapeen sus propios dominios, deberán hacer
 
 Cuando inicies sesión como super administrador en tu red, puedes agregar y administrar fácilmente nombres de dominio personalizados yendo a **Ultimate Multisite > Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5XxtXP622s.png)
+![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
 
 En esta página, puedes hacer clic en el botón **Add Domain** en la parte superior y se abrirá una ventana modal donde puedes establecer y completar el **custom domain name**, **el subsitio** al que deseas aplicar el nombre de dominio personalizado, y decidir si quieres configurarlo como el nombre de dominio **primary** o no (ten en cuenta que puedes mapear **múltiples nombres de dominio a un subsitio**).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rD6fnbzRe9.png)
+![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
 
 Después de ingresar toda la información, puedes hacer clic en el botón **Add Existing Domain** en la parte inferior.
 
@@ -69,13 +69,13 @@ Esto iniciará el proceso de verificación y obtención de la información DNS d
 
 El **Stage** o el estado debería cambiar de **Checking DNS** a **Ready** si todo está configurado correctamente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3g2mkrlk75we98uhscagnr3ini0s)
+![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5dIPdYQfZi.png)
+![Domain with Ready status in domains list](/img/admin/domains-list.png)
 
 Si haces clic en el nombre de dominio, podrás ver algunas opciones dentro de él. Echemos un vistazo rápido a ellas:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5tCiNUIKih.png)
+![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
 
 **Stage:** Esta es la etapa en la que se encuentra el dominio. Cuando agregas el dominio por primera vez, probablemente estará en la etapa **Checking DNS**. El proceso verificará las entradas DNS y confirmará que son correctas. Luego, el dominio se colocará en la etapa **Checking SSL**. Ultimate Multisite verificará si el dominio tiene SSL o no y clasificará tu dominio como **Ready** o **Ready (without SSL)**.
 
@@ -93,25 +93,25 @@ Los administradores de subsitio también pueden mapear nombres de dominio person
 
 Primero, debes asegurarte de habilitar esta opción en la configuración de **Domain mapping**. Consulta la captura de pantalla a continuación.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M3MO6RKBWe.png)
+![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
 
 También puedes establecer o configurar esta opción en el nivel **Plan** o en las opciones de producto en **Ultimate Multisite > Products**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JRqx7Uhqsa.png)
+![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
 
 Cuando cualquiera de esas opciones esté habilitada y se permita a un usuario de subsitio mapear nombres de dominio personalizados, el usuario de subsitio debería ver un metabox bajo la página **Account** llamado **Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DUeHUY66yP.png)
+![Domains metabox on the subsite account page](/img/admin/domains-list.png)
 
 El usuario puede hacer clic en el botón **Add Domain** y se abrirá una ventana modal con algunas instrucciones.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-n5mNhDpL38.png)
+![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
 
 El usuario puede hacer clic en **Next Step** y proceder a agregar el nombre de dominio personalizado. También pueden elegir si será el dominio principal o no.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0vlbs2dcaz.png)
+![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zez2zeiqz8mi67o7izkg3d7x43ve)Hacer clic en **Add Domain** iniciará el proceso de verificación y obtención de la información DNS del dominio personalizado.
+![Click Add Domain to start DNS verification](/img/admin/domains-list.png)Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
 
 ### Acerca de la Sincronización de Dominio
 
@@ -121,8 +121,8 @@ La sincronización de dominio ocurre automáticamente si tu proveedor de hosting
 
 Necesitarás activar esta integración en la configuración de Ultimate Multisite bajo la pestaña **Integration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-k6i46r4x2yddii0op4x343jizq20)
+![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMADuxaH62.png)
+![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
 
 _Nota que si tu proveedor de hosting no es uno de los proveedores mencionados anteriormente, **deberás sincronizar manualmente o agregar el nombre de dominio** a tu cuenta de hosting._

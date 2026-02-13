@@ -25,8 +25,8 @@ Pour résoudre ce problème, nous proposons l'option de définir de fausses vale
 
 Vous pouvez accéder à l'éditeur d'espaces réservés du modèle en allant dans **Ultimate Multisite > Settings > Sites**, puis, dans la barre latérale, en cliquant sur le lien Edit Placeholders.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 Cela vous amènera à l'éditeur de contenu des espaces réservés, où vous pouvez ajouter des espaces réservés et leur contenu respectif.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

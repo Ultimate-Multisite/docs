@@ -1,91 +1,91 @@
 ---
 title: WooCommerce 集成
 sidebar_position: 1
-_i18n_hash: 58f0a02be92223c785c1086def91b0fb
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce 集成
 
-WooCommerce Integration 的工作方式与我们的 Manual Gateway 非常相似。它为您的用户提供了大量灵活性，允许他们选择在您的 WooCommerce 安装中可用的任何支付表单。而且它很简单：一旦用户的计费周期结束，用户的订阅将被暂停。与此同时，网络主站的 WooCommerce 安装上将创建一个订单。随后，用户会在其电子邮件中收到一张发票，其中包含用于完成支付的链接。一旦收到付款，订阅将被续订。
+WooCommerce 集成的工作方式与我们的 Manual Gateway 非常相似。它为您的用户提供了大量灵活性，允许他们选择 WooCommerce 安装中可用的任何支付表单。并且它很简单：一旦用户的计费周期结束，用户订阅将被暂停。与此同时，主站点网络的 WooCommerce 安装上将创建一个订单。随后用户会在电子邮件中收到发票，其中包含执行支付的链接。支付收到后，订阅将被续订。
 
-## Features
+## 功能
 
-- Ultimate Multisite 与 WooCommerce 的轻松集成
-- 提供多种支付方式
-- 与 WooCommerce Subscriptions 完全自动化的流程
+- 与 Ultimate Multisite 和 WooCommerce 的轻松集成
+- 可用的多种支付方式
+- 与 WooCommerce Subscriptions 完全自动化流程
 
-## Documentation
+## 文档
 
-**Setting Up The WooCommerce Integration**
+**设置 WooCommerce 集成**
 
-**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+**使用 Ultimate Multisite 扩展您的支付选项：WooCommerce 集成**
 
-## Installation
+## 安装
 
 1. 将 'ultimate-multisite-woocommerce' 上传到 '/wp-content/plugins/' 目录
-2. 通过 WordPress 的 'Plugins' 菜单激活插件
+2. 通过 WordPress 的 '插件' 菜单激活插件
 3. 按照逐步向导设置插件
 
-## Usage Guide
+## 使用指南
 
 _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
-_**注意：Ultimate Multisite: WooCommerce Integration 至少需要在您的主站激活 WooCommerce。**_
+_**注意：** Ultimate Multisite: WooCommerce Integration 至少需要在您的主站点激活 WooCommerce。**_
 
-我们了解到 _Stripe_ 和 _PayPal_ 在某些国家不可用，这限制或阻碍了 Ultimate Multisite 用户有效使用我们的插件。因此，我们创建了一个 **add-on 来集成 _WooCommerce_**。
+我们了解到 _Stripe_ 和 _PayPal_ 在某些国家不可用，限制或阻碍 Ultimate Multisite 用户有效使用我们的插件。因此，我们创建了一个 **集成 _WooCommerce_ 的插件**。
 
-_WooCommerce_ 是一款非常流行的电子商务插件。全球开发者创建了各种 add-ons 来集成不同的支付网关。我们利用这一点来扩展您可以在 Ultimate Multisite 计费系统中使用的支付网关。
+_WooCommerce_ 是一款非常流行的电子商务插件。全球开发者为其创建了集成不同支付网关的插件。我们利用这一点来扩展您可以在 Ultimate Multisite 计费系统中使用的支付网关。
 
-## Setting It Up
+## 设置
 
-首先，您需要安装 WooCommerce Integration add-on，该插件 **对已授权用户免费**。要安装它，请在超级管理员仪表盘中点击 Ultimate Multisite 并选择 **Add-ons**。
+首先，您需要安装 WooCommerce Integration 插件，它 **对已授权用户免费**。要安装它，请在超级管理员仪表盘中点击 Ultimate Multisite 并选择 **Add-ons**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RRyV5DYA9v.png)
+![插件页面](/img/admin/addons-page.png)
 
-在此，您可以找到所有 Ultimate Multisite add-ons。点击 **Ultimate Multisite: WooCommerce Integration** add-on。
+在此您可以找到所有 Ultimate Multisite 插件。点击 **Ultimate Multisite: WooCommerce Integration** 插件。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4AiiRzTKme.png)
+![显示 WooCommerce Integration 的插件页面](/img/admin/addons-page.png)
 
-将弹出一个窗口显示 add-on 详情。只需点击 **Install Now** *.*
+将弹出一个窗口显示插件详情。只需点击 **Install Now** *.*  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMfodJJZN5.png)
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
 
-安装完成后，您将被重定向到插件页面。在此，只需点击 **Network Activate**，然后 _WooCommerce_ add-on 将在您的网络上激活。
+安装完成后，您将被重定向到插件页面。在此，只需点击 **Network Activate**，WooCommerce 插件将在您的网络上激活。  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LQkSxAF1Sn.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
 
-激活后，如果您网站上仍未安装并激活 WooCommerce 插件，**您将收到提醒**。
+激活后，如果您网站上仍未安装并激活 WooCommerce 插件，**您将收到提醒**。  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1U4DaZPAiR.png)
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
 
-安装后，您将在 Ultimate Multisite 支付设置下看到一个额外选项。然后，您可以从那里 **启用** _WooCommerce_ 选项。
+安装后，您将在 Ultimate Multisite 支付设置下看到一个额外选项。然后，您可以从那里 **启用** WooCommerce 选项。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HDQ1SG1pYO.png)
+![支付网关设置](/img/config/settings-payment-gateways.png)
 
-您可以配置一些基本设置，例如在前端显示的名称和指导用户完成结账流程的说明。然后，您可以进入 **主站的 _WooCommerce_ 设置**，启用并配置您想使用的支付网关。
+您可以配置一些基本设置，例如将在前端显示的名称和指导用户完成结账流程的说明。然后，您可以转到 **主站点的 WooCommerce 设置**，启用并配置您想使用的支付网关。
 
-## How to manage the payment
+## 如何管理支付
 
-WooCommerce Integration 的工作方式与我们的 **Manual Gateway** 非常相似。缺点是每笔付款必须在计费周期结束时手动支付。以下是流程：
+WooCommerce Integration 的工作方式与我们的 **Manual Gateway** 非常相似。缺点是每笔支付必须在计费周期结束时手动完成。以下是流程：
 
-* 当用户的计费周期结束时，会员将被 **暂停**。与此同时，网络主站的 _WooCommerce_ 安装上将创建一个订单。
-* 用户随后会在其电子邮件中收到一张发票，其中包含用于完成支付的链接（该链接也会出现在他们子站仪表盘的计费历史中）。该链接会将用户重定向到 _**WooCommerce**_ **checkout**，在此用户可以选择 **可用的 _WooCommerce_ 网关** 来处理付款。
-* 一旦收到付款，会员将被 **续订**，付款将记录在 Ultimate Multisite 上，订单状态设为完成。
+- 当用户的计费周期结束时，会员将被 **暂停**。同时，在您网络的主站点的 WooCommerce 安装上将创建一个订单。
+- 用户随后会在电子邮件中收到发票，其中包含执行支付的链接（该链接也会出现在他们子站点仪表盘的计费历史中）。该链接将用户重定向到 _**WooCommerce**_ **checkout**，在此用户可以选择 **可用的 WooCommerce 网关** 来处理支付。
+- 一旦收到支付，会员将被 **续订**，支付将记录在 Ultimate Multisite 中，订单状态设为完成。
 
 ### 一些重要说明：
 
-* Ultimate Multisite 的默认功能仍然适用于此集成表单。例如，从 **Subscription Management** 屏幕发起 **退款** 将与 WooCommerce 通信，使用所选支付表单发起退款。
-* Ultimate Multisite: WooCommerce Integration 依赖 WP-Cron 运行。大多数情况下效果很好，但如果站点流量低，cron 可能不会被触发检查计划事件，导致事件被遗漏，从而产生执行延迟。
+- Ultimate Multisite 的默认功能仍然适用于此集成表单。例如，从 **Subscription Management** 屏幕发起退款将与 WooCommerce 通信，使用所选支付表单发起退款。
+- Ultimate Multisite: WooCommerce Integration 依赖 WP-Cron 运行。大多数情况下效果很好，但如果站点流量低，cron 可能不会被触发检查计划事件，导致事件被遗漏，从而产生执行延迟。
 
-## Woocommerce Subscriptions Plugin
+## WooCommerce Subscriptions 插件
 
-每月手动发起付款对最终用户来说并不理想，因为订阅应在每个计费周期自动循环。因此，我们设计了 WooCommerce Integration add-on 来 **支持 WooCommerce Subscriptions 插件**。这将自动化付款，使交易更便捷。
+每月手动发起支付对最终用户来说并不理想，因为订阅应在每个计费周期自动循环。因此，我们设计了 WooCommerce Integration 插件来 **支持 WooCommerce Subscriptions 插件**。这将自动化支付，使交易对最终用户更简单。
 
-您只需 **安装** [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) 并在主站激活它。然后返回 Ultimate Multisite 支付设置，**启用集成**。
+您只需 **安装** [WooCommerce Subscriptions 插件](https://woocommerce.com/products/woocommerce-subscriptions/) 并在主站点上 **激活**。然后返回 Ultimate Multisite 支付设置，**启用集成**。
 
-就这样。您的最终用户将不再需要在计费周期结束时手动付款。
+就这样。您的最终用户将不再需要在计费周期结束时手动支付。
 
-除了在主站下创建订单到 _Woocommerce_，它还会为每个账户创建一个订阅。
+除了在主站点下创建订单外，它还会为每个账户创建一个订阅。

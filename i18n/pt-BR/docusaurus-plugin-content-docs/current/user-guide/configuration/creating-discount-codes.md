@@ -13,19 +13,19 @@ Com o Ultimate Multisite, você pode criar códigos de desconto para oferecer de
 
 Para criar ou editar um código de desconto, vá para **Ultimate Multisite > Códigos de Desconto**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-G2iYAraljI.png)
+![](/img/config/discount-codes-list.png)
 
 Você terá uma lista dos códigos de desconto que já criou.
 
 Você pode clicar em **Adicionar Código de Desconto** para criar um novo cupom ou editar os que já possui passando o mouse sobre eles e clicando em **Editar**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-nl6H0I06Jl.png)
+![Discount codes list with hover actions](/img/config/discount-codes-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3puhU5xCFF.png)
+![Add Discount Code button](/img/config/discount-codes-list.png)
 
 Você será redirecionado para a página onde poderá criar ou editar seu código de cupom. Neste exemplo, criaremos um novo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9dup6xM4Cx.png)
+![Discount code edit page](/img/config/discount-codes-list.png)
 
 Vamos dar uma olhada nas configurações disponíveis aqui:
 
@@ -33,25 +33,25 @@ Vamos dar uma olhada nas configurações disponíveis aqui:
 
 **Descrição:** Aqui, você pode descrever brevemente para que serve este cupom.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-V97PvPqtmK.png)
+![Discount code name and description fields](/img/config/discount-codes-list.png)
 
 **Código do Cupom:** Aqui é onde você define o código que seus clientes precisarão inserir durante o checkout.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-En58UdF3b7.png)
+![Coupon code field](/img/config/discount-codes-list.png)
 
 **Desconto:** Aqui, você pode definir um **percentual** ou um **valor fixo** de dinheiro para seu código de desconto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-96cicxcs7f.png)
+![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
 
 **Aplicar às renovações:** Se esta opção estiver desativada, o código de desconto será aplicado apenas ao **primeiro pagamento**. Todos os demais pagamentos não terão desconto. Se esta opção estiver ativada, o código de desconto será válido para todos os pagamentos futuros.
 
 **Desconto na taxa de configuração:** Se esta opção estiver desativada, o código do cupom **não oferecerá nenhum desconto na taxa de configuração** do pedido. Se esta opção estiver ativada, você pode definir o desconto (percentual ou valor fixo) que este código de cupom aplicará à taxa de configuração de seus planos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zDYmcgHcoq.png)
+![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
 
 **Ativo:** Ative ou desative manualmente este código de cupom.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rwNFfGobBB.png)
+![Active toggle for discount code](/img/config/discount-codes-list.png)
 
 Under **Advanced Options**, we have the following settings:
 
@@ -61,21 +61,21 @@ Under **Advanced Options**, we have the following settings:
 
   * **Máx. usos:** Isso limitará a quantidade de vezes que os usuários podem usar este código de desconto. Por exemplo, se você colocar 10 aqui, o cupom só poderá ser usado 10 vezes. Após esse limite, o código de desconto não poderá mais ser usado.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zx4xudymt2.png)**Datas de início e expiração:** Aqui você terá a opção de adicionar uma data de início e/ou uma data de expiração ao seu cupom.
+![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AyTJkzxz9W.png)
+![Start and expiration date fields](/img/config/discount-codes-list.png)
 
 **Limitar produtos:** Se você ativar **Selecionar produtos**, todos os seus produtos serão exibidos. Você terá a opção de selecionar manualmente (ativando ou desativando) quais produtos podem aceitar este código de cupom. Produtos que estiverem desativados aqui não mostrarão nenhuma alteração se seus clientes tentarem usar este código de cupom neles.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OHK9Bgsaq7.png)
+![Limit products selection toggles](/img/config/discount-codes-list.png)
 
 Depois de configurar todas essas opções, clique em **Salvar Código de Desconto** para salvar seu cupom e pronto!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wAAoviDov8.png)
+![Save Discount Code button](/img/config/discount-codes-list.png)
 
 O cupom agora está em sua lista e, a partir daí, você pode clicar para **editar ou excluir**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ySn575AxqX.png)
+![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
 
 ### 
 

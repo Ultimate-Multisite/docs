@@ -15,7 +15,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 
   * [**マッピングされたドメインでの Font-Icons の CORS 問題を修正する**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## アカウントメニュー項目の位置を変更する
+## アカウントメニュー項目の位置を変更する {#changing-the-position-of-the-account-menu-item}
 
 クライアントのダッシュボードでアカウントメニュー項目の位置を変更するには、メインサイトのアクティブテーマの functions.php に以下のコードスニペットを追加するだけです。スニペットを mu-plugins やカスタムプラグインのいずれかに配置することもできます。
 
@@ -23,7 +23,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## ユーザーが特定のプランに属しているか、またはアクティブなサブスクリプションを持っているかどうかを確認する方法
+## ユーザーが特定のプランに属しているか、またはアクティブなサブスクリプションを持っているかどうかを確認する方法 {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 ネットワーク管理者として、サブスクリプションの状態とサブスクライブしているプランに基づいて、基本的なアクションを実行したり、選択されたサブスクライバーやエンドユーザーにサービス/機能を提供したりするカスタム関数を作成する必要がある場合があります。
 
@@ -53,11 +53,9 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 注意：ユーザーは **Plan** にのみサブスクライブできます。パッケージやサービスにはサブスクライブできません。パッケージやサービスは **Plan** のアドオンにすぎません。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## マッピングされたドメインでの Font-Icons の CORS 問題を修正する
-
-## マッピングされたドメインでの Font-Icons の CORS 問題を修正する
+## マッピングされたドメインでの Font-Icons の CORS 問題を修正する {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 ドメインをサブサイトにマッピングした後、サイトがカスタムフォントの読み込みに問題があることに気付く場合があります。これはサーバー設定のクロスオリジンブロックが原因です。
 

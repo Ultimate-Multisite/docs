@@ -9,18 +9,18 @@ Het **sunrise.php**-bestand is een speciaal bestand waar WordPress naar zoekt ti
 
 Wanneer je Ultimate Multisite activeert en door de installatiewizard gaat zoals op de screenshot, probeert Ultimate Multisite ons **sunrise.php**-bestand naar de **wp-content folder** te kopiëren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-v6hosgLWpt.png)
+<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
 
 Meestal kunnen we het bestand succesvol kopiëren en werkt alles. Als echter iets niet correct is ingesteld (bijvoorbeeld maprechten), kun je een situatie tegenkomen waarin Ultimate Multisite het bestand niet kan kopiëren.
 
 Als je het foutbericht leest dat Ultimo je geeft, zie je dat dit precies is wat hier gebeurde: **Sunrise copy failed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RXS5EbirfM.png)
+<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
 
 Om dit op te lossen, kun je het **sunrise.php**-bestand simpelweg kopiëren vanuit de **wp-ultimo plugin folder** en het in je **wp-content folder** plakken. Nadat je dat hebt gedaan, laad je de wizardpagina opnieuw en moeten de controles slagen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p6hz1I9ycl.png) In elk geval kan dit een algemene controle van je maprechten rechtvaardigen om toekomstige problemen te voorkomen (niet alleen met Ultimate Multisite, maar ook met andere plugins en thema's).
+<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
 
 De **Health Check tool** die onderdeel is van WordPress (je kunt er via je hoofdsite **admin panel > Tools > Health Check** bij) kan je laten weten of je maprechten zijn ingesteld op waarden die problemen met WordPress kunnen veroorzaken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oZEKeyxo2E.png)
+<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->

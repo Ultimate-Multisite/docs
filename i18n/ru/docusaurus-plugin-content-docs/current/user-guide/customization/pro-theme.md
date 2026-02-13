@@ -11,7 +11,7 @@ PRO Theme – это админ‑тема, разработанная, чтоб
 
 После установки перейдите на страницу _Plugins_ и нажмите, чтобы активировать его в вашей сети.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _Активируйте его в сети на странице Plugins_
 
@@ -19,29 +19,29 @@ _**ПРИМЕЧАНИЕ:**_ _Если вы просто установите е�
 
 Теперь ваш админ‑интерфейс полностью переосмыслен! У вас также появилось новое меню в левой колонке под названием PRO Theme.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 _Новый внешний вид вашей админ‑панели_
 
 В этом меню вы получите доступ к пяти вкладкам:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 _Настройки стилей_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 _Функциональность_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 _Пользовательский CSS_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 _Импорт/Экспорт_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 _Активировать PRO Theme_
 
@@ -49,10 +49,10 @@ _Активировать PRO Theme_
 
 Вот пример того, что вы можете получить после некоторых настроек:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 _Dashboard вашего клиента_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 _Настраиваемая страница входа_

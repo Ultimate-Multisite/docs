@@ -1,25 +1,23 @@
 ---
 id: wu_after_switch_template
-title: >-
-  Could you please provide the content of the file **Action -
-  wu_after_switch_template** so I can translate it for you?
+title: Действие - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Действие: wu_after_switch_template
+# Action: wu_after_switch_template
 
-Позволяет разработчикам плагинов подключать функции после того, как пользователь или супер-администратор переключает шаблон сайта
+Позволяет разработчикам плагинов подключать функции после того, как пользователь или супер‑админ переключает шаблон сайта
 
-## Параметры
+## Parameters
 
-| Имя | Тип | Описание |
+| Name | Type | Description |
 |------|------|-------------|
-| $id | `int` | ID сайта |
+| $id | `int` | Идентификатор сайта |
 
-### С версии
+### Since
 
 - 1.9.8
 
-### Источник
+### Source
 
-Определено в [`inc/ui/class-template-switching-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-switching-element.php#L296) at line 296
+Определено в [`inc/ui/class-template-switching-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-switching-element.php#L296) на строке 296

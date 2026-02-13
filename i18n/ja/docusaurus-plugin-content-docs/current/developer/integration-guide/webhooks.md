@@ -1,16 +1,16 @@
 ---
-title: Webhook ハンドリング
+title: Webhook処理
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Handling
+# Webhook ハンドリング
 
-Create custom webhook endpoints to receive events from external services and sync data with Ultimate Multisite.
+外部サービスからのイベントを受信し、Ultimate Multisiteとデータを同期するためのカスタムWebhookエンドポイントを作成します。
 
 ## Custom Webhook Endpoint
 
 ```php
-// Register webhook endpoint
+// Webhook エンドポイントを登録する
 add_action('rest_api_init', function() {
     register_rest_route('my-addon/v1', '/webhook', [
         'methods' => 'POST',
@@ -53,7 +53,7 @@ function verify_webhook_signature($request) {
 
 ## Security Considerations
 
-- Always verify webhook signatures using HMAC or a shared secret
-- Use a `permission_callback` on your REST route — never set it to `__return_true` in production
-- Validate and sanitize all incoming payload data before acting on it
-- Return appropriate HTTP status codes (200 for success, 400 for bad requests)
+- 常にHMACまたは共有シークレットを使用してWebhook署名を検証してください
+- `permission_callback` をRESTルートに設定してください — 本番環境では `__return_true` を設定しないでください
+- 処理を行う前に、すべての受信ペイロードデータを検証およびサニタイズしてください
+- 適切なHTTPステータスコードを返してください（成功時は200、リクエストが不正な場合は400）

@@ -51,7 +51,7 @@ Per questo motivo, quando configurato come multisite, WordPress rimuove la capac
 
 In questo senso l'amministratore di rete è responsabile dell'installazione di plugin e temi nella rete e delega i permessi per utilizzare questi plugin e temi ai siti della rete. Gli amministratori del sito non possono installare plugin e temi o accedere a plugin e temi non assegnati al loro sito.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zg50L2qdJEphzPcgwlo_pqNiYDknE6wiJo4zQUlhQwBCtDeAef2_aTzBBMx76YvTweROsbUH4uvosFRitBj8kgatWzCi_C822oJPWr5bKpwLuoBvTIZ5M9O1nFxOepiav1FkRHNv)
+<!-- Screenshot unavailable: WordPress Multisite network user management interface -->
 
 Ripetendo la dichiarazione sopra, sebbene gli account utente sembrino essere correlati al sito, in realtà sono assegnati alla rete e quindi devono essere unici in tutta la rete. Potrebbero esserci casi in cui i nomi utente non sono disponibili per la registrazione a causa di questo motivo.
 
@@ -71,11 +71,11 @@ In una configurazione _sottocartella_, il sito principale (il primo sito creato 
 
 Per i post, viene aggiunto un percorso obbligatorio /blog/ al sito principale per evitare conflitti con i siti della rete. Ciò significa che i permalink belli come ‘Post name’ verranno presentati come domain.name/blog/post-name/
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-QUlDfXAzHqImjngoE7UsJHa6DOl6XbQWV17LYthxpxDBy-k453GE5TlJVBA6-sOootX3Fsi34sHv5nSgi1kZmlUD1iMneztCc_HQvZmXpbZEdX2a1il8GJQqxUT8aVPgW5ikR5uG)
+<!-- Screenshot unavailable: WordPress permalink settings showing /blog/ path in subdirectory configuration -->
 
 In una configurazione _sottodominio_, questa azione non è necessaria perché ogni sito della rete beneficia di una completa separazione del dominio e quindi non deve fare affidamento su un singolo percorso. Mantengono invece i propri percorsi distinti basati sul loro _sottodominio_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-2wgqTosYo3GAa3jwaBlPADbFiMbZ-kKUTuQtk0gv5pvkj81UfxnxSyA8R-jD1EZmRMBLjJFoWZJOirTSe8K9OQKeoSYeDj602XBHRrZeRFABE1sw-JERzJzEzMd7FmvrM9G1L9MP)
+<!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
 #### Pagine statiche
 
@@ -83,7 +83,7 @@ In configurazione _sottocartella_ il potenziale di conflitti di denominazione si
 
 Per evitare ciò, WordPress fornisce un modo per inserire in blacklist alcuni nomi di siti in modo che non entrino in conflitto con i nomi del primo sito. Tipicamente l'amministratore di rete inserirebbe i percorsi radice delle pagine del sito principale.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-sqwI-k_-3krK0_ortenskDcdGrKpgOD6itvwDc2KEuGk1gZO-rqo_OF9yTqclSmQdrOBwsGPiiOc1oF6c0GMyNELJ-7gbyQNE81juSM3IvgTdWqhZ_UEVt06xJRu8Z8oyAKfLLz-)
+<!-- Screenshot unavailable: WordPress network settings showing banned site names to prevent conflicts -->
 
 In configurazione _sottodominio_, la possibilità di conflitti di denominazione è mitigata dal _sottodominio_ poiché è unico per il sito della rete e non è in alcun modo correlato al sito principale.
 
@@ -91,11 +91,11 @@ In configurazione _sottodominio_, la possibilità di conflitti di denominazione 
 
 All'interno delle impostazioni di rete di WordPress Multisite sono disponibili diverse nuove opzioni di registrazione utente, consentendo ai nuovi e ai vecchi utenti di creare siti.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-nbH9Ka0YhI7nvo3nnKvOr_FoI_FpdAy5hz-f199CW-PV1D-tNKGawhIK_YwlUvM19TjLnhVb6Ro6J0ZpI6s2TRUaHgyGPc4qQI06eQ2O2jeMb_SaktkKwPUw3BSyaNegZYSjXMVX)
+<!-- Screenshot unavailable: WordPress Multisite network settings showing registration options -->
 
 A differenza delle installazioni WordPress stand-alone, i siti della rete non mantengono le opzioni familiari per consentire le registrazioni utente o assegnare tali registrazioni a ruoli.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-7I21vdReE43e0Utj_KWdnuWA08ZXz7PX33rjSEjwf6T8NDiCBYbeP9GH0J36ekFNkmsXXLBYAWjQJo4vo_kWqL6hXJuFzd9RyA52zy13lT-mMsaK-JdVivUkd5SJF3UF13r2hj28)
+<!-- Screenshot unavailable: WordPress standalone site user registration settings showing limited options -->
 
 Quando gli account utente vengono creati, tali account vengono generati a livello di rete. Pertanto, invece di appartenere a un singolo sito, appartengono alla rete. Ciò presenta alcuni vantaggi e svantaggi distinti.
 
@@ -147,15 +147,15 @@ Quindi, sfruttando uno di questi provider o posizionando Ultimate Multisite diet
 
 Le agenzie che preferiscono mantenere un controllo stretto sulla creazione dei siti apprezzeranno la facilità con cui possono creare siti e associare siti a clienti e piani tramite l'interfaccia semplificata di Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+![Ultimate Multisite site management interface](/img/admin/sites-list.png)
 
 Il controllo stretto su plugin e temi viene mantenuto a livello di prodotto tramite le interfacce intuitive di Ultimate Multisite, consentendo ai plugin e ai temi di essere resi disponibili o nascosti, così come il loro stato di attivazione quando istanziati per un nuovo sito.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-VVpPcr8bvKd2qf9zPB_1SBiVpEYdtmskG_iO0tNCJOm2RXbU6kSC1czyLV1CaU5Mw2fWd-k2r1bnQV_yA4zOL6qnYKLWohnI-EDYhXcpxD_4n-rabGlxjQO8iyjtOgXhuDL5r2y7)
+![Product plugin limitations interface](/img/config/product-plugins.png)
 
 I temi offrono funzionalità simili, consentendo di attivare o nascondere temi specifici durante la creazione del sito.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3CEl6U5CPdKatlXAcG5B9jJux_iWOYpUTI4crCgW15EFkhh4pODF7hYlMyzc3na8QAefadz1kcnY_T7Yn6ZyxbBMJdfRfa16IFZma_-u7NHTtMbLZwJ9f7JbqG1QTh0y1l9WWj5z)
+![Product theme limitations interface](/img/config/product-themes.png)
 
 Le agenzie troveranno tranquillità con Ultimate Multisite, che consente loro di fare ciò che fanno meglio: progettare siti web eccezionali.
 
@@ -259,7 +259,7 @@ Nel selezionare il tuo plugin, fai attenzione a verificare che sia consapevole d
 
 Molto è già stato discusso riguardo ai nomi di dominio in modalità _sottodominio_ multisite. Una soluzione quasi universale per gli amministratori di rete è utilizzare voci DNS wildcard.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GwkLVUQ9Wb.png)
+![Wildcard DNS entry configuration example](/img/config/settings-domain-mapping.png)
 
 Questo tipo di voce DNS risolverà con successo i _sottodomini_ come ‘site1.domain.com’ e ‘site2.domain.com’ a un indirizzo IP di 1.2.3.4, supportando così Ultimate Multisite e, in misura maggiore, WordPress Multisite in modalità _sottodominio_.
 

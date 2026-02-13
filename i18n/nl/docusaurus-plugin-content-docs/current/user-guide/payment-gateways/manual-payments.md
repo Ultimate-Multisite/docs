@@ -17,26 +17,26 @@ Ga eerst naar **Ultimate Multisite > Settings > Payments**. Onder **Payment Gate
 
 Voeg in dit vak de informatie toe die uw klant nodig heeft om de betaling te doen. Het kan uw bankrekeninggegevens en uw e-mailadres zijn, zodat de klant u de betalingsbevestiging kan sturen, bijvoorbeeld.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U0K40VsARU.png)
+![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
 
 Na het instellen klikt u gewoon op **Save Settings** en het is klaar. Wanneer gebruikers zich registreren op uw netwerk, zien ze een bericht waarin staat dat ze uw instructies zullen ontvangen om de aankoop te voltooien.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-drAYOHh331.png)
+![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
 
 En ze ontvangen ook een bericht op uw **Thank You**-pagina met uw betalingsinstructies.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Nf6HTYbu2g.png)
+![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
 
 ## Handmatige betalingen bevestigen
 
 Om een handmatige betaling te bevestigen, ga naar het **Payments**-menu aan de linkerkant. Daar ziet u alle betalingen op uw netwerk en hun details, inclusief hun **status**. Een handmatige betaling heeft altijd een **Pending**-status totdat u deze handmatig wijzigt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C3U9LgT2Ev.png)
+![Payments list showing pending manual payment](/img/admin/payments-list.png)
 
 Ga naar de betalingspagina door op de **reference code** te klikken. Op deze pagina heeft u alle details van de lopende betaling, zoals referentie-ID, producten, tijdstempels en meer.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sXfbxcYFs6.png)
+![Payment details page with reference code and products](/img/admin/payments-list.png)
 
 Op de rechterkolom kunt u de status van de betaling wijzigen. Door deze te wijzigen naar **Completed** en de optie **Activate Membership** in te schakelen, wordt de site van uw klant geactiveerd en is hun lidmaatschap actief.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-q5hHRxdhfg.png)
+![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)

@@ -9,28 +9,28 @@ No artigo [Integrating Ultimate Multisite with Zapier](zapier.md), discutimos co
 
 Primeiro, você precisa criar um **Google Sheet** no seu Google Drive. Certifique-se de definir corretamente cada coluna para que você possa mapear os dados facilmente mais tarde.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7wnYotvYtO.png)Depois de criar uma planilha do Google, você pode fazer login na sua conta do Zapier e começar a criar um zap.
+![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)After creating a Google sheet, you can log in to your Zapier account and start creating a zap.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0khOzCSCF.png)No campo de busca para **"App event"** selecione **"Google Sheets"**
+![Zapier dashboard to start creating a zap](/img/admin/webhooks-list.png)Under the search field for **"App event"** select **"Google Sheets"**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Cj2rk0zpOO.png)
+![Selecting Google Sheets as the app event](/img/admin/webhooks-list.png)
 
 Em seguida, no campo **"Event"** selecione **"New spreadsheet row"** e clique em **"Continue"**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y6z9NX6HAn.png)O próximo passo pedirá que você selecione uma **Google Account** onde o **Google Sheet** está salvo. Portanto, certifique-se de que a conta do Google correta esteja especificada.
+![Selecting New spreadsheet row event in Zapier](/img/admin/webhooks-list.png)The next step will ask you to select a **Google Account** where the **Google Sheet** is saved. So just make sure that the right google account is specified.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-536o0FgLI1.png)Em **"Set up trigger"**, você precisará selecionar e especificar a planilha do Google e a aba que você usará, onde os dados virão. Basta preencher e clicar em **"Continue"**
+![Selecting Google Account for the Google Sheet](/img/admin/webhooks-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4juCX9m6M2.png)Em seguida, faça o **"test your trigger"** para garantir que sua planilha do Google esteja conectada corretamente.
+![Set up trigger with spreadsheet and worksheet selection](/img/admin/webhooks-list.png)Next is to "**test your trigger** " to make sure that your google sheet is properly connected.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E1RjprMVNM.png)Se o teste for bem-sucedido, você verá o resultado exibindo alguns valores das suas planilhas. Clique em **"Continue"** para prosseguir.
+![Test your trigger step in Zapier](/img/admin/webhooks-list.png)If your test is successful, you should see the result showing some values from your spreadsheets. Click "**Continue** " to proceed.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FNVMJRdoBs.png)O próximo passo é configurar a segunda ação que criará ou registrará uma conta no Ultimate Multisite. No campo de busca, selecione **"Ultimate Multisite(2.0.2)**
+![Successful trigger test showing spreadsheet values](/img/admin/webhooks-list.png)The next step is to set up the second action that will create or register an account in Ultimate Multisite. On the search field select "**Ultimate Multisite(2.0.2)** "
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbSevglDSJ.png)No campo **"Event"**, selecione **"Register an Account in Ultimate Multisite"** e clique no botão **"Continue"**
+![Selecting Ultimate Multisite as the action app](/img/admin/webhooks-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DZTN6Hno0w.png)Em **"Set up an action"**, você verá diferentes campos disponíveis para dados do cliente, assinaturas, produtos, etc. Você pode mapear os valores da sua planilha do Google e atribuí-los ao campo apropriado onde devem ser preenchidos, como mostrado na captura de tela abaixo.
+![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)Under "**Set up an action** ", you will see different fields available for customer data, memberships, products, etc. You can map the values under your google sheet and assign them to the proper field where they should be populated as shown in the screenshot below.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-c1ozo05Uam.png)Depois de mapear os valores, você pode testar a ação.
+![Mapping Google Sheet values to Ultimate Multisite fields](/img/admin/webhooks-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKI9kdBjIc.png)
+![Testing the register account Zapier action](/img/admin/webhooks-list.png)

@@ -17,26 +17,26 @@ _**중요 안내: 이 문서는 Ultimate Multisite 버전 2.x를 기준으로 �
 
 이 박스에 고객이 결제를 진행하는 데 필요한 정보를 입력합니다. 예를 들어, 은행 계좌 정보와 결제 확인을 보낼 수 있는 이메일을 입력할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U0K40VsARU.png)
+![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
 
 설정이 완료되면 **Save Settings** 를 클릭하면 됩니다. 사용자가 네트워크에 등록하면 구매를 완료하기 위한 지침을 받을 것이라는 메시지가 표시됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-drAYOHh331.png)
+![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
 
 또한 **Thank You** 페이지에서도 결제 지침이 포함된 메시지를 받게 됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Nf6HTYbu2g.png)
+![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
 
 ## 수동 결제 확인
 
 수동 결제를 확인하려면 왼쪽 바의 **Payments** 메뉴로 이동합니다. 거기에서 네트워크의 모든 결제와 그 상세 정보(상태 포함)를 확인할 수 있습니다. 수동 결제는 수동으로 변경하기 전까지 항상 **Pending** 상태를 가집니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C3U9LgT2Ev.png)
+![Payments list showing pending manual payment](/img/admin/payments-list.png)
 
 **reference code** 를 클릭하여 결제 페이지에 진입합니다. 이 페이지에서 보류 중인 결제의 모든 세부 정보(참조 ID, 제품, 타임스탬프 등)를 확인할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sXfbxcYFs6.png)
+![Payment details page with reference code and products](/img/admin/payments-list.png)
 
 오른쪽 열에서 결제 상태를 변경할 수 있습니다. **Completed** 로 바꾸고 **Activate Membership** 옵션을 켜면 고객의 사이트가 활성화되고 멤버십이 활성화됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-q5hHRxdhfg.png)
+![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)

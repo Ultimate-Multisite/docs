@@ -1,6 +1,6 @@
 {
   "link.title.Documentation": {
-    "message": "",
+    "message": "Documentación",
     "description": "Footer column title"
   },
   "link.title.Community": {
@@ -8,7 +8,7 @@
     "description": "Footer column title"
   },
   "link.title.More": {
-    "message": "",
+    "message": "Más",
     "description": "Footer column title"
   },
   "link.item.label.User Guide": {
@@ -16,7 +16,7 @@
     "description": "Footer link"
   },
   "link.item.label.Developer Docs": {
-    "message": "",
+    "message": "Documentación para Desarrolladores",
     "description": "Footer link"
   },
   "link.item.label.Addons": {
@@ -24,7 +24,7 @@
     "description": "Footer link"
   },
   "link.item.label.GitHub Discussions": {
-    "message": "GitHub Discussions",
+    "message": "Debates de GitHub",
     "description": "Footer link"
   },
   "link.item.label.WordPress.org": {

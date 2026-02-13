@@ -67,7 +67,6 @@ _i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
 - [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — 在对象存储到数据库后触发。
 - [wu_this-model_post_save](./Actions/wu_this-model_post_save) — 在对象存储到数据库后触发。
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 在对象存储到数据库后触发。
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — 在对象存储到数据库前触发。
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 允许插件开发者在解锁过程中添加动作。
 
 ## 过滤器

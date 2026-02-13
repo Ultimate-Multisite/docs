@@ -19,8 +19,8 @@ Dat is allemaal goed, maar we lopen tegen een lelijk probleem aan: onze site-sja
 
 Je kunt toegang krijgen tot de editor voor sjabloon-placeholders door naar **Ultimate Multisite > Settings > Sites** te gaan, en vervolgens op de link Edit Placeholders in de zijbalk te klikken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 Dat brengt je naar de content-editor van de placeholders, waar je placeholders en hun respectievelijke inhoud kunt toevoegen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

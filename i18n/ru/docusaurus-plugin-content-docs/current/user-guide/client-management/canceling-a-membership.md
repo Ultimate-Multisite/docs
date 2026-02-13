@@ -13,19 +13,19 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Там они должны перейти в раздел **Danger Zone** и нажать **Delete Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7IO8WYhID5.png)
+![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
 
 Модуль откроется с запросом подтверждения. Они должны включить опцию **Confirm Account Deletion** и нажать **Delete Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NavCHgYJYo.png)
+![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
 
 Это разлоггирует их с сайта и отменит их подписку в вашей сети, а также удалит их сайт из вашей сети.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KFkpD0CRhT.png)
+![Logged out after account deletion](/img/admin/memberships-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jWkEmpf9ij.png)
+![Membership canceled confirmation](/img/admin/memberships-list.png)
 
 **Важно:** Обратите внимание, что это действие не исключит клиента из вашей сети, поскольку клиент может иметь более одной подписки или ни одной подписки, привязанной к нему.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDX2xRZVHu.png) | ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5g9qbL4SaT.png)  
+![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
 ---|---

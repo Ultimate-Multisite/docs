@@ -27,29 +27,29 @@ Within Ultimate Multisite the Products tab defines the construct and limitations
 
 This section will guide your understanding of this essential cornerstone of Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1YccQg0IBG.png)
+![Products list page](/img/config/products-list.png)
 
 ## Adding Products
 
 Whether a plan, package, or service the entry point to defining a new item is via **Ultimate Multisite > Products > Add Product**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0AmJMeqen.png)
+![Add Product button](/img/config/product-add-button.png)
 
 The interface contains two predominant sections. On the left are several tabs which assist with the definition of the product and on the right are a few sections to define the base price of the product, its active state, and product image.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WRwYrlk0BS.png)
+![Product edit page overview](/img/config/product-edit-full.png)
 
 ### Description
 
 The base product information can be defined by supplying a product name and description. These identifiers are displayed wherever the product information is required such as plan and pricing selection, invoices, upgrades, and the like.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U9YjF0dghJ.png)
+![Product description section](/img/config/product-description.png)
 
 ### Pricing Type
 
 On the right side of the interface, the base pricing can be defined.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oHwhlrBFC9.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Ultimate Multisite supports three different pricing types. The **paid** option prompts the network administrator for information regarding the product’s price and billing frequency.
 
@@ -57,7 +57,7 @@ Ultimate Multisite supports three different pricing types. The **paid** option p
 
 The price component defines the base product price and billing interval.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T03WJISsoh.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 thus an example price of $29.99 with a setting of 1 month will bill $29.99 each month. Similarly, a price of $89.97 with a setting of 3 months will bill that amount each quarter.
 
@@ -65,7 +65,7 @@ thus an example price of $29.99 with a setting of 1 month will bill $29.99 each 
 
 The billing cycles section specifies the frequency of the aforementioned billing interval and is generally understood in the light of contracts or fixed terms.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hVVAoxC4Jt.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 For example, a product price of $29.99 with an interval of 1 month and 12 billing cycles would bill $29.99 per month for the product over the succeeding 12 months. In other words, such a setting would establish a fixed-price term of $29.99 per month for 12 months and then cease billing.
 
@@ -73,7 +73,7 @@ For example, a product price of $29.99 with an interval of 1 month and 12 billin
 
 Enabling the offer trial toggle allows the network administrator to define a trial period for the product.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzxhWHqJLC.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 During the trial period, customers are free to use the product and will not be billed until the trial period has been exhausted.
 
@@ -81,7 +81,7 @@ During the trial period, customers are free to use the product and will not be b
 
 You can also apply a setup fee to you plan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-8ZA2YvhWyK.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 This means that your client will pay an extra amount on the first charge (in addition to the price plan) that corresponds to the fee you defined in this section.
 
@@ -89,7 +89,7 @@ This means that your client will pay an extra amount on the first charge (in add
 
 The active toggle effectively defines whether the product is available to customers for new sign-ups.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-74ET2mPskK.png)
+![Active toggle](/img/config/product-active.png)
 
 If there are existing customers on this plan setting the toggle to its disabled state effectively grandfathers the plan removing it from future sign-ups. **Existing customers on the plan will continue to be billed** until they are transitioned to a new plan or removed from the plan.
 
@@ -97,13 +97,13 @@ If there are existing customers on this plan setting the toggle to its disabled 
 
 The **Upload Image** button allows the network administrator to make use of the media library to select or upload a product image.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9tHhGvokLA.png)
+![Product image section](/img/config/product-image.png)
 
 ### Delete
 
 The **Delete Product** button deletes the product from the system. It appears once the product is published.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rrmQohvw3S.png)
+![Delete product section](/img/config/product-delete.png)
 
 Unlike other deletions, the product is not placed in any trash state. Thus once deleted the action is irreversible.
 
@@ -115,7 +115,7 @@ Once the base-level product information is defined, the product options aid the 
 
 The **General** tab defines the general attributes of the product not applicable to any of the other product-specific tabs.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-z32g4XQeyT.png)
+![General tab](/img/config/product-general-tab.png)
 
 The self-explanatory **product slug** defines the slug with which the product is identified in URLs and other areas of Ultimate Multisite.
 
@@ -123,7 +123,7 @@ Ultimate Multisite supports several product types namely Plan, Package, and Serv
 
 The **Customer Role** specifies the role that the customer is assigned when the site is created. Typically for most network administrators, this will be the Ultimate Multisite default or Administrator. The Ultimate Multisite default role can be set in **Ultimate Multisite > Settings > Login & Registration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ap5I4lXWwB.png)
+![Customer role settings](/img/config/product-customer-role-settings.png)
 
 #### Up & Downgrades
 
@@ -137,7 +137,7 @@ To this extent, it would be undesirable and problematic to allow eLearning custo
 
 Thus to restrict the path of the customer and to prevent incidents the network administrator can define a plan group and within that group specify the plans the customer can transition to.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JnrZ4fWFEC.png)
+![Up and Downgrades tab](/img/config/product-upgrades.png)
 
 To define a plan group specify the compatible plans within the **plan group** list. The **product order** determines how the plans are ordered and displayed from the lowest to the highest.
 
@@ -147,25 +147,25 @@ Ultimate Multisite also includes an **order bump** feature where appropriate add
 
 Price variations allow the network administrator to specify alternate pricing tiers depending on duration. This setting makes it possible for 3 months, 6 months, or annual pricing tiers to be established or any other duration and frequency as determined by the use case.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-d75YUO3opm.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 To establish price variations, set the **enable price variations** toggle to active and click the **Add new Price Variation** button.
 
 To enter a variation, set the duration, period, and price of the variation. Additional variations can be entered by clicking the button again.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-x73uxkMU8o.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 #### Taxes
 
 The **Taxes** tab aligns with the tax settings specified in **Ultimate Multisite > Settings > Taxes** and more specifically the tax rates defined. To enable taxes and define applicable tax rates please see the documentation at **Ultimate Multisite: Settings**
 
-**![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xYLtpFySzL.png)**
+![Taxes tab](/img/config/product-taxes.png)
 
 In a previous example, we defined a local tax rate of 7.25% applicable to customers in California (United States of America).
 
 Once the tax rate is defined in **Ultimate Multisite > Settings > Manage Tax Rates** it is selectable at the product level.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Sh1BVGVj6i.png)
+![Taxes tab](/img/config/product-taxes.png)
 
 To indicate that a product is a taxable item, set the **Is Taxable** toggle to active and select the applicable tax rate from the Tax Category dropdown.
 
@@ -173,7 +173,7 @@ To indicate that a product is a taxable item, set the **Is Taxable** toggle to a
 
 In essence, site templates are complete WordPress websites that are cloned to a customer’s site at the start of their subscription.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-llMSMXCDt4.png)
+![Site Templates tab](/img/config/product-site-templates.png)
 
 The network administrator creates and configures the template site as a regular WordPress site with activated and configured themes, plugins, and content. The template site is cloned verbatim to the customer.
 
@@ -193,7 +193,7 @@ Ultimately if the network administrator desires template selection to occur in t
 
 The **Sites** tab is part of Ultimate Multisite’s limitations functionality.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-A8fzNucGyC.png)
+![Sites tab](/img/config/product-sites.png)
 
 This setting specifies the maximum number of sites a customer can create under their membership.
 
@@ -203,7 +203,7 @@ To enable the limitation, set the **limit sites** toggle to its active state and
 
 The **Visits** tab is a further part of Ultimate Multisite’s limitations system. This setting allows for the accounting and subsequent throttling of unique visitors to a customer’s site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e7f5otg89m.png)
+![Visits tab](/img/config/product-visits.png)
 
 From a marketing perspective network, administrators can make use of this setting as a means to encourage customers to upgrade their plan once limits are reached. This setting can also assist the network administrator to curb and prevent excessive traffic to sites to preserve system resources.
 
@@ -215,7 +215,7 @@ Once this limit is reached Ultimate Multisite will cease to serve the customer�
 
 Ultimate Multisite’s ‘Users’ limitations allow the network administrator to impose limits on the number of users that can be created and assigned to roles.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-maGYqW7WlP.png)
+![Users tab](/img/config/product-users.png)
 
 To enable the limitations feature, set the **limit user** toggle to its active state by sliding it to the right.
 
@@ -225,7 +225,7 @@ Next for each role to be limited, set the toggle next to it to an active state a
 
 The **Post Types** tab allows the network administrator to impose granular limits on the extensive array of post types within WordPress.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZELQvvqyvn.png)
+![Post Types tab](/img/config/product-post-types.png)
 
 Due to the construction of WordPress, posts and post types are a significant component of its core functionality, and thus Ultimate Multisite’s limitations system is designed to assist the network administrator in establishing and maintaining limits.
 
@@ -237,7 +237,7 @@ Next, for each post type to be limited, toggle it on by sliding it to the right 
 
 The **Disk Space** tab allows network administrators to restrict the space consumed by customers.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EqlaLO0ebw.png)
+![Disk Space tab](/img/config/product-disk-space.png)
 
 Typically in a WordPress multisite the core files are shared amongst all sites and individual directories created for media files and uploads to which these settings and limitations apply.
 
@@ -249,7 +249,7 @@ Next, specify the maximum upper limit in megabytes in the **disk space allowanc*
 
 By toggling this option you can allow custom domains on this plan specifically.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KEMuUG76Fg.png)
+![Custom Domains tab](/img/config/product-custom-domains.png)
 
 #### Themes
 
@@ -257,11 +257,11 @@ The **Themes** tab within the product options allows the network administrator t
 
 _**Note: For themes to be made available to customers they must be network enabled by the network administrator.**_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HAQShYB7Y1.png)
+![Themes tab](/img/config/product-themes.png)
 
 The **visibility** option defines whether or not this theme is visible to the customer when viewing their **Appearance > Themes** tab within their site. Setting this option to **Hidden** removes the theme from view and thus restricts the ability to select and activate it.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ivsGIABl55.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Network themes page](/img/config/product-themes-network-enabled.png)
 
 The **behavior** selection allows the network administrator to define the state of the theme upon the creation of the customer site.
 
@@ -271,13 +271,13 @@ In the **A** **vailable** state the theme is made available to the customer for 
 
 Similar to the Themes tab, Ultimate Multisite allows the network administrator to define the visibility of plugins to customers as well as their state upon the creation of a new site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ipzv31FIb6.png)
+![Themes tab](/img/config/product-themes.png)
 
 The **visibility** drop-down allows for the plugin to either be visible or hidden from the customer when viewed on their site through the Plugins menu option.
 
 The network administrator can further manipulate the behavior of the plugins by making use of the options in the behavior drop-down.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 The **Default** selection honors the plugin state defined in the site template selected by the customer. Thus plugins that are activated within the template will remain activated when the template is cloned to the customer’s site.
 
@@ -291,17 +291,17 @@ The network administrator may wish to consider the Force Activate & Lock and For
 
 The **Reset Limitations** tab resets all custom limits defined on the product. To reset limitations click on the **reset limitations** button.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UXNQerLby7.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 To confirm the action slide the **confirm reset** toggle to its active state on the right and click the **reset limitations** button.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xKySIUIvrI.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 #### Legacy Options
 
 The **Legacy Options** tab observes certain options and behaviors defined in Ultimate Multisite 1.x.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Fn3BjwTH4r.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 These options are offered for compatibility and ease of transition and will be deprecated in future releases.
 
@@ -309,7 +309,7 @@ These options are offered for compatibility and ease of transition and will be d
 
 Existing products can be edited, duplicated or deleted by navigating to **Ultimate Multisite > Products** and hovering over the existing product name.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GcHtJl6WmV.png)
+![Product hover actions](/img/config/product-hover-actions.png)
 
 ## 
 

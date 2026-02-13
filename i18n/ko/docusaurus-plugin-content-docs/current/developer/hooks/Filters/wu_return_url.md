@@ -4,25 +4,25 @@ title: 필터 - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url
+# 필터: wu_return_url
 
-Allow developers to change the gateway return URL used after checkout processes.
+개발자가 결제 프로세스 후에 사용되는 게이트웨이 반환 URL을 변경할 수 있도록 허용합니다.
 
-## Parameters
+## 매개변수
 
-| Name | Type | Description |
-|------|------|-------------|
-| $return_url | `string` | the URL to redirect after process. |
-| $gateway | `self` | the gateway instance. |
-| $payment | `\WP_Ultimo\Models\Payment` | the Ultimate Multisite payment instance. |
-| $cart | `\WP_Ultimo\Checkout\Cart` | the current Ultimate Multisite cart order. |
+| 이름 | 타입 | 설명 |
+|------|------|------|
+| $return_url | `string` | 프로세스 후 리디렉션할 URL |
+| $gateway | `self` | 게이트웨이 인스턴스 |
+| $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite 결제 인스턴스 |
+| $cart | `\WP_Ultimo\Checkout\Cart` | 현재 Ultimate Multisite 장바구니 주문 |
 
-### Since
+### 버전
 
 - 2.0.20
-### Source
 
-Defined in [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) at line 683
+### 소스
 
+다음 파일에서 정의됨: [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) (라인 683)
 
-## Returns
+## 반환값

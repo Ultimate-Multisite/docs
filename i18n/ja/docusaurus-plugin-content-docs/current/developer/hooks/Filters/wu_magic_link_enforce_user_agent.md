@@ -1,24 +1,25 @@
 ---
 id: wu_magic_link_enforce_user_agent
-title: ''
+title: フィルタ - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Filter: wu_magic_link_enforce_user_agent
+# フィルタ: wu_magic_link_enforce_user_agent
 
-Filter whether to enforce user agent verification.
+ユーザーエージェント検証を強制するかどうかをフィルタします。
 
-Set to false to allow tokens to work across different browsers/devices. This reduces security but increases usability.
+falseに設定すると、トークンが異なるブラウザ/デバイス間で動作できるようになります。これによりセキュリティは低下しますが、使いやすさは向上します。
 
-## Parameters
+## パラメータ
 
-| Name | Type | Description |
+| 名前 | タイプ | 説明 |
 |------|------|-------------|
-| $enforce | `bool` | Whether to enforce user agent matching. |
+| $enforce | `bool` | ユーザーエージェントの一致を強制するかどうか。 |
 
-### Since
+### 導入
 
 - 2.0.0
-### Source
+
+### ソース
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L410) at line 410

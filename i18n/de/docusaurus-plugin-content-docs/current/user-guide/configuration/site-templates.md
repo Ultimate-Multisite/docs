@@ -21,15 +21,15 @@ Das klingt großartig, aber wie erstelle ich eine neue Site-Vorlage? Es ist so e
 
 Site-Vorlagen sind einfach normale Websites in Ihrem Netzwerk. Um eine neue Vorlage zu erstellen, gehen Sie einfach zu **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![add site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)**
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 Dies öffnet ein Modal-Fenster, in dem Sie nach dem **Site title, Site Domain/path** und **Site type** gefragt werden. Im Dropdown-Feld **Site Type** stellen Sie sicher, dass Sie **Site Template** auswählen *.*  
 
-_![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)_
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 Unten im Formular sehen Sie einen **Copy Site**-Toggle-Schalter. Damit können Sie eine neue Site-Vorlage auf Basis einer bestehenden Site-Vorlage erstellen, um Zeit zu sparen, anstatt eine Site-Vorlage von Grund auf neu zu erstellen.
 
-![Add site template modal 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### Anpassen des Inhalts einer Site-Vorlage
 
@@ -59,11 +59,11 @@ In diesem Modus können Ihre Kunden keine Vorlage auswählen, wenn sie ein Konto
 
 Um dies zu tun, gehen Sie zu **Ultimate Multisite > Products > Edit**.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 Dies führt Sie zur **Edit Produc** t-Seite. Unter dem Abschnitt **Product Options** finden Sie die Registerkarte **Site template** und wählen die Option **Assign Site** **Template** aus dem Dropdown-Feld. Dadurch wird die Liste der verfügbaren Site-Vorlagen angezeigt und Sie können nur eine Site-Vorlage auswählen, die dem Produkt zugeordnet ist.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Modus 2: Verfügbare Site-Vorlage auswählen
 
@@ -71,27 +71,27 @@ In diesem Modus geben Sie Ihren Kunden während des Anmeldevorgangs die Möglich
 
 Auf der **Edit Product**-Seite. Unter dem Abschnitt **Product Options** finden Sie die Registerkarte **Site template** und wählen die Option **Choose Available Site Template** aus dem Dropdown-Feld. Dadurch wird die Liste der verfügbaren Site-Vorlagen angezeigt und Sie können die Site-Vorlage auswählen, die verfügbar sein soll. Sie können dies tun, indem Sie ihr Verhalten wählen: **Available**, wenn Sie möchten, dass die Site-Vorlage in der Liste enthalten ist. _**Not Available**_, wenn Sie möchten, dass die Site-Vorlage nicht als Option angezeigt wird. Und **Pre-selected**, wenn Sie möchten, dass eine der aufgeführten Site-Vorlagen als Standard ausgewählt ist.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### Standardmodus: Auswahl der Site-Vorlage im Checkout-Formular
 
 Wenn Sie möchten, dass alle Ihre Site-Vorlagen während der Registrierung verfügbar sind, oder wenn Sie es nicht bevorzugen, zusätzliche Arbeit zu leisten, um Site-Vorlagen unter jedem von Ihnen erstellten Produkt zuzuweisen oder festzulegen, können Sie einfach die Auswahl der Site-Vorlage unter Ihrem **Checkout Form** festlegen. Dazu gehen Sie zu **Ultimate Multisite > Checkout Forms**. Klicken Sie dann auf **Edit** unter dem Formular, das Sie konfigurieren möchten.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 Dies öffnet die Seite **Edit Checkout Form**. Finden Sie das Feld **Template Selection** und klicken Sie auf **Edit** darunter.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 Ein Modal-Fenster erscheint. Unter dem Feld **Template Sites** können Sie alle Site-Vorlagen auswählen und auflisten, die während der Registrierung verfügbar sein sollen. Die von Ihnen hier angegebenen Site-Vorlagen sind unabhängig vom ausgewählten Produkt verfügbar.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Site-Vorlagen-Optionen
 
 Es gibt weitere Funktionen für Site-Vorlagen, die Sie unter den Ultimate Multisite-Einstellungen ein- oder ausschalten können.
 
-![Site template option](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Template Switching erlauben
 
@@ -115,21 +115,21 @@ Eine der leistungsstärksten Funktionen von Ultimate Multisite ist die Möglichk
 
 Beispielsweise, wenn Sie den Firmennamen des Endbenutzers während der Registrierung erfassen und automatisch auf der Startseite platzieren möchten. Auf der Startseite Ihrer Vorlagen-Website müssen Sie die Platzhalter hinzufügen, wie im Bild unten (Platzhalter sollten von doppelten geschweiften Klammern umgeben sein – {{placeholder_name}}).
 
-![homepage placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 Dann können Sie einfach ein entsprechendes Registrierungsfeld in Ihrem Checkout-Formular hinzufügen, um diese Daten zu erfassen:
 
-![checkout form](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 Ihr Kunde kann dieses Feld dann während der Registrierung ausfüllen.
 
-![registration field](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 Ultimate Multisite ersetzt dann die Platzhalter automatisch durch die vom Kunden bereitgestellten Daten.
 
-![replace placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Lösung des Problems „Vorlage voller Platzhalter“
 
@@ -139,8 +139,8 @@ Um das zu lösen, bieten wir die Möglichkeit, gefälschte Werte für die Platzh
 
 Sie können auf den Editor für Vorlagen-Platzhalter zugreifen, indem Sie zu **Ultimate Multisite > Settings > Sites** gehen und dann im Seitenmenü auf den Link **Edit Placeholders** klicken.
 
-![placeholder settings](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 Damit gelangen Sie zum Inhalt-Editor der Platzhalter, in dem Sie Platzhalter und deren jeweiligen Inhalte hinzufügen können.
 
-![template placeholders](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

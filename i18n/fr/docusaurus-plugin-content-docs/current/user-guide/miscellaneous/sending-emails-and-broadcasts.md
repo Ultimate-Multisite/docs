@@ -15,17 +15,17 @@ En utilisant la fonction de diffusion d'Ultimate Multisite, vous pouvez ajouter 
 
 C'est extrêmement utile si vous devez faire une annonce, comme une maintenance du système ou proposer de nouveaux produits ou services à vos utilisateurs existants. Voici à quoi ressemblera l'avis d'administration sur le tableau de bord de votre utilisateur.
 
-![broadcast account](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 Pour démarrer un avis d'administration, accédez à votre tableau de bord d'administration réseau et, sous le menu **Ultimate Multisite**, vous trouverez l'option **Broadcasts**.
 
-![broadcast admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Depuis cette page, cliquez sur le bouton **Add Broadcast** en haut.
 
 Cela ouvrira la fenêtre modale Ajouter une diffusion où vous pourrez choisir le type de diffusion que vous souhaitez envoyer. Sélectionnez **Message** puis cliquez sur le bouton **Next Step**.
 
-![broadcast admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 La fenêtre suivante vous demandera soit le **Target customer** soit le **Target product**. Notez que vous pouvez sélectionner plus d'un utilisateur ou plus d'un produit.
 
@@ -35,11 +35,11 @@ Sous le champ **Message type**, vous pouvez choisir la couleur de l'avis. Cela m
 
 Vous pouvez ensuite cliquer sur **Next Step**.
 
-![broadcast admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 La fenêtre suivante est l'endroit où vous pouvez commencer à composer votre message en saisissant le sujet et le contenu/message que vous souhaitez diffuser aux utilisateurs.
 
-![broadcast admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 Après avoir créé votre message, vous pouvez alors cliquer sur le bouton **Send**.
 
@@ -51,13 +51,13 @@ En utilisant la fonction de diffusion d'Ultimate Multisite, vous pouvez envoyer 
 
 Pour démarrer une diffusion d'e‑mail, accédez à votre tableau de bord d'administration réseau et, sous le menu Ultimate Multisite, vous trouverez l'option Broadcast.
 
-![email admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Depuis cette page, cliquez sur le bouton **Add broadcast** en haut.
 
 Cela ouvrira la fenêtre modale Ajouter une diffusion où vous pourrez choisir le type de diffusion que vous souhaitez envoyer. Sélectionnez **Email** puis cliquez sur le bouton **Next Step**.
 
-![email admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 La fenêtre suivante vous demandera soit le **Target customer** soit le **Target product**. Notez que vous pouvez sélectionner plus d'un utilisateur ou plus d'un produit.
 
@@ -65,11 +65,11 @@ Pour rechercher un compte utilisateur ou un produit, commencez à taper le mot-c
 
 Une fois votre audience cible sélectionnée, vous pouvez cliquer sur **Next Step**.
 
-![email admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 La fenêtre suivante est l'endroit où vous pouvez commencer à composer votre e‑mail en saisissant le sujet et le contenu/message que vous souhaitez envoyer aux utilisateurs.
 
-![email admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 Après avoir créé votre message, vous pouvez cliquer sur le bouton **Send**.
 
@@ -91,19 +91,19 @@ Cependant, les super‑administrateurs et les agents peuvent importer ces nouvea
 
 Accédez à votre page Paramètres d'Ultimate Multisite et rendez-vous dans l'onglet **Emails**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 Ensuite, dans la barre latérale, cliquez sur le bouton **Customize System Emails**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 Sur la page E‑mails système, vous verrez le bouton d'action **Reset & Import** en haut. Cliquer sur ce bouton devrait ouvrir la fenêtre modale d'importation et de réinitialisation.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 Ensuite, vous pouvez basculer les options Import Emails pour voir quels e‑mails système sont disponibles à l'importation.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### Réinitialisation des e‑mails système
 
@@ -115,4 +115,4 @@ Ou vous pouvez utiliser l'outil **Reset & Import** pour réinitialiser ce modèl
 
 Pour réinitialiser un modèle d'e‑mail, vous pouvez suivre les étapes ci‑dessus jusqu'à atteindre l'outil Reset & Import, puis basculer l'option **Reset** et sélectionner les e‑mails que vous souhaitez réinitialiser à leur contenu par défaut.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

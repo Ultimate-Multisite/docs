@@ -16,7 +16,7 @@ El punto final utiliza el método POST y se llama mediante la URL _**https://you
 
 Para este proceso, necesitarás tus credenciales de API. Para obtenerlas, ve al panel de administración de tu red, navega a **Ultimate Multisite > Settings** > **API & Webhooks**, y busca la sección de Configuración de API.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzcShcSVgI.png)  
+![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
 Selecciona **Habilitar API** y obtén tus credenciales de API.
 
 Ahora, exploremos el punto final y luego creemos una acción de registro en Zapier.
@@ -73,27 +73,27 @@ Para ilustrar mejor cómo usar el punto final de registro con Zapier, crearemos 
 
 En Google Forms, crea un formulario con los campos mínimos necesarios para crear una nueva membresía en la red.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xaVRQkloWg.png)
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
 Ahora, en Zapier, crea un nuevo Zap y conecta el formulario creado en Google a través de la hoja de cálculo donde se guardan los datos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-67iVl1XK46.png)
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
 ¡Listo! El formulario de Google Forms está conectado con Zapier y listo para integrarse con la red. Ahora pasemos a la Acción que resultará del Trigger que Google Forms dispara cada vez que se rellena.
 
 Localiza la nueva aplicación Ultimate Multisite y selecciónala. Para este tipo de Zap, elige la opción Registrar.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hq2yHGYR31.png)
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
-Después de este primer paso, elige la cuenta que se conectará con este Zap. ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BuyTLt0JUM.png)
+After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
 Esta es la parte más sensible de todo el proceso. Necesitamos emparejar los campos que provienen de Google Forms con los campos mínimos necesarios para el punto final de registro, como se muestra en la sección anterior de este artículo.
 
 En este ejemplo, solo necesitamos configurar el nombre de usuario, correo electrónico, contraseña, nombre y URL del sitio web. El resto queda predefinido para que todas las membresías generadas en este Google Forms sigan el mismo patrón de producto y estado.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4pjTVOmauz.png)
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
-Con la información configurada, procede a la prueba final. En la última pantalla puedes ver todos los campos que se enviarán al punto final, su información respectiva y los campos que se enviarán vacíos. ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fD2A9dYbDs.png)
+With the information set up, proceed to the final test. On the last screen you can see all the fields that will be sent to the endpoint, their respective information and the fields that will be sent empty.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
 
 Prueba tu nuevo Zap y debería completarse con éxito. Si ocurre algún error, revisa todos los campos y verifica que se estén enviando correctamente. Dado que hay mucha información, algunas cosas pueden pasar desapercibidas.
 

@@ -7,7 +7,7 @@ _i18n_hash: c891b25549cd81c8f45ba60ee6e74105
 
 Ultimate Multisite biedt u de mogelijkheid om planlinks rechtstreeks met uw klanten te delen. Ga hiervoor naar een van de bewerkpagina's van uw plannen en klik op de _Klik om de deelbare link te kopiëren_ knop.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2DJoMvapXh.png)
+![Product edit page with shareable link button](/img/config/product-edit-full.png)
 
 _Op de bewerkpagina van het plan vindt u de knop om deelbare links te maken_
 

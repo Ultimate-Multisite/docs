@@ -11,15 +11,15 @@ Alguns provedores de hospedagem bloqueiam o wp-config.php por motivos de seguran
 
 Primeiro, [faça login na sua conta Closte](https://app.closte.com/), clique no item de menu Sites, depois clique no link Dashboard no site em que você está trabalhando:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dPRIeofCDK.png)
+<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
 Você verá uma série de novos itens de menu no lado esquerdo da tela. Navegue até a página **Settings** usando esse menu:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JmSwHIOaGz.png)
+<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
 Em seguida, na **Settings**, encontre a aba WP-Config, e então o campo “Additional wp-config.php content” nessa aba:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FqVEnSTIu9.png)
+<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
 No contexto da instalação do Ultimate Multisite, você precisará adicionar a constante sunrise nesse campo. Basta adicionar uma nova linha e colar a linha abaixo. Depois disso, clique no botão **Save All**.
 

@@ -57,7 +57,7 @@ Em um WordPress Multisite, todos os sites da rede compartilham o mesmo banco de 
 
 Dada essa compreensão, pode ser indesejável permitir a criação de usuários e, por esse motivo, o WordPress Multisite remove essa capacidade dos administradores de site e a transfere para o administrador da rede. Em seguida, o administrador da rede pode delegar os privilégios necessários a um administrador de site para permitir que ele crie contas de usuário para seu próprio site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zg50L2qdJEphzPcgwlo_pqNiYDknE6wiJo4zQUlhQwBCtDeAef2_aTzBBMx76YvTweROsbUH4uvosFRitBj8kgatWzCi_C822oJPWr5bKpwLuoBvTIZ5M9O1nFxOepiav1FkRHNv)
+<!-- Screenshot unavailable: WordPress Multisite network user management interface -->
 
 Reiterando a afirmação acima, embora as contas de usuário pareçam estar relacionadas ao site, na verdade são alocadas à rede e, portanto, devem ser únicas em toda a rede. Pode haver situações em que nomes de usuário não estejam disponíveis para registro devido a essa razão.
 
@@ -77,11 +77,11 @@ Em uma configuração de _subdiretório_, o site principal (o primeiro site cria
 
 Para posts, um caminho obrigatório /blog/ é adicionado ao site principal para evitar colisões com os sites da rede. Isso significa que permalinks bonitos, como ‘Post name’, serão apresentados como domain.name/blog/post-name/
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-QUlDfXAzHqImjngoE7UsJHa6DOl6XbQWV17LYthxpxDBy-k453GE5TlJVBA6-sOootX3Fsi34sHv5nSgi1kZmlUD1iMneztCc_HQvZmXpbZEdX2a1il8GJQqxUT8aVPgW5ikR5uG)
+<!-- Screenshot unavailable: WordPress permalink settings showing /blog/ path in subdirectory configuration -->
 
 Em uma configuração de _subdomínio_, essa ação não é necessária porque cada site da rede se beneficia da separação completa de domínio e, portanto, não precisa depender de um único caminho. Eles mantêm seus próprios caminhos distintos com base em seu _subdomínio_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-2wgqTosYo3GAa3jwaBlPADbFiMbZ-kKUTuQtk0gv5pvkj81UfxnxSyA8R-jD1EZmRMBLjJFoWZJOirTSe8K9OQKeoSYeDj602XBHRrZeRFABE1sw-JERzJzEzMd7FmvrM9G1L9MP)
+<!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
 #### Páginas Estáticas
 
@@ -89,7 +89,7 @@ Na configuração de _subdiretório_, o potencial de conflitos de nomenclatura s
 
 Para evitar isso, o WordPress fornece um meio de bloquear certos nomes de site para que não entrem em conflito com os nomes do primeiro site. Normalmente, o administrador da rede inseriria os caminhos raiz das páginas do site principal.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-sqwI-k_-3krK0_ortenskDcdGrKpgOD6itvwDc2KEuGk1gZO-rqo_OF9yTqclSmQdrOBwsGPiiOc1oF6c0GMyNELJ-7gbyQNE81juSM3IvgTdWqhZ_UEVt06xJRu8Z8oyAKfLLz-)
+<!-- Screenshot unavailable: WordPress network settings showing banned site names to prevent conflicts -->
 
 Na configuração de _subdomínio_, a possibilidade de conflitos de nomenclatura é mitigada pelo _subdomínio_, pois ele é único para o site da rede e não está relacionado de forma alguma ao site principal.
 
@@ -97,11 +97,11 @@ Na configuração de _subdomínio_, a possibilidade de conflitos de nomenclatura
 
 Nas configurações da rede do WordPress Multisite, várias novas opções de registro de usuário estão disponíveis, permitindo que usuários novos e existentes criem sites.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-nbH9Ka0YhI7nvo3nnKvOr_FoI_FpdAy5hz-f199CW-PV1D-tNKGawhIK_YwlUvM19TjLnhVb6Ro6J0ZpI6s2TRUaHgyGPc4qQI06eQ2O2jeMb_SaktkKwPUw3BSyaNegZYSjXMVX)
+<!-- Screenshot unavailable: WordPress Multisite network settings showing registration options -->
 
 Ao contrário das instalações WordPress autônomas, os sites da rede não mantêm as opções familiares para permitir registros de usuários ou atribuir esses registros a funções.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-7I21vdReE43e0Utj_KWdnuWA08ZXz7PX33rjSEjwf6T8NDiCBYbeP9GH0J36ekFNkmsXXLBYAWjQJo4vo_kWqL6hXJuFzd9RyA52zy13lT-mMsaK-JdVivUkd5SJF3UF13r2hj28)
+<!-- Screenshot unavailable: WordPress standalone site user registration settings showing limited options -->
 
 Quando as contas de usuário são criadas, essas contas são geradas no nível da rede. Assim, em vez de pertencer a um site específico, elas pertencem à rede. Isso traz algumas vantagens e desvantagens distintas.
 
@@ -153,15 +153,15 @@ Assim, ao aproveitar um desses provedores ou ao colocar o Ultimate Multisite atr
 
 Agências que preferem manter um controle rigoroso sobre a criação de sites apreciarão a facilidade com que podem criar sites e associar sites a clientes e planos por meio da interface otimizada do Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+![Ultimate Multisite site management interface](/img/admin/sites-list.png)
 
 Controle rigoroso sobre plugins e temas é mantido por produto por meio das interfaces intuitivas do Ultimate Multisite, permitindo que plugins e temas sejam disponibilizados ou ocultados, bem como seu estado de ativação quando instanciados para um novo site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-VVpPcr8bvKd2qf9zPB_1SBiVpEYdtmskG_iO0tNCJOm2RXbU6kSC1czyLV1CaU5Mw2fWd-k2r1bnQV_yA4zOL6qnYKLWohnI-EDYhXcpxD_4n-rabGlxjQO8iyjtOgXhuDL5r2y7)
+![Product plugin limitations interface](/img/config/product-plugins.png)
 
 Temas oferecem funcionalidade semelhante, permitindo que temas específicos sejam ativados ou ocultados na criação do site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3CEl6U5CPdKatlXAcG5B9jJux_iWOYpUTI4crCgW15EFkhh4pODF7hYlMyzc3na8QAefadz1kcnY_T7Yn6ZyxbBMJdfRfa16IFZma_-u7NHTtMbLZwJ9f7JbqG1QTh0y1l9WWj5z)
+![Product theme limitations interface](/img/config/product-themes.png)
 
 As agências encontrarão tranquilidade com o Ultimate Multisite, permitindo que façam o que fazem melhor: projetar sites web excepcionais.
 
@@ -265,7 +265,7 @@ Ao selecionar seu plugin, certifique-se de verificar se ele é compatível com m
 
 Muitos pontos já foram discutidos em relação a nomes de domínio no modo _subdomínio_ do multisite. Uma solução quase universal para administradores de rede é usar entradas DNS curinga.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GwkLVUQ9Wb.png)
+![Wildcard DNS entry configuration example](/img/config/settings-domain-mapping.png)
 
 Esse tipo de entrada DNS resolverá com sucesso _subdomínios_ como ‘site1.domain.com’ e ‘site2.domain.com’ para um endereço IP de 1.2.3.4, apoiando assim o Ultimate Multisite e, em maior extensão, o WordPress Multisite em modo _subdomínio_.
 

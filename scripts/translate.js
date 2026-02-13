@@ -170,26 +170,34 @@ function formatDuration(ms) {
 
 async function translate(text, targetLocale, opts, context = {}) {
 	const langName = getLocaleName(targetLocale);
+	const field = context.field || 'body';
 
-	const systemPrompt = `You are a professional translator for software documentation. Translate the following Docusaurus Markdown/MDX content from English to ${langName} (${targetLocale}).
+	// Use a focused prompt for short frontmatter fields (title, description)
+	// to prevent the model from getting confused by tiny inputs.
+	const systemPrompt = field === 'body'
+		? `You are a professional translator for software documentation. Translate the Docusaurus Markdown/MDX content below from English to ${langName} (${targetLocale}).
 
-CRITICAL RULES:
-1. Translate ONLY prose text and frontmatter "title" and "description" values.
-2. DO NOT translate or modify:
-   - Code blocks (fenced with \`\`\` or indented)
-   - Inline code (backtick-wrapped)
-   - MDX/JSX component tags and their attributes (e.g. <Tabs>, <TabItem>, <BrowserWindow>)
-   - Import statements
-   - URLs, file paths, directory names
-   - Hook names, function names, variable names, class names
-   - Product names: Ultimate Multisite, WordPress, WooCommerce, PHP, MySQL, etc.
-   - Brand names and proper nouns
-   - HTML tags and attributes
-   - Frontmatter keys (only translate values of "title" and "description")
-   - Anchor links and cross-references
-3. Preserve all original Markdown formatting (headings, lists, bold, italic, links, images).
-4. Preserve blank lines and document structure exactly.
-5. Output ONLY the translated content with no additional commentary.`;
+The user message is the COMPLETE document to translate. Always produce a translation — never ask for clarification, request more context, or say you need the content. The text you receive IS the content.
+
+WHAT TO TRANSLATE:
+- All human-readable prose: headings, paragraphs, list items, table cells, link text, image alt text
+- Descriptions and explanatory comments, including inside code blocks if they are prose (e.g. "// Custom logic when checkout completes")
+
+WHAT TO KEEP UNCHANGED:
+- Code: fenced code blocks, inline code, import statements, variable/function/class/hook names
+- MDX/JSX tags and attributes (e.g. <Tabs>, <AddonBanner>)
+- URLs, file paths, anchor links, cross-references
+- Product/brand names: Ultimate Multisite, WordPress, WooCommerce, PHP, MySQL, Stripe, etc.
+- HTML tags and attributes
+- Frontmatter (the --- delimited header) — it has already been handled separately
+
+FORMATTING RULES:
+- Preserve all Markdown formatting exactly: headings, lists, bold, italic, links, images, tables
+- Preserve blank lines and document structure — your output must have the same number of sections
+- Do NOT add, remove, or duplicate headings or sections
+- Do NOT wrap the output in a code fence or add any commentary before/after
+- Your output should be approximately the same length as the input`
+		: `Translate this short text from English to ${langName} (${targetLocale}). Output ONLY the translated text — no quotes, no explanation, no commentary. Keep product names (Ultimate Multisite, WordPress, etc.), technical identifiers (hook names like wu_*, function names), and formatting markers unchanged. The text to translate is:`;
 
 	if (opts.debug) {
 		console.log('\n--- DEBUG: API Request ---');
@@ -275,7 +283,89 @@ CRITICAL RULES:
 		context.timings.push({field: context.field, size: Buffer.byteLength(text, 'utf-8'), elapsed});
 	}
 
+	// Sanitize: strip wrapping code fences that some models add around the output
+	content = stripWrappingFences(content);
+
+	// Validate output quality
+	const validation = validateTranslation(text, content, field);
+	if (validation) {
+		throw new Error(`Bad translation (${validation})`);
+	}
+
 	return content;
+}
+
+/**
+ * Strip wrapping code fences (```markdown ... ```) that models sometimes
+ * add around the entire translated output.
+ */
+function stripWrappingFences(text) {
+	const trimmed = text.trim();
+	const match = trimmed.match(/^```(?:markdown|mdx|md)?\s*\n([\s\S]*?)\n```\s*$/);
+	if (match) return match[1];
+	return text;
+}
+
+// ---------------------------------------------------------------------------
+// Output validation — catch common AI translation failures
+// ---------------------------------------------------------------------------
+
+const BAD_OUTPUT_PATTERNS = [
+	/I'm ready to translate/i,
+	/I need the (?:Markdown|MDX|text|content|file)/i,
+	/Could you (?:please )?provide/i,
+	/Here(?:'s| is) the translat/i,
+	/Please provide (?:the )?(?:content|text|file|markdown)/i,
+	/I'll translate/i,
+	/Let me translate/i,
+	/I can help (?:you )?translate/i,
+	/translation of the (?:above|following|provided)/i,
+	/I don't have (?:access|the (?:content|text|file))/i,
+	/No (?:content|text) (?:was )?provided/i,
+	/waiting for (?:the )?(?:content|input|text)/i,
+];
+
+function validateTranslation(input, output, field) {
+	const trimmed = output.trim();
+
+	// Empty output
+	if (!trimmed) return 'empty output';
+
+	// Check for AI meta-commentary
+	for (const pattern of BAD_OUTPUT_PATTERNS) {
+		if (pattern.test(trimmed)) return `hallucination: "${trimmed.match(pattern)[0]}"`;
+	}
+
+	if (field === 'body') {
+		const inputLines = input.split('\n').length;
+		const outputLines = trimmed.split('\n').length;
+
+		// Bloat detection: output is >3x the input line count (for files with >5 lines)
+		if (inputLines > 5 && outputLines / inputLines > 3) {
+			return `bloated: ${outputLines}/${inputLines} lines (${(outputLines / inputLines * 100).toFixed(0)}%)`;
+		}
+
+		// Truncation detection: output is <30% of input (for files with >5 lines)
+		if (inputLines > 5 && outputLines / inputLines < 0.3) {
+			return `truncated: ${outputLines}/${inputLines} lines (${(outputLines / inputLines * 100).toFixed(0)}%)`;
+		}
+
+		// Repetition detection: check if any non-code line repeats excessively
+		const lineCounts = {};
+		let inCodeBlock = false;
+		for (const line of trimmed.split('\n')) {
+			const l = line.trim();
+			if (l.startsWith('```')) { inCodeBlock = !inCodeBlock; continue; }
+			if (inCodeBlock) continue; // skip lines inside code fences
+			if (l.length < 5) continue; // skip blank/short lines
+			lineCounts[l] = (lineCounts[l] || 0) + 1;
+			if (lineCounts[l] > 10) {
+				return `degenerate: "${l.substring(0, 40)}" repeated ${lineCounts[l]}+ times`;
+			}
+		}
+	}
+
+	return null; // valid
 }
 
 // ---------------------------------------------------------------------------
@@ -293,11 +383,12 @@ async function translateFile(srcPath, targetLocale, opts) {
 
 	// Check if translation already exists and source hasn't changed
 	if (await fs.pathExists(destPath)) {
-		const existing = await fs.readFile(destPath, 'utf-8');
-		const {data: existingFm} = matter(existing);
-		if (existingFm._i18n_hash === srcHash) {
+		// const existing = await fs.readFile(destPath, 'utf-8');
+		// const {data: existingFm} = matter(existing);
+		// if (existingFm._i18n_hash === srcHash) {
+        // Just check that it exists.
 			return {file: relPath, status: 'skipped', size: fileSize};
-		}
+		// }
 	}
 
 	if (opts.dryRun) {

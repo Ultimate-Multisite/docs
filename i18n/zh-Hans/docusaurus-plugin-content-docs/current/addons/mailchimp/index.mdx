@@ -1,21 +1,89 @@
 ---
 title: Mailchimp
 sidebar_position: 1
-_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
 ---
-The only way to get a non‑zero value is to have a term that contains the factor \(x\) in the numerator.  
-The denominator is a product of powers of \((x-1)\) and \((x+1)\); it never introduces a factor of \(x\).  
-Hence the only possible source of an \(x\) in the numerator is the factor \((x-1)^{\,n-1}\) in the first term of the numerator.
+import AddonBanner from '@site/src/components/AddonBanner';
 
-For this factor to contribute an \(x\) we must have
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-\[
-n-1=1 \quad\Longrightarrow\quad n=2 .
-\]
+# Mailchimp
 
-For \(n=2\) the numerator contains the factor \(x\) and the denominator does not cancel it, so the limit is non‑zero.  
-For any other integer \(n\) the numerator has no factor of \(x\), so the limit is zero.
+Multisite Ultimate: Mailchimp 集成
 
-\[
-\boxed{\,n=2\,}
-\]
+将您的 Multisite Ultimate 网络与 Mailchimp 集成。您可以将某些计划链接到 Mailchimp 列表，并在注册时自动将订阅者添加到这些列表中。
+
+## 安装
+
+1. 将 'ultimate-multisite-mailchimp' 上传到 '/wp-content/plugins/' 目录  
+2. 在您的 WordPress 网络管理后台的 '插件' 菜单中激活插件
+
+## 使用指南
+
+使用我们的 Ultimate Multisite: MailChimp Integration Add-on，您可以轻松同步订阅者的电子邮件与 MailChimp 列表。本教程旨在帮助您完成所有设置！
+
+## 获取 API 密钥
+
+在开始了解可用的不同设置之前，我们需要一个 MailChimp API 密钥。它将使 Ultimate Multisite 能够与 MailChimp API 通信，以检索列表、组，并在用户注册时将电子邮件地址添加到这些列表和组中。
+
+请按照此教程获取您自己的 MailChimp API 密钥：[关于 API 密钥 | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: Ultimate Multisite Add-on Settings 中的 MailChimp API 密钥设置 -->
+
+_Add your MailChimp API key on_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## 集成模式
+
+MailChimp 集成插件提供两种“集成模式”，这意味着您可以使用插件的两种不同方式来同步电子邮件地址。
+
+<!-- Screenshot unavailable: MailChimp 集成模式选择，包含多列表和单列表选项 -->
+
+_Two integration modes for greater flexibility!_
+
+### 模式 1：多列表
+
+默认模式使用 **Multiple Lists**。此模式允许您为每个计划选择多个 MailChimp 列表。如果您将用户分段到不同的列表中，这是最佳选择。
+
+例如，假设您在 MailChimp 帐户中有 3 个不同的列表：**Newsletter**、**Plan A** 和 **Plan B**。您希望所有用户，无论其计划如何，都能加入 Newsletter 列表，以免错过您的更新。
+
+为实现此目的，您可以使用多列表模式，将 **Newsletter** 和 **Plan A** 两个列表添加到 Plan A 的 MailChimp 设置中，并将 **Newsletter** 和 **Plan B** 添加到 Plan B 的 MailChimp 设置中。
+
+<!-- Screenshot unavailable: MailChimp 默认列表选择，用于新账户和已取消账户 -->
+
+_Select the default lists for new accounts and for canceled accounts_
+
+### 模式 2：单列表 + 多组
+
+MailChimp 允许您将列表细分为称为 **Groups** 的更小用户组。这使您拥有更多控制权，因为您可以向订阅者的特定子集发送活动，而无需在 MailChimp 上创建多份相同活动的副本（这会使后续分析该活动的指标变得困难）。
+
+例如，您可以拥有一个名为 **My Network Subscribers** 的单列表，并在其中为 **Plan A** 和 **Plan B** 创建组。
+
+<!-- Screenshot unavailable: MailChimp 单列表和组选择，用于默认列表 -->
+
+_Select the default lists and groups, if using the “single list + multiple groups” integration mode_
+
+## 默认列表和组
+
+在确定哪种集成模式更适合您的特定用例后，接下来是选择默认列表（以及根据模式选择的组）。默认列表将在某个计划未选择特定列表时使用。
+
+您还可以为已取消账户选择默认列表。每当用户终止其订阅并从您的网络中删除其账户时，其电子邮件地址将被移动到已取消账户设置的列表中。
+
+## 启用双订阅
+
+在同一设置页面，您可以启用 **Double Subscription**。此选项将把用户同时添加到所选默认列表和该用户计划所选列表中。如果未启用此选项，用户只会被添加到其计划所选列表中。如果该计划未设置任何列表，则用户将被添加到所选默认列表中。
+
+<!-- Screenshot unavailable: MailChimp 双订阅切换设置 -->
+
+_You can have your users subscribed to both the default list and the plan’s list on sign-up_
+
+## 为每个计划选择列表和组
+
+转到您的 **Plans** 并选择要编辑的计划。请注意，在 **Advanced Options** 元框中，将出现一个名为 MailChimp 的新选项卡。
+
+在该选项卡上，您可以为该计划选择多个列表，或单列表和多个组（取决于集成模式）。
+
+<!-- Screenshot unavailable: 计划编辑页面的 MailChimp 选项卡，显示列表和组选择 -->
+
+_Select the Lists and Groups you want to use for each of your plans_
+
+当新用户注册该计划时，其电子邮件地址将被添加到所选列表和组中！

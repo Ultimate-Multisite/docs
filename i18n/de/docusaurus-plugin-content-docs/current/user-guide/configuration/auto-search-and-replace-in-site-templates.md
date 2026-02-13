@@ -25,6 +25,6 @@ Um das zu lösen, bieten wir die Möglichkeit, gefälschte Werte für die Platzh
 
 Sie können auf den Editor für Vorlagen-Platzhalter zugreifen, indem Sie zu **Ultimate Multisite > Settings > Sites** gehen und dann im Seitenleistenmenü auf den Link Edit Placeholders klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

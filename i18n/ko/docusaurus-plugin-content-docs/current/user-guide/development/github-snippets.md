@@ -27,7 +27,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   3. 'Theme Files' 섹션에서 functions.php 파일을 클릭해 파일을 불러옵니다. 아래로 스크롤하여 GitHub 저장소에서 받은 Ultimate Multisite 스니펫을 붙여넣습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
 # Must-Use Plugins (mu-plugins) 생성 방법
 
@@ -39,7 +39,7 @@ WordPress에는 'Must-Use Plugins' 또는 줄여서 'mu-plugins'이라고 부르
 
   2. WordPress 설치의 wp-content 디렉터리 안에 mu-plugins라는 새 디렉터리를 만듭니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
 
   3. 컴퓨터에서 Notepad 또는 다른 코드 편집기를 사용해 wu-snippet.php라는 새 PHP 파일을 만듭니다.
 

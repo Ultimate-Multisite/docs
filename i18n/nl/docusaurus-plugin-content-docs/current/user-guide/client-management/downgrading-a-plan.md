@@ -13,17 +13,17 @@ Een plan of abonnement downgraden is een veelvoorkomende actie die uw klanten ku
 
 Uw klanten kunnen hun plan op elk moment downgraden door in te loggen op het beheerdersdashboard van hun subsite en op **Change** te klikken onder hun accountpagina.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 Na het klikken op de **Change** knop wordt de gebruiker/klant doorgestuurd naar de afrekenpagina waar ze het plan kunnen selecteren waar ze hun abonnement naartoe willen wijzigen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 In dit voorbeeld downgraden we het plan van **Premium** naar **Free**.
 
 Om door te gaan hoeft de gebruiker alleen maar op de **Complete Checkout** knop te klikken. Vervolgens worden ze teruggebracht naar de accountpagina met een bericht over de lopende wijziging voor het lidmaatschap. De wijzigingen komen in werking bij de **volgende factureringscyclus** van de klant.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### Wat gebeurt er wanneer een gebruiker zijn plan downgraden
 
@@ -35,7 +35,7 @@ We begrijpen dat uw belangrijkste zorg de limieten en quota's zijn die u onder e
 
 Voor de berichten die de limiet van het plan overschrijden, heeft u 3 verschillende opties: **Keep the posts as it** *,* **Move the posts to trash** *,* of **Move the posts to draft** *.* U kunt dit configureren onder Ultimate Multisite instellingen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### Wat gebeurt er met de betaling
 

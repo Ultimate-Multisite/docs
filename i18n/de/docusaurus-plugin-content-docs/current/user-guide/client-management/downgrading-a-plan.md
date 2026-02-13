@@ -13,17 +13,17 @@ Das Zurückstufen eines Plans oder Abonnements ist eine häufige Aktion, die Ihr
 
 Ihre Kunden können ihren Plan jederzeit zurückstufen, indem sie sich im Admin-Dashboard ihres Subsite anmelden und auf **Change** unter ihrer Kontoseite klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 Nach dem Klicken auf die Schaltfläche **Change** wird der Benutzer/Kunde zur Checkout-Seite weitergeleitet, auf der er den Plan auswählen kann, zu dem er sein Abonnement ändern möchte.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 In diesem Beispiel stellen wir den Plan von **Premium** auf **Free** zurück.
 
 Um fortzufahren, muss der Benutzer einfach auf die Schaltfläche **Complete Checkout** klicken. Danach wird er zurück zur Kontoseite geführt, die eine Meldung über die ausstehende Änderung der Mitgliedschaft anzeigt. Die Änderungen treten bei der **nächsten Abrechnungsperiode** des Kunden in Kraft.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### Was passiert, wenn ein Benutzer seinen Plan zurückstufen möchte
 
@@ -35,7 +35,7 @@ Wir verstehen, dass Ihre Hauptsorge die Limits und Quoten sind, die Sie unter je
 
 Für Beiträge, die das unter dem Plan festgelegte Limit überschreiten, haben Sie drei verschiedene Optionen: **Behalte die Beiträge wie sie sind** *,* **Bewege die Beiträge in den Papierkorb** *,* oder **Bewege die Beiträge in Entwürfe** *.* Sie können dies unter den Ultimate Multisite-Einstellungen konfigurieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### Was passiert mit der Zahlung
 

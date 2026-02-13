@@ -23,39 +23,39 @@ _**重要提示：在开始从 1.x 升级到 2.0 之前，请确保已备份您�
 
 _**注意：**如果您在 Multisite 上安装了 Ultimate Multisite 1.x，您将有机会用刚刚下载的版本替换插件。请继续点击 **Replace current with uploaded**。_
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDRjIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2aff9b312e5b7ec95c9e2c5355480d4aa7258fd/Migration.png)
+<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
 
 下一页将告诉您与版本 1.x 一起安装的旧版插件。它会说明您使用的版本是否与 2.0 兼容，或者在迁移后是否需要安装升级版插件。
 
-![Message on the top of the plugins page: Thanks for updating to Ultimate Multisite version 2.0. There's a link below it that leads the user to the version upgrader. Then, there's a list of add-ons that need to be updated.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4E9kAFlcb5.png)
+<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
 
 当您准备继续时，可以点击按钮 **Visit the Installer to finish the upgrade**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BnJrjt7Drw.png)
+<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
 
 随后它会将您带到安装向导页面，并显示一些欢迎信息。您只需点击 **Get Started** 进入下一页。
 
-![Setup Wizard's welcoming page. Framed in red at the bottom-right corner: Get Started button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1dvRbsEnrN.png)
+<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
 
 点击 **Get Started** 后，它会重定向到 Pre-install Checks_._。这将向您展示系统信息和 WordPress 安装，并告诉您它是否满足 **Ultimate Multisite's requirements**。
 
-![Pre-install Checks page showing confirmation messages that the installation meets Ultimate Multisite's requirements. Framed on red, on the bottom-right corner: Go to the next step button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i0SwDNkaEO.png)
+<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
 
 下一步是输入您的 Ultimate Multisite 许可证密钥并激活插件。这将确保所有功能，包括插件，都可在您的站点上使用。
 
-![License activation page listing what the support includes and what it doesn't. There's a box on the bottom to insert the plugin's license. Framed in red, on the bottom-right corner: Agree and activate button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QAwmR9oLQL.png)
+<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
 
 输入密钥后，点击 **Agree & Activate**。
 
 在许可证激活后，您可以通过点击下一页的 **Install** 开始实际安装。这将自动创建 2.0 运行所需的必要文件和数据库。
 
-![Installation page showing what will be updated in order to Ultimate Multisite to function. Framed in red, on the bottom-right: Install button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FCyBH12y4d.png)
+<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
 ## 现在，进行迁移
 
 迁移器具有内置的安全功能，它会检查整个 multisite，确保所有 Ultimate Multisite 数据可以无问题迁移。点击 **Run Check** 按钮开始流程。
 
-![Migration page explaining it will run a check to see if all your data from v1 can be converted. Framed in red, on the bottom-right corner: Run check button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vXLXFLjogz.png)
+<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
 
 检查完成后，您会得到两种结果：**出现错误** 或 **无错误**。
 
@@ -69,9 +69,9 @@ _**由于系统检测到错误，您将无法继续迁移到 2.0 版本。您可
 
 如果系统未发现错误，您将看到成功信息和底部的 **Migrate** 按钮，允许您继续迁移。在此页面，您将被提醒在继续之前备份数据库，我们强烈建议您这样做。若已备份，请点击 **Migrate**。
 
-![Migration page showing a success message and a recommendation to create a backup.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T5ELIgTX5a.png)
+<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
 
-![Framed in red, on the bottom-right corner: Migrate button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y2AfV93rpf.png)
+<!-- Screenshot unavailable: Migrate button on the bottom-right corner -->
 
 这就是全部！
 

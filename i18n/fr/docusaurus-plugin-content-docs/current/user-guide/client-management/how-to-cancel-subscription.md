@@ -7,19 +7,19 @@ _i18n_hash: 775190fa348501ea8d557b51c0b9acd9
 
 Si vous possédez une licence Ultimate Multisite, vous pouvez annuler son renouvellement à tout moment. Suivez simplement les étapes ci-dessous :
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)
+<!-- Screenshot unavailable: Account page email with access link -->
 
 Utilisez l’e‑mail que vous avez fourni lors de l’achat ainsi que votre mot de passe.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)
+<!-- Screenshot unavailable: Login page with email and password fields -->
 
 Voici l’écran initial de votre page de compte :
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--157d6544a77090f7ae56e4a26e04a9adddb53f4c/Available free on wordpress.org.png)
+<!-- Screenshot unavailable: Account page initial screen showing subscription details -->
 
 Pour annuler votre abonnement, dans le menu de gauche, allez dans _Renewing & Billing_.
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c00d8fe9945900093d923bb60ac1560f6e5edd94/Available free on wordpress.org.png)
+<!-- Screenshot unavailable: Renewing & Billing page with cancel option -->
 
 Cliquez sur la flèche à droite pour ouvrir une fenêtre latérale. Ensuite, sélectionnez l’option qui annulera le **auto-renew**.
 

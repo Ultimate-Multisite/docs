@@ -67,7 +67,6 @@ Documentação auto-gerada para todas as **59 ações** e **115 filtros** no Ult
 - [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Dispara após um objeto ser armazenado no banco de dados.
 - [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Dispara após um objeto ser armazenado no banco de dados.
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dispara após um objeto ser armazenado no banco de dados.
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — Dispara após um objeto é armazenado no banco de dados.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permite que desenvolvedores de plugins adicionem ações ao processo de desbloqueio.
 
 ## Filtros

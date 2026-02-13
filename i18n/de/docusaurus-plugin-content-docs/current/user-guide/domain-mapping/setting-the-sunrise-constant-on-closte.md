@@ -13,15 +13,15 @@ Closte bietet jedoch eine Möglichkeit, Konstanten sicher zur wp-config.php hinz
 
 Zuerst [loggen Sie sich in Ihr Closte-Konto ein](https://app.closte.com/), klicken Sie auf den Menüpunkt Sites und anschließend auf den Dashboard-Link der Seite, an der Sie gerade arbeiten:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dPRIeofCDK.png)
+<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
 Sie sehen eine Reihe neuer Menüeinträge auf der linken Seite des Bildschirms. Navigieren Sie zur **Settings**-Seite über dieses Menü:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JmSwHIOaGz.png)
+<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
 Dann, auf der **Settings**-Seite, finden Sie den WP‑Config-Tab und anschließend das Feld „Additional wp-config.php content“ auf diesem Tab:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FqVEnSTIu9.png)
+<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
 Im Zusammenhang mit der Installation von Ultimate Multisite müssen Sie die Sunrise-Konstante in dieses Feld einfügen. Fügen Sie einfach eine neue Zeile hinzu und fügen Sie die folgende Zeile ein. Danach klicken Sie auf die Schaltfläche **Save All**.
 

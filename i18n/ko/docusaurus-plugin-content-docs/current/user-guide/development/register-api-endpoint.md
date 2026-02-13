@@ -16,7 +16,7 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 
 이 프로세스를 위해 API 자격 증명이 필요합니다. 이를 얻으려면 네트워크 관리자 패널로 이동하여 **Ultimate Multisite > Settings** > **API & Webhooks** 로 이동한 뒤 API Settings 섹션을 찾으세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzcShcSVgI.png)  
+![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
 **Enable API** 를 선택하고 API 자격 증명을 받으세요.
 
 이제 엔드포인트를 살펴보고 Zapier에서 등록 액션을 만들어 보겠습니다.
@@ -85,31 +85,31 @@ Zapier와 함께 등록 엔드포인트를 사용하는 방법을 더 잘 보여
 
 Google Forms에서 네트워크에 새 멤버십을 만들기 위해 필요한 최소 필드만 포함한 양식을 만드세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xaVRQkloWg.png)
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
 이제 Zapier에서 새 Zap을 만들고 Google에서 생성한 양식을 데이터가 저장된 스프레드시트를 통해 연결하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-67iVl1XK46.png)
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
 완료! Google Forms 양식이 Zapier와 연결되어 네트워크와 통합될 준비가 되었습니다. 이제 Google Forms가 작성될 때마다 트리거되는 액션으로 넘어가 보겠습니다.
 
 새 Ultimate Multisite 앱을 찾아 선택하세요. 이 종류의 Zap에서는 Register 옵션을 선택합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hq2yHGYR31.png)
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
 이 첫 번째 단계 이후, 이 Zap에 연결될 계정을 선택하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BuyTLt0JUM.png)
+After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
 이는 전체 프로세스에서 가장 민감한 부분입니다. Google Forms에서 가져온 필드를 등록 엔드포인트에 필요한 최소 필드와 매칭해야 합니다. 앞서 본 섹션을 참고하세요.
 
 이 예시에서는 사용자 이름, 이메일, 비밀번호, 이름 및 웹사이트 URL만 구성하면 됩니다. 나머지는 미리 지정되어 있어 Google Forms에서 생성되는 모든 멤버십이 동일한 제품 및 상태 패턴을 따릅니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4pjTVOmauz.png)
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
 정보를 설정한 후 최종 테스트를 진행하세요. 마지막 화면에서 엔드포인트에 전송될 모든 필드와 해당 정보, 빈 필드를 확인할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fD2A9dYbDs.png)
+With the information set up, proceed to the final test. On the last screen you can see all the fields that will be sent to the endpoint, their respective information and the fields that will be sent empty.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
 
 새 Zap을 테스트하고 성공적으로 완료되어야 합니다. 오류가 발생하면 모든 필드를 확인하고 올바르게 전송되는지 점검하세요. 정보가 많아 놓치기 쉬운 부분이 있을 수 있습니다.
 

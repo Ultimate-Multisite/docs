@@ -13,19 +13,19 @@ Wenn Ihr Benutzer seine Mitgliedschaft kündigen möchte, sollte er zunächst se
 
 Dort sollte er zum **Danger Zone** gehen und auf **Delete Account** klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7IO8WYhID5.png)
+![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
 
 Ein Modul öffnet sich und fragt nach ihrer Bestätigung. Sie sollten die Option **Confirm Account Deletion** aktivieren und auf **Delete Account** klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NavCHgYJYo.png)
+![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
 
 Dies wird sie aus der Seite ausloggen und ihre Mitgliedschaft in Ihrem Netzwerk kündigen, sowie ihre Seite aus Ihrem Netzwerk löschen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KFkpD0CRhT.png)
+![Logged out after account deletion](/img/admin/memberships-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jWkEmpf9ij.png)
+![Membership canceled confirmation](/img/admin/memberships-list.png)
 
 **Wichtig:** Beachten Sie, dass diese Aktion den Kunden nicht aus Ihrem Netzwerk ausschließt, da ein Kunde mehr als eine Mitgliedschaft haben kann oder keine Mitgliedschaft mit ihm verknüpft ist.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDX2xRZVHu.png) | ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5g9qbL4SaT.png)  
+![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
 ---|---

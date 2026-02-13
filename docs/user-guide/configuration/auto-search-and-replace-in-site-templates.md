@@ -25,8 +25,8 @@ To solve that, we offer the option of setting fake values for the placeholders, 
 
 You can have access to the template placeholders editor by heading to **Ultimate Multisite > Settings > Sites**, and then, on the sidebar, clicking the Edit Placeholders link.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 That will take you to the placeholders' content editor, where you can add placeholders and their respective content.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

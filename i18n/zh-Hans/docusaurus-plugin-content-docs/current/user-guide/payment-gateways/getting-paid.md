@@ -13,33 +13,33 @@ Ultimate Multisite 有一个内置的会员和计费系统。为了让我们的�
 
 您可以在 Ultimate Multisite 计费设置中配置这些支付网关。您可以通过 **Ultimate Multisite > Settings > Payments** 找到它。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-42sl37Fn5G.png)
+![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
 在设置支付网关之前，请先查看您可以配置的基本支付设置：
 
 **强制自动续费** **w:** 这将确保支付将在每个计费周期结束时自动续费，具体取决于用户选择的计费频率。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Og3iJwLdmn.png)
+![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
 
 **允许无付款试用** **method:** 启用此选项后，您的客户在注册过程中无需添加任何财务信息。只有在试用期结束后才需要。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aA5Olqe9M9.png)
+![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
 
 **支付确认后发送发票**: 这给您一个选项，决定是否在付款后发送发票。请注意，用户可以在其子站点仪表盘中查看其付款历史。此选项不适用于手动支付网关。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RGupao7GvW.png)
+![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
 
 **发票编号方案**: 在此，您可以选择使用付款参考代码或顺序编号方案。如果您选择为发票使用付款参考代码，则无需配置任何内容。如果您选择使用顺序编号方案，则需要配置 **下一个发票编号**（此编号将用作系统生成的下一个发票的发票编号。每创建一张新发票，它会递增 1。您可以更改并保存它，以将发票顺序编号重置为特定值）以及 **发票编号前缀**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mP0949Eawa.png)
+![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oD5LaLaw7t.png)
+![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
 
 ## 在哪里找到支付网关
 
 您可以在同一页面（**Ultimate Multisite > Settings > Payments**）设置支付网关。在 **active payment gateways** 下方，您将看到：_Stripe_、_Stripe Checkout_、_PayPal_ 和 _Manual_。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-g9RMYx84r5.png)
+![Active payment gateways list](/img/config/settings-payment-gateways.png)
 
 我们为每个支付网关都有专门的文章，指导您完成设置步骤，您可以在下面的链接中找到。
 
@@ -59,23 +59,23 @@ _**重要提示：** Ultimate Multisite：WooCommerce 集成至少需要在您�
 
 首先，请前往插件页面。您可以通过 **Ultimate Multisite > Settings** 找到它。您应该会看到 **Add-ons** 表格。点击 **Check our Add-ons**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WtOkJNuCsj.png)
+![Settings page with add-ons section](/img/config/settings-general.png)
 
 点击 **Check our Add-ons** 后，您将被重定向到插件页面。在这里，您可以找到所有 Ultimate Multisite 插件。点击 **Ultimate Multisite: WooCommerce Integration** 插件。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 会弹出一个窗口显示插件详情。只需点击 **Install Now**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fGaxHyPtsv.png)
+![WooCommerce add-on install dialog](/img/config/settings-general.png)
 
 安装完成后，您将被重定向到插件页面。在这里，只需点击 **Network Activate**，WooCommerce 插件将在您的网络上激活。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TM2lYtgyM7.png)
+![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
 
 激活后，如果您的网站仍未安装并激活 WooCommerce 插件，您将收到提醒。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VwIGoJhzqc.png)
+![WooCommerce activation reminder notice](/img/config/settings-general.png)
 
 要了解更多关于 WooCommerce 集成插件的信息，请 **点击此处**。
 
@@ -83,15 +83,15 @@ _**重要提示：** Ultimate Multisite：WooCommerce 集成至少需要在您�
 
 安装 _GoCardless_ 插件的步骤与安装 _WooCommerce_ 插件几乎相同。请前往插件页面并选择 **Ultimate Multisite: GoCardless Gateway** 插件。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 插件窗口将弹出。点击 **Install Now**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIpPgP4VVo.png)
+![GoCardless add-on install dialog](/img/config/settings-general.png)
 
 安装完成后，您将被重定向到插件页面。在这里，只需点击 **Network Activate**，_GoCardless_ 插件将在您的网络上激活。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FGurJpzaF0.png)
+![Network Activate the GoCardless add-on](/img/config/settings-general.png)
 
 要了解如何开始使用 _GoCardless_ 网关，请 **阅读本文**。
 
@@ -99,12 +99,12 @@ _**重要提示：** Ultimate Multisite：WooCommerce 集成至少需要在您�
 
 前往插件页面并选择 **Ultimate Multisite: Payfast Gateway** 插件。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 插件窗口将弹出。点击 **Install Now**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1jpCakOHNy.png)
+![Payfast add-on install dialog](/img/config/settings-general.png)
 
 安装完成后，您将被重定向到插件页面。在这里，只需点击 **Network Activate**，_Payfast_ 插件将在您的网络上激活。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-49OQHBwPxk.png)
+![Network Activate the Payfast add-on](/img/config/settings-general.png)

@@ -13,7 +13,7 @@ Checkout Formsは、新規顧客の獲得を試みる際にさまざまなアプ
 
 Ultimate Multisiteをインストールすると、メインサイトにカスタムログインと登録ページが自動的に作成されます。これらのデフォルトページは、**Ultimate Multisite > Settings > Login & Registration**ページに移動していつでも変更できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-K3a5Ol4prD.png)
+![Login and Registration settings page](/img/config/settings-general.png)
 
 **Login & Registration**ページでカスタマイズできる各オプションを見てみましょう：
 
@@ -47,7 +47,7 @@ Ultimate Multisite 2.0は、任意の数のフォームを作成できるチェ�
 
 この機能にアクセスするには、左側のサイドバーで**Checkout Forms**メニューに移動します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vvxvSRGAfu.png)
+![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
 
 このページでは、作成済みのすべてのチェックアウトフォームが表示されます。
 
@@ -55,11 +55,11 @@ Ultimate Multisite 2.0は、任意の数のフォームを作成できるチェ�
 
 開始点として、シングルステップ、マルチステップ、または空白の3つのオプションから選択できます。次に、**Go to the Editor**をクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
 
 または、既存のフォームを編集または複製するには、名前の下にあるオプションをクリックします。そこで、フォームのショートコードをコピーするオプションやフォームを削除するオプションも見つかります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
 
 シングルステップまたはマルチステップを選択すると、チェックアウトフォームはすでに基本ステップで事前に入力されています。必要に応じて追加ステップを追加できます。
 
@@ -69,31 +69,31 @@ Ultimate Multisite 2.0は、任意の数のフォームを作成できるチェ�
 
 チェックアウトフォームエディタに移動したら、フォームに名前（内部参照のみで使用）とスラッグ（例：ショートコード作成に使用）を付けます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
 
 フォームはステップとフィールドで構成されます。**Add New Checkout Step**をクリックして新しいステップを追加できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9Wgpw8DTj9.png)
+![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
 
 モーダルウィンドウの最初のタブで、フォームステップの内容を入力します。ID、名前、説明を付けます。これらは主に内部で使用されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lr6RKlgll1.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
 
 次に、ステップの表示設定を行います。**Always show**、**Only show for logged in users**、**Only show for guests**のいずれかを選択できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0Q6LxP9E90.png)
+![Checkout step visibility options](/img/config/checkout-form-step.png)
 
 最後に、ステップスタイルを設定します。これらはオプションのフィールドです。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WmBuHXYH7N.png)
+![Checkout step style configuration](/img/config/checkout-form-step.png)
 
 次に、最初のステップにフィールドを追加します。**Add New Field**をクリックし、希望するセクションタイプを選択します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vM8n8QuTzk.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HkNUp6cWRG.png)
+![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
 
 各フィールドには入力すべきパラメータが異なります。最初の入力では**Username**フィールドを選択します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PFaP6RufZU.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U6Mm10qIeF.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Lr1mEi1DlH.png)
+![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
 
 必要に応じて任意の数のステップとフィールドを追加できます。顧客が選択できるように製品を表示するには、Pricing Tableフィールドを使用します。クライアントにテンプレートを選択させたい場合は、Template Selectionフィールドを追加します。その他も同様です。
 
@@ -103,23 +103,23 @@ Ultimate Multisite 2.0は、任意の数のフォームを作成できるチェ�
 
 チェックアウトフォームを作成中は、プレビューボタンを使用してクライアントがフォームをどのように見るか確認できます。既存ユーザーとして、または訪問者として表示を切り替えることもできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3zPxZNqzkG.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YXZp7n5Nuw.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
 
 最後に、**Advanced Options**で**Thank You**ページのメッセージを設定したり、コンバージョン追跡用のスニペットを追加したり、チェックアウトフォームにカスタムCSSを追加したり、特定の国に制限したりできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TVQ9EUbGJ6.png)
+![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
 
 右側の列でこのオプションを切り替えてチェックアウトフォームを手動で有効または無効にしたり、フォームを完全に削除したりできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-N5wdel1IIp.png)
+![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
 
 チェックアウトフォームを保存するのを忘れないでください！
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rJPV89yQZt.png)
+![Save Checkout Form button](/img/config/checkout-form-save.png)
 
 フォームのショートコードを取得するには、**Generate Shortcode**をクリックし、モーダルウィンドウに表示された結果をコピーします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RTJclNTnJZ.png)
+![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
 
 **Note:** このショートコードを登録ページに追加して、チェックアウトフォームを表示させる必要があります。
 
@@ -131,7 +131,7 @@ Ultimate Multisite 2.0は、任意の数のフォームを作成できるチェ�
 
 **Ultimate Multisite > Products > Select a plan**に移動します。ページ上部に**Click to copy Shareable Link**ボタンが表示されます。これは、チェックアウトフォームでこの特定のプランを事前に選択するために使用できるリンクです。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bUyOlBEfNj.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 この共有リンクは**Plans**にのみ有効です。パッケージやサービスには共有リンクを使用できません。
 
@@ -141,7 +141,7 @@ Ultimate Multisite 2.0は、任意の数のフォームを作成できるチェ�
 
 使用したいサイトテンプレートのすぐ下にある**Manage**をクリックします。SITE ID番号が表示されます。この番号を使用して、チェックアウトフォームでこの特定のサイトテンプレートを事前に選択します。ここではURLパラメータは**?template_id=2**です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JEgVAVNYMu.png)
+![Sites list showing site template ID](/img/config/site-templates-list.png)
 
 ネットワークサイトが[**www.mynetwork.com**](http://www.mynetwork.com)で、登録ページ（チェックアウトフォーム付き）が**/register**ページにあるとします。このサイトテンプレートが事前に選択された完全なURLは、[**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**のようになります。
 

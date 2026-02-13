@@ -13,17 +13,17 @@ Reduzir um plano ou assinatura é uma ação comum que seus clientes podem fazer
 
 Seus clientes podem reduzir seu plano a qualquer momento, fazendo login no painel administrativo do subsite e clicando em **Change** na página da conta.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 Ao clicar no botão **Change**, o usuário/cliente será redirecionado para a página de checkout, onde poderá selecionar o plano para o qual deseja mudar a assinatura.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 Neste exemplo, estamos reduzindo o plano de **Premium** para **Free**.
 
 Para prosseguir, o usuário só precisa clicar no botão **Complete Checkout**. Ele será então levado de volta à página da conta, exibindo uma mensagem sobre a alteração pendente da assinatura. As mudanças entrarão em vigor no **próximo ciclo de faturamento** do cliente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### O que acontece quando um usuário reduz seu plano
 
@@ -35,7 +35,7 @@ Entendemos que sua principal preocupação seriam os limites e cotas que você d
 
 Para os posts que excedem o limite definido no plano, você tem 3 opções diferentes: **Manter os posts como estão**, **Mover os posts para a lixeira** ou **Mover os posts para rascunho**. Você pode configurar isso nas configurações do Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### O que acontece com o pagamento
 

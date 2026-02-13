@@ -17,7 +17,7 @@ Stripe와 마찬가지로 PayPal은 특히 WordPress 웹사이트에서 온라�
 
 네트워크에서 PayPal을 사용 가능한 결제 수단으로 활성화하려면 **Ultimate Multisite > Settings > Payments** 탭으로 이동하여 PayPal 옆의 확인란을 선택합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## PayPal API 자격 증명 가져오기
 
@@ -27,15 +27,15 @@ PayPal이 결제 게이트웨이로 활성화되면 PayPal API **Username**, Pay
 
 (PayPal **sandbox 모드**를 사용하여 결제를 테스트하고 게이트웨이가 올바르게 설정되었는지 확인할 수 있습니다. 해당 섹션을 토글만 하면 됩니다.)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 PayPal 계정에 대한 API Signature 또는 Certificate 자격 증명을 요청하려면:
 
 1. 귀하의 [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess)로 이동합니다.
 2. **API access** 섹션에서 **Update**를 클릭합니다.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 3. **NVP/SOAP API integration (Classic)** 아래에서 **Manage API credentials**를 클릭합니다.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * 이미 API Signature 또는 Certificate를 생성한 경우, 자격 증명을 확인할 수 있는 페이지로 리디렉션됩니다.
    * _**참고:** PayPal 계정 확인을 요청받는 경우 화면 지침을 따르세요._
@@ -46,7 +46,7 @@ PayPal 계정에 대한 API Signature 또는 Certificate 자격 증명을 요청
    * **Request API Certificate** – API Certificate 인증을 위해 선택합니다.
 
 5. PayPal은 다음과 같이 API 자격 증명을 생성합니다:  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **API Signature credentials**에는 만료되지 않는 API Username, API Password, Signature가 포함됩니다. 이 값들은 보안을 위해 기본적으로 숨겨져 있습니다. **Show/Hide**를 클릭해 표시/숨김을 전환합니다. 완료되면 **Done**을 클릭합니다.
    * **API Certificate credentials**에는 3년 후 자동으로 만료되는 API Username, API Password, Certificate가 포함됩니다. **Download Certificate**를 클릭해 API Certificate를 데스크톱에 저장합니다.

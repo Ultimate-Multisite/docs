@@ -15,13 +15,13 @@ Dans cet article, nous vous présenterons trois extraits de code pouvant être u
 
   * [**Correction des problèmes CORS avec les icônes de police dans les domaines mappés**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Changement de la position de l'élément de menu Compte
+## Changement de la position de l'élément de menu Compte {#changing-the-position-of-the-account-menu-item}
 
 Pour changer la position de l'élément de menu Compte sur le tableau de bord de votre client, ajoutez simplement l'extrait de code suivant au fichier functions.php du thème actif de votre site principal. Vous pouvez également placer l'extrait dans l'un de vos plugins MU ou plugins personnalisés.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Comment vérifier si l'utilisateur est sous un plan donné et/ou possède un abonnement actif
+## Comment vérifier si l'utilisateur est sous un plan donné et/ou possède un abonnement actif {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 En tant qu'administrateur réseau, vous devrez peut-être créer des fonctions personnalisées qui effectueront des actions de base ou rendront un service/fonctionnalité disponible à un groupe sélectionné d'abonnés ou d'utilisateurs finaux, en fonction du statut de leur abonnement et du plan auquel ils sont abonnés.
 
@@ -45,10 +45,9 @@ Pour obtenir l'ID d'un plan, vous pouvez accéder à **Ultimate Multisite > Prod
 
 Notez que les utilisateurs ne peuvent s'abonner qu'à un **Plan**, pas à un Package ou Service, car ce sont uniquement des add-ons pour un **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Correction des problèmes CORS avec les icônes de police dans les domaines mappés
-## Correction des problèmes CORS avec les icônes de police dans les domaines mappés
+## Correction des problèmes CORS avec les icônes de police dans les domaines mappés {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Après avoir mappé un domaine à un sous-site, vous constaterez peut-être que le site a des difficultés à charger des polices personnalisées. Cela est dû à un blocage cross-origin dans les paramètres de votre serveur.
 

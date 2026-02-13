@@ -25,7 +25,7 @@ _**IMPORTANT**_ **:** 기존 WordPress 웹사이트에 멀티사이트 네트워
 
   * 플러그인 페이지로 이동해 일괄 작업에서 _Deactivate_를 선택한 뒤 _Apply_를 클릭해 사이트의 모든 플러그인을 비활성화하세요
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 To enable Multisite, first connect to your site using a FTP client or cPanel file manager, and open your wp-config.php file for editing.
 
@@ -39,7 +39,7 @@ With the multisite feature enabled on your site, now it’s time to setup your n
 
 Go to **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Now you need to tell WordPress what kind of domain structure you will be using for sites in your network: subdomains or subdirectories.
 
@@ -47,7 +47,7 @@ If you choose subdomains, you must change your DNS settings for domain mapping a
 
 Back to the Network Setup, give a title for your network and be sure that the email address in the Network admin email is correct. Click _Install_ to continue.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Add this code, provided by WordPress, to your _**wp-config.php**_ :
 
@@ -89,7 +89,7 @@ To create a subsite:
 
   * 관리자 이메일 — 서브사이트의 초기 관리자 사용자로 설정
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 필드를 모두 입력한 뒤 'Add site' 버튼을 클릭합니다. 새 서브사이트가 생성되면 접근해 서브사이트가 정상적으로 동작하는지 확인하세요.
 

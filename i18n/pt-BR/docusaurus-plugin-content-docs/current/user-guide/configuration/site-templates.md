@@ -21,15 +21,15 @@ Isso parece incrível, mas como eu crio um novo modelo de site? É tão simples 
 
 Modelos de Site são apenas sites normais em sua rede. Para criar um novo modelo, basta acessar **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![add site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)**
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 Isso abrirá uma janela modal que solicitará o **Site title, Site Domain/path,** e **Site type**. No campo suspenso **Site Type**, certifique-se de selecionar **Site Template** *.*
 
-_![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)_
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 Na parte inferior do formulário, você verá um interruptor **Copy Site**. Isso permitirá que você crie um novo modelo de site com base em um modelo existente como ponto de partida, ajudando a economizar tempo em vez de criar um modelo do zero.
 
-![Add site template modal 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### Personalizando o Conteúdo de um Modelo de Site
 
@@ -57,11 +57,11 @@ Neste modo, seus clientes não poderão escolher um modelo ao criar uma conta, m
 
 Para fazer isso, você precisará acessar **Ultimate Multisite > Products > Edit**.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 Isso o levará à página **Edit Produc** t. Na seção **Product Options**, encontre a aba **Site template** e selecione a opção **Assign Site** **Template** no campo suspenso. Isso exibirá a lista de modelos de site disponíveis e permitirá que você selecione apenas um modelo dedicado ao produto.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Modo 2: Escolher Modelo de Site Disponível
 
@@ -69,27 +69,27 @@ Neste modo, você dará aos seus clientes uma escolha durante o processo de cada
 
 Na página **Edit Product**. Na seção **Product Options**, encontre a aba **Site template** e selecione a opção **Choose Available Site Template** no campo suspenso. Isso exibirá a lista de modelos de site disponíveis e permitirá que você selecione o modelo que deseja disponibilizar. Você pode fazer isso escolhendo seu Comportamento: **Available** se quiser que o modelo seja incluído na lista. _**Not Available**_ se quiser que o modelo não apareça como opção. E **Pre-selected** se desejar que um dos modelos listados seja o padrão selecionado.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### Modo Padrão: Seleção de Modelo de Site no Formulário de Checkout
 
 Se você deseja que todos os seus modelos de site estejam disponíveis durante o registro, ou talvez não prefira fazer o trabalho extra de atribuir ou especificar modelos de site em cada produto que você cria, basta definir a seleção de modelo de site em seu **Checkout Form**. Para fazer isso, basta acessar **Ultimate Multisite > Checkout Forms**. Em seguida, clique em **Edit** no formulário que deseja configurar.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 Isso abrirá a página **Edit Checkout Form**. Encontre o campo **Template Selection** e clique em **Edit** abaixo dele.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 Uma janela modal aparecerá. No campo **Template Sites**, você pode selecionar e listar todos os modelos de site que deseja disponibilizar durante o registro. Os modelos de site que você especificar aqui estarão disponíveis independentemente do produto que o usuário selecionou.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Opções de Modelo de Site
 
 Existem outras funções de modelos de site disponíveis que você pode ativar ou desativar nas configurações do Ultimate Multisite.
 
-![Site template option](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Permitir Troca de Modelo
 
@@ -113,21 +113,21 @@ Uma das funcionalidades mais poderosas do Ultimate Multisite é a capacidade de 
 
 Por exemplo, se você deseja obter o nome da empresa do usuário final durante o registro e colocar automaticamente o nome da empresa na página inicial. Na página inicial do seu site modelo, você precisa adicionar os espaços reservados, como na imagem abaixo (os espaços reservados devem ser adicionados entre chaves duplas - {{placeholder_name}}).
 
-![homepage placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 Em seguida, basta adicionar um campo de registro correspondente no seu formulário de checkout para capturar esses dados:
 
-![checkout form](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 Seu cliente então poderá preencher esse campo durante o registro.
 
-![registration field](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 O Ultimate Multisite então substituirá os espaços reservados pelos dados fornecidos pelo cliente automaticamente.
 
-![replace placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Resolvendo o problema de “modelo cheio de espaços reservados”
 
@@ -137,8 +137,8 @@ Para resolver isso, oferecemos a opção de definir valores falsos para os espa�
 
 Você pode acessar o editor de espaços reservados do modelo indo para **Ultimate Multisite > Settings > Sites**, e então, na barra lateral, clicando no link **Edit Placeholders**.
 
-![placeholder settings](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 Isso o levará ao editor de conteúdo dos espaços reservados, onde você pode adicionar espaços reservados e seu conteúdo respectivo.
 
-![template placeholders](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

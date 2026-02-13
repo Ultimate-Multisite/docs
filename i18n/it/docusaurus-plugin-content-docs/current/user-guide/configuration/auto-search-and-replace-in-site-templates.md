@@ -25,8 +25,8 @@ Per risolvere questo, offriamo l'opzione di impostare valori finti per i segnapo
 
 Puoi accedere all'editor dei segnaposto del template andando su **Ultimate Multisite > Settings > Sites**, e poi, nella barra laterale, cliccando sul link Modifica segnaposto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 Ciò ti porterà all'editor dei contenuti dei segnaposto, dove puoi aggiungere segnaposto e i rispettivi contenuti.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

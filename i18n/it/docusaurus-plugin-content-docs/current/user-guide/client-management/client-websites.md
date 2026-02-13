@@ -9,26 +9,26 @@ Dopo essersi registrati nella tua rete, i tuoi clienti possono accedere al loro 
 
 Oltre alla pagina **Account**, dove possono vedere informazioni importanti riguardanti i loro pagamenti, abbonamenti, domini, limitazioni del piano e altro, hanno anche accesso alla pagina **I miei siti**, dove possono vedere e gestire tutti i loro siti web. Tutto ciò che devono fare è cliccare su *I miei siti* nel loro cruscotto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-giAvstK90F.png)
+![My Sites link in the customer dashboard](/img/admin/customers-list.png)
 
 Verranno mostrati tutti i loro siti web, con un pulsante **Gestisci** subito sotto ciascuno di essi. Se vi cliccano, verranno reindirizzati al **cruscotto di questo sito specifico**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKHdV8cyYl.png)
+![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
 
 Possono anche vedere quale dei loro siti è il **principale** per i piani che consentono di avere più di un sito web.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lW9oJNcdVe.png)
+![Account menu link in customer dashboard](/img/admin/customers-list.png)
 
 Se vogliono cambiare il sito principale, devono andare alla pagina Account cliccando sul menu **Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YCnbsxW8IB.png)
+![Change Default Site button on account page](/img/admin/customers-list.png)
 
 Poi, devono cliccare su **Cambia sito predefinito**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SLSxU7NnEF.png)
+![Change Default Site dropdown selection](/img/admin/customers-list.png)
 
 Si aprirà una finestra pop-up. Clicca sulla lista a discesa e seleziona quale sito vuoi rendere il sito principale.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FQiGxBjht8.png)
+![Confirming the default site change](/img/admin/customers-list.png)
 
 Poi, basta cliccare su **Cambia sito predefinito** e hai finito!

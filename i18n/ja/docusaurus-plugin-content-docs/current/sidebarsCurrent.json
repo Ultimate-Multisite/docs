@@ -56,7 +56,7 @@
     "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
   },
   "sidebar.developerSidebar.category.Hooks Reference": {
-    "message": "フックリファレンス",
+    "message": "フックのリファレンス",
     "description": "The label for category Hooks Reference in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.REST API": {
@@ -68,7 +68,7 @@
     "description": "The label for category Integration Guide in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Code Examples": {
-    "message": "Code Examples",
+    "message": "コード例",
     "description": "The label for category Code Examples in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Addon Development": {
@@ -124,7 +124,7 @@
     "description": "The label for category Gravity Forms in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Language Selector": {
-    "message": "言語選択",
+    "message": "言語セレクター",
     "description": "The label for category Language Selector in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Loco Translate": {
@@ -160,7 +160,7 @@
     "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Agents": {
-    "message": "サポートエージェント",
+    "message": "サポート担当者",
     "description": "The label for category Support Agents in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Tickets": {
@@ -172,7 +172,7 @@
     "description": "The label for category VAT in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Admin Page Creator": {
-    "message": "管理ページ作成者",
+    "message": "管理ページ作成ツール",
     "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Addon Template": {
@@ -180,7 +180,7 @@
     "description": "The label for category Addon Template in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
-    "message": "Tutor マルチサイト互換性",
+    "message": "Tutor Multisite 互換性",
     "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Material WP": {

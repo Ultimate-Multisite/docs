@@ -21,7 +21,7 @@ _**ВАЖНО**_ **:** Если вы настраиваете сеть WordPress
 * Создайте полную резервную копию вашего сайта WordPress
 * Деактивируйте все плагины на вашем сайте, перейдя на страницу плагинов, выбрав _Deactivate_ из массовых действий, а затем нажав _Apply_
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 Чтобы включить Multisite, сначала подключитесь к вашему сайту с помощью FTP-клиента или файлового менеджера cPanel и откройте файл wp-config.php для редактирования.
 
@@ -37,7 +37,7 @@ define('WP_ALLOW_MULTISITE', true);
 
 Перейдите в **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Теперь вам нужно сообщить WordPress, какую структуру доменов вы будете использовать для сайтов в вашей сети: поддомены или подпапки.
 
@@ -45,7 +45,7 @@ define('WP_ALLOW_MULTISITE', true);
 
 Вернитесь к Network Setup, задайте название для вашей сети и убедитесь, что адрес электронной почты в поле Network admin email правильный. Нажмите _Install_, чтобы продолжить.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Добавьте этот код, предоставленный WordPress, в ваш _**wp-config.php**_ :
 
@@ -92,7 +92,7 @@ RewriteRule . index.php [L]
    * Site Title — Название сайта, может быть изменено позже
    * Admin Email — Установите как первоначального администратора подсайта
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 После заполнения всех полей нажмите кнопку «Add site». Как только новый подсайт будет создан, перейдите к нему, чтобы убедиться, что подсайт функционирует.
 

@@ -1,6 +1,6 @@
 ---
 id: wu_post_default_status
-title: Please provide the Markdown/MDX content that you would like translated.
+title: Filtro - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
@@ -11,7 +11,7 @@ Filtra los datos del objeto antes de que se almacenen en la base de datos.
 ## Parámetros
 
 | Nombre | Tipo | Descripción |
-|------|------|-------------|
+|--------|------|-------------|
 | $status | `string` | El estado predeterminado. |
 | $post_type | `string` | El tipo de publicación. |
 | $this | `\Base_Model` | La instancia del objeto. |

@@ -16,7 +16,7 @@ O endpoint usa o método POST e é chamado pela URL _**https://yoursite.com/wp-j
 
 Para este processo, você precisará de suas credenciais de API. Para obtê-las, vá ao painel de administração da sua rede, navegue até **Ultimate Multisite > Settings** > **API & Webhooks**, e procure pela seção de Configurações de API.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzcShcSVgI.png)  
+![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
 Selecione o **Enable API** e obtenha suas credenciais de API.
 
 Agora, vamos explorar o endpoint e depois criar uma ação de registro no Zapier.
@@ -73,17 +73,17 @@ Para ilustrar melhor como usar o endpoint de registro com o Zapier, vamos criar 
 
 No Google Forms, crie um formulário com os campos mínimos necessários para criar uma nova assinatura na rede.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xaVRQkloWg.png)
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
 Agora, no Zapier, crie um novo Zap e conecte o formulário criado no Google através da planilha onde os dados são salvos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-67iVl1XK46.png)
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
 Pronto! O formulário do Google Forms está conectado ao Zapier e pronto para ser integrado à rede. Agora vamos para a Ação que resultará do Trigger que o Google Forms dispara toda vez que é preenchido.
 
 Localize o novo aplicativo Ultimate Multisite e selecione-o. Para este tipo de Zap, escolha a opção Register.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hq2yHGYR31.png)
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
 Após esta primeira etapa, escolha a conta que será conectada com este Zap.
 
@@ -91,11 +91,11 @@ Esta é a parte mais sensível de todo o processo. Precisamos combinar os campos
 
 Neste exemplo, precisamos configurar apenas o nome de usuário, e-mail, senha, nome e URL do site. O restante fica pré-determinado para que todas as assinaturas geradas neste Google Forms sigam o mesmo padrão de produto e status.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4pjTVOmauz.png)
+After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
 Com as informações configuradas, prossiga para o teste final. Na última tela você pode ver todos os campos que serão enviados ao endpoint, suas respectivas informações e os campos que serão enviados vazios.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fD2A9dYbDs.png)
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
 Teste seu novo Zap e ele deve ser concluído com sucesso. Se ocorrer algum erro, verifique todos os campos e se eles estão sendo enviados corretamente. Como há muita informação, algumas coisas podem passar despercebidas.
 

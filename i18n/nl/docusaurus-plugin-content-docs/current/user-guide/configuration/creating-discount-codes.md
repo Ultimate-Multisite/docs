@@ -13,19 +13,19 @@ Met Ultimate Multisite kun je kortingscodes maken om je klanten kortingen te gev
 
 Om een kortingscode te maken of te bewerken, ga naar **Ultimate Multisite > Discount Codes**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-G2iYAraljI.png)
+![](/img/config/discount-codes-list.png)
 
 Daar heb je een lijst van de kortingscodes die je al hebt gemaakt.
 
 Je kunt op **Add Discount** **Code** klikken om een nieuwe coupon te maken of je kunt de bestaande bewerken door erover te zweven en op **Edit** te klikken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-nl6H0I06Jl.png)
+![Discount codes list with hover actions](/img/config/discount-codes-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3puhU5xCFF.png)
+![Add Discount Code button](/img/config/discount-codes-list.png)
 
 Je wordt doorgestuurd naar de pagina waar je je kortingscode maakt of bewerkt. In dit voorbeeld maken we er een nieuwe.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9dup6xM4Cx.png)
+![Discount code edit page](/img/config/discount-codes-list.png)
 
 Laten we de beschikbare instellingen bekijken:
 
@@ -33,25 +33,25 @@ Laten we de beschikbare instellingen bekijken:
 
 **Description:** Hier kun je kort beschrijven waarvoor deze coupon bedoeld is.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-V97PvPqtmK.png)
+![Discount code name and description fields](/img/config/discount-codes-list.png)
 
 **Coupon code:** Hier definieer je de code die je klanten moeten invoeren tijdens het afrekenen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-En58UdF3b7.png)
+![Coupon code field](/img/config/discount-codes-list.png)
 
 **Discount:** Hier kun je een **percentage** of een **vast bedrag** instellen voor je kortingscode.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-96cicxcs7f.png)
+![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
 
 **Apply to renewals:** Als deze optie uitgeschakeld is, wordt deze kortingscode alleen toegepast op de **eerste betaling**. Alle andere betalingen krijgen geen korting. Als deze optie ingeschakeld is, is de kortingscode geldig voor alle toekomstige betalingen.
 
 **Setup fee discount:** Als deze optie uitgeschakeld is, geeft de couponcode **geen korting op de installatiekosten** van de bestelling. Als deze optie ingeschakeld is, kun je de korting (percentage of vast bedrag) instellen die deze couponcode toepast op de installatiekosten van je plannen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zDYmcgHcoq.png)
+![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
 
 **Active:** Schakel deze kortingscode handmatig in of uit.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rwNFfGobBB.png)
+![Active toggle for discount code](/img/config/discount-codes-list.png)
 
 Onder **Advanced Options** hebben we de volgende instellingen:
 
@@ -61,23 +61,23 @@ Onder **Advanced Options** hebben we de volgende instellingen:
 
   * **Max uses:** Dit beperkt het aantal keren dat gebruikers deze kortingscode kunnen gebruiken. Als je bijvoorbeeld 10 invoert, kan de coupon slechts 10 keer worden gebruikt. Na deze limiet kan de kortingscode niet meer worden gebruikt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zx4xudymt2.png)
+![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
 
 **Start & expiration dates:** Hier kun je een startdatum en/of een vervaldatum toevoegen aan je coupon.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AyTJkzxz9W.png)
+![Start and expiration date fields](/img/config/discount-codes-list.png)
 
 **Limit products:** Als je **Select products** inschakelt, worden al je producten getoond. Je kunt handmatig selecteren (door aan of uit te schakelen) welke producten deze kortingscode kunnen accepteren. Producten die hier uitgeschakeld zijn, tonen geen wijziging als je klanten proberen deze kortingscode op die producten toe te passen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OHK9Bgsaq7.png)
+![Limit products selection toggles](/img/config/discount-codes-list.png)
 
 Na het instellen van al deze opties, klik op **Save Discount Code** om je coupon op te slaan en klaar!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wAAoviDov8.png)
+![Save Discount Code button](/img/config/discount-codes-list.png)
 
 De coupon staat nu in je lijst en daar kun je op **edit or delete** klikken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ySn575AxqX.png)
+![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
 
 ### 
 
@@ -89,7 +89,7 @@ Allereerst moet je de deelbare link voor je plan verkrijgen. Ga hiervoor naar **
 
 Klik op de knop **Click to Copy Shareable Link**. Hiermee krijg je de deelbare link naar dit specifieke plan. In ons geval was de deelbare link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TecoStCUYi.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Om je kortingscode op dit specifieke plan toe te passen, voeg je gewoon de parameter **?discount_code=XXX** toe aan de URL. Waarbij **XXX** de kortingscode is.
 

@@ -11,6 +11,7 @@ const sidebars = {
         'user-guide/getting-started/requirements',
         'user-guide/getting-started/why-ultimate-multisite',
         'user-guide/getting-started/installing-ultimate-multisite',
+        'user-guide/getting-started/multisite-setup-wizard',
         'user-guide/getting-started/how-to-install-wordpress-multisite',
       ],
     },

@@ -17,19 +17,19 @@ The default page for registration is [_**yourdomain.com/register**_](http://your
 
 After a user get to your registration page (usually clicking on a **Sign in** or **Buy now** button), they will se your registration form there.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 All they have to do is filling all the mandatory fields - email, username, password, etc... - and pay for the plan or confirm their email address if they are registering for a free plan or a paid plan with trial period without payment information.
 
 On the "Thank you" page, they will see a message telling them if they need to confirm their email address or if their website is already activated and they can start using it.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 If an email address confirmation is required, they will need to go to their email inbox and click on the verification link. Their website will not be activated if their email address doesn't get verified.
 
 If they have registered on a paid plan or the email verification is not mandatory on your network, they will have their website activated right after the checkout and will be shown a link to sign in to their dashboard.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Using a Shareable Link:
 
@@ -43,30 +43,30 @@ If you do not want to use PayPal, Stripe or any other payment gateway offered by
 
 The registration process will be exactly the same as above, but on the registration page your customers will see a message stating that they will receive an email with further instructions to complete the payment.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 And after the registration is completed, they will see the payment instructions that you set (and also receive it on their email).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 The payment instructions can be changed on **Ultimate Multisite > Settings > Payments** after toggling on the **Manual** payment option:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 After your customers complete the manual payment and send you the confirmation, you need to **manually confirm the payment** to activate the customer membership and website.
 
 To do this, go to **Ultimate Multisite > Payments** and find the customer payment. It should still show a **Pending** status.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Click on the payment number and you will be able to change its status to **Completed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 After changing its status to **Completed** , you should see an **Activate membership** message. Toggle this option **on** to activate the membership and website associated with this customer. Then, click to **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Your customer should now be able to access the dashboard and all features that they subscribed to.

@@ -13,17 +13,17 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Ваши клиенты могут снизить свой план в любое время, войдя в админпанель своего подсайта и нажав **Change** на странице своего аккаунта.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 После нажатия кнопки **Change** пользователь/клиент будет перенаправлен на страницу оформления заказа, где он сможет выбрать план, на который хочет изменить свою подписку.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 В этом примере мы снижаем план с **Premium** до **Free**.
 
 Для продолжения пользователь просто нажимает кнопку **Complete Checkout**. Затем он возвращается на страницу аккаунта, где отображается сообщение о предстоящем изменении подписки. Изменения вступят в силу в **следующем платёжном цикле** клиента.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### Что происходит, когда пользователь снижает свой план
 
@@ -35,7 +35,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Для записей, превышающих лимит, установленный в плане, у вас есть 3 разных варианта: **Keep the posts as it** *,* **Move the posts to trash** *,* или **Move the posts to draft** *.* Вы можете настроить это в настройках Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### Что происходит с оплатой
 

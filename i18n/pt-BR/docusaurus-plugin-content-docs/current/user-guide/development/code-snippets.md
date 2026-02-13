@@ -15,7 +15,7 @@ Neste artigo, mostraremos três trechos de código que podem ser usados com **Ul
 
   * [**Corrigindo problemas de CORS com Font-Icons em domínios mapeados**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Alterando a posição do item de menu da Conta
+## Alterando a posição do item de menu da Conta {#changing-the-position-of-the-account-menu-item}
 
 Para alterar a posição do item de menu da Conta no Painel do seu cliente, basta adicionar o trecho de código a seguir ao functions.php do tema ativo do seu site principal. Você também pode colocar o trecho dentro de um dos seus mu-plugins ou plugins personalizados.
 
@@ -23,7 +23,7 @@ Para alterar a posição do item de menu da Conta no Painel do seu cliente, bast
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## Como verificar se o usuário está sob um determinado plano e/ou tem uma assinatura ativa
+## Como verificar se o usuário está sob um determinado plano e/ou tem uma assinatura ativa {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Como administrador de rede, você pode precisar criar funções personalizadas que executarão ações básicas ou tornarão um serviço/característica disponível para um grupo selecionado de assinantes ou usuários finais, com base no status da assinatura deles e no plano ao qual estão assinados.
 
@@ -53,33 +53,9 @@ Para obter o ID de um plano, você pode ir para **Ultimate Multisite > Products*
 
 Observe que os usuários só podem assinar um **Plan**, não um Pacote ou Serviço, pois eles são apenas complementos para um **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Corrigindo problemas de CORS com Font-Icons em domínios mapeados
-
-Após mapear um domínio para um sub-site, você pode descobrir que o site está tendo dificuldade em carregar fontes personalizadas. Isso é causado por um bloqueio de origem cruzada nas configurações do seu servidor.
-
-Como os arquivos de fonte são quase sempre carregados diretamente do CSS, nosso plugin de mapeamento de domínio não consegue reescrever os URLs para usar o domínio mapeado em vez do original, então, para corrigir o problema, você precisará alterar seus arquivos de configuração do servidor.
-
-Abaixo estão trechos de código para corrigir o problema no Apache e no NGINX. Essas alterações exigem conhecimento avançado de arquivos de configuração do servidor (.htaccess e arquivos de configuração do NGINX). Se você não se sente confortável em fazer essas alterações sozinho, envie esta página para os agentes de suporte do seu provedor de hospedagem quando precisar de assistência.
-
-### Apache
-
-No seu arquivo .htaccess, adicione:
-
-```apache
-<FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
-```
-
-### NGINX
-
-No seu arquivo de configuração do servidor (a localização varia de servidor para servidor), adicione:
-
-```nginx
-location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin “*”;}
-```
-
-## Corrigindo problemas de CORS com Font-Icons em domínios mapeados
+## Corrigindo problemas de CORS com Font-Icons em domínios mapeados {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Após mapear um domínio para um sub-site, você pode descobrir que o site está tendo dificuldade em carregar fontes personalizadas. Isso é causado por um bloqueio de origem cruzada nas configurações do seu servidor.
 
@@ -92,7 +68,7 @@ Abaixo estão trechos de código para corrigir o problema no Apache e no NGINX. 
 No seu arquivo .htaccess, adicione:
 
 ```apache
-<FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
+<FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*"
 ```
 
 ### NGINX
@@ -100,5 +76,5 @@ No seu arquivo .htaccess, adicione:
 No seu arquivo de configuração do servidor (a localização varia de servidor para servidor), adicione:
 
 ```nginx
-location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin “*”;}
+location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin "*";}
 ```

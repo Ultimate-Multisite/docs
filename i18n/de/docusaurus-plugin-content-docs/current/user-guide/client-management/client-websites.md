@@ -9,26 +9,26 @@ Nach der Registrierung in Ihrem Netzwerk können Ihre Kunden auf ihr Dashboard z
 
 Neben der **Account**-Seite, auf der sie wichtige Informationen zu ihren Zahlungen, Mitgliedschaften, Domains, Planbeschränkungen und mehr einsehen können, haben sie auch Zugriff auf die **My Sites**-Seite, auf der sie alle ihre Websites sehen und verwalten können. Alles, was sie tun müssen, ist, auf My Sites in ihrem Dashboard zu klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-giAvstK90F.png)
+![My Sites link in the customer dashboard](/img/admin/customers-list.png)
 
 Alle ihre Websites werden angezeigt, jeweils mit einem **Manage**-Button direkt darunter. Wenn sie darauf klicken, werden sie zum **Dashboard dieser spezifischen Website** weitergeleitet.
 
 Sie können auch sehen, welche ihrer Websites die **primäre** ist, für Pläne, die es ihnen erlauben, mehr als eine Website zu haben.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKHdV8cyYl.png)
+![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
 
 Wenn sie ihre primäre Website ändern möchten, müssen sie zur Account-Seite gehen, indem sie auf das **Account**-Menü klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lW9oJNcdVe.png)
+![Account menu link in customer dashboard](/img/admin/customers-list.png)
 
 Dann sollten sie auf **Change Default Site** klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YCnbsxW8IB.png)
+![Change Default Site button on account page](/img/admin/customers-list.png)
 
 Ein Popup-Fenster erscheint. Klicken Sie auf die Dropdown-Liste und wählen Sie die Website aus, die Sie zur primären Website machen möchten.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SLSxU7NnEF.png)
+![Change Default Site dropdown selection](/img/admin/customers-list.png)
 
 Dann klicken Sie einfach auf **Change Default Site** und fertig!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FQiGxBjht8.png)
+![Confirming the default site change](/img/admin/customers-list.png)

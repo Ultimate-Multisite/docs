@@ -23,39 +23,39 @@ Dopo aver [installato e attivato la versione 2.0](../getting-started/installing-
 
 _**NOTA:** Se hai installato Ultimate Multisite 1.x sulla tua Multisite, avrai l'opzione di sostituire il plugin con la versione appena scaricata. Vai avanti e fai clic su **Replace current with uploaded**._
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDRjIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2aff9b312e5b7ec95c9e2c5355480d4aa7258fd/Migration.png)
+<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
 
 La pagina successiva ti mostrerà quali add-on legacy hai installato insieme alla versione 1.x. Contiene istruzioni su se la versione che stai usando è compatibile con la versione 2.0 o se devi installare una versione aggiornata dell'add-on dopo la migrazione.
 
-![Message on the top of the plugins page: Thanks for updating to Ultimate Multisite version 2.0. There's a link below it that leads the user to the version upgrader. Then, there's a list of add-ons that need to be updated.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4E9kAFlcb5.png)
+<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
 
 Una volta pronto a procedere, puoi fare clic sul pulsante che dice **Visit the Installer to finish the upgrade**.
 
-![Framed in red: button saying Visit the Installer to finish the upgrade](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BnJrjt7Drw.png)
+<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
 
 Ti porterà quindi alla pagina del wizard di installazione con alcuni messaggi di benvenuto. Devi solo fare clic su **Get Started** per passare alla pagina successiva.
 
-![Setup Wizard's welcoming page. Framed in red at the bottom-right corner: Get Started button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1dvRbsEnrN.png)
+<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
 
 Dopo aver fatto clic su **Get Started**, ti reindirizzerà ai Pre-install Checks_._ Ti mostrerà le informazioni di sistema e l'installazione di WordPress e ti dirà se soddisfa i **requisiti di Ultimate Multisite**.
 
-![Pre-install Checks page showing confirmation messages that the installation meets Ultimate Multisite's requirements. Framed on red, on the bottom-right corner: Go to the next step button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i0SwDNkaEO.png)
+<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
 
 Il passo successivo è inserire la tua chiave di licenza Ultimate Multisite e attivare il plugin. Ciò garantirà che tutte le funzionalità, inclusi gli add-on, siano disponibili sul tuo sito.
 
-![License activation page listing what the support includes and what it doesn't. There's a box on the bottom to insert the plugin's license. Framed in red, on the bottom-right corner: Agree and activate button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QAwmR9oLQL.png)
+<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
 
 Dopo aver inserito la tua chiave, fai clic su **Agree & Activate**.
 
 Dopo l'attivazione della licenza, puoi iniziare l'installazione effettiva facendo clic su **Install** nella pagina successiva. Questo creerà automaticamente i file e il database necessari affinché la versione 2.0 funzioni.
 
-![Installation page showing what will be updated in order to Ultimate Multisite to function. Framed in red, on the bottom-right: Install button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FCyBH12y4d.png)
+<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
 ## Ora, la migrazione
 
 Il migratore ha una funzionalità di sicurezza integrata che verifica l'intera multisite per assicurarsi che tutti i tuoi dati Ultimate Multisite possano essere migrati senza problemi. Fai clic sul pulsante **Run Check** per avviare il processo.
 
-![Migration page explaining it will run a check to see if all your data from v1 can be converted. Framed in red, on the bottom-right corner: Run check button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vXLXFLjogz.png)
+<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
 
 Dopo aver eseguito il controllo, hai due possibilità: il risultato può essere **con** un errore o **senza** errore.
 
@@ -69,9 +69,9 @@ _**Poiché il sistema ha rilevato un errore, non potrai procedere con la migrazi
 
 Se il sistema non rileva alcun errore, vedrai un messaggio di successo e un pulsante **Migrate** in fondo che ti permetterà di procedere con la migrazione. In questa pagina ti verrà ricordato di creare un backup del tuo database prima di procedere, cosa che consigliamo vivamente. Premi **Migrate** se hai già un backup.
 
-![Migration page showing a success message and a recommendation to create a backup.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T5ELIgTX5a.png)
+<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
 
-![Framed in red, on the bottom-right corner: Migrate button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y2AfV93rpf.png)
+<!-- Screenshot unavailable: Migrate button on the bottom-right corner -->
 
 E questo è tutto ciò che serve!
 

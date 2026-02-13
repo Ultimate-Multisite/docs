@@ -65,7 +65,6 @@ _i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
 - [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — 객체가 데이터베이스에 저장된 후 실행됩니다.
 - [wu_this-model_post_save](./Actions/wu_this-model_post_save) — 객체가 데이터베이스에 저장된 후 실행됩니다.
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 객체가 데이터베이스에 저장된 후 실행됩니다.
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — 객체가 데이터베이스에 저장되기 전에 필터링합니다.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 플러그인 개발자가 잠금 해제 프로세스에 액션을 추가하도록 허용합니다.
 
 ## 필터

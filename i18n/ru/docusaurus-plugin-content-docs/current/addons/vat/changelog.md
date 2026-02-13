@@ -1,28 +1,28 @@
 ---
-title: Журнал изменений НДС
+title: VAT Журнал изменений
 sidebar_position: 99
 _i18n_hash: 203587cca82c7a062fdbaf29c1b0024b
 ---
-# VAT Changelog
+# Журнал изменений VAT
 
-Version 1.0.6 - Released on 2026-01-25
+Версия 1.0.6 - Выпущена 2026-01-25
 
-* Fix: Domestic B2B transactions now correctly charge VAT. Per EU VAT rules, reverse charge only applies to cross-border B2B transactions, not when the customer's country matches the company's country.
+* Исправление: Внутренние B2B-транзакции теперь корректно начисляют НДС. Согласно правилам НДС ЕС, обратный расчёт применяется только к трансграничным B2B-транзакциям, а не когда страна клиента совпадает со страной компании.
 
-Version 1.0.5 - Released on 2026-01-22
+Версия 1.0.5 - Выпущена 2026-01-22
 
-* Fix: Addon not loading or working properly.
-* Change: Switched VAT rate data source from euvatrates.com to ibericode/vat-rates repository for more reliable and actively maintained data.
-* Fix: Corrected super_reduced_rates option value typo.
-* Improvement: Added null checks for country code handling to prevent errors.
-* Change: Removed bundled translation files in favor of automatic updates via Traduttore.
+* Исправление: аддон не загружается или не работает должным образом.
+* Изменение: источник данных ставок НДС переключён с euvatrates.com на репозиторий ibericode/vat-rates для более надёжных и активно поддерживаемых данных.
+* Исправление: исправлена опечатка в значении параметра super_reduced_rates.
+* Улучшение: добавлены проверки на null при обработке кода страны, чтобы предотвратить ошибки.
+* Изменение: удалены встроенные файлы перевода в пользу автоматических обновлений через Traduttore.
 
-Version: 1.0.3 - Released on 2025-09-28
+Версия 1.0.3 - Выпущена 2025-09-28
 
-* Rename prefix to ultimate-multisite; update text domain; version bump.
+* Переименован префикс в ultimate-multisite; обновлён текстовый домен; повышена версия.
 
-Version 1.0.0-beta.4 - 2021-09-24
+Версия 1.0.0-beta.4 - 2021-09-24
 
-* Added: filter wp_ultimo_skip_network_active_check for mu-plugins based setups;
+* Добавлено: фильтр wp_ultimo_skip_network_active_check для установок на основе mu-plugins;
 
-Version 1.0.0 - 05/08/2021 - Initial Release
+Версия 1.0.0 - 05/08/2021 - Первоначальная версия

@@ -4,25 +4,26 @@ title: Filtro - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Filter: wp_ultimo_skip_network_active_check
+# Filtro: wp_ultimo_skip_network_active_check
 
-Allow for developers to short-circuit the network activation check.
+Permite a los desarrolladores omitir la comprobación de activación en la red.
 
-This is useful when using composer-based and other custom setups, such as Bedrock, for example, where using plugins as mu-plugins are the norm.
+Esto es útil al usar configuraciones basadas en Composer y otras configuraciones personalizadas, como Bedrock, por ejemplo, donde usar plugins como mu-plugins es la norma.
 
-## Parameters
+## Parámetros
 
-| Name | Type | Description |
-|------|------|-------------|
-| $skip_network_activation_check | `bool` | If we should skip the check or not, defaults to false. |
+| Nombre | Tipo | Descripción |
+|--------|------|-------------|
+| $skip_network_activation_check | `bool` | Si debemos omitir la comprobación o no, por defecto es falso. |
 
-### Since
+### Desde
 
 - 2.0.0
-### Source
 
-Defined in [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/class-requirements.php#L272) at line 272
+### Fuente
 
+Definido en [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/class-requirements.php#L272) en la línea 272
 
-## Returns
-true if you wish to skip the check, false otherwise.
+## Devuelve
+
+verdadero si deseas omitir la comprobación, falso en caso contrario.

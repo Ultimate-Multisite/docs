@@ -21,33 +21,33 @@ Zapierは5,000以上のアプリと統合できるため、異なるアプリケ
 
 ダッシュボードに移動し、左側のサイドバーにある **+** **Create Zap** ボタンを押して新しいZapを設定します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kyu5ufUXOv.png)
+![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
 
 Zap作成ページにリダイレクトされます。
 
 検索ボックスに「wp ultimo」と入力し、**Beta**バージョンオプションを選択します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BrOYbp7dSE.png)
+![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
 
 アプリを選択したら、利用可能なイベントとして **New Ultimate Multisite Event** を選択します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-srblXqJnQE.png)
+![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
 
 次に、Zapierに**あなたのネットワーク**へのアクセス権を付与する必要があります。**Sign in**をクリックすると、**API credentials**が必要な新しいウィンドウが開きます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HcULsQoFpZ.png)
+![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
 
 ネットワーク管理パネルに移動し、**Ultimate Multisite > Settings** > **API & Webhooks**に移動して、API Settingsセクションを探します。
 
 **Enable API**オプションを選択します。これは接続を機能させるために必要です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-l7KbeKUkPX.png)
+![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
 
 API KeyとAPI Secretフィールドの**Copy to Clipboard**アイコンを使用して、値をコピーし、統合画面に貼り付けます。
 
 URLフィールドには、プロトコル（HTTPまたはHTTPS）を含むネットワークの完全なURLを入力します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4UVPQAlzYk.png)
+![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
 
 **Yes, Continue**ボタンをクリックして次のステップに進みます。すべてが正常に動作すれば、新しく接続されたアカウントが表示されます。**Continue**をクリックして新しいトリガーを作成します。
 

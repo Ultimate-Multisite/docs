@@ -27,29 +27,29 @@ Dentro de Ultimate Multisite, la pestaña Productos define la estructura y limit
 
 Esta sección guiará tu comprensión de esta piedra angular esencial de Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1YccQg0IBG.png)
+![Products list page](/img/config/products-list.png)
 
 ## Añadiendo productos
 
 Ya sea un plan, paquete o servicio, el punto de entrada para definir un nuevo elemento es a través de **Ultimate Multisite > Products > Add Product**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0AmJMeqen.png)
+![Add Product button](/img/config/product-add-button.png)
 
 La interfaz contiene dos secciones predominantes. A la izquierda hay varias pestañas que ayudan con la definición del producto y a la derecha hay algunas secciones para definir el precio base del producto, su estado activo y la imagen del producto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WRwYrlk0BS.png)
+![Product edit page overview](/img/config/product-edit-full.png)
 
 ### Descripción
 
 La información básica del producto se puede definir proporcionando un nombre y una descripción del producto. Estos identificadores se muestran donde sea que se requiera la información del producto, como la selección de plan y precios, facturas, actualizaciones y similares.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U9YjF0dghJ.png)
+![Product description section](/img/config/product-description.png)
 
 ### Tipo de precios
 
 En el lado derecho de la interfaz, se puede definir el precio base.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oHwhlrBFC9.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Ultimate Multisite admite tres tipos de precios diferentes. La opción **paid** solicita al administrador de la red información sobre el precio del producto y la frecuencia de facturación.
 
@@ -57,7 +57,7 @@ Ultimate Multisite admite tres tipos de precios diferentes. La opción **paid** 
 
 El componente de precio define el precio base del producto y el intervalo de facturación.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T03WJISsoh.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 por ejemplo, un precio de $29.99 con una configuración de 1 mes facturará $29.99 cada mes. De manera similar, un precio de $89.97 con una configuración de 3 meses facturará esa cantidad cada trimestre.
 
@@ -65,7 +65,7 @@ por ejemplo, un precio de $29.99 con una configuración de 1 mes facturará $29.
 
 La sección de ciclos de facturación especifica la frecuencia del intervalo de facturación mencionado y generalmente se entiende en el contexto de contratos o términos fijos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hVVAoxC4Jt.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Por ejemplo, un precio de producto de $29.99 con un intervalo de 1 mes y 12 ciclos de facturación facturará $29.99 por mes durante los siguientes 12 meses. En otras palabras, tal configuración establecería un término de precio fijo de $29.99 por mes durante 12 meses y luego dejaría de facturar.
 
@@ -73,7 +73,7 @@ Por ejemplo, un precio de producto de $29.99 con un intervalo de 1 mes y 12 cicl
 
 Activar el interruptor de oferta de prueba permite al administrador de la red definir un período de prueba para el producto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzxhWHqJLC.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Durante el período de prueba, los clientes pueden usar el producto libremente y no se les facturará hasta que el período de prueba haya finalizado.
 
@@ -81,7 +81,7 @@ Durante el período de prueba, los clientes pueden usar el producto libremente y
 
 También puedes aplicar una tarifa de configuración a tu plan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-8ZA2YvhWyK.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Esto significa que tu cliente pagará un monto adicional en el primer cargo (además del precio del plan) que corresponde a la tarifa que definiste en esta sección.
 
@@ -89,7 +89,7 @@ Esto significa que tu cliente pagará un monto adicional en el primer cargo (ade
 
 El interruptor activo define efectivamente si el producto está disponible para los clientes para nuevos registros.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-74ET2mPskK.png)
+![Active toggle](/img/config/product-active.png)
 
 Si hay clientes existentes en este plan, configurar el interruptor en su estado desactivado efectivamente ancianiza el plan, eliminándolo de los registros futuros. **Los clientes existentes en el plan seguirán siendo facturados** hasta que se transfieran a un nuevo plan o se eliminen del plan.
 
@@ -97,13 +97,13 @@ Si hay clientes existentes en este plan, configurar el interruptor en su estado 
 
 El botón **Upload Image** permite al administrador de la red utilizar la biblioteca de medios para seleccionar o subir una imagen del producto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9tHhGvokLA.png)
+![Product image section](/img/config/product-image.png)
 
 ### Eliminar
 
 El botón **Delete Product** elimina el producto del sistema. Aparece una vez que el producto está publicado.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rrmQohvw3S.png)
+![Delete product section](/img/config/product-delete.png)
 
 A diferencia de otras eliminaciones, el producto no se coloca en ningún estado de papelera. Por lo tanto, una vez eliminado, la acción es irreversible.
 
@@ -115,7 +115,7 @@ Una vez que se define la información básica del producto, las opciones de prod
 
 La pestaña **General** define los atributos generales del producto que no son aplicables a ninguna de las otras pestañas específicas del producto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-z32g4XQeyT.png)
+![General tab](/img/config/product-general-tab.png)
 
 El **product slug** autoexplicativo define el slug con el que se identifica el producto en URLs y otras áreas de Ultimate Multisite.
 
@@ -123,7 +123,7 @@ Ultimate Multisite admite varios tipos de productos, a saber, Plan, Paquete y Se
 
 El **Customer Role** especifica el rol que se asigna al cliente cuando se crea el sitio. Normalmente, para la mayoría de los administradores de red, será el rol predeterminado de Ultimate Multisite o Administrador. El rol predeterminado de Ultimate Multisite se puede establecer en **Ultimate Multisite > Settings > Login & Registration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ap5I4lXWwB.png)
+![Customer role settings](/img/config/product-customer-role-settings.png)
 
 #### Subidas y bajadas
 
@@ -137,7 +137,7 @@ En este sentido, sería indeseable y problemático permitir que los clientes de 
 
 Por lo tanto, para restringir la ruta del cliente y prevenir incidentes, el administrador de la red puede definir un grupo de planes y, dentro de ese grupo, especificar los planes a los que el cliente puede migrar.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JnrZ4fWFEC.png)
+![Up and Downgrades tab](/img/config/product-upgrades.png)
 
 Para definir un grupo de planes, especifica los planes compatibles dentro de la lista **plan group**. El **product order** determina cómo se ordenan y muestran los planes de menor a mayor.
 
@@ -147,25 +147,25 @@ Ultimate Multisite también incluye una función **order bump** donde se pueden 
 
 Las variaciones de precios permiten al administrador de la red especificar niveles de precios alternativos según la duración. Esta configuración permite establecer niveles de precios de 3 meses, 6 meses o anuales, o cualquier otra duración y frecuencia determinada por el caso de uso.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-d75YUO3opm.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 Para establecer variaciones de precios, activa el interruptor **enable price variations** y haz clic en el botón **Add new Price Variation**.
 
 Para ingresar una variación, establece la duración, el período y el precio de la variación. Se pueden ingresar variaciones adicionales haciendo clic en el botón nuevamente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-x73uxkMU8o.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 #### Impuestos
 
 La pestaña **Taxes** se alinea con la configuración de impuestos especificada en **Ultimate Multisite > Settings > Taxes** y, más específicamente, con las tasas de impuestos definidas. Para habilitar impuestos y definir las tasas de impuestos aplicables, consulta la documentación en **Ultimate Multisite: Settings**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xYLtpFySzL.png)
+![Taxes tab](/img/config/product-taxes.png)
 
 En un ejemplo anterior, definimos una tasa de impuesto local del 7.25% aplicable a clientes en California (Estados Unidos de América).
 
 Una vez que la tasa de impuesto está definida en **Ultimate Multisite > Settings > Manage Tax Rates**, se puede seleccionar a nivel de producto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Sh1BVGVj6i.png)
+![Taxes tab](/img/config/product-taxes.png)
 
 Para indicar que un producto es un artículo sujeto a impuestos, activa el interruptor **Is Taxable** y selecciona la tasa de impuesto aplicable en el menú desplegable Tax Category.
 
@@ -173,7 +173,7 @@ Para indicar que un producto es un artículo sujeto a impuestos, activa el inter
 
 En esencia, las plantillas de sitio son sitios web completos de WordPress que se clonan al sitio del cliente al inicio de su suscripción.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-llMSMXCDt4.png)
+![Site Templates tab](/img/config/product-site-templates.png)
 
 El administrador de la red crea y configura el sitio de plantilla como un sitio WordPress regular con temas, plugins y contenido activados y configurados. El sitio de plantilla se clona literalmente al cliente.
 
@@ -193,7 +193,7 @@ En última instancia, si el administrador de la red desea que la selección de p
 
 La pestaña **Sites** forma parte de la funcionalidad de limitaciones de Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-A8fzNucGyC.png)
+![Sites tab](/img/config/product-sites.png)
 
 Esta configuración especifica el número máximo de sitios que un cliente puede crear bajo su membresía.
 
@@ -203,7 +203,7 @@ Para habilitar la limitación, activa el interruptor **limit sites** y especific
 
 La pestaña **Visits** es una parte adicional del sistema de limitaciones de Ultimate Multisite. Esta configuración permite contabilizar y limitar posteriormente los visitantes únicos al sitio del cliente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e7f5otg89m.png)
+![Visits tab](/img/config/product-visits.png)
 
 Desde una perspectiva de marketing, los administradores de la red pueden usar esta configuración como medio para incentivar a los clientes a actualizar su plan una vez que se alcancen los límites. Esta configuración también puede ayudar al administrador de la red a frenar y prevenir el tráfico excesivo a los sitios para preservar los recursos del sistema.
 
@@ -215,7 +215,7 @@ Una vez que se alcanza este límite, Ultimate Multisite dejará de servir el sit
 
 Las limitaciones de 'Usuarios' de Ultimate Multisite permiten al administrador de la red imponer límites en el número de usuarios que se pueden crear y asignar a roles.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-maGYqW7WlP.png)
+![Users tab](/img/config/product-users.png)
 
 Para habilitar la función de limitaciones, activa el interruptor **limit user** deslizando a la derecha.
 
@@ -225,7 +225,7 @@ A continuación, para cada rol que se limitará, activa el interruptor junto a �
 
 La pestaña **Post Types** permite al administrador de la red imponer límites granulares en la amplia variedad de tipos de publicación dentro de WordPress.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZELQvvqyvn.png)
+![Post Types tab](/img/config/product-post-types.png)
 
 Debido a la construcción de WordPress, las publicaciones y los tipos de publicación son un componente importante de su funcionalidad central, y por lo tanto el sistema de limitaciones de Ultimate Multisite está diseñado para ayudar al administrador de la red a establecer y mantener límites.
 
@@ -237,7 +237,7 @@ A continuación, para cada tipo de publicación que se limitará, actívalo desl
 
 La pestaña **Disk Space** permite a los administradores de la red restringir el espacio consumido por los clientes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EqlaLO0ebw.png)
+![Disk Space tab](/img/config/product-disk-space.png)
 
 Típicamente, en un multisite de WordPress, los archivos principales se comparten entre todos los sitios y los directorios individuales creados para archivos multimedia y cargas a los que se aplican estas configuraciones y limitaciones.
 
@@ -249,7 +249,7 @@ A continuación, especifica el límite máximo en megabytes en el campo **disk s
 
 Al activar esta opción, puedes permitir dominios personalizados en este plan específicamente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KEMuUG76Fg.png)
+![Custom Domains tab](/img/config/product-custom-domains.png)
 
 #### Temas
 
@@ -257,11 +257,11 @@ La pestaña **Themes** dentro de las opciones de producto permite al administrad
 
 _**Nota: Para que los temas estén disponibles para los clientes, deben estar habilitados en la red por el administrador de la red.**_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HAQShYB7Y1.png)
+![Themes tab](/img/config/product-themes.png)
 
 La opción **visibility** define si el tema es visible o no para el cliente al ver su pestaña **Appearance > Themes** dentro de su sitio. Configurar esta opción en **Hidden** elimina el tema de la vista y, por lo tanto, restringe la capacidad de seleccionarlo y activarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ivsGIABl55.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Network themes page](/img/config/product-themes-network-enabled.png)
 
 La selección **behavior** permite al administrador de la red definir el estado del tema al crear el sitio del cliente.
 
@@ -271,13 +271,13 @@ En el estado **A** **vailable** el tema se hace disponible para que el cliente l
 
 Similar a la pestaña Temas, Ultimate Multisite permite al administrador de la red definir la visibilidad de los plugins para los clientes, así como su estado al crear un nuevo sitio.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ipzv31FIb6.png)
+![Themes tab](/img/config/product-themes.png)
 
 El menú desplegable **visibility** permite que el plugin sea visible o esté oculto para el cliente cuando se visualiza en su sitio a través de la opción de menú Plugins.
 
 El administrador de la red puede manipular aún más el comportamiento de los plugins utilizando las opciones en el menú desplegable de comportamiento.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 La selección **Default** respeta el estado del plugin definido en la plantilla de sitio seleccionada por el cliente. Por lo tanto, los plugins que están activados dentro de la plantilla permanecerán activados cuando la plantilla se clone al sitio del cliente.
 
@@ -291,17 +291,17 @@ El administrador de la red puede considerar las configuraciones Force Activate &
 
 La pestaña **Reset Limitations** restablece todos los límites personalizados definidos en el producto. Para restablecer las limitaciones, haz clic en el botón **reset limitations**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UXNQerLby7.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 Para confirmar la acción, desliza el interruptor **confirm reset** a su estado activo a la derecha y haz clic en el botón **reset limitations**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xKySIUIvrI.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 #### Opciones heredadas
 
 La pestaña **Legacy Options** observa ciertas opciones y comportamientos definidos en Ultimate Multisite 1.x.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Fn3BjwTH4r.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 Estas opciones se ofrecen para compatibilidad y facilidad de transición y serán desaprobadas en futuras versiones.
 
@@ -309,6 +309,6 @@ Estas opciones se ofrecen para compatibilidad y facilidad de transición y será
 
 Los productos existentes pueden editarse, duplicarse o eliminarse navegando a **Ultimate Multisite > Products** y pasando el cursor sobre el nombre del producto existente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GcHtJl6WmV.png)
+![Product hover actions](/img/config/product-hover-actions.png)
 
 ##

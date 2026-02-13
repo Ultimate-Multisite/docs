@@ -17,26 +17,26 @@ Per prima cosa, vai su **Ultimate Multisite > Settings > Payments**. Sotto **Pay
 
 Aggiungi a questa casella le informazioni di cui il tuo cliente avrà bisogno per effettuare il pagamento. Può trattarsi dei dettagli del tuo conto bancario e della tua email in modo che il cliente possa inviarti la conferma del pagamento, ad esempio.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U0K40VsARU.png)
+![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
 
 Dopo averlo configurato, fai clic su **Save Settings** e il processo è completato. Quando gli utenti si registrano alla tua rete, vedranno un messaggio che indica che riceveranno le tue istruzioni per completare l'acquisto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-drAYOHh331.png)
+![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
 
 E riceveranno anche un messaggio sulla tua pagina **Thank You** con le tue istruzioni di pagamento.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Nf6HTYbu2g.png)
+![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
 
 ## Confermare i pagamenti manuali
 
 Per confermare un pagamento manuale, vai al menu **Payments** nella barra laterale sinistra. Qui puoi vedere tutti i pagamenti nella tua rete e i loro dettagli, compreso lo **status**. Un pagamento manuale avrà sempre lo stato **Pending** finché non lo modifichi manualmente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C3U9LgT2Ev.png)
+![Payments list showing pending manual payment](/img/admin/payments-list.png)
 
 Accedi alla pagina del pagamento facendo clic sul **reference code**. In questa pagina trovi tutti i dettagli del pagamento in sospeso, come l'ID di riferimento, i prodotti, i timestamp e altro.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sXfbxcYFs6.png)
+![Payment details page with reference code and products](/img/admin/payments-list.png)
 
 Nella colonna di destra, puoi modificare lo stato del pagamento. Cambiandolo in **Completed** e attivando l'opzione **Activate Membership**, abiliterai il sito del tuo cliente e la loro iscrizione sarà attiva.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-q5hHRxdhfg.png)
+![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)

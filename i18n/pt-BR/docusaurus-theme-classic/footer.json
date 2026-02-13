@@ -1,6 +1,6 @@
 {
   "link.title.Documentation": {
-    "message": "Could you please provide the Markdown/MDX content that you’d like translated?",
+    "message": "Documentação",
     "description": "Footer column title"
   },
   "link.title.Community": {
@@ -16,11 +16,11 @@
     "description": "Footer link"
   },
   "link.item.label.Developer Docs": {
-    "message": "Documentação do Desenvolvedor",
+    "message": "Documentos do Desenvolvedor",
     "description": "Footer link"
   },
   "link.item.label.Addons": {
-    "message": "Addons",
+    "message": "Complementos",
     "description": "Footer link"
   },
   "link.item.label.GitHub Discussions": {
@@ -40,7 +40,7 @@
     "description": "Footer link"
   },
   "copyright": {
-    "message": "Direitos autorais © 2026 Ultimate Multisite.",
+    "message": "Copyright © 2026 Ultimate Multisite.",
     "description": "Footer copyright"
   }
 }

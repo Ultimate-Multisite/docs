@@ -11,17 +11,17 @@ _**중요한 주의: 이 문서는 Ultimate Multisite 버전 2.x를 참조합니
 
 고객은 서브사이트 관리자 대시보드에 로그인하고 계정 페이지에서 **Change**를 클릭하여 언제든 플랜을 다운그레이드할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 **Change** 버튼을 클릭하면 사용자는 결제 페이지로 리디렉션되어 구독을 변경하려는 플랜을 선택할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 이 예에서는 **Premium**에서 **Free**로 플랜을 다운그레이드합니다.
 
 계속하려면 사용자는 **Complete Checkout** 버튼을 클릭하기만 하면 됩니다. 그러면 계정 페이지로 돌아가 멤버십의 보류 중인 변경 사항에 대한 메시지가 표시됩니다. 변경 사항은 고객의 **다음 청구 주기**에 적용됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### 사용자가 플랜을 다운그레이드하면 발생하는 일
 
@@ -33,7 +33,7 @@ _**중요한 주의: 이 문서는 Ultimate Multisite 버전 2.x를 참조합니
 
 플랜에 설정된 한도를 초과하는 게시물에 대해 세 가지 옵션이 있습니다: **게시물을 그대로 유지**, **게시물을 휴지통으로 이동**, 또는 **게시물을 초안으로 이동**. 이 설정은 Ultimate Multisite 설정에서 구성할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### 결제에 대한 영향
 

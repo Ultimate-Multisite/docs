@@ -9,18 +9,18 @@ sunrise.php 文件是 WordPress 在启动时会查找的特殊文件。为了让
 
 当你激活 Ultimate Multisite 并像截图中那样通过设置向导时，Ultimate Multisite 会尝试将我们的 sunrise.php 文件复制到 wp-content 文件夹。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-v6hosgLWpt.png)
+<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
 
 大多数情况下，我们能够成功复制文件并且一切正常。然而，如果某些设置不正确（例如文件夹权限），你可能会遇到 Ultimate Multisite 无法复制文件的情况。
 
 如果你阅读 Ultimo 给出的错误信息，你会看到正是发生了这种情况：**Sunrise copy failed**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RXS5EbirfM.png)
+<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
 
 要解决这个问题，你可以简单地将 sunrise.php 文件从 wp-ultimo 插件文件夹复制出来并粘贴到你的 wp-content 文件夹。完成后，重新加载向导页面，检查就会通过。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p6hz1I9ycl.png) 无论如何，这可能需要你对文件夹权限进行一次全面检查，以避免将来出现问题（不仅仅是 Ultimate Multisite，还包括其他插件和主题）。
+<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
 
 WordPress 内置的 **Health Check 工具**（你可以通过主站点的 **admin panel > Tools > Health Check** 访问）可以让你知道文件夹权限是否设置为可能导致 WordPress 出现问题的值。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oZEKeyxo2E.png)
+<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->

@@ -15,7 +15,7 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 税费收集默认未启用。要启用它，您需要前往 **Ultimate Multisite > Settings > Taxes** 并切换以启用 Enable Taxes 设置。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICSEhm7yhk.png)
+![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Tax excluded vs. Tax included
 
@@ -23,7 +23,7 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 如果您希望在产品价格中包含税费，可以通过启用 **Inclusive Tax** 设置来实现。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xiiaIXYI2c.png)
+![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
 
 别忘了 **保存** 您所做的更改。
 
@@ -35,11 +35,11 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 您可以通过点击税务设置页面侧边栏的 **Manage Tax Rates** 按钮来访问编辑器。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UZb6g2rvrs.png)
+![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
 
 在税率编辑器页面，您可以点击 **Add new Row** 按钮添加新的税率。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZyJCSI6zLZ.png)
+![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
 
 您需要为每个税率提供一个 **title**（用于发票）。然后您可以选择 **country**（必填）、**state** 和 **city**（均为可选）来确定该税费的适用地区。最后，添加 **tax rate in percents**。
 
@@ -49,19 +49,19 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 点击 **Add new Tax Category**，然后输入类别名称并按 **Create**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-73biI4o8lj.png)
+![Add new Tax Category button](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YhH2hLLvEC.png)
+![Creating a new tax category](/img/config/settings-taxes.png)
 
 要浏览类别，请点击 **Switch** 并选择您想要添加新税费的类别。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xjghTq6ta4.png)
+![Switch between tax categories](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E5YLXeIsWH.png)
+![Selecting a tax category to view](/img/config/settings-taxes.png)
 
 您可以通过前往 **Product edit page** 并切换到 Taxes 选项卡来为特定产品设置税务类别。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vkh5NXKplU.png)
+![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
 
 在同一屏幕上，您可以关闭 **Is Taxable?** 开关，让 Ultimate Multisite 知道不应对该产品收取税费。
 
@@ -76,21 +76,21 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 要安装该插件，请前往 **Ultimate Multisite > Settings**，然后点击侧边栏的 **Check our Add-ons** 链接。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AsMyAH5HKC.png)
+![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
 
 您将被重定向到我们的插件页面。在那里，您可以搜索 **Ultimate Multisite VAT add-on** 并安装它。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AQ6gWfdY5G.png)
+![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iz8uncHiYa.png)
+![VAT add-on install dialog](/img/config/settings-taxes.png)
 
 然后，前往 **Network Admin > Plugins** 并在网络范围内激活该插件。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PkWGMWlgVu.png)
+![Network Activate the VAT add-on](/img/config/settings-taxes.png)
 
 如果您返回 **Tax Settings tab**，您将看到新的选项。切换 **Enable VAT Support** 选项以启用新的 VAT 工具。别忘了 **保存** 您的设置！
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Gn1SspQZ0S.png)
+![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Pulling on VAT Tax Rates
 
@@ -98,7 +98,7 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 在页面底部，您将看到 VAT 拉取选项。选择一个费率类型并点击 **Update EU VAT Rates** 按钮，将自动拉取并填充表格中的每个欧盟成员国税率。随后，您只需保存即可。
 
-### ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZKEqPBX5E.png)
+### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
 
 您还可以在拉取后编辑这些值。只需编辑所需的表格行并点击保存新值即可。
 
@@ -106,6 +106,6 @@ Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在�
 
 当启用 VAT 支持时，Ultimate Multisite 会在结账表单中添加一个额外字段，位于账单地址字段下方。该字段仅对位于欧盟的客户显示。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ITUbFOIM4r.png)
+![VAT number field on the checkout form](/img/config/settings-taxes.png)
 
 Ultimate Multisite 将随后验证 VAT 号码，如果验证通过，则应用反向计费机制，并将该订单的税率设为 0%。

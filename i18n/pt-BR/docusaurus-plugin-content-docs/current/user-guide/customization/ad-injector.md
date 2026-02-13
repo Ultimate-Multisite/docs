@@ -9,29 +9,29 @@ Ultimate Multisite: Ad Injector é um **add-on gratuito** que lhe dá as ferrame
 
 Após instalar o Ultimate Multisite: Ad Injector, vá até a página de _Plugins_ para ativá-lo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KgDegqpbeb.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
 
 _Clique no botão Ativar na Rede_
 
 Quando o add-on estiver ativo, a meta box _Advanced Options_ na tela de edição do plano terá uma nova opção chamada _Ad Settings_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DA7Z84yQTu.png)
+![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
 
 _Ahora você pode editar as configurações de anúncios para cada um dos seus planos_
 
 Na aba, você poderá adicionar os códigos de anúncios para posts e páginas no front-end, antes e depois do conteúdo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Rw9wObGUEN.png)
+<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1TKkWh8qoF.png)
+<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
 
 _Depois de inserir o código do seu anúncio, ele aparecerá nos posts e páginas desse plano específico._
 
 Você também pode incluir anúncios no cabeçalho das Páginas de Administração para os usuários desse plano.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdpwvfMgTp.png)
+<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1CPGJZn3km.png)
+<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
 
 _Vá para a opção Admin Panel Ad Code se quiser exibir anúncios no back-end dos seus usuários_
 
@@ -41,9 +41,9 @@ Você também pode usar o Ultimate Multisite: Ad Injector para oferecer suporte 
 
 Basta ir até a opção _Admin Panel Ads_ e adicionar o código HTML da sua ferramenta de suporte.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hnOhLc8s8i.png)
+<!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-09wylykj5l.png)
+<!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
 
 _Adicione suporte ao cliente a planos específicos_
 

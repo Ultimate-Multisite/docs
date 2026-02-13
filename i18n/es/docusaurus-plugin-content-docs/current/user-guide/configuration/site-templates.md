@@ -21,15 +21,15 @@ Suena genial, pero ¿cómo crear una nueva plantilla de sitio? Es tan simple com
 
 Las Plantillas de Sitio son simplemente sitios normales en su red. Para crear una nueva plantilla, simplemente vaya a **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-![añadir plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 Esto abrirá una ventana modal donde le pedirá el **Site title, Site Domain/path,** y **Site type**. En el campo desplegable **Site Type** asegúrese de seleccionar **Site Template** *.*
 
-![Modal de añadir plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 En la parte inferior del formulario, notará un interruptor **Copy Site**. Esto le permitirá crear una nueva plantilla de sitio basada en una plantilla de sitio existente como punto de partida para ayudarle a ahorrar tiempo en lugar de crear una plantilla de sitio desde cero.
 
-![Modal de añadir plantilla de sitio 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### Personalizando el contenido de una Plantilla de Sitio
 
@@ -59,11 +59,11 @@ En este modo, sus clientes no podrán elegir una plantilla al crear una cuenta, 
 
 Para hacer eso, deberá ir a **Ultimate Multisite > Products > Edit**.
 
-![Asignar plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 Esto lo llevará a la página **Edit Produc** t. En la sección **Product Options**, busque la pestaña **Site template** y seleccione la opción **Assign Site** **Template** del campo desplegable. Esto mostrará la lista de plantillas de sitio disponibles y le permitirá seleccionar solo una plantilla de sitio dedicada al producto.
 
-![Asignar plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Modo 2: Elegir Plantilla de Sitio Disponible
 
@@ -71,27 +71,27 @@ En este modo, dará a sus clientes una opción durante el proceso de registro. P
 
 En la página **Edit Product**. En la sección **Product Options**, busque la pestaña **Site template** y seleccione la opción **Choose Available Site Template** del campo desplegable. Esto mostrará la lista de plantillas de sitio disponibles y le permitirá seleccionar la plantilla de sitio que desee que esté disponible. Puede hacer esto eligiendo su comportamiento: **Available** si desea que la plantilla de sitio esté incluida en la lista. _**Not Available**_ si desea que la plantilla de sitio no se muestre como opción. Y **Pre-selected** si desea que una de las plantillas de sitio listadas sea la seleccionada por defecto.
 
-![Asignar plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### Modo Predeterminado: Selección de Plantilla de Sitio en el formulario de pago
 
 Si desea que todas sus plantillas de sitio estén disponibles durante el registro, o quizá no prefiera hacer el trabajo adicional de asignar o especificar plantillas de sitio bajo cada producto que crea, entonces puede simplemente configurar la selección de plantilla de sitio bajo su **Checkout Form**. Para hacer esto, simplemente vaya a **Ultimate Multisite > Checkout Forms**. Luego haga clic en **Edit** bajo el formulario que desee configurar.
 
-![Asignar plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 Esto mostrará la página **Edit Checkout Form**. Busque el campo **Template Selection** y haga clic en **Edit** debajo de él.
 
-![Asignar plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 Aparecerá una ventana modal. En el campo **Template Sites** puede seleccionar y enumerar todas las plantillas de sitio que desee que estén disponibles durante el registro. Las plantillas de sitio que especifique desde aquí estarán disponibles independientemente del producto que el usuario haya seleccionado.
 
-![Asignar plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Opciones de Plantilla de Sitio
 
 Hay otras funciones de plantillas de sitio disponibles que puede activar o desactivar en la configuración de Ultimate Multisite.
 
-![Opción de plantilla de sitio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Permitir Cambio de Plantilla
 
@@ -115,21 +115,21 @@ Una de las características más poderosas de Ultimate Multisite es la capacidad
 
 Por ejemplo, si desea obtener el nombre de la empresa de su usuario final durante el registro y colocar automáticamente el nombre de la empresa en la página de inicio. En la página de inicio de su plantilla de sitio debe agregar los marcadores de posición, como en la imagen de abajo (los marcadores de posición deben agregarse rodeados por llaves dobles - {{placeholder_name}}).
 
-![marcador de posición de la página de inicio](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 Luego, simplemente puede agregar un campo de registro coincidente en su formulario de pago para capturar esos datos:
 
-![formulario de pago](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 Su cliente podrá llenar ese campo durante el registro.
 
-![campo de registro](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 Ultimate Multisite reemplazará automáticamente los marcadores de posición con los datos proporcionados por el cliente.
 
-![reemplazar marcador de posición](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Solucionando el problema de "plantilla llena de marcadores de posición"
 
@@ -139,8 +139,8 @@ Para resolver eso, ofrecemos la opción de establecer valores falsos para los ma
 
 Puede acceder al editor de marcadores de posición de la plantilla yendo a **Ultimate Multisite > Settings > Sites**, y luego, en la barra lateral, haciendo clic en el enlace **Edit Placeholders**.
 
-![configuración de marcadores de posición](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 Eso lo llevará al editor de contenido de los marcadores de posición, donde puede agregar marcadores de posición y su contenido respectivo.
 
-![marcadores de posición de la plantilla](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

@@ -13,17 +13,17 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Чтобы включить Stripe в качестве доступного шлюза оплаты в вашей сети, перейдите в **Ultimate Multisite > Settings > Payments** и включите переключатель рядом с **Stripe** или **Stripe Checkout** в разделе Active Payment Gateways.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UUtLaJgx7R.png)
+![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ### Stripe vs Stripe Checkout:
 
 **Stripe:** Этот метод покажет поле для ввода номера кредитной карты во время оформления заказа.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-k73ZUl1hTW.png)
+![Stripe inline credit card field during checkout](/img/config/settings-payment-gateways.png)
 
 **Stripe Checkout:** Этот метод перенаправит клиента на страницу Stripe Checkout во время оформления заказа.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PCZ16DhYrj.png)
+![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
 
 ## Получение ваших ключей Stripe API
 
@@ -31,21 +31,21 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 _**Примечание:** вы можете активировать **Sandbox mode**, чтобы проверить, работает ли способ оплаты._ 
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dhnvBN03ii.png)
+![Stripe API key fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 На панели управления Stripe нажмите **Developers** в правом верхнем углу, а затем **API Keys** в левом меню.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HVqsu1SXuE.png)
+![Stripe dashboard Developers section with API Keys](/img/config/settings-payment-gateways.png)
 
 Вы можете использовать **Test Data** (чтобы проверить, работает ли интеграция на вашем продакшн-сайте) или нет. Чтобы изменить это, переключите переключатель **Viewing test data**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdVC3W8Bsr.png)
+![Stripe Viewing test data toggle](/img/config/settings-payment-gateways.png)
 
 Скопируйте значения из **Publishable key** и **Secret key** в колонке **Token** и вставьте их в поля Ultimate Multisite Stripe Gateway. Затем нажмите **Save Changes**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JyAifSGNOn.png)
+![Stripe publishable and secret key values](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4rFGxkXr1K.png)
+![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
 ## Настройка Stripe Webhook
 
@@ -53,18 +53,18 @@ Stripe отправляет события webhook, которые уведом�
 
 Нажмите **Developers**, затем выберите пункт **Webhooks** в левом меню. Затем в правой части нажмите **Add endpoint** *.* 
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LmYsdylNdd.png)
+![Stripe Webhooks page with Add endpoint button](/img/config/settings-payment-gateways.png)
 
 Вам понадобится **Endpoint URL** *.* Ultimate Multisite автоматически генерирует URL-адрес конечной точки, который вы можете найти прямо под полем **Webhook Listener URL** в разделе **Ultimate Multisite Stripe Gateway**_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sZrCX9OZaw.png)
+![Webhook Listener URL field in Stripe gateway settings](/img/config/settings-payment-gateways.png)
 
 **Скопируйте** URL конечной точки и **вставьте** его в поле **Endpoint URL** Stripe.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-tMlomo8gx1.png)
+![Pasting endpoint URL in Stripe webhook setup](/img/config/settings-payment-gateways.png)
 
 Далее выберите **Event** *.* Под этой опцией вам просто нужно отметить чекбокс **Select all events** и нажать **Add events**. После этого нажмите **Add Endpoint**, чтобы сохранить изменения.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Hv8KzaGMrq.png)
+![Selecting all events and adding the Stripe endpoint](/img/config/settings-payment-gateways.png)
 
 Вот и всё, ваша интеграция Stripe завершена!

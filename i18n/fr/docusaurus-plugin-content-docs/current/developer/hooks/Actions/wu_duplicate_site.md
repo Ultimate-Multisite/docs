@@ -1,16 +1,14 @@
 ---
 id: wu_duplicate_site
-title: >-
-  Could you please provide the Markdown/MDX content for “Action -
-  wu_duplicate_site” so I can translate it?
+title: Action - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Action: wu_duplicate_site
+# Action : wu_duplicate_site
 
-Permettre aux développeurs de se connecter après qu'une duplication de site ait eu lieu.
+Permet aux développeurs de se connecter après qu'une duplication de site ait eu lieu.
 
-### Since
+### Depuis
 
 - 1.9.4
 ### Source

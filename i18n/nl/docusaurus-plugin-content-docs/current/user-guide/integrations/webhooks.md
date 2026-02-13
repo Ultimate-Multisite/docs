@@ -15,11 +15,11 @@ Dit is handig als je bepaalde data van Ultimate Multisite naar een ander CRM of 
 
 Ga om een webhook te maken naar je netwerkbeheerder dashboard. Klik op **Ultimate Multisite > Webhooks > Add New Webhook.**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7cBdC7uhfX.png)
+![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
 
 Bij het aanmaken van een nieuwe webhook wordt je om informatie gevraagd zoals **Name, URL,** en **Event**. Je kunt elke naam kiezen die je wilt voor je webhook. De belangrijkste velden zijn de URL en het Event.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7MmyV3wafK.png)
+![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
 
 URL is het **endpoint of de bestemming** waarnaar Ultimate Multisite de **payload of data** zal sturen. Dit is de applicatie die de data ontvangt.
 
@@ -29,27 +29,27 @@ In dit artikel zullen we het basisconcept bekijken van hoe een webhook werkt en 
 
 Ga naar [requestbin.com](https://requestbin.com/) en klik op Create Request Bin.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-J0e5FzS04g.png)
+![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
 
 Na het klikken op die knop wordt je gevraagd in te loggen als je al een account hebt of je aan te melden. Als je al een account hebt, leidt het je meteen naar hun dashboard. Op hun dashboard zie je meteen het endpoint of de URL die je kunt gebruiken bij het aanmaken van je Ultimate Multisite webhook.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M40kPMGsji.png)
+![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
 
 Kopieer de URL en ga terug naar Ultimate Multisite. Plaats het endpoint in het URL-veld en selecteer een gebeurtenis uit het dropdownmenu. In dit voorbeeld kiezen we **Payment Received**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1NwqQP4bP0.png)
+![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
 
 Deze gebeurtenis wordt getriggerd telkens wanneer een gebruiker een betaling doet. Alle beschikbare gebeurtenissen, hun beschrijving en payloads staan onderaan de pagina. Klik op de knop **Add New Webhook** om de webhook op te slaan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zTDhrG4wlP.png)
+![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
 
 We kunnen nu een testgebeurtenis naar het endpoint sturen om te zien of de webhook die we hebben gemaakt werkt. Dit doen we door op **Send Test Event** te klikken onder de webhook die we hebben gemaakt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9jP9r7yRT9.png)
+![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
 
 Dit toont een bevestigingsvenster waarin staat dat de test succesvol was.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RZke5xnrAg.png)
+![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
 
 Als we teruggaan naar de _Requestbin_ site, zien we dat de payload is ontvangen met wat testdata.
 

@@ -9,29 +9,29 @@ Ultimate Multisite: Ad Injector est un **add-on gratuit** qui vous donne les out
 
 Après avoir installé Ultimate Multisite: Ad Injector, allez sur votre page _Plugins_ pour l'activer.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KgDegqpbeb.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
 
 _Cliquez sur le bouton Activer le réseau_
 
 Une fois l'add-on actif, la boîte méta _Advanced Options_ sur l'écran d'édition du plan comportera une nouvelle option appelée _Ad Settings_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DA7Z84yQTu.png)
+![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
 
 _Vous pouvez maintenant modifier les paramètres d'annonce pour chacun de vos plans_
 
 Sur cette onglet, vous pourrez ajouter les codes d'annonce pour les articles et les pages côté front‑end, avant et après le contenu.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Rw9wObGUEN.png)
+<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1TKkWh8qoF.png)
+<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
 
 _Après avoir inséré le code de votre annonce, elle s'affichera sur les articles et les pages de ce plan spécifique._
 
 Vous pouvez également inclure des annonces dans l'en-tête des pages d'administration pour les utilisateurs de ce plan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdpwvfMgTp.png)
+<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1CPGJZn3km.png)
+<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
 
 _Allez dans l'option Ad Code du panneau d'administration si vous voulez afficher des annonces sur le back‑end de vos utilisateurs_
 
@@ -41,9 +41,9 @@ Vous pouvez également utiliser Ultimate Multisite: Ad Injector pour offrir un s
 
 Allez simplement dans l'option _Admin Panel Ads_ et ajoutez le code HTML de votre outil de support.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hnOhLc8s8i.png)
+<!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-09wylykj5l.png)
+<!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
 
 _Ajouter le support client à des plans spécifiques_
 

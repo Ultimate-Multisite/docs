@@ -13,7 +13,7 @@ _i18n_hash: f060f881656e229e05b8d6f83a85bd84
 
 После установки Ultimate Multisite автоматически создаются пользовательские страницы входа и регистрации на вашем основном сайте. Вы можете изменить эти страницы по любой момент, перейдя на страницу **Ultimate Multisite > Settings > Login & Registration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-K3a5Ol4prD.png)
+![Login and Registration settings page](/img/config/settings-general.png)
 
 Давайте рассмотрим каждую из опций, которые вы можете настроить на странице **Login & Registration**:
 
@@ -47,7 +47,7 @@ Ultimate Multisite 2.0 предлагает редактор форм оформ
 
 Чтобы получить доступ к этой функции, перейдите в меню **Checkout Forms** в левой боковой панели.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vvxvSRGAfu.png)
+![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
 
 На этой странице вы можете увидеть все формы оформления, которые у вас есть.
 
@@ -55,11 +55,11 @@ Ultimate Multisite 2.0 предлагает редактор форм оформ
 
 Вы можете выбрать одну из этих трех опций в качестве отправной точки: один шаг, несколько шагов или пустая. Затем нажмите **Go to the Editor**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
 
 В качестве альтернативы вы можете редактировать или дублировать уже имеющиеся формы, щелкнув по опциям под их именем. Там вы также найдете опции для копирования шорткода формы или удаления формы.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
 
 Если вы выберете один шаг или несколько шагов, форма оформления уже будет предварительно заполнена базовыми шагами для работы. Затем, если хотите, вы можете добавить к ней дополнительные шаги.
 
@@ -69,31 +69,31 @@ Ultimate Multisite 2.0 предлагает редактор форм оформ
 
 После перехода к редактору формы оформления дайте вашей форме имя (которое будет использоваться только для внутренней ссылки) и slug (используется для создания шорткодов, например).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
 
 Формы состоят из шагов и полей. Вы можете добавить новый шаг, щелкнув **Add New Checkout Step**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9Wgpw8DTj9.png)
+![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
 
 На первой вкладке модального окна заполните содержимое шага вашей формы. Укажите ему ID, имя и описание. Эти элементы в основном используются внутренне.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lr6RKlgll1.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
 
 Затем установите видимость шага. Вы можете выбрать **Always show**, **Only show for logged in users** или **Only show for guests**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0Q6LxP9E90.png)
+![Checkout step visibility options](/img/config/checkout-form-step.png)
 
 Наконец, настройте стиль шага. Это опциональные поля.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WmBuHXYH7N.png)
+![Checkout step style configuration](/img/config/checkout-form-step.png)
 
 Теперь пришло время добавить поля к нашему первому шагу. Просто нажмите **Add New Field** и выберите тип секции, который хотите.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vM8n8QuTzk.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HkNUp6cWRG.png)
+![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
 
 Каждое поле имеет разные параметры, которые нужно заполнить. Для этого первого входа мы выберем поле **Username**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PFaP6RufZU.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U6Mm10qIeF.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Lr1mEi1DlH.png)
+![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
 
 Вы можете добавить столько шагов и полей, сколько нужно. Чтобы отобразить ваши продукты для выбора клиентами, используйте поле Pricing Table. Если хотите, чтобы ваши клиенты выбрали шаблон, добавьте поле Template Selection. И так далее.
 
@@ -103,23 +103,23 @@ _**Примечание 2:** username, email, password, site title, site URL, or
 
 Пока вы работаете над формой оформления, вы всегда можете использовать кнопку Предпросмотр, чтобы увидеть, как ваши клиенты увидят форму. Вы также можете переключаться между просмотром как существующего пользователя или посетителя.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3zPxZNqzkG.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YXZp7n5Nuw.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
 
 Наконец, в **Advanced Options** вы можете настроить сообщение для страницы **Thank You**, добавить сниппеты для отслеживания конверсий, добавить пользовательский CSS к вашей форме оформления или ограничить ее определенными странами.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TVQ9EUbGJ6.png)
+![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
 
 Вы также можете вручную включить или отключить вашу форму оформления, переключив эту опцию в правом столбце, или навсегда удалить форму.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-N5wdel1IIp.png)
+![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
 
 Не забудьте сохранить вашу форму оформления!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rJPV89yQZt.png)
+![Save Checkout Form button](/img/config/checkout-form-save.png)
 
 Чтобы получить шорткод вашей формы, нажмите **Generate Shortcode** и скопируйте результат, показанный в модальном окне.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RTJclNTnJZ.png)
+![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
 
 _**Примечание:** Вам понадобится добавить этот шорткод на вашу страницу регистрации, чтобы добавить к ней эту форму оформления._
 
@@ -131,7 +131,7 @@ _**Примечание:** Вам понадобится добавить это
 
 Перейдите в **Ultimate Multisite > Products > Select a plan**. Вы должны увидеть кнопку **Click to copy Shareable Link** вверху страницы. Это ссылка, которую вы можете использовать для предварительного выбора конкретного плана на вашей форме оформления.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bUyOlBEfNj.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Обратите внимание, что эта ссылка доступна только для **Plans**. Вы не можете использовать ссылки для пакетов или услуг.
 
@@ -141,7 +141,7 @@ _**Примечание:** Вам понадобится добавить это
 
 Нажмите **Manage** прямо под шаблоном сайта, который вы хотите использовать. Вы увидите номер SITE ID. Просто используйте это число для конкретного шаблона сайта, чтобы он был предварительно выбран на вашей форме оформления. В нашем случае параметр URL будет **?template_id=2**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JEgVAVNYMu.png)
+![Sites list showing site template ID](/img/config/site-templates-list.png)
 
 Допустим, наш сетевой сайт - [**www.mynetwork.com**](http://www.mynetwork.com), а наша страница регистрации с формой оформления находится на странице **/register**. Полный URL с предварительно выбранным шаблоном сайта будет выглядеть так: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 

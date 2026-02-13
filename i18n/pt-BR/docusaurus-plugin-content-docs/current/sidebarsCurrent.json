@@ -16,7 +16,7 @@
     "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Host Integrations": {
-    "message": "Integrações de Hospedagem",
+    "message": "Integrações de Host",
     "description": "The label for category Host Integrations in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Payment Gateways": {
@@ -76,7 +76,7 @@
     "description": "The label for category Addon Development in sidebar developerSidebar"
   },
   "sidebar.addonsSidebar.category.WooCommerce Integration": {
-    "message": "Integração WooCommerce",
+    "message": "Integração com WooCommerce",
     "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Site Exporter": {
@@ -92,7 +92,7 @@
     "description": "The label for category AI Site Builder in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Analytics": {
-    "message": "Análise",
+    "message": "Análises",
     "description": "The label for category Analytics in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Captcha": {
@@ -108,7 +108,7 @@
     "description": "The label for category Content Sync in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Domain Seller": {
-    "message": "Vendedor de Domínios",
+    "message": "Vendedor de Domínio",
     "description": "The label for category Domain Seller in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Fluent Forms": {
@@ -156,7 +156,7 @@
     "description": "The label for category PayFast in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
-    "message": "Gerenciador de Plugins & Temas",
+    "message": "Gerenciador de Plugins e Temas",
     "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Agents": {
@@ -168,7 +168,7 @@
     "description": "The label for category Support Tickets in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.VAT": {
-    "message": "Imposto sobre Valor Agregado",
+    "message": "IVA",
     "description": "The label for category VAT in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Admin Page Creator": {

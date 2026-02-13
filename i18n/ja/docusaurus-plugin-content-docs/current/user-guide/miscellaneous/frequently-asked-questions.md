@@ -23,7 +23,7 @@ Ultimate Multisiteは以下を必要とします：
 **PHPバージョン** : 7.4.x (8.0以降のサポートは近日公開予定)  
 **MySQLバージョン** : v5+ (推奨: バージョン5.6、ホスティングプロバイダーで8.0が利用できない場合に備えて)
 
-*_Multisite（サブドメインまたはサブディレクトリ）も有効化する必要があります。_* [How to Install WordPress Multisite](https://support.delta.nextpress.co/hc/wp-ultimo/articles/1677127280-how-do-i-install-word_press-multisite).
+*_Multisite（サブドメインまたはサブディレクトリ）も有効化する必要があります。_* [How to Install WordPress Multisite](/docs/user-guide/getting-started/how-to-install-wordpress-multisite).
 
   * **Ultimate Multisiteはサブディレクトリを使用したマルチサイトで動作しますか？**
 

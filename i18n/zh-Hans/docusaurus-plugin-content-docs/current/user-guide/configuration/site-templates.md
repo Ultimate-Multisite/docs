@@ -21,15 +21,15 @@ _**注意：本文涉及 Ultimate Multisite 2.x 版本。如果您使用的是 1
 
 站点模板只是您网络中的普通站点。要创建新模板，您只需转到 **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![add site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)**
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 这将打开一个模态窗口，询问 **Site title, Site Domain/path,** 和 **Site type**。在 **Site Type** 下拉字段中，请确保选择 **Site Template** *.*
 
-_![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)_
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 在表单底部，您会注意到一个 **Copy Site** 切换开关。它将允许您基于现有站点模板创建一个新的站点模板，作为起点，帮助您节省时间，而不是从头开始创建站点模板。
 
-![Add site template modal 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### Customizing the contents of a Site Template
 
@@ -59,11 +59,11 @@ _![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.
 
 为此，您需要转到 **Ultimate Multisite > Products > Edit**。
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 这将带您进入 **Edit Produc** t 页面。在 **Product Options** 部分，找到 **Site template** 选项卡，并从下拉字段中选择 **Assign Site** **Template** 选项。这将显示可用站点模板列表，并允许您仅为该产品选择一个专用站点模板。
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Mode 2: Choose Available Site Template
 
@@ -71,27 +71,27 @@ _![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.
 
 在 **Edit Product** 页面。在 **Product Options** 部分，找到 **Site template** 选项卡，并从下拉字段中选择 **Choose Available Site Template** 选项。这将显示可用站点模板列表，并允许您选择想要可用的站点模板。您可以通过选择其行为来完成此操作：**Available**（如果您希望站点模板包含在列表中）；_**Not Available**_（如果您希望站点模板不显示为选项）；以及 **Pre-selected**（如果您希望列表中的某个站点模板为默认选择）。
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### Default Mode: Site template selection on the Checkout form
 
 如果您希望所有站点模板在注册期间都可用，或者不想在每个创建的产品下进行分配或指定站点模板的额外工作，那么您可以简单地在 **Checkout Form** 下设置站点模板选择。为此，您只需转到 **Ultimate Multisite > Checkout Forms**，然后点击您想要配置的表单下的 **Edit**。
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 这将打开 **Edit Checkout Form** 页面。找到 **Template Selection** 字段并点击其下方的 **Edit**。
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 将出现一个模态窗口。在 **Template Sites** 字段下，您可以选择并列出所有希望在注册期间可用的站点模板。您在此处指定的站点模板将无论用户选择了哪个产品都可用。
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Site Template Options
 
 在 Ultimate Multisite 设置中还有其他可开启或关闭的站点模板功能。
 
-![Site template option](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Allow Template Switching
 
@@ -115,21 +115,21 @@ Ultimate Multisite 最强大的功能之一是能够在注册表单中添加任�
 
 例如，如果您希望在注册期间获取最终用户的公司名称并自动将公司名称放在首页。在您的模板站点首页，您需要添加占位符，如下图所示（占位符应被双大括号包围 - {{placeholder_name}}）。
 
-![homepage placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 然后，您只需在结账表单中添加一个匹配的注册字段来捕获该数据：
 
-![checkout form](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 您的客户随后将能够在注册期间填写该字段。
 
-![registration field](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 Ultimate Multisite 将随后自动用客户提供的数据替换占位符。
 
-![replace placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Solving the "template full of placeholders" problem
 
@@ -139,8 +139,8 @@ Ultimate Multisite 将随后自动用客户提供的数据替换占位符。
 
 您可以通过转到 **Ultimate Multisite > Settings > Sites** 并在侧边栏中点击 **Edit Placeholders** 链接来访问模板占位符编辑器。
 
-![placeholder settings](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 这将带您进入占位符内容编辑器，您可以在其中添加占位符及其相应内容。
 
-![template placeholders](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

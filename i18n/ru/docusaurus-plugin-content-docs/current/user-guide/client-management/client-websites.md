@@ -11,26 +11,26 @@ We need to translate the prose text. Let's produce final answer.# Вебсайт
 
 Помимо страницы **Аккаунт**, где они могут увидеть важную информацию о своих платежах, членствах, доменах, ограничениях плана и многом другом, они также имеют доступ к странице **Мои сайты**, где могут просматривать и управлять всеми своими сайтами. Всё, что им нужно сделать, это нажать на *Мои сайты* в своей панели управления.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-giAvstK90F.png)
+![My Sites link in the customer dashboard](/img/admin/customers-list.png)
 
 Им будут показаны все их сайты, с кнопкой **Управлять** прямо под каждым из них. Если они нажмут на неё, они будут перенаправлены на **панель управления этим конкретным сайтом**.
 
 Они также могут увидеть, какой из их сайтов является **основным** для планов, которые позволяют иметь более одного сайта.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKHdV8cyYl.png)
+![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
 
 Если они хотят изменить основной сайт, им нужно перейти на страницу **Аккаунт**, нажав на меню **Аккаунт**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lW9oJNcdVe.png)
+![Account menu link in customer dashboard](/img/admin/customers-list.png)
 
 Затем они должны нажать на **Изменить сайт по умолчанию**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YCnbsxW8IB.png)
+![Change Default Site button on account page](/img/admin/customers-list.png)
 
 Появится всплывающее окно. Нажмите на выпадающий список и выберите, какой сайт вы хотите сделать основным.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SLSxU7NnEF.png)
+![Change Default Site dropdown selection](/img/admin/customers-list.png)
 
 Затем просто нажмите **Изменить сайт по умолчанию**, и всё готово!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FQiGxBjht8.png)
+![Confirming the default site change](/img/admin/customers-list.png)

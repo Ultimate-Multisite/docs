@@ -15,11 +15,11 @@ Utilizzando la funzione di trasmissione di Ultimate Multisite, puoi aggiungere *
 
 Questo è estremamente utile se hai bisogno di fare un annuncio come la manutenzione del sistema o l'offerta di nuovi prodotti o servizi ai tuoi utenti esistenti. Ecco come apparirà l'avviso amministrativo sul cruscotto del tuo utente.
 
-![account di trasmissione](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 Per avviare un avviso amministrativo, vai al cruscotto di amministrazione della rete e sotto il menu **Ultimate Multisite**, troverai l'opzione **Broadcasts**.
 
-![amministratore di trasmissione](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Da questa pagina, fai clic sul pulsante **Add Broadcast** in alto.
 
@@ -27,7 +27,7 @@ Questo aprirà la finestra modale Add broadcast dove puoi scegliere il tipo di t
 
 Vai avanti e seleziona **Message** quindi fai clic sul pulsante **Next Step**.
 
-![modale amministratore di trasmissione](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 La finestra successiva ti chiederà di selezionare il **Target customer** o il **Target product**. Nota che puoi selezionare più di un utente o più di un prodotto.
 
@@ -37,11 +37,11 @@ Sotto il campo **Message type**, puoi selezionare il colore dell'avviso. Questo 
 
 Puoi quindi fare clic su **Next Step**.
 
-![amministratore di trasmissione aggiungi nuovo](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 La finestra successiva è dove puoi iniziare a comporre il tuo messaggio inserendo l'oggetto e il contenuto/messaggio che desideri trasmettere agli utenti.
 
-![contenuto amministratore di trasmissione](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 Dopo aver creato il tuo messaggio, puoi premere il pulsante **Send**.
 
@@ -53,13 +53,13 @@ Utilizzando la funzione di trasmissione di Ultimate Multisite, puoi inviare un'e
 
 Per avviare una trasmissione di email, vai al cruscotto di amministrazione della rete e sotto il menu Ultimate Multisite, troverai l'opzione Broadcast.
 
-![amministratore email](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Da questa pagina, fai clic sul pulsante **Add broadcast** in alto.
 
 Questo aprirà la finestra modale Add broadcast dove puoi scegliere il tipo di trasmissione che desideri inviare. Vai avanti e seleziona **Email** quindi fai clic sul pulsante **Next Step**.
 
-![modale amministratore email](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 La finestra successiva ti chiederà di selezionare il **Target customer** o il **Target product**. Nota che puoi selezionare più di un utente o più di un prodotto.
 
@@ -67,11 +67,11 @@ Per cercare un account utente o un prodotto, devi iniziare a digitare la parola 
 
 Una volta selezionato il tuo pubblico di destinazione, puoi fare clic su **Next Step**.
 
-![amministratore email aggiungi nuovo](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 La finestra successiva è dove puoi iniziare a comporre la tua email inserendo l'oggetto e il contenuto/messaggio che desideri inviare agli utenti.
 
-![contenuto amministratore email](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 Dopo aver creato il tuo messaggio, puoi premere il pulsante **Send**.
 
@@ -93,19 +93,19 @@ Tuttavia, gli super amministratori e gli agenti possono importare queste nuove e
 
 Vai alla pagina Impostazioni di Ultimate Multisite e accedi alla scheda **Emails**.
 
-![email di sistema](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 Quindi, nella barra laterale, fai clic sul pulsante **Customize System Emails**.
 
-![Personalizza Email di Sistema](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 Nella pagina Email di Sistema, vedrai il pulsante di azione **Reset & Import** in alto. Fare clic su quel pulsante dovrebbe aprire la finestra modale di importazione e reimpostazione.
 
-![Reimposta & Importa](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 Quindi, puoi attivare le opzioni Importa Email per vedere quali email di sistema sono disponibili per l'importazione.
 
-![Opzioni Importa Email](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### Reimpostare le Email di Sistema
 
@@ -117,4 +117,4 @@ Oppure puoi usare lo **Strumento Reimposta & Importa** per reimpostare quel mode
 
 Per reimpostare un modello di email, puoi seguire i passaggi sopra fino a raggiungere lo Strumento Reimposta & Importa, quindi attivare l'opzione **Reset** e selezionare le email che desideri reimpostare al loro contenuto predefinito.
 
-![Strumento Reimposta & Importa](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

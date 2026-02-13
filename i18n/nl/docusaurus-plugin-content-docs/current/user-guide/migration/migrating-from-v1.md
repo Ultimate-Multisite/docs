@@ -23,35 +23,35 @@ Na het [installeren en activeren van versie 2.0](../getting-started/installing-u
 
 _**OPMERKING:** Als je Ultimate Multisite 1.x geïnstalleerd hebt op je Multisite, heb je de optie om de plugin te vervangen door de versie die je zojuist hebt gedownload. Klik gerust op **Replace current with uploaded**._
 
-![Bericht bovenaan de plugins pagina: Bedankt voor het updaten naar Ultimate Multisite versie 2.0. Er is een link eronder die de gebruiker naar de versie-upgrader leidt. Vervolgens is er een lijst met add-ons die bijgewerkt moeten worden.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4E9kAFlcb5.png)
+<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
 
 Zodra je klaar bent om door te gaan, kun je op de knop klikken die **Visit the Installer to finish the upgrade** zegt.
 
-![In rood omkaderd: knop die zegt Visit the Installer to finish the upgrade](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BnJrjt7Drw.png)
+<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
 
 Het brengt je dan naar de installatie-wizardpagina met enkele welkomstberichten. Je hoeft alleen **Get Started** te klikken om naar de volgende pagina te gaan.
 
-![Welkomstpagina van de Setup Wizard. In rood omkaderd in de rechterbenedenhoek: Get Started knop](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1dvRbsEnrN.png)
+<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
 
 Na het klikken op **Get Started** wordt je doorgestuurd naar de Pre-install Checks_. Dit toont je Systeeminformatie en WordPress-installatie en geeft aan of het voldoet aan de vereisten van Ultimate Multisite.
 
-![Pre-install Checks pagina met bevestigingsberichten dat de installatie voldoet aan de vereisten van Ultimate Multisite. In rood omkaderd, in de rechterbenedenhoek: Go to the next step knop](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i0SwDNkaEO.png)
+<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
 
 De volgende stap is om je Ultimate Multisite licentiesleutel in te voeren en de plugin te activeren. Dit zorgt ervoor dat alle functies, inclusief add-ons, beschikbaar zijn op je site.
 
-![Licentieactiveringspagina die vermeldt wat de ondersteuning bevat en wat niet. Er is een vak onderaan om de licentie van de plugin in te voeren. In rood omkaderd, in de rechterbenedenhoek: Agree and activate knop](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QAwmR9oLQL.png)
+<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
 
 Na het invoeren van je sleutel, klik op **Agree & Activate**.
 
 Na licentieactivering kun je de daadwerkelijke installatie starten door op **Install** te klikken op de volgende pagina. Dit maakt automatisch de benodigde bestanden en database aan die nodig zijn voor versie 2.0 om te functioneren.
 
-![Installatiepagina die laat zien wat er bijgewerkt zal worden zodat Ultimate Multisite kan functioneren. In rood omkaderd, in de rechterbenedenhoek: Install knop](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FCyBH12y4d.png)
+<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
 
 ## Nu, de migratie
 
 De migrator heeft een ingebouwde veiligheidsfunctie waarbij het je hele multisite controleert om er zeker van te zijn dat al je Ultimate Multisite-gegevens zonder problemen kunnen worden gemigreerd. Klik op de **Run Check** knop om het proces te starten.
 
-![Migratiepagina die uitlegt dat het een controle zal uitvoeren om te zien of al je gegevens van v1 kunnen worden geconverteerd. In rood omkaderd, in de rechterbenedenhoek: Run check knop](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vXLXFLjogz.png)
+<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
 Na het uitvoeren van de controle heb je twee mogelijkheden: het resultaat kan zijn **met** een fout of **zonder** een fout.
 
@@ -65,9 +65,9 @@ _**Aangezien het systeem een fout heeft gevonden, kun je niet doorgaan met migre
 
 Als het systeem geen fout vindt, zie je een succesbericht en een **Migrate** knop onderaan die je toestaat om door te gaan met de migratie. Op deze pagina word je eraan herinnerd een back-up van je database te maken voordat je verdergaat, wat we sterk aanbevelen. Klik op **Migrate** als je al een back-up hebt.
 
-![Migratiepagina die een succesbericht toont en een aanbeveling om een back-up te maken.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T5ELIgTX5a.png)
+<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
 
-![In rood omkaderd, in de rechterbenedenhoek: Migrate knop](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y2AfV93rpf.png)
+<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
 
 En dat is alles wat nodig is!
 

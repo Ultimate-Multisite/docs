@@ -13,7 +13,7 @@ Aunque son una forma fácil y flexible de experimentar con diferentes enfoques a
 
 Al instalar Ultimate Multisite, se crean automáticamente páginas de inicio de sesión y registro personalizadas en tu sitio principal. Puedes cambiar estas páginas predeterminadas en cualquier momento yendo a tu página **Ultimate Multisite > Settings > Login & Registration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-K3a5Ol4prD.png)
+![Login and Registration settings page](/img/config/settings-general.png)
 
 Echemos un vistazo a cada una de las opciones que puedes personalizar en la página **Login & Registration**:
 
@@ -47,7 +47,7 @@ Tanto las páginas de inicio de sesión como las de registro están incrustadas 
 
 Para acceder a esta función, ve al menú **Checkout Forms**, en la barra lateral izquierda.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vvxvSRGAfu.png)
+![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
 
 En esta página, puedes ver todos los formularios de pago que tienes.
 
@@ -55,11 +55,11 @@ Si deseas crear uno nuevo, simplemente haz clic en **Add Checkout Form** en la p
 
 Puedes seleccionar una de estas tres opciones como punto de partida: single step, multi-step o blank. Luego, haz clic en **Go to the Editor**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
 
 Alternativamente, puedes editar o duplicar los formularios que ya tienes haciendo clic en las opciones debajo de su nombre. Allí también encontrarás las opciones para copiar el shortcode del formulario o eliminar el formulario.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
 
 Si seleccionas single step o multi-step, el formulario de pago ya estará prellenado con los pasos básicos para que funcione. Luego, si lo deseas, puedes agregar pasos adicionales.
 
@@ -69,31 +69,31 @@ Como mencionamos antes, puedes crear formularios de pago para diferentes propós
 
 Después de navegar al editor de formularios de pago, dale a tu formulario un nombre (que se usará solo como referencia interna) y un slug (usado para crear shortcakes, por ejemplo).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
 
 Los formularios están compuestos por pasos y campos. Puedes agregar un nuevo paso haciendo clic en **Add New Checkout Step**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9Wgpw8DTj9.png)
+![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
 
 En la primera pestaña de la ventana modal, completa el contenido del paso de tu formulario. Dale un ID, un nombre y una descripción. Estos elementos se usan principalmente internamente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lr6RKlgll1.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
 
 A continuación, establece la visibilidad del paso. Puedes elegir entre **Always show**, **Only show for logged in users** o **Only show for guests**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0Q6LxP9E90.png)
+![Checkout step visibility options](/img/config/checkout-form-step.png)
 
 Finalmente, configura el estilo del paso. Estos son campos opcionales.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WmBuHXYH7N.png)
+![Checkout step style configuration](/img/config/checkout-form-step.png)
 
 Ahora, es hora de agregar campos a nuestro primer paso. Simplemente haz clic en **Add New Field** y selecciona el tipo de sección que deseas.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vM8n8QuTzk.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HkNUp6cWRG.png)
+![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
 
 Cada campo tiene diferentes parámetros que rellenar. Para esta primera entrada, seleccionaremos el campo **Username**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PFaP6RufZU.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U6Mm10qIeF.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Lr1mEi1DlH.png)
+![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
 
 Puedes agregar tantos pasos y campos como necesites. Para mostrar tus productos para que tus clientes elijan uno, utiliza el campo Pricing Table. Si deseas que tus clientes elijan una plantilla, agrega el campo Template Selection. Y así sucesivamente.
 
@@ -103,23 +103,23 @@ _**Nota 2:** username, email, password, site title, site URL, order summary, pay
 
 Mientras trabajas en tu formulario de pago, siempre puedes usar el botón Preview para ver cómo tus clientes verán el formulario. También puedes alternar entre ver como un usuario existente o un visitante.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3zPxZNqzkG.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YXZp7n5Nuw.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
 
 Finalmente, en **Advanced Options** puedes configurar el mensaje para la página **Thank You**, agregar fragmentos para rastrear conversiones, agregar CSS personalizado a tu formulario de pago o restringirlo a ciertos países.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TVQ9EUbGJ6.png)
+![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
 
 También puedes habilitar o deshabilitar manualmente tu formulario de pago activando esta opción en la columna derecha, o eliminar el formulario permanentemente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-N5wdel1IIp.png)
+![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
 
 ¡No olvides guardar tu formulario de pago!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rJPV89yQZt.png)
+![Save Checkout Form button](/img/config/checkout-form-save.png)
 
 Para obtener el shortcode de tu formulario haz clic en **Generate Shortcode** y copia el resultado que aparece en la ventana modal.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RTJclNTnJZ.png)
+![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
 
 _**Nota:** Necesitarás agregar este shortcode a tu página de registro para que se añada el formulario de pago._
 
@@ -131,7 +131,7 @@ Si deseas crear tablas de precios personalizadas para tus productos y preselecci
 
 Ve a **Ultimate Multisite > Products > Select a plan**. Deberías ver el botón **Click to copy Shareable Link** en la parte superior de la página. Este es el enlace que puedes usar para preseleccionar este plan específico en tu formulario de pago.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bUyOlBEfNj.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Ten en cuenta que este enlace compartible solo es válido para **Plans**. No puedes usar enlaces compartibles para paquetes o servicios.
 
@@ -141,7 +141,7 @@ Si deseas preseleccionar plantillas de sitio en tu formulario de pago, puedes us
 
 Haz clic en **Manage** justo debajo de la plantilla de sitio que deseas usar. Verás el número de ID del SITIO. Simplemente usa este número para que la plantilla de sitio específica se preseleccione en tu formulario de pago. En nuestro caso, el parámetro de URL sería **?template_id=2**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JEgVAVNYMu.png)
+![Sites list showing site template ID](/img/config/site-templates-list.png)
 
 Supongamos que nuestro sitio web de la red es [**www.mynetwork.com**](http://www.mynetwork.com) y nuestra página de registro con nuestro formulario de pago se encuentra en la página **/register**. La URL completa con la plantilla de sitio preseleccionada se vería así: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 

@@ -17,7 +17,7 @@ Nota che devi avere un **PayPal Business account** per ottenere le credenziali A
 
 Per abilitare PayPal come metodo di pagamento disponibile sulla tua rete, vai alla scheda **Ultimate Multisite > Settings > Payments** e spunta la casella accanto a PayPal.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## Ottenere le credenziali API PayPal
 
@@ -27,17 +27,17 @@ Puoi ottenerlo accedendo al tuo account PayPal [Live](https://www.paypal.com/hom
 
 (Ricorda che puoi usare la modalità **sandbox** per testare i pagamenti e verificare se il gateway è configurato correttamente. Basta attivare la sezione corrispondente.)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 Per richiedere credenziali API Signature o Certificate per il tuo account PayPal:
 
 1. Vai alle tue [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
 2. Nella sezione **API access**, fai clic su **Update**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 
 3. Sotto **NVP/SOAP API integration (Classic)**, fai clic su **Manage API credentials**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * Se hai già generato un API Signature o Certificate, verrai reindirizzato a una pagina dove potrai trovare le tue credenziali.
 
@@ -50,7 +50,7 @@ Per richiedere credenziali API Signature o Certificate per il tuo account PayPal
    * **Request API Certificate** – Seleziona per l'autenticazione API Certificate.
 
 5. PayPal genera le tue credenziali API come segue:  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **API Signature credentials** includono un API Username, API Password e Signature, che non scadono. Questi valori sono nascosti per impostazione predefinita per maggiore sicurezza. Fai clic su **Show/Hide** per attivarli o disattivarli. Quando hai finito, fai clic su **Done**.
 

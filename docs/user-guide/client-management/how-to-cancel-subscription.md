@@ -8,19 +8,19 @@ sidebar_position: 17
 If you have a Ultimate Multisite license, you can cancel its renewal at any time you want. Just follow the steps below:
 
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)
+<!-- Screenshot unavailable: Account page email with access link -->
 
 Use the email you provided during the purchase and your password.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)
+<!-- Screenshot unavailable: Login page with email and password fields -->
 
 This is your Account Page inicial screen:
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--157d6544a77090f7ae56e4a26e04a9adddb53f4c/Available free on wordpress.org.png)
+<!-- Screenshot unavailable: Account page initial screen showing subscription details -->
 
 To cancel your subscription, on the menu on the left, go to _Renewing & Billing._
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c00d8fe9945900093d923bb60ac1560f6e5edd94/Available free on wordpress.org.png)
+<!-- Screenshot unavailable: Renewing & Billing page with cancel option -->
 
 Click the arrow on the right to open a side window. Then, you should select the option that will cancel the **auto-renew**.
 

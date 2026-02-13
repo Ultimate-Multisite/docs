@@ -67,7 +67,6 @@ Documentation auto-générée pour les **59 actions** et **115 filtres** dans Ul
 - [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Déclenche après qu'un objet soit stocké dans la base de données.
 - [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Déclenche après qu'un objet soit stocké dans la base de données.
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Déclenche après qu'un objet soit stocké dans la base de données.
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — Déclenche après qu'un objet soit stocké dans la base de données.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permet aux développeurs de plugins d'ajouter des actions au processus de déverrouillage.
 
 ## Filtres

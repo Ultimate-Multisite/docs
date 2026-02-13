@@ -13,19 +13,19 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Чтобы создать или отредактировать код скидки, перейдите в **Ultimate Multisite > Discount Codes**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-G2iYAraljI.png)
+![](/img/config/discount-codes-list.png)
 
 Там будет список уже созданных вами кодов скидок.
 
 Вы можете нажать **Add Discount** **Code**, чтобы создать новый купон, или отредактировать существующие, наведя курсор и нажав **Edit**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-nl6H0I06Jl.png)
+![Discount codes list with hover actions](/img/config/discount-codes-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3puhU5xCFF.png)
+![Add Discount Code button](/img/config/discount-codes-list.png)
 
 Вы будете перенаправлены на страницу, где сможете создать или отредактировать ваш код купона. В этом примере мы создадим новый.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9dup6xM4Cx.png)
+![Discount code edit page](/img/config/discount-codes-list.png)
 
 Давайте посмотрим на доступные здесь настройки:
 
@@ -33,25 +33,25 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 **Description:** Здесь вы можете кратко описать, для чего предназначен этот купон.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-V97PvPqtmK.png)
+![Discount code name and description fields](/img/config/discount-codes-list.png)
 
 **Coupon code:** Здесь вы определяете код, который ваши клиенты должны вводить при оформлении заказа.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-En58UdF3b7.png)
+![Coupon code field](/img/config/discount-codes-list.png)
 
 **Discount:** Здесь вы можете установить либо **процент**, либо **фиксированную сумму** денег для вашего кода скидки.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-96cicxcs7f.png)
+![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
 
 **Apply to renewals:** Если этот параметр выключен, код скидки будет применяться только к **первому платежу**. Все остальные платежи не будут иметь скидки. Если включен, код скидки будет действовать для всех будущих платежей.
 
 **Setup fee discount:** Если этот параметр выключен, купон не даст скидку на **плату за настройку** заказа. Если включен, вы можете установить скидку (процент или фиксированную сумму), которую купон применит к плате за настройку ваших планов.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zDYmcgHcoq.png)
+![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
 
 **Active:** Вручную активировать или деактивировать этот код купона.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rwNFfGobBB.png)
+![Active toggle for discount code](/img/config/discount-codes-list.png)
 
 В разделе **Advanced Options** у нас есть следующие настройки:
 
@@ -61,23 +61,23 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
   * **Max uses:** Это ограничит количество раз, которое пользователи могут использовать этот код скидки. Например, если вы укажете 10, купон можно будет использовать только 10 раз. После этого лимита код купона больше не будет использоваться.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zx4xudymt2.png)
+![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
 
 **Start & expiration dates:** Здесь вы можете добавить дату начала и/или дату истечения срока действия вашего купона.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AyTJkzxz9W.png)
+![Start and expiration date fields](/img/config/discount-codes-list.png)
 
 **Limit products:** Если включить **Select products**, все ваши продукты будут показаны. Вы сможете вручную выбрать (включив/выключив) какие продукты могут принимать этот код купона. Продукты, которые выключены здесь, не будут показывать изменений, если ваши клиенты попытаются использовать этот код купона для них.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OHK9Bgsaq7.png)
+![Limit products selection toggles](/img/config/discount-codes-list.png)
 
 После настройки всех этих параметров нажмите **Save Discount Code**, чтобы сохранить купон, и всё готово!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wAAoviDov8.png)
+![Save Discount Code button](/img/config/discount-codes-list.png)
 
 Купон теперь находится в вашем списке, и оттуда вы можете нажать **edit or delete**, чтобы изменить или удалить его.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ySn575AxqX.png)
+![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
 
 ### 
 
@@ -89,7 +89,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Нажмите кнопку **Click to Copy Shareable Link**. Это даст вам ссылку для совместного использования конкретного плана. В нашем случае ссылка была [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TecoStCUYi.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Чтобы применить ваш код скидки к этому конкретному плану, просто добавьте параметр **?discount_code=XXX** к URL. Где **XXX** — это код купона.
 

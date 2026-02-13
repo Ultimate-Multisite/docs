@@ -15,7 +15,7 @@ Ultimate Multisite reicht keine Steuererklärungen ein oder leistet Steuern im N
 
 Die Steuererhebung ist standardmäßig nicht aktiviert. Um sie zu aktivieren, gehen Sie zu **Ultimate Multisite > Settings > Taxes** und schalten die Option „Enable Taxes“ ein.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICSEhm7yhk.png)
+![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Steuer ausgeschlossen vs. Steuer enthalten
 
@@ -23,7 +23,7 @@ Standardmäßig sind alle Ihre Produktpreise steuerfrei, was bedeutet, dass Steu
 
 Wenn Sie möchten, dass Steuern im Produktpreis enthalten sind, können Sie dies tun, indem Sie die Einstellung **Inclusive Tax** aktivieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xiiaIXYI2c.png)
+![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
 
 Vergessen Sie nicht, die vorgenommenen Änderungen **zu speichern**.
 
@@ -33,11 +33,11 @@ Nachdem Sie die Steuererhebung aktiviert haben, müssen Sie Steuersätze für be
 
 Sie können den Editor öffnen, indem Sie auf die Schaltfläche **Manage Tax Rates** in der Seitenleiste der Steuer-Einstellungsseite klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UZb6g2rvrs.png)
+![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
 
 Auf der Seite des Steuersatz-Editors können Sie neue Steuersätze hinzufügen, indem Sie auf die Schaltfläche **Add new Row** klicken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZyJCSI6zLZ.png)
+![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
 
 Sie müssen jedem Steuersatz einen **Titel** geben (wird auf Rechnungen verwendet). Anschließend können Sie das **Land** (erforderlich), den **Bundesstaat** und die **Stadt** (beides optional) auswählen, in denen diese Steuer erhoben wird. Schließlich geben Sie den **Steuersatz in Prozent** ein.
 
@@ -47,19 +47,19 @@ Sie können auch mehrere Steuerkategorien erstellen, um unterschiedliche Steuers
 
 Klicken Sie auf **Add new Tax Category**, geben Sie den Namen Ihrer Kategorie ein und drücken Sie **Create**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-73biI4o8lj.png)
+![Add new Tax Category button](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YhH2hLLvEC.png)
+![Creating a new tax category](/img/config/settings-taxes.png)
 
 Um durch die Kategorien zu blättern, klicken Sie auf **Switch** und wählen Sie die Kategorie aus, zu der Sie neue Steuern hinzufügen möchten.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xjghTq6ta4.png)
+![Switch between tax categories](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E5YLXeIsWH.png)
+![Selecting a tax category to view](/img/config/settings-taxes.png)
 
 Sie können die Steuerkategorie für ein bestimmtes Produkt festlegen, indem Sie zur **Product edit page** gehen und dann zum Tab Steuern wechseln.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vkh5NXKplU.png)
+![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
 
 Auf demselben Bildschirm können Sie den Schalter **Is Taxable?** ausschalten, um Ultimate Multisite mitzuteilen, dass für dieses Produkt keine Steuern erhoben werden sollen.
 
@@ -74,21 +74,21 @@ Unsere Mehrwertsteuer-Tools helfen bei ein paar wichtigen Dingen:
 
 Um dieses Add-on zu installieren, gehen Sie zu **Ultimate Multisite > Settings** und klicken Sie dann auf den Seitenleistenlink **Check our Add-ons**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AsMyAH5HKC.png)
+![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
 
 Sie werden auf unsere Add-on-Seite weitergeleitet. Dort können Sie nach dem **Ultimate Multisite VAT add-on** suchen und es installieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AQ6gWfdY5G.png)
+![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iz8uncHiYa.png)
+![VAT add-on install dialog](/img/config/settings-taxes.png)
 
 Dann gehen Sie zu **Network Admin > Plugins** und aktivieren das Add-on im gesamten Netzwerk.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PkWGMWlgVu.png)
+![Network Activate the VAT add-on](/img/config/settings-taxes.png)
 
 Wenn Sie zurück zur **Tax Settings tab** gehen, sehen Sie neue Optionen. Schalten Sie die Option **Enable VAT Support** ein, um die neuen Mehrwertsteuer-Tools zu aktivieren. Vergessen Sie nicht, Ihre Einstellungen **zu speichern**!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Gn1SspQZ0S.png)
+![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Laden der Mehrwertsteuersätze
 
@@ -96,7 +96,7 @@ Eines der Tools, das unsere Integration hinzufügt, ist die Möglichkeit, die St
 
 Unten auf der Seite sehen Sie die Optionen zum Laden der Mehrwertsteuer. Durch Auswählen eines Sätze-Typs und Klicken auf die Schaltfläche **Update EU VAT Rates** werden die Steuersätze für jeden EU-Mitgliedstaat automatisch in die Tabelle geladen. Dann müssen Sie es nur noch speichern.
 
-### ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZKEqPBX5E.png)
+### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
 
 Sie können die Werte auch nach dem Laden bearbeiten. Dazu bearbeiten Sie einfach die Zeile in der Tabelle, die Sie benötigen, und klicken zum Speichern der neuen Werte.
 
@@ -104,6 +104,6 @@ Sie können die Werte auch nach dem Laden bearbeiten. Dazu bearbeiten Sie einfac
 
 Wenn die Mehrwertsteuer-Unterstützung aktiviert ist, fügt Ultimate Multisite ein zusätzliches Feld zum Checkout-Formular hinzu, unterhalb des Rechnungsadressfeldes. Das Feld erscheint nur für Kunden, die sich in der EU befinden.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ITUbFOIM4r.png)
+![VAT number field on the checkout form](/img/config/settings-taxes.png)
 
 Ultimate Multisite validiert dann die Mehrwertsteuernummer und wenn sie als gültig zurückkommt, wird das Reverse-Charge-Verfahren angewendet und der Steuersatz für diese Bestellung auf 0 % gesetzt.

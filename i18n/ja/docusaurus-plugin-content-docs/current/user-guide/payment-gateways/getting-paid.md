@@ -13,33 +13,33 @@ Ultimate Multisiteには組み込みのメンバーシップと請求システ�
 
 これらの決済ゲートウェイは、Ultimate Multisiteの支払い設定で構成できます。**Ultimate Multisiteメニュー > 設定 > 支払い**に移動して見つけることができます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-42sl37Fn5G.png)
+![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
 決済ゲートウェイを設定する前に、構成できる基本的な支払い設定を確認してください。
 
 **Force auto-rene** **w:** これにより、ユーザーが選択した請求頻度に応じて、支払いが各請求サイクルの終了時に自動的に再発行されることが保証されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Og3iJwLdmn.png)
+![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
 
 **Allow trials without payment** **method:** このオプションを有効にすると、クライアントは登録プロセス中に金融情報を追加する必要がありません。試用期間が終了した時点でのみ必要になります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aA5Olqe9M9.png)
+![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
 
 **Send invoice on payment confirmation:** 支払い後に請求書を送付するかどうかを選択できます。ユーザーはサブサイトのダッシュボードで支払い履歴にアクセスできます。このオプションはManual Gatewayには適用されません。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RGupao7GvW.png)
+![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
 
 **Invoice numbering scheme:** ここでは、支払い参照コードまたは連番スキームのいずれかを選択できます。請求書に支払い参照コードを使用する場合は、設定は不要です。連番スキームを使用する場合は、**next invoice number**（この番号はシステムで生成される次の請求書の請求書番号として使用されます。新しい請求書が作成されるたびに1ずつ増加します。変更して保存すると、連番を特定の値にリセットできます）と**invoice number prefix**を設定する必要があります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mP0949Eawa.png)
+![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oD5LaLaw7t.png)
+![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
 
 ## ゲートウェイの場所
 
 決済ゲートウェイは同じページ（**Ultimate Multisite > Settings > Payments**）で設定できます。**active payment gateways**の直下に、_Stripe_、_Stripe Checkout_、_PayPal_、および Manual を確認できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-g9RMYx84r5.png)
+![Active payment gateways list](/img/config/settings-payment-gateways.png)
 
 各決済ゲートウェイに関する専用記事があり、設定手順を案内します。リンクは以下にあります。
 
@@ -59,23 +59,23 @@ _Stripe_ と _PayPal_ が一部の国で利用できないため、Ultimate Mult
 
 まず、アドオンページに移動してください。**Ultimate Multisite > Settings**に移動すると見つけることができます。**Add-ons**テーブルが表示されます。**Check our Add-ons**をクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WtOkJNuCsj.png)
+![Settings page with add-ons section](/img/config/settings-general.png)
 
 **Check our Add-ons**をクリックすると、アドオンページにリダイレクトされます。ここでは、すべてのUltimate Multisiteアドオンが表示されます。**Ultimate Multisite: WooCommerce Integration**アドオンをクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 アドオンの詳細が表示されたウィンドウがポップアップします。**Install Now**をクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fGaxHyPtsv.png)
+![WooCommerce add-on install dialog](/img/config/settings-general.png)
 
 インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、WooCommerceアドオンがネットワーク上で有効化されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TM2lYtgyM7.png)
+![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
 
 有効化後、まだWooCommerceプラグインがウェブサイトにインストールされていない場合は、リマインダーが表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VwIGoJhzqc.png)
+![WooCommerce activation reminder notice](/img/config/settings-general.png)
 
 WooCommerce Integrationアドオンの詳細を読むには、**ここをクリック**してください。
 
@@ -83,15 +83,15 @@ WooCommerce Integrationアドオンの詳細を読むには、**ここをクリ�
 
 _GoCardless_アドオンのインストール手順は、_WooCommerce_アドオンとほぼ同じです。アドオンページに移動し、**Ultimate Multisite: GoCardless Gateway**アドオンを選択してください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 アドオンウィンドウがポップアップします。**Install Now**をクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIpPgP4VVo.png)
+![GoCardless add-on install dialog](/img/config/settings-general.png)
 
 インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、_GoCardless_アドオンがネットワーク上で有効化されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FGurJpzaF0.png)
+![Network Activate the GoCardless add-on](/img/config/settings-general.png)
 
 _GoCardless_ゲートウェイの開始方法を学ぶには、**この記事を読む**。
 
@@ -99,12 +99,12 @@ _GoCardless_ゲートウェイの開始方法を学ぶには、**この記事を
 
 アドオンページに移動し、**Ultimate Multisite: Payfast Gateway**アドオンを選択してください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 アドオンウィンドウがポップアップします。**Install Now.**をクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1jpCakOHNy.png)
+![Payfast add-on install dialog](/img/config/settings-general.png)
 
 インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、_Payfast_アドオンがネットワーク上で有効化されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-49OQHBwPxk.png)
+![Network Activate the Payfast add-on](/img/config/settings-general.png)

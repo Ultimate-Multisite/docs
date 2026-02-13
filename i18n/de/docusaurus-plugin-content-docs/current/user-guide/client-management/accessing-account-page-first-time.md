@@ -7,14 +7,14 @@ Willkommen bei Ultimate Multisite!
 
 Greifen Sie über den Link zu Ihrer Kontoseite zu, den Sie nach dem Kauf unseres Plugins per E‑Mail erhalten haben:
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)
+<!-- Screenshot unavailable: Account page email with access link -->
 
 Verwenden Sie die E‑Mail, die Sie beim Kauf angegeben haben, und das Passwort, das Sie per E‑Mail erhalten haben.
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)
+<!-- Screenshot unavailable: Login page with email and password fields -->
 
 Da Sie sich zum ersten Mal in dieses Konto einloggen, werden Sie aufgefordert, Ihr Passwort zu ändern. Ändern Sie es und klicken Sie auf die Schaltfläche _Save_.
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-y72kWhbvn-Changing.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-y72kWhbvn-Changing.png)
+<!-- Screenshot unavailable: Change password form with Save button -->
 
 Auf Ihrer Kontoseite können Sie alle Kontodetails wie Rechnungen, Verlängerungen, Kündigungen und viele weitere Dinge verwalten.

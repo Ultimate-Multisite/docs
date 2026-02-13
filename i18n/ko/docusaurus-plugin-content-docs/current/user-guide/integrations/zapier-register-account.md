@@ -9,32 +9,32 @@ _i18n_hash: b77221f8098a0280ce78f481e328f9af
 
 먼저 Google Drive에 **Google Sheet**를 만들어야 합니다. 나중에 데이터를 쉽게 매핑할 수 있도록 각 열을 올바르게 정의했는지 확인하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7wnYotvYtO.png)After creating a Google sheet, you can log in to your Zapier account and start creating a zap.
+![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)After creating a Google sheet, you can log in to your Zapier account and start creating a zap.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0khOzCSCF.png)Under the search field for **"App event"** select **"Google Sheets"**
+![Zapier dashboard to start creating a zap](/img/admin/webhooks-list.png)Under the search field for **"App event"** select **"Google Sheets"**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Cj2rk0zpOO.png)
+![Selecting Google Sheets as the app event](/img/admin/webhooks-list.png)
 
 그런 다음 \"**Event**\" 필드에서 \"**New spreadsheet row**\"를 선택하고 \"**Continue**\"를 누르세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y6z9NX6HAn.png)다음 단계에서는 **Google Sheet**가 저장된 **Google Account**를 선택하라는 요청이 표시됩니다. 올바른 Google 계정이 지정되었는지 확인하세요.
+![Selecting New spreadsheet row event in Zapier](/img/admin/webhooks-list.png)The next step will ask you to select a **Google Account** where the **Google Sheet** is saved. So just make sure that the right google account is specified.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-536o0FgLI1.png)
+![Selecting Google Account for the Google Sheet](/img/admin/webhooks-list.png)
 
 **"Set up trigger"** 아래에서 데이터를 가져올 Google 스프레드시트와 워크시트를 선택하고 지정해야 합니다. 해당 항목을 입력하고 \"**Continue**\"를 누르세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4juCX9m6M2.png)다음은 \"**test your trigger**\"를 수행하여 Google 시트가 제대로 연결되었는지 확인하는 단계입니다.
+![Set up trigger with spreadsheet and worksheet selection](/img/admin/webhooks-list.png)Next is to "**test your trigger** " to make sure that your google sheet is properly connected.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E1RjprMVNM.png)테스트가 성공하면 스프레드시트의 일부 값을 표시하는 결과를 확인할 수 있습니다. \"**Continue**\"를 클릭하여 진행하세요.
+![Test your trigger step in Zapier](/img/admin/webhooks-list.png)If your test is successful, you should see the result showing some values from your spreadsheets. Click "**Continue** " to proceed.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FNVMJRdoBs.png)다음 단계는 Ultimate Multisite에서 계정을 생성하거나 등록할 두 번째 작업을 설정하는 것입니다. 검색 필드에서 \"**Ultimate Multisite(2.0.2)**\"를 선택하세요.
+![Successful trigger test showing spreadsheet values](/img/admin/webhooks-list.png)The next step is to set up the second action that will create or register an account in Ultimate Multisite. On the search field select "**Ultimate Multisite(2.0.2)** "
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbSevglDSJ.png)
+![Selecting Ultimate Multisite as the action app](/img/admin/webhooks-list.png)
 
 \"**Event**\" 필드에서 \"**Register an Account in Ultimate Multisite**\"를 선택한 다음 \"**Continue**\" 버튼을 클릭하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DZTN6Hno0w.png)\"**Set up an action**\" 아래에서 고객 데이터, 멤버십, 제품 등과 관련된 다양한 필드를 확인할 수 있습니다. Google 시트의 값을 매핑하고 해당 값이 채워져야 할 적절한 필드에 할당할 수 있습니다. 아래 스크린샷에 표시된 대로입니다.
+![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)Under "**Set up an action** ", you will see different fields available for customer data, memberships, products, etc. You can map the values under your google sheet and assign them to the proper field where they should be populated as shown in the screenshot below.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-c1ozo05Uam.png)값을 매핑한 후 작업을 테스트할 수 있습니다.
+![Mapping Google Sheet values to Ultimate Multisite fields](/img/admin/webhooks-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKI9kdBjIc.png)
+![Testing the register account Zapier action](/img/admin/webhooks-list.png)

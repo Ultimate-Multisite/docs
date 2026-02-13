@@ -21,7 +21,7 @@ _**IMPORTANTE**_ **:** Se stai configurando una rete multisito su un sito WordPr
 * Creare un backup completo del tuo sito WordPress
 * Disattivare tutti i plugin sul tuo sito andando alla pagina dei plugin e selezionando _Deactivate_ dalle azioni di massa e poi cliccando _Apply_
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 Per abilitare Multisite, prima connettiti al tuo sito utilizzando un client FTP o il file manager di cPanel, e apri il file wp-config.php per la modifica.
 
@@ -35,7 +35,7 @@ Con la funzionalità multisito abilitata sul tuo sito, ora è il momento di conf
 
 Vai su **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Ora devi indicare a WordPress quale struttura di dominio utilizzerai per i siti nella tua rete: sottodomini o sottodirectory.
 
@@ -43,7 +43,7 @@ Se scegli i sottodomini, devi modificare le impostazioni DNS per la mappatura de
 
 Torna alla configurazione della rete, assegna un titolo alla tua rete e assicurati che l'indirizzo email nell'email dell'amministratore di rete sia corretto. Fai clic su _Install_ per continuare.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Aggiungi questo codice, fornito da WordPress, al tuo _**wp-config.php**_ :
 
@@ -86,7 +86,7 @@ Per creare un sottosito:
 * Titolo del sito — Titolo del sito, può essere modificato in seguito
 * Email dell'amministratore — Imposta come utente amministratore iniziale per il sottosito
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 Dopo aver compilato i campi, fai clic sul pulsante "Add site". Una volta creato il nuovo sottosito, accedilo per assicurarti che sia funzionante.
 

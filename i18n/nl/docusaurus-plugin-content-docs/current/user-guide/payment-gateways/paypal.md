@@ -17,7 +17,7 @@ Let op dat je een **PayPal Business account** nodig hebt om de API-gegevens te v
 
 Om PayPal als beschikbare betaalmethode op je netwerk in te schakelen, ga je naar **Ultimate Multisite > Settings > Payments** tab en vink je het vakje naast PayPal aan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## De PayPal API-gegevens verkrijgen
 
@@ -27,17 +27,17 @@ Je kunt dit verkrijgen door in te loggen op je PayPal [Live](https://www.paypal.
 
 _(Onthoud dat je de **sandbox mode** kunt gebruiken om betalingen te testen en te zien of de gateway correct is ingesteld. Schakel gewoon de overeenkomstige sectie in.)_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 Om API Signature of Certificate-gegevens voor je PayPal-account aan te vragen:
 
 1. Ga naar je [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
 2. In de sectie **API access**, klik op **Update**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 
 3. Onder **NVP/SOAP API integration (Classic)**, klik op **Manage API credentials**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * Als je al een API Signature of Certificate hebt gegenereerd, word je doorgestuurd naar een pagina waar je je gegevens kunt vinden.
    * _**Opmerking:** Als je wordt gevraagd om je PayPal-account te verifiëren, volg dan de instructies op het scherm._
@@ -48,7 +48,7 @@ Om API Signature of Certificate-gegevens voor je PayPal-account aan te vragen:
    * **Request API Certificate** – Selecteer voor API Certificate authenticatie.
 
 5. PayPal genereert je API-gegevens als volgt:  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **API Signature credentials** bevatten een API Username, API Password en Signature, die niet verlopen. Deze waarden zijn standaard verborgen voor extra beveiliging. Klik op **Show/Hide** om ze in en uit te schakelen. Wanneer je klaar bent, klik op **Done**.
    * **API Certificate credentials** bevatten een API Username, API Password en Certificate, die automatisch na drie jaar verloopt. Klik op **Download Certificate** om het API Certificate op je desktop op te slaan.

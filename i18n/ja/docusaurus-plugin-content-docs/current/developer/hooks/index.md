@@ -67,7 +67,6 @@ Auto-generated documentation for all **59 actions** and **115 filters** in Ultim
 - [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — オブジェクトがデータベースに保存された後に発火します。
 - [wu_this-model_post_save](./Actions/wu_this-model_post_save) — オブジェクトがデータベースに保存された後に発火します。
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — オブジェクトがデータベースに保存された後に発火します。
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — オブジェクトがデータベースに保存された後に発火します。
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — ロック解除プロセスにアクションを追加できるようにします。
 
 ## Filters

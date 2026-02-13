@@ -13,19 +13,19 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 そこで、**Danger Zone**へ進み、**Delete Account**をクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7IO8WYhID5.png)
+![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
 
 確認を求めるモジュールが開きます。**Confirm Account Deletion**オプションをオンにし、**Delete Account**をクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NavCHgYJYo.png)
+![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
 
 これにより、サイトからログアウトし、ネットワーク上のメンバーシップがキャンセルされ、サイトもネットワークから削除されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KFkpD0CRhT.png)
+![Logged out after account deletion](/img/admin/memberships-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jWkEmpf9ij.png)
+![Membership canceled confirmation](/img/admin/memberships-list.png)
 
 **重要:** この操作は、顧客をネットワークから除外しないことに注意してください。顧客は複数のメンバーシップを持っている場合や、メンバーシップを持っていない場合があります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDX2xRZVHu.png) | ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5g9qbL4SaT.png)  
+![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
 ---|---

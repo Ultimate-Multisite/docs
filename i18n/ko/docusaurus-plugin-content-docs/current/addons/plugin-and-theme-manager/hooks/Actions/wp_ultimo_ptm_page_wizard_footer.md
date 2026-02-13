@@ -6,13 +6,13 @@ _i18n_hash: be9fd3374dde4c26037a5932c79c0288
 ---
 # Action: wp_ultimo_ptm_page_wizard_footer
 
-Allow plugin developers to add scripts to the bottom of the page
+플러그인 개발자가 페이지 하단에 스크립트를 추가할 수 있도록 허용합니다
 
 ## Parameters
 
-| Name | Type | Description |
-|------|------|-------------|
-| $ | `\WU_Page` | Multisite Ultimate Page instance |
+| 이름 | 타입 | 설명 |
+|------|------|------|
+| $ | `\WU_Page` | 멀티사이트 Ultimate Page 인스턴스 |
 
 ### Since
 
@@ -20,5 +20,5 @@ Allow plugin developers to add scripts to the bottom of the page
 
 ### Source
 
-- Defined in [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) at line 137
-- Defined in [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L163) at line 163
+- `views/base/wizard.php`에서 정의됨, 137번째 줄
+- `views/base/settings.php`에서 정의됨, 163번째 줄

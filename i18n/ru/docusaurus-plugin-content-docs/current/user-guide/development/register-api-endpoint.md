@@ -16,7 +16,7 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 
 Для этого процесса вам понадобятся ваши учетные данные API. Чтобы получить их, перейдите в панель администратора сети, откройте **Ultimate Multisite > Settings** > **API & Webhooks**, и найдите раздел Настройки API.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzcShcSVgI.png)  
+![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
 Выберите **Enable API** и получите свои учетные данные API.
 
 Теперь давайте изучим конечную точку и затем создадим действие регистрации в Zapier.
@@ -83,27 +83,27 @@ It is possible to send the customer ID created in your network. If not submitted
 
 В Google Forms создайте форму с минимальными полями, необходимыми для создания нового членства в сети.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xaVRQkloWg.png)
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
 Теперь в Zapier создайте новый Zap и подключите созданную форму Google через таблицу, где сохраняются данные.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-67iVl1XK46.png)
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
 Готово! Форма Google Forms подключена к Zapier и готова к интеграции с сетью. Теперь перейдём к действию, которое будет результатом триггера, который Google Forms запускает каждый раз, когда он заполняется.
 
 Найдите новое приложение Ultimate Multisite и выберите его. Для такого типа Zap выберите опцию Register.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hq2yHGYR31.png)
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
-После этого первого шага выберите аккаунт, который будет подключён к этому Zap.![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BuyTLt0JUM.png)
+After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
 Это самая чувствительная часть всего процесса. Мы должны сопоставить поля, пришедшие из Google Forms, с минимальными полями, необходимыми для конечной точки регистрации, как показано в предыдущем разделе этой статьи.
 
 В этом примере нам нужно настроить только имя пользователя, email, пароль, имя и URL сайта. Остальное оставлено предопределённым, чтобы все членства, созданные через эту форму Google Forms, следовали одной и той же схеме продукта и статуса.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4pjTVOmauz.png)
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
-С настройкой информации перейдите к финальному тесту. На последнем экране вы можете увидеть все поля, которые будут отправлены в конечную точку, их соответствующую информацию и поля, которые будут отправлены пустыми.![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fD2A9dYbDs.png)
+With the information set up, proceed to the final test. On the last screen you can see all the fields that will be sent to the endpoint, their respective information and the fields that will be sent empty.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
 
 Проверьте ваш новый Zap, и он должен завершиться успешно. Если возникнет ошибка, проверьте все поля и убедитесь, что они отправляются правильно. Поскольку информации много, некоторые вещи могут остаться незамеченными.
 

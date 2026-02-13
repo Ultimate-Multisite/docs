@@ -9,29 +9,29 @@ Ultimate Multisite: Ad Injector es un **add-on gratuito** que te brinda las herr
 
 Después de instalar Ultimate Multisite: Ad Injector, ve a tu página de _Plugins_ para activarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KgDegqpbeb.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
 
 _Haz clic en el botón Activar en red_
 
 Una vez que el add-on esté activo, el meta box _Advanced Options_ en la pantalla de edición del plan tendrá una nueva opción llamada _Ad Settings_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DA7Z84yQTu.png)
+![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
 
 _Ahora puedes editar la configuración de anuncios para cada uno de tus planes_
 
 En esa pestaña, podrás agregar los códigos de anuncios para publicaciones y páginas en el front-end, antes y después del contenido.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Rw9wObGUEN.png)
+<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1TKkWh8qoF.png)
+<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
 
 Después de insertar el código de tu anuncio, aparecerá en las publicaciones y páginas de ese plan específico.
 
 También puedes incluir anuncios en el encabezado de las páginas de administración para los usuarios de ese plan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdpwvfMgTp.png)
+<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1CPGJZn3km.png)
+<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
 
 Ve a la opción Código de anuncio del panel de administración si deseas mostrar anuncios en el back-end de tus usuarios
 

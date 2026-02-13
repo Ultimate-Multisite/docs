@@ -1,8 +1,6 @@
 ---
 id: wu_template_previewer
-title: >-
-  I’m ready to translate the content. Could you please provide the Markdown/MDX
-  text that needs to be translated?
+title: Acción - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---

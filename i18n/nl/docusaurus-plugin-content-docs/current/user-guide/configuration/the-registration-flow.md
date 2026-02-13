@@ -17,19 +17,19 @@ De standaardpagina voor registratie is [_**yourdomain.com/register**_](http://yo
 
 Nadat een gebruiker uw registratiepagina heeft bereikt (meestal door op een **Sign in** of **Buy now** knop te klikken), zullen ze uw registratieformulier daar zien.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 Alles wat ze moeten doen is het invullen van alle verplichte velden - e-mail, gebruikersnaam, wachtwoord, enz... - en betalen voor het plan of hun e-mailadres bevestigen als ze zich registreren voor een gratis plan of een betaald plan met proefperiode zonder betalingsinformatie.
 
 Op de pagina 'Thank you' zullen ze een bericht zien waarin staat of ze hun e-mailadres moeten bevestigen of dat hun website al is geactiveerd en ze deze kunnen gaan gebruiken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 Als een e-mailadresbevestiging vereist is, moeten ze naar hun e-mailinbox gaan en op de verificatielink klikken. Hun website wordt niet geactiveerd als hun e-mailadres niet wordt geverifieerd.
 
 Als ze zich hebben geregistreerd op een betaald plan of de e-mailverificatie niet verplicht is op uw netwerk, wordt hun website direct na de afrekening geactiveerd en krijgen ze een link om in te loggen op hun dashboard.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Gebruik van een deelbare link:
 
@@ -43,30 +43,30 @@ Als u geen gebruik wilt maken van PayPal, Stripe of een andere betalingsgateway 
 
 Het registratieproces is precies hetzelfde als hierboven, maar op de registratiepagina zien uw klanten een bericht dat ze een e-mail met verdere instructies zullen ontvangen om de betaling te voltooien.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 En nadat de registratie is voltooid, zien ze de betalingsinstructies die u heeft ingesteld (en ontvangen ze deze ook per e-mail).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 De betalingsinstructies kunnen worden gewijzigd via **Ultimate Multisite > Settings > Payments** nadat u de optie **Manual** hebt ingeschakeld:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 Nadat uw klanten de handmatige betaling hebben voltooid en u de bevestiging hebben gestuurd, moet u **handmatig de betaling bevestigen** om het klantlidmaatschap en de website te activeren.
 
 Ga hiervoor naar **Ultimate Multisite > Payments** en zoek de klantbetaling. Deze moet nog steeds een status **Pending** tonen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Klik op het betalingsnummer en u kunt de status wijzigen naar **Completed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 Na het wijzigen van de status naar **Completed** ziet u een bericht **Activate membership**. Schakel deze optie **aan** om het lidmaatschap en de website die aan deze klant zijn gekoppeld te activeren. Klik vervolgens op **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Uw klant zou nu toegang moeten hebben tot het dashboard en alle functies waarop ze zich hebben geabonneerd.

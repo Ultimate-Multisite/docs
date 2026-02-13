@@ -19,7 +19,7 @@ Domain Mapping erfordert einige Einstellungen von Ihrer Seite, damit es funktion
 
 Während der Installation von Ultimate Multisite wird der Assistent automatisch die Datei **sunrise.php** in den vorgesehenen Ordner kopieren und installieren. **Der Assistent erlaubt es Ihnen nicht, fortzufahren, bis dieser Schritt abgeschlossen ist**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zrBdFs13Dy.png)
+![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
 
 Das bedeutet, dass Sie, sobald der Ultimate Multisite Installationsassistent die Einrichtung Ihres Netzwerks abgeschlossen hat, sofort mit dem Mapping der benutzerdefinierten Domain beginnen können.
 
@@ -27,7 +27,7 @@ Beachten Sie, dass Domain Mapping in Ultimate Multisite nicht zwingend erforderl
 
 Falls Sie das Domain Mapping von Ultimate Multisite deaktivieren müssen, um anderen Domain Mapping-Lösungen den Vorrang zu geben, können Sie diese Funktion unter **Ultimate Multisite > Settings > Domain Mapping** deaktivieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbrC47pTcX.png)
+![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
 
 Direkt unter dieser Option finden Sie auch die Option **Force Admin Redirect**. Diese Option ermöglicht es Ihnen zu steuern, ob Ihre Kunden ihr Admin-Dashboard sowohl auf ihrer benutzerdefinierten Domain als auch auf ihrer Subdomain oder nur auf einer davon aufrufen können.
 
@@ -37,7 +37,7 @@ Die Option **Force redirect to** **network domain** macht genau das Gegenteil �
 
 Und die Option **Allow access to the admin by both mapped domain domain and network domain** ermöglicht es ihnen, ihre Admin-Dashboards sowohl auf der Subdomain als auch auf der benutzerdefinierten Domain aufzurufen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JYwHPWhYwV.png)
+![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
 
 Es gibt zwei Möglichkeiten, eine benutzerdefinierte Domain zu mappen. Die erste besteht darin, den Domainnamen über das Netzwerk-Admin-Dashboard als Super-Admin zu mappen, und die zweite erfolgt über das Unterseiten-Admin-Dashboard unter der Kontoseite.
 
@@ -59,11 +59,11 @@ Wenn Sie Ihren Kunden erlauben, ihre eigenen Domains zu mappen, müssen sie dies
 
 Wenn Sie als Super-Admin in Ihrem Netzwerk angemeldet sind, können Sie benutzerdefinierte Domainnamen einfach hinzufügen und verwalten, indem Sie zu **Ultimate Multisite > Domains** gehen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5XxtXP622s.png)
+![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
 
 Unter dieser Seite können Sie oben auf die Schaltfläche **Add Domain** klicken, und es öffnet sich ein Modal-Fenster, in dem Sie den **custom domain name**, die **Unterseite**, auf die Sie die benutzerdefinierte Domain anwenden möchten, und entscheiden können, ob Sie sie als **primary domain** festlegen möchten oder nicht (beachten Sie, dass Sie **mehrere Domainnamen einer Unterseite** zuordnen können).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rD6fnbzRe9.png)
+![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
 
 Nachdem Sie alle Informationen eingegeben haben, können Sie unten auf die Schaltfläche **Add Existing Domain** klicken.
 
@@ -71,13 +71,13 @@ Dies startet den Prozess der Überprüfung und des Abrufs der DNS-Informationen 
 
 Die **Stage** oder der Status sollte sich von **Checking DNS** zu **Ready** ändern, wenn alles korrekt eingerichtet ist.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3g2mkrlk75we98uhscagnr3ini0s)
+![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5dIPdYQfZi.png)
+![Domain with Ready status in domains list](/img/admin/domains-list.png)
 
 Wenn Sie auf den Domainnamen klicken, können Sie einige Optionen darin sehen. Werfen wir einen kurzen Blick darauf:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5tCiNUIKih.png)
+![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
 
 **Stage:** Dies ist die Phase, in der sich die Domain befindet. Wenn Sie die Domain zum ersten Mal hinzufügen, befindet sie sich wahrscheinlich in der Phase **Checking DNS**. Der Prozess prüft die DNS-Einträge und bestätigt, dass sie korrekt sind. Anschließend wird die Domain in die Phase **Checking SSL** überführt. Ultimate Multisite prüft, ob die Domain SSL hat oder nicht, und kategorisiert Ihre Domain als **Ready** oder **Ready (without SSL)**.
 
@@ -95,25 +95,25 @@ Unterseiten-Administratoren können ebenfalls benutzerdefinierte Domainnamen von
 
 Zuerst müssen Sie sicherstellen, dass Sie diese Option in den **Domain mapping**-Einstellungen aktivieren. Sehen Sie sich das untenstehende Screenshot an.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M3MO6RKBWe.png)
+![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
 
 Sie können diese Option auch auf der **Plan**-Ebene oder in den Produktoptionen unter **Ultimate Multisite > Products** festlegen oder konfigurieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JRqx7Uhqsa.png)
+![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
 
 Wenn eine dieser Optionen aktiviert ist und ein Unterseiten-Benutzer das Mapping von benutzerdefinierten Domainnamen erlaubt ist, sollte der Unterseiten-Benutzer ein Metabox unter der **Account**-Seite namens **Domains** sehen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DUeHUY66yP.png)
+![Domains metabox on the subsite account page](/img/admin/domains-list.png)
 
 Der Benutzer kann auf die Schaltfläche **Add Domain** klicken, und es öffnet sich ein Modal-Fenster mit einigen Anweisungen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-n5mNhDpL38.png)
+![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
 
 Der Benutzer kann dann auf **Next Step** klicken und fortfahren, die benutzerdefinierte Domain hinzuzufügen. Er kann auch wählen, ob dies die primäre Domain sein soll oder nicht.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0vlbs2dcaz.png)
+![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zez2zeiqz8mi67o7izkg3d7x43ve)Klicken Sie auf **Add Domain**, um den Prozess der Überprüfung und des Abrufs der DNS-Informationen der benutzerdefinierten Domain zu starten.
+![Click Add Domain to start DNS verification](/img/admin/domains-list.png)Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
 
 ### Über Domain Syncing
 
@@ -123,8 +123,8 @@ Domain Syncing geschieht automatisch, wenn Ihr Hosting-Provider eine Integration
 
 Sie müssen diese Integration in den Ultimate Multisite-Einstellungen unter dem **Integration**-Tab aktivieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-k6i46r4x2yddii0op4x343jizq20)
+![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMADuxaH62.png)
+![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
 
 _Beachten Sie, dass, wenn Ihr Hosting-Provider nicht einer der oben genannten Provider ist, **müssen Sie die Domain manuell synchronisieren oder dem Hosting-Konto hinzufügen**._

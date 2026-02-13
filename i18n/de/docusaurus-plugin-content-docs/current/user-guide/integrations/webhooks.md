@@ -15,11 +15,11 @@ Dies ist hilfreich, wenn Sie bestimmte Daten von Ultimate Multisite an ein ander
 
 Um einen Webhook zu erstellen, gehen Sie zu Ihrem Netzwerk-Admin-Dashboard. Klicken Sie auf **Ultimate Multisite > Webhooks > Add New Webhook.**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7cBdC7uhfX.png)
+![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
 
 Beim Erstellen eines neuen Webhooks werden Sie nach Informationen wie **Name, URL** und **Event** gefragt. Sie können jeden gewünschten Namen für Ihren Webhook verwenden. Die wichtigsten Felder sind die URL und das Event.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7MmyV3wafK.png)
+![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
 
 URL ist der **Endpunkt oder das Ziel**, an das Ultimate Multisite die **Payload oder Daten** senden wird. Dies ist die Anwendung, die die Daten empfängt.
 
@@ -29,28 +29,28 @@ In diesem Artikel werden wir das grundlegende Konzept betrachten, wie ein Webhoo
 
 Gehen Sie zu [requestbin.com](https://requestbin.com/) und klicken Sie auf Create Request Bin.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-J0e5FzS04g.png)
+![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
 
 Nach dem Klicken auf diese Schaltfläche werden Sie aufgefordert, sich anzumelden, wenn Sie bereits ein Konto haben, oder sich anzumelden. Wenn Sie bereits ein Konto haben, führt es Sie direkt zu ihrem Dashboard. Auf ihrem Dashboard sehen Sie sofort den Endpunkt oder die URL, die Sie beim Erstellen Ihres Ultimate Multisite Webhooks verwenden können.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M40kPMGsji.png)
+![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
 
 Kopieren Sie die URL und gehen Sie zurück zu Ultimate Multisite. Platzieren Sie den Endpunkt im URL-Feld und wählen Sie ein Ereignis aus dem Dropdown aus. In diesem Beispiel wählen wir **Payment Received**.
 
 Dieses Ereignis wird ausgelöst, wann immer ein Benutzer eine Zahlung tätigt. Alle verfügbaren Ereignisse, ihre Beschreibungen und Payloads sind am Ende der Seite aufgeführt. Klicken Sie auf die Schaltfläche **Add New Webhook**, um den Webhook zu speichern.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1NwqQP4bP0.png)
+![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
 
 Wir können jetzt ein Testereignis an den Endpunkt senden, um zu sehen, ob der von uns erstellte Webhook funktioniert. Dazu klicken Sie auf **Send Test Event** unter dem von uns erstellten Webhook.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zTDhrG4wlP.png)
+![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
 
 Dies zeigt ein Bestätigungsfenster, das besagt, dass der Test erfolgreich war.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9jP9r7yRT9.png)
+![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
 
 Wenn wir jetzt zur _Requestbin_-Website zurückkehren, sehen wir, dass die Payload mit einigen Testdaten empfangen wurde.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RZke5xnrAg.png)
+![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
 
 Dies ist das grundlegende Prinzip, wie Webhooks und Endpunkte funktionieren. Wenn Sie einen benutzerdefinierten Endpunkt erstellen möchten, müssen Sie eine benutzerdefinierte Funktion erstellen, um die Daten zu verarbeiten, die Sie von Ultimate Multisite erhalten.

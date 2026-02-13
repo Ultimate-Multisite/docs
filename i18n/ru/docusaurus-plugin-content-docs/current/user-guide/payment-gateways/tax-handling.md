@@ -15,7 +15,7 @@ Ultimate Multisite не подает декларации и не перечис
 
 Сбор налогов не включён по умолчанию. Чтобы включить его, перейдите в **Ultimate Multisite > Settings > Taxes** и переключите настройку Enable Taxes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICSEhm7yhk.png)
+![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Налог исключён против включён
 
@@ -23,7 +23,7 @@ Ultimate Multisite не подает декларации и не перечис
 
 Если вы предпочитаете, чтобы налоги были включены в цену продукта, вы можете сделать это, включив настройку Inclusive Tax.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xiiaIXYI2c.png)
+![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
 
 Не забудьте **сохранить** внесённые изменения.
 
@@ -35,11 +35,11 @@ Ultimate Multisite не подает декларации и не перечис
 
 Вы можете получить доступ к редактору, нажав кнопку **Manage Tax Rates** на боковой панели страницы настроек налогов.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UZb6g2rvrs.png)
+![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
 
 На странице редактора налоговых ставок вы можете добавить новые налоговые ставки, нажав кнопку **Add new Row**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZyJCSI6zLZ.png)
+![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
 
 Вам нужно задать каждой налоговой ставке **title** (используется в счетах). Затем вы можете выбрать **country** (обязательно), **state** и **city** (оба необязательны), где будет начисляться этот налог. Наконец, добавьте **tax rate in percents**.
 
@@ -49,19 +49,19 @@ Ultimate Multisite не подает декларации и не перечис
 
 Нажмите **Add new Tax Category**, затем введите название категории и нажмите **Create**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-73biI4o8lj.png)
+![Add new Tax Category button](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YhH2hLLvEC.png)
+![Creating a new tax category](/img/config/settings-taxes.png)
 
 Чтобы просмотреть категории, нажмите **Switch** и выберите категорию, к которой вы хотите добавить новые налоги.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xjghTq6ta4.png)
+![Switch between tax categories](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E5YLXeIsWH.png)
+![Selecting a tax category to view](/img/config/settings-taxes.png)
 
 Вы можете задать категорию налога для конкретного продукта, перейдя на **Product edit page** и затем на вкладку Taxes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vkh5NXKplU.png)
+![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
 
 На том же экране вы можете отключить переключатель **Is Taxable?**, чтобы сообщить Ultimate Multisite, что он не должен собирать налоги с данного продукта.
 
@@ -76,21 +76,21 @@ Ultimate Multisite не подает декларации и не перечис
 
 Чтобы установить это дополнение, перейдите в **Ultimate Multisite > Settings** и затем нажмите ссылку **Check our Add-ons** в боковой панели.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AsMyAH5HKC.png)
+![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
 
 Вас перенаправят на страницу наших дополнений. Там вы можете найти **Ultimate Multisite VAT add-on** и установить его.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AQ6gWfdY5G.png)
+![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iz8uncHiYa.png)
+![VAT add-on install dialog](/img/config/settings-taxes.png)
 
 Затем перейдите в **Network Admin > Plugins** и активируйте это дополнение на всей сети.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PkWGMWlgVu.png)
+![Network Activate the VAT add-on](/img/config/settings-taxes.png)
 
 Если вы вернетесь к вкладке **Tax Settings**, вы увидите новые доступные опции. Включите **Enable VAT Support**, чтобы активировать новые инструменты НДС. Не забудьте **save** ваши настройки!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Gn1SspQZ0S.png)
+![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Получение налоговых ставок НДС
 
@@ -98,7 +98,7 @@ Ultimate Multisite не подает декларации и не перечис
 
 Внизу страницы вы увидите параметры получения НДС. Выбор типа ставки и нажатие кнопки **Update EU VAT Rates** загрузит и автоматически заполнит таблицу налоговыми ставками для каждой страны‑члена ЕС. Затем вам нужно только сохранить.
 
-### ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZKEqPBX5E.png)
+### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
 
 Вы также можете редактировать значения после их получения. Для этого просто отредактируйте нужную строку таблицы и нажмите, чтобы сохранить новые значения.
 
@@ -106,6 +106,6 @@ Ultimate Multisite не подает декларации и не перечис
 
 Когда поддержка НДС включена, Ultimate Multisite добавит дополнительное поле в форму оформления заказа, под полем адреса выставления счета. Поле будет отображаться только для клиентов, находящихся в ЕС.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ITUbFOIM4r.png)
+![VAT number field on the checkout form](/img/config/settings-taxes.png)
 
 Ultimate Multisite затем проверит номер НДС, и если он окажется действительным, будет применен механизм обратного начисления, а ставка налога будет установлена на 0 % для этого заказа.

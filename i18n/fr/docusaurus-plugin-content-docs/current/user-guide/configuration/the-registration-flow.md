@@ -17,19 +17,19 @@ La page par défaut pour l'inscription est [_**yourdomain.com/register**_](http:
 
 Après qu'un utilisateur arrive sur votre page d'inscription (généralement en cliquant sur un bouton **Sign in** ou **Buy now**), il verra votre formulaire d'inscription là.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 Tout ce qu'ils ont à faire est de remplir tous les champs obligatoires - e-mail, nom d'utilisateur, mot de passe, etc... - et de payer le plan ou de confirmer leur adresse e-mail s'ils s'inscrivent à un plan gratuit ou à un plan payant avec période d'essai sans informations de paiement.
 
 Sur la page « Merci », ils verront un message leur indiquant s'ils doivent confirmer leur adresse e-mail ou si leur site est déjà activé et qu'ils peuvent commencer à l'utiliser.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 Si une confirmation d'adresse e-mail est requise, ils devront accéder à leur boîte e-mail et cliquer sur le lien de vérification. Leur site ne sera pas activé si leur adresse e-mail n'est pas vérifiée.
 
 S'ils se sont inscrits à un plan payant ou si la vérification e-mail n'est pas obligatoire sur votre réseau, leur site sera activé immédiatement après le paiement et un lien leur sera affiché pour se connecter à leur tableau de bord.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Utilisation d'un lien partageable :
 
@@ -43,30 +43,30 @@ Si vous ne souhaitez pas utiliser PayPal, Stripe ou tout autre passerelle de pai
 
 Le processus d'inscription sera exactement le même que ci-dessus, mais sur la page d'inscription vos clients verront un message indiquant qu'ils recevront un e-mail avec des instructions supplémentaires pour compléter le paiement.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 Et après que l'inscription soit terminée, ils verront les instructions de paiement que vous avez définies (et les recevront également dans leur e-mail).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 Les instructions de paiement peuvent être modifiées dans **Ultimate Multisite > Settings > Payments** après avoir activé l'option de paiement **Manual** :
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 Après que vos clients aient effectué le paiement manuel et vous aient envoyé la confirmation, vous devez **confirmer manuellement le paiement** pour activer l'adhésion et le site du client.
 
 Pour ce faire, allez dans **Ultimate Multisite > Payments** et trouvez le paiement du client. Il devrait toujours afficher un statut **Pending**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Cliquez sur le numéro de paiement et vous pourrez changer son statut en **Completed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 Après avoir changé son statut en **Completed**, vous devriez voir un message **Activate membership**. Activez cette option **on** pour activer l'adhésion et le site associés à ce client. Ensuite, cliquez sur **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Votre client devrait maintenant pouvoir accéder au tableau de bord et à toutes les fonctionnalités auxquelles il s'est abonné.

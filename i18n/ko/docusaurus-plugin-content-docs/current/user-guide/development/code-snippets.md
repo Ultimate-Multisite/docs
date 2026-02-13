@@ -15,7 +15,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 
 * [**매핑된 도메인에서 Font-Icons의 CORS 문제 해결**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## 계정 메뉴 항목의 위치 변경
+## 계정 메뉴 항목의 위치 변경 {#changing-the-position-of-the-account-menu-item}
 
 클라이언트의 대시보드에서 계정 메뉴 항목의 위치를 변경하려면, 메인 사이트의 활성 테마 functions.php에 다음 코드 스니펫을 추가하기만 하면 됩니다. 또한 이 스니펫을 mu-plugins 또는 커스텀 플러그인 중 하나에 넣을 수도 있습니다.
 
@@ -23,7 +23,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## 사용자가 특정 플랜에 속해 있는지 및/또는 활성 구독이 있는지 확인하는 방법
+## 사용자가 특정 플랜에 속해 있는지 및/또는 활성 구독이 있는지 확인하는 방법 {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 네트워크 관리자로서 구독 상태와 구독 중인 플랜에 따라 특정 구독자 또는 최종 사용자 그룹에 기본 작업을 수행하거나 서비스/기능을 제공하는 커스텀 함수를 만들어야 할 수 있습니다.
 
@@ -53,9 +53,9 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 주의: 사용자는 **Plan**에만 구독할 수 있으며, 패키지나 서비스에는 구독할 수 없습니다. 이는 패키지와 서비스가 **Plan**의 추가 기능이기 때문입니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## 매핑된 도메인에서 Font-Icons의 CORS 문제 해결
+## 매핑된 도메인에서 Font-Icons의 CORS 문제 해결 {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 도메인을 서브사이트에 매핑한 후 사이트가 커스텀 폰트 로딩에 문제가 발생할 수 있습니다. 이는 서버 설정에서 발생하는 교차 출처 차단 때문입니다.
 

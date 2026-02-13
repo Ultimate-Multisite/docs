@@ -55,7 +55,7 @@ WordPress Multisite에서는 모든 네트워크 사이트가 동일한 데이�
 
 이러한 이해를 바탕으로 사용자를 생성하도록 허용하는 것이 바람직하지 않을 수 있으며, 이 때문에 WordPress Multisite는 이 기능을 사이트 관리자에게서 제거하고 네트워크 관리자에게 이 기능을 이전합니다. 그 결과 네트워크 관리자는 사이트 관리자가 자신의 사이트에 사용자 계정을 생성할 수 있도록 필요한 권한을 위임하면 됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zg50L2qdJEphzPcgwlo_pqNiYDknE6wiJo4zQUlhQwBCtDeAef2_aTzBBMx76YvTweROsbUH4uvosFRitBj8kgatWzCi_C822oJPWr5bKpwLuoBvTIZ5M9O1nFxOepiav1FkRHNv)
+<!-- Screenshot unavailable: WordPress Multisite network user management interface -->
 
 위의 진술을 반복하면, 사용자 계정이 사이트와 관련된 것처럼 보이지만 실제로는 네트워크에 할당되며 따라서 네트워크 전체에서 고유해야 합니다. 이로 인해 사용자 이름이 등록 불가한 경우가 있을 수 있습니다.
 
@@ -75,11 +75,11 @@ _서브디렉터리_ 구성에서는 메인 사이트(네트워크가 설정될 
 
 게시물의 경우, 네트워크 사이트와 충돌을 방지하기 위해 메인 사이트에 필수 /blog/ 경로가 추가됩니다. 이는 ‘Post name’과 같은 예쁜 퍼머링크가 domain.name/blog/post-name/ 형태로 표시됨을 의미합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-QUlDfXAzHqImjngoE7UsJHa6DOl6XbQWV17LYthxpxDBy-k453GE5TlJVBA6-sOootX3Fsi34sHv5nSgi1kZmlUD1iMneztCc_HQvZmXpbZEdX2a1il8GJQqxUT8aVPgW5ikR5uG)
+<!-- Screenshot unavailable: WordPress permalink settings showing /blog/ path in subdirectory configuration -->
 
 _서브도메인_ 구성에서는 이 작업이 필요하지 않습니다. 각 네트워크 사이트는 완전한 도메인 분리를 통해 이익을 얻으며, 따라서 단일 경로에 의존할 필요가 없습니다. 대신 각 사이트는 자신의 _서브도메인_을 기반으로 별도의 경로를 유지합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-2wgqTosYo3GAa3jwaBlPADbFiMbZ-kKUTuQtk0gv5pvkj81UfxnxSyA8R-jD1EZmRMBLjJFoWZJOirTSe8K9OQKeoSYeDj602XBHRrZeRFABE1sw-JERzJzEzMd7FmvrM9G1L9MP)
+<!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
 #### Static Pages
 
@@ -87,7 +87,7 @@ _서브디렉터리_ 구성에서는 메인 사이트와 네트워크 사이트�
 
 이를 방지하기 위해 WordPress는 특정 사이트 이름을 블랙리스트에 추가하여 첫 번째 사이트의 이름과 충돌하지 않도록 하는 기능을 제공합니다. 일반적으로 네트워크 관리자는 메인 사이트 페이지의 루트 경로를 입력합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-sqwI-k_-3krK0_ortenskDcdGrKpgOD6itvwDc2KEuGk1gZO-rqo_OF9yTqclSmQdrOBwsGPiiOc1oF6c0GMyNELJ-7gbyQNE81juSM3IvgTdWqhZ_UEVt06xJRu8Z8oyAKfLLz-)
+<!-- Screenshot unavailable: WordPress network settings showing banned site names to prevent conflicts -->
 
 _서브도메인_ 구성에서는 _서브도메인_이 네트워크 사이트에 고유하고 메인 사이트와 아무런 관련이 없기 때문에 명명 충돌 가능성이 완화됩니다.
 
@@ -95,11 +95,11 @@ _서브도메인_ 구성에서는 _서브도메인_이 네트워크 사이트에
 
 WordPress Multisite의 네트워크 설정에서는 새로운 사용자 등록 옵션이 여러 개 제공되어 신규 및 기존 사용자가 사이트를 생성할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-nbH9Ka0YhI7nvo3nnKvOr_FoI_FpdAy5hz-f199CW-PV1D-tNKGawhIK_YwlUvM19TjLnhVb6Ro6J0ZpI6s2TRUaHgyGPc4qQI06eQ2O2jeMb_SaktkKwPUw3BSyaNegZYSjXMVX)
+<!-- Screenshot unavailable: WordPress Multisite network settings showing registration options -->
 
 독립형 WordPress 설치와 달리, 네트워크 사이트는 사용자 등록을 허용하거나 해당 등록을 역할에 할당하는 익숙한 옵션을 유지하지 않습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-7I21vdReE43e0Utj_KWdnuWA08ZXz7PX33rjSEjwf6T8NDiCBYbeP9GH0J36ekFNkmsXXLBYAWjQJo4vo_kWqL6hXJuFzd9RyA52zy13lT-mMsaK-JdVivUkd5SJF3UF13r2hj28)
+<!-- Screenshot unavailable: WordPress standalone site user registration settings showing limited options -->
 
 사용자 계정이 생성될 때 해당 계정은 네트워크 수준에서 생성됩니다. 따라서 특정 사이트에 속하는 대신 네트워크에 속합니다. 이는 몇 가지 뚜렷한 장점과 단점을 가집니다.
 
@@ -151,15 +151,15 @@ Ultimate Multisite는 웹사이트를 서비스로 제공(WaaS)할 때 스위스
 
 사이트 생성에 대한 엄격한 통제를 선호하는 에이전시는 Ultimate Multisite의 간소화된 인터페이스를 통해 사이트를 생성하고 고객 및 플랜과 연결하는 편의성을 높이 평가할 것입니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+![Ultimate Multisite site management interface](/img/admin/sites-list.png)
 
 Ultimate Multisite의 직관적인 인터페이스를 통해 제품별로 플러그인 및 테마에 대한 엄격한 제어가 유지되며, 플러그인 및 테마를 사용 가능하거나 숨기고 새 사이트에 인스턴스화될 때 활성화 상태를 설정할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-VVpPcr8bvKd2qf9zPB_1SBiVpEYdtmskG_iO0tNCJOm2RXbU6kSC1czyLV1CaU5Mw2fWd-k2r1bnQV_yA4zOL6qnYKLWohnI-EDYhXcpxD_4n-rabGlxjQO8iyjtOgXhuDL5r2y7)
+![Product plugin limitations interface](/img/config/product-plugins.png)
 
 테마는 유사한 기능을 제공하며, 사이트 생성 시 특정 테마를 활성화하거나 숨길 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3CEl6U5CPdKatlXAcG5B9jJux_iWOYpUTI4crCgW15EFkhh4pODF7hYlMyzc3na8QAefadz1kcnY_T7Yn6ZyxbBMJdfRfa16IFZma_-u7NHTtMbLZwJ9f7JbqG1QTh0y1l9WWj5z)
+![Product theme limitations interface](/img/config/product-themes.png)
 
 에이전시는 Ultimate Multisite를 통해 자신이 가장 잘하는 일, 즉 탁월한 웹사이트를 디자인하는 데 안심할 수 있습니다.
 
@@ -263,7 +263,7 @@ WordPress에서 플러그인으로 해결할 수 없는 문제가 거의 없습�
 
 멀티사이트 _서브도메인_ 모드에서 도메인 이름에 대해 이미 많은 논의가 이루어졌습니다. 네트워크 관리자를 위한 거의 보편적인 솔루션은 와일드카드 DNS 항목을 활용하는 것입니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GwkLVUQ9Wb.png)
+![Wildcard DNS entry configuration example](/img/config/settings-domain-mapping.png)
 
 이 유형의 DNS 항목은 ‘site1.domain.com’ 및 ‘site2.domain.com’과 같은 _서브도메인_을 1.2.3.4 IP 주소로 성공적으로 해석하여 Ultimate Multisite를 지원하고, 더 큰 범위에서 _서브도메인_ 모드를 사용하는 WordPress Multisite를 지원합니다.
 

@@ -9,26 +9,26 @@ Après s'être inscrit sur votre réseau, vos clients peuvent accéder à leur t
 
 En plus de la page **Account**, où ils peuvent voir des informations importantes concernant leurs paiements, adhésions, domaines, limitations de plan et plus encore, ils ont également accès à la page **My Sites**, où ils peuvent voir et gérer tous leurs sites Web. Tout ce qu'ils ont à faire est de cliquer sur My Sites dans leur tableau de bord.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-giAvstK90F.png)
+![My Sites link in the customer dashboard](/img/admin/customers-list.png)
 
 Ils verront tous leurs sites Web, avec un bouton **Manage** juste en dessous de chacun d'eux. S'ils cliquent dessus, ils seront redirigés vers le **tableau de bord de ce site spécifique**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKHdV8cyYl.png)
+![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
 
 Ils peuvent également voir quel site de leurs sites est le **primary** pour les plans qui leur permettent d'avoir plus d'un site Web.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lW9oJNcdVe.png)
+![Account menu link in customer dashboard](/img/admin/customers-list.png)
 
 S'ils souhaitent changer leur site principal, ils doivent se rendre sur la page Account en cliquant sur le menu **Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YCnbsxW8IB.png)
+![Change Default Site button on account page](/img/admin/customers-list.png)
 
 Ensuite, ils doivent cliquer sur **Change Default Site**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SLSxU7NnEF.png)
+![Change Default Site dropdown selection](/img/admin/customers-list.png)
 
 Une fenêtre contextuelle apparaîtra. Cliquez sur la liste déroulante et sélectionnez le site Web que vous souhaitez rendre le site principal.
 
 Ensuite, cliquez simplement sur **Change Default Site** et c'est terminé !
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FQiGxBjht8.png)
+![Confirming the default site change](/img/admin/customers-list.png)

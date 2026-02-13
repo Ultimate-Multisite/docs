@@ -13,15 +13,15 @@ _i18n_hash: e579b8554057b98fef08a0f2bd2a0e82
 
 首先，[登录您的 Closte 账户](https://app.closte.com/)，点击 Sites 菜单项，然后点击您当前正在工作的站点上的 Dashboard 链接：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dPRIeofCDK.png)
+<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
 您会在屏幕左侧看到一系列新的菜单项。使用该菜单导航到 **Settings** 页面：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JmSwHIOaGz.png)
+<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
 然后，在 **Settings** 页面中，找到 WP-Config 选项卡，再找到该选项卡上的“Additional wp-config.php content”字段：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FqVEnSTIu9.png)
+<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
 在安装 Ultimate Multisite 的过程中，您需要在该字段中添加 sunrise 常量。只需添加一行并粘贴下面的代码。然后点击 **Save All** 按钮。
 

@@ -9,18 +9,18 @@ Die Datei **sunrise.php** ist eine spezielle Datei, die WordPress beim Bootstrap
 
 Wenn Sie Ultimate Multisite aktivieren und den Setup-Assistenten wie auf dem Screenshot durchlaufen, versucht Ultimate Multisite, unsere Datei **sunrise.php** in den Ordner **wp-content** zu kopieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-v6hosgLWpt.png)
+<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
 
 In den meisten Fällen gelingt das Kopieren der Datei problemlos und alles funktioniert. Wenn jedoch etwas nicht richtig eingerichtet ist (z. B. Ordnerberechtigungen), kann es vorkommen, dass Ultimate Multisite die Datei nicht kopieren kann.
 
 Wenn Sie die Fehlermeldung lesen, die Ultimo Ihnen anzeigt, sehen Sie genau das: **Sunrise copy failed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RXS5EbirfM.png)
+<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
 
 Um das zu beheben, können Sie die Datei **sunrise.php** einfach aus dem Ordner des wp‑ultimo‑Plugins kopieren und in Ihren Ordner **wp-content** einfügen. Laden Sie danach die Assistenten‑Seite neu und die Prüfungen sollten bestehen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p6hz1I9ycl.png) In jedem Fall kann dies ein Hinweis auf eine allgemeine Überprüfung Ihrer Ordnerberechtigungen sein, um zukünftige Probleme zu vermeiden (nicht nur mit Ultimate Multisite, sondern auch mit anderen Plugins und Themes).
+<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
 
 Das **Health Check‑Tool**, das Teil von WordPress ist (Sie können es über Ihr Haupt‑Site‑**Admin‑Panel > Tools > Health Check** aufrufen), kann Ihnen mitteilen, ob Ihre Ordnerberechtigungen auf Werte eingestellt sind, die Probleme mit WordPress verursachen könnten.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oZEKeyxo2E.png)
+<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->

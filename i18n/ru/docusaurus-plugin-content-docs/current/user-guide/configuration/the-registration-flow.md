@@ -17,19 +17,19 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 После того как пользователь попадает на вашу страницу регистрации (обычно нажимая кнопку **Sign in** или **Buy now**), он увидит вашу форму регистрации.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 Всё, что им нужно сделать, это заполнить все обязательные поля — email, имя пользователя, пароль и т.д. — и оплатить план или подтвердить свой адрес электронной почты, если они регистрируются на бесплатный план или платный план с пробным периодом без информации об оплате.
 
 На странице «Thank you» они увидят сообщение, сообщающее им, нужно ли подтвердить адрес электронной почты, или же их сайт уже активирован, и они могут начать его использовать.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 Если требуется подтверждение адреса электронной почты, им нужно открыть свой почтовый ящик и нажать на ссылку подтверждения. Их сайт не будет активирован, если адрес электронной почты не будет подтверждён.
 
 Если они зарегистрировались на платном плане или подтверждение электронной почты не является обязательным в вашей сети, их сайт будет активирован сразу после оформления заказа, и им будет показана ссылка для входа в панель управления.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Использование ссылки для совместного использования:
 
@@ -43,30 +43,30 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Процесс регистрации будет точно таким же, как выше, но на странице регистрации ваши клиенты увидят сообщение, в котором говорится, что они получат электронное письмо с дальнейшими инструкциями по завершению оплаты.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 И после завершения регистрации они увидят инструкции по оплате, которые вы задали (и также получат их по электронной почте).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 Инструкции по оплате можно изменить в **Ultimate Multisite > Settings > Payments** после включения опции **Manual**:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 После того как ваши клиенты завершат ручной платеж и отправят вам подтверждение, вам необходимо **ручно подтвердить платеж**, чтобы активировать членство клиента и сайт.
 
 Для этого перейдите в **Ultimate Multisite > Payments** и найдите платеж клиента. Он всё ещё должен отображать статус **Pending**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Нажмите на номер платежа, и вы сможете изменить его статус на **Completed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 После изменения статуса на **Completed** вы увидите сообщение **Activate membership**. Включите эту опцию **on**, чтобы активировать членство и сайт, связанные с этим клиентом. Затем нажмите **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Ваш клиент теперь должен иметь доступ к панели управления и всем функциям, на которые он подписался.

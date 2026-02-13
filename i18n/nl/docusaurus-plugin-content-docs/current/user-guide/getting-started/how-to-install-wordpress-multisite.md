@@ -21,7 +21,7 @@ _**BELANGRIJK**_ **:** Als je een multisite netwerk op een bestaande WordPress w
 * Maak een volledige back‑up van je WordPress site
 * Deactiveer alle plugins op je site door naar je plugins pagina te gaan, _Deactivate_ te selecteren in bulk acties en vervolgens op _Apply_ te klikken
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 Om Multisite in te schakelen, maak je eerst verbinding met je site via een FTP‑client of cPanel bestandsbeheerder, en open je het wp-config.php bestand voor bewerking.
 
@@ -37,7 +37,7 @@ Met de multisite functie ingeschakeld op je site, is het nu tijd om je netwerk i
 
 Ga naar **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Nu moet je WordPress vertellen welke domeinstructuur je zult gebruiken voor sites in je netwerk: subdomeinen of subdirectories.
 
@@ -45,7 +45,7 @@ Als je kiest voor subdomeinen, moet je je DNS‑instellingen voor domein mapping
 
 Ga terug naar Network Setup, geef een titel voor je netwerk en zorg dat het e-mailadres in Network admin email correct is. Klik op _Install_ om door te gaan.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Voeg deze code, geleverd door WordPress, toe aan je _**wp-config.php**_ :
 
@@ -95,7 +95,7 @@ Om een subsite aan te maken:
    * Site Title — Titel van de site, kan later worden gewijzigd
    * Admin Email — Stel in als de initiële admin gebruiker voor de subsite
 
-![image](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 Na het invullen van de velden, klik op de knop "Add site". Zodra de nieuwe subsite is aangemaakt, ga je ernaar toe om te controleren of de subsite functioneert.
 

@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimp Integrasie
+
+Integreer jou Multisite Ultimate-netwerk met jou Mailchimp. Jy kan sekere planne aan Mailchimp-liste koppel en abonnees outomaties by daardie lys op inskrywing voeg.
+
+## Installasie
+
+1. Laai 'ultimate-multisite-mailchimp' op na die '/wp-content/plugins/' gids
+2. Aktiveer die plugin via die 'Plugins' kieslys in jou WordPress Netwerk Administrasie
+
+## Gebruiksgids
+
+Die sinkronisering van abonnees se e-posse met jou MailChimp-liste is regtig eenvoudig met ons Ultimate Multisite: MailChimp Integrasie Add-on. Hierdie leerboek is daarop gemik om jou te help alles op te stel!
+
+## Verkry 'n API-sleutel
+
+Voordat ons begin om die verskillende beskikbare instellings te ondersoek, benodig ons 'n MailChimp API-sleutel. Dit sal Ultimate Multisite toelaat om met die MailChimp API te kommunikeer om lys, groepe te verkry en e-posadresse by daardie lys en groepe te voeg wanneer gebruikers skryf.
+
+Volg hierdie leerboek om jou eie MailChimp API-sleutel te kry: [Oor API-sleutels | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Voeg jou MailChimp API-sleutel by_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integrasie Modus
+
+Die MailChimp Integrasie add-on bied twee “integrasie modes”, wat beteken dat daar twee verskillende maniere is waarop jy die add-on kan gebruik om e-posadresse te sinkroniseer.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Twee integrasie modes vir groter fleksibiliteit!_
+
+### Modus 1: Meerdere Lys
+
+Die standaardmodus maak gebruik van **Multiple Lists**. Hierdie modus laat jou toe om verskeie MailChimp-lyste vir elke plan te kies. Dit is die beste opsie as jy jou gebruikers in verskillende lys segmenteer.
+
+Byvoorbeeld, laat ons aanneem jy het 3 verskillende lys op jou MailChimp-rekening: **Newsletter**, **Plan A**, en **Plan B**. Jy wil hê dat alle gebruikers, ongeag hul plan, ook op die Newsletter-lis ingesluit word, sodat hulle nie jou opdaterings mis nie.
+
+Om dit te bereik, kan jy die Multiple Lists-modus gebruik om beide lys **Newsletter** en **Plan A** by die Plan A MailChimp-instellings te voeg, en **Newsletter** en **Plan B** by die Plan B MailChimp-instellings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Kies die standaardlysse vir nuwe rekeninge en vir gekanselleerde rekeninge_
+
+### Modus 2: Enkel Lys + Meerdere Groepe
+
+MailChimp laat jou toe om jou lys in kleiner groepe gebruikers te segmenteer, genoem **Groups**. Dit laat jou meer beheer toe, aangesien jy 'n veldtog kan stuur na 'n spesifieke subgroep van jou abonnees sonder om verskeie kopieë van dieselfde veldtog op MailChimp te skep (wat dit moeilik maak om die metrics van daardie veldtog later te ontleed).
+
+Byvoorbeeld, jy kan 'n enkel lys hê genaamd **My Network Subscribers**, en binne dit groepe hê vir **Plan A** en **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Kies die standaardlysse en groepe, indien jy die “single list + multiple groups” integrasie-modus gebruik_
+
+## Standaardlysse en Groepe
+
+Nadat jy gekies het watter integrasie-modus meer sin maak vir jou spesifieke gebruiksgeval, is dit tyd om die standaardlysse (en groepe, afhangende van die modus) te kies. Die standaardlys sal gebruik word wanneer 'n gegewe plan nie 'n spesifieke lys gekies het nie.
+
+Jy kan ook die standaardlys vir gekanselleerde rekeninge kies. Wanneer 'n gebruiker sy of haar inskrywing beëindig en sy of haar rekening van jou netwerk verwyder, sal sy of haar e-posadres na die lys wat vir gekanselleerde rekeninge gestel is, verskuif word.
+
+## Aktivering van Dubbel Inskrywing
+
+Op dieselfde instellingsblad sal jy **Dubbel Inskrywing** kan aktiveer. Hierdie opsie sal die gebruiker by beide die standaardlys wat gekies is en die lys wat aan die gebruiker se plan gekies is, voeg. As hierdie opsie nie geaktiveer is nie, sal die gebruiker slegs by die lys wat vir die gebruiker se plan gekies is, gevoeg word. As daar geen lys vir daardie spesifieke plan gestel is nie, sal die gebruiker by die standaardlys wat gekies is, gevoeg word.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Jy kan jou gebruikers inskryf by beide die standaardlys en die plan se lys op inskrywing_
+
+## Lysse en Groepe kies vir elke plan
+
+Gaan na jou **Plans** en kies die plan wat jy wil wysig. Let daarop dat op die **Advanced Options** meta-box 'n nuwe oortjie genaamd MailChimp beskikbaar sal wees.
+
+Op daardie oortjie sal jy verskeie lysse of 'n enkel lys en verskeie groepe (afhangende van die integrasie-modus) vir daardie plan kan kies.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Kies die Lysse en Groepe wat jy vir elke van jou planne wil gebruik_
+
+Wanneer 'n nuwe gebruiker op daardie plan skryf, sal sy e-posadres by die gekose lysse en groepe gevoeg word!

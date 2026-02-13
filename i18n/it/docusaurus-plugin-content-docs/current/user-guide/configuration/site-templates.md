@@ -21,15 +21,15 @@ Sembra fantastico, ma come posso creare un nuovo modello di sito? È semplice co
 
 I Modelli di sito sono semplici siti normali nella tua rete. Per creare un nuovo modello, puoi semplicemente andare su **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![aggiungi modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)**
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 Questo aprirà una finestra modale che chiederà il **Titolo del sito, Dominio/percorso del sito,** e **Tipo di sito**. Nel campo a discesa **Tipo di sito** assicurati di selezionare **Modello di sito** *.*
 
-_![Modalità aggiungi modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)_
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 In fondo al modulo, noterai un interruttore **Copia sito**. Questo ti permetterà di creare un nuovo modello di sito basato su un modello di sito esistente come punto di partenza, per aiutarti a risparmiare tempo invece di creare un modello di sito da zero.
 
-![Modalità aggiungi modello di sito 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### Personalizzare i contenuti di un Modello di sito
 
@@ -59,11 +59,11 @@ In questa modalità, i tuoi clienti non potranno scegliere un modello quando cre
 
 Per fare ciò, dovrai andare su **Ultimate Multisite > Products > Edit**.
 
-![Assegna modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 Questo ti porterà alla pagina **Edit Produc** t. Nella sezione **Product Options**, trova la scheda **Site template** e seleziona l'opzione **Assegna Sito** **Modello** dal campo a discesa. Questo mostrerà l'elenco dei modelli di sito disponibili e ti permetterà di selezionare solo un modello di sito dedicato al prodotto.
 
-![Assegna modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Modalità 2: Scegli Modello di sito disponibile
 
@@ -71,27 +71,27 @@ In questa modalità, offrirai ai tuoi clienti una scelta durante il processo di 
 
 Nella pagina **Modifica Prodotto**. Nella sezione **Product Options**, trova la scheda **Site template** e seleziona l'opzione **Choose Available Site Template** dal campo a discesa. Questo mostrerà l'elenco dei modelli di sito disponibili e ti permetterà di selezionare il modello di sito che desideri sia disponibile. Puoi fare questo scegliendo il suo comportamento: **Disponibile** se vuoi che il modello di sito sia incluso nell'elenco. _**Non disponibile**_ se vuoi che il modello di sito non venga mostrato come opzione. E **Pre-selezionato** se desideri che uno dei modelli di sito elencati sia pre-selezionato.
 
-![Assegna modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### Modalità predefinita: Selezione del modello di sito nel modulo di pagamento
 
 Se desideri che tutti i tuoi modelli di sito siano disponibili durante la registrazione, o magari non preferisci fare il lavoro extra di assegnare o specificare modelli di sito sotto ogni prodotto che crei, puoi semplicemente impostare la selezione del modello di sito sotto il tuo **Modulo di pagamento**. Per fare ciò, devi andare su **Ultimate Multisite > Moduli di pagamento**. Poi fai clic su **Edit** sotto il modulo che desideri configurare.
 
-![Assegna modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 Questo aprirà la pagina **Modifica Modulo di pagamento**. Trova il campo **Selezione Modello** e fai clic su **Edit** sotto di esso.
 
-![Assegna modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 Si aprirà una finestra modale. Nel campo **Siti Modello** puoi selezionare e elencare tutti i modelli di sito che desideri siano disponibili durante la registrazione. I modelli di sito che specifichi da qui saranno disponibili indipendentemente dal prodotto selezionato dall'utente.
 
-![Assegna modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Opzioni del Modello di sito
 
 Ci sono altre funzioni dei modelli di sito disponibili che puoi attivare o disattivare nelle impostazioni di Ultimate Multisite.
 
-![Opzione modello di sito](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Consentire il cambio di modello
 
@@ -115,21 +115,21 @@ Una delle funzionalità più potenti di Ultimate Multisite è la capacità di ag
 
 Per esempio, se desideri ottenere il nome dell'azienda dell'utente finale durante la registrazione e inserire automaticamente il nome dell'azienda nella pagina principale. Nella pagina principale del tuo sito modello devi aggiungere i segnaposto, come nell'immagine sotto (i segnaposto devono essere racchiusi tra parentesi graffe doppie - {{placeholder_name}}).
 
-![segnaposto pagina principale](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 Poi, puoi semplicemente aggiungere un campo di registrazione corrispondente sul tuo modulo di pagamento per acquisire quei dati:
 
-![modulo di pagamento](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 Il tuo cliente potrà quindi compilare quel campo durante la registrazione.
 
-![campo di registrazione](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 Ultimate Multisite sostituirà quindi i segnaposto con i dati forniti dal cliente automaticamente.
 
-![sostituisci segnaposto](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Risolvere il problema del "modello pieno di segnaposto"
 
@@ -139,8 +139,8 @@ Per risolvere questo, offriamo l'opzione di impostare valori fittizi per i segna
 
 Puoi accedere all'editor dei segnaposto del modello andando su **Ultimate Multisite > Settings > Sites**, e poi, nella barra laterale, facendo clic sul link **Edit Placeholders**.
 
-![impostazioni segnaposto](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 Questo ti porterà all'editor dei contenuti dei segnaposto, dove puoi aggiungere segnaposto e i rispettivi contenuti.
 
-![segnaposto modello](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

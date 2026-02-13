@@ -1,33 +1,33 @@
 ---
 title: 插件开发入门
 sidebar_position: 1
-_i18n_hash: 6294ba16ad98639b569346a763824ad3
+_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
 ---
-# 插件开发
+# Addon Development
 
-## 插件结构
+## Addon Structure
 
 ```
 my-addon/
-├── my-addon.php                 # Main plugin file
+├── my-addon.php                 # 主插件文件
 ├── inc/
-│   ├── class-my-addon.php       # Main addon class
-│   ├── admin-pages/             # Admin interface
-│   ├── models/                  # Custom data models
-│   └── integrations/            # Third-party integrations
+│   ├── class-my-addon.php       # 主插件类
+│   ├── admin-pages/             # 管理界面
+│   ├── models/                  # 自定义数据模型
+│   └── integrations/            # 第三方集成
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template files
+└── templates/                   # 模板文件
 ```
 
-## 主插件文件模板
+## Main Addon File Template
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Custom addon for Ultimate Multisite
+ * Description: 为 Ultimate Multisite 定制的插件
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -56,7 +56,7 @@ add_action('plugins_loaded', function() {
         return;
     }
 
-    // Initialize addon
+    // 初始化插件
     My_Addon::get_instance();
 });
 
@@ -71,13 +71,13 @@ class My_Addon {
      * Initialize the addon
      */
     public function init() {
-        // Load dependencies
+        // 加载依赖
         $this->load_dependencies();
 
-        // Setup hooks
+        // 设置钩子
         $this->setup_hooks();
 
-        // Initialize components
+        // 初始化组件
         $this->init_components();
     }
 
@@ -92,11 +92,11 @@ class My_Addon {
      * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Activation/deactivation
+        // 激活/停用
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite hooks
+        // Ultimate Multisite 钩子
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
@@ -105,14 +105,14 @@ class My_Addon {
      * Initialize addon components
      */
     private function init_components() {
-        // Initialize admin pages, models, etc.
+        // 初始化插件组件
     }
 
     /**
      * Plugin activation
      */
     public function activate() {
-        // Create custom tables, set options, etc.
+        // 创建自定义表，设置选项等
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
@@ -121,14 +121,14 @@ class My_Addon {
      * Plugin deactivation
      */
     public function deactivate() {
-        // Cleanup if needed
+        // 如有需要进行清理
     }
 
     /**
      * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Custom logic when checkout completes
+        // 结账完成时的自定义逻辑
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## 自定义模型示例
+## Custom Model Example
 
 ```php
 <?php
@@ -196,7 +196,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
      * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Create WordPress user
+        // 创建 WordPress 用户
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Create Ultimate Multisite customer
+        // 创建 Ultimate Multisite 客户
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Copy lead data to customer
+        // 将潜在客户数据复制到客户
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Mark lead as converted
+        // 标记潜在客户已转换
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 后台页面集成
+## Admin Page Integration
 
 ```php
 <?php
@@ -258,7 +258,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
      * Initialize page
      */
     public function init() {
-        // Register with Ultimate Multisite
+        // 与 Ultimate Multisite 注册
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
@@ -280,13 +280,13 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
      * Render the page
      */
     public function render() {
-        // Get leads data
+        // 获取潜在客户数据
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Render template
+        // 渲染模板
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## 测试您的插件
+## Testing Your Addon
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Create test customer
+        // 创建测试客户
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Create test membership
+        // 创建测试会员
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simulate form submission
+        // 模拟表单提交
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Verify data was saved
+        // 验证数据已保存
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,8 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## 下一步
+## Next Steps
 
-- 查看 [Hooks Reference](/docs/developer/hooks) 以获取可用的动作和过滤器
-- 检查 [REST API Overview](/docs/developer/rest-api/overview) 以获取 API 集成
-- 使用 [Addon Template](/docs/addons/addon-template) 作为起始脚手架
+- 查看 [Hooks Reference](/developer/hooks) 以获取可用的动作和过滤器
+- 检查 [REST API Overview](/developer/rest-api/overview) 以获取 API 集成
+- 使用 [Addon Template](/addons/addon-template) 作为起始脚手架

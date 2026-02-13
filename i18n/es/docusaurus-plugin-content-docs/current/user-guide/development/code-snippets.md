@@ -15,7 +15,7 @@ En este artículo te mostraremos tres fragmentos de código que se pueden usar c
 
   * [**Solucionar problemas de CORS con Font-Icons en dominios mapeados**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Cambiar la posición del elemento del menú de la cuenta
+## Cambiar la posición del elemento del menú de la cuenta {#changing-the-position-of-the-account-menu-item}
 
 Para cambiar la posición del elemento del menú de la cuenta en el panel de control de tu cliente, simplemente añade el siguiente fragmento de código al functions.php del tema activo de tu sitio principal. También puedes colocar el fragmento dentro de uno de tus mu-plugins o plugins personalizados.
 
@@ -23,7 +23,7 @@ Para cambiar la posición del elemento del menú de la cuenta en el panel de con
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## Cómo comprobar si el usuario está bajo un plan determinado y/o tiene una suscripción activa
+## Cómo comprobar si el usuario está bajo un plan determinado y/o tiene una suscripción activa {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Como administrador de la red, es posible que necesites crear funciones personalizadas que realicen acciones básicas o hagan que un servicio/característica esté disponible para un grupo seleccionado de suscriptores o usuarios finales, en función del estado de su suscripción y del plan al que están suscritos.
 
@@ -53,11 +53,9 @@ Para obtener el ID de un plan, puedes ir a **Ultimate Multisite > Products**. El
 
 Ten en cuenta que los usuarios solo pueden suscribirse a un **Plan**, no a un Paquete o Servicio, ya que son solo complementos de un **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Solucionar problemas de CORS con Font-Icons en dominios mapeados
-
-## Solucionar problemas de CORS con Font-Icons en dominios mapeados
+## Solucionar problemas de CORS con Font-Icons en dominios mapeados {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Después de mapear un dominio a un sub-sitio, es posible que descubras que el sitio tiene problemas para cargar fuentes personalizadas. Eso se debe a un bloqueo de origen cruzado en la configuración de tu servidor.
 

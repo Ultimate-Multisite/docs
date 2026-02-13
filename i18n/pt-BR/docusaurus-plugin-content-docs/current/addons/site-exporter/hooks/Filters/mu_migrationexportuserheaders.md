@@ -4,23 +4,22 @@ title: Filtro - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filter: mu_migration/export/user/headers
+# Filtro: mu_migration/export/user/headers
 
-Filters the default set of user headers to be exported/imported.
+Filtra o conjunto padrão de cabeçalhos de usuário a serem exportados/importados.
 
-## Parameters
+## Parâmetros
 
-| Name | Type | Description |
+| Nome | Tipo | Descrição |
 |------|------|-------------|
-| $custom_headers | `array` | The custom headers array. |
+| $custom_headers | `array` | O array de cabeçalhos personalizados. |
 
-### Since
+### Desde
 
 - 0.1.0
-### Source
+### Fonte
 
-Defined in [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L52) at line 52
+Definido em [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L52) na linha 52
 
-
-## Returns
-Array data headers.
+## Retorna
+Array de cabeçalhos de dados.

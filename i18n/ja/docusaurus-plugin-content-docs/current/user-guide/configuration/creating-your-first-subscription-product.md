@@ -27,29 +27,29 @@ Ultimate Multisite内でProductsタブは、特定の製品またはサービス
 
 このセクションでは、Ultimate Multisiteの不可欠な基盤を理解するためのガイドを提供します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1YccQg0IBG.png)
+![Products list page](/img/config/products-list.png)
 
 ## Adding Products
 
 プラン、パッケージ、サービスのいずれにせよ、新しいアイテムを定義するエントリーポイントは **Ultimate Multisite > Products > Add Product** です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0AmJMeqen.png)
+![Add Product button](/img/config/product-add-button.png)
 
 インターフェースには2つの主要なセクションがあります。左側には製品の定義を支援する複数のタブがあり、右側には製品の基本価格、アクティブ状態、製品画像を定義するいくつかのセクションがあります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WRwYrlk0BS.png)
+![Product edit page overview](/img/config/product-edit-full.png)
 
 ### Description
 
 基本製品情報は、製品名と説明を入力することで定義できます。これらの識別子は、プランや価格選択、請求書、アップグレードなど、製品情報が必要な場所で表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U9YjF0dghJ.png)
+![Product description section](/img/config/product-description.png)
 
 ### Pricing Type
 
 インターフェースの右側で、基本価格を定義できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oHwhlrBFC9.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Ultimate Multisiteは3種類の価格設定タイプをサポートしています。**paid** オプションは、ネットワーク管理者に製品の価格と請求頻度に関する情報を入力させます。
 
@@ -57,7 +57,7 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 価格コンポーネントは、基本製品価格と請求間隔を定義します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T03WJISsoh.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 したがって、$29.99の価格で1か月の設定の場合、毎月$29.99が請求されます。同様に、$89.97の価格で3か月の設定の場合、四半期ごとにその金額が請求されます。
 
@@ -65,7 +65,7 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 請求サイクルセクションは、前述の請求間隔の頻度を指定し、一般的には契約や固定期間の観点から理解されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hVVAoxC4Jt.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 たとえば、$29.99の製品価格で1か月の間隔と12回の請求サイクルが設定されている場合、次の12か月間、製品に対して毎月$29.99が請求されます。言い換えれば、この設定は12か月間毎月$29.99の固定価格期間を確立し、その後請求を停止します。
 
@@ -73,7 +73,7 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 トライアルオプションを有効にすると、ネットワーク管理者は製品のトライアル期間を定義できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzxhWHqJLC.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 トライアル期間中、顧客は製品を自由に使用でき、トライアル期間が終了するまで請求されません。
 
@@ -81,7 +81,7 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 プランにセットアップ料金を適用することもできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-8ZA2YvhWyK.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 これは、クライアントが最初の請求時に（価格プランに加えて）このセクションで定義した料金に相当する追加金額を支払うことを意味します。
 
@@ -89,7 +89,7 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 アクティブトグルは、製品が新規サインアップの顧客に利用可能かどうかを実質的に定義します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-74ET2mPskK.png)
+![Active toggle](/img/config/product-active.png)
 
 このプランに既存の顧客がいる場合、トグルを無効状態に設定すると、実質的にプランを将来のサインアップから除外します。**プランに既存の顧客は、新しいプランに移行またはプランから除外されるまで請求を継続します**。
 
@@ -97,13 +97,13 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 **Upload Image** ボタンは、ネットワーク管理者がメディアライブラリを使用して製品画像を選択またはアップロードできるようにします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9tHhGvokLA.png)
+![Product image section](/img/config/product-image.png)
 
 ### Delete
 
 **Delete Product** ボタンは、製品をシステムから削除します。製品が公開された後に表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rrmQohvw3S.png)
+![Delete product section](/img/config/product-delete.png)
 
 他の削除とは異なり、製品はゴミ箱状態に置かれません。したがって、一度削除すると操作は不可逆です。
 
@@ -115,7 +115,7 @@ Ultimate Multisiteは3種類の価格設定タイプをサポートしていま�
 
 **General** タブは、他の製品固有タブに適用されない製品の一般属性を定義します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-z32g4XQeyT.png)
+![General tab](/img/config/product-general-tab.png)
 
 自明の**product slug** は、製品がURLやUltimate Multisiteの他の領域で識別されるスラッグを定義します。
 
@@ -123,7 +123,7 @@ Ultimate Multisiteは、Plan、Package、Serviceという複数の製品タイ�
 
 **Customer Role** は、サイトが作成されたときに顧客に割り当てられる役割を指定します。ほとんどのネットワーク管理者にとって、これはUltimate MultisiteのデフォルトまたはAdministratorになります。Ultimate Multisiteのデフォルトロールは **Ultimate Multisite > Settings > Login & Registration** で設定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ap5I4lXWwB.png)
+![Customer role settings](/img/config/product-customer-role-settings.png)
 
 #### Up & Downgrades
 
@@ -137,7 +137,7 @@ Ultimate MultisiteインストールがビジネスウェブサイトやeCommerc
 
 したがって、顧客の移行パスを制限し、事象を防止するために、ネットワーク管理者はプラングループを定義し、そのグループ内で顧客が移行できるプランを指定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JnrZ4fWFEC.png)
+![Up and Downgrades tab](/img/config/product-upgrades.png)
 
 プラングループを定義するには、**plan group** リスト内で互換性のあるプランを指定します。**product order** は、プランが最低から最高へとどのように順序付けされ表示されるかを決定します。
 
@@ -147,25 +147,25 @@ Ultimate Multisiteには、適切なアドオン製品とサービスをプラ�
 
 価格バリエーションは、ネットワーク管理者が期間に応じて代替価格階層を指定できるようにします。この設定により、3か月、6か月、または年間の価格階層を設定でき、またはユースケースに応じて他の期間と頻度を設定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-d75YUO3opm.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 価格バリエーションを設定するには、**enable price variations** トグルをアクティブにし、**Add new Price Variation** ボタンをクリックします。
 
 バリエーションを入力するには、期間、期間、価格を設定します。追加のバリエーションは、ボタンを再度クリックして入力できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-x73uxkMU8o.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 #### Taxes
 
 **Taxes** タブは、**Ultimate Multisite > Settings > Taxes** で指定された税設定、特に定義された税率と一致します。税金を有効にし、適用可能な税率を定義するには、**Ultimate Multisite: Settings** のドキュメントを参照してください。
 
-**![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xYLtpFySzL.png)**
+![Taxes tab](/img/config/product-taxes.png)
 
 前の例では、カリフォルニア州（米国）の顧客に適用される7.25％のローカル税率を定義しました。
 
 **Ultimate Multisite > Settings > Manage Tax Rates** で税率が定義されると、製品レベルで選択可能になります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Sh1BVGVj6i.png)
+![Taxes tab](/img/config/product-taxes.png)
 
 製品が課税対象であることを示すには、**Is Taxable** トグルをアクティブにし、税カテゴリドロップダウンから適用可能な税率を選択します。
 
@@ -173,7 +173,7 @@ Ultimate Multisiteには、適切なアドオン製品とサービスをプラ�
 
 本質的に、サイトテンプレートは、サブスクリプション開始時に顧客のサイトにクローンされる完全なWordPressウェブサイトです。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-llMSMXCDt4.png)
+![Site Templates tab](/img/config/product-site-templates.png)
 
 ネットワーク管理者は、テンプレートサイトを通常のWordPressサイトとして作成・構成し、テーマ、プラグイン、コンテンツを有効化・設定します。テンプレートサイトはそのまま顧客にクローンされます。
 
@@ -193,7 +193,7 @@ Ultimate Multisiteには、適切なアドオン製品とサービスをプラ�
 
 **Sites** タブは、Ultimate Multisiteの制限機能の一部です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-A8fzNucGyC.png)
+![Sites tab](/img/config/product-sites.png)
 
 この設定は、顧客がメンバーシップで作成できるサイトの最大数を指定します。
 
@@ -203,7 +203,7 @@ Ultimate Multisiteには、適切なアドオン製品とサービスをプラ�
 
 **Visits** タブは、Ultimate Multisiteの制限システムの一部です。この設定は、顧客のサイトへのユニーク訪問者の計算とその後のスロットリングを可能にします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e7f5otg89m.png)
+![Visits tab](/img/config/product-visits.png)
 
 マーケティングの観点から、ネットワーク管理者はこの設定を利用して、制限に達した際に顧客にプランをアップグレードさせる手段として活用できます。この設定は、サイトへの過剰なトラフィックを抑制し、システムリソースを保護するのにも役立ちます。
 
@@ -215,7 +215,7 @@ Ultimate Multisiteには、適切なアドオン製品とサービスをプラ�
 
 Ultimate Multisiteの「Users」制限は、ネットワーク管理者が作成できるユーザー数と役割に割り当てられるユーザー数に制限を課すことを可能にします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-maGYqW7WlP.png)
+![Users tab](/img/config/product-users.png)
 
 制限機能を有効にするには、**limit user** トグルを右にスライドさせてアクティブにします。
 
@@ -225,7 +225,7 @@ Ultimate Multisiteの「Users」制限は、ネットワーク管理者が作成
 
 **Post Types** タブは、ネットワーク管理者がWordPress内の豊富な投稿タイプに対して細かい制限を課すことを可能にします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZELQvvqyvn.png)
+![Post Types tab](/img/config/product-post-types.png)
 
 WordPressの構造上、投稿と投稿タイプはそのコア機能の重要な要素であるため、Ultimate Multisiteの制限システムは、ネットワーク管理者が制限を設定・維持するのを支援するよう設計されています。
 
@@ -237,7 +237,7 @@ WordPressの構造上、投稿と投稿タイプはそのコア機能の重要�
 
 **Disk Space** タブは、ネットワーク管理者が顧客が消費するスペースを制限できるようにします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EqlaLO0ebw.png)
+![Disk Space tab](/img/config/product-disk-space.png)
 
 通常、WordPressマルチサイトでは、コアファイルはすべてのサイトで共有され、メディアファイルとアップロード用に作成された個別ディレクトリに対して、これらの設定と制限が適用されます。
 
@@ -249,7 +249,7 @@ WordPressの構造上、投稿と投稿タイプはそのコア機能の重要�
 
 このオプションをトグルすると、このプランでカスタムドメインを許可できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KEMuUG76Fg.png)
+![Custom Domains tab](/img/config/product-custom-domains.png)
 
 #### Themes
 
@@ -257,11 +257,11 @@ WordPressの構造上、投稿と投稿タイプはそのコア機能の重要�
 
 _**注意: テーマを顧客に利用可能にするには、ネットワーク管理者がネットワーク有効化している必要があります。**_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HAQShYB7Y1.png)
+![Themes tab](/img/config/product-themes.png)
 
 **visibility** オプションは、顧客がサイト内の **Appearance > Themes** タブを閲覧した際に、このテーマが表示されるかどうかを定義します。このオプションを **Hidden** に設定すると、テーマが表示から除外され、選択・有効化できなくなります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ivsGIABl55.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Network themes page](/img/config/product-themes-network-enabled.png)
 
 **behavior** 選択は、ネットワーク管理者が顧客サイト作成時のテーマの状態を定義できるようにします。
 
@@ -271,13 +271,13 @@ _**注意: テーマを顧客に利用可能にするには、ネットワーク
 
 Themesタブと同様に、Ultimate Multisiteは、ネットワーク管理者がプラグインの可視性と新しいサイト作成時の状態を顧客に定義できるようにします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ipzv31FIb6.png)
+![Themes tab](/img/config/product-themes.png)
 
 **visibility** ドロップダウンは、プラグインが顧客のサイトでプラグインメニューを通じて閲覧された際に、可視または非表示になるかを選択できます。
 
 ネットワーク管理者は、行動ドロップダウンのオプションを使用して、プラグインの動作をさらに操作できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 **Default** 選択は、顧客が選択したサイトテンプレートで定義されたプラグイン状態を尊重します。したがって、テンプレート内で有効化されたプラグインは、テンプレートが顧客のサイトにクローンされる際に有効のまま残ります。
 
@@ -291,17 +291,17 @@ Themesタブと同様に、Ultimate Multisiteは、ネットワーク管理者�
 
 **Reset Limitations** タブは、製品に定義されたすべてのカスタム制限をリセットします。制限をリセットするには、**reset limitations** ボタンをクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UXNQerLby7.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 操作を確認するには、右側の **confirm reset** トグルをアクティブにスライドさせ、**reset limitations** ボタンをクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xKySIUIvrI.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 #### Legacy Options
 
 **Legacy Options** タブは、Ultimate Multisite 1.xで定義された特定のオプションと動作を観察します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Fn3BjwTH4r.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 これらのオプションは互換性と移行の容易さのために提供され、将来のリリースで非推奨になります。
 
@@ -309,6 +309,6 @@ Themesタブと同様に、Ultimate Multisiteは、ネットワーク管理者�
 
 既存の製品は、**Ultimate Multisite > Products** に移動し、既存の製品名にカーソルを合わせることで編集、複製、または削除できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GcHtJl6WmV.png)
+![Product hover actions](/img/config/product-hover-actions.png)
 
 ##

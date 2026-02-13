@@ -1,12 +1,12 @@
 ---
 id: wu_apc_process_page_content
-title: Could you please provide the Markdown/MDX content that needs to be translated?
+title: Filtre - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
 # Filtre : wu_apc_process_page_content
 
-Permet aux développeurs de modifier le contenu final
+Permet aux développeurs de modifier le contenu final.
 
 ## Paramètres
 
@@ -25,6 +25,6 @@ Permet aux développeurs de modifier le contenu final
 
 Défini dans [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) à la ligne 46
 
-## Retourne
+## Retour
 
 Contenu après modification.

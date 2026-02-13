@@ -21,15 +21,15 @@ _**ПРИМЕЧАНИЕ: Эта статья относится к версии 
 
 Шаблоны сайтов — это просто обычные сайты в вашей сети. Чтобы создать новый шаблон, вы можете просто перейти в **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-![add site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 Это откроет модальное окно, в котором будет запрошено **Site title, Site Domain/path,** и **Site type**. В выпадающем поле **Site Type** убедитесь, что вы выбрали **Site Template** *.*
 
-![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 В нижней части формы вы заметите переключатель **Copy Site**. Это позволит вам создать новый шаблон сайта на основе существующего шаблона сайта в качестве отправной точки, чтобы сэкономить время вместо создания шаблона с нуля.
 
-![Add site template modal 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### Настройка содержимого шаблона сайта
 
@@ -56,11 +56,11 @@ _**ПРИМЕЧАНИЕ: Эта статья относится к версии 
 
 Для этого вам нужно перейти в **Ultimate Multisite > Products > Edit**.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 Это приведет вас к странице **Edit Product**. В разделе **Product Options** найдите вкладку **Site template** и выберите опцию **Assign Site** **Template** из выпадающего списка. Это откроет список доступных шаблонов сайтов и позволит вам выбрать только один шаблон, посвященный продукту.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Режим 2: Выбрать доступный шаблон сайта
 
@@ -68,27 +68,27 @@ _**ПРИМЕЧАНИЕ: Эта статья относится к версии 
 
 На странице **Edit Product**. В разделе **Product Options** найдите вкладку **Site template** и выберите опцию **Choose Available Site Template** из выпадающего списка. Это откроет список доступных шаблонов сайтов и позволит вам выбрать шаблон, который будет доступен. Вы можете сделать это, выбрав его поведение: **Available** (доступен), если хотите, чтобы шаблон был включен в список. _**Not Available**_ (не доступен), если хотите, чтобы шаблон не отображался как вариант. И **Pre-selected** (предустановлен), если хотите, чтобы один из перечисленных шаблонов был выбран по умолчанию.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### По умолчанию: выбор шаблона сайта в форме оформления заказа
 
 Если вы хотите, чтобы все ваши шаблоны сайтов были доступны во время регистрации, или, возможно, не хотите выполнять дополнительную работу по назначению или указанию шаблонов сайтов для каждого создаваемого продукта, вы можете просто установить выбор шаблона сайта в вашей **Checkout Form**. Для этого вам нужно перейти в **Ultimate Multisite > Checkout Forms**. Затем нажмите **Edit** под формой, которую вы хотите настроить.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 Это откроет страницу **Edit Checkout Form**. Найдите поле **Template Selection** и нажмите **Edit** под ним.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 Появится модальное окно. В поле **Template Sites** вы можете выбрать и перечислить все шаблоны сайтов, которые вы хотите сделать доступными во время регистрации. Шаблоны сайтов, которые вы укажете здесь, будут доступны независимо от того, какой продукт выбрал пользователь.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Параметры шаблона сайта
 
 Существуют другие функции шаблонов сайтов, которые вы можете включить или отключить в настройках Ultimate Multisite.
 
-![Site template option](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Разрешить переключение шаблона
 
@@ -112,21 +112,21 @@ _**ПРИМЕЧАНИЕ: Эта статья относится к версии 
 
 Например, если вы хотите получить название компании конечного пользователя во время регистрации и автоматически разместить его на главной странице. На главной странице вашего шаблонного сайта вам нужно добавить заполнители, как на изображении ниже (заполнители должны быть окружены двойными фигурными скобками — {{placeholder_name}}).
 
-![homepage placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 Затем вы можете просто добавить соответствующее поле регистрации в вашу форму оформления заказа, чтобы захватить эти данные:
 
-![checkout form](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 Ваш клиент затем сможет заполнить это поле во время регистрации.
 
-![registration field](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![preview](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 Ultimate Multisite затем автоматически заменит заполнители данными, предоставленными клиентом.
 
-![replace placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Решение проблемы «шаблон, полный заполнителей»
 
@@ -136,8 +136,8 @@ Ultimate Multisite затем автоматически заменит запо
 
 Вы можете получить доступ к редактору заполнителей шаблона, перейдя в **Ultimate Multisite > Settings > Sites**, а затем, в боковой панели, щелкнув ссылку **Edit Placeholders**.
 
-![placeholder settings](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 Это перенесет вас в редактор содержимого заполнителей, где вы можете добавить заполнители и их соответствующее содержимое.
 
-![template placeholders](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

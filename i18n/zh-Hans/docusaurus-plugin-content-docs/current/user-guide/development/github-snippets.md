@@ -27,7 +27,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   3. 在“Theme Files”部分点击 functions.php 文件以加载文件。向下滚动到文件底部，粘贴您从 GitHub 仓库获取的 Ultimate Multisite 代码片段。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
 # 如何创建 Must-Use 插件（mu-plugins）
 
@@ -39,7 +39,7 @@ WordPress 有一个功能，允许您加载名为“Must-Use 插件”（简称 
 
 2\. 在 WordPress 安装的 wp-content 目录中，创建一个名为 mu-plugins 的新目录。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
 
 3\. 在您的电脑上使用记事本或任何代码编辑器创建一个名为 wu-snippet.php 的新 PHP 文件。
 

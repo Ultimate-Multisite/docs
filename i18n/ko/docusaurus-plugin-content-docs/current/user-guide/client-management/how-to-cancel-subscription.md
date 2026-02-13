@@ -7,19 +7,19 @@ _i18n_hash: 775190fa348501ea8d557b51c0b9acd9
 
 Ultimate Multisite 라이선스를 보유하고 있다면 언제든지 갱신을 취소할 수 있습니다. 아래 단계에 따라 진행하세요:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)
+<!-- Screenshot unavailable: Account page email with access link -->
 
 구매 시 제공한 이메일과 비밀번호를 사용하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)
+<!-- Screenshot unavailable: Login page with email and password fields -->
 
 이것은 귀하의 계정 페이지 초기 화면입니다:
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--157d6544a77090f7ae56e4a26e04a9adddb53f4c/Available free on wordpress.org.png)
+<!-- Screenshot unavailable: Account page initial screen showing subscription details -->
 
 구독을 취소하려면 왼쪽 메뉴에서 _Renewing & Billing_ 으로 이동하세요.
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c00d8fe9945900093d923bb60ac1560f6e5edd94/Available free on wordpress.org.png)
+<!-- Screenshot unavailable: Renewing & Billing page with cancel option -->
 
 오른쪽 화살표를 클릭해 사이드 윈도우를 열고, **auto-renew** 를 취소하는 옵션을 선택하세요.
 

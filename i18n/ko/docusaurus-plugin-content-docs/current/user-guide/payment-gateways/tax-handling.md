@@ -15,7 +15,7 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 세금 수집은 기본적으로 활성화되어 있지 않습니다. 이를 활성화하려면 **Ultimate Multisite > Settings > Taxes**로 이동하여 세금 활성화 설정을 토글해야 합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICSEhm7yhk.png)
+![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
 
 ### 세금 제외 vs. 세금 포함
 
@@ -23,7 +23,7 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 제품 가격에 세금을 포함하고 싶다면, 포함 세금 설정을 활성화하면 됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xiiaIXYI2c.png)
+![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
 
 변경 사항을 **저장**하는 것을 잊지 마세요.
 
@@ -33,11 +33,11 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 세금 설정 페이지의 사이드바에서 **Manage Tax Rates** 버튼을 클릭하면 편집기에 접근할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UZb6g2rvrs.png)
+![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
 
 세율 편집기 페이지에서 **Add new Row** 버튼을 클릭해 새 세율을 추가할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZyJCSI6zLZ.png)
+![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
 
 각 세율에 **제목**(송장에 사용됨)을 지정해야 합니다. 그 다음 **국가**(필수), **주**, **도시**(둘 다 선택 사항)를 선택해 이 세율이 부과될 위치를 지정합니다. 마지막으로 **세율(%)**을 입력합니다.
 
@@ -47,19 +47,19 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 **Add new Tax Category**를 클릭한 뒤 범주의 이름을 입력하고 **Create**를 누릅니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-73biI4o8lj.png)
+![Add new Tax Category button](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YhH2hLLvEC.png)
+![Creating a new tax category](/img/config/settings-taxes.png)
 
 범주를 탐색하려면 **Switch**를 클릭하고 새 세금을 추가하려는 범주를 선택합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xjghTq6ta4.png)
+![Switch between tax categories](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E5YLXeIsWH.png)
+![Selecting a tax category to view](/img/config/settings-taxes.png)
 
 특정 제품에 대한 세금 범주를 설정하려면 **Product edit page**로 이동한 뒤 세금 탭으로 이동합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vkh5NXKplU.png)
+![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
 
 같은 화면에서 **Is Taxable?** 토글을 끄면 Ultimate Multisite가 해당 제품에 대해 세금을 수집하지 않도록 알립니다.
 
@@ -74,21 +74,21 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 해당 애드온을 설치하려면 **Ultimate Multisite > Settings**로 이동한 뒤 사이드바에서 **Check our Add-ons** 링크를 클릭합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AsMyAH5HKC.png)
+![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
 
 그곳에서 **Ultimate Multisite VAT add-on**을 검색하고 설치할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AQ6gWfdY5G.png)
+![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iz8uncHiYa.png)
+![VAT add-on install dialog](/img/config/settings-taxes.png)
 
 그런 다음 **Network Admin > Plugins**로 이동해 해당 애드온을 네트워크 전체에서 활성화합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PkWGMWlgVu.png)
+![Network Activate the VAT add-on](/img/config/settings-taxes.png)
 
 **Tax Settings tab**으로 돌아가면 새로운 옵션이 표시됩니다. **Enable VAT Support** 옵션을 토글해 새로운 VAT 도구를 활성화하세요. **save**를 잊지 말고 설정을 저장하세요!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Gn1SspQZ0S.png)
+![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
 
 ### VAT 세율 불러오기
 
@@ -96,7 +96,7 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 페이지 하단에서 VAT 불러오기 옵션을 확인할 수 있습니다. 요율 유형을 선택하고 **Update EU VAT Rates** 버튼을 클릭하면 각 EU 회원국의 세율이 표에 자동으로 채워집니다. 그 다음에는 저장만 하면 됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZKEqPBX5E.png)
+### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
 
 불러온 값을 편집할 수도 있습니다. 편집하려면 필요한 표 행을 수정한 뒤 새 값을 저장하면 됩니다.
 
@@ -104,6 +104,6 @@ Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 �
 
 VAT 지원이 활성화되면 Ultimate Multisite는 결제 양식에 청구 주소 필드 아래에 추가 필드를 추가합니다. 이 필드는 EU에 있는 고객에게만 표시됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ITUbFOIM4r.png)
+![VAT number field on the checkout form](/img/config/settings-taxes.png)
 
 Ultimate Multisite는 VAT 번호를 검증하고 유효한 경우 역과세 메커니즘이 적용되어 해당 주문의 세율이 0%로 설정됩니다.

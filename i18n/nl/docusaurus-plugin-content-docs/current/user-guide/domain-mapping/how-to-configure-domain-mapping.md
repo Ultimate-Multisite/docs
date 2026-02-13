@@ -19,7 +19,7 @@ Domein mapping vereist enige configuratie aan uw kant om te werken. Gelukkig aut
 
 Tijdens de installatie van Ultimate Multisite zal de wizard automatisch het bestand **sunrise.php** kopiëren en installeren naar de aangewezen map. **De wizard laat u niet doorgaan totdat deze stap is voltooid**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zrBdFs13Dy.png)
+![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
 
 Dit betekent dat zodra de wizard voor de installatie van Ultimate Multisite het netwerk heeft opgezet, u meteen kunt beginnen met het koppelen van het aangepaste domein.
 
@@ -27,7 +27,7 @@ Merk op dat domein mapping in Ultimate Multisite niet verplicht is. U heeft de m
 
 Mocht u de domein mapping van Ultimate Multisite willen uitschakelen om plaats te maken voor andere domein mapping oplossingen, kunt u deze functie uitschakelen onder **Ultimate Multisite > Settings > Domain Mapping**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbrC47pTcX.png)
+![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
 
 Recht onder deze optie ziet u ook de optie **Force Admin Redirect**. Met deze optie kunt u bepalen of uw klanten hun beheerdersdashboard zowel op hun aangepaste domein als subdomein kunnen openen of alleen op één van hen.
 
@@ -37,7 +37,7 @@ De optie **Force redirect to** **network domain** doet precies het tegenovergest
 
 En de optie **Allow access to the admin by both mapped domain domain and network domain** laat hen hun beheerdersdashboards zowel op het subdomein als het aangepaste domein openen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JYwHPWhYwV.png)
+![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
 
 Er zijn twee manieren om een aangepast domein te koppelen. De eerste is door het domeinnaam te koppelen vanuit uw netwerkbeheerder dashboard als super admin en de tweede via het subsite beheerder dashboard onder de accountpagina.
 
@@ -57,11 +57,11 @@ Als u van plan bent uw klanten hun eigen domeinen te laten koppelen, moeten zij 
 
 Wanneer u bent ingelogd als super admin op uw netwerk, kunt u eenvoudig aangepaste domeinnamen toevoegen en beheren via **Ultimate Multisite > Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5XxtXP622s.png)
+![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
 
 Op deze pagina kunt u op de knop **Add Domain** bovenaan klikken, waardoor een modaal venster verschijnt waarin u de **custom domain name**, **de subsite** waarop u de aangepaste domeinnaam wilt toepassen, kunt instellen en invullen, en kunt beslissen of u deze als **primary domain** wilt instellen of niet (let op dat u **meerdere domeinnamen aan één subsite** kunt koppelen).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rD6fnbzRe9.png)
+![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
 
 Nadat u alle informatie heeft ingevoerd, kunt u vervolgens op de knop **Add Existing Domain** onderaan klikken.
 
@@ -69,13 +69,13 @@ Dit start het proces van het verifiëren en ophalen van de DNS-informatie van he
 
 De **Stage** of de status moet veranderen van **Checking DNS** naar **Ready** als alles correct is ingesteld.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3g2mkrlk75we98uhscagnr3ini0s)
+![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5dIPdYQfZi.png)
+![Domain with Ready status in domains list](/img/admin/domains-list.png)
 
 Als u op de domeinnaam klikt, ziet u enkele opties binnen. Laten we ze snel bekijken:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5tCiNUIKih.png)
+![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
 
 **Stage:** Dit is de fase waarin het domein zich bevindt. Wanneer u het domein voor het eerst toevoegt, bevindt het zich waarschijnlijk in de fase **Checking DNS**. Het proces controleert de DNS-invoer en bevestigt dat ze correct zijn. Vervolgens wordt het domein geplaatst in de fase **Checking SSL**. Ultimate Multisite controleert of het domein SSL heeft of niet en categoriseert uw domein als **Ready** of **Ready (without SSL)**.
 
@@ -93,25 +93,25 @@ Subsite beheerders kunnen ook aangepaste domeinnamen koppelen vanuit hun subsite
 
 Allereerst moet u ervoor zorgen dat u deze optie inschakelt onder de **Domain mapping** instellingen. Zie de onderstaande screenshot.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M3MO6RKBWe.png)
+![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
 
 U kunt deze optie ook instellen of configureren onder het **Plan** niveau of productopties op **Ultimate Multisite > Products**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JRqx7Uhqsa.png)
+![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
 
 Wanneer een van die opties is ingeschakeld en een subsite gebruiker toestemming heeft om aangepaste domeinnamen te koppelen, moet de subsite gebruiker een metabox onder de **Account** pagina zien genaamd **Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DUeHUY66yP.png)
+![Domains metabox on the subsite account page](/img/admin/domains-list.png)
 
 De gebruiker kan op de knop **Add Domain** klikken en dit brengt een modaal venster met instructies tevoorschijn.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-n5mNhDpL38.png)
+![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
 
 De gebruiker kan vervolgens op **Next Step** klikken en doorgaan met het toevoegen van de aangepaste domeinnaam. Ze kunnen ook kiezen of dit het primaire domein is of niet.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0vlbs2dcaz.png)
+![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zez2zeiqz8mi67o7izkg3d7x43ve)Klik op **Add Domain** start het proces van het verifiëren en ophalen van de DNS-informatie van het aangepaste domein.
+![Click Add Domain to start DNS verification](/img/admin/domains-list.png)Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
 
 ### Over Domein Syncing
 
@@ -121,8 +121,8 @@ Domain syncing gebeurt automatisch als uw hostingprovider integratie heeft met d
 
 U moet deze integratie activeren in de Ultimate Multisite instellingen onder het **Integration** tabblad.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-k6i46r4x2yddii0op4x343jizq20)
+![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMADuxaH62.png)
+![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
 
 _Let op dat als uw hostingprovider niet een van de hierboven genoemde providers is,** moet u het domeinnaam handmatig synchroniseren of toevoegen** aan uw hostingaccount._

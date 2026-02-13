@@ -15,7 +15,7 @@ Ultimate Multisite does not file or remit taxes on your behalf to the government
 
 A coleta de impostos não está habilitada por padrão. Para habilitá-la, você precisa ir em **Ultimate Multisite > Settings > Taxes** e alternar para habilitar a configuração Enable Taxes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICSEhm7yhk.png)
+![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Imposto excluído vs. Imposto incluído
 
@@ -23,7 +23,7 @@ Por padrão, todos os preços dos seus produtos são excluídos de impostos, sig
 
 Se preferir que os impostos estejam incluídos no preço do seu produto, você pode fazer isso habilitando a configuração **Inclusive Tax**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xiiaIXYI2c.png)
+![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
 
 Não se esqueça de **salvar** as alterações que você fez.
 
@@ -35,11 +35,11 @@ Depois de habilitar a Coleta de Impostos, você precisará criar taxas de impost
 
 Você pode acessar o editor clicando no botão **Manage Tax Rates** na barra lateral da página de configurações de Impostos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UZb6g2rvrs.png)
+![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
 
 Na página do editor de taxas de imposto, você pode adicionar novas Taxas de Imposto clicando no botão **Add new Row**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZyJCSI6zLZ.png)
+![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
 
 Você precisará dar a cada taxa de imposto um **title** (usado nas faturas). Em seguida, pode escolher o **country** (obrigatório), o **state** e a **city** (ambos opcionais) onde este imposto será cobrado. Por fim, adicione a **tax rate in percents**.
 
@@ -49,19 +49,19 @@ Você também pode criar várias Categorias de Imposto, para adicionar diferente
 
 Clique em **Add new Tax Category**, depois escreva o nome da sua categoria e pressione **Create**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-73biI4o8lj.png)
+![Add new Tax Category button](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YhH2hLLvEC.png)
+![Creating a new tax category](/img/config/settings-taxes.png)
 
 Para navegar pelas categorias, clique em **Switch** e selecione a categoria à qual deseja adicionar novos impostos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xjghTq6ta4.png)
+![Switch between tax categories](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E5YLXeIsWH.png)
+![Selecting a tax category to view](/img/config/settings-taxes.png)
 
 Você pode definir a categoria de imposto para um produto específico indo à **Product edit page** e depois à aba Taxes.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vkh5NXKplU.png)
+![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
 
 Na mesma tela, você pode desativar o toggle **Is Taxable?** para informar ao Ultimate Multisite que ele não deve coletar impostos naquele produto específico.
 
@@ -76,21 +76,21 @@ Nossas ferramentas de IVA ajudam com algumas coisas importantes:
 
 Para instalar esse add-on, vá em **Ultimate Multisite > Settings** e clique no link da barra lateral **Check our Add-ons**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AsMyAH5HKC.png)
+![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
 
 Você será redirecionado para a nossa página de add-ons. Lá, pode pesquisar pelo **Ultimate Multisite VAT add-on** e instalá-lo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AQ6gWfdY5G.png)
+![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iz8uncHiYa.png)
+![VAT add-on install dialog](/img/config/settings-taxes.png)
 
 Em seguida, vá para **Network Admin > Plugins** e ative esse add-on em toda a rede.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PkWGMWlgVu.png)
+![Network Activate the VAT add-on](/img/config/settings-taxes.png)
 
 Se você voltar à aba **Tax Settings**, verá novas opções disponíveis. Ative a opção **Enable VAT Support** para habilitar as novas ferramentas de IVA. Não se esqueça de **save** suas configurações!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Gn1SspQZ0S.png)
+![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
 
 ### Obtendo Taxas de IVA
 
@@ -98,7 +98,7 @@ Uma das ferramentas que nossa integração adiciona é a capacidade de carregar 
 
 Na parte inferior da página, você verá as opções de obtenção de IVA. Selecionar um tipo de taxa e clicar no botão **Update EU VAT Rates** fará com que a tabela seja preenchida automaticamente com as taxas de imposto de cada estado membro da UE. Em seguida, você só precisa salvar.
 
-### ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZKEqPBX5E.png)
+### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
 
 Você também pode editar os valores após obtê-los. Para fazer isso, basta editar a linha da tabela que você precisa e clicar para salvar os novos valores.
 
@@ -106,6 +106,6 @@ Você também pode editar os valores após obtê-los. Para fazer isso, basta edi
 
 Quando o suporte ao IVA estiver habilitado, o Ultimate Multisite adicionará um campo adicional ao formulário de checkout, abaixo do campo de endereço de cobrança. O campo aparecerá apenas para clientes localizados na UE.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ITUbFOIM4r.png)
+![VAT number field on the checkout form](/img/config/settings-taxes.png)
 
 O Ultimate Multisite então validará o número de IVA e, se ele for válido, o mecanismo de cobrança reversa será aplicado e a taxa de imposto será definida como 0% nesse pedido.

@@ -6,19 +6,20 @@ _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
 # Action: wu_register_integrations
 
-Fires to allow integrations to register themselves.
+Se déclenche pour permettre aux intégrations de s'enregistrer elles-mêmes.
 
-Core registers its integrations here.
+Le noyau enregistre ses intégrations ici.
 
 ## Parameters
 
-| Name | Type | Description |
+| Nom | Type | Description |
 |------|------|-------------|
-| $registry | `\Integration_Registry` | The registry instance. |
+| $registry | `\Integration_Registry` | L'instance du registre. |
 
 ### Since
 
 - 2.5.0
+
 ### Source
 
-Defined in [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) at line 113
+Défini dans [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) à la ligne 113

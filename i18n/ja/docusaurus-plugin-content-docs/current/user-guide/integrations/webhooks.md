@@ -15,11 +15,11 @@ _**注意：この機能または記事は上級者向けです。**_
 
 webhook を作成するには、ネットワーク管理ダッシュボードに移動します。**Ultimate Multisite > Webhooks > Add New Webhook** をクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7cBdC7uhfX.png)
+![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
 
 新しい webhook を作成すると、**Name、URL、Event** などの情報を入力するよう求められます。webhook の名前は好きなものを使用できます。最も重要なフィールドは URL と Event です。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7MmyV3wafK.png)
+![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
 
 URL は、Ultimate Multisite が **payload またはデータ** を送信する **エンドポイントまたは宛先** です。これはデータを受信するアプリケーションです。
 
@@ -29,28 +29,28 @@ Zapier は、サードパーティアプリケーションとの統合を容易�
 
 [requestbin.com](https://requestbin.com/) にアクセスし、Create Request Bin をクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-J0e5FzS04g.png)
+![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
 
 そのボタンをクリックすると、既にアカウントをお持ちの場合はログイン、持っていない場合はサインアップを求められます。既にアカウントをお持ちの場合は、すぐにダッシュボードに移動します。ダッシュボードでは、Ultimate Multisite の webhook を作成する際に使用できるエンドポイントまたは URL がすぐに表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-M40kPMGsji.png)
+![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
 
 URL をコピーして Ultimate Multisite に戻ります。URL フィールドにエンドポイントを貼り付け、ドロップダウンからイベントを選択します。この例では、**Payment Received** を選択します。
 
 このイベントは、ユーザーが支払いを行うたびにトリガーされます。利用可能なすべてのイベント、その説明、ペイロードはページの下部に一覧表示されています。**Add New Webhook** ボタンをクリックして webhook を保存します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1NwqQP4bP0.png)
+![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
 
 作成した webhook が機能しているか確認するために、テストイベントをエンドポイントに送信できます。作成した webhook の下にある **Send Test Event** をクリックします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zTDhrG4wlP.png)
+![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
 
 テストが成功したことを示す確認ウィンドウが表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9jP9r7yRT9.png)
+![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
 
 次に _Requestbin_ サイトに戻ると、ペイロードが受信され、テストデータが含まれていることが確認できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RZke5xnrAg.png)
+![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
 
 これが webhook とエンドポイントの動作原理です。カスタムエンドポイントを作成する場合は、Ultimate Multisite から受信したデータを処理するカスタム関数を作成する必要があります。

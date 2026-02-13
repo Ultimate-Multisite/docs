@@ -12,7 +12,7 @@
     "description": "Navbar item"
   },
   "item.label.Addons": {
-    "message": "Addons",
+    "message": "**Addons** → **Addons**",
     "description": "Navbar item"
   },
   "item.label.Website": {

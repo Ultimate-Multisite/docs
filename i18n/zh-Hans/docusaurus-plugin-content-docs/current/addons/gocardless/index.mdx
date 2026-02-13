@@ -1,7 +1,7 @@
 ---
 title: GoCardless
 sidebar_position: 1
-_i18n_hash: 6bdd5faf453a0b33010bfd1064e0f2b8
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,14 +9,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # GoCardless
 
-Multisite Ultimate：GoCardless 付款
+Multisite Ultimate: GoCardless 支付
 
 让您的客户使用 GoCardless 通过直接借记支付 Multisite Ultimate 会员和产品！
 
 ## Installation
 
 1. 将 'ultimate-multisite-gocardless' 上传到 '/wp-content/plugins/' 目录
-2. 通过 WordPress 的 'Plugins' 菜单激活插件
+2. 在 WordPress 的 'Plugins' 菜单中激活插件
 3. 按照逐步向导设置插件
 
 ## Usage Guide
@@ -27,7 +27,7 @@ _GoCardless_ 是一个可在 **欧洲和英国** 使用的支付网关，支持 
 
 本教程将介绍如何设置 _GoCardless_，以便在您的 Ultimate Multisite 网络上开始接受其支付。
 
-_**注意：GoCardless 仅支持以下货币：**_ **EUR, GBP, AUD, SEK, 和 DKK。**
+_**注意：GoCardless 仅支持以下货币：**_ **EUR、GBP、AUD、SEK 和 DKK。**
 
 ## Installing the Add-on
 
@@ -35,29 +35,29 @@ _**注意：GoCardless 仅支持以下货币：**_ **EUR, GBP, AUD, SEK, 和 DKK
 
 插件安装并激活后，转到 **Ultimate Multisite > Settings > Payments**，切换 GoCardless 选项并保存。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VRRNzphbjJ.png)
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
 ## Getting an Access Token
 
-在 _GoCardless_ 上创建一个账户（或在 _GoCardless_ 沙箱上创建，如果您想先 **测试**，建议这样做）。然后，登录后，导航到 **Developers** 菜单项。
+在 _GoCardless_ 上创建一个账户（或在 _GoCardless_ 沙箱上创建，如果您想先 **测试**，这被推荐）。登录后，导航到 **Developers** 菜单项。
 
-![Developers menu position](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kENJK2VMJy.png)
+<!-- 截图不可用：GoCardless 仪表盘显示 Developers 菜单位置 -->
 
 在 **Developers** 页面，点击屏幕右上角的 **Create** 按钮，然后点击 **Access Token** 选项。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UrGjq2m5TX.png)
+<!-- 截图不可用：GoCardless Developers 页面显示 Create 按钮和 Access Token 选项 -->
 
-这将打开一个新模态窗口，允许您创建新令牌。为其命名并确保在 **Scope** 菜单中选择 **Read-write access** 选项。
+这将打开一个新模态窗口，允许您创建新令牌。为其命名为易于识别的名称，并确保在 **Scope** 菜单中选择 **Read-write access** 选项。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDY7J5ylvj.png)
+<!-- 截图不可用：GoCardless 模态窗口用于创建具有 Read-write 范围的新访问令牌 -->
 
 访问令牌将显示在屏幕上。复制它并粘贴到您的 **Ultimate Multisite > Settings > Payments > GoCardless** 菜单中。
 
-确保将其放在正确的字段中。如果它是 **live toke** **n**，在粘贴令牌之前将 **sandbox mode** 关闭。
+确保将其放在正确的字段中。如果是 **live token**，在粘贴令牌之前将 **sandbox mode** 关闭。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3DsJSYPv1Z.png)
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FlMS0mucqq.png)
+<!-- 截图不可用：Ultimate Multisite 支付设置中的 GoCardless 令牌字段 -->
 
 第一步完成。接下来，您需要设置一个 webhook 监听器。
 
@@ -65,22 +65,22 @@ _**注意：GoCardless 仅支持以下货币：**_ **EUR, GBP, AUD, SEK, 和 DKK
 
 在处理订阅时，Ultimate Multisite 需要了解订阅状态的变化、新支付的发生以及其他相关信息。
 
-支付网关通过 **webhook 调用** 通知 Ultimate Multisite 这些变化。因此，为了让集成 100% 工作，我们需要告诉 _GoCardless_ 需要调用哪个 URL 来获取所有信息。
+支付网关通过 **webhook 调用** 通知 Ultimate Multisite 这些变化。因此，为了让集成 100% 工作，我们需要告诉 _GoCardless_ 需要调用的 URL。
 
 返回您的 **GoCardless > Developers** 面板，再次点击 Create 按钮，但这次选择 **Webhook endpoint** 选项。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p3PuOhRO6b.png)
+<!-- 截图不可用：GoCardless Developers 页面显示 Webhook endpoint 选项 -->A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
 
 将打开一个新窗口，显示 webhook 端点选项。它会询问 webhook URL，因此请返回您的 **Ultimate Multisite settings > Payments > GoCardless** 并复制其中列出的 webhook URL：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7GKJY7tRgV.png)
+<!-- 截图不可用：Ultimate Multisite GoCardless 设置显示 webhook URL -->
 
 此外，您可以输入一个 **webhook secret**，用于签署您的 webhook 调用。您在该字段中输入的任何内容，也需要在 **Ultimate Multisite Webhook Secret** 字段中输入。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICXNY1PnA6.png)
+<!-- 截图不可用：GoCardless webhook endpoint 配置表单，包含 URL 和 secret 字段 -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIJv3UFhhz.png)
+<!-- 截图不可用：Ultimate Multisite GoCardless webhook secret 字段 -->
 
-通过点击 **Create webhook endpoint** 按钮保存端点，然后 **保存您的 Ultimate Multisite 设置**。
+通过点击 **Create webhook endpoint** 按钮保存端点，然后 **保存您的 Ultimate Multisite 设置** 来完成。
 
 现在您应该可以接受 _GoCardless_ 了！

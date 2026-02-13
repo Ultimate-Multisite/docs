@@ -21,7 +21,7 @@ _**IMPORTANTE** **:** Si estás configurando una red multisite en un sitio web d
 * Crea una copia de seguridad completa de tu sitio WordPress
 * Desactiva todos los plugins en tu sitio yendo a la página de plugins y seleccionando _Deactivate_ de las acciones masivas y luego haciendo clic en _Apply_
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 Para habilitar Multisite, primero conéctate a tu sitio usando un cliente FTP o el administrador de archivos de cPanel, y abre tu archivo wp-config.php para editarlo.
 
@@ -37,7 +37,7 @@ Con la función multisite habilitada en tu sitio, ahora es hora de configurar tu
 
 Ve a **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Ahora necesitas decirle a WordPress qué tipo de estructura de dominio usarás para los sitios en tu red: subdominios o subdirectorios.
 
@@ -45,7 +45,7 @@ Si eliges subdominios, debes cambiar la configuración de DNS para el mapeo de d
 
 Regresa a la Configuración de la Red, asigna un título a tu red y asegúrate de que la dirección de correo electrónico en el correo del administrador de la red sea correcta. Haz clic en _Install_ para continuar.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Agrega este código, proporcionado por WordPress, a tu _**wp-config.php**_ :
 
@@ -93,7 +93,7 @@ Para crear un subsitio:
 * Site Title — Título del sitio, puede cambiarse más tarde
 * Admin Email — Establece como el usuario administrador inicial para el subsitio
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 Después de completar los campos, haz clic en el botón "Add site". Una vez que el nuevo subsitio esté creado, accede a él para asegurarte de que el subsitio sea funcional.
 

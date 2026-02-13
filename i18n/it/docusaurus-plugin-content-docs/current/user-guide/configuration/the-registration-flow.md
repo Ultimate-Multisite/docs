@@ -17,19 +17,19 @@ La pagina predefinita per la registrazione è [_**yourdomain.com/register**_](ht
 
 Dopo che un utente arriva sulla tua pagina di registrazione (di solito cliccando su un pulsante **Sign in** o **Buy now**), vedrà il tuo modulo di registrazione lì.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 Tutto ciò che devono fare è compilare tutti i campi obbligatori - email, nome utente, password, ecc... - e pagare per il piano o confermare il loro indirizzo email se si registrano per un piano gratuito o un piano a pagamento con periodo di prova senza informazioni di pagamento.
 
 Nella pagina di "Grazie", vedranno un messaggio che indica se devono confermare il loro indirizzo email o se il loro sito è già attivato e possono iniziare a usarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 Se è richiesta la conferma dell'indirizzo email, dovranno andare nella loro casella di posta e cliccare sul link di verifica. Il loro sito non verrà attivato se l'indirizzo email non viene verificato.
 
 Se si sono registrati su un piano a pagamento o la verifica email non è obbligatoria nella tua rete, il loro sito verrà attivato subito dopo il checkout e verrà mostrato un link per accedere al loro cruscotto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Utilizzo di un Link Condivisibile:
 
@@ -43,30 +43,30 @@ Se non vuoi usare PayPal, Stripe o qualsiasi altro gateway di pagamento offerto 
 
 Il processo di registrazione sarà esattamente lo stesso di sopra, ma sulla pagina di registrazione i tuoi clienti vedranno un messaggio che indica che riceveranno un'email con ulteriori istruzioni per completare il pagamento.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 E dopo che la registrazione è completata, vedranno le istruzioni di pagamento che hai impostato (e le riceveranno anche via email).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 Le istruzioni di pagamento possono essere modificate su **Ultimate Multisite > Settings > Payments** dopo aver attivato l'opzione di pagamento **Manual**:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 Dopo che i tuoi clienti hanno completato il pagamento manuale e ti hanno inviato la conferma, devi **confermare manualmente il pagamento** per attivare l'iscrizione del cliente e il sito.
 
 Per fare ciò, vai su **Ultimate Multisite > Payments** e trova il pagamento del cliente. Dovrebbe ancora mostrare lo stato **Pending**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Clicca sul numero di pagamento e potrai cambiare il suo stato in **Completed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 Dopo aver cambiato lo stato in **Completed**, dovresti vedere un messaggio **Activate membership**. Attiva questa opzione **on** per attivare l'iscrizione e il sito associato a questo cliente. Quindi, fai clic su **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Il tuo cliente dovrebbe ora poter accedere al cruscotto e a tutte le funzionalità a cui si è abbonato.

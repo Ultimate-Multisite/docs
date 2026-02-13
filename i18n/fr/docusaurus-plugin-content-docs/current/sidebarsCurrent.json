@@ -1,6 +1,6 @@
 {
   "sidebar.userGuideSidebar.category.Getting Started": {
-    "message": "Commencer",
+    "message": "Démarrage",
     "description": "The label for category Getting Started in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Administration": {
@@ -12,11 +12,11 @@
     "description": "The label for category Configuration in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Domain Mapping": {
-    "message": "Mapping de domaine",
+    "message": "Cartographie de domaine",
     "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Host Integrations": {
-    "message": "Intégrations d'hébergement",
+    "message": "Intégrations d'hôtes",
     "description": "The label for category Host Integrations in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Payment Gateways": {
@@ -80,7 +80,7 @@
     "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Site Exporter": {
-    "message": "Exportateur de site",
+    "message": "Exporter de site",
     "description": "The label for category Site Exporter in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.AffiliateWP": {
@@ -108,7 +108,7 @@
     "description": "The label for category Content Sync in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Domain Seller": {
-    "message": "Vendeur de domaines",
+    "message": "Vendeur de domaine",
     "description": "The label for category Domain Seller in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Fluent Forms": {
@@ -140,15 +140,15 @@
     "description": "The label for category Mailster in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Metered Plans": {
-    "message": "Plans à tarif métré",
+    "message": "Plans à tarif à la consommation",
     "description": "The label for category Metered Plans in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Network": {
-    "message": "Multi‑Réseau",
+    "message": "Multi-Réseau",
     "description": "The label for category Multi-Network in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Tenancy": {
-    "message": "Multi-Tenancy",
+    "message": "Multi-location",
     "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.PayFast": {
@@ -180,7 +180,7 @@
     "description": "The label for category Addon Template in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
-    "message": "Compatibilité Tutor Multisite",
+    "message": "Compatibilité Multisite de Tutor",
     "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Material WP": {

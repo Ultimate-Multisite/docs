@@ -13,19 +13,19 @@ Als uw gebruiker zijn lidmaatschap wil annuleren, moet hij eerst zijn ****Accoun
 
 Daar moet hij naar de **Danger Zone** gaan en klikken op **Delete Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7IO8WYhID5.png)
+![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
 
 Een module zal openen waarin om hun bevestiging wordt gevraagd. Ze moeten de optie **Confirm Account Deletion** inschakelen en klikken op **Delete Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NavCHgYJYo.png)
+![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
 
 Dit zal hen uitloggen van de site en hun lidmaatschap op uw netwerk annuleren, evenals hun site uit uw netwerk verwijderen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KFkpD0CRhT.png)
+![Logged out after account deletion](/img/admin/memberships-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jWkEmpf9ij.png)
+![Membership canceled confirmation](/img/admin/memberships-list.png)
 
 **Belangrijk:** Merk op dat deze actie de klant niet uitsluit van uw netwerk, aangezien een klant meer dan één lidmaatschap of geen lidmaatschap aan zich kan hebben gekoppeld.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDX2xRZVHu.png) | ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5g9qbL4SaT.png)  
+![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
 ---|---

@@ -23,35 +23,35 @@ _**重要: バージョン 1.x から 2.0 へアップグレードを開始す�
 
 _**注意:** マルチサイトに Ultimate Multisite 1.x がインストールされている場合、ダウンロードしたバージョンに置き換えるオプションがあります。**Replace current with uploaded** をクリックしてください。_
 
-![プラグインページの上部に表示されるメッセージ：Ultimate Multisite バージョン 2.0 へのアップデートありがとうございます。下にあるリンクからバージョンアップグレーダーにアクセスできます。その後、更新が必要なアドオンのリストが表示されます。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4E9kAFlcb5.png)
+<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
 
 準備ができたら、**Visit the Installer to finish the upgrade** と書かれたボタンをクリックしてください。
 
-![赤枠で囲まれたボタン：インストーラーを訪問してアップグレードを完了する](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BnJrjt7Drw.png)
+<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
 
 その後、インストールウィザードページに移動し、いくつかの歓迎メッセージが表示されます。**Get Started** をクリックして次のページに進むだけです。
 
-![Setup Wizard の歓迎ページ。右下に赤枠で囲まれた Get Started ボタン。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1dvRbsEnrN.png)
+<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
 
 **Get Started** をクリックすると、Pre-install Checks_._ にリダイレクトされます。ここではシステム情報と WordPress のインストール状況が表示され、**Ultimate Multisite の要件**を満たしているかどうかが確認できます。
 
-![Pre-install Checks ページ。インストールが Ultimate Multisite の要件を満たしていることを確認するメッセージが表示されます。右下に赤枠で囲まれた Go to the next step ボタン。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i0SwDNkaEO.png)
+<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
 
 次のステップは、Ultimate Multisite のライセンスキーを入力してプラグインを有効化することです。これにより、アドオンを含むすべての機能がサイトで利用可能になります。
 
-![ライセンス有効化ページ。サポートに含まれる内容と含まれない内容が一覧表示されます。下部にプラグインのライセンスを入力するボックスがあります。右下に赤枠で囲まれた Agree and activate ボタン。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QAwmR9oLQL.png)
+<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
 
 キーを入力したら、**Agree & Activate** をクリックしてください。
 
 ライセンスの有効化後、次のページで **Install** をクリックして実際のインストールを開始できます。これにより、バージョン 2.0 が機能するために必要なファイルとデータベースが自動的に作成されます。
 
-![インストールページ。Ultimate Multisite が機能するために更新される内容が表示されます。右下に赤枠で囲まれた Install ボタン。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FCyBH12y4d.png)
+<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
 
 ## Now, the migration
 
 マイグレーターには、マルチサイト全体をチェックして、Ultimate Multisite のデータが問題なく移行できることを確認する組み込みの安全機能があります。**Run Check** ボタンをクリックしてプロセスを開始してください。
 
-![Migration ページ。v1 のすべてのデータが変換可能かどうかを確認するチェックを実行します。右下に赤枠で囲まれた Run check ボタン。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vXLXFLjogz.png)
+<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
 チェックを実行した後、結果は **エラー付き** と **エラーなし** のいずれかになります。
 
@@ -65,9 +65,9 @@ _**システムがエラーを検出したため、バージョン 2.0 への移
 
 システムがエラーを検出しない場合は、成功メッセージと下部に **Migrate** ボタンが表示され、移行を進めることができます。このページでは、進行前にデータベースのバックアップを作成するように促されます。バックアップがある場合は **Migrate** をクリックしてください。
 
-![Migration ページ。成功メッセージとバックアップ作成の推奨が表示されます。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T5ELIgTX5a.png)
+<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
 
-![右下に赤枠で囲まれた Migrate ボタン。](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y2AfV93rpf.png)
+<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
 
 これだけで完了です！
 

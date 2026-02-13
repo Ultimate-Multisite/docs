@@ -1,8 +1,6 @@
 ---
 id: wu_page_get_title_links
-title: >-
-  Could you please provide the content of the file **Filter -
-  wu_page_get_title_links** so I can translate it?
+title: Filtro - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
@@ -25,4 +23,4 @@ Permitir que desenvolvedores de plugins, e nós mesmos, adicionem links de açã
 
 Definido em [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L671) na linha 671
 
-## Retorna
+## Retornos

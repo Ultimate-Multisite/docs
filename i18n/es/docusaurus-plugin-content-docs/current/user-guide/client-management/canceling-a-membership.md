@@ -1,31 +1,31 @@
 ---
-title: Cancelando una Membresía
+title: Cancelar una Membresía
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: 2d99402d43697b8c70aa53690690a474
 ---
 # Cancelar una Membresía (v2)
 
-_**NOTA IMPORTANTE: Este artículo se refiere a la versión 2.x de Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Cancelar una membresía en el lado de tus clientes es bastante fácil.
 
-Si tu usuario desea cancelar su membresía, primero debe acceder a su página de **Cuenta**.
+Si tu usuario desea cancelar su membresía, primero debe acceder a su página de ****Cuenta****.
 
-Allí, deben hacer clic en la **Zona de peligro**, y hacer clic en **Eliminar cuenta**.
+Allí, deben dirigirse a la zona **Zona de peligro** y hacer clic en **Eliminar cuenta**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7IO8WYhID5.png)
+![Página de cuenta Zona de peligro con botón Eliminar cuenta](/img/admin/memberships-list.png)
 
 Se abrirá un módulo solicitando su confirmación. Deben activar la opción **Confirmar eliminación de cuenta** y hacer clic en **Eliminar cuenta**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NavCHgYJYo.png)
+![Diálogo de confirmación de eliminación de cuenta](/img/admin/memberships-list.png)
 
 Esto cerrará su sesión en el sitio y cancelará su membresía en tu red, además de eliminar su sitio de tu red.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KFkpD0CRhT.png)
+![Cerrado de sesión después de la eliminación de la cuenta](/img/admin/memberships-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jWkEmpf9ij.png)
+![Confirmación de membresía cancelada](/img/admin/memberships-list.png)
 
 **Importante:** Ten en cuenta que esta acción no excluirá al cliente de tu red, ya que un cliente puede tener más de una membresía o ninguna vinculada a él.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDX2xRZVHu.png) | ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5g9qbL4SaT.png)  
+![El cliente sigue existiendo en la red después de la cancelación](/img/admin/memberships-list.png) | ![Cliente sin membresías activas](/img/admin/memberships-list.png)  
 ---|---

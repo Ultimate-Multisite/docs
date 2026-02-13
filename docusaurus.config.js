@@ -22,6 +22,7 @@ const config = {
     locales: [
       'en',
       'es',
+        'fr','de','pt-BR','ja','zh-Hans','ru','it','ko','nl'
       // Additional locales - uncomment as translations are added
       // 'af', 'am', 'ar', 'as', 'az', 'azb', 'be', 'bg', 'bn', 'bs',
       // 'ca', 'ceb', 'ckb', 'cs', 'cy', 'da', 'de', 'el', 'eo',

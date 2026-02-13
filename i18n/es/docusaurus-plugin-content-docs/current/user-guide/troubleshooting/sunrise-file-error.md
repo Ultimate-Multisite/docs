@@ -9,20 +9,20 @@ El archivo sunrise.php es un archivo especial que WordPress busca mientras se in
 
 Cuando activas Ultimate Multisite y pasas por el asistente de configuración como el que tienes en la captura de pantalla, Ultimate Multisite intenta copiar nuestro archivo sunrise.php a la carpeta wp-content.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-v6hosgLWpt.png)
+<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
 
 La mayoría de las veces podemos copiar el archivo con éxito y todo funciona. Sin embargo, si algo no está configurado correctamente (por ejemplo, los permisos de la carpeta), podrías encontrarte con un escenario en el que Ultimate Multisite no pueda copiar el archivo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RXS5EbirfM.png)
+<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
 
 Si lees el mensaje de error que te da Ultimo, verás que eso es exactamente lo que ocurrió aquí: **Sunrise copy failed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p6hz1I9ycl.png)
+<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
 
 Para solucionar eso, simplemente puedes copiar el archivo sunrise.php dentro de la carpeta del plugin wp-ultimo y pegarlo en tu carpeta wp-content. Después de hacer eso, recarga la página del asistente y las comprobaciones deberían pasar.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p6hz1I9ycl.png) En cualquier caso, esto podría justificar una comprobación general de los permisos de tus carpetas para evitar problemas en el futuro (no solo con Ultimate Multisite, sino también con otros plugins y temas).
+<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
 
 La herramienta **Health Check** que forma parte de WordPress (puedes acceder a ella a través del **admin panel > Tools > Health Check** de tu sitio principal) es capaz de informarte si tienes permisos de carpeta configurados con valores que podrían causar problemas con WordPress.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oZEKeyxo2E.png)
+<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->

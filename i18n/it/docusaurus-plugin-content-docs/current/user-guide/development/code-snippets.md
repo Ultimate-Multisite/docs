@@ -15,13 +15,13 @@ In questo articolo ti mostreremo tre snippet di codice che possono essere usati 
 
   * [**Correggere i problemi CORS con Font-Icons nei domini mappati**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Cambiare la posizione dell'elemento di menu Account
+## Cambiare la posizione dell'elemento di menu Account {#changing-the-position-of-the-account-menu-item}
 
 Per cambiare la posizione dell'elemento di menu Account sulla Dashboard del tuo cliente, aggiungi semplicemente il seguente snippet di codice al file functions.php del tema attivo del tuo sito principale. Puoi anche inserire lo snippet all'interno di uno dei tuoi mu-plugins o plugin personalizzati.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Come verificare se l'utente è sotto un determinato piano e/o ha un abbonamento attivo
+## Come verificare se l'utente è sotto un determinato piano e/o ha un abbonamento attivo {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Come amministratore di rete, potresti aver bisogno di creare funzioni personalizzate che eseguano azioni di base o rendano disponibile un servizio/caratteristica a un gruppo selezionato di abbonati o utenti finali, in base allo stato del loro abbonamento e al piano a cui sono iscritti.
 
@@ -45,11 +45,9 @@ Per ottenere l'ID di un piano, puoi andare su **Ultimate Multisite > Products**.
 
 Nota che gli utenti possono essere iscritti solo a un **Plan**, non a un Package o Service, poiché sono solo componenti aggiuntivi per un **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Correggere i problemi CORS con Font-Icons nei domini mappati
-
-## Correggere i problemi CORS con Font-Icons nei domini mappati
+## Correggere i problemi CORS con Font-Icons nei domini mappati {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Dopo aver mappato un dominio a un sub-sito potresti scoprire che il sito ha difficoltà a caricare font personalizzati. Ciò è causato da un blocco cross-origin nelle impostazioni del tuo server.
 

@@ -15,13 +15,13 @@ In dit artikel laten we je drie codefragmenten zien die kunnen worden gebruikt m
 
   * [**Oplossen van CORS-problemen met Font-Icons in toegewezen domeinen**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Veranderen van de positie van het Account-menuitem
+## Veranderen van de positie van het Account-menuitem {#changing-the-position-of-the-account-menu-item}
 
 Om de positie van het Account-menuitem op het Dashboard van je klant te wijzigen, voeg je eenvoudig het volgende codefragment toe aan het functions.php-bestand van het actieve thema van je hoofdsite. Je kunt het fragment ook plaatsen in een van je mu-plugins of aangepaste plugins.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Hoe te controleren of de gebruiker onder een bepaald plan valt en/of een actieve abonnement heeft
+## Hoe te controleren of de gebruiker onder een bepaald plan valt en/of een actieve abonnement heeft {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Als netwerkbeheerder moet je mogelijk aangepaste functies maken die basisacties uitvoeren of een service/feature beschikbaar maken voor een geselecteerde groep abonnees of eindgebruikers, op basis van de status van hun abonnement en het plan waaronder ze zijn geabonneerd.
 
@@ -45,10 +45,9 @@ Om het ID van een plan te krijgen, kun je naar **Ultimate Multisite > Products**
 
 Merk op dat gebruikers alleen kunnen abonneren op een **Plan**, niet op een Package of Service, omdat deze alleen add-ons zijn voor een **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Oplossen van CORS-problemen met Font-Icons in toegewezen domeinen
-## Oplossen van CORS-problemen met Font-Icons in toegewezen domeinen
+## Oplossen van CORS-problemen met Font-Icons in toegewezen domeinen {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Na het toewijzen van een domein aan een sub-site kun je merken dat de site moeite heeft met het laden van aangepaste lettertypen. Dit wordt veroorzaakt door een cross-origin blokkering in je serverinstellingen.
 

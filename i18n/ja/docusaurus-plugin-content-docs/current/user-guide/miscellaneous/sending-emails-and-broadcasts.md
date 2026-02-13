@@ -15,11 +15,11 @@ Ultimate Multisiteのブロードキャスト機能を使用すると、ユー�
 
 システムメンテナンスや既存ユーザーへの新製品・サービスの提供などのアナウンスを行う際に非常に便利です。以下は、ユーザーのダッシュボードに表示される管理通知の例です。
 
-![ブロードキャストアカウント](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 管理通知を開始するには、ネットワーク管理ダッシュボードに移動し、**Ultimate Multisite** メニューの下に **Broadcasts** オプションがあります。
 
-![ブロードキャスト管理](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 このページから、上部にある **Add Broadcast** ボタンをクリックします。
 
@@ -27,7 +27,7 @@ Ultimate Multisiteのブロードキャスト機能を使用すると、ユー�
 
 **Message** を選択し、**Next Step** ボタンをクリックします。
 
-![ブロードキャスト管理モーダル](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 次のウィンドウでは、**Target customer** または **Target product** を選択します。複数のユーザーまたは複数の製品を選択できます。
 
@@ -37,11 +37,11 @@ Ultimate Multisiteのブロードキャスト機能を使用すると、ユー�
 
 その後、**Next Step** をクリックします。
 
-![ブロードキャスト管理追加新規](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 次のウィンドウでは、件名とブロードキャストしたい内容/メッセージを入力してメッセージを作成できます。
 
-![ブロードキャスト管理コンテンツ](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 メッセージを作成したら、**Send** ボタンをクリックします。
 
@@ -53,13 +53,13 @@ Ultimate Multisiteのブロードキャスト機能を使用すると、ユー�
 
 メールブロードキャストを開始するには、ネットワーク管理ダッシュボードに移動し、Ultimate Multisite メニューの下に **Broadcast** オプションがあります。
 
-![メール管理](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 このページから、上部にある **Add broadcast** ボタンをクリックします。
 
 これにより、送信したいブロードキャストの種類を選択できる Add broadcast モーダルウィンドウが表示されます。**Email** を選択し、**Next Step** ボタンをクリックします。
 
-![メール管理モーダル](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 次のウィンドウでは、**Target customer** または **Target product** を選択します。複数のユーザーまたは複数の製品を選択できます。
 
@@ -67,11 +67,11 @@ Ultimate Multisiteのブロードキャスト機能を使用すると、ユー�
 
 ターゲットオーディエンスを選択したら、**Next Step** をクリックします。
 
-![メール管理追加新規](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 次のウィンドウでは、件名とユーザーに送信したい内容/メッセージを入力してメールを作成できます。
 
-![メール管理コンテンツ](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 メッセージを作成したら、**Send** ボタンをクリックします。
 
@@ -93,19 +93,19 @@ Ultimate Multisite のシステムメールは、登録、支払い、ドメイ�
 
 Ultimate Multisite の設定ページに移動し、**メール** タブへ進みます。
 
-![Ultimate Multisite 設定ページ](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 サイドバーで **カスタマイズシステムメール** ボタンをクリックします。
 
-![カスタマイズシステムメール](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 システムメールページの上部に **リセット & インポート** アクションボタンが表示されます。このボタンをクリックすると、インポートとリセットのモーダルウィンドウが開きます。
 
-![インポートリセットモーダル](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 次に、Import Emails オプションを切り替えて、インポート可能なシステムメールを確認します。
 
-![インポートメールオプション](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### システムメールのリセット
 
@@ -117,4 +117,4 @@ Ultimate Multisite の設定ページに移動し、**メール** タブへ進�
 
 メールテンプレートをリセットするには、上記の手順に従い Reset & Import ツールに到達したら、**Reset** オプションを切り替えて、デフォルトコンテンツにリセットしたいメールを選択します。
 
-![リセットインポートツール](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

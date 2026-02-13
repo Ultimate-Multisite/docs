@@ -15,7 +15,7 @@ In diesem Artikel zeigen wir Ihnen drei Code-Snippets, die mit **Ultimate Multis
 
 * [**Behebung von CORS-Problemen mit Font-Icons in zugeordneten Domains**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ändern der Position des Kontomenü-Elements
+## Ändern der Position des Kontomenü-Elements {#changing-the-position-of-the-account-menu-item}
 
 Um die Position des Kontomenü-Elements im Dashboard Ihres Kunden zu ändern, fügen Sie einfach das folgende Code-Snippet in die functions.php Ihres aktiven Themes der Hauptseite ein. Sie können das Snippet auch in eines Ihrer MU-Plugins oder benutzerdefinierten Plugins einfügen.
 
@@ -23,7 +23,7 @@ Um die Position des Kontomenü-Elements im Dashboard Ihres Kunden zu ändern, f�
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## Wie man prüft, ob der Benutzer unter einem bestimmten Plan steht und/oder ein aktives Abonnement hat
+## Wie man prüft, ob der Benutzer unter einem bestimmten Plan steht und/oder ein aktives Abonnement hat {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Als Netzwerkadministrator müssen Sie möglicherweise benutzerdefinierte Funktionen erstellen, die grundlegende Aktionen ausführen oder einen Service/Feature für eine ausgewählte Gruppe von Abonnenten oder Endbenutzern verfügbar machen, basierend auf dem Status ihres Abonnements und dem Plan, unter dem sie abonniert sind.
 
@@ -53,11 +53,9 @@ Um die ID eines Plans zu erhalten, gehen Sie zu **Ultimate Multisite > Products*
 
 Beachten Sie, dass Benutzer nur einem **Plan** abonniert sein können, nicht einem Paket oder Service, da diese nur Add-ons für einen **Plan** sind.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Behebung von CORS-Problemen mit Font-Icons in zugeordneten Domains
-
-## Behebung von CORS-Problemen mit Font-Icons in zugeordneten Domains
+## Behebung von CORS-Problemen mit Font-Icons in zugeordneten Domains {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Nach dem Zuordnen einer Domain zu einer Subsite stellen Sie möglicherweise fest, dass die Seite Probleme beim Laden von benutzerdefinierten Schriftarten hat. Das wird durch einen Cross-Origin-Block in Ihren Servereinstellungen verursacht.
 

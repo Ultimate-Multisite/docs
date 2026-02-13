@@ -9,29 +9,29 @@ Ultimate Multisite: Ad Injector — это **бесплатный дополне
 
 После установки Ultimate Multisite: Ad Injector перейдите на страницу _Плагины_, чтобы активировать его.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KgDegqpbeb.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
 
 _Нажмите кнопку Network Activate_
 
 После того как дополнение активировано, в мета-боксе _Advanced Options_ на экране редактирования плана появится новая опция под названием _Ad Settings_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DA7Z84yQTu.png)
+![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
 
 _Теперь вы можете редактировать настройки рекламы для каждого из ваших планов_
 
 На этой вкладке вы сможете добавить коды рекламы для записей и страниц во фронтенде, до и после контента.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Rw9wObGUEN.png)
+<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1TKkWh8qoF.png)
+<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
 
 _После вставки кода вашей рекламы он будет отображаться на записях и страницах конкретного плана._
 
 Вы также можете включить рекламу в заголовок страниц Админки для пользователей этого плана.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdpwvfMgTp.png)
+<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1CPGJZn3km.png)
+<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
 
 _Перейдите в опцию Admin Panel Ad Code, если хотите отображать рекламу в бэкенде ваших пользователей_
 
@@ -41,9 +41,9 @@ _Перейдите в опцию Admin Panel Ad Code, если хотите о�
 
 Просто перейдите в опцию _Admin Panel Ads_ и добавьте HTML-код вашего инструмента поддержки.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hnOhLc8s8i.png)
+<!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-09wylykj5l.png)
+<!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
 
 _Добавьте поддержку клиентов к конкретным планам_
 

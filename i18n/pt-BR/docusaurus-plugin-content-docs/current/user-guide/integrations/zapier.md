@@ -21,33 +21,33 @@ Primeiro, procure por Ultimate Multisite na lista de apps do Zapier. Alternativa
 
 Vá para o seu painel e pressione o botão **+** **Create Zap** na barra lateral esquerda para configurar um novo Zap.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kyu5ufUXOv.png)
+![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
 
 Você será redirecionado para a página de criação de Zap.
 
 Na caixa de pesquisa digite "wp ultimo". Clique para escolher a opção de versão **Beta**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BrOYbp7dSE.png)
+![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
 
 Depois de selecionar nosso app, escolha o evento disponível: **New Ultimate Multisite Event**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-srblXqJnQE.png)
+![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
 
 Agora precisamos dar acesso ao Zapier à **sua rede**. Clicar em **Sign in** abrirá uma nova janela exigindo as **API credentials**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HcULsQoFpZ.png)
+![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
 
 Vá para o painel de administração da sua rede e navegue até **Ultimate Multisite > Settings** > **API & Webhooks** e procure a seção API Settings.
 
 Selecione a opção **Enable API**, pois é necessária para que essa conexão funcione.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-l7KbeKUkPX.png)
+![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
 
 Use o ícone **Copy to Clipboard** nos campos API Key e API Secret e cole esses valores na tela de integração.
 
 No campo URL, coloque a URL completa da sua rede, incluindo o protocolo (HTTP ou HTTPS).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4UVPQAlzYk.png)
+![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
 
 Clique no botão **Yes, Continue** para avançar para a próxima etapa. Se tudo funcionar, você será saudado pela sua nova conta conectada! Clique em **Continue** para criar um novo trigger.
 
@@ -55,15 +55,15 @@ Clique no botão **Yes, Continue** para avançar para a próxima etapa. Se tudo 
 
 Agora que sua conta está conectada, você pode ver os eventos disponíveis. Vamos escolher o evento **payment_received** para este tutorial.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZE7WgSGw8.png)
+![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
 
 Depois que o evento for selecionado e você clicar em **continue**, aparecerá uma etapa de **test**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SWo5wbMkgZ.png)
+![Zapier test step for the trigger](/img/admin/webhooks-list.png)
 
 Nesta etapa, o Zapier testará se seu Zap pode **fetch the specific payload to that event**. Em eventos futuros do mesmo tipo, informações com essa mesma estrutura serão enviadas.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-CVCJxhN3ai.png)
+![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
 
 Em nosso tutorial, o teste foi **completed successfully** e retornou as informações de exemplo do payload. Essas informações de exemplo serão úteis para orientar-nos ao criar ações. Seu trigger agora está criado e pronto para ser conectado a outras aplicações.
 
@@ -73,26 +73,26 @@ As Actions usam informações de outros triggers para criar novas entradas em su
 
 Na etapa **creating an action step** você escolherá o Ultimate Multisite **Beta** e a opção **Create Items on Ultimate Multisite**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-swCbHP8jNG.png)
+![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
 Na próxima etapa, você criará sua autenticação, assim como fizemos em **How to start**, ou selecionará uma autenticação já criada. Neste tutorial, escolheremos a mesma autenticação criada anteriormente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iRSFnhpoHv.png)
+![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
 ### Configurando a Action
 
 Esta é a **main step of the action** e aqui as coisas são um pouco diferentes. A primeira informação que você escolherá é o **Item**. O Item é o **information model** da sua rede, como **Customers, Payments, Sites, Emails** e outros.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GC4iHxBn4e.png)
+![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
 
 Ao selecionar um item, o formulário **rearrange to bring the required and optional fields** para o item selecionado.
 
 Por exemplo, ao selecionar o item **Customer**, os campos do formulário trarão tudo que é necessário preencher para criar um novo Customer na rede.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4xpHH5xTaf.png)
+![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
 
 Depois de preencher todos os campos marcados como **required** e clicar em continue, uma última tela mostrará os campos preenchidos e os campos que ficaram em branco.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JLPq56npV6.png)
+![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
 
 Assim que seu teste for concluído e bem-sucedido, sua action estará configurada. Também é importante verificar em sua rede se o item foi criado com o teste da sua action.

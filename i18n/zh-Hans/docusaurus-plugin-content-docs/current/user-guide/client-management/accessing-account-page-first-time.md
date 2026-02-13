@@ -1,20 +1,22 @@
 ---
 title: 访问账户页面
 sidebar_position: 3
-_i18n_hash: 0d69bbd563af0fecb531be89ea991f1f
+_i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-欢迎使用 Ultimate Multisite！
+# 我如何首次访问我的账户页面？
 
-在购买我们的插件后，使用您收到的电子邮件中的链接访问您的账户页面：
+欢迎来到 Ultimate Multisite！
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)
+通过您购买插件后收到的电子邮件中的链接访问您的账户页面：
 
-使用您在购买时提供的电子邮件地址和您在邮件中收到的密码。
+<!-- Screenshot unavailable: Account page email with access link -->
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)
+使用您在购买时提供的电子邮件地址和您在电子邮件中收到的密码。
 
-由于这是您第一次登录此账户，系统会要求您更改密码。请更改后点击 _Save_ 按钮。
+<!-- Screenshot unavailable: Login page with email and password fields -->
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-y72kWhbvn-Changing.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-y72kWhbvn-Changing.png)
+由于这是您第一次登录此账户，系统会要求您更改密码。更改后点击 _Save_ 按钮。
 
-在您的账户页面，您可以管理所有账户细节，例如账单、续费、取消等。
+<!-- Screenshot unavailable: Change password form with Save button -->
+
+在您的账户页面，您可以管理所有账户详细信息，例如账单、续订、取消以及其他许多事项。

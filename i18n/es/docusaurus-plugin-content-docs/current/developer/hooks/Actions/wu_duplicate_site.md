@@ -1,14 +1,12 @@
 ---
 id: wu_duplicate_site
-title: >-
-  I’m ready to translate the content, but I need the Markdown/MDX text you’d
-  like me to translate. Could you please provide the file’s contents?
+title: Acción - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
 # Acción: wu_duplicate_site
 
-Permite a los desarrolladores engancharse después de que se produzca una duplicación del sitio.
+Permite a los desarrolladores engancharse después de que se produzca una duplicación de sitio.
 
 ### Desde
 

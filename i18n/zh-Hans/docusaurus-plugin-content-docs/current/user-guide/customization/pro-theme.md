@@ -11,7 +11,7 @@ PRO Theme 是一款为您在定制客户仪表盘时提供帮助的管理主题�
 
 安装后，前往您的 _插件_ 页面，在网络中激活它。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _在插件页面全网激活它_
 
@@ -19,29 +19,29 @@ _在插件页面全网激活它_
 
 现在，您的管理界面已完全重新设计！左侧栏还新增了一个名为 PRO Theme 的菜单。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 _为您的管理面板带来全新的外观_
 
 在此菜单中，您将可以访问五个标签页：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 _样式设置_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 _功能_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 _自定义 CSS_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 _导入/导出_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 _激活 PRO Theme_
 
@@ -49,10 +49,10 @@ _激活 PRO Theme_
 
 以下是您在进行一些调整后可以获得的示例：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 _客户的仪表盘_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 _自定义登录页面_

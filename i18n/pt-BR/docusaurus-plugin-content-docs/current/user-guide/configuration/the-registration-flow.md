@@ -17,19 +17,19 @@ A página padrão para registro é [_**yourdomain.com/register**_](http://yourdo
 
 Depois que um usuário chega à sua página de registro (geralmente clicando em um botão **Sign in** ou **Buy now**), ele verá seu formulário de registro lá.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 Tudo que eles precisam fazer é preencher todos os campos obrigatórios - e-mail, nome de usuário, senha, etc... - e pagar pelo plano ou confirmar seu endereço de e‑mail se estiverem se registrando para um plano gratuito ou um plano pago com período de teste sem informações de pagamento.
 
 Na página de "Obrigado", eles verão uma mensagem informando se precisam confirmar seu endereço de e‑mail ou se seu site já está ativado e podem começar a usá-lo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 Se for necessária a confirmação do endereço de e‑mail, eles precisarão acessar sua caixa de entrada e clicar no link de verificação. Seu site não será ativado se o endereço de e‑mail não for verificado.
 
 Se eles se registraram em um plano pago ou a verificação de e‑mail não for obrigatória em sua rede, seu site será ativado imediatamente após o checkout e será exibido um link para fazer login no painel.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Usando um Link Compartilhável:
 
@@ -43,30 +43,30 @@ Se você não deseja usar PayPal, Stripe ou qualquer outro gateway de pagamento 
 
 O processo de registro será exatamente o mesmo que acima, mas na página de registro seus clientes verão uma mensagem informando que receberão um e‑mail com instruções adicionais para concluir o pagamento.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 E depois que o registro for concluído, eles verão as instruções de pagamento que você definiu (e também as receberão em seu e‑mail).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 As instruções de pagamento podem ser alteradas em **Ultimate Multisite > Settings > Payments** após ativar a opção de pagamento **Manual**:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 Depois que seus clientes concluírem o pagamento manual e enviarem a confirmação, você precisa **confirmar manualmente o pagamento** para ativar a associação e o site do cliente.
 
 Para fazer isso, vá para **Ultimate Multisite > Payments** e encontre o pagamento do cliente. Ele ainda deve exibir o status **Pending**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Clique no número do pagamento e você poderá alterar seu status para **Completed**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 Depois de alterar seu status para **Completed**, você deve ver uma mensagem **Activate membership**. Ative essa opção **on** para ativar a associação e o site associados a este cliente. Em seguida, clique em **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Seu cliente agora deve conseguir acessar o painel e todos os recursos que ele assinou.

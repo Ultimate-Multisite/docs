@@ -17,7 +17,7 @@ Stripeと同様に、PayPalはオンライン決済で広く利用されてお�
 
 ネットワークでPayPalを利用可能な支払方法として有効化するには、**Ultimate Multisite > Settings > Payments** タブに移動し、PayPalの横にあるチェックボックスをオンにします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## PayPal API認証情報の取得
 
@@ -27,15 +27,15 @@ PayPalが支払ゲートウェイとして有効化されたら、PayPal API **U
 
 (**sandbox mode**を使用して支払テストを行い、ゲートウェイが正しく設定されているか確認できます。該当セクションをオンにしてください。)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 PayPalアカウントのAPI SignatureまたはCertificate認証情報をリクエストするには:
 
 1. [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess) に移動します。  
 2. **API access** セクションで **Update** をクリックします。  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)  
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 3. **NVP/SOAP API integration (Classic)** の下で **Manage API credentials** をクリックします。  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * 既にAPI SignatureまたはCertificateを生成済みの場合、認証情報を確認できるページにリダイレクトされます。  
    * _**注意:** PayPalアカウントの確認を求められた場合は、画面上の指示に従ってください。_
@@ -45,7 +45,7 @@ PayPalアカウントのAPI SignatureまたはCertificate認証情報をリク�
    * **Request API Certificate** – API Certificate認証を選択します。  
 
 5. PayPalは以下のようにAPI認証情報を生成します：  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **API Signature credentials** にはAPI Username、API Password、Signatureが含まれ、期限はありません。これらの値はデフォルトで非表示にされ、**Show/Hide** をクリックして表示/非表示を切り替えます。完了したら **Done** をクリックします。  
    * **API Certificate credentials** にはAPI Username、API Password、Certificateが含まれ、3年後に自動で期限切れになります。**Download Certificate** をクリックしてAPI Certificateをデスクトップに保存します。

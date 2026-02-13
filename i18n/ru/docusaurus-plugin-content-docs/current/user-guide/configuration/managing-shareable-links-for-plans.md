@@ -7,7 +7,7 @@ _i18n_hash: c891b25549cd81c8f45ba60ee6e74105
 
 Ultimate Multisite предоставляет вам возможность напрямую делиться ссылками на планы с вашими клиентами. Для этого перейдите на страницу редактирования любого из ваших планов и нажмите кнопку _Нажмите, чтобы скопировать совместно используемую ссылку_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2DJoMvapXh.png)
+![Product edit page with shareable link button](/img/config/product-edit-full.png)
 
 _На странице редактирования плана вы можете найти кнопку для создания совместно используемых ссылок_
 

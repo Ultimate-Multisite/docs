@@ -13,15 +13,15 @@ _i18n_hash: e579b8554057b98fef08a0f2bd2a0e82
 
 Сначала [войдите в свой аккаунт Closte](https://app.closte.com/), нажмите пункт меню Sites, затем щелкните ссылку Dashboard на сайте, над которым вы сейчас работаете:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dPRIeofCDK.png)
+<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
 Вам будет показано несколько новых пунктов меню с левой стороны экрана. Перейдите на страницу **Settings** с помощью этого меню:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JmSwHIOaGz.png)
+<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
 Затем на странице **Settings** найдите вкладку WP-Config, а затем поле «Additional wp-config.php content» на этой вкладке:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FqVEnSTIu9.png)
+<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
 В контексте установки Ultimate Multisite вам нужно добавить константу sunrise в это поле. Просто добавьте новую строку и вставьте строку ниже. После этого нажмите кнопку **Save All**.
 

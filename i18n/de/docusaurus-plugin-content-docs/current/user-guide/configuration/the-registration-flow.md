@@ -17,19 +17,19 @@ Die Standardseite für die Registrierung ist [_**yourdomain.com/register**_](htt
 
 Nachdem ein Benutzer Ihre Registrierungsseite erreicht hat (normalerweise durch Klicken auf einen **Sign in**- oder **Buy now**-Button), wird er Ihr Registrierungsformular dort sehen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 Alles, was sie tun müssen, ist, alle Pflichtfelder auszufüllen – E‑Mail, Benutzername, Passwort usw. – und für den Plan zu bezahlen oder ihre E‑Mail-Adresse zu bestätigen, wenn sie sich für einen kostenlosen Plan oder einen kostenpflichtigen Plan mit Testphase ohne Zahlungsinformationen registrieren.
 
 Auf der Seite „Thank you“ sehen sie eine Nachricht, die ihnen mitteilt, ob sie ihre E‑Mail-Adresse bestätigen müssen oder ob ihre Website bereits aktiviert ist und sie sie nutzen können.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 Wenn eine Bestätigung der E‑Mail-Adresse erforderlich ist, müssen sie in ihren Posteingang gehen und auf den Verifizierungslink klicken. Ihre Website wird nicht aktiviert, wenn ihre E‑Mail-Adresse nicht verifiziert wird.
 
 Wenn sie sich für einen kostenpflichtigen Plan registriert haben oder die E‑Mail-Verifizierung in Ihrem Netzwerk nicht zwingend ist, wird ihre Website sofort nach dem Checkout aktiviert und ihnen wird ein Link zum Einloggen in ihr Dashboard angezeigt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## Verwendung eines teilbaren Links:
 
@@ -43,30 +43,30 @@ Wenn Sie PayPal, Stripe oder ein anderes von Ultimate Multisite oder seinen Add�
 
 Der Registrierungsprozess ist genau wie oben beschrieben, aber auf der Registrierungsseite sehen Ihre Kunden eine Nachricht, die besagt, dass sie eine E‑Mail mit weiteren Anweisungen zum Abschluss der Zahlung erhalten werden.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 Und nachdem die Registrierung abgeschlossen ist, sehen sie die von Ihnen festgelegten Zahlungsanweisungen (und erhalten diese auch per E‑Mail).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 Die Zahlungsanweisungen können unter **Ultimate Multisite > Settings > Payments** geändert werden, nachdem Sie die Option **Manual** aktiviert haben:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 Nachdem Ihre Kunden die manuelle Zahlung abgeschlossen und Ihnen die Bestätigung gesendet haben, müssen Sie die Zahlung **manuell bestätigen**, um die Mitgliedschaft und die Website des Kunden zu aktivieren.
 
 Dazu gehen Sie zu **Ultimate Multisite > Payments** und suchen die Zahlung des Kunden. Sie sollte noch den Status **Pending** anzeigen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 Klicken Sie auf die Zahlungsnummer und Sie können den Status auf **Completed** ändern.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 Nachdem Sie den Status auf **Completed** geändert haben, sollten Sie eine **Activate membership**-Nachricht sehen. Schalten Sie diese Option **ein**, um die Mitgliedschaft und die Website, die diesem Kunden zugeordnet ist, zu aktivieren. Klicken Sie anschließend auf **Save Payment**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 Ihr Kunde sollte nun in der Lage sein, auf das Dashboard und alle Funktionen zuzugreifen, die er abonniert hat.

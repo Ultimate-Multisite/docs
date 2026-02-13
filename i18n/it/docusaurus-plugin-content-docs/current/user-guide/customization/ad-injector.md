@@ -7,29 +7,29 @@ Ultimate Multisite: Ad Injector è un **add-on gratuito** che ti fornisce gli st
 
 Dopo aver installato Ultimate Multisite: Ad Injector, vai alla pagina _Plugins_ per attivarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KgDegqpbeb.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
 
 _Fai clic sul pulsante Network Activate_
 
 Una volta che l'add-on è attivo, la meta box _Advanced Options_ nella schermata di modifica del piano avrà una nuova opzione chiamata _Ad Settings_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DA7Z84yQTu.png)
+![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
 
 _Ora puoi modificare le impostazioni degli annunci per ciascuno dei tuoi piani_
 
 In quella scheda, potrai aggiungere i codici degli annunci per i post e le pagine nel front-end, prima e dopo il contenuto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Rw9wObGUEN.png)
+<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1TKkWh8qoF.png)
+<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
 
 _Dopo aver inserito il codice del tuo annuncio, verrà visualizzato sui post e sulle pagine di quel piano specifico._
 
 Puoi anche includere annunci nell'intestazione delle Pagine Admin per gli utenti di quel piano.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdpwvfMgTp.png)
+<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1CPGJZn3km.png)
+<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
 
 _Vai all'opzione Admin Panel Ad Code se vuoi visualizzare annunci sul back-end dei tuoi utenti_
 
@@ -39,9 +39,9 @@ Puoi anche utilizzare Ultimate Multisite: Ad Injector per offrire supporto ai pi
 
 Vai semplicemente all'opzione _Admin Panel Ads_ e aggiungi il codice HTML per il tuo strumento di supporto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hnOhLc8s8i.png)
+<!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-09wylykj5l.png)
+<!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
 
 _Aggiungi supporto clienti a piani specifici_
 

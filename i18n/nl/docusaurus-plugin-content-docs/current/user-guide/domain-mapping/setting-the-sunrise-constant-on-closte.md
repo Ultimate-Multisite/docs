@@ -13,15 +13,15 @@ Closte biedt echter een manier om constanten op een veilige manier toe te voegen
 
 Allereerst, [log in op je Closte-account](https://app.closte.com/), klik op het menu-item Sites, en klik vervolgens op de Dashboard-link op de site waarop je momenteel werkt:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dPRIeofCDK.png)
+<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
 Je krijgt een aantal nieuwe menu-items aan de linkerkant van het scherm te zien. Navigeer naar de **Settings**-pagina via dat menu:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JmSwHIOaGz.png)
+<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
 Vervolgens, op de **Settings**, vind je het WP-Config-tabblad, en daarna het veld 'Additional wp-config.php content' op dat tabblad:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FqVEnSTIu9.png)
+<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
 In het kader van het installeren van Ultimate Multisite, moet je de sunrise constant toevoegen aan dat veld. Voeg eenvoudig een nieuwe regel toe en plak de onderstaande regel. Klik daarna op de **Save All**-knop.
 

@@ -7,7 +7,7 @@ _i18n_hash: c891b25549cd81c8f45ba60ee6e74105
 
 Ultimate Multisite vous offre la possibilité de partager directement les liens de plan avec vos clients. Pour ce faire, accédez à la page d'édition de l'un de vos plans et cliquez sur le bouton _Cliquez pour copier le lien partageable_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2DJoMvapXh.png)
+![Product edit page with shareable link button](/img/config/product-edit-full.png)
 
 _On la page d'édition du plan, vous trouverez le bouton pour créer des liens partageables_
 

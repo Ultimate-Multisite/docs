@@ -13,15 +13,15 @@ Tuttavia, Closte offre un modo per aggiungere costanti al wp-config.php in modo 
 
 Per prima cosa, [accedi al tuo account Closte](https://app.closte.com/), fai clic sull'elemento di menu Sites, quindi fai clic sul link Dashboard sul sito su cui stai lavorando:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dPRIeofCDK.png)
+<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
 Ti verrà presentato un numero di nuovi elementi di menu sul lato sinistro dello schermo. Naviga alla pagina **Settings** usando quel menu:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JmSwHIOaGz.png)
+<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
 Quindi, nella pagina **Settings**, trova la scheda WP-Config, e poi il campo "Additional wp-config.php content" su quella scheda:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FqVEnSTIu9.png)
+<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
 Nel contesto dell'installazione di Ultimate Multisite, dovrai aggiungere la costante sunrise a quel campo. Aggiungi semplicemente una nuova riga e incolla la riga riportata di seguito. Successivamente, fai clic sul pulsante **Save All**.
 

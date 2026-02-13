@@ -4,19 +4,20 @@ title: 动作 - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Action: wu_captcha_before_field
+# 动作: wu_captcha_before_field
 
-Fires before the captcha field is rendered.
+在验证码字段渲染之前触发。
 
-## Parameters
+## 参数
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 |------|------|-------------|
-| $args | `array` | The render arguments. |
+| $args | `array` | 渲染参数。 |
 
-### Since
+### 自
 
 - 1.2.0
-### Source
 
-Defined in [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) at line 127
+### 源
+
+在 [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) 第 127 行定义

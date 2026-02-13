@@ -15,7 +15,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 
   * [**Исправление проблем CORS с Font-Icons в сопоставленных доменах**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Изменение позиции пункта меню «Account»
+## Изменение позиции пункта меню «Account» {#changing-the-position-of-the-account-menu-item}
 
 Чтобы изменить позицию пункта меню «Account» на панели инструментов вашего клиента, просто добавьте следующий кодовый фрагмент в файл functions.php активной темы вашего основного сайта. Вы также можете поместить фрагмент в один из ваших mu‑плагинов или пользовательских плагинов.
 
@@ -23,7 +23,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## Как проверить, находится ли пользователь под определённым планом и/или имеет ли активную подписку
+## Как проверить, находится ли пользователь под определённым планом и/или имеет ли активную подписку {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 В качестве администратора сети вам может понадобиться создать пользовательские функции, которые будут выполнять базовые действия или предоставлять сервис/функцию выбранной группе подписчиков или конечных пользователей, исходя из статуса их подписки и плана, к которому они подписаны.
 
@@ -53,33 +53,9 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 Обратите внимание, что пользователи могут подписываться только на **Plan**, а не на Package или Service, поскольку они являются только дополнениями к **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Исправление проблем CORS с Font-Icons в сопоставленных доменах
-
-После сопоставления домена с под‑сайтом вы можете обнаружить, что сайт испытывает трудности с загрузкой пользовательских шрифтов. Это вызвано блокировкой кросс‑доменных запросов в настройках вашего сервера.
-
-Поскольку файлы шрифтов почти всегда загружаются напрямую из CSS, наш плагин сопоставления доменов не может переписать URL‑адреса, чтобы использовать сопоставленный домен вместо оригинального, поэтому, чтобы исправить проблему, вам понадобится изменить файлы конфигурации вашего сервера.
-
-Ниже приведены фрагменты кода для исправления проблемы в Apache и NGINX. Эти изменения требуют продвинутых знаний файлов конфигурации сервера (.htaccess и конфигурационных файлов NGINX). Если вы не уверены в своих навыках, отправьте эту страницу сотрудникам поддержки вашего хостинг‑провайдера для получения помощи.
-
-### Apache
-
-В вашем файле .htaccess добавьте:
-
-```apache
-<FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
-```
-
-### NGINX
-
-В вашем файле конфигурации сервера (расположение может отличаться от сервера к серверу) добавьте:
-
-```nginx
-location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin “*”;}
-```
-
-## Исправление проблем CORS с Font-Icons в сопоставленных доменах
+## Исправление проблем CORS с Font-Icons в сопоставленных доменах {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 После сопоставления домена с под‑сайтом вы можете обнаружить, что сайт испытывает трудности с загрузкой пользовательских шрифтов. Это вызвано блокировкой кросс‑доменных запросов в настройках вашего сервера.
 
@@ -92,7 +68,7 @@ location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-All
 В вашем файле .htaccess добавьте:
 
 ```apache
-<FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
+<FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*"
 ```
 
 ### NGINX
@@ -100,5 +76,5 @@ location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-All
 В вашем файле конфигурации сервера (расположение может отличаться от сервера к серверу) добавьте:
 
 ```nginx
-location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin “*”;}
+location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin "*";}
 ```

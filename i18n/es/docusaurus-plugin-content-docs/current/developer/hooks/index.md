@@ -67,7 +67,6 @@ Documentación generada automáticamente para todas las **59 acciones** y **115 
 - [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Se dispara después de que un objeto se almacene en la base de datos.
 - [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Se dispara después de que un objeto se almacene en la base de datos.
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Se dispara después de que un objeto se almacene en la base de datos.
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — Se dispara después de que un objeto se almacene en la base de datos.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permite a los desarrolladores de plugins agregar acciones al proceso de desbloqueo.
 
 ## Filtros

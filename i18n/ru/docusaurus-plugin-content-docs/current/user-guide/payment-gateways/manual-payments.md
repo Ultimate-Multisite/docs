@@ -17,26 +17,26 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Добавьте в этот блок информацию, необходимую вашему клиенту для совершения платежа. Это могут быть реквизиты вашего банковского счета и ваш e‑mail, чтобы клиент мог отправить вам подтверждение платежа, например.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U0K40VsARU.png)
+![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
 
 После настройки просто нажмите **Save Settings**, и всё готово. Когда пользователи регистрируются в вашей сети, они увидят сообщение, сообщающее им, что они получат ваши инструкции для завершения покупки.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-drAYOHh331.png)
+![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
 
 И они также получат сообщение на вашей странице **Thank You** с вашими инструкциями по оплате.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Nf6HTYbu2g.png)
+![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
 
 ## Подтверждение ручных платежей
 
 Для подтверждения ручного платежа перейдите в меню **Payments** на левой панели. Там вы увидите все платежи в вашей сети и их детали, включая **status**. Ручной платеж всегда будет иметь статус **Pending**, пока вы не измените его вручную.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C3U9LgT2Ev.png)
+![Payments list showing pending manual payment](/img/admin/payments-list.png)
 
 Откройте страницу платежа, кликнув по **reference code**. На этой странице вы увидите все детали ожидающего платежа, такие как ID ссылки, товары, временные метки и прочее.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sXfbxcYFs6.png)
+![Payment details page with reference code and products](/img/admin/payments-list.png)
 
 В правой колонке вы можете изменить статус платежа. Переведя его в **Completed** и включив опцию **Activate Membership**, вы активируете сайт вашего клиента, и его членство станет активным.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-q5hHRxdhfg.png)
+![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)

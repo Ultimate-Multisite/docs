@@ -16,7 +16,7 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 
 要完成此流程，您需要 API 凭据。获取凭据，请前往网络管理员面板，导航至 **Ultimate Multisite > Settings** > **API & Webhooks**，并查找 API 设置部分。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzcShcSVgI.png)  
+![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
 选择 **Enable API** 并获取您的 API 凭据。
 
 现在，让我们先了解该端点，然后在 Zapier 中创建注册操作。
@@ -79,31 +79,31 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 
 在 Google 表单中，创建一个包含创建网络中新会员所需最小字段的表单。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xaVRQkloWg.png)
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
 现在在 Zapier 中，创建一个新的 Zap 并通过保存数据的电子表格连接已创建的 Google 表单。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-67iVl1XK46.png)
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
 完成！Google 表单已与 Zapier 连接并准备好与网络集成。现在让我们进入每次 Google 表单填写时触发的触发器所产生的操作。
 
 找到新的 Ultimate Multisite 应用并选择它。对于此类 Zap，选择 Register 选项。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hq2yHGYR31.png)
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
 完成此第一步后，选择将与此 Zap 连接的账户。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BuyTLt0JUM.png)
+After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
 这是整个流程中最敏感的部分。我们需要将来自 Google 表单的字段与注册端点所需的最小字段匹配，如本文前面所示。
 
 在此示例中，我们仅需配置用户名、电子邮件、密码、网站名称和 URL。其余字段保持预设，以便所有通过此 Google 表单生成的会员遵循相同的产品和状态模式。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4pjTVOmauz.png)
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
 设置完信息后，进行最终测试。在最后一屏中，您可以看到将发送到端点的所有字段、各自的信息以及将为空的字段。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fD2A9dYbDs.png)
+With the information set up, proceed to the final test. On the last screen you can see all the fields that will be sent to the endpoint, their respective information and the fields that will be sent empty.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
 
 测试您的新 Zap，应该能成功完成。如果出现任何错误，请检查所有字段是否已正确发送。由于信息量大，某些细节可能被忽略。
 

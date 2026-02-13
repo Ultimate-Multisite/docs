@@ -17,19 +17,19 @@ _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 참조합니다
 
 사용자가 등록 페이지에 도착하면(보통 **Sign in** 또는 **Buy now** 버튼을 클릭하면), 그곳에서 등록 양식을 확인합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 그들이 해야 할 일은 필수 필드(이메일, 사용자 이름, 비밀번호 등)를 모두 입력하고 플랜 비용을 지불하거나, 무료 플랜 또는 결제 정보 없이 체험 기간이 있는 유료 플랜에 등록하는 경우 이메일 주소를 확인하는 것입니다.
 
 “감사합니다” 페이지에서 이메일 주소를 확인해야 하는지, 아니면 웹사이트가 이미 활성화되어 사용을 시작할 수 있는지 알려주는 메시지를 확인합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 이메일 주소 확인이 필요한 경우, 이메일 수신함으로 이동해 확인 링크를 클릭해야 합니다. 이메일 주소가 확인되지 않으면 웹사이트가 활성화되지 않습니다.
 
 유료 플랜에 등록했거나 네트워크에서 이메일 확인이 필수가 아닌 경우, 결제 직후 웹사이트가 활성화되고 대시보드에 로그인할 수 있는 링크가 표시됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## 공유 가능한 링크 사용하기:
 
@@ -43,30 +43,30 @@ PayPal, Stripe 또는 Ultimate Multisite가 제공하는 다른 결제 게이트
 
 등록 과정은 위와 동일하지만, 등록 페이지에서 고객은 결제를 완료하기 위한 추가 지침이 포함된 이메일을 받을 것이라는 메시지를 확인합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 등록이 완료되면 설정한 결제 지침을 확인할 수 있으며(그리고 이메일에서도 수신합니다).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 결제 지침은 **Ultimate Multisite > Settings > Payments**에서 **Manual** 결제 옵션을 활성화한 후 변경할 수 있습니다:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 고객이 수동 결제를 완료하고 확인서를 보내면, **수동으로 결제 확인**을 수행하여 고객 멤버십과 웹사이트를 활성화해야 합니다.
 
 이렇게 하려면 **Ultimate Multisite > Payments**로 이동해 고객 결제를 찾습니다. 아직도 **Pending** 상태가 표시됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 결제 번호를 클릭하면 상태를 **Completed**로 변경할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 상태를 **Completed**로 변경한 후 **Activate membership** 메시지가 표시됩니다. 이 옵션을 **on**으로 전환해 고객과 연결된 멤버십 및 웹사이트를 활성화한 다음 **Save Payment**를 클릭합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 고객은 이제 대시보드와 구독한 모든 기능에 접근할 수 있어야 합니다.

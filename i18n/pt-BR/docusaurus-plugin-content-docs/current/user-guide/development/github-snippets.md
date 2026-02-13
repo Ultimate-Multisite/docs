@@ -27,7 +27,7 @@ Existem 2 maneiras de adicionar o código
 
   3. Clique no arquivo `functions.php` na seção "Arquivos do Tema" para carregá-lo. Role até o final e cole o snippet do Ultimate Multisite que você obteve do repositório GitHub.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
 # Como criar Must-Use Plugins (mu-plugins)
 
@@ -39,7 +39,7 @@ Esses mu-plugins especiais são carregados antes de todos os demais plugins regu
 
   2. Dentro do diretório `wp-content` da sua instalação WordPress, crie um novo diretório chamado: mu-plugins.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
 
   3. Crie um novo arquivo PHP em seu computador chamado `wu-snippet.php` usando o Bloco de Notas ou qualquer editor de código.
 

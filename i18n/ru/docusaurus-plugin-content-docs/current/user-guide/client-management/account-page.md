@@ -15,9 +15,9 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Страница аккаунта доступна, щёлкнув **Account** в панели управления вашего клиента.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LrGNKCDc8R.png)
+![Account menu in the customer dashboard](/img/admin/dashboard.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FTDgqcwaO0.png)
+![Customer account page overview](/img/admin/dashboard.png)
 
 После того как клиент нажмёт на неё, он увидит обзор своего членства, адреса выставления счетов, счетов, доменов, ограничений сайта, и также сможет изменить ****Site Template** (если это разрешено в вашей сети)**.  
 
@@ -27,11 +27,11 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Первая блок сразу под названием сайта вашего клиента показывает обзор текущего плана и услуг/пакетов, которые были приобретены с ним. Блок также показывает номер членства, первоначальную сумму, уплаченную за него, стоимость плана и любой услуги/пакета и сколько раз за это членство было выставлено счета. Они также могут увидеть, является ли членство **Active**, **Expired** или **Canceled**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-XNTPsXaqzp.png)
+![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
 
 Ниже этого блока ваши клиенты могут увидеть блоки **About This Site** и **Site Limits**. Эти блоки показывают им все ограничения, которые входят в их план: дисковое пространство, сообщения, страницы, посещения и т.д. Эти ограничения можно настроить на каждой странице плана в **Ultimate Multisite > Products**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6kVmMDoiCU.png)
+![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
 
 С правой стороны **Your Membership** клиенты могут нажать **Change**. Это покажет им все доступные планы и пакеты/услуги. Если они выберут другой план, ограничения для плана заменят текущие ограничения членства — не важно, снижают ли они или повышают его.
 
@@ -43,11 +43,11 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 На странице аккаунта ваши клиенты также могут обновить свой адрес выставления счетов. Им просто нужно нажать **Update** рядом с _Billing Address_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GLQ21kppU2.png)
+![Billing Address section with Update button](/img/admin/customers-list.png)
 
 Появится новое окно для вашего клиента. Всё, что ему нужно сделать, это заполнить новый адрес и нажать _Save Changes_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Z2nY05cYvD.png)
+![Update billing address form](/img/admin/customers-list.png)
 
 ### Изменение шаблона сайта
 
@@ -55,20 +55,20 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Также в **Ultimate Multisite > Products** выберите свои планы и перейдите на вкладку **Site Templates**. Убедитесь, что опция **Allow Site Templates** включена, а в **Site Template Selection Mode** выбрана опция **Choose Available Site Templates**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rjixD7iShD.png)
+![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
 
 Вы сможете увидеть все доступные шаблоны сайтов на вашем сайте. Выберите те, которые хотите сделать доступными, и те, которые не хотите, чтобы были доступны вашим клиентам, подписанным на этот план. Обратите внимание, что эти параметры также влияют на форму оформления заказа, поэтому любой шаблон, выбранный как **Not Available**, не будет отображаться на странице регистрации для этого плана.
 
 Теперь ваши клиенты могут нажать **Change Site Template** на своей странице аккаунта.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5pdvAuh6h3.png)  
+![Change Site Template button on account page](/img/admin/dashboard.png)
 Список всех доступных шаблонов сайтов для этого плана появится для вашего клиента.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bQSA663xNo.png)
+![Available site templates list for the plan](/img/config/site-templates-list.png)
 
 После выбора того, на что они хотят изменить, их попросят подтвердить изменение.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6azvPydgAU.png)
+![Site template switch confirmation dialog](/img/admin/dashboard.png)
 
 После включения подтверждения и нажатия **Process Switch** новый шаблон сайта будет использован на сайте вашего клиента.
 
@@ -82,23 +82,23 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Перейдите в **Ultimate Multisite > Products**. Выберите нужный план и перейдите на вкладку **Custom Domains**. Включите опцию **Allow Custom Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-J7mrCTfet6.png)
+![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
 
 Это позволит всем клиентам, подписанным на этот конкретный план, использовать пользовательские домены. Теперь, на странице аккаунта, ваши клиенты могут добавить пользовательский домен, нажав **Add Domain**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0mbLgC86SG.png)
+![Add Domain button on the account page](/img/admin/domains-list.png)
 
 Первое открывающееся окно покажет вашим клиентам сообщение с инструкциями о том, как обновить их DNS-записи, чтобы этот пользовательский домен работал в вашей сети.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-emhM26Abhn.png)
+![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
 
 Это сообщение можно отредактировать (вы) в **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6ZjI8Fk6Gw.png)
+![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
 
 После нажатия **Next Step** ваши клиенты могут добавить своё пользовательское доменное имя и выбрать, будет ли этот пользовательский домен основным. Обратите внимание, что ваши клиенты могут использовать более одного пользовательского домена для своих сайтов, поэтому они могут выбрать, какой из них будет основным.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pSzZowjc2a.png)
+![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
 
 После нажатия **Add Domain** домен будет добавлен в аккаунт вашего клиента. Всё, что им теперь нужно сделать, это изменить DNS-записи этого пользовательского домена у их регистратора доменов.
 
@@ -106,22 +106,22 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Внутри панели управления аккаунтом ваши клиенты также могут изменить свой пароль, нажав **Change Password**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sihWaIk4B8.png)
+![Change Password button on account page](/img/admin/dashboard.png)
 
 Это откроет новое окно, где ваши клиенты должны будут ввести свой текущий пароль, а затем новый пароль, который они хотят использовать.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5zCgtcHfgB.png)
+![Change password form with current and new password fields](/img/admin/dashboard.png)
 
 ### Зона опасности
 
 У нас также есть две опции, отображаемые в разделе **Danger Zone**: **Delete Site** и **Delete Account**. Они обе находятся в разделе Danger Zone, потому что эти два действия необратимы. Если ваши клиенты удалят свой сайт или аккаунт, они не смогут восстановить их.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FMNX249rFi.png)
+![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
 
 Если ваши клиенты нажмут любую из этих двух опций, им будет показано окно, где им нужно будет включить опцию удаления сайта или аккаунта, и они будут предупреждены, что это действие нельзя отменить.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MRI6taFdJK.png)
+![Delete Site confirmation dialog](/img/admin/dashboard.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-itpv48GPgY.png)
+![Delete Account confirmation dialog](/img/admin/dashboard.png)
 
 Если они удалят свой сайт, их аккаунт и членство останутся нетронутыми. Они просто потеряют весь контент на своём сайте. Если они удалят свой аккаунт, все сайты, членства и информация об этом аккаунте будут потеряны.

@@ -11,7 +11,7 @@ PROテーマは、クライアントのダッシュボードをカスタマイ�
 
 インストール後、_Plugins_ ページに移動し、ネットワーク上で有効化をクリックしてください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _Pluginsページでネットワーク全体に有効化する_
 
@@ -19,29 +19,29 @@ _**NOTE:**_ _インストールしただけでは、クライアント側にテ�
 
 これで管理インターフェースが完全に再設計されました！左側の列にPROテーマという新しいメニューも追加されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 管理パネルの全く新しい外観
 
 このメニューでは、5つのタブにアクセスできます：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 スタイリング設定
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 機能
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 カスタムCSS
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 インポート/エクスポート
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 PROテーマを有効化
 
@@ -49,10 +49,10 @@ PROテーマを有効化
 
 調整後に得られる例を示します：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 クライアントのダッシュボード
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 カスタマイズされたログインページ

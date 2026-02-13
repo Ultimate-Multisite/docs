@@ -13,7 +13,7 @@ Hoewel ze een gemakkelijke en flexibele manier zijn om verschillende benaderinge
 
 Bij de installatie van Ultimate Multisite worden automatisch aangepaste inlog- en registratiepagina's op je hoofdsit gemaakt. Je kunt deze standaardpagina's op elk moment wijzigen via je **Ultimate Multisite > Settings > Login & Registration** pagina.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-K3a5Ol4prD.png)
+![Login and Registration settings page](/img/config/settings-general.png)
 
 Laten we elk van de opties bekijken die je kunt aanpassen op de **Login & Registration** pagina:
 
@@ -47,7 +47,7 @@ Beide inlog- en registratiepagina's bevatten shortcodes: **[wu_login_form]** op 
 
 Om toegang te krijgen tot deze functie, ga naar het **Checkout Forms** menu, aan de linkerkant.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vvxvSRGAfu.png)
+![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
 
 Op deze pagina zie je alle checkoutformulieren die je hebt.
 
@@ -55,11 +55,11 @@ Wil je er een nieuwe maken, klik dan op **Add Checkout Form** bovenaan de pagina
 
 Je kunt een van deze drie opties kiezen als startpunt: single step, multi-step of blank. Klik vervolgens op **Go to the Editor**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
 
 Je kunt ook de formulieren die je al hebt bewerken of dupliceren door op de opties onder de naam te klikken. Daar vind je ook de opties om de shortcode van het formulier te kopiëren of het formulier te verwijderen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
 
 Als je single step of multi-step kiest, wordt het checkoutformulier al vooraf ingevuld met de basisstappen om te werken. Vervolgens kun je, indien gewenst, extra stappen toevoegen.
 
@@ -69,31 +69,31 @@ Zoals we eerder al zeiden, kun je checkoutformulieren maken voor verschillende d
 
 Na het navigeren naar de checkoutformulier-editor, geef je het formulier een naam (die alleen intern wordt gebruikt) en een slug (bijvoorbeeld om shortcodes te maken).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
 
 Formulieren bestaan uit stappen en velden. Je kunt een nieuwe stap toevoegen door op **Add New Checkout Step** te klikken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9Wgpw8DTj9.png)
+![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
 
 Op het eerste tabblad van het modale venster vul je de inhoud van de stap van je formulier in. Geef het een ID, een naam en een beschrijving. Deze items worden voornamelijk intern gebruikt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lr6RKlgll1.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
 
 Stel vervolgens de zichtbaarheid van de stap in. Je kunt kiezen tussen **Always show**, **Only show for logged in users** of **Only show for guests**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0Q6LxP9E90.png)
+![Checkout step visibility options](/img/config/checkout-form-step.png)
 
 Ten slotte configureer je de stijl van de stap. Dit zijn optionele velden.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WmBuHXYH7N.png)
+![Checkout step style configuration](/img/config/checkout-form-step.png)
 
 Nu is het tijd om velden toe te voegen aan onze eerste stap. Klik op **Add New Field** en selecteer het type sectie dat je wilt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vM8n8QuTzk.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HkNUp6cWRG.png)
+![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
 
 Elk veld heeft verschillende parameters om in te vullen. Voor deze eerste invoer kiezen we het **Username** veld.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PFaP6RufZU.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U6Mm10qIeF.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Lr1mEi1DlH.png)
+![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
 
 Je kunt zo veel stappen en velden toevoegen als je nodig hebt. Om je producten voor je klanten zichtbaar te maken zodat ze er een kunnen kiezen, gebruik je het Pricing Table veld. Als je wilt dat je klanten een sjabloon kiezen, voeg je het Template Selection veld toe. En zo verder.
 
@@ -103,23 +103,23 @@ _**Opmerking 2:** username, email, password, site title, site URL, order summary
 
 Terwijl je aan je checkoutformulier werkt, kun je altijd de Preview-knop gebruiken om te zien hoe je klanten het formulier zien. Je kunt ook wisselen tussen weergave als bestaande gebruiker of bezoeker.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3zPxZNqzkG.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YXZp7n5Nuw.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
 
 Ten slotte kun je op **Advanced Options** het bericht voor de **Thank You** pagina configureren, snippets toevoegen om conversies te volgen, aangepaste CSS toevoegen aan je checkoutformulier of het beperken tot bepaalde landen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TVQ9EUbGJ6.png)
+![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
 
 Je kunt je checkoutformulier ook handmatig inschakelen of uitschakelen door deze optie in de rechterkolom in te schakelen, of het formulier permanent verwijderen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-N5wdel1IIp.png)
+![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
 
 Vergeet niet je checkoutformulier op te slaan!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rJPV89yQZt.png)
+![Save Checkout Form button](/img/config/checkout-form-save.png)
 
 Om de shortcode van je formulier te krijgen, klik op **Generate Shortcode** en kopieer het resultaat dat in het modale venster wordt weergegeven.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RTJclNTnJZ.png)
+![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
 
 _**Opmerking:** Je moet deze shortcode toevoegen aan je registratiepagina om dit checkoutformulier toe te voegen._
 
@@ -131,7 +131,7 @@ Als je aangepaste prijstabellen voor je producten wilt maken en vooraf het produ
 
 Ga naar **Ultimate Multisite > Products > Select a plan**. Je zou de knop **Click to copy Shareable Link** bovenaan de pagina moeten zien. Dit is de link die je kunt gebruiken om dit specifieke plan vooraf te selecteren op je checkoutformulier.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bUyOlBEfNj.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Let op dat deze shareable link alleen geldig is voor **Plans**. Je kunt shareable links niet gebruiken voor pakketten of diensten.
 
@@ -141,7 +141,7 @@ Als je site‑sjablonen vooraf wilt selecteren op je checkoutformulier, kun je d
 
 Klik op **Manage** recht onder het site‑sjabloon dat je wilt gebruiken. Je ziet het SITE ID nummer. Gebruik dit nummer gewoon voor dit specifieke site‑sjabloon om vooraf te selecteren op je checkoutformulier. In ons geval hier, zou de URL‑parameter **?template_id=2** zijn.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JEgVAVNYMu.png)
+![Sites list showing site template ID](/img/config/site-templates-list.png)
 
 Stel dat onze netwerkwebsite [**www.mynetwork.com**](http://www.mynetwork.com) is en onze registratiepagina met ons checkoutformulier zich bevindt op de **/register** pagina. De volledige URL met dit site‑sjabloon vooraf geselecteerd ziet er uit als [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 

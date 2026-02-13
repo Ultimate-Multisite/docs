@@ -23,39 +23,39 @@ _**ВАЖНО: Перед тем как начать обновление с в�
 
 _**ПРИМЕЧАНИЕ:** Если на вашей Multisite установлена Ultimate Multisite 1.x, у вас будет возможность заменить плагин на загруженную версию. Пожалуйста, перейдите и нажмите **Заменить текущий на загруженный**._
 
-![](https://support.delta.nextpress.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDRjIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2aff9b312e5b7ec95c9e2c5355480d4aa7258fd/Migration.png)
+<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
 
 Следующая страница сообщит вам, какие устаревшие дополнения вы установили вместе с версией 1.x. Там будут указания, совместима ли используемая вами версия с версией 2.0 или вам нужно установить обновлённую версию дополнения после миграции.
 
-![Message on the top of the plugins page: Thanks for updating to Ultimate Multisite version 2.0. There's a link below it that leads the user to the version upgrader. Then, there's a list of add-ons that need to be updated.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4E9kAFlcb5.png)
+<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
 
 Когда вы будете готовы продолжить, вы можете нажать кнопку **Перейти к установщику, чтобы завершить обновление**.
 
-![Framed in red: button saying Visit the Installer to finish the upgrade](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BnJrjt7Drw.png)
+<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
 
 Затем вы попадёте на страницу мастера установки с приветственными сообщениями. Просто нажмите **Начать** (Get Started), чтобы перейти к следующей странице.
 
-![Setup Wizard's welcoming page. Framed in red at the bottom-right corner: Get Started button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1dvRbsEnrN.png)
+<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
 
 После нажатия **Начать** (Get Started) вы будете перенаправлены на страницу Предварительные проверки_._. Там будет показана информация о системе и установке WordPress, а также будет сообщено, соответствует ли она **требованиям Ultimate Multisite**.
 
-![Pre-install Checks page showing confirmation messages that the installation meets Ultimate Multisite's requirements. Framed on red, on the bottom-right corner: Go to the next step button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i0SwDNkaEO.png)
+<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
 
 Следующий шаг — ввести ключ лицензии Ultimate Multisite и активировать плагин. Это гарантирует, что все функции, включая дополнения, будут доступны на вашем сайте.
 
-![License activation page listing what the support includes and what it doesn't. There's a box on the bottom to insert the plugin's license. Framed in red, on the bottom-right corner: Agree and activate button.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QAwmR9oLQL.png)
+<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
 
 После ввода ключа нажмите **Согласиться и активировать** (Agree & Activate).
 
 После активации лицензии вы можете начать реальную установку, нажав **Установить** (Install) на следующей странице. Это автоматически создаст необходимые файлы и базу данных, необходимые для работы версии 2.0.
 
-![Installation page showing what will be updated in order to Ultimate Multisite to function. Framed in red, on the bottom-right: Install button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FCyBH12y4d.png)
+<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
 ## Теперь миграция
 
 Мигратор имеет встроенную защиту, которая проверит всю вашу Multisite, чтобы убедиться, что все данные Ultimate Multisite можно перенести без проблем. Нажмите кнопку **Запустить проверку** (Run Check), чтобы начать процесс.
 
-![Migration page explaining it will run a check to see if all your data from v1 can be converted. Framed in red, on the bottom-right corner: Run check button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vXLXFLjogz.png)
+<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
 
 После выполнения проверки у вас есть два варианта: результат может быть **с** ошибкой или **без** ошибки.
 
@@ -69,9 +69,9 @@ _**Поскольку система обнаружила ошибку, вы н�
 
 Если система не обнаружит ошибок, вы увидите сообщение об успехе и кнопку **Мигрировать** (Migrate) внизу, которая позволит вам продолжить миграцию. На этой странице вам будет напомнено создать резервную копию базы данных перед продолжением, что мы настоятельно рекомендуем. Нажмите **Мигрировать**, если у вас уже есть резервная копия.
 
-![Migration page showing a success message and a recommendation to create a backup.](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T5ELIgTX5a.png)
+<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
 
-![Framed in red, on the bottom-right corner: Migrate button](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y2AfV93rpf.png)
+<!-- Screenshot unavailable: Migrate button on the bottom-right corner -->
 
 И всё, что нужно!
 

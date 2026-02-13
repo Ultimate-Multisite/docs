@@ -11,7 +11,7 @@ Le thème PRO est un thème d'administration développé pour vous aider à pers
 
 Après l'avoir installé, allez sur votre page _Plugins_ et cliquez pour l'activer sur votre réseau.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _Activez-le à l'échelle du réseau sur votre page Plugins_
 
@@ -19,29 +19,29 @@ _**NOTE :**_ _Si vous l'installez simplement, il apparaîtra chez votre client c
 
 Maintenant, votre interface d'administration est complètement repensée ! Vous disposez également d'un nouveau menu dans la colonne de gauche appelé PRO Theme.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 _Un tout nouveau look pour votre panneau d'administration_
 
 Dans ce menu, vous aurez accès à cinq onglets :
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 _Paramètres de style_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 _Fonctionnalité_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 _CSS personnalisé_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 _Import/Export_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 _Activer le thème PRO_
 
@@ -49,10 +49,10 @@ Dans chacun d'eux, vous pouvez activer et désactiver les éléments de style, a
 
 Voici un exemple de ce que vous pouvez obtenir après quelques ajustements :
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 _Le tableau de bord de votre client_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 _Une page de connexion personnalisée_

@@ -16,33 +16,33 @@ Zapier имеет интеграцию с более чем 5000 приложе�
 Сначала найдите Ultimate Multisite в списке приложений Zapier. В качестве альтернативы вы можете перейти по [этой ссылке](https://zapier.com/apps/wp-ultimo/integrations).  
 Перейдите на свою панель управления и нажмите кнопку **+** **Create Zap** в левой боковой панели, чтобы настроить новый Zap.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kyu5ufUXOv.png)
+![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
 
 Вы будете перенаправлены на страницу создания Zap.  
 
 В поле поиска введите «wp ultimo». Нажмите, чтобы выбрать вариант **Beta**.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BrOYbp7dSE.png)
+![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
 
 После выбора нашего приложения выберите доступное событие: **New Ultimate Multisite Event**.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-srblXqJnQE.png)
+![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
 
 Теперь нам нужно предоставить Zapier доступ к **вашей сети**. Нажатие на **Sign in** откроет новое окно, требующее **API credentials**.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HcULsQoFpZ.png)
+![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
 
 Перейдите в панель администратора вашей сети и откройте **Ultimate Multisite > Settings** > **API & Webhooks**, затем найдите раздел API Settings.  
 
 Выберите опцию **Enable API**, так как она необходима для работы этого соединения.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-l7KbeKUkPX.png)
+![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
 
 Используйте значок **Copy to Clipboard** в полях API Key и API Secret и вставьте эти значения на экране интеграции.  
 
 В поле URL укажите полный URL вашей сети, включая протокол (HTTP или HTTPS).  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4UVPQAlzYk.png)
+![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
 
 Нажмите кнопку **Yes, Continue**, чтобы перейти к следующему шагу. Если всё прошло успешно, вы увидите сообщение о новом подключённом аккаунте! Нажмите **Continue**, чтобы создать новый триггер.  
 
@@ -50,15 +50,15 @@ Zapier имеет интеграцию с более чем 5000 приложе�
 
 Теперь, когда ваш аккаунт подключён, вы можете увидеть доступные события. Выберите событие **payment_received** для этого руководства.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jZE7WgSGw8.png)
+![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
 
 После выбора события и нажатия **continue** появится **test step**.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SWo5wbMkgZ.png)
+![Zapier test step for the trigger](/img/admin/webhooks-list.png)
 
 На этом этапе Zapier проверит, может ли ваш Zap **получить конкретную полезную нагрузку для этого события**. В будущих событиях того же типа будет отправлена информация с той же структурой.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-CVCJxhN3ai.png)
+![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
 
 В нашем руководстве тест был **успешно завершён** и вернул пример полезной нагрузки. Эта примерная информация будет полезна при создании действий. Ваш триггер теперь создан и готов к подключению к другим приложениям.  
 
@@ -68,26 +68,26 @@ Actions используют информацию из других тригге
 
 В шаге **creating an action** вы выберете Ultimate Multisite **Beta** и опцию **Create Items on Ultimate Multisite**.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-swCbHP8jNG.png)
+![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
 На следующем шаге вы либо создадите свою аутентификацию, как мы делали в разделе **How to start**, либо выберете уже созданную аутентификацию. В этом руководстве мы выберем ту же аутентификацию, созданную ранее.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iRSFnhpoHv.png)
+![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
 ### Настройка Action
 
 Это **основной шаг действия**, и здесь всё немного иначе. Первая информация, которую вы выберете, — это **Item**. Item — это **информационная модель** вашей сети, такая как **Customers, Payments, Sites, Emails** и другие.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GC4iHxBn4e.png)
+![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
 
 При выборе элемента форма **перестраивается**, чтобы показать обязательные и необязательные поля для выбранного элемента.  
 
 Например, при выборе элемента **Customer** поля формы покажут всё, что необходимо заполнить для создания нового Customer в сети.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4xpHH5xTaf.png)
+![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
 
 После заполнения всех полей, отмеченных как **required**, и нажатия **continue**, последний экран покажет заполненные поля и те, которые остались пустыми.  
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JLPq56npV6.png)
+![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
 
 Как только ваш тест завершится успешно, ваше действие будет настроено. Также важно проверить в вашей сети, был ли создан элемент после теста вашего действия.

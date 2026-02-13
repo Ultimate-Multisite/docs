@@ -21,15 +21,15 @@ Dat klinkt geweldig, maar hoe maak ik een nieuwe site template? Het is zo eenvou
 
 Site Templates zijn gewoon normale sites op uw netwerk. Om een nieuwe template te maken, gaat u eenvoudig naar **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![add site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-D1F8SOUTYU.png)**
+**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
 
 Dit opent een modaal venster waarin wordt gevraagd naar de **Site title, Site Domain/path,** en **Site type**. Onder het **Site Type** dropdown-menu zorgt u ervoor dat u **Site Template** selecteert *.*
 
-_![Add site template modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-gGWUnGCS36.png)_
+_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
 Onderaan het formulier ziet u een **Copy Site** schakelaar. Hiermee kunt u een nieuwe site template maken op basis van een bestaande site template als uitgangspunt, zodat u tijd bespaart in plaats van een site template vanaf nul te maken.
 
-![Add site template modal 2](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DVSq5dgWfa.png)
+![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
 ### De inhoud van een Site Sjabloon aanpassen
 
@@ -59,11 +59,11 @@ In deze modus kunnen uw klanten geen template kiezen wanneer ze een account aanm
 
 Om dit te doen, gaat u naar **Ultimate Multisite > Products > Edit**.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-t7UjzQEG5g.png)
+![Edit product to assign site template](/img/config/product-site-templates.png)
 
 Dit brengt u naar de **Edit Product** pagina. Onder het gedeelte **Product Options** vindt u het tabblad **Site template** en selecteert u de optie **Assign Site Template** uit het dropdown-menu. Dit toont de lijst met beschikbare site templates en stelt u in staat om slechts één site template toe te wijzen aan het product.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HTcetltjLR.png)
+![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
 #### Modus 2: Beschikbare Site Template kiezen
 
@@ -71,27 +71,27 @@ In deze modus geeft u uw klanten een keuze tijdens het aanmeldingsproces. Ze kun
 
 Op de **Edit Product** pagina. Onder het gedeelte **Product Options** vindt u het tabblad **Site template** en selecteert u de optie **Choose Available Site Template** uit het dropdown-menu. Dit toont de lijst met beschikbare site templates en stelt u in staat om het site template te selecteren dat u wilt aanbieden. U kunt dit doen door het gedrag te kiezen: **Available** als u wilt dat het site template op de lijst staat. **Not Available** als u wilt dat het site template niet als optie verschijnt. En **Pre-selected** als u wilt dat een van de genoemde site templates standaard is geselecteerd.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dY8gSreOfG.png)
+![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
 ### Standaardmodus: Site template selectie op het afrekenformulier
 
 Als u wilt dat al uw site templates beschikbaar zijn tijdens de registratie, of als u het extra werk van het toewijzen of specificeren van site templates onder elk product dat u maakt, liever vermijdt, kunt u eenvoudig de site template selectie instellen onder uw **Checkout Form**. Ga hiervoor naar **Ultimate Multisite > Checkout Forms**. Klik vervolgens op **Edit** onder het formulier dat u wilt configureren.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FaXifuzMu3.png)
+![Checkout forms list page](/img/config/checkout-forms-list.png)
 
 Dit brengt u naar de pagina **Edit Checkout Form**. Zoek het veld **Template Selection** en klik op **Edit** eronder.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZDAp4vdnve.png)
+![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
 
 Een modaal venster verschijnt. Onder het veld **Template Sites** kunt u alle site templates selecteren en opsommen die beschikbaar moeten zijn tijdens de registratie. De site templates die u hier opgeeft, zijn beschikbaar ongeacht welk product de gebruiker heeft geselecteerd.
 
-![Assign site template](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pCSfzJkf4d.png)
+![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
 
 ### Site Template Opties
 
 Er zijn andere functies voor site templates beschikbaar die u kunt in- of uitschakelen onder de instellingen van Ultimate Multisite.
 
-![Site template option](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wrwT3rqFEf.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 #### Template Switching toestaan
 
@@ -115,21 +115,21 @@ Een van de krachtigste functies van Ultimate Multisite is het vermogen om willek
 
 Bijvoorbeeld, als u het bedrijfsnaam van uw eindgebruiker tijdens de registratie wilt verkrijgen en automatisch op de startpagina wilt plaatsen. Op de startpagina van uw template site moet u de tijdelijke aanduidingen toevoegen, zoals in de afbeelding hieronder (tijdelijke aanduidingen moeten worden omgeven door dubbele accolades - {{placeholder_name}}).
 
-![homepage placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yEOlZVv2Gr.png)
+![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
 Vervolgens kunt u eenvoudig een overeenkomstig registratieveld toevoegen aan uw afrekenformulier om die gegevens vast te leggen:
 
-![checkout form](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9adTd73gNT.png)
+![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
 
 Uw klant kan dat veld vervolgens invullen tijdens de registratie.
 
-![registration field](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jHQ9ZOGWlh.png)
+![Registration field filled by customer](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-preview)
+![Preview of the registration form](/img/config/checkout-form-editor.png)
 
 Ultimate Multisite vervangt vervolgens de tijdelijke aanduidingen automatisch met de door de klant verstrekte gegevens.
 
-![replace placeholder](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-chL5wf7wmY.png)
+![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
 ### Het probleem 'template vol tijdelijke aanduidingen' oplossen
 
@@ -139,8 +139,8 @@ Om dit op te lossen, bieden we de optie om nepwaarden in te stellen voor de tijd
 
 U kunt toegang krijgen tot de editor voor template placeholders door naar **Ultimate Multisite > Settings > Sites** te gaan, en vervolgens op de zijbalk op de link **Edit Placeholders** te klikken.
 
-![placeholder settings](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztZnAexNEZ.png)
+![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
 
 Dat brengt u naar de inhoudseditor voor placeholders, waar u placeholders en hun bijbehorende inhoud kunt toevoegen.
 
-![template placeholders](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-95QJa1MRGz.png)
+![Template placeholders content editor](/img/config/settings-sites.png)

@@ -1,0 +1,114 @@
+---
+title: Tutor Multisite Kompatibiliteit
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+'n WordPress-plug-in wat kompatibiliteitsreparasies vir Tutor LMS in multisite-omgewings byvoeg.
+
+## Description
+
+Hierdie plug-in verskaf noodsaaklike kompatibiliteitsreparasies vir die werking van Tutor LMS op WordPress multisite-netwerke. Dit hanteer gebruikersinschrijving, onderrigbeheer, kursusbeperkings, en ander multisite-spesifieke funksionaliteit.
+
+## Features
+
+- **Database Tabelbestuur**: Ontdek en skep outomaties ontbrekende Tutor LMS-tabelle wat misluk as gevolg van multisite-buitenskryfsbeperkings
+- **Multisite Gebruikerinschrijving**: Pasgemaakte AJAX-hanteerders vir die bestuur van gebruikerinschrijving oor netwerkwebwerwe
+- **Onderwyser Rolbestuur**: Outomatiese toekenning en bestuur van onderwyserrolle in multisite-omgewings
+- **Kursusbeperkings**: Integrasie met Ultimate Multisite vir die bestuur van kursus- en foonkryskreërbeperkings gebaseer op webwerfplanne
+- **Pasgemaakte Administrateur-uitsigte**: Multisite-bewuste onderwyserlys en bestuurkoppelvlak
+- **Administrateur Gereedskap**: Databasebestuurkoppelvlak vir netwerk- en webwerfadministrateurs
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS-plug-in (outomaties afdwing deur `Requires Plugins`-kop)
+- WordPress Multisite installasie
+- Ultimate Multisite-plug-in (vir kursusbeperkingsfunksionaliteit)
+
+## Installation
+
+1. Laai die plug-in lêers op na `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Verseker dat Tutor LMS geïnstalleer en geaktiveer is
+3. Aktiveer die plug-in via die 'Plugins'-menu in WordPress
+4. Die plug-in sal outomaties integreer met Tutor LMS
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+Hierdie plug-in bevat funksionaliteit wat voorheen in `wp-content/mu-plugins/daves.php` was:
+
+- Kursusstatusverandering beperkings
+- Kursuscreëringsbeperkings
+- CartFlows-integrasie en beperkings
+- Tutor onderwyserrolbestuur
+- Multisite gebruikerinschrijving hanteer
+- Kursusproduk-ID vertoning
+
+## Database Management
+
+### The Problem
+
+In WordPress multisite-omgewings, misluk die skep van Tutor LMS-tabelle vir tabelle met buite-sleutelbeperkings na die gebruikerstabel. Dit gebeur omdat:
+
+- Webwerf-spesifieke tabelle gebruik voorvoegs soos `wp_2_tutor_carts`
+- Buite-sleutels verwys na `wp_2_users` (wat nie bestaan nie)
+- Die werklike gebruikerstabel is `wp_users` (gedeel oor die netwerk)
+
+### The Solution
+
+Hierdie plug-in doen dit outomaties:
+
+1. **Ontdek ontbrekende tabelle**: Kontroleer tabelle wat misluk het om te skep as gevolg van buite-sleutelbeperkings
+2. **Skep tabelle met korrekte verwysings**: Gebruik die korrekte gebruikerstabelnaam (`wp_users` in multisite)
+3. **Hanteer verskeie scenario's**: Hanteer verskeie scenario's: plug-in aktivering/hertivering, nuwe webwerf skep in netwerk, handmatige tabelkontrole via admin-koppelvlak
+
+### Affected Tables
+
+- `tutor_coupon_usages` - Bevat buite-sleutel na gebruikerstabel
+- `tutor_carts` - Bevat buite-sleutel na gebruikerstabel
+- `tutor_notification_preferences` - TutorPro-tabel met buite-sleutel na gebruikerstabel
+
+## Admin Interface
+
+Toegang tot die databasebestuurtools by:
+
+- **Network Admin**: Instellings → Tutor Multisite DB
+- **Site Admin**: Gereedskap → Tutor Multisite DB
+
+Die koppelvlak laat jou toe om:
+
+- Bekyk ontbrekende tabelle oor alle webwerwe
+- Handmatig tabelskep aktiveer
+- Kontroleer databasiskonfigurasie
+- Bekyk gedetailleerde statusinligting
+
+## Support
+
+Hierdie plug-in is spesifiek ontwerp vir die KursoPro-platform. Vir tegniese ondersteuning, kontak die ontwikkelingspan.

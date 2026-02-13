@@ -15,11 +15,11 @@ Ultimate Multisite 방송 기능을 사용하면 **관리자 공지사항**을 �
 
 시스템 유지보수나 기존 사용자에게 새로운 제품 또는 서비스를 제공하는 공지를 해야 할 때 매우 유용합니다. 아래는 사용자 대시보드에 표시되는 관리자 공지사항 예시입니다.
 
-![broadcast account](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 관리자 공지사항을 시작하려면 네트워크 관리자 대시보드로 이동한 뒤 **Ultimate Multisite** 메뉴 아래에서 **Broadcasts** 옵션을 찾습니다.
 
-![broadcast admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 이 페이지에서 상단의 **Add Broadcast** 버튼을 클릭합니다.
 
@@ -27,7 +27,7 @@ Ultimate Multisite 방송 기능을 사용하면 **관리자 공지사항**을 �
 
 **Message**를 선택한 뒤 **Next Step** 버튼을 클릭합니다.
 
-![broadcast admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 다음 창에서는 **Target customer** 또는 **Target product**를 선택하도록 요청합니다. 하나 이상의 사용자 또는 제품을 선택할 수 있습니다.
 
@@ -37,11 +37,11 @@ Ultimate Multisite 방송 기능을 사용하면 **관리자 공지사항**을 �
 
 그런 다음 **Next Step** 버튼을 클릭합니다.
 
-![broadcast admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 다음 창에서는 제목과 사용자에게 방송할 내용/메시지를 입력하여 메시지 작성을 시작할 수 있습니다.
 
-![broadcast admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 메시지를 작성한 후 **Send** 버튼을 클릭합니다.
 
@@ -53,13 +53,13 @@ Ultimate Multisite 방송 기능을 사용하면 사용자에게 이메일을 �
 
 이메일 방송을 시작하려면 네트워크 관리자 대시보드로 이동한 뒤 **Ultimate Multisite** 메뉴 아래에서 **Broadcast** 옵션을 찾습니다.
 
-![email admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 이 페이지에서 상단의 **Add broadcast** 버튼을 클릭합니다.
 
 그러면 **Add broadcast** 모달 창이 열리며, 전송하려는 방송 유형을 선택할 수 있습니다. **Email**을 선택한 뒤 **Next Step** 버튼을 클릭합니다.
 
-![email admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 다음 창에서는 **Target customer** 또는 **Target produc** t를 선택하도록 요청합니다. 하나 이상의 사용자 또는 제품을 선택할 수 있습니다.
 
@@ -67,11 +67,11 @@ Ultimate Multisite 방송 기능을 사용하면 사용자에게 이메일을 �
 
 대상 청중을 선택한 후 **Next Step** 버튼을 클릭합니다.
 
-![email admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 다음 창에서는 제목과 사용자에게 보낼 내용/메시지를 입력하여 이메일 작성을 시작할 수 있습니다.
 
-![email admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 메시지를 작성한 후 **Send** 버튼을 클릭합니다.
 
@@ -93,19 +93,19 @@ Ultimate Multisite의 시스템 이메일은 등록, 결제, 도메인 매핑 �
 
 Ultimate Multisite 설정 페이지로 이동하여 **Emails** 탭으로 이동합니다.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 그런 다음 사이드바에서 **Customize System Emails** 버튼을 클릭합니다.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 시스템 이메일 페이지에서 상단에 **Reset & Import** 작업 버튼이 표시됩니다. 해당 버튼을 클릭하면 가져오기 및 재설정 모달 창이 열립니다.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 그런 다음 가져오기 이메일 옵션을 전환하여 가져올 수 있는 시스템 이메일을 확인할 수 있습니다.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### 시스템 이메일 재설정
 
@@ -117,4 +117,4 @@ Ultimate Multisite 설정 페이지로 이동하여 **Emails** 탭으로 이동�
 
 이메일 템플릿을 재설정하려면 위 단계들을 따라 Reset & Import 도구에 도달한 뒤 **Reset** 옵션을 전환하고 기본 내용으로 재설정할 이메일을 선택합니다.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

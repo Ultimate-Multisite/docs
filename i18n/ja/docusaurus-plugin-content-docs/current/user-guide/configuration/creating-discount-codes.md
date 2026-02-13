@@ -11,19 +11,19 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 割引コードを作成または編集するには、**Ultimate Multisite > Discount Codes**に移動します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-G2iYAraljI.png)
+![](/img/config/discount-codes-list.png)
 
 そこでは、既に作成した割引コードのリストが表示されます。
 
 **Add Discount** **Code**をクリックして新しいクーポンを作成するか、既存のものをホバーして**Edit**をクリックして編集できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-nl6H0I06Jl.png)
+![Discount codes list with hover actions](/img/config/discount-codes-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3puhU5xCFF.png)
+![Add Discount Code button](/img/config/discount-codes-list.png)
 
 クーポンコードを作成または編集するページにリダイレクトされます。この例では新しいものを作成します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9dup6xM4Cx.png)
+![Discount code edit page](/img/config/discount-codes-list.png)
 
 ここで利用可能な設定を見てみましょう：
 
@@ -31,25 +31,25 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 **Description:** ここでは、このクーポンの用途を簡単に説明できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-V97PvPqtmK.png)
+![Discount code name and description fields](/img/config/discount-codes-list.png)
 
 **Coupon code:** ここで、顧客がチェックアウト時に入力する必要があるコードを定義します。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-En58UdF3b7.png)
+![Coupon code field](/img/config/discount-codes-list.png)
 
 **Discount:** ここで、割引コードの**割合**または**固定金額**を設定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-96cicxcs7f.png)
+![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
 
 **Apply to renewals:** このオプションをオフにすると、割引コードは**最初の支払い**にのみ適用されます。その他の支払いには割引がありません。オンにすると、割引コードは今後のすべての支払いに有効になります。
 
 **Setup fee discount:** このオプションをオフにすると、クーポンコードは注文の**セットアップ料金**に対して割引を与えません。オンにすると、クーポンコードがプランのセットアップ料金に適用する割引（割合または固定金額）を設定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zDYmcgHcoq.png)
+![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
 
 **Active:** このクーポンコードを手動で有効または無効にします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rwNFfGobBB.png)
+![Active toggle for discount code](/img/config/discount-codes-list.png)
 
 **Advanced Options** では、以下の設定があります：
 
@@ -59,23 +59,23 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
   * **Max uses:** この設定で、ユーザーが割引コードを使用できる回数を制限します。たとえば、10を設定すると、クーポンは10回しか使用できません。この制限を超えると、クーポンコードは使用できなくなります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zx4xudymt2.png)
+![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
 
 **Start & expiration dates:** ここで、クーポンに開始日と/または有効期限を追加できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AyTJkzxz9W.png)
+![Start and expiration date fields](/img/config/discount-codes-list.png)
 
 **Limit products:** **Select products**をオンにすると、すべての製品が表示されます。手動で（オン/オフを切り替えて）どの製品がこのクーポンコードを受け入れるかを選択できます。ここでオフにされた製品は、顧客がクーポンコードを使用しようとしても変更が表示されません。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OHK9Bgsaq7.png)
+![Limit products selection toggles](/img/config/discount-codes-list.png)
 
 これらのオプションをすべて設定したら、**Save Discount Code**をクリックしてクーポンを保存し、完了です！
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wAAoviDov8.png)
+![Save Discount Code button](/img/config/discount-codes-list.png)
 
 クーポンはリストに表示され、そこから**edit or delete**をクリックできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ySn575AxqX.png)
+![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
 
 ### 
 
@@ -87,7 +87,7 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 **Click to Copy Shareable Link**ボタンをクリックします。これにより、この特定のプランへの共有リンクが取得できます。今回の場合、共有リンクは[_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_でした。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TecoStCUYi.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 この特定のプランに割引コードを適用するには、URLにパラメータ **?discount_code=XXX** を追加します。ここで **XXX** はクーポンコードです。
 

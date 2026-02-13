@@ -8,15 +8,15 @@
     "description": "Navbar item"
   },
   "item.label.Developer": {
-    "message": "",
+    "message": "Entwickler",
     "description": "Navbar item"
   },
   "item.label.Addons": {
-    "message": "Addons",
+    "message": "Add-ons",
     "description": "Navbar item"
   },
   "item.label.Website": {
-    "message": "Website",
+    "message": "Webseite",
     "description": "Navbar item"
   },
   "item.label.GitHub": {

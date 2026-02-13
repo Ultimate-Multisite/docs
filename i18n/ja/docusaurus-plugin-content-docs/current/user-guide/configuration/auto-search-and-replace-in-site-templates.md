@@ -23,8 +23,8 @@ Ultimate Multisite は、顧客が提供したデータでプレースホルダ�
 
 **Ultimate Multisite > Settings > Sites** に移動し、サイドバーで Edit Placeholders リンクをクリックすると、テンプレートプレースホルダーエディタにアクセスできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 これにより、プレースホルダーのコンテンツエディタに移動し、プレースホルダーとそれぞれのコンテンツを追加できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

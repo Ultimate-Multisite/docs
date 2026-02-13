@@ -35,29 +35,29 @@ First of all, you'll need to install the GoCardless add-on for Ultimate Multisit
 
 After the add-on is installed and activated, go to **Ultimate Multisite > Settings > Payments**, toggle the GoCardless option, and save.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VRRNzphbjJ.png)
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
 ## Getting an Access Token
 
 Create an account on _GoCardless_ (or on the _GoCardless_ sandbox, if you want to **test it first** , which is recommended). Then, after logging in, navigate to the **Developers** menu item.
 
-![Developers menu position](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kENJK2VMJy.png)
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
 
 On the **Developers** page, click on the **Create** button at the top-right corner of the screen, then click on the option **Access Token**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UrGjq2m5TX.png)
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
 
 This will open a new modal window, allowing you to create a new token. Give it a recognizable name and make sure you select the **Read-write access** option in the **Scope** menu.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDY7J5ylvj.png)
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
 
 The access token will appear on the screen. Copy that over and paste it onto your **Ultimate Multisite > Settings > Payments > GoCardless** menu.
 
 Be sure to place it on the right field. If it's a **live toke** **n** , toggle the **sandbox mode off** before pasting the token.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3DsJSYPv1Z.png)
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FlMS0mucqq.png)
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
 
 That's it for the first step. Next, you need to setup a webhook listener.
 
@@ -69,15 +69,15 @@ The way payment gateways notify Ultimate Multisite of those changes is using **w
 
 Go back to your **GoCardless > Developers** panel and click the Create button again, but this time, select the **Webhook endpoint** option.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-p3PuOhRO6b.png)A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7GKJY7tRgV.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
 
 Additionally, you can enter a **webhook secret** that will be used to sign your webhook calls. Whatever you enter on that field, you'll need to enter on the **Ultimate Multisite Webhook Secret field** as well.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ICXNY1PnA6.png)
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIJv3UFhhz.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
 
 Finish up by saving the endpoint by clicking the **Create webhook endpoint** button and then **save your Ultimate Multisite settings as well**.
 

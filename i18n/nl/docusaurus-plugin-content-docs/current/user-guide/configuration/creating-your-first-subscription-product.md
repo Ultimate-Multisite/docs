@@ -27,29 +27,29 @@ Binnen Ultimate Multisite definieert de Products tab de constructie en beperking
 
 Deze sectie helpt je om dit essentiële hoeksteen van Ultimate Multisite te begrijpen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1YccQg0IBG.png)
+![Products list page](/img/config/products-list.png)
 
 ## Producten toevoegen
 
 Of het nu een plan, pakket of dienst is, het startpunt voor het definiëren van een nieuw item is via **Ultimate Multisite > Products > Add Product**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0AmJMeqen.png)
+![Add Product button](/img/config/product-add-button.png)
 
 De interface bevat twee hoofdsecties. Aan de linkerkant bevinden zich verschillende tabs die helpen bij het definiëren van het product en aan de rechterkant zijn een aantal secties om de basisprijs van het product, de actieve status en het productafbeelding te definiëren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WRwYrlk0BS.png)
+![Product edit page overview](/img/config/product-edit-full.png)
 
 ### Beschrijving
 
 De basisproductinformatie kan worden gedefinieerd door een productnaam en beschrijving op te geven. Deze identificatoren worden weergegeven waar de productinformatie nodig is, zoals bij het selecteren van een plan en prijs, facturen, upgrades en dergelijke.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U9YjF0dghJ.png)
+![Product description section](/img/config/product-description.png)
 
 ### Prijs Type
 
 Aan de rechterkant van de interface kan de basisprijs worden gedefinieerd.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oHwhlrBFC9.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Ultimate Multisite ondersteunt drie verschillende prijsopties. De **paid** optie vraagt de netwerkbeheerder om informatie over de prijs van het product en de factureringsfrequentie.
 
@@ -57,7 +57,7 @@ Ultimate Multisite ondersteunt drie verschillende prijsopties. De **paid** optie
 
 Het prijscomponent definieert de basisproductprijs en het factureringsinterval.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-T03WJISsoh.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 bijvoorbeeld een voorbeeldprijs van $29,99 met een instelling van 1 maand factureert $29,99 per maand. Evenzo, een prijs van $89,97 met een instelling van 3 maanden factureert dat bedrag per kwartaal.
 
@@ -65,7 +65,7 @@ bijvoorbeeld een voorbeeldprijs van $29,99 met een instelling van 1 maand factur
 
 De factureringscycli sectie specificeert de frequentie van het genoemde factureringsinterval en wordt over het algemeen begrepen in het licht van contracten of vaste termijnen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hVVAoxC4Jt.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Bijvoorbeeld, een productprijs van $29,99 met een interval van 1 maand en 12 factureringscycli zou $29,99 per maand factureren voor het product gedurende de volgende 12 maanden. Met andere woorden, een dergelijke instelling zou een vaste prijstermijn van $29,99 per maand voor 12 maanden vaststellen en vervolgens stoppen met factureren.
 
@@ -73,7 +73,7 @@ Bijvoorbeeld, een productprijs van $29,99 met een interval van 1 maand en 12 fac
 
 Het inschakelen van de proefperiode toggle stelt de netwerkbeheerder in staat een proefperiode voor het product te definiëren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MzxhWHqJLC.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Tijdens de proefperiode kunnen klanten het product vrij gebruiken en worden ze niet gefactureerd totdat de proefperiode is verstreken.
 
@@ -81,7 +81,7 @@ Tijdens de proefperiode kunnen klanten het product vrij gebruiken en worden ze n
 
 Je kunt ook een installatievergoeding toepassen op je plan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-8ZA2YvhWyK.png)
+![Pricing and save section](/img/config/product-pricing-save.png)
 
 Dit betekent dat je klant een extra bedrag betaalt bij de eerste factuur (naast het prijsplan) dat overeenkomt met de vergoeding die je in deze sectie hebt gedefinieerd.
 
@@ -89,7 +89,7 @@ Dit betekent dat je klant een extra bedrag betaalt bij de eerste factuur (naast 
 
 De actieve toggle bepaalt effectief of het product beschikbaar is voor klanten voor nieuwe aanmeldingen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-74ET2mPskK.png)
+![Active toggle](/img/config/product-active.png)
 
 Als er bestaande klanten op dit plan zijn, zorgt het uitschakelen van de toggle ervoor dat het plan wordt verouderd en wordt verwijderd uit toekomstige aanmeldingen. **Bestaande klanten op het plan blijven gefactureerd** totdat ze worden overgezet naar een nieuw plan of uit het plan worden verwijderd.
 
@@ -97,13 +97,13 @@ Als er bestaande klanten op dit plan zijn, zorgt het uitschakelen van de toggle 
 
 De **Upload Image** knop stelt de netwerkbeheerder in staat om de mediabibliotheek te gebruiken om een productafbeelding te selecteren of te uploaden.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9tHhGvokLA.png)
+![Product image section](/img/config/product-image.png)
 
 ### Verwijderen
 
 De **Delete Product** knop verwijdert het product uit het systeem. Het verschijnt zodra het product is gepubliceerd.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rrmQohvw3S.png)
+![Delete product section](/img/config/product-delete.png)
 
 In tegenstelling tot andere verwijderingen wordt het product niet in een prullenbak geplaatst. Zodra het is verwijderd, is de actie onomkeerbaar.
 
@@ -115,7 +115,7 @@ Zodra de basisproductinformatie is gedefinieerd, helpen de productopties de netw
 
 De **General** tab definieert de algemene attributen van het product die niet van toepassing zijn op een van de andere product-specifieke tabs.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-z32g4XQeyT.png)
+![General tab](/img/config/product-general-tab.png)
 
 De zelfverklarende **product slug** definieert de slug waarmee het product wordt geïdentificeerd in URL's en andere gebieden van Ultimate Multisite.
 
@@ -123,7 +123,7 @@ Ultimate Multisite ondersteunt verschillende producttypes, namelijk Plan, Packag
 
 De **Customer Role** specificeert de rol die de klant krijgt toegewezen wanneer de site wordt aangemaakt. Meestal is dit voor de meeste netwerkbeheerders de Ultimate Multisite standaard of Administrator. De Ultimate Multisite standaardrol kan worden ingesteld in **Ultimate Multisite > Settings > Login & Registration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ap5I4lXWwB.png)
+![Customer role settings](/img/config/product-customer-role-settings.png)
 
 #### Up & Downgrades
 
@@ -137,7 +137,7 @@ In die zin zou het ongewenst en problematisch zijn om eLearning-klanten toe te s
 
 Om de route van de klant te beperken en incidenten te voorkomen, kan de netwerkbeheerder een plangroep definiëren en binnen die groep de plannen specificeren waarnaar de klant kan overgaan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JnrZ4fWFEC.png)
+![Up and Downgrades tab](/img/config/product-upgrades.png)
 
 Om een plangroep te definiëren, specificeer je de compatibele plannen in de **plan group** lijst. De **product order** bepaalt hoe de plannen worden gerangschikt en weergegeven van laag naar hoog.
 
@@ -147,25 +147,25 @@ Ultimate Multisite bevat ook een **order bump** functie waarbij geschikte add-on
 
 Prijsvariaties stellen de netwerkbeheerder in staat alternatieve prijsniveaus te specificeren op basis van duur. Deze instelling maakt het mogelijk om prijsniveaus van 3 maanden, 6 maanden of jaarlijks vast te stellen, of elke andere duur en frequentie zoals bepaald door het gebruiksscenario.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-d75YUO3opm.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 Om prijsvariaties in te stellen, zet je de **enable price variations** toggle op actief en klik je op de **Add new Price Variation** knop.
 
 Om een variatie in te voeren, stel je de duur, periode en prijs van de variatie in. Extra variaties kunnen worden ingevoerd door opnieuw op de knop te klikken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-x73uxkMU8o.png)
+![Price Variations tab](/img/config/product-price-variations.png)
 
 #### Belastingen
 
 De **Taxes** tab is in lijn met de belastinginstellingen gespecificeerd in **Ultimate Multisite > Settings > Taxes** en meer specifiek de gedefinieerde belastingtarieven. Om belastingen in te schakelen en toepasselijke belastingtarieven te definiëren, zie de documentatie op **Ultimate Multisite: Settings**
 
-**![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xYLtpFySzL.png)**
+![Taxes tab](/img/config/product-taxes.png)
 
 In een vorig voorbeeld gaven we een lokaal belastingtarief van 7,25% aan voor klanten in Californië (Verenigde Staten van Amerika).
 
 Zodra het belastingtarief is gedefinieerd in **Ultimate Multisite > Settings > Manage Tax Rates** is het selecteerbaar op productniveau.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Sh1BVGVj6i.png)
+![Taxes tab](/img/config/product-taxes.png)
 
 Om aan te geven dat een product een belastbaar item is, zet je de **Is Taxable** toggle op actief en selecteer je het toepasselijke belastingtarief uit het Tax Category dropdown.
 
@@ -173,7 +173,7 @@ Om aan te geven dat een product een belastbaar item is, zet je de **Is Taxable**
 
 In wezen zijn site templates complete WordPress-websites die aan het begin van hun abonnement naar de site van een klant worden gekloond.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-llMSMXCDt4.png)
+![Site Templates tab](/img/config/product-site-templates.png)
 
 De netwerkbeheerder maakt en configureert de template site als een reguliere WordPress-site met geactiveerde en geconfigureerde thema's, plugins en inhoud. De template site wordt letterlijk gekloond naar de klant.
 
@@ -193,7 +193,7 @@ Uiteindelijk, als de netwerkbeheerder wil dat template selectie plaatsvindt in d
 
 De **Sites** tab maakt deel uit van de beperkingenfunctionaliteit van Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-A8fzNucGyC.png)
+![Sites tab](/img/config/product-sites.png)
 
 Deze instelling specificeert het maximale aantal sites dat een klant kan aanmaken onder hun lidmaatschap.
 
@@ -203,7 +203,7 @@ Om de beperking in te schakelen, zet je de **limit sites** toggle op actief en s
 
 De **Visits** tab is een verdere onderdeel van het beperkingssysteem van Ultimate Multisite. Deze instelling maakt het mogelijk om het aantal unieke bezoekers van een klant's site te registreren en vervolgens te beperken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e7f5otg89m.png)
+![Visits tab](/img/config/product-visits.png)
 
 Vanuit een marketingperspectief kunnen netwerkbeheerders deze instelling gebruiken als middel om klanten aan te moedigen hun plan te upgraden zodra de limieten zijn bereikt. Deze instelling kan ook helpen de netwerkbeheerder om overmatig verkeer naar sites te beperken en te voorkomen om systeemresources te behouden.
 
@@ -215,7 +215,7 @@ Zodra deze limiet is bereikt, stopt Ultimate Multisite met het bedienen van de k
 
 De 'Users' beperkingen van Ultimate Multisite stellen de netwerkbeheerder in staat om limieten op te leggen aan het aantal gebruikers dat kan worden aangemaakt en toegewezen aan rollen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-maGYqW7WlP.png)
+![Users tab](/img/config/product-users.png)
 
 Om de beperkingsfunctie in te schakelen, zet je de **limit user** toggle op actief door deze naar rechts te schuiven.
 
@@ -225,7 +225,7 @@ Vervolgens, voor elke rol die beperkt moet worden, zet je de toggle naast die ro
 
 De **Post Types** tab laat de netwerkbeheerder gedetailleerde limieten opleggen aan de uitgebreide reeks posttypes binnen WordPress.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ZELQvvqyvn.png)
+![Post Types tab](/img/config/product-post-types.png)
 
 Vanwege de constructie van WordPress zijn posts en posttypes een belangrijk onderdeel van de kernfunctionaliteit, en dus is het beperkingssysteem van Ultimate Multisite ontworpen om de netwerkbeheerder te helpen bij het vaststellen en handhaven van limieten.
 
@@ -237,7 +237,7 @@ Vervolgens, voor elke posttype die beperkt moet worden, schakel je deze in door 
 
 De **Disk Space** tab laat netwerkbeheerders de ruimte beperken die door klanten wordt verbruikt.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EqlaLO0ebw.png)
+![Disk Space tab](/img/config/product-disk-space.png)
 
 Meestal worden in een WordPress multisite de kernbestanden gedeeld tussen alle sites en individuele mappen gemaakt voor mediabestanden en uploads waarop deze instellingen en beperkingen van toepassing zijn.
 
@@ -249,21 +249,21 @@ Vervolgens specificeer je de maximale bovengrens in megabytes in het **disk spac
 
 Door deze optie in te schakelen, kun je aangepaste domeinen op dit plan specifiek toestaan.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KEMuUG76Fg.png)
+![Custom Domains tab](/img/config/product-custom-domains.png)
 
 #### Thema's
 
 De **Themes** tab binnen de productopties laat de netwerkbeheerder thema's beschikbaar maken voor klanten om te selecteren en optioneel de staat van het thema afdwingen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rkyVSGnDqo.png)
+![Themes tab](/img/config/product-themes.png)
 
 _**Opmerking: Voor thema's om beschikbaar te zijn voor klanten moeten ze netwerkingeschakeld zijn door de netwerkbeheerder.**_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HAQShYB7Y1.png)
+![Network themes page](/img/config/product-themes-network-enabled.png)
 
 De **visibility** optie definieert of dit thema zichtbaar is voor de klant wanneer ze hun **Appearance > Themes** tab bekijken binnen hun site. Het instellen van deze optie op **Hidden** verwijdert het thema uit het zicht en beperkt zo de mogelijkheid om het te selecteren en te activeren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ivsGIABl55.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Themes tab](/img/config/product-themes.png)
 
 De **behavior** selectie laat de netwerkbeheerder de staat van het thema definiëren bij het aanmaken van de klantsite.
 
@@ -273,13 +273,13 @@ In de **A** **vailable** staat wordt het thema beschikbaar gesteld aan de klant 
 
 Net als bij de Themes tab, laat Ultimate Multisite de netwerkbeheerder de zichtbaarheid van plugins voor klanten definiëren, evenals hun staat bij het aanmaken van een nieuwe site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Ipzv31FIb6.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 De **visibility** dropdown laat de plugin zichtbaar of verborgen zijn voor de klant wanneer deze wordt bekeken op hun site via het Plugins menu-optie.
 
 De netwerkbeheerder kan het gedrag van de plugins verder manipuleren door gebruik te maken van de opties in de behavior dropdown.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jPTC92eZwc.png)
+![Plugins tab](/img/config/product-plugins.png)
 
 De **Default** selectie respecteert de plugin staat gedefinieerd in de site template geselecteerd door de klant. Zo blijven plugins die binnen de template zijn geactiveerd, geactiveerd wanneer de template wordt gekloond naar de klant's site.
 
@@ -293,17 +293,17 @@ De netwerkbeheerder kan overwegen de Force Activate & Lock en Force Inactivate &
 
 De **Reset Limitations** tab reset alle aangepaste limieten gedefinieerd op het product. Om de beperkingen te resetten, klik op de **reset limitations** knop.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UXNQerLby7.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 Om de actie te bevestigen, schuif je de **confirm reset** toggle naar rechts op actief en klik je op de **reset limitations** knop.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-xKySIUIvrI.png)
+![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
 #### Legacy Opties
 
 De **Legacy Options** tab observeert bepaalde opties en gedragingen gedefinieerd in Ultimate Multisite 1.x.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Fn3BjwTH4r.png)
+![Product hover actions](/img/config/product-hover-actions.png)
 
 Deze opties worden aangeboden voor compatibiliteit en gemakkelijke overgang en zullen in toekomstige releases worden gedeactiveerd.
 
@@ -311,7 +311,7 @@ Deze opties worden aangeboden voor compatibiliteit en gemakkelijke overgang en z
 
 Bestaande producten kunnen worden bewerkt, gedupliceerd of verwijderd door naar **Ultimate Multisite > Products** te navigeren en over de bestaande productnaam te zweven.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GcHtJl6WmV.png)
+![Product hover actions](/img/config/product-hover-actions.png)
 
 ## 
 

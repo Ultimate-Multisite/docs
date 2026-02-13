@@ -8,11 +8,11 @@
     "description": "Footer column title"
   },
   "link.title.More": {
-    "message": "Di più",
+    "message": "Altro",
     "description": "Footer column title"
   },
   "link.item.label.User Guide": {
-    "message": "Guida utente",
+    "message": "Guida per l'utente",
     "description": "Footer link"
   },
   "link.item.label.Developer Docs": {
@@ -24,7 +24,7 @@
     "description": "Footer link"
   },
   "link.item.label.GitHub Discussions": {
-    "message": "Discussioni GitHub",
+    "message": "GitHub Discussions",
     "description": "Footer link"
   },
   "link.item.label.WordPress.org": {

@@ -9,14 +9,14 @@ Welcome to Ultimate Multisite!
 
 Access your account page through the link you received in your e-mail after buying our plugin:
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-kFXPifHWo-Account.png)
+<!-- Screenshot unavailable: Account page email with access link -->
 
 Use the email you provided during the purchase and the password you received in your email.
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-sz4pZH3oz-Login.png)
+<!-- Screenshot unavailable: Login page with email and password fields -->
 
 Since this is your first time logging in to this account, you will be asked to change your password. Change it and click the _Save_ button.
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-y72kWhbvn-Changing.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-602125811f25b9041bebc762-y72kWhbvn-Changing.png)
+<!-- Screenshot unavailable: Change password form with Save button -->
 
 On your account page, you can manage all your account details such as billings, renewals, cancelations, and many other things.

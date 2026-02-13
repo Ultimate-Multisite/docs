@@ -1,14 +1,12 @@
 ---
 id: wu_documentation_get_link
-title: >-
-  I’m ready to translate the content. Could you please provide the Markdown/MDX
-  text that needs to be translated?
+title: Filtre - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
 # Filtre : wu_documentation_get_link
 
-Permettre aux développeurs de plugins de filtrer les liens.
+Permet aux développeurs de plugins de filtrer les liens.
 
 Pas sûr que cela puisse être utile, mais cela ne fait pas de mal d'en avoir.
 

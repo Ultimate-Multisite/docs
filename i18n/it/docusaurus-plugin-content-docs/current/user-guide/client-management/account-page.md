@@ -15,9 +15,9 @@ In questo tutorial ti guideremo attraverso la pagina dell'account del cliente e 
 
 La pagina dell'account è accessibile facendo clic su **Account** all'interno del cruscotto del tuo cliente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LrGNKCDc8R.png)
+![Account menu in the customer dashboard](/img/admin/dashboard.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FTDgqcwaO0.png)
+![Customer account page overview](/img/admin/dashboard.png)
 
 Dopo che un cliente fa clic su di esso, vedrà una panoramica del suo abbonamento, dell'indirizzo di fatturazione, delle fatture, dei domini, delle limitazioni del sito e potrà anche cambiare il **Modello del sito** (se consentito nella tua rete).
 
@@ -27,11 +27,11 @@ Possono anche cambiare l'abbonamento a un altro piano, o acquistare un altro pac
 
 Il primo blocco subito sotto il nome del sito web del tuo cliente mostra una panoramica del piano attuale e dei servizi/pacchetti acquistati con esso. Il blocco mostra anche il numero di abbonamento, l'importo iniziale pagato, quanto costa il piano e qualsiasi servizio/pacchetto e quante volte è stato fatturato per questo abbonamento. Possono anche vedere se l'abbonamento è **Attivo**, **Scaduto** o **Annullato**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-XNTPsXaqzp.png)
+![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
 
 Sotto questo blocco, i tuoi clienti possono vedere i blocchi **About This Site** e **Site Limits**. Questi blocchi mostrano tutte le limitazioni che derivano dal loro piano: spazio su disco, post, pagine, visite, ecc... Questi limiti possono essere configurati su ogni pagina del piano in **Ultimate Multisite > Products**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6kVmMDoiCU.png)
+![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
 
 Sul lato destro di **Your Membership**, i clienti possono fare clic su **Change**. Questo mostrerà tutti i piani e pacchetti/servizi disponibili. Se scelgono un altro piano, le limitazioni del piano sostituiranno le limitazioni attuali dell'abbonamento - non importa se stanno degradando o aggiornando.
 
@@ -43,11 +43,11 @@ Nota che i codici coupon non possono essere aggiunti in questa pagina di modific
 
 Nella pagina dell'account, i tuoi clienti possono anche aggiornare il loro indirizzo di fatturazione. Basta fare clic su **Update** accanto a _Billing Address_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GLQ21kppU2.png)
+![Billing Address section with Update button](/img/admin/customers-list.png)
 
 Si aprirà una nuova finestra per il tuo cliente. Tutto ciò che deve fare è compilare il nuovo indirizzo e fare clic su _Save Changes_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Z2nY05cYvD.png)
+![Update billing address form](/img/admin/customers-list.png)
 
 ### Cambiare il modello del sito:
 
@@ -55,20 +55,20 @@ Per consentire ai tuoi clienti di cambiare i loro modelli di sito, devi andare s
 
 Inoltre, su **Ultimate Multisite > Products**, seleziona i tuoi piani e vai alla scheda **Site Templates**. Assicurati che l'opzione **Allow Site Templates** sia attivata e su **Site Template Selection Mode**, l'opzione **Choose Available Site Templates** sia selezionata.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rjixD7iShD.png)
+![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
 
 Potrai vedere tutti i modelli di sito disponibili sul tuo sito web. Scegli quali vuoi rendere disponibili e quali non vuoi rendere disponibili ai tuoi clienti sottoscritti a questo piano. Nota che queste opzioni influenzano anche il modulo di checkout, quindi qualsiasi modello scelto come **Not Available** non apparirà nella pagina di registrazione per questo piano.
 
 Ora i tuoi clienti possono fare clic su **Change Site Template** all'interno della loro pagina dell'account.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5pdvAuh6h3.png)  
+![Change Site Template button on account page](/img/admin/dashboard.png)
 Un elenco di tutti i modelli di sito disponibili per questo piano apparirà al tuo cliente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bQSA663xNo.png)
+![Available site templates list for the plan](/img/config/site-templates-list.png)
 
 Dopo aver selezionato quello a cui vogliono passare, verrà chiesto loro di confermare la modifica.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6azvPydgAU.png)
+![Site template switch confirmation dialog](/img/admin/dashboard.png)
 
 Dopo aver attivato la conferma e fare clic su **Process Switch**, il nuovo modello di sito verrà utilizzato sul sito del tuo cliente.
 
@@ -82,23 +82,23 @@ Non dimenticare di verificare anche se la mappatura dei domini è abilitata a li
 
 Vai su **Ultimate Multisite > Products**. Seleziona il piano di tua scelta e vai alla scheda **Custom Domains**. Attiva l'opzione **Allow Custom Domains**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-J7mrCTfet6.png)
+![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
 
 Questo consentirà a tutti i clienti sottoscritti a questo piano specifico di utilizzare domini personalizzati. Ora, nella pagina dell'Account, i tuoi clienti possono aggiungere un dominio personalizzato facendo clic su **Add Domain**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0mbLgC86SG.png)
+![Add Domain button on the account page](/img/admin/domains-list.png)
 
 La prima finestra che si apre mostrerà ai tuoi clienti un messaggio che li istruisce su come aggiornare i loro record DNS per far funzionare questo dominio personalizzato sulla tua rete.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-emhM26Abhn.png)
+![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
 
 Questo messaggio può essere modificato (da te) su **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6ZjI8Fk6Gw.png)
+![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
 
 Dopo aver fatto clic su **Next Step**, i tuoi clienti possono aggiungere il loro nome di dominio personalizzato e scegliere se questo dominio personalizzato sarà quello principale. Nota che i tuoi clienti possono utilizzare più di un dominio personalizzato per i loro siti web, quindi possono scegliere quale sarà quello principale.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pSzZowjc2a.png)
+![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
 
 Dopo aver fatto clic su **Add Domain**, il dominio verrà aggiunto all'account del tuo cliente. Tutto ciò che devono fare ora è modificare i record DNS di questo dominio personalizzato presso il loro registrar di domini.
 
@@ -106,11 +106,11 @@ Dopo aver fatto clic su **Add Domain**, il dominio verrà aggiunto all'account d
 
 All'interno del cruscotto dell'account, i tuoi clienti possono anche cambiare la loro password facendo clic su **Change Password**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sihWaIk4B8.png)
+![Change Password button on account page](/img/admin/dashboard.png)
 
 Questo mostrerà una nuova finestra in cui i tuoi clienti dovranno inserire la loro password corrente e poi inserire la nuova password che desiderano utilizzare.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5zCgtcHfgB.png)
+![Change password form with current and new password fields](/img/admin/dashboard.png)
 
 ### Zona di pericolo:
 

@@ -11,7 +11,7 @@ PRO Theme is een admin theme ontwikkeld om je te helpen bij het aanpassen van he
 
 Na installatie ga je naar je _Plugins_ pagina en klik je om het te activeren op je Netwerk.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _Activeer het netwerkbreed op je Plugins pagina_
 
@@ -19,29 +19,29 @@ _**NOTE:**_ _Als je het alleen installeert, verschijnt het bij je klant als een 
 
 Nu is je admin interface volledig herontworpen! Je hebt ook een nieuw menu in de linkerkolom genaamd PRO Theme.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 _Een geheel nieuwe look voor je Admin Panel_
 
 Op dit menu heb je toegang tot vijf tabs:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 _Styling Instellingen_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 _Functionaliteit_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 _Custom CSS_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 _Import/Export_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 _Activeer PRO Theme_
 
@@ -49,10 +49,10 @@ In elk van hen kun je styling items in- en uitschakelen, functionaliteiten toest
 
 Hier is een voorbeeld van wat je kunt krijgen na enkele aanpassingen:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 _Dashboard van je klant_
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 _Een aangepaste login pagina_

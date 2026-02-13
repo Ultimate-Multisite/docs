@@ -17,19 +17,19 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 当用户到达您的注册页面（通常点击 **Sign in** 或 **Buy now** 按钮）时，他们会在此看到您的注册表单。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hDcy7S8pBK.png)
+![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
 他们只需填写所有必填字段——电子邮件、用户名、密码等……——并支付计划费用，或者在注册免费计划或带试用期的付费计划且不提供支付信息时确认其电子邮件地址。
 
 在“Thank you”页面上，他们会看到一条消息，告知他们是否需要确认电子邮件地址，或者他们的网站是否已激活并可以开始使用。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FnXxCLt0YW.png)
+![Thank You page after registration](/img/config/checkout-form-editor.png)
 
 如果需要确认电子邮件地址，他们需要前往邮箱并点击验证链接。如果电子邮件地址未被验证，他们的网站将不会激活。
 
 如果他们已在付费计划中注册，或在您的网络中不强制要求电子邮件验证，他们的网站将在结账后立即激活，并会显示一个链接，供他们登录仪表盘。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DJwvUqQnQU.png)
+![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
 
 ## 使用可共享链接：
 
@@ -43,30 +43,30 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 注册流程与上述完全相同，但在注册页面上，您的客户会看到一条消息，说明他们将收到一封电子邮件，其中包含完成付款的进一步说明。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-iSli6MoFGw.png)
+![Manual payment message during registration](/img/config/settings-payment-gateways.png)
 
 完成注册后，他们将看到您设置的付款说明（并且也会在电子邮件中收到）。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hX0GPWYfEA.png)
+![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
 
 在 **Ultimate Multisite > Settings > Payments** 中开启 **Manual** 支付选项后，您可以更改付款说明：
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RpPGDd0BZo.png)
+![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
 
 在客户完成手动支付并向您发送确认后，您需要 **手动确认付款** 以激活客户会员资格和网站。
 
 为此，请转到 **Ultimate Multisite > Payments** 并找到客户付款。它仍应显示 **Pending** 状态。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2rW0tFemEP.png)
+![Payments list with pending manual payment](/img/admin/payments-list.png)
 
 点击付款编号，您可以将其状态更改为 **Completed**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KiRQKw3wGg.png)
+![Payment details page](/img/admin/payments-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NPFNchZrUa.png)
+![Changing payment status to Completed](/img/admin/payments-list.png)
 
 将状态更改为 **Completed** 后，您应该会看到 **Activate membership** 消息。将此选项 **on** 开启，以激活与该客户关联的会员资格和网站。然后，点击 **Save Payment**。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-e3R91KmnUV.png)
+![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
 
 您的客户现在应该能够访问仪表盘以及他们订阅的所有功能。

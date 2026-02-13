@@ -17,7 +17,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 Чтобы включить PayPal в качестве доступного способа оплаты в вашей сети, перейдите на вкладку **Ultimate Multisite > Settings > Payments** и установите флажок рядом с PayPal.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## Получение учетных данных PayPal API
 
@@ -27,17 +27,17 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
 
 (Помните, что вы можете использовать **режим песочницы** для тестирования платежей и проверки правильности настройки шлюза. Просто включите соответствующий раздел.)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 Чтобы запросить учетные данные подписи или сертификата API для вашего PayPal аккаунта:
 
 1. Перейдите в [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
 2. В разделе **Доступ к API** нажмите **Обновить**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 
 3. В разделе **NVP/SOAP API integration (Classic)** нажмите **Управление учетными данными API**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * Если вы уже сгенерировали подпись API или сертификат, вы будете перенаправлены на страницу, где сможете найти свои учетные данные.
 
@@ -50,7 +50,7 @@ _**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к в
    * **Запросить сертификат API** – Выберите для аутентификации сертификатом API.
 
 5. PayPal генерирует ваши учетные данные API следующим образом:  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **Учетные данные подписи API** включают имя пользователя API, пароль API и подпись, которые не истекают. Эти значения скрыты по умолчанию для дополнительной безопасности. Нажмите **Показать/Скрыть** для переключения их включения/выключения. После завершения нажмите **Готово**.
 

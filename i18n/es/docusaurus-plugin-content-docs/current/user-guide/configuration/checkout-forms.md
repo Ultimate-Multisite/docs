@@ -1,88 +1,88 @@
 ---
 title: Formularios de Pago
 sidebar_position: 19
-_i18n_hash: 66bfff807dcb07f2c495741a4fa601b9
+_i18n_hash: dfdf572ddbe8772e1d720be52eda83d3
 ---
 # Formularios de Pago
 
-Los Formularios de Pago son una forma fácil y flexible de experimentar con diferentes enfoques al intentar convertir nuevos clientes.
+Los Formularios de Pago son una forma sencilla y flexible de experimentar con diferentes enfoques al intentar convertir nuevos clientes.
 
-Ultimate Multisite 2.0 ofrece un editor de Formularios de Pago que le permite crear tantos formularios como desee, con diferentes campos, productos en oferta, etc.
+Ultimate Multisite 2.0 ofrece un editor de Formularios de Pago que te permite crear tantos formularios como desees, con diferentes campos, productos en oferta, etc.
 
-Para acceder a esta función, vaya al menú Formularios de Pago, en la barra lateral izquierda.
+Para acceder a esta función, ve al menú Formularios de Pago, en la barra lateral izquierda.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TusdCVS7N7.png)
+![Lista de Formularios de Pago](/img/config/checkout-forms-list.png)
 
-En esta página, puede ver todos los formularios de pago que tiene.
+En esta página, puedes ver todos los formularios de pago que tienes.
 
-Si desea crear uno nuevo, simplemente haga clic en Agregar Formulario de Pago en la parte superior de la página.
+Si deseas crear uno nuevo, simplemente haz clic en Añadir Formulario de Pago en la parte superior de la página.
 
-Puede seleccionar una de estas tres opciones como punto de partida: paso único, paso múltiple o en blanco. Luego, haga clic en Ir al Editor.
+Puedes seleccionar una de estas tres opciones como punto de partida: paso único, multi-paso o en blanco. Luego, haz clic en Ir al Editor.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Editor de Formulario de Pago](/img/config/checkout-form-editor.png)
 
-Alternativamente, puede editar o duplicar los formularios que ya tiene haciendo clic en las opciones debajo de su nombre. Allí también encontrará las opciones para copiar el shortcode del formulario o eliminar el formulario.
+Alternativamente, puedes editar o duplicar los formularios que ya tienes haciendo clic en las opciones debajo de su nombre. Allí también encontrarás las opciones para copiar el shortcode del formulario o eliminar el formulario.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Acciones al pasar el cursor sobre el formulario de pago](/img/config/checkout-form-hover-actions.png)
 
-### Editando un Formulario de Pago
+### Edición de un Formulario de Pago
 
-Puede crear formularios de pago para diferentes propósitos. En este ejemplo, trabajaremos en un formulario de registro.
+Puedes crear formularios de pago para diferentes propósitos. En este ejemplo trabajaremos en un formulario de registro.
 
-Después de navegar al editor de formularios de pago, asigne a su formulario un nombre (que se usará solo como referencia interna) y un slug (usado para crear shortcodes, por ejemplo).
+Después de navegar al editor de formularios de pago, asigna a tu formulario un nombre (que se usará solo como referencia interna) y un slug (utilizado para crear shortcodes, por ejemplo).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Editor de Formulario de Pago](/img/config/checkout-form-editor.png)
 
-Los formularios están formados por pasos y campos. Puede agregar un nuevo paso haciendo clic en Agregar Nueva Etapa de Pago.
+Los formularios están compuestos por pasos y campos. Puedes agregar un nuevo paso haciendo clic en Añadir Nuevo Paso de Pago.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-O5GsWoPE35.png)
+![Añadir Nuevo Paso de Pago](/img/config/checkout-form-add-step.png)
 
-En la primera pestaña de la ventana modal, rellene el contenido del paso de su formulario. Asigne un ID, un nombre y una descripción. Estos elementos se usan principalmente internamente.
+En la primera pestaña de la ventana modal, completa el contenido del paso de tu formulario. Asigna un ID, un nombre y una descripción. Estos elementos se usan principalmente de forma interna.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-juXHmB0fGH.png)
+![Paso del formulario de pago](/img/config/checkout-form-step.png)
 
-A continuación, establezca la visibilidad del paso. Puede elegir entre “Mostrar siempre”, “Mostrar solo a usuarios conectados” o “Mostrar solo a invitados”.
+A continuación, establece la visibilidad del paso. Puedes elegir entre "Mostrar siempre", "Mostrar solo a usuarios conectados" o "Mostrar solo a invitados".
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2gZRyHCxed.png)
+![Paso del formulario de pago](/img/config/checkout-form-step.png)
 
-Finalmente, configure el estilo del paso. Estos son campos opcionales.
+Finalmente, configura el estilo del paso. Estos son campos opcionales.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lPHJcayky5.png)
+![Paso del formulario de pago](/img/config/checkout-form-step.png)
 
-Ahora es el momento de agregar campos a nuestro primer paso. Simplemente haga clic en Agregar Nuevo Campo y seleccione el tipo de sección que desea.
+Ahora es el momento de agregar campos a nuestro primer paso. Simplemente haz clic en Añadir Nuevo Campo y selecciona el tipo de sección que deseas.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-z5FpDeUVmD.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JxtVsd5aGu.png)
+![Paso del formulario de pago con campos](/img/config/checkout-form-step.png)
 
-Cada campo tiene diferentes parámetros que rellenar. Para esta primera entrada, seleccionaremos el campo “Nombre de usuario”.
+Cada campo tiene diferentes parámetros que rellenar. Para esta primera entrada, seleccionaremos el campo 'Nombre de usuario'.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-go026QZtjh.png)
+![Paso del formulario de pago](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RroHNTL0TJ.png)
+![Paso del formulario de pago](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OG4O4XkEGu.png)
+![Paso del formulario de pago](/img/config/checkout-form-step.png)
 
-Puede agregar tantos pasos y campos como necesite. Para mostrar sus productos para que sus clientes elijan uno, use el campo Tabla de Precios. Si desea que sus clientes elijan una plantilla, agregue el campo Selección de Plantilla. Y así sucesivamente.
+Puedes agregar tantos pasos y campos como necesites. Para mostrar tus productos para que tus clientes elijan uno, utiliza el campo Tabla de Precios. Si deseas que tus clientes elijan una plantilla, agrega el campo Selección de Plantilla. Y así sucesivamente.
 
 _**Nota:** nombre de usuario, correo electrónico, contraseña, título del sitio, URL del sitio, resumen del pedido, pago y botón de enviar son campos obligatorios para crear un formulario de pago._
 
-Mientras trabaja en su formulario de pago, siempre puede usar el botón Vista previa para ver cómo sus clientes verán el formulario. También puede alternar entre ver como un usuario existente o un visitante
+Mientras trabajas en tu formulario de pago, siempre puedes usar el botón Vista previa para ver cómo lo verán tus clientes. También puedes alternar entre la vista como usuario existente o como visitante
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kjDtBjBdSH.png)
+![Guardar Formulario de Pago](/img/config/checkout-form-save.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0SKLl73PG5.png)
+![Editor de Formulario de Pago](/img/config/checkout-form-editor.png)
 
-Finalmente, en Opciones Avanzadas puede configurar el mensaje para la página de Agradecimiento, agregar fragmentos para rastrear conversiones, agregar CSS personalizado a su formulario de pago o restringirlo a ciertos países.
+Finalmente, en Opciones Avanzadas puedes configurar el mensaje para la página 'Gracias', agregar fragmentos para rastrear conversiones, añadir CSS personalizado a tu formulario de pago o restringirlo a ciertos países.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QC2Q5kIZ9b.png)
+![Opciones Avanzadas](/img/config/checkout-form-advanced.png)
 
-También puede habilitar o deshabilitar manualmente su formulario de pago cambiando esta opción en la columna derecha, o eliminar el formulario permanentemente.
+También puedes habilitar o deshabilitar manualmente tu formulario de pago alternando esta opción en la columna derecha, o eliminar permanentemente el formulario.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1iRUaR7Gh1.png)
+![Alternar activo](/img/config/checkout-form-active.png)
 
-¡No olvide guardar su formulario de pago!
+¡No olvides guardar tu formulario de pago!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OKgUbhf41x.png)
+![Botón Guardar](/img/config/checkout-form-save.png)
 
-Para obtener el shortcode de su formulario, haga clic en Generar Shortcode y copie el resultado mostrado en la ventana modal.
+Para obtener el shortcode de tu formulario haz clic en Generar Shortcode y copia el resultado que aparece en la ventana modal.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7d68oNc7yI.png)
+![Botón Guardar con shortcode](/img/config/checkout-form-save.png)

@@ -11,19 +11,19 @@ _**NOTA IMPORTANTE: Questo articolo si riferisce alla versione 2.x di Ultimate M
 
 Per creare o modificare un codice sconto, vai su **Ultimate Multisite > Discount Codes**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-G2iYAraljI.png)
+![](/img/config/discount-codes-list.png)
 
 Lì avrai un elenco dei codici sconto già creati.
 
 Puoi fare clic su **Add Discount** **Code** per creare un nuovo coupon o modificare quelli esistenti passando il mouse sopra e facendo clic su **Edit**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-nl6H0I06Jl.png)
+![Discount codes list with hover actions](/img/config/discount-codes-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3puhU5xCFF.png)
+![Add Discount Code button](/img/config/discount-codes-list.png)
 
 Verrai reindirizzato alla pagina in cui creerai o modificherai il tuo codice coupon. In questo esempio ne creeremo uno nuovo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9dup6xM4Cx.png)
+![Discount code edit page](/img/config/discount-codes-list.png)
 
 Diamo un'occhiata alle impostazioni disponibili qui:
 
@@ -31,25 +31,25 @@ Diamo un'occhiata alle impostazioni disponibili qui:
 
 **Description:** Qui puoi descrivere brevemente a cosa serve questo coupon.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-V97PvPqtmK.png)
+![Discount code name and description fields](/img/config/discount-codes-list.png)
 
 **Coupon code:** Qui è dove definisci il codice che i tuoi clienti dovranno inserire durante il checkout.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-En58UdF3b7.png)
+![Coupon code field](/img/config/discount-codes-list.png)
 
 **Discount:** Qui puoi impostare una **percentuale** o un **importo fisso** di denaro per il tuo codice sconto.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-96cicxcs7f.png)
+![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
 
 **Apply to renewals:** Se questa opzione è disattivata, il codice sconto verrà applicato solo al **primo pagamento**. Tutti gli altri pagamenti non avranno sconto. Se l'opzione è attivata, il codice sconto sarà valido per tutti i pagamenti futuri.
 
 **Setup fee discount:** Se questa opzione è disattivata, il codice coupon **non darà alcuno sconto per la tassa di configurazione** dell'ordine. Se è attivata, puoi impostare lo sconto (percentuale o importo fisso) che questo codice coupon applicherà alla tassa di configurazione dei tuoi piani.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zDYmcgHcoq.png)
+![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
 
 **Active:** Attiva o disattiva manualmente questo codice coupon.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rwNFfGobBB.png)
+![Active toggle for discount code](/img/config/discount-codes-list.png)
 
 Sotto **Advanced Options**, troviamo le seguenti impostazioni:
 
@@ -59,23 +59,23 @@ Sotto **Advanced Options**, troviamo le seguenti impostazioni:
 
   * **Max uses:** Questo limiterà il numero di volte che gli utenti possono utilizzare questo codice sconto. Ad esempio, se inserisci 10 qui, il coupon potrà essere usato solo 10 volte. Dopo questo limite, il codice sconto non potrà più essere usato.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-zx4xudymt2.png)
+![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
 
 **Start & expiration dates:** Qui avrai l'opzione di aggiungere una data di inizio e/o una data di scadenza al tuo coupon.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-AyTJkzxz9W.png)
+![Start and expiration date fields](/img/config/discount-codes-list.png)
 
 **Limit products:** Se attivi **Select products**, tutti i tuoi prodotti verranno mostrati. Avrai l'opzione di selezionare manualmente (attivando o disattivando) quali prodotti possono accettare questo codice coupon. I prodotti disattivati qui non mostreranno alcun cambiamento se i tuoi clienti provano a usarli con questo codice coupon.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OHK9Bgsaq7.png)
+![Limit products selection toggles](/img/config/discount-codes-list.png)
 
 Dopo aver configurato tutte queste opzioni, fai clic su **Save Discount Code** per salvare il tuo coupon e il lavoro è fatto!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-wAAoviDov8.png)
+![Save Discount Code button](/img/config/discount-codes-list.png)
 
 Il coupon è ora nella tua lista e, da lì, puoi fare clic su **edit or delete** per modificarlo o eliminarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ySn575AxqX.png)
+![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
 
 ### 
 
@@ -87,7 +87,7 @@ Per prima cosa, devi ottenere il link condivisibile per il tuo piano. Per farlo,
 
 Fai clic sul pulsante **Click to Copy Shareable Link**. Ti verrà fornito il link condivisibile per questo piano specifico. Nel nostro caso, il link condivisibile fornito era [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TecoStCUYi.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Per applicare il tuo codice sconto a questo piano specifico, aggiungi semplicemente il parametro **?discount_code=XXX** all'URL. Dove **XXX** è il codice coupon.
 

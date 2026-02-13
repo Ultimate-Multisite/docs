@@ -16,7 +16,7 @@
     "description": "Footer link"
   },
   "link.item.label.Developer Docs": {
-    "message": "Docs pour développeurs",
+    "message": "# Documentation pour développeurs",
     "description": "Footer link"
   },
   "link.item.label.Addons": {
@@ -24,7 +24,7 @@
     "description": "Footer link"
   },
   "link.item.label.GitHub Discussions": {
-    "message": "GitHub Discussions",
+    "message": "Discussions GitHub",
     "description": "Footer link"
   },
   "link.item.label.WordPress.org": {

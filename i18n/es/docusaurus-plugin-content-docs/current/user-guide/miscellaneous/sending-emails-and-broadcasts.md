@@ -15,17 +15,17 @@ Usando la función de transmisión de Ultimate Multisite, puedes añadir **aviso
 
 Esto es extremadamente útil si necesitas hacer un anuncio como mantenimiento del sistema o ofrecer nuevos productos o servicios a tus usuarios existentes. Así es como se verá el aviso de administrador en el panel de tu usuario.
 
-![broadcast account](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 Para iniciar un aviso de administrador, ve al panel de administración de tu red y, bajo el menú **Ultimate Multisite**, encontrarás la opción **Broadcasts**.
 
-![broadcast admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Desde esta página, haz clic en el botón **Add Broadcast** en la parte superior.
 
 Esto abrirá la ventana modal Añadir transmisión donde puedes elegir qué tipo de transmisión deseas enviar. Selecciona **Message** y luego haz clic en el botón **Next Step**.
 
-![broadcast admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 La siguiente ventana te pedirá el **Target customer** o el **Target product**. Ten en cuenta que puedes seleccionar más de un usuario o más de un producto.
 
@@ -35,11 +35,11 @@ En el campo **Message type**, puedes seleccionar el color del aviso. Esto enfati
 
 Luego puedes hacer clic en **Next Step**.
 
-![broadcast admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 La siguiente ventana es donde puedes comenzar a redactar tu mensaje ingresando el asunto y el contenido/mensaje que deseas difundir a los usuarios.
 
-![broadcast admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 Después de crear tu mensaje, puedes pulsar el botón **Send**.
 
@@ -51,13 +51,13 @@ Usando la función de transmisión de Ultimate Multisite, puedes enviar un corre
 
 Para iniciar una transmisión de correo electrónico, ve al panel de administración de tu red y, bajo el menú Ultimate Multisite, encontrarás la opción Broadcast.
 
-![email admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Desde esta página, haz clic en el botón **Add broadcast** en la parte superior.
 
 Esto abrirá la ventana modal Añadir transmisión donde puedes elegir qué tipo de transmisión deseas enviar. Selecciona **Email** y luego haz clic en el botón **Next Step**.
 
-![email admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 La siguiente ventana te pedirá el **Target customer** o el **Target produc** t. Ten en cuenta que puedes seleccionar más de un usuario o más de un producto.
 
@@ -65,11 +65,11 @@ Para buscar una cuenta de usuario o un producto, debes comenzar a escribir la pa
 
 Una vez que hayas seleccionado tu audiencia objetivo, puedes hacer clic en **Next Step**.
 
-![email admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 La siguiente ventana es donde puedes comenzar a redactar tu correo electrónico ingresando el asunto y el contenido/mensaje que deseas enviar a los usuarios.
 
-![email admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 Después de crear tu mensaje, puedes pulsar el botón **Send**.
 
@@ -91,19 +91,19 @@ Sin embargo, los superadministradores y agentes pueden importar estos correos re
 
 Ve a la página de Configuración de Ultimate Multisite y dirígete a la pestaña **Emails**.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 Luego, en la barra lateral, haz clic en el botón **Customize System Emails**.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 En la página de Correos del Sistema, verás el botón de acción **Reset & Import** en la parte superior. Al hacer clic en ese botón debería abrirse la ventana modal de importación y restablecimiento.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 Luego, puedes alternar las opciones Import Emails para ver qué correos del sistema están disponibles para ser importados.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### Restablecer Correos del Sistema
 
@@ -115,4 +115,4 @@ O puedes usar la herramienta **Reset & Import** para restablecer esa plantilla d
 
 Para restablecer una plantilla de correo, puedes seguir los pasos anteriores hasta llegar a la herramienta Reset & Import, y luego, alternar la opción **Reset** y seleccionar los correos que deseas restablecer a su contenido predeterminado.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

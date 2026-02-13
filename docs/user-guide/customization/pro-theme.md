@@ -11,7 +11,7 @@ PRO Theme is an admin theme developed to help you when customizing your clients�
 
 After installing it, go to your _Plugins_ page and click to activate it on your Network.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lWHb8N9jkD.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
 _Activate it network-wide on your Plugins page_
 
@@ -19,29 +19,29 @@ _**NOTE:**_ _If you just install it, it will show on your client’s as an optio
 
 Now, you have your admin interface completely redesigned! You also have a new menu on the left column called PRO Theme.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-EYpOnLd8Lm.png)
+<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
 _A brand new look for your Admin Panel_
 
 On this menu you’ll have access to five tabs:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TayGbcr05t.png)
+<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
 _Styling Settings_
 
-_![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Qp6Gu25dZh.png)_
+<!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
 _Functionality_
 
-_![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Pt0lut5LCT.png)_
+<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
 _Custom CSS_
 
-_![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7Rp59aFAMi.png)_
+<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
 _Import/Export_
 
-_![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ft0eSfhvnR.png)_
+<!-- Screenshot unavailable: PRO Theme Activate tab -->
 
 _Activate PRO Theme_
 
@@ -49,10 +49,10 @@ In each of them, you can enable and disable styling items, allow or block functi
 
 Here is an example of what you can get after some adjustments:
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7aCkkF9qQq.png)
+<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
 _Your client's Dashboard_
 
-_![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HtNfQBNq88.png)_
+<!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
 _A customized login page_

@@ -17,7 +17,7 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 要在您的网络中将 PayPal 设为可用支付方式，请转到 **Ultimate Multisite > Settings > Payments** 选项卡，并勾选 PayPal 旁边的复选框。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## 获取 PayPal API 凭证
 
@@ -27,15 +27,15 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
 
 (请记住，您可以使用 **sandbox 模式** 来测试支付并查看网关是否正确设置。只需切换相应的部分即可。)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 要为您的 PayPal 账户请求 API Signature 或 Certificate 凭证：
 
 1. 转到您的 [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess)。
 2. 在 **API access** 部分，点击 **Update**。  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 3. 在 **NVP/SOAP API integration (Classic)** 下，点击 **Manage API credentials**。  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * 如果您已经生成了 API Signature 或 Certificate，您将被重定向到一个页面，在那里可以找到您的凭证。
    * _**注意：** 如果提示您验证 PayPal 账户，请按屏幕上的说明操作。_
@@ -46,7 +46,7 @@ _**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
    * **Request API Certificate** – 选择用于 API Certificate 认证。
 
 5. PayPal 按如下方式生成您的 API 凭证：  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **API Signature 凭证** 包含 API Username、API Password 和 Signature，且不失效。这些值默认隐藏以增强安全性。点击 **Show/Hide** 开关它们。完成后，点击 **Done**。
    * **API Certificate 凭证** 包含 API Username、API Password 和 Certificate，且在三年后自动失效。点击 **Download Certificate** 将 API Certificate 保存到桌面。

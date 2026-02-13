@@ -15,9 +15,9 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 アカウントページは、顧客のダッシュボード内で **Account** をクリックすることでアクセスできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LrGNKCDc8R.png)
+![Account menu in the customer dashboard](/img/admin/dashboard.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FTDgqcwaO0.png)
+![Customer account page overview](/img/admin/dashboard.png)
 
 顧客がクリックすると、メンバーシップ、請求先住所、請求書、ドメイン、サイト制限の概要が表示され、さらに **Site Template** を変更できるようになります（ネットワークで許可されている場合）。
 
@@ -27,11 +27,11 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 顧客のウェブサイト名のすぐ下にある最初のブロックには、現在のプランとそれに購入されたサービス/パッケージの概要が表示されます。このブロックには、メンバーシップ番号、初期支払額、プランおよびサービス/パッケージの費用、そしてこのメンバーシップに対して課金された回数も表示されます。また、メンバーシップが **Active**、**Expired**、**Canceled** のいずれかであるかも確認できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-XNTPsXaqzp.png)
+![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
 
 このブロックのすぐ下に、顧客は **About This Site** と **Site Limits** のブロックを見ることができます。これらのブロックには、プランに付随するすべての制限（ディスク容量、投稿数、ページ数、訪問数など）が表示されます。これらの制限は、**Ultimate Multisite > Products** の各プランページで設定できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6kVmMDoiCU.png)
+![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
 
 **Your Membership** の右側にある **Change** をクリックすると、利用可能なすべてのプランとパッケージ/サービスが表示されます。別のプランを選択すると、そのプランの制限が現在のメンバーシップの制限に代わって適用されます（ダウングレードでもアップグレードでも関係ありません）。
 
@@ -43,11 +43,11 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 アカウントページで、顧客は請求先住所を更新できます。_Billing Address_ の横にある **Update** をクリックするだけです。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GLQ21kppU2.png)
+![Billing Address section with Update button](/img/admin/customers-list.png)
 
 新しいウィンドウが表示され、顧客は新しい住所を入力し、_Save Changes_ をクリックするだけです。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Z2nY05cYvD.png)
+![Update billing address form](/img/admin/customers-list.png)
 
 ### サイトテンプレートの変更
 
@@ -55,20 +55,20 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 さらに、**Ultimate Multisite > Products** でプランを選択し、**Site Templates** タブに移動します。**Allow Site Templates** オプションが有効になっていること、そして **Site Template Selection Mode** で **Choose Available Site Templates** が選択されていることを確認してください。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rjixD7iShD.png)
+![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
 
 ウェブサイト上で利用可能なすべてのサイトテンプレートが表示されます。このプランに加入している顧客に利用可能にしたいテンプレートと、利用不可にしたいテンプレートを選択してください。この設定はチェックアウトフォームにも影響するため、**Not Available** と選択されたテンプレートは、このプランの登録ページに表示されません。
 
 これで、顧客はアカウントページ内で **Change Site Template** をクリックできるようになります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5pdvAuh6h3.png)  
+![Change Site Template button on account page](/img/admin/dashboard.png)
 このプランに利用可能なすべてのサイトテンプレートのリストが顧客に表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bQSA663xNo.png)
+![Available site templates list for the plan](/img/config/site-templates-list.png)
 
 変更したいテンプレートを選択した後、変更を確認するよう求められます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6azvPydgAU.png)
+![Site template switch confirmation dialog](/img/admin/dashboard.png)
 
 確認をオンにして **Process Switch** をクリックすると、新しいサイトテンプレートが顧客のウェブサイトで使用されます。
 
@@ -82,23 +82,23 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 **Ultimate Multisite > Products** に移動し、希望するプランを選択して **Custom Domains** タブに移動します。**Allow Custom Domains** オプションを有効にします。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-J7mrCTfet6.png)
+![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
 
 これにより、この特定のプランに加入しているすべての顧客がカスタムドメインを使用できるようになります。次に、アカウントページで顧客は **Add Domain** をクリックしてカスタムドメインを追加できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0mbLgC86SG.png)
+![Add Domain button on the account page](/img/admin/domains-list.png)
 
 最初に開くウィンドウには、顧客にカスタムドメインをネットワーク上で機能させるためにDNSレコードを更新する方法を説明するメッセージが表示されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-emhM26Abhn.png)
+![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
 
 このメッセージは、**Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** で編集できます（あなたが編集）。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-6ZjI8Fk6Gw.png)
+![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
 
 **Next Step** をクリックすると、顧客はカスタムドメイン名を追加し、そのカスタムドメインをプライマリにするかどうかを選択できます。顧客はウェブサイトに複数のカスタムドメインを使用できるため、どれをプライマリにするか選択できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-pSzZowjc2a.png)
+![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
 
 **Add Domain** をクリックすると、ドメインが顧客のアカウントに追加されます。次に必要なのは、ドメインレジストラでこのカスタムドメインのDNSレコードを変更することです。
 
@@ -106,22 +106,22 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象と
 
 アカウントダッシュボード内で、顧客は **Change Password** をクリックしてパスワードを変更できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sihWaIk4B8.png)
+![Change Password button on account page](/img/admin/dashboard.png)
 
 新しいウィンドウが表示され、顧客は現在のパスワードを入力し、次に使用したい新しいパスワードを入力する必要があります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5zCgtcHfgB.png)
+![Change password form with current and new password fields](/img/admin/dashboard.png)
 
 ### 危険ゾーン
 
 **Danger Zone** セクションには、**Delete Site** と **Delete Account** の2つのオプションがあります。これらは両方とも危険ゾーンに表示されます。なぜなら、これらの操作は不可逆的であるためです。顧客がウェブサイトまたはアカウントを削除すると、復元できません。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FMNX249rFi.png)
+![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
 
 顧客がこれらの2つのオプションのいずれかをクリックすると、ウェブサイトまたはアカウントを削除するオプションをオンにする必要があるウィンドウが表示され、この操作は元に戻せないことが警告されます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MRI6taFdJK.png)
+![Delete Site confirmation dialog](/img/admin/dashboard.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-itpv48GPgY.png)
+![Delete Account confirmation dialog](/img/admin/dashboard.png)
 
 ウェブサイトを削除した場合、アカウントとメンバーシップはそのまま残ります。ただし、ウェブサイト上のすべてのコンテンツは失われます。アカウントを削除した場合、すべてのウェブサイト、メンバーシップ、およびアカウントに関する情報が失われます。

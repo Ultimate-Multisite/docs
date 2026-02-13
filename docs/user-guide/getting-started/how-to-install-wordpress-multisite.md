@@ -5,9 +5,13 @@ sidebar_position: 2
 
 # How do I Install WordPress Multisite?
 
-WordPress Multisite allows you to have a network of sites on a single installation. This is a built-in feature, but it’s not active by default.
+WordPress Multisite allows you to have a network of sites on a single installation. This is a built-in feature, but it's not active by default.
 
-Since Ultimate Multisite is a network-only plugin, in this tutorial, you are going to learn how to install and set up WordPress Multisite. This text is based on [How to Install and Setup WordPress Multisite Network](https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/), from WPBeginner.
+:::tip
+Ultimate Multisite includes a **[built-in Multisite Setup Wizard](./multisite-setup-wizard)** that automates this entire process. If you have Ultimate Multisite installed, we recommend using the wizard instead of following the manual steps below.
+:::
+
+Since Ultimate Multisite is a network-only plugin, in this tutorial, you are going to learn how to install and set up WordPress Multisite manually. This text is based on [How to Install and Setup WordPress Multisite Network](https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/), from WPBeginner.
 
 **Things to pay attention to before creating your multisite network:**
 
@@ -25,7 +29,7 @@ _**IMPORTANT**_ **:** If you are setting up a multisite network on an existing W
 
   * Deactivate all plugins on your site by going to your plugins page and selecting _Deactivate_ from bulk actions and then clicking _Apply_
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 To enable Multisite, first connect to your site using a FTP client or cPanel file manager, and open your wp-config.php file for editing.
 
@@ -39,7 +43,7 @@ With the multisite feature enabled on your site, now it’s time to setup your n
 
 Go to **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Now you need to tell WordPress what kind of domain structure you will be using for sites in your network: subdomains or subdirectories.
 
@@ -47,7 +51,7 @@ If you choose subdomains, you must change your DNS settings for domain mapping a
 
 Back to the Network Setup, give a title for your network and be sure that the email address in the Network admin email is correct. Click _Install_ to continue.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Add this code, provided by WordPress, to your _**wp-config.php**_ :
 
@@ -89,7 +93,7 @@ To create a subsite:
 
   * Admin Email — Set as the initial admin user for the subsite
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 After filling up the fields, click the "Add site" button. Once the new subsite is created, go ahead and access it to make sure that the subsite is functional.
 

@@ -13,35 +13,35 @@ Soms hebben we echt een geweldige maatwerkoplossing nodig om onze netwerkstromen
 
 Ga eerst naar [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) en klik op de knop **Start a Project**.
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212668a4cefb30ae5c85f8-xCy2k2LWG-Codeable.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212668a4cefb30ae5c85f8-xCy2k2LWG-Codeable.png)
+<!-- Screenshot unavailable: Codeable homepage with Start a Project button -->
 
 Nu, om een project in te dienen, klik je links op **Start a Project**.
 
-[![](https://downloads.intercomcdn.com/i/o/213753902/ee6ea74cc143e9ecc76a50c2/Codeable+2.png)](https://downloads.intercomcdn.com/i/o/213753902/ee6ea74cc143e9ecc76a50c2/Codeable+2.png)
+<!-- Screenshot unavailable: Codeable project submission page with Start a Project option -->
 
 In 'I need help with', kies **Customizing** :
 
-[![](https://downloads.intercomcdn.com/i/o/213754344/76d9d4fc84f0d0dbb092b3a1/Captura+de+Tela+2020-05-31+a%CC%80s+17.14.54.png)](https://downloads.intercomcdn.com/i/o/213754344/76d9d4fc84f0d0dbb092b3a1/Captura+de+Tela+2020-05-31+a%CC%80s+17.14.54.png)
+<!-- Screenshot unavailable: Codeable project form with Customizing selected -->
 
 In 'My', kies **Plugin** :
 
-[![](https://downloads.intercomcdn.com/i/o/213754429/02deee78063ceec0725a345d/Captura+de+Tela+2020-05-31+a%CC%80s+17.15.30.png)](https://downloads.intercomcdn.com/i/o/213754429/02deee78063ceec0725a345d/Captura+de+Tela+2020-05-31+a%CC%80s+17.15.30.png)
+<!-- Screenshot unavailable: Codeable project form with Plugin selected -->
 
 Klik vervolgens op de knop **Continue**.
 
-[![](https://downloads.intercomcdn.com/i/o/213754564/c863aa37e14d10662ef4f901/Captura+de+Tela+2020-05-31+a%CC%80s+17.18.27.png)](https://downloads.intercomcdn.com/i/o/213754564/c863aa37e14d10662ef4f901/Captura+de+Tela+2020-05-31+a%CC%80s+17.18.27.png)
+<!-- Screenshot unavailable: Codeable project form Continue button -->
 
 Nu is het tijd om je project en behoeften zo goed mogelijk te beschrijven. Probeer zo veel mogelijk informatie te geven!
 
-[![](https://downloads.intercomcdn.com/i/o/213754760/ab401673618a203c4d2934a9/Captura+de+Tela+2020-05-31+a%CC%80s+17.20.04.png)](https://downloads.intercomcdn.com/i/o/213754760/ab401673618a203c4d2934a9/Captura+de+Tela+2020-05-31+a%CC%80s+17.20.04.png)
+<!-- Screenshot unavailable: Codeable project description form -->
 
 Beantwoord de volgende vragen om te helpen bij het bepalen van de prijs.
 
-[![](https://downloads.intercomcdn.com/i/o/213755196/b221c6c181bcfc8a48c3079e/Captura+de+Tela+2020-05-31+a%CC%80s+17.22.15.png)](https://downloads.intercomcdn.com/i/o/213755196/b221c6c181bcfc8a48c3079e/Captura+de+Tela+2020-05-31+a%CC%80s+17.22.15.png)
+<!-- Screenshot unavailable: Codeable project pricing questions -->
 
 Daarna, als je nog geen [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) account hebt, maak er dan een aan en klik op de knop **Publish My Project**.
 
-[![](https://downloads.intercomcdn.com/i/o/213755544/03c19957ec0cf3c51269e800/Captura+de+Tela+2020-05-31+a%CC%80s+17.24.58.png)](https://downloads.intercomcdn.com/i/o/213755544/03c19957ec0cf3c51269e800/Captura+de+Tela+2020-05-31+a%CC%80s+17.24.58.png)
+<!-- Screenshot unavailable: Codeable account creation and Publish My Project button -->
 
 Zodra je je [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) project hebt gepubliceerd, zal het platform je verbinden met ontwikkelaars die voldoen aan de vereiste vaardigheden voor je project.
 

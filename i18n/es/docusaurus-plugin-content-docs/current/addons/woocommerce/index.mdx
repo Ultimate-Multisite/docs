@@ -1,94 +1,91 @@
 ---
-title: Integración con WooCommerce
+title: WooCommerce Integración
 sidebar_position: 1
-_i18n_hash: 58f0a02be92223c785c1086def91b0fb
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# Integración con WooCommerce
 
-La integración de WooCommerce funciona de manera muy similar a la forma en que funciona nuestro Manual Gateway. Ofrece una gran flexibilidad a sus usuarios, permitiéndoles elegir cualquiera de los formularios de pago disponibles en su instalación de WooCommerce. Y es simple: una vez que termina el período de facturación del usuario, la suscripción del usuario se pone en espera. Al mismo tiempo, se creará un pedido en la instalación de WooCommerce del sitio principal de la red. El usuario luego recibe una factura en su correo electrónico, con un enlace para realizar el pago. Una vez recibido el pago, la suscripción se renueva.
+La Integración con WooCommerce funciona de manera muy similar a nuestro Manual Gateway. Ofrece mucha flexibilidad a tus usuarios, permitiéndoles elegir cualquiera de los formularios de pago disponibles en tu instalación de WooCommerce. Y es simple: una vez que termina el período de facturación del usuario, la suscripción del usuario se pone en espera. Al mismo tiempo, se creará un pedido en la instalación de WooCommerce del sitio principal de la red. El usuario luego recibe una factura en su correo electrónico, con un enlace para realizar el pago. Una vez recibido el pago, la suscripción se renueva.
 
 ## Features
 
 - Integración sencilla entre Ultimate Multisite y WooCommerce
-- Varias formas de pago disponibles
+- Varias opciones de pago disponibles
 - Proceso completamente automatizado con WooCommerce Subscriptions
 
 ## Documentation
 
-**Configuración de la Integración de WooCommerce**
+**Configuración de la Integración con WooCommerce**
 
-**Ampliando sus Opciones de Pago con Ultimate Multisite: Integración de WooCommerce**
+**Ampliando tus opciones de pago con Ultimate Multisite: Integración con WooCommerce**
 
 ## Installation
 
-1. Suba 'ultimate-multisite-woocommerce' al directorio '/wp-content/plugins/'
-2. Active el plugin a través del menú 'Plugins' en WordPress
-3. Siga el asistente paso a paso para configurar el plugin
+1. Sube 'ultimate-multisite-woocommerce' al directorio '/wp-content/plugins/'
+2. Activa el plugin a través del menú 'Plugins' en WordPress
+3. Sigue el asistente paso a paso para configurar el plugin
 
 ## Usage Guide
 
 _**NOTA IMPORTANTE: Este artículo se refiere a la versión 2.x de Ultimate Multisite.**_
 
-_**ATENCIÓN:** Ultimate Multisite: WooCommerce Integration requiere que WooCommerce esté activado al menos en su sitio principal.**_
+_**ATENCIÓN:** Ultimate Multisite: WooCommerce Integration requiere que WooCommerce esté activado al menos en tu sitio principal._
 
-Entendemos que _Stripe_ y _PayPal_ no están disponibles en algunos países, lo que limita o dificulta a los usuarios de Ultimate Multisite el uso efectivo de nuestro plugin. Por eso creamos un **add-on para integrar _WooCommerce_**.
+Entendemos que _Stripe_ y _PayPal_ no están disponibles en algunos países, lo que limita o dificulta a los usuarios de Ultimate Multisite usar eficazmente nuestro plugin. Por eso creamos un **add-on para integrar _WooCommerce_**.
 
-_WooCommerce_ es un plugin de eCommerce muy popular. Desarrolladores de todo el mundo crearon add-ons para integrar diferentes pasarelas de pago. Aprovechamos esto para ampliar las pasarelas de pago que puede usar en el sistema de facturación de Ultimate Multisite.
+_WooCommerce_ es un plugin de eCommerce muy popular. Desarrolladores de todo el mundo crearon add-ons para integrar diferentes pasarelas de pago. Aprovechamos esto para ampliar las pasarelas de pago que puedes usar en el sistema de facturación de Ultimate Multisite.
 
 ## Setting It Up
 
-Primero, necesita instalar el add-on WooCommerce Integration, que es **gratuito para usuarios con licencia**. Para instalarlo, haga clic en Ultimate Multisite en su panel de super administrador y seleccione **Add-ons**.
+Primero, necesitas instalar el add-on WooCommerce Integration, que es **gratuito para usuarios con licencia**. Para instalarlo, haz clic en Ultimate Multisite en tu panel de super administrador y selecciona **Add-ons**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RRyV5DYA9v.png)
+![Página de Add-ons](/img/admin/addons-page.png)
 
-Aquí puede encontrar todos los add-ons de Ultimate Multisite. Haga clic en el add-on **Ultimate Multisite: WooCommerce Integration**.
+Aquí puedes encontrar todos los add-ons de Ultimate Multisite. Haz clic en el add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4AiiRzTKme.png)
+![Página de Add-ons mostrando la Integración con WooCommerce](/img/admin/addons-page.png)
 
-Se abrirá una ventana con los detalles del add-on. Simplemente haga clic en **Install Now** *.
+Se abrirá una ventana con los detalles del add-on. Simplemente haz clic en **Install Now** *.*
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JMfodJJZN5.png)
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
 
-Una vez finalizada la instalación, será redirigido a la página de plugins. Aquí, simplemente haga clic en **Network Activate** y el add-on _WooCommerce_ se activará en su red.
+Una vez finalizada la instalación, serás redirigido a la página de plugins. Aquí, simplemente haz clic en **Network Activate** y el add-on _WooCommerce_ se activará en tu red.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LQkSxAF1Sn.png)
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
 
-Después de activarlo, si aún no tiene instalado y activado el plugin WooCommerce en su sitio web, **recibirá un recordatorio**.
+Después de activarlo, si aún no tienes instalado y activado el plugin WooCommerce en tu sitio web, **recibirás un recordatorio**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1U4DaZPAiR.png)
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
 
-Una vez instalado, verá una opción adicional bajo la configuración de pagos de Ultimate Multisite. Luego puede **habilitar** la opción _WooCommerce_ desde allí.
+Una vez instalado, verás una opción adicional bajo la configuración de pagos de Ultimate Multisite. Luego puedes **habilitar** la opción _WooCommerce_ desde allí.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HDQ1SG1pYO.png)
+![Configuración de la pasarela de pago](/img/config/settings-payment-gateways.png)
 
-Puede configurar algunos ajustes básicos como el nombre que se mostrará en la interfaz y las instrucciones para guiar a sus usuarios en su flujo de pago. Luego puede ir a la configuración de **Main site’s _WooCommerce_** para habilitar y configurar la pasarela de pago que prefiera usar.
+Puedes configurar algunos ajustes básicos como el nombre que se mostrará en la interfaz y las instrucciones para guiar a tus usuarios en su flujo de pago. Luego puedes ir a la configuración de **_WooCommerce_ del sitio principal** para habilitar y configurar la pasarela de pago que prefieras usar.
 
 ## How to manage the payment
 
-La integración de WooCommerce funciona de manera muy similar a la forma en que funciona nuestro **Manual Gateway**. La desventaja es que cada pago debe pagarse manualmente al final del período de facturación. Así es como funciona el flujo:
+La Integración con WooCommerce funciona de manera muy similar a nuestro **Manual Gateway**. La desventaja es que cada pago debe realizarse manualmente al final del período de facturación. Así es como funciona el flujo:
 
-  * Una vez que termina el ciclo de facturación del usuario, la membresía se pone **en espera**. Al mismo tiempo, se creará un pedido en la instalación de _WooCommerce_ en el sitio principal de su red.
-
-  * Los usuarios luego reciben una factura en su correo electrónico, con un enlace para realizar el pago (el enlace también aparece en su historial de facturación desde el panel de su subsitio). Ese enlace redirige al usuario al **checkout de _WooCommerce_**, donde los usuarios podrán seleccionar una de las **pasarelas _WooCommerce_ disponibles** para procesar su pago.
-
-  * Una vez recibido el pago, la membresía se **renueva**, el pago se registra en Ultimate Multisite y el pedido se marca como completado.
+* Cuando termina el ciclo de facturación del usuario, la membresía se pone **en espera**. Al mismo tiempo, se creará un pedido en la instalación de _WooCommerce_ del sitio principal de tu red.
+* Los usuarios reciben una factura en su correo electrónico, con un enlace para realizar el pago (el enlace también aparece en su historial de facturación desde el panel de su subsitio). Ese enlace redirige al usuario al **checkout** de _**WooCommerce**_, donde podrán seleccionar una de las **pasarelas _WooCommerce_ disponibles** para procesar su pago.
+* Una vez recibido el pago, la membresía se **renueva**, el pago se registra en Ultimate Multisite y el pedido se marca como completado.
 
 ### Algunas notas importantes:
 
-  * La funcionalidad predeterminada de Ultimate Multisite sigue funcionando con este formulario de integración. Por ejemplo, **emitir reembolsos** desde la pantalla **Subscription Management** se comunicará con WooCommerce para emitir el reembolso usando el formulario de pago seleccionado.
-
-  * Ultimate Multisite: WooCommerce Integration depende de WP-Cron para funcionar. Esto funciona muy bien la mayoría de las veces, pero si el sitio tiene poco tráfico, el cron no se activa para comprobar los eventos programados y el evento se pierde, lo que puede causar retrasos en la ejecución.
+* La funcionalidad predeterminada de Ultimate Multisite sigue funcionando con este formulario de integración. Por ejemplo, **emitir reembolsos** desde la pantalla **Subscription Management** se comunicará con WooCommerce para emitir el reembolso usando el formulario de pago seleccionado.
+* Ultimate Multisite: WooCommerce Integration depende de WP-Cron para funcionar. Esto funciona muy bien la mayoría de las veces, pero si el sitio tiene poco tráfico, el cron no se activa para comprobar eventos programados y el evento se pierde, lo que puede causar retrasos en la ejecución.
 
 ## Woocommerce Subscriptions Plugin
 
-Iniciar manualmente un pago cada mes no es ideal para los usuarios finales, ya que se espera que una suscripción se renueve automáticamente cada ciclo de facturación. Por eso diseñamos el add-on WooCommerce Integration para **soportar el plugin WooCommerce Subscriptions**. Esto automatizará el pago y facilitará la transacción para sus usuarios finales.
+Iniciar manualmente un pago cada mes no es ideal para los usuarios finales, ya que se espera que una suscripción se renueve automáticamente cada ciclo de facturación. Por eso diseñamos el add-on WooCommerce Integration para **soportar el plugin WooCommerce Subscriptions**. Esto automatizará el pago para facilitar la transacción a tus usuarios finales.
 
-Todo lo que necesita hacer es **instalar** el [plugin Woocommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) y tenerlo **activado en su sitio principal**. Luego regrese a la configuración de pagos de Ultimate Multisite y **habilite la integración**.
+Todo lo que necesitas hacer es **instalar** el [plugin Woocommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) y tenerlo **activado en tu sitio principal**. Luego vuelve a la configuración de pagos de Ultimate Multisite y **habilita la integración**.
 
-Y eso es todo. Sus usuarios finales ya no necesitarán realizar un pago manual al final de su ciclo de facturación.
+Y eso es todo. Tus usuarios finales ya no necesitarán realizar un pago manual al final de su ciclo de facturación.
 
-Aparte de que se cree un pedido en su sitio principal bajo _Woocommerce_, también se creará una suscripción para cada cuenta.
+Además de que se cree un pedido en tu sitio principal bajo _Woocommerce_, también se creará una suscripción para cada cuenta.

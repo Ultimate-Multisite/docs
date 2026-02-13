@@ -57,7 +57,7 @@ WordPress 也会从客户的角度夺走它所给予的东西。 在独立 WordP
 
 鉴于此理解，允许创建用户可能并不理想，因此 WordPress Multisite 将此权限从站点管理员移除，并转移到网络管理员。随后，网络管理员可以将必要的权限委托给站点管理员，以允许他们为自己的站点创建用户账户。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-sqwI-k_-3krK0_ortenskDcdGrKpgOD6itvwDc2KEuGk1gZO-rqo_OF9yTqclSmQdrOBwsGPiiOc1oF6c0GMyNELJ-7gbyQNE81juSM3IvgTdWqhZ_UEVt06xJRu8Z8oyAKfLLz-)
+<!-- Screenshot unavailable: WordPress Multisite network user management interface -->
 
 重申上述声明，尽管用户账户似乎与站点相关，但它们实际上分配给网络，因此必须在网络中唯一。由于此原因，可能会出现用户名无法注册的情况。
 
@@ -77,11 +77,11 @@ WordPress 也会从客户的角度夺走它所给予的东西。 在独立 WordP
 
 对于文章，主站点会添加一个强制的 /blog/ 路径，以防止与网络站点冲突。这意味着像“Post name”这样的漂亮永久链接将呈现为 domain.name/blog/post-name/
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-QUlDfXAzHqImjngoE7UsJHa6DOl6XbQWV17LYthxpxDBy-k453GE5TlJVBA6-sOootX3Fsi34sHv5nSgi1kZmlUD1iMneztCc_HQvZmXpbZEdX2a1il8GJQqxUT8aVPgW5ikR5uG)
+<!-- Screenshot unavailable: WordPress permalink settings showing /blog/ path in subdirectory configuration -->
 
 在 _子域名_ 配置中，这一操作并非必要，因为每个网络站点都受益于完整的域名分离，因此不必依赖单一路径。它们改为根据其 _子域名_ 维护各自独立路径。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-2wgqTosYo3GAa3jwaBlPADbFiMbZ-kKUTuQtk0gv5pvkj81UfxnxSyA8R-jD1EZmRMBLjJFoWZJOirTSe8K9OQKeoSYeDj602XBHRrZeRFABE1sw-JERzJzEzMd7FmvrM9G1L9MP)
+<!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
 #### Static Pages
 
@@ -89,7 +89,7 @@ WordPress 也会从客户的角度夺走它所给予的东西。 在独立 WordP
 
 为防止这种情况，WordPress 提供了一种方法来屏蔽某些站点名称，以便它们不会与第一个站点的名称冲突。通常，网络管理员会输入主站点页面的根路径。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+<!-- Screenshot unavailable: WordPress network settings showing banned site names to prevent conflicts -->
 
 在 _子域名_ 配置中，命名冲突的可能性通过 _子域名_ 得到缓解，因为它对网络站点是唯一的，并且与主站点没有任何关联。
 
@@ -97,11 +97,11 @@ WordPress 也会从客户的角度夺走它所给予的东西。 在独立 WordP
 
 在 WordPress Multisite 的网络设置中，提供了多项新的用户注册选项，允许新用户和现有用户创建站点。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-nbH9Ka0YhI7nvo3nnKvOr_FoI_FpdAy5hz-f199CW-PV1D-tNKGawhIK_YwlUvM19TjLnhVb6Ro6J0ZpI6s2TRUaHgyGPc4qQI06eQ2O2jeMb_SaktkKwPUw3BSyaNegZYSjXMVX)
+<!-- Screenshot unavailable: WordPress Multisite network settings showing registration options -->
 
 与独立 WordPress 安装不同，网络站点不保留允许用户注册或将这些注册分配给角色的熟悉选项。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-7I21vdReE43e0Utj_KWdnuWA08ZXz7PX33rjSEjwf6T8NDiCBYbeP9GH0J36ekFNkmsXXLBYAWjQJo4vo_kWqL6hXJuFzd9RyA52zy13lT-mMsaK-JdVivUkd5SJF3UF13r2hj28)
+<!-- Screenshot unavailable: WordPress standalone site user registration settings showing limited options -->
 
 当创建用户账户时，这些账户在网络级别生成。因此，它们不属于任何特定站点，而是属于网络。这具有一些独特的优点和缺点。
 
@@ -153,15 +153,15 @@ Ultimate Multisite 是您创建网站即服务（WaaS）的瑞士军刀。想想
 
 倾向于严格控制站点创建的代理机构将欣赏通过 Ultimate Multisite 的简化界面轻松创建站点并将站点与客户和计划关联的便利性。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+![Ultimate Multisite site management interface](/img/admin/sites-list.png)
 
 通过 Ultimate Multisite 的直观界面，按产品维度对插件和主题进行严格控制，允许在为新站点实例化时将插件和主题设为可用或隐藏，并设置其激活状态。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-VVpPcr8bvKd2qf9zPB_1SBiVpEYdtmskG_iO0tNCJOm2RXbU6kSC1czyLV1CaU5Mw2fWd-k2r1bnQV_yA4zOL6qnYKLWohnI-EDYhXcpxD_4n-rabGlxjQO8iyjtOgXhuDL5r2y7)
+![Product plugin limitations interface](/img/config/product-plugins.png)
 
 主题提供类似功能，允许在站点创建时激活或隐藏特定主题。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3CEl6U5CPdKatlXAcG5B9jJux_iWOYpUTI4crCgW15EFkhh4pODF7hYlMyzc3na8QAefadz1kcnY_T7Yn6ZyxbBMJdfRfa16IFZma_-u7NHTtMbLZwJ9f7JbqG1QTh0y1l9WWj5z)
+![Product theme limitations interface](/img/config/product-themes.png)
 
 代理机构将通过 Ultimate Multisite 获得安心，能够专注于他们最擅长的工作——设计卓越的网站。
 

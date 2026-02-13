@@ -21,7 +21,7 @@ _**重要** **:** 如果您在现有 WordPress 网站上设置多站点网络，
 - 创建您 WordPress 网站的完整备份
 - 在插件页面中选择批量操作中的 _Deactivate_ 并点击 _Apply_，停用您网站上的所有插件
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 要启用 Multisite，首先使用 FTP 客户端或 cPanel 文件管理器连接到您的网站，并打开 wp-config.php 文件进行编辑。
 
@@ -37,7 +37,7 @@ define('WP_ALLOW_MULTISITE', true);
 
 转到 **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 现在，您需要告诉 WordPress 您将在网络中使用哪种域结构：子域名还是子目录。
 
@@ -45,7 +45,7 @@ define('WP_ALLOW_MULTISITE', true);
 
 返回网络设置，给您的网络起一个标题，并确保网络管理员电子邮件地址正确。点击 _Install_ 继续。
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 将 WordPress 提供的以下代码添加到您的 _**wp-config.php**_：
 
@@ -96,7 +96,7 @@ RewriteRule . index.php [L]
    * Site Title — 网站标题，稍后可更改
    * Admin Email — 设置为子站点的初始管理员用户
 
-![image](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 填写完字段后，点击 “Add site” 按钮。新子站点创建后，访问它以确保子站点正常运行。
 

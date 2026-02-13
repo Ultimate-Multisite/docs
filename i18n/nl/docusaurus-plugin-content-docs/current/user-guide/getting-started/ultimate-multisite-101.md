@@ -51,7 +51,7 @@ Om deze reden verwijdert WordPress, wanneer het als multisite is geconfigureerd,
 
 In die zin is de netwerkbeheerder verantwoordelijk voor het installeren van plug‑ins en thema's in het netwerk en kent hij machtigingen toe om deze plug‑ins en thema's te gebruiken aan netwerk‑sites. Sitebeheerders kunnen geen plug‑ins en thema's installeren of toegang krijgen tot plug‑ins en thema's die niet aan hun site zijn toegewezen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-zg50L2qdJEphzPcgwlo_pqNiYDknE6wiJo4zQUlhQwBCtDeAef2_aTzBBMx76YvTweROsbUH4uvosFRitBj8kgatWzCi_C822oJPWr5bKpwLuoBvTIZ5M9O1nFxOepiav1FkRHNv)
+<!-- Screenshot unavailable: WordPress Multisite network user management interface -->
 
 Terugkerend naar de bovenstaande uitspraak, hoewel de gebruikersaccounts lijken gerelateerd te zijn aan de site, worden ze in feite toegewezen aan het netwerk en moeten daarom uniek zijn binnen het netwerk. Er kunnen gevallen zijn waarin gebruikersnamen niet beschikbaar zijn om te registreren vanwege deze reden.
 
@@ -69,11 +69,11 @@ In een _subdirectory_-configuratie moeten de hoofdsite (de eerste site die wordt
 
 Voor berichten wordt een verplicht /blog/ pad toegevoegd aan de hoofdsite om botsingen met netwerk‑sites te voorkomen. Dit betekent dat mooie permalinks zoals ‘Post name’ worden weergegeven als domain.name/blog/post-name/
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-QUlDfXAzHqImjngoE7UsJHa6DOl6XbQWV17LYthxpxDBy-k453GE5TlJVBA6-sOootX3Fsi34sHv5nSgi1kZmlUD1iMneztCc_HQvZmXpbZEdX2a1il8GJQqxUT8aVPgW5ikR5uG)
+<!-- Screenshot unavailable: WordPress permalink settings showing /blog/ path in subdirectory configuration -->
 
 In een _subdomain_-configuratie is deze actie niet nodig omdat elke netwerk‑site profiteert van volledige domein scheiding en dus niet afhankelijk hoeft te zijn van een enkel pad. Ze behouden in plaats daarvan hun eigen distinctieve paden gebaseerd op hun _subdomain_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-2wgqTosYo3GAa3jwaBlPADbFiMbZ-kKUTuQtk0gv5pvkj81UfxnxSyA8R-jD1EZmRMBLjJFoWZJOirTSe8K9OQKeoSYeDj602XBHRrZeRFABE1sw-JERzJzEzMd7FmvrM9G1L9MP)
+<!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
 #### Statische Pagina's
 
@@ -81,7 +81,7 @@ In een _subdirectory_-configuratie strekt het potentieel voor naamconflicten zic
 
 Om dit te voorkomen, biedt WordPress een manier om bepaalde site‑namen op een zwarte lijst te plaatsen zodat ze niet conflicteren met de namen van de eerste site. Meestal zou de netwerkbeheerder de rootpaden van de pagina's van de hoofdsite invoeren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-sqwI-k_-3krK0_ortenskDcdGrKpgOD6itvwDc2KEuGk1gZO-rqo_OF9yTqclSmQdrOBwsGPiiOc1oF6c0GMyNELJ-7gbyQNE81juSM3IvgTdWqhZ_UEVt06xJRu8Z8oyAKfLLz-)
+<!-- Screenshot unavailable: WordPress network settings showing banned site names to prevent conflicts -->
 
 In een _subdomain_-configuratie worden de mogelijkheden voor naamconflicten gemitigeerd door het _subdomain_, aangezien het uniek is voor de netwerk‑site en op geen enkele manier gerelateerd is aan de hoofdsite.
 
@@ -89,11 +89,11 @@ In een _subdomain_-configuratie worden de mogelijkheden voor naamconflicten gemi
 
 In de netwerk‑instellingen van WordPress Multisite zijn verschillende nieuwe gebruikersregistratie‑opties beschikbaar, waardoor nieuwe en bestaande gebruikers sites kunnen aanmaken.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-nbH9Ka0YhI7nvo3nnKvOr_FoI_FpdAy5hz-f199CW-PV1D-tNKGawhIK_YwlUvM19TjLnhVb6Ro6J0ZpI6s2TRUaHgyGPc4qQI06eQ2O2jeMb_SaktkKwPUw3BSyaNegZYSjXMVX)
+<!-- Screenshot unavailable: WordPress Multisite network settings showing registration options -->
 
 In tegenstelling tot zelfstandige WordPress‑installaties behouden netwerk‑sites de bekende opties om gebruikersregistraties toe te staan of die registraties aan rollen toe te wijzen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-7I21vdReE43e0Utj_KWdnuWA08ZXz7PX33rjSEjwf6T8NDiCBYbeP9GH0J36ekFNkmsXXLBYAWjQJo4vo_kWqL6hXJuFzd9RyA52zy13lT-mMsaK-JdVivUkd5SJF3UF13r2hj28)
+<!-- Screenshot unavailable: WordPress standalone site user registration settings showing limited options -->
 
 Wanneer gebruikersaccounts worden aangemaakt, worden die accounts op netwerkniveau gegenereerd. Dus in plaats van te behoren tot één specifieke site, behoren ze tot het netwerk. Dit heeft enkele onderscheidende voor- en nadelen.
 
@@ -145,15 +145,15 @@ Zo worden door het benutten van een van deze providers of door Ultimate Multisit
 
 Bureaus die de voorkeur geven aan strakke controle over het aanmaken van sites, zullen de gemakkelijke manier waarderen waarop ze sites kunnen aanmaken en sites kunnen koppelen aan klanten en plannen via de gestroomlijnde interface van Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-4cYCjjZwK0DZhrlY2NLHTL4waL99PANVZmSJ4AN5MXLTxb1pVF0aAtC4dWJP2hW1pD_v6hL8X7G80LRk-NuazRQDkIPCuhuRJgIMjA4DxuQzVjWEz1Ag2RKnkqwkvmSfcgy2PLrS)
+![Ultimate Multisite site management interface](/img/admin/sites-list.png)
 
 Strakke controle over plug‑ins en thema's wordt op per-productbasis gehandhaafd via de intuïtieve interfaces van Ultimate Multisite, waardoor plug‑ins en thema's beschikbaar of verborgen kunnen worden gemaakt, evenals hun activatiestatus wanneer ze voor een nieuwe site worden geïnstalleerd.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-VVpPcr8bvKd2qf9zPB_1SBiVpEYdtmskG_iO0tNCJOm2RXbU6kSC1czyLV1CaU5Mw2fWd-k2r1bnQV_yA4zOL6qnYKLWohnI-EDYhXcpxD_4n-rabGlxjQO8iyjtOgXhuDL5r2y7)
+![Product plugin limitations interface](/img/config/product-plugins.png)
 
 Thema's bieden vergelijkbare functionaliteit, waardoor bepaalde thema's kunnen worden geactiveerd of verborgen bij het aanmaken van een site.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-3CEl6U5CPdKatlXAcG5B9jJux_iWOYpUTI4crCgW15EFkhh4pODF7hYlMyzc3na8QAefadz1kcnY_T7Yn6ZyxbBMJdfRfa16IFZma_-u7NHTtMbLZwJ9f7JbqG1QTh0y1l9WWj5z)
+![Product theme limitations interface](/img/config/product-themes.png)
 
 Bureaus zullen gemoedsrust vinden met Ultimate Multisite, waardoor ze kunnen doen waar ze het beste in zijn - uitzonderlijke websites ontwerpen.
 
@@ -257,7 +257,7 @@ Bij het kiezen van je plug‑in, let er dan op dat deze multisite‑compatibel i
 
 Er is al veel besproken over domeinnamen in multisite _subdomain_ modus. Een bijna universele oplossing voor netwerkbeheerders is het gebruik van wildcard DNS‑vermeldingen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-GwkLVUQ9Wb.png)
+![Wildcard DNS entry configuration example](/img/config/settings-domain-mapping.png)
 
 Dit type DNS‑vermelding zal _subdomains_ zoals 'site1.domain.com' en 'site2.domain.com' succesvol oplossen naar een IP‑adres van 1.2.3.4, waardoor Ultimate Multisite en in grotere mate WordPress Multisite in _subdomain_ modus worden ondersteund.
 

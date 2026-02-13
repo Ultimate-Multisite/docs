@@ -4,11 +4,11 @@
     "description": "The title in the navbar"
   },
   "item.label.User Guide": {
-    "message": "Guida utente",
+    "message": "Guida dell'utente",
     "description": "Navbar item"
   },
   "item.label.Developer": {
-    "message": "",
+    "message": "Sviluppatore",
     "description": "Navbar item"
   },
   "item.label.Addons": {

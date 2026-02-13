@@ -8,15 +8,15 @@
     "description": "Footer column title"
   },
   "link.title.More": {
-    "message": "Подробнее",
+    "message": "Больше",
     "description": "Footer column title"
   },
   "link.item.label.User Guide": {
-    "message": "Пользовательское руководство",
+    "message": "Руководство пользователя",
     "description": "Footer link"
   },
   "link.item.label.Developer Docs": {
-    "message": "Документация разработчика",
+    "message": "Документация для разработчиков",
     "description": "Footer link"
   },
   "link.item.label.Addons": {
@@ -24,7 +24,7 @@
     "description": "Footer link"
   },
   "link.item.label.GitHub Discussions": {
-    "message": "Обсуждения GitHub",
+    "message": "GitHub Discussions",
     "description": "Footer link"
   },
   "link.item.label.WordPress.org": {
@@ -32,7 +32,7 @@
     "description": "Footer link"
   },
   "link.item.label.Website": {
-    "message": "Веб-сайт",
+    "message": "Веб‑сайт",
     "description": "Footer link"
   },
   "link.item.label.GitHub": {

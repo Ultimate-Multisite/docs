@@ -45,7 +45,7 @@ To get the ID of a plan, you can go to **Ultimate Multisite > Products**. The ID
 
 Note that users can only be subscribed to a **Plan** , not a Package or Service, as they are only add-ons for a **Plan**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
 ## Fixing CORS issues with Font-Icons in mapped domains
 ## Fixing CORS issues with Font-Icons in mapped domains

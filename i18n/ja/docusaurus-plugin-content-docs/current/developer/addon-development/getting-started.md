@@ -1,7 +1,7 @@
 ---
 title: アドオン開発入門
 sidebar_position: 1
-_i18n_hash: 6294ba16ad98639b569346a763824ad3
+_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
 ---
 # アドオン開発
 
@@ -9,16 +9,16 @@ _i18n_hash: 6294ba16ad98639b569346a763824ad3
 
 ```
 my-addon/
-├── my-addon.php                 # Main plugin file
+├── my-addon.php                 # メインプラグインファイル
 ├── inc/
-│   ├── class-my-addon.php       # Main addon class
-│   ├── admin-pages/             # Admin interface
-│   ├── models/                  # Custom data models
-│   └── integrations/            # Third-party integrations
+│   ├── class-my-addon.php       # メインアドオンクラス
+│   ├── admin-pages/             # 管理インターフェース
+│   ├── models/                  # カスタムデータモデル
+│   └── integrations/            # サードパーティ統合
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template files
+└── templates/                   # テンプレートファイル
 ```
 
 ## メインアドオンファイルテンプレート
@@ -27,7 +27,7 @@ my-addon/
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Custom addon for Ultimate Multisite
+ * Description: Ultimate Multisite用のカスタムアドオン
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -45,7 +45,7 @@ define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Check if Ultimate Multisite is active
+// Ultimate Multisiteが有効か確認
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
@@ -56,85 +56,85 @@ add_action('plugins_loaded', function() {
         return;
     }
 
-    // Initialize addon
+    // アドオンを初期化
     My_Addon::get_instance();
 });
 
 /**
- * Main addon class
+ * メインアドオンクラス
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Initialize the addon
+     * アドオンを初期化
      */
     public function init() {
-        // Load dependencies
+        // 依存関係を読み込む
         $this->load_dependencies();
 
-        // Setup hooks
+        // フックを設定
         $this->setup_hooks();
 
-        // Initialize components
+        // コンポーネントを初期化
         $this->init_components();
     }
 
     /**
-     * Load required files
+     * 必要なファイルを読み込む
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Setup WordPress hooks
+     * WordPressフックを設定
      */
     private function setup_hooks() {
-        // Activation/deactivation
+        // 有効化/無効化
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite hooks
+        // Ultimate Multisiteフック
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Initialize addon components
+     * アドオンコンポーネントを初期化
      */
     private function init_components() {
-        // Initialize admin pages, models, etc.
+        // 管理ページ、モデルなどを初期化
     }
 
     /**
-     * Plugin activation
+     * プラグイン有効化
      */
     public function activate() {
-        // Create custom tables, set options, etc.
+        // カスタムテーブルを作成し、オプションを設定するなど
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin deactivation
+     * プラグイン無効化
      */
     public function deactivate() {
-        // Cleanup if needed
+        // 必要に応じてクリーンアップ
     }
 
     /**
-     * Handle checkout completion
+     * チェックアウト完了時の処理
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Custom logic when checkout completes
+        // チェックアウト完了時のカスタムロジック
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Add custom checkout fields
+     * カスタムチェックアウトフィールドを追加
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Custom Lead model
+ * カスタムリードモデル
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Model name
+     * モデル名
      */
     protected $model = 'lead';
 
     /**
-     * Set the database table
+     * データベーステーブルを設定
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Get the company name
+     * 会社名を取得
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Set the company name
+     * 会社名を設定
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Convert lead to customer
+     * リードを顧客に変換
      */
     public function convert_to_customer($user_data = []) {
-        // Create WordPress user
+        // WordPressユーザーを作成
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Create Ultimate Multisite customer
+        // Ultimate Multisite顧客を作成
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Copy lead data to customer
+        // リードデータを顧客にコピー
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Mark lead as converted
+        // リードを変換済みとしてマーク
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Custom admin page
+ * カスタム管理ページ
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * Page ID
+     * ページID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Menu position
+     * メニュー位置
      */
     protected $position = 30;
 
     /**
-     * Initialize page
+     * ページを初期化
      */
     public function init() {
-        // Register with Ultimate Multisite
+        // Ultimate Multisiteに登録
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Register the admin page
+     * 管理ページを登録
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Render the page
+     * ページをレンダリング
      */
     public function render() {
-        // Get leads data
+        // リードデータを取得
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Render template
+        // テンプレートをレンダリング
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Create test customer
+        // テスト顧客を作成
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Create test membership
+        // テストメンバーシップを作成
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simulate form submission
+        // フォーム送信をシミュレート
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Verify data was saved
+        // データが保存されたことを確認
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -349,6 +349,6 @@ class Test_My_Integration extends WP_UnitTestCase {
 
 ## 次のステップ
 
-- 利用可能なアクションとフィルタを確認するには、[Hooks Reference](/docs/developer/hooks) を参照してください
-- API統合については、[REST API Overview](/docs/developer/rest-api/overview) を確認してください
-- [Addon Template](/docs/addons/addon-template) を開始スキャフォールドとして使用してください
+- 利用可能なアクションとフィルタについては、[Hooks Reference](/developer/hooks) を確認してください
+- API統合については、[REST API Overview](/developer/rest-api/overview) を確認してください
+- 開始スキャフォールドとして [Addon Template](/addons/addon-template) を使用してください

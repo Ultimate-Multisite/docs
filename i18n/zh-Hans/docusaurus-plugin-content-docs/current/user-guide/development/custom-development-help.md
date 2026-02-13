@@ -13,35 +13,35 @@ _i18n_hash: 993698d2931dd695962b481db2b9cc14
 
 首先，访问 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 并点击 **Start a Project** 按钮。
 
-[![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212668a4cefb30ae5c85f8-xCy2k2LWG-Codeable.png)](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-60212668a4cefb30ae5c85f8-xCy2k2LWG-Codeable.png)
+<!-- Screenshot unavailable: Codeable homepage with Start a Project button -->
 
 现在，要提交项目，请在左侧点击 **Start a Project**。
 
-[![](https://downloads.intercomcdn.com/i/o/213753902/ee6ea74cc143e9ecc76a50c2/Codeable+2.png)](https://downloads.intercomcdn.com/i/o/213753902/ee6ea74cc143e9ecc76a50c2/Codeable+2.png)
+<!-- Screenshot unavailable: Codeable project submission page with Start a Project option -->
 
 在 “I need help with” 中，选择 **Customizing**：
 
-[![](https://downloads.intercomcdn.com/i/o/213754344/76d9d4fc84f0d0dbb092b3a1/Captura+de+Tela+2020-05-31+a%CC%80s+17.14.54.png)](https://downloads.intercomcdn.com/i/o/213754344/76d9d4fc84f0d0dbb092b3a1/Captura+de+Tela+2020-05-31+a%CC%80s+17.14.54.png)
+<!-- Screenshot unavailable: Codeable project form with Customizing selected -->
 
 在 “My” 中，选择 **Plugin**：
 
-[![](https://downloads.intercomcdn.com/i/o/213754429/02deee78063ceec0725a345d/Captura+de+Tela+2020-05-31+a%CC%80s+17.15.30.png)](https://downloads.intercomcdn.com/i/o/213754429/02deee78063ceec0725a345d/Captura+de+Tela+2020-05-31+a%CC%80s+17.15.30.png)
+<!-- Screenshot unavailable: Codeable project form with Plugin selected -->
 
 然后点击 **Continue** 按钮。
 
-[![](https://downloads.intercomcdn.com/i/o/213754564/c863aa37e14d10662ef4f901/Captura+de+Tela+2020-05-31+a%CC%80s+17.18.27.png)](https://downloads.intercomcdn.com/i/o/213754564/c863aa37e14d10662ef4f901/Captura+de+Tela+2020-05-31+a%CC%80s+17.18.27.png)
+<!-- Screenshot unavailable: Codeable project form Continue button -->
 
 现在，是时候以最佳方式描述你的项目和需求了。尽量提供尽可能多的信息！
 
-[![](https://downloads.intercomcdn.com/i/o/213754760/ab401673618a203c4d2934a9/Captura+de+Tela+2020-05-31+a%CC%80s+17.20.04.png)](https://downloads.intercomcdn.com/i/o/213754760/ab401673618a203c4d2934a9/Captura+de+Tela+2020-05-31+a%CC%80s+17.20.04.png)
+<!-- Screenshot unavailable: Codeable project description form -->
 
 回答以下问题以帮助确定价格。
 
-[![](https://downloads.intercomcdn.com/i/o/213755196/b221c6c181bcfc8a48c3079e/Captura+de+Tela+2020-05-31+a%CC%80s+17.22.15.png)](https://downloads.intercomcdn.com/i/o/213755196/b221c6c181bcfc8a48c3079e/Captura+de+Tela+2020-05-31+a%CC%80s+17.22.15.png)
+<!-- Screenshot unavailable: Codeable project pricing questions -->
 
 随后，如果你还没有 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 账户，请创建一个并点击 **Publish My Project** 按钮。
 
-[![](https://downloads.intercomcdn.com/i/o/213755544/03c19957ec0cf3c51269e800/Captura+de+Tela+2020-05-31+a%CC%80s+17.24.58.png)](https://downloads.intercomcdn.com/i/o/213755544/03c19957ec0cf3c51269e800/Captura+de+Tela+2020-05-31+a%CC%80s+17.24.58.png)
+<!-- Screenshot unavailable: Codeable account creation and Publish My Project button -->
 
 一旦你发布了你的 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 项目，平台将把你与符合项目所需技能的开发者连接起来。
 

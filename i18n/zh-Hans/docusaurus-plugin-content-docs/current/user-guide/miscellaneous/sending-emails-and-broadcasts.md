@@ -15,11 +15,11 @@ Ultimate Multisite 提供了一项功能，允许您通过向目标用户或用�
 
 如果您需要发布系统维护或向现有用户提供新产品或服务等公告，这将非常有帮助。管理员通知在用户仪表盘上的显示如下。
 
-![broadcast account](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 要开始管理员通知，请转到您的网络管理员仪表盘，在 **Ultimate Multisite** 菜单下，您会找到 **Broadcasts** 选项。
 
-![broadcast admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 在此页面中，点击顶部的 **Add Broadcast** 按钮。
 
@@ -27,7 +27,7 @@ Ultimate Multisite 提供了一项功能，允许您通过向目标用户或用�
 
 继续，选择 **Message**，然后点击 **Next Step** 按钮。
 
-![broadcast admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 下一个窗口会询问您 **Target customer** 或 **Target product**。请注意，您可以选择多个用户或多个产品。
 
@@ -37,11 +37,11 @@ Ultimate Multisite 提供了一项功能，允许您通过向目标用户或用�
 
 然后，点击 **Next Step**。
 
-![broadcast admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 下一个窗口是您可以开始撰写消息的地方，输入主题和您希望广播给用户的内容/消息。
 
-![broadcast admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 创建完消息后，您可以点击 **Send** 按钮。
 
@@ -53,13 +53,13 @@ Ultimate Multisite 提供了一项功能，允许您通过向目标用户或用�
 
 要开始电子邮件广播，请转到您的网络管理员仪表盘，在 Ultimate Multisite 菜单下，您会找到 Broadcast 选项。
 
-![email admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 在此页面中，点击顶部的 **Add broadcast** 按钮。
 
 这将弹出添加广播的模态窗口，您可以在其中选择要发送的广播类型。继续，选择 **Email**，然后点击 **Next Step** 按钮。
 
-![email admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 下一个窗口会询问您 **Target customer** 或 **Target produc** t。请注意，您可以选择多个用户或多个产品。
 
@@ -67,11 +67,11 @@ Ultimate Multisite 提供了一项功能，允许您通过向目标用户或用�
 
 一旦选择了目标受众，您可以点击 **Next Step**。
 
-![email admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 下一个窗口是您可以开始撰写电子邮件的地方，输入主题和您希望发送给用户的内容/消息。
 
-![email admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 创建完消息后，您可以点击 **Send** 按钮。
 
@@ -93,19 +93,19 @@ Ultimate Multisite 中的系统电子邮件是系统在注册、付款、域名�
 
 转到您的 Ultimate Multisite 设置页面，进入 **Emails** 选项卡。
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 然后，在侧边栏中，点击 **Customize System Emails** 按钮。
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 在系统电子邮件页面，您会在顶部看到 **Reset & Import** 操作按钮。点击该按钮应会打开导入和重置模态窗口。
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 然后，您可以切换 Import Emails 选项，以查看哪些系统电子邮件可供导入。
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### 重置系统电子邮件
 
@@ -117,4 +117,4 @@ Ultimate Multisite 中的系统电子邮件是系统在注册、付款、域名�
 
 要重置电子邮件模板，您可以按照上述步骤操作，直到到达 Reset & Import 工具，然后切换 **Reset** 选项，选择要重置为默认内容的电子邮件。
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

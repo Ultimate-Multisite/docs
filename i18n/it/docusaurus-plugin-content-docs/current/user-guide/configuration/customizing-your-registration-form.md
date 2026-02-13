@@ -13,7 +13,7 @@ Sebbene siano un modo semplice e flessibile per sperimentare diversi approcci qu
 
 Dopo l'installazione di Ultimate Multisite, vengono create automaticamente pagine di accesso e registrazione personalizzate sul tuo sito principale. Puoi modificare queste pagine predefinite in qualsiasi momento accedendo alla pagina **Ultimate Multisite > Settings > Login & Registration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-K3a5Ol4prD.png)
+![Login and Registration settings page](/img/config/settings-general.png)
 
 Diamo un'occhiata a ciascuna delle opzioni che puoi personalizzare nella pagina **Login & Registration**:
 
@@ -47,7 +47,7 @@ Sia le pagine di accesso che di registrazione sono incorporate con shortcodes: *
 
 Per accedere a questa funzionalità, vai al menu **Checkout Forms**, nella barra laterale sinistra.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vvxvSRGAfu.png)
+![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
 
 In questa pagina puoi vedere tutti i moduli di checkout che hai.
 
@@ -55,11 +55,11 @@ Se vuoi crearne uno nuovo, clicca su **Add Checkout Form** in cima alla pagina.
 
 Puoi selezionare una di queste tre opzioni come punto di partenza: single step, multi-step o blank. Poi clicca su **Go to the Editor**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
 
 In alternativa, puoi modificare o duplicare i moduli che hai già cliccando sulle opzioni sotto il loro nome. Lì troverai anche le opzioni per copiare lo shortcode del modulo o per eliminarlo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
 
 Se selezioni single step o multi-step, il modulo di checkout sarà già precompilato con i passaggi di base per funzionare. Poi, se vuoi, puoi aggiungere passaggi extra.
 
@@ -69,31 +69,31 @@ Come abbiamo già detto, puoi creare moduli di checkout per diversi scopi. In qu
 
 Dopo aver navigato all'editor del modulo di checkout, dai al tuo modulo un nome (che sarà usato solo per riferimento interno) e uno slug (usato per creare shortcakes, ad esempio).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
 
 I moduli sono composti da passaggi e campi. Puoi aggiungere un nuovo passaggio cliccando su **Add New Checkout Step**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9Wgpw8DTj9.png)
+![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
 
 Nella prima scheda della finestra modale, compila il contenuto del passaggio del tuo modulo. Dai un ID, un nome e una descrizione. Questi elementi sono usati principalmente internamente.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lr6RKlgll1.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
 
 Successivamente, imposta la visibilità del passaggio. Puoi scegliere tra **Always show**, **Only show for logged in users** o **Only show for guests**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0Q6LxP9E90.png)
+![Checkout step visibility options](/img/config/checkout-form-step.png)
 
 Infine, configura lo stile del passaggio. Questi sono campi opzionali.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WmBuHXYH7N.png)
+![Checkout step style configuration](/img/config/checkout-form-step.png)
 
 Ora è il momento di aggiungere campi al nostro primo passaggio. Clicca su **Add New Field** e seleziona il tipo di sezione che desideri.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vM8n8QuTzk.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HkNUp6cWRG.png)
+![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
 
 Ogni campo ha diversi parametri da compilare. Per questa prima entrata, selezioneremo il campo **Username**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PFaP6RufZU.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U6Mm10qIeF.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Lr1mEi1DlH.png)
+![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
 
 Puoi aggiungere quanti passaggi e campi ti servono. Per mostrare i tuoi prodotti affinché i clienti ne scelgano uno, usa il campo Pricing Table. Se vuoi permettere ai tuoi clienti di scegliere un template, aggiungi il campo Template Selection. E così via.
 
@@ -103,23 +103,23 @@ _**Nota 2:** username, email, password, site title, site URL, order summary, pay
 
 Mentre lavori sul tuo modulo di checkout, puoi sempre usare il pulsante Anteprima per vedere come i tuoi clienti vedranno il modulo. Puoi anche alternare la visualizzazione come utente esistente o come visitatore.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3zPxZNqzkG.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YXZp7n5Nuw.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
 
 Infine, in **Advanced Options** puoi configurare il messaggio per la pagina **Thank You**, aggiungere snippet per tracciare le conversioni, aggiungere CSS personalizzato al tuo modulo di checkout o limitarlo a determinati paesi.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TVQ9EUbGJ6.png)
+![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
 
 Puoi anche abilitare o disabilitare manualmente il tuo modulo di checkout attivando questa opzione nella colonna destra, o eliminare permanentemente il modulo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-N5wdel1IIp.png)
+![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
 
 Non dimenticare di salvare il tuo modulo di checkout!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rJPV89yQZt.png)
+![Save Checkout Form button](/img/config/checkout-form-save.png)
 
 Per ottenere lo shortcode del tuo modulo, clicca su **Generate Shortcode** e copia il risultato mostrato nella finestra modale.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RTJclNTnJZ.png)
+![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
 
 _**Nota:** Dovrai aggiungere questo shortcode alla tua pagina di registrazione per avere il modulo di checkout aggiunto a essa._
 
@@ -131,7 +131,7 @@ Se vuoi creare tabelle di prezzo personalizzate per i tuoi prodotti e pre-selezi
 
 **Per i piani:** Vai su **Ultimate Multisite > Products > Select a plan**. Dovresti vedere il pulsante **Click to copy Shareable Link** in cima alla pagina. Questo è il link che puoi usare per pre-selezionare questo piano specifico sul tuo modulo di checkout.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bUyOlBEfNj.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 Nota che questo link condivisibile è valido solo per **Plans**. Non puoi usare link condivisibili per pacchetti o servizi.
 
@@ -141,7 +141,7 @@ Nota che questo link condivisibile è valido solo per **Plans**. Non puoi usare 
 
 Clicca su **Manage** subito sotto il template di sito che vuoi usare. Vedrai il numero SITE ID. Usa semplicemente questo numero per pre-selezionare questo specifico template di sito sul tuo modulo di checkout. Nel nostro caso, il parametro URL sarebbe **?template_id=2**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JEgVAVNYMu.png)
+![Sites list showing site template ID](/img/config/site-templates-list.png)
 
 Supponiamo che il nostro sito di rete sia [**www.mynetwork.com**](http://www.mynetwork.com) e che la nostra pagina di registrazione con il modulo di checkout si trovi sulla pagina **/register**. L'intero URL con questo template di sito pre-selezionato apparirà come [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 

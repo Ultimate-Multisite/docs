@@ -1,20 +1,18 @@
 ---
 id: wu_membership_update_forms
-title: >-
-  I’m ready to translate the content. Could you please provide the Markdown/MDX
-  text you’d like translated?
+title: Filtro - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filtro: wu_membership_update_forms
+# Filter: wu_membership_update_forms
 
-Permitir a los desarrolladores agregar nuevos slugs de formularios de actualización.
+Permitir a los desarrolladores añadir nuevos slugs de formularios de actualización.
 
 ## Parámetros
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
-| $slugs | `array` | una lista de slugs de formularios para omitir. |
+| $slugs | `array` | una lista de slugs de formularios a omitir. |
 
 ### Fuente
 

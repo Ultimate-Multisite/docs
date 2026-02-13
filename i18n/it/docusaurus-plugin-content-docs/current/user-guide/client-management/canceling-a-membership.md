@@ -13,19 +13,19 @@ Se il tuo utente vuole annullare il proprio abbonamento, dovrebbe prima accedere
 
 Lì, dovrebbe andare nella **Danger Zone** e fare clic su **Delete Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7IO8WYhID5.png)
+![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
 
 Verrà aperto un modulo che chiede la loro conferma. Dovrebbero attivare l'opzione **Confirm Account Deletion** e fare clic su **Delete Account**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-NavCHgYJYo.png)
+![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
 
 Questo li disconnetterà dal sito e annullerà il loro abbonamento sulla tua rete, oltre a eliminare il loro sito dalla tua rete.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-KFkpD0CRhT.png)
+![Logged out after account deletion](/img/admin/memberships-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-jWkEmpf9ij.png)
+![Membership canceled confirmation](/img/admin/memberships-list.png)
 
 **Importante:** Notare che questa azione non escluderà il cliente dalla tua rete, poiché un cliente può avere più di un abbonamento o nessun abbonamento collegato a lui.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-MDX2xRZVHu.png) | ![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-5g9qbL4SaT.png)  
+![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
 ---|---

@@ -13,33 +13,33 @@ Ultimate Multisite hat ein integriertes Mitgliedschafts- und Abrechnungssystem. 
 
 Sie können jedes dieser Zahlungs-Gateways unter den Ultimate Multisite Zahlungs-Einstellungen konfigurieren. Sie finden sie, indem Sie zu **Ultimate Multisite Menü > Einstellungen > Zahlungen** gehen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-42sl37Fn5G.png)
+![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
 Bevor Sie Ihr Zahlungs-Gateway einrichten, werfen Sie bitte einen Blick auf die grundlegenden Zahlungseinstellungen, die Sie konfigurieren können:
 
 **Automatische Verlängerung erzwingen** **w:** Damit wird sichergestellt, dass die Zahlung am Ende jedes Abrechnungszyklus automatisch erneuert wird, abhängig von der vom Benutzer ausgewählten Abrechnungsfrequenz.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Og3iJwLdmn.png)
+![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
 
 **Erlauben Sie Testversionen ohne Zahlung** **method:** Mit dieser Option muss Ihr Kunde während des Registrierungsprozesses keine finanziellen Informationen angeben. Dies wird erst erforderlich, wenn die Testphase abläuft.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aA5Olqe9M9.png)
+![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
 
 **Rechnung bei Zahlungsbestätigung senden:** Diese Option gibt Ihnen die Möglichkeit, nach der Zahlung eine Rechnung zu senden oder nicht. Beachten Sie, dass Benutzer Zugriff auf ihre Zahlungs-Historie im Dashboard ihres Subsites haben. Diese Option gilt nicht für das Manual Gateway.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RGupao7GvW.png)
+![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
 
 **Rechnungsnummerierungs-Schema:** Hier können Sie entweder einen Zahlungsreferenzcode oder ein fortlaufendes Nummern-Schema auswählen. Wenn Sie einen Zahlungsreferenzcode für Ihre Rechnungen verwenden, müssen Sie nichts konfigurieren. Wenn Sie ein fortlaufendes Nummern-Schema wählen, müssen Sie die **nächste Rechnungsnummer** (Diese Nummer wird als Rechnungsnummer für die nächste vom System generierte Rechnung verwendet. Sie wird jedes Mal um eins erhöht, wenn eine neue Rechnung erstellt wird. Sie können sie ändern und speichern, um die fortlaufende Rechnungsnummer auf einen bestimmten Wert zurückzusetzen) sowie das **Rechnungsnummern-Präfix** konfigurieren.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mP0949Eawa.png)
+![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-oD5LaLaw7t.png)
+![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
 
 ## Wo Sie die Gateways finden:
 
 Sie können die Zahlungs-Gateways auf derselben Seite einrichten ( **Ultimate Multisite > Einstellungen > Zahlungen**). Direkt unter **aktive Zahlungs-Gateways** können Sie sehen: _Stripe_, _Stripe Checkout_, _PayPal_ und _Manual_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-g9RMYx84r5.png)
+![Active payment gateways list](/img/config/settings-payment-gateways.png)
 
 Wir haben einen eigenen Artikel für jedes Zahlungs-Gateway, der Sie durch die Schritte zur Einrichtung führt, die Sie unter den untenstehenden Links finden können.
 
@@ -59,23 +59,23 @@ _**WICHTIG:** Ultimate Multisite: WooCommerce-Integration erfordert, dass WooCom
 
 Zuerst gehen Sie bitte zur Add-ons-Seite. Sie finden sie, indem Sie zu **Ultimate Multisite > Einstellungen** gehen. Sie sollten die **Add-ons**-Tabelle sehen. Klicken Sie auf **Check our Add-ons**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WtOkJNuCsj.png)
+![Settings page with add-ons section](/img/config/settings-general.png)
 
 Nach dem Klicken auf **Check our Add-ons** werden Sie zur Add-ons-Seite weitergeleitet. Hier finden Sie alle Ultimate Multisite Add-ons. Klicken Sie auf das Add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 Ein Fenster öffnet sich mit den Add-on-Details. Klicken Sie einfach auf **Install Now**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-fGaxHyPtsv.png)
+![WooCommerce add-on install dialog](/img/config/settings-general.png)
 
 Nach Abschluss der Installation werden Sie zur Plugin-Seite weitergeleitet. Klicken Sie hier einfach auf **Network Activate** und das WooCommerce-Add-on wird in Ihrem Netzwerk aktiviert.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TM2lYtgyM7.png)
+![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
 
 Nach der Aktivierung erhalten Sie eine Erinnerung, falls das WooCommerce-Plugin noch nicht auf Ihrer Website installiert und aktiviert ist.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-VwIGoJhzqc.png)
+![WooCommerce activation reminder notice](/img/config/settings-general.png)
 
 Um mehr über das WooCommerce-Integration-Add-on zu erfahren, **hier klicken**.
 
@@ -83,15 +83,15 @@ Um mehr über das WooCommerce-Integration-Add-on zu erfahren, **hier klicken**.
 
 Die Schritte zum Installieren des _GoCardless_-Add-ons sind im Wesentlichen die gleichen wie beim _WooCommerce_-Add-on. Bitte gehen Sie zur Add-ons-Seite und wählen Sie das Add-on **Ultimate Multisite: GoCardless Gateway** aus.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 Das Add-on-Fenster öffnet sich. Klicken Sie auf **Install Now**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YIpPgP4VVo.png)
+![GoCardless add-on install dialog](/img/config/settings-general.png)
 
 Nach Abschluss der Installation werden Sie zur Plugin-Seite weitergeleitet. Klicken Sie hier einfach auf **Network Activate** und das _GoCardless_-Add-on wird in Ihrem Netzwerk aktiviert.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FGurJpzaF0.png)
+![Network Activate the GoCardless add-on](/img/config/settings-general.png)
 
 Um zu erfahren, wie Sie mit dem _GoCardless_-Gateway starten, **lesen Sie diesen Artikel**.
 
@@ -99,12 +99,12 @@ Um zu erfahren, wie Sie mit dem _GoCardless_-Gateway starten, **lesen Sie diesen
 
 Gehen Sie zur Add-ons-Seite und wählen Sie das Add-on **Ultimate Multisite: Payfast Gateway** aus.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-BmLWqj4yjt.png)
+![Add-ons page listing available add-ons](/img/config/settings-general.png)
 
 Das Add-on-Fenster öffnet sich. Klicken Sie auf **Install Now.**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1jpCakOHNy.png)
+![Payfast add-on install dialog](/img/config/settings-general.png)
 
 Nach Abschluss der Installation werden Sie zur Plugin-Seite weitergeleitet. Klicken Sie hier einfach auf **Network Activate** und das _Payfast_-Add-on wird in Ihrem Netzwerk aktiviert.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-49OQHBwPxk.png)
+![Network Activate the Payfast add-on](/img/config/settings-general.png)

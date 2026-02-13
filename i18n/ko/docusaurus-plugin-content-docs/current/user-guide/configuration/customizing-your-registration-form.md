@@ -13,7 +13,7 @@ WordPress 플랫폼에서 구축된 다른 모든 SaaS와 차별화된 네트워
 
 Ultimate Multisite 설치 시, 기본적으로 메인 사이트에 맞춤 로그인 및 등록 페이지가 자동으로 생성됩니다. **Ultimate Multisite > Settings > Login & Registration** 페이지로 이동하여 언제든지 이 기본 페이지를 변경할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-K3a5Ol4prD.png)
+![Login and Registration settings page](/img/config/settings-general.png)
 
 **Login & Registration** 페이지에서 사용자 정의할 수 있는 각 옵션을 살펴보겠습니다:
 
@@ -40,7 +40,7 @@ Ultimate Multisite 2.0은 원하는 만큼 다양한 필드와 제공되는 제�
 
 이 기능에 접근하려면 왼쪽 사이드바에서 **Checkout Forms** 메뉴로 이동합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vvxvSRGAfu.png)
+![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
 
 이 페이지에서 보유한 모든 체크아웃 양식을 확인할 수 있습니다.
 
@@ -48,11 +48,11 @@ Ultimate Multisite 2.0은 원하는 만큼 다양한 필드와 제공되는 제�
 
 시작점으로 세 가지 옵션 중 하나를 선택할 수 있습니다: single step, multi-step, blank. 그런 다음 **Go to the Editor**를 클릭하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
 
 또는 이미 보유한 양식을 이름 아래의 옵션을 클릭하여 편집하거나 복제할 수 있습니다. 그곳에서 양식 쇼트코드를 복사하거나 양식을 삭제하는 옵션도 찾을 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
 
 single step 또는 multi-step를 선택하면 체크아웃 양식이 이미 기본 단계로 사전 채워집니다. 필요하면 추가 단계를 더할 수 있습니다.
 
@@ -62,31 +62,31 @@ single step 또는 multi-step를 선택하면 체크아웃 양식이 이미 기�
 
 체크아웃 양식 편집기로 이동한 후, 양식에 이름(내부 참조용)과 슬러그(예: 쇼트코드 생성용)를 지정하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
 
 양식은 단계와 필드로 구성됩니다. **Add New Checkout Step**을 클릭하여 새 단계를 추가할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-9Wgpw8DTj9.png)
+![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
 
 모달 창의 첫 번째 탭에서 양식 단계의 내용을 입력합니다. ID, 이름, 설명을 지정하세요. 이 항목들은 주로 내부에서 사용됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lr6RKlgll1.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
 
 다음으로 단계의 가시성을 설정합니다. **Always show**, **Only show for logged in users**, **Only show for guests** 중에서 선택할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0Q6LxP9E90.png)
+![Checkout step visibility options](/img/config/checkout-form-step.png)
 
 마지막으로 단계 스타일을 구성합니다. 이는 선택 사항입니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-WmBuHXYH7N.png)
+![Checkout step style configuration](/img/config/checkout-form-step.png)
 
 이제 첫 번째 단계에 필드를 추가할 차례입니다. **Add New Field**를 클릭하고 원하는 섹션 유형을 선택하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vM8n8QuTzk.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HkNUp6cWRG.png)
+![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
 
 각 필드는 채워야 할 다양한 매개변수를 가집니다. 이번 첫 번째 단계에서는 **Username** 필드를 선택합니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PFaP6RufZU.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-U6Mm10qIeF.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Lr1mEi1DlH.png)
+![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
 
 필요한 만큼 단계와 필드를 추가할 수 있습니다. 고객이 제품을 선택할 수 있도록 표시하려면 Pricing Table 필드를 사용하세요. 클라이언트가 템플릿을 선택하도록 하려면 Template Selection 필드를 추가하세요. 등등.
 
@@ -96,23 +96,23 @@ _**참고 2:** username, email, password, site title, site URL, order summary, p
 
 체크아웃 양식을 작업하는 동안 언제든지 미리보기 버튼을 사용하여 클라이언트가 양식을 어떻게 보는지 확인할 수 있습니다. 기존 사용자 또는 방문자로서 보기 모드를 전환할 수도 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-3zPxZNqzkG.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-YXZp7n5Nuw.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
 
 마지막으로 **Advanced Options**에서 **Thank You** 페이지 메시지를 구성하고, 전환 추적용 스니펫을 추가하며, 체크아웃 양식에 사용자 정의 CSS를 추가하거나 특정 국가에 제한할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TVQ9EUbGJ6.png)
+![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
 
 오른쪽 열에서 이 옵션을 토글하여 체크아웃 양식을 수동으로 활성화하거나 비활성화하거나 영구적으로 삭제할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-N5wdel1IIp.png)
+![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
 
 체크아웃 양식을 저장하는 것을 잊지 마세요!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-rJPV89yQZt.png)
+![Save Checkout Form button](/img/config/checkout-form-save.png)
 
 양식 쇼트코드를 얻으려면 **Generate Shortcode**를 클릭하고 모달 창에 표시된 결과를 복사하세요.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RTJclNTnJZ.png)
+![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
 
 _**참고:** 이 쇼트코드를 등록 페이지에 추가해야 체크아웃 양식이 포함됩니다._
 
@@ -124,7 +124,7 @@ _**참고:** 이 쇼트코드를 등록 페이지에 추가해야 체크아웃 �
 
 **Ultimate Multisite > Products > Select a plan**으로 이동합니다. 페이지 상단에 **Click to copy Shareable Link** 버튼이 표시됩니다. 이 링크를 사용하여 체크아웃 양식에서 해당 플랜을 미리 선택할 수 있습니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bUyOlBEfNj.png)
+![Product page with shareable link button](/img/config/products-list.png)
 
 이 공유 링크는 **Plans**에만 유효합니다. 패키지나 서비스에는 공유 링크를 사용할 수 없습니다.
 
@@ -134,7 +134,7 @@ _**참고:** 이 쇼트코드를 등록 페이지에 추가해야 체크아웃 �
 
 사용하려는 사이트 템플릿 바로 아래에 있는 **Manage**를 클릭합니다. SITE ID 번호가 표시됩니다. 이 번호를 사용하여 해당 사이트 템플릿을 체크아웃 양식에서 미리 선택합니다. 여기서는 URL 매개변수가 **?template_id=2**가 됩니다.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JEgVAVNYMu.png)
+![Sites list showing site template ID](/img/config/site-templates-list.png)
 
 우리 네트워크 웹사이트가 [**www.mynetwork.com**](http://www.mynetwork.com)이고, 등록 페이지와 체크아웃 양식이 **/register** 페이지에 있다고 가정해 보겠습니다. 이 사이트 템플릿이 미리 선택된 전체 URL은 [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**와 같습니다.
 

@@ -25,8 +25,8 @@ Ultimate Multisite затем автоматически заменит запо
 
 Вы можете получить доступ к редактору заполнителей шаблона, перейдя в **Ultimate Multisite > Settings > Sites**, а затем в боковой панели щёлкнув ссылку Edit Placeholders.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aFtnOrska9.png)
+![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
 
 Это перенесёт вас в редактор содержимого заполнителей, где вы можете добавить заполнители и их соответствующее содержимое.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OeMzuyauOW.png)
+![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)

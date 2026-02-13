@@ -21,7 +21,7 @@ _**WICHTIG** **:** Wenn Sie ein Multisite-Netzwerk auf einer bestehenden WordPre
 - Erstellen Sie ein vollständiges Backup Ihrer WordPress-Website
 - Deaktivieren Sie alle Plugins auf Ihrer Website, indem Sie zur Plugin-Seite gehen, _Deactivate_ aus den Massenaktionen auswählen und dann _Apply_ klicken
 
-[![](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)](https://downloads.intercomcdn.com/i/o/141065015/09f448a371b8cab63280777c/Multisite+1.png)
+<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
 Um Multisite zu aktivieren, verbinden Sie sich zunächst mit Ihrer Website über einen FTP-Client oder den cPanel-Dateimanager und öffnen Sie die wp-config.php-Datei zum Bearbeiten.
 
@@ -37,7 +37,7 @@ Mit aktiviertem Multisite-Feature auf Ihrer Website ist es nun an der Zeit, Ihr 
 
 Gehen Sie zu **Tools » Network Setup**
 
-[![](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)](https://downloads.intercomcdn.com/i/o/141065542/5bb9b19a52ece96c52b659d8/Multisite+3.png)
+<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
 Jetzt müssen Sie WordPress mitteilen, welche Art von Domainstruktur Sie für die Websites in Ihrem Netzwerk verwenden: Subdomains oder Unterverzeichnisse.
 
@@ -45,7 +45,7 @@ Wenn Sie Subdomains wählen, müssen Sie Ihre DNS-Einstellungen für die Domain-
 
 Zurück zum Network Setup geben Sie Ihrem Netzwerk einen Titel und stellen Sie sicher, dass die E-Mail-Adresse im Network Admin Email korrekt ist. Klicken Sie auf _Install_, um fortzufahren.
 
-[![](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)](https://downloads.intercomcdn.com/i/o/141066037/fd8a063b69988be1c372dac6/Multisite+4.png)
+<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
 Fügen Sie diesen Code, bereitgestellt von WordPress, in Ihre _**wp-config.php**_ ein:
 
@@ -93,7 +93,7 @@ Um eine Subsite zu erstellen:
    - Site Title — Titel der Website, kann später geändert werden
    - Admin Email — Als ersten Admin-Benutzer für die Subsite festlegen
 
-![image](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-hrA3XtntYQ.png)
+![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
 
 Nach dem Ausfüllen der Felder klicken Sie auf die Schaltfläche „Add site“. Sobald die neue Subsite erstellt wurde, greifen Sie darauf zu, um sicherzustellen, dass die Subsite funktioniert.
 

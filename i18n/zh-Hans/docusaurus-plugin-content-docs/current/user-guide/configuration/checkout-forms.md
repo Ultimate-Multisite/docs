@@ -1,88 +1,88 @@
 ---
 title: 结账表单
 sidebar_position: 19
-_i18n_hash: 66bfff807dcb07f2c495741a4fa601b9
+_i18n_hash: dfdf572ddbe8772e1d720be52eda83d3
 ---
-# 结账表单
+# Checkout Forms
 
-结账表单是一种简单灵活的方式，可在尝试转化新客户时尝试不同的方法。
+Checkout Forms are an easy and flexible way to experiment with different approaches when trying to convert new customers.
 
-Ultimate Multisite 2.0 提供了结账表单编辑器，允许您创建任意数量的表单，包含不同字段、提供的产品等。
+Ultimate Multisite 2.0 offers a Checkout Form editor that allows you to create as many forms as you want, with different fields, products on offer, etc.
 
-要访问此功能，请在左侧边栏中转到结账表单菜单。
+To access this feature, go to the Checkout Forms menu, on the left side-bar.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-TusdCVS7N7.png)
+![Checkout Forms list](/img/config/checkout-forms-list.png)
 
-在此页面，您可以查看所有已创建的结账表单。
+On this page, you can see all the checkout forms you have.
 
-如果想创建新表单，只需点击页面顶部的添加结账表单。
+If you want to create a new one, just click Add Checkout Form on the top of the page.
 
-您可以从以下三种选项中选择一个作为起点：单步、分步或空白。然后，点击进入编辑器。
+You can select one of these three options as your starting point: single step, multi-step or blank. Then, click to Go to the Editor.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OVx7AlxoX5.png)
+![Checkout Form editor](/img/config/checkout-form-editor.png)
 
-或者，您可以通过点击表单名称下方的选项来编辑或复制已有表单。在那里，您还会找到复制表单短代码或删除表单的选项。
+Alternatively, you can edit or duplicate the forms you already have by clicking on the options below its name. There, you will also find the options to copy the form's shortcode or to delete the form.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LdsdAu67WF.png)
+![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-### 编辑结账表单
+### Editing a Checkout Form
 
-您可以为不同目的创建结账表单。在此示例中，我们将处理注册表单。
+You can create checkout forms for different purposes. In this example we will work on a registration form.
 
-进入结账表单编辑器后，为表单命名（仅用于内部引用）并设置 slug（例如用于创建短代码）。
+After navigating to the checkout form editor, give your form a name (that will be used for internal reference only) and a slug (used to create shortcakes, for example).
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RvbtUn4r3w.png)
+![Checkout Form editor](/img/config/checkout-form-editor.png)
 
-表单由步骤和字段组成。您可以点击添加新结账步骤来添加新步骤。
+Forms are made of steps and fields. You can add a new step by clicking on Add New Checkout Step.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-O5GsWoPE35.png)
+![Add New Checkout Step](/img/config/checkout-form-add-step.png)
 
-在模态窗口的第一个选项卡中，填写表单步骤的内容。为其设置 ID、名称和描述。这些项目主要用于内部。
+On the first tab of the modal window, fill the content of your form's step. Give it an ID, a name and a description. These items are mostly used internally.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-juXHmB0fGH.png)
+![Checkout form step](/img/config/checkout-form-step.png)
 
-接下来，设置步骤的可见性。您可以选择“始终显示”、“仅对已登录用户显示”或“仅对访客显示”。
+Next, set the visibility of the step. You can choose between "Always show", "Only show for logged in users" or "Only show for guests".
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-2gZRyHCxed.png)
+![Checkout form step](/img/config/checkout-form-step.png)
 
-最后，配置步骤样式。这些是可选字段。
+Finally, configure the step style. These are optional fields.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-lPHJcayky5.png)
+![Checkout form step](/img/config/checkout-form-step.png)
 
-现在，开始为第一个步骤添加字段。只需点击添加新字段并选择所需的字段类型。
+Now, it's time to add fields to our first step. Just click to Add New Field and select the type of section you want.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-z5FpDeUVmD.png)![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JxtVsd5aGu.png)
+![Checkout form step with fields](/img/config/checkout-form-step.png)
 
-每个字段都有不同的参数需要填写。对于此首次入口，我们将选择“用户名”字段。
+Each field has different parameters to be filled. For this first entrance, we will select the "Username" field.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-go026QZtjh.png)
+![Checkout form step](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RroHNTL0TJ.png)
+![Checkout form step](/img/config/checkout-form-step.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OG4O4XkEGu.png)
+![Checkout form step](/img/config/checkout-form-step.png)
 
-您可以根据需要添加任意数量的步骤和字段。若要向客户展示可选产品，请使用价格表字段；若想让客户选择模板，请添加模板选择字段；等等。
+You can add as many steps and fields as you need. To display your products for your customers to pick one, use the Pricing Table field. If you want to let your clients choose a template, add the Template Selection field. And so on.
 
-_**注意：** 用户名、电子邮件、密码、站点标题、站点 URL、订单摘要、支付和提交按钮是创建结账表单所必需的字段。_
+_**Note:** username, email, password, site title, site URL, order summary, payment, and submit button are mandatory fields to create a checkout form._
 
-在编辑结账表单时，您可以随时使用预览按钮查看客户将看到的表单。您还可以在已登录用户和访客视图之间切换。
+While you are working on your checkout form, you can always use the Preview button to see how your clients will see the form. You can also alternate between view as an existing user or a visitor
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kjDtBjBdSH.png)
+![Checkout Form save](/img/config/checkout-form-save.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-0SKLl73PG5.png)
+![Checkout Form editor](/img/config/checkout-form-editor.png)
 
-最后，在高级选项中，您可以配置“感谢”页面的消息，添加跟踪转化的代码片段，向结账表单添加自定义 CSS，或将其限制为特定国家。
+Finally, on Advanced Options you can configure the message for the "Thank You" page, add snippets to track conversions, add custom CSS to your checkout form or restrict it to certain countries.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-QC2Q5kIZ9b.png)
+![Advanced Options](/img/config/checkout-form-advanced.png)
 
-您还可以通过切换右侧列中的此选项手动启用或禁用结账表单，或永久删除表单。
+You can also manually enable or disable your checkout form by toggling this option on the right column, or delete permanently the form.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-1iRUaR7Gh1.png)
+![Active toggle](/img/config/checkout-form-active.png)
 
-别忘了保存您的结账表单！
+Don't forget to save your checkout form!
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-OKgUbhf41x.png)
+![Save button](/img/config/checkout-form-save.png)
 
-要获取表单的短代码，请点击生成短代码并复制模态窗口中显示的结果。
+To get your form's shortcode click to Generate Shortcode and copy the result shown on the modal window.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7d68oNc7yI.png)
+![Save button with shortcode](/img/config/checkout-form-save.png)

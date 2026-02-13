@@ -13,17 +13,17 @@ Puedes activar hasta cuatro métodos de pago en nuestra página de configuració
 
 Para habilitar Stripe como un gateway de pago disponible en tu red, ve a **Ultimate Multisite > Settings > Payments** y marca el interruptor junto a **Stripe** o **Stripe Checkout** en la sección Gateways de Pago Activos.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UUtLaJgx7R.png)
+![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ### Stripe vs Stripe Checkout:
 
 **Stripe:** Este método mostrará un espacio para insertar el número de tarjeta de crédito durante el proceso de pago.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-k73ZUl1hTW.png)
+![Stripe inline credit card field during checkout](/img/config/settings-payment-gateways.png)
 
 **Stripe Checkout:** Este método redirigirá al cliente a una página de Stripe Checkout durante el proceso de pago.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PCZ16DhYrj.png)
+![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
 
 ## Obtener tus claves API de Stripe
 
@@ -31,21 +31,21 @@ Una vez que Stripe esté habilitado como gateway de pago, deberás completar los
 
 _**Nota:** puedes activar el **Modo Sandbox** para probar si el método de pago funciona._
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-dhnvBN03ii.png)
+![Stripe API key fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 En tu panel de Stripe, haz clic en **Developers** en la esquina superior derecha, y luego en **API Keys** en el menú izquierdo.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-HVqsu1SXuE.png)
+![Stripe dashboard Developers section with API Keys](/img/config/settings-payment-gateways.png)
 
 Puedes usar **Test Data** (para probar si la integración funciona en tu sitio de producción) o no. Para cambiar esto, cambia el interruptor **Viewing test data**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-kdVC3W8Bsr.png)
+![Stripe Viewing test data toggle](/img/config/settings-payment-gateways.png)
 
 Copia el valor de la **Publishable key** y la **Secret key**, de la columna **Token**, y pégalo en los campos del Gateway Stripe de Ultimate Multisite. Luego haz clic en **Save Changes**.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-JyAifSGNOn.png)
+![Stripe publishable and secret key values](/img/config/settings-payment-gateways.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4rFGxkXr1K.png)
+![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
 ## Configurar el Webhook de Stripe
 
@@ -53,18 +53,18 @@ Stripe envía eventos de webhook que notifican a Ultimate Multisite cada vez que
 
 Haz clic en **Developers** y luego selecciona el elemento **Webhooks** en el menú izquierdo. Luego, en el lado derecho, haz clic en **Add endpoint** *.*
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LmYsdylNdd.png)
+![Stripe Webhooks page with Add endpoint button](/img/config/settings-payment-gateways.png)
 
 Necesitarás una **Endpoint URL** *.* Ultimate Multisite genera automáticamente la URL del endpoint, que puedes encontrar justo debajo del campo **Webhook Listener URL** en la sección **Ultimate Multisite Stripe Gateway**_.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sZrCX9OZaw.png)
+![Webhook Listener URL field in Stripe gateway settings](/img/config/settings-payment-gateways.png)
 
 **Copy** la URL del endpoint y **paste** en el campo **Endpoint URL** de Stripe.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-tMlomo8gx1.png)
+![Pasting endpoint URL in Stripe webhook setup](/img/config/settings-payment-gateways.png)
 
 A continuación, selecciona un **Event** *.* Bajo esta opción, simplemente debes marcar la casilla **Select all events** y hacer clic en **Add events**. Después, haz clic en **Add Endpoint** para guardar los cambios.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Hv8KzaGMrq.png)
+![Selecting all events and adding the Stripe endpoint](/img/config/settings-payment-gateways.png)
 
 ¡Eso es todo, tu integración de pagos con Stripe está completa!

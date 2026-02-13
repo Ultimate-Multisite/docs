@@ -13,17 +13,17 @@ Réduire un plan ou un abonnement est une action courante que vos clients peuven
 
 Vos clients peuvent réduire leur plan à tout moment en se connectant à leur tableau de bord d'administration du sous‑site et en cliquant sur **Changer** sous leur page de compte.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 En cliquant sur le bouton **Changer**, l'utilisateur/client sera redirigé vers la page de paiement où il pourra sélectionner le plan vers lequel il souhaite modifier son abonnement.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 Dans cet exemple, nous réduisons le plan de **Premium** à **Free**.
 
 Pour procéder, l'utilisateur doit simplement cliquer sur le bouton **Terminer le paiement**. Il sera alors renvoyé vers la page de compte affichant un message concernant le changement en attente pour l'adhésion. Les changements prendront effet lors de la prochaine période de facturation du client.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### Que se passe-t-il lorsqu'un utilisateur réduit son plan
 
@@ -35,7 +35,7 @@ Nous comprenons que votre principale préoccupation concerne les limites et quot
 
 Pour les articles dépassant la limite définie dans le plan, vous avez trois options différentes : **Conserver les articles tels quels**, **Déplacer les articles à la corbeille**, ou **Déplacer les articles au brouillon**. Vous pouvez configurer cela dans les paramètres d'Ultimate Multisite.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### Que se passe-t-il pour le paiement
 

@@ -15,17 +15,17 @@ Mit der Rundschreiben-Funktion von Ultimate Multisite können Sie **Admin-Benach
 
 Dies ist äußerst hilfreich, wenn Sie eine Ankündigung wie Wartungsarbeiten oder das Angebot neuer Produkte oder Dienstleistungen an Ihre bestehenden Benutzer machen müssen. So sieht die Admin-Benachrichtigung auf dem Dashboard Ihres Benutzers aus.
 
-![broadcast account](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UhCB0zV12U.png)
+![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
 
 Um eine Admin-Benachrichtigung zu starten, gehen Sie zum Netzwerk-Admin-Dashboard und suchen Sie im Menü **Ultimate Multisite** nach der Option **Broadcasts**.
 
-![broadcast admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Klicken Sie auf dieser Seite oben auf die Schaltfläche **Add Broadcast**.
 
 Dadurch öffnet sich das Modal-Fenster „Add broadcast“, in dem Sie auswählen können, welche Art von Rundschreiben Sie senden möchten. Wählen Sie **Message** und klicken Sie anschließend auf die Schaltfläche **Next Step**.
 
-![broadcast admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-f3MiyZ1DgU.png)
+![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
 
 Das nächste Fenster fragt Sie nach dem **Target customer** oder dem **Target product**. Beachten Sie, dass Sie mehr als einen Benutzer oder mehr als ein Produkt auswählen können.
 
@@ -35,11 +35,11 @@ Im Feld **Message type** können Sie die Farbe der Benachrichtigung auswählen. 
 
 Klicken Sie anschließend auf **Next Step**.
 
-![broadcast admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-vfXM5mcBCc.png)
+![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
 
 Im nächsten Fenster können Sie Ihre Nachricht verfassen, indem Sie Betreff und Inhalt/Nachricht eingeben, die Sie an die Benutzer senden möchten.
 
-![broadcast admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-i2gpqKv4UG.png)
+![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
 
 Nachdem Sie Ihre Nachricht erstellt haben, klicken Sie auf die Schaltfläche **Send**.
 
@@ -51,13 +51,13 @@ Mit der Rundschreiben-Funktion von Ultimate Multisite können Sie Ihren Benutzer
 
 Um ein E‑Mail-Rundschreiben zu starten, gehen Sie zum Netzwerk-Admin-Dashboard und suchen Sie im Menü Ultimate Multisite nach der Option Broadcast.
 
-![email admin](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UBLRopntNQ.png)
+![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 Klicken Sie auf dieser Seite oben auf die Schaltfläche **Add broadcast**.
 
 Dadurch öffnet sich das Modal-Fenster „Add broadcast“, in dem Sie auswählen können, welche Art von Rundschreiben Sie senden möchten. Wählen Sie **Email** und klicken Sie anschließend auf die Schaltfläche **Next Step**.
 
-![email admin modal](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-RKZSgug4Hl.png)
+![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
 
 Das nächste Fenster fragt Sie nach dem **Target customer** oder dem **Target product**. Beachten Sie, dass Sie mehr als einen Benutzer oder mehr als ein Produkt auswählen können.
 
@@ -65,11 +65,11 @@ Um nach einem Benutzerkonto oder Produkt zu suchen, müssen Sie das Schlüsselwo
 
 Sobald Ihre Zielgruppe ausgewählt ist, klicken Sie auf **Next Step**.
 
-![email admin add new](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-X5ZMvVYD8Q.png)
+![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
 
 Im nächsten Fenster können Sie Ihre E‑Mail verfassen, indem Sie Betreff und Inhalt/Nachricht eingeben, die Sie an die Benutzer senden möchten.
 
-![email admin content](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-us34QLYBi4.png)
+![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
 
 Nachdem Sie Ihre Nachricht erstellt haben, klicken Sie auf die Schaltfläche **Send**.
 
@@ -91,19 +91,19 @@ Allerdings können Super‑Admins und Agenten diese neu registrierten E‑Mails 
 
 Gehen Sie zur Seite Einstellungen von Ultimate Multisite und öffnen Sie die Registerkarte **Emails**.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-yIQvxZcJqk.png)
+![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
 
 Klicken Sie anschließend in der Seitenleiste auf die Schaltfläche **Customize System Emails**.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mRSIFOG7eH.png)
+![Customize System Emails button on sidebar](/img/config/settings-emails.png)
 
 Auf der Seite System‑E‑Mails sehen Sie oben die Schaltfläche **Reset & Import**. Durch Klicken auf diese Schaltfläche sollte das Modal-Fenster für Import und Zurücksetzen geöffnet werden.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UWDXL6Jf2d.png)
+![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
 
 Anschließend können Sie die Option Import Emails umschalten, um zu sehen, welche System‑E‑Mails importiert werden können.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mGER3jSjMu.png)
+![Import Emails options showing available system emails](/img/config/settings-emails.png)
 
 #### Zurücksetzen von System‑E‑Mails
 
@@ -115,4 +115,4 @@ Oder Sie können das **Reset & Import**-Tool verwenden, um diese E‑Mail-Vorlag
 
 Um eine E‑Mail-Vorlage zurückzusetzen, können Sie die oben beschriebenen Schritte bis zum Reset & Import‑Tool befolgen, anschließend die Option **Reset** umschalten und die E‑Mails auswählen, die Sie auf ihren Standardinhalt zurücksetzen möchten.
 
-![...](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-SMHJQAZWQM.png)
+![Reset option to restore email templates to defaults](/img/config/settings-emails.png)

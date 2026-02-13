@@ -9,30 +9,30 @@ _i18n_hash: b77221f8098a0280ce78f481e328f9af
 
 Сначала вам нужно создать **Google Sheet** в вашем Google Drive. Убедитесь, что вы правильно определили каждый столбец, чтобы позже было легко сопоставлять данные.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-7wnYotvYtO.png)После создания Google Sheet вы можете войти в свой аккаунт Zapier и начать создавать zap.
+![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)After creating a Google sheet, you can log in to your Zapier account and start creating a zap.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-C0khOzCSCF.png)В поле поиска для **"App event"** выберите **"Google Sheets"**
+![Zapier dashboard to start creating a zap](/img/admin/webhooks-list.png)Under the search field for **"App event"** select **"Google Sheets"**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Cj2rk0zpOO.png)
+![Selecting Google Sheets as the app event](/img/admin/webhooks-list.png)
 
 Затем в поле **"Event"** выберите **"New spreadsheet row"** и нажмите **"Continue"**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Y6z9NX6HAn.png)Следующий шаг попросит вас выбрать **Google Account**, в котором сохранён **Google Sheet**. Убедитесь, что указан правильный аккаунт Google.
+![Selecting New spreadsheet row event in Zapier](/img/admin/webhooks-list.png)The next step will ask you to select a **Google Account** where the **Google Sheet** is saved. So just make sure that the right google account is specified.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-536o0FgLI1.png)В разделе **"Set up trigger"** вам нужно выбрать и указать таблицу Google и лист, которые вы будете использовать, откуда будут поступать данные. Просто заполните их и нажмите **"Continue"**
+![Selecting Google Account for the Google Sheet](/img/admin/webhooks-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-4juCX9m6M2.png)Далее нужно **"test your trigger"**, чтобы убедиться, что ваш Google Sheet правильно подключён.
+![Set up trigger with spreadsheet and worksheet selection](/img/admin/webhooks-list.png)Next is to "**test your trigger** " to make sure that your google sheet is properly connected.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E1RjprMVNM.png)Если тест прошёл успешно, вы увидите результат с некоторыми значениями из ваших таблиц. Нажмите **"Continue"**, чтобы продолжить.
+![Test your trigger step in Zapier](/img/admin/webhooks-list.png)If your test is successful, you should see the result showing some values from your spreadsheets. Click "**Continue** " to proceed.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FNVMJRdoBs.png)Следующий шаг — настроить второе действие, которое создаст или зарегистрирует аккаунт в Ultimate Multisite. В поле поиска выберите **"Ultimate Multisite(2.0.2)"**
+![Successful trigger test showing spreadsheet values](/img/admin/webhooks-list.png)The next step is to set up the second action that will create or register an account in Ultimate Multisite. On the search field select "**Ultimate Multisite(2.0.2)** "
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-bbSevglDSJ.png)
+![Selecting Ultimate Multisite as the action app](/img/admin/webhooks-list.png)
 
 В поле **"Event"** выберите **"Register an Account in Ultimate Multisite"** и нажмите кнопку **"Continue"**
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-DZTN6Hno0w.png)В разделе **"Set up an action"** вы увидите различные поля для данных клиента, членства, продуктов и т.д. Вы можете сопоставить значения из вашего Google Sheet и назначить их соответствующим полям, как показано на скриншоте ниже.
+![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)Under "**Set up an action** ", you will see different fields available for customer data, memberships, products, etc. You can map the values under your google sheet and assign them to the proper field where they should be populated as shown in the screenshot below.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-c1ozo05Uam.png)После сопоставления значений вы можете протестировать действие.
+![Mapping Google Sheet values to Ultimate Multisite fields](/img/admin/webhooks-list.png)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-UKI9kdBjIc.png)
+![Testing the register account Zapier action](/img/admin/webhooks-list.png)

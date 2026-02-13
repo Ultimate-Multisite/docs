@@ -1,6 +1,6 @@
 {
   "sidebar.userGuideSidebar.category.Getting Started": {
-    "message": "Inizio",
+    "message": "Per iniziare",
     "description": "The label for category Getting Started in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Administration": {
@@ -16,7 +16,7 @@
     "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Host Integrations": {
-    "message": "Integrazioni host",
+    "message": "Integrazioni di Host",
     "description": "The label for category Host Integrations in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Payment Gateways": {
@@ -56,7 +56,7 @@
     "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
   },
   "sidebar.developerSidebar.category.Hooks Reference": {
-    "message": "Riferimento degli Hook",
+    "message": "Riferimento Hook",
     "description": "The label for category Hooks Reference in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.REST API": {
@@ -156,7 +156,7 @@
     "description": "The label for category PayFast in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
-    "message": "Gestore di Plugin e Theme",
+    "message": "Gestore di plugin e temi",
     "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Agents": {
@@ -172,7 +172,7 @@
     "description": "The label for category VAT in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Admin Page Creator": {
-    "message": "Creatore di Pagine Admin",
+    "message": "Creatore di pagine amministratore",
     "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Addon Template": {
@@ -180,7 +180,7 @@
     "description": "The label for category Addon Template in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
-    "message": "Compatibilità Tutor Multisite",
+    "message": "Compatibilità Multisite di Tutor",
     "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Material WP": {

@@ -349,6 +349,6 @@ class Test_My_Integration extends WP_UnitTestCase {
 
 ## Следующие шаги
 
-- Изучите [Hooks Reference](/docs/developer/hooks) для доступных действий и фильтров
-- Проверьте [REST API Overview](/docs/developer/rest-api/overview) для интеграции API
-- Используйте [Addon Template](/docs/addons/addon-template) как начальную основу
+- Изучите [Hooks Reference](/developer/hooks) для доступных действий и фильтров
+- Проверьте [REST API Overview](/developer/rest-api/overview) для интеграции API
+- Используйте [Addon Template](/addons/addon-template) как начальную основу

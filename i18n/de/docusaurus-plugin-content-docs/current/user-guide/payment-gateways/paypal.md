@@ -17,7 +17,7 @@ Beachten Sie, dass Sie ein **PayPal Business‑Konto** benötigen, um die für d
 
 Um PayPal als verfügbare Zahlungsmethode in Ihrem Netzwerk zu aktivieren, gehen Sie zum Tab **Ultimate Multisite > Settings > Payments** und aktivieren Sie das Kästchen neben PayPal.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-FhlfHHJLPl.png)
+![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
 ## PayPal API‑Anmeldeinformationen erhalten
 
@@ -27,15 +27,15 @@ Sie können diese erhalten, indem Sie sich bei Ihrem PayPal [Live](https://www.p
 
 (Denken Sie daran, dass Sie den **Sandbox‑Modus** verwenden können, um Zahlungen zu testen und zu prüfen, ob das Gateway korrekt eingerichtet ist. Schalten Sie einfach die entsprechende Sektion ein.)
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-PgTatIgsIm.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
 
 Um API‑Signatur‑ oder Zertifikatsanmeldeinformationen für Ihr PayPal‑Konto anzufordern:
 
 1. Gehen Sie zu Ihren [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 2. Im Abschnitt **API access** klicken Sie auf **Update**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-Dx72ARoKzx.png)
+![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
 3. Unter **NVP/SOAP API integration (Classic)** klicken Sie auf **Manage API credentials**.  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-mUoIzsfpMq.png)
+![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
 
    * Wenn Sie bereits eine API‑Signatur oder ein Zertifikat generiert haben, werden Sie zu einer Seite weitergeleitet, auf der Sie Ihre Anmeldeinformationen finden.
    * _**Hinweis:** Wenn Sie aufgefordert werden, Ihr PayPal‑Konto zu verifizieren, folgen Sie bitte den Anweisungen auf dem Bildschirm._
@@ -46,7 +46,7 @@ Um API‑Signatur‑ oder Zertifikatsanmeldeinformationen für Ihr PayPal‑Kont
    * **Request API Certificate** – Wählen Sie für die API‑Zertifikats‑Authentifizierung.
 
 5. PayPal generiert Ihre API‑Anmeldeinformationen wie folgt:  
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-utEMaS5roo.png)
+![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
 
    * **API Signature credentials** enthalten einen API‑Username, ein API‑Password und eine Signature, die nicht abläuft. Diese Werte sind standardmäßig aus Sicherheitsgründen ausgeblendet. Klicken Sie auf **Show/Hide**, um sie ein- oder auszublenden. Wenn Sie fertig sind, klicken Sie auf **Done**.
    * **API Certificate credentials** enthalten einen API‑Username, ein API‑Password und ein Zertifikat, das automatisch nach drei Jahren abläuft. Klicken Sie auf **Download Certificate**, um das API‑Zertifikat auf Ihren Desktop zu speichern.

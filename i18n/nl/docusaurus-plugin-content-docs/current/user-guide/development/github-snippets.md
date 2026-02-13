@@ -24,7 +24,7 @@ Er zijn 2 manieren waarop je de code kunt toevoegen
 2. Op de pagina 'Thema's bewerken', zorg ervoor dat je actieve thema is geselecteerd in het dropdown-menu rechtsboven op je scherm (#3 op de screenshot hieronder).
 3. Klik op het functions.php-bestand onder de sectie 'Thema-bestanden' om het bestand te laden. Scrol naar beneden en plak het Ultimate Multisite-snipet dat je uit de GitHub-repository hebt gekregen.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
 # Hoe Must-Use Plugins (mu-plugins) aan te maken
 
@@ -35,7 +35,7 @@ Deze speciale mu-plugins worden geladen vóór alle andere reguliere plugins en 
 1. Gebruik FTP of SSH om toegang te krijgen tot het bestandssysteem van je WordPress-installatie.
 2. Maak binnen de wp-content-directory van je WordPress-installatie een nieuwe map aan met de naam: mu-plugins.
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-image.png)
+<!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
 
 3. Maak een nieuw PHP-bestand op je computer met de naam wu-snippet.php met behulp van Kladblok of een andere code-editor.
 4. Plaats het Ultimate Multisite-codefragment dat je uit de GitHub-repository hebt gekregen in het bestand en sla het op. Je kunt ook deze code bovenop het codefragment plaatsen om je mu-plugin te labelen.

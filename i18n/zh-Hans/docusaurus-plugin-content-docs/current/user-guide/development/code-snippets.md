@@ -15,7 +15,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 
 * [**在映射域中修复 Font-Icons 的 CORS 问题**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## 更改账户菜单项的位置
+## 更改账户菜单项的位置 {#changing-the-position-of-the-account-menu-item}
 
 要更改客户仪表盘上账户菜单项的位置，只需将以下代码片段添加到主站点活动主题的 functions.php 中。你也可以将片段放在你的 mu-plugins 或自定义插件中。
 
@@ -23,7 +23,7 @@ _i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 ```
 
-## 如何检查用户是否属于某个计划以及/或是否有活跃订阅
+## 如何检查用户是否属于某个计划以及/或是否有活跃订阅 {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 作为网络管理员，你可能需要创建自定义函数，以执行基本操作或为基于订阅状态和所订阅计划的特定订阅者或最终用户提供服务/功能。
 
@@ -53,11 +53,9 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 请注意，用户只能订阅 **Plan**，而不是 Package 或 Service，因为它们只是 **Plan** 的附加组件。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-LAYTqHqw5w.png)
+![Products list showing plan IDs](/img/admin/products-list.png)
 
-## 在映射域中修复 Font-Icons 的 CORS 问题
-
-## 在映射域中修复 Font-Icons 的 CORS 问题
+## 在映射域中修复 Font-Icons 的 CORS 问题 {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 在将域映射到子站点后，你可能会发现站点加载自定义字体时遇到问题。这是由于服务器设置中的跨域阻止导致的。
 

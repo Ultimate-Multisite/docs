@@ -13,17 +13,17 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xに関する
 
 クライアントはサブサイトの管理ダッシュボードにログインし、アカウントページの **Change** をクリックすることで、いつでもプランをダウングレードできます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-sprLyB2iMU.png)
+![Account page with Change button under membership](/img/admin/memberships-list.png)
 
 **Change** ボタンをクリックすると、ユーザー/クライアントはチェックアウトページにリダイレクトされ、サブスクリプションを変更したいプランを選択できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-aTnhJPFVFh.png)
+![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
 
 この例では、プランを **Premium** から **Free** にダウングレードしています。
 
 進行するには、ユーザーは **Complete Checkout** ボタンをクリックするだけです。すると、会員の変更が保留中である旨のメッセージとともにアカウントページに戻ります。変更は顧客の **next billing cycle** で有効になります。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-E2qcjxzDDG.png)
+![Account page showing pending membership change message](/img/admin/memberships-list.png)
 
 ### ユーザーがプランをダウングレードしたときに起こること
 
@@ -35,7 +35,7 @@ _**重要な注意: 本記事はUltimate Multisiteバージョン2.xに関する
 
 プランで設定された制限を超える投稿については、3つのオプションがあります: **Keep the posts as it** *,* **Move the posts to trash** *,* or **Move the posts to draft** *.* これらは Ultimate Multisite の設定で構成できます。
 
-![](https://wp-ultimo-space.fra1.cdn.digitaloceanspaces.com/hs-file-ztHV8cZDG0.png)
+![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
 
 ### 支払いに関して起こること
 
