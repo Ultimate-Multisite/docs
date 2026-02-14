@@ -1,0 +1,123 @@
+---
+title: التعددية في المستأجرين
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# التعددية
+
+توزيع المواقع الفرعية عبر الخوادم وقواعد البيانات لتحسين الأداء والأمان
+
+## المتطلبات
+
+- WordPress 5.3 أو أحدث
+- PHP 7.4 أو أحدث
+- إضافة Multisite Ultimate (نشطة)
+
+## التثبيت
+
+1. قم بتحميل ملفات الإضافة إلى دليل `/wp-content/plugins/` الخاص بك
+2. فعّل الإضافة من خلال قائمة 'الإضافات' في ووردبريس
+3. قم بتكوين إعدادات الإضافة في مدير الشبكة
+
+## التطوير
+
+### الإعداد
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### هيكل المشروع
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### الاختبار
+
+الإضافة تتضمن إطار اختبار شامل:
+
+- **الاختبارات الوحدوية**: اختبارات مبنية على PHPUnit مع مجموعة اختبارات ووردبريس
+- **فئة الاختبار الأساسية**: توفر طرق مساعدة لسيناريوهات الاختبار الشائعة
+- **تغطية الاختبار**: مُكوَّنة لتتبع تغطية الكود
+- **اختبار الشبكة المتعددة**: تُشغَّل الاختبارات في بيئة الشبكة المتعددة
+
+### معايير الكود
+
+- **معايير ترميز ووردبريس**: تُطبَّق عبر PHPCS
+- **التوافق مع PHP 7.4+**: تدعم ميزات PHP الحديثة
+- **التحليل الثابت**: تكامل PHPStan للتحقق من الأنواع
+- **تحديث الكود**: قواعد Rector لترقية PHP
+
+### نظام البناء
+
+- **معالجة الأصول**: تصغير ملفات CSS/JS
+- **الترجمة**: إنشاء ملفات POT
+- **التغليف**: إنشاء أرشيف للتوزيع
+- **وضع التطوير**: أصول غير مصغرة للخطأ
+
+## التكوين
+
+يدعم الإضافة خيارات تكوين مختلفة يمكن الوصول إليها عبر واجهة مدير الشبكة.
+
+## الخطافات والمرشحات
+
+### الإجراءات
+
+- `ultimate-multisite-addon-template_init` - يُطلق بعد تهيئة الإضافة
+- `ultimate-multisite-addon-template_loaded` - يُطلق بعد تحميل جميع ملفات الإضافة
+
+### المرشحات
+
+- `ultimate-multisite-addon-template_settings` - تعديل إعدادات الإضافة
+- `ultimate-multisite-addon-template_enabled` - تجاوز حالة تمكين/تعطيل الإضافة
+
+## الترخيص
+
+تمت ترخيص هذه الإضافة بموجب GPL v3 أو أحدث.
+
+## الدعم
+
+للدعم والوثائق، قم بزيارة [MultisiteUltimate.com](https://multisiteultimate.com)
+
+## سجل التغييرات
+
+- الإصدار 1.0.1 (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.
+- الإصدار (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.

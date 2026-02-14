@@ -16,15 +16,15 @@
     "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Host Integrations": {
-    "message": "Host Integraties",
+    "message": "Host-integraties",
     "description": "The label for category Host Integrations in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Payment Gateways": {
-    "message": "Betaal Gateways",
+    "message": "Betaalgateways",
     "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Client Management": {
-    "message": "Client Management",
+    "message": "Klantbeheer",
     "description": "The label for category Client Management in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Integrations": {
@@ -72,11 +72,11 @@
     "description": "The label for category Code Examples in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Addon Development": {
-    "message": "Add-on ontwikkeling",
+    "message": "Addon-ontwikkeling",
     "description": "The label for category Addon Development in sidebar developerSidebar"
   },
   "sidebar.addonsSidebar.category.WooCommerce Integration": {
-    "message": "WooCommerce Integratie",
+    "message": "WooCommerce-integratie",
     "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Site Exporter": {
@@ -88,11 +88,11 @@
     "description": "The label for category AffiliateWP in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.AI Site Builder": {
-    "message": "AI Site Builder",
+    "message": "AI Sitebouwer",
     "description": "The label for category AI Site Builder in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Analytics": {
-    "message": "We need to output the translated content. The content is just \"Analytics\". So we translate to Dutch: \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But it's generic. I'd translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe \"Analytics\" is a brand? But we can translate to \"Analytics\" -> \"Analytics\" maybe ...Analytics",
+    "message": "Analytics",
     "description": "The label for category Analytics in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Captcha": {
@@ -104,11 +104,11 @@
     "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Content Sync": {
-    "message": "Inhoud Synchronisatie",
+    "message": "Inhoud synchronisatie",
     "description": "The label for category Content Sync in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Domain Seller": {
-    "message": "Domein Verkoper",
+    "message": "Domeinverkoper",
     "description": "The label for category Domain Seller in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Fluent Forms": {
@@ -140,11 +140,11 @@
     "description": "The label for category Mailster in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Metered Plans": {
-    "message": "Metered Plans",
+    "message": "Gemeten",
     "description": "The label for category Metered Plans in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Network": {
-    "message": "Multi-netwerk",
+    "message": "Multi-Netwerk",
     "description": "The label for category Multi-Network in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Tenancy": {
@@ -164,7 +164,7 @@
     "description": "The label for category Support Agents in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Tickets": {
-    "message": "Ondersteuningskaarten",
+    "message": "Ondersteuningstickets",
     "description": "The label for category Support Tickets in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.VAT": {
@@ -172,11 +172,11 @@
     "description": "The label for category VAT in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Admin Page Creator": {
-    "message": "Beheerder Pagina Maker",
+    "message": "Admin Pagina Maker",
     "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Addon Template": {
-    "message": "Addon-sjabloon",
+    "message": "Addon Sjabloon",
     "description": "The label for category Addon Template in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {

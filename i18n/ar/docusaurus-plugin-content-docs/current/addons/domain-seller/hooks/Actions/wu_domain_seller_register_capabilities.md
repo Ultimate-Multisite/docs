@@ -1,0 +1,23 @@
+---
+id: wu_domain_seller_register_capabilities
+title: الإجراء - wu_domain_seller_register_capabilities
+sidebar_label: wu_domain_seller_register_capabilities
+_i18n_hash: e98f40156ccda7c7ce6644d7412d47d3
+---
+# Action: wu_domain_seller_register_capabilities
+
+يسمح للملحقات الأخرى بتسجيل قدرات بيع نطاق إضافية.
+
+## Parameters
+
+| الاسم | النوع | الوصف |
+|------|------|-------------|
+| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | سجل التكامل. |
+
+### Since
+
+- 2.1.0
+
+### Source
+
+Defined in [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L298) at line 298

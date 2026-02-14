@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Translate Docusaurus docs to multiple languages using OpenAI-compatible APIs.
+ * Translate Docusaurus docs to multiple languages using AI APIs.
+ *
+ * Supports two providers:
+ * - "openai"       — Any OpenAI-compatible API (OpenAI, Ollama, Mistral, etc.)
+ * - "claude-proxy" — Claude Max Proxy (uses local Claude CLI subscription credentials)
  *
  * Based on the docusaurus-i18n approach but rewritten to support:
  * - .md and .mdx files
@@ -14,6 +18,7 @@
  *   node scripts/translate.js --locales fr,es,de
  *   node scripts/translate.js --locales all --concurrency 10
  *   node scripts/translate.js --locales fr --dry-run
+ *   node scripts/translate.js --provider claude-proxy --model claude-sonnet-4-5-20250929 --locales fr
  */
 
 const fs = require('fs-extra');
@@ -45,6 +50,7 @@ function parseArgs() {
 		dryRun: false,
 		debug: false,
 		timeout: parseInt(process.env.OPENAI_TIMEOUT, 10) || 900000, // 15 minutes default
+		provider: process.env.TRANSLATE_PROVIDER || 'openai',
 		model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
 		baseUrl: process.env.OPENAI_API_BASE || 'https://api.openai.com/v1',
 		apiKey: process.env.OPENAI_API_KEY || '',
@@ -64,6 +70,9 @@ function parseArgs() {
 			case '--debug':
 				opts.debug = true;
 				break;
+			case '--provider':
+				opts.provider = args[++i];
+				break;
 			case '--model':
 				opts.model = args[++i];
 				break;
@@ -79,6 +88,16 @@ function parseArgs() {
 			case '--commit':
 				opts.commit = true;
 				break;
+		}
+	}
+
+	// Provider-specific defaults
+	if (opts.provider === 'claude-proxy') {
+		if (opts.baseUrl === 'https://api.openai.com/v1') {
+			opts.baseUrl = 'http://127.0.0.1:3456';
+		}
+		if (opts.model === 'gpt-4o-mini') {
+			opts.model = 'claude-sonnet-4-5-20250929';
 		}
 	}
 
@@ -153,7 +172,7 @@ async function pMap(items, fn, concurrency) {
 }
 
 // ---------------------------------------------------------------------------
-// OpenAI API call
+// API call (supports OpenAI-compatible and Claude Max Proxy providers)
 // ---------------------------------------------------------------------------
 
 function formatBytes(bytes) {
@@ -168,16 +187,21 @@ function formatDuration(ms) {
 	return `${(ms / 60000).toFixed(1)}m`;
 }
 
-async function translate(text, targetLocale, opts, context = {}) {
+function buildPrompts(targetLocale, field) {
 	const langName = getLocaleName(targetLocale);
-	const field = context.field || 'body';
 
-	// Use a focused prompt for short frontmatter fields (title, description)
-	// to prevent the model from getting confused by tiny inputs.
 	const systemPrompt = field === 'body'
-		? `You are a professional translator for software documentation. Translate the Docusaurus Markdown/MDX content below from English to ${langName} (${targetLocale}).
+		? `You are a native ${langName}-speaking technical writer translating WordPress documentation. Translate the content below from English to ${langName} (${targetLocale}).
 
-The user message is the COMPLETE document to translate. Always produce a translation — never ask for clarification, request more context, or say you need the content. The text you receive IS the content.
+CRITICAL: Output ONLY the translated document. No preamble, no commentary, no "Here is the translation". Start directly with the translated content.
+
+STYLE AND TONE:
+- Write as a native ${langName} speaker would naturally explain these concepts
+- Use clear, simple language — avoid overly formal or academic phrasing
+- Make technical concepts accessible to non-developers: prefer everyday words over jargon
+- Use the natural sentence structure of ${langName}, not word-for-word English calques
+- Keep a friendly, helpful tone — as if guiding a colleague through the documentation
+- When a technical term has a well-known ${langName} equivalent, use it; when the English term is standard in the ${langName}-speaking tech community (e.g. "plugin", "hook", "dashboard"), keep it in English
 
 WHAT TO TRANSLATE:
 - All human-readable prose: headings, paragraphs, list items, table cells, link text, image alt text
@@ -197,22 +221,17 @@ FORMATTING RULES:
 - Do NOT add, remove, or duplicate headings or sections
 - Do NOT wrap the output in a code fence or add any commentary before/after
 - Your output should be approximately the same length as the input`
-		: `Translate this short text from English to ${langName} (${targetLocale}). Output ONLY the translated text — no quotes, no explanation, no commentary. Keep product names (Ultimate Multisite, WordPress, etc.), technical identifiers (hook names like wu_*, function names), and formatting markers unchanged. The text to translate is:`;
+		: `You are a native ${langName} speaker. Translate the text below from English to ${langName} (${targetLocale}).
+Rules: Output ONLY the translated text. No quotes, no explanation, no preamble like "Here is" or "I'll translate". Just the translation, nothing else. Keep product names (Ultimate Multisite, WordPress, etc.), technical identifiers (hook names like wu_*, function names), and formatting markers unchanged.
+Text:`;
 
-	if (opts.debug) {
-		console.log('\n--- DEBUG: API Request ---');
-		console.log(`Context: ${context.file || 'unknown'} (${context.field || 'body'})`);
-		console.log(`Target: ${langName} (${targetLocale})`);
-		console.log(`Text size: ${formatBytes(Buffer.byteLength(text, 'utf-8'))}`);
-		console.log('System prompt:');
-		console.log(systemPrompt);
-		console.log('\nUser content (first 500 chars):');
-		console.log(text.substring(0, 500) + (text.length > 500 ? '...' : ''));
-		console.log('--- END DEBUG ---\n');
-	}
+	return {systemPrompt, langName};
+}
 
-	const startTime = Date.now();
-
+/**
+ * Send translation request via OpenAI-compatible chat completions API.
+ */
+async function translateOpenAI(text, systemPrompt, opts) {
 	const response = await fetch(`${opts.baseUrl}/chat/completions`, {
 		method: 'POST',
 		headers: {
@@ -236,7 +255,7 @@ FORMATTING RULES:
 		throw new Error(`API error ${response.status}: ${body}`);
 	}
 
-	// Stream the response
+	// Stream OpenAI SSE format: data: {"choices":[{"delta":{"content":"..."}}]}
 	const reader = response.body.getReader();
 	const decoder = new TextDecoder();
 	let content = '';
@@ -247,10 +266,8 @@ FORMATTING RULES:
 		if (done) break;
 
 		buffer += decoder.decode(value, {stream: true});
-
-		// Process complete SSE lines
 		const lines = buffer.split('\n');
-		buffer = lines.pop() || ''; // Keep incomplete line in buffer
+		buffer = lines.pop() || '';
 
 		for (const line of lines) {
 			const trimmed = line.trim();
@@ -262,14 +279,131 @@ FORMATTING RULES:
 				const delta = json.choices?.[0]?.delta?.content;
 				if (delta) {
 					content += delta;
-					if (opts.debug) {
-						process.stdout.write(delta);
+					if (opts.debug) process.stdout.write(delta);
+				}
+			} catch {
+				// Skip malformed JSON chunks
+			}
+		}
+	}
+
+	return content;
+}
+
+/**
+ * Send translation request via Claude Max Proxy (Anthropic Messages API format).
+ * The proxy runs locally and uses Claude CLI subscription credentials.
+ */
+async function translateClaudeProxy(text, systemPrompt, opts) {
+	const url = `${opts.baseUrl.replace(/\/+$/, '')}/v1/messages`;
+
+	const body = {
+		model: opts.model,
+		stream: true,
+		messages: [
+			{role: 'user', content: text},
+		],
+	};
+	if (systemPrompt) {
+		body.system = systemPrompt;
+	}
+
+	const response = await fetch(url, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		signal: AbortSignal.timeout(opts.timeout),
+		body: JSON.stringify(body),
+	});
+
+	if (!response.ok) {
+		const body = await response.text();
+		throw new Error(`API error ${response.status}: ${body}`);
+	}
+
+	// Stream Anthropic SSE format: event: content_block_delta + data: {"delta":{"text":"..."}}
+	const reader = response.body.getReader();
+	const decoder = new TextDecoder();
+	let content = '';
+	let buffer = '';
+
+	while (true) {
+		const {done, value} = await reader.read();
+		if (done) break;
+
+		buffer += decoder.decode(value, {stream: true});
+		const lines = buffer.split('\n');
+		buffer = lines.pop() || '';
+
+		for (const line of lines) {
+			const trimmed = line.trim();
+			if (!trimmed || !trimmed.startsWith('data: ')) continue;
+
+			try {
+				const json = JSON.parse(trimmed.slice(6));
+
+				// Anthropic streaming: content_block_delta events carry the text
+				if (json.type === 'content_block_delta') {
+					const delta = json.delta?.text;
+					if (delta) {
+						content += delta;
+						if (opts.debug) process.stdout.write(delta);
+					}
+				}
+
+				// Also handle non-streaming JSON response (just in case)
+				if (json.content && Array.isArray(json.content)) {
+					for (const block of json.content) {
+						if (block.type === 'text' && block.text) {
+							content += block.text;
+							if (opts.debug) process.stdout.write(block.text);
+						}
 					}
 				}
 			} catch {
 				// Skip malformed JSON chunks
 			}
 		}
+	}
+
+	return content;
+}
+
+async function translate(text, targetLocale, opts, context = {}) {
+	const field = context.field || 'body';
+	const {systemPrompt, langName} = buildPrompts(targetLocale, field);
+
+	if (opts.debug) {
+		console.log('\n--- DEBUG: API Request ---');
+		console.log(`Provider: ${opts.provider}`);
+		console.log(`Context: ${context.file || 'unknown'} (${field})`);
+		console.log(`Target: ${langName} (${targetLocale})`);
+		console.log(`Text size: ${formatBytes(Buffer.byteLength(text, 'utf-8'))}`);
+		console.log('System prompt:');
+		console.log(systemPrompt);
+		console.log('\nUser content (first 500 chars):');
+		console.log(text.substring(0, 500) + (text.length > 500 ? '...' : ''));
+		console.log('--- END DEBUG ---\n');
+	}
+
+	const startTime = Date.now();
+
+	let content;
+	if (opts.provider === 'claude-proxy') {
+		if (field !== 'body') {
+			// Short strings: merge instruction + text into a single user message.
+			// The proxy flattens system/user into one text blob, which causes Claude
+			// to see a tiny user turn after a long system block and hallucinate.
+			// Combining them avoids this.
+			content = await translateClaudeProxy(
+				`${systemPrompt}\n${text}`, '', opts
+			);
+		} else {
+			content = await translateClaudeProxy(text, systemPrompt, opts);
+		}
+	} else {
+		content = await translateOpenAI(text, systemPrompt, opts);
 	}
 
 	if (opts.debug) {
@@ -372,24 +506,19 @@ function validateTranslation(input, output, field) {
 // Translate a single doc file
 // ---------------------------------------------------------------------------
 
-async function translateFile(srcPath, targetLocale, opts) {
+async function translateFile(srcPath, targetLocale, opts, existingSet) {
 	const relPath = path.relative(DOCS_DIR, srcPath);
 	const destDir = path.join(I18N_DIR, targetLocale, 'docusaurus-plugin-content-docs', 'current');
 	const destPath = path.join(destDir, relPath);
 
+	// Fast skip: check against pre-scanned set of existing translations
+	if (existingSet && existingSet.has(relPath)) {
+		return {file: relPath, status: 'skipped', size: 0};
+	}
+
 	const srcContent = await fs.readFile(srcPath, 'utf-8');
 	const srcHash = md5(srcContent);
 	const fileSize = Buffer.byteLength(srcContent, 'utf-8');
-
-	// Check if translation already exists and source hasn't changed
-	if (await fs.pathExists(destPath)) {
-		// const existing = await fs.readFile(destPath, 'utf-8');
-		// const {data: existingFm} = matter(existing);
-		// if (existingFm._i18n_hash === srcHash) {
-        // Just check that it exists.
-			return {file: relPath, status: 'skipped', size: fileSize};
-		// }
-	}
 
 	if (opts.dryRun) {
 		return {file: relPath, status: 'needs-translation', size: fileSize};
@@ -507,7 +636,10 @@ async function translateThemeJSON(targetLocale, opts) {
 			// Skip brand names that shouldn't be translated
 			if (['Ultimate Multisite', 'GitHub', 'WordPress.org'].includes(original)) continue;
 			try {
-				const translated = await translateWithRetry(original, targetLocale, opts);
+				const translated = await translateWithRetry(original, targetLocale, opts, {
+					file: 'theme.json',
+					field: 'label',
+				});
 				obj[key].message = translated.trim();
 			} catch (err) {
 				console.warn(`  Failed to translate theme key "${key}": ${err.message}`);
@@ -562,7 +694,10 @@ async function translateSidebarJSON(targetLocale, opts) {
 	for (const key of Object.keys(sidebarJson)) {
 		try {
 			const translated = await translateWithRetry(
-				sidebarJson[key].message, targetLocale, opts
+				sidebarJson[key].message, targetLocale, opts, {
+					file: 'sidebar.json',
+					field: 'label',
+				}
 			);
 			sidebarJson[key].message = translated.trim();
 		} catch (err) {
@@ -581,7 +716,7 @@ async function translateSidebarJSON(targetLocale, opts) {
 async function main() {
 	const opts = parseArgs();
 
-	if (!opts.apiKey && !opts.dryRun) {
+	if (!opts.apiKey && opts.provider !== 'claude-proxy' && !opts.dryRun) {
 		console.error('Error: OPENAI_API_KEY is required. Set it as an environment variable or pass --api-key.');
 		process.exit(1);
 	}
@@ -592,8 +727,10 @@ async function main() {
 		locales = ALL_LOCALES;
 	}
 
+	console.log(`Provider: ${opts.provider}`);
 	console.log(`Locales: ${locales.length}`);
 	console.log(`Model: ${opts.model}`);
+	console.log(`Base URL: ${opts.baseUrl}`);
 	console.log(`Concurrency: ${opts.concurrency}`);
 	console.log(`Dry run: ${opts.dryRun}`);
 	console.log(`Debug: ${opts.debug}`);
@@ -614,17 +751,28 @@ async function main() {
 	for (const locale of locales) {
 		console.log(`\n=== Translating to ${getLocaleName(locale)} (${locale}) ===`);
 
+		// Pre-scan existing translations with a single glob (much faster than per-file checks)
+		const localeDir = path.join(I18N_DIR, locale, 'docusaurus-plugin-content-docs', 'current');
+		const existingFiles = await fg(['**/*.md', '**/*.mdx'], {
+			cwd: localeDir,
+			ignore: ['**/node_modules/**'],
+		});
+		const existingSet = new Set(existingFiles);
+		const needsWork = files.filter(f => !existingSet.has(path.relative(DOCS_DIR, f)));
+		console.log(`  ${existingSet.size} already translated, ${needsWork.length} to translate`);
+
 		let translated = 0;
 		let skipped = 0;
 		let failed = 0;
 		let needsTranslation = 0;
+		skipped = existingSet.size;
 
-		// Translate doc files with concurrency
+		// Translate only files that don't exist yet
 		const results = await pMap(
-			files,
+			needsWork,
 			async (file) => {
 				try {
-					const result = await translateFile(file, locale, opts);
+					const result = await translateFile(file, locale, opts, existingSet);
 					if (result.status === 'translated') {
 						translated++;
 						console.log(`  ✓ ${result.file} (${formatBytes(result.size)}, ${formatDuration(result.duration)})`);

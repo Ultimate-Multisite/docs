@@ -12,7 +12,7 @@
     "description": "Footer column title"
   },
   "link.item.label.User Guide": {
-    "message": "Guía del usuario",
+    "message": "Guía de Usuario",
     "description": "Footer link"
   },
   "link.item.label.Developer Docs": {
@@ -24,7 +24,7 @@
     "description": "Footer link"
   },
   "link.item.label.GitHub Discussions": {
-    "message": "Debates de GitHub",
+    "message": "Discusiones de GitHub",
     "description": "Footer link"
   },
   "link.item.label.WordPress.org": {
@@ -40,7 +40,7 @@
     "description": "Footer link"
   },
   "copyright": {
-    "message": "Derechos de autor © 2026 Ultimate Multisite.",
+    "message": "Copyright © 2026 Ultimate Multisite.",
     "description": "Footer copyright"
   }
 }

@@ -1,0 +1,117 @@
+---
+title: توافق Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# توافق Tutor Multisite
+
+إضافة WordPress تضيف إصلاحات التوافق لـ Tutor LMS في بيئات متعددة المواقع.
+
+## Description
+
+توفر هذه الإضافة إصلاحات التوافق الأساسية لتشغيل Tutor LMS على شبكات WordPress متعددة المواقع. تتعامل مع تسجيل المستخدمين، إدارة المدربين، حدود الدورات، وغيرها من الوظائف الخاصة بمتعدد المواقع.
+
+## Features
+
+- **إدارة جداول قاعدة البيانات**: يكتشف ويخلق تلقائياً جداول Tutor LMS المفقودة التي تفشل بسبب قيود المفاتيح الأجنبية في بيئات متعددة المواقع
+- **تسجيل مستخدم متعدد المواقع**: معالجات AJAX مخصصة لإدارة تسجيل المستخدم عبر مواقع الشبكة
+- **إدارة دور المدرب**: تعيين وإدارة دور المدرب تلقائياً في بيئات متعددة المواقع
+- **حدود الدورات**: التكامل مع Ultimate Multisite لإدارة حدود إنشاء الدورات والقمع بناءً على خطط المواقع
+- **واجهات إدارة مخصصة**: قائمة المدربين وإدارة الواجهة المستوعبة لمتعدد المواقع
+- **أدوات الإدارة**: واجهة إدارة قاعدة البيانات للمشرفين على الشبكة والمواقع
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- إضافة Tutor LMS (يتم تطبيقها تلقائياً عبر رأس `Requires Plugins`)
+- تثبيت WordPress Multisite
+- إضافة Ultimate Multisite (لإدارة حدود الدورات)
+
+## Installation
+
+1. Upload the plugin files to `/wp-content/plugins/tutor-multisite-compatibility/`
+2. تأكد من تثبيت Tutor LMS وتفعيله
+3. فعّل الإضافة عبر قائمة 'الإضافات' في WordPress
+4. ستتكامل الإضافة تلقائياً مع Tutor LMS
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+This plugin contains functionality that was previously in `wp-content/mu-plugins/daves.php`:
+
+- قيود تغيير حالة الدورة
+- قيود إنشاء الدورة
+- تكامل CartFlows وحدودها
+- إدارة دور المدرب في Tutor
+- معالجة تسجيل مستخدم متعدد المواقع
+- عرض معرف منتج الدورة
+
+## Database Management
+
+### The Problem
+
+في بيئات WordPress متعددة المواقع، يفشل إنشاء جداول Tutor LMS للجدول الذي يحتوي على قيود المفاتيح الأجنبية على جدول المستخدمين. يحدث ذلك لأن:
+
+- تستخدم الجداول الخاصة بالموقع بادئات مثل `wp_2_tutor_carts`
+- المفاتيح الأجنبية تشير إلى `wp_2_users` (التي لا توجد)
+- جدول المستخدمين الفعلي هو `wp_users` (مشترك عبر الشبكة)
+
+### The Solution
+
+This plugin automatically:
+
+1. **يكتشف الجداول المفقودة**: يتحقق من الجداول التي فشلت في الإنشاء بسبب قيود المفاتيح الأجنبية
+2. **يخلق الجداول مع المراجع الصحيحة**: يستخدم اسم جدول المستخدم الصحيح (wp_users في متعدد المواقع)
+3. **يتعامل مع سيناريوهات متعددة**:
+   - تفعيل/إعادة تفعيل الإضافة
+   - إنشاء موقع جديد في الشبكة
+   - التحقق اليدوي للجداول عبر واجهة الإدارة
+
+### Affected Tables
+
+- `tutor_coupon_usages` - يحتوي على مفتاح أجنبي إلى جدول المستخدمين
+- `tutor_carts` - يحتوي على مفتاح أجنبي إلى جدول المستخدمين
+- `tutor_notification_preferences` - جدول TutorPro مع مفتاح أجنبي إلى جدول المستخدمين
+
+### Admin Interface
+
+Access the database management tools at:
+
+- **إدارة الشبكة**: الإعدادات → قاعدة بيانات Tutor Multisite
+- **إدارة الموقع**: الأدوات → قاعدة بيانات Tutor Multisite
+
+The interface allows you to:
+
+- عرض الجداول المفقودة عبر جميع المواقع
+- تشغيل إنشاء الجداول يدويًا
+- التحقق من إعدادات قاعدة البيانات
+- عرض معلومات الحالة التفصيلية
+
+## Support
+
+تم تصميم هذه الإضافة خصيصًا لمنصة KursoPro. للحصول على الدعم الفني، اتصل بفريق التطوير.

@@ -1,0 +1,123 @@
+---
+title: AI Site Builder
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## المتطلبات
+
+- WordPress 5.3 أو أعلى
+- PHP 7.4 أو أعلى
+- ملحق Multisite Ultimate (نشط)
+
+## التثبيت
+
+1. قم بتحميل ملفات الملحق إلى دليل `/wp-content/plugins/` الخاص بك
+2. فعّل الملحق من خلال قائمة 'الإضافات' في WordPress
+3. قم بتكوين إعدادات الملحق في مدير الشبكة
+
+## التطوير
+
+### الإعداد
+
+```bash
+# تثبيت الاعتمادات
+composer install
+npm install
+
+# تشغيل الاختبارات
+npm run test
+
+# تشغيل فحوصات معايير الكود
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# إصلاح مشكلات نمط الكود
+vendor/bin/phpcbf
+
+# بناء للإنتاج
+npm run build
+```
+
+### هيكل المشروع
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # فئات PHP والملفات المضمنة
+│   ├── class-multisite-ultimate-updater.php  # معالج التحديث
+│   └── class-ai_site_builder-main.php             # الوظائف الرئيسية
+├── tests/                        # اختبارات الوحدة
+│   ├── bootstrap.php            # بدء الاختبار
+│   ├── class-*-base.php         # فئة الاختبار الأساسية
+│   └── class-*-test.php         # حالات الاختبار
+├── views/                       # ملفات القوالب
+├── assets/                      # الأصول الثابتة
+│   ├── css/                     # أوراق الأنماط
+│   ├── js/                      # ملفات JavaScript
+│   └── images/                  # الصور
+├── lang/                        # ملفات اللغة
+├── composer.json                # اعتمادات PHP
+├── package.json                 # اعتمادات Node.js
+├── phpunit.xml.dist             # إعداد PHPUnit
+├── .phpcs.xml.dist              # إعداد معايير الكود
+└── rector.php                   # قواعد تحديث الكود
+```
+
+### الاختبار
+
+يحتوي الملحق على إطار اختبار شامل:
+
+- **اختبارات الوحدة**: اختبارات مبنية على PHPUnit مع مجموعة اختبارات WordPress
+- **فئة الاختبار الأساسية**: توفر طرق مساعدة لسيناريوهات الاختبار الشائعة
+- **تغطية الاختبار**: مُكوَّنة لتتبع تغطية الكود
+- **اختبار الشبكة المتعددة**: تُشغَّل الاختبارات في بيئة الشبكة المتعددة
+
+### معايير الكود
+
+- **معايير ترميز WordPress**: تُطبَّق عبر PHPCS
+- **التوافق مع PHP 7.4+**: ميزات PHP الحديثة مدعومة
+- **التحليل الثابت**: تكامل PHPStan للتحقق من الأنواع
+- **تحديث الكود**: قواعد Rector لتحديث PHP
+
+### نظام البناء
+
+- **معالجة الأصول**: تصغير ملفات CSS/JS
+- **الترجمة**: إنشاء ملفات POT
+- **التغليف**: إنشاء أرشيف للتوزيع
+- **وضع التطوير**: أصول غير مصغرة للخطأ
+
+## التكوين
+
+يدعم الملحق خيارات تكوين مختلفة يمكن الوصول إليها عبر واجهة مدير الشبكة.
+
+## الخطافات والمرشحات
+
+### الإجراءات
+
+- `ultimate-multisite-ai-site-builder_init` - يُطلق بعد تهيئة الملحق
+- `ultimate-multisite-ai-site-builder_loaded` - يُطلق بعد تحميل جميع ملفات الملحق
+
+### المرشحات
+
+- `ultimate-multisite-ai-site-builder_settings` - تعديل إعدادات الملحق
+- `ultimate-multisite-ai-site-builder_enabled` - تجاوز حالة تمكين/تعطيل الملحق
+
+## الترخيص
+
+هذا الملحق مرخص بموجب GPL v3 أو أحدث.
+
+## الدعم
+
+للحصول على الدعم والوثائق، قم بزيارة [MultisiteUltimate.com](https://multisiteultimate.com)
+
+## سجل التغييرات
+
+- الإصدار 1.0.1 (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.
+- الإصدار (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.

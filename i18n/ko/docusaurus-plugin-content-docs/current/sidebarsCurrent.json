@@ -32,7 +32,7 @@
     "description": "The label for category Integrations in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Customization": {
-    "message": "맞춤화",
+    "message": "맞춤 설정",
     "description": "The label for category Customization in sidebar userGuideSidebar"
   },
   "sidebar.userGuideSidebar.category.Development": {
@@ -56,7 +56,7 @@
     "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
   },
   "sidebar.developerSidebar.category.Hooks Reference": {
-    "message": "Hooks 참조",
+    "message": "훅 참조",
     "description": "The label for category Hooks Reference in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.REST API": {
@@ -68,7 +68,7 @@
     "description": "The label for category Integration Guide in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Code Examples": {
-    "message": "코드 예제",
+    "message": "코드 예시",
     "description": "The label for category Code Examples in sidebar developerSidebar"
   },
   "sidebar.developerSidebar.category.Addon Development": {
@@ -100,7 +100,7 @@
     "description": "The label for category Captcha in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Chuck Norris Facts": {
-    "message": "Chuck Norris 사실",
+    "message": "척 닐슨 사실",
     "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Content Sync": {
@@ -140,7 +140,7 @@
     "description": "The label for category Mailster in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Metered Plans": {
-    "message": "측정형 요금제",
+    "message": "계량형 플랜",
     "description": "The label for category Metered Plans in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Network": {
@@ -148,7 +148,7 @@
     "description": "The label for category Multi-Network in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Multi-Tenancy": {
-    "message": "멀티 테넌시",
+    "message": "다중 테넌시",
     "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.PayFast": {
@@ -160,7 +160,7 @@
     "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Agents": {
-    "message": "지원 에이전트",
+    "message": "지원 담당자",
     "description": "The label for category Support Agents in sidebar addonsSidebar"
   },
   "sidebar.addonsSidebar.category.Support Tickets": {
