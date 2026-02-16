@@ -1,0 +1,190 @@
+{
+  "sidebar.userGuideSidebar.category.Getting Started": {
+    "message": "Pagsisimula",
+    "description": "The label for category Getting Started in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Administration": {
+    "message": "Pangangasiwa",
+    "description": "The label for category Administration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Configuration": {
+    "message": "Konpigurasyon",
+    "description": "The label for category Configuration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Mapping": {
+    "message": "Pagmamapa ng Domain",
+    "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Host Integrations": {
+    "message": "Mga Integrasyon ng Host",
+    "description": "The label for category Host Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Payment Gateways": {
+    "message": "Mga Gateway ng Pagbabayad",
+    "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Client Management": {
+    "message": "Pamamahala ng Kliyente",
+    "description": "The label for category Client Management in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Integrations": {
+    "message": "Mga Integrasyon",
+    "description": "The label for category Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Customization": {
+    "message": "Pagpapasadya",
+    "description": "The label for category Customization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Development": {
+    "message": "Pagde-develop",
+    "description": "The label for category Development in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Localization": {
+    "message": "Lokalisasyon",
+    "description": "The label for category Localization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Troubleshooting": {
+    "message": "Pag-troubleshoot",
+    "description": "The label for category Troubleshooting in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Migration": {
+    "message": "Paglipat",
+    "description": "The label for category Migration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Miscellaneous": {
+    "message": "Iba Pa",
+    "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
+  },
+  "sidebar.developerSidebar.category.Hooks Reference": {
+    "message": "Mga Sanggunian ng Hooks",
+    "description": "The label for category Hooks Reference in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.REST API": {
+    "message": "REST API",
+    "description": "The label for category REST API in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Integration Guide": {
+    "message": "Gabay sa Integrasyon",
+    "description": "The label for category Integration Guide in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Code Examples": {
+    "message": "Mga Halimbawa ng Code",
+    "description": "The label for category Code Examples in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Addon Development": {
+    "message": "Addon Development",
+    "description": "The label for category Addon Development in sidebar developerSidebar"
+  },
+  "sidebar.addonsSidebar.category.WooCommerce Integration": {
+    "message": "WooCommerce Integration",
+    "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Site Exporter": {
+    "message": "Site Exporter",
+    "description": "The label for category Site Exporter in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AffiliateWP": {
+    "message": "AffiliateWP",
+    "description": "The label for category AffiliateWP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Site Builder": {
+    "message": "AI Site Builder",
+    "description": "The label for category AI Site Builder in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Analytics": {
+    "message": "Analytics",
+    "description": "The label for category Analytics in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Captcha": {
+    "message": "Captcha",
+    "description": "The label for category Captcha in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Chuck Norris Facts": {
+    "message": "Chuck Norris Facts",
+    "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Content Sync": {
+    "message": "Content Sync",
+    "description": "The label for category Content Sync in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Domain Seller": {
+    "message": "Nagbebenta ng Domain",
+    "description": "The label for category Domain Seller in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Fluent Forms": {
+    "message": "Fluent Forms",
+    "description": "The label for category Fluent Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.GoCardless": {
+    "message": "GoCardless",
+    "description": "The label for category GoCardless in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gravity Forms": {
+    "message": "Gravity Forms",
+    "description": "The label for category Gravity Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Language Selector": {
+    "message": "Tagapili ng Wika",
+    "description": "The label for category Language Selector in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Loco Translate": {
+    "message": "Loco Translate",
+    "description": "The label for category Loco Translate in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailchimp": {
+    "message": "Mailchimp",
+    "description": "The label for category Mailchimp in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailster": {
+    "message": "Mailster",
+    "description": "The label for category Mailster in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Metered Plans": {
+    "message": "Mga Metered na Plano",
+    "description": "The label for category Metered Plans in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Network": {
+    "message": "Multi-Network",
+    "description": "The label for category Multi-Network in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Tenancy": {
+    "message": "Multi-Tenancy",
+    "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.PayFast": {
+    "message": "PayFast",
+    "description": "The label for category PayFast in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
+    "message": "Plugin & Theme Manager",
+    "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Agents": {
+    "message": "Mga Ahente ng Suporta",
+    "description": "The label for category Support Agents in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Tickets": {
+    "message": "Mga Ticket ng Suporta",
+    "description": "The label for category Support Tickets in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.VAT": {
+    "message": "VAT",
+    "description": "The label for category VAT in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Admin Page Creator": {
+    "message": "Admin Page Creator",
+    "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Addon Template": {
+    "message": "Template ng Addon",
+    "description": "The label for category Addon Template in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
+    "message": "Tutor Multisite Compatibility",
+    "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Material WP": {
+    "message": "Material WP",
+    "description": "The label for category Material WP in sidebar addonsSidebar"
+  }
+}

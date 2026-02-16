@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "מדריך למשתמש",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "מפתח",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "תוספים",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "אתר",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

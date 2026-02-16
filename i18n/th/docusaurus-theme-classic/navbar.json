@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "คู่มือผู้ใช้",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "นักพัฒนา",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "ส่วนเสริม",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "เว็บไซต์",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

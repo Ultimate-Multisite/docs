@@ -1,0 +1,190 @@
+{
+  "sidebar.userGuideSidebar.category.Getting Started": {
+    "message": "শুরু করা",
+    "description": "The label for category Getting Started in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Administration": {
+    "message": "প্রশাসন",
+    "description": "The label for category Administration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Configuration": {
+    "message": "কনফিগারেশন",
+    "description": "The label for category Configuration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Mapping": {
+    "message": "ডোমেইন ম্যাপিং",
+    "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Host Integrations": {
+    "message": "হোস্ট ইন্টিগ্রেশনস",
+    "description": "The label for category Host Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Payment Gateways": {
+    "message": "পেমেন্ট গেটওয়ে",
+    "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Client Management": {
+    "message": "ক্লায়েন্ট ম্যানেজমেন্ট",
+    "description": "The label for category Client Management in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Integrations": {
+    "message": "ইন্টিগ্রেশন",
+    "description": "The label for category Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Customization": {
+    "message": "কাস্টমাইজেশন",
+    "description": "The label for category Customization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Development": {
+    "message": "ডেভেলপমেন্ট",
+    "description": "The label for category Development in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Localization": {
+    "message": "স্থানীয়করণ",
+    "description": "The label for category Localization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Troubleshooting": {
+    "message": "সমস্যা সমাধান",
+    "description": "The label for category Troubleshooting in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Migration": {
+    "message": "মাইগ্রেশন",
+    "description": "The label for category Migration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Miscellaneous": {
+    "message": "বিবিধ",
+    "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
+  },
+  "sidebar.developerSidebar.category.Hooks Reference": {
+    "message": "Hooks Reference\n\nহুকস রেফারেন্স",
+    "description": "The label for category Hooks Reference in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.REST API": {
+    "message": "REST API",
+    "description": "The label for category REST API in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Integration Guide": {
+    "message": "ইন্টিগ্রেশন গাইড",
+    "description": "The label for category Integration Guide in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Code Examples": {
+    "message": "কোড উদাহরণ",
+    "description": "The label for category Code Examples in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Addon Development": {
+    "message": "অ্যাডঅন ডেভেলপমেন্ট",
+    "description": "The label for category Addon Development in sidebar developerSidebar"
+  },
+  "sidebar.addonsSidebar.category.WooCommerce Integration": {
+    "message": "WooCommerce ইন্টিগ্রেশন",
+    "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Site Exporter": {
+    "message": "Site Exporter",
+    "description": "The label for category Site Exporter in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AffiliateWP": {
+    "message": "AffiliateWP",
+    "description": "The label for category AffiliateWP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Site Builder": {
+    "message": "AI সাইট বিল্ডার",
+    "description": "The label for category AI Site Builder in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Analytics": {
+    "message": "অ্যানালিটিক্স",
+    "description": "The label for category Analytics in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Captcha": {
+    "message": "ক্যাপচা",
+    "description": "The label for category Captcha in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Chuck Norris Facts": {
+    "message": "চাক নরিস ফ্যাক্টস",
+    "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Content Sync": {
+    "message": "কন্টেন্ট সিঙ্ক",
+    "description": "The label for category Content Sync in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Domain Seller": {
+    "message": "ডোমেইন বিক্রেতা",
+    "description": "The label for category Domain Seller in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Fluent Forms": {
+    "message": "Fluent Forms",
+    "description": "The label for category Fluent Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.GoCardless": {
+    "message": "GoCardless",
+    "description": "The label for category GoCardless in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gravity Forms": {
+    "message": "Gravity Forms",
+    "description": "The label for category Gravity Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Language Selector": {
+    "message": "ভাষা নির্বাচক",
+    "description": "The label for category Language Selector in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Loco Translate": {
+    "message": "Loco Translate",
+    "description": "The label for category Loco Translate in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailchimp": {
+    "message": "Mailchimp",
+    "description": "The label for category Mailchimp in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailster": {
+    "message": "Mailster",
+    "description": "The label for category Mailster in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Metered Plans": {
+    "message": "মিটারড প্ল্যানস",
+    "description": "The label for category Metered Plans in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Network": {
+    "message": "মাল্টি-নেটওয়ার্ক",
+    "description": "The label for category Multi-Network in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Tenancy": {
+    "message": "মাল্টি-টেন্যান্সি",
+    "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.PayFast": {
+    "message": "PayFast",
+    "description": "The label for category PayFast in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
+    "message": "Plugin & Theme Manager",
+    "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Agents": {
+    "message": "সাপোর্ট এজেন্ট",
+    "description": "The label for category Support Agents in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Tickets": {
+    "message": "সাপোর্ট টিকেট",
+    "description": "The label for category Support Tickets in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.VAT": {
+    "message": "ভ্যাট",
+    "description": "The label for category VAT in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Admin Page Creator": {
+    "message": "অ্যাডমিন পেজ ক্রিয়েটর",
+    "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Addon Template": {
+    "message": "অ্যাডঅন টেমপ্লেট",
+    "description": "The label for category Addon Template in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
+    "message": "Tutor Multisite সামঞ্জস্যতা",
+    "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Material WP": {
+    "message": "Material WP",
+    "description": "The label for category Material WP in sidebar addonsSidebar"
+  }
+}

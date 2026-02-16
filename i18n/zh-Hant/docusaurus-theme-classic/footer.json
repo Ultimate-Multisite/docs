@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "文件",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "社群",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "使用者指南",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "開發者文件",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "附加元件",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "網站",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

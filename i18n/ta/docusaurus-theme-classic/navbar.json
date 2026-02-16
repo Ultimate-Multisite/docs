@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "பயனர் வழிகாட்டி",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "டெவலப்பர்",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "Addons",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "இணையதளம்",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

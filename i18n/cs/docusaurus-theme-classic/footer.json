@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentace",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Komunita",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Více",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "Uživatelská příručka",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Dokumentace pro vývojáře",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Doplňky",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Webová stránka",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "Mwongozo wa Mtumiaji",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "Msanidi Programu",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "Viongezeo",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "Tovuti",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

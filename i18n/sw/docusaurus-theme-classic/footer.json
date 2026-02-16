@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Nyaraka",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Jamii",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Zaidi",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "Mwongozo wa Mtumiaji",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Nyaraka za Wasanidi Programu",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Viongezeo",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Tovuti",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Hakimiliki © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

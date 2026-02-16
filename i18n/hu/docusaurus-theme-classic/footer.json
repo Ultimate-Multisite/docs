@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentáció",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Közösség",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Több",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "Felhasználói útmutató",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Fejlesztői dokumentáció",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Bővítmények",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Weboldal",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

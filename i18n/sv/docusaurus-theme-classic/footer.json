@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentation",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Mer",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "Användarhandbok",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Utvecklardokumentation",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Tillägg",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Webbplats",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

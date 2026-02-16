@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "दस्तावेज़ीकरण",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "समुदाय",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "अधिक",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "उपयोगकर्ता गाइड",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "डेवलपर डॉक्स",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Addons",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "वेबसाइट",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

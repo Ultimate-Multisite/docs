@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "مستندات",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "جامعه",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "بیشتر",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "راهنمای کاربر",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "مستندات توسعه‌دهنده",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "افزونه‌ها",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "وب‌سایت",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

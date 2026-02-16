@@ -42,10 +42,96 @@ const RTL_LOCALES = new Set([
 	'ar', 'he', 'fa', 'ur', 'ckb', 'ps', 'snd', 'ug', 'azb', 'yi',
 ]);
 
+function showHelp() {
+	console.log(`
+Usage: node scripts/translate.js --locales <codes> [options]
+
+Translate Docusaurus docs to multiple languages using AI APIs.
+
+Options:
+  --locales <codes>     Comma-separated locale codes, or "all" (required)
+  --priority <n>        Only translate files at this priority level or higher (1-4)
+  --provider <name>     API provider: "openai" (default) or "claude-proxy"
+  --model <model>       Model name (default depends on provider)
+  --base-url <url>      API base URL (default depends on provider)
+  --api-key <key>       API key (not needed for claude-proxy)
+  --concurrency <n>     Parallel requests (default: 5)
+  --timeout <seconds>   Per-request timeout in seconds (default: 900)
+  --dry-run             Show what would be translated without making API calls
+  --debug               Print prompts, responses, and timing details
+  --commit              Git commit each translated file immediately
+  --help                Show this help message
+
+Priority Levels:
+  1                     User guide (all files under docs/user-guide/)
+  2                     Addon index pages (docs/addons/*/index.md|mdx)
+  3                     Developer guides excluding hooks (docs/developer/, not hooks/)
+  4                     Addon changelogs + hooks, developer hooks (everything else)
+
+Providers:
+  openai                Any OpenAI-compatible API (OpenAI, Ollama, Mistral, etc.)
+  claude-proxy          Claude Max Proxy using local Claude CLI credentials
+                        Requires: https://github.com/rynfar/opencode-claude-max-proxy
+
+Claude Proxy Models:
+  claude-haiku-4-5-20251001      Haiku 4.5   — fastest, lowest quota usage
+  claude-sonnet-4-5-20250929     Sonnet 4.5  — best quality/quota balance (default)
+  claude-opus-4-6                Opus 4.6    — highest quality, highest quota usage
+
+Environment Variables:
+  TRANSLATE_PROVIDER    Same as --provider
+  OPENAI_API_KEY        Same as --api-key
+  OPENAI_API_BASE       Same as --base-url
+  OPENAI_MODEL          Same as --model
+  OPENAI_TIMEOUT        Timeout in milliseconds
+
+Examples:
+  # Translate to French and Spanish using OpenAI
+  node scripts/translate.js --locales fr,es
+
+  # Translate all locales with OpenAI
+  node scripts/translate.js --locales all --concurrency 10
+
+  # Preview what needs translating
+  node scripts/translate.js --locales fr --dry-run
+
+  # Use Claude proxy with Sonnet (default model)
+  node scripts/translate.js --provider claude-proxy --locales fr,es,de
+
+  # Use Claude proxy with Opus for highest quality
+  node scripts/translate.js --provider claude-proxy --model claude-opus-4-6 --locales fr
+
+  # Use Claude proxy with Haiku for speed
+  node scripts/translate.js --provider claude-proxy --model claude-haiku-4-5-20251001 --locales all
+
+  # Use Ollama locally
+  node scripts/translate.js --base-url http://localhost:11434/v1 --model llama3 --locales es
+
+  # Translate only user guide (priority 1)
+  node scripts/translate.js --provider claude-proxy --priority 1 --locales fr
+
+  # Translate user guide + addon index pages (priority 1-2)
+  node scripts/translate.js --provider claude-proxy --priority 2 --locales fr
+
+  # Preview what each priority level would translate
+  node scripts/translate.js --priority 1 --locales fr --dry-run
+
+  # Use Mistral API directly
+  node scripts/translate.js --base-url https://api.mistral.ai/v1 --api-key <key> --model mistral-small-latest --locales fr
+`);
+	process.exit(0);
+}
+
 function parseArgs() {
 	const args = process.argv.slice(2);
+
+	if (args.includes('--help') || args.includes('-h')) {
+		showHelp();
+	}
+
 	const opts = {
 		locales: [],
+		priority: 0,
 		concurrency: 5,
 		dryRun: false,
 		debug: false,
@@ -69,6 +155,9 @@ function parseArgs() {
 				break;
 			case '--debug':
 				opts.debug = true;
+				break;
+			case '--priority':
+				opts.priority = parseInt(args[++i], 10);
 				break;
 			case '--provider':
 				opts.provider = args[++i];
@@ -598,10 +687,15 @@ async function translateWithRetry(text, targetLocale, opts, context = {}, retrie
 
 async function translateThemeJSON(targetLocale, opts) {
 	const themeDir = path.join(I18N_DIR, targetLocale, 'docusaurus-theme-classic');
-	await fs.ensureDir(themeDir);
 
-	// navbar.json
+	// Skip if both files already exist
 	const navbarPath = path.join(themeDir, 'navbar.json');
+	const footerPath = path.join(themeDir, 'footer.json');
+	if (await fs.pathExists(navbarPath) && await fs.pathExists(footerPath)) {
+		return;
+	}
+
+	await fs.ensureDir(themeDir);
 	const navbar = {
 		'title': {message: 'Ultimate Multisite', description: 'The title in the navbar'},
 		'item.label.User Guide': {message: 'User Guide', description: 'Navbar item'},
@@ -612,7 +706,6 @@ async function translateThemeJSON(targetLocale, opts) {
 	};
 
 	// footer.json
-	const footerPath = path.join(themeDir, 'footer.json');
 	const footer = {
 		'link.title.Documentation': {message: 'Documentation', description: 'Footer column title'},
 		'link.title.Community': {message: 'Community', description: 'Footer column title'},
@@ -659,6 +752,13 @@ async function translateSidebarJSON(targetLocale, opts) {
 	const sidebarDir = path.join(
 		I18N_DIR, targetLocale, 'docusaurus-plugin-content-docs', 'current'
 	);
+
+	// Skip if sidebar JSON already exists
+	const outPath = path.join(sidebarDir, 'sidebarsCurrent.json');
+	if (await fs.pathExists(outPath)) {
+		return;
+	}
+
 	await fs.ensureDir(sidebarDir);
 
 	// Load sidebars.js to extract category labels
@@ -705,8 +805,30 @@ async function translateSidebarJSON(targetLocale, opts) {
 		}
 	}
 
-	const outPath = path.join(sidebarDir, 'sidebarsCurrent.json');
 	await fs.writeJson(outPath, sidebarJson, {spaces: 2});
+}
+
+// ---------------------------------------------------------------------------
+// Priority classification
+// ---------------------------------------------------------------------------
+
+const PRIORITY_LABELS = {
+	1: 'User Guide',
+	2: 'Addon index pages',
+	3: 'Developer guides (no hooks)',
+	4: 'Changelogs + hooks',
+};
+
+// Assign a priority level (1-4) to a doc file based on its relative path.
+// 1 = User guide, 2 = Addon index pages, 3 = Developer guides (no hooks), 4 = Rest
+function getFilePriority(relPath) {
+	if (relPath.startsWith('user-guide/')) return 1;
+
+	if (/^addons\/[^/]+\/index\.mdx?$/.test(relPath)) return 2;
+
+	if (relPath.startsWith('developer/') && !relPath.startsWith('developer/hooks/')) return 3;
+
+	return 4;
 }
 
 // ---------------------------------------------------------------------------
@@ -731,19 +853,30 @@ async function main() {
 	console.log(`Locales: ${locales.length}`);
 	console.log(`Model: ${opts.model}`);
 	console.log(`Base URL: ${opts.baseUrl}`);
+	const priorityDesc = opts.priority
+		? `1-${opts.priority} (${Object.entries(PRIORITY_LABELS).filter(([k]) => k <= opts.priority).map(([, v]) => v).join(', ')})`
+		: 'all';
+	console.log(`Priority: ${priorityDesc}`);
 	console.log(`Concurrency: ${opts.concurrency}`);
 	console.log(`Dry run: ${opts.dryRun}`);
 	console.log(`Debug: ${opts.debug}`);
 	console.log('');
 
 	// Find all doc files (dedupe to guard against glob returning overlapping results)
-	const files = [...new Set(await fg(['**/*.md', '**/*.mdx'], {
+	let files = [...new Set(await fg(['**/*.md', '**/*.mdx'], {
 		cwd: DOCS_DIR,
 		absolute: true,
 		ignore: ['**/node_modules/**'],
 	}))];
 
-	console.log(`Found ${files.length} doc files`);
+	// Filter by priority if specified
+	if (opts.priority > 0) {
+		const before = files.length;
+		files = files.filter(f => getFilePriority(path.relative(DOCS_DIR, f)) <= opts.priority);
+		console.log(`Found ${files.length} doc files (filtered from ${before} by priority 1-${opts.priority})`);
+	} else {
+		console.log(`Found ${files.length} doc files`);
+	}
 	console.log('');
 
 	let totalErrors = 0;

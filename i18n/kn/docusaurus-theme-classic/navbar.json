@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "ಬಳಕೆದಾರ ಮಾರ್ಗದರ್ಶಿ",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "ಡೆವಲಪರ್",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "ಆಡ್-ಆನ್‌ಗಳು",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "ವೆಬ್‌ಸೈಟ್",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

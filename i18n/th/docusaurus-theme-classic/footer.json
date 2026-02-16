@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "เอกสารประกอบ",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "ชุมชน",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "เพิ่มเติม",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "คู่มือผู้ใช้",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "เอกสารสำหรับนักพัฒนา",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "ส่วนเสริม",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "เว็บไซต์",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

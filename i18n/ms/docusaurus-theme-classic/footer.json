@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentasi",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Komuniti",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Lagi",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "Panduan Pengguna",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Dokumentasi Pembangun",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Tambahan",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "Perbincangan GitHub",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Laman Web",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Hak Cipta © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}
