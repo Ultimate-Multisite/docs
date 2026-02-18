@@ -145,15 +145,23 @@ Ultimate Multisite also includes an **order bump** feature where appropriate add
 
 #### Price Variations
 
-Price variations allow the network administrator to specify alternate pricing tiers depending on duration. This setting makes it possible for 3 months, 6 months, or annual pricing tiers to be established or any other duration and frequency as determined by the use case.
+Price variations allow the network administrator to specify alternate pricing tiers depending on duration. This setting makes it possible for monthly, quarterly, annual, or any other billing period to be offered for the same product. For example, you can set up a product at $29.99/month with a discounted annual option at $249.99/year.
 
-![Price Variations tab](/img/config/product-price-variations.png)
+![Price Variations tab](/img/config/product-price-variations-tab.png)
 
-To establish price variations, set the **enable price variations** toggle to active and click the **Add new Price Variation** button.
+To establish price variations, set the **Enable Price Variations** toggle to active and click the **Add new Price Variation** button.
 
 To enter a variation, set the duration, period, and price of the variation. Additional variations can be entered by clicking the button again.
 
-![Price Variations tab](/img/config/product-price-variations.png)
+For example, if your base product price is $29.99 per month, you might add:
+
+  * **3 Months** at $79.99 (a small discount over monthly)
+  * **1 Year** at $249.99 (a significant discount for annual commitment)
+
+:::tip Displaying a Billing Period Toggle on the Frontend
+
+Price variations alone do not add a toggle or switch to the frontend checkout. To let customers switch between billing periods (e.g. Monthly / Annual), you need to add a **Period Selection** field to your checkout form. See [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) for step-by-step instructions.
+:::
 
 #### Taxes
 
