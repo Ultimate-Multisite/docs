@@ -6,3 +6,4 @@ wp-hooks-docs/
 .cache-loader/
 /ultimate-multisite/
 /addons/
+.agents/loop-state/
