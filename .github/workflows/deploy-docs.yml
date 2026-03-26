@@ -3,6 +3,10 @@ name: Deploy Documentation
 on:
   push:
     branches: [main]
+  schedule:
+    # Rebuild hourly to pick up changes from addon repos
+    # Replaces the per-addon trigger-docs.yml push-based approach
+    - cron: '17 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -63,6 +67,8 @@ jobs:
             [multisite-ultimate-vat]=ultimate-multisite-vat
             [multisite-ultimate-admin-page-creator]=ultimate-multisite-admin-page-creator
             [ultimate-multisite-addon-template]=ultimate-multisite-addon-template
+            [ultimate-multisite-emails]=ultimate-multisite-emails
+            [multisite-ultimate-metrics-and-onboarding]=ultimate-multisite-metrics-and-onboarding
             [tutor-multisite-compatibilty]=tutor-multisite-compatibility
             [material-wp]=material-wp
           )
