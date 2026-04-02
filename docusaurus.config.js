@@ -109,6 +109,12 @@ const config = {
             label: 'Addons',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'businessGuideSidebar',
+            position: 'left',
+            label: 'Business Guide',
+          },
+          {
             href: 'https://ultimatemultisite.com',
             label: 'Website',
             position: 'right',
@@ -133,6 +139,7 @@ const config = {
               { label: 'User Guide', to: '/user-guide/getting-started/ultimate-multisite-101' },
               { label: 'Developer Docs', to: '/developer' },
               { label: 'Addons', to: '/addons' },
+              { label: 'Business Guide', to: '/business-guide' },
             ],
           },
           {
