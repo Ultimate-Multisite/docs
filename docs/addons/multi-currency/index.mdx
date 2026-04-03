@@ -1,0 +1,117 @@
+---
+title: "Multi-Currency"
+sidebar_position: 1
+---
+
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency enables your network to accept payments in multiple currencies. It automatically converts prices using live or manual exchange rates, lets you set exact per-product prices for any currency, and detects each visitor's preferred currency via geolocation — all managed from a single admin dashboard.
+
+## Key Features
+
+- **Automatic exchange rate conversion** — prices are converted from your base currency using rates fetched from your chosen provider
+- **Per-product pricing overrides** — set exact currency-specific prices on any product to bypass automatic conversion
+- **Currency selector signup field** — lets customers choose their preferred currency during checkout/signup
+- **Multiple exchange rate providers** — ECB, Frankfurter, Stripe, or fully manual rates
+- **Geolocation-based currency detection** — automatically pre-selects the currency that matches the visitor's country
+- **Admin dashboard** — manage active currencies, exchange rates, and provider settings from one place
+
+## Requirements
+
+- Ultimate Multisite 2.0.0 or higher
+- WordPress Multisite installation
+- PHP 7.4 or higher
+
+## Installation
+
+1. Upload the plugin files to `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Activate the plugin through the **Plugins** screen in WordPress (Network Activate)
+3. Navigate to **Ultimate Multisite → Multi-Currency** to open the admin dashboard
+4. Add the currencies you want to accept and configure your exchange rate provider
+
+## Configuration
+
+### Admin Dashboard
+
+The Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) is the central place to:
+
+- Add, enable, or disable currencies
+- Choose an exchange rate provider and refresh rates on demand
+- Review current rates for all active currencies
+- Set manual rates when automatic providers are not suitable
+
+### Exchange Rate Providers
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — free daily rates for EUR-based networks |
+| **Frankfurter** | Open-source ECB mirror API — free, no API key required |
+| **Stripe** | Uses Stripe's live FX rates — requires an active Stripe integration |
+| **Manual** | You enter rates directly; no external API calls |
+
+Select your provider under **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Rates can be refreshed manually at any time or scheduled to update automatically.
+
+### Per-Product Pricing Overrides
+
+When automatic conversion is not precise enough, you can set an exact price for a specific currency on any product:
+
+1. Open the product editor (**Ultimate Multisite → Products → Edit**)
+2. Scroll to the **Currency Pricing** section
+3. Enter the exact price for each currency you want to override
+4. Save the product
+
+Products without an override use the converted price from your base currency.
+
+### Currency Selector Signup Field
+
+The currency selector field can be added to your signup/checkout flow so customers choose their preferred currency at registration:
+
+1. Go to **Ultimate Multisite → Multi-Currency → Settings**
+2. Enable **Show currency selector on signup**
+3. Optionally set a default currency or let geolocation determine the pre-selected value
+
+The selected currency is stored with the subscription and used for all subsequent billing.
+
+### Geolocation-Based Currency Detection
+
+When geolocation detection is enabled, the addon maps the visitor's country to a currency and pre-selects it in the currency selector field. To enable:
+
+1. Go to **Ultimate Multisite → Multi-Currency → Settings**
+2. Enable **Detect currency from visitor location**
+3. Map countries to currencies in the **Geolocation Mapping** table
+
+If no mapping exists for a visitor's country, the network's base currency is used as the fallback.
+
+## Frequently Asked Questions
+
+### What happens if an exchange rate provider is unavailable?
+
+The addon falls back to the last successfully fetched rates. If no rates have ever been fetched, it falls back to the manual rates you have configured. It is recommended to configure manual rates as a safety net.
+
+### Can I use different providers for different currencies?
+
+No — one provider is active at a time for all currencies. Use **Manual** if you need full control over individual rates.
+
+### Does geolocation require a separate plugin?
+
+No external geolocation plugin is required. The addon uses WordPress's built-in IP-to-country detection. For higher accuracy, a dedicated geolocation service can be integrated via the provided filter hooks.
+
+### Are per-product overrides applied before or after tax?
+
+Per-product overrides set the pre-tax price in the target currency. Tax is calculated on top of the override price using your existing tax configuration.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Multi-currency support with automatic exchange rate conversion
+- New: Per-product pricing overrides for exact currency-specific prices
+- New: Currency selector signup field for the checkout flow
+- New: Exchange rate providers: ECB, Frankfurter, Stripe, and manual
+- New: Geolocation-based currency detection
+- New: Admin dashboard for managing currencies and exchange rates
+- Fix: Dashboard always showing prices in base currency regardless of selected currency
