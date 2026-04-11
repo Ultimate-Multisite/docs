@@ -7,3 +7,5 @@ wp-hooks-docs/
 /ultimate-multisite/
 /addons/
 .agents/loop-state/
+
+.aidevops.json
