@@ -45,6 +45,12 @@ This step checks your system information and WordPress installation to make sure
 
 ![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
 
+:::note Network Activate button (v2.6.1+)
+If Ultimate Multisite was installed but **not yet network-activated** — for example, if you clicked **Activate** (single-site) instead of **Network Activate** from the network plugins screen — the Pre-install Checks step will detect this and display a **Network Activate** button.
+
+Clicking **Network Activate** activates the plugin across your entire multisite network automatically. Once activated, the wizard continues normally to the installation step. You do not need to leave the wizard to fix the activation state.
+:::
+
 ### Installation
 
 The installer will create the necessary database tables and install the `sunrise.php` file that Ultimate Multisite needs to function. Click **Install** to proceed.
