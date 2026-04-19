@@ -23,6 +23,8 @@ Addons can be installed in two ways:
 | [Site Exporter](/addons/site-exporter) | Export and import sites |
 | [AffiliateWP](/addons/affiliatewp) | Affiliate program integration |
 | [AI Site Builder](/addons/ai-site-builder) | AI-powered site creation |
+| [Gratis AI Agent](/addons/gratis-ai-agent) | Autonomous AI agent for building and managing WordPress sites |
+| [Multi-Currency](/addons/multi-currency) | Accept payments in multiple currencies with automatic exchange rates |
 | [Analytics](/addons/analytics) | Site analytics and reporting |
 | [Captcha](/addons/captcha) | CAPTCHA protection for forms |
 | [Content Sync](/addons/content-sync) | Sync content across sites |
