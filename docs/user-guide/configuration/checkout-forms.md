@@ -19,6 +19,8 @@ If you want to create a new one, just click Add Checkout Form on the top of the 
 
 You can select one of these three options as your starting point: single step, multi-step or blank. Then, click to Go to the Editor.
 
+When you choose **single step** or **multi-step** as your starting point, the form template now includes a **Template Selection** field by default. This field lets your customers pick a site template during the registration process. You can leave it in place, remove it, or reposition it like any other field in the editor.
+
 ![Checkout Form editor](/img/config/checkout-form-editor.png)
 
 Alternatively, you can edit or duplicate the forms you already have by clicking on the options below its name. There, you will also find the options to copy the form's shortcode or to delete the form.
@@ -154,3 +156,26 @@ You can also pre-select a product and billing period through the URL. Ultimate M
   * `/register/premium` — Pre-selects the "Premium" product only
   * `/register/premium/12` — Pre-selects the product and 12-month duration
   * `/register/premium/1/year` — Pre-selects the product with a 1-year duration
+
+### The Template Selection Field
+
+The **Template Selection** field lets customers choose a site template during checkout. It is now included by default in the **single step** and **multi-step** checkout form templates added in Ultimate Multisite v2.6.1.
+
+#### Adding the field manually
+
+If you are working with a form that was created before v2.6.1, or started from a blank template:
+
+1. Go to **Ultimate Multisite > Checkout Forms** and edit your checkout form.
+2. In the step where site details are collected, click **Add new Field**.
+3. Select **Template Selection** from the field type dialog.
+4. Configure the field:
+   - **Label** — The heading customers see above the template grid (e.g. "Choose a site template").
+   - **Required** — Whether customers must select a template before proceeding.
+
+#### How it works
+
+When a customer picks a template during checkout, Ultimate Multisite uses it when provisioning their new site. The templates shown come from your **Site Templates** list (**Ultimate Multisite > Site Templates**). Only templates marked as available to customers appear here.
+
+#### Removing the field
+
+If you do not offer site templates, remove the Template Selection field from your form. Customers will then receive whichever default template is configured under **Ultimate Multisite > Settings > Site Templates**.

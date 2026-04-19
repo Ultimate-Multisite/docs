@@ -75,9 +75,35 @@ The integration enhances the DNS record display in the Ultimate Multisite admin 
 2. Displaying whether records are proxied or not
 3. Showing additional information about the DNS records
 
+## Cloudflare Custom Hostnames
+
+**Cloudflare Custom Hostnames** (previously called "Cloudflare for SaaS") is a Cloudflare feature that allows your customers to use their own domains with SSL on your multisite network. It is the recommended approach for domain-mapped multisite installations that use Cloudflare, because Cloudflare manages the SSL certificate issuance and renewal for each custom domain automatically.
+
+### How it differs from the standard Cloudflare integration
+
+| | Standard integration | Cloudflare Custom Hostnames |
+|---|---|---|
+| **Purpose** | Auto-creates DNS records for subdomains | Enables custom (mapped) domains with Cloudflare-managed SSL |
+| **Best for** | Subdomain multisite | Domain-mapped multisite |
+| **SSL** | Handled separately | Managed by Cloudflare automatically |
+
+### Setting up Cloudflare Custom Hostnames
+
+1. In your Cloudflare dashboard, open the zone for your main domain.
+2. Go to **SSL/TLS > Custom Hostnames**.
+3. Add a fallback origin pointing to your server's IP or hostname.
+4. For each customer domain mapped in Ultimate Multisite, add a Custom Hostname entry in Cloudflare. You can automate this step using the Cloudflare API.
+5. Cloudflare issues and renews TLS certificates for each custom hostname automatically once the customer's DNS is pointed at your network.
+
+For full API reference, see [Cloudflare Custom Hostnames documentation](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/).
+
+:::note Terminology update
+As of Ultimate Multisite v2.6.1, this feature is referred to as **Cloudflare Custom Hostnames** in all plugin settings and labels. Earlier versions used the name "Cloudflare for SaaS", which is the underlying Cloudflare product name.
+:::
+
 ## Important Notes
 
-As of Cloudflare's recent updates, wildcard proxying is now available for all customers. This means that the Cloudflare integration is less critical for subdomain multisite installations than it used to be, as you can simply set up a wildcard DNS record in Cloudflare.
+As of Cloudflare's recent updates, wildcard proxying is now available for all customers. This means that the standard Cloudflare DNS integration is less critical for subdomain multisite installations than it used to be, as you can simply set up a wildcard DNS record in Cloudflare.
 
 ## Troubleshooting
 
