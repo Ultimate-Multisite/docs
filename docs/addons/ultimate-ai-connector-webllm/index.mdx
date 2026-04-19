@@ -1,0 +1,144 @@
+---
+title: "Ultimate AI Connector for WebLLM"
+sidebar_position: 1
+---
+
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+The Ultimate AI Connector for WebLLM brings browser-native AI inference to your WordPress multisite network. It runs large language models entirely in the browser using WebLLM and the MLC engine — no API keys, no external calls, no data leaving the user's device.
+
+## Key Features
+
+- **Browser-side inference**: LLM runs locally in the visitor's browser via WebLLM/MLC — no server GPU required
+- **Floating chat widget**: Logged-in users can prompt the browser-side LLM directly from the front end
+- **Admin-bar status indicator**: Real-time status of the WebLLM engine visible in the WordPress admin bar
+- **SharedWorker runtime**: Multiple browser tabs share one GPU session instead of fighting over GPU resources
+- **apiFetch middleware**: WordPress REST requests matching the AI Client SDK pattern are transparently routed to the local WebLLM broker — no loopback HTTP round-trip
+- **Widget settings UI**: Connector panel settings to toggle the chat widget and configure auto-prompt behaviour
+- **IndexedDB cache**: Model weight downloads survive CDN redirects that break the default Cache API path
+- **wpai filter integration**: Hooks into the `wpai_preferred_text_models` filter so the AI Experiments feature routes to the browser engine when configured
+
+## Requirements
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Ultimate Multisite plugin (active)
+- A browser with WebGPU support (Chrome 113+, Edge 113+, or Firefox Nightly with WebGPU enabled)
+
+## Installation
+
+1. Upload the addon files to your `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Navigate to **Ultimate Multisite → AI Connector** to configure the addon
+
+## Floating Chat Widget
+
+The floating chat widget allows any logged-in user to interact with the browser-side LLM directly from your front end, without leaving the page they are on.
+
+### What It Does
+
+When enabled, a chat icon appears in the corner of every front-end page for logged-in users. Clicking the icon opens a chat panel where the user can type prompts and receive responses from the locally running WebLLM model. Because the model runs entirely in the browser, responses are private and do not involve any server-side processing.
+
+### Admin-Bar Status Indicator
+
+The WordPress admin bar includes a status indicator that shows the current state of the WebLLM engine:
+
+| Status | Meaning |
+|--------|---------|
+| **Loading** | The MLC engine is initialising or downloading model weights |
+| **Ready** | The model is loaded and available for inference |
+| **Idle** | The engine is loaded but the SharedWorker tab is not active |
+| **Error** | The engine failed to initialise — check the browser console for details |
+
+The indicator updates in real time without requiring a page reload.
+
+### How to Enable or Disable the Widget
+
+1. Go to **Ultimate Multisite → AI Connector** in the network admin
+2. Find the **Connector** panel
+3. Toggle **Enable floating chat widget** on or off
+4. Save settings
+
+The widget can also be enabled or disabled per-site from the site's own admin if the network administrator has granted that capability.
+
+## Widget Settings
+
+The Connector panel in **Ultimate Multisite → AI Connector** contains the following settings for the floating chat widget:
+
+### Enable Floating Chat Widget
+
+Toggles the chat widget on or off for the entire network. When disabled, the widget does not appear on any front-end page, regardless of user role.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+Controls whether the chat widget automatically sends a prompt when a user opens it.
+
+| Option | Behaviour |
+|--------|-----------|
+| **Disabled** | The widget opens to an empty chat — the user types their own prompt |
+| **Page context** | The widget opens with a prompt pre-filled based on the current page's title and content |
+| **Custom prompt** | The widget opens with a custom prompt you define in the field below |
+
+When set to **Custom prompt**, an additional text field appears where you can enter the default prompt text. Supports basic template variables:
+
+- `{site_name}` — the name of the current site
+- `{page_title}` — the title of the current page
+- `{user_display_name}` — the logged-in user's display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Version 1.1.0 introduces a SharedWorker runtime for the MLC engine. Previously, each browser tab that used WebLLM loaded its own instance of the model, competing for GPU memory and causing performance issues on devices with limited VRAM.
+
+With the SharedWorker runtime, one tab acts as the engine host. All other tabs communicate with that single instance through the worker's message channel. The result:
+
+- One GPU session shared across all open tabs
+- Faster responses once the model is loaded (no repeated initialisation)
+- Lower peak memory usage on the device
+
+The SharedWorker is transparent to users. The admin-bar status indicator always reflects the state of the shared engine, not the individual tab.
+
+## apiFetch Middleware
+
+The addon installs an `apiFetch` middleware that intercepts WordPress REST API requests matching the AI Client SDK pattern. Instead of making a loopback HTTP request to the server, these requests are routed directly to the local WebLLM broker running in the SharedWorker.
+
+This means plugins and themes that use the standard WordPress `apiFetch` API to call AI endpoints will automatically benefit from the browser-side model when it is available, with no code changes required.
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Register the WebLLM browser engine as a preferred text model. The addon hooks into this filter automatically when the engine is configured and available.
+- `ultimate_webllm_widget_enabled` — Override the widget enabled state for a specific user or context. Return `true` or `false`.
+- `ultimate_webllm_auto_prompt` — Modify the auto-prompt text before it is sent to the widget. Receives the prompt string and the current `WP_Post` object.
+
+## Troubleshooting
+
+### The chat widget does not appear
+
+- Confirm the user is logged in — the widget is only shown to authenticated users
+- Check that **Enable floating chat widget** is toggled on in the Connector panel
+- Verify the user's browser supports WebGPU (see Requirements above)
+
+### The admin-bar indicator shows "Error"
+
+Open the browser developer console (F12) and look for WebLLM-related errors. Common causes:
+
+- The browser does not support WebGPU
+- Model weight download failed — check network connectivity and try clearing the IndexedDB cache in browser developer tools (Application → IndexedDB)
+- A browser extension is blocking the SharedWorker
+
+### Model weights download every time
+
+The addon uses IndexedDB as the cache backend to ensure model weights survive CDN redirects. If weights are re-downloading on every visit, check that IndexedDB is not being cleared by a browser privacy setting or extension.
+
+## Changelog
+
+See [Changelog](./changelog) for the full version history.
