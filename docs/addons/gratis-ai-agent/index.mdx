@@ -1,0 +1,137 @@
+---
+title: "Gratis AI Agent"
+sidebar_position: 1
+---
+
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent is an autonomous WordPress AI assistant that can plan, build, and manage complete WordPress sites through natural language instructions. It exposes a structured set of **abilities** — discrete, testable actions the agent can invoke — covering everything from content management to design system customisation. Version 1.4.0 significantly expands the ability surface and introduces Site Builder Orchestration v2 for end-to-end website creation workflows.
+
+## Key Features
+
+- **Abilities system** — a modular, extensible catalogue of actions the agent can invoke on your WordPress installation
+- **Custom Post Type management** — register, list, and delete custom post types with persistence across restarts
+- **Custom Taxonomy management** — register, list, and delete custom taxonomies with persistence
+- **Design System abilities** — inject custom CSS, manage curated block patterns, set the site logo, and apply theme.json presets
+- **Global Styles management** — read and write theme.json values for colour palettes, typography, spacing, and more
+- **Navigation Menu management** — create and update navigation menus and their items programmatically
+- **Options Management** — read and write WordPress options with a built-in safety blocklist to protect critical settings
+- **Installable Abilities Registry** — discover and activate additional ability packs without modifying core plugin files
+- **Site Builder Orchestration v2** — multi-step site build plans with plugin discovery, progress tracking, and error recovery
+- **WP-CLI benchmark command** — run the agent capability benchmark suite from the command line for CI and model evaluation
+
+## Requirements
+
+- WordPress 6.0 or higher
+- PHP 8.1 or higher
+- WordPress Multisite (network-activated) or single-site installation
+- An active AI provider connector plugin (Anthropic, OpenAI, or compatible)
+
+## Installation
+
+1. Upload the plugin files to `/wp-content/plugins/gratis-ai-agent`
+2. Activate the plugin through the **Plugins** screen in WordPress
+3. Navigate to **Gratis AI Agent → Settings** and connect your AI provider
+4. (Optional) Browse the **Abilities Registry** to install additional ability packs
+
+## Quick Start
+
+Once activated and connected to an AI provider, open the **Gratis AI Agent** panel in the WordPress admin sidebar. Type a natural language instruction and the agent will plan and execute the required steps using its available abilities.
+
+**Example instructions:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities Overview
+
+Abilities are the atomic actions the agent can perform. Each ability is a registered PHP class that exposes a schema (parameters and return types) the agent reads at runtime. Abilities are grouped into functional areas:
+
+| Area | Abilities |
+|---|---|
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+See the [Abilities Reference](./abilities) for full parameter documentation and usage examples.
+
+## WP-CLI
+
+Gratis AI Agent ships a `wp gratis-ai-agent` command family for running benchmarks and managing abilities from the command line. See the [WP-CLI Reference](./wp-cli) for the full command list.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration
+
+All settings are under **Gratis AI Agent → Settings** in the WordPress admin:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | Select and configure the active AI provider connector |
+| **Model** | Choose the language model to use for agent sessions |
+| **Max Tokens** | Per-request token budget (default 4096) |
+| **Ability Timeout** | Maximum seconds an individual ability can run (default 30) |
+| **Debug Logging** | Log ability calls and agent reasoning to the WordPress debug log |
+
+## Options Management Safety Blocklist
+
+The Options Management ability includes a built-in blocklist that prevents the agent from reading or writing sensitive WordPress options. The default blocklist covers:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options — use a dedicated migration tool for these)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (secret keys)
+- `active_plugins`, `template` (plugin/theme activation — use dedicated abilities)
+- Payment gateway credentials and API keys registered by installed plugins
+
+Additional entries can be added via the `gratis_ai_agent_options_blocklist` filter.
+
+## Hooks and Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — fired after an ability is registered, receives the ability class name
+- `gratis_ai_agent_plan_started` — fired when a site builder plan begins execution
+- `gratis_ai_agent_plan_completed` — fired when a plan finishes successfully
+- `gratis_ai_agent_plan_failed` — fired when a plan encounters an unrecoverable error
+
+### Filters
+
+- `gratis_ai_agent_abilities` — modify the registered ability list before the agent loads it
+- `gratis_ai_agent_options_blocklist` — extend or reduce the options safety blocklist
+- `gratis_ai_agent_benchmark_questions` — add custom benchmark questions to the evaluation suite
+- `gratis_ai_agent_plan_plugins` — modify the plugin discovery list during site plan generation
+
+## Support
+
+For support, visit [ultimatemultisite.com](https://ultimatemultisite.com) or open an issue in the plugin repository.
+
+## Changelog
+
+See the [Changelog](./changelog) for the full version history.
