@@ -27,6 +27,8 @@ const sidebars = {
         'user-guide/administration/managing-memberships',
         'user-guide/administration/managing-payments-and-invoices',
         'user-guide/administration/managing-system-emails',
+        'user-guide/administration/plugin-builder-and-sandbox',
+        'user-guide/administration/gratis-ai-agent-settings',
       ],
     },
     {
@@ -41,6 +43,8 @@ const sidebars = {
         'user-guide/configuration/managing-shareable-links-for-plans',
         'user-guide/configuration/customizing-your-registration-form',
         'user-guide/configuration/the-registration-flow',
+        'user-guide/configuration/feedback-and-issue-reporting',
+        'user-guide/configuration/internet-search',
       ],
     },
     {
@@ -191,6 +195,7 @@ const sidebars = {
         'developer/integration-guide/index',
         'developer/integration-guide/custom-gateway',
         'developer/integration-guide/webhooks',
+        'developer/integration-guide/plugin-management-abilities',
       ],
     },
     {
