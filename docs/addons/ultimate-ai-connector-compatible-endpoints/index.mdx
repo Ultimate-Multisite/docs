@@ -1,0 +1,111 @@
+---
+title: "Ultimate AI Connector for Compatible Endpoints"
+sidebar_position: 1
+---
+
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+The Ultimate AI Connector for Compatible Endpoints integrates OpenAI-compatible AI provider APIs with your WordPress multisite network. Configure multiple AI providers — each with its own endpoint URL, API key, and default model — and route requests with automatic fallback when a provider is unavailable.
+
+## Key Features
+
+- **Multi-provider support**: Add multiple AI provider cards, each with its own endpoint URL, API key, and default model
+- **Drag-to-reorder**: Arrange providers by priority using the grip handle on each card; requests use providers in order
+- **Automatic fallback routing**: If the primary provider is unavailable, requests automatically fall back to the next configured provider
+- **Per-provider configuration**: Each provider is independently configured with its own credentials and model selection
+- **Card-based settings UI**: Built on stable WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider)
+- **Auto-expand on add**: New provider cards expand automatically so you can fill in the details immediately
+- **Script cache busting**: Provider scripts are cache-busted on plugin update to ensure the latest version is loaded
+
+## Requirements
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Ultimate Multisite plugin (active)
+- An OpenAI-compatible API endpoint (self-hosted or third-party)
+
+## Installation
+
+1. Upload the addon files to your `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Navigate to **Ultimate Multisite → AI Connector** to configure the addon
+
+## Configuration
+
+### Multi-Provider Setup
+
+The configuration screen uses a card-based layout where each card represents one AI provider. You can add as many providers as you need.
+
+#### Adding a Provider
+
+1. Go to **Ultimate Multisite → AI Connector** in the network admin
+2. Click **Add Provider**
+3. A new provider card appears and expands automatically
+4. Fill in the provider details:
+   - **Provider Name** — a label to identify this provider (e.g. "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — the base URL of the OpenAI-compatible API (e.g. `https://api.openai.com/v1`)
+   - **API Key** — your API key for this provider
+   - **Default Model** — the model identifier to use by default for this provider (e.g. `gpt-4o`, `mistral-small`)
+5. Click **Save Settings**
+
+#### Removing a Provider
+
+Click the **Remove** button on any provider card to delete it. Save settings to apply the change.
+
+#### Reordering Providers
+
+Drag the grip icon (⣿) on the left side of any provider card to reorder it. The order determines fallback priority: requests are sent to the first provider and fall back to subsequent providers if a request fails.
+
+### Fallback Routing
+
+When a request to the primary provider fails — due to a timeout, rate limit, or service outage — the connector automatically retries with the next provider in the list. This continues down the list until a provider succeeds or all providers have been tried.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback is transparent to the calling plugin or theme — they receive either a successful response or a final error, regardless of how many providers were tried.
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## Troubleshooting
+
+### No providers are listed
+
+If the provider list is empty after saving, confirm that:
+
+- You clicked **Save Settings** after adding providers
+- Your browser did not block the settings page from saving (check the browser console for JavaScript errors)
+- The plugin is active and you are on the network admin screen
+
+### Requests are failing for all providers
+
+- Verify each provider's endpoint URL is reachable from your server (not just from your browser)
+- Check that each API key is valid and has not expired
+- Review the provider's rate-limit and quota status in their dashboard
+- Enable WordPress debug logging (`WP_DEBUG_LOG`) to capture detailed error messages from the connector
+
+### A provider is not being used for fallback
+
+Drag-to-reorder changes the fallback order. Confirm the provider you expect to receive fallback requests is positioned correctly in the list and that its endpoint URL and API key are correct.
+
+### New provider card does not expand automatically
+
+Auto-expand requires JavaScript to be enabled in your browser. If the card does not expand on click, check the browser console for errors. The card contents are always accessible by clicking the card header even if auto-expand does not trigger.
+
+## Changelog
+
+See [Changelog](./changelog) for the full version history.
