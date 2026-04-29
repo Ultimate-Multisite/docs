@@ -9,11 +9,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Gratis AI Agent
 
-Gratis AI Agent is an autonomous WordPress AI assistant that can plan, build, and manage complete WordPress sites through natural language instructions. It exposes a structured set of **abilities** — discrete, testable actions the agent can invoke — covering everything from content management to design system customisation. Version 1.4.0 significantly expands the ability surface and introduces Site Builder Orchestration v2 for end-to-end website creation workflows.
+Gratis AI Agent is an autonomous WordPress AI assistant that can plan, build, and manage complete WordPress sites through natural language instructions. It exposes a structured set of **abilities** — discrete, testable actions the agent can invoke — covering everything from content management to design system customisation. Version 1.9.0 adds content creation abilities, visual page review via client-side screenshots, five built-in agent profiles, and feature flags for access control and branding.
 
 ## Key Features
 
 - **Abilities system** — a modular, extensible catalogue of actions the agent can invoke on your WordPress installation
+- **Content Management** — create posts and pages (including assigning page templates), batch-create multiple posts in one call, set featured images, and build contact forms
+- **Visual Review** — capture screenshots of live pages, diff before/after states, and get an AI-generated design review covering layout, typography, colour, and accessibility
+- **Five built-in agents** — Content Writer, Site Builder, Design Studio, Plugin Manager, and Support Assistant; switchable via the Agent Picker in the chat header
+- **Feature flags** — access-control and branding toggles in Settings → Feature Flags for role restrictions, white-label naming, and widget customisation
 - **Custom Post Type management** — register, list, and delete custom post types with persistence across restarts
 - **Custom Taxonomy management** — register, list, and delete custom taxonomies with persistence
 - **Design System abilities** — inject custom CSS, manage curated block patterns, set the site logo, and apply theme.json presets
@@ -62,6 +66,8 @@ Abilities are the atomic actions the agent can perform. Each ability is a regist
 
 | Area | Abilities |
 |---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
 | **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
 | **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
 | **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
