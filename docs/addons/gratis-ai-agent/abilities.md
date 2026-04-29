@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Abilities are the atomic actions that Gratis AI Agent can invoke on your WordPress installation. Each ability is a registered PHP class that exposes a JSON schema — the agent reads this schema at runtime to understand what parameters are required and what the ability returns.
 
-This page documents all abilities shipping with Gratis AI Agent v1.4.0.
+This page documents all abilities shipping with Gratis AI Agent v1.9.0.
 
 ---
 
@@ -493,6 +493,293 @@ Lists WordPress options matching a pattern.
     { "option_name": "gratis_ai_agent_version", "autoload": "yes" }
   ],
   "total": 1
+}
+```
+
+---
+
+## Content Management
+
+Content Management abilities create and edit WordPress posts and pages. Post IDs are returned so subsequent steps in multi-ability plans can reference the created content.
+
+### `create_post`
+
+Creates a new WordPress post, page, or custom post type entry.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `title` | string | Yes | Post title |
+| `content` | string | No | Post body — accepts plain text, HTML, or serialised block markup |
+| `status` | string | No | `draft`, `publish`, `pending`, `private`. Default `draft` |
+| `post_type` | string | No | Post type slug, e.g. `post`, `page`, or any registered CPT. Default `post` |
+| `excerpt` | string | No | Short summary shown in archives and search results |
+| `categories` | array | No | Array of category names or IDs to assign |
+| `tags` | array | No | Array of tag names or IDs to assign |
+| `author` | integer | No | WordPress user ID to set as the post author. Defaults to the current user |
+| `date` | string | No | Publish date in ISO 8601 format, e.g. `2026-05-01T09:00:00` |
+| `page_template` | string | No | Template file to assign to this post or page, e.g. `page-full-width.php`. Only meaningful when `post_type` is `page` or a CPT that supports page templates. |
+
+**Example**
+
+```json
+{
+  "title": "Welcome to Our New Site",
+  "content": "<!-- wp:paragraph --><p>Hello world!</p><!-- /wp:paragraph -->",
+  "status": "publish",
+  "post_type": "page",
+  "page_template": "page-full-width.php"
+}
+```
+
+**Returns** `{ "success": true, "post_id": 42, "permalink": "https://example.com/welcome/" }`
+
+---
+
+### `update_post`
+
+Updates an existing WordPress post or page.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `post_id` | integer | Yes | ID of the post to update |
+| `title` | string | No | New post title |
+| `content` | string | No | New post body |
+| `status` | string | No | New status: `draft`, `publish`, `pending`, `private` |
+| `excerpt` | string | No | New excerpt |
+| `categories` | array | No | Replace the full category list with this array of names or IDs |
+| `tags` | array | No | Replace the full tag list with this array of names or IDs |
+| `page_template` | string | No | New template file to assign to this post or page, e.g. `page-full-width.php`. Pass an empty string to remove the template assignment and revert to the theme default. |
+
+**Example** — change template after creation
+
+```json
+{
+  "post_id": 42,
+  "page_template": "page-full-width.php"
+}
+```
+
+**Returns** `{ "success": true, "post_id": 42 }`
+
+---
+
+### `batch_create_posts`
+
+Creates multiple posts in a single ability call, reducing round-trips during site builds or bulk content import. Posts are created in sequence; if one fails the others continue and the failure is reported in the results array.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `posts` | array | Yes | Array of post objects, each accepting the same parameters as `create_post` |
+| `stop_on_error` | boolean | No | If `true`, stop processing after the first failure. Default `false` |
+
+**Example**
+
+```json
+{
+  "posts": [
+    {
+      "title": "About Us",
+      "post_type": "page",
+      "status": "publish",
+      "page_template": "page-full-width.php"
+    },
+    {
+      "title": "Services",
+      "post_type": "page",
+      "status": "publish"
+    },
+    {
+      "title": "Contact",
+      "post_type": "page",
+      "status": "publish"
+    }
+  ]
+}
+```
+
+**Returns**
+
+```json
+{
+  "created": 3,
+  "failed": 0,
+  "results": [
+    { "success": true, "post_id": 42, "title": "About Us" },
+    { "success": true, "post_id": 43, "title": "Services" },
+    { "success": true, "post_id": 44, "title": "Contact" }
+  ]
+}
+```
+
+---
+
+### `set_featured_image`
+
+Assigns a featured image (post thumbnail) to an existing post or page. Accepts an existing Media Library attachment ID or a remote image URL; when a URL is supplied, the image is downloaded and imported automatically.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `post_id` | integer | Yes | ID of the post or page to update |
+| `attachment_id` | integer | No | ID of an existing Media Library attachment |
+| `url` | string | No | Remote image URL to import and set as the featured image |
+| `alt_text` | string | No | Alt text to apply to the attachment if it is imported from a URL |
+
+One of `attachment_id` or `url` must be provided.
+
+**Returns** `{ "success": true, "post_id": 42, "attachment_id": 17 }`
+
+---
+
+### `create_contact_form`
+
+Creates a contact form using the active form plugin (Contact Form 7, WPForms, Fluent Forms, or Gravity Forms, depending on which is installed). Returns a shortcode that can be embedded in any post or page.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `title` | string | Yes | Form name shown in the form plugin admin |
+| `fields` | array | Yes | Ordered list of form fields (see Field object below) |
+| `recipient` | string | No | Email address to receive submissions. Defaults to the WordPress admin email |
+| `subject` | string | No | Email subject line. Supports `[your-name]` and `[your-subject]` placeholders when using Contact Form 7 |
+| `confirmation_message` | string | No | Message displayed after a successful submission. Default: `"Thank you for your message. We'll be in touch soon."` |
+
+**Field object**
+
+| Key | Type | Required | Description |
+|---|---|---|---|
+| `name` | string | Yes | Internal field name / machine key |
+| `label` | string | Yes | Human-readable label shown on the form |
+| `type` | string | Yes | `text`, `email`, `tel`, `textarea`, `select`, `checkbox`, `radio`, `file`, `date` |
+| `required` | boolean | No | Whether the field must be filled before submission. Default `false` |
+| `options` | array | No | Options for `select`, `checkbox`, and `radio` fields |
+| `placeholder` | string | No | Placeholder text for text-type inputs |
+
+**Example**
+
+```json
+{
+  "title": "Restaurant Booking Enquiry",
+  "fields": [
+    { "name": "your-name",    "label": "Name",             "type": "text",     "required": true },
+    { "name": "your-email",   "label": "Email",            "type": "email",    "required": true },
+    { "name": "party-size",   "label": "Party size",       "type": "select",   "options": ["1–2", "3–5", "6–10", "10+"] },
+    { "name": "your-message", "label": "Special requests", "type": "textarea", "required": false }
+  ],
+  "recipient": "bookings@example.com",
+  "subject": "New booking enquiry from [your-name]"
+}
+```
+
+**Returns**
+
+```json
+{
+  "success": true,
+  "form_id": 3,
+  "shortcode": "[contact-form-7 id=\"3\" title=\"Restaurant Booking Enquiry\"]"
+}
+```
+
+---
+
+## Visual Review
+
+Visual Review abilities let the agent capture screenshots of live pages and analyse them, enabling autonomous design review, before/after comparisons, and visual regression checks without requiring any browser extension.
+
+### `capture_screenshot`
+
+Captures a screenshot of a WordPress page at a given URL using a server-side headless browser. The image is saved to the Media Library and a CDN URL is returned.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `url` | string | Yes | Full URL of the page to screenshot, e.g. `https://example.com/about/` |
+| `width` | integer | No | Viewport width in pixels. Default `1280` |
+| `height` | integer | No | Viewport height in pixels. Default `800` |
+| `full_page` | boolean | No | Capture the full scrollable page instead of just the viewport. Default `false` |
+| `delay_ms` | integer | No | Milliseconds to wait after page load before capturing, useful for animated content. Default `500` |
+| `label` | string | No | Human-readable label stored with the attachment in the Media Library |
+
+**Returns**
+
+```json
+{
+  "success": true,
+  "attachment_id": 88,
+  "url": "https://example.com/wp-content/uploads/2026/04/screenshot-about.png",
+  "width": 1280,
+  "height": 800
+}
+```
+
+---
+
+### `compare_screenshots`
+
+Takes two screenshots and returns a visual diff score plus a diff image highlighting changed regions. Useful for confirming that a design change produced the expected result or for detecting unintended regressions.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `before_url` | string | Yes | URL of the page to capture as the "before" state |
+| `after_url` | string | Yes | URL of the page to capture as the "after" state. May be the same URL if comparing across time |
+| `width` | integer | No | Viewport width for both captures. Default `1280` |
+| `threshold` | float | No | Pixel-difference threshold (0.0–1.0). Pixels within this tolerance are considered unchanged. Default `0.1` |
+
+**Returns**
+
+```json
+{
+  "success": true,
+  "diff_score": 0.04,
+  "changed_pixels": 2340,
+  "total_pixels": 1024000,
+  "diff_attachment_id": 91,
+  "diff_url": "https://example.com/wp-content/uploads/2026/04/diff-about.png"
+}
+```
+
+A `diff_score` of `0.0` means no visible change; `1.0` means every pixel changed.
+
+---
+
+### `review_page_design`
+
+Captures a screenshot of a page and sends it to the language model for visual analysis. Returns a structured assessment covering layout, typography, colour usage, and accessibility concerns.
+
+**Parameters**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `url` | string | Yes | Full URL of the page to review |
+| `focus` | string | No | Comma-separated list of review areas to emphasise: `layout`, `typography`, `colour`, `accessibility`, `mobile`. Default: all areas |
+| `width` | integer | No | Viewport width. Default `1280` |
+
+**Returns**
+
+```json
+{
+  "success": true,
+  "screenshot_url": "https://example.com/wp-content/uploads/2026/04/review-about.png",
+  "assessment": {
+    "overall": "The page structure is clean and readable. Two accessibility issues detected.",
+    "layout": "Good visual hierarchy. Hero section is prominent.",
+    "typography": "Body text is 15px — consider increasing to 16px for readability.",
+    "colour": "Contrast ratio on the CTA button (#fff on #4a90e2) is 3.1:1 — below the WCAG AA threshold of 4.5:1.",
+    "accessibility": ["Low contrast on CTA button", "Missing alt text on hero image"],
+    "suggestions": ["Darken the CTA button to #1a5cb0 to pass WCAG AA", "Add descriptive alt text to the hero image"]
+  }
 }
 ```
 

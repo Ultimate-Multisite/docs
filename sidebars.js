@@ -45,6 +45,7 @@ const sidebars = {
         'user-guide/configuration/the-registration-flow',
         'user-guide/configuration/feedback-and-issue-reporting',
         'user-guide/configuration/internet-search',
+        'user-guide/configuration/built-in-agents',
       ],
     },
     {

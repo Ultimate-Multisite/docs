@@ -72,3 +72,34 @@ Also on the **Advanced** tab, the **Brave Search API Key** field enables the [In
 The field label includes a clickable link to the Brave Search API sign-up page. Leave blank to disable internet search.
 
 See [Internet Search](../configuration/internet-search) for end-user documentation on this feature.
+
+## Feature Flags
+
+Also introduced in v1.9.0, the **Settings → Feature Flags** tab provides toggle switches for optional functionality. Each flag is either enabled or disabled network-wide; there is no per-site override at this time.
+
+### Accessing Feature Flags
+
+1. In the WordPress admin, go to **Gratis AI Agent → Settings**.
+2. Click the **Feature Flags** tab.
+
+### Access Control Flags
+
+| Flag | Default | Description |
+|---|---|---|
+| **Restrict to Administrators** | Off | When enabled, only users with the `administrator` role can open the AI Agent chat panel. All other roles see a "Contact your administrator" message instead. |
+| **Restrict to Network Admins** | Off | When enabled on a multisite network, only Super Admins can use the agent. Individual site admins are blocked. Takes precedence over "Restrict to Administrators" if both are enabled. |
+| **Allow Subscriber Access** | Off | When enabled, users with the `subscriber` role can use the chat interface but are limited to read-only abilities (no post creation or settings changes). |
+| **Disable for Non-Members** | Off | Integrates with Ultimate Multisite membership status. When enabled, chat is hidden for sites that do not have an active membership. |
+
+### Branding Flags
+
+| Flag | Default | Description |
+|---|---|---|
+| **Hide "Powered by Gratis AI Agent" Footer** | Off | Removes the branding attribution line shown at the bottom of the chat widget. Recommended for white-label deployments. |
+| **Custom Agent Name** | *(blank)* | Replaces the default "Gratis AI Agent" label in the chat header and admin menu with your own product name. Leave blank to use the default. |
+| **Hide Agent Picker** | Off | When enabled, users cannot switch between the five built-in agents. The current agent is fixed to whatever is configured as the default in Settings → General. |
+| **Use Site Icon as Chat Avatar** | Off | Replaces the default AI icon in the chat widget header with the WordPress site icon (set under Appearance → Customize → Site Identity). |
+
+### Applying Changes
+
+Click **Save Settings** after toggling any flag. Changes take effect immediately — no cache flush or plugin reactivation is required.
