@@ -4,13 +4,116 @@ on:
   push:
     branches: [main]
   schedule:
-    # Rebuild hourly to pick up changes from addon repos
-    # Replaces the per-addon trigger-docs.yml push-based approach
-    - cron: '17 * * * *'
+    # Once daily at 02:17 UTC. Was hourly (24 × ~76 min ≈ 1,800 min/day).
+    # push-to-main covers same-day doc edits; scheduled run picks up addon changes.
+    - cron: '17 2 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: deploy-docs
+  cancel-in-progress: false
+
 jobs:
+  # ── Change detection ────────────────────────────────────────────────────────
+  # Checks the docs repo and all addon repos via the GitHub API before cloning
+  # anything. If nothing has changed since the last successful deploy the build
+  # job is skipped entirely. push/workflow_dispatch events always build.
+  check-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.check.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Detect changes since last successful deploy
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_DISPATCH_TOKEN }}
+        run: |
+          # Default: build. Overridden to 'false' only when all checks pass clean.
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+          set -euo pipefail
+
+          # ── Last successful deploy timestamp ───────────────────────────────
+          # status=success excludes the current (in_progress) run, so [0] is
+          # the most recently completed successful deploy.
+          LAST_RUN=$(gh api \
+            "repos/${{ github.repository }}/actions/workflows/deploy-docs.yml/runs?status=success&per_page=2" \
+            --jq '.workflow_runs[0].created_at // empty' 2>/dev/null || true)
+
+          if [ -z "$LAST_RUN" ]; then
+            echo "No previous successful run found — building unconditionally."
+            exit 0
+          fi
+          echo "Last successful deploy: $LAST_RUN"
+
+          # ── Docs repo ──────────────────────────────────────────────────────
+          DOCS_COMMITS=$(git log --since="$LAST_RUN" --oneline | wc -l | xargs)
+          echo "Docs repo commits since last deploy: $DOCS_COMMITS"
+          if [ "$DOCS_COMMITS" -gt 0 ]; then
+            echo "Docs repo changed — building."
+            exit 0
+          fi
+
+          # ── Addon repos (API check — no cloning) ──────────────────────────
+          ADDON_REPOS=(
+            ultimate-multisite
+            ultimate-multisite-woocommerce
+            multisite-ultimate-site-exporter
+            multisite-ultimate-affiliatewp
+            multisite-ultimate-ai-site-builder
+            ultimate-multisite-analytics
+            multisite-ultimate-captcha
+            ultimate-multisite-chuck-norris-facts
+            ultimate-multisite-content-sync
+            multisite-ultimate-domain-seller
+            ultimate-multisite-fluent-forms
+            multisite-ultimate-gocardless
+            ultimate-multisite-gravity-forms
+            multisite-ultimate-language-selector
+            ultimate-multisite-loco-translate
+            multisite-ultimate-mailchimp
+            ultimate-multisite-mailster
+            multisite-ultimate-metered-plans
+            ultimate-multisite-multinetwork
+            ultimate-multisite-multi-tenancy
+            multisite-ultimate-payfast
+            multisite-ultimate-plugin-and-theme-manager
+            multisite-ultimate-support-agents
+            multisite-ultimate-support-tickets
+            multisite-ultimate-vat
+            multisite-ultimate-admin-page-creator
+            ultimate-multisite-addon-template
+            ultimate-multisite-emails
+            multisite-ultimate-metrics-and-onboarding
+            tutor-multisite-compatibilty
+            material-wp
+          )
+
+          for repo in "${ADDON_REPOS[@]}"; do
+            LATEST=$(gh api "repos/Ultimate-Multisite/$repo/commits?per_page=1" \
+              --jq '.[0].commit.committer.date' 2>/dev/null || true)
+            if [ -z "$LATEST" ]; then
+              echo "  $repo: not accessible — skipping"
+              continue
+            fi
+            # ISO 8601 strings compare correctly as plain strings
+            if [[ "$LATEST" > "$LAST_RUN" ]]; then
+              echo "  $repo: changed (latest commit: $LATEST) — building."
+              exit 0
+            fi
+            echo "  $repo: unchanged (latest commit: $LATEST)"
+          done
+
+          echo "No changes detected across docs repo or any addon since $LAST_RUN — skipping build."
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+
+  # ── Build & deploy ───────────────────────────────────────────────────────────
   build-and-deploy:
+    needs: check-changes
+    # Always build on push/manual; skip scheduled runs when nothing changed.
+    if: needs.check-changes.outputs.changed == 'true' || github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
