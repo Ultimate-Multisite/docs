@@ -58,11 +58,17 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-If you have additional domains that should always be included:
+If you have additional **external** domains (outside your multisite network) that should always be kept on the Cloudways aliases list:
 
 ```php
-define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domain1.com,domain2.com,*.wildcard.com');
+define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ```
+
+:::warning Do not include your own network's wildcard
+Do **not** add `*.your-network.com` (or any subdomain pattern of your own network) to
+`WU_CLOUDWAYS_EXTRA_DOMAINS`. See [Important — wildcard SSL pitfall](#important--wildcard-ssl-pitfall)
+below for why this prevents per-tenant SSL certificates from being issued.
+:::
 
 ### 4. Enable the Integration
 
@@ -93,13 +99,52 @@ After domains are synced:
 2. It sends a request to Cloudways to install Let's Encrypt SSL certificates for those domains
 3. Cloudways handles the SSL certificate issuance and installation
 
+The integration always requests **standard** (non-wildcard) Let's Encrypt certificates from
+Cloudways. If a wildcard pattern is supplied in `WU_CLOUDWAYS_EXTRA_DOMAINS`, the leading
+`*.` is stripped before the SSL request — the wildcard itself is never installed by this
+integration. To use a wildcard certificate on Cloudways you would have to install it
+manually, but doing so blocks per-domain Let's Encrypt issuance for mapped custom domains
+(see the pitfall below).
+
 ## Extra Domains
 
-The `WU_CLOUDWAYS_EXTRA_DOMAINS` constant allows you to specify additional domains that should always be included when syncing with Cloudways. This is useful for:
+The `WU_CLOUDWAYS_EXTRA_DOMAINS` constant allows you to specify additional **external**
+domains that should always be kept on the Cloudways application's aliases list. Use it for:
 
-- Domains that are not managed by Ultimate Multisite
-- Wildcard domains (e.g., `*.example.com`)
-- Development or staging domains
+- External domains that are not managed by Ultimate Multisite (e.g. a separate marketing site sharing the same Cloudways application)
+- Parked or staging domains you want kept on the application aliases list
+
+Do **not** use this constant for your own network's subdomain wildcard
+(e.g. `*.your-network.com`). See the wildcard SSL pitfall below.
+
+## Important — Wildcard SSL Pitfall
+
+A common mistake when following Cloudways' default setup is to add a wildcard such as
+`*.your-network.com` to `WU_CLOUDWAYS_EXTRA_DOMAINS`, or to manually install a Cloudways
+wildcard SSL certificate for that wildcard.
+
+**If you do this, Cloudways will refuse to issue Let's Encrypt certificates for the
+per-tenant custom domains that Ultimate Multisite maps.** Cloudways replaces the active
+SSL certificate on the application each time, and a pre-existing wildcard certificate on
+the application blocks the per-domain Let's Encrypt issuance the integration relies on.
+
+### Recommended Cloudways SSL setup for an Ultimate Multisite network
+
+1. In the Cloudways application's **SSL Certificate** tab, install a **standard
+   Let's Encrypt certificate** covering only `your-network.com` and `www.your-network.com`
+   — **not** a wildcard.
+2. Do **not** put `*.your-network.com` (or any subdomain pattern of your own network) in
+   `WU_CLOUDWAYS_EXTRA_DOMAINS`. Reserve that constant for **external** domains only.
+3. Create the per-tenant subdomain wildcard at the **DNS** level only (an `A` record for
+   `*.your-network.com` pointing at your Cloudways server IP) so subsites resolve. SSL
+   for individual mapped custom domains is then issued automatically by the integration
+   via Let's Encrypt.
+
+If your tenants' custom domains are stuck without SSL, check the Cloudways SSL tab. If a
+wildcard certificate is active there, remove it, reissue a standard Let's Encrypt
+certificate for the main network domain only, and remove any wildcard entries from
+`WU_CLOUDWAYS_EXTRA_DOMAINS`. Then re-trigger a domain mapping (or wait for the next one)
+and the integration will start issuing per-domain certificates again.
 
 ## Troubleshooting
 
@@ -112,6 +157,7 @@ The `WU_CLOUDWAYS_EXTRA_DOMAINS` constant allows you to specify additional domai
 - Cloudways requires that domains have valid DNS records pointing to your server before issuing SSL certificates
 - The integration validates DNS records before requesting SSL certificates
 - If SSL certificates are not being issued, check that your domains are properly pointing to your server's IP address
+- **Per-tenant custom domains stuck without SSL?** Check the Cloudways application's SSL Certificate tab. If a wildcard certificate (manually installed, or covering `*.your-network.com`) is active, Cloudways will not issue Let's Encrypt certificates for individually mapped custom domains. Replace it with a standard Let's Encrypt certificate covering only the main network domain (`your-network.com`, `www.your-network.com`) and remove any wildcard entries from `WU_CLOUDWAYS_EXTRA_DOMAINS`. Then re-trigger a domain mapping (or wait for the next one) and the integration will request per-domain certificates.
 
 ### Domain Not Added
 - Check the Ultimate Multisite logs for any error messages
