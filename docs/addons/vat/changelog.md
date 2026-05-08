@@ -5,6 +5,15 @@ sidebar_position: 99
 
 # VAT Changelog
 
+Version 1.0.7 - Released on 2026-02-03
+
+* Fix: German (DE) VAT numbers failing validation due to VIES SOAP service MS_MAX_CONCURRENT_REQ errors. Switched from legacy SOAP API to the official EU VIES REST API for more reliable validation.
+* Fix: VAT numbers are now accepted when the VIES service is temporarily unavailable, instead of being incorrectly rejected. A log entry is created for later review.
+* Fix: VAT/Tax ID field is now visible for all countries, not just EU members. Non-EU tax IDs (e.g. Swiss CHE numbers) are stored for invoice display without VIES validation.
+* Fix: VAT prefix lookup for Greece (GR), Monaco (MC), and Isle of Man (IM) was broken due to incorrect array lookup logic.
+* Improvement: Removed unnecessary wp-cli-bundle dev dependency that could cause fatal errors when used alongside the Site Exporter addon.
+* Improvement: Added comprehensive unit test suite (53 tests).
+
 Version 1.0.6 - Released on 2026-01-25
 
 * Fix: Domestic B2B transactions now correctly charge VAT. Per EU VAT rules, reverse charge only applies to cross-border B2B transactions, not when the customer's country matches the company's country.

@@ -5,6 +5,10 @@ sidebar_position: 99
 
 # GoCardless Changelog
 
+Version: 1.0.3 - Released on 2026-05-05
+* Fix: Orphaned pending sites are now cleaned up when a GoCardless membership is cancelled while in pending or on-hold state
+* Improved: Plugin autoloader skipped when Bedrock root autoloader has already loaded dependencies
+
 Version: 1.0.1 - Released on 2025-09-28
 
 * Rename prefix to ultimate-multisite; update text domain; version bump.

@@ -5,6 +5,9 @@ sidebar_position: 99
 
 # Site Exporter Changelog
 
+Version: 1.0.5 - Released on 2026-05-05
+* Fix: Added __callStatic to WP_CLI polyfill stub to handle unmocked methods like get_config, preventing test bootstrap failures
+
 Version: 1.0.4 - Released on 2025-11-25
 
 * Fix compatibility with Ultimate Multisite 2.4.
@@ -28,4 +31,4 @@ Version: 1.0.2 - Released on 2025-09-28
 ### Version 1.0.0-beta.4 - Released on 2022-01-13
 
 * Internal: Added hooks and filters generator;
-* Internal: Added Ultimate Multisite stubs for developer quality of life;
+* Internal: Added WP Ultimo stubs for developer quality of life;
