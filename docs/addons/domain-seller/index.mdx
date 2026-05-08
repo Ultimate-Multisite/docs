@@ -9,110 +9,121 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Domain Seller
 
-**Multisite Ultimate: Domain Seller** transforms your WordPress Multisite network into a powerful domain selling platform. This addon integrates seamlessly with Multisite Ultimate v2 to provide:
+**Multisite Ultimate: Domain Seller** transforms your WordPress Multisite network into a powerful domain selling platform. Let customers register custom domains directly during sign-up or from their dashboard, with real-time availability checking and transparent pricing.
+
+### Why Domain Seller?
+
+Domain registration is one of the most requested upsells for any WaaS (Website as a Service) platform. Instead of sending your customers to a third-party registrar, you can offer domains directly — keeping more revenue in your network while giving customers a frictionless experience.
 
 ### Key Features
 
-#### **🌐 Multiple Domain Provider Support**
-* **OpenSRS Integration** - Full support for OpenSRS domain registration and management
-* **Extensible Architecture** - Framework for adding Namecheap, GoDaddy, and other providers
-* **Provider Testing** - Built-in connection testing and configuration validation
-* **Failover Support** - Automatic failover between providers for reliability
+#### Multiple Domain Registrar Support
+* **OpenSRS** — Full registration, renewal, and management
+* **Namecheap** — Complete integration with WhoisGuard and sandbox testing
+* **Extensible Architecture** — Built on the Integration Registry pattern, making it easy to add more providers
+* **Built-in Connection Testing** — Validate provider credentials and connectivity before going live
 
-#### **💰 Advanced Pricing & Products**
-* **Domain Products** - Native Multisite Ultimate v2 product type for domains
-* **Flexible Markup** - Fixed amount or percentage markup over wholesale prices
-* **TLD-Specific Pricing** - Different pricing strategies per TLD (.com, .net, etc.)
-* **Real-Time Pricing** - Live pricing from providers with intelligent caching
-* **Coupon Integration** - Full support for Multisite Ultimate coupons and discounts
+#### Guided Setup Wizard
+* **One-click onboarding** — Walks you through provider configuration, TLD import, and domain product creation
+* **Automatic TLD sync** — Imports all available TLDs and wholesale pricing from your connected providers
+* **Default product creation** — Creates a ready-to-use domain product with sensible markup defaults
 
-#### **🛒 Seamless Checkout Experience**
-* **Integrated Domain Search** - Real-time domain availability during checkout
-* **AJAX-Powered Interface** - Fast, responsive domain search with no page reloads
-* **Smart Suggestions** - Alternative domain suggestions when preferred domains are unavailable
-* **Transparent Pricing** - Clear pricing display with markup breakdown
-* **One-Click Selection** - Simple domain selection and checkout process
+#### Flexible Domain Pricing
+* **Three markup modes** — Percentage markup, fixed markup, or fixed price per TLD
+* **TLD-specific products** — Create separate domain products for different TLD groups (.com/.net, .io, country codes, etc.)
+* **Introductory pricing** — Offer a discounted first-year price to attract new registrations
+* **Real-time pricing** — Live wholesale pricing from providers with intelligent caching
+* **Coupon support** — Full compatibility with Multisite Ultimate discount codes
 
-#### **🔄 Intelligent Auto-Renewal System**
-* **Membership Integration** - Domains tied to customer membership status
-* **Automatic Scheduling** - Smart renewal scheduling based on expiry dates
-* **Payment Processing** - Automatic renewal payments through existing customer gateways
-* **Retry Logic** - Intelligent retry system for failed renewals
-* **Notification System** - Email alerts for renewals, failures, and expirations
+#### WHOIS Privacy Protection
+* **Per-product configuration** — Set WHOIS privacy to Disabled, Always Included, or Customer Choice
+* **Customer opt-in** — When set to Customer Choice, a checkout checkbox lets customers add privacy protection
+* **Configurable pricing** — Set a per-year price for the privacy add-on, or offer it free
+* **Registrar integration** — Automatically enables WhoisGuard (Namecheap) or WHOIS privacy (OpenSRS) at registration time
 
-#### **👨‍💼 Comprehensive Admin Tools**
-* **Domain Management Dashboard** - Monitor all customer domains from one interface
-* **Provider Configuration** - Easy setup and testing of domain providers
-* **Manual Operations** - Manual domain registration, renewal, and management
-* **Detailed Logging** - Complete audit trail of all domain operations
-* **Bulk Operations** - Process multiple domains simultaneously
+#### Unified Checkout Experience
+* **Three domain modes** — Customers choose between a subdomain (free), registering a new domain, or mapping an existing domain they already own
+* **Real-time domain search** — AJAX-powered availability checking with no page reloads
+* **Smart suggestions** — Alternative TLD suggestions when the preferred domain is taken
+* **Transparent pricing** — Clear display of registration price, renewal price, and optional WHOIS privacy fee
+* **Registrant contact fields** — Collects required registrant info (name, address, phone) inline during checkout
+* **Auto-generated site URL** — Site address is automatically derived from the chosen domain
 
-#### **👤 Enhanced Customer Experience**
-* **Customer Dashboard** - Self-service domain management interface
-* **Renewal Management** - Customers can view and manage auto-renewals
-* **Domain Status** - Real-time status updates and expiry information
-* **Transfer Tools** - Domain transfer and DNS management capabilities
+#### Auto-Renewal System
+* **Membership-tied renewals** — Domains renew automatically while the customer's membership is active
+* **Smart scheduling** — Renewal jobs are queued based on domain expiry dates
+* **Retry logic** — Intelligent retries for failed renewal attempts
+* **Email notifications** — Configurable alerts for upcoming renewals, successful renewals, failures, and expirations
+
+#### Customer DNS Management
+* **Self-service DNS** — Customers can add, edit, and delete DNS records (A, AAAA, CNAME, MX, TXT) from their dashboard
+* **Domain status** — Real-time registration status, expiry dates, and nameserver information
+* **Automatic domain mapping** — Registered or existing domains are automatically mapped to the customer's site
+
+#### Admin Tools
+* **Manual domain registration** — Register domains on behalf of customers from the admin panel
+* **Domain monitoring** — View all customer domains, statuses, and expiry dates from one page
+* **Provider-specific logging** — Separate log channels for each registrar (e.g., domain-seller-namecheap.log)
+* **Registration details** — View registrant info and registration data on the core domain edit page
 
 ### Supported Providers
 
-* **OpenSRS** - Full integration with registration, renewal, and management
-* **Extensible Architecture** - Easy to add additional providers
+* **OpenSRS** — Full integration with registration, renewal, DNS management, and WHOIS privacy
+* **Namecheap** — Full integration with registration, renewal, batch availability checking, and free WhoisGuard
+* **GoDaddy** — Registration and renewal
+* **ResellerClub** — Registration, renewal, and DNS management
+* **NameSilo** — Registration and renewal
+* **Enom** — Registration, renewal, and DNS management
 
-### Technical Specifications
+### Technical Details
 
-#### **🏗️ Modern Architecture**
-* **PHP 7.4+ Compatibility** - Modern codebase with strict typing and return types
-* **PSR-4 Autoloading** - Clean, organized class structure
-* **WordPress Standards** - Follows WordPress coding standards and security best practices
-* **Multisite Optimized** - Designed specifically for WordPress Multisite networks
-
-#### **🔧 Integration Points**
-* **Native Product Type** - Domains are first-class Multisite Ultimate products
-* **Checkout System** - Deep integration with v2 checkout and signup flows
-* **Payment Gateways** - Works with all Multisite Ultimate payment gateways
-* **Membership System** - Full integration with customer memberships and subscriptions
-* **Logging System** - Comprehensive logging using Multisite Ultimate's logging framework
-
-#### **⚡ Performance Features**
-* **Intelligent Caching** - Provider pricing and availability caching
-* **Async Processing** - Background processing for renewals and bulk operations
-* **Batch Operations** - Efficient processing of multiple domains
-* **Queue Management** - Retry queues for failed operations
-
-### Developer Features
-
-* Modern PHP 7.4+ codebase with strict typing
-* Extensible provider system
-* Action and filter hooks throughout
-* PSR-4 autoloading
-* Comprehensive logging and error handling
+* **Requires:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Architecture:** Integration Registry pattern with Domain_Selling_Capability interface
+* **Autoloading:** Jetpack autoloader with PSR-4 class mapping
+* **Standards:** WordPress coding standards, strict typing, prepared statements
 
 ## Installation
 
-1. Ensure **Multisite Ultimate v2.0.0+** is installed and active
-2. Upload the plugin files to `/wp-content/plugins/ultimate-multisite-domain-seller/`
-3. Activate the plugin through the 'Plugins' menu in WordPress Network Admin
-4. Navigate to **Ultimate Multisite > Settings > Domain Seller** to configure providers
-5. Create domain products in **Ultimate Multisite > Products**
+1. Ensure **Multisite Ultimate v2.4.12+** is installed and network-activated
+2. Upload the plugin to `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Network-activate the plugin from **Plugins** in the WordPress Network Admin
+4. The **Setup Wizard** launches automatically on first activation — follow the steps to:
+   * Connect your domain registrar (OpenSRS or Namecheap)
+   * Test the connection
+   * Import available TLDs and wholesale pricing
+   * Create your first domain product with pricing markup
+5. Add the **Domain Selection** field to your checkout form in **Ultimate Multisite > Checkout Forms**
 
 ## Frequently Asked Questions
 
-## What version of Multisite Ultimate is required?
+### What version of Multisite Ultimate is required?
 
-This addon requires Multisite Ultimate version 2.0.0 or higher. It is not compatible with Ultimate Multisite v1.x.
+Version 2.4.12 or higher. The addon is not compatible with WP Ultimo v1.x or Ultimate Multisite versions below 2.4.12.
 
-## Which domain providers are supported?
+### Which domain providers are supported?
 
-Currently OpenSRS is fully supported. The addon is architected to easily support additional providers - more will be added in future releases.
+Six registrars are fully supported: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo**, and **Enom**. The addon's Integration Registry architecture makes it straightforward to add custom providers — see the [developer guide](/developer/integration-guide/custom-registrar).
 
-## Can I set different pricing for different TLDs?
+### Can I offer WHOIS privacy protection?
 
-Yes! You can create separate domain products for different TLD groups, each with their own pricing markup and configuration.
+Yes. Each domain product has a WHOIS Privacy setting with three modes: Disabled, Always Included, or Customer Choice. When set to Customer Choice, customers see a checkbox during checkout with the price (or "Free" for Namecheap's WhoisGuard). The privacy flag is automatically passed to the registrar at registration time.
 
-## Does it support automatic renewals?
+### Can I set different pricing for different TLDs?
 
-Yes, domains can be set to auto-renew and integrate with customer memberships for seamless billing.
+Yes. Create separate domain products for different TLD groups. Each product can have its own markup type (percentage, fixed markup, or fixed price), supported TLDs, and introductory pricing.
 
-## Can customers manage their domains?
+### What checkout options do customers see?
 
-Yes, customers get a domain management interface in their panel to view registrations, renewal dates, and basic management functions.
+The Domain Selection field gives customers three tabs: **Subdomain** (use a free subdomain on your network), **Register New Domain** (search and register a new domain), and **Existing Domain** (map a domain they already own). Only the modes you enable will appear.
+
+### Does it support automatic renewals?
+
+Yes. Domains can be set to auto-renew and are tied to the customer's membership status. Renewal payments are processed through the customer's existing payment gateway.
+
+### Can customers manage their DNS records?
+
+Yes. Customers get a DNS management interface in their dashboard to add, edit, and delete A, AAAA, CNAME, MX, and TXT records. DNS management is available with OpenSRS, ResellerClub, and Enom.
+
+### Is there a setup wizard?
+
+Yes. The setup wizard runs automatically on first activation and walks you through connecting a registrar, importing TLDs, and creating your first domain product. You can also re-run the wizard from the addon settings.

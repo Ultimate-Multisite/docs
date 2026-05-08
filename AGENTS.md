@@ -29,9 +29,26 @@ Requires env vars: `OPENAI_API_KEY`, `OPENAI_API_BASE`, `OPENAI_MODEL`.
 
 ```bash
 bash scripts/generate-hooks.sh    # Requires PHP 8.3+ and plugin source checkouts
+python3 scripts/update-changelogs.py  # Sync changelog.md from each addon's readme.txt
 ```
 
 Generates hooks docs from PHP source into `docs/developer/hooks/` and `docs/addons/*/hooks/`.
+
+**Local development setup** — CI clones addon repos into `addons/<dir-name>/` (gitignored). To run scripts locally, create symlinks with the expected names:
+
+```bash
+mkdir -p addons
+# GitHub repo multisite-ultimate-domain-seller → local dir ultimate-multisite-domain-seller
+ln -s ~/Git/ultimate-multisite-addons/multisite-ultimate-domain-seller addons/ultimate-multisite-domain-seller
+```
+
+You can also point the scripts at any directory via env var:
+```bash
+ADDONS_DIR=/path/to/your/addons bash scripts/generate-hooks.sh
+ADDONS_DIR=/path/to/your/addons python3 scripts/update-changelogs.py
+```
+
+The mapping between GitHub repo names (`multisite-ultimate-*`) and local script names (`ultimate-multisite-*`) is defined in the CI workflow at `.github/workflows/deploy-docs.yml`.
 
 ## Project Structure
 

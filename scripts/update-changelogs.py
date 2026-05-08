@@ -10,7 +10,8 @@ import re
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 DOCS_DIR = os.path.join(REPO_ROOT, "docs", "addons")
-ADDONS_SRC = os.path.join(REPO_ROOT, "addons")
+# Allow override via env var for local development (CI clones into addons/ subdir)
+ADDONS_SRC = os.environ.get("ADDONS_DIR", os.path.join(REPO_ROOT, "addons"))
 
 ADDON_DIRS = {
     "woocommerce":              "ultimate-multisite-woocommerce",

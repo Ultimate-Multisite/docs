@@ -5,18 +5,101 @@ sidebar_position: 99
 
 # Domain Seller Changelog
 
-Version: 2.0.1 - Released on 2025-09-28
+Version 1.1.0 - Released on 2026-05-08
+- New: DNS record creation (add_dns_record) implemented for ResellerClub, Enom, and OpenSRS registrars
+- Fix: Default DNS Records parser now tolerates {DOMAIN} and {SITE_URL} tokens
+- Fix: Domain selection checkout field slugs namespaced to prevent collision with site_url
 
-* Rename prefix to ultimate-multisite; update text domain; version bump.
+Version 1.0.8 - Released on 2026-05-07
+- Fix: ResellerClub domain pricing now fetches live cost prices from the correct API endpoint
 
+Version 1.0.7 - Released on 2026-05-06
+* Fix: ResellerClub test_connection sends required tlds parameter (#224)
 
+Version 1.0.6 - Released on 2026-05-05
+* Fix: ResellerClub domain registration now works correctly with improved API response handling and registry-driven provider routing
+* Fix: Register Domain admin page UX improvements
+* Removed: CyberPanel registrar integration
 
-### Version 2.0.0 - 2024-XX-XX
+Version 1.0.5 - Released on 2026-04-02
+* New: GoDaddy registrar integration for domain registration and management
+* New: NameSilo registrar integration
+* New: ResellerClub registrar integration
+* New: Auto-verify SES sending domain on domain purchase and mapping
+* Fix: Guard plugin constants against redefinition in test environment
+* Fix: MySQL flags word-split correctly in install-wp-tests.sh
 
-**Major Rewrite for Multisite Ultimate v2**
+Version 1.0.4 - Released on 2026-03-14
+* **Fix:** Some missing css assets
+* **Fix:** Error related to unavailable tlds
+
+Version 1.0.3 - Released on 2026-03-09
+* **Fix:** Vue reactive property errors (domain_option, selected_domain, domain_provider) when using the legacy signup template with the checkout shortcode
+* **Fix:** Subdomain input field misalignment and oversized text in the domain selection checkout field
+* **Fix:** Hide the "Your URL will be" preview block when the domain selection field is present
+
+Version 1.0.2 - Released on 2026-03-01
+* **Improved:** Removed global markup settings from settings page — pricing is now exclusively per-product
+* **Improved:** Added "Manage Domain Products" link on settings page for quick navigation
+* **Improved:** Clearer field descriptions and tooltips for domain product settings (catch-all vs TLD-specific, markup types, introductory pricing)
+* **Improved:** Better descriptions throughout the settings page (search TLDs, renewals, DNS, notifications)
+
+Version 1.0.1 - Released on 2026-02-27
+
+* **New:** TLD import tool for bulk pricing management
+* **New:** Introductory pricing support for domain products
+* **New:** E2E test suite with Cypress
+* **New:** Email templates for domain lifecycle notifications
+* **New:** Registrant address fields on admin domain registration modal, pre-populated from settings
+* **New:** Customer DNS management interface with add, edit, and delete record support
+* **New:** "Bring your own domain" checkout option with automatic domain mapping
+* **New:** Auto-generate site URL from domain name during checkout
+* **New:** Default nameserver and DNS record configuration in settings
+* **New:** Domain registration details and DNS management on core domain edit page
+* **New:** Setup wizard auto-creates a default domain product with sensible defaults
+* **New:** Daily automatic TLD sync via cron across all configured providers
+* **New:** WHOIS privacy protection with per-product configuration (always on, customer choice, or disabled)
+* **New:** WHOIS privacy checkout checkbox with pricing display and dark mode support
+* **New:** Register Domain admin page for manual domain registration
+* **New:** Automatic plugin updates via Ultimate Multisite update server
+* **New:** Domain product type filter tab in product list table with purple badge styling
+* **New:** Registrant contact fields (name, address, city, state, postal code, country, phone) on domain checkout form
+* **New:** Registrant field validation before calling registrar API with clear error messages
+* **New:** Provider-specific log channels for domain registration events (e.g. domain-seller-namecheap.log)
+* **New:** Registrant contact fields on main registration/signup checkout form (shown when registering a domain)
+* **Improved:** Replaced Domain Search checkout field with unified Domain Selection field supporting subdomain, register, and existing domain tabs
+* **Improved:** Domain product settings render inline on product edit page via core widget system
+* **Improved:** Customer domain info hooks into core domain mapping widget instead of standalone metabox
+* **Improved:** TLD import wizard simplified to one-click sync from all providers
+* **Improved:** Namecheap domain availability uses batch API call for faster search
+* **Improved:** Namecheap pricing API uses correct parameters and response parsing
+* **Improved:** Centralized TLD storage in a single network option
+* **Improved:** Domain activity logging for DNS changes, transfers, and config application
+* **Improved:** Full TLD sync for OpenSRS using IANA master list with batch validation
+* **Improved:** Full TLD sync for Namecheap with paginated API requests
+* **Improved:** Replaced legacy provider classes with Integration Registry pattern
+* **Improved:** Settings panel with DNS and transfer configuration
+* **Improved:** Phone numbers automatically formatted to +CC.NNN registrar format
+* **Improved:** Phone field validation strips formatting characters before submission
+* **Improved:** Version requirement bumped to Ultimate Multisite 2.4.12 with clearer notice
+* **Improved:** CI workflow uses proper checkout for both addon and core plugin
+* **Improved:** prepare_registrant_info() reads from checkout-saved user meta with billing address fallback
+* **Fixed:** Domain search AJAX failing for non-logged-in users during checkout
+* **Fixed:** Domain pricing AJAX failing for non-logged-in users during checkout
+* **Fixed:** Spyc class redeclaration fatal error when running WP-CLI commands
+* **Fixed:** Namecheap sandbox API timeout too short
+* **Fixed:** Domain search Select button text not visible on green background
+* **Fixed:** Domain registration failing with "RegistrantFirstName is Missing" error due to missing contact info
+* **Fixed:** Domain record created with blog_id=0 when site didn't exist yet at checkout time
+* **Fixed:** Default TLDs setting returned as string instead of parsed array
+* **Removed:** Standalone Domain Management admin page — now handled through core domain pages
+
+Version 1.0.0 - Released on 2025-09-28
+
+**Major Rewrite for Ultimate Multisite v2**
 
 * **New:** Complete rewrite with modern PHP 7.4+ architecture
-* **New:** Seamless integration with Multisite Ultimate v2 checkout system
+* **New:** Seamless integration with Ultimate Multisite v2 checkout system
 * **New:** Domain product management with flexible pricing options
 * **New:** Multiple domain provider support architecture
 * **New:** Auto-renewal and subscription integration
@@ -26,7 +109,7 @@ Version: 2.0.1 - Released on 2025-09-28
 * **New:** Comprehensive settings management
 * **New:** Developer-friendly extensible codebase
 * **Improved:** Updated OpenSRS provider with full feature support
-* **Improved:** Modern UI consistent with Multisite Ultimate v2
+* **Improved:** Modern UI consistent with Ultimate Multisite v2
 * **Fixed:** All deprecated v1 code updated to v2 standards
 * **Removed:** Legacy v1 compatibility (breaking change)
 
@@ -45,6 +128,6 @@ Version: 2.0.1 - Released on 2025-09-28
 
 ### Version 0.0.1 - Initial Release
 
-* Basic OpenSRS integration for Ultimate Multisite v1
+* Basic OpenSRS integration for WP Ultimo v1
 * Simple domain search and registration
 * Plan-based domain permissions

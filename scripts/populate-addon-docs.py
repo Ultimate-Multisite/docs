@@ -11,8 +11,11 @@ import re
 import shutil
 import textwrap
 
-DOCS_DIR = "/home/dave/multisite/docs/docs"
-ADDONS_SRC = "/home/dave/multisite/addons"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+DOCS_DIR = os.path.join(REPO_ROOT, "docs")
+# Allow override via env var for local development (CI clones into addons/ subdir)
+ADDONS_SRC = os.environ.get("ADDONS_DIR", os.path.join(REPO_ROOT, "addons"))
 USER_GUIDE = os.path.join(DOCS_DIR, "user-guide")
 ADDONS_DOCS = os.path.join(DOCS_DIR, "addons")
 
