@@ -19,5 +19,5 @@ Allow plugin developers to add scripts to the bottom of the page
 - 1.8.2
 ### Source
 
-- Defined in [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) at line 137
 - Defined in [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L163) at line 163
+- Defined in [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) at line 137

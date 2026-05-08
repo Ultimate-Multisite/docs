@@ -19,5 +19,5 @@ Allow plugin developers to add aditional buttons to list pages
 - 1.8.2
 ### Source
 
-- Defined in [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L22) at line 22
 - Defined in [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L22) at line 22
+- Defined in [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L22) at line 22

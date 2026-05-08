@@ -19,5 +19,5 @@ Adding a custom action here so we have a place to enqueue the scripts and styles
 - 1.3.0
 ### Source
 
-Defined in [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1153) at line 1153
+Defined in [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1123) at line 1123
 
