@@ -58,6 +58,15 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Domain Seller',
+      items: [
+        'user-guide/domain-seller/setup',
+        'user-guide/domain-seller/domain-products',
+        'user-guide/domain-seller/checkout-and-dns',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Host Integrations',
       items: [
         'user-guide/host-integrations/closte',

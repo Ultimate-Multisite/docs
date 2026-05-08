@@ -8,7 +8,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DOCS_DIR="$(dirname "$SCRIPT_DIR")"
 MAIN_PLUGIN_DIR="$DOCS_DIR/ultimate-multisite"
-ADDONS_DIR="$DOCS_DIR/addons"
+# Allow override via env var for local development (CI clones into addons/ subdir)
+ADDONS_DIR="${ADDONS_DIR:-$DOCS_DIR/addons}"
 TMP_OUTPUT="$DOCS_DIR/.hooks-tmp"
 
 echo "=== Generating hooks documentation ==="

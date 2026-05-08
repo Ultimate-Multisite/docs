@@ -19,5 +19,5 @@ Allows other plugins to register additional domain selling capabilities.
 - 2.1.0
 ### Source
 
-Defined in [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L298) at line 298
+Defined in [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L320) at line 320
 
