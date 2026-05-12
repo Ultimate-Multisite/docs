@@ -62,7 +62,10 @@ You will be able to see all the available site templates on your website. Choose
 Now your customers can click on **Change Site Template** inside their account page.
 
 ![Change Site Template button on account page](/img/admin/dashboard.png)  
-A list of all available Site Templates for this plan will appear to your customer.
+
+Ultimate Multisite 2.10.0 shows a redesigned template switch panel. The panel starts with a **current-template card** so customers can see which template is active before they choose a replacement.
+
+A persistent grid of available site templates remains visible while customers review their options. This helps them compare the templates allowed for their plan without losing sight of the current selection.
 
 ![Available site templates list for the plan](/img/config/site-templates-list.png)
 
@@ -71,6 +74,8 @@ After selecting the one they want to change to, they will be asked to confirm th
 ![Site template switch confirmation dialog](/img/admin/dashboard.png)
 
 After toggling on the confirmation and clicking to **Process Switch** , the new site template will be used on your customer's website.
+
+Customers can also use **Reset current template** from this panel when they need to reset the site back to the currently assigned template. Like switching to another template, resetting a template can overwrite site content, so customers should only confirm it when they understand the reset action.
 
 ### Adding Custom Domains:
 
