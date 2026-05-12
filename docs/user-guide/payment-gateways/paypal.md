@@ -19,6 +19,17 @@ To enable PayPal as an available payment method on your network, go to **Ultimat
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
+## Using the guided setup wizard
+
+Ultimate Multisite 2.10.0 adds a guided PayPal setup wizard to the payment gateway settings. After you enable PayPal, use the wizard on **Ultimate Multisite > Settings > Payments** to choose how you want to connect the gateway and confirm which credentials are still needed before saving.
+
+The wizard supports two setup paths:
+
+* **Manual credential entry**: Use this path when you already have PayPal API credentials, when OAuth setup is not available for your account, or when you prefer to copy credentials from PayPal yourself. Enter the API Username, API Password, and API Signature in the PayPal fields, then save the payment settings.
+* **OAuth connection gate**: Use this path only when the OAuth option is available and enabled for your install. The wizard shows the OAuth flow behind a feature flag, so networks without the flag continue to use the manual credential entry fields.
+
+If you do not see the OAuth option in the wizard, complete the manual credential entry flow below. The gateway works with the same PayPal Business API credentials as previous Ultimate Multisite 2.x releases.
+
 ## Getting the PayPal API credentials
 
 Once PayPal is enabled as a payment gateway, you will need to populate the fields for PayPal API **Username** , PayPal API **Password** and PayPal API **Signature**.
