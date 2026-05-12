@@ -13,6 +13,7 @@ const sidebars = {
         'user-guide/getting-started/installing-ultimate-multisite',
         'user-guide/getting-started/multisite-setup-wizard',
         'user-guide/getting-started/how-to-install-wordpress-multisite',
+        'user-guide/getting-started/release-notes',
       ],
     },
     {
@@ -29,6 +30,7 @@ const sidebars = {
         'user-guide/administration/managing-system-emails',
         'user-guide/administration/plugin-builder-and-sandbox',
         'user-guide/administration/gratis-ai-agent-settings',
+        'user-guide/administration/settings-reference',
       ],
     },
     {
@@ -206,6 +208,7 @@ const sidebars = {
         'developer/integration-guide/custom-gateway',
         'developer/integration-guide/webhooks',
         'developer/integration-guide/plugin-management-abilities',
+        'developer/integration-guide/addon-sunrise-loader',
       ],
     },
     {

@@ -15,6 +15,15 @@ To access this feature, go to the Checkout Forms menu, on the left side-bar.
 
 On this page, you can see all the checkout forms you have.
 
+The list table includes a **Status** column so you can confirm whether each form is currently available to customers:
+
+| Status | Meaning |
+|---|---|
+| **Active** | The form can be used anywhere its shortcode or registration page is published. |
+| **Inactive** | The form is saved but disabled. Customers cannot complete checkout with it until you enable it again. |
+
+Use the status column before editing a public registration flow, especially when you keep draft or seasonal checkout forms alongside your live forms.
+
 If you want to create a new one, just click Add Checkout Form on the top of the page.
 
 You can select one of these three options as your starting point: single step, multi-step or blank. Then, click to Go to the Editor.
