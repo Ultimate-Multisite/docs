@@ -11,6 +11,10 @@ This guide explains how Ultimate Multisite handles membership expiration, trial 
 
 Every membership in Ultimate Multisite has one of the following statuses:
 
+:::note Free memberships are lifetime
+Free memberships do not expire automatically. Ultimate Multisite treats them as lifetime access, so they are not included in expiration checks unless an administrator changes their status or moves the customer to another product.
+:::
+
 | Status | Meaning |
 |---|---|
 | **Pending** | Awaiting first payment or email verification |

@@ -13,6 +13,8 @@ To access this page, go to the **Memberships** tab in the Ultimate Multisite men
 
 On the Memberships page you can see a list of your customers and the products associated with their accounts. You can filter memberships by status: active, pending, on hold, expired, or cancelled.
 
+Free memberships are treated as **lifetime** memberships. They do not receive an expiration date and will not expire automatically. If a free plan should end after a trial or fixed period, use a paid product with a trial, manually cancel the membership, or move the customer to another plan when their access should change.
+
 Click on a membership to access the page where you can edit the membership details — billing info, site or visit limits, and more.
 
 You can also add new memberships associated with users previously registered on your network. Click **Add Membership** and configure the details.

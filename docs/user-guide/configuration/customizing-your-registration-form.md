@@ -33,6 +33,8 @@ Now, lets see other options that are still relevant to the login and registratio
 
   * **Default role:** This is the role that your customers will have on their website after the signup process.
 
+  * **Enable Jumper:** Enables the Jumper shortcut in the admin area. Jumper lets administrators quickly jump to Ultimate Multisite screens, network objects, and other supported destinations without browsing through every menu. Turn it off if you prefer to hide that quick navigation tool from the admin interface.
+
   * **Add users to the main site as well:** Enabling this option will also add the user to the main site of your network after the signup process. If you enable this option, an option to set the **default role** of these users on your website will also appear right below.
 
   * **Enable multiple accounts:** Allow users to have accounts in different sites of your network with the same email address. If this option is off, your customers will not be able to create an account on other websites running on your network with the same email address.
