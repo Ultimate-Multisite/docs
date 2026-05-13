@@ -107,6 +107,19 @@ When `WU_CYBERPANEL_AUTO_SSL` is `true`:
 
 If **Auto-create www subdomain** is enabled in your Domain Mapping settings, the integration also creates a virtual host alias for `www.<domain>` and, when auto-SSL is on, issues a certificate covering both the apex and www variants.
 
+### Email Forwarders
+
+When the [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) addon is active, CyberPanel can also provide customer email forwarders. Forwarders route messages from a domain address to another inbox without creating a full mailbox, which is useful for aliases such as `info@customer-domain.test` or `support@customer-domain.test`.
+
+Before enabling forwarders for customers:
+
+1. Confirm the CyberPanel constants above are configured and the connection test passes.
+2. Enable the CyberPanel email provider in the Emails addon settings.
+3. Confirm the customer domain already exists in CyberPanel before creating the forwarder.
+4. Create a test forwarder and send a message through it before offering the feature on production plans.
+
+If forwarder creation fails, check the Ultimate Multisite activity logs first, then confirm in CyberPanel that the source domain exists and that the API user has email-management permissions.
+
 ## Configuration Reference
 
 | Constant | Required | Default | Description |
