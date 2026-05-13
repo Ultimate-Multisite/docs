@@ -23,4 +23,4 @@ If you maintain internal runbooks or screenshots for the settings page, remove r
 
 ## Import/Export settings
 
-The **Import/Export** settings tab describes which settings it controls and links directly to **Ultimate Multisite > Site Export** for site and network archives. Use the settings tab for import/export configuration, and use the Site Export tool when you need to generate a single-site export or a full Network Export archive.
+The **Import/Export** settings tab describes which settings it controls and links directly to **Ultimate Multisite > Site Export** for site and network archives. Use the settings tab for import/export configuration, use **Tools > Export & Import** for the single-site export/import workflow, and use the Site Export tool when you need a full Network Export archive.

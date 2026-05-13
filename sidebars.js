@@ -29,6 +29,7 @@ const sidebars = {
         'user-guide/administration/managing-payments-and-invoices',
         'user-guide/administration/managing-system-emails',
         'user-guide/administration/site-export',
+        'user-guide/administration/export-import',
         'user-guide/administration/plugin-builder-and-sandbox',
         'user-guide/administration/gratis-ai-agent-settings',
         'user-guide/administration/settings-reference',

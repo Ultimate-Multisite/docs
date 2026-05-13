@@ -29,3 +29,5 @@ To restore a self-booting ZIP on a fresh host:
 4. Review the bundled `readme.txt` for export-specific notes before removing temporary files.
 
 For addon-specific installation and import details, see the [Site Exporter addon documentation](/addons/site-exporter).
+
+For the single-site tool added in Ultimate Multisite 2.9.0, see [Export & Import](/user-guide/administration/export-import).
