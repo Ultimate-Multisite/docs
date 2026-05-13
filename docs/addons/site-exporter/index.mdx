@@ -52,7 +52,13 @@ To export a site from your network, go to **Export & Import** on the Ultimate Mu
 
 Search for the site you want to export and select the items you want to include in the exported file. You can include themes, plugins, and uploads. If your site is too big, you can choose to run the export process in the background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
 
-Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file. Export ZIPs include a self-booting `index.php` and `readme.txt`, so they can be installed on a fresh host without first installing a separate importer plugin.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+To export all subsites together, go to **Export & Import** on the Ultimate Multisite menu and use the **Network Export** option on the export screen. The generated archive contains all subsites in a single ZIP for host migrations, staging rebuilds, or network-level backups.
+
+Network exports can be large. Run them when traffic is low and confirm the server has enough storage for the archive and any included uploads, plugins, and themes.
 
 ## How to import a site
 
