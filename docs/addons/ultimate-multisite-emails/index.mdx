@@ -1,0 +1,114 @@
+---
+title: "Emails"
+sidebar_position: 1
+---
+
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+The Ultimate Multisite: Emails addon lets network owners provision and manage customer email accounts alongside sites and memberships. Version 1.1.0 adds customer-facing email account management, webmail single sign-on, CyberPanel forwarder support, and checkout-time provisioning improvements.
+
+## Key Features
+
+* **Customer email account widget**: Customers can create and manage email accounts from their account page without opening a support ticket.
+* **Webmail SSO and magic links**: Customers can open webmail directly from the account page with one-click authentication when the provider supports it.
+* **Password changes**: Customers and administrators can update mailbox passwords from the email management widget.
+* **Checkout provisioning**: Customer email account creation can run during checkout so the mailbox is ready after the purchase flow completes.
+* **CyberPanel forwarders**: CyberPanel-backed networks can create and manage email forwarders as part of the email service flow.
+* **Provider-aware settings**: The settings page filters providers to active, configured integrations so administrators only see usable options.
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 or higher
+* WordPress Multisite installation
+* At least one configured email provider integration
+* Provider API credentials with permission to create mailboxes, change passwords, and issue webmail access links where supported
+
+## Installation
+
+1. Upload the plugin files to `/wp-content/plugins/ultimate-multisite-emails`.
+2. Network activate the addon from **Plugins** in the WordPress network admin.
+3. Go to **Ultimate Multisite** > **Settings** and open the addon email settings.
+4. Enable the email provider integrations you want customers to use.
+5. Save settings, then test account creation with a non-production customer or staging site.
+
+## Customer Account Email Management
+
+Version 1.1.0 adds an email management widget to the customer account page. Use it when customers should self-service mailbox creation and maintenance for their own sites.
+
+From the account page, customers can:
+
+1. View email accounts connected to their current membership or site.
+2. Create a new mailbox when their plan allows additional accounts.
+3. Change an existing mailbox password.
+4. Open supported webmail providers through SSO or a magic-link login.
+
+The widget uses the Ultimate Multisite account-page currents system, so actions are scoped to the account context the customer is viewing. This prevents customers from managing email accounts that belong to another membership or site.
+
+## Webmail SSO and Magic-Link Login
+
+Webmail SSO gives customers a direct **Open webmail** action from the account page. When supported by the active provider, the addon requests a short-lived access URL and redirects the customer into webmail without asking them to copy mailbox credentials.
+
+Provider behaviour can vary:
+
+* Providers with native SSO APIs can create a direct authenticated webmail session.
+* Providers with magic-link support can generate a time-limited login link.
+* Providers without SSO or magic-link support should still show the mailbox details and password-management actions, but no one-click webmail button.
+
+Enable webmail access only for providers where you have configured the required API credentials. If the action is missing for a provider, first confirm that the provider is active, configured, and supports webmail login links.
+
+## Checkout Provisioning
+
+The addon can create customer email accounts as part of checkout. This is useful when the plan includes a mailbox by default or when the checkout form collects email-account details.
+
+Recommended rollout:
+
+1. Configure the provider and plan limits before enabling checkout provisioning.
+2. Test a purchase with a staging product and confirm the mailbox is created after checkout.
+3. Review the customer account page to confirm the new mailbox appears in the email widget.
+4. Confirm password-change and webmail actions before enabling the flow for production products.
+
+If provisioning fails, the customer account and membership can still exist while the mailbox requires administrator follow-up. Check the Ultimate Multisite activity logs and the provider logs before retrying.
+
+## CyberPanel Email Forwarders
+
+For CyberPanel-backed networks, version 1.1.0 adds email forwarder support. Use forwarders when customers need addresses such as `info@customer-domain.test` to redirect mail to another inbox without creating a full mailbox.
+
+Before offering forwarders, confirm that the CyberPanel integration is configured and reachable. See the [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide for the required host, username, password, and package constants.
+
+## Changelog
+
+### Version 1.1.0 - Released on 2026-05-05
+
+* New: Webmail SSO and magic-link login — customers can access webmail directly from their account with one-click authentication.
+* New: Change password functionality added to the email account management widget.
+* New: CyberPanel email forwarder support.
+* New: Email management widget on the customer account page for self-service account creation and management.
+* New: Customer email account creation integrated into the checkout flow for automatic provisioning.
+* Fix: Account page widget hook updated to use the correct UMS registration pattern.
+* Fix: Create Account form replaced with vanilla JS and correct full HTML document output.
+* Fix: Email management widget now uses the UMS currents system for admin account pages.
+* Fix: Admin email account creation form includes password field and uses Email_Account_Manager.
+* Fix: Per-request log spam removed from Email_Account_Manager initialization.
+* Improved: Settings page now filters to show only active and configured email providers.
+
+## Frequently Asked Questions
+
+## Can customers create their own email accounts?
+
+Yes. When the customer account widget is enabled and the plan allows email accounts, customers can create and manage their own mailboxes from the account page.
+
+## Does every provider support webmail SSO?
+
+No. SSO and magic-link support depends on the active email provider. Providers without an access-link API can still support mailbox creation and password changes.
+
+## Can administrators create email accounts for customers?
+
+Yes. Administrators can create email accounts from the admin interface, including setting the initial password when creating the account.
+
+## Are forwarders the same as mailboxes?
+
+No. A mailbox stores mail and has login credentials. A forwarder redirects mail to another address and does not provide a separate inbox.
