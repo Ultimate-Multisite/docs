@@ -26,6 +26,20 @@ sidebar_position: 9
 - Fix: Filtered SSO path respected across all login flows.
 - Fix: Blank site identity options preserved on save.
 
+## Version 2.9.0 — Released on 2026-04-30
+
+- New: Single-site export and import added under **Tools > Export & Import**.
+- Fix: Export ZIP files now served through an authenticated download endpoint.
+- Fix: SQL injection risk and query issues in pending export/import queries corrected.
+- Fix: Pending site not published when admin manually verifies customer email.
+- Fix: Orphaned pending_site records cleaned up when membership is missing.
+- Fix: Settings nav padding and search anchor navigation corrected.
+- Fix: Pending sites now shown first in the All Sites view.
+- Fix: Screenshot provider (mShots) User-Agent header added to prevent 403 errors.
+- Fix: Import cron schedule circular dependency resolved.
+- Fix: Tour IDs normalised to underscores in user settings keys.
+- Improved: ZipArchive now used instead of Alchemy/Zippy for better compatibility.
+
 ## Version 2.8.0 — Released on 2026-04-29
 
 - New: Enable Jumper toggle added to Other Options settings UI.
