@@ -17,6 +17,7 @@ The Ultimate Multisite: Metered Plans addon transforms how you bill your custome
 * **Overage Management**: Automatically bill for usage exceeding plan limits
 * **Usage Tracking**: Monitor customer resource consumption in real-time
 * **Flexible Pricing**: Set custom rates for different resources (storage, bandwidth, sites, etc.)
+* **AI Token Billing**: Track and bill input and output tokens for AI usage across customer subsites
 * **Automatic Invoicing**: Generate invoices automatically when usage thresholds are exceeded
 * **Usage Reports**: Detailed usage analytics and reporting for customers and administrators
 
@@ -36,12 +37,47 @@ The Ultimate Multisite: Metered Plans addon transforms how you bill your custome
 5. Invoices are generated automatically based on billing cycle
 6. Customers can view their usage and upcoming charges in real-time
 
+## AI Token Billing
+
+Version 1.1.0 adds AI token billing for networks that offer AI features through the WordPress AI Client SDK. Metered Plans listens for completed AI generation requests, records input and output token counts for the current subsite, and converts those tokens into billable AI spend for the customer's current billing period.
+
+Use AI token billing when you want to offer AI tools on customer sites without absorbing unpredictable model costs. Each request is attributed to the subsite, customer, membership, provider, and model so administrators can audit usage while customers can see how their AI consumption affects their account.
+
+### Configure Per-Token Rates
+
+AI rates are configured per model as separate input and output rates. Rates are calculated per 1 million tokens, which matches common AI provider pricing pages.
+
+1. In the network admin, open **Multisite Ultimate → Settings → Metered Plans**.
+2. Enable AI spend metering for the product or membership that should bill AI usage.
+3. Add model rate entries using the model IDs returned by your connector, such as `gpt-4o`, `gpt-4o-mini`, or another OpenAI-compatible model identifier.
+4. Enter separate **Input Rate** and **Output Rate** values in your site currency per 1 million tokens.
+5. Set the customer's included AI spend allowance and overage behaviour for the plan.
+
+When an exact model ID is not configured, Metered Plans can match by model prefix. For example, a rate configured for `claude-sonnet-4` can apply to timestamped model IDs that start with that prefix. Developers can also adjust the final rate table with the [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filter.
+
+### Supported AI Connectors
+
+AI token billing works with connectors that emit WordPress AI Client SDK generation events and include token usage in the response metadata. This includes the Ultimate Multisite AI connector family documented here:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) for OpenAI-compatible APIs, including OpenAI, Mistral, Ollama-compatible gateways, and other providers that expose compatible token usage metadata
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) for browser-native WebLLM usage when requests are routed through the AI Client SDK event flow
+* AI provider connectors used by [Gratis AI Agent](../gratis-ai-agent/) when the selected provider reports prompt and completion token counts through the SDK
+
+Custom connectors can participate by firing the standard `wp_ai_client_before_generate_result` and `wp_ai_client_after_generate_result` events with model, provider, and token usage metadata. Connector settings are enforced from the main site to subsites so customer sites use the network-approved providers and limits.
+
+### Customer Account Usage
+
+Customers see AI usage alongside their other metered resources in their account area. The AI spend row shows the current billing-period total derived from recorded prompt and completion tokens, the configured model rates, and any included allowance on the plan.
+
+If a customer has a payment method on file, usage above the included allowance is treated as billable overage. If the plan is configured for a hard cutoff and the customer has no payment method available, AI requests can be blocked once the allowance is reached and the customer is prompted to add payment details before continuing.
+
 ## Supported Resources
 
 * Disk storage
 * Bandwidth/Data transfer
 * Number of sites
 * Number of users
+* AI token usage and AI spend
 * Custom resource types
 
 ## Requirements
@@ -71,6 +107,10 @@ Yes, each product can have unique metered resources and overage pricing.
 ## How are customers notified about usage?
 
 Customers can view their current usage in their dashboard and receive optional notifications when approaching or exceeding limits.
+
+## How is AI token usage priced?
+
+AI token usage is priced from the model's configured input and output rates per 1 million tokens. Metered Plans multiplies each request's prompt and completion token counts by those rates, adds the result to the customer's current billing-period AI spend, and applies the plan's allowance or overage rules.
 
 ## Can I still use hard limits?
 
