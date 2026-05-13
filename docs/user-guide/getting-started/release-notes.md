@@ -5,6 +5,14 @@ sidebar_position: 9
 
 # Release Notes
 
+## Version 2.11.0 — Released on 2026-05-11
+
+- New: Site exports now bundle a self-booting `index.php` so the ZIP can be installed on a fresh host without a separate plugin install.
+- New: Network export lets administrators export all subsites in a single archive from the Site Export admin page.
+- New: Allow Site Templates plan toggle is now enforced via a fallback chain, correctly restricting template availability for plan limits.
+- New: Checkout form editor warns when a product is added without a required field configured.
+- New: Import/Export settings tab now clearly describes its scope and links directly to the Site Export tool.
+
 ## Version 2.10.0 — Released on 2026-05-05
 
 - New: PayPal guided setup wizard for manual credential entry with OAuth flag gate for seamless gateway configuration.

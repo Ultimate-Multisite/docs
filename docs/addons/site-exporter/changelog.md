@@ -5,6 +5,10 @@ sidebar_position: 99
 
 # Site Exporter Changelog
 
+Version: 1.0.6 - Released on 2026-05-11
+* New: Site exports now bundle a self-booting index.php so the ZIP can be installed on a fresh host without a separate plugin install
+* New: Network export lets administrators export all subsites in a single archive from the Site Export admin page
+
 Version: 1.0.5 - Released on 2026-05-05
 * Fix: Added __callStatic to WP_CLI polyfill stub to handle unmocked methods like get_config, preventing test bootstrap failures
 

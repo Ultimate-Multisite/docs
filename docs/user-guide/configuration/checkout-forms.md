@@ -111,6 +111,8 @@ The **Pricing Table** field displays your products on the checkout form so custo
   * **Hide when Pre-Selected**: Hides the pricing table when a plan has already been selected via the URL (e.g. `/register/premium`).
   * **Pricing Table Template**: Choose the visual template for the pricing table (Simple List, Legacy, etc.).
 
+If you add a product to the Pricing Table before the form includes the fields required to complete that product's checkout flow, the editor now shows a warning. Use the warning to add the missing required field before publishing or saving changes for a live registration form.
+
 ### Adding a Period Selection Toggle
 
 If you have configured [Price Variations](creating-your-first-subscription-product#price-variations) on your products (e.g. monthly and annual pricing), you can add a **Period Selection** field to your checkout form. This field displays a toggle that allows customers to switch between billing periods, and the pricing table updates dynamically in real time.

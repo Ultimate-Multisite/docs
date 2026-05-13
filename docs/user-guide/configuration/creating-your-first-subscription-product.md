@@ -185,7 +185,9 @@ In essence, site templates are complete WordPress websites that are cloned to a 
 
 The network administrator creates and configures the template site as a regular WordPress site with activated and configured themes, plugins, and content. The template site is cloned verbatim to the customer.
 
-This tab allows the network administrator to specify the behavior of site templates upon a new subscription. To make use of site templates, set the **allow site templates** toggle to its active state.
+This tab allows the network administrator to specify the behavior of site templates upon a new subscription. To make use of site templates for this plan, set the **Allow Site Templates** toggle to its active state.
+
+When **Allow Site Templates** is disabled, customers on the plan cannot choose templates even if a checkout form, shareable link, or URL parameter would otherwise make templates available. Ultimate Multisite now enforces this limit through a fallback chain across the available entry points: plan settings are checked first, then checkout-form template settings, then pre-selected or URL-provided templates. This keeps plan limits consistent and prevents templates from appearing for products that should not offer them.
 
 The **site template selection mode** defines the behavior of site templates during the subscription process.
 
