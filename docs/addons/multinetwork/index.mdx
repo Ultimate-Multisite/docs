@@ -9,15 +9,17 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Network
 
-The Ultimate Multisite: Multinetwork addon extends your Multisite Ultimate platform with powerful multinetwork functionality. This addon enables your customers to purchase and manage entire WordPress multisite networks, not just individual sites.
+The Ultimate Multisite: Multinetwork addon extends your Ultimate Multisite platform with powerful multinetwork functionality. This addon enables your customers to purchase and manage entire WordPress multisite networks, not just individual sites.
 
 ## Key Features
 
 * **Network Provisioning**: Automatically create and configure complete WordPress multisite networks for your customers
+* **Network Templates**: Let customers browse, preview, and choose a prebuilt network template before signup
 * **Network Management**: Full management capabilities for multinetwork environments
 * **Isolated Networks**: Each customer network operates independently with its own database tables and configuration
+* **Cross-Network SSO**: Give customers seamless access to their sub-networks with magic-link authentication
 * **Scalable Architecture**: Handle multiple networks efficiently with optimized resource allocation
-* **Integration**: Seamlessly integrates with Multisite Ultimate's subscription and billing systems
+* **Integration**: Seamlessly integrates with Ultimate Multisite's subscription and billing systems
 
 ## Use Cases
 
@@ -28,7 +30,7 @@ The Ultimate Multisite: Multinetwork addon extends your Multisite Ultimate platf
 
 ## Requirements
 
-* Multisite Ultimate 2.0.0 or higher
+* Ultimate Multisite 2.0.0 or higher
 * WordPress Multisite installation
 * PHP 7.4 or higher
 * MySQL 5.6 or higher
@@ -37,18 +39,62 @@ The Ultimate Multisite: Multinetwork addon extends your Multisite Ultimate platf
 
 1. Upload the plugin files to the `/wp-content/plugins/ultimate-multisite-multinetwork` directory
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Configure multinetwork settings through Multisite Ultimate → Settings
+3. Configure multinetwork settings through Ultimate Multisite → Settings
+
+## Network Templates
+
+Version 1.3.0 adds a template discovery and selection flow for customers purchasing new networks. Use network templates when you want each new customer network to start from a prepared structure, design, content library, or vertical-specific setup.
+
+### Template previewer
+
+The network template previewer lets customers browse available templates before checkout. Each template can be opened in a live preview panel, so customers can compare layouts and content before they purchase a network.
+
+Use the previewer to help customers:
+
+* Review the look and structure of each available network template
+* Compare multiple templates without leaving the purchase flow
+* Choose the template that best matches their use case before signup
+
+Keep template names and descriptions customer-friendly. The previewer is most useful when customers can understand the intended use case, such as agency networks, school networks, franchise networks, or white-label hosting bundles.
+
+### Template picker at checkout
+
+The template picker can be added to the signup checkout flow as a field. When configured, customers select the network template they want during checkout, and the selected template is used when their new network is provisioned.
+
+To use the picker in a checkout flow:
+
+1. Prepare the networks you want to offer as templates.
+2. Enable the Multinetwork template selection field in the relevant signup or checkout form.
+3. Choose which templates should be available for that checkout flow.
+4. Publish the checkout flow and test a signup to confirm the selected template is applied to the new network.
+
+If a checkout flow only offers one network product, the picker can still be useful as a guided onboarding step. For multi-plan funnels, expose only the templates that are compatible with the selected product or plan.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO lets customers move between their primary account area and sub-networks without manually signing in again. When a customer follows a cross-network access link, Ultimate Multisite generates a time-limited magic link and authenticates the customer into the destination network.
+
+This improves the experience for customers who manage more than one network or who need to access newly cloned template networks immediately after purchase.
+
+Admin checklist:
+
+* Confirm the Multinetwork addon is active across the WordPress multisite installation.
+* Make sure customers have the correct network access before they are offered cross-network links.
+* Keep network domains and mapped domains correctly configured so magic links resolve to the intended destination network.
+* Test the customer dashboard and any post-checkout access buttons after changing network, domain, or checkout settings.
+
+Magic links should be treated as login links. They are designed for seamless customer access and should not be forwarded or reused outside the intended session.
 
 ## Frequently Asked Questions
 
-## What is multinetwork?
+### What is multinetwork?
 
 Multinetwork is a WordPress feature that allows you to run multiple independent multisite networks on a single WordPress installation.
 
-## How is this different from regular multisite?
+### How is this different from regular multisite?
 
 Regular multisite allows multiple sites within one network. Multinetwork allows multiple networks, each with their own sites, all within one WordPress installation.
 
-## Does this require special server configuration?
+### Does this require special server configuration?
 
 Yes, multinetwork requires specific server setup and configuration. Please consult the documentation for detailed setup instructions.
