@@ -25,6 +25,7 @@ Addons can be installed in two ways:
 | [AI Connector for Compatible Endpoints](/addons/ultimate-ai-connector-compatible-endpoints) | Connect multiple OpenAI-compatible AI providers with automatic fallback routing |
 | [AI Site Builder](/addons/ai-site-builder) | AI-powered site creation |
 | [Gratis AI Agent](/addons/gratis-ai-agent) | Autonomous AI agent for building and managing WordPress sites |
+| [Superdav AI Agent](/addons/superdav-ai-agent) | Advanced AI agent with theme-aware skills and enhanced internet search |
 | [Multi-Currency](/addons/multi-currency) | Accept payments in multiple currencies with automatic exchange rates |
 | [Analytics](/addons/analytics) | Site analytics and reporting |
 | [Captcha](/addons/captcha) | CAPTCHA protection for forms |

@@ -49,18 +49,20 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 
 **Focus:** End-to-end website creation from a single prompt.
 
-**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`
+**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
 
 **What it does well:**
 - Generating a multi-phase site build plan for a described business type
 - Executing each phase autonomously — structure, content, navigation, design
 - Recovering from errors mid-plan without requiring manual intervention
 - Installing recommended plugins as part of the build
+- Creating contact forms directly from the chat interface (Superdav AI Agent v1.10.0+)
 
 **Starter suggestions:**
 - *Build a photography portfolio site with a gallery post type, a booking page, and a contact form.*
 - *Create a restaurant website with an online menu, opening hours, and a table-booking enquiry form.*
 - *Set up a freelance consulting site with service pages, a portfolio section, and a blog.*
+- *Add a contact form to the Contact page using the site builder.*
 
 ---
 

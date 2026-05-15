@@ -1,0 +1,119 @@
+---
+title: "Superdav AI Agent"
+sidebar_position: 1
+---
+
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, and improved site builder features. Version 1.10.0 adds Tavily as an alternative internet search provider, four new theme-aware built-in skills (Block Themes, Classic Themes, Kadence Blocks, and Kadence Theme), and the ability to create contact forms directly from the chat interface.
+
+## Key Features
+
+- **Theme-aware skills** — automatically adapts guidance and capabilities based on your active WordPress theme and installed plugins
+- **Multiple internet search providers** — choose between Brave Search and Tavily for richer search results and advanced research capabilities
+- **Site builder contact forms** — create fully functional contact forms directly from the chat interface using your installed form plugin
+- **Enhanced site builder** — improved multi-phase site build plans with better plugin discovery and error recovery
+- **Built-in theme skills** — specialized guidance for Block Themes, Classic Themes, Kadence Blocks, and Kadence Theme
+- **Improved WooCommerce integration** — refactored to use native WooCommerce APIs for better reliability and compatibility
+- **Automatic provider detection** — automatically detects and refreshes available plugins and themes when they are activated or deactivated
+
+## Requirements
+
+- WordPress 6.0 or higher
+- PHP 8.1 or higher
+- WordPress Multisite (network-activated) or single-site installation
+- An active AI provider connector plugin (Anthropic, OpenAI, or compatible)
+- Gratis AI Agent v1.9.0 or higher (Superdav AI Agent extends Gratis AI Agent)
+
+## Installation
+
+1. Upload the plugin files to `/wp-content/plugins/superdav-ai-agent`
+2. Activate the plugin through the **Plugins** screen in WordPress
+3. Ensure Gratis AI Agent is also activated
+4. Navigate to **Gratis AI Agent → Settings** and configure your internet search provider (optional)
+
+## Quick Start
+
+Once activated, Superdav AI Agent automatically enhances your Gratis AI Agent installation with theme-aware skills and additional capabilities. Open the **Gratis AI Agent** panel in the WordPress admin sidebar and start using the new features.
+
+**Example instructions:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## Theme-Aware Skills
+
+Superdav AI Agent automatically detects your active theme and installed plugins, loading the appropriate theme-aware skill into the assistant's context. Available skills include:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | Themes using the WordPress block-based (Full Site Editing) architecture |
+| **Classic Themes** | Traditional WordPress themes using PHP templates and the classic editor |
+| **Kadence Blocks** | Sites with the Kadence Blocks plugin active |
+| **Kadence Theme** | Sites with the Kadence theme as the active theme |
+
+See [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) for detailed guidance on each skill.
+
+## Internet Search Providers
+
+Superdav AI Agent v1.10.0 adds **Tavily** as an alternative to Brave Search for internet search queries. Both providers offer real-time search results and can be configured in **Gratis AI Agent → Settings → Advanced**.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | Fast, privacy-focused search results | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Richer search results, advanced research capabilities | [Tavily API](https://tavily.com/) |
+
+See [Internet Search](../../user-guide/configuration/internet-search) for configuration instructions.
+
+## Site Builder Contact Forms
+
+The Site Builder agent can now create contact forms directly from the chat interface. Simply ask the Site Builder to create a contact form, and it will automatically detect your installed form plugin (Contact Form 7, WPForms, Fluent Forms, or Gravity Forms) and generate a ready-to-use form.
+
+See [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) for detailed guidance.
+
+## Configuration
+
+All settings are under **Gratis AI Agent → Settings** in the WordPress admin. Superdav AI Agent adds the following configuration options:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Choose between Brave Search and Tavily (optional) |
+| **Tavily API Key** | API key for Tavily internet search (if Tavily is selected) |
+
+## Improvements in v1.10.0
+
+- **WooCommerce integration refactored** — now uses native WooCommerce APIs for better reliability and compatibility
+- **Provider list auto-refresh** — automatically detects when plugins are activated or deactivated and updates the available provider list
+- **Enhanced site builder** — improved multi-phase site build plans with better error recovery
+- **Theme-aware skills** — four new built-in skills that automatically adapt to your active theme
+
+## Bug Fixes in v1.10.0
+
+- Fixed `navigate-to` ability causing infinite reload loops on some admin pages
+- Fixed `list-posts` ability not correctly resolving category and tag names to slugs
+- Fixed WP-CLI commands missing namespace aliases after a previous refactor
+- Fixed event automation gracefully handling sites where automation tables are not yet created
+- Fixed `memory-save` ability using the correct namespace prefix in the system instruction builder
+- Fixed scalar tool results being correctly wrapped before being returned to the AI
+- Fixed usage statistics correctly handling the legacy ability key format on upgrade from older versions
+
+## Support
+
+For support, visit [ultimatemultisite.com](https://ultimatemultisite.com) or open an issue in the plugin repository.
+
+## Changelog
+
+See the [Changelog](./changelog) for the full version history.
