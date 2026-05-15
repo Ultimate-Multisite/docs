@@ -5,6 +5,18 @@ sidebar_position: 9
 
 # Release Notes
 
+## Version 2.12.0 — Released on 2026-05-15
+
+- New: Added Hostinger (hPanel) as a supported host provider with domain mapping integration
+- New: Site Exporter now handles network import bundles for streamlined network-wide site restoration
+- Fix: BCC broadcast emails now use an undisclosed-recipients header to prevent exposing recipient addresses
+- Fix: Membership expiration date is no longer corrupted when saving with a non-date value
+- Fix: Stripe membership updates now correctly clear discounts without calling the deprecated deleteDiscount API
+- Fix: SSO redirects on domain-mapped sites are now capped to prevent infinite redirect loops
+- Fix: Setup wizard image picker selection now correctly updates the underlying data model
+- Fix: Site Exporter CLI now preserves the correct default network site selection
+- Improved: Removed bundled wp-cli from the plugin package, reducing plugin size
+
 ## Version 2.11.0 — Released on 2026-05-11
 
 - New: Site exports now bundle a self-booting `index.php` so the ZIP can be installed on a fresh host without a separate plugin install.
