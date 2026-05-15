@@ -14,6 +14,9 @@ const sidebars = {
         'user-guide/getting-started/multisite-setup-wizard',
         'user-guide/getting-started/how-to-install-wordpress-multisite',
         'user-guide/getting-started/release-notes',
+        'user-guide/getting-started/theme-builder-onboarding',
+        'user-guide/getting-started/site-specification-skill',
+        'user-guide/getting-started/site-builder-removal-notice',
       ],
     },
     {
@@ -33,6 +36,8 @@ const sidebars = {
         'user-guide/administration/plugin-builder-and-sandbox',
         'user-guide/administration/gratis-ai-agent-settings',
         'user-guide/administration/settings-reference',
+        'user-guide/administration/ability-visibility',
+        'user-guide/administration/third-party-mode-migration',
       ],
     },
     {
@@ -134,6 +139,8 @@ const sidebars = {
         'user-guide/customization/ad-injector',
         'user-guide/customization/admin-page-creator',
         'user-guide/customization/plugin-and-theme-manager',
+        'user-guide/customization/theme-builder-abilities',
+        'user-guide/customization/design-system-aesthetics',
       ],
     },
     {
@@ -186,6 +193,7 @@ const sidebars = {
 
   developerSidebar: [
     'developer/index',
+    'developer/provider-aware-prompt-caching',
     {
       type: 'category',
       label: 'Hooks Reference',
