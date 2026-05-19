@@ -15,11 +15,11 @@ Using the Ultimate Multisite broadcast feature, you can add **admin notices** to
 
 This is extremely helpful should you need to make an announcement like system maintenance or offering new products or services to your existing users. This is how the admin notice will look on your user’s dashboard.
 
-![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
+![Admin notice broadcast shown on a customer's subsite dashboard](/img/frontend/broadcast-customer-dashboard.png)
 
 To start an admin notice, go to your network admin dashboard and under the **Ultimate Multisite** menu, you will find the **Broadcasts** option.
 
-![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
 From this page, click the **Add Broadcast** button on top.
 
@@ -27,7 +27,7 @@ This will bring up the Add broadcast modal window where you can choose what type
 
 Go ahead and select **Message** then click the **Next Step** button.
 
-![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
+![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
 
 The next window will ask you for either the **Target customer** or **Target product**. Note that you can select more than one user or more than one product.
 
@@ -37,11 +37,11 @@ Under the **Message type** field, you can select the color of the notice. This w
 
 You can then click **Next Step**.
 
-![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
+![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
 
 The next window is where you can start composing your message by entering the subject and the content/message you wish to broadcast to the users.
 
-![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
+![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
 
 After creating your message, you can then hit the **Send** button.
 
@@ -53,13 +53,13 @@ Using the Ultimate Multisite broadcast feature, you can send an email to your us
 
 To start an email broadcast, go to your network admin dashboard and under the Ultimate Multisite menu, you will find the Broadcast option.
 
-![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
 
 From this page, click the **Add broadcast** button on top.
 
 This will bring up the Add broadcast modal window where you can choose what type of broadcast you wish to send. Go ahead and select **Email** then click the **Next Step** button.
 
-![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
+![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
 
 The next window will ask you for either the **Target customer** or **Target produc** t. Note that you can select more than one user or more than one product.
 
@@ -67,11 +67,11 @@ To search either for a user account or product you need to start typing the keyw
 
 Once your target audience is selected, you can click **Next Step**.
 
-![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
+![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
 
 The next window is where you can start composing your email by entering the subject and the content/message you wish to send to the users.
 
-![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
+![Email broadcast subject and content editor on the compose step](/img/admin/broadcast-email-compose.png)
 
 After creating your message, you can hit the **Send** button.
 
@@ -93,19 +93,19 @@ However, super admins and agents can import this newly registered emails via the
 
 Go to your Ultimate Multisite Settings page and head to the **Emails** tab.
 
-![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
+![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
 
 Then, on the sidebar, click on the **Customize System Emails** button.
 
-![Customize System Emails button on sidebar](/img/config/settings-emails.png)
+![Customize System Emails button on the System Emails sidebar panel](/img/config/settings-emails-customize-button.png)
 
 On the System Emails page, you'll see the **Reset & Import** action button on the top. Clicking that button should open the import and reset modal window.
 
-![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
+![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
 
 Then, you can toggle the Import Emails options to see which system emails are available to be imported.
 
-![Import Emails options showing available system emails](/img/config/settings-emails.png)
+![Reset and Import modal with the Import Emails options expanded](/img/admin/system-emails-import-options.png)
 
 #### Reseting System Emails
 
@@ -117,4 +117,4 @@ Or you can use the **Reset & Import tool** to reset that email template.
 
 To reset an email template, you can follow the steps above until you reach the Reset & Import tool, and then, toggle the **Reset** option and select the emails you want to reset back to their default content.
 
-![Reset option to restore email templates to defaults](/img/config/settings-emails.png)
+![Reset and Import modal with the Reset Emails options expanded](/img/admin/system-emails-reset-options.png)
