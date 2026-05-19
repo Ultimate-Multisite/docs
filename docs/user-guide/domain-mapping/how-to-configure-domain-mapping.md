@@ -19,7 +19,7 @@ Domain mapping requires some setting up on your part to work. Thankfully, Ultima
 
 During Ultimate Multisite installation, the wizard will automatically copy and install the **sunrise.php** to the designated folder. **The wizard won't allow you to proceed until this step is completed**.
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
+![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
 
 This means that once the Ultimate Multisite installation wizard has completed setting up your network, you can start mapping the custom domain right away.
 
@@ -27,7 +27,7 @@ Note that domain mapping in Ultimate Multisite is not mandatory. You have an opt
 
 Should you need to disable Ultimate Multisite domain mapping to give way to other domain mapping solutions, you can disable this feature under **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
+![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
 
 Right below this option, you can also see the option **Force Admin Redirect**. This option allows you to control if your customers will be able to access their admin dashboard both on their custom domain and subdomain or only on one of them.
 
@@ -37,7 +37,7 @@ The option **Force redirect to** **network domain** will do exactly the opposite
 
 And the option **Allow access to the admin by both mapped domain domain and network domain** allows them to access their admin dashboards both on the subdomain and the custom domain.
 
-![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
+![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
 
 There are two ways to map a custom domain. The first is by mapping the domain name from your network admin dashboard as the super adminand the second is through the subsite admin dashboard under the account page.
 
@@ -63,7 +63,7 @@ When you are logged in as super admin on your network, you can easily add and ma
 
 Under this page, you can click on the **Add Domain** button on top and this will bring up a modal window where you can set and fill in the **custom domain name** , **the subsite** you wish to apply the custom domain name to, and decide whether you want to set it as the **primary domain** name or not (note that you can map **multiple domain names to one subsite**).
 
-![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
+![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
 
 After putting all the information in, you can then click the **Add Existing Domain** button at the bottom.
 
@@ -71,13 +71,13 @@ This will start the process of verifying and fetching the DNS information of the
 
 The **Stage** or the status should change from **Checking DNS** to **Ready** if everything is properly set up.
 
-![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
+![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
 
-![Domain with Ready status in domains list](/img/admin/domains-list.png)
+![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
 
 If you click on the domain name, you will be able to see some options inside it. Lets take a quick look at them:
 
-![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
+![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
 
 **Stage:** This is the stage that the domain is at. When you first add the domain, it will probably be on the **Checking DNS** stage. The process will check for the DNS entries and confirm they are correct. Then, the domain will be put at the **Checking SSL** stage. Ultimate Multisite will check if the domain has SSL or not and will categorize your domain as **Ready** or **Ready (without SSL)**.
 
@@ -95,25 +95,27 @@ Subsite administrators can also map custom domain names from their subsite admin
 
 First, you need to make sure that you enable this option under the **Domain mapping** settings. See the screenshot below.
 
-![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
+![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
 
 You can also set or configure this option under the **Plan** level or product options on **Ultimate Multisite > Products**.
 
-![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
+![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
 
 When any of those options are enabled and a subsite user is allowed to map custom domain names, the subsite user should see a metabox under the **Account** page called **Domains**.
 
-![Domains metabox on the subsite account page](/img/admin/domains-list.png)
+![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
 
 The user can click the **Add Domain** button and it will bring up a modal window with some instructions.
 
-![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
+![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
 
 The user can then click **Next Step** and proceed to add the custom domain name. They can also choose if this will be the primary domain or not.
 
-![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
+![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
 
-![Click Add Domain to start DNS verification](/img/admin/domains-list.png)Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
+![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+
+Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
 
 ### About Domain Syncing
 
@@ -123,8 +125,8 @@ Domain syncing automatically happens if your hosting provider has integration wi
 
 You will need to activate this integration on Ultimate Multisite settings under the **Integration** tab.
 
-![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
+![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
+![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
 
 _Note that if your hosting provider is not one of those providers mentioned above,**you will need to manually sync or add the domain name** to your hosting account._
