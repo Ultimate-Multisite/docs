@@ -15,7 +15,7 @@ Ultimate Multisite does not file or remit taxes on your behalf to the government
 
 Tax collection is not enabled by default. To enable it, you need to go to **Ultimate Multisite > Settings > Taxes** and toggle to enable the Enable Taxes setting.
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
 
 ### Tax excluded vs. Tax included
 
@@ -23,7 +23,7 @@ By default, all your product prices are tax excluded, meaning that taxes **are n
 
 If you prefer to have taxes included in your product's price, you can do so by enabling the **Inclusive Tax** setting.
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
 
 Don't forget to **save** the changes you've made.
 
@@ -35,11 +35,11 @@ After you enable Tax Collection, you'll need to create tax rates for specific lo
 
 You can access the editor by clicking the **Manage Tax Rates** button on the sidebar of the Tax settings page.
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
 
 On the tax rates editor page, you can add new Tax Rates by clicking the **Add new Row** button.
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
 
 You'll need to give each tax rate a **title** (used on invoices). Then you can choose the **country** (required), the **state,** and the **city** (both optional) where this tax will be charged. Finally, add the **tax rate in percents**.
 
@@ -49,15 +49,15 @@ You can also create multiple Tax Categories, to add different tax rates for diff
 
 Click to **Add new Tax Category** , then write your category's name and press **Create**.
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
 
 To browse through categories, click **Switch** and select the category to which you want to add new taxes.
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
 
 You can set the tax category for a particular product by going to the **Product edit page** and then to the Taxes tab.
 
@@ -77,21 +77,21 @@ Our VAT tools help with a couple of important things:
 
 To install that add-on, go to **Ultimate Multisite > Settings** and then click on the **Check our Add-ons** sidebar link.
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
 
 You'll be redirected to our add-ons page. There, you can search for the **Ultimate Multisite VAT add-on** and install it.
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
 
 Then, head to **Network Admin > Plugins** and activate that add-on network-wide.
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
 
 If you head back to the **Tax Settings tab** , you'll see new options available. Toggle the **Enable VAT Support** option to enable the new VAT tools. Don't forget to **save** your settings!
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
 
 ### Pulling on VAT Tax Rates
 
@@ -99,7 +99,7 @@ One of the tools that our integration adds is the ability to load the tax rates 
 
 At the bottom of the page, you'll see the VAT pulling options. Selecting a rate type and clicking the **Update EU VAT Rates** button will pull up and auto-populate the table with the tax rates for each EU member state. Then, you only need to save it.
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
 
 You can also edit the values after pulling them. To do it, simply edit the table line you need and click to save the new values.
 
@@ -107,6 +107,6 @@ You can also edit the values after pulling them. To do it, simply edit the table
 
 When VAT support is enabled, Ultimate Multisite will add an additional field to the checkout form, bellow the billing address field. The field will only show up for customers located in the EU.
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
 
 Ultimate Multisite will then validate the VAT Number and if it comes back as a valid one, the reverse charge mechanism is applied and the tax rate is set to 0% on that order.
