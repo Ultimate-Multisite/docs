@@ -17,15 +17,15 @@ First, go to **Ultimate Multisite > Settings > Payments**. Below **Payment Gatew
 
 Add to this box the information your customer will need to make the payment. It can be your bank account details and your email so the customer can send you the payment confirmation, for example.
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
 
 After setting it up, just click on **Save Settings** and it is done. When users register to your network, they will see a message telling them that they will receive your instructions to complete the purchase.
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
 
 And they will also receive a message on your **Thank You** page with your payment instructions.
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
 
 ## Confirming manual payments
 
@@ -35,8 +35,8 @@ To confirm a manual payment, go to the **Payments** menu on the left bar. There 
 
 Enter the payment page by clicking the **reference code**. On this page you have all the details of the pending payment, such as reference ID, products, timestamps and more.
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
 
 On the right column, you can alter the status of the payment. Changing it to **Completed** and **toggling the Activate Membership** option will enable your customer’s site and their membership will be active.
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
