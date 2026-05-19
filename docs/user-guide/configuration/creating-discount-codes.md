@@ -13,19 +13,19 @@ With Ultimate Multisite you can create discount codes to give your clients disco
 
 To create or edit a discount code, go to **Ultimate Multisite > Discount Codes**.
 
-![](/img/config/discount-codes-list.png)
+![Discount codes list — empty state before any codes exist](/img/config/discount-codes-empty.png)
 
-There you’ll have a list of the discount codes you’ve already created.
+There you'll have a list of the discount codes you've already created.
 
 You can click on **Add Discount** **Code** to create a new coupon or you can edit the ones you have by hovering over them and clicking **Edit**.
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![Discount codes list with hover actions showing Edit and Delete links](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![Add Discount Code button in the page header](/img/config/discount-codes-add-button.png)
 
 You will be redirected to the page where you will create or edit your coupon code. On this example we will create a new one.
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![Discount code edit page with all sections visible](/img/config/discount-code-edit.png)
 
 Lets take a look at the settings available here:
 
@@ -33,25 +33,25 @@ Lets take a look at the settings available here:
 
 **Description:** Here, you can briefly describe what this coupon is for.
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![Discount code name and description fields at the top of the edit page](/img/config/discount-code-description.png)
 
 **Coupon code:** Here is where you define the code your customers will need to enter during the checkout.
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![Coupon code field where customers enter the code at checkout](/img/config/discount-code-coupon-field.png)
 
 **Discount:** Here, you can set either a **percentage** or a **fixed amount** of money for your discount code.
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![Discount amount setting with percentage or fixed-amount dropdown](/img/config/discount-code-amount.png)
 
 **Apply to renewals:** If this option is toggled off, this discount code will only be applied to the **first payment**. All the other payments will have no discount. If this option is toggled on, the discount code will be valid for all future payments.
 
 **Setup fee discount:** If this option is toggled off, the coupon code will **not give any discount for the setup fee** of the order. If this option is toggled on, you can set the discount (percentage or fixed amount) that this coupon code will apply to the setup fee of your plans.
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+![Apply to renewals and setup fee discount toggle options](/img/config/discount-code-renewals.png)
 
 **Active:** Manually activate or deactivate this coupon code.
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![Active toggle to manually enable or disable the discount code](/img/config/discount-code-active.png)
 
 Under **Advanced Optio** **ns** , we have the following settings:
 
@@ -61,21 +61,23 @@ Under **Advanced Optio** **ns** , we have the following settings:
 
   * **Max uses:** This will limit the amount of times users can use this discount code. For example, if you put 10 here, the coupon could only be used 10 times. After this limit, the coupon code cannot be used anymore.
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
+![Limit uses setting with current uses count and max uses field](/img/config/discount-code-limit-uses.png)
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
+
+![Start and expiration date fields for scheduling the discount code](/img/config/discount-code-dates.png)
 
 **Limit products:** If you toggle **Select products** on, all your products will be shown to you. You will have the option to manually select (by toggling on or off) which product can accept this coupon code. Products that are toggled off here will not show any change if your customers try to use this coupon code to them.
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+![Limit products section with per-product toggle switches](/img/config/discount-code-limit-products.png)
 
 After setting up all of these options, click on **Save Discount Code** to save your coupon and it’s done!
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+![Save Discount Code button at the bottom of the edit page](/img/config/discount-code-save.png)
 
 The coupon is now on your list and, from there, you can click to **edit or delete** it.
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+![Discount code row in the list with Edit and Delete hover actions](/img/config/discount-codes-list-hover.png)
 
 ### 
 
