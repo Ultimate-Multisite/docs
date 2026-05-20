@@ -13,17 +13,17 @@ Downgrading a plan or subscription is a common action your clients might do if t
 
 Your clients can downgrade their plan anytime by logging in to their subsite admin dashboard and clicking **Change** under their account page.
 
-![Account page with Change button under membership](/img/admin/memberships-list.png)
+![Customer account page with Your Membership card and Change button](/img/account-page/membership-change-button.png)
 
 Upon clicking the **Change** button, the user/client will be redirected to the checkout page where they can select the plan they want to change their subscription to.
 
-![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
+![Downgrade plan options page on the customer side](/img/account-page/downgrade-picker.png)
 
 In this example, we are downgrading the plan from **Premium** to **Free**.
 
 To proceed the user just need to click the **Complete Checkout** button. It will then bring them back to the account page showing a message about the pending change for the membership. The changes will take effect on the customer's **next billing cycle**.
 
-![Account page showing pending membership change message](/img/admin/memberships-list.png)
+![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
 ### What happens when a user downgrades their plan
 
@@ -35,7 +35,7 @@ We understand that your main concern would be the limits and quotas you set unde
 
 For the posts exceeding the limit set on the plan, you have 3 different options: **Keep the posts as it** *,* **Move the posts to trash** *,* or **Move the posts to draft** *.* You can configure this under Ultimate Multisite settings.
 
-![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
 ### What happens to the payment
 
