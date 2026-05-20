@@ -17,6 +17,12 @@ Free memberships are treated as **lifetime** memberships. They do not receive an
 
 Click on a membership to access the page where you can edit the membership details — billing info, site or visit limits, and more.
 
+![Membership edit interface](/img/admin/membership-edit.png)
+
+Here's a full view of the membership edit page:
+
+![Membership edit full interface](/img/admin/membership-edit-full.png)
+
 You can also add new memberships associated with users previously registered on your network. Click **Add Membership** and configure the details.
 
 ![Add Membership modal](/img/admin/membership-add-modal.png)

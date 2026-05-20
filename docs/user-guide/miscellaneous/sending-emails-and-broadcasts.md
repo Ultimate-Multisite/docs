@@ -21,6 +21,10 @@ To start an admin notice, go to your network admin dashboard and under the **Ult
 
 ![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
+You can also edit existing broadcasts:
+
+![Broadcast edit interface](/img/admin/broadcast-edit.png)
+
 From this page, click the **Add Broadcast** button on top.
 
 This will bring up the Add broadcast modal window where you can choose what type of broadcast you wish to send.

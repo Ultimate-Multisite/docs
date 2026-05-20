@@ -101,6 +101,10 @@ This message can be edited (by you) on **Ultimate Multisite > Settings > Domain 
 
 ![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
 
+Here's a full view of the domain mapping settings page:
+
+![Domain mapping settings full page](/img/config/settings-domain-mapping-full.png)
+
 After clicking **Next Step** , your customers can add their custom domain name and choose if this custom domain will be the primary one. Note that your customers can use more than one custom domain for their websites, so they can choose which one will be the primary one.
 
 ![Custom domain name entry with primary domain option](/img/admin/domains-list.png)

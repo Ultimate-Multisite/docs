@@ -35,6 +35,10 @@ Lets take a look at the settings available here:
 
 ![Discount code name and description fields at the top of the edit page](/img/config/discount-code-description.png)
 
+You can also view the discount code as active or inactive:
+
+![Discount code active status](/img/config/discount-code-active.png)
+
 **Coupon code:** Here is where you define the code your customers will need to enter during the checkout.
 
 ![Coupon code field where customers enter the code at checkout](/img/config/discount-code-coupon-field.png)
@@ -53,7 +57,9 @@ Lets take a look at the settings available here:
 
 ![Active toggle to manually enable or disable the discount code](/img/config/discount-code-active.png)
 
-Under **Advanced Optio** **ns** , we have the following settings:
+Under **Advanced Options**, we have the following settings:
+
+![Discount code advanced options](/img/config/discount-code-advanced.png)
 
 **Limit uses:**
 

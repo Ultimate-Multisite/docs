@@ -62,6 +62,10 @@ Navigate to **Ultimate Multisite > Settings > Memberships** and enable **Block F
 
 ![Block Frontend Access settings showing the toggle enabled, a grace period of 7 days, and a Frontend Block Page selection](/img/config/settings-membership-block-frontend.png)
 
+Here's a full view of the membership settings page:
+
+![Membership settings full page](/img/config/settings-membership-full.png)
+
 Three related settings control this behavior:
 
 | Setting | Description | Default |

@@ -27,6 +27,10 @@ This will open a modal window where it will ask for the **Site title, Site Domai
 
 _![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
+You can also view the site template description:
+
+![Site template description](/img/config/site-template-description.png)
+
 At the bottom of the form, you will notice a **Copy Site** toggle switch. This will allow you to create a new site template based on an existing site template as your starting point to help you save time instead of creating a site template from scratch.
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
@@ -34,6 +38,8 @@ At the bottom of the form, you will notice a **Copy Site** toggle switch. This w
 ### Customizing the contents of a Site Template
 
 To customize your site template, simply navigate to its dashboard panel and make the changes you need. You can create new posts, pages, activate plugins and change the active theme. You can even go to the Customizer and change all sorts of customization options.
+
+![Site template edit interface](/img/config/site-template-edit.png)
 
 All of that data will be copied over when a customer creates a new site based on that Site Template.
 

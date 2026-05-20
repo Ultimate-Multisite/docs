@@ -17,6 +17,10 @@ To create a webhook, go to your network admin dashboard. Click on **Ultimate Mul
 
 ![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
 
+You can then edit the webhook configuration:
+
+![Webhook edit interface](/img/admin/webhook-edit.png)
+
 When creating a new webhook you will be asked for information like **Name, URL,** and **Event**. You can use any name you want for your webhook. The most important fields are the URL and Event.
 
 ![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)

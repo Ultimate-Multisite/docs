@@ -43,6 +43,18 @@ You can setup the payment gateways on the same page ( **Ultimate Multisite > Set
 
 We have a dedicated article for each payment gateway that will guide you through the steps of setting it up which you can find on the links below.
 
+You can view and edit payment details:
+
+![Payment edit interface](/img/admin/payment-edit.png)
+
+Here's a full view of the payment edit page:
+
+![Payment edit full interface](/img/admin/payment-edit-full.png)
+
+Here's also a full view of the payment gateways settings:
+
+![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+
 **Setting up the Stripe gateway**
 
 **Setting up the PayPal gateway**** **

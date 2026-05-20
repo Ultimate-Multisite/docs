@@ -19,6 +19,10 @@ Add to this box the information your customer will need to make the payment. It 
 
 ![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
 
+Here's the manual gateway settings interface:
+
+![Manual gateway settings](/img/config/manual-gateway-settings.png)
+
 After setting it up, just click on **Save Settings** and it is done. When users register to your network, they will see a message telling them that they will receive your instructions to complete the purchase.
 
 ![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
