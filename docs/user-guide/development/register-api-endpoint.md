@@ -20,6 +20,11 @@ The endpoint uses the POST method and is called by the URL _**https://yoursite.c
 For this process, you will need your API credentials. To get them, go to your network admin panel, navigate to **Ultimate Multisite > Settings** > **API & Webhooks,** and look for the API Settings section.
 
 ![API Settings section in Ultimate Multisite](/img/config/settings-api.png)  
+
+Here's a full view of the API settings page:
+
+![API settings full page](/img/config/settings-api-full.png)
+
 Select the **Enable API** and get your API credentials.
 
 Now, let's explore the endpoint and then create a registration action in Zapier.

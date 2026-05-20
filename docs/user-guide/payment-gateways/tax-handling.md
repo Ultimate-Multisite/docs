@@ -17,6 +17,14 @@ Tax collection is not enabled by default. To enable it, you need to go to **Ulti
 
 ![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
 
+Here's a full view of the tax settings page:
+
+![Tax settings full page](/img/config/settings-taxes-full.png)
+
+You can also view the tax settings for individual products:
+
+![Tax settings for products](/img/config/settings-taxes.png)
+
 ### Tax excluded vs. Tax included
 
 By default, all your product prices are tax excluded, meaning that taxes **are not included** in the product's price. If we determine that a customer should pay taxes on a given purchase, we'll add the taxes **on top** of the subtotal.

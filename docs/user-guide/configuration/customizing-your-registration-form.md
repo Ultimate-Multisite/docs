@@ -15,6 +15,10 @@ Upon Ultimate Multisite installation, it automatically creates custom login and 
 
 ![Login and Registration settings page](/img/config/settings-general.png)
 
+Here's a full view of the login and registration settings page:
+
+![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+
 Let's take a look at each one of the options you can customize on the **Login & Registration** page:
 
   * **Enable registration:** This option will enable or disable the registration on your network. If it is toggled off, your customers will not be able to register and subscribe to your products.

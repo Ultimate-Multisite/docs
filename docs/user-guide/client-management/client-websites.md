@@ -17,9 +17,17 @@ They can also see which one of their websites is the **primary** one for plans t
 
 ![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
 
+Here's a full view of the site edit interface:
+
+![Site edit full interface](/img/admin/site-edit-full.png)
+
 If they want to change their primary website, they need to go to the Account page by clicking on the **Account** menu.
 
 ![Account menu link in customer dashboard](/img/admin/customers-list.png)
+
+You can also view and edit customer details:
+
+![Customer edit interface](/img/admin/customer-edit.png)
 
 Then, they should click on **Change Default Site**.
 

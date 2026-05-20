@@ -13,6 +13,18 @@ The Ultimate Multisite **Dashboard** shows basic reports and analytics including
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
+Here's a full view of the dashboard:
+
+![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+
+And the bottom section of the dashboard:
+
+![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+
+Here's also a full view of the network dashboard:
+
+![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+
 ## Checkout Forms
 
 **Checkout Forms** give you the flexibility to create custom registration pages. You can customize fields, insert custom classes and scripts, and restrict access based on visitor country or location.
@@ -72,6 +84,26 @@ The **Domains** page is dedicated to custom domains mapped to subsites. As a sup
 The **Settings** page is where you configure Ultimate Multisite — registration settings, payments, API and webhooks, domain mapping, and other integrations.
 
 ![Settings page](/img/admin/settings-general.png)
+
+Here's a full view of the general settings page:
+
+![Settings general full page](/img/admin/settings-general-full.png)
+
+And the emails settings page:
+
+![Settings emails full page](/img/admin/settings-emails-full.png)
+
+And the payments settings page:
+
+![Settings payments full page](/img/admin/settings-payments-full.png)
+
+And the bottom section of the payments settings:
+
+![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+
+And the sites settings page:
+
+![Settings sites full page](/img/admin/settings-sites-full.png)
 
 ## Events
 

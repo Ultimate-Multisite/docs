@@ -17,6 +17,10 @@ From there, you can access the **System Emails** page to see all email templates
 
 ![System Emails list](/img/admin/system-emails-list.png)
 
+You can also edit individual email templates using the system email editor:
+
+![System email editor](/img/admin/system-email-editor.png)
+
 ## Importing New Email Templates
 
 New Ultimate Multisite versions and add-ons may register new email templates. To prevent conflicts, new templates are not automatically added — you need to import them manually.

@@ -36,6 +36,12 @@ Alternatively, you can edit or duplicate the forms you already have by clicking 
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
+#### Checkout Form Editor Overview
+
+The checkout form editor provides a comprehensive interface for building your registration forms. Here's an overview of the editor layout:
+
+![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+
 ### Editing a Checkout Form
 
 You can create checkout forms for different purposes. In this example we will work on a registration form.
@@ -92,6 +98,10 @@ You can also manually enable or disable your checkout form by toggling this opti
 
 ![Active toggle](/img/config/checkout-form-active.png)
 
+To delete a form, click the delete option in the form actions:
+
+![Checkout form delete option](/img/config/checkout-form-delete.png)
+
 Don't forget to save your checkout form!
 
 ![Save button](/img/config/checkout-form-save.png)
@@ -106,8 +116,13 @@ The **Pricing Table** field displays your products on the checkout form so custo
 
 ![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
 
+Here's how the pricing table appears on the frontend registration form:
+
+![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+
   * **Products**: Select which products to display and the order they appear in.
   * **Force Different Durations**: When enabled, all products are shown regardless of whether they have a matching price variation for the currently selected billing period. When disabled (default), products without a variation for the selected period are hidden.
+    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
   * **Hide when Pre-Selected**: Hides the pricing table when a plan has already been selected via the URL (e.g. `/register/premium`).
   * **Pricing Table Template**: Choose the visual template for the pricing table (Simple List, Legacy, etc.).
 
@@ -141,6 +156,10 @@ Before adding the Period Selection field, make sure your products have price var
 5. Click **+ Add Option** to add more period choices. These options must match the price variations you configured on your products.
 
 ![Period Selection field settings](/img/config/period-selection-field-settings.png)
+
+You can also configure the field options directly:
+
+![Period selection field options](/img/config/period-selection-field-options.png)
 
 6. Choose a **Period Selector Template** (Clean is the default, which renders a simple styled selector ready for custom CSS).
 

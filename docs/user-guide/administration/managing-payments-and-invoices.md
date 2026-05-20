@@ -11,6 +11,10 @@ Before you start receiving payments, you'll need to configure the payment-relate
 
 ![Payment settings tab](/img/admin/settings-payments-top.png)
 
+Here's a full view of the payment settings page:
+
+![Payment settings full page](/img/admin/settings-payments-full.png)
+
 ### General Payment Options
 
 In the general settings you can configure:

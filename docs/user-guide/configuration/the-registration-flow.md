@@ -19,6 +19,10 @@ After a user get to your registration page (usually clicking on a **Sign in** or
 
 ![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
 
+Here's an example of the checkout form as it appears on the frontend:
+
+![Frontend checkout registration form](/img/config/checkout-frontend-registration.png)
+
 All they have to do is filling all the mandatory fields - email, username, password, etc... - and pay for the plan or confirm their email address if they are registering for a free plan or a paid plan with trial period without payment information.
 
 On the "Thank you" page, they will see a message telling them if they need to confirm their email address or if their website is already activated and they can start using it.

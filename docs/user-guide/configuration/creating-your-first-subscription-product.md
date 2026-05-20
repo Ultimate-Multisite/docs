@@ -151,6 +151,8 @@ Price variations allow the network administrator to specify alternate pricing ti
 
 To establish price variations, set the **Enable Price Variations** toggle to active and click the **Add new Price Variation** button.
 
+![Product price variations](/img/config/product-price-variations.png)
+
 To enter a variation, set the duration, period, and price of the variation. Additional variations can be entered by clicking the button again.
 
 For example, if your base product price is $29.99 per month, you might add:
