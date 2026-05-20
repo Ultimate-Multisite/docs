@@ -118,5 +118,5 @@ After completing the Discovery Interview:
 ## Related Documentation
 
 - [Design Direction](./design-direction.md) — review and refine your design
-- [Theme Builder Overview](./index.md) — introduction to Theme Builder
 - [Hospitality Menus](./hospitality-menus.md) — create structured menu pages
+- [Tools and Configuration](./tools.md) — available tools and configuration options
