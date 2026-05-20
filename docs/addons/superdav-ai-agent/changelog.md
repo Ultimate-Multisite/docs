@@ -5,6 +5,23 @@ sidebar_position: 5
 
 # Changelog
 
+## 1.16.0 — Released on 2026-05-20
+
+### New
+
+- **Generate Logo SVG ability** — Theme Builder can now generate and embed custom logo SVGs with namespace-safe sanitisation
+- **Photo upload in discovery interview** — Theme Builder discovery interview now includes a photo upload step for richer design context
+- **Validate Palette Contrast ability** — check colour pairs for WCAG compliance before applying to a theme
+- **Hospitality menus** — Theme Builder can now generate structured food and beverage menu pages for hospitality businesses
+- **Desktop and mobile preview rendering** — preview your design on desktop and mobile devices during design-direction selection
+- **Navigation label parameter** — Create Menu ability now supports a distinct `navigation_label` separate from the page title
+- **Tier 1 tool availability** — sd-ai-agent/site-scrape is now a Tier 1 tool available by default in Theme Builder
+
+### Fixed
+
+- **AI Client cache** — now backed by transients for cross-request persistence, preventing data loss on long-running agent tasks
+- **Plugin row action links** — corrected and renamed for clarity
+
 ## 1.10.0 — Released on 2026-05-05
 
 ### New

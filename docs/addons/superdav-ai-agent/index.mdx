@@ -9,7 +9,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, and improved site builder features. Version 1.10.0 adds Tavily as an alternative internet search provider, four new theme-aware built-in skills (Block Themes, Classic Themes, Kadence Blocks, and Kadence Theme), and the ability to create contact forms directly from the chat interface.
+Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, and improved site builder features. Version 1.16.0 adds custom logo generation, palette contrast validation, photo uploads in the discovery interview, structured hospitality menu generation, and desktop/mobile preview rendering in Theme Builder.
 
 ## Key Features
 
@@ -20,6 +20,12 @@ Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI A
 - **Built-in theme skills** — specialized guidance for Block Themes, Classic Themes, Kadence Blocks, and Kadence Theme
 - **Improved WooCommerce integration** — refactored to use native WooCommerce APIs for better reliability and compatibility
 - **Automatic provider detection** — automatically detects and refreshes available plugins and themes when they are activated or deactivated
+- **Custom logo generation** — generate and embed custom SVG logos with automatic namespace-safe sanitisation
+- **Palette contrast validation** — check colour pairs for WCAG accessibility compliance before applying to your theme
+- **Photo-enhanced discovery** — upload photos during Theme Builder discovery interview to influence design direction
+- **Hospitality menus** — generate structured food and beverage menu pages for restaurants, cafes, and hospitality businesses
+- **Desktop and mobile previews** — preview your design on desktop and mobile devices during design-direction selection
+- **Tier 1 site scraping** — sd-ai-agent/site-scrape is now available by default for analyzing competitor and inspiration websites
 
 ## Requirements
 
@@ -84,6 +90,36 @@ The Site Builder agent can now create contact forms directly from the chat inter
 
 See [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) for detailed guidance.
 
+## Theme Builder Features
+
+Theme Builder in Superdav AI Agent v1.16.0 includes powerful new capabilities:
+
+### Discovery Interview with Photo Upload
+
+The Theme Builder discovery interview now includes a photo upload step where you can provide visual inspiration. Upload photos of your brand, competitor sites, or design inspiration to help Theme Builder understand your design direction.
+
+See [Discovery Interview](./theme-builder/discovery-interview.md) for detailed guidance.
+
+### Design Direction with Desktop and Mobile Previews
+
+Review your design on both desktop and mobile devices before Theme Builder generates your complete theme. See real-time previews at multiple responsive breakpoints.
+
+See [Design Direction](./theme-builder/design-direction.md) for detailed guidance.
+
+### Hospitality Menus
+
+Theme Builder can now generate structured food and beverage menu pages for restaurants, cafes, bars, and other hospitality businesses. Menus include pricing, descriptions, dietary information, and allergen warnings.
+
+See [Hospitality Menus](./theme-builder/hospitality-menus.md) for detailed guidance.
+
+### New Abilities
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — create custom SVG logos with automatic sanitisation
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — check colour pairs for WCAG compliance
+- **[Create Menu](./abilities/create-menu.md)** — create navigation menus with distinct navigation labels
+
+See [Tools and Configuration](./theme-builder/tools.md) for information about available tools and the Tier 1 site-scrape tool.
+
 ## Configuration
 
 All settings are under **Gratis AI Agent → Settings** in the WordPress admin. Superdav AI Agent adds the following configuration options:
@@ -92,6 +128,12 @@ All settings are under **Gratis AI Agent → Settings** in the WordPress admin. 
 |---|---|
 | **Internet Search Provider** | Choose between Brave Search and Tavily (optional) |
 | **Tavily API Key** | API key for Tavily internet search (if Tavily is selected) |
+
+## Improvements in v1.16.0
+
+- **AI Client cache** — now backed by transients for cross-request persistence, preventing data loss on long-running agent tasks
+- **Tier 1 site-scrape tool** — sd-ai-agent/site-scrape is now available by default in Theme Builder for analyzing competitor and inspiration websites
+- **Plugin row action links** — corrected and renamed for clarity
 
 ## Improvements in v1.10.0
 
