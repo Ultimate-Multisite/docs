@@ -17,7 +17,7 @@ The default page for registration is [_**yourdomain.com/register**_](http://your
 
 After a user get to your registration page (usually clicking on a **Sign in** or **Buy now** button), they will se your registration form there.
 
-![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
+![Registration form displayed on the registration page](/img/frontend/registration-form.png)
 
 Here's an example of the checkout form as it appears on the frontend:
 
@@ -27,13 +27,13 @@ All they have to do is filling all the mandatory fields - email, username, passw
 
 On the "Thank you" page, they will see a message telling them if they need to confirm their email address or if their website is already activated and they can start using it.
 
-![Thank You page after registration](/img/config/checkout-form-editor.png)
+![Thank You page after registration](/img/frontend/registration-thank-you.png)
 
 If an email address confirmation is required, they will need to go to their email inbox and click on the verification link. Their website will not be activated if their email address doesn't get verified.
 
 If they have registered on a paid plan or the email verification is not mandatory on your network, they will have their website activated right after the checkout and will be shown a link to sign in to their dashboard.
 
-![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
+![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
 ## Using a Shareable Link:
 
@@ -47,15 +47,15 @@ If you do not want to use PayPal, Stripe or any other payment gateway offered by
 
 The registration process will be exactly the same as above, but on the registration page your customers will see a message stating that they will receive an email with further instructions to complete the payment.
 
-![Manual payment message during registration](/img/config/settings-payment-gateways.png)
+![Manual payment message during registration](/img/frontend/registration-manual-notice.png)
 
 And after the registration is completed, they will see the payment instructions that you set (and also receive it on their email).
 
-![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
+![Payment instructions shown after registration](/img/frontend/registration-payment-instructions.png)
 
 The payment instructions can be changed on **Ultimate Multisite > Settings > Payments** after toggling on the **Manual** payment option:
 
-![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
+![Manual payment toggle with payment instructions field](/img/config/manual-gateway-settings.png)
 
 After your customers complete the manual payment and send you the confirmation, you need to **manually confirm the payment** to activate the customer membership and website.
 
@@ -65,12 +65,12 @@ To do this, go to **Ultimate Multisite > Payments** and find the customer paymen
 
 Click on the payment number and you will be able to change its status to **Completed**.
 
-![Payment details page](/img/admin/payments-list.png)
+![Payment details page](/img/admin/payment-edit.png)
 
-![Changing payment status to Completed](/img/admin/payments-list.png)
+![Changing payment status to Completed](/img/admin/payment-status-completed.png)
 
 After changing its status to **Completed** , you should see an **Activate membership** message. Toggle this option **on** to activate the membership and website associated with this customer. Then, click to **Save Payment**.
 
-![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
+![Activate membership toggle and Save Payment button](/img/admin/payment-activate-membership.png)
 
 Your customer should now be able to access the dashboard and all features that they subscribed to.
