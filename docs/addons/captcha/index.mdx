@@ -89,3 +89,122 @@ The captcha provider is set network-wide, but you can adjust difficulty settings
 ## Is this GDPR compliant?
 
 Cap Captcha is 100% self-hosted with no data sent to external services. For Google reCAPTCHA and hCaptcha, please review their respective privacy policies.
+
+## Rate Limiting
+
+Ultimate Multisite: Captcha v1.5.0 introduces a hard-stop rate limiter that protects your network from brute-force and card-testing attacks.
+
+### How It Works
+
+The rate limiter counts every GET and POST request on captcha-protected surfaces:
+
+* **WordPress login endpoints** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+When a visitor exceeds the rate limit, the plugin responds with:
+
+* **HTTP 429 (Too Many Requests)** status code
+* **Retry-After** header indicating when to retry
+* **Randomised tarpit sleep** (1–5 seconds by default, hard-capped at 15 seconds) to slow down attackers
+
+### Configuration
+
+#### Tarpit Timing
+
+Control the randomised delay applied to rate-limited requests:
+
+* **`cap_rate_limit_tarpit_min`** — Minimum sleep duration in seconds (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Maximum sleep duration in seconds (default: 5, hard-capped at 15)
+
+These settings are available in **Ultimate Multisite → Settings → Captcha**.
+
+### Extensibility
+
+#### IP Whitelist Filter
+
+Exempt trusted IP ranges from rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pre-Block Action
+
+Execute custom logic immediately before a rate-limit block is sent:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Client IP Detection & Trusted Proxies
+
+Ultimate Multisite: Captcha v1.5.0 introduces spoof-resistant client-IP detection. The `Captcha_Core::get_client_ip()` method is now the single source of truth for visitor IP attribution across:
+
+* Rate-limit bucket keys
+* Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Statistics IP hashes
+
+### Trust Model
+
+The plugin enforces a strict IP trust hierarchy:
+
+1. **REMOTE_ADDR** — Always trusted (the immediate peer's IP)
+2. **CF-Connecting-IP** — Honoured only when:
+   - The immediate peer is inside a current Cloudflare IP range
+   - `cap_trust_cloudflare_headers` is enabled (default: OFF)
+3. **X-Forwarded-For** — Honoured only when:
+   - The immediate peer is in your admin-configured trusted-proxy list
+   - The header is parsed right-to-left, skipping trusted/Cloudflare hops
+
+### Configuration
+
+#### Cloudflare Header Trust
+
+Enable trust of Cloudflare's `CF-Connecting-IP` header:
+
+* **`cap_trust_cloudflare_headers`** — Set to ON to opt into `CF-Connecting-IP` trust
+  - Default: OFF (disabled)
+  - The plugin ships with a bundled Cloudflare CIDR snapshot
+  - CIDR ranges are refreshed weekly via wp-cron
+  - Bundled fallback is used if the refresh fails
+
+#### Trusted Proxy Configuration
+
+Define your front-line proxies and load-balancers:
+
+* **`cap_trusted_proxies`** — Textarea of CIDRs or bare IPs (one per line)
+  - Comments are allowed (lines starting with `#`)
+  - Without this setting, `X-Forwarded-For` is ignored even when the rate limiter is enabled
+  - Example:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+    
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### First-Enable Auto-Detection
+
+When you first enable the rate limiter, the plugin detects your likely Cloudflare and proxy posture and displays a one-click "Apply detected settings" admin notice.
+
+* The plugin **never overwrites** your saved values
+* If subsequent traffic suggests your config no longer matches reality (e.g., Cloudflare changed CIDR ranges), a non-dismissable mismatch notice surfaces the recommended update
+
+### Why This Matters
+
+A strict IP trust model closes a critical spoofing vector: direct origin-server requests carrying a forged `CF-Connecting-IP` header would previously have been bucketed by the spoofed IP instead of the real peer. This is especially important for:
+
+* **Rate limiting** — Attackers can't bypass limits by spoofing IPs
+* **Statistics** — Your attack metrics reflect real visitor IPs, not forged ones
+* **Captcha verification** — Providers receive the correct visitor IP for risk assessment
