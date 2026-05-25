@@ -15,9 +15,9 @@ In this tutorial, we will guide you through the customer's account page and you 
 
 The account page is accessible by clicking on **Account** inside your customer's dashboard.
 
-![Account menu in the customer dashboard](/img/admin/dashboard.png)
+![Account menu in the customer dashboard](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/admin/dashboard.png)
+![Customer account page overview](/img/account-page/overview.png)
 
 After a customer click on it, they will se an overview of their membership, billing address, invoices, domains, site limitations, and will also be able to change the ****Site Template** (if it's allowed in your network)**.
 
@@ -27,11 +27,11 @@ They can also change the membership to another plan, or purchase another package
 
 The first block right below your customers' website name shows an overview of they current plan and services/packages that were purchased with it. The block also shows the membership number, the initial amount paid for it, how much the plan and any service/package costs and how many times they were billed for this membership. They can also see if the membership is **Active** , **Expired** or **Canceled**.
 
-![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
+![Membership overview showing plan, amount, and billing details](/img/account-page/membership-card.png)
 
 Right below this block, your customers can see the **About This Site** and the **Site Limits** blocks. These blocks show them all the limitations that comes to their plan: disk space, posts, pages, visits, etc... These limits can be configured on each plan page on **Ultimate Multisite > Products**.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
+![About This Site and Site Limits blocks showing plan limitations](/img/account-page/site-limits.png)
 
 On the right side of **Your Membership** , customers can click on **Change**. This will show them all available plans and packages/services. If they choose another plan, the limitations for the plan will take place instead of the current limitations of the membership - doesn't matter if they are downgrading or upgrading it.
 
@@ -43,11 +43,11 @@ Note that coupon codes cannot be added on this membership change page. If the cu
 
 On the account page, your customers can also update their billing address. They just need to click on **Update** next to _Billing Address_.
 
-![Billing Address section with Update button](/img/admin/customers-list.png)
+![Billing Address section with Update button](/img/account-page/billing-address.png)
 
 A new window will appear to your customer. All he need to do is to fill in the new address and click on _Save Changes_.
 
-![Update billing address form](/img/admin/customers-list.png)
+![Update billing address form](/img/account-page/billing-address-form.png)
 
 ### Changing the Site Template:
 
@@ -61,7 +61,7 @@ You will be able to see all the available site templates on your website. Choose
 
 Now your customers can click on **Change Site Template** inside their account page.
 
-![Change Site Template button on account page](/img/admin/dashboard.png)  
+![Change Site Template button on account page](/img/account-page/change-template-button.png)
 
 Ultimate Multisite 2.10.0 shows a redesigned template switch panel. The panel starts with a **current-template card** so customers can see which template is active before they choose a replacement.
 
@@ -71,7 +71,7 @@ A persistent grid of available site templates remains visible while customers re
 
 After selecting the one they want to change to, they will be asked to confirm the change.
 
-![Site template switch confirmation dialog](/img/admin/dashboard.png)
+![Site template switch confirmation dialog](/img/account-page/template-switch-confirm.png)
 
 After toggling on the confirmation and clicking to **Process Switch** , the new site template will be used on your customer's website.
 
@@ -91,11 +91,11 @@ Go to **Ultimate Multisite > Products**. Select the plan of your choice and go t
 
 This will allow all customers subscribed to this specific plan to use custom domains. Now, on the Account page, your customers can add a custom domain by clicking on **Add Domain**.
 
-![Add Domain button on the account page](/img/admin/domains-list.png)
+![Add Domain button on the account page](/img/account-page/add-domain-button.png)
 
 The first window that opens will show your customers a message instructing them on how to update their DNS records in order to make this custom domain work on your network.
 
-![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
+![DNS instructions shown when adding a custom domain](/img/account-page/add-domain-dns.png)
 
 This message can be edited (by you) on **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
@@ -107,7 +107,7 @@ Here's a full view of the domain mapping settings page:
 
 After clicking **Next Step** , your customers can add their custom domain name and choose if this custom domain will be the primary one. Note that your customers can use more than one custom domain for their websites, so they can choose which one will be the primary one.
 
-![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
+![Custom domain name entry with primary domain option](/img/account-page/add-domain-primary.png)
 
 After clicking on **Add Domain** , the domain will be added to your customer's account. All they need to do now is changing the DNS records of this custom domain on their domain registrar.
 
@@ -115,22 +115,22 @@ After clicking on **Add Domain** , the domain will be added to your customer's a
 
 Inside the account dashboard, your customers can also change their password by clicking on **Change Password**.
 
-![Change Password button on account page](/img/admin/dashboard.png)
+![Change Password button on account page](/img/account-page/change-password-button.png)
 
 This will show a new window where your customers will need to fill their current password and then fill the new password they want to use.
 
-![Change password form with current and new password fields](/img/admin/dashboard.png)
+![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
 ### Danger Zone:
 
 We also have two options that are shown on the **Danger Zone** part: **Delete Site** and **Delete Account**. They are both on the Danger Zone part because these two actions are irreversible. If your customers delete their website or their account, they cannot recover them back.
 
-![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
+![Danger Zone with Delete Site and Delete Account options](/img/account-page/danger-zone.png)
 
 If your customers click on any of these two options, they will be shown a window where they will need to toggle on the option to remove the website or account and they will be warned that this action cannot be undone.
 
-![Delete Site confirmation dialog](/img/admin/dashboard.png)
+![Delete Site confirmation dialog](/img/account-page/delete-site-confirm.png)
 
-![Delete Account confirmation dialog](/img/admin/dashboard.png)
+![Delete Account confirmation dialog](/img/account-page/delete-account-confirm.png)
 
 If they delete their website, their account and membership will still be untouched. They will just lose all the content on their website. If they delete their account, all websites, memberships and information regarding this account will be lost.
