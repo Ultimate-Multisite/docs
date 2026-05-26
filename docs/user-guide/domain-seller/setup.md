@@ -25,6 +25,9 @@ Select the registrar you want to connect. Supported options:
 |---|---|---|
 | OpenSRS | Yes | Yes |
 | Namecheap | No | Yes (WhoisGuard, free) |
+| HostAfrica | Yes | Yes (ID protection) |
+| Openprovider | Yes | Yes |
+| Hostinger | Via core Hostinger domain mapping for hosted domains | Yes |
 | GoDaddy | No | No |
 | ResellerClub | Yes | No |
 | NameSilo | No | No |
@@ -37,6 +40,12 @@ Each provider has different credential fields:
 **OpenSRS** — Username and private key (from the OpenSRS Reseller Control Panel)
 
 **Namecheap** — Username and API key (from Account › Tools › API Access)
+
+**HostAfrica** — Domains Reseller API endpoint and credentials from the HostAfrica reseller module. No separate sandbox endpoint is currently documented; test with safe read-only checks before running live registrations.
+
+**Openprovider** — Username and password with API access enabled. Optional sandbox mode uses the Openprovider sandbox API, and an optional default customer handle can be reused for registrations.
+
+**Hostinger** — The shared Hostinger hPanel API token from the core Hostinger integration. The same token powers core domain mapping and Domain Seller registration operations.
 
 **GoDaddy** — API key and secret (from developer.godaddy.com)
 
@@ -99,7 +108,20 @@ Each provider writes to its own log channel. Logs are viewable under **Network A
 | `domain-seller-renewal` | Renewal job results |
 | `domain-seller-opensrs` | Raw OpenSRS API activity |
 | `domain-seller-namecheap` | Raw Namecheap API activity |
+| `domain-seller-hostafrica` | Raw HostAfrica API activity |
+| `domain-seller-openprovider` | Raw Openprovider API activity |
+| `domain-seller-hostinger` | Raw Hostinger API activity |
 | `domain-seller-godaddy` | Raw GoDaddy API activity |
 | `domain-seller-resellerclub` | Raw ResellerClub API activity |
 | `domain-seller-namesilo` | Raw NameSilo API activity |
 | `domain-seller-enom` | Raw Enom API activity |
+
+---
+
+## Provider capability notes
+
+Not every registrar API exposes the same operations. The addon surfaces unsupported operations with clear admin-facing errors instead of silently failing.
+
+- **HostAfrica** supports the broadest live reseller workflow, including lookup, TLD/pricing sync, registration, renewal, transfer, nameserver updates, DNS records, EPP codes, registrar lock, and ID protection.
+- **Openprovider** supports reseller-priced TLD sync, registration, renewal, transfers, nameserver updates, DNS zones, EPP codes, registrar lock, and WHOIS privacy. It authenticates with a short-lived bearer token that the addon refreshes automatically.
+- **Hostinger** supports availability search, registration, portfolio lookup, nameserver updates, registrar lock, and WHOIS privacy through the shared hPanel API token. Hostinger's public Domains API does not expose reseller/wholesale pricing, inbound transfer, explicit renewal, or EPP-code retrieval; renewals are auto-renew only.
