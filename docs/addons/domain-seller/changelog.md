@@ -5,6 +5,14 @@ sidebar_position: 99
 
 # Domain Seller Changelog
 
+Version 1.2.0 - Released on 2026-05-25
+- New: Added HostAfrica as a domain-selling integration with checkout, setup wizard, lookup, TLD/pricing, registration, renewal, transfer, nameserver, DNS, EPP code, registrar lock, and ID protection support
+- New: Added Openprovider as a domain-selling integration with reseller pricing, registration, renewal, transfer, nameserver, DNS, EPP code, registrar lock, WHOIS privacy, and TLD sync support
+- New: Added Hostinger as a domain-selling integration using the shared Hostinger API token from the core integration for availability checks, registration, nameserver updates, registrar lock, and WHOIS privacy
+- Improved: Added domain lifecycle action and filter docblocks for developer integration guidance
+- Improved: Updated plugin compatibility metadata to WordPress 7.0 in the addon readme
+- Improved: Updated planning templates used for upcoming release coordination
+
 Version 1.1.0 - Released on 2026-05-08
 - New: DNS record creation (add_dns_record) implemented for ResellerClub, Enom, and OpenSRS registrars
 - Fix: Default DNS Records parser now tolerates {DOMAIN} and {SITE_URL} tokens

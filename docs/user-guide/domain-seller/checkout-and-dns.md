@@ -93,7 +93,7 @@ Customers can manage DNS records for their registered domains from the **My Acco
 
 ### Which providers support DNS management?
 
-DNS management (add, edit, delete records) is available with **OpenSRS**, **ResellerClub**, and **Enom**. Namecheap, GoDaddy, and NameSilo domains display status and expiry information but DNS must be managed directly in the registrar's control panel.
+DNS management (add, edit, delete records) is available with **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, and **Openprovider**. **Hostinger** domains can update nameservers through Domain Seller; DNS records for hosted domains are managed by the core Hostinger domain-mapping integration. Namecheap, GoDaddy, and NameSilo domains display status and expiry information but DNS must be managed directly in the registrar's control panel.
 
 ### Default DNS records
 

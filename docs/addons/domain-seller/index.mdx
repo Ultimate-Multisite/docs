@@ -20,6 +20,9 @@ Domain registration is one of the most requested upsells for any WaaS (Website a
 #### Multiple Domain Registrar Support
 * **OpenSRS** — Full registration, renewal, and management
 * **Namecheap** — Complete integration with WhoisGuard and sandbox testing
+* **HostAfrica** — Domain search, pricing, registration, transfer, DNS, and ID protection via the Domains Reseller API
+* **Openprovider** — Reseller pricing, registration, renewal, transfers, DNS, WHOIS privacy, and TLD sync
+* **Hostinger** — Domain search and registration using the shared Hostinger integration token
 * **Extensible Architecture** — Built on the Integration Registry pattern, making it easy to add more providers
 * **Built-in Connection Testing** — Validate provider credentials and connectivity before going live
 
@@ -70,6 +73,9 @@ Domain registration is one of the most requested upsells for any WaaS (Website a
 
 * **OpenSRS** — Full integration with registration, renewal, DNS management, and WHOIS privacy
 * **Namecheap** — Full integration with registration, renewal, batch availability checking, and free WhoisGuard
+* **HostAfrica** — Registration, renewal, transfers, DNS management, EPP code retrieval, registrar lock, and ID protection
+* **Openprovider** — Registration, renewal, transfers, DNS management, EPP code retrieval, registrar lock, WHOIS privacy, and reseller TLD sync
+* **Hostinger** — Registration, domain lookup, nameserver updates, registrar lock, and WHOIS privacy; renewals are handled by Hostinger auto-renew
 * **GoDaddy** — Registration and renewal
 * **ResellerClub** — Registration, renewal, and DNS management
 * **NameSilo** — Registration and renewal
@@ -88,7 +94,7 @@ Domain registration is one of the most requested upsells for any WaaS (Website a
 2. Upload the plugin to `/wp-content/plugins/ultimate-multisite-domain-seller/`
 3. Network-activate the plugin from **Plugins** in the WordPress Network Admin
 4. The **Setup Wizard** launches automatically on first activation — follow the steps to:
-   * Connect your domain registrar (OpenSRS or Namecheap)
+   * Connect your domain registrar
    * Test the connection
    * Import available TLDs and wholesale pricing
    * Create your first domain product with pricing markup
@@ -102,7 +108,7 @@ Version 2.4.12 or higher. The addon is not compatible with WP Ultimo v1.x or Ult
 
 ### Which domain providers are supported?
 
-Six registrars are fully supported: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo**, and **Enom**. The addon's Integration Registry architecture makes it straightforward to add custom providers — see the [developer guide](/developer/integration-guide/custom-registrar).
+Nine registrars are supported: **OpenSRS**, **Namecheap**, **HostAfrica**, **Openprovider**, **Hostinger**, **GoDaddy**, **ResellerClub**, **NameSilo**, and **Enom**. Capabilities vary by provider because registrar APIs expose different operations; see the setup guide for a provider-by-provider overview. The addon's Integration Registry architecture makes it straightforward to add custom providers — see the [developer guide](/developer/integration-guide/custom-registrar).
 
 ### Can I offer WHOIS privacy protection?
 
@@ -122,7 +128,7 @@ Yes. Domains can be set to auto-renew and are tied to the customer's membership 
 
 ### Can customers manage their DNS records?
 
-Yes. Customers get a DNS management interface in their dashboard to add, edit, and delete A, AAAA, CNAME, MX, and TXT records. DNS management is available with OpenSRS, ResellerClub, and Enom.
+Yes. Customers get a DNS management interface in their dashboard to add, edit, and delete A, AAAA, CNAME, MX, and TXT records. DNS management is available with OpenSRS, ResellerClub, Enom, HostAfrica, and Openprovider. Hostinger DNS for hosted domains is handled by the core Hostinger domain-mapping integration.
 
 ### Is there a setup wizard?
 
