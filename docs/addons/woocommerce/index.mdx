@@ -15,7 +15,7 @@ The WooCommerce Integration works in a very similar way to the way our Manual Ga
 
 - Easy integration between Ultimate Multisite and WooCommerce
 - Several payment methods available
-- Completely automated process with WooCommerce Subscriptions
+- Automated recurring billing using the bundled subscriptions core, with optional WooCommerce Subscriptions plugin enhancements
 
 ## Documentation
 
@@ -63,7 +63,7 @@ After activating it, if you still don't have the WooCommerce plugin installed an
 
 Once installed, you will see an additional option under the Ultimate Multisite payments settings. You can then **enable** the _WooCommerce_ option from there.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![Ultimate Multisite payment gateway settings with WooCommerce enabled](/img/addons/woocommerce-payment-gateway.png)
 
 You can configure some basic settings like the display name that will show in the front end and instructions to guide your users in their checkout flow. Then you can go to your **Main site’s _WooCommerce_ settings** to enable and configure the payment gateway you prefer to use.
 
@@ -83,12 +83,14 @@ The WooCommerce Integration works in a very similar way to the way our **Manual 
 
   * Ultimate Multisite: WooCommerce Integration relies on WP-Cron to work. This works very well most times, but if the site has low traffic then the cron is not prompted to check for scheduled events and the event is missed, which can cause execution delays.
 
-## Woocommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin
 
-Manually initiating a payment each month is not ideal for end-users to do as a subscription is expected to automatically recur every billing cycle. So we designed the WooCommerce Integration addon to **support the WooCommerce Subscriptions plugin**. This will automate the payment to make the transaction easier for your end-users.
+Manually initiating a payment each month is not ideal for end-users because subscriptions are expected to recur automatically every billing cycle. The WooCommerce Integration add-on now bundles the core subscriptions code, so recurring products always use subscriptions for recurring billing.
 
-All you need to do is **install** the [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) and have it **activated on your main site**. Then go back to Ultimate Multisite payments settings and **enable the integration**.
+You do **not** need to purchase or install the separate [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) to sell recurring products through this integration. If that plugin is purchased, installed, and available on your main site, Ultimate Multisite will use it and WooCommerce will expose additional subscription management features. When it is not available, the bundled subscriptions core still handles recurring products.
 
-And that is it. Your end-users will no longer need to manually make a payment at the end of their billing cycle.
+![WooCommerce subscription integration settings](/img/addons/woocommerce-subscription-integration.png)
 
-Aside from an order being created on your main site under _Woocommerce_ , it will also create a subscription for each account.
+And that is it. Your end-users will no longer need to manually make a payment at the end of their billing cycle for recurring products.
+
+Aside from an order being created on your main site under _WooCommerce_, it will also create a subscription for each account.
