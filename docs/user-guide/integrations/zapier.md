@@ -41,7 +41,7 @@ Go to your network admin panel and navigate to **Ultimate Multisite > Settings**
 
 Select the **Enable API** option as it is required for this connection to work.
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![API and Webhooks settings with API Settings and Enable API options](/img/admin/settings-api-webhooks.png)
 
 Use the **Copy to Clipboard** icon on the API Key and API Secret fields and paste those values on the integration screen.
 
