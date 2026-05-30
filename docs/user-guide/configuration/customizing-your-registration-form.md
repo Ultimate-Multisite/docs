@@ -83,23 +83,23 @@ Forms are made of steps and fields. You can add a new step by clicking on **Add 
 
 On the first tab of the modal window, fill the content of your form’s step. Give it an ID, a name and a description. These items are mostly used internally.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
 
 Next, set the visibility of the step. You can choose between **Always show** , **Only show for logged in users** or **Only show for guests**.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
 
 Finally, configure the step style. These are optional fields.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Checkout step style configuration](/img/config/checkout-form-step-style.png)
 
 Now, it’s time to add fields to our first step. Just click to **Add New Field** and select the type of section you want.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
 
 Each field has different parameters to be filled. For this first entrance, we will select the **Username** field.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
 
 You can add as many steps and fields as you need. To display your products for your customers to pick one, use the Pricing Table field. If you want to let your clients choose a template, add the Template Selection field. And so on.
 
@@ -109,7 +109,7 @@ _**Note 2:** username, email, password, site title, site URL, order summary, pay
 
 While you are working on your checkout form, you can always use the Preview button to see how your clients will see the form. You can also alternate between view as an existing user or a visitor.
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
 
 Finally, on **Advanced Options** you can configure the message for the **Thank You** page, add snippets to track conversions, add custom CSS to your checkout form or restrict it to certain countries.
 
