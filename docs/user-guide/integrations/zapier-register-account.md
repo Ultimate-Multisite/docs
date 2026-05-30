@@ -7,6 +7,10 @@ sidebar_position: 1
 
 In the article [Integrating Ultimate Multisite with Zapier](zapier.md), we discussed how to use Zapier to perform different actions within Ultimate Multisite based on triggers and events. In this article, we will show how you can integrate 3rd party applications. We will use Google Sheets as the source of data and send the information to Ultimate Multisite to register an account.
 
+Before connecting Zapier, go to **Ultimate Multisite > Settings > API & Webhooks** and confirm the API is enabled. Copy the API Key and API Secret from this screen when Zapier asks for the Ultimate Multisite account credentials.
+
+![API and Webhooks settings with API Key, API Secret, and Enable API options](/img/admin/settings-api-webhooks.png)
+
 First, you need to create a **Google Sheet** under your Google Drive. Make sure you properly define each column so that you can easily map the data later.
 
 ![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)After creating a Google sheet, you can log in to your Zapier account and start creating a zap.

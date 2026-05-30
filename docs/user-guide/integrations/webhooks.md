@@ -15,15 +15,15 @@ This is helpful should you need to integrate or pass certain data from Ultimate 
 
 To create a webhook, go to your network admin dashboard. Click on **Ultimate Multisite > Webhooks > Add New Webhook.**
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Empty Webhooks list page with Add New Webhook button](/img/admin/webhooks-list-empty.png)
 
 You can then edit the webhook configuration:
 
-![Webhook edit interface](/img/admin/webhook-edit.png)
+![Add New Webhook form with Name, Event, and URL fields](/img/admin/webhook-add-modal.png)
 
 When creating a new webhook you will be asked for information like **Name, URL,** and **Event**. You can use any name you want for your webhook. The most important fields are the URL and Event.
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![Webhook edit interface showing the URL field and payload preview](/img/admin/webhook-url-field.png)
 
 URL is the **endpoint or the destination** to which Ultimate Multisite will send the **payload or data**. This is the application that will receive the data.
 
@@ -43,15 +43,15 @@ Go ahead and copy the URL and go back to Ultimate Multisite. Place the endpoint 
 
 This event is triggered whenever a user makes a payment. All the events available, their description, and payloads are listed at the bottom of the page. Click the **Add New Webhook** button to save the webhook.
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+![Webhook event dropdown with Payment Received selected](/img/admin/webhook-event-picker.png)
 
 We can now send a test event to the endpoint for us to see if the webhook we created is working. We can do this by clicking **Send Test Event** under the webhook we created.
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+![Webhooks list showing one configured webhook and Send Test action](/img/admin/webhooks-list-populated.png)
 
 This shows a confirmation window saying that the test was successful.
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
+![Webhook test event result after sending a test payload](/img/admin/webhook-test-result.png)
 
 Now if we go back to the _Requestbin_ site we will see that the payload has been received containing some test data.
 
