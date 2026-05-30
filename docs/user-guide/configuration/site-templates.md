@@ -27,9 +27,9 @@ This will open a modal window where it will ask for the **Site title, Site Domai
 
 _![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
 
-You can also view the site template description:
+You can also add a customer-facing description to explain what the template includes:
 
-![Site template description](/img/config/site-template-description.png)
+![Site template description field on the site template edit screen](/img/config/site-template-edit-description.png)
 
 At the bottom of the form, you will notice a **Copy Site** toggle switch. This will allow you to create a new site template based on an existing site template as your starting point to help you save time instead of creating a site template from scratch.
 
@@ -67,7 +67,7 @@ To do that, you’ll need to go to **Ultimate Multisite > Products > Edit**.
 
 ![Edit product to assign site template](/img/config/product-site-templates.png)
 
-This will bring you to the **Edit Produc** t page. Under the **Product Options** section, find the **Site template** tab and select the **Assign Site** **Template** option from the drop-down field. This will bring up the list of site templates available and it will allow you to select only one site template dedicated to the product.
+This will bring you to the **Edit Product** page. Under the **Product Options** section, find the **Site template** tab and select the **Assign Site Template** option from the drop-down field. This will bring up the list of site templates available and it will allow you to select only one site template dedicated to the product.
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
@@ -81,23 +81,23 @@ On the **Edit Product** page. Under the **Product Options** section, find the **
 
 ### Default Mode: Site template selection on the Checkout form
 
-If you wish all your site templates to be available during the registration, or maybe do not prefer doing extra work of assigning or specifying site templates under each product you create. Then you can simply set the site template selection under your **Checkout Form**. To do this, you just need to go to **Ultimate Multisite > Checkout Forms**. Then click **Edit** under the form you wish to configure.
-
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+If you wish all your site templates to be available during the registration, or maybe do not prefer doing extra work of assigning or specifying site templates under each product you create. Then you can simply set the site template selection under your **Checkout Form**. To do this, go to **Ultimate Multisite > Checkout Forms** and click **Edit** under the form you wish to configure.
 
 This will bring up the **Edit Checkout Form** page. Find the **Template Selection** field and click **Edit** under it.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
-
 A modal window will appear. Under the **Template Sites** field you can select and list down all the site templates you wish to be available during registration. The site templates you specify from here will be available regardless of whatever product the user selected.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![Template selection field in the checkout form editor](/img/config/checkout-form-template-step.png)
+
+On the frontend, customers see the template chooser during checkout and can pick the starting design for their new site.
+
+![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
 ### Site Template Options
 
 There are other site templates functions available that you can turn on or off under Ultimate Multisite settings.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
 #### Allow Template Switching
 
@@ -123,15 +123,13 @@ For example, if you wish to get your end-user's company name during registration
 
 ![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
 
-Then, you can simply add a matching registration field on your checkout form to capture that data:
+Then, you can simply add a matching registration field on your checkout form to capture that data. The same checkout form editor used for template selection lets you place custom fields alongside the template chooser:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![Template selection and registration fields in the checkout form editor](/img/config/checkout-form-template-step.png)
 
 Your customer will then be able to fill that field during the registration.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
-
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+![Frontend checkout form with template chooser](/img/config/frontend-template-chooser.png)
 
 Ultimate Multisite will then replace the placeholders with the data provided by the customer automatically.
 
@@ -145,8 +143,8 @@ To solve that, we offer the option of setting fake values for the placeholders, 
 
 You can have access to the template placeholders editor by heading to **Ultimate Multisite > Settings > Sites**, and then, on the sidebar, clicking the **Edit Placeholders** link.
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+![Site template settings under the Sites settings page](/img/config/settings-sites-templates-section.png)
 
 That will take you to the placeholders' content editor, where you can add placeholders and their respective content.
 
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Template placeholders content editor entry point](/img/config/settings-sites-templates-section.png)

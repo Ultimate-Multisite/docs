@@ -23,10 +23,10 @@ All of that is great, but we do run into an ugly problem: now our site templates
 
 To solve that, we offer the option of setting fake values for the placeholders, and we use those values to search and replace their contents on the template sites while your customers are visiting.
 
-You can have access to the template placeholders editor by heading to **Ultimate Multisite > Settings > Sites**, and then, on the sidebar, clicking the Edit Placeholders link.
+You can have access to the template placeholders editor by heading to **Ultimate Multisite > Settings > Sites**, scrolling to the Site Template Options area, and then clicking the **Edit Placeholders** link.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Site Template Options area in the Sites settings page](/img/config/settings-sites-templates-section.png)
 
 That will take you to the placeholders' content editor, where you can add placeholders and their respective content.
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![Template placeholders editor entry point](/img/config/settings-sites-templates-section.png)
