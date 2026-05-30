@@ -33,11 +33,7 @@ In this article, we will be looking at the basic concept of how a webhook works 
 
 Go to [requestbin.com](https://requestbin.com/) and click Create Request Bin.
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
-
 After clicking that button, it will ask you to log in if you already have an account or sign up. If you already have an account it will lead you right to their dashboard. On their dashboard, you will immediately see the endpoint or URL you can use in creating your Ultimate Multisite webhook.
-
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
 
 Go ahead and copy the URL and go back to Ultimate Multisite. Place the endpoint on the URL field and select an event from the dropdown. In this example, we will be selecting **Payment Received**.
 
@@ -54,7 +50,5 @@ This shows a confirmation window saying that the test was successful.
 ![Webhook test event result after sending a test payload](/img/admin/webhook-test-result.png)
 
 Now if we go back to the _Requestbin_ site we will see that the payload has been received containing some test data.
-
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
 
 This is the basic principle of how webhook and endpoints work. If you are to create a custom endpoint, you will need to create a custom function to process the data your receive from Ultimate Multisite.
