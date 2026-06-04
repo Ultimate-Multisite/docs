@@ -209,6 +209,39 @@ Content-Type: application/json
 }
 ```
 
+## Sovereign Tenant Endpoints
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 adds sovereign tenant REST coverage for integrations that provision, inspect, or verify isolated tenants.
+
+The exact request payload depends on the enabled host capability, but integrations should expect these endpoint groups:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Use the bootstrap endpoint to prepare tenant registry, database, filesystem, and routing state. Use migration status and verification endpoints before switching production traffic. Use the deletion endpoint for sovereign teardown so database credentials are removed through the addon cleanup flow.
+
+Typical migration status responses include:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Treat `ready: false` as a pre-launch blocker. Check the verification details, fix the database host binding, queue, user provisioning, or routing issue, then retry verification.
+
 ## Error Responses
 
 ```json

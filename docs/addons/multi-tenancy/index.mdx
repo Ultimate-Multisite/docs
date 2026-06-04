@@ -11,6 +11,20 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 Distribute subsites across servers and databases for performance and security
 
+## Version 1.2.0 release highlights
+
+Multi-Tenancy 1.2.0 adds the sovereign tenant foundation for production isolation workflows:
+
+- Stateless tenant autologin with short-lived, replay-protected SSO visits.
+- Per-subsite database and filesystem isolation for sovereign tenants.
+- Hostinger multi-tenancy capability for host-aware tenant provisioning.
+- Sovereign migration verification gates for legacy data checks and async push processing.
+- Configurable same-machine database host binding for Bedrock, FrankenPHP, and localhost installs.
+- Tenant bootstrap, database writer, schema bootstrap, and user provisioning improvements.
+- Safer sovereign teardown that cleans tenant credentials.
+
+See the user guides for [sovereign migration workflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy isolation](/user-guide/configuration/multi-tenancy-isolation), and [sovereign tenant operations](/user-guide/administration/sovereign-tenant-operations).
+
 ## Requirements
 
 - WordPress 5.3 or higher
@@ -97,6 +111,16 @@ The addon includes a comprehensive testing framework:
 
 The addon supports various configuration options accessible through the network admin interface.
 
+### Sovereign tenant configuration
+
+For sovereign tenants, configure the tenant database, filesystem root, database host binding, and host capability before routing traffic to the tenant. Run migration verification after every change that affects database credentials, host binding, routing, or user provisioning.
+
+Use `localhost` only when the tenant runtime and database grants expect local socket or same-machine access. Use `127.0.0.1` or a service hostname when that is the grant host configured by your provider.
+
+### Hostinger capability
+
+The Hostinger multi-tenancy capability works with the shared Hostinger integration token. Confirm the domain is present in hPanel, DNS points to the Hostinger account, and the tenant database settings match hPanel before verification.
+
 ## Hooks and Filters
 
 ### Actions
@@ -117,6 +141,8 @@ This addon is licensed under the GPL v3 or later.
 
 For support and documentation, visit [MultisiteUltimate.com](https://multisiteultimate.com)
 ## Changelog
+
+- Version 1.2.0 (2026-06-03): add stateless tenant autologin, Hostinger multi-tenancy capability, per-subsite database and filesystem isolation, sovereign migration verification gates, tenant bootstrap/database writer improvements, configurable MySQL host binding, and safer sovereign teardown.
 
 - Version 1.0.1 (2025-09-28): rename prefix to ultimate-multisite; update text domain; version bump.
 

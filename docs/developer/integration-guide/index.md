@@ -7,6 +7,8 @@ sidebar_position: 1
 
 This guide covers common integration patterns with Ultimate Multisite, including connecting to external services, building custom payment gateways, and handling webhooks.
 
+For isolated tenant infrastructure, see [Multi-Tenancy Integration](./multi-tenancy) for sovereign tenant bootstrap, migration verification, SSO, and teardown guidance.
+
 ## CRM Integration
 
 Sync customer data to your CRM when new customers sign up:
@@ -61,3 +63,4 @@ function track_conversion($payment, $customer, $membership) {
 
 - [Custom Gateway Development](./custom-gateway) — Build your own payment gateway
 - [Webhook Handling](./webhooks) — Create custom webhook endpoints
+- [Multi-Tenancy Integration](./multi-tenancy) — Integrate with sovereign tenant lifecycle flows
