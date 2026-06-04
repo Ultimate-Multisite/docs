@@ -83,6 +83,10 @@ The **Domains** page is dedicated to custom domains mapped to subsites. As a sup
 
 The **Settings** page is where you configure Ultimate Multisite — registration settings, payments, API and webhooks, domain mapping, and other integrations.
 
+AI connector settings list the currently supported OAuth provider pools: Anthropic Max, OpenAI ChatGPT/Codex, and Google AI Pro. Each provider card lets super admins connect accounts, refresh saved accounts, remove accounts by email, and use the manual OAuth fallback when a sandboxed environment blocks the browser redirect. Cursor Pro setup options have been removed from the admin panel.
+
+ChatGPT/Codex accounts support connector-backed tool use where the operation allows tools, so admin workflows that depend on connector-supported operations can use Codex tool behavior after the OpenAI account is connected.
+
 ![Settings page](/img/admin/settings-general.png)
 
 Here's a full view of the general settings page:

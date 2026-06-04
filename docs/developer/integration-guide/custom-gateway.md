@@ -78,3 +78,17 @@ add_filter('wu_payment_gateways', function($gateways) {
 - Always return `WP_Error` on failure so Ultimate Multisite can handle error display
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Use `wu_log_add()` for gateway-specific logging
+
+## AI connector provider capabilities
+
+Custom integrations that call AI connector-backed operations should align with the supported OAuth provider set introduced with AI Provider for Anthropic Max v1.3.0:
+
+| Provider | Capability notes |
+|---|---|
+| **Anthropic Max** | Supports the existing OAuth account pool workflow. Preserve Anthropic tool-use payloads, including empty tool arrays and round-trip thinking signatures, when proxying connector requests. |
+| **OpenAI ChatGPT/Codex** | Supports the OAuth pool workflow and full tool-support behavior for connector-supported operations. Pass tool definitions and tool-call results through without stripping Codex-specific tool metadata. |
+| **Google AI Pro** | Supports the OAuth pool workflow and SDK-backed provider integration. Refresh provider accounts after OAuth completion before routing requests. |
+
+Cursor Pro integration and setup pathways have been removed. Do not register Cursor Pro as a selectable provider or present Cursor-specific OAuth instructions in custom connector UIs.
+
+For sandboxed or headless environments, expose the manual OAuth fallback path so administrators can paste the returned authorization data and complete account connection without relying on an automatic browser redirect.
