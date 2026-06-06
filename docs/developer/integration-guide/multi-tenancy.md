@@ -26,6 +26,20 @@ Stateless tenant autologin uses short-lived tokens with a purpose claim, JTI rep
 
 Network-side API audit events and daily summaries are available for sovereign tenant gateways. Use those logs when debugging external systems that call tenant lifecycle endpoints.
 
+## Sovereign customer action URLs
+
+Ultimate Multisite v2.13.0 routes sovereign-tenant customer actions back to the main site for account, checkout, billing, invoice, site, template-switching, and domain-mapping flows. Integrations that render tenant-side management links should point those actions at the main-site customer panel and include a validated return target when the user should be able to navigate back to the tenant after completing the action.
+
+Use the core SSO wrapper for cross-domain management links:
+
+```php
+$url = wu_with_sso($main_site_customer_url);
+```
+
+The generated URL remains filterable through `wu_sso_url`, which receives the SSO URL, current user, target site ID, and redirect context. Add-ons can use that filter to append provider-specific context or to replace the broker URL while preserving Ultimate Multisite's token validation.
+
+Do not duplicate membership, invoice, billing-address, template, or domain-management state inside the sovereign tenant. Treat the tenant dashboard as the launcher and the main-site customer panel as the system of record for managed actions.
+
 ## Migration verification
 
 After a migration or lifecycle integration changes tenant data, run the verification gates:

@@ -204,6 +204,14 @@ If you are working with a form that was created before v2.6.1, or started from a
 
 When a customer picks a template during checkout, Ultimate Multisite uses it when provisioning their new site. The templates shown come from your **Site Templates** list (**Ultimate Multisite > Site Templates**). Only templates marked as available to customers appear here.
 
+### Checkout-form base domains
+
+Ultimate Multisite v2.13.0 treats domains configured on checkout form **Site URL** fields as network base domains. Use the field's available-domain settings when you want customers to create sites under one or more shared registration domains, such as `example.com` and `sites.example.com`.
+
+Shared checkout-form base domains are not treated as per-site custom domain mappings. When a customer creates a subdirectory site on one of those bases, Ultimate Multisite does not create a mapped-domain record that would make the shared host belong to only that one site. The shared host remains available for sibling sites that use the same checkout form base.
+
+Keep custom domains for per-customer mapped hosts, such as `customer-example.com`. Keep checkout-form base domains for shared registration hosts that many sites can use.
+
 #### Removing the field
 
 If you do not offer site templates, remove the Template Selection field from your form. Customers will then receive whichever default template is configured under **Ultimate Multisite > Settings > Site Templates**.

@@ -73,6 +73,37 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Handle refund requests |
 | `get_payment_methods()` | Return saved payment methods for a customer |
 
+## Renewal credentials for recurring memberships
+
+Ultimate Multisite v2.13.0 lets gateway integrations report whether a recurring membership has a reusable renewal credential before `auto_renew` is persisted. Hook `wu_membership_has_renewal_credential` and return:
+
+- `true` when the membership has a gateway subscription, billing agreement, vault token, or equivalent reusable payment method.
+- `false` when the gateway knows the recurring credential is missing or unusable.
+- `null` to opt out and keep the default behaviour unchanged.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+When a gateway returns `false`, Ultimate Multisite saves the membership with auto-renewal disabled and stores a missing-credential marker. Use `wu_membership_renewal_credential_missing` to notify administrators, start a re-authorization flow, or add support notes:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+Clear the missing-credential marker as part of your gateway's successful re-authorization flow after a new reusable credential is stored.
+
 ## Tips
 
 - Always return `WP_Error` on failure so Ultimate Multisite can handle error display
