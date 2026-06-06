@@ -17,6 +17,10 @@ The account page is accessible by clicking on **Account** inside your customer's
 
 ![Account menu in the customer dashboard](/img/account-page/account-menu.png)
 
+On sovereign tenant networks, Ultimate Multisite v2.13.0 keeps this customer management experience on the main site. If a customer opens account, checkout, billing, invoice, site-management, template-switching, or domain-mapping actions from a sovereign tenant, the action points back to the main-site customer panel so the network billing and membership records stay authoritative.
+
+When the customer arrives from a sovereign tenant, the main-site customer panel can include a return link back to the tenant site. The return link is only shown when Ultimate Multisite can validate the return target as one of the customer's sites, which prevents arbitrary redirects while preserving the tenant workflow.
+
 ![Customer account page overview](/img/account-page/overview.png)
 
 After a customer click on it, they will se an overview of their membership, billing address, invoices, domains, site limitations, and will also be able to change the ****Site Template** (if it's allowed in your network)**.

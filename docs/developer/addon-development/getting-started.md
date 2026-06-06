@@ -347,6 +347,52 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
+## v2.13.0 extension points
+
+Ultimate Multisite v2.13.0 adds several extension points that are useful for addons that integrate with sovereign tenants, checkout domains, or host-provider DNS automation.
+
+### SSO and main-site management URLs
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form base domains
+
+Use `wu_checkout_form_base_domains` when your addon provides additional shared base domains that should behave like checkout-form **Site URL** domains instead of per-site custom mappings:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite normalizes these hosts and skips automatic per-site mapped-domain records for them.
+
+### Automatic domain-record creation
+
+Use `wu_should_create_domain_record_for_site` when your addon needs to suppress or defer automatic domain-record creation for a newly created site:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Host-provider integrations that listen to `wu_add_subdomain` can create provider-side DNS records when sites are created. If no integration is registered for that action, Ultimate Multisite skips the empty background job.
+
 ## Next Steps
 
 - Review the [Hooks Reference](/developer/hooks) for available actions and filters

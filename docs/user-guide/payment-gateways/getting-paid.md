@@ -21,6 +21,10 @@ Before you setup your payment gateway, please take a look at the basic payment s
 
 ![Force Auto-Renew toggle setting on the Payments settings page](/img/config/payments-force-auto-renew.png)
 
+Ultimate Multisite v2.13.0 checks whether the active gateway has a reusable renewal credential before saving a recurring membership with auto-renewal enabled. A renewal credential can be a gateway subscription, billing agreement, saved vault token, or equivalent reusable payment method. If the gateway reports that no usable credential exists, Ultimate Multisite saves the membership but turns off auto-renewal and records the missing-credential state so an administrator or support flow can ask the customer to re-authorize payment before the renewal date.
+
+This prevents a membership from appearing to auto-renew when the gateway can only collect one-time payments. Gateway add-ons should confirm that recurring checkouts store a reusable credential, especially when the gateway supports both one-time capture and vaulted/subscription payment modes.
+
 **Allow trials without payment** **method:** With this option enabled your client won't have to add any financial information during the registration process. This will only be required once the trial period expires.
 
 ![Allow Trials Without Payment Method toggle on the Payments settings page](/img/config/payments-allow-trials.png)

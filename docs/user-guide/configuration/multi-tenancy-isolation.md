@@ -48,3 +48,21 @@ For new sovereign tenants, use this order:
 7. Switch routing or DNS after verification passes.
 
 This order prevents partially isolated tenants from receiving traffic before the database writer, users, and filesystem are ready.
+
+## Sovereign customer management flows
+
+Ultimate Multisite v2.13.0 keeps customer management actions on the main site when sovereign mode is enabled. A tenant can still run as an isolated WordPress install, but customer-facing actions that depend on network billing, membership, or shared account data should send the customer back to the main site instead of trying to complete the action inside the tenant runtime.
+
+The main-site flow applies to:
+
+- Checkout and plan changes.
+- Account overview and customer profile actions.
+- Billing address updates and payment-management screens.
+- Invoice and payment-history views.
+- Site management actions such as adding sites or deleting a site.
+- Template switching.
+- Domain mapping and primary-domain changes.
+
+When the customer starts one of these actions from a sovereign tenant, Ultimate Multisite builds the corresponding main-site URL and preserves the source tenant as a return target when it is safe to do so. This lets customers complete the managed action against the network records, then return to the tenant context without duplicating billing or membership state in the sovereign database.
+
+For operators, the practical rule is: keep billing, account, checkout, invoice, template, and domain-management pages available on the main site for sovereign networks. Tenant dashboards can link to those pages, but the main site remains the source of truth for the action.

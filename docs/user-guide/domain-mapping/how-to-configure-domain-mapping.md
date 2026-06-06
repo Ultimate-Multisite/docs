@@ -69,6 +69,8 @@ After putting all the information in, you can then click the **Add Existing Doma
 
 This will start the process of verifying and fetching the DNS information of the custom domain. You will also see a log at the bottom of the page for you to follow the process it is going through. This process may take a few minutes to complete.
 
+Ultimate Multisite v2.13.0 also creates the internal domain record automatically when a new site is created on a host that should be treated as a per-site domain. If the host is the network's primary domain, or one of the shared checkout-form base domains configured on a **Site URL** field, the automatic mapped-domain record is skipped so that shared base domain remains available to every site that uses it.
+
 The **Stage** or the status should change from **Checking DNS** to **Ready** if everything is properly set up.
 
 ![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
@@ -122,6 +124,8 @@ Click to **Add Domain** will start the process of verifying and fetching the DNS
 Domain Syncing is a process where Ultimate Multisite adds the custom domain name to your hosting account as an add-on domain **for the domain mapping to work**.
 
 Domain syncing automatically happens if your hosting provider has integration with the Ultimate Multisite domain mapping feature. Currently, these hosting providers are _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ and _Cpanel._
+
+When a host-provider integration is active, Ultimate Multisite can also enqueue the provider-side DNS or subdomain creation task for newly created sites. If no integration is listening for that task, the background job is skipped to avoid no-op queue entries. DNS and SSL checks for mapped domains continue to run through the normal domain-stage process.
 
 You will need to activate this integration on Ultimate Multisite settings under the **Integration** tab.
 
