@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Hooks Reference
 
-Auto-generated documentation for all **59 actions** and **115 filters** in Ultimate Multisite.
+Auto-generated documentation for all **59 actions** and **118 filters** in Ultimate Multisite.
 
 ## Actions
 
@@ -98,6 +98,7 @@ Auto-generated documentation for all **59 actions** and **115 filters** in Ultim
 - [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filter the "initial amount" total.
 - [wu_cart_get_total](./Filters/wu_cart_get_total) — Filter the "initial amount" total.
 - [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Allow plugin developers to meddle with the credit value.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filters shared checkout-form base domains that should not become mapped-domain records.
 - [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Our APIs to add new field templates hook into here.
 - [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Our APIs to add new field types hook into here.
 - [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filter the error messages.
@@ -166,11 +167,13 @@ Auto-generated documentation for all **59 actions** and **115 filters** in Ultim
 - [wu_return_url](./Filters/wu_return_url) — Allow developers to change the gateway return URL used after checkout processes.
 - [wu_search_models_functions](./Filters/wu_search_models_functions) — Allow plugin developers to add more search models functions.
 - [wu_setup_wizard](./Filters/wu_setup_wizard) — Allow developers to add additional setup wizard steps.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filters whether Ultimate Multisite should create a domain record for a newly created site.
 - [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Allow developers to short-circuit the redirection, preventing it from happening.
 - [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Allows for handler rewrite
 - [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filter the bulk actions available for sites.
 - [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter to change the value for get pluginssites inside the network.
 - [wu_sso_enabled](./Filters/wu_sso_enabled) — Enable/disable cross-domain single-sign-on capability.
+- [wu_sso_url](./Filters/wu_sso_url) — Filters generated SSO URLs before they are returned for cross-domain customer actions.
 - [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filter Stripe Subscription data. Can override success_url or cancel_url.
 - [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filters the payment intent arguments.
 - [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filters the ID of the plan to check for. If this exists, the new subscription will use this plan.
