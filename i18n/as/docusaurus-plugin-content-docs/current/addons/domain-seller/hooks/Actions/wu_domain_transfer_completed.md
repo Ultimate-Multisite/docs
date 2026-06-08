@@ -1,0 +1,23 @@
+---
+id: wu_domain_transfer_completed
+title: কাৰ্য্য - wu_domain_transfer_completed
+sidebar_label: wu_domain_transfer_completed
+_i18n_hash: e50e8bb82f31cdf65af114919b65343a
+---
+# Action: wu_domain_transfer_completed
+
+ডমেইন স্থানান্তৰ (domain transfer) সম্পন্ন হোৱাৰ পিছত এই কাৰ্য্যটো ট্ৰিগাৰ হয়।
+
+## Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| $domain | `\WP_Ultimo\Models\Domain` | ডমেইনৰ বস্তু (object) বা তথ্য। |
+| $transfer_data | `array` | স্থানান্তৰ সম্পূৰ্ণ হোৱাৰ তথ্য। |
+
+### Since
+
+- 2.1.0
+### Source
+
+Defined in [`inc/class-domain-transfer-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-transfer-manager.php#L690) at line 690

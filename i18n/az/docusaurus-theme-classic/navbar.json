@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "İstifadəçi İlərin Dəstəkləri",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "İnkişafçı",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "Əlavələr",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "Veb saytı",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

@@ -1,0 +1,16 @@
+---
+id: wu_unlock_this-object_id
+title: 'Action - wu_unlock_{$this->object_id}'
+sidebar_label: 'wu_unlock_{$this->object_id}'
+_i18n_hash: 99683dddc59912e6cb4cb0e3c11d1591
+---
+# Action: wu_unlock_{$this->object_id}
+
+প্লাগইন ডেভেলপাৰসকলক আনলক কৰাৰ প্ৰক্ৰিয়াত কাৰ্য্য (actions) যোগ কৰিবলৈ অনুমতি দিয়ে।
+
+### Since
+
+- 1.8.2
+### Source
+
+[`inc/admin-pages/class-edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-edit-admin-page.php#L182) ফাইলটোৰ লাইন ১৮২ নম্বৰত সংজ্ঞায়িত কৰা হৈছে।

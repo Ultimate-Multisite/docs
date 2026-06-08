@@ -1,0 +1,144 @@
+---
+title: ለ WebLLM የላቀ AI ማገናኛ
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+የUltimate AI Connector for WebLLM በWordPress multisite networkዎ ውስጥ በብራውዘር ውስጥ በቀጥታ የAI አቅም ማስኬድ (inference) ያመጣል። ትልልቅ የቋንቋ ሞዴሎችን (LLMs) በሙሉ በብራውዘር ውስጥ በመጠቀም WebLLM እና MLC engineን ይጠቀማል — ምንም API key፣ ምንም ውጫዊ ጥሪ፣ እና ምንም መረጃ የተጠቃሚውን መሳሪያ አይለቅም።
+
+## ቁልፍ ባህሪያት (Key Features)
+
+- **በብራውዘር ደረጃ አቅም ማስኬድ (Browser-side inference)**: LLM በጎብኚው ብራውዘር ውስጥ በWebLLM/MLC በኩል ይሰራል — የሰርቨር GPU አያስፈልግም።
+- **የሚንሳፈፍ የውይይት ዊጄት (Floating chat widget)**: የተመዘገቡ ተጠቃሚዎች የብራውዘር ደረጃ LLMን በቀጥታ ከፊት ለፊት (front end) ሊጠይቁ ይችላሉ።
+- **የአድሚን ባር ሁኔታ አመልካች (Admin-bar status indicator)**: የWebLLM engine ወቅታዊ ሁኔታ በWordPress admin bar ላይ ይታያል።
+- **SharedWorker runtime**: በርካታ የብራውዘር ትሮች የGPU ሀብቶችን ከመወዳደር ይልቅ አንድ የGPU ክፍለ ጊዜን ይጋራሉ።
+- **apiFetch middleware**: ከAI Client SDK ስርዓት ጋር የሚመሳሰሉ የWordPress REST ጥያቄዎች ወደ አካባቢያዊው WebLLM broker በግልጽ ይላካሉ — የloopback HTTP round-trip አይኖርም።
+- **የዊጄት ቅንብሮች UI (Widget settings UI)**: የውይይት ዊጄቱን ለማብራት ወይም ለማጥፋት እና የራስ-ፕሮምፕት ባህሪን ለማስቀመጥ የኮነክተር ፓነል ቅንብሮች።
+- **IndexedDB ካሽ (Cache)**: የሞዴል ክብደት ማውረዶች (Model weight downloads) መደበኛውን Cache API መንገድ የሚያቋርጡ CDN redirection ሲፈጠሩ ሳይጠፉ ይቀራሉ።
+- **wpai filter integration**: AI Experiments ባህሪ ወደ ብራውዘር engine እንዲሄድ የሚያደርግበት ከሆነ፣ ወደ `wpai_preferred_text_models` filter ይገባል።
+
+## መስፈርቶች (Requirements)
+
+- WordPress 5.3 ወይም ከዚያ በላይ
+- PHP 7.4 ወይም ከዚያ በላይ
+- Ultimate Multisite plugin (በሥራ ላይ መሆን አለበት)
+- WebGPU ድጋፍ ያለው ብራውዘር (Chrome 113+, Edge 113+, ወይም WebGPU በየተቀየረበት Firefox Nightly)
+
+## መጫን (Installation)
+
+1. የፕልጊን ፋይሎችን ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
+2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕልጊኑን ያንቁ።
+3. የaddonን ለማስቀመጥ ወደ **Ultimate Multisite → AI Connector** ይሂዱ።
+
+## የሚንሳፈፍ የውይይት ዊጄት (Floating Chat Widget)
+
+የሚንሳፈፍ የውይይት ዊጄት ማንኛውንም የተመዘገበ ተጠቃሚ በገጹን ሳይለቅ በቀጥታ ከፊት ለፊት (front end) ከብራውዘር ደረጃ LLM ጋር እንዲገናኝ ያስችላል።
+
+### ምን ያደርጋል (What It Does)
+
+የተንቀሳቀሰ ከሆነ፣ በተመዘገቡ ተጠቃሚዎች በየፊት-የገጹ ጥግ ላይ የውይይት አዶ ይታያል። አዶውን መጫን ተጠቃሚው ፕሮምፕቶችን ሊጽፍበት እና ከበራውዘር ውስጥ በየሚሰራው WebLLM ሞዴል ምላሾችን ሊቀበልበት የሚያስችል የውይይት ፓነል ይከፍታል። ሞዴሉ በሙሉ በብራውዘር ውስጥ ስለሚሰራ፣ ምላሾቹ ሚስጥራዊ ናቸው እና ምንም የሰርቨር-ጎን ሂደት አያካትቱም።
+
+### የአድሚን ባር ሁኔታ አመልካች (Admin-Bar Status Indicator)
+
+የWordPress አድሚን ባር የWebLLM engineን የአሁኑን ሁኔታ የሚያሳይ ሁኔታ አመልካችን ያካትታል፡
+
+| ሁኔታ (Status) | ትርጉም (Meaning) |
+|--------|---------|
+| **Loading** | MLC engine እየጀመረ ነው ወይም የሞዴል ክብደቶችን እየወረደ ነው። |
+| **Ready** | ሞዴሉ ተጭኗል እና ለትንበያ ዝግጁ ነው። |
+| **Idle** | engine ተጭኗል ነገር ግን SharedWorker tab አልተንቀሳቀሰም። |
+| **Error** | engine ለመጀመር አልተሳካም — ዝርዝሮችን ለማየት የብራውዘር ኮንሶልን ይመልከቱ። |
+
+አመልካቹ ገጽን እንደገና ሳይጫን በቅጽበታዊ እውreal time ይዘምናል።
+
+### ዊጄቱን እንዴት ማብራት ወይም ማጥፋት እንደሚቻል (How to Enable or Disable the Widget)
+
+1. በnetwork admin ውስጥ ወደ **Ultimate Multisite → AI Connector** ይሂዱ።
+2. **Connector** ፓነሉን ያግኙ።
+3. **Enable floating chat widget** የሚለውን አማራጭ ያብሩ ወይም ያጥፉ።
+4. ቅንብሮችን ያስቀምጡ (Save settings)።
+
+የnetwork አስተዳዳሪ ይህንን አቅም ከሰጠው፣ ዊጄቱ በየገጹ በየsiteው አስተዳዳሪ ውስጥም ሊበራ ወይም ሊጠፋ ይችላል።
+
+## የዊጄት ቅንብሮች (Widget Settings)
+
+በ**Ultimate Multisite → AI Connector** ውስጥ ያለው የኮነክተር ፓነል የሚንሳፈፍ የውይይት ዊጄት የሚከተሉትን ቅንብሮች ይዟል፡
+
+### የሚንሳፈፍ የውይይት ዊጄትን ማብራት (Enable Floating Chat Widget)
+
+ይህ የውይይት ዊጄቱን ለጠቅላላው network ያብራል ወይም ያጥፋል። ሲሰቀል፣ ዊጄቱ በየትኛውም የፊት-የገጽ ላይ አይታይም፣ ተጠቃሚው ሚና ምንም ይሁን ምን።
+
+**መነሻ (Default):** Off
+
+### የራስ-ፕሮምፕት ባህሪ (Auto-Prompt Behaviour)
+
+ተጠቃሚው ዊጄቱን ሲከፍተው ፕሮምፕት በራስ-ሰር መላክ መሆኑን ይቆጣጠራል።
+
+| አማራጭ (Option) | ባህሪ (Behaviour) |
+|--------|-----------|
+| **Disabled** | ዊጄቱ ባዶ ውይይት ይከፈታል — ተጠቃሚው የራሱን ፕሮምፕት ይጽፋል። |
+| **Page context** | ዊጄቱ በአሁኑ ገጽ ርዕስ እና ይዘት ላይ ተመስርቶ ፕሮምፕት ተሞልቶ ይከፈታል። |
+| **Custom prompt** | ዊጄቱ በታች ባለው መስክ ውስጥ በሚገልጹት የራስ-ፕሮምፕት ይከፈታል። |
+
+ወደ **Custom prompt** ሲቀየሩ፣ መደበኛ የፕሮምፕት ጽሑፍ ማስገቢያ የሚሆን ተጨማሪ የጽሑፍ መስክ ይታያል. መሰረታዊ የቴምፕሌት ተለዋዋጮችን ይደግፋል፡
+
+- `{site_name}` — የአሁኑ የsite ስም
+- `{page_title}` — የአሁኑ ገጽ ርዕስ
+- `{user_display_name}` — የተመዘገበ ተጠቃሚው የማሳያ ስም
+
+**መነሻ (Default):** Disabled
+
+## SharedWorker Runtime
+
+የVersion 1.1.0 ለMLC engine የSharedWorker runtime አቅርቧል። ቀደም ሲል፣ WebLLMን የሚጠቀም እያንዳንዱ የብራውዘር ትር የራሱን የሞዴል ተልዕኮ (instance) ይጫን ነበር፣ ይህም በVRAM ውስንነት ባላቸው መሳሪያዎች ላይ የGPU ሜሞሪ እንዲወዳደር በማድረግ የአፈጻጸም ችግሮችን ይፈጥራል።
+
+በSharedWorker runtime አማካኝነት፣ አንድ ትር እንደ engine host ሆኖ ያገለግላል። ሌሎች ሁሉም ትሮች ከዛ አንድ ተልዕኮ በኩል በworker's message channel ይገናኛሉ። ውጤቱ፡
+
+- በሁሉም ክፍት ትሮች ላይ የሚጋራ አንድ የGPU ክፍለ ጊዜ
+- ሞዴሉ ከተጫነ በኋላ ፈጣን ምላሾች (ተደጋጋሚ መጀመር የለም)
+- በመሳሪያው ላይ ዝቅተኛ ከፍተኛ የሜሞሪ አጠቃቀም
+
+SharedWorker ለተጠቃሚዎች ግልጽ አይደለም። የአድሚን ባር ሁኔታ አመልካች ሁልጊዜ የጋራ engineን ሁኔታን ነው የሚያንፀባርቀው፣ የየብራውዘር ትሩን አይደለም።
+
+## apiFetch Middleware
+
+የaddonው የWordPress REST API ጥያቄዎችን የሚቋረጥ `apiFetch` middleware ይጭናል፣ ይህም ከAI Client SDK ስርዓት ጋር የሚመሳሰሉ ጥያቄዎችን ይይዛል። እነዚህ ጥያቄዎች ወደ ሰርቨሩ የloopback HTTP ጥያቄ ከመላክ ይልቅ፣ በSharedWorker ውስጥ በሚሰራው አካባቢያዊ WebLLM broker ላይ በቀጥታ ይላካሉ።
+
+ይህ ማለት የAI endpoints ለመጥራት መደበኛውን የWordPress `apiFetch` API የሚጠቀሙ ፕልጊኖች እና ቴሞች፣ ምንም የኮድ ለውጥ ሳያስፈልጋቸው፣ ሞዴሉ ሲገኝ በብራውዘር ደረጃ በራስ-ሰር ይጠቀማሉ።
+
+## Hooks እና Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — WebLLM የብራውዘር engineን እንደ ተመራጭ የጽሑፍ ሞዴል ይመዝግቡ። engine ሲዘጋጅ እና ሲገኝ፣ የaddonው ወደዚህ filter በራስ-ሰር ይገባል።
+- `ultimate_webllm_widget_enabled` — ለተወሰነ ተጠቃሚ ወይም ሁኔታ የዊጄትን የብቃት ሁኔታ ይሽረዋል። `true` ወይም `false` ይመልሱ።
+- `ultimate_webllm_auto_prompt` — ወደ ዊጄቱ ከመላኩ በፊት የራስ-ፕሮምፕት ጽሑፍን ያሻሽላል። የፕሮምፕት ስትሪንግን እና የአሁኑን `WP_Post` object ይቀበላል።
+
+## ችግር መፍታት (Troubleshooting)
+
+### የውይይት ዊጄቱ አይታይም
+
+- ተጠቃሚው መግባቱን ያረጋግጡ — ዊጄቱ ለተረጋገጡ ተጠቃሚዎች ብቻ ይታያል።
+- በConnector panel ውስጥ **Enable floating chat widget** መብራት መሆኑን ያረጋግጡ።
+- የተጠቃሚው ብራውዘር WebGPU እንደሚደግፍ ያረጋግጡ (ከላይ ባለው መስፈርቶች ይመልከቱ)።
+
+### የአድሚን ባር አመልካች "Error" ያሳያል
+
+የብራውዘር developer console (F12) ይክፈቱ እና ከWebLLM ጋር የተያያዙ ስህተቶችን ይፈልጉ። የተለመዱ ምክንያቶች፡
+
+- ብራውዘሩ WebGPUን አያደግፍም።
+- የሞዴል ክብደት ማውረድ አልተሳካም — የኔትወርክ ግንኙነትን ይፈትሹ እና በብራውዘር developer tools (Application → IndexedDB) ውስጥ የIndexedDB ካሽን ለማጽዳት ይሞክሩ።
+- የብራውዘር ቅጥያ (extension) የSharedWorkerን እያደነዘዘ ነው።
+
+### የሞዴል ክብደት ሁልጊዜ ይወረዳል
+
+የaddonው የሞዴል ክብደቶች CDN redirection ሲፈጠሩ ሳይጠፉ እንዲቀሩ IndexedDBን እንደ ካሽ backend ይጠቀማል። ክብደቶቹ በየጉብኝቱ እየወረዱ ከሆነ፣ IndexedDB በብራውዘር የግላዊነት ቅንብሮች ወይም ቅጥያ ስለማጽዳት ያረጋግጡ።
+
+## የለውጥ መዝገብ (Changelog)
+
+ሙሉ የversion ታሪክን ለማየት [Changelog](./changelog) ይመልከቱ።

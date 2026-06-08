@@ -1,0 +1,10 @@
+---
+title: የድረገጽ ኤክስፖርተር
+sidebar_position: 20
+_i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
+---
+# Site Exporter
+
+ይህ ባህሪ በ**Site Exporter** addon አማካይነት ይሰጣል።
+
+ሙሉ ሰነዱን ለማየት፣ [Site Exporter addon documentation](/addons/site-exporter) ላይ ይመልከቱ።

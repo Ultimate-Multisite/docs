@@ -1,0 +1,117 @@
+---
+title: Ölçülmüş Planlar
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Ölçülən Planlar
+
+Ultimate Multisite: Metered Plans addonu, müştərilərinizə faktura çıxarma üsullarınızı dəyişdirərək, çevik ölçülən (metrik) faktura çıxarma imkanlıqları təqdim edir. İstifadəçiləri bloklayan sərt limitlər əvəzinə, əlavə istifadə üçün müştərilərə avtomatik faktura çıxaran artıq istifadə (overage) haqqları təmin edin.
+
+## Əsas Xüsusiyyətlər
+
+* **Ölçülən Faktura Çıxarma**: Müştərilərdən sabit səviyyələr əsasında deyil, faktiki istifadəyə görə haq toplamaq
+* **Artıq İstifadə İdarəetməsi**: Plan limitlərini aşan istifadə üçün avtomatik faktura çıxarmaq
+* **İstifadə İzləmə**: Müştərinin resurs istehlakını real vaxtda monitorinq etmək
+* **Çevik Qiymətləndirmə**: Müxtəlif resurslar üçün (yaddaş, bant genişliyi, saytlar və s.) fərdiləşdirilmiş tarifələr təyin etmək
+* **AI Token Fakturası**: Müştəri subsite-ları boyunca AI istifadəsi üçün giriş və çıxış tokenlarını izləmək və faktura çıxarmaq
+* **Avtomatik Faktura Çıxarma**: İstifadə həddləri aşdıqda fakturaları avtomatik yaratmaq
+* **İstifadə Hesabatları**: Müştərilər və administratorlar üçün ətraflı istifadə analitikası və hesabatlar
+
+## Kimlər üçün idealdır
+
+* **Hosting Təminatçıları**: Müştəri ehtiyaclarına uyğun böyüyən miqyaslı planlar təklif edir.
+* **SaaS Platformaları**: Faktura çıxarılmasını faktiki resurs istehlakına əsaslandırır.
+* **Agentlik Şəbəkələri**: Müştəri layihələri üçün çevik qiymətləndirmə modelləri.
+* **Reseller Hosting**: Ortaklara istifadəyə əsaslanan qiymətləndirmə təklif etmə imkanı verir.
+
+## Necə İşləyir
+
+1. Ölçülən resursları (disk yaddaşı, bant genişliyi, sayt sayı və s.) konfiqurasiya edin.
+2. Əsas plan limitlərini və artıq istifadə tarifələrini təyin edin.
+3. Sistem şəbəkənizdəki istifadəni avtomatik izləyir.
+4. Müştərilər limitləri aşdıqda, artıq istifadə haqqları hesablanır.
+5. Fakturalar, faktura dövrünə əsasən avtomatik yaradılır.
+6. Müştərilər öz istifadələrini və yaxınlaşan haqları real vaxtda görə bilərlər.
+
+## AI Token Fakturası
+
+Version 1.1.0, WordPress AI Client SDK vasitəsilə AI xüsusiyyətləri təklif edən şəbəkələr üçün AI token fakturası əlavə edir. Metered Plans, tamamlanmış AI generasiya sorğularını dinləyir, cari subsite üçün giriş və çıxış token saylarını qeyd edir və bu tokenları müştərin cari faktura dövrü üçün faktura çıxarılacaq AI xərcinə çevirir.
+
+AI token fakturası, AI alətlərini müştəri saytlarında təklif etmək, lakin proqnozlaşdırıla bilməyən model xərclərini özünüz üstlənəcəyiniz hallarda istifadə edin. Hər bir sorğu subsite-a, müştəriyə, üzvliyə, təminatçıya və modelə atıfta edilir, beləliklə administratorlar istifadəni audit edə bilər, müştərilər isə AI istehlakının hesablarına necə təsir etdiyini görə bilərlər.
+
+### Token-ə Görə Tarifələri Konfiqurasiya Etmək
+
+AI tarifələri, ayrı-ayrı giriş və çıxış tarifələri kimi modelə görə konfiqurasiya edilir. Tarifələr 1 milyon tokenə görə hesablanır, bu da ən çox yayılmış AI təminatçı qiymətləndirmə səhifələri ilə uyğundur.
+
+1. Şəbəkə administratorunda **Multisite Ultimate → Settings → Metered Plans** yolunu açın.
+2. AI istifadəsinə görə faktura çıxarılmasını təmin edəcək məhsul və ya üzvlilik üçün AI xərc ölçülməsini aktivləşdirin.
+3. Connector-unuz tərəfindən qaytarılan model ID-larından istifadə edərək model tarifası girişləri əlavə edin, məsələn, `gpt-4o`, `gpt-4o-mini` və ya başqa bir OpenAI-uyumlu model identifikatoru.
+4. Sayt valyutanızda 1 milyon token üçün ayrı **Input Rate** (Giriş Tarifəsi) və **Output Rate** (Çıxış Tarifəsi) dəyərləri daxil edin.
+5. Plan üçün müştərinin daxil edilmiş AI xərc icazəsini və artıq istifadə davranışını təyin edin.
+
+Dəqiq bir model ID konfiqurasiya edilmədikdə, Metered Plans model prefiksindən istifadə edərək uyğunlaşa bilər. Məsələn, `claude-sonnet-4` üçün konfiqurasiya edilmiş bir tarifə, bu prefiksindən başlayan tarixə qoyulmuş model ID-lərinə tətbiq oluna bilər. Developerlər həmçinin [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filtri ilə son tarifə cədvəlinə düzəliş edə bilərlər.
+
+### Dəstəklənən AI Connector-lar
+
+AI token fakturası, WordPress AI Client SDK generasiya hadisələri yayan və cavab meta məlumatlarında token istifadəsinə daxil edən connector-larla işləyir. Buna aşağıdakılar daxildir:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) OpenAI-uyumlu API-lər üçün, OpenAI, Mistral, Ollama-uyumlu gateway-lar və uyğun token istifadə meta məlumatlarını göstərən digər təminatçılar daxil olmaqla.
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) sorğular AI Client SDK hadisə axını vasitəsilə yönləndirildikdə brauzer-native WebLLM istifadəsi üçün.
+* [Gratis AI Agent](../gratis-ai-agent/) tərəfindən istifadə edilən və seçilmiş təminatçı prompt və completion token saylarını SDK vasitəsilə hesabat edən AI connector-ları.
+
+Connector-lar, model, təminatçı və token istifadə meta məlumatları ilə standart `wp_ai_client_before_generate_result` və `wp_ai_client_after_generate_result` hadisələrini yandıraraq iştirak edə bilər. Connector parametrləri əsas saytdan subsite-lara tətbiq edilir, beləliklə müştəri saytları şəbəkə tərəfindən təsdiq edilmiş təminatçı və limitlərdən istifadə edir.
+
+### Müştəri Hesabı İstifadəsi
+
+Müştərilər AI istifadəsini digər ölçülən resursları ilə yanaşı öz hesab sahələrində görürlər. AI xərc sətiri, qeyd edilmiş prompt və completion tokenlarından, konfiqurasiya edilmiş model tariflərindən və planda olan istənilən icazədən çıxarılan cari faktura dövrü ümumi məbləğini göstərir.
+
+Əgər müştərin qeyd edilmiş bir ödəniş metodu varsa, icazəni aşan istifadə faktura çıxarılacaq artıq istifadə kimi qiymətləndirilir. Əgər plan sərt kəsilmə üçün konfiqurasiya edilibsə və müştərinin ödəniş metodu yoxdursa, icazəyə çatdıqda və müştəridən ödəniş məlumatları əlavə etməsi tələb edildikdə AI sorğuları bloklana bilər.
+
+## Dəstəklənən Resurslar
+
+* Disk yaddaşı
+* Bant genişliyi/Məlumat ötürilməsi
+* Sayt sayı
+* İstifadəçi sayı
+* AI token istifadəsi və AI xərci
+* Fərdiləşdirilmiş resurs növləri
+
+## Tələblər
+
+* Multisite Ultimate 2.0.0 və ya daha yuxarı
+* WordPress Multisite quraşdırılması
+* PHP 7.4 və ya daha yuxarı
+
+## Quraşdırma
+
+1. Plugin fayllarını `/wp-content/plugins/ultimate-multisite-metered-plans` yoluna yükləyin.
+2. WordPress-də 'Plugins' ekranı vasitəsilə plugin-i aktivləşdirin.
+3. Multisite Ultimate → Settings → Metered Plans yoluna keçin.
+4. Ölçülən resurslarınızı və qiymətləndirmənizi konfiqurasiya edin.
+5. Məhsul redaktoru vasitəsilə məhsullar üçün ölçülən faktura çıxarmanı aktivləşdirin.
+
+## Tez-tez Verilən Suallar
+
+## Müştəri limitini aşarsa nə baş verir?
+
+Əlçatanlığı blok etmək əvəzinə, sistem artıq istifadəni izləyir və sizin konfiqurasiya etdiyiniz tarifələrə əsasən növbəti fakturasına əlavə edir.
+
+## Müxtəlif məhsullar üçün fərqli artıq istifadə tarifələri təyin edə bilərəmmi?
+
+Bəli, hər məhsulun özünəməxsus ölçülən resursları və artıq istifadə qiymətləndirməsi ola bilər.
+
+## Müştərilər istifadə haqqında necə məlumatlandırılır?
+
+Müştərilər öz dashboard-larında cari istifadələrini görə və limitlərə yaxınlaşdıqda və ya onları aşdıqda isteğe bağlı bildirişlər alıb bilərlər.
+
+## AI token istifadəsi necə qiymətləndirilir?
+
+AI token istifadəsi, modelin konfiqurasiya edilmiş giriş və çıxış tarifələrinə görə 1 milyon tokenə əsasən qiymətləndirilir. Metered Plans hər bir sorğunun prompt və completion token saylarını bu tarifələrlə vurur, nəticəni müştərin cari faktura dövrü AI xərcinə əlavə edir və planın icazə və ya artıq istifadə qaydalarını tətbiq edir.
+
+## Hələ də sərt limitlərdən istifadə edə bilərəmmi?
+
+Bəli, ölçülən faktura çıxarma məhsulə görə isteğe bağlıdır. Ənənəvi sərt limitli məhsulları ölçülən məhsullarla qarışdıra bilərsiniz.

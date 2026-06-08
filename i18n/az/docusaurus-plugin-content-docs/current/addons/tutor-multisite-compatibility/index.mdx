@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite Uyğunluğu
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Uyğunluğu
+
+Bu, Tutor LMS üçün multisite mühitlərdə uyğunluq düzəlişləri əlavə edən bir WordPress plugin-idir.
+
+## Təsvir
+
+Bu plugin, Tutor LMS-i WordPress multisite şəbəkələrində işlətmək üçün vacib uyğunluq düzəlişləri təmin edir. O, istifadəçi qeydiyyatını, müəllim idarəetməsini, kurs məhdudiyyətlərini və digər multisite-xüsusi funksionallığı idarə edir.
+
+## Xüsusiyyətlər
+
+- **Verilənlər Bazası Cədvəli İdarəetməsi**: Multisite xarici açar məhdudiyyətləri səbəbindən yarana bilməyən çatışmayan Tutor LMS cədvəllərini avtomatik aşkarlayır və yaradır.
+- **Multisite İstifadəçi Qeydiyyatı**: Şəbəkə saytları boyunca istifadəçi qeydiyyatını idarə etmək üçün xüsusi AJAX handler-ları.
+- **Müəllim Rolu İdarəetməsi**: Multisite mühitlərində müəllim rolunun avtomatik təyin edilməsi və idarə edilməsi.
+- **Kurs Məhdudiyyətləri**: Sayt planlarına əsasən kurs və funel yaratma məhdudiyyətlərini idarə etmək üçün Ultimate Multisite ilə inteqrasiya.
+- **Xüsusi Admin Görünüşləri**: Multisite-ni nəzərdən keçirən müəllim siyahısı və idarəetmə interfeysi.
+- **Admin Alətləri**: Şəbəkə və sayt administratorları üçün verilənlər bazası idarəetmə interfeysi.
+
+## Tələblər
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin-i (avtomatik olaraq `Requires Plugins` başlıq hissəsi ilə tələb olunur)
+- WordPress Multisite quraşdırılması
+- Ultimate Multisite plugin-i (kurs məhdudiyyətləri funksionallığı üçün)
+
+## Quraşdırma
+
+1. Plugin fayllarını `/wp-content/plugins/tutor-multisite-compatibility/` yoluna yükləyin.
+2. Tutor LMS-in quraşdırılıb aktivləşdirildiyinə əmin olun.
+3. Plugin-i WordPress-dəki 'Plugins' menyusundan aktivləşdirin.
+4. Plugin avtomatik olaraq Tutor LMS ilə inteqrasiya edəcək.
+
+## Fayl Strukturu
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Əsas plugin faylı)
+├── includes/
+│   ├── class-database-manager.php (Verilənlər bazası cədvəli yaratma və idarəetmə)
+│   ├── class-admin-interface.php (Verilənlər bazası idarəetməsi üçün admin interfeysi)
+│   ├── class-course-limits.php (Kurs və funel məhdudiyyət handler-ları)
+│   ├── class-instructor-manager.php (Müəllim rolu idarəetməsi)
+│   ├── class-ajax-handlers.php (Xüsusi AJAX handler-ları)
+│   ├── class-query-helper.php (Verilənlər bazası sorğu faylları)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite istifadəçi modeli)
+│   └── admin/
+│       ├── class-instructors-list.php (Xüsusi müəllim siyahısı)
+│       └── views/
+│           └── instructors.php (Müəllim admin görünüşü)
+└── README.md
+```
+
+## MU Plugin-dən Köçürülmüş Funksionallıq
+
+Bu plugin, əvvəllər `wp-content/mu-plugins/daves.php` faylında olan funksionallığı ehtiva edir:
+
+- Kurs statusu dəyişmə məhdudiyyətləri
+- Kurs yaratma məhdudiyyətləri
+- CartFlows inteqrasiyası və məhdudiyyətləri
+- Tutor müəllim rolu idarəetməsi
+- Multisite istifadəçi qeydiyyatı idarəetməsi
+- Kurs məhsul ID-sinin göstərilməsi
+
+## Verilənlər Bazası İdarəetməsi
+
+### Problem
+
+WordPress multisite mühitlərində, istifadəçilər cədvəlinə xarici açar məhdudiyyətləri olan Tutor LMS cədvəllərinin yaradılması uğursuz olur. Bu, aşağıdakı səbəblərdən baş verir:
+
+- Sayt-xüsusi cədvəllər `wp_2_tutor_carts` kimi prefiksler istifadə edir.
+- Xarici açarlar `wp_2_users` (yoxdur) istinad edir.
+- Əsl istifadəçilər cədvəli `wp_users` (şəbəkə boyunca paylaşılır) olmalıdır.
+
+### Həll
+
+Bu plugin avtomatik olaraq:
+
+1. **Çatışmayan Cədvəlləri Aşkarlayır**: Xarici açar məhdudiyyətləri səbəbindən yarana bilməyən cədvəlləri yoxlayır.
+2. **Düzgün İstinadlarla Cədvəllər Yaradır**: Düzgün istifadəçi cədvəli adından (`multisite-də wp_users`) istifadə edir.
+3. **Bir Neçə Ssenarini İdarə Edir**:
+   - Plugin aktivləşdirilməsi/yenidən aktivləşdirilməsi
+   - Şəbəkədə yeni sayt yaratılması
+   - Admin interfeysi vasitəsilə əl ilə cədvəl yoxlanılması
+
+### Təsir Edən Cədvəllər
+
+- `tutor_coupon_usages` - İstifadəçilər cədvəlinə xarici açar ehtiva edir.
+- `tutor_carts` - İstifadəçilər cədvəlinə xarici açar ehtiva edir.
+- `tutor_notification_preferences` - İstifadəçilər cədvəlinə xarici açar ehtiva edən TutorPro cədvəli.
+
+### Admin İnterfeysi
+
+Verilənlər bazası idarəetmə alətlərinə aşağıdakı yerdən daxil olun:
+
+- **Şəbəkə Admini**: Settings → Tutor Multisite DB
+- **Sayt Admini**: Tools → Tutor Multisite DB
+
+Bu interfeys sizə aşağıdakıları etməyə imkan verir:
+- Bütün saytlardakı çatışmayan cədvəlləri görmək
+- Cədvəl yaratma prosesini əl ilə işə salmaq
+- Verilənlər bazası konfiqurasiyasını yoxlamaq
+- Detallı status məlumatlarını görmək
+
+## Dəstək
+
+Bu plugin xüsusi olaraq KursoPro platforması üçün nəzərdə tutulub. Texniki dəstək üçün inkişaf komandası ilə əlaqə saxlayın.

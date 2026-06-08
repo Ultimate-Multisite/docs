@@ -1,0 +1,101 @@
+---
+title: Sayt Eksportçusu
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Sayt Eksportçusu
+
+## Məzmun
+
+Müştəriniz saytını köçürmə qərarına gələrsə, şəbəkənizdəki alt saytları tək sayt quruluşuna və ya əksinə köçürmək ehtiyacını başa düşürük. Site Exporter və Importer addonu bu işi asanlaşdırır. Bu alət saytları zip faylları istifadə edərək eksport və import edir, bu fayllar həm də ehtiyat nüsxəsi (backup) kimi xidmət edə bilər.
+
+## Xüsusiyyətlər
+
+* Sayt Eksportu və İmportu
+
+* İstifadəsi asan interfeys
+
+* Sayt ehtiyat nüsxəsi yaratmaq
+
+## Dokumentasiya
+**Sayt Necə Eksport Edilir və İmport Edilir**
+
+## Qurulma
+
+1. **ultimate-multisite-site-exporter** yükləməsini **/wp-content/plugins/** kataloquna yükləyin
+2. WordPress-də **Plugins** menyusundan plugin-i aktivləşdirin
+3. Plugin-i qurmaq üçün addım-addım Wizard-dan keçin
+
+## İstifadə Təlimatı
+
+Ultimate Multisite ilə şəbəkənizdən bir sayt eksport edə və ya saytınızı multisite və ya tək sayt quruluşuna import edə bilərsiniz.
+
+Prosesə başlamaq üçün add-ons səhifəmizə keçin və Ultimate Multisite: Site Exporter & Importer add-on-unu quraşdırın.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Plugins səhifənizə gedin və yeni quraşdırdığınız add-onu **Network Activate** etmək üçün klikləyin.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** seçimi Ultimate Multisite menyusunda, solda yerləşir.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Sayt necə eksport edilir
+
+Şəbəkənizdən bir sayt eksport etmək üçün Ultimate Multisite menyusunda **Export & Import**-a gedin və **Export Sites** tabında **Generate new Site Export** düymasına klikləyin.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Eksport etmək istədiyiniz saytı axtarın və eksport ediləcək faylda olmasını istədiyiniz elementləri seçin. Mövzular (themes), plugin-lər və yükləmələr (uploads) daxil edə bilərsiniz. Əgər saytınız çox böyükdürsə, eksport prosesini fon rejimində (background) işlətməyi seçə bilərsiniz.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** düymasına klikləyin. Eksport edilmiş saytınız **Existing Exports** siyahısında olacaq. Faylı yükləmək üçün **Download ZIP** düymasına klikləyin. Eksport ZIP-ləri özünü işə salan bir `index.php` və `readme.txt` ehtiva edir, beləliklə, ayrı bir importer plugin-i quraşdırmadan təmiz bir host-da quraşdırıla bilər.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Bütün şəbəkəni necə eksport etmək
+
+Bütün alt saytları birlikdə eksport etmək üçün Ultimate Multisite menyusunda **Export & Import**-a gedin və eksport ekranında **Network Export** seçimindən istifadə edin. Yaradılan arxiv, host köçürmələri, staging yenidən qurulmaları və ya şəbəkə səviyyəli ehtiyat nüsxələri üçün bütün alt saytları tək bir ZIP faylında ehtiva edir.
+
+Network eksportları böyük ola bilər. Onları trafikin aşağı olduğu vaxtlarda işlədin və serverin arxiv və daxil edilmiş yükləmələr, plugin-lər və mövzular üçün kifayət qədər yaddaşa malik olduğundan əmin olun.
+
+## Sayt necə import edilir
+
+Bir sayt import etmək üçün **Import a Site** tabına gedin və import etmək istədiyiniz saytın .zip faylını yükləyin. URL-ni yeni bir URL-ə dəyişdirə bilərsiniz və ya sahəni boş buraxaraq köhnə URL-ni saxlaya bilərsiniz. Həmçinin, importdan sonra .zip faylını quruluşunuzdan silmək üçün qutucuğu işarələyə bilərsiniz. Sonra **Begin Import** düymasına klikləyin.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Proses bir az vaxt ala bilər. Importer-in altında siyahıda gözləyən bir import görəcəksiniz.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Prosesi **Cancel Import** düymasına klikləyərək dayandıra bilərsiniz.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Proses tamamlandıqdan sonra, saytınız artıq şəbəkənizdə mövcuddur.
+
+## Tək quruluşa sayt necə import edilir
+
+Saytınızı tək quruluşa import etmək üçün əvvəlcə importer-i saytınızda quraşdırıb aktivləşdirin. Yükləmək üçün linki eksportçu tabında tapa bilərsiniz.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Importer-i soldakı **Tools** menyusunda, **Export & Import** alt bəndində tapa bilərsiniz.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Import etmək istədiyiniz saytın .zip faylını yükləyin. URL-ni yeni bir URL-ə dəyişdirə bilərsiniz və ya sahəni boş buraxaraq köhnə URL-ni saxlaya bilərsiniz. Həmçinin, importdan sonra .zip faylını quruluşunuzdan silmək üçün qutucuğu işarələyə bilərsiniz. Sonra **Begin Import** düymasına klikləyin.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Proses bir az vaxt ala bilər. Importer-in altında siyahıda gözləyən bir import görəcəksiniz.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Prosesi **Cancel Import** düymasına klikləyərək dayandıra bilərsiniz.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Proses bitdikdən sonra, saytınız yeni import etdiyiniz saytla əvəz olunacaq.

@@ -1,0 +1,100 @@
+---
+title: Çoxşəbəkəli
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork eklentisi (addon) Ultimate Multisite platformunuzu güclü multinetwork funksionallığı ilə genişləndirir. Bu eklenti müştərilərinizin yalnız fərdi saytları deyil, bütün WordPress multisite şəbəkələrini (networks) almağa və idarə etməyə imkan verir.
+
+## Əsas Xüsusiyyətlər
+
+* **Şəbəkə Qurulması (Network Provisioning)**: Müştəriləriniz üçün tam WordPress multisite şəbəkələrini avtomatik olaraq yaradır və konfiqurasiya edir.
+* **Şəbəkə Şablonları (Network Templates)**: Müştərilərin qeydiyyatdan keçməzdən əvvəl hazır şəbəkə şablonlarını görməsinə, önizləməsinə və seçməsinə imkan verir.
+* **Şəbəkə İdarəetməsi (Network Management)**: Multinetwork mühitlərini tam idarə etmə imkanları.
+* **İzlənmə Şəbəkələri (Isolated Networks)**: Hər bir müştəri şəbəkəsi öz verilənlər bazası cədvəlləri və konfiqurasiyası ilə müstəqil işləyir.
+* **Şəbəkələr Arası SSO (Cross-Network SSO)**: Müştərilərinizə maçıq-link (magic-link) autentifikasiyası ilə sub-şəbəkələrində problem olmadan giriş təmin edir.
+* **Miqyaslanabilən Arxitektura (Scalable Architecture)**: Optimal resurs paylanması ilə bir neçə şəbəkəni səmərəli şəkildə idarə etməyə kömək edir.
+* **İnteqrasiya (Integration)**: Ultimate Multisite-ın abunəlik və fakturalaşdırma sistemləri ilə problem olmadan integre olur.
+
+## İstifadə Halları
+
+* **White Label Hosting**: Müştərilərinizə öz brendləri daşıyan multisite şəbəkələri təmin edin.
+* **Agentlik Həlləri (Agency Solutions)**: Agentliklərə bir platformadan bir çox müştəri şəbəkəsini idarə etməyə imkan verir.
+* **Korporativ Qurulumlar (Enterprise Deployments)**: Mürəkkəb çoxşəbəkə tələbləri olan böyük təşkilatları dəstəkləyir.
+* **Təhsil Platformaları**: Müxtəlif məktəblər və ya departamentlər üçün ayrı-ayrı şəbəkələr yaradın.
+
+## Tələblər
+
+* Ultimate Multisite 2.0.0 və ya daha yuxarı
+* WordPress Multisite quraşdırılması
+* PHP 7.4 və ya daha yuxarı
+* MySQL 5.6 və ya daha yuxarı
+
+## Quraşdırma
+
+1. Plugin fayllarını `/wp-content/plugins/ultimate-multisite-multinetwork` kataloquna yükləyin.
+2. WordPress-də 'Plugins' ekranı vasitəsilə plugin-i aktivləşdirin.
+3. Multinetwork parametrlərini Ultimate Multisite → Settings vasitəsilə konfiqurasiya edin.
+
+## Şəbəkə Şablonları (Network Templates)
+
+Versiya 1.3.0, yeni şəbəkələr alan müştərilər üçün şablon tapma və seçmə axını əlavə edir. Hər yeni müştəri şəbəkəsinin hazır bir strukturdan, dizayndan, məzmun kitabxanasından və ya sektora xas quruluşdan başlamasını istəyirsinizsə, şəbəkə şablonlarından istifadə edin.
+
+### Şablon Önizləyicisi (Template previewer)
+
+Şəbəkə şablonu önizləyicisi müştərilərə ödəniş etməzdən əvvəl mövcud şablonları görməyə imkan verir. Hər şablon canlı önizləmə panelində açıla bilər, beləliklə müştərilər şəbəkəni almaqdan əvvəl yerləşimləri və məzmunları müqayisə edə bilərlər.
+
+Müştərilərə kömək etmək üçün önizləyicidən istifadə edin:
+
+* Mövcud hər bir şəbəkə şablonunun görünüşünü və strukturunu nəzərdən keçirmək
+* Ödəniş axınından çıxmadan bir neçə şablonu müqayisə etmək
+* Qeydiyyatdan keçməzdən əvvəl istifadə hallarının ən yaxşı uyğun gələn şablonunu seçmək
+
+Şablon adlarını və təsvirlərini müştəriyə xoş gələn şəkildə saxlayın. Önizləyici, müştərilərin nəzərdə tutulan istifadə halını (məsələn, agentlik şəbəkələri, məktəb şəbəkələri, franşiz şəbəkələri və ya white-label hosting paketləri) başa düşə bildiyi hallarda ən faydalıdır.
+
+### Ödənişdə Şablon Seçici (Template picker at checkout)
+
+Şablon seçici (template picker) qeydiyyat checkout axınına bir sahə kimi əlavə edilə bilər. Konfiqurasiya edildikdə, müştərilər ödəniş zamanı istədikləri şəbəkə şablonunu seçir və seçilmiş şablon yeni şəbəkə qurulduqda istifadə olunur.
+
+Checkout axınında seçicidən istifadə etmək üçün:
+
+1. Şablon kimi təklif etmək istədiyiniz şəbəkələri hazırlayın.
+2. Müvafiq qeydiyyat və ya checkout formunda Multinetwork şablon seçici sahəsini aktivləşdirin.
+3. Hansı şablonların həmin checkout axını üçün mövcud olmasını istədiyinizi seçin.
+4. Checkout axınını nəşr edin və seçilmiş şablonun yeni şəbəyə tətbiq olunduğunu təsdiqləmək üçün qeydiyyatdan keçməni yoxlayın.
+
+Əgər bir checkout axını yalnız bir şəbəkə məhsili təklif edirsə, seçici hələ də bir bələdçi qeydiyyat (onboarding) addımı kimi faydalı ola bilər. Bir neçə planlı funnellar üçün, yalnız seçilmiş məhsul və ya planla uyğun olan şablonları göstərin.
+
+## Şəbəkələr Arası Maçıq-Link SSO (Cross-Network Magic Link SSO)
+
+Şəbəkələr arası maçıq-link SSO müştərilərinə əsas hesab sahəsi ilə sub-şəbəkələri arasında əl ilə yenidən daxil olmaq lazım gəlmədən keçid etməyə imkan verir. Müştəri şəbəkələr arası giriş linkinə daxil olduqda, Ultimate Multisite vaxt məhdudiyyətli maçıq-link yaradır və müştəriyə təyinat şəbəkəsinə giriş təmin edir.
+
+Bu, bir neçə şəbəkəni idarə edən və ya yeni klonlanmış şablon şəbəkələrinə almaqdan dərhal sonra daxil olmaq lazım olan müştərilər üçün təcrübəni yaxşılaşdırır.
+
+Admin yoxlama siyahısı:
+
+* WordPress multisite quraşdırılması boyunca Multinetwork eklentisinin aktiv olduğundan əmin olun.
+* Müştərilərə şəbəkələr arası linklər təklif edilməzdən əvvəl düzgün şəbəkə girişinin olduqlarından əmin olun.
+* Maçıq-linklərin nəzərdə tutulan təyinat şəbəkəsinə yönəldiyi üçün şəbəkə domenlərini və eşləşdirilmiş domenləri düzgün konfiqurasiya edin.
+* Şəbəkə, domen və ya checkout parametrlərini dəyişdirdikdən sonra müştəri dashboard və hər hansı bir checkout sonrası giriş düymələrini yoxlayın.
+
+Maçıq-linklər giriş linkləri kimi qəbul edilməlidir. Onlar problem olmadan müştəri girişini təmin etmək üçün nəzərdə tutulmuş və nəzərdə tutulan sessiya xaricində ötürülməməli və ya yenidən istifadə edilməməlidir.
+
+## Tez-tez Verilən Suallar
+
+### Multinetwork nədir?
+
+Multinetwork, bir WordPress funksionallığıdır və sizə tək bir WordPress quraşdırması üzərində bir neçə müstəqil multisite şəbəkəsi işlətməyə imkan verir.
+
+### Bu, adi multisitedən necə fərqlənir?
+
+Adi multisite bir şəbəkə daxilində bir neçə sayta imkan verir. Multinetwork isə bir WordPress quraşdırması daxilində, hər birinin öz saytları olan bir neçə şəbəkəyə imkan verir.
+
+### Bu, xüsusi server konfiqurasiyası tələb edirmi?
+
+Bəli, multinetwork xüsusi server qurulması və konfiqurasiyası tələb edir. Ətraflı qurulma təlimatları üçün zəhmət olmasa sənədləşməyə baxın.

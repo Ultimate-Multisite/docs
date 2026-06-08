@@ -1,0 +1,143 @@
+---
+title: ነጻ AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent በተፈጥሮ ቋንቋ መመሪያዎች አማካኝነት ሙሉ የWordPress ድረ-ገጾችን መቅረጽ፣ መገንባት እና ማስተዳደር የሚችል በራሱ የሚሰራ የWordPress AI ረዳት ነው። የይዘት አያያዝን እስከ ዲዛይን ሲስተም ማበጀት ድረስ ሁሉንም ነገር የሚሸፍን፣ አቅሙን ሊጠራ የሚችል (invoke) የተዋቀረ ስብስብ የ**ችሎታዎች (abilities)** ያቀርባል። የ1.9.0 ስሪት የይዘት መፍጠር ችሎታዎችን፣ በደንበኛ ጎን ስክሪንሾት አማካኝነት የእይታ ገጽ ግምገማን፣ አምስት የተገነቡ የኤጀንት ፕሮፋይሎችን፣ እና ለተጠቃሚ መዳረሻ ቁጥጥር እና ብራንዲንግ የባህሪ ባንዲራዎችን (feature flags) ጨምሯል።
+
+## ቁልፍ ባህሪያት (Key Features)
+
+- **የችሎታዎች ስርዓት (Abilities system)** — ኤጀንቱ በWordPress ጭነትዎ ላይ ሊጠራ የሚችል ሞዱላር እና ሊሰፋ የሚችል የድርጊቶች መዝገብ።
+- **የይዘት አያያዝ (Content Management)** — ፖስቶችን እና ገጾችን መፍጠር (የገጽ አብነቶችን መመደብን ጨምሮ)፣ ብዙ ፖስቶችን በአንድ ጥሪ በቅናሽ መፍጠር፣ ዋና ምስሎችን ማስቀመጥ እና የእውቂያ ቅጾችን መገንባት።
+- **የእይታ ግምገማ (Visual Review)** — የቀጥታ ገጾችን ስክሪንሾት መቅዳት፣ የቅድመ/የድህረ ሁኔታ ልዩነቶችን ማነጻጸር፣ እና አቀራረብን፣ የፊደል ቅርጽን፣ ቀለምን እና ተደራሽነትን የሚሸፍን በኤአይ የተገነባ የዲዛይን ግምገማ ማግኘት።
+- **አምስት የተገነቡ ኤጀንቶች (Five built-in agents)** — የይዘት ጸሐፊ (Content Writer)፣ የድረ-ገጽ ገንቢ (Site Builder)፣ የዲዛይን ስቱዲዮ (Design Studio)፣ የፕልጋይን አስተዳዳሪ (Plugin Manager) እና የድጋፍ ረዳት (Support Assistant)፤ በቻት ራስጌ ውስጥ ባለው የኤጀንት መምረጥ (Agent Picker) አማካኝነት መቀያየር ይቻላል።
+- **የባህሪ ባንዲራዎች (Feature flags)** — ለሚዲያ ሚና ገደቦች፣ ለብራንድ ስም እና ለዊጄት ማበጀት በSettings → Feature Flags ውስጥ የሚገኙ መቆለፊያዎች።
+- **ብጁ የፖስት አይነት አያያዝ (Custom Post Type management)** — ብጁ የፖስት አይነቶችን መመዝገብ፣ መዘረዝ እና መሰረዝ፣ እና እነዚህም ከማጥፋት በኋላም መረጃቸውን መጠበቅ።
+- **ብጁ ታክሶኖሚ አያያዝ (Custom Taxonomy management)** — ብጁ ታክሶኖሚዎችን መመዝገብ፣ መዘረዝ እና መሰረዝ፣ እና እነዚህምም መረጃቸውን መጠበቅ።
+- **የዲዛይን ሲስተም ችሎታዎች (Design System abilities)** — ብጁ CSS ማስገባት፣ የተሰበሰቡ የብሎክ አብነቶችን (block patterns) ማስተዳደር፣ የድረ-ገጹን አርማ ማስቀመጥ እና theme.json ቅድመ-ቅንብሮችን መተግበር።
+- **የግሎባል ስታይሎች አያያዝ (Global Styles management)** — ለቀለም ፓሌቶች፣ ለፊደል ቅርጽ፣ ለቦታ ክፍተት እና ለሌሎች theme.json እሴቶችን ማንበብ እና መጻፍ።
+- **የአሰሳ ምናሌ አያያዝ (Navigation Menu management)** — የአሰሳ ምናሌዎችን እና የውስጥ ክፍሎቻቸውን በፕሮግራም መፍጠር እና ማዘመን።
+- **የማስጫ አማራጮች አያያዝ (Options Management)** — ወሳኝ ቅንብሮችን ለመጠበቅ በውስጥ የደህንነት የብሎክ ዝርዝር (safety blocklist) ያለው የWordPress አማራጮችን ማንበብ እና መጻፍ።
+- **ሊጫኑ የሚችሉ ችሎታዎች መዝገብ (Installable Abilities Registry)** — ዋና የፕልጋይን ፋይሎችን ሳይቀይሩ ተጨማሪ የችሎታ ፓኬጆችን መገኘት እና ማብራት።
+- **የድረ-ገጽ ገንቢ አደራጅነት v2 (Site Builder Orchestration v2)** — የፕልጋይን መገኘት፣ የሂደት መከታተል እና የስህተት ማገገም ባሉ ብዙ ደረጃዎች የተደራጁ የድረ-ገጽ ግንባታ ዕቅዶች።
+- **WP-CLI የbenchmark ትዕዛዝ (WP-CLI benchmark command)** — ለCI እና ለሞዴል ግምገማ ከኮማንድ መስመር የኤጀንቱ አቅም መፈተኛ ስብስብ ማስኬድ።
+
+## መስፈርቶች (Requirements)
+
+- WordPress 6.0 ወይም ከዚያ በላይ
+- PHP 8.1 ወይም ከዚያ በላይ
+- WordPress Multisite (በኔትወርክ ደረጃ የተንቀሳቀሰ) ወይም የአንድ-ገጽ ጭነት
+- ንቁ የኤአይ ሰጪ ተያይጫ (AI provider connector plugin) (Anthropic, OpenAI, ወይም ተኳሃኝ)
+
+## መጫን (Installation)
+
+1. የፕልጋይን ፋይሎችን ወደ `/wp-content/plugins/gratis-ai-agent` ይጫኑ።
+2. በWordPress ውስጥ ባለው **Plugins** ስክሪን አማካኝነት ፕልጋይኑን ያንቁ።
+3. ወደ **Gratis AI Agent → Settings** ይሂዱ እና የኤአይ ሰጪዎን ተያይጫ ያገናኙ።
+4. (አማራጭ) ተጨማሪ የችሎታ ፓኬጆችን ለመጫን **Abilities Registry** ይቃኙ።
+
+## በፍጥነት መጀመር (Quick Start)
+
+በተንቀሳቀሰ እና ከኤአይ ሰጪ ጋር ከተገናኘ በኋላ፣ በWordPress የአስተዳሚ በኩል ባለው የጎን አሞሌ ላይ ያለውን **Gratis AI Agent** ፓነል ይክፈቱ። በተፈጥሮ ቋንቋ መመሪያ ይጻፉ እና ኤጀንቱ የሚፈለጉትን እርምጃዎች በቅደም ተከተል እቅድ አውጥቶ እና ያከናውናል።
+
+**የምሳሌ መመሪያዎች:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## የችሎታዎች አጠቃላይ እይታ (Abilities Overview)
+
+ችሎታዎች ኤጀንቱ ሊፈጽማቸው የሚችላቸው አቶሚክ (atomic) ድርጊቶች ናቸው። እያንዳንዱ ችሎታ ኤጀንቱ በስራ ጊዜ የሚያነበው ስኪማ (parameters እና return types) የሚያሳየ የተመዘገበ የPHP ክፍል (class) ነው። ችሎታዎች በተግባራዊ ቦታዎች ተደራጅተዋል፡
+
+| አካባቢ (Area) | ችሎታዎች (Abilities) |
+|---|---|
+| **የይዘት አያያዝ (Content Management)** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **የእይታ ግምገማ (Visual Review)** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **ብጁ የፖስት አይነቶች (Custom Post Types)** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **ብጁ ታክሶኖሚዎች (Custom Taxonomies)** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **የዲዛይን ሲስተም (Design System)** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **ግሎባል ስታይሎች (Global Styles)** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **የአሰሳ ምናሌዎች (Navigation Menus)** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **የአማራጮች አያያዝ (Options Management)** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **ሊጫኑ የሚችሉ ችሎታዎች (Installable Abilities)** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **የድረ-ገጽ ገንቢ (Site Builder)** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+ለሙሉ የፓራሜትር ሰነድ እና የአጠቃቀም ምሳሌዎች [Abilities Reference](./abilities) ይመልከቱ።
+
+## WP-CLI
+
+Gratis AI Agent የbenchmark ስብስቦችን ለማስኬድ እና ችሎታዎችን ከኮማንድ መስመር ለማስተዳደር `wp gratis-ai-agent` የትዕዛዝ ቤተሰብን ይይዛል። ለሙሉ የትዕዛዝ ዝርዝር [WP-CLI Reference](./wp-cli) ይመልከቱ።
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## ውቅረጫ (Configuration)
+
+ሁሉም ቅንብሮች በWordPress አስተዳሚ ውስጥ በ**Gratis AI Agent → Settings** ውስጥ ይገኛሉ፡
+
+| ቅንብር (Setting) | መግለጫ (Description) |
+|---|---|
+| **AI Provider** | ንቁ የኤአይ ሰጪ ተያይጫ ይምረጡ እና ያዋቅሩ። |
+| **Model** | ለኤጀንት ክፍለ ጊዜዎች ለመጠቀም የቋንቋ ሞዴሉን ይምረጡ። |
+| **Max Tokens** | ለእያንዳንዱ ጥያቄ የሚፈቀደው የቶከን በጀት (በነባሪነት 4096)። |
+| **Ability Timeout** | አንድ ችሎታ ሊሰራ የሚችለው ከፍተኛ ሰከንዶች (በነባሪነት 30)። |
+| **Debug Logging** | የችሎታ ጥሪዎችን እና የኤጀንት አስተሳሰብን ወደ የWordPress የጥግግራ መመዝገቢያ (debug log) መመዝገብ። |
+
+## የማስጫ አማራጮች የደህንነት የብሎክ ዝርዝር (Options Management Safety Blocklist)
+
+የማስጫ አማራጮች ችሎታው ኤጀንቱ ስሜታዊ የWordPress አማራጮችን እንዳያነብ ወይም እንዳይጽፍ የሚከለክል በውስጥ የብሎክ ዝርዝር አለው። በነባሪነት የብሎክ ዝርዝሩ የሚከተሉትን ይሸፍናል፡
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (የዩአርኤል አማራጮች — ለእነዚህ የተሰጠ ልዩ ማዛወሪያ መሳሪያ ይጠቀሙ)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (የሚስጥ ቁልፎች)
+- `active_plugins`, `template` (የፕልጋይን/የጽማሬ መብራት ማብራት — ልዩ ችሎታዎችን ይጠቀሙ)
+- በጫኑት ፕልጋይኖች የተመዘገቡ የክፍያ መግቢያዎች እና የኤፒአይ ቁልፎች
+
+ተጨማሪ ግቤቶች በ`gratis_ai_agent_options_blocklist` ማጣሪያ (filter) አማካኝነት ሊጨመሩ ይችላሉ።
+
+## Hooks እና Filters
+
+### Actions (ድርጊቶች)
+
+- `gratis_ai_agent_ability_registered` — አንድ ችሎታ ከተመዘገበ በኋላ ይተነፋፋል፣ የችሎታውን ክፍል ስም ይቀበላል።
+- `gratis_ai_agent_plan_started` — የድረ-ገጽ ገንቢ ዕቅድ ስራ መጀመሩ ሲታወቅ ይተነፋፋል።
+- `gratis_ai_agent_plan_completed` — ዕቅዱ በተሳካ ሁኔታ ሲጠናቀቅ ይተነፋፋል።
+- `gratis_ai_agent_plan_failed` — ዕቅዱ ሊገጥመው የማይችል ስህተት ሲያጋጥመው ይተነፋፋል።
+
+### Filters (ማጣሪያዎች)
+
+- `gratis_ai_agent_abilities` — ኤጀንቱ ከመጫኑ በፊት የተመዘገበውን የችሎታ ዝርዝር ለማሻቀብ።
+- `gratis_ai_agent_options_blocklist` — የአማራጮች የደህንነት የብሎክ ዝርዝርን ለማስፋት ወይም ለመቀነስ።
+- `gratis_ai_agent_benchmark_questions` — ለግምገማ ስብስብ ብጁ የbenchmark ጥያቄዎችን ለመጨመር።
+- `gratis_ai_agent_plan_plugins` — በድረ-ገጽ ዕቅድ በሚፈጠርበት ጊዜ የፕልጋይን መገኘት ዝርዝርን ለማሻቀብ።
+
+## ድጋፍ (Support)
+
+ለድጋፍ፣ [ultimatemultisite.com](https://ultimatemultisite.com) ይጎብኙ ወይም በፕልጋይን ማከማቻ ውስጥ ችግር ይከፍሉ።
+
+## የለውጥ መዝገብ (Changelog)
+
+ለሙሉ የስሪት ታሪክ [Changelog](./changelog) ይመልከቱ።

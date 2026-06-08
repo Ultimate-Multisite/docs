@@ -1,0 +1,124 @@
+---
+title: Çox Kirayəli (Multi-Tenancy)
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Performans və təhlükəsizliyi artırmaq üçün alt saytları serverlər və verilənlər bazaları arasında paylamaq
+
+## Tələblər
+
+- WordPress 5.3 və ya daha yuxarı
+- PHP 7.4 və ya daha yuxarı
+- Multisite Ultimate plugin (aktiv)
+
+## Quraşdırma
+
+1. Addon fayllarını `/wp-content/plugins/` kataloquna yükləyin.
+2. WordPress-də 'Plugins' menyusundan plugin-i aktiv edin.
+3. Addon parametrlərini network admin vasitəsilə konfiqurasiya edin.
+
+## İnkişaf
+
+### Qurulma (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Layihə Strukturu (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP sinifləri və daxil edilənlər
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit testlər
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test sinifi
+│   └── class-*-test.php         # Test halları
+├── views/                       # Template faylları
+├── assets/                      # Statik fayllar
+│   ├── css/                     # Stil faylları
+│   ├── js/                      # JavaScript faylları
+│   └── images/                  # Şəkillər
+├── lang/                        # Dil faylları
+├── composer.json                # PHP asılılıqları
+├── package.json                 # Node.js asılılıqları
+├── phpunit.xml.dist             # PHPUnit konfiqurasiyası
+├── .phpcs.xml.dist              # Kod standartları konfiqurasiyası
+└── rector.php                   # Kod müasirləşdirmə qaydaları
+```
+
+### Testləmə (Testing)
+
+Addon kompleks test çərçivəsi ilə gəlir:
+
+- **Unit Tests**: WordPress test suite-i ilə PHPUnit əsaslı testlər
+- **Base Test Class**: Ümumi test ssenariləri üçün köməkçi metodlar təmin edir
+- **Test Coverage**: Kod əhatəsini izləmək üçün konfiqurasiya edilmişdir
+- **Multisite Testing**: Testlər multisite mühitində işləyir
+
+### Kod Standartları (Code Standards)
+
+- **WordPress Coding Standards**: PHPCS vasitəsilə tətbiq edilir
+- **PHP 7.4+ Uyğunluğu**: Müasir PHP xüsusiyyətləri dəstəklənir
+- **Static Analysis**: Tip yoxlaması üçün PHPStan inteqrasiyası
+- **Code Modernization**: PHP yüksəltməsi üçün Rector qaydaları
+
+### Quruluş Sistemi (Build System)
+
+- **Asset Processing**: CSS/JS faylları üçün minifikasiya
+- **Translation**: POT faylı generasiyası
+- **Packaging**: Paylanma üçün arxiv yaratmaq
+- **Development Mode**: Debugging üçün minifikasiya edilməmiş fayllar
+
+## Konfiqurasiya (Configuration)
+
+Addon, network admin interfeysi vasitəsilə əlçatan müxtəlif konfiqurasiya seçimlərini dəstəkləyir.
+
+## Hooks və Filters
+
+### Actions (Hərəkətlər)
+
+- `ultimate-multisite-addon-template_init` - Addon ilkinləşdirildikdən sonra işə düşür
+- `ultimate-multisite-addon-template_loaded` - Bütün addon faylları yükləndikdən sonra işə düşür
+
+### Filters (Filtrlər)
+
+- `ultimate-multisite-addon-template_settings` - Addon parametrlərini dəyişmək
+- `ultimate-multisite-addon-template_enabled` - Addonun aktiv/deaktiv vəziyyətini üstələmək
+
+## Lisenziya (License)
+
+Bu addon GPL v3 və ya daha yeni versiyası altında lisenziyalanmışdır.
+
+## Dəstək (Support)
+
+Dəstək və sənədləşmə üçün [MultisiteUltimate.com](https://multisiteultimate.com) saytını ziyarət edin.
+## Changelog
+
+- Version 1.0.1 (2025-09-28): prefiksi ultimate-multisite olaraq dəyişdi; mətn domenini yenilədi; versiya artımı.
+
+
+- Version (2025-09-28): prefiksi ultimate-multisite olaraq dəyişdi; mətn domenini yenilədi; versiya artımı.

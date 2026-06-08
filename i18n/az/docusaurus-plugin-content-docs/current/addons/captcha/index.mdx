@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Botları Dayandırın. Gəlirlərinizi Qoruyun. Konfiqurasiya Çətinliyi Yox.**
+
+Özünəməxsus domenlərlə multisite şəbəkəsi idarə edirsiniz? Bu çətinliyi bilirsiniz: Google reCAPTCHA və hCaptcha sizdən onların admin konsolunda *hər bir domenə* qeydiyyatdan keçməyinizi tələb edir. Yeni bir müştəri saytı əlavə edirsiniz? Captcha konfiqurasiyasını yeniləməlisiniz. Özünəməxsus domen xəritələyirsiniz? Yenidən yeniləməlisiniz. Bu heç bitmir.
+
+**Ultimate Multisite: Captcha hər şeyi dəyişir.**
+
+## Cap Captcha: Sadəcə İşləyən Öz-Yerdə Barındırılan Müdafiə
+
+Yeni **Cap Captcha** təminatçımız multisite şəbəkələri üçün oyun dəyişicidir:
+
+* **Sıfır Konfiqurasiya** — Addonu aktivləşdirin və qorunursunuz. API açarları, Google hesabı, hCaptcha dashboardu, domen ağartma (whitelisting) yoxdur.
+* **Hər Domendə Avtomatik İşləyir** — Alt-domenlər, xəritələnmiş domenlər, müştəri domenləri — hamısı dərhal qorunur.
+* **Öz-Yerdə Barındırılan və Şəxsi** — Məlumatlarınız heç vaxt serverinizdən kənara çıxmır. Üçüncü tərəf izləmə olmadan tam GDPR uyğundur.
+* **Görünməz İş-Dəlil (Proof-of-Work)** — İstifadəçilər arxa planda hesablayıcı bir tapşırıq həll edirlər. Yanacaq musluğu basmaq, əsəbiləşdirən şəkil panjeraları yox.
+* **Yüngül** — Cəmi 20KB. Ödəniş prosesinizi yavaşlatmayacaq.
+
+## WooCommerce Kart Testləmə Müdafiəsi
+
+Kart testləmə hücumları ticarətçilərə illik milyardlarla qiymət edir. Fırıldaqlar oğurlanmış kredit kartlarını WooCommerce ödənişinizə qarşı yoxlamaq üçün botlardan istifadə edirlər — siz emal haqqını ödəyirsiniz, onlar isə etibarlı kart nömrələri alırlar.
+
+**Ən çox ehtiyac duyulan yerdə qoruyuruq:**
+
+* **Store API Müdafiəsi** — Ənənəvi form captcha'larını aşan `/wp-json/wc/store/v1/checkout` üzərindəki bot hücumlarını bloklayır.
+* **PayPal Ödənişləri ilə Uyğun** — WooCommerce PayPal Payments ilə problemizsiz işləyir.
+* **Real-Time Statistika** — Hansı hücumları blokladığınızı dəqiq görün.
+
+## Hələ də Google reCAPTCHA və ya hCaptcha Lazımdır?
+
+Sizi qoruyuruq. Tam dəstək:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Şəbəkə parametrlərinizdən istənilən vaxt təminatçılar arasında keçid edin.
+
+## Ölçeklənmişlik üçün Qurulub
+
+* Sayt başına üstünlük verilmiş, şəbəkə genişliyi parametrləri
+* Müdafiəni izləmək üçün statistika dashboardu
+* Tənzimlənə bilən təhlükəsizlik səviyyələri (Fast, Medium, Maximum)
+* Genişləndirilə bilən təminatçı arxitekturası ilə developer-ə uyğundur
+
+## Quraşdırma
+
+1. `ultimate-multisite-captcha` faylını `/wp-content/plugins/` kataloquna yükləyin
+2. Plugin-i Şəbəkə səviyyəsində aktivləşdirin
+3. **Bu qədər. Qorunursunuz.**
+
+Cap Captcha avtomatik aktivləşir — konfiqurasiya ediləcək parametrlər, daxil ediləcək API açarları yoxdur. Şəbəkənizin bütün dəstəklənən nöqtələri aktivləşdirilməsi anında qorunur.
+
+**İxtiyari:** Əvəzində Google reCAPTCHA və ya hCaptcha istifadə etmək üçün **Ultimate Multisite → Settings → Captcha** bölməsinə keçin və istədiyiniz təminatçını seçin.
+
+## Tez-tez Verilən Suallar
+
+## Nə vaxtsa konfiqurasiya etməliyəm?
+
+Xeyr! Cap Captcha addon aktivləşdirildikdə avtomatik işə düşür. Bütün şəbəkəniz dərhal qorunur — konfiqurasiya ediləcək parametrlər, daxil ediləcək API açarları yoxdur.
+
+## Cap Captcha üçün API açarları lazımdır?
+
+Xeyr. Cap Captcha tamamilə öz-yerdə barındırılır. Xarici hesablar, domen qeydiyyatı, konfiqurasiya baş ağrısı yoxdur.
+
+## Bu, ödənişimi yavaşladar?
+
+Cap Captcha yalnız 20KB-dır və iş-dəlil tapşırıqlarını arxa planda yerinə yetirir. Müştəriləriniz heç bir gecikmə hiss etməyəcəklər.
+
+## Bu, kart testləmə hücumlarına qarşı qoruyur?
+
+Bəli! Yalnız HTML formlarını qoruyan ənənəvi captcha-ların əksinə, WooCommerce inteqrasiyamız birbaşa Store API-sinə qoşulur ki, bot hücumlarını API səviyyəsində bloklasın — ki, kart testləmə hücumlarının əksəriyyətinin baş verdiyi yerdir.
+
+## Müxtəlif saytlarda fərqli captcha təminatçıları istifadə edə bilərəmmi?
+
+Captcha təminatçısı şəbəkə genişliyi üçün təyin olunur, lakin ehtiyaclarınıza əsasən çətinlik parametrlərini tənzimləyə bilərsiniz.
+
+## Bu GDPR uyğundur?
+
+Cap Captcha %100 öz-yerdə barındırılır və xarici xidmətlərə heç bir məlumat göndərilmir. Google reCAPTCHA və hCaptcha üçün, zəhmət olmasa, müvafiq məxfiliyin siyasətlərinə nəzər salın.
+
+## Rate Limiting (Təzyiq Səviyyəsi Təziyyəti)
+
+Ultimate Multisite: Captcha v1.5.0, şəbəkənizi brute-force və kart-testləmə hücumlarından qoruyan sərt-dayanmalı bir rate limiter təqdim edir.
+
+### Necə İşləyir
+
+Rate limiter, captcha ilə qorunan səthlərdəki hər bir GET və POST sorğusunu sayır:
+
+* **WordPress giriş nöqtələri** — wp-login, register, lost-password, comments
+* **WooCommerce ödənişi** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Bir ziyarətçi rate limit-i aşdıqda, plugin aşağıdakıları qaytarır:
+
+* **HTTP 429 (Too Many Requests)** status kodu
+* Nə vaxt yenidən cəhd ediləcəyini göstərən **Retry-After** başlığı
+* Hücum edənləri yavaşlatmaq üçün **Randomised tarpit sleep** (default olaraq 1–5 saniyə, 15 saniyə ilə məhdudlaşdırılmış)
+
+### Konfiqurasiya
+
+#### Tarpit Vaxtlaması
+
+Rate limit-lənmiş sorğulara tətbiq edilən təsadüfi gecikməni idarə edin:
+
+* **`cap_rate_limit_tarpit_min`** — Minimum yuxu müddəti saniyədə (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Maksimum yuxu müddəti saniyədə (default: 5, 15 ilə məhdudlaşdırılmış)
+
+Bu parametrlər **Ultimate Multisite → Settings → Captcha** bölməsində mövcuddur.
+
+### Genişləndiriləbilməsi
+
+#### IP Ağartma Filtri (IP Whitelist Filter)
+
+Etibarlı IP diapazonlarını rate limit-dən istisna edin:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Monitoring xidmətinizin IP-sini ağartlayın
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Bloklamadan Əvvəlki Hərəkət (Pre-Block Action)
+
+Rate limit bloku göndərilməzdən dərhal əvvəl özəllik məntiqini yerinə yetirin:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Bloklanmanı qeyd edin, administratorları xəbərdar edin və ya özəllik metrikalarını yeniləyin
+    error_log( "Rate limit $ip üçün $surface-də aktivləşdi" );
+}, 10, 2 );
+```
+
+## Müştəri IP-sinin Aşkar Edilməsi və Etibarlı Proxy-lər
+
+Ultimate Multisite: Captcha v1.5.0, spoof-ə davamlı müştəri-IP aşkar edilməsi təqdim edir. `Captcha_Core::get_client_ip()` metodu indi aşağıdakılar üzrə ziyarətçi IP atributasiyası üçün yeganə mənbədir:
+
+* Rate-limit küp açarları
+* Captcha təminatçısının `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Statistika IP hash-ləri
+
+### Etibarlılıq Modeli (Trust Model)
+
+Plugin sərt bir IP etibarlığı iyerarxiyası tətbiq edir:
+
+1. **REMOTE_ADDR** — Daim etibarlıdır (birbaşa cəhinin IP-si)
+2. **CF-Connecting-IP** — Yalnız aşağıdakı hallarda nəzərdən keçirilir:
+   - Birbaşa cəhinin cari Cloudflare IP diapazonunda olması
+   - `cap_trust_cloudflare_headers` aktivləşdirilib (default: OFF)
+3. **X-Forwarded-For** — Yalnız aşağıdakı hallarda nəzərdən keçirilir:
+   - Birbaşa cəhinin administrator tərəfindən konfiqurasiya edilmiş etibarlı-proxy siyahısında olması
+   - Başlıq sağdan sola doğru, etibarlı/Cloudflare dayanacaqlarını atlayaraq təhlil edilir
+
+### Konfiqurasiya
+
+#### Cloudflare Başlığı Etibarı
+
+Cloudflare-in `CF-Connecting-IP` başlığını etibar etməni aktivləşdirin:
+
+* **`cap_trust_cloudflare_headers`** — `CF-Connecting-IP` etibarına keçid etmək üçün ON olaraq təyin edin
+  - Default: OFF (deaktiv)
+  - Plugin, paketlənmiş bir Cloudflare CIDR görüntüsü ilə gəlir
+  - CIDR diapazonları həftəlik wp-cron vasitəsilə yenilənir
+  - Yeniləmə uğursuzlaşarsa paketlənmiş alternativ istifadə olunur
+
+#### Etibarlı Proxy Konfiqurasiyası
+
+Ön xətt proxy-lərinizi və yük-balanslayıcılarınızı təyin edin:
+
+* **`cap_trusted_proxies`** — CIDR və ya açıq IP-lərdən ibarət Textarea (hər biri bir sətirdə)
+  - Şərhlər icazəlidir (sətrlər `#` ilə başlayır)
+  - Bu parametrsiz, rate limiter aktiv olsa belə, `X-Forwarded-For` nəzərə alınmır
+  - Nümunə:
+    ```
+    # Yük balanslayıcımız
+    192.0.2.0/24
+
+    # Ehtiyat proxy
+    198.51.100.50
+    ```
+
+#### İlk Aktivləşdirmədə Avtomatik Aşkar Edilmə
+
+Rate limiter-i ilk dəfə aktivləşdirdiyiniz zaman, plugin ehtimal olunan Cloudflare və proxy vəziyyətinizi aşkar edir və bir kliklə "Aşkar edilmiş parametrləri tətbiq et" administrator bildirişi göstərir.
+
+* Plugin **heç vaxt** yadda saxlanılan dəyərlərinizi üstün etmir
+* Sonrakı trafik konfiqurasiyanızın artıq reallıqla uyğun gəlmədiyini göstərirsə (məsələn, Cloudflare CIDR diapazonlarını dəyişibsə), silinməyən bir uyğunsuzluq bildirişi tövsiyə olunan yeniləməni göstərir.
+
+### Bu Niyə Vacibdir
+
+Sərt bir IP etibarlığı modeli kritik bir spoofing vektorunu bağlayır: əvvəllər saxta `CF-Connecting-IP` başlığı daşıyan birbaşa origin-server sorğuları, əsl cəhinin IP-si əvəzinə saxta IP ilə küpə düşürdü. Bu, xüsusilə aşağıdakılar üçün vacibdir:
+
+* **Rate limiting** — Hücum edənlər IP-ləri saxtalaşdıraraq limitləri aşdıra bilmirlər
+* **Statistika** — Hücum metrikalarınız saxta deyil, real ziyarətçi IP-lərini əks etdirir
+* **Captcha yoxlaması** — Təminatçılar risk qiymətləndirməsi üçün düzgün ziyarətçi IP-sini alır

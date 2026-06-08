@@ -1,0 +1,124 @@
+---
+title: AI Sayt Qurucu
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Sayt Qurucusu
+
+ultimate-multisite-ai-site-builder
+
+## Tələblər
+
+- WordPress 5.3 və ya daha yuxarı
+- PHP 7.4 və ya daha yuxarı
+- Multisite Ultimate plugin (aktiv)
+
+## Quraşdırma
+
+1. Addon fayllarını `/wp-content/plugins/` kataloqunuzuna yükləyin
+2. WordPress-də 'Plugins' menyusu vasitəsilə plugin-i aktivləşdirin
+3. Addon parametrlərini şəbəkə administrator panelində (network admin) konfiqurasiya edin
+
+## İnkişaf
+
+### Qurulma
+
+```bash
+# Asılılıqları quraşdırın
+composer install
+npm install
+
+# Testləri işə salın
+npm run test
+
+# Kod standartı yoxlamalarını işə salın
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Kod üslubu problemlərini düzəldin
+vendor/bin/phpcbf
+
+# İstehsal üçün qurulma (Build)
+npm run build
+```
+
+### Layihə Strukturu
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP sinifləri və daxil edilənlər
+│   ├── class-multisite-ultimate-updater.php  # Yeniləmə idarəçisi
+│   └── class-ai_site_builder-main.php             # Əsas funksionallıq
+├── tests/                        # Unit testlər
+│   ├── bootstrap.php            # Testin başlatılması (bootstrap)
+│   ├── class-*-base.php         # Əsas test sinifi
+│   └── class-*-test.php         # Test halları
+├── views/                       # Şablon faylları
+├── assets/                      # Statik fayllar
+│   ├── css/                     # Stil faylları
+│   ├── js/                      # JavaScript faylları
+│   └── images/                  # Şəkillər
+├── lang/                        # Dil faylları
+├── composer.json                # PHP asılılıqları
+├── package.json                 # Node.js asılılıqları
+├── phpunit.xml.dist             # PHPUnit konfiqurasiyası
+├── .phpcs.xml.dist              # Kod standartları konfiqurasiyası
+└── rector.php                   # Kod müasirləşdirmə qaydaları
+```
+
+### Testləmə
+
+Addon genişləndirilmiş test çərçivəsi (testing framework) ilə gəlir:
+
+- **Unit Testlər**: WordPress test dəsti ilə PHPUnit əsaslı testlər
+- **Əsas Test Sinifi**: Ümumi test ssenariləri üçün köməkçi metodlar təmin edir
+- **Test Əhatəsi (Test Coverage)**: Kod əhatəsini izləmək üçün konfiqurasiya edilmişdir
+- **Multisite Testləmə**: Testlər multisite mühitində işləyir
+
+### Kod Standartları
+
+- **WordPress Kod Standartları**: PHPCS vasitəsilə tətbiq edilir
+- **PHP 7.4+ Uyğunluğu**: Müasir PHP xüsusiyyətləri dəstəklənir
+- **Statik Analiz**: Tip yoxlaması üçün PHPStan inteqrasiyası
+- **Kod Müasirləşdirməsi**: PHP yüksəltmələri üçün Rector qaydaları
+
+### Qurulma Sistemi (Build System)
+
+- **Fayl Emalı (Asset Processing)**: CSS/JS faylları üçün minifikasiya
+- **Tərcümə**: POT faylı generasiyası
+- **Paketləmə (Packaging)**: Paylanma üçün arxiv yaratmaq
+- **İnkişaf Rejimi (Development Mode)**: Debugging üçün minifikasiya edilməmiş fayllar
+
+## Konfiqurasiya
+
+Addon, şəbəkə administrator interfeysi vasitəsilə əlçatan müxtəlif konfiqurasiya seçimlərini dəstəkləyir.
+
+## Hooks və Filterlər
+
+### Actions (Hərəkətlər)
+
+- `ultimate-multisite-ai-site-builder_init` - Addon ilkinləşdirildikdən sonra işə düşür
+- `ultimate-multisite-ai-site-builder_loaded` - Bütün addon faylları yükləndikdən sonra işə düşür
+
+### Filters (Filtrlər)
+
+- `ultimate-multisite-ai-site-builder_settings` - Addon parametrlərini dəyişmək
+- `ultimate-multisite-ai-site-builder_enabled` - Addonun aktiv/deaktiv vəziyyətini üstələmək
+
+## Lisenziya
+
+Bu addon GPL v3 və ya daha yeni versiyası altında lisenziyalanmışdır.
+
+## Dəstək
+
+Dəstək və sənədləşmə üçün [MultisiteUltimate.com](https://multisiteultimate.com) saytını ziyarət edin.
+## Dəyişikliklər (Changelog)
+
+- Versiya 1.0.1 (2025-09-28): prefiksi ultimate-multisite olaraq dəyişdi; mətn domenini yenilədi; versiya artırıldı.
+
+
+- Versiya (2025-09-28): prefiksi ultimate-multisite olaraq dəyişdi; mətn domenini yenilədi; versiya artırıldı.

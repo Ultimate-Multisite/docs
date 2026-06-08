@@ -1,0 +1,117 @@
+---
+title: Çox Valyalı
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency, şəbəkənizin bir neçə valyutada ödəniş qəbul etməsinə imkan verir. Bu eklenti qiymətləri canlı və ya əl ilə təyin edilmiş valyuta kurslarından istifadə edərək avtomatik olaraq çevirir, hər bir məhsul üçün istənilən valyutada dəqiq qiymət təyin etməyə imkan verir və hər ziyarətçinin üstün gördüyü valyutanı geolokasiya yolu ilə aşkarlayır — bunların hamısı tək bir admin dashboard-dan idarə olunur.
+
+## Əsas Xüsusiyyətlər
+
+- **Avtomatik valyuta kursu çevirməsi** — qiymətlər seçdiyiniz provayderdən alınan kurslar istifadə edərək əsas valütanızdan çevrilir.
+- **Məhsulə görə qiymət tənzimləmələri** — avtomatik çevirməni atlamaq üçün istənilən məhsulda valyutaya xas dəqiq qiymətlər təyin edin.
+- **Valyuta seçici qeydiyyat sahəsi** — müştərilərə checkout/qeydiyyat zamanı üstün gördükləri valyutanı seçməyə imkan verir.
+- **Bir neçə valyuta kursu provayderi** — ECB, Frankfurter, Stripe və ya tam əl ilə kurslar.
+- **Geolokasiyaya əsaslanan valyuta aşkarlanması** — ziyarətçinin ölkəsi ilə uyğun gələn valyutanı avtomatik olaraq seçir.
+- **Admin dashboard** — aktiv valyutaları, valyuta kurslarını və provayder parametrlərini bir yerdən idarə edin.
+
+## Tələblər
+
+- Ultimate Multisite 2.0.0 və ya daha yuxarı
+- WordPress Multisite quraşdırılması
+- PHP 7.4 və ya daha yuxarı
+
+## Quraşdırma
+
+1. Plugin fayllarını `/wp-content/plugins/ultimate-multisite-multi-currency` yoluna yükləyin.
+2. Plugin-i WordPress-dəki **Plugins** ekranı vasitəsilə aktivləşdirin (Network Activate).
+3. Admin dashboard-u açmaq üçün **Ultimate Multisite → Multi-Currency** yoluna keçin.
+4. Qəbul etmək istədiyiniz valyutaları əlavə edin və valyuta kursu provayderinizi konfiqurasiya edin.
+
+## Konfiqurasiya
+
+### Admin Dashboard
+
+Multi-Currency admin dashboard-u (**Ultimate Multisite → Multi-Currency**) aşağıdakıları etmək üçün mərkəzi yerdir:
+
+- Valyutalar əlavə etmək, aktivləşdirmək və ya deaktiv etmək.
+- Bir valyuta kursu provayderi seçmək və kursları tələb edildikdə yeniləmək.
+- Bütün aktiv valyutalar üçün cari kursları nəzərdən keçirmək.
+- Avtomatik provayderlər uyğun olmadıqda əl ilə kurslar təyin etmək.
+
+### Valyuta Kursu Provayderləri
+
+| Provider | Təsvir |
+|---|---|
+| **ECB** | European Central Bank — EUR əsaslı şəbəkələr üçün pulsuz gündəlik kurslar |
+| **Frankfurter** | Açık mənbəli ECB mirror API — pulsuz, API açarı tələb edilmir |
+| **Stripe** | Stripe-in canlı FX kurslarından istifadə edir — aktiv Stripe inteqrasiyası tələb edir |
+| **Manual** | Kursları birbaşa siz daxil edirsiniz; xarici API çağırışı yoxdur |
+
+Provayderinizi **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** altında seçin. Kurslar istənilən vaxt əl ilə və ya avtomatik yenilənməsi üçün cədvəlləşdirilə bilər.
+
+### Məhsulə Görə Qiymət Tənzimləmələri
+
+Avtomatik çevirmə kifayət qədər dəqiq olmadıqda, istənilən məhsulda müəyyən bir valyuta üçün dəqiq qiymət təyin edə bilərsiniz:
+
+1. Məhsul redaktorunu açın (**Ultimate Multisite → Products → Edit**).
+2. **Currency Pricing** bölməsinə aşağı sürüşdürün.
+3. Yeniləmək istədiyiniz hər valyuta üçün dəqiq qiyməti daxil edin.
+4. Məhsulu yadda saxlayın.
+
+Tənzimləmə (override) olmayan məhsullar əsas valütanızdan çevrilmiş qiyməti istifadə edir.
+
+### Valyuta Seçici Qeydiyyat Sahəsi
+
+Valyuta seçici sahəni qeydiyyat/checkout axınına əlavə edərək müştərilərə qeydiyyat zamanı üstün gördükləri valyutanı seçməyə imkan verərsiniz:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** yoluna gedin.
+2. **Show currency selector on signup** seçiminə işarə edin.
+3. İxtiyari olaraq bir default valyuta təyin edin və ya geolokasiyanın seçilmiş dəyəri müəyyən etməsinə icazə verin.
+
+Seçilmiş valyuta abunəliklə birlikdə saxlanılır və bütün sonrakı hesablaşmalarda istifadə olunur.
+
+### Geolokasiyaya Əsaslanan Valyuta Aşkarlanması
+
+Geolokasiya aşkarlanması aktivləşdirildikdə, eklenti ziyarətçinin ölkəsini valyutaya xəritələyir və onu valyuta seçici sahədə avtomatik seçir. Aktivləşdirmək üçün:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** yoluna gedin.
+2. **Detect currency from visitor location** seçiminə işarə edin.
+3. Ölkələri valyutalara **Geolocation Mapping** cədvəlində xəritələyin.
+
+Əgər ziyarətçinin ölkəsi üçün heç bir xəritə yoxdursa, şəbəkənin əsas valyutası fallback (alternativ) kimi istifadə olunur.
+
+## Tez-tez Verilən Suallar
+
+### Valyuta kursu provayderi mövcud olmasa nə baş verir?
+
+Eklenti ən son uğurla alınan kurslara geri qayıdır. Əgər heç vaxt kurs alınmayıbsa, konfiqurasiya etdiyiniz əl ilə kurslara geri qayıdır. Təhlükəsizlik şəbəkəsi kimi əl ilə kursları konfiqurasiya etmək tövsiyə olunur.
+
+### Fərqli valyutalar üçün fərqli provayderlər istifadə edə bilərəmmi?
+
+Xeyr — bütün valyutalar üçün bir provayder eyni anda aktivdir. Fərdi kurslar üzərində tam nəzarət etmək istəyirsinizsə, **Manual** istifadə edin.
+
+### Geolokasiya ayrıca bir plugin tələb edirmi?
+
+Xarici geolokasiya plugin-i tələb olunmur. Eklenti WordPress-in daxili IP-dən ölkə aşkarlanmasından istifadə edir. Daha yüksək dəqiqlik üçün, təqdim olunan filter hook-ları vasitəsilə xüsusi bir geolokasiya xidməti inteqrasiya edilə bilər.
+
+### Məhsulə görə tənzimləmələr vergiindən əvvəlmi yoxsa sonra tətbiq olunur?
+
+Məhsulə görə tənzimləmələr hədəf valyutasında vergiindən əvvəlki qiyməti təyin edir. Vergi, mövcud vergi konfiqurasiyanızdan istifadə edərək tənzimləmə qiyməti üzərində hesablanır.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Avtomatik valyuta kursu çevirməsi ilə Multi-currency dəstəyi
+- New: Dəqiq valyuta-xüsusi qiymətlər üçün Məhsulə görə qiymət tənzimləmələri
+- New: Checkout axını üçün Valyuta seçici qeydiyyat sahəsi
+- New: Valyuta kursu provayderləri: ECB, Frankfurter, Stripe və əl ilə
+- New: Geolokasiyaya əsaslanan valyuta aşkarlanması
+- New: Valyutaları və valyuta kurslarını idarə etmək üçün Admin dashboard
+- Fix: Seçilmiş valyutadan asılı olmayaraq dashboard-un həmişə əsas valyutada qiymətləri göstərməsi

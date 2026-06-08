@@ -1,0 +1,124 @@
+---
+title: ባለብዙ ተጠቃሚነት
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# ብዙ ተጠቃሚዎችን በአንድ ላይ ማስተናገጃ (Multi-Tenancy)
+
+የአፈጻጸም እና የደህንነት ደረጃን ለማረጋገጥ ንዑስ ጣቢያዎችን (subsites) በተለያዩ ሰርቨሮች እና ዳታቤዝዎች ላይ መከፋፈል።
+
+## የሚያስፈልጉ ነገሮች (Requirements)
+
+- WordPress 5.3 ወይም ከዚያ በላይ
+- PHP 7.4 ወይም ከዚያ በላይ
+- Multisite Ultimate plugin (በሥራ ላይ መሆን አለበት)
+
+## መጫን (Installation)
+
+1. የፕልጊኑን ፋይሎች ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
+2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕልጊኑን ያንቁ (Activate)።
+3. የፕልጊኑን ቅንብሮች በኔትወርክ አድሚን (network admin) ውስጥ ያዘጋጁ።
+
+## ልማት (Development)
+
+### ዝግጅት (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### የፕሮጀክት አወቃቀር (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # የPHP ክፍሎች እና የቅንብሮች ቦታ
+│   ├── class-multisite-ultimate-updater.php  # የআপডেট አያያዥ (Update handler)
+│   └── class-multi_tenancy-main.php             # ዋና ተግባር (Main functionality)
+├── tests/                        # የዩኒት ሙከራዎች (Unit tests)
+│   ├── bootstrap.php            # የሙከራ ማስጀመሪያ (Test bootstrap)
+│   ├── class-*-base.php         # መሰረታዊ የሙከራ ክፍል (Base test class)
+│   └── class-*-test.php         # የሙከራ ሁኔታዎች (Test cases)
+├── views/                       # የቴምፕሌት ፋይሎች (Template files)
+├── assets/                      # ስታቲክ ፋይሎች (Static assets)
+│   ├── css/                     # የቅጥ መጽሐፍት (Stylesheets)
+│   ├── js/                      # የJavaScript ፋይሎች
+│   └── images/                  # ምስሎች (Images)
+├── lang/                        # የቋንቋ ፋይሎች (Language files)
+├── composer.json                # የPHP ጥገኝነቶች (PHP dependencies)
+├── package.json                 # የNode.js ጥገኝነቶች (Node.js dependencies)
+├── phpunit.xml.dist             # የPHPUnit ቅንብር (PHPUnit configuration)
+├── .phpcs.xml.dist              # የኮድ ደረጃዎች ቅንብር (Code standards configuration)
+└── rector.php                   # የኮድ ዘመናዊነት ህጎች (Code modernization rules)
+```
+
+### ሙከራ (Testing)
+
+ይህ አድኦን ሁሉን አቀፍ የሙከራ ፍሬምወርክን ያካትታል፡
+
+- **Unit Tests**: በWordPress test suite ላይ የተመሰረቱ የPHPUnit ሙከራዎች።
+- **Base Test Class**: ለተለመዱ የሙከራ ሁኔታዎች የሚረዱ ተጨማሪ ዘዴዎችን (helper methods) ይሰጣል።
+- **Test Coverage**: የኮድ ሽፋን (code coverage) ለመከታተል ተዋቅሯል።
+- **Multisite Testing**: ሙከራዎች በብዙ ተጠቃሚዎች (multisite) አካባቢ ይካሄዳሉ።
+
+### የኮድ ደረጃዎች (Code Standards)
+
+- **WordPress Coding Standards**: በPHPCS አማካይነት ይተገበራል።
+- **PHP 7.4+ Compatibility**: ዘመናዊ የPHP ባህሪያት ይደገፋሉ።
+- **Static Analysis**: ለዓይነት ፍተሻ (type checking) PHPStanን ያካትታል።
+- **Code Modernization**: ለPHP ማሻሻያ (upgrades) Rector ህጎችን ይጠቀማል።
+
+### የብልት ሥርዓት (Build System)
+
+- **Asset Processing**: ለCSS/JS ፋይሎች አነስተኛ ማድረግ (Minification)።
+- **Translation**: POT ፋይል መፍጠር።
+- **Packaging**: ለማሰራጨት የፋይል ማከማቻ (Archive) መፍጠር።
+- **Development Mode**: ለዲባጅንግ (debugging) ያልተቀነሱ (Unminified) ፋይሎች።
+
+## ቅንብር (Configuration)
+
+ይህ አድኦን በኔትወርክ አድሚን በኩል ሊገኙ የሚችሉ የተለያዩ የቅንብር አማራጮችን ይደግፋል።
+
+## Hooks እና Filters
+
+### Actions (ድርጊቶች)
+
+- `ultimate-multisite-addon-template_init` - የአድኦኑ መጀመር ከተጠናቀቀ በኋላ ይተነፍሳል።
+- `ultimate-multisite-addon-template_loaded` - ሁሉም የአድኦን ፋይሎች ከተጫኑ በኋላ ይተነፍሳል።
+
+### Filters (ማጣሪያዎች)
+
+- `ultimate-multisite-addon-template_settings` - የአድኦን ቅንብሮችን ለመቀየር።
+- `ultimate-multisite-addon-template_enabled` - የአድኦን መብራት/ማጥፋት ሁኔታን ለመተካት።
+
+## ፈቃድ (License)
+
+ይህ አድኦን በGPL v3 ወይም ከዚያ በኋላ ባለው ፈቃድ ላይ የተመሰረተ ነው።
+
+## ድጋፍ (Support)
+
+ለድጋፍ እና ሰነድ ለማግኘት [MultisiteUltimate.com](https://multisiteultimate.com) ይጎብኙ።
+## የለውጥ ታሪክ (Changelog)
+
+- Version 1.0.1 (2025-09-28): ቅድመ-ጽሑፍን (prefix) ወደ ultimate-multisite ተቀይሯል፤ የጽሑፍ ስፋት (text domain) ተዘምኗል፤ የversion ቁጥር ተጨመረ።
+
+
+- Version (2025-09-28): ቅድመ-ጽሑፍን (prefix) ወደ ultimate-multisite ተቀይሯል፤ የጽሑፍ ስፋት (text domain) ተዘምኗል፤ የversion ቁጥር ተጨመረ።

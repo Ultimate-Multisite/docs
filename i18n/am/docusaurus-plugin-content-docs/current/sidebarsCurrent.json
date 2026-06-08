@@ -1,0 +1,218 @@
+{
+  "sidebar.userGuideSidebar.category.Getting Started": {
+    "message": "መጀመር",
+    "description": "The label for category Getting Started in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Administration": {
+    "message": "አስተዳደር",
+    "description": "The label for category Administration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Configuration": {
+    "message": "ማዋቀር",
+    "description": "The label for category Configuration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Mapping": {
+    "message": "የዶሜን ማስተካከያ",
+    "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Seller": {
+    "message": "የዶሜን ተሸካሚ",
+    "description": "The label for category Domain Seller in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Host Integrations": {
+    "message": "የ호ስት ውህደቶች",
+    "description": "The label for category Host Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Payment Gateways": {
+    "message": "የክፍያ መግቢያዎች",
+    "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Client Management": {
+    "message": "የደንበኛ አስተዳደር",
+    "description": "The label for category Client Management in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Integrations": {
+    "message": "አገናኛዎች",
+    "description": "The label for category Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Customization": {
+    "message": "ማስተካከያ",
+    "description": "The label for category Customization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Development": {
+    "message": "ልማት",
+    "description": "The label for category Development in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Localization": {
+    "message": "የአካባቢ ስልት",
+    "description": "The label for category Localization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Troubleshooting": {
+    "message": "ችግር መፍታት",
+    "description": "The label for category Troubleshooting in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Migration": {
+    "message": "ማስመጫ",
+    "description": "The label for category Migration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Miscellaneous": {
+    "message": "ተለያዩ",
+    "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
+  },
+  "sidebar.developerSidebar.category.Hooks Reference": {
+    "message": "የሁፎኮች ማጣቀሻ",
+    "description": "The label for category Hooks Reference in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.REST API": {
+    "message": "REST API",
+    "description": "The label for category REST API in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Integration Guide": {
+    "message": "የአገናኝ መመሪያ",
+    "description": "The label for category Integration Guide in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Code Examples": {
+    "message": "የኮድ ምሳሌዎች",
+    "description": "The label for category Code Examples in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Addon Development": {
+    "message": "አፕሊኬሽን ልማት",
+    "description": "The label for category Addon Development in sidebar developerSidebar"
+  },
+  "sidebar.addonsSidebar.category.WooCommerce Integration": {
+    "message": "WooCommerce ውህደት",
+    "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Site Exporter": {
+    "message": "የድር ጣቢያ አውጪ",
+    "description": "The label for category Site Exporter in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AffiliateWP": {
+    "message": "AffiliateWP",
+    "description": "The label for category AffiliateWP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Connector for Compatible Endpoints": {
+    "message": "ለተስማሚ የሥራ ማስኬጃ ነጥቦች AI ተያያዥ",
+    "description": "The label for category AI Connector for Compatible Endpoints in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Connector for WebLLM": {
+    "message": "ለWebLLM የAI ተያያዥ",
+    "description": "The label for category AI Connector for WebLLM in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Site Builder": {
+    "message": "የአይ ስyte ገንቢ",
+    "description": "The label for category AI Site Builder in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gratis AI Agent": {
+    "message": "ነጻ የAI ኤጀንት",
+    "description": "The label for category Gratis AI Agent in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Superdav AI Agent": {
+    "message": "ሱፐርዳቭ ኤአይ ኤጀንት",
+    "description": "The label for category Superdav AI Agent in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Analytics": {
+    "message": "ትንተና",
+    "description": "The label for category Analytics in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Captcha": {
+    "message": "ካፕቻ",
+    "description": "The label for category Captcha in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Chuck Norris Facts": {
+    "message": "የቻክ ኖርይስ እውነታዎች",
+    "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Content Sync": {
+    "message": "የይዘት ማመሳሰል",
+    "description": "The label for category Content Sync in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Domain Seller": {
+    "message": "የዶሜን ተሸካሚ",
+    "description": "The label for category Domain Seller in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Emails": {
+    "message": "ኢሜይሎች",
+    "description": "The label for category Emails in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Fluent Forms": {
+    "message": "ፈሳሽ ቅጾች",
+    "description": "The label for category Fluent Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.GoCardless": {
+    "message": "GoCardless",
+    "description": "The label for category GoCardless in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gravity Forms": {
+    "message": "ግራቪቲ ፎርምስ",
+    "description": "The label for category Gravity Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Language Selector": {
+    "message": "የቋንቋ መምረጫ",
+    "description": "The label for category Language Selector in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Loco Translate": {
+    "message": "ሎኮ ትርጉም",
+    "description": "The label for category Loco Translate in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailchimp": {
+    "message": "Mailchimp",
+    "description": "The label for category Mailchimp in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailster": {
+    "message": "ሜይልስተር",
+    "description": "The label for category Mailster in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Metered Plans": {
+    "message": "የተመዘገቡ ዕቅዶች",
+    "description": "The label for category Metered Plans in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Network": {
+    "message": "ብዙ-ኔትወርክ",
+    "description": "The label for category Multi-Network in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Tenancy": {
+    "message": "ብዙ ተጠቃሚነት",
+    "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.PayFast": {
+    "message": "PayFast",
+    "description": "The label for category PayFast in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
+    "message": "ፕላጊን እና ธีም አስተዳዳሪ",
+    "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Agents": {
+    "message": "የድጋፍ ወኪሎች",
+    "description": "The label for category Support Agents in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Tickets": {
+    "message": "የድጋፍ ጥያቄዎች",
+    "description": "The label for category Support Tickets in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.VAT": {
+    "message": "ቫት",
+    "description": "The label for category VAT in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Admin Page Creator": {
+    "message": "የአድሚን ገጽ ፈጣሪ",
+    "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Addon Template": {
+    "message": "አባሪ አብነት",
+    "description": "The label for category Addon Template in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
+    "message": "የ튜ተር ማልቲሳይት ተኳሃኝነት",
+    "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Material WP": {
+    "message": "የቁሳቁስ ዌብፕር",
+    "description": "The label for category Material WP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Currency": {
+    "message": "ብዙ ምንዛሬዎች",
+    "description": "The label for category Multi-Currency in sidebar addonsSidebar"
+  }
+}

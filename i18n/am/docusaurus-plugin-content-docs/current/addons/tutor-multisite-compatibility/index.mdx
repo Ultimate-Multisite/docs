@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite ተኳሃኝነት
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+በMultisite አካባቢዎች ውስጥ ለTutor LMS ተኳሃኝነት ማስተካከያዎችን የሚጨምር የWordPress plugin።
+
+## መግለጫ
+
+ይህ plugin Tutor LMS በWordPress Multisite ኔትወርክ ላይ እንዲሰራ የሚያስፈልጉ ወሳኝ ተኳሃኝነት ማስተካከያዎችን ይሰጣል። የተጠቃሚዎችን መመዝገብ (user enrollment)፣ የአስተማሪዎችን አስተዳደር፣ የኮርስ ገደቦችን እና ሌሎች በMultisite የተለዩ ተግባራትን ይቆጣጠራል።
+
+## ባህሪያት
+
+- **የዳታቤዝ ሰንጠረዥ አስተዳደር (Database Table Management)**: በMultisite የውጭ ቁልፍ ገደቦች (foreign key constraints) ምክንያት ሲሳሳቱ የሚጠፉ የTutor LMS ሰንጠረዦችን በራስ-ሰር ይለያል እና ይፈጥራል።
+- **የMultisite የተጠቃሚ መመዝገብ (Multisite User Enrollment)**: በኔትወርክ ሳይቶች ውስጥ የተጠቃሚዎችን መመዝገብ ለማስተዳደር የተበጀ AJAX handler።
+- **የአስተማሪ ሚና አስተዳደር (Instructor Role Management)**: በMultisite አካባቢዎች ውስጥ የአስተማሪ ሚናን በራስ-ሰር መመደብ እና ማስተዳደር።
+- **የኮርስ ገደቦች (Course Limitations)**: በsite plans ላይ በመመስረት የኮርስ እና የfunnel የመፍጠር ገደቦችን ለማስተዳደር ከUltimate Multisite ጋር መዋሃድ።
+- **የተበጀ የአስተዳሚ እይታዎች (Custom Admin Views)**: በMultisite ንቃተ-ልቦና የተሰራ የአስተማሪ ዝርዝር እና የአስተዳደር መገናኛ።
+- **የአስተዳሚ መሳሪያዎች (Admin Tools)**: ለኔትወርክ እና ለsite አስተዳሚዎች የዳታቤዝ አስተዳደር መገናኛ።
+
+## መስፈርቶች
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (በ`Requires Plugins` ርዕስ በራስ-ሰር ይገደዳል)
+- WordPress Multisite መጫን
+- Ultimate Multisite plugin (ለኮርስ ገደቦች ተግባር)
+
+## መጫን
+
+1. የplugin ፋይሎችን ወደ `/wp-content/plugins/tutor-multisite-compatibility/` ይጫኑ።
+2. Tutor LMS መጫን እና መጀመር (activate) መሆኑን ያረጋግጡ።
+3. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት plugin ን ያስጀምሩ።
+4. plugin ን በTutor LMS ውስጥ በራስ-ሰር ይዋሃዳል።
+
+## የፋይል አወቃቀር
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (ዋና የplugin ፋይል)
+├── includes/
+│   ├── class-database-manager.php (የዳታቤዝ ሰንጠረዥ መፍጠር እና አስተዳደር)
+│   ├── class-admin-interface.php (የዳታቤዝ አስተዳደርን 위한 የአስተዳሚ መገናኛ)
+│   ├── class-course-limits.php (የኮርስ እና የfunnel ገደቦችን መቆጣጠሪያዎች)
+│   ├── class-instructor-manager.php (የአስተማሪ ሚና አስተዳደር)
+│   ├── class-ajax-handlers.php (የተበጀ AJAX handlers)
+│   ├── class-query-helper.php (የዳታቤዝ ጥያቄ መርጃዎች)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (የMultisite የተጠቃሚ ሞዴል)
+│   └── admin/
+│       ├── class-instructors-list.php (የተበጀ የአስተማሪ ዝርዝር)
+│       └── views/
+│           └── instructors.php (የአስተማሪ የአስተዳሚ እይታ)
+└── README.md
+```
+
+## ከMU Plugin የተዛወረ ተግባር
+
+ይህ plugin ቀደም ሲል በ`wp-content/mu-plugins/daves.php` የነበረን ተግባር ይዟል፦
+
+- የኮርስ ሁኔታ ለውጥ ገደቦች
+- የኮርስ የመፍጠር ገደቦች
+- CartFlows መዋሃድ እና ገደቦች
+- Tutor አስተማሪ ሚና አስተዳደር
+- Multisite የተጠቃሚ መመዝገብ አያያዝ
+- የኮርስ ምርት ID ማሳያ
+
+## የዳታቤዝ አስተዳደር
+
+### ችግሩ
+
+በWordPress Multisite አካባቢዎች ውስጥ፣ የTutor LMS ሰንጠረዥ ሲፈጠር፣ ከተጠቃሚዎች ሰንጠረዥ ጋር የውጭ ቁልፍ ገደብ (foreign key constraint) ባላቸው ሰንጠረዦች ላይ ይሳሳታል። ይህ የሚሆነው ምክንያቱም፦
+
+- የsite-specific ሰንጠረዦች `wp_2_tutor_carts` የመሳሰሉ ቅድመ-አባሪዎችን (prefixes) ስለሚጠቀሙ
+- የውጭ ቁልፎች `wp_2_users` (የማይኖር)ን ስለሚያመለክቱ
+- ትክክለኛው የተጠቃሚዎች ሰንጠረዥ ደግሞ `wp_users` (በኔትወርክ ላይ የተጋራ) ስለሆነ።
+
+### መፍትሄው
+
+ይህ plugin በራስ-ሰር፦
+
+1. **የጠፉ ሰንጠረዦችን ይለያል**: በውጭ ቁልፍ ገደቦች ምክንያት ለመፍጠር ያልተሳካባቸውን ሰንጠረዦች ይፈትሻል።
+2. **ሰንጠረዦችን በትክክለኛ ማጣቀሻ ይፈጥራል**: ትክክለኛውን የተጠቃሚ ሰንጠረዥ ስም (`wp_users` በMultisite) ይጠቀማል።
+3. **በርካታ ሁኔታዎችን ይይዛል**:
+   - የplugin መጀመር/እንደገና መጀመር
+   - በኔትወርክ ውስጥ አዲስ site መፍጠር
+   - በአስተዳሚ መገናኛ በኩል በእጅ ሰንጠረዥ መፈተሽ
+
+### የተጎዱ ሰንጠረዦች
+
+- `tutor_coupon_usages` - ወደ ተጠቃሚዎች ሰንጠረዥ የውጭ ቁልፍ ይዟል።
+- `tutor_carts` - ወደ ተጠቃሚዎች ሰንጠረዥ የውጭ ቁልፍ ይዟል።
+- `tutor_notification_preferences` - ወደ ተጠቃሚዎች ሰንጠረዥ የውጭ ቁልፍ ያለው የTutorPro ሰንጠረዥ።
+
+### የአስተዳሚ መገናኛ
+
+የዳታቤዝ አስተዳደር መሳሪያዎችን የሚገኙበት ቦታ፦
+
+- **የኔትወርክ አስተዳሚ (Network Admin)**: Settings → Tutor Multisite DB
+- **የsite አስተዳሚ (Site Admin)**: Tools → Tutor Multisite DB
+
+ይህ መገናኛ የሚያስችሎት፦
+- በሁሉም site ላይ ያሉ ጠፉ ሰንጠረዦችን ማየት
+- ሰንጠረዥ መፍጠርን በእጅ ማስጀመር
+- የዳታቤዝ ውቅረትን መፈተሽ
+- ዝርዝር የሁኔታ መረጃን ማየት
+
+## ድጋፍ (Support)
+
+ይህ plugin በተለይ ለKursoPro መድረክ የተነደፈ ነው። ለቴክኒካዊ ድጋፍ፣ የልማት ቡድኑን ያነጋግሩ።

@@ -1,0 +1,99 @@
+---
+title: স্থান এক্সপৰ্ট কৰক
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+আমি বুজি পাই যে আপোনাৰ নেটৱৰ্কৰ ভিতৰত থকা ছাৰে-সাইটসমূহক (subsites) এটা একক site installation-লৈ আৰু বিপৰীতকৈ স্থানান্তৰ কৰাৰ প্ৰয়োজন হ'ব পাৰে, যদি আপোনাৰ কোনো ग्राहकৰ ওয়েবসাইট স্থানান্তৰ কৰাৰ সিদ্ধান্ত লয়। Site Exporter আৰু Importer add-on-এ এই কামটো সহজ কৰি তোলে। এই টুলে zip ফাইল ব্যৱহাৰ কৰি site export আৰু import কৰে, যিটো ব্যাকআপ হিচাপেও ব্যৱহাৰ কৰিব পাৰি।
+
+## Features
+
+* Site Export আৰু Import
+* ব্যৱহাৰ কৰিবলৈ সহজ interface
+* Site ব্যাকআপ সৃষ্টি কৰা
+
+## Documentation
+**Site Export আৰু Import কৰাৰ পদ্ধতি**
+
+## Installation
+
+1. **ultimate-multisite-site-exporter** ফাইলটো **/wp-content/plugins/** ডাইৰেক্টৰীত আপলোড কৰক।
+2. WordPress-ৰ **Plugins** মেনুৰ মাজেৰে plugin টো activate কৰক।
+3. plugin টো set কৰিবলৈ ধাপে ধাপে Wizard অনুসৰণ কৰক।
+
+## Usage Guide
+
+Ultimate Multisite ব্যৱহাৰ কৰি আপুনি আপোনাৰ নেটৱৰ্কৰ পৰা এটা site export কৰিব পাৰে বা এটা site আপোনাৰ multisite বা single-site installation-লৈ import কৰিব পাৰে।
+
+এই প্ৰক্ৰিয়াটো আৰম্ভ কৰিবলৈ, আমাৰ add-ons page-লৈ যাওক আৰু Ultimate Multisite: Site Exporter & Importer add-on install কৰক।![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+আপোনাৰ Plugins page-লৈ যাওক আৰু আপুনি যি add-on install কৰিছে, তাক **Network Activate** কৰিবলৈ ক্লিক কৰক।<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** বিকল্পটো Ultimate Multisite মেনুৰ ওপৰত, বাঁহফালে পোৱা যাব।
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+আপোনাৰ নেটৱৰ্কৰ পৰা এটা site export কৰিবলৈ, Ultimate Multisite মেনুৰ **Export & Import** ত যাওক আৰু **Export Sites** ট্ৰিখনত, **Generate new Site Export** কৰিবলৈ ক্লিক কৰক।
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+আপুনি যি site export কৰিব বিচাৰে তাৰ বাবে অনুসন্ধান কৰক আৰু export কৰা ফাইলত অন্তৰ্ভুক্ত কৰিব বিচাৰা আইটেমবোৰ বাছক। আপুনি themes, plugins, আৰু uploads অন্তৰ্ভুক্ত কৰিব পাৰে। যদি আপোনাৰ site ত ডাঙৰ ডেটা থাকে, তেন্তে আপুনি background-ত export প্ৰক্ৰিয়াটো চলিবলৈ বাছি ল'ব পাৰে।<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** বাটনটো ক্লিক কৰক। আপোনাৰ export কৰা site টো **Existing Exports** তালিকাত উপলব্ধ হ'ব। ফাইলটো ডাউনলোড কৰিবলৈ **Download ZIP** বাটনটো ক্লিক কৰক। Export ZIP-বোৰত এটা self-booting `index.php` আৰু `readme.txt` থাকে, গতিকে ইয়াক এটা নতুন host-ত install কৰিবলৈ কোনো পৃথক importer plugin install কৰাৰ প্ৰয়োজন নহয়।<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+সকলো ছাৰে-সাইট একেলগে export কৰিবলৈ, Ultimate Multisite মেনুৰ **Export & Import** ত যাওক আৰু export screen-ত **Network Export** বিকল্পটো ব্যৱহাৰ কৰক। এই সৃষ্টি কৰা archive টো host migration, staging rebuilds, বা network-level backup-ৰ বাবে এটা একক ZIP ত সকলো ছাৰে-সাইট বহন কৰে।
+
+Network exportবোৰ ডাঙৰ হ'ব পাৰে। গতিকে যিকোনো traffiڪ কম থকা সময়ত ইয়াক চলাই লওক আৰু নিশ্চিত কৰক যে server-ত archive আৰু অন্তৰ্ভুক্ত uploads, plugins, আৰু themes-ৰ বাবে যথেষ্ট storage আছে।
+
+## How to import a site
+
+এটা site import কৰিবলৈ, **Import a Site** ট্ৰিখনত যাওক আৰু আপুনি যি site import কৰিব বিচাৰে তাৰ .zip ফাইলটো আপলোড কৰক। আপুনি URL টো নতুন এটা কৰিব পাৰে বা স্থান খালি ৰাখি পুৰণি URL টো ৰাখিব পাৰে। লগতে, import কৰাৰ পিছত আপোনাৰ installationৰ পৰা .zip ফাইলটো delete কৰিবলৈ আপুনি box টো check কৰিব পাৰে। তাৰ পাছত **Begin Import** কৰিবলৈ ক্লিক কৰক।
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+এই প্ৰক্ৰিয়াটো অলপ সময় ল'ব পাৰে। আপুনি importerৰ তলত থকা তালিকাত এটা pending import দেখিব।
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+আপুনি **Cancel Import** ক্লিক কৰি প্ৰক্ৰিয়াটো বন্ধ কৰিব পাৰে।
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+প্ৰক্ৰিয়াটো সম্পূৰ্ণ হোৱাৰ পিছত, আপোনাৰ site টো ইতিমধ্যে আপোনাৰ network-ত উপলব্ধ।
+
+## How to import a site on a single install
+
+আপোনাৰ single install-লৈ এটা site import কৰিবলৈ, প্ৰথমে importer install আৰু activate কৰক। আপুনি ইয়াক download কৰিবলৈ link টো exporter tab-ত পোৱা যাব।
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+আপুনি importer টো **Tools** মেনুৰ ওপৰত, বাঁহফালে, **Export & Import** subitem-ত পোৱা যাব।
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+আপুনি যি site import কৰিব বিচাৰে তাৰ .zip ফাইলটো আপলোড কৰক। আপুনি URL টো নতুন এটা কৰিব পাৰে বা স্থান খালি ৰাখি পুৰণি URL টো ৰাখিব পাৰে। লগতে, import কৰাৰ পিছত আপোনাৰ installationৰ পৰা .zip ফাইলটো delete কৰিবলৈ আপুনি box টো check কৰিব পাৰে। তাৰ পাছত **Begin Import** কৰিবলৈ ক্লিক কৰক।
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+এই প্ৰক্ৰিয়াটো অলপ সময় ল'ব পাৰে। আপুনি importerৰ তলত থকা তালিকাত এটা pending import দেখিব।
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+আপুনি **Cancel Import** ক্লিক কৰি প্ৰক্ৰিয়াটো বন্ধ কৰিব পাৰে।
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+প্ৰক্ৰিয়াটো শেষ হোৱাৰ পিছত, আপোনাৰ site টো আপুনি যি site import কৰিছে তাৰ দ্বাৰা সলনি হ'ব।

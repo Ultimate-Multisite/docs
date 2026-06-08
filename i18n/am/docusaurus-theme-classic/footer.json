@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "ማሳሰቢያ",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "ማህበረሰብ",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "በለጠ",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "የተጠቃሚ መመሪያ",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "የገንቢ መመሪያዎች",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "ተጨማሪዎች",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "የGitHub ውይይቶች",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "ድረ-ዌብሳይት",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "ቅጂ መብት © 2026 Ultimate Multisite",
+    "description": "Footer copyright"
+  }
+}

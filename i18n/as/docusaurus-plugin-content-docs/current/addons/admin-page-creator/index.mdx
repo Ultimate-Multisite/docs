@@ -1,0 +1,144 @@
+---
+title: Admin Page Creator
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Content
+Admin page creator ব্যৱস্থাই আপোনাক WordPress admin dashboard भितৰত নতুন admin page আৰু sub-page সহজে যোগ কৰাত সহায় কৰিব। ইয়াক এটা welcome page বা tutorial page বনাৰ বাবে ব্যৱহাৰ কৰিব পাৰি, যি নতুন ব্যৱহাৰকাৰীসকলৰ বাবে এটা landing page হিচাপে কাম কৰিব পাৰে। আপুনি Beaver Builder, Elementor, Brizy, আৰু Oxygen जस्ता page builder ব্যৱহাৰ কৰি কোনো অসুবিধা নোহোৱাকৈ page design কৰিব পাৰে।
+
+ইয়াৰ উপৰিও, ই কাস্টম HTML, CSS আৰু JavaScript সমৰ্থন কৰে, লগতে plan আৰু user role-ৰ ওপৰত ভিত্তি কৰি access controlো দিয়ে!
+
+## Features
+* Support Custom HTML and CSS
+* JavaScript Support
+* PHP Content Mode
+* Permission based on User role
+* Support to page builders
+
+## Documentation
+[Creating Custom Admin Pages and Sub-pages using Multisite Ultimate: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installation
+
+1. **ultimate-multisite-admin-page-creator** ফাইলটো **/wp-content/plugins/** ডাইৰেক্টৰীত আপলোড কৰক।
+2. আপোনাৰ WordPress Network Admin-ৰ **Plugins** মেনুৰ মাজেৰে plugin টো activate কৰক।
+
+## Usage Guide
+
+WordPress ले সাইটৰ front end ত content যোগ কৰাটো অতি সহজ কৰি তুলিছে, কিন্তু admin side ত page আৰু sub-page বনাৰ বাবে কিছু asas coding skill লাগে। Ultimate Multisite: Admin Page Creator-ৰ লক্ষ্য হৈছে আপোনাৰ network site-ৰ back end তওঁ front end जस्तै ব্যৱহাৰৰ সহজতা লৈ অনা।
+
+## Why use Admin Page Creator?
+
+হয়তো আপুনি আপোনাৰ client-ৰ admin panel ত tutorial থকা এটা custom page দিব বিচাৰে, বা হয়তো আপুনি FAQs আৰু contact widget থকা এটা custom page যোগ কৰিব বিচাৰে। Admin Page Creator-ৰ লগত সম্ভাৱনা সীমাহীন, আৰু আজিৰ tutorial ত আমি সেইবোৰ বিষয়ে আলোচনা কৰিম।
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_YouTube playlist এটা embed কৰি tutorial page বনাটো এতিয়া সম্ভৱ!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_এইটো হ'ল user-ৰ Dashboard Panel ত final result_
+
+## Creating your first Custom Admin Page
+
+Ultimate Multisite: Admin Page Creator install আৰু activate কৰাৰ পিছত, আপুনি আপোনাৰ network admin menu লৈ গৈ Admin Pages ত যাব।
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Network Admin ত Custom Admin Pages list_
+
+আপুনি এতিয়ালৈকে বনা কৰা সকলো admin page-ৰ তালিকা দেখিব (যিহেতু আপুনি প্ৰথমবাৰৰ বাবে আহিছে, সেয়ে তালিকাখন খালি থাকিব)। আগবাঢ়ি **Add new Admin Page** ক্লিক কৰক। আপোনাক Admin Page editor লৈ redirect কৰা হ'ব।
+
+## The elements of a Custom Admin Page
+
+Admin Page editor ত, আপোনাৰ page customize কৰিবলৈ বিভিন্ন বিকল্প উপলব্ধ হ'ব।
+
+### Page Title
+
+এইটো সেই title যি page-ৰ ওপৰত দেখুৱাই হ'ব, admin menu label নহয়।
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Page Title এটা লিখক_
+
+### Content Type Selector
+
+Ultimate Multisite: Admin Page Creator ले page-ৰ contentৰ ক্ষেত্ৰত আপোনাক দুটা বিকল্প দিয়ে: আপুনি default WordPress WYSIWYG editor ব্যৱহাৰ কৰিব পাৰে বা HTML editor লৈ সলনি কৰিব পাৰে।
+
+যদি আপুনি HTML লগত পৰিচিত নহয়, তেন্তে default WordPress editor ব্যৱহাৰ কৰক। আপুনি normal Post বা Page ব্যৱহাৰ কৰাৰ দৰেই page-ৰ content edit কৰিব পাৰিব।
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_default WordPress WYSIWYG editor ব্যৱহাৰ কৰি_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_HTML editor বিকল্প ব্যৱহাৰ কৰি, syntax highlight আৰু error alerts লগত_
+
+## Menu Options
+
+পাকফালে, General Options meta-box ত, আপুনি menu type, label, আৰু ইয়াৰ বাহিৰেও বহুতো configurate কৰিব পাৰিব।
+
+### Menu Types
+
+আপোনাৰ নতুন custom admin page-ৰ দুটা ভিন্ন menu type হ'ব পাৰে: top-level menu আৰু submenu।
+
+এটা top-level menu page, নামটোৰ দৰেই, আপোনাৰ নতুন বনা কৰা page টো default WordPress page-ৰ লগত admin menu ত যোগ কৰিব।
+
+যদি আপুনি top-level option select কৰে, তেন্তে আপুনি menu order আৰু এটা menu iconো select কৰিব পাৰিব।
+
+যদি আপুনি এই page টো এটা sub-menu page বনাব বিচাৰে, তেন্তে আপুনি এই page টো ক'ত attach কৰিব তাৰ বাবে এটা parent page select কৰিব পাৰিব। আপুনি आफ्नो custom page টো default WordPress page-লৈ বা আপোনাৰ top-level custom admin page-লৈ যোগ কৰিব পাৰে।
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_এই Custom Page-ৰ বাবে menu item টো সম্পূৰ্ণকৈ customize কৰক_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_আপুনি এই page টো আন menu page-ৰ sub-menu হিচাপেও যোগ কৰিব পাৰে, যাৰ ভিতৰত আপোনাৰ নিজৰ top-level custom page-বোৰো অন্তৰ্ভুক্ত।_
+
+## Advanced Options
+
+আপুনি আপোনাৰ custom admin pages ত সকলো ধৰণৰ content যোগ কৰিব পাৰিব। ইয়াৰ ভিতৰত CSS rules আৰু files, JavaScript, আৰু external librariesো অন্তৰ্ভুক্ত। আপুনি Advanced Options Tab ব্যৱহাৰ কৰি সেয়া কৰিব পাৰে।
+
+### Custom CSS
+
+CSS tab ত, আপুনি নিজৰ custom CSS code যোগ কৰিব পাৰে, লগতে remote site (যেনে CDN, Google Fonts, ইত্যাদি) ৰ পৰা CSS files import কৰিব পাৰে।
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Custom CSS ও সমৰ্থন কৰা হয়। আপুনি বাহ্যিক style filesো অন্তৰ্ভুক্ত কৰিব পাৰে!_
+
+### Custom JavaScript
+
+JavaScript-ৰ ক্ষেত্ৰতো একেই কথা। আপুনি নিজৰ custom JavaScript code ব্যৱহাৰ কৰিবলৈ external libraries যোগ কৰিব পাৰে।
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_আপোনাৰ নিজৰ JavaScript code যোগ কৰক!_
+
+## Permissions
+
+Advanced Options তওঁ, আপুনি কোনবোৰ sub-site-ক এই page-লৈ access দিব, সেয়াও select কৰিব পাৰিব। এইটো সহায়ক হ'ব যদি আপুনি বিভিন্ন plan tier-লৈ বিভিন্ন exclusive content serve কৰাৰ পৰিকল্পনা কৰিছে, উদাহৰণস্বৰূপে।
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_এই page টো ক'ত দেখুৱাব, তাৰ ওপৰত আপোনাৰ সম্পূৰ্ণ নিয়ন্ত্ৰণ আছে_
+
+**Important** : page টো দেখুৱাবলৈ দুয়োটা condition পূৰণ হোৱাটো বাঞ্ছনীয়। ইয়াৰ অৰ্থ হ'ল যে যদি user-টো এটা নির্দিষ্ট plan-ৰ client হয়, কিন্তু তেওঁক select কৰা role-বোৰৰ কোনো এটা নাই (বা বিপৰীতকৈ), তেন্তে page টো তেওঁৰ panel ত দেখুৱাব নোৱাৰিব।
+
+## Active
+
+যদি আপুনি এটা custom admin page delete নকৰাকৈ বা permissions লগা নোহোৱাকৈ disable কৰিব বিচাৰে, তেন্তে কেৱল Active option-টো uncheck কৰক।
+
+এটা top-level page deactivate কৰিলে, সেই parent page লগত জড়িত সকলো sub-page স্বয়ংক্রিয়ভাৱে deactivate হৈ যাব।
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_user panel ত final result!_

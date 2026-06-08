@@ -1,0 +1,89 @@
+---
+title: ሜልቺምፕ
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: MailChimp Integration
+
+የMultisite Ultimate ኔትወርክዎን ከMailChimp ጋር ያገናኙ። የተወሰኑ ዕቅዶችን (plans) ከMailChimp Lists ጋር በማገናኘት፣ ተጠቃሚዎች ሲመዘገቡ በየሪፖርቶቹ (lists) ውስጥ በራስ-ሰር እንዲጨመሩ ማድረግ ይችላሉ።
+
+## Installation
+
+1. 'ultimate-multisite-mailchimp' የሚለውን ፋይል ወደ '/wp-content/plugins/' ዳይሬክቶሪ ይጫኑ።
+2. በWordPress Network Admin ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕለጊኑን ያንቁ (Activate)።
+
+## Usage Guide
+
+የተመዘገቡ ተጠቃሚዎች ኢሜይሎችን በMailChimp lists ውስጥ ማመሳሰል (sync) በUltimate Multisite: MailChimp Integration Add-on አማካኝነት በጣም ቀላል ነው። ይህ ትምህርት ሁሉንም ነገር እንዴት ማዘጋጀት እንደሚችሉ ሊረዳዎት ታስቦ የተዘጋጀ ነው።
+
+## Getting an API key
+
+የተለያዩ ቅንብሮች (settings) ከመዳሰስዎ በፊት፣ የMailChimp API key ያስፈልገናል። ይህ Ultimate Multisite ተጠቃሚዎች ሲመዘገቡ lists እና groups ለማግኘት፣ እንዲሁም የኢሜይል አድራሻዎችን ወደ እነዚህ lists እና groups እንዲጨምር ለማድረግ ከMailChimp API ጋር እንዲነጋገር ያስችለዋል።
+
+የራስዎን MailChimp API key ለማግኘት ይህንን ትምህርት ይከተሉ፡ [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_የMailChimp API keyዎን በ_ **Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ ላይ ይጨምሩ።
+
+## Integration Mode
+
+የMailChimp Integration add-on ሁለት “integration modes” (የማመሳሰል ሁነታዎች) ያቀርባል፤ ይህም ኢሜይል አድራሻዎችን ለማመሳሰል ሁለት የተለያዩ መንገዶች እንዳሉ ማለት ነው።
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_ለበለጠ ተጣጣፊነት ሁለት የማመሳሰል ሁነታዎች!_
+
+### Mode 1: Multiple Lists
+
+የመጀመሪያው ሁነታ **Multiple Lists**ን ይጠቀማል። ይህ ሁነታ ለእያንዳንዱ ዕቅድ (plan) በርካታ MailChimp lists እንዲመርጡ ያስችልዎታል። ተጠቃሚዎችን በተለያዩ lists መከፋፈል (segment) ከፈለጉ ይህ ምርጥ አማራጭ ነው።
+
+ለምሳሌ፣ በMailChimp አካውንትዎ ላይ 3 የተለያዩ lists እንዳሉ እናስብ፡ **Newsletter**፣ **Plan A**፣ እና **Plan B**። ሁሉም ተጠቃሚዎች፣ ዕቅዳቸው ምንም ይሁን ምን፣ በNewsletter list ውስጥ እንዲካተቱ ይፈልጋሉ፤ ስለዚህ ዝማኔዎችን እንዳያመልጣቸው።
+
+ይህንን ለማሳካት፣ Multiple Lists modeን በመጠቀም ለPlan A MailChimp Settings፣ **Newsletter** እና **Plan A** listsን ማከል እና ለPlan B MailChimp Settings ደግሞ **Newsletter** እና **Plan B** listsን ማከል ይችላሉ።
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_ለአዲስ አካውንቶች እና ለተሰረዙ አካውንቶች የሚሆኑ default lists ይምረጡ_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp የlistዎን ወደ ትናንሽ የተጠቃሚ groups መከፋፈል ያስችላል። ይህ ደግሞ የበለጠ ቁጥጥር እንዲኖርዎት ያደርጋል፤ ምክንያቱም በMailChimp ላይ ለተወሰነ የደንበኛ ክፍል (subset) ዘመቻ (campaign) መላክ ይችላሉ፤ ይህም በMailChimp ላይ ተመሳሳይ የዘመቻ ብዙ ቅጂዎችን መፍጠር ባይኖርብዎት (ይህም በኋላ የዘመቻውን መለኪያዎች መተንተን አስቸጋሪ ያደርገዋል)።
+
+ለምሳሌ፣ **My Network Subscribers** የሚባል አንድ list ሊኖርዎት ይችላል፤ እና በውስጡም ለ**Plan A** እና ለ**Plan B** groups ሊኖሩ ይችላሉ።
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_“single list + multiple groups” የማመሳሰል ሁነታን እየተጠቀሙ ከሆነ default lists እና groups ይምረጡ_
+
+## Default Lists and Groups
+
+የትኛው የማመሳሰል ሁነታ ለተለየ አጠቃቀምዎ የበለጠ ተስማሚ እንደሆነ ከመረጡ በኋላ፣ default lists (እና mode ላይ በመመስረት groups) መምረጥ ጊዜው ደርሷል። የተወሰነ ዕቅድ (plan) የተለየ List ስላልመረጠበት ጊዜ default list ጥቅም ላይ ይውላል።
+
+እንዲሁም ለተሰረዙ አካውንቶች default list መምረጥ ይችላሉ። ተጠቃሚው የደንበኝነት ምዝገባውን አቋርጦ እና አካውንቱን ከኔትወርክዎ ሲያስወግድ፣ የኢሜይል አድራሻው ወደ ተሰረዙ አካውንቶች (canceled accounts) ለተዘጋጀው list ይዛወራል።
+
+## Enabling Double Subscription
+
+በተመሳሳይ ቅንብሮች ገጽ ላይ፣ **Double Subscription**ን ማብራት ይችላሉ። ይህ አማራጭ ተጠቃሚውን በየተመረጠው default list እና ለተጠቃሚው ዕቅድ (plan) በተመረጠው list ውስጥ እንዲጨመር ያደርጋል። ይህ አማራጭ ካልተበራ፣ ተጠቃሚው በዕቅዱ (plan) የተመረጠው list ላይ ብቻ ይጨመራል። ለዚያ የተወሰነ ዕቅድ ምንም ነገር ካልተዘጋጀ፣ ተጠቃሚው በdefault list ላይ ብቻ ይጨመራል።
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_ተጠቃሚዎች ሲመዘገቡ በdefault list እና በዕቅዱ list ውስጥ እንዲመዘገቡ ማድረግ ይችላሉ_
+
+## Selecting Lists and Groups for each of the Plans
+
+ወደ **Plans** ይሂዱ እና ሊያርትዑበት የሚፈልጉትን ዕቅድ (plan) ይምረጡ። በ**Advanced Options** meta-box ላይ፣ MailChimp የሚባል አዲስ ታብ እንደሚገኝ ልብ ይበሉ።
+
+በዚያ ታብ ላይ፣ ለዚያ ዕቅድ (plan) በርካታ lists ወይም አንድ list እና በርካታ groups (በማመሳሰል ሁነታ ላይ በመመስረት) መምረጥ ይችላሉ።
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_ለእያንዳንዱ ዕቅድዎ ሊጠቀሙባቸው የሚፈልጓቸውን Lists እና Groups ይምረጡ_
+
+አዲስ ተጠቃሚ ለዚያ ዕቅድ (plan) ሲመዘገብ፣ የኢሜይል አድራሻው በተመረጡት lists እና groups ውስጥ ይጨመራል!

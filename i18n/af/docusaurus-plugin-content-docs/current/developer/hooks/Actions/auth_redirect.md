@@ -1,0 +1,22 @@
+---
+id: auth_redirect
+title: Aksie - auth_redirect
+sidebar_label: auth_redirect
+_i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
+---
+# Aksie: auth_redirect
+
+Word geaktiveer voordat die autentisering-omleiding plaasvind.
+
+## Parameters
+
+| Naam | Tipe | Beskrywing |
+|------|------|-------------|
+| $user_id | `int` | Die ID van die gebruiker. |
+
+### Sedert
+
+- 2.8.0
+### Bron
+
+Gedefinieer in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L223) op lyn 223

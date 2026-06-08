@@ -1,0 +1,144 @@
+---
+title: የአስተዳዳሪ ገጽ ፈጣሪ
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Content
+Admin Page Creator በWordPress admin dashboard ውስጥ አዳዲስ የአስተዳደር ገጾችን (admin pages) እና ንዑስ ገጾችን (sub-pages) በቀላሉ እንዲጨምሩ ያስችልዎታል። አዲስ ተጠቃሚዎችን ለመቀበል የሚያገለግል የእንኳን ደህና መጣችሁ ገጽ (welcome page) ወይም የማስተማሪያ ገጽ (tutorial page) ለመፍጠር ሊውል ይችላል። ገጾቹን ያለ ችግር ዲዛይን ለማድረግ Beaver Builder, Elementor, Brizy, እና Oxygen የመሳሰሉ page builders መጠቀም ይችላሉ።
+
+እንዲሁም፣ የራሳችሁን HTML, CSS, እና JavaScript ማስገቢያ (support) እንዲሁም በፕላን እና በተጠቃሚ ሚና (user role) ላይ የተመሰረተ የመዳረሻ ቁጥጥር (access control) ይሰጣል።
+
+## Features
+* የራሳችሁን HTML እና CSS መደገፍ
+* JavaScript ድጋፍ
+* PHP Content Mode
+* በተጠቃሚ ሚና ላይ የተመሰረተ ፈቃድ (Permission)
+* page builders መደገፍ
+
+## Documentation
+[በMultisite Ultimate በመጠቀም የራሳችሁን የአስተዳደር ገጾች እና ንዑስ ገጾችን መፍጠር](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installation
+
+1. **ultimate-multisite-admin-page-creator** የሚለውን ወደ **/wp-content/plugins/** ዳይሬክቶሪ ይጫኑ።
+2. በWordPress Network Admin ውስጥ ባለው **Plugins** ምናሌ ውስጥ ፕልጊኑን ያንቁ (Activate)።
+
+## Usage Guide
+
+WordPress በሳይቶች የፊት ክፍል (front end) ላይ ይዘት መጨመር በጣም ቀላል ቢሆንም፣ በአስተዳደር ክፍል (admin side) ገጾችን እና ንዑስ ገጾችን መፍጠር መሰረታዊ የኮዲንግ ክህሎት ይጠይቃል። Ultimate Multisite: Admin Page Creator የዚህን የፊት ክፍል ቀላልነት ወደ የኔትወርክ ሳይቶችዎ የኋላ ክፍል (back end) ለማምጣት ያለመ ነው።
+
+## Why use Admin Page Creator?
+
+ምናልባት ለደንበኞችዎ የአስተዳደር ፓነል ላይ የማስተማሪያ ገጽ (tutorials) ሊሰጡበት ይፈልጉ ይሆናል፣ ወይም የጥያቄና መልስ (FAQs) እና የእውቂያ widget ያለው የራሳችሁን ገጽ መጨመር ሊፈልጉ ይችላሉ። በAdmin Page Creator አማካኝነት እድሎቹ ማለቂያ የሌላቸው ሲሆኑ፣ ይህም በዛሬው ትምህርት የምንመረምረው ነው።
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_በውስጥ የተካተተ የYouTube ፕሌይሊስት ያለው የማስተማሪያ ገጽ መፍጠር አሁን possible ነው!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_በተጠቃሚው Dashboard Panel ላይ ያለው የመጨረሻ ውጤት ይኸውልዎ_
+
+## Creating your first Custom Admin Page
+
+Ultimate Multisite: Admin Page Creator ከጫኑት እና ካንቀሳቅሰዋታችሁ በኋላ፣ ወደ network admin ምናሌ በመሄድ Admin Pages ላይ ይሂዱ።
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_በNetwork Admin ላይ የራሳችሁን የአስተዳደር ገጾች ዝርዝር_
+
+እስካሁን የፈጠራችሁን ሁሉንም የአስተዳደር ገጾች ዝርዝር ታያላችሁ (ይህ የመጀመሪያ ጉብኝታችሁ ስለሆነ ዝርዝሩ ባዶ ይሆናል።) ወደ **Add new Admin Page** በመሄድ ይጫኑ። ወደ Admin Page editor ይተላለፋሉ።
+
+## The elements of a Custom Admin Page
+
+በAdmin Page editor ውስጥ፣ ገጽዎን ለማበጀት የተለያዩ አማራጮች ይኖራሉ።
+
+### Page Title
+
+ይህ የአስተዳደር ምናሌ ስም (admin menu label) ሳይሆን፣ በገጹ 顶部 ላይ የሚታየው ርዕስ ነው።
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_የገጽ ርዕስ ያስገቡ_
+
+### Content Type Selector
+
+Ultimate Multisite: Admin Page Creator የገጹ ይዘት በሚለው ላይ ሁለት አማራጮችን ይሰጣችኋል፡ የነባሪውን WordPress WYSIWYG editor መጠቀም ወይም ወደ HTML editor መቀየር ይችላሉ።
+
+HTML ባይሆኑም፣ በነባሪው የWordPress editor ላይ መቆየት ይችላሉ። እንደ መደበኛ Post ወይም Page ይዘቶችን ማርትዕ ይችላሉ።
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_በነባሪው የWordPress WYSIWYG editor መጠቀም_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_የHTML editor አማራጭን፣ ሲንታክስ ማጉላት (syntax highlight) እና ስህተት ማስጠንቀቂያዎችን (error alerts) በመጠቀም መጠቀም_
+
+## Menu Options
+
+በጎን በኩል፣ በGeneral Options meta-box ላይ፣ የምናሌውን አይነት (menu type)፣ ስም (label) እና ብዙ ተጨማሪ ነገሮችን ማዋቀር ይችላሉ።
+
+### Menu Types
+
+የራሳችሁ አዲስ የአስተዳደር ገጽ ሁለት የተለያዩ የምናሌ አይነቶችን ሊኖረው ይችላል፡ የላቀ ደረጃ ምናሌ (top-level menu) እና የንዑስ ምናሌ (submenu)።
+
+የላቀ ደረጃ ምናሌ ገጽ፣ ስሙ እንደሚያመለክተው፣ አዲሱን የፈጠራችሁን ገጽ ከነባሪው የWordPress ገጾች ጋር በአስተዳደር ምናሌ ውስጥ ይጨምረዋል።
+
+የላቀ ደረጃ አማራጩን ከመረጣችሁ፣ የምናሌውን ቅደም ተከተል (menu order) እና የምናሌ አዶ (menu icon) መምረጥ ትችላላችሁ።
+
+ይህንን ገጽ የንዑስ ምናሌ ገጽ (sub-menu page) ማድረግ ከፈለጋችሁ፣ ይህንን ገጽ የሚያያይዝ የወላጅ ገጽ (parent page) መምረጥ ትችላላችሁ። የራሳችሁን ገጽ ወደ መደበኛ የWordPress ገጾች ወይም ወደ የላቀ ደረጃ የራሳችሁን የአስተዳደር ገጾች መጨመር ትችላላችሁ።
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_የዚህን Custom Page ምናሌ ሙሉ በሙሉ ማበጀት_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_ይህንን ገጽ የራሳችሁን የላቀ ደረጃ ገጾችን ጨምሮ በሌሎች የምናሌ ገጾች ንዑስ ምናሌ አድርጋችሁ መጨመር ትችላላችሁ።_
+
+## Advanced Options
+
+በየራሳችሁ የአስተዳደር ገጾች ላይ ሁሉንም ዓይነት ይዘት መጨመር መቻል አለባችሁ። ይህም የCSS ህጎችን እና ፋይሎችን፣ JavaScriptን፣ እና የውጭ ቤተመጽሐፍቶችን (external libraries) ያካትታል። ይህንን በAdvanced Options Tab በመጠቀም ማድረግ ይችላሉ።
+
+### Custom CSS
+
+በCSS ታብ ላይ፣ የራሳችሁን የCSS ኮድ ማስገቢያ (add)፣ እንዲሁም ከየርቀት ድረ-ገጾች (እንደ CDNs, Google Fonts ወዘተ) የCSS ፋይሎችን ማስመጣት ይችላሉ።
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_የራሳችሁን Custom CSS ማስገባትም ይቻላል። የውጭ የስታይል ፋይሎችን ማስገባትም ትችላላችሁ!_
+
+### Custom JavaScript
+
+ይህ ለJavaScriptም እውነት ነው። በየራሳችሁ የJavaScript ኮድ ላይ ለመጠቀም የውጭ ቤተመጽሐፍቶችን መጨመር ይችላሉ።
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_የራሳችሁን JavaScript ኮድ ጨምሩ!_
+
+## Permissions
+
+በAdvanced Options ውስጥም፣ የትኞቹ ንዑስ ሳይቶች (sub-sites) ይህንን ገጽ መድረስ እንደሚችሉ መምረጥ ይችላሉ። ለምሳሌ፣ ለተለያዩ የፕላን ደረጃዎች የተለያየ ልዩ ይዘት ለማቅረብ እያቀዱ ከሆነ ይህ ጠቃሚ ነው።
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_ይህ ገጽ የት እንደሚታይ ሙሉ ቁጥጥር አለዎት_
+
+**አስፈላጊ** : ገጹ እንዲታይ ሁለቱ ሁኔታዎችም መሟላት አለባቸው። ይህ ማለት ተጠቃሚው የተሰጠውን ፕላን ደንበኛ ቢሆንም፣ ከተመረጡት ሚናዎች አንዱ ባይኖረው (ወይም በተቃራኒው) ገጹ በፓነሉ ላይ አይታይም።
+
+## Active
+
+የራሳችሁን የአስተዳደር ገጽ ሳይሰርዙት ወይም ፈቃዶቹን ሳይረብሹ ለማጥፋት (disable) ከፈለጋችሁ፣ Active የሚለውን አማራጭ ብቻ ባዶ ያድርጉት (uncheck)።
+
+የላቀ ደረጃ ገጽን ማጥፋት (Deactivating) በዚያ ወላጅ ገጽ ላይ የተያያዙትን ሁሉንም ንዑስ ገጾች በራስ-ሰር ያጥፋዋል።
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_በተጠቃሚው ፓነል ላይ ያለው የመጨረሻ ውጤት!_

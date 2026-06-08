@@ -1,0 +1,210 @@
+---
+title: ካፕቻ
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**ቦትዎችን ያቁሙ። ገቢዎን ይጠብቁ። ምንም አይነት ውስብስብ ቅንብር የለም።**
+
+በየራሳቸው የጎራ ድረ-ገጾች (custom domains) በብዙ ድረ-ገጽ መረብ (multisite network) እየሰሩ ነው? የሚያጋጥምዎትን ችግር ያውቃሉ፡ Google reCAPTCHA እና hCaptcha እያንዳንዱን *የጎራ ድረ-ገጽ* በየአስተዳደር ኮንሶልዎ ውስጥ እንዲመዘገቡ ይጠይቃሉ። አዲስ የደንበኛ ድረ-ገጽ ጨምራሉ? የcaptcha ቅንብርን ማዘመን አለብዎት። የጎራ ድረ-ገጽ አድራሻ (custom domain) ይለጥፋሉ? እንደገና ማዘመን አለብዎት። ይህ አያበቃም።
+
+**Ultimate Multisite: Captcha ሁሉንም ነገር ይለውጣል።**
+
+## Cap Captcha: በራስ-የሚስተናገደ ጥበቃ፣ የሚሰራውም ብቻ ነው
+
+አዲሱ **Cap Captcha** አገልግሎት ለብዙ ድረ-ገጽ መረቦች ትልቅ ለውጥ ያመጣል፡
+
+* **ቅንብር አያስፈልግም (Zero Configuration)** — አድናጓልን ሲያነሳሱ ይጠበቃሉ። የ API ቁልፎች፣ የ Google አካውንት፣ የ hCaptcha ዳሽቦርድ፣ ወይም የጎራ ድረ-ገጽ ዝርዝር (whitelisting) አያስፈልግም።
+* **በሁሉም የጎራ ድረ-ገጾች በራስ-ሰር ይሰራል** — ንዑስ ድረ-ገጾች (Subdomains)፣ የተመደቡ የጎራ ድረ-ገጾች (mapped domains)፣ የደንበኛ ድረ-ገጾች—ሁሉም ወዲያውኑ ይጠበቃሉ።
+* **በራስ-የሚስተናገደ እና ግላዊ (Self-Hosted & Private)** — የእርስዎ መረጃ በሰርቨርዎ ላይ ብቻ ይቀራል። በሶስተኛ ወገን መከታተል (third-party tracking) የሌለው፣ ሙሉ በሙሉ GDPR ተስማሚ ነው።
+* **የማይታይ የሥራ ማስረጃ (Invisible Proof-of-Work)** — ተጠቃሚዎች በጀርባ የኮምፒዩተር ስሌት እንቆቅልሽ ይፈታሉ። የውሃ ማጠጫ ማስገቢያ ላይ መጫወት ወይም የሚያበሳጭ የፎቶ አረድ ስብስብ (image grids) አይጠይቅም።
+* **ቀላል (Lightweight)** — 20KB ብቻ። የቼክአውት ፍጥነትን አያቀናጅም።
+
+## WooCommerce የካርድ ሙከራ ጥበቃ
+
+የካርድ ሙከራ ጥቃቶች በየዓመቱ ነጋዴዎችን ቢሊዮን ብር ያበላሻሉ። አጭበርባሪዎች በቦትስ ተጠቅመው በWooCommerce የቼክአውት ሂደትዎ ላይ የሰረቁ የክሬዲት ካርዶችን እውቅና ለማስገባት ይሞክራሉ። እርስዎ የሂሳብ ክፍያ ክፍያዎችን ይከፍላሉ፣ እነሱ ደግሞ ትክክለኛ የካርድ ቁጥሮችን ያገኛሉ።
+
+**በጣም አስፈላጊ በሆኑ ቦታዎች ላይ እንጠብቃለን:**
+
+* **የሱቅ API ጥበቃ (Store API Protection)** — ባህላዊ የፎርም captchaዎችን አልፎ የሚሄዱ በ`/wp-json/wc/store/v1/checkout` ላይ የሚደረጉ የቦት ጥቃቶችን ይዘጋል።
+* **ከPayPal ክፍያዎች ጋር ተኳሃኝ (PayPal Payments Compatible)** — ከWooCommerce PayPal Payments ጋር ያለችግር ይሰራል።
+* **በቅጽበት ስታቲስቲክስ (Real-Time Statistics)** — ምን ያህል ጥቃቶችን እየዘጋሉ በትክክል ይመልከቱ።
+
+## አሁንም Google reCAPTCHA ወይም hCaptcha ያስፈልጋል?
+
+እኛ ተሸፍነናል. ሙሉ ድጋፍ አለን ለ፡
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+በየጊዜው ከየኔትዎ ቅንብሮች (network settings) መካከል አቅራቢዎችን መቀያየር ይችላሉ።
+
+## ለపెርፋለም (Scale) የተሰራ
+
+* በየጎራ ድረ-ገጹ ልዩነት ባለው የኔትዎ ቅንብሮች (Network-wide settings with per-site overrides)
+* ጥበቃን ለመከታተል ስታቲስቲክስ ዳሽቦርድ
+* ሊስተካከሉ የደህንነት ደረጃዎች (Fast, Medium, Maximum)
+* ለገንቢዎች ተስማሚ የሆነ እና ሊሰፋ የሚችል የአቅራቢ አርክቴክቸር
+
+## መጫን (Installation)
+
+1. `ultimate-multisite-captcha` ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
+2. ፕለግኢኑን በኔትዎ ደረጃ ያንቀሳቅሱ (Network Activate the plugin)።
+3. **ይህ ብቻ ነው። ተጠበቃችኋል።**
+
+Cap Captcha በራስ-ሰር ይንቀሳቀሳል—የሚቀናበሩ ቅንብሮች የሉም፣ የሚያስገቡ የ API ቁልፎች የሉም። በጠቅላላው ኔትዎ ላይ ባሉ ሁሉም የሚደገፉ የመጨረሻ ነጥቦች (endpoints) ሲያነሳሱ ይጠበቃሉ።
+
+**በተጨማሪም (Optional):** በምትኩ Google reCAPTCHA ወይም hCaptcha ለመጠቀም ከፈለጉ፣ ወደ **Ultimate Multisite → Settings → Captcha** በመሄድ የሚመርጡትን አቅራቢ ይምረጡ።
+
+## በተደጋጋሚ የሚጠየቁ ጥያቄዎች
+
+## ምንም ነገር ማቅረጽ አለብኝ?
+
+አይ! Cap Captcha ሲያነሳሱ በራስ-ሰር ይንቀሳቀሳል። መላው ኔትዎ ወዲያውኑ ይጠበቃል—የሚቀናበሩ ቅንብሮች የሉም፣ የሚያስገቡ የ API ቁልፎች የሉም።
+
+## ለCap Captcha የ API ቁልፎች ያስፈልገኛሉ?
+
+አይ። Cap Captcha ሙሉ በሙሉ በራስ-የሚስተናገደ ነው። የውጭ አካውንቶች፣ የጎራ ድረ-ገጽ ምዝገባ፣ ወይም የቅንብር ችግሮች የሉም።
+
+## የቼክአውት ፍጥነቴ ይቀንሳል?
+
+Cap Captcha 20KB ብቻ ሲሆን የሥራ ማስረጃ ፈተናዎችን (proof-of-work challenges) በጀርባ ያካሂዳል። ደንበኞች ምንም መዘግየትን አይnoticeም።
+
+## የካርድ ሙከራ ጥቃቶችን ይከላከላል?
+
+አዎ! የHTML ፎርሞችን ብቻ የሚጠብቁ ባህላዊ captchaዎችን በተቃራኒ፣ የWooCommerce ውህደታችን (integration) በቀጥታ ወደ Store API ይገባል እና በ API ደረጃ የቦት ጥቃቶችን ይዘጋል—የብዛት የካርድ ሙከራ ጥቃቶች የሚከሰቱበት ቦታ።
+
+## በተለያዩ ድረ-ገጾች የተለያዩ captcha አቅራቢዎችን መጠቀም እችላለሁ?
+
+የcaptcha አቅራቢው በየኔት ደረጃ ተቀምጧል፣ ነገር ግን እንደ ፍላጎትዎ የከበደነት ቅንብሮችን (difficulty settings) ማስተካከል ይችላሉ።
+
+## ይህ GDPR ተስማሚ ነው?
+
+Cap Captcha 100% በራስ-የሚስተናገደ ሲሆን ወደ ውጫዊ አገልግሎቶች ምንም መረጃ አይላክም። ለGoogle reCAPTCHA እና hCaptcha፣ እባክዎ እያንዳንዳቸው የግል መረጃ ፖሊሲዎቻቸውን ይገምግሙ።
+
+## የጥቃት መጠን መገደብ (Rate Limiting)
+
+Ultimate Multisite: Captcha v1.5.0 የጥቃት መጠንን በከፍተኛ ሁኔታ የሚገድብ (hard-stop rate limiter) በማስተዋወቅ ኔትዎ ከቦት እና የካርድ ሙከራ ጥቃቶች ይጠብቃል።
+
+### እንዴት ይሰራል
+
+የጥቃት መጠን ገደብ (rate limiter) በcaptcha-የተጠበቁ ቦታዎች ላይ የሚደረጉ እያንዳንዱን GET እና POST ጥያቄ ይቆጥራል፡
+
+* **የWordPress የመግቢያ የመጨረሻ ነጥቦች (login endpoints)** — wp-login, register, lost-password, comments
+* **WooCommerce የቼክአውት** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+ጎብኚው የጥቃት መጠን ገደብን ሲበልጥ፣ ፕለግኢኑ የሚመልሰው፡
+
+* **HTTP 429 (Too Many Requests)** የሁኔታ ኮድ (status code)
+* መሞከር ያለበትን ጊዜ የሚያመለክት **Retry-After** ሄደር (header)
+* ጥቃተኞችን ለማቀዝቀዝ **የዘፈቀደ የትራፒት እንቅልፍ (Randomised tarpit sleep)** (በመነሻ 1–5 ሰከንዶች፣ በከፍተኛው 15 ሰከንዶች)
+
+### ቅንብር (Configuration)
+
+#### የትራፒት ጊዜ (Tarpit Timing)
+
+በየጥቃት መጠን በተገደበ ጥያቄዎች ላይ የሚተገበረውን የዘፈቀደ መዘግየት ይቆጣጠሩ፡
+
+* **`cap_rate_limit_tarpit_min`** — በሰከንዶች ውስጥ ያለው ዝቅተኛ የእንቅልፍ ጊዜ (መነሻ: 1)
+* **`cap_rate_limit_tarpit_max`** — በሰከንዶች ውስጥ ያለው ከፍተኛ የእንቅልፍ ጊዜ (መነሻ: 5፣ በከፍተኛው 15)
+
+እነዚህ ቅንብሮች በ**Ultimate Multisite → Settings → Captcha** ውስጥ ይገኛሉ።
+
+### ሊሰፋ የሚችልበት አቅም (Extensibility)
+
+#### የIP ዝርዝር መብራት (IP Whitelist Filter)
+
+የተመከረ የIP ክልልን ከጥቃት መጠን መገደብ ነፃ ያደርጋል፡
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // የክትትል አገልግሎትዎን ዝርዝር መብራት ያድርጉ
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### ከጥቃት በፊት የሚደረግ እርምጃ (Pre-Block Action)
+
+የጥቃት መጠን ገደብ መዘጋት ከመጀመሩ በፊት የራስ-የተሰራ አመክንዮን ያከናውኑ፡
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // ጥቃቱን መመዝገብ፣ አስተዳሚዎችን ማሳወቅ፣ ወይም የቅንብር መለኪያዎችን ማዘመን
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## የደንበኛ IP መለየት እና የተpercaya ፕሮክሲዎች (Client IP Detection & Trusted Proxies)
+
+Ultimate Multisite: Captcha v1.5.0 ከማስመሰል (spoof-resistant) የደንበኛ-IP መለየትን አስተዋውቋል። `Captcha_Core::get_client_ip()` ዘዴ አሁን በየሚከተሉት ቦታዎች ላይ የጎብኚ IP ምንጭ እውነት ምንጭ (single source of truth) ሆኗል፡
+
+* የጥቃት መጠን ገደብ የባክቶች ቁልፎች (Rate-limit bucket keys)
+* የCaptcha አቅራቢ `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* ስታቲስቲክስ የIP ሃሽዎች (Statistics IP hashes)
+
+### የእምነት ሞዴል (Trust Model)
+
+ፕለግኢኑ ጥብቅ የIP እምነት ተዋረድ (IP trust hierarchy) ያስገድዳል፡
+
+1. **REMOTE_ADDR** — ሁልጊዜ እምነት የሚጣልበት (የቀጥተኛ ባልደረባ IP)
+2. **CF-Connecting-IP** — የሚከበርበት ጊዜ፡
+   - ቀጥተኛው ባልደረባ በአሁኑ Cloudflare IP ክልል ውስጥ ከሆነ
+   - `cap_trust_cloudflare_headers` ከተንቀሳቀሰ (default: OFF)
+3. **X-Forwarded-For** — የሚከበርበት ጊዜ፡
+   - ቀጥተኛው ባልደረባ በአስተዳሚዎ በተቀመጠው የተpercaya-ፕሮክሲ ዝርዝር ውስጥ ከሆነ
+   - ሄደሩ ከቀኝ ወደ ግራ ሲተረጎም፣ የተpercaya/Cloudflare ጉዞዎችን ዘልዬ።
+
+### ቅንብር (Configuration)
+
+#### የCloudflare ሄደር እምነት (Cloudflare Header Trust)
+
+የCloudflare `CF-Connecting-IP` ሄደርን እምነት ያንሱ፡
+
+* **`cap_trust_cloudflare_headers`** — ወደ ON በማቀናበር `CF-Connecting-IP` እምነትን ይመርጣሉ
+  - መነሻ: OFF (የተሰናከለ)
+  - ፕለግኢኑ የተሰበሰበ Cloudflare CIDR ስዕላዊ መግለጫ (snapshot) ይይዛል
+  - CIDR ክልሎች በየሳምንቱ በwp-cron ይዘመናሉ
+  - መረጃ መዘመን ካልተሳካ የተሰበሰበ አማራጭ ጥቅም ላይ ይውላል
+
+#### የተpercaya ፕሮክሲ ቅንብር (Trusted Proxy Configuration)
+
+የፊት መስመር ፕሮክሲዎችን እና የብደት ሚዛን ሰሪዎችን (load-balancers) ይግለጹ፡
+
+* **`cap_trusted_proxies`** — የCIDRs ወይም የባዶ IPዎች የጽሑፍ ሳጥን (Textarea) (በየመስመሩ አንድ)
+  - አስተያየቶች ይፈቀዳሉ (በ`#` የሚጀምሩ መስመሮች)
+  - ይህ ቅንብር ባይኖርም፣ የጥቃት መጠን ገደብ ቢንቀሳቀስም `X-Forwarded-For` ችላ ይባላል።
+  - ምሳሌ፡
+    ```
+    # የብደት ሚዛን ሰሪያችን
+    192.0.2.0/24
+
+    # ምትክ ፕሮክሲ
+    198.51.100.50
+    ```
+
+#### የመጀመሪያ ጊዜ ማስጀመር በራስ-መለያየት (First-Enable Auto-Detection)
+
+የጥቃት መጠን ገደብን ለመጀመሪያ ጊዜ ሲያነሳሱ፣ ፕለግኢኑ ሊሆን የሚችል የCloudflare እና የፕሮክሲ ሁኔታዎን ይለያል እና አንድ-በ-ጫን "የተገኙ ቅንብሮችን ተግብር" የአስተዳሚ ማሳሰቢያ ያሳያል።
+
+* ፕለግኢኑ የእርስዎን የተቀመጡ እሴቶች **አያበላሽም**
+* ተከታይ ትራፊክ የእርስዎ ቅንብር ከእውነታው ጋር አለመመሳሰሉን የሚያመለክት ከሆነ (ለምሳሌ Cloudflare የCIDR ክልል ሲቀይር)፣ ሊሰረዝ የማይችል ልዩነት ማሳሰቢያ የሚመከር ዝመና ያሳያል።
+
+### ይህ ለምን አስፈላጊ ነው?
+
+ጥብቅ የIP እምነት ሞዴል ወሳኝ የሆነ የማስመሰል (spoofing) አቅጣጫን ይዘጋዋል፡ ቀደም ሲል፣ የተጭበረበረ `CF-Connecting-IP` ሄደር የያዘ ቀጥተኛ የመነሻ-ሰርቨር ጥያቄዎች በባሰ የIP ምትክ ምክንያት ሳይሆን በእውነተኛው ባልደረባ ባክ ላይ ይደረጉ ነበር። ይህ በተለይ አስፈላጊ ነው፡
+
+* **የጥቃት መጠን መገደብ (Rate limiting)** — ጥቃተኞች IPዎችን በማስመሰል ገደቦችን ማለፍ አይችሉም።
+* **ስታቲስቲክስ (Statistics)** — የጥቃት መለኪያዎ የተጭበረበ ሳይሆን እውነተኛ የጎብኚ IPዎችን ያንፀባርቃሉ።
+* **የCaptcha ማረጋገጫ (Captcha verification)** — አቅራቢዎች ለስጋት ግምገማ ትክክለኛውን የጎብኚ IP ይቀበላሉ።

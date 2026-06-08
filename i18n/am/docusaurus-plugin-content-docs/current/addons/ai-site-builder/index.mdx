@@ -1,0 +1,124 @@
+---
+title: የኤአይ ድረ-ገጽ ገንቢ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## የሚያስፈልጉ ነገሮች (Requirements)
+
+- WordPress 5.3 ወይም ከዚያ በላይ
+- PHP 7.4 ወይም ከዚያ በላይ
+- Multisite Ultimate plugin (በሥራ ላይ መሆን አለበት)
+
+## መጫን (Installation)
+
+1. የaddon ፋይሎችን ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
+2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት plugin ን ያንቁ።
+3. የaddon ቅንብሮችን በኔትወርክ አድሚን (network admin) ውስጥ ያዋቅሩ።
+
+## ልማት (Development)
+
+### ዝግጅት (Setup)
+
+```bash
+# ጥገኝነቶችን ይጫኑ
+composer install
+npm install
+
+# ፈተናዎችን ያሂዱ
+npm run test
+
+# የኮድ ደረጃዎችን ፍተሻ ያድርጉ
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# የኮድ ስታይል ችግሮችን ያስተካክሉ
+vendor/bin/phpcbf
+
+# ለፕሮዳክሽን ይገንቡ
+npm run build
+```
+
+### የፕሮጀክት አወቃቀር (Project Structure)
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # የPHP ክፍሎች እና አካታጮች (classes and includes)
+│   ├── class-multisite-ultimate-updater.php  # የለውጥ አያያይ መቆጣጠሪያ (Update handler)
+│   └── class-ai_site_builder-main.php             # ዋና ተግባር (Main functionality)
+├── tests/                        # የዩኒት ፈተናዎች (Unit tests)
+│   ├── bootstrap.php            # የፈተና ማስጀመሪያ (Test bootstrap)
+│   ├── class-*-base.php         # መሰረታዊ የፈተና ክፍል (Base test class)
+│   └── class-*-test.php         # የፈተና ሁኔታዎች (Test cases)
+├── views/                       # የቴምፕሌት ፋይሎች (Template files)
+├── assets/                      # ስታቲክ ንብረቶች (Static assets)
+│   ├── css/                     # የቅጥ መጽሐፍት (Stylesheets)
+│   ├── js/                      # የጃቫስክሪፕት ፋይሎች (JavaScript files)
+│   └── images/                  # ምስሎች (Images)
+├── lang/                        # የቋንቋ ፋይሎች (Language files)
+├── composer.json                # የPHP ጥገኝነቶች (PHP dependencies)
+├── package.json                 # የNode.js ጥገኝነቶች (Node.js dependencies)
+├── phpunit.xml.dist             # የPHPUnit ቅንብር (PHPUnit configuration)
+├── .phpcs.xml.dist              # የኮድ ደረጃዎች ቅንብር (Code standards configuration)
+└── rector.php                   # የኮድ ዘመናዊነት ህጎች (Code modernization rules)
+```
+
+### መፈተሽ (Testing)
+
+ይህ Addon ሁሉን አቀፍ የፈተና ማዕቀፍን (testing framework) ይዟል፦
+
+- **Unit Tests**: በWordPress test suite ላይ የተመሰረቱ በPHPUnit የተሰሩ ፈተናዎች
+- **Base Test Class**: ለተለመዱ የፈተና ሁኔታዎች የሚረዱ ረዳት ዘዴዎችን (helper methods) ይሰጣል
+- **Test Coverage**: የኮድ ሽፋን (code coverage) ለመከታተል ተዋቅሯል
+- **Multisite Testing**: ፈተናዎች በmultisite አካባቢ ይሰራሉ
+
+### የኮድ ደረጃዎች (Code Standards)
+
+- **WordPress Coding Standards**: በPHPCS አማካይነት ይተገበራል
+- **PHP 7.4+ ተኳሃኝነት**: ዘመናዊ የPHP ባህሪያት ይደገፋሉ
+- **Static Analysis**: ለዓይነት ፍተሻ (type checking) የPHPStan ውህደት
+- **Code Modernization**: ለPHP ማሻሻያ የRector ህጎች
+
+### የገንባታ ሥርዓት (Build System)
+
+- **Asset Processing**: ለCSS/JS ፋይሎች አነስ ማድረግ (Minification)
+- **Translation**: POT ፋይል መፍጠር
+- **Packaging**: ለማሰራጨት ማህደሮች (Archive) መፍጠር
+- **Development Mode**: ለዲባጅንግ ያልተቀነሱ ንብረቶች (Unminified assets)
+
+## ማዋቀር (Configuration)
+
+ይህ Addon በኔትወርክ አድሚን በኩል ሊገኙ የሚችሉ የተለያዩ የማዋቀር አማራጮችን ይደግፋል።
+
+## Hooks እና Filters
+
+### Actions (ድርጊቶች)
+
+- `ultimate-multisite-ai-site-builder_init` - Addon ከተጀመረ በኋላ ይሰራጫል (Fired after addon initialization)
+- `ultimate-multisite-ai-site-builder_loaded` - ሁሉም የaddon ፋይሎች ከተጫኑ በኋላ ይሰራጫል (Fired after all addon files are loaded)
+
+### Filters (ማጣሪያዎች)
+
+- `ultimate-multisite-ai-site-builder_settings` - የaddon ቅንብሮችን ለመቀየር
+- `ultimate-multisite-ai-site-builder_enabled` - የaddonን መብራት/ማጥፋት ሁኔታ ለመለወጥ
+
+## ፈቃድ (License)
+
+ይህ Addon በGPL v3 ወይም ከዚያ በኋላ ባለው ፈቃድ ተሰጥቷል።
+
+## ድጋፍ (Support)
+
+ለድጋፍ እና ሰነድ ለማግኘት [MultisiteUltimate.com](https://multisiteultimate.com) ይጎብኙ።
+## የለውጥ መዝገብ (Changelog)
+
+- Version 1.0.1 (2025-09-28): ቅድመ-ጽሑፍን (prefix) ወደ ultimate-multisite ተለውጧል፤ የጽሑፍ ስፋት (text domain) ተሻሽሏል፤ የversion ቁጥር ተጨምሯል።
+
+
+- Version (2025-09-28): ቅድመ-ጽሑፍን (prefix) ወደ ultimate-multisite ተለውጧል፤ የጽሑፍ ስፋት (text domain) ተሻሽሏል፤ የversion ቁጥር ተጨምሯል።

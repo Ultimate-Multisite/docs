@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Multisite Ultimate: MailChimp İntegrasiyası
+
+Multisite Ultimate şəbəkənizi MailChimp-ə inteqrasiya edin. Müəyyən planları MailChimp Listlərinə bağlayaraq, abunəçiləri qeydiyyat zamanı avtomatik olaraq bu listlərə əlavə edə bilərsiniz.
+
+## Quraşdırma
+
+1. 'ultimate-multisite-mailchimp' faylını '/wp-content/plugins/' kataloquna yükləyin
+2. WordPress Network Admin-dəki 'Plugins' menyusu vasitəsilə plugin-i aktivləşdirin
+
+## İstifadə Təlimatı
+
+Abunəçilərin e-poçtlarını MailChimp listlərinizlə sinxronizasiya etmək, Ultimate Multisite: MailChimp Integration Add-on-umuzla çox asandır. Bu təlimat hər şeyi qurmanıza kömək etməyi hədəfləyir!
+
+## API açarı almaq
+
+Mövcud olan müxtəlif parametrlərə baxmağa başlamazdan əvvəl, bir MailChimp API açarına ehtiyacımız var. Bu, Ultimate Multisite-ə listləri, qrupları almağa və istifadəçilər qeydiyyatdan keçdikdə e-poçt ünvanlarını bu listlərə və qruplara əlavə etməyə imkan verəcək.
+
+Bu MailChimp API açarınızı almaq üçün bu təlimatı izləyin: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_MailChimp API açarınızı_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ _yerində əlavə edin_
+
+## İntegrasiya Rejimi
+
+MailChimp Integration add-onu iki "inteqrasiya rejimi" təklif edir, yəni e-poçt ünvanlarını sinxronizasiya etmək üçün add-onu istifadə etmək üçün iki fərqli yol var.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Daha böyük çeviklik üçün iki inteqrasiya rejimi!_
+
+### Rejim 1: Bir neçə List
+
+Default rejim **Bir neçə List**-dən istifadə edir. Bu rejim sizə hər bir plan üçün bir neçə MailChimp listi seçməyə imkan verəcək. Bu, istifadəçilərinizi fərqli listlərə bölürsünüzsə ən yaxşı seçimdir.
+
+Məsələn, MailChimp hesabınızda 3 fərqli listiniz olduğunu fərz edək: **Newsletter**, **Plan A** və **Plan B**. Bütün istifadəçilərin, planlarından asılı olmayaraq, Newsletter listində də olmasını istəyirsiniz ki, yeniliklərdən qaçmasınlar.
+
+Bunu başatmaq üçün, Plan A MailChimp Parametrlərinə həm **Newsletter**, həm də **Plan A** listlərini, Plan B MailChimp Parametrlərinə isə **Newsletter** və **Plan B** listlərini əlavə etmək üçün Bir neçə List rejimindən istifadə edə bilərsiniz.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Yeni və ləğv edilmiş hesablar üçün default listləri seçin_
+
+### Rejim 2: Tək List + Bir neçə Qrup
+
+MailChimp sizə listinizi **Qruplar** adlanan kiçik istifadəçi qruplarına bölməyə imkan verir. Bu, daha çox nəzarət etməyinizə imkan verir, çünki MailChimp-də eyni kampaniyanın bir neçə nüsxəsini yaratmağa ehtiyac duymadan, abunəçilərinizin müəyyən bir alt qrupuna kampaniya göndərə bilərsiniz (bu, daha sonra həmin kampaniyanın metriklərini analiz etməyi çətinləşdirir).
+
+Məsələn, **Şəbəkə Abunəçiləri** adlı tək bir listiniz ola bilər və onun içində **Plan A** və **Plan B** üçün qruplar ola bilər.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_“Tək list + bir neçə qrup” inteqrasiya rejimindən istifadə edirsinizsə, default list və qrupları seçin_
+
+## Default Listlər və Qruplar
+
+Hansı inteqrasiya rejiminin sizin xüsusi istifadə halınıza daha uyğun olduğunu seçdikdən sonra, default listləri (və rejimlə bağlı olaraq qrupları) seçmək vaxtıdır. Default list, müəyyən bir plan üçün xüsusi List seçilmədiyində istifadə olunacaq.
+
+Həmçinin, ləğv edilmiş hesablar üçün default list seçə bilərsiniz. İstifadəçi abunəliyini dayandırıb hesabını şəbəkənizdən çıxardığı zaman, onun e-poçt ünvanı ləğv edilmiş hesablar üçün təyin edilmiş listə köçürüləcək.
+
+## İkiqat Abunəliyi Aktivləşdirmək
+
+Eyni parametrlər səhifəsində **Double Subscription** (İkiqat Abunəliyi) aktivləşdirmək imkanınız olacaq. Bu seçim istifadəçini həm seçilmiş default listə, HƏM də həmin istifadəçinin planına seçilmiş listə əlavə edəcək. Əgər bu seçim aktivləşdirilməyibsə, istifadəçi yalnız istifadəçinin planı üçün seçilmiş listə əlavə ediləcək. Əgər həmin plan üçün heç nə təyin edilməyibsə, istifadəçi seçilmiş default listə əlavə ediləcək.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Qeydiyyat zamanı istifadəçiləriniz default listə və planın listinə abunə olmasını təmin edə bilərsiniz_
+
+## Planlar üçün List və Qruplar Seçmək
+
+**Plans** səhifənizə keçin və redaktə etmək istədiyiniz planı seçin. Qeyd edin ki, **Advanced Options** meta-box-unda MailChimp adlı yeni bir tab görünəcək.
+
+Bu tabda, həmin plan üçün bir neçə list və ya tək bir list və bir neçə qrup (inteqrasiya rejimindən asılı olaraq) seçə biləcəksiniz.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Planlarınız üçün istifadə etmək istədiyiniz List və Qrupları seçin_
+
+Yeni bir istifadəçi həmin plan üçün qeydiyyatdan keçdikdə, onun e-poçt ünvanı seçilmiş listlərə və qruplara əlavə ediləcək!

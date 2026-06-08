@@ -1,0 +1,94 @@
+---
+title: WooCommerce Integration
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+የWooCommerce Integration የሚሰራው ከእኛ Manual Gateway ጋር በጣም ተመሳሳይ በሆነ መንገድ ነው። ለተጠቃሚዎችዎ ብዙ ተጣጣፊነት ይሰጣል፤ ይህም በWooCommerce installationዎ ላይ ያሉትን ማንኛውንም የክፍያ ቅጽ እንዲመርጡ ያስችቃቸዋል። እናም ቀላል ነው፦ የተጠቃሚው የክፍያ ጊዜ ሲያልቅ፣ የደንበኝነት ምዝገባው በጊዜያዊነት ይቆማል። በተመሳሳይ ጊዜ፣ በኔትወርክዎ ዋና site ላይ ባለው የWooCommerce installation ላይ ትዕዛዝ ይፈጠራል። ተጠቃሚው ከዚያም ክፍያውን እንዲፈጽም የሚያስችል ሊንክ ያለው የክፍያ መጠየቂያ (invoice) በኢሜይሉ ላይ ይቀበላል። ክፍያው ከተቀበለ፣ የደንበኝነት ምዝገባው ይታደሳል።
+
+## Features
+
+- Ultimate Multisite እና WooCommerce መካከል ቀላል ውህደት (integration)
+- በርካታ የክፍያ ዘዴዎች መገኘት
+- በWooCommerce Subscriptions ሙሉ በሙሉ በራስ-ሰር የሚሰራ ሂደት
+
+## Documentation
+
+**የWooCommerce Integrationን ማዘጋጀት**
+
+**Ultimate Multisite የክፍያ አማራጮችን በWooCommerce Integration ማስፋት**
+
+## Installation
+
+1. 'ultimate-multisite-woocommerce' ወደ '/wp-content/plugins/' ዳይሬክቶሪ ይጫኑ።
+2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕልጊኑን ያግኙ (Activate)።
+3. ፕልጊኑን ለማዘጋጀት ደረጃ በደረጃ የሚመራውን Wizard ይከተሉ።
+
+## Usage Guide
+
+_**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
+
+_**ትኩረት፡** Ultimate Multisite: WooCommerce Integration በዋና siteዎ ላይ WooCommerce መብራት (activated) መሆኑን ይጠይቃል።_
+
+_Stripe_ እና _PayPal_ በአንዳንድ አገሮች የማይገኙ በመሆናቸው፣ ይህም Ultimate Multisite ተጠቃሚዎችን የእኛን ፕልጊን በአግባቡ ከመጠቀም ሊያገዳቸው ወይም ሊያከሽፋቸው ይችላል። ስለዚህ **WooCommerceን ለማዋሃድ** አዳዲስ አማራጭ (add-on) ፈጥረናል።
+
+_WooCommerce_ በጣም ታዋቂ የeCommerce ፕልጊን ነው። በዓለም ዙሪያ ያሉ ገንቢዎች የተለያዩ የክፍያ መግቢያዎችን (payment gateways) ለማዋሃድ አዳዲስ አማራጮችን ፈጥረዋል። እኛም ይህንን በመጠቀም በUltimate Multisite የክፍያ ስርዓት ውስጥ ሊጠቀሙባቸው የሚችሉትን የክፍያ መግቢያዎች አማራጮችን አሰፋናል።
+
+## Setting It Up
+
+በመጀመሪያ፣ የWooCommerce Integration አዳን (add-on) መጫን አለብዎት፤ ይህም **ለፈቃድ ተጠቃሚዎች ነፃ** ነው። ለመጫን፣ በsuper admin dashboardዎ ላይ Ultimate Multisite ላይ ጠቅ ያድርጉ እና **Add-ons** ይምረጡ።
+
+![Add-ons page](/img/admin/addons-page.png)
+
+እዚህ ላይ ሁሉንም የUltimate Multisite add-ons ማግኘት ይችላሉ። በ**Ultimate Multisite: WooCommerce Integration** add-on ላይ ጠቅ ያድርጉ።
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+የadd-on ዝርዝሮች ባለው መስኮት ይከፈታል። በ**Install Now** ላይ ጠቅ ያድርጉ።
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+መጫኑ ከተጠናቀቀ በኋላ፣ ወደ plugins ገጽ ይመራሉ። እዚህ ላይ፣ በ**Network Activate** ላይ ጠቅ ያድርጉ እና _WooCommerce_ add-on በኔትወርክዎ ላይ ይብራራል።
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+ከመብራት በኋላ፣ በድረ-ገጽዎ ላይ የWooCommerce ፕልጊን ካልተጫነ እና ካልተብራራ፣ **ማሳሰቢያ ያገኛሉ።**
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+በተጫነው ጊዜ፣ በUltimate Multisite የክፍያ ቅንብሮች ስር ተጨማሪ አማራጭ ያያሉ። ከዚያም የ_WooCommerce_ አማራጭን እዚያ **በመብራት (enable)** ማድረግ ይችላሉ።
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+በፊት ለፊት (front end) የሚታየውን ስም እና ተጠቃሚዎችዎ በcheckout ሂደት ውስጥ እንዲመሩ የሚያስችል መመሪያን የመሳሰሉ አንዳንድ መሰረታዊ ቅንብሮችን ማዋቀር ይችላሉ። ከዚያም ወደ **የዋና siteዎ _WooCommerce_ ቅንብሮች** በመሄድ ሊጠቀሙበት የሚፈልጉትን የክፍያ መግቢያ (payment gateway) በማብራት እና በማዋቀር ይችላሉ።
+
+## How to manage the payment
+
+የWooCommerce Integration የሚሰራው ከእኛ **Manual Gateway** ጋር በጣም ተመሳሳይ በሆነ መንገድ ነው። ጉዳዩ ግን እያንዳንዱ ክፍያ በየክፍያ ጊዜው መጨረሻ በእጅ መከፈል አለበት። የአሰራር ሂደቱ የሚከተለው ነው፦
+
+  * የተጠቃሚው የክፍያ ዑደት ሲያልቅ፣ የደንበኝነት ምዝገባው **በጊዜያዊነት ይቆማል።** በተመሳሳይ ጊዜ፣ በኔትወርክዎ ዋና site ላይ ባለው _WooCommerce_ installation ላይ ትዕዛዝ ይፈጠራል።
+
+  * ተጠቃሚዎች ከዚያም ክፍያውን እንዲፈጽም የሚያስችል ሊንክ ያለው የክፍያ መጠየቂያ (invoice) በኢሜይላቸው ላይ ይቀበላሉ (ይህ ሊንክ በsubsite dashboardዎ ላይ ባለው የክፍያ ታሪክ ውስጥም ይታያል)። ያ ሊንክ ተጠቃሚውን ወደ _**WooCommerce**_ **checkout** ይመራዋል፣ እዚያም ተጠቃሚዎች ክፍያቸውን ለማስፈጸም ከ**የሚገኙ _WooCommerce_ የክፍያ መግቢያዎች** አንዱን መምረጥ ይችላሉ።
+
+  * ክፍያው ከተቀበለ፣ የደንበኝነት ምዝገባው **እንደገና ይብራራል (renewed)**፣ ክፍያው በUltimate Multisite ላይ ይመዘገባል እና ትዕዛዙ ተጠናቅቋል ተብሎ ይቀመጣል።
+
+### Some Important Notes:
+
+  * የUltimate Multisite መነሻ ተግባር (default functionality) በዚህ ውህደት ቅርጽ (integration form) አሁንም ይሰራል። ለምሳሌ፣ ከ**Subscription Management** ስክሪን **የገንዘብ ተመላሽ (issuing refunds)** ማድረግ የ선택 የተደረገውን የክፍያ ቅጽ በመጠቀም ገንዘብ ተመላሽ ለማድረግ ከWooCommerce ጋር ይገናኛል።
+
+  * Ultimate Multisite: WooCommerce Integration እንዲሰራ በWP-Cron ላይ ጥገኛ ነው። ይህ በአብዛኛዎቹ ጊዜያት በጣም ጥሩ ይሰራል፣ ነገር ግን ድረ-ገጹ ዝቅተኛ ትራፊክ ካለው፣ ክሮኑ (cron) መርሃግብር የተያዘ ዝግጅቶችን እንዲፈትሽ አይነሳም እና ዝግጅቱ ይቀርልበታል፣ ይህም የአፈጻጸም መዘግየቶችን ሊያስከትል ይችላል።
+
+## Woocommerce Subscriptions Plugin
+
+በየወሩ በእጅ ክፍያ መጀመር ለተጠቃሚዎች ተስማሚ አይደለም፤ ምክንያቱም subscription በየክፍያ ዑደት በራስ-ሰር እንዲደገም ይጠበቃል። ስለዚህ የWooCommerce Subscriptions ፕልጊንን **ለመደገፍ** የWooCommerce Integration add-onን ዲዛይን አድርገናል። ይህ ክፍያውን በራስ-ሰር በማድረግ ለተጠቃሚዎችዎ ግብይቱን ቀላል ያደርገዋል።
+
+የሚፈልጉት ነገር ቢኖር [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) **መጫን** እና በ**ዋና siteዎ ላይ መብራት (activated)** ማድረግ ብቻ ነው። ከዚያ ወደ Ultimate Multisite የክፍያ ቅንብሮች ተመልሰው **ውህደቱን (integration) ያብሩ**።
+
+እናም ያ ብቻ ነው። ተጠቃሚዎችዎ የክፍያ ዑደት መጨረሻ ላይ በእጅ ክፍያ ማድረግ አይጠበቅባቸውም።
+
+በዋና siteዎ ስር በ_WooCommerce_ ትዕዛዝ ከመፈጠሩ በተጨማሪ፣ ለእያንዳንዱ አካውንት የደንበኝነት ምዝገባ (subscription) ይፈጥራል።

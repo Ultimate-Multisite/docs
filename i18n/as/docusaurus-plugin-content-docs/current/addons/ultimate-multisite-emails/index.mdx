@@ -1,0 +1,114 @@
+---
+title: ইমেলসমূহ
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# ইমেইল (Emails)
+
+Ultimate Multisite: Emails addon-এ নেটৱৰ্কৰ মালিকসকলক সাইট আৰু মেম্বৰশ্বিপৰ লগতে ग्राहकৰ ইমেইল একাউণ্ট প্ৰদান কৰিবলৈ (provision) আৰু ব্যৱস্থাপনা কৰিবলৈ সহায় কৰে। Version 1.1.0 ত গ্রাহক-মুখী ইমেইল একাউণ্ট ব্যৱস্থাপনা, Webmail single sign-on, CyberPanel forwarder সমৰ্থন, আৰু checkout-ত provisioning উন্নত কৰা হৈছে।
+
+## মূল বৈশিষ্ট্যসমূহ (Key Features)
+
+* **Customer email account widget**: গ্রাহকসকলে নিজৰ একাউণ্ট পৃষ্ঠাৰ পৰা কোনো Support Ticket খুলিবলৈ নহওঁক, ইমেইল একাউণ্ট সৃষ্টি আৰু ব্যৱস্থাপনা কৰিব পাৰে।
+* **Webmail SSO আৰু magic links**: যদি প্ৰৱідৰিয়ে সমৰ্থন কৰে, তেন্তে গ্রাহকসকলে এক-ক্লিকে Authentication লৈ একাউণ্ট পৃষ্ঠাৰ পৰাই Webmail খুলিব পাৰে।
+* **পাসৱৰ্ড সলনি কৰা**: গ্রাহক আৰু Administrator দুয়োজনে ইমেইল ব্যৱস্থাপনা উইজেটৰ পৰা মেবক্স পাছৱৰ্ড আপডেট কৰিব পাৰে।
+* **Checkout provisioning**: গ্রাহকৰ ইমেইল একাউণ্ট সৃষ্টি checkout প্ৰক্ৰিয়াক সময়ত কৰিব পাৰি, যাতে ক্ৰয় প্ৰবাহ (purchase flow) সম্পূৰ্ণ হোৱাৰ পিছত মেবক্সটো সাজু থাকে।
+* **CyberPanel forwarders**: CyberPanel-ভিত্তিক নেটৱৰ্কসমূহে ইমেইল সেৱাৰ অংশ হিচাপে ইমেইল forwarder সৃষ্টি আৰু ব্যৱস্থাপনা কৰিব পাৰে।
+* **Provider-aware settings**: এই সেটিংস পৃষ্ঠাখনক কেৱল সক্ৰিয় আৰু কনফিগাৰেট কৰা ইন্টিগ্ৰেচনবোৰলৈ ফিল্টাৰ কৰে, যাতে Administratorসকলে কেৱল ব্যৱহাৰ কৰিব পৰা বিকল্পসমূহহে দেখিব পাৰে।
+
+## প্ৰয়োজনীয়তা (Requirements)
+
+* Ultimate Multisite 2.0.0 বা তাতকৈ অধিক
+* WordPress Multisite installation
+* কমেও এটা কনফিগাৰেট কৰা ইমেইল প্ৰৱідৰী ইন্টিগ্ৰেচন
+* প্ৰৱідৰী API credentials, যাৰ দ্বাৰা মেবক্স সৃষ্টি কৰা, পাছৱৰ্ড সলনি কৰা, আৰু Webmail access links জাৰি কৰাৰ অনুমতি থাকিব লাগে (যি স্থানত সমৰ্থন কৰা হয়)।
+
+## স্থাপন (Installation)
+
+1. প্লাগইন ফাইলসমূহ `/wp-content/plugins/ultimate-multisite-emails` লৈ আপলোড কৰক।
+2. WordPress network admin ত **Plugins**ৰ পৰা addon-টো Network activate কৰক।
+3. **Ultimate Multisite** > **Settings** লৈ যোৱা আৰু addon ইমেইল সেটিংস খুলক।
+4. যি ইমেইল প্ৰৱідৰী ইন্টিগ্ৰেচনবোৰ গ্রাহকসকলে ব্যৱহাৰ কৰিব লাগে, সেইবোৰ সক্ষম কৰক।
+5. সেটিংস সেভ কৰক, তাৰ পিছত এটা non-production গ্রাহক বা staging site ব্যৱহাৰ কৰি একাউণ্ট সৃষ্টি কৰি পৰীক্ষা কৰক।
+
+## Customer Account Email Management
+
+Version 1.1.0 ত গ্রাহকৰ একাউণ্ট পৃষ্ঠাৰ বাবে এটা ইমেইল ব্যৱস্থাপনা উইজেট যোগ কৰা হৈছে। যেতিয়া গ্রাহকসকলে নিজৰ সাইটৰ বাবে মেবক্স সৃষ্টি আৰু ৰক্ষণাবেক্ষণ স্ব-সেৱা (self-service) কৰিব লাগে, তেতিয়া ইয়াক ব্যৱহাৰ কৰক।
+
+একাউণ্ট পৃষ্ঠাৰ পৰা, গ্রাহকসকলে:
+
+1. তেওঁলোকৰ বৰ্তমান মেম্বৰশ্বিপ বা সাইটৰ সৈতে সংযোগ থকা ইমেইল একাউণ্টসমূহ দেখিব পাৰে।
+2. যদি তেওঁলোকৰ প্লেনত অধিক একাউণ্টৰ অনুমতি আছে, তেন্তে এটা নতুন মেবক্স সৃষ্টি কৰিব পাৰে।
+3. এটা বিদ্যমান মেবক্সৰ পাছৱৰ্ড সলনি কৰিব পাৰে।
+4. সমৰ্থন কৰা Webmail প্ৰৱідৰীসমূহ SSO বা magic-link loginৰ জৰিয়তে খুলিব পাৰে।
+
+এই উইজেটটো Ultimate Multisite account-page currents system ব্যৱহাৰ কৰে, গতিকে সকলো কাৰ্য্য গ্রাহকৰ দ্বাৰা দেখুৱাই থকা একাউণ্টৰ প্ৰসংগ (context) লৈ সীমিত থাকে। ইয়াৰ ফলত গ্রাহকসকলে আন কোনো মেম্বৰশ্বিপ বা সাইটৰ মালিকানাধীন ইমেইল একাউণ্ট ব্যৱস্থাপনা কৰিব নোৱारे।
+
+## Webmail SSO আৰু Magic-Link Login
+
+Webmail SSO-এ গ্রাহকসকলক একাউণ্ট পৃষ্ঠাৰ পৰা এটা পোনপটীয়া **Open webmail** কাৰ্য্য দিয়ে। যদি সক্ৰিয় প্ৰৱідৰীয়ে ই সমৰ্থন কৰে, তেন্তে addon-এ এটা স্বল্প-কালীয়া access URL বিচাৰে আৰু গ্রাহকক Webmail-লৈ পুনৰ স্থানান্তৰিত কৰে, তেওঁলোকক মেবক্স credentials কপি কৰিবলৈ নোকোৱাকৈ।
+
+প্ৰৱідৰীৰ আচৰণ ভিন্ন হ'ব পাৰে:
+
+* যি প্ৰৱідৰীৰ Native SSO API আছে, তেওঁলোকে এটা পোনপটীয়া authenticated Webmail session সৃষ্টি কৰিব পাৰে।
+* যি প্ৰৱідৰীৰ magic-link সমৰ্থন আছে, তেওঁলোকে এটা সময়-সীমাবদ্ধ login link সৃষ্টি কৰিব পাৰে।
+* যি প্ৰৱідৰীৰ SSO বা magic-link সমৰ্থন নাই, তেওঁলোকে এতিয়াও মেবক্সৰ বিৱৰণ আৰু পাছৱৰ্ড-ব্যৱস্থাপনা কাৰ্য্য দেখুৱাব লাগিব, কিন্তু কোনো এক-ক্লিক Webmail বাটন নহ'ব।
+
+Webmail access কেৱল সেই প্ৰৱідৰীসকলৰ বাবে সক্ষম কৰক য'ত আপুনি প্ৰয়োজনীয় API credentials কনফিগাৰেট কৰিছে। যদি কোনো প্ৰৱідৰীৰ বাবে কাৰ্য্যটো অনুপস্থিত থাকে, তেন্তে প্ৰথমে নিশ্চিত কৰক যে প্ৰৱідৰীটো সক্ৰিয়, কনফিগাৰেট কৰা আৰু Webmail login link সমৰ্থন কৰে।
+
+## Checkout Provisioning
+
+addon-এ checkout অংশ হিচাপে গ্রাহকৰ ইমেইল একাউণ্ট সৃষ্টি কৰিব পাৰে। এইটো সহায়ক যেতিয়া প্লেনটোৱে ডিফল্টভাৱে এটা মেবক্স অন্তৰ্ভু লয় বা যেতিয়া checkout ফৰ্মটোৱে ইমেইল-একাউণ্টৰ বিৱৰণ সংগ্ৰহ কৰে।
+
+পৰামৰ্শ দিয়া প্ৰৱৰ্তন (Recommended rollout):
+
+1. checkout provisioning সক্ষম কৰাৰ আগতে প্ৰৱідৰী আৰু প্লেনৰ সীমা কনফিগাৰেট কৰক।
+2. এটা staging product ব্যৱহাৰ কৰি ক্ৰয় কৰি পৰীক্ষা কৰক আৰু নিশ্চিত কৰক যে checkout হোৱাৰ পিছত মেবক্সটো সৃষ্টি হৈছে।
+3. নতুন মেবক্সটো ইমেইল উইজেটত পোৱা যায় বুলি নিশ্চিত কৰিবলৈ গ্রাহক একাউণ্ট পৃষ্ঠাখন পৰীক্ষা কৰক।
+4. production products-ৰ বাবে flow সক্ষম কৰাৰ আগতে পাছৱৰ্ড-সংশোধন আৰু Webmail কাৰ্য্যসমূহ নিশ্চিত কৰক।
+
+যদি provisioning ব্যৰ্থ হয়, তেন্তে মেবক্সটোৰ বাবে Administratorৰ অনুসাৰে অনুসৰণৰ প্ৰয়োজন হ'লেও গ্রাহক একাউণ্ট আৰু মেম্বৰশ্বিপটো থাকিব পাৰে। পুনৰ চেষ্টা কৰাৰ আগতে Ultimate Multisite activity logs আৰু প্ৰৱідৰী logs পৰীক্ষা কৰক।
+
+## CyberPanel Email Forwarders
+
+CyberPanel-ভিত্তিক নেটৱৰ্কৰ বাবে, version 1.1.0 ত ইমেইল forwarder সমৰ্থন যোগ কৰা হৈছে। যেতিয়া গ্রাহকসকলক `info@customer-domain.test` ধৰণৰ address লাগে, যিয়ে এটা সম্পূৰ্ণ মেবক্স সৃষ্টি নকৰাকৈ ইমেইল আন এটা inbox লৈ redirect কৰিব লাগে, তেতিয়া forwarder ব্যৱহাৰ কৰক।
+
+forwarder আগবঢ়োৱাৰ আগতে, নিশ্চিত কৰক যে CyberPanel ইন্টিগ্ৰেচন কনফিগাৰেট কৰা আৰু উপলব্ধ। প্ৰয়োজনীয় host, username, password, আৰু package constants লৈ [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) গাইডখন চাওক।
+
+## Changelog
+
+### Version 1.1.0 - Released on 2026-05-05
+
+* New: Webmail SSO আৰু magic-link login — গ্রাহকসকলে এক-ক্লিকে Authentication লৈ নিজৰ একাউণ্টৰ পৰা Webmail লৈ যাব পাৰে।
+* New: ইমেইল একাউণ্ট ব্যৱস্থাপনা উইজেটত Change password functionality যোগ কৰা হৈছে।
+* New: CyberPanel ইমেইল forwarder সমৰ্থন।
+* New: গ্রাহক একাউণ্ট পৃষ্ঠাৰ বাবে self-service একাউণ্ট সৃষ্টি আৰু ব্যৱস্থাপনাৰ বাবে ইমেইল ব্যৱস্থাপনা উইজেট।
+* New: স্বয়ংক্রিয় provisioningৰ বাবে checkout flow ত গ্রাহক ইমেইল একাউণ্ট সৃষ্টি ইন্টিগ্রেট কৰা হৈছে।
+* Fix: Account page widget hook সঠিক UMS registration pattern ব্যৱহাৰ কৰিবলৈ আপডেট কৰা হৈছে।
+* Fix: Create Account ফৰ্ম vanilla JS আৰু সঠিক full HTML document output লৈ সলনি কৰা হৈছে।
+* Fix: Admin account page-ৰ বাবে ইমেইল ব্যৱস্থাপনা উইজেটটোৱে UMS currents system ব্যৱহাৰ কৰে।
+* Fix: Admin ইমেইল একাউণ্ট সৃষ্টি ফৰ্মত password field যোগ কৰা হৈছে আৰু Email_Account_Manager ব্যৱহাৰ কৰে।
+* Fix: Email_Account_Manager initialization बाट Per-request log spam আঁতৰাই দিয়া হৈছে।
+* Improved: সেটিংস পৃষ্ঠাখন এতিয়া কেৱল সক্ৰিয় আৰু কনফিগাৰেট কৰা ইমেইল প্ৰৱідৰী দেখুৱাবলৈ ফিল্টাৰ কৰে।
+
+## Frequently Asked Questions
+
+## কি গ্রাহকসকলে নিজৰ ইমেইল একাউণ্ট সৃষ্টি কৰিব পাৰে?
+
+হয়। যেতিয়া গ্রাহক একাউণ্ট উইজেটটো সক্ষম কৰা হয় আৰু প্লেনটোৱে ইমেইল একাউণ্টৰ অনুমতি দিয়ে, তেতিয়া গ্রাহকসকলে একাউণ্ট পৃষ্ঠাৰ পৰা নিজৰ মেবক্স সৃষ্টি আৰু ব্যৱস্থাপনা কৰিব পাৰে।
+
+## সকলো প্ৰৱідৰীয়ে Webmail SSO সমৰ্থন কৰে নে?
+
+নহয়। SSO আৰু magic-link সমৰ্থনটো সক্ৰিয় ইমেইল প্ৰৱідৰীৰ ওপৰত নিৰ্ভৰ কৰে। যি প্ৰৱідৰীৰ access-link API নাই, তেওঁলোকে এতিয়াও মেবক্স সৃষ্টি আৰু পাছৱৰ্ড সলনি কৰিব পাৰে।
+
+## কি Administratorসকলে গ্রাহকসকলৰ বাবে ইমেইল একাউণ্ট সৃষ্টি কৰিব পাৰে?
+
+হয়। Administratorসকলে Admin interfaceৰ পৰা ইমেইল একাউণ্ট সৃষ্টি কৰিব পাৰে, যাৰ লগে লগে একাউণ্ট সৃষ্টি কৰাৰ সময়ত প্ৰথম পাছৱৰ্ডও সেট কৰিব পাৰে।
+
+## forwarder আৰু mailbox কি একে?
+
+নহয়। এটা mailbox-এ ইমেইল সংৰক্ষণ কৰে আৰু লগইন credentials থাকে। এটা forwarder ইমেইল আন এটা address লৈ redirect কৰে আৰু এটা পৃথক inbox প্ৰদান নকৰে।

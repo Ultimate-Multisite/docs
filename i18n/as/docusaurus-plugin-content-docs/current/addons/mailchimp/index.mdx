@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Multisite Ultimate: MailChimp Integration
+
+আপোনাৰ Multisite Ultimate নেটৱৰ্কক আপোনাৰ MailChimp লিস্টিংৰ সৈতে সংযোগ কৰক। আপুনি কিছুমান প্লেনক MailChimp তালিকাৰ সৈতে সংযোগ কৰিব পাৰে আৰু কোনোৱে সাইনআপ কৰাৰ লগে লগে স্বয়ংক্রিয়ভাৱে সেই তালিকাখিনিত সদস্যসকলক যোগ কৰিব পাৰে।
+
+## Installation
+
+1. 'ultimate-multisite-mailchimp' ফাইলটো '/wp-content/plugins/' ডাইৰেক্টৰীত আপলোড কৰক
+2. আপোনাৰ WordPress Network Admin-ৰ 'Plugins' মেনুৰ মাজেৰে প্লাগইনটো অ্যাক্টিভেট কৰক
+
+## Usage Guide
+
+আপোনাৰ সদস্যসকলৰ ইমেইলসমূহক আপোনাৰ MailChimp তালিকাৰ সৈতে Sync কৰাটো আমাৰ Ultimate Multisite: MailChimp Integration Add-on ব্যৱহাৰ কৰি বৰ সহজ। এই টিউটোরিয়ালটোৱে আপোনাক সকলোবোৰ সেট কৰাত সহায় কৰিবলৈ নিৰ্মাণ কৰা হৈছে!
+
+## Getting an API key
+
+বিভিন্ন সেটিংছ উপলব্ধ হোৱাৰ আগতে, আমাক এটা MailChimp API key লাগে। ইয়াৰ দ্বাৰা Ultimate Multisite-ক MailChimp API ৰ সৈতে কথা পাতি তালিকা, গোট (groups) সংগ্ৰহ কৰিবলৈ আৰু ব্যৱহাৰকাৰীসকলে সাইনআপ কৰাৰ সময়ত সেই তালিকা আৰু গোটসমূহত ইমেইল ঠিকনা যোগ কৰিবলৈ সক্ষম হ'ব।
+
+আপোনাৰ নিজৰ MailChimp API key পাবলৈ এই টিউটোরিয়ালটো অনুসৰণ কৰক: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_**Ultimate Multisite Settings - > Add-on Settings -> MailChimp** ত আপোনাৰ MailChimp API key যোগ কৰক_
+
+## Integration Mode
+
+MailChimp Integration add-on-এ দুটা "integration modes" (সংমিশ্ৰণৰ ধৰণ) আগবঢ়াইছে, যাৰ অৰ্থ হ'ল ইমেইল ঠিকনা Sync কৰিবলৈ আপুনি এই add-on ব্যৱহাৰ কৰিবলৈ দুটা ভিন্ন উপায় আছে।
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_বেছি নমনীয়তাৰ বাবে দুটা সংমিশ্ৰণৰ ধৰণ!_
+
+### Mode 1: Multiple Lists
+
+ডিফল্ট মোডটোৱে **Multiple Lists** ব্যৱহাৰ কৰে। এই মোডটোৱে আপোনাক প্ৰতিটো প্লেনৰ বাবে একাধিক MailChimp তালিকা বাছনি কৰিবলৈ অনুমতি দিয়ে। যদি আপুনি আপোনাৰ ব্যৱহাৰকাৰীসকলক বিভিন্ন তালিকাৰ মাজত ভাগ কৰে (segment), তেন্তে এইটো আটাইতকৈ ভাল বিকল্প।
+
+উদাহৰণস্বৰূপে, ধৰক আপোনাৰ MailChimp একাউণ্টত ৩টা ভিন্ন তালিকা আছে: **Newsletter**, **Plan A**, আৰু **Plan B**। আপুনি বিচাৰে যে সকলো ব্যৱহাৰকাৰী, তেওঁলোকৰ প্লেন যি নহওক, Newsletter তালিকাখনতো অন্তৰ্ভুক্ত হওক, যাতে তেওঁলোকে আপোনাৰ আপডেটবোৰ এৰি নযায়।
+
+এইটো কৰিবলৈ, আপুনি Multiple Lists মোড ব্যৱহাৰ কৰি Plan A MailChimp Settings ত **Newsletter** আৰু **Plan A** দুটা তালিকা যোগ কৰিব পাৰে, আৰু Plan B MailChimp Settings ত **Newsletter** আৰু **Plan B** দুটা তালিকা যোগ কৰিব পাৰে।
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_নতুন একাউণ্ট আৰু বাতিল হোৱা একাউণ্টৰ বাবে ডিফল্ট তালিকা বাছনি কৰক_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp-এ আপোনাৰ তালিকাখনক **Groups** নামৰ সৰু সৰু ব্যৱহাৰকাৰী গোটত ভাগ কৰিবলৈ দিয়ে। ইয়াৰ ফলত আপোনাৰ অধিক নিয়ন্ত্ৰণ থাকে, কাৰণ আপুনি MailChimp ত একেটা Campaign-ৰ একাধিক প্ৰতিলিপি (copies) সৃষ্টি কৰিবলগীয়া নহয়, কেৱল আপোনাৰ সদস্যসকলৰ এটা নিৰ্দিষ্ট উপ-সেটলৈ (specific subset) এটা Campaign প্ৰেণ কৰিব পাৰে (যিটো Campaign-ৰ metrics বিশ্লেষণ কৰাটো কঠিন কৰি তোলে)।
+
+উদাহৰণস্বৰূপে, আপুনি **My Network Subscribers** নামৰ এটা একক তালিকা ৰাখিব পাৰে, আৰু তাৰ ভিতৰত **Plan A** আৰু **Plan B**ৰ বাবে গোট (groups) থাকিব পাৰে।
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_যদি আপুনি “single list + multiple groups” সংমিশ্ৰণ মোড ব্যৱহাৰ কৰে, তেন্তে ডিফল্ট তালিকা আৰু গোট বাছনি কৰক_
+
+## Default Lists and Groups
+
+আপুনি কোনটো সংমিশ্ৰণৰ ধৰণ আপোনাৰ বিশেষ ব্যৱহাৰৰ ক্ষেত্ৰৰ বাবে বেছি উপযুক্ত বুলি বাছি ল'লে, তেতিয়া ডিফল্ট তালিকা (আৰু মোড অনুসৰি গোট) বাছনি কৰাৰ সময়। কোনো এটা প্লেনৰ বাবে নিৰ্দিষ্ট তালিকা বাছনি কৰা নহ'লে ডিফল্ট তালিকা ব্যৱহাৰ কৰা হ'ব।
+
+আপুনি বাতিল হোৱা একাউণ্টৰ বাবেও ডিফল্ট তালিকা বাছনি কৰিব পাৰে। যেতিয়া কোনো ব্যৱহাৰকাৰী নিজৰ সদস্যপদ সমাপ্ত কৰে আৰু আপোনাৰ নেটৱৰ্কৰ পৰা নিজৰ একাউণ্টখন আঁতৰাই দিয়ে, তেতিয়া তেওঁৰ ইমেইল ঠিকনাখন বাতিল হোৱা একাউণ্টৰ বাবে সেট কৰা তালিকাখনলৈ স্থানান্তৰ কৰা হ'ব।
+
+## Enabling Double Subscription
+
+একে সেটিংছ পৃষ্ঠাখনত, আপুনি **Double Subscription** সক্ষম কৰিব পাৰিব। এই বিকল্পটোৱে ব্যৱহাৰকাৰীক ডিফল্ট তালিকাখন আৰু সেই ব্যৱহাৰকাৰীৰ প্লেনৰ বাবে বাছনি কৰা তালিকা দুয়োটাত যোগ কৰিব। যদি এই বিকল্পটো সক্ষম কৰা নহয়, তেন্তে ব্যৱহাৰকাৰীক কেৱল ব্যৱহাৰকাৰীৰ প্লেনৰ বাবে বাছনি কৰা তালিকাখনতে যোগ কৰা হ'ব। যদি সেই নিৰ্দিষ্ট প্লেনৰ বাবে কোনো এটা সেট কৰা নহয়, তেন্তে ব্যৱহাৰকাৰীক ডিফল্ট তালিকাখনতে যোগ কৰা হ'ব।
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_সাইন-আপৰ সময়ত আপোনাৰ ব্যৱহাৰকাৰীসকলক ডিফল্ট তালিকা আৰু প্লেনৰ তালিকা দুয়োটাত সদস্য কৰিব পাৰে_
+
+## Selecting Lists and Groups for each of the Plans
+
+আপোনাৰ **Plans** ত যাওক আৰু আপুনি সম্পাদনা কৰিব বিচৰা প্লেনটো বাছনি কৰক। মন কৰিব যে **Advanced Options** মেটা-বক্সত, MailChimp নামৰ এটা নতুন ট্ৰাব (tab) উপলব্ধ হ'ব।
+
+সেই ট্ৰাবত, আপুনি সেই প্লেনটোৰ বাবে একাধিক তালিকা বা এটা একক তালিকা আৰু একাধিক গোট (সংমিশ্ৰণৰ ধৰণৰ ওপৰত নিৰ্ভৰশীল) বাছনি কৰিবলৈ সক্ষম হ'ব।
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_আপোনাৰ প্ৰতিটো প্লেনৰ বাবে ব্যৱহাৰ কৰিব বিচৰা তালিকা আৰু গোট বাছনি কৰক_
+
+এজন নতুন ব্যৱহাৰকাৰীয়ে সেই প্লেনৰ বাবে সাইন-আপ কৰিলে, তেওঁৰ ইমেইল ঠিকনাখন বাছনি কৰা তালিকা আৰু গোটসমূহত যোগ কৰা হ'ব!

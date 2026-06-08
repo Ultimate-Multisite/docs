@@ -1,0 +1,75 @@
+---
+title: Dil Seçici
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Dil Seçici
+
+Multisite Ultimate: Qeydiyyatda Dil Seçici
+
+Qeydiyyat prosesinə bir dil seçici sahə əlavə edin.
+
+## Quraşdırma
+
+1. 'ultimate-multisite-language-selector' faylını '/wp-content/plugins/' kataloquna yükləyin.
+2. Plugin-i WordPress Network Admin-dəki 'Plugins' menyusu vasitəsilə aktivləşdirin.
+
+## İstifadə Təlimatı
+
+Bu pulsuz add-on ilə istifadəçilərinizin qeydiyyat prosesində və giriş səhifəsində hansı dili görmək istədiklərini seçməsinə imkan verə bilərsiniz.
+
+[Lisenziyanızı aktivləşdirdiyinizdən sonra](../../user-guide/getting-started/installing-ultimate-multisite.md) lisenziyanızın imkan verdiyi Ultimate Multisite add-onlarını quraşdırmaq mümkün olacaq.
+
+Ultimate Multisite parametrlər səhifənizə keçin və sonra sol menyuda _Add-ons_ etiketini basın.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+_Language Selector quraşdırmaya başlamaq üçün Add-ons səhifəsinə keçin_
+
+Orada təklif etdiyimiz bütün add-onları tapa biləcəksiniz.
+
+Pulsuz add-onlar, abunə olduqları plandan asılı olmayaraq, bütün müştərilərimiz üçün mövcuddur.
+
+Add-onun miniatür şəklinin altında yerləşən _Install it Now!_ düyməsinə basın. Sonra onu Plugins səhifəsində aktivləşdirin.
+
+![Add-ons page with install button](/img/admin/addons-page.png)
+
+_Add-onu quraşdırmaq üçün düyməyə basın_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_Plugins səhifənizdə aktivləşdirin_
+
+İndi isə Ultimate Multisite-ın Settings menyusuna keçin və _Network Settings_ tabına daxil olun. Orada, səhifənin altında, _Languages_ adlı yeni bir bölmə tapacaqsınız.
+
+![Settings page](/img/config/settings-general.png)
+
+_Tamamilə yeni bir bölmə görünür!_
+
+Bütün dilləri seçim kimi göstərmək üçün onu boş saxlaya bilərsiniz və ya hansı dilləri mövcud etmək istədiyinizi seçə bilərsiniz. Dillər, WordPress quruluşunuzda quraşdırdığınız dillərdir.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_Bu WP quraşdırmasında mövcud dillər siyahısı_
+
+Edilmiş dəyişiklikləri yadda saxladıqdan sonra, seçdiyiniz dillərlə bir seçim menyusu həm Giriş səhifəsində, həm də Qeydiyyat Prosesində göstəriləcək.
+
+![Login and Registration settings](/img/config/settings-login-registration.png)
+
+_Giriş Səhifəsində Dil Seçici_
+
+![Registration page](/img/config/registration-page.png)
+
+_Qeydiyyat Prosesində Dil Seçici_
+
+## URL vasitəsilə Dilin Təyin Edilməsi
+
+Həmçinin, bir səhifənin dilini URL-dəki `locale` parametrinə müraciət etmədən də dəyişə bilərsiniz. Məsələn, İtaliyada qeydiyyat səhifəsinə yönləndirmək istəyirsinizsə, URL-ə `?locale=it_IT` əlavə edin.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Bunun işləməsi üçün dilin WordPress şəbəkənizdə quraşdırılmış olması vacibdir.

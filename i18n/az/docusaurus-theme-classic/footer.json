@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentasiya",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "İnkişaf",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Daha çox",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "İstifadəçi İlərinə",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "İnkişafçı Sənədləri",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Əlavələr",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Diskussiyaları",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Veb saytı",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Təhlükəsizlik hüquqları © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

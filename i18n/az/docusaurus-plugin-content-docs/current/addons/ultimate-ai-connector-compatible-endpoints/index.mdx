@@ -1,0 +1,111 @@
+---
+title: Uyğun Son Noktalar üçün Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints, OpenAI-uyumlu AI provider API-lərini WordPress multisite şəbəkənizlə inteqrasiya edir. Bir neçə AI provider konfiqurasiya edin — hər birinin öz endpoint URL-i, API key-i və default modeli olsun — və bir provider mövcud olmadıqda sorğuları avtomatik fallback (alternativ sistemə keçid) ilə yönləndirin.
+
+## Key Features
+
+- **Multi-provider support**: Bir neçə AI provider kartı əlavə edin; hər biri öz endpoint URL-i, API key-i və default modelə malikdir.
+- **Drag-to-reorder**: Providerləri hər kartdakı tutucu (grip handle) vasitəsilə prioritetə görə düzəldin; sorğular providerləri bu sıraya uyğun istifadə edir.
+- **Automatic fallback routing**: Əgər əsas provider mövcud deyilsə, sorğular avtomatik olaraq növbəti konfiqurasiya edilmiş providerə keçir.
+- **Per-provider configuration**: Hər provider öz müstəqil şəkildə öz təsdiqlənməsi (credentials) və model seçimi ilə konfiqurasiya edilir.
+- **Card-based settings UI**: Stabil WordPress 6.9+ Card komponentləri (CardBody, CardHeader, CardDivider) üzərində qurulub.
+- **Auto-expand on add**: Yeni provider kartları avtomatik genişləyir, beləliklə detalları dərhal doldura bilərsiniz.
+- **Script cache busting**: Plugin yeniləndikdə provider scriptləri cache-dən qorunur (cache-busted), bu da ən son versiyanın yüklənməsini təmin edir.
+
+## Requirements
+
+- WordPress 5.3 və ya daha yuxarı
+- PHP 7.4 və ya daha yuxarı
+- Ultimate Multisite plugin (aktiv)
+- Bir OpenAI-uyumlu API endpoint (öz-host edilmiş və ya üçüncü tərəf)
+
+## Installation
+
+1. Addon fayllarını `/wp-content/plugins/` kataloqunuzuna yükləyin.
+2. Plugin-i WordPress-dəki 'Plugins' menyusundan aktivləşdirin.
+3. Addon-u konfiqurasiya etmək üçün **Ultimate Multisite → AI Connector** yolunu izləyin.
+
+## Configuration
+
+### Multi-Provider Setup
+
+Konfiqurasiya ekranı kart əsaslı bir dizayna malikdir və hər bir kart bir AI providerini təmsil edir. Ehtiyac duyduğunuz qədər provider əlavə edə bilərsiniz.
+
+#### Adding a Provider
+
+1. Network admin-də **Ultimate Multisite → AI Connector**-ə keçin.
+2. **Add Provider** düymasına klikləyin.
+3. Yeni bir provider kartı görünür və avtomatik genişləyir.
+4. Provider detallarını doldurun:
+   - **Provider Name** — bu providerı müəyyən etmək üçün bir etiket (məsələn, "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** — OpenAI-uyumlu API-nin əsas URL-i (məsələn, `https://api.openai.com/v1`).
+   - **API Key** — bu provider üçün API key-iniz.
+   - **Default Model** — bu provider üçün default olaraq istifadə ediləcək model identifikatoru (məsələn, `gpt-4o`, `mistral-small`).
+5. **Save Settings** düymasına klikləyin.
+
+#### Removing a Provider
+
+Bir provider kartı üzərindəki **Remove** düymasına klikləyərək onu silə bilərsiniz. Dəyişikliyi tətbiq etmək üçün ayarları yadda saxlayın.
+
+#### Reordering Providers
+
+Hər hansı bir provider kartının sol tərəfindəki tutucu ikona (⣿) üzərində sürüşdürərək sırasını dəyişin. Sıra fallback prioritetini müəyyən edir: sorğular ilk providera göndərilir və əgər bir sorğu uğursuz olarsa, növbəti providerlara keçir.
+
+### Fallback Routing
+
+Əgər əsas providera edilən bir sorğu — vaxt bitməsi (timeout), limit aşması (rate limit) və ya xidmət dayandırılması səbəbi ilə — uğursuz olursa, connector avtomatik olaraq siyahıdakı növbəti providerla yenidən cəhd edir. Bu proses, bir provider uğur qədər işləyənə və ya bütün providerlar yoxlanılana qədər davam edir.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback, çağırıcı plugin və ya tema üçün şəffafdır — onlar, neçə provider yoxlanıldığına baxmayaraq, ya uğurlu cavab, ya da son bir xəta alacaqlar.
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Bu provider üçün göstəriləcək etiket |
+| Endpoint URL | Yes | OpenAI-uyumlu API-nin əsas URL-i |
+| API Key | Yes | Bu provider üçün autentifikasiya açarı |
+| Default Model | Yes | Sorğuda model göstərilmədikdə istifadə edilən model identifikatoru |
+
+## Troubleshooting
+
+### No providers are listed
+
+Yadda saxladıqdan sonra provider siyahısı boşdursa, zəhmət olmasa aşağıdakıları yoxlayın:
+
+- Providerlər əlavə edildikdən sonra **Save Settings** düymasına kliklədiyinizə əmin olun.
+- Brauzerinizin ayarlar səhifəsinin yadda saxlanmasını bloklamadığına əmin olun (JavaScript xətaları üçün brauzer konsolunu yoxlayın).
+- Plugin aktivdir və siz şəbəkə admin ekranındasınız.
+
+### Requests are failing for all providers
+
+- Hər bir providerun endpoint URL-inin serverinizdən əlçatan olduğundan əmin olun (yalnız brauzerinizdən deyil).
+- Hər bir API key-inin etibarlı və bitməmiş olduğundan əmin olun.
+- Providerun dashboard-unda rate-limit və kvota statusunu nəzərdən keçirin.
+- Connector-dan ətraflı xəta mesajlarını ələ keçirmək üçün WordPress debug logging (`WP_DEBUG_LOG`) aktivləşdirin.
+
+### A provider is not being used for fallback
+
+Drag-to-reorder (Sürüşdürərək yenidən sıralama) fallback sırasını dəyişir. Fallback sorğuları almağını gözlədiyiniz providerun siyahıda düzgün yerləşdirildiyinə və endpoint URL-i ilə API key-inin düzgün olduğuna əmin olun.
+
+### New provider card does not expand automatically
+
+Auto-expand funksionallığı brauzerinizdə JavaScript-in aktiv olmasını tələb edir. Əgər kart kliklədikdə genişlənmirsə, brauzer konsolunda xətalar yoxlayın. Kart məzmunu, auto-expand işə düşməsə belə, həmişə kart başlığına klikləməklə əlçatandır.
+
+## Changelog
+
+Tam versiya tarixçəsi üçün [Changelog](./changelog) bölümünə baxın.

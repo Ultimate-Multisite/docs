@@ -1,0 +1,114 @@
+---
+title: Elektron poçtlar
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+Ultimate Multisite: Emails eklentisi şəbəkə sahiblərinə saytlar və üzvliklər kənar olaraq müştəri e-poçt hesablarını təmin etməyə və idarə etməyə imkan verir. 1.1.0 versiyası müştəri tərəfindən görünən e-poçt hesabı idarəetməsinə, webmail single sign-on (SSO) funksionallığına, CyberPanel forwarder dəstəyinə və ödəniş zamanı təminat (provisioning) yaxşılaşdırmalarına malikdir.
+
+## Əsas Xüsusiyyətlər
+
+* **Müştəri e-poçt hesabı widget-ı**: Müştərilər dəstəkləyici bilet açmadan öz hesab səhifələrindən e-poçt hesabı yaradıb idarə edə bilərlər.
+* **Webmail SSO və magic linklər**: Müştərilər, provayder dəstəkləyirsə, hesab səhifəsindən bir kliklə autentifikasiya ilə birbaşa webmail-ə daxil ola bilərlər.
+* **Şifrə dəyişmələri**: Müştərilər və administratorlar e-poçt idarəetmə widget-ından poçt şifrələrini yeniləyə bilərlər.
+* **Ödəniş zamanı təminat**: Müştəri e-poçt hesabı yaratmaq ödəniş zamanı işləyə bilər, beləliklə, ödəniş prosesi başa çatdıqdan sonra poçt qutusu hazırdır.
+* **CyberPanel forwarderləri**: CyberPanel-ə əsaslanan şəbəkələr e-poçt xidməti axını çərçivəsində e-poçt forwarderləri yaradıb idarə edə bilərlər.
+* **Provayderə uyğun parametrlər**: Parametrlər səhifəsi administratorlar üçün yalnız istifadə edilə bilən seçimləri göstərmək üçün provayderləri aktiv və konfiqurasiya edilmiş inteqrasiyalarla filtrləyir.
+
+## Tələblər
+
+* Ultimate Multisite 2.0.0 və ya daha yuxarı
+* WordPress Multisite quraşdırılması
+* Ən azı bir konfiqurasiya edilmiş e-poçt provayderi inteqrasiyası
+* Provayder API giriş məlumatları: poçt qutuları yaratmaq, şifrələri dəyişmək və dəstəklənən hallarda webmail giriş linkləri vermək səlahiyyəti ilə.
+
+## Quraşdırma
+
+1. Plugin fayllarını `/wp-content/plugins/ultimate-multisite-emails` yoluna yükləyin.
+2. WordPress şəbəkə administrator panelində **Plugins** bölməsindən eklentini şəbəkə səviyyəsində aktivləşdirin.
+3. **Ultimate Multisite** > **Settings** (Parametrlər) bölməsinə keçin və eklenti e-poçt parametrlərini açın.
+4. Müştərilərin istifadə etməsini istədiyiniz e-poçt provayderi inteqrasiyalarını aktivləşdirin.
+5. Parametrləri yadda saxlayın, sonra isə istehsal mühiti olmayan bir müştəri və ya hazırlıq saytı ilə hesab yaratmağı sınaqdan keçirin.
+
+## Müştəri Hesabı E-poçt İdarəetməsi
+
+1.1.0 versiyası müştəri hesab səhifəsinə e-poçt idarəetmə widget-ı əlavə edir. Bu widget-dan istifadə edilməlidir ki, müştərilər öz saytları üçün poçt qutusu yaratma və idarə etmə işini özləri görsünlər (self-service).
+
+Hesab səhifəsindən müştərilər aşağıdakıları edə bilərlər:
+
+1. Mövcud üzvliklərinə və ya saytına bağlı e-poçt hesablarını görə bilərlər.
+2. Planları əlavə hesablara icazə verdikdə yeni poçt qutusu yarada bilərlər.
+3. Mövcud poçt qutusu şifrəsini dəyişə bilərlər.
+4. Dəstəklənən webmail provayderlərinə SSO və ya magic-link girişi vasitəsilə daxil ola bilərlər.
+
+Widget, Ultimate Multisite hesab səhifəsi sistemindən istifadə edir, buna görə də hərəkətlər müştərinin baxdığı hesab konteksti ilə məhdudlaşır. Bu, müştərilərin başqa bir üzvliyə və ya sayta aid olan e-poçt hesablarını idarə etməsini əngəlləyir.
+
+## Webmail SSO və Magic-Link Girişi
+
+Webmail SSO müştərilərə hesab səhifəsindən birbaşa **Open webmail** (Webmail aç) hərəkətini verir. Aktiv provayder tərəfindən dəstəklənəndə, eklenti qısa ömürlü bir giriş URL-i soruşur və müştəridən poçt qutusu giriş məlumatlarını kopyalamağı istəmədən onu webmail-ə yönləndirir.
+
+Provayderlərin davranışı fərqlənə bilər:
+
+* Yerli SSO API-ləri olan provayderlər birbaşa autentifikasiya edilmiş webmail sessiyası yarada bilərlər.
+* Magic-link dəstəyi olan provayderlər müəyyən müddətli giriş linki yarada bilərlər.
+* SSO və ya magic-link dəstəyi olmayan provayderlər hələ də poçt qutusu detallarını və şifrə idarəetmə hərəkətlərini göstərməlidir, lakin bir kliklə webmail düyməsi göstərməməlidir.
+
+Webmail girişini yalnız tələb olunan API giriş məlumatlarını konfiqurasiya etdiyiniz provayderlər üçün aktivləşdirin. Əgər bir provayder üçün hərəkət yoxdursa, əvvəlcə təsdiqləyin ki, provayder aktiv, konfiqurasiya edilmiş və webmail giriş linklərini dəstəkləyir.
+
+## Ödəniş Zamanı Təminat (Checkout Provisioning)
+
+Eklenti ödəniş zamanı müştəri e-poçt hesabları yarada bilər. Bu, plan məqsədi olaraq poçt qutusu daxil etdikdə və ya ödəniş forması e-poçt hesabı detallarını topladığında faydalıdır.
+
+Tövsiyə olunan tətbiq sırası:
+
+1. Ödəniş zamanı təminatı aktivləşdirməzdən əvvəl provayderi və plan limitlərini konfiqurasiya edin.
+2. Bir hazırlıq məhsulu ilə alış-veriş edin və ödənişdən sonra poçt qutusu yaradıldığını təsdiqləyin.
+3. Yeni poçt qutusunun e-poçt widget-ında görünməsini təsdiqləmək üçün müştəri hesab səhifəsini nəzərdən keçirin.
+4. İstehsal məhsulları üçün axını aktivləşdirməzdən əvvəl şifrə dəyişmə və webmail hərəkətlərini təsdiqləyin.
+
+Təminat uğursuzlaşarsa, müştəri hesabı və üzvliki mövcud ola bilər, lakin poçt qutusu administratorun əlavə diqqətini tələb edir. Yenidən cəhd etməzdən əvvəl Ultimate Multisite fəaliyyət jurnallarını və provayder jurnallarını yoxlayın.
+
+## CyberPanel E-poçt Forwarderləri
+
+CyberPanel-ə əsaslanan şəbəkələr üçün 1.1.0 versiyası e-poçt forwarder dəstəyini əlavə edir. Forwarderlərdən istifadə edilməlidir ki, müştərilər `info@customer-domain.test` kimi ünvanları tam poçt qutusu yaratmadan başqa bir qutuya yönləndirmək üçün istifadə edə bilsinlər.
+
+Forwarder təklif etməzdən əvvəl, CyberPanel inteqrasiyasının konfiqurasiya edildiyini və əlçatan olduğunu təsdiqləyin. Tələb olunan host, istifadəçi adı, şifrə və paket sabitləri üçün [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) bələd kitabına baxın.
+
+## Changelog (Dəyişikliklər Siyahısı)
+
+### Version 1.1.0 - Released on 2026-05-05
+
+* New: Webmail SSO və magic-link girişi — müştərilər bir kliklə autentifikasiya ilə birbaşa öz hesablarından webmail-ə daxil ola bilərlər.
+* New: E-poçt hesabı idarəetmə widget-ına şifrə dəyişmə funksionallığı əlavə edildi.
+* New: CyberPanel e-poçt forwarder dəstəyi.
+* New: Müştəri hesab səhifəsində özünə xidmət hesab yaratma və idarəetmə widget-ı.
+* New: Avtomatik təminat üçün müştəri e-poçt hesabı yaratmaq ödəniş axınına inteqrasiya edildi.
+* Fix: Hesab səhifəsi widget hook-u, düzgün UMS qeydiyyat nümunəsindən istifadə etmək üçün yeniləndi.
+* Fix: Create Account form-u vanilla JS və düzgün tam HTML sənədi çıxışı ilə əvəz edildi.
+* Fix: E-poçt idarəetmə widget-ı indi admin hesab səhifələri üçün UMS currents sistemindən istifadə edir.
+* Fix: Admin e-poçt hesabı yaratma formasına şifrə sahəsi daxil edildi və Email_Account_Manager istifadə olunur.
+* Fix: Email_Account_Manager ilkinləşdirilməsindən tələb olunan log spam-i çıxarıldı.
+* Improved: Parametrlər səhifəsi indi yalnız aktiv və konfiqurasiya edilmiş e-poçt provayderlərini göstərir.
+
+## Frequently Asked Questions (Tez-tez Verilən Suallar)
+
+## Müştərilər öz e-poçt hesablarını yarada bilərlər?
+
+Bəli. Müştəri hesab widget-ı aktivləşdirildiyi və plan e-poçt hesablarına icazə verdiyi zaman, müştərilər öz poçt qutularını hesab səhifəsindən yaradıb idarə edə bilərlər.
+
+## Hər provayder webmail SSO-nu dəstəkləyirmi?
+
+Xeyr. SSO və magic-link dəstəyi aktiv e-poçt provayderindən asılıdır. Giriş linki API-si olmayan provayderlər belə poçt qutusu yaratma və şifrə dəyişmə funksionallığını dəstəkləyə bilərlər.
+
+## Administratorlar müştərilər üçün e-poçt hesabı yarada bilərlər?
+
+Bəli. Administratorlar admin interfeysindən, hətta hesabı yaradarkən ilkin şifrə təyin etməklə e-poçt hesabı yarada bilərlər.
+
+## Forwarderlər poçt qutularından fərqlidirmi?
+
+Xeyr. Poçt qutusu poçt saxlayır və giriş məlumatlarına malikdir. Forwarder isə poçtu başqa bir ünvanə yönləndirir və ayrıca bir qutu vermir.

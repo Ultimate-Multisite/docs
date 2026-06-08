@@ -1,0 +1,117 @@
+---
+title: ባለብዙ ምንዛሪ
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency የኔትዎርክዎ በብዙ ምንዛሪ ክፍያ እንዲቀበል ያስችላል። በነባር ወይም በእጅ በተቀየሩ ምንዛሪ መጠኖች ዋጋዎችን በራስ-ሰር ይቀይራል፣ ለማንኛውም ምንዛሪ ለየምርት የተወሰነ ዋጋ እንዲያስቀምጡ ያስችላል፣ እንዲሁም የጎብኙን ተጠቃሚ ተመራጭ ምንዛሪ በጂኦሎኬሽን (geolocation) አማካይነት ይለያል — እነዚህ ሁሉ በአንድ የአስተዳዳሪ ሰሌዳ (admin dashboard) ውስጥ ይተዳደራሉ።
+
+## ቁልፍ ባህሪያት (Key Features)
+
+- **በራስ-ሰር የምንዛሪ መጠን መቀየር (Automatic exchange rate conversion)** — ዋጋዎች ከተመረጠው ሰጪ (provider) ምንዛሪ መጠን በመጠቀም ይቀየራሉ።
+- **በምርት ደረጃ የዋጋ መለዋወጥ (Per-product pricing overrides)** — በራስ-ሰር መቀየርን ለማለፍ በማንኛውም ምርት ላይ ለየምንዛሪ የተወሰነ ዋጋ ማስቀመጥ ይችላሉ።
+- **የምንዛሪ መምረጥ የመመዝገቢያ መስክ (Currency selector signup field)** — ደንበኞች በቼክአውት/መመዝገቢያ ጊዜ ተመራጭ ምንዛሪቸውን እንዲመርጡ ያስችላል።
+- **በርካታ የምንዛሪ መጠን ሰጪዎች (Multiple exchange rate providers)** — ECB, Frankfurter, Stripe, ወይም ሙሉ በሙሉ በእጅ የሚሰጡ መጠኖች።
+- **በጂኦሎኬሽን ላይ የተመሰረተ የምንዛሪ መለየት (Geolocation-based currency detection)** — የጎብኙን ሀገር ተመራጭ ምንዛሪ በራስ-ሰር ይመርጣል።
+- **የአስተዳዳሪ ሰሌዳ (Admin dashboard)** — ንቁ ምንዛሪዎችን፣ የምንዛሪ መጠኖችን እና የሰጪ ቅንብሮችን በአንድ ቦታ ያስተዳድራሉ።
+
+## መስፈርቶች (Requirements)
+
+- Ultimate Multisite 2.0.0 ወይም ከዚያ በላይ
+- WordPress Multisite መጫን
+- PHP 7.4 ወይም ከዚያ በላይ
+
+## መጫን (Installation)
+
+1. የፕልጋይኑ ፋይሎችን ወደ `/wp-content/plugins/ultimate-multisite-multi-currency` ይጫኑ።
+2. በWordPress ውስጥ ባለው **Plugins** ስክሪን አማካይነት ፕልጋይኑን ያንቁ (Network Activate)።
+3. የአስተዳዳሪ ሰሌዳውን ለመክፈት ወደ **Ultimate Multisite → Multi-Currency** ይሂዱ።
+4. መቀበል የሚፈልጓቸውን ምንዛሪዎች ይጨምሩ እና የምንዛሪ መጠን ሰጪዎን (exchange rate provider) ያዘጋጁ።
+
+## ቅንብር (Configuration)
+
+### የአስተዳዳሪ ሰሌዳ (Admin Dashboard)
+
+የMulti-Currency የአስተዳዳሪ ሰሌዳ (**Ultimate Multisite → Multi-Currency**) የሚከተሉትን ለማድረግ ማዕከላዊ ቦታ ነው፦
+
+- ምንዛሪዎችን መጨመር፣ ማብራት ወይም ማጥፋት
+- የምንዛሪ መጠን ሰጪን መምረጥ እና መጠኖችን በፈለጉ ጊዜ ማደስ
+- ለሁሉም ንቁ ምንዛሪዎች የአሁኑን መጠኖች መገምገም
+- በራስ-ሰር ሰጪዎች የማይመች ከሆነ በእጅ መጠኖችን ማስቀመጥ
+
+### የምንዛሪ መጠን ሰጪዎች (Exchange Rate Providers)
+
+| ሰጪ (Provider) | መግለጫ (Description) |
+|---|---|
+| **ECB** | የአውሮፓ ማዕከላዊ ባንክ — ለአውሮፓ (EUR) ባሉ ኔትወርኮች ነፃ ዕለታዊ መጠኖች። |
+| **Frankfurter** | ክፍት ምንጭ የECB መስተጋብር API — ነፃ፣ የAPI ቁልፍ አይፈልግም። |
+| **Stripe** | የStripeን የቀጥታ የFX መጠኖች ይጠቀማል — ንቁ የStripe ውህደት (integration) ያስፈልጋል። |
+| **Manual** | መጠኖችን እርስዎ በቀጥታ ያስገባሉ፤ ከውጭ API ጥሪ አይጠይቅም። |
+
+ሰጪዎን በ**Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** ውስጥ ይምረጡ። መጠኖችን በማንኛውም ጊዜ በእጅ ማደስ ወይም በራስ-ሰር እንዲዘመኑ መቅዳት ይችላሉ።
+
+### በምርት ደረጃ የዋጋ መለዋወጥ (Per-Product Pricing Overrides)
+
+በራስ-ሰር መቀየር በቂ ትክክለኛነት ባይሰጥዎት ጊዜ፣ በማንኛውም ምርት ላይ ለተወሰነ ምንዛሪ ትክክለኛ ዋጋ ማስቀመጥ ይችላሉ፦
+
+1. የምርት አርታኢውን (product editor) ይክፈቱ (**Ultimate Multisite → Products → Edit**)
+2. ወደ **Currency Pricing** ክፍል ይגלגל።
+3. ሊለወጡልዎ የሚፈልጓቸውን እያንዳንዱ ምንዛሪ ትክክለኛ ዋጋ ያስገቡ።
+4. ምርቱን ያስቀምጡ (Save)።
+
+የዋጋ መለዋወጥ ያልተደረገባቸው ምርቶች ከዋና ምንዛሪዎ የተቀየረውን ዋጋ ይጠቀማሉ።
+
+### የምንዛሪ መምረጥ የመመዝገቢያ መስክ (Currency Selector Signup Field)
+
+የምንዛሪ መምረጥ መስኩ ደንበኞች በምዝገባ ጊዜ ተመራጭ ምንዛሪቸውን እንዲመርጡ የሚያስችልበት የቼክአውት/መመዝገቢያ ፍሰት (flow) ላይ ሊጨመር ይችላል፦
+
+1. ወደ **Ultimate Multisite → Multi-Currency → Settings** ይሂዱ።
+2. **Show currency selector on signup** ን ያብሩ።
+3. በঐচ্ছিকነት መነሻ ምንዛሪ (default currency) ማስቀመጥ ወይም የጂኦሎኬሽን (geolocation) ተጠቃሚውን ዋጋ እንዲወስን ማድረግ ይችላሉ።
+
+የተመረጠው ምንዛሪ ከደንበበ መረጃ ጋር ይቀመጣል እና ለሁሉም ተከታይ ክፍያዎች ጥቅም ላይ ይውላል።
+
+### በጂኦሎኬሽን ላይ የተመሰረተ የምንዛሪ መለየት (Geolocation-Based Currency Detection)
+
+የጂኦሎኬሽን መለየት ሲበራ፣ የፕልጋይኑ የጎብኙን ሀገር ምንዛሪ ጋር በማዛመድ በምንዛሪ መምረጥ መስክ ውስጥ በቅድሚያ ይመርጣል። ለማብራት፦
+
+1. ወደ **Ultimate Multisite → Multi-Currency → Settings** ይሂዱ።
+2. **Detect currency from visitor location** ን ያብሩ።
+3. ሀገራትን በ**Geolocation Mapping** ሰንጠረዥ ውስጥ ምንዛሪዎች ጋር ያዛምዱ።
+
+ለጎብኙ ሀገር ምንም ካርታ (mapping) ባይኖርም፣ የኔትዎርክው ዋና ምንዛሪ እንደ አማራጭ (fallback) ጥቅም ላይ ይውላል።
+
+## በተደጋጋሚ የሚጠየቁ ጥያቄዎች (Frequently Asked Questions)
+
+### የምንዛሪ መጠን ሰጪ አገልግሎት ባይገኝ ምን ይሆናል?
+
+የፕልጋይኑ ወደ መጨረሻ በተሳካ ሁኔታ በተሰበሰቡ መጠኖች ይመለሳል። ምንም መጠኖች ባልተሰበሰቡም፣ እርስዎ በቅንብር ውስጥ ባስቀመጧቸው በእጅ መጠኖች ይመለሳል። የጥንቃቄ መረብ (safety net) በመሆኑ በእጅ መጠኖችን ማዘጋጀት ይመከራል።
+
+### ለየምንዛሪ የተለያዩ ሰጪዎችን መጠቀም እችላለሁ?
+
+አይ — ለሁሉም ምንዛሪዎች በአንድ ጊዜ አንድ ሰጪ ብቻ ነው ንቁ የሚሆነው። ለግል መጠኖች ሙሉ ቁጥጥር ከፈለጉ **Manual** ይጠቀሙ።
+
+### የጂኦሎኬሽን (geolocation) ለየብቻ ፕልጋይን ይፈልጋል?
+
+የውጭ የጂኦሎኬሽን ፕልጋይን አያስፈልግም። ፕልጋይኑ የWordPressን በውስጥ ባለው IP-to-country መለየትን ይጠቀማል። ለከፍተኛ ትክክለኛነት፣ በተሰጡት የfilter hooks አማካይነት ልዩ የጂኦሎኬሽን አገልግሎት ሊዋሃድ ይችላል።
+
+### በምርት ደረጃ የዋጋ መለዋወጥ ከግብር በፊት ነው ወይስ ከግብር በኋላ የሚተገበረው?
+
+በምርት ደረጃ የዋጋ መለዋወጥ በዒላማ ምንዛሪ ውስጥ ያለውን የግብር በፊት ዋጋ ያስቀምጣል። ግብር ደግሞ በነባሪ የግብር ቅንብርዎ ላይ በመመሥረት ከዚህ የዋጋ መለዋወጥ በላይ ይሰላል።
+
+## የለውጥ መዝገብ (Changelog)
+
+### Version 1.0.0 — በ2026-04-02 ተለቋል
+
+- አዲስ፡ በራስ-ሰር የምንዛሪ መጠን መቀየር ጋር የብዙ ምንዛሪ ድጋፍ
+- አዲስ፡ ለትክክለኛ የምንዛሪ ልዩ ዋጋዎች በምርት ደረጃ የዋጋ መለዋወጥ
+- አዲስ፡ ለቼክአውት ፍሰት የምንዛሪ መምረጥ የመመዝገቢያ መስክ
+- አዲስ፡ የምንዛሪ መጠን ሰጪዎች፡ ECB, Frankfurter, Stripe, እና በእጅ
+- አዲስ፡ በጂኦሎኬሽን ላይ የተመሰረተ የምንዛሪ መለየት
+- አዲስ፡ ምንዛሪዎችን እና የምንዛሪ መጠኖችን ለማስተዳደር የአስተዳዳሪ ሰሌዳ
+- ማስተካከያ፡ ምንም እንኳን ምንዛሪው ቢቀየርም ሰሌዳው ሁልጊዜ በዋና ምንዛሪ ዋጋ ማሳየቱ።

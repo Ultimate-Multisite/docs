@@ -1,0 +1,94 @@
+---
+title: WooCommerce ইন্টিগ্ৰেচন
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration, Hamar Manual Gateway jetiya, utulor ekta bahut mil ase. Ei add-on-gu apunar users-haru-ke onek flexibility deya, jetiya tei apunar WooCommerce install-korat paowar sob payment form-guli bhaal bhabe chuni paaru. Aru eta sohoj: jodi user-r billing period shesh hobo, tatei user-r subscription-ku 'on hold' (rokha) kora hobo. Ekhon, network-r main site-korat ekta order create hobo. User-ku tar email-korat ekta invoice paabe, jetiya payment korar link-ku deya hobo. Payment paowar por, subscription-ku punorajagri (renew) kora hobo.
+
+## Features
+
+- Ultimate Multisite aru WooCommerce-or modhye sohoj integration
+- anek dhoronor payment method paowar sujog
+- WooCommerce Subscriptions-soho sampurna automatic process
+
+## Documentation
+
+**Setting Up The WooCommerce Integration**
+
+**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+
+## Installation
+
+1. 'ultimate-multisite-woocommerce' file-ku '/wp-content/plugins/' directory-korat upload kora.
+2. WordPress-or 'Plugins' menu-korat plugin-ku activate kora.
+3. Plugin-ku set up koribo-nuhar jonno step by step Wizard-ku follow kora.
+
+## Usage Guide
+
+_**IMPORTANT NOTE: Ei article-gu Ultimate Multisite version 2.x-korat bishoyok.**_
+
+_**ATTENTION:** Ultimate Multisite: WooCommerce Integration-korat apunar main site-korat WooCommerce activate kora aniya thaka aavashyak._
+
+Ami bujhiye niu ki kichu deshe _Stripe_ aru _PayPal_ paowar sujog nai, jetiya Ultimate Multisite users-haru-ke hamar plugin-ku effective bhabe byabohar koribo-nuhar kshetre simit kore. Tai, amele **WooCommerce-ku integrate koribo-nuhar jonno ekta add-on** toiri kora.
+
+_WooCommerce_ ekta bahut lokopriyo eCommerce plugin. Duniya-r developer-haru-e eya-korat alada payment gateway-guli integrate koribo-nuhar jonno add-on toiri kora. Ami ei sujog-ku byabohar kora, jetiya Ultimate Multisite billing system-korat apunar byabohar koribo-par sob payment gateway-guli badha koribo-nuhar jonno.
+
+## Setting It Up
+
+Prothome, apunar WooCommerce Integration add-on-ku install koribo hobe, jetiya **licensed user-haru-korat free**. Eya install koribo-nuhar jonno, apunar super admin dashboard-korat Ultimate Multisite-korat click kora aru **Add-ons** select kora.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Ekhane apunar sob Ultimate Multisite add-on paowar sujog. **Ultimate Multisite: WooCommerce Integration** add-on-korat click kora.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Add-on-r details-soho ekta window pop up hobo. Keu **Install Now** *.* click kora.
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Installation hoi jaay, tar por apunak plugins page-korat redirect kora hobo. Ekhane, keu **Network Activate** click kora aru _WooCommerce_ add-on-ku apunar network-korat activate kora hobo.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Activate koribo-nuhar por, jodi apunar website-korat WooCommerce plugin install aru activate nai hobo, **apunar ekta reminder paowar sujog hobo**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Install hoi jaay, tar por apunar Ultimate Multisite payments settings-korat ekta additional option dekhabo. Ekhon apunar ekhon theke _WooCommerce_ option-ku **enable** koribo paaru.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Apunar kichu basic setting-guli configure koribo paaru, jetiya front end-korat dekhabo-nuhar display name aru apunar users-haru-ke checkout flow-korat guide koribo-nuhar instructions. Tar por, apunar **Main site-r _WooCommerce_ settings**-korat giye apunar byabohar koribo-bhaal payment gateway-ku enable aru configure kora paaru.
+
+## How to manage the payment
+
+WooCommerce Integration hamar **Manual Gateway** jetiya bahut mil ase. Eya-korat ekta drawback je sob payment-ku billing period-r shesh-korat manual-bhabe kora lagibo. Flow-gu ehi bhabe kaaj kore:
+
+  * User-r billing cycle shesh hobo, tatei membership-ku **on hold** kora hobo. Ekhon, network-r main site-korat ekta order create hobo.
+
+  * Users-haru-e tar email-korat ekta invoice paabe, jetiya payment korar link-ku deya hobo (ei link-ku subsite dashboard-korat tar billing history-korat pani). Ei link-ku user-ku _**WooCommerce**_ **checkout**-korat redirect koribo, jetiya users-haru-e payment process koribo-nuhar jonno **paowar _WooCommerce_ gateway**-guli-korat chuni paaru.
+
+  * Payment paowar por, membership-ku **renew** kora hobo, payment-ku Ultimate Multisite-korat log kora hobo aru order-ku complete set kora hobo.
+
+### Some Important Notes:
+
+  * Ultimate Multisite-r default functionality ehi integration form-korat sohoj bhabe kaaj kore. Udahoron swaroop, **Subscription Management** screen-korat **refund issue** koribo-nuhar kshetre, eya WooCommerce-korat communicate koribo aru selected payment form byabohar kore refund issue koribo.
+
+  * Ultimate Multisite: WooCommerce Integration-korat kaaj koribo-nuhar jonno WP-Cron-korat nirbhara. Eya jetiya sob samay bhalo kaaj kore, kintu jodi site-korat low traffic thake, tahole cron-ku scheduled event-guli check koribo-nuhar jonno prompt kora hobo, aru event-gu miss hobo, jetiya execution delay koribo paare.
+
+## Woocommerce Subscriptions Plugin
+
+Month-korat manual-bhabe payment initiate koribo-nuhar kshetre end-users-haru-korat sohoj nai, karon ekta subscription-ku sob billing cycle-korat automatic-bhabe recur koribo-bhabe apekkhya hobo. Tai, amele WooCommerce Integration add-on-ku **WooCommerce Subscriptions plugin-ku support koribo** jonno design kora. Eya payment-ku automate koribo, jetiya apunar end-users-haru-korat transaction-ku sohoj koribo.
+
+Apunar keu koribo-bhaal sohoj, [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) **install** kora aru eya-ku **apunar main site-korat activate** thaka. Tar por Ultimate Multisite payments settings-korat giye **integration-ku enable** kora.
+
+Aru ehi-korat. Apunar end-users-haru-ke tar billing cycle-r shesh-korat manual-bhabe payment koribo-nuhar aavashyak hobo.
+
+Apunar main site-korat _Woocommerce_ korat ekta order create hobo-nuhar alawa, eya-korat prottek account-korat ekta subscription-ku create koribo.

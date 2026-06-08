@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent is 'n outonome WordPress AI-assistent wat volledige WordPress-webwerwe kan beplan, bou en bestuur deur natuurlike taal-instruksies. Dit stel 'n gestruktureerde stel **abilities** (vermoëns) bloot — diskrete, toetsbare aksies wat die agent kan aanroep — wat alles dek van inhoudbestuur tot die aanpassing van 'n ontwerpstelsel. Weergawe 1.9.0 voeg inhoudskeer-abilities, visuele bladsybeoordeling via kliënt-kant skermkrieken, vyf ingeboude agentprofiele, en funksie-vlae vir toegangbeheer en branding by.
+
+## Sleutelkenmerke
+
+- **Abilities-stelsel** — 'n modulaire, uitbreidbare katalogus van aksies wat die agent op jou WordPress-installasie kan aanroep
+- **Inhoudbestuur** — skep plase en bladsye (insluitend die toewysing van bladsy-templates), skep baie plase in een oproep, stel uitgeligte beelde, en bou kontakvorms
+- **Visuele Beoordeling** — vang skermkrieken van lewendige bladsye, verskil-voor/na-toestande, en kry 'n AI-gegenereerde ontwerpbeoordeling wat uitleg, tipografie, kleur en toeganklikheid dek
+- **Vyf ingeboude agents** — Inhoudskrywer, Webwerfbouer, Ontwerpstudio, Pluginbestuurder, en Ondersteuningsassistent; kan gewissel word via die Agentkiezer in die chat-kop
+- **Funksie-vlae** — toegangbeheer- en branding-omskakelaars in Settings → Feature Flags vir rolbeperkings, white-label benaming, en widget-aanpassing
+- **Custom Post Type bestuur** — registreer, lys, en verwyder aangepaste posgype met voortbestaan oor herlaadings
+- **Custom Taxonomy bestuur** — registreer, lys, en verwyder aangepaste taksonomies met voortbestaan
+- **Ontwerpstelsel abilities** — spuit aangepaste CSS in, bestuur gekureerde blokpatrone, stel die webwerflogo, en pas theme.json presets toe
+- **Globale Stile bestuur** — lees en skryf theme.json waardes vir kleurepallette, tipografie, spasie, en meer
+- **Navigasie-menu bestuur** — skep en opdateer navigasie-menu's en hul items programmeermatig
+- **Options bestuur** — lees en skryf WordPress-opsies met 'n ingeboude veiligheidsbloklys om kritieke instellings te beskerm
+- **Installeerbare Abilities Register** — ontdek en aktiveer bykomende ability-pakkette sonder om kernplugin-lêre te wysig
+- **Site Builder Orchestrasie v2** — meer-stappe webwerfbouplanne met plugin-ontdekking, vorderingsopsporing, en foutherstel
+- **WP-CLI benchmark commando** — hardloop die agent-vermoë benchmark-suite vanaf die lêlyn vir CI en modelbeoordeling
+
+## Vereistes
+
+- WordPress 6.0 of hoër
+- PHP 8.1 of hoër
+- WordPress Multisite (netwerk-geaktiveer) of enkele-webwerf-installasie
+- 'n Aktiewe AI-verskaffer-verbindingsplugin (Anthropic, OpenAI, of kompatibel)
+
+## Instalering
+
+1. Laai die plugin-lêre op na `/wp-content/plugins/gratis-ai-agent`
+2. Aktiveer die plugin deur die **Plugins** skerm in WordPress
+3. Navigeer na **Gratis AI Agent → Settings** en verbind jou AI-verskaffer
+4. (Opsioneel) Blouers die **Abilities Registry** om bykomende ability-pakkette te installeer
+
+## Vinnige Begin
+
+Sodra dit geaktiveer en verbind is met 'n AI-verskaffer, maak die **Gratis AI Agent** paneel in die WordPress-admin-sidebar oop. Tik 'n natuurlike taal-instruksie en die agent sal die vereiste stappe beplan en uitvoer met behulp van sy beskikbare abilities.
+
+**Voorbeeld-instruksies:**
+
+```
+Skep 'n "Portfolio" aangepaste posgype met 'n "Project Category" taksonomie.
+```
+
+```
+Spuit 'n donker-modus kleurepalet in die tema in en stel die primêre kleur op #1a1a2e.
+```
+
+```
+Bou 'n restaurantwebwerf met 'n aanlyn-menu, besprekingsvorm, en kontakbladsy.
+```
+
+## Abilities Oorsig
+
+Abilities is die atomiese aksies wat die agent kan uitvoer. Elke ability is 'n geregistreerde PHP-klas wat 'n skema (parameters en terugkeer-tipe) blootmaak wat die agent tydens die uitvoering lees. Abilities word gegroepeer in funksionele areas:
+
+| Area | Abilities |
+|---|---|
+| **Inhoudbestuur** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visuele Beoordeling** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Ontwerpstelsel** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globale Stile** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigasie-menu's** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options bestuur** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installeerbare Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Kyk na die [Abilities Reference](./abilities) vir volledige parameterdokumentasie en gebruikersvoorbeelde.
+
+## WP-CLI
+
+Gratis AI Agent verskaf 'n `wp gratis-ai-agent` commando-familie vir die hardloop van benchmarks en die bestuur van abilities vanaf die lêlyn. Kyk na die [WP-CLI Reference](./wp-cli) vir die volledige commando-lys.
+
+```bash
+# Hardloop die volledige benchmark-suite
+wp gratis-ai-agent benchmark
+
+# Lys geïnstalleerde abilities
+wp gratis-ai-agent abilities list
+
+# Installeer 'n ability-pakket
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurasie
+
+Alle instellings is onder **Gratis AI Agent → Settings** in die WordPress-admin:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | Kies en konfigureer die aktiewe AI-verskaffer-verbindingsplugin |
+| **Model** | Kies die taalmodel wat vir agent-sessies gebruik moet word |
+| **Max Tokens** | Per-versoek token-begroting (standaard 4096) |
+| **Ability Timeout** | Maksimum sekondes wat 'n individuele ability kan hardloop (standaard 30) |
+| **Debug Logging** | Log ability-oproepe en agent-redenering na die WordPress-debug-log |
+
+## Options Bestuur Veiligheidsbloklys
+
+Die Options Bestuur ability sluit 'n ingeboude bloklys in wat die agent verhoed om sensitiewe WordPress-opsies te lees of te skryf. Die standaard bloklys dek:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-opsies — gebruik 'n toegewyde migrasie-instrument vir hierdie)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (geheime sleutels)
+- `active_plugins`, `template` (plugin/tema-aktivering — gebruik toegewyde abilities)
+- Betalingshekwerk-wagwoord en API-sleutels wat deur geïnstalleerde plugins geregistreer word
+
+Bykomende entries kan bygevoeg word via die `gratis_ai_agent_options_blocklist` filter.
+
+## Hooks en Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — gevuur nadat 'n ability geregistreer is, ontvang die ability-klasnaam
+- `gratis_ai_agent_plan_started` — gevuur wanneer 'n webwerfbouplan begin uitvoer
+- `gratis_ai_agent_plan_completed` — gevuur wanneer 'n plan suksesvol voltooi is
+- `gratis_ai_agent_plan_failed` — gevuur wanneer 'n plan 'n onherstelbare fout ondervind
+
+### Filters
+
+- `gratis_ai_agent_abilities` — wysig die geregistreerde ability-lys voordat die agent dit laai
+- `gratis_ai_agent_options_blocklist` — uitgebrei of verminder die options veiligheidsbloklys
+- `gratis_ai_agent_benchmark_questions` — voeg aangepaste benchmark-vrae by tot die beoordelingssuite
+- `gratis_ai_agent_plan_plugins` — wysig die plugin-ontdekkingslys tydens die webwerfplan-generasie
+
+## Ondersteuning
+
+Vir ondersteuning, besoek [ultimatemultisite.com](https://ultimatemultisite.com) of maak 'n kwessie in die plugin-repository.
+
+## Changelog
+
+Kyk na die [Changelog](./changelog) vir die volledige weergawegeskiedenis.

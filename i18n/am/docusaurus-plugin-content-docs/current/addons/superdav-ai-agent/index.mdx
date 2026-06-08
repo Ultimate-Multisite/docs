@@ -1,0 +1,161 @@
+---
+title: ስူፐርዳቭ AI ኤጀንት
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent በGratis AI Agent ላይ የተገነባ የላቀ WordPress AI ረዳት ሲሆን፣ የንድፍ (Theme) ግንዛቤ ያላቸው ችሎታዎችን፣ የተሻሻለ የኢንተርኔት ፍለጋ አቅም እና የተሻሻሉ የsite builder ባህሪያትን ይጨምራል። የ1.16.0 ስሪት አዲስ የቅንጥብ (logo) መፍጠር፣ የቀለም ጥምረት ንፅፅር ማረጋገጫ (palette contrast validation)፣ በdiscovery interview ውስጥ ፎቶዎችን መስቀል፣ የተዋቀረ የሆስፒታሊቲ ምናሌ መፍጠር እና በTheme Builder ውስጥ የዴስክቶፕ/ሞባይል ቅድመ-እይታን (preview) ጨምሯል።
+
+## ቁልፍ ባህሪያት (Key Features)
+
+- **በንድፍ (Theme) ላይ የተመሰረቱ ችሎታዎች** — በንቁ የWordPress ንድፍዎ (Theme) እና በተጫኑ የplugins መሰረት መመሪያዎችን እና አቅሞችን በራስ-ሰር ያስተካክላል።
+- **በርካታ የኢንተርኔት ፍለጋ አቅራቢዎች** — ለበለጠ የበለጸገ የፍለጋ ውጤት እና ለላቀ ምርምር አቅም በBrave Search እና በTavily መካከል መምረጥ ይችላሉ።
+- **የSite Builder የእውቂያ ቅጾች** — በየተጫኑ የform pluginዎ አማካኝነት በቀጥታ ከቻት በይነገጽ (chat interface) ሙሉ በሙሉ የሚሰሩ የእውቂያ ቅጾችን ይፍጠሩ።
+- **የተሻሻለ Site Builder** — የተሻለ የplugin ፍለጋ እና የስህተት መልሶ ማገገም (error recovery) ባለው የተሻሻለ ባለ ብዙ ደረጃ የsite build ዕቅዶች።
+- **በውስጥ የተካተቱ የንድፍ ችሎታዎች** — ለBlock Themes፣ Classic Themes፣ Kadence Blocks እና Kadence Theme ልዩ መመሪያዎችን ይሰጣል።
+- **የተሻሻለ WooCommerce ውህደት** — የተሻለ አስተማማኝነት እና ተኳሃኝነት (compatibility) ለማግኘት በnative WooCommerce APIs ጥቅም ላይ እንዲውል እንደገና ተስተካክሏል።
+- **በራስ-ሰር አቅራቢ መለየት** — plugins እና themes ሲበራከሉ ወይም ሲሰረዙ የሚገኙትን plugins እና themes በራስ-ሰር ይለየዋል እና ያድሳል።
+- **የቅንጥብ (Logo) መፍጠር** — በራስ-ሰር namespace-safe sanitisation ባለው የቅንጥብ SVG ሎጎዎችን ይፍጠሩ እና ይለጥፉ።
+- **የቀለም ጥምረት ንፅፅር ማረጋገጫ** — ለንድፍዎ ከመተግበሩ በፊት የቀለም ጥምረቶችን ለWCAG ተደራሽነት መስፈርቶች ይፈትሹ።
+- **በፎቶ የተጎለበተ ግኝት** — የንድፍ አቅጣጫን ለመምራት በTheme Builder discovery interview ወቅት ፎቶዎችን መስቀል ይችላሉ።
+- **የሆስፒታሊቲ ምናሌዎች** — ለሬስቶራንቶች፣ ለካፌዎች እና ለሆስፒታሊቲ ንግዶች የተዋቀሩ የምግብ እና የመጠጥ ምናሌ ገጾችን ይፍጠራል።
+- **የዴስክቶፕ እና የሞባይል ቅድመ-እይታዎች** — የንድፍ አቅጣጫ ሲመርጡ በዴስክቶፕ እና በሞባይል መሳሪያዎች ላይ ዲዛይኑን ቅድመ-እይታ (preview) ይመልከቱ።
+- **የTier 1 site scraping** — sd-ai-agent/site-scrape አሁን በነባሪነት ተገኝቷል፤ ይህም ተወዳዳሪ እና የልማት ድረ-ገጾችን ለመተንተን ይረዳል።
+
+## መስፈርቶች (Requirements)
+
+- WordPress 6.0 ወይም ከዚያ በላይ
+- PHP 8.1 ወይም ከዚያ በላይ
+- WordPress Multisite (network-activated) ወይም single-site installation
+- ንቁ የAI provider connector plugin (Anthropic, OpenAI, ወይም ተኳሃኝ)
+- Gratis AI Agent v1.9.0 ወይም ከዚያ በላይ (Superdav AI Agent የGratis AI Agentን ያሰፋል)
+
+## መጫን (Installation)
+
+1. የplugin ፋይሎችን ወደ `/wp-content/plugins/superdav-ai-agent` ይስቀሉ።
+2. በWordPress ውስጥ ባለው **Plugins** ስክሪን አማካኝነት plugin ን ያንቁ።
+3. Gratis AI Agent እንዲሁ መብራቅ (activated) መሆኑን ያረጋግጡ።
+4. ወደ **Gratis AI Agent → Settings** ይሂዱ እና የኢንተርኔት ፍለጋ አቅራቢዎን ያዘጋጁ (አማራጭ)።
+
+## በፍጥነት መጀመር (Quick Start)
+
+በመብራቅ (activated) ከተደረገ በኋላ፣ Superdav AI Agent የGratis AI Agent installation ን በራስ-ሰር በንድፍ (theme-aware) ችሎታዎች እና ተጨማሪ አቅሞች ያሳድጋል። በWordPress admin sidebar ውስጥ ያለውን **Gratis AI Agent** ፓነል ይክፈቱ እና አዳዲስ ባህሪያትን መጠቀም ይጀምሩ።
+
+**የምሳሌ መመሪያዎች:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## በንድፍ ላይ የተመሰረቱ ችሎታዎች (Theme-Aware Skills)
+
+Superdav AI Agent ንቁ የንድፍዎን (theme) እና የተጫኑ የplugins በራስ-ሰር ይለየዋል፣ እና ተገቢውን በንድፍ ላይ የተመሰረተ ችሎታ ወደ ረዳቱ አውድ (context) ያስገባል። የሚገኙ ችሎታዎች የሚከተሉትን ያካትታሉ፦
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | የWordPress block-based (Full Site Editing) አርክቴክቸርን የሚጠቀሙ ንድፎች (Themes) |
+| **Classic Themes** | የPHP templates እና የclassic editorን የሚጠቀሙ ባህላዊ የWordPress ንድፎች (Themes) |
+| **Kadence Blocks** | የKadence Blocks plugin ን ባለው ድረ-ገጽ (Sites) |
+| **Kadence Theme** | የKadence theme ን እንደ ንቁ ንድፍ (active theme) ባለው ድረ-ገጽ (Sites) |
+
+በእያንዳንዱ ችሎታ ላይ ዝርዝር መመሪያ ለማግኘት [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) ይመልከቱ።
+
+## የኢንተርኔት ፍለጋ አቅራቢዎች (Internet Search Providers)
+
+Superdav AI Agent v1.10.0 ለኢንተርኔት ፍለጋ ጥያቄዎች ከBrave Search በተጨማሪ **Tavily**ን አክራሪ አቅራቢ አድርጓል። ሁለቱም አቅራቢዎች በቅጽበት የፍለጋ ውጤቶችን ይሰጣል እና በ**Gratis AI Agent → Settings → Advanced** ውስጥ ሊዘጋጁ ይችላሉ።
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | ፈጣን፣ ለግላዊነት ትኩረት የሰጠ የፍለጋ ውጤቶች | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | የበለጸጉ የፍለጋ ውጤቶች፣ የላቀ ምርምር አቅሞች | [Tavily API](https://tavily.com/) |
+
+ለማዋቀር መመሪያዎች [Internet Search](../../user-guide/configuration/internet-search) ይመልከቱ።
+
+## የSite Builder የእውቂያ ቅጾች (Site Builder Contact Forms)
+
+የSite Builder agent አሁን በቀጥታ ከቻት በይነገጽ የእውቂያ ቅጾችን መፍጠር ይችላል። Site Builder ቅጽበታዊ የውይይት (chat) ጥያቄ በመጠየቅ፣ የተጫኑ የform pluginዎን (Contact Form 7, WPForms, Fluent Forms, ወይም Gravity Forms) በራስ-ሰር ይለየዋል እና ለመጠቀም ዝግጁ የሆነ form ይፈጥራል።
+
+ለዝርዝር መመሪያዎች [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) ይመልከቱ።
+
+## የTheme Builder ባህሪያት (Theme Builder Features)
+
+በSuperdav AI Agent v1.16.0 ውስጥ ያለው Theme Builder ኃይለኛ አዳዲስ አቅሞችን ይዟል፦
+
+### በፎቶ የተጎለበተ የግኝት ቃለ-መጠይቅ (Discovery Interview with Photo Upload)
+
+የTheme Builder discovery interview አሁን የፎቶ መስቀል ደረጃን ይጨምራል፤ እዚህ ላይ የእይታ መነሳሳት (visual inspiration) ሊሰጡ ይችላሉ። የብራንድዎን፣ የተወዳዳሪ ድረ-ገጾችን ወይም የንድፍ መነሳሳት ፎቶዎችን በመስቀል Theme Builder የንድፍ አቅጣጫዎን እንዲረዳው ይረዳሉ።
+
+ለዝርዝር መመሪያዎች [Discovery Interview](./theme-builder/discovery-interview.md) ይመልከቱ።
+
+### በዴስክቶፕ እና በሞባይል ቅድመ-እይታ የንድፍ አቅጣጫ (Design Direction with Desktop and Mobile Previews)
+
+Theme Builder ሙሉ ንድፍዎን ከመፍጠሩ በፊት በዴስክቶፕ እና በሞባይል መሳሪያዎች ላይ ዲዛይኑን ይገምግሙ። በተለያዩ ተላላፊ (responsive) የብሬክፖይንት ላይ በቅጽበት ቅድመ-እይታዎችን ይመልከቱ።
+
+ለዝርዝር መመሪያዎች [Design Direction](./theme-builder/design-direction.md) ይመልከቱ።
+
+### የሆስፒታሊቲ ምናሌዎች (Hospitality Menus)
+
+Theme Builder አሁን ለሬስቶራንቶች፣ ለካፌዎች፣ ለባሮች እና ለሌሎች የሆስፒታሊቲ ንግዶች የተዋቀሩ የምግብ እና የመጠጥ ምናሌ ገጾችን መፍጠር ይችላል። ምናሌዎቹ ዋጋን፣ መግለጫዎችን፣ የአመጋገብ መረጃዎችን እና የአለርጂ ማስጠንቀቂያዎችን ያካትታሉ።
+
+ለዝርዝር መመሪያዎች [Hospitality Menus](./theme-builder/hospitality-menus.md) ይመልከቱ።
+
+### አዳዲስ አቅሞች (New Abilities)
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — በራስ-ሰር sanitisation ባለው የቅንጥብ SVG ሎጎዎችን ይፍጠሩ
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — የቀለም ጥምረቶችን ለWCAG ተስማሚነት ይፈትሹ
+- **[Create Menu](./abilities/create-menu.md)** — በግልጽ የጉዞ መለያዎች (navigation labels) የनेቪጌሽን ምናሌዎችን ይፍጠሩ
+
+በሚገኙ መሳሪያዎች እና በTier 1 site-scrape tool መረጃ ለማግኘት [Tools and Configuration](./theme-builder/tools.md) ይመልከቱ።
+
+## ማዋቀር (Configuration)
+
+ሁሉም ቅንብሮች በWordPress admin ውስጥ በ**Gratis AI Agent → Settings** ስር ናቸው። Superdav AI Agent የሚከተሉትን የማዋቀር አማራጮች ይጨምራል፦
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | በBrave Search እና Tavily መካከል ይምረጡ (አማራጭ) |
+| **Tavily API Key** | ለTavily የኢንተርኔት ፍለጋ API ቁልፍ (Tavily ከተመረጠ) |
+
+## በv1.16.0 የተሻሻሉ ነገሮች (Improvements in v1.16.0)
+
+- **AI Client cache** — አሁን በtransients የተደገፈ ነው፤ ይህም ረጅም ጊዜ የሚቆዩ የagent ስራዎች ላይ የውሂብ መጥፋትን ይከላከላል።
+- **Tier 1 site-scrape tool** — sd-ai-agent/site-scrape አሁን በTheme Builder ውስጥ በነባሪነት ተገኝቷል፤ ይህም ተወዳዳሪ እና የልማት ድረ-ገጾችን ለመተንተን ይረዳል።
+- **Plugin row action links** — ግልጽነት እንዲኖረው ተስተካክሏል እና ስሙ ተቀይሯል።
+
+## በv1.10.0 የተሻሻሉ ነገሮች (Improvements in v1.10.0)
+
+- **WooCommerce integration refactored** — አሁን የተሻለ አስተማማኝነት እና ተኳሃኝነት ለማግኘት በnative WooCommerce APIs ጥቅም ላይ ይውላል።
+- **Provider list auto-refresh** — plugins ሲበራከሉ ወይም ሲሰረዙ በራስ-ሰር ይለየዋል እና የሚገኙትን አቅራቢዎች ዝርዝር ያድሳል።
+- **Enhanced site builder** — የተሻለ የስህተት መልሶ ማገገም ባለው የተሻሻለ ባለ ብዙ ደረጃ የsite build ዕቅዶች።
+- **Theme-aware skills** — በንቁ ንድፍዎ (active theme) በራስ-ሰር የሚላመዱ አራት አዳዲስ የተካተቱ ችሎታዎች።
+
+## በv1.10.0 የተስተካከሉ ስህተቶች (Bug Fixes in v1.10.0)
+
+- በአንዳንድ የአስተዳደር ገጾች ላይ የማያቋርጥ የreload ዑደት (infinite reload loops) የፈጠረውን `navigate-to` ችሎታ ተስተካክሏል።
+- የcategory እና tag ስሞችን ወደ slugs በትክክል ያልተፈቱበትን `list-posts` ችሎታ ተስተካክሏል።
+- ቀደም ባለው refactor ምክንያት የWP-CLI ትዕዛዞች namespace aliases የጎደሉበትን ተስተካክሏል።
+- የautomation tables ገና ባልተፈጠሩባቸው ድረ-ገጾች ላይ በgracefully የሚያስተናግድበትን event automation ተስተካክሏል።
+- በsystem instruction builder ውስጥ ትክክለኛውን namespace prefix የተጠቀመበትን `memory-save` ችሎታ ተስተካክሏል።
+- የscalar tool ውጤቶች ወደ AI ከመመለሳቸው በፊት በትክክል ተጠቅልለውበት (wrapped) መቅረብ ተስተካክሏል።
+- የusage statistics በየድሮው የability key format ላይ ትክክለኛውን አያያዝ ሲያደርጉ ከድሮ ስሪቶች ሲሻሻሉ ተስተካክሏል።
+
+## ድጋፍ (Support)
+
+ለድጋፍ፣ [ultimatemultisite.com](https://ultimatemultisite.com) ይጎብኙ ወይም በplugin repository ውስጥ ችግር ይከፍሉ።
+
+## የለውጥ መዝገብ (Changelog)
+
+ሙሉ የስሪት ታሪክን ለማየት [Changelog](./changelog) ይመልከቱ።

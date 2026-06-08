@@ -1,0 +1,124 @@
+---
+title: AI সাইট বিল্ডাৰ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## সফলতাৰ বাবে প্ৰয়োজনীয়তা (Requirements)
+
+- WordPress ৫.৩ বা তাৰ অধিক
+- PHP ৭.৪ বা তাৰ অধিক
+- Multisite Ultimate plugin (সক্ৰিয়)
+
+## স্থাপন (Installation)
+
+১. অ্যাডন ফাইলবোৰ আপোনাৰ `/wp-content/plugins/` ডাইৰেক্টৰীত আপলোড কৰক।
+২. WordPress-ৰ 'Plugins' মেনুৰ মাজেৰে plugin টি active কৰক।
+৩. network admin ত অ্যাডনৰ settings configure কৰক।
+
+## ডেভেলপমেন্ট (Development)
+
+### সেটআপ (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### প্ৰজেক্টৰ গঠন (Project Structure)
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### টেস্টিং (Testing)
+
+এই অ্যাডনটোৱে এটা বিস্তৃত টেস্টিং framework অন্তৰ্ভুক্ত কৰে:
+
+- **Unit Tests**: WordPress test suite লগত PHPUnit-based টেস্টিং।
+- **Base Test Class**: সাধাৰণ টেস্টিং scenario-ৰ বাবে helper methods যোগান ধৰে।
+- **Test Coverage**: code coverage ট্ৰেক কৰিবলৈ configure কৰা হৈছে।
+- **Multisite Testing**: টেস্টিংবোৰ multisite environment ত চলি।
+
+### কোড মানদণ্ড (Code Standards)
+
+- **WordPress Coding Standards**: PHPCS মাজেৰে বলবৎ কৰা হয়।
+- **PHP ৭.৪+ Compatibility**: আধুনিক PHP features সমৰ্থন কৰে।
+- **Static Analysis**: type checking-ৰ বাবে PHPStan ইন্টিগ্ৰেচন।
+- **Code Modernization**: PHP upgrades-ৰ বাবে Rector rules।
+
+### বিল্ড ছিষ্টেম (Build System)
+
+- **Asset Processing**: CSS/JS ফাইলবোৰৰ বাবে Minification।
+- **Translation**: POT file generation।
+- **Packaging**: বিতৰণৰ বাবে Archive সৃষ্টি।
+- **Development Mode**: Debugging-ৰ বাবে Unminified assets।
+
+## কনফিগাৰেচন (Configuration)
+
+এই অ্যাডনটোৱে network admin interface মাজেৰে উপলব্ধ বিভিন্ন কনফিগাৰেচন বিকল্প সমৰ্থন কৰে।
+
+## Hooks and Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - অ্যাডন initialize হোৱাৰ পাছত trigger হয়।
+- `ultimate-multisite-ai-site-builder_loaded` - সকলো অ্যাডন ফাইল load হোৱাৰ পাছত trigger হয়।
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - অ্যাডনৰ settings modify কৰিব পাৰে।
+- `ultimate-multisite-ai-site-builder_enabled` - অ্যাডন enable/disable status-ক override কৰিব পাৰে।
+
+## লাইচেঞ্চ (License)
+
+এই অ্যাডনটো GPL v3 বা তাৰ অধিকৰ অধীনত লাইচেঞ্চ কৰা হৈছে।
+
+## সহায় (Support)
+
+সহায় আৰু ডকুমেন্টেশ্যনৰ বাবে, [MultisiteUltimate.com](https://multisiteultimate.com) লওক।
+## Changelog
+
+- Version 1.0.1 (2025-09-28): prefix 'ultimate-multisite' লৈ rename কৰা হ'ল; text domain update কৰা হ'ল; version bump।
+
+
+- Version (2025-09-28): prefix 'ultimate-multisite' লৈ rename কৰা হ'ল; text domain update কৰা হ'ল; version bump।

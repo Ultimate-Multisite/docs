@@ -1,0 +1,114 @@
+---
+title: E-posse
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-pos
+
+Die Ultimate Multisite: E-pos bykomend laat netwerk-eienaars toe om kliënt-e-pos rekeninge te voorsien en te bestuur saam met webwerwe en lidmaatskappe. Weergawe 1.1.0 voeg kliënt-kant e-pos rekeningbestuur, webmail single sign-on, CyberPanel forwarder ondersteuning, en verbeterings aan by tyd van uitrekening (checkout).
+
+## Sleutelkenmerke
+
+* **Kliënt-e-pos rekening-widget**: Kliënte kan e-pos rekeninge skep en bestuur vanaf hul rekeningsblad sonder om 'n ondersteuningskaartjie te open.
+* **Webmail SSO en magiese skakels**: Kliënte kan webmail direk vanaf die rekeningsblad oopmaak met eend-klik outentisering wanneer die voorsienaar dit ondersteun.
+* **Wagwoordveranderinge**: Kliënte en administrateurs kan wagwoord van e-pos posbusse by die e-posbestuur-widget opdateer.
+* **Uitrekening-voorsiening**: Die skep van kliënt-e-pos rekeninge kan tydens die uitrekening plaasvind sodat die posbus gereed is nadat die aankoopproses voltooi is.
+* **CyberPanel forwarders**: Netwerke wat deur CyberPanel ondersteun word, kan e-pos forwarders skep en bestuur as deel van die e-posdiensvloei.
+* **Voorsienaar-bewuste instellings**: Die instellingsbladsy filter voorsieners na aktiewe, geconfigureerde integrasies sodat administrateurs slegs bruikbare opsies sien.
+
+## Vereistes
+
+* Ultimate Multisite 2.0.0 of hoër
+* WordPress Multisite-installasie
+* Ten minste een geconfigureerde e-pos voorsienaar-integrasie
+* Voorsienaar API-wagwoord met toestemming om posbusse te skep, wagwoorde te verander en webmail-toegangskakke uit te reik waar ondersteun.
+
+## Instalering
+
+1. Laai die plugin-lêre op na `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktiveer die bykomend vanaf **Plugins** in die WordPress netwerkadministrasie.
+3. Gaan na **Ultimate Multisite** > **Settings** en maak die bykomend e-posinstellings oop.
+4. Aktiveer die e-pos voorsienaar-integrasies wat jy wil hê kliënte moet gebruik.
+5. Stoor die instellings, en toets dan rekening skep met 'n nie-produksie kliënt of staging-webwerf.
+
+## Kliënt-rekening E-pos Bestuur
+
+Weergawe 1.1.0 voeg 'n e-pos bestuur-widget by die kliëntrekeningsblad. Gebruik dit wanneer kliënte self-diens posbus skep en onderhou vir hul eie webwerwe.
+
+Vanaf die rekeningsblad kan kliënte:
+
+1. E-pos rekeninge sien wat aan hul huidige lidmaatskap of webwerf gekoppel is.
+2. 'n Nuwe posbus skep wanneer hul plan bykomende rekeninge toelaat.
+3. Die wagwoord van 'n bestaande posbus verander.
+4. Ondersteunde webmail voorsieners oopmaak deur SSO of 'n magiese skakel-aanmelding.
+
+Die widget gebruik die Ultimate Multisite rekeningsblad-huidige stelsel, sodat aksies beperk word tot die rekenmingkonteks wat die kliënt sien. Dit verhoed dat kliënte e-pos rekeninge bestuur wat aan 'n ander lidmaatskap of webwerf behoort.
+
+## Webmail SSO en Magiese Skakel-Aanmelding
+
+Webmail SSO gee kliënte 'n direkte **Open webmail** aksie vanaf die rekeningsblad. Wanneer dit deur die aktiewe voorsienaar ondersteun word, versoek die bykomend 'n kort-lewensduur toegangsvoorbeeld en herlei die kliënt na webmail sonder om hulle te vra om posbuswagwoordgegevens te kopieer.
+
+Voorsienaar-gedrag kan verskil:
+
+* Voorsieners met natuurlike SSO API's kan 'n direkte outentiseerde webmail-sessie skep.
+* Voorsieners met magiese skakel-ondersteuning kan 'n tydbeperkte aanmeldingsskakel genereer.
+* Voorsieners sonder SSO of magiese skakel-ondersteuning moet steeds die posbusbesonderhede en wagwoordbestuur-aksies wys, maar geen eend-klik webmail-knoppie nie.
+
+Aktiveer webmail-toegang slegs vir voorsieners waar jy die vereiste API-wagwoorde geconfigureer het. As die aksie vir 'n voorsienaar ontbreek, bevestig eers dat die voorsienaar aktief, geconfigureer en webmail-aanmeldingsskakels ondersteun word.
+
+## Uitrekening-Voorsiening
+
+Die bykomend kan kliënt-e-pos rekeninge skep as deel van die uitrekening. Dit is nuttig wanneer die plan standaard 'n posbus insluit of wanneer die uitrekeningsformulier e-pos-rekeningbesonderhede insamel.
+
+Aanbevole uitrol:
+
+1. Konfigureer die voorsienaar en planlimiete voordat jy uitrekening-voorsiening aktiveer.
+2. Toets 'n aankoop met 'n staging-produk en bevestig dat die posbus geskep word na die uitrekening.
+3. Hersien die kliëntrekeningsblad om te bevestig dat die nuwe posbus in die e-pos-widget verskyn.
+4. Bevestig wagwoordverandering- en webmail-aksies voordat jy die vloei vir produkte aktiveer.
+
+Indien die voorsiening misluk, kan die kliëntrekening en lidmaatskap steeds bestaan terwyl die posbus administrasie-opvolging benodig. Kontroleer die Ultimate Multisite aktiwiteitslogboeke en die voorsienaar-logboeke voordat jy herhaal.
+
+## CyberPanel E-pos Forwarders
+
+Vir CyberPanel-ondersteunde netwerke voeg weergawe 1.1.0 e-pos forwarder ondersteuning by. Gebruik forwarders wanneer kliënte adresse benodig soos `info@klient-domein.test` om e-pos na 'n ander posbus te herlei sonder om 'n volledige posbus te skep.
+
+Voordat jy forwarders aanbied, bevestig dat die CyberPanel-integrasie geconfigureer en bereikbaar is. Kyk na die [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) gids vir die vereiste gasheer, gebruikersnaam, wagwoord en pakketkonstantes.
+
+## Veranderingslogboek
+
+### Weergawe 1.1.0 - Vrygestel op 2026-05-05
+
+* Nuut: Webmail SSO en magiese skakel-aanmelding — kliënte kan direk vanaf hul rekening webmail met eend-klik outentisering oopmaak.
+* Nuut: Wagwoordveranderingsfunksionaliteit bygevoeg aan die e-pos rekeningbestuur-widget.
+* Nuut: CyberPanel e-pos forwarder ondersteuning.
+* Nuut: E-pos bestuur-widget op die kliëntrekeningsblad vir self-diens rekening skep en bestuur.
+* Nuut: Kliënt-e-pos rekening skep geïntegreer in die uitrekeningsvloei vir outomatiese voorsiening.
+* Herstel: Rekingsblad-widget-haak opgedateer om die korrekte UMS-registrasiepatroon te gebruik.
+* Herstel: Skep Rekening-formulier vervang met vanilla JS en korrek volledige HTML-dokumentuitvoer.
+* Herstel: E-pos bestuur-widget gebruik nou die UMS currents stelsel vir admin rekeningsbladsye.
+* Herstel: Admin e-pos rekening skep-formulier sluit wagwoordveld in en gebruik Email_Account_Manager.
+* Herstel: Per-versoek log spam verwyder uit Email_Account_Manager inisiële.
+* Verbeter: Instellingsbladsy filter nou om slegs aktiewe en gekonfigureerde e-pos voorsieners te wys.
+
+## Algemene Vrae
+
+## Kan kliënte hul eie e-pos rekeninge skep?
+
+Ja. Wanneer die kliëntrekening-widget geaktiveer is en die plan e-pos rekeninge toelaat, kan kliënte hul eie posbusse skep en bestuur vanaf die rekeningsblad.
+
+## Ondersteun elke voorsienaar webmail SSO?
+
+Nee. SSO- en magiese skakel-ondersteuning hang af van die aktiewe e-pos voorsienaar. Voorsieners sonder 'n toegangskakel API kan steeds posbus skep en wagwoorde verander.
+
+## Kan administrateurs e-pos rekeninge vir kliënte skep?
+
+Ja. Administrateurs kan e-pos rekeninge skep vanaf die admin-koppelvlak, insluitend die stel van die aanvanklike wagwoord wanneer die rekening geskep word.
+
+## Is forwarders dieselfde as posbusse?
+
+Nee. 'n Posbus stoor e-pos en het aanmeldingswagwoorde. 'n Forwarder herlei e-pos na 'n ander adres en verskaf nie 'n aparte posbus nie.

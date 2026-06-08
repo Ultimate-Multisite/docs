@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "ডকুমেন্টেশ্বন",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "কমিউনিটি",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "আৰু",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "प्रयोगकर्ता গাইড",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "ডেভেলপৰ ডকছ",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "অ্যাড-অনসমূহ",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub আলোচনা",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "দৰ্হি",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "কপিৰাইট © ২০২৬ আল্টিমেট মাল্টিসাইট।",
+    "description": "Footer copyright"
+  }
+}

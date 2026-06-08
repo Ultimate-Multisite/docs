@@ -1,0 +1,22 @@
+---
+id: wu_register_capabilities
+title: Action - wu_register_capabilities
+sidebar_label: wu_register_capabilities
+_i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
+---
+# Action: wu_register_capabilities
+
+এইটো Action কল কৰা হয় যাতে Addons-বোৰে Integrations-লৈ capability modules যোগ কৰিব পাৰে।
+
+## প্যারামিটাৰসমূহ
+
+| নাম | ধৰণ | বিৱৰণ |
+|------|------|-------------|
+| $registry | `\Integration_Registry` | রেজিষ্ট্ৰিৰ এটা প্ৰতিলিপি (instance)। |
+
+### কবেৰে পৰা
+
+- 2.5.0
+### উৎস
+
+এইটো [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L148) ফাইলৰ লাইন ১৪৮ত সংজ্ঞায়িত কৰা হৈছে।
