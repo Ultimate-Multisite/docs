@@ -1,0 +1,114 @@
+---
+title: E-maily
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-maily
+
+Addon Ultimate Multisite: E-maily umožňuje majitelům sítě vytvářet a spravovat e-mailové účty zákazníků vedle webových stránek a členství. Verze 1.1.0 přidává správu e-mailových účtů pro zákazníky, přihlašování do webmailu pomocí SSO, podporu přepravářů CyberPanel a vylepšuje vytváření účtů během pokladny.
+
+## Klíčové funkce
+
+* **Widget pro e-mailové účty zákazníků**: Zákazníci mohou vytvářet a spravovat e-mailové účty přímo ze svého účetního panelu bez nutnosti odesílání žádosti do podpory.
+* **Webmail SSO a magické odkazy**: Zákazníci mohou webmail otevřít přímo ze svého účetního panelu s jednoklepkovým přihlášením, pokud to poskytovatel podporuje.
+* **Změna hesla**: Zákazníci i administrátoři mohou aktualizovat hesla pro e-mailové schránky z widgetu pro správu e-mailů.
+* **Vytváření účtů při pokladně**: Vytváření e-mailových účtů zákazníků může probíhat během pokladny, takže e-mailové schránky budou připraveny po dokončení procesu nákupu.
+* **Přepraváře CyberPanel**: Sítě založené na CyberPanelu mohou vytvářet a spravovat e-mailové přepraváře jako součást procesu e-mailové služby.
+* **Nastavení s ohledem na poskytovatele**: Stránka nastavení filtrovuje poskytovatele tak, aby zobrazovala pouze aktivní a nakonfigurované integrace, takže administrátor vidí pouze použitelné možnosti.
+
+## Požadavky
+
+* Ultimate Multisite 2.0.0 nebo vyšší
+* Instalace WordPress Multisite
+* Alespoň jedna nakonfigurovaná integrace poskytovatele e-mailů
+* Úméno API poskytovatele s oprávněním k vytváření e-mailových schránek, změně hesel a vydávání odkazů k webmailu, tam kde je to podporováno
+
+## Instalace
+
+1. Nahrajte soubory pluginu do adresáře `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktivujte addon v rámci sítě z panelu **Plugins** v administraci sítě WordPress.
+3. Přejděte na **Ultimate Multisite** > **Settings** a otevřete nastavení e-mailu addon.
+4. Aktivujte integrace poskytovatelů e-mailů, které chcete, aby zákazníci používali.
+5. Uložte nastavení a poté otestujte vytváření účtu pomocí zákazníka, který není v produkci, nebo na testovacím prostředí.
+
+## Správa e-mailových účtů zákazníků
+
+Verze 1.1.0 přidává widget pro správu e-mailů na stránku účtu zákazníka. Použijte ho, když mají zákazníci možnost sami spravovat vytváření a údržbu e-mailových schránek pro své vlastní weby.
+
+Z účetního panelu mohou zákazníci:
+
+1. Zobrazit e-mailové účty spojené s jejich aktuálním členstvím nebo webem.
+2. Vytvořit nové e-mailové schránky, pokud jejich plán umožňuje přidání dalších účtů.
+3. Změnit heslo stávajícího e-mailového schránku.
+4. Otevřít podporované webmailové poskytovatele pomocí SSO nebo přihlášení magickým odkazem.
+
+Widget využívá systém účetního panelu Ultimate Multisite, takže akce jsou omezeny na kontext účtu, který zákazník prohlíží. To brání zákazníkům spravovat e-mailové účty, které patří jinému členství nebo webu.
+
+## Webmail SSO a přihlášení magickým odkazem
+
+Webmail SSO poskytuje zákazníkům přímou akci **Open webmail** ze stránky účtu. Pokud je to podporováno aktivním poskytovatelem, addon požádá o krátkodobý přístupový URL a přesměruje zákazníka do webmailu bez nutnosti, aby kopíroval údaje o e-mailovém schránce.
+
+Chování poskytovatelů se může lišit:
+
+* Poskytovatelé s nativními API pro SSO mohou vytvořit přímou ověřenou webmailovou sezení.
+* Poskytovatelé s podporou magických odkazů mohou vygenerovat časově omezený přihlašovací odkaz.
+* Poskytovatelé bez podpory SSO nebo magických odkazů by měli stále zobrazovat detaily e-mailového schránku a akce pro správu hesel, ale bez tlačítka pro webmail jedním kliknutím.
+
+Aktivujte přístup k webmailu pouze pro poskytovatele, pro které jste nakonfigurovali požadované API údaje. Pokud je pro poskytovatele akce chybějící, nejprve potvrďte, že je poskytovatel aktivní, nakonfigurován a podporuje odkazy pro přihlášení do webmailu.
+
+## Vytváření účtů při pokladně
+
+Addon může vytvářet e-mailové účty zákazníků jako součást pokladny. Je to užitečné, když plán výchozíně zahrnuje e-mailové schránky nebo když formulář pokladny sbírá údaje o e-mailových účtech.
+
+Doporučený postup:
+
+1. Nakonfigurujte poskytovatele a limity plánů, než povolíte vytváření účtů při pokladně.
+2. Otestujte nákup s produktem pro testování a potvrďte, že e-mailové schránky jsou vytvořeny po pokladně.
+3. Projděte si stránku účtu zákazníka, abyste potvrdili, že nové e-mailové schránky se objeví v widgetu pro e-maily.
+4. Potvrďte akce změny hesla a webmailu, než povolíte proces pro produkční produkty.
+
+Pokud selže vytváření účtů, účet a členství zákazníka mohou stále existovat, zatímco e-mailové schránky vyžadují dohled administrátora. Před opakovanou pokusy zkontrolujte záznamy aktivit Ultimate Multisite a záznamy poskytovatele.
+
+## Přepraváře e-mailů CyberPanel
+
+Pro sítě založené na CyberPanelu přidává verze 1.1.0 podporu e-mailových přepravářů. Použijte přepraváře, když zákazníci potřebují adresy jako `info@customer-domain.test` k přesměrování e-mailu na jinou schránku bez vytváření plnohodnotného e-mailového schránku.
+
+Než nabídnete přepraváře, potvrďte, že integrace CyberPanelu je nakonfigurována a dostupná. Podrobnější informace o požadovaných konstantách pro hostitele, uživatele, heslo a balíčky naleznete v průvodci [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration).
+
+## Changelog
+
+### Verze 1.1.0 - Vydáno 2026-05-05
+
+* Nové: Webmail SSO a přihlášení magickým odkazem — zákazníci mohou přistupovat k webmailu přímo ze svého účtu jednoklepkovým přihlášením.
+* Nové: Funkce změny hesla přidána do widgetu pro správu e-mailových účtů.
+* Nové: Podpora e-mailových přepravářů CyberPanel.
+* Nové: Widget pro správu e-mailů na stránce účtu zákazníka pro samostatnou tvorbu a správu účtů.
+* Nové: Vytváření e-mailových účtů zákazníků integrováno do procesu pokladny pro automatické vytváření.
+* Oprava: Hook widgetu na stránce účtu aktualizován tak, aby používal správný vzor registrace UMS.
+* Oprava: Formulář Create Account nahrazen čistým JS a správným výstupem plnohodnotného HTML dokumentu.
+* Oprava: Widget pro správu e-mailů nyní používá systém UMS currents pro stránky účtů administrátorů.
+* Oprava: Formulář pro vytváření e-mailových účtů administrátorem obsahuje pole pro heslo a používá Email_Account_Manager.
+* Oprava: Spam z logů na úrovni požadavku odstraněn z inicializace Email_Account_Manager.
+* Vylepšeno: Stránka nastavení nyní filtrovuje tak, aby zobrazovala pouze aktivní a nakonfigurované e-mailové poskytovatele.
+
+## Často kptalé otázky
+
+## Mohou zákazníci vytvářet vlastní e-mailové účty?
+
+Ano. Když je widget pro účet zákazníka aktivován a plán umožňuje e-mailové účty, zákazníci mohou vytvářet a spravovat své vlastní e-mailové schránky ze stránky účtu.
+
+## Podporuje každý poskytovatel webmail SSO?
+
+Ne. Podpora SSO a magických odkazů závisí na aktivním poskytovateli e-mailů. Poskytovatelé bez API pro odkaz k přístupu stále mohou podporovat vytváření e-mailových schránek a změny hesel.
+
+## Mohou administrátoři vytvářet e-mailové účty pro zákazníky?
+
+Ano. Administrátoři mohou vytvářet e-mailové účty z administrátorského panelu, včetně nastavení počátečního hesla při vytváření účtu.
+
+## Jsou přepraváře stejné jako e-mailové schránky?
+
+Ne. E-mailové schránky ukládají e-maily a mají přihlašovací údaje. Přepravář přesměruje e-mail na jinou adresu a neposkytuje samostatnou schránku.

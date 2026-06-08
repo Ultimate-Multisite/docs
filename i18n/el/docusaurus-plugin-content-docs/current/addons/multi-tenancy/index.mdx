@@ -1,0 +1,123 @@
+---
+title: Πολυενοικιακή αρχιτεκτονική
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Πολυτοποταρία
+
+Διανομή υπο-σites σε διαφορετικούς servers και databases για βελτιωμένη απόδοση και ασφάλεια.
+
+## Απαιτήσεις
+
+- WordPress 5.3 ή νεότερη
+- PHP 7.4 ή νεότερη
+- Multisite Ultimate plugin (ενεργοποιημένο)
+
+## Εγκατάσταση
+
+1. Ανεβάστε τα αρχεία του addon στον κατάλογο `/wp-content/plugins/`
+2. Ενεργοποιήστε το plugin μέσω του μενού 'Plugins' στο WordPress
+3. Ρυθμίστε τις ρυθμίσεις του addon στον network admin
+
+## Ανάπτυξη
+
+### Ρύθμιση
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Δομή του Project
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Δοκιμές
+
+Το addon περιλαμβάνει ένα ολοκληρωμένο framework δοκιμών:
+
+- **Unit Tests**: Δοκιμές βασισμένες στο PHPUnit με το WordPress test suite
+- **Base Test Class**: Παρέχει βοηθητικές μεθόδους για συνηθισμένα σενάρια δοκιμών
+- **Test Coverage**: Ρυθμισμένο για παρακολούθηση της κάλυψης του κώδικα (code coverage)
+- **Multisite Testing**: Οι δοκιμές εκτελούνται σε περιβάλλον multisite
+
+### Προδιαγραφές Κώδικα
+
+- **WordPress Coding Standards**: Εφαρμόζονται μέσω PHPCS
+- **Συμβατότητα PHP 7.4+**: Υποστηρίζονται σύγχρονα χαρακτηριστικά PHP
+- **Static Analysis**: Ενσωμάτωση PHPStan για έλεγχο τύπων (type checking)
+- **Code Modernization**: Κανόνες Rector για αναβαθρώσεις PHP
+
+### Σύστημα Build
+
+- **Asset Processing**: Minification (Μηεξίσωση) για αρχεία CSS/JS
+- **Μετάφραση**: Δημιουργία αρχείου POT
+- **Συσκευασία (Packaging)**: Δημιουργία αρχείου αποθήκευσης (archive) για κατανομή
+- **Development Mode**: Αρχεία μη-minified για debugging
+
+## Ρυθμίσεις
+
+Το addon υποστηρίζει διάφορες επιλογές ρύθμισης που είναι προσβάσιμες μέσω της διεπαφής του network admin.
+
+## Hooks και Filters
+
+### Actions (Ενέργειες)
+
+- `ultimate-multisite-addon-template_init` - Εκτελείται μετά την αρχικοποίηση του addon
+- `ultimate-multisite-addon-template_loaded` - Εκτελείται αφού φορτωθούν όλα τα αρχεία του addon
+
+### Filters (Φίλτρα)
+
+- `ultimate-multisite-addon-template_settings` - Τροποποίηση ρυθμίσεων του addon
+- `ultimate-multisite-addon-template_enabled` - Υπεγράφοντας την κατάσταση ενεργοποίησης/απενεργοποίησης του addon
+
+## Άδεια Χρήσης
+
+Αυτό το addon έχει άδεια χρήσης βάσει GPL v3 ή νεότερης.
+
+## Υποστήριξη
+
+Για υποστήριξη και τεκμηρίωση, επισκεφθείτε το [MultisiteUltimate.com](https://multisiteultimate.com)
+## Καταγραφή Αλλαγών
+
+- Version 1.0.1 (2025-09-28): ανατοπισμός prefix σε ultimate-multisite· ενημέρωση text domain· αύξηση version.
+
+- Version (2025-09-28): ανατοπισμός prefix σε ultimate-multisite· ενημέρωση text domain· αύξηση version.

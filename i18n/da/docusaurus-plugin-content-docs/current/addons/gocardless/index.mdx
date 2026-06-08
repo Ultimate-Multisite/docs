@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardless Betaling
+
+Lad dine kunder betale for Multisite Ultimate medlemskaber og produkter med Direkte Debet ved hjælp af GoCardless!
+
+## Installation
+
+1. Upload 'ultimate-multisite-gocardless' til mappen '/wp-content/plugins/'
+2. Aktiver plugin'et via menuen 'Plugins' i WordPress
+3. Følg trin-for-trin Wizard for at opsætte plugin'et
+
+## Brugsvejledning
+
+_GoCardless_ er en betalingsgateway tilgængelig i **Europa og Storbritannien** og tillader **Direkte Debet** betalinger.
+
+**Ultimate Multisite: GoCardless Gateway** tilføjer _GoCardless_ support til Ultimate Multisite, så du kan opkræve dine kunder i den pågældende region ved hjælp af Direkte Debet.
+
+Denne tutorial dækker, hvordan du opsætter _GoCardless_ for at begynde at acceptere betalinger gennem det på dit Ultimate Multisite netværk.
+
+_**Bemærk: GoCardless virker kun med følgende valutaer:**_ **EUR, GBP, AUD, SEK og DKK.**
+
+## Installation af Add-on'et
+
+Først skal du installere GoCardless add-on'et til Ultimate Multisite. Du kan gøre det ved at gå til **Ultimate Multisite > Indstillinger > Add-ons (i sidebaren)**. Og vælge GoCardless add-on'et fra listen.
+
+Når add-on'et er installeret og aktiveret, gå til **Ultimate Multisite > Indstillinger > Betalinger**, tænd for GoCardless-muligheden, og gem.
+
+![Betalingsgatewayindstillinger med GoCardless](/img/config/settings-payment-gateways.png)
+
+## Få en Adgangstoken
+
+Opret en konto på _GoCardless_ (eller i _GoCardless_ sandbox, hvis du vil **teste det først**, hvilket anbefales). Derefter, efter du er logget ind, skal du navigere til menuemnet **Developers**.
+
+<!-- Skærmbillede utilgængeligt: GoCardless dashboard der viser placeringen af Developers menu -->
+
+På siden **Developers** klikker du på knappen **Create** øverst til højre på skærmen, og derefter klikker du på muligheden **Access Token**.
+
+<!-- Skærmbillede utilgængeligt: GoCardless Developers side med Create-knap og Access Token mulighed -->
+
+Dette åbner et nyt modal vindue, hvor du kan oprette en ny token. Giv den et genkendeligt navn og sørg for at vælge indstillingen **Read-write access** i menuen **Scope**.
+
+<!-- Skærmbillede utilgængeligt: GoCardless modal til oprettelse af ny adgangstoken med Read-write scope -->
+
+Adgangstoken vil blive vist på skærmen. Kopier den og indsæt den i din menu **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Sørg for at sætte den i det højre felt. Hvis det er en **live token**, skal du slå **sandbox mode fra** før du indsætter tokenet.
+
+![Betalingsgatewayindstillinger med GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Skærmbillede utilgængeligt: GoCardless token felter i Ultimate Multisite betalingsindstillinger -->
+
+Det er det for det første skridt. Næste skal du opsætte en webhook listener.
+
+## Opsætning af Webhook Listener
+
+Når du arbejder med abonnementer, skal Ultimate Multisite kunne modtage oplysninger om ændringer i abonnementsstatus, nye betalinger osv.
+
+Måden betalingsportalerne fortæller Ultimate Multisite om disse ændringer på er ved hjælp af **webhook calls**. Derfor, for at integrationen skal virke 100%, skal vi fortælle _GoCardless_, hvilken URL vi skal kalde med al den information.
+
+Gå tilbage til dit panel under **GoCardless > Developers** og klik igen på Create-knappen, men denne gang vælg **Webhook endpoint**-muligheden.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option --> Et nyt vindue åbnes med muligheder for webhook endpoint. Det beder om din webhook URL, så gå tilbage til dine **Ultimate Multisite indstillinger > Betalinger > GoCardless** og kopier den webhook URL, der er angivet der:
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+Du kan også indtaste en **webhook secret**, som vil blive brugt til at signere dine webhook-kald. Hvad du indtaster i det felt, skal du også indtaste i feltet **Ultimate Multisite Webhook Secret**.
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+
+Afslut endelig ved at gemme endpointet ved at klikke på knappen **Create webhook endpoint** og derefter **gemme dine Ultimate Multisite indstillinger**.
+
+Du skal nu være klar til at acceptere GoCardless!

@@ -1,0 +1,124 @@
+---
+title: AI Site Builder
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Απαιτήσεις
+
+- WordPress 5.3 ή νεότερη έκδοση
+- PHP 7.4 ή νεότερη έκδοση
+- Multisite Ultimate plugin (ενεργοποιημένο)
+
+## Εγκατάσταση
+
+1. Ανεβάστε τα αρχεία του addon στον κατάλογο `/wp-content/plugins/`
+2. Ενεργοποιήστε το plugin μέσω του μενού 'Plugins' στο WordPress
+3. Ρυθμίστε τις ρυθμίσεις του addon στον διαχειριστή του network
+
+## Ανάπτυξη
+
+### Ρύθμιση
+
+```bash
+# Εγκατάσταση εξαρτήσεων
+composer install
+npm install
+
+# Εκτέλεση δοκιμών
+npm run test
+
+# Έλεγχος τυπικών κανόνων κώδικα
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Διόρθωση προβλημάτων στυλ κώδικα
+vendor/bin/phpcbf
+
+# Δημιουργία για παραγωγή
+npm run build
+```
+
+### Δομή Έργου
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes και includes
+│   ├── class-multisite-ultimate-updater.php  # Διαχειριστής ενημερώσεων
+│   └── class-ai_site_builder-main.php             # Βασική λειτουργικότητα
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Bootstrap για δοκιμές
+│   ├── class-*-base.php         # Βασική κλάση δοκιμών
+│   └── class-*-test.php         # Περιπτώσεις δοκιμών
+├── views/                       # Αρχεία templates
+├── assets/                      # Στατικά assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Εικόνες
+├── lang/                        # Αρχεία γλώσσας
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # Ρύθμιση PHPUnit
+├── .phpcs.xml.dist              # Ρύθμιση κανόνων κώδικα
+└── rector.php                   # Κανόνες μοντέρναλোজনের κώδικα
+```
+
+### Δοκιμές
+
+Το addon περιλαμβάνει ένα ολοκληρωμένο πλαίσιο δοκιμών:
+
+- **Unit Tests**: Δοκιμές βασισμένες στο PHPUnit με το WordPress test suite
+- **Base Test Class**: Παρέχει βοηθητικές μεθόδους για συνηθισμένες περιπτώσεις δοκιμών
+- **Test Coverage**: Ρυθμισμένο για παρακολούθηση της κάλυψης του κώδικα
+- **Multisite Testing**: Οι δοκιμές εκτελούνται σε περιβάλλον multisite
+
+### Κανόνες Κωδικοποίησης
+
+- **WordPress Coding Standards**: Εφαρμόζεται μέσω PHPCS
+- **PHP 7.4+ Compatibility**: Υποστηρίζονται σύγχρονα χαρακτηριστικά PHP
+- **Static Analysis**: Ενσωμάτωση PHPStan για έλεγχο τύπων (type checking)
+- **Code Modernization**: Κανόνες Rector για αναβάθμιση PHP
+
+### Σύστημα Build
+
+- **Asset Processing**: Συμπίεση (Minification) για αρχεία CSS/JS
+- **Translation**: Δημιουργία αρχείου POT
+- **Packaging**: Δημιουργία αρχείου archive για διανομή
+- **Development Mode**: Μη συμπιεσμένα assets για debugging
+
+## Ρύθμιση
+
+Το addon υποστηρίζει διάφορες επιλογές ρύθμισης που είναι προσβάσιμες μέσω της διεπαφής του network admin.
+
+## Hooks και Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Εκτελείται μετά την αρχικοποίηση του addon
+- `ultimate-multisite-ai-site-builder_loaded` - Εκτελείται μετά το φόρτωση όλων των αρχείων του addon
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Για τη τροποποίηση των ρυθμίσεων του addon
+- `ultimate-multisite-ai-site-builder_enabled` - Για την παρακάνωση της κατάστασης ενεργοποίησης/απενεργοποίησης του addon
+
+## Άδεια Χρήσης
+
+Αυτό το addon έχει άδεια χρήσης υπό την GPL v3 ή νεότερη.
+
+## Υποστήριξη
+
+Για υποστήριξη και τεκμηρίωση, επισκεφθείτε το [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Version 1.0.1 (2025-09-28): αλλαγή prefix σε ultimate-multisite· ενημέρωση text domain· αύξηση version.
+
+
+- Version (2025-09-28): αλλαγή prefix σε ultimate-multisite· ενημέρωση text domain· αύξηση version.

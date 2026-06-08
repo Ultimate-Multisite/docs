@@ -1,0 +1,127 @@
+---
+title: Domæne sælger
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domænsesælger" />
+
+# Domænsesælger
+
+**Multisite Ultimate: Domænsesælger** forvandler dit WordPress Multisite netværk til en kraftfuld platform til salg af domæner. Lad kunder registrere egne domæner direkte under tilmeldingen eller fra deres dashboard, med realtids tjek af ledighed og gennemsigtig prissætning.
+
+### Hvorfor Domænsesælger?
+
+Domæneregistrering er et af de mest efterspurgte opgraderinger for enhver WaaS (Website as a Service) platform. I stedet for at sende dine kunder til en tredjepartsregistreringsside, kan du tilbyde domæner direkte – hvilket holder mere indtægt i dit netværk og giver kunden en problemfri oplevelse.
+
+### Nøglefunktioner
+
+#### Understøttelse af flere domæne-registre
+* **OpenSRS** — Fuldt registrering, fornyelse og administration
+* **Namecheap** — Fuld integration med WhoisGuard og sandbox-testning
+* **Udvidbar arkitektur** — Bygget på Integration Registry mønsteret, hvilket gør det nemt at tilføje flere udbydere
+* **Indbygget forbindelsestest** — Valider udbyderoplysninger og forbindelsestjek før lancering
+
+#### Vejled Opsætning
+* **Én-klik onboarding** — Guider dig gennem leverandørkonfiguration, TLD import og oprettelse af domæne-produkter.
+* **Automatisk TLD synkronisering** — Importerer alle tilgængelige TLD'er og wholesale priser fra dine forbundne leverandører.
+* **Standard produktoprettelse** — Opretter et klar-til-brug domæne-produkt med passende mærkningsstandardindstillinger.
+
+#### Fleksibel Domæne-prissætning
+* **Tre mærkningsmodes** — Procentvis mærkningspris, fast mærkningspris eller fast pris pr. TLD.
+* **TLD-specifikke produkter** — Opret separate domæne-produkter for forskellige TLD-grupper (.com/.net, .io, landekoder osv.).
+* **Introduktionspriser** — Tilbyd en nedsat førsteårspris for at tiltrække nye registreringer.
+* **Realtidsprissætning** — Live wholesale priser fra leverandører med intelligent caching.
+* **Kuponstøtte** — Fuld kompatibilitet med Multisite Ultimate rabatkoder.
+
+#### WHOIS Privatlivsbeskyttelse
+* **Konfiguration pr. produkt** — Indstil WHOIS privatliv til Deaktiveret, Altid Inkluderet eller Kunden Vælger.
+* **Kundeopt-in** — Når det er sat til Kunde Vælger, giver en afkrydsningsfelt i kassen kunder mulighed for at tilføje privatlivsbeskyttelse.
+* **Konfigurerbar prissætning** — Indstil en pris pr. år for privatlivs-tilføjelsen eller tilbyd den gratis.
+* **Registrator integration** — Aktiverer automatisk WhoisGuard (Namecheap) eller WHOIS privatliv (OpenSRS) ved registreringstidspunktet.
+
+#### Samlet Checkout Oplevelse
+* **Tre domæne-tilstande** — Kunder vælger mellem en subdomain (gratis), registrering af et nyt domæne eller kortlægning af et eksisterende domæne, de allerede ejer
+* **Realtidsdomænesøgning** — Tilgængelighedstjek drevet af AJAX uden genindlæsning af sider
+* **Smarte forslag** — Alternative TLD-forslag, når det foretrukne domæne er optaget
+* **Gennemsigtig prissætning** — Klar visning af registreringspris, fornyelsespris og valgfri WHOIS privatlivsgebyr
+* **Registrant kontaktdetaljer** — Indsamler de nødvendige oplysninger om registreringen (navn, adresse, telefon) direkte under checkout-processen
+* **Automatisk genereret websitadresse** — Websitadressen udledes automatisk fra det valgte domæne
+
+#### Automatisk Fornyelsessystem
+* **Medlemskabsbundne fornyelser** — Domæner fornyes automatisk, mens kundens medlemskab er aktivt
+* **Smart planlægning** — Fornyelsesopgaver prioriteres baseret på domænenes udløbsdatoer
+* **Genforsøgslogik (Retry logic)** — Intelligente genforsøg ved mislykkede fornyelsesforsøg
+* **E-mail notifikationer** — Konfigurerbare advarsler om kommende fornyelser, succesfulde fornyelser, fejl og udløb
+
+#### Kunde DNS-styring
+* **Selvbetjening af DNS** — Kunder kan tilføje, redigere og slette DNS-oplysninger (A, AAAA, CNAME, MX, TXT) fra deres dashboard
+* **Domæne-status** — Realtidsregistreringsstatus, udløbsdatoer og nameserverinformation
+* **Automatisk domænemapping** — Registrerede eller eksisterende domæner kortlægges automatisk til kundens site
+
+#### Admin Tools
+* **Manuel domæneregistrering** — Registrer domæner på vegne af kunder fra adminpanelet
+* **Domænemonitorering** — Se alle kundedomæner, status og udløbsdatoer fra én side
+* **Udbyder-specifik logning** — Separate logkanaler for hver registreringsudbyder (f.eks. domain-seller-namecheap.log)
+* **Registreringsdetaljer** — Se registreringsoplysninger og registreringsdata på hoveddomæneedit-siden
+
+### Understøttede udbydere
+
+* **OpenSRS** — Fuldt integration med registrering, fornyelse, DNS-styring og WHOIS privatliv
+* **Namecheap** — Fuldt integration med registrering, fornyelse, batch tilgængelighedstjek og gratis WhoisGuard
+* **GoDaddy** — Registrering og fornyelse
+* **ResellerClub** — Registrering, fornyelse og DNS-styring
+* **NameSilo** — Registrering og fornyelse
+* **Enom** — Registrering, fornyelse og DNS-styring
+
+### Tekniske detaljer
+
+* **Kræver:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Arkitektur:** Integration Registry pattern med Domain_Selling_Capability interface
+* **Autoloading:** Jetpack autoloader med PSR-4 class mapping
+* **Standarder:** WordPress kodningsstandarder, streng typehåndtering, forberedte statements
+
+1. Sør dig for, at **Multisite Ultimate v2.4.12+** er installeret og aktiveret i netværket.
+2. Upload plugin'en til `/wp-content/plugins/ultimate-multisite-domain-seller/`.
+3. Aktiver plugin'en i netværket fra **Plugins** i WordPress Network Admin.
+4. **Setup Wizard** starter automatisk ved første aktivering – følg trinene for at:
+   * Tilkoble din domæneregistreringsudbyder (OpenSRS eller Namecheap).
+   * Test forbindelsen.
+   * Importere tilgængelige TLD'er og wholesale-priser.
+   * Opret dit første domæne-produkt med prisopslag.
+5. Tilføj feltet **Domain Selection** til din checkout form i **Ultimate Multisite > Checkout Forms**.
+
+## Ofte stillede spørgsmål
+
+### Hvilken version af Multisite Ultimate kræves?
+
+Version 2.4.12 eller højere. Add-on er ikke kompatibel med WP Ultimo v1.x eller Ultimate Multisite versioner under 2.4.12.
+
+### Hvilke domæneudbydere understøttes?
+
+Seks registreringstjenester understøttes fuldt ud: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo** og **Enom**. Add-ons Integration Registry arkitektur gør det nemt at tilføje brugerdefinerede udbydere – se [developer guide](/developer/integration-guide/custom-registrar).
+
+### Kan jeg tilbyde WHOIS privatlivsbeskyttelse?
+
+Hver domæne-produkt har en WHOIS Privacy-indstilling med tre tilstande: Deaktiveret, Altid inkluderet eller Kundevalg. Når den er sat til Kundevalg, ser kunder et afkrydsningsfelt under kassen med prisen (eller "Gratis" for Namecheaps WhoisGuard). Privatlivsflagget sendes automatisk videre til registreringen hos registreringenstidspunktet.
+
+### Kan jeg sætte forskellige priser for forskellige TLD'er?
+
+Ja. Opret separate domæne-produkter for forskellige TLD-grupper. Hvert produkt kan have sin egen mærkatstype (procent, fast mærkat eller fast pris), understøttede TLD'er og introduktionspriser.
+
+### Hvilke betalingsmuligheder ser kunder?
+
+Feltet Domænevalg giver kunder tre faner: **Subdomæne** (brug en gratis subdomæne på dit netværk), **Registrer nyt domæne** (søg og registrer et nyt domæne) og **Eksisterende domæne** (kortlæg et domæne, de allerede ejer). Kun de tilstande, du aktiverer, vil blive vist.
+
+### Understøtter det automatisk fornyelse?
+
+Ja. Domæner kan indstilles til automatisk fornyelse og er knyttet til kundens medlemsstatus. Fornyelsesbetalinger behandles via kundens eksisterende betalingsgateway.
+
+### Kan kunder administrere deres DNS-oplysninger?
+
+Ja. Kunder får et DNS-styringsværktøj i deres dashboard til at tilføje, redigere og slette A-, AAAA-, CNAME-, MX- og TXT-oplysninger. DNS-styring er tilgængelig med OpenSRS, ResellerClub og Enom.
+
+### Er der en opsætningsguide?
+
+Ja. Opsætningsværktøjet kører automatisk ved første aktivering og guider dig gennem forbindelse til en registreringsaftale (registrar), import af domænenavne (TLD'er) og oprettelse af dit første domæne-produkt. Du kan også genkøre værktøjet fra add-on indstillingerne.

@@ -1,0 +1,94 @@
+---
+title: Integrace WooCommerce
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integrace s WooCommerce
+
+Integrace s WooCommerce funguje velmi podobně jako naše Integrace s ručním zpracováním (Manual Gateway). Nabízí vašim uživatelům spoustu flexibilních možností, takže mohou vybrat z jakéhokoli platebního prostředku dostupného na vaší instalaci WooCommerce. A je to jednoduché: jakmile skončí období fakturace uživatele, předplatné je zrušeno (put on hold). Současně se na instalaci WooCommerce na hlavní stránce sítě vytvoří objednávka. Uživatel poté obdrží fakturu v e-mailu s odkazem k provedení platby. Po obdržení platby je předplatné obnoveno.
+
+## Funkce
+
+- Snadná integrace mezi Ultimate Multisite a WooCommerce
+- Dostupnost několika platebních metod
+- Kompletně automatizovaný proces s WooCommerce Subscriptions
+
+## Dokumentace
+
+**Nastavení integrace s WooCommerce**
+
+**Rozšíření vašich platebních možností pomocí Ultimate Multisite: Integrace s WooCommerce**
+
+## Instalace
+
+1. Nahrajte 'ultimate-multisite-woocommerce' do adresáře '/wp-content/plugins/'
+2. Aktivujte plugin v menu 'Plugins' v WordPressu
+3. Postupujte podle průvodce krok za krokem pro nastavení pluginu
+
+## Manuál použití
+
+_**DŮLEŽITÁ POZNÁMKA: Tento článek se týká verze Ultimate Multisite 2.x.**_
+
+_**POZOR:** Ultimate Multisite: WooCommerce Integration vyžaduje, aby byl WooCommerce aktivován alespoň na vaší hlavní stránce._
+
+Rozumíme, že _Stripe_ a _PayPal_ nejsou dostupné v některých zemích, což omezuje nebo ztěžuje uživatelům Ultimate Multisite efektivní použití našeho pluginu. Proto jsme vytvořili **add-on pro integraci _WooCommerce_**.
+
+_WooCommerce_ je velmi populární e-commerce plugin. Vývojáři po celém světě vytvořili pro něj add-ony k integraci různých platebních brán. Využili jsme to k rozšíření platebních brán, které můžete použít v systému fakturace Ultimate Multisite.
+
+## Nastavení
+
+Nejprve musíte nainstalovat add-on WooCommerce Integration, který je **bezplatný pro licencované uživatele**. Pro instalaci klikněte na Ultimate Multisite na vašem super admin dashboardu a vyberte **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Zde najdete všechny add-ony Ultimate Multisite. Klikněte na add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Otevře se okno s detaily add-onu. Stačí kliknout na **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Po dokončení instalace vás přesměruje na stránku pluginů. Zde stačí kliknout na **Network Activate** a add-on _WooCommerce_ bude aktivován pro vaši síť.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Po aktivaci, pokud ještě nemáte plugin WooCommerce nainstalovaný a aktivovaný na vaší webové stránce, **zobrazí se vám připomenutí**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Jakmile je nainstalován, u nastavení plateb Ultimate Multisite uvidíte další možnost. Získáte tak možnost **aktivovat** možnost _WooCommerce_ odkud.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Můžete nakonfigurovat základní nastavení, jako je zobrazený název, který se zobrazí na frontendu, a pokyny, které vás uživatele provede v procesu pokladny. Poté se můžete dostat do **nastavení _WooCommerce_ na hlavní stránce** a aktivovat a nakonfigurovat platební bránu, kterou preferujete použít.
+
+## Jak spravovat platbu
+
+Integrace s WooCommerce funguje velmi podobně jako naše **Integrace s ručním zpracováním (Manual Gateway)**. Nevýhodou je, že každá platba musí být zaplacena ručně na konci období fakturace. Takto funguje celý proces:
+
+  * Jakmile skončí cyklus fakturace uživatele, členství je zrušeno (put on hold). Současně se na instalaci _WooCommerce_ na hlavní stránce vaší sítě vytvoří objednávka.
+
+  * Uživatelé poté obdrží fakturu v e-mailu s odkazem k provedení platby (odkaz se zobrazí také v jejich historii faktur na dashboardu podstránky). Tento odkaz přesměruje uživatele na **pokladnu _WooCommerce_**, kde uživatelé budou schopni vybrat jednu z **dostupných platebních brán _WooCommerce_** a zpracovat svou platbu.
+
+  * Po obdržení platby je členství **obnoveno**, platba je zaznamenána v Ultimate Multisite a objednávka je nastavena jako dokončená.
+
+### Několik důležitých poznámek:
+
+  * Výchozí funkčnost Ultimate Multisite stále funguje s touto integrací. Například **vykání plateb** ze screenu **Správa předplatného (Subscription Management)** komunikuje s WooCommerce a provede vracení peněz pomocí vybrané platební brány.
+
+  * Ultimate Multisite: WooCommerce Integration spoléhá na WP-Cron. To funguje většinou velmi dobře, ale pokud má stránka nízký provoz, cron není vyvolán k kontrole plánovaných událostí a událost je přehlédnutá, což může způsobit zpoždění provedení.
+
+## Plugin WooCommerce Subscriptions
+
+Manuální iniciace platby každý měsíc není ideální pro konečné uživatele, protože se očekává, že předplatné bude automaticky obnovováno každý cyklus fakturace. Proto jsme navrhli add-on WooCommerce Integration, který **podporuje plugin WooCommerce Subscriptions**. To automatizuje platbu a usnadňuje transakci pro vaše konečné uživatele.
+
+Vše, co potřebujete udělat, je **nainstalovat** [plugin WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) a mít ho **aktivovaný na vaší hlavní stránce**. Poté se vraťte do nastavení plateb Ultimate Multisite a **aktivujte integraci**.
+
+A to je vše. Vaši koneční uživatelé už nemusí ručně provádět platbu na konci svého období fakturace.
+
+Kromě vytvoření objednávky na vaší hlavní stránce v rámci _WooCommerce_ , vytvoří se také předplatné pro každý účet.

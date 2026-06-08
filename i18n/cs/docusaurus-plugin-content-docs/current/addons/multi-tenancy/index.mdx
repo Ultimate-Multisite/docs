@@ -1,0 +1,124 @@
+---
+title: Multi-tenancy
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Rozdělení subsitů na více serverů a databází pro lepší výkon a vyšší bezpečnost.
+
+## Požadavky
+
+- WordPress verze 5.3 nebo vyšší
+- PHP verze 7.4 nebo vyšší
+- Plugin Ultimate Multisite (aktivní)
+
+## Instalace
+
+1. Nahraj soubory addon do adresáře `/wp-content/plugins/`
+2. Aktivuj plugin v menu „Plugins“ v WordPressu
+3. Konfiguruj nastavení addon v administraci sítě
+
+## Vývoj
+
+### Nastavení
+
+```bash
+# Nainstalovat závislosti
+composer install
+npm install
+
+# Spustit testy
+npm run test
+
+# Spustit kontroly standardů kódu
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Opravit problémy se stylem kódu
+vendor/bin/phpcbf
+
+# Vytvořit build pro produkci
+npm run build
+```
+
+### Struktura projektu
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP třídy a zahrnutí
+│   ├── class-multisite-ultimate-updater.php  # Handler pro aktualizace
+│   └── class-multi_tenancy-main.php             # Hlavní funkcionalita
+├── tests/                        # Unit testy
+│   ├── bootstrap.php            # Bootstrap pro testy
+│   ├── class-*-base.php         # Základní třída testu
+│   └── class-*-test.php         # Testovací případy
+├── views/                       # Soubory šablon
+├── assets/                      # Statické soubory
+│   ├── css/                     # Styly
+│   ├── js/                      # JavaScript soubory
+│   └── images/                  # Obrázky
+├── lang/                        # Jazykové soubory
+├── composer.json                # PHP závislosti
+├── package.json                 # Závislosti Node.js
+├── phpunit.xml.dist             # Konfigurace PHPUnit
+├── .phpcs.xml.dist              # Konfigurace standardů kódu
+└── rector.php                   # Pravidla modernizace kódu
+```
+
+### Testování
+
+Addon obsahuje komplexní testovací framework:
+
+- **Unit Tests**: Testy založené na PHPUnit a testovací sadě WordPressu
+- **Base Test Class**: Poskytuje pomocné metody pro běžné testovací scénáře
+- **Test Coverage**: Konfigurováno pro sledování pokrytí kódu
+- **Multisite Testing**: Testy se spouštějí v prostředí multisite
+
+### Standardy kódu
+
+- **WordPress Coding Standards**: Enforzovány pomocí PHPCS
+- **Kompatibilita s PHP 7.4+**: Podporuje moderní funkce PHP
+- **Statická analýza**: Integrace PHPStan pro kontrolu typů
+- **Modernizace kódu**: Pravidla Rector pro aktualizace PHP
+
+### Build systém
+
+- **Zpracování assetů**: Minifikace souborů CSS/JS
+- **Překlad**: Generování souborů POT
+- **Balení**: Vytváření archivu pro distribuci
+- **Vývojový režim**: Neminifikované assety pro debugování
+
+## Konfigurace
+
+Addon podporuje různé možnosti konfigurace dostupné přes rozhraní administrace sítě.
+
+## Hooks a Filtry
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Spouští se po inicializaci addon
+- `ultimate-multisite-addon-template_loaded` - Spouští se po načtení všech souborů addon
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Změna nastavení addon
+- `ultimate-multisite-addon-template_enabled` - Přepsání stavu povolení/zakázání addon
+
+## Licence
+
+Tento addon je licencován pod GPL v3 nebo novější.
+
+## Podpora
+
+Pro podporu a dokumentaci navštivte [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Verze 1.0.1 (2025-09-28): změna prefixu na ultimate-multisite; aktualizace textového domény; zvýšení verze.
+
+
+- Verze (2025-09-28): změna prefixu na ultimate-multisite; aktualizace textového domény; zvýšení verze.

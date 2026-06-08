@@ -1,0 +1,129 @@
+---
+title: Prodavač domén
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
+
+# Domain Seller
+
+**Multisite Ultimate: Domain Seller** transformuje vaši WordPress Multisite síť na výkonnou platformu pro prodej domén. Umožňuje zákazníkům registrovat vlastní domény přímo během registrace nebo odkudkoli ze svého dashboardu, s kontrolou dostupnosti v reálném čase a transparentními cenami.
+
+### Proč Domain Seller?
+
+Registrace domén je jedna z nejpoptávanějších doplňkových služeb (upsells) pro jakoukoli platformu typu WaaS (Website as a Service). Místo toho, aby jste své zákazníky posílali k externímu registrátorovi, můžete domény nabízet přímo – tím, že si zadržíte více příjmů ve své síti a zároveň poskytnete zákazníkům bezproblémový zážitek.
+
+### Klíčové funkce
+
+#### Podpora více registrátorů domén
+* **OpenSRS** — Plná registrace, obnovu a správu
+* **Namecheap** — Kompletní integrace s WhoisGuard a testováním v sandboxu
+* **Rozšířitelná architektura** — Postaveno na vzoru Integration Registry, což usnadňuje přidání dalších poskytovatelů
+* **Vstříčený testování připojení** — Ověřte kredenciály a připojení poskytovatele před spuštěním
+
+#### Váš průvodní nástroj pro nastavení (Setup Wizard)
+* **Onboarding jedním kliknutím** — Provede vás konfigurací poskytovatele, importem TLD a vytvořením produktů domén
+* **Automatická synchronizace TLD** — Importuje všechny dostupné TLD a velkoobchodní ceny od vašich připojených poskytovatelů
+* **Vytvoření výchozího produktu** — Vytvoří připravený k použití produkt domény s rozumnými výchozími přirážkami
+
+#### Flexibilní ceny domén
+* **Tři režimy přirážky** — Procentuální přirážka, fixní přirážka nebo fixní cena na TLD
+* **Produkty specifické pro TLD** — Vytvořte samostatné produkty domén pro různé skupiny TLD (.com/.net, .io, doménové kódy atd.)
+* **Úvodní ceny** — Nabídněte zlevněnou cenu za první rok, aby přitáhlo nové registrace
+* **Ceny v reálném čase** — Živé velkoobchodní ceny od poskytovatelů s inteligentní cachováním
+* **Podpora kupónů** — Plná kompatibilita s kódy slevy Multisite Ultimate
+
+#### Ochrana soukromí WHOIS
+* **Konfigurace na úrovni produktu** — Nastavte soukromí WHOIS na Vymazáno, Vždy zahrnuto nebo Volba zákazníka
+* **Opt-in zákazníka** — Když je nastaveno na Volbu zákazníka, kontrolka při pokladně umožňuje zákazníkům přidat ochranu soukromí
+* **Konfigurovat ceny** — Nastavte roční cenu pro dodatek soukromí, nebo ho nabídněte zdarma
+* **Integrace s registrátorem** — Automaticky povoluje WhoisGuard (Namecheap) nebo soukromí WHOIS (OpenSRS) při registraci
+
+#### Jednotný zážitek z pokladny
+* **Tři režimy domén** — Zákazníci si vyberou mezi poddomenou (zdarma), registrací nové domény nebo mapováním již vlastní domény
+* **Vyhledávání domény v reálném čase** — Kontrola dostupnosti poháněná AJAX, bez přepínání stránky
+* **Inteligentní návrhy** — Alternativní návrhy TLD, když je preferovaná doména obsazená
+* **Transparentní ceny** — Jasné zobrazení ceny za registraci, ceny za obnovu a volitelné poplatky za soukromí WHOIS
+* **Pole pro kontaktní údaje registrata** — Sbírá požadované informace o registratovi (jméno, adresa, telefon) inline během pokladny
+* **Automaticky vygenerovaná URL sítě** — Adresa sítě je automaticky odvozena z vybrané domény
+
+#### Systém automatické obnovy
+* **Obnovy spojené s členstvím** — Domény se obnovují automaticky, dokud je členství zákazníka aktivní
+* **Inteligentní plánování** — Úkoly pro obnovu jsou dořazeny na základě daty vypršení domény
+* **Logika opakování** — Inteligentní pokusy pro selhání pokusů o obnovu
+* **E-mailové upozornění** — Konfigurovat upozornění na blížící se obnovy, úspěšné obnovy, selhání a vypršení
+
+#### Správa DNS zákazníkem
+* **Self-service DNS** — Zákazníci mohou přidávat, upravovat a mazat DNS záznamy (A, AAAA, CNAME, MX, TXT) ze svého dashboardu
+* **Status domény** — Status registrace v reálném čase, data vypršení a informace o nameserveru
+* **Automatické mapování domény** — Registrované nebo stávající domény jsou automaticky mapovány na síť zákazníka
+
+#### Administrační nástroje
+* **Manuální registrace domén** — Registrace domén ve jménu zákazníků z panelu administrátora
+* **Monitorování domén** — Zobrazte všechny domény zákazníků, jejich stavy a data vypršení na jedné stránce
+* **Logování specifické pro poskytovatele** — Oddělené kanály logů pro každého registrátora (např. domain-seller-namecheap.log)
+* **Detaily registrace** — Zobrazte informace o registratovi a data registrace na hlavní stránce úpravy domény
+
+### Podporovaní poskytovatelé
+
+* **OpenSRS** — Plná integrace s registrací, obnovou, správou DNS a soukromím WHOIS
+* **Namecheap** — Plná integrace s registrací, obnovou, kontrolou dostupnosti v dávkách a zdarma WhoisGuard
+* **GoDaddy** — Registrace a obnovu
+* **ResellerClub** — Registrace, obnovu a správa DNS
+* **NameSilo** — Registrace a obnovu
+* **Enom** — Registrace, obnovu a správa DNS
+
+### Technické detaily
+
+* **Vyžaduje:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Architektura:** Integration Registry pattern s rozhraním Domain_Selling_Capability
+* **Autoloading:** Jetpack autoloader s mapováním tříd PSR-4
+* **Standardy:** WordPress coding standards, strict typing, prepared statements
+
+## Instalace
+
+1. Zajistěte, že je **Multisite Ultimate v2.4.12+** nainstalováno a aktivováno na úrovni sítě.
+2. Nahrajte plugin do adresáře `/wp-content/plugins/ultimate-multisite-domain-seller/`.
+3. Plugin aktivujte na úrovni sítě z panelu **Plugins** v WordPress Network Admin.
+4. **Setup Wizard** se spustí automaticky při prvním aktivování – postupujte podle kroků, abyste:
+   * Připojili svého registrátora domén (OpenSRS nebo Namecheap)
+   * Otestovali připojení
+   * Importovali dostupné TLD a velkoobchodní ceny
+   * Vytvořili svůj první produkt domény s přirážkou cen
+5. Přidejte pole **Domain Selection** do vašeho formuláře pokladny v sekci **Ultimate Multisite > Checkout Forms**.
+
+## Často kptalé otázky
+
+### Jaká verze Multisite Ultimate je vyžadována?
+
+Verze 2.4.12 nebo vyšší. Addon není kompatibilní s WP Ultimo v1.x nebo verzemi Ultimate Multisite nižší než 2.4.12.
+
+### Jaké poskytovatele domén jsou podporovány?
+
+Je plně podporováno šest registrátorů: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo** a **Enom**. Architektura Integration Registry addonu usnadňuje přidání vlastních poskytovatelů – podívejte se na [developer guide](/developer/integration-guide/custom-registrar).
+
+### Mohu nabídnout ochranu soukromí WHOIS?
+
+Ano. Každý produkt domény má nastavení soukromí WHOIS s třemi režimy: Vymazáno, Vždy zahrnuto nebo Volba zákazníka. Když je nastaveno na Volbu zákazníka, zákazníci uvidí při pokladně kontrolku s cenou (nebo „Zdarma“ pro WhoisGuard od Namecheap). Flag soukromí je automaticky předán registrátorovi v době registrace.
+
+### Mohu nastavit různé ceny pro různé TLD?
+
+Ano. Vytvořte samostatné produkty domén pro různé skupiny TLD. Každý produkt může mít vlastní typ přirážky (procentuální, fixní přirážka nebo fixní cena), podporované TLD a úvodní ceny.
+
+### Jaké možnosti pokladny vidí zákazníci?
+
+Pole Domain Selection zákazníkům zobrazuje tři záložky: **Subdomain** (použijte zdarma poddoménu ve své síti), **Register New Domain** (vyhledat a zaregistrovat novou doménu) a **Existing Domain** (mapovat doménu, kterou již vlastní). Zobrazí se pouze režimy, které povolíte.
+
+### Podporuje automatické obnovy?
+
+Ano. Domény lze nastavit na automatické obnovení a jsou spojeny se statusem členství zákazníka. Poplatky za obnovu jsou zpracovány prostřednictvím stávající brány platby zákazníka.
+
+### Mohou zákazníci spravovat své DNS záznamy?
+
+Ano. Zákazníci získají rozhraní pro správu DNS ve svém dashboardu, kde mohou přidávat, upravovat a mazat záznamy A, AAAA, CNAME, MX a TXT. Správa DNS je dostupná s OpenSRS, ResellerClub a Enom.
+
+### Je tam průvodní nástroj pro nastavení?
+
+Ano. Setup wizard se spustí automaticky při prvním aktivování a provede vás připojením registrátora, importem TLD a vytvořením prvního produktu domény. Můžete průvodce také znovu spustit z nastavení addon.

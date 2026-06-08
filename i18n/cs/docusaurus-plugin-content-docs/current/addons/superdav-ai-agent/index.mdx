@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent je pokročilý WordPress AI asistent, který rozšířuje Gratis AI Agent o do témat vědomé schopnosti, vylepšené možnosti internetového vyhledávání a vylepšené funkce pro budování webových stránek. Verze 1.16.0 přidává generování vlastních log, ověření kontrastu palety barev, nahrávání fotografií během rozborového rozhovoru, strukturované generování jídelní karty pro hosteskost a vykreslování předobrazení pro desktopy a mobilní zařízení v Theme Builderu.
+
+## Klíčové funkce
+
+- **Téma-vědomé schopnosti** — automaticky přizpůsobuje pokyny a schopnosti na základě vašeho aktivního WordPress tématu a nainstalovaných pluginů
+- **Více poskytovatelů internetového vyhledávání** — vyberte mezi Brave Search a Tavily pro bohatší výsledky vyhledávání a pokročilejší výzkumné schopnosti
+- **Kontaktovací formuláře v Site Builderu** — vytvořte plně funkční kontaktní formuláře přímo z chatovacího rozhraní pomocí vašeho nainstalovaného pluginu pro formuláře
+- **Vylepšený Site Builder** — vylepšené plány budování webových stránek v několika fázích s lepší objevováním pluginů a obnovou chyb
+- **Vstříchnuté tématické schopnosti** — specializované pokyny pro Block Themes, Classic Themes, Kadence Blocks a Kadence Theme
+- **Vylepšená integrace s WooCommerce** — přepracováno tak, aby používalo nativní API WooCommerce pro lepší spolehlivost a kompatibilitu
+- **Automatické detekce poskytovatelů** — automaticky detekuje a obnovuje dostupné pluginy a témata při jejich aktivaci nebo deaktivaci
+- **Generování vlastních log** — generujte a vložte vlastní SVG loga s automatickou sanitací bezpečnou pro namespace
+- **Věření kontrastu palety barev** — zkontrolujte barevné kombinace na shodu s WCAG standardy před jejich aplikací na vaše téma
+- **Fotograficky vylepšené objevování** — nahrajte fotografie během rozborového rozhovoru v Theme Builderu, aby ovlivnily směr designu
+- **Hosteskostní menu** — generujte strukturované stránky s jídelní kartou pro restaurace, kavárny a hosteskostní podniky
+- **Desktopní a mobilní předobrazení** — předvzbědujte svůj design na desktopo a mobilních zařízeních během výběru směru designu
+- **Skenování webu úrovně 1** — sd-ai-agent/site-scrape je nyní výchozí pro analýzu webů konkurence a inspirace
+
+## Požadavky
+
+- WordPress 6.0 nebo vyšší
+- PHP 8.1 nebo vyšší
+- WordPress Multisite (aktivováno na úrovni sítě) nebo instalace pro jednu stránku
+- Aktivní plugin konektoru AI poskytovatele (Anthropic, OpenAI nebo kompatibilní)
+- Gratis AI Agent v1.9.0 nebo vyšší (Superdav AI Agent rozšiřuje Gratis AI Agent)
+
+## Instalace
+
+1. Nahrajte soubory pluginu do `/wp-content/plugins/superdav-ai-agent`
+2. Aktivujte plugin na obrazovce **Plugins** v WordPressu
+3. Ujistěte se, že je také aktivován Gratis AI Agent
+4. Přejděte na **Gratis AI Agent → Settings** a nakonfigurujte svého poskytovatele internetového vyhledávání (volitelné)
+
+## Rychlý start
+
+Po aktivaci Superdav AI Agent automaticky vylepší vaši instalaci Gratis AI Agent téma-vědomými schopnostmi a dalšími možnostmi. Otevřete panel **Gratis AI Agent** v boční liště administrace WordPressu a začněte používat nové funkce.
+
+**Příklad pokynů:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## Téma-vědomé schopnosti
+
+Superdav AI Agent automaticky detekuje vaše aktivní téma a nainstalované pluginy a načte vhodnou téma-vědomou schopnost do kontextu asistenta. Dostupné schopnosti zahrnují:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | Témata využívající architekturu založenou na bloku WordPressu (Full Site Editing) |
+| **Classic Themes** | Tradiční WordPress témata využívající PHP šablony a klasický editor |
+| **Kadence Blocks** | Stránky s aktivním pluginem Kadence Blocks |
+| **Kadence Theme** | Stránky s aktivním tématem Kadence Theme |
+
+Podrobnější pokyny pro každou schopnost naleznete na [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills).
+
+## Poskytovatelé internetového vyhledávání
+
+Superdav AI Agent v1.10.0 přidává **Tavily** jako alternativu k Brave Search pro dotazy internetového vyhledávání. Oba poskytovatelé nabízejí výsledky vyhledávání v reálném čase a lze je nakonfigurovat v **Gratis AI Agent → Settings → Advanced**.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | Rychlé, zaměřené na soukromí výsledky vyhledávání | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Bohatší výsledky vyhledávání, pokročilé výzkumné schopnosti | [Tavily API](https://tavily.com/) |
+
+Konfigurační pokyny pro internetové vyhledávání naleznete na [Internet Search](../../user-guide/configuration/internet-search).
+
+## Kontaktovací formuláře v Site Builderu
+
+Agent Site Builder nyní dokáže vytvářet kontaktní formuláře přímo z chatovacího rozhraní. Stačí požádat Site Builder, aby vytvořil kontaktní formulář, a automaticky detekuje váš nainstalovaný plugin pro formuláře (Contact Form 7, WPForms, Fluent Forms nebo Gravity Forms) a vygeneruje připravený k použití formulář.
+
+Podrobnější pokyny naleznete na [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms).
+
+## Funkce Theme Builderu
+
+Theme Builder v Superdav AI Agent v1.16.0 zahrnuje výkonné nové schopnosti:
+
+### Rozborový rozhovor s nahráváním fotografií
+
+Rozborový rozhovor Theme Builderu nyní zahrnuje krok nahrávání fotografií, kde můžete poskytnout vizuální inspiraci. Nahrajte fotografie vaší značky, webů konkurence nebo designové inspirace, aby pomohly Theme Builderu pochopit váš směr designu.
+
+Podrobnější pokyny naleznete na [Discovery Interview](./theme-builder/discovery-interview.md).
+
+### Směr designu s desktopními a mobilními předobrazeními
+
+Projděte svůj design jak na desktopu, tak na mobilním zařízení, než Theme Builder vygeneruje vaše kompletní téma. Zobrazte si předběžné náhledy v mnoha responzivních rozloženích.
+
+Podrobnější pokyny naleznete na [Design Direction](./theme-builder/design-direction.md).
+
+### Hosteskostní menu
+
+Theme Builder nyní dokáže generovat strukturované stránky s jídelní kartou pro restaurace, kavárny, bary a další hosteskostní podniky. Menu zahrnují ceny, popisy, dietní informace a varování před alergeny.
+
+Podrobnější pokyny naleznete na [Hospitality Menus](./theme-builder/hospitality-menus.md).
+
+### Nové schopnosti
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — vytvořte vlastní SVG loga s automatickou sanitací
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — zkontrolujte barevné kombinace na shodu s WCAG
+- **[Create Menu](./abilities/create-menu.md)** — vytvořte navigační menu s odlišnými štítky navigace
+
+Informace o dostupných nástrojích a nástroji skenování webu úrovně 1 naleznete na [Tools and Configuration](./theme-builder/tools.md).
+
+## Konfigurace
+
+Všechna nastavení se nachází v **Gratis AI Agent → Settings** v administraci WordPressu. Superdav AI Agent přidává následující možnosti konfigurace:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Vyberte mezi Brave Search a Tavily (volitelné) |
+| **Tavily API Key** | API klíč pro internetové vyhledávání Tavily (pokud je vybráno Tavily) |
+
+## Vylepšení v verzi 1.16.0
+
+- **AI Client cache** — nyní podloženo transienty pro trvalost napříč požadavky, zabraňuje ztrátě dat při dlouhodobých úkolech agenta
+- **Nástroj skenování webu úrovně 1** — sd-ai-agent/site-scrape je nyní výchozí v Theme Builderu pro analýzu webů konkurence a inspirace
+- **Odkazy akcí řádků pluginů** — opraveno a přepracováno pro lepší srozumitelnost
+
+## Vylepšení v verzi 1.10.0
+
+- **Přepracovaná integrace WooCommerce** — nyní používá nativní API WooCommerce pro lepší spolehlivost a kompatibilitu
+- **Automatické obnovení seznamu poskytovatelů** — automaticky detekuje, kdy jsou pluginy aktivovány nebo deaktivovány a aktualizuje dostupný seznam poskytovatelů
+- **Vylepšený Site Builder** — vylepšené plány budování webových stránek v několika fázích s lepší obnovou chyb
+- **Téma-vědomé schopnosti** — čtyři nové vestavěné schopnosti, které se automaticky přizpůsobují vašemu aktivnímu tématu
+
+## Opravy chyb v verzi 1.10.0
+
+- Opravena schopnost `navigate-to`, která způsobovala nekonečné cyklické načítání na některých administrátorských stránkách
+- Opravena schopnost `list-posts`, která neřešila správně názvy kategorií a tagů na slugi
+- Opraveny příkazy WP-CLI, které chyběly aliasy namespace po předchozí refaktorizaci
+- Opraveno, že automatizace událostí gracefully zpracovává stránky, kde nejsou tabulky automatizace ještě vytvořeny
+- Opravena schopnost `memory-save`, která používá správný prefix namespace v konstruktoru systémových pokynů
+- Opraveno, že výsledky skalarního nástroje jsou správně obaleny před odesláním zpět do AI
+- Opraveno, že statistiky použití správně zpracovávají starý formát klíče schopnosti při upgradu ze starších verzí
+
+## Podpora
+
+Pro podporu navštivte [ultimatemultisite.com](https://ultimatemultisite.com) nebo otevřete problém v úložišti pluginu.
+
+## Changelog
+
+Celý historii verzí naleznete v [Changelog](./changelog).

@@ -1,0 +1,94 @@
+---
+title: Ενσωμάτωση WooCommerce
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+Η WooCommerce Integration λειτουργεί πολύ παρόμοια με τον τρόπο που λειτουργεί η Manual Gateway μας. Παρέχει τεράστια ευελιξία στους χρήστες σας, επιτρέποντάς τους να επιλέξουν οποιαδήποτε από τις πληρωμές διαθέσιμες στην εγκατάσταση WooCommerce σας. Και είναι απλό: μόλις ολοκληρωθεί το billing period του χρήστη, η συνδρομή του τίθεται σε αναστολή (on hold). Ταυτόχρονα, θα δημιουργηθεί μια παραγγελία στην εγκατάσταση WooCommerce της κύριας σελίδας του network. Ο χρήστης λαμβάνει μια τιμολόγηση στο email του, με έναν σύνδεσμο για να πραγματοποιήσει την πληρωμή. Μόλις παραληφθεί η πληρωμή, η συνδρομή ανανεώνεται.
+
+## Χαρακτηριστικά
+
+- Εύκολη ενσωμάτωση μεταξύ Ultimate Multisite και WooCommerce
+- Διαbagai μέθοδοι πληρωμής
+- Πλήρως αυτοματοποιημένη διαδικασία με WooCommerce Subscriptions
+
+## Τεκμηρίωση
+
+**Ρύθμιση της WooCommerce Integration**
+
+**Επέκταση των Επιλογών Πληρωμής σας με το Ultimate Multisite: WooCommerce Integration**
+
+## Εγκατάσταση
+
+1. Ανεβάστε το 'ultimate-multisite-woocommerce' στον κατάλογο '/wp-content/plugins/'
+2. Ενεργοποιήστε το plugin μέσω του μενού 'Plugins' στο WordPress
+3. Ακολουθήστε τον βήμα προς βήμα Wizard για να ρυθμίσετε το plugin
+
+## Οδηγός Χρήσης
+
+_**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτός ο άρθρο αναφέρεται στην έκδοση 2.x του Ultimate Multisite.**_
+
+_**ΠΡΟΣΟΧΗ:** Η Ultimate Multisite: WooCommerce Integration απαιτεί το WooCommerce να είναι ενεργοποιημένο τουλάχιστον στην κύρια σελίδα σας._
+
+Καταλαβαίνουμε ότι το _Stripe_ και το _PayPal_ δεν είναι διαθέσιμα σε ορισμένες χώρες, κάτι που περιορίζει ή εμποδίζει τους χρήστες του Ultimate Multisite από την αποτελεσματική χρήση του plugin μας. Γι' αυτό δημιουργήσαμε ένα **add-on για την ενσωμάτωση του _WooCommerce_**.
+
+Το _WooCommerce_ είναι ένα πολύ δημοφιλές e-commerce plugin. Developers από όλο τον κόσμο δημιούργησαν add-ons για την ενσωμάτωση διαφορετικών payment gateways σε αυτό. Εκμεταλλευτήκαμε αυτό για να επεκτείνουμε τα payment gateways που μπορείτε να χρησιμοποιήσετε στο billing system του Ultimate Multisite.
+
+## Ρύθμισή του
+
+Πρώτα, πρέπει να εγκαταστήσετε το add-on WooCommerce Integration, το οποίο είναι **δωρεάν για τους συνδρομητικούς χρήστες (licensed users)**. Για να το εγκαταστήσετε, κάντε κλικ στο Ultimate Multisite στο super admin dashboard σας και επιλέξτε **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Εδώ μπορείτε να βρείτε όλα τα add-ons του Ultimate Multisite. Κάντε κλικ στο add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Θα εμφανιστεί ένα παράθυρο με τα στοιχεία του add-on. Απλώς κάντε κλικ στο **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Μετά την ολοκλήρωση της εγκατάστασης, θα ανακατευθυνθείτε στη σελίδα των plugins. Εδώ, απλώς κάντε κλικ στο **Network Activate** και το add-on _WooCommerce_ θα ενεργοποιηθεί στο network σας.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Μετά την ενεργοποίηση, αν ακόμα δεν έχετε εγκαταστήσει και ενεργοποιήσει το plugin WooCommerce στην ιστοσελίδα σας, **θα λάβετε μια υπενθύμιση**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Μόλις εγκατασταθεί, θα δείτε μια επιπλέον επιλογή στις ρυθμίσεις πληρωμών του Ultimate Multisite. Από εκεί μπορείτε να **ενεργοποιήσετε** την επιλογή _WooCommerce_.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Μπορείτε να ρυθμίσετε ορισμένες βασικές ρυθμίσεις, όπως το ονομαστικό πεδίο που θα εμφανίζεται στο front end και οδηγίες για να καθοδηγήσετε τους χρήστες σας στη ροή checkout. Στη συνέχεια, μπορείτε να μεταβείτε στις **ρυθμίσεις _WooCommerce_ της κύριας σας σελίδας** για να ενεργοποιήσετε και να ρυθμίσετε το payment gateway που προτιμάτε να χρησιμοποιήσετε.
+
+## Πώς να διαχειριστείτε την πληρωμή
+
+Η WooCommerce Integration λειτουργεί πολύ παρόμοια με τον τρόπο που λειτουργεί η **Manual Gateway** μας. Το μειονέκτημα είναι ότι κάθε πληρωμή πρέπει να πληρωθεί χειροκίνητα στο τέλος του billing period. Αυτό είναι πώς λειτουργεί η ροή:
+
+  * Μόλις ολοκληρωθεί το billing cycle του χρήστη, η सदस्यता τίθεται **σε αναστολή (on hold)**. Ταυτόχρονα, θα δημιουργηθεί μια παραγγελία στην εγκατάσταση _WooCommerce_ στην κύρια σελίδα του network σας.
+
+  * Οι χρήστες λαμβάνουν μια τιμολόγηση στο email τους, με έναν σύνδεσμο για να πραγματοποιήσουν την πληρωμή (ο σύνδεσμος εμφανίζεται επίσης στο ιστορικό billing τους από το subsite dashboard). Αυτός ο σύνδεσμος ανακατευθύνει τον χρήστη στο **checkout** του _**WooCommerce**_, όπου οι χρήστες θα είναι σε θέση να επιλέξουν ένα από τα **διαθέσιμα gateways του _WooCommerce_** για να επεξεργαστούν την πληρωμή τους.
+
+  * Μόλις παραληφθεί η πληρωμή, η सदस्यता **ανανεώνεται**, η πληρωμή καταγράφεται στο Ultimate Multisite και η παραγγελία τίθεται σε ολοκληρωμένη κατάσταση.
+
+### Ορισικές Σημειώσεις:
+
+  * Η προεπιλεγμένη λειτουργικότητα του Ultimate Multisiteยัง λειτουργεί με αυτήν την ενσωμάτωση. Για παράδειγμα, η **έκδοση επιστροφών (issuing refunds)** από την οθόνη **Subscription Management** θα επικοινωνήσει με το WooCommerce για να εκδώσει την επιστροφή χρησιμοποιώντας το επιλεγμένο payment gateway.
+
+  * Η Ultimate Multisite: WooCommerce Integration βασίζεται στο WP-Cron για να λειτουργήσει. Αυτό λειτουργεί πολύ καλά τις περισσότερες φορές, αλλά αν η σελίδα έχει χαμηλό επισκεψιμότητα, το cron δεν ενεργοποιείται για να ελέγξει για προγραμματισμένα γεγονότα και το γεγονός χάνεται, κάτι που μπορεί να προκαλέσει καθυστερήσεις εκτέλεσης.
+
+## WooCommerce Subscriptions Plugin
+
+Το χειροκίνητο ξεκίνημα πληρωμής κάθε μήνα δεν είναι ιδανικό για τους τελικούς χρήστες, καθώς αναμένεται μια συνδρομή να επαναλαμβάνεται αυτόματα κάθε billing cycle. Γι' αυτό σχεδιάσαμε το add-on WooCommerce Integration για να **υποστηρίζει το plugin WooCommerce Subscriptions**. Αυτό θα αυτοματοποιήσει την πληρωμή, κάνοντας τη συναλλαγή πιο εύκολη για τους τελικούς χρήστες σας.
+
+Όλα όσα χρειάζεται να κάνετε είναι να **εγκαταστήσετε** το [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) και να το έχετε **ενεργοποιημένο στην κύρια σελίδα σας**. Στη συνέχεια, επιστρέψτε στις ρυθμίσεις πληρωμών του Ultimate Multisite και **ενεργοποιήστε την ενσωμάτωση**.
+
+Και αυτό είναι όλα. Οι τελικοί χρήστες σας δεν θα χρειάζεται πλέον να κάνουν χειροκίνητη πληρωμή στο τέλος του billing cycle τους.
+
+Εκτός από το ότι δημιουργείται μια παραγγελία στην κύρια σελίδα σας κάτω από το _WooCommerce_, θα δημιουργεί επίσης μια συνδρομή για κάθε λογαριασμό.

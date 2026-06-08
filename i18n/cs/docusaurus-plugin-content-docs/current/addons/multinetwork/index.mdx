@@ -1,0 +1,100 @@
+---
+title: Multi-Network
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Addon Ultimate Multisite: Multinetwork rozšiřuje vaši platformu Ultimate Multisite o výkonnou funkčnost pro více sítí (multinetwork). Tento addon umožňuje vašim zákazníkům kupovat a spravovat celé sítě WordPress multisite, a ne jen jednotlivé weby.
+
+## Klíčové funkce
+
+* **Provoz sítě (Network Provisioning)**: Automaticky vytváří a konfigurová síť celé WordPress multisite pro vaše zákazníky.
+* **Šablony sítě (Network Templates)**: Zákazníci mohou procházet, předvzkoušet a vybrat předem připravenou šablonu sítě před registrací.
+* **Správa sítě (Network Management)**: Plná možnosti správy pro prostředí s více sítěmi.
+* **Izolované sítě (Isolated Networks)**: Každá zákaznická síť funguje nezávisle se svými vlastními tabulkami databáze a konfigurací.
+* **SSO napříč sítěmi (Cross-Network SSO)**: Zajišťuje zákazníkům bezproblémový přístup do svých pod-sítí pomocí autentizace magic-linkem.
+* **Škálová architektura (Scalable Architecture)**: Efektivně zvládá více sítí optimalizací přidělování zdrojů.
+* **Integrace (Integration)**: Bezproblémově se integruje se systémy předplatného a fakturace Ultimate Multisite.
+
+## Případové scénáře
+
+* **White Label Hosting**: Poskytujte zákazníkům vlastní značkové sítě multisite.
+* **Agenturské řešení**: Umožňuje agenturám spravovat více klientovských sítí z jediné platformy.
+* **Enterprise nasazení**: Podporuje velké organizace se složitými požadavky na více sítě.
+* **Vzdělávací platformy**: Vytváří oddělené sítě pro různé školy nebo oddělení.
+
+## Požadavky
+
+* Ultimate Multisite 2.0.0 nebo vyšší
+* Instalace WordPress Multisite
+* PHP 7.4 nebo vyšší
+* MySQL 5.6 nebo vyšší
+
+## Instalace
+
+1. Nahrajte soubory pluginu do adresáře `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivujte plugin v sekci „Plugins“ v WordPressu.
+3. Konfigurujte nastavení více sítí přes Ultimate Multisite → Settings.
+
+## Šablony sítě
+
+Verze 1.3.0 přidává proces objevování a výběru šablon pro zákazníky, kteří kupují nové sítě. Používejte šablony sítě, když chcete, aby každá nová zákaznická síť začala připravenou strukturou, designem, knihovnou obsahu nebo vertikálně specifickým nastavením.
+
+### Předvzkazovatel šablony
+
+Předvzkazovatel šablon sítě umožňuje zákazníkům procházet dostupné šablony před dokončením nákupu. Každou šablonu lze otevřít v živém předvzkazovacím panelu, takže zákazníci mohou porovnávat rozložení a obsah před tím, než si síť koupí.
+
+Použijte předvzkazovatel k pomoci zákazníkům:
+
+* Prozkoumat vzhled a strukturu každé dostupné šablony sítě.
+* Porovnat více šablon bez opuštění procesu nákupu.
+* Vybrat šablonu, která nejlépe odpovídá jejich případu použití před registrací.
+
+Udržujte názvy a popisy šablon přátelsky pro zákazníky. Předvzkazovatel je nejužitečnější, když zákazníci rozumí zamýšlenému případu použití, jako jsou agenturské sítě, školní sítě, franchizní sítě nebo balíčky white-label hostingu.
+
+### Výběr šablony při pokladně
+
+Výběr šablony lze přidat do procesu nákupu (checkout) jako pole. Po konfiguraci si zákazníci vyberou šablonu sítě, kterou chtějí, během pokladny, a vybraná šablona je použita, když je jejich nová síť provozována.
+
+Jak použít výběr v procesu nákupu:
+
+1. Připravte sítě, které chcete nabídnout jako šablony.
+2. Aktivujte pole pro výběr šablony více sítě v relevantním formuláři pro registraci nebo nákup.
+3. Vyberte, které šablony by měly být dostupné pro daný proces nákupu.
+4. Publikujte proces nákupu a otestujte registraci, abyste potvrdili, že vybraná šablona je aplikována na novou síť.
+
+Pokud proces nákupu nabízí pouze jeden produkt sítě, výběr může stále být užitečný jako průvodní krok onboardingu. Pro víceplánové funnely zobrazte pouze šablony, které jsou kompatibilní s vybraným produktem nebo plánem.
+
+## SSO magic-link napříč sítěmi
+
+SSO magic-link napříč sítěmi umožňuje zákazníkům přistupovat mezi svou primární oblastí účtu a pod-sítěmi bez nutnosti se znovu ručně přihlašovat. Když zákazník klikne na odkaz k přístupu napříč sítěmi, Ultimate Multisite vygeneruje časově omezený magic-link a autentizuje zákazníka do cílové sítě.
+
+To zlepšuje zkušenost zákazníků, kteří spravují více než jednu síť, nebo kteří potřebují okamžitý přístup k nově klonovaným sítlím těsně po nákupu.
+
+Kontrolní seznam pro administrátora:
+
+* Potvrďte, že addon Multinetwork je aktivní napříč instalací WordPress multisite.
+* Ujistěte se, že zákazníci mají správný přístup k síti, než jim nabídnete odkazy napříč sítěmi.
+* Udržujte domény sítě a mapované domény správně nakonfigurované, aby magic-linky vedly na zamýšlenou cílovou síť.
+* Otestujte dashboard zákazníka a jakékoli tlačítka přístupu po nákupu po změně nastavení sítě, domény nebo nákupu.
+
+Magic-linky by měly být považovány za přihlašovací odkazy. Jsou navrženy pro bezproblémový přístup zákazníků a nemají být přeposílány ani znovu použity mimo zamýšlenou sezení.
+
+## Často kptalé dotazy
+
+### Co je multinetwork?
+
+Multinetwork je funkce WordPress, která vám umožňuje provozovat více nezávislých multisite sítí na jedné instalaci WordPressu.
+
+### Jak se to liší od běžného multisite?
+
+Běžné multisite umožňuje více webů v rámci jedné sítě. Multinetwork umožňuje více sítí, každá se svými vlastními weby, vše v rámci jedné instalace WordPressu.
+
+### Vyžaduje to speciální konfiguraci serveru?
+
+Ano, multinetwork vyžaduje specifické nastavení a konfiguraci serveru. Prosím, konzultujte dokumentaci pro podrobné pokyny k nastavení.

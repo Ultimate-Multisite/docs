@@ -1,0 +1,124 @@
+---
+title: AI Site Builder
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Požadavky
+
+- WordPress 5.3 nebo vyšší
+- PHP 7.4 nebo vyšší
+- Multisite Ultimate plugin (aktivní)
+
+## Instalace
+
+1. Nahrání souborů addonu do adresáře `/wp-content/plugins/`
+2. Aktivujte plugin pomocí menu „Plugins“ v WordPressu
+3. Konfigurujte nastavení addonu v administraci sítě
+
+## Vývoj
+
+### Nastavení
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura projektu
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP třídy a vložení
+│   ├── class-multisite-ultimate-updater.php  # Handler pro aktualizace
+│   └── class-ai_site_builder-main.php             # Hlavní funkcionalita
+├── tests/                        # Unit testy
+│   ├── bootstrap.php            # Bootstrap pro testy
+│   ├── class-*-base.php         # Základní třída pro testy
+│   └── class-*-test.php         # Testovací případy
+├── views/                       # Soubory šablon
+├── assets/                      # Statické zdroje
+│   ├── css/                     # Stylové soubory
+│   ├── js/                      # JavaScript soubory
+│   └── images/                  # Obrázky
+├── lang/                        # Jazykové soubory
+├── composer.json                # PHP závislosti
+├── package.json                 # Závislosti Node.js
+├── phpunit.xml.dist             # Konfigurace PHPUnit
+├── .phpcs.xml.dist              # Konfigurace standardů kódu
+└── rector.php                   # Pravidla modernizace kódu
+```
+
+### Testování
+
+Addon obsahuje komplexní rámec pro testování:
+
+- **Unit Tests**: Testy založené na PHPUnit s testovacím balíkem WordPressu
+- **Base Test Class**: Poskytuje pomocné metody pro běžné testovací scénáře
+- **Test Coverage**: Konfigurováno pro sledování pokrytí kódu
+- **Multisite Testing**: Testy běží v prostředí Multisite
+
+### Standardy kódu
+
+- **WordPress Coding Standards**: Udržováno pomocí PHPCS
+- **PHP 7.4+ Compatibility**: Podporuje moderní funkce PHP
+- **Static Analysis**: Integrace PHPStan pro kontrolu typů
+- **Code Modernization**: Pravidla Rectoru pro aktualizace PHP
+
+### Systém sestavení
+
+- **Asset Processing**: Minifikace souborů CSS/JS
+- **Translation**: Generování souborů POT
+- **Packaging**: Vytváření archivu pro distribuci
+- **Development Mode**: Neminifikované zdroje pro ladění
+
+## Konfigurace
+
+Addon podporuje různé možnosti konfigurace, které jsou dostupné prostřednictvím rozhraní administrace sítě.
+
+## Hooks a filtry
+
+### Akce (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - Spustí se po inicializaci addonu
+- `ultimate-multisite-ai-site-builder_loaded` - Spustí se po načtení všech souborů addonu
+
+### Filtry (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - Změna nastavení addonu
+- `ultimate-multisite-ai-site-builder_enabled` - Přepsání stavu povolení/zakázání addonu
+
+## Licence
+
+Tento addon je licencován pod GPL v3 nebo novější.
+
+## Podpora
+
+Pro podporu a dokumentaci navštivte [MultisiteUltimate.com](https://multisiteultimate.com)
+## Seznam změn
+
+- Verze 1.0.1 (2025-09-28): Překřejmenování prefixu na ultimate-multisite; aktualizace domény textu; zvýšení verze.
+
+
+- Verze (2025-09-28): Překřejmenování prefixu na ultimate-multisite; aktualizace domény textu; zvýšení verze.

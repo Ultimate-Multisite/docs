@@ -1,0 +1,124 @@
+---
+title: Gwyr Gweithredwr Safon AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Ymddiantaueddau
+
+- WordPress 5.3 neu ddiweddarach
+- PHP 7.4 neu ddiweddarach
+- Plugin Multisite Ultimate (defnyddio)
+
+## Rheoliad
+
+1. Rhowch y cyfathrebu'r addon i'r dyfodol `/wp-content/plugins/`
+2. Actiwwch y plugin drwy'r menyn 'Plugins' yn WordPress
+3. Rheoliwch y setegau'r addon yn y admin cyd-gynllun (network admin)
+
+## Datblygiad
+
+### Rheoliad
+
+```bash
+# Rhowch y cyfathrebu'r dependants i'r gweithrediad
+composer install
+npm install
+
+# Runo'r gwylioedd
+npm run test
+
+# Runo'r gwylioedd standard cod
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Gyfyngu'r pwoblau styl cod
+vendor/bin/phpcbf
+
+# Cynllunio ar gyfer y proddection
+npm run build
+```
+
+### Estrwyll Proffesiwn
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes a chwaraeonau a gynnwys ac cyflwyniadau
+│   ├── class-multisite-ultimate-updater.php  # Gweithredwr y cyfathrebu
+│   └── class-ai_site_builder-main.php             # Ffurfiolyn canolbwynt
+├── tests/                        # Cynodiadau unigol
+│   ├── bootstrap.php            # Cynodiad cynorthwyo
+│   ├── class-*-base.php         # Class cynodiad cyfan
+│   └── class-*-test.php         # Cynodiadau testau
+├── views/                       # Fylpenau amgylchiadwy
+├── assets/                      # Asetau statol
+│   ├── css/                     # Stilioedd
+│   ├── js/                      # Fylpenau JavaScript
+│   └── images/                  # Imgynau
+├── lang/                        # Fylpenau iaith
+├── composer.json                # Cynlluniau PHP
+├── package.json                 # Cynlluniau Node.js
+├── phpunit.xml.dist             # Cynodiad PHPUnit
+├── .phpcs.xml.dist              # Cynodiad standardau cod
+└── rector.php                   # Rheoliadau modernu cod
+```
+
+### Cynodiadau (Testing)
+
+Mae'r addon yn cynnwys ffurfiolyn cynaliad cyfan:
+
+- **Cynodiadau Unigol**: Cynodiadau wedi'i gweithredu ar adalaeth PHPUnit gyda set testau WordPress.
+- **Class Cynodiad Cyfan**: Mae'n rhoi fforddion cynorthwyo am gyfathrebu testau cyffredinol.
+- **Cynodiadau Cod**: Mae'n cael eu cyflwyno i ddefnyddio ar gyfer cerdded cod (code coverage).
+- **Cynodiadau Multisite**: Cynodiadau yn cael eu gweithredu mewn anghytuntrio multisite.
+
+### Standardau Cod
+
+**Standardau Codig WordPress**: wedi cael ei gyfyngol trwy PHPCS
+**Cymrydolod PHP 7.4+**: Mae ffychiadau PHP modern yn cael eu chynllunio
+**Analysau Statach (Static Analysis)**: Ychwanegiad PHPStan i gwylio tybedd (type checking)
+**Modernau Codig (Code Modernization)**: Rheoli Rector ar gyfer cyfathriadau PHP
+
+### System Gweithredol (Build System)
+
+- **Prosesau Asset**: Minification ar gyfer ffili CSS/JS
+- **Cyfieithiad**: Cynllunio fyliau POT
+- **Pencadlu (Packaging)**: Creu archiwiaid ar gyfer disgyblhau
+- **Moddolion Mae'n Gweithredol (Development Mode)**: Assetau nid wedi'u minify i'r ddefnyddio am ddargano
+
+## Cyfluniadau (Configuration)
+
+Mae'r addon yn chymryd ychwanegiadau cyfluniad yn cael eu cyfathri ar gyfer drwy ffurf admin cyd-llwybr.
+
+## Hookau a Fyrddau (Hooks and Filters)
+
+### Gweithredoedd (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - Mae'n cael ei gweithredu ar ôl ychwanegiad addon
+- `ultimate-multisite-ai-site-builder_loaded` - Mae'n cael ei gweithredu ar ôl i gyd y ffili addon wedi'u chynllunio
+
+### Fyrddau (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - Gyfeiriad ychwanegiadau addon
+- `ultimate-multisite-ai-site-builder_enabled` - Mae'n gwneud ystodol i'r cyfathri addon yn cael ei gael/ddysbellu
+
+## Licensio (License)
+
+Mae'r addon hwn yn cael ei licensio o ddefnyddio GPL v3 neu fwy.
+
+## Cydweithrediadau (Support)
+
+Ar gyfer cydweithrediad a drafod documentaeth, yrru ar [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Versi 1.0.1 (2025-09-28): newid y cyfathriad i ultimate-multisite; cyfathriadau text domain; gwahanu'r chyfrif.
+
+
+- Versi  (2025-09-28): newid y cyfathriad i ultimate-multisite; cyfathriadau text domain; gwahanu'r chyfrif.

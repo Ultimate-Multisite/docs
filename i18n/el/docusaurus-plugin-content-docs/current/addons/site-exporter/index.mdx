@@ -1,0 +1,101 @@
+---
+title: Εξαγωγέας Συστήματος
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Περιεχόμενο
+
+Καταλαβαίνουμε την ανάγκη να μπορείτε να μετακινήσετε τα υποσites εντός του δικτύου σας σε μια ενιαία εγκατάσταση site και το αντίστροφο, αν ο πελάτης σας αποφασίσει να μεταφέρει την ιστοσελίδα του. Το add-on Site Exporter και Importer κάνει αυτή τη διαδικασία πιο εύκολη. Αυτό το εργαλείο εξάγει και εισάγει sites χρησιμοποιώντας αρχεία zip, τα οποία μπορούν επίσης να χρησιμεύσουν ως backup.
+
+## Χαρακτηριστικά
+
+* Εξαγωγή και Εισαγωγή Sites
+
+* Εύκολο στη χρήση περιβάλλον
+
+* Δημιουργία backup site
+
+## Τεκμηρίωση
+**Πώς να Εξαγάγετε και να Εισάγετε ένα Site**
+
+## Εγκατάσταση
+
+1. Ανεβάστε το **ultimate-multisite-site-exporter** στον κατάλογο **/wp-content/plugins/**
+2. Ενεργοποιήστε το plugin μέσω του μενού **Plugins** στο WordPress
+3. Ακολουθήστε τον οδηγό βήμα προς βήμα για να ρυθμίσετε το plugin
+
+## Οδηγός Χρήσης
+
+Με το Ultimate Multisite μπορείτε να εξάγετε ένα site από το δίκτυό σας ή να εισάγετε ένα site στην εγκατάσταση multisite ή single-site σας.
+
+Για να ξεκινήσετε τη διαδικασία, μεταβείτε στη σελίδα των add-ons μας και εγκαταστήστε το add-on Ultimate Multisite: Site Exporter & Importer.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Μεταβείτε στη σελίδα Plugins και κάντε κλικ για να **Network Activate** το add-on που μόλις εγκαταστήσατε.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Η επιλογή **Export & Import** μπορεί να βρεθεί στο μενού Ultimate Multisite, στα αριστερά.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Πώς να εξάγετε ένα site
+
+Για να εξάγετε ένα site από το δίκτυό σας, μεταβείτε στο **Export & Import** στο μενού Ultimate Multisite και, στην καρτέλα **Export Sites**, κάντε κλικ για **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Αναζητήστε το site που θέλετε να εξάγετε και επιλέξτε τα στοιχεία που θέλετε να περιλαμβάνονται στο αρχείο εξαγωγής. Μπορείτε να συμπεριλάβετε themes, plugins και uploads. Αν το site σας είναι πολύ μεγάλο, μπορείτε να επιλέξετε να εκτελέσετε τη διαδικασία εξαγωγής στο παρασκήνιο.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Πατήστε το κουμπί **Export Site**. Το εξάγουμεν site θα είναι διαθέσιμο στη λίστα **Existing Exports**. Πατήστε το κουμπί **Download ZIP** για να κατεβάσετε το αρχείο. Τα ZIP αρχεία εξαγωγής περιλαμβάνουν ένα `index.php` που εκκινεί αυτόνομα και ένα `readme.txt`, οπότε μπορούν να εγκατασταθούν σε έναν νέο host χωρίς να χρειαστεί να εγκατασταθεί πρώτα ένα ξεχωριστό plugin importer.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Πώς να εξάγετε ολόκληρο το δίκτυο
+
+Για να εξάγετε όλα τα υποσites μαζί, μεταβείτε στο **Export & Import** στο μενού Ultimate Multisite και χρησιμοποιήστε την επιλογή **Network Export** στην οθόνη εξαγωγής. Το δημιουργημένο archive περιέχει όλα τα υποσites σε ένα μόνο ZIP για μετακινήσεις host, αναδόμηση σε περιβάλλον staging ή backups σε επίπεδο δικτύου.
+
+Οι network exports μπορεί να είναι μεγάλοι. Εκτελέστε τα όταν ο επισκεπτικό χώρος είναι χαμηλός και επιβεβαιώστε ότι ο server έχει αρκετό χώρο αποθήκευσης για το archive και οποιαδήποτε περιλαμβανόμενα uploads, plugins και themes.
+
+## Πώς να εισάγετε ένα site
+
+Για να εισάγετε ένα site, μεταβείτε στην καρτέλα **Import a Site** και ανεβάστε το .zip αρχείο του site που θέλετε να εισάγετε. Μπορείτε να αλλάξετε τη διεύθυνση URL σε μια νέα ή να διατηρήσετε την παλιά URL αφήνοντας το πεδίο κενό. Επιπλέον, μπορείτε να επιλέξετε το κουτάκι για να διαγράψετε το .zip αρχείο από την εγκατάστασή σας μετά την εισαγωγή. Στη συνέχεια, πατήστε **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Η διαδικασία μπορεί να πάρει λίγο χρόνο. Θα δείτε μια εισαγωγή σε αναμονή στη λίστα κάτω από τον importer.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Μπορείτε να σταματήσετε τη διαδικασία πατώντας **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Μετά την ολοκλήρωση της διαδικασίας, το site σας είναι ήδη διαθέσιμο στο δίκτυό σας.
+
+## Πώς να εισάγετε ένα site σε μια single install
+
+Για να εισάγετε ένα site στην single install σας, εγκαταστήστε και ενεργοποιήστε τον importer στο site σας. Μπορείτε να βρείτε τον σύνδεσμο για το download του στην καρτέλα exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Μπορείτε να βρείτε τον importer στο μενού **Tools**, στα αριστερά, στο υπο-στοιχείο **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Ανεβάστε το .zip αρχείο του site που θέλετε να εισάγετε. Μπορείτε να αλλάξετε τη διεύθυνση URL σε μια νέα ή να διατηρήσετε την παλιά URL αφήνοντας το πεδίο κενό. Επιπλέον, μπορείτε να επιλέξετε το κουτάκι για να διαγράψετε το .zip αρχείο από την εγκατάστασή σας μετά την εισαγωγή. Στη συνέχεια, πατήστε **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Η διαδικασία μπορεί να πάρει λίγο χρόνο. Θα δείτε μια εισαγωγή σε αναμονή στη λίστα κάτω από τον importer.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Μπορείτε να σταματήσετε τη διαδικασία πατώντας **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Μετά το πέρας της διαδικασίας, το site σας θα αντικατασταθεί από το site που μόλις εισάγαγατε.

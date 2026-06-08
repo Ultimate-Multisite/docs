@@ -1,0 +1,101 @@
+---
+title: Exporter webových stránek
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Obsah
+
+Rozumíme nutnosti, že je třeba být schopni přesunout subdomény v rámci vaší sítě na jednu instalaci stránky a naopak, pokud se váš klient rozhodne o migraci své webové stránky. Addon Site Exporter a Importer tento úkol zjednodušuje. Tento nástroj exportuje a importuje stránky pomocí zip souborů, které lze také použít jako záloha.
+
+## Funkce
+
+* Export a import stránek
+
+* Uživatelsky přívětivé rozhraní
+
+* Vytváření záloh stránek
+
+## Dokumentace
+**Jak exportovat a importovat stránku**
+
+## Instalace
+
+1. Nahrajte **ultimate-multisite-site-exporter** do adresáře **/wp-content/plugins/**
+2. Aktivujte plugin v menu **Plugins** v WordPressu
+3. Postupujte podle průvodce krok za krokem pro nastavení pluginu
+
+## Manuál použití
+
+S Ultimate Multisite můžete exportovat stránku ze své sítě nebo importovat stránku do vaší multisite nebo single-site instalace.
+
+Aby bylo možné zahájit proces, přejděte na naši stránku s addony a nainstalujte addon Ultimate Multisite: Site Exporter & Importer.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Přejděte na svou stránku Plugins a klikněte na **Network Activate** pro aktivaci právě nainstalovaného addonu.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Možnost **Export & Import** je umístěna v menu Ultimate Multisite, na levé straně.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Jak exportovat stránku
+
+Pro exportování stránky ze své sítě přejděte na **Export & Import** v menu Ultimate Multisite a v záložce **Export Sites** klikněte na **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Vyhledejte stránku, kterou chcete exportovat, a vyberte položky, které chcete zahrnout do exportovaného souboru. Můžete zahrnout téma, pluginy a nahrání. Pokud je vaše stránka příliš velká, můžete zvolit exportní proces v pozadí.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Klikněte na tlačítko **Export Site**. Váš exportovaný obsah bude k dispozici v seznamu **Existing Exports**. Klikněte na tlačítko **Download ZIP** pro stažení souboru. Exportní ZIPy obsahují samoaktivující `index.php` a `readme.txt`, takže je lze nainstalovat na čerstvě připraveném hostingu bez předchozí instalace samostatného importního pluginu.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Jak exportovat celou síť
+
+Pro exportování všech subdomén společně přejděte na **Export & Import** v menu Ultimate Multisite a použijte možnost **Network Export** na exportní obrazovce. Vytvořený archiv obsahuje všechny subdomény v jednom ZIP pro migraci hostingu, rebuildy stagingu nebo zálohy na úrovni sítě.
+
+Exporty sítě mohou být velké. Spusťte je, když je provoz nízký, a potvrďte, že server má dostatek úložiště pro archiv a jakékoli zahrnuté nahrání, pluginy a téma.
+
+## Jak importovat stránku
+
+Pro importování stránky přejděte na záložku **Import a Site** a nahrajte .zip soubor stránky, kterou chcete importovat. Můžete změnit URL na novou nebo zachovat starou URL, pokud necháte pole prázdné. Také můžete zaškrtnout pole pro smazání .zip souboru z vaší instalace po importu. Poté klikněte na **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Proces může trvat trochu déle. Pod importérem uvidíte čekající import.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Můžete proces zastavit kliknutím na **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Po dokončení procesu je vaše stránka již k dispozici ve vaší síti.
+
+## Jak importovat stránku na single instalaci
+
+Pro importování stránky do vaší single instalace nejprve nainstalujte a aktivujte importér na své stránce. Odkaz na jeho stažení najdete v záložce Exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Importér najdete v menu **Tools**, na levé straně, pod položkou **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Nahrajte .zip soubor stránky, kterou chcete importovat. Můžete změnit URL na novou nebo zachovat starou URL, pokud necháte pole prázdné. Také můžete zaškrtnout pole pro smazání .zip souboru z vaší instalace po importu. Poté klikněte na **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Proces může trvat trochu déle. Pod importérem uvidíte čekající import.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Můžete proces zastavit kliknutím na **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Po dokončení procesu bude vaše stránka nahrazena stránkou, kterou jste právě importovali.

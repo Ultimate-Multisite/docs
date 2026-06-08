@@ -1,0 +1,27 @@
+---
+id: wu_apc_get_meta
+title: Φίλτρο - wu_apc_get_meta
+sidebar_label: wu_apc_get_meta
+_i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
+---
+# Φίλτρο: wu_apc_get_meta
+
+Επιτρέπει στους developers να φιλτράρουν τις τελικές τιμές και να προσθέτουν νέες περιπτώσεις επεξεργασίας.
+
+## Παράμετροι
+
+| Όνομα | Τύπος | Περιγραφή |
+|------|------|-------------|
+| $default_value | `string` | Η προεπιλεγμένη τιμή. |
+| $meta_type | `string` | Τύπος των μεταδεδομένων που θα ανακτηθούν. |
+| $meta_key | `string` | Όνομα του πεδίου meta. |
+
+### Από
+
+- 1.4.0
+### Πηγή
+
+Ορίζεται στο [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) στην γραμμή 93
+
+## Επιστρέφει
+Τη νέα προεπιλεγμένη τιμή.

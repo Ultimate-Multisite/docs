@@ -1,0 +1,27 @@
+---
+id: wu_setup_wizard
+title: Filter - wu_setup_wizard
+sidebar_label: wu_setup_wizard
+_i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
+---
+# Filter: wu_setup_wizard
+
+Umožňuje vývojářům přidat další kroky do nastavenovacího průvodce.
+
+## Parametry
+
+| Název | Typ | Popis |
+|------|------|-------------|
+| $sections | `array` | Aktuální sekce. |
+| $is_migration | `bool` | Indikuje, zda se jedná o migraci. |
+| $wizard | `object` | Aktuální instance průvodce. |
+
+### Od
+
+- 2.0.0
+### Zdroj
+
+Definováno v [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) na řádku 525
+
+
+## Vrací

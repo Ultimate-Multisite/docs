@@ -1,0 +1,143 @@
+---
+title: Zdarma AI agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent je autonomní WordPress AI asistent, který dokáže plánovat, vytvářet a spravovat kompletní WordPress weby pomocí přirozeně lidského jazyka. Exponuje strukturovanou sadu **možností** (abilities) — diskrétních, testovatelných akcí, které agent může spouštět — pokrývající vše od správy obsahu až po vlastní optimalizaci designového systému. Verze 1.9.0 přidává schopnosti vytváření obsahu, vizuální přehled stránek pomocí snímků obrazovky z klientovské strany, pět vestavěných profilů agentů a přepínače funkcí (feature flags) pro kontrolu přístupu a značení.
+
+## Klíčové funkce
+
+- **Systém možností (Abilities system)** — modulární a rozšiřitelný katalog akcí, které agent může spouštět na vaší instalaci WordPressu
+- **Správa obsahu (Content Management)** — vytváření příspěvků a stránek (včetně přiřazení šablon stránek), dávkové tvorby více příspěvků jedním požadavkem, nastavení hlavní obrázky a tvorba kontaktních formulářů
+- **Vizuální přehled (Visual Review)** — zachycení snímků živých stránek, porovnání stavů před/po úpravě a získání AI-generovaného designového přehledu pokrývajícího rozložení, typografii, barvu a přístupnost
+- **Pět vestavěných agentů** — Content Writer, Site Builder, Design Studio, Plugin Manager a Support Assistant; přepínatelné pomocí výběru agenta (Agent Picker) v hlavičce chatu
+- **Přepínače funkcí (Feature flags)** — přepínače pro kontrolu přístupu a značení v Nastavení → Přepínače funkcí (Settings → Feature Flags) pro omezení rolí, white-label jmenování a vlastní optimalizaci widgetů
+- **Správa vlastních typů příspěvků (Custom Post Type management)** — registraci, seznam a smazání vlastních typů příspěvků s trvalostí po restartu
+- **Správa vlastních taksonomií (Custom Taxonomy management)** — registraci, seznam a smazání vlastních taksonomií s trvalostí
+- **Možnosti designového systému (Design System abilities)** — vkládání vlastního CSS, spravování kurátorovaných vzorů bloků, nastavení loga webu a aplikování přednastavených hodnot theme.json
+- **Správa globálních stylů (Global Styles management)** — čtení a zápis hodnot theme.json pro palety barev, typografii, mezery a další
+- **Správa navigačních menu (Navigation Menu management)** — programátorské vytváření a aktualizace navigačních menu a jejich položek
+- **Správa možností (Options Management)** — čtení a zápis možností WordPressu s vestavěným bezpečnostním seznamem, který chrání kritická nastavení
+- **Instalovatelné registry možností (Installable Abilities Registry)** — objevování a aktivace dalších balíků možností bez úpravy core souborů pluginu
+- **Orchestrace Site Builder v2 (Site Builder Orchestration v2)** — víceúrovňové plány tvorby webu s objevováním pluginů, sledováním pokroku a obnovou chyb
+- **Benchmark příkaz WP-CLI** — spuštění testovacího balíčku schopností agenta z příkazové řádky pro CI a evaluaci modelu
+
+## Požadavky
+
+- WordPress 6.0 nebo vyšší
+- PHP 8.1 nebo vyšší
+- WordPress Multisite (aktivováno na úrovni sítě) nebo instalace pro jednu webovou stránku
+- Aktivní konektor pluginu pro AI poskytovatele (Anthropic, OpenAI nebo kompatibilní)
+
+## Instalace
+
+1. Nahrajte soubory pluginu do `/wp-content/plugins/gratis-ai-agent`
+2. Aktivujte plugin na obrazovce **Plugins** v WordPressu
+3. Přejděte na **Gratis AI Agent → Settings** a připojte svého AI poskytovatele
+4. (Volitelné) Projděte **Abilities Registry** a nainstalujte další balíčky možností
+
+## Rychlý start
+
+Jakmile je aktivován a připojen k AI poskytovateli, otevřete panel **Gratis AI Agent** v boční liště administrace WordPressu. Zadejte instrukci v přirozeném jazyce a agent naplánuje a provede požadované kroky pomocí dostupných možností.
+
+**Příklady instrukcí:**
+
+```
+Vytvořit vlastní typ příspěvku „Portfolio“ s taksonomií „Projektová kategorie“.
+```
+
+```
+Vkládat paletu barev pro režim tmavého pohledu do tématu a nastavit primární barvu na #1a1a2e.
+```
+
+```
+Vytvořit web restaurace s online menu, formulářem pro rezervace a kontaktní stránkou.
+```
+
+## Přehled možností (Abilities Overview)
+
+Možnosti jsou atomické akce, které agent dokáže provést. Každá možnost je registrovaná PHP třída, která exponuje schéma (parametry a typy návratu), které agent čte v době běhu. Možnosti jsou seskupeny do funkčních oblastí:
+
+| Oblast | Možnosti |
+|---|---|
+| **Správa obsahu** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizuální přehled** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Vlastní typy příspěvků** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Vlastní taksonomie** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Designový systém** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globální styly** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigační menu** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Správa možností** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Instalovatelné možnosti** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Podrobnou dokumentaci parametrů a příklady použití najdete v [Abilities Reference](./abilities).
+
+## WP-CLI
+
+Gratis AI Agent obsahuje sadu příkazů `wp gratis-ai-agent` pro spouštění benchmarků a správu možností z příkazové řádky. Kompletní seznam příkazů je v [WP-CLI Reference](./wp-cli).
+
+```bash
+# Spustit kompletní testovací balíček
+wp gratis-ai-agent benchmark
+
+# Seznam nainstalovaných možností
+wp gratis-ai-agent abilities list
+
+# Nainstalovat balíček možností
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurace
+
+Všechna nastavení naleznete na **Gratis AI Agent → Settings** v administraci WordPressu:
+
+| Nastavení | Popis |
+|---|---|
+| **AI Provider** | Vyberte a nakonfigurujte aktivní konektor AI poskytovatele |
+| **Model** | Vyberte jazykový model pro sezení agenta |
+| **Max Tokens** | Rozpočet tokenů na požadavek (výchozí 4096) |
+| **Ability Timeout** | Maximální sekundy, po které může běžet jednotlivá možnost (výchozí 30) |
+| **Debug Logging** | Logování volání možností a uvažování agenta do logu odladování WordPressu |
+
+## Bezpečnostní bezpečnostní seznam pro správu možností
+
+Možnost Správa možností obsahuje vestavěný bezpečnostní seznam, který brání agentovi číst nebo zapisovat citlivé možnosti WordPressu. Výchozí seznam pokrývá:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (Možnosti URL — pro tyto použijte dedikovaný migrační nástroj)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (tajné klíče)
+- `active_plugins`, `template` (aktivace pluginů/témat — použijte dedikované možnosti)
+- Účetní údaje a API klíče brány platby registrované nainstalovanými pluginy
+
+Doplňkové položky lze přidat pomocí filtru `gratis_ai_agent_options_blocklist`.
+
+## Hooks a filtry
+
+### Akce (Actions)
+
+- `gratis_ai_agent_ability_registered` — spuštěno po registraci možnosti, přijímá název třídy možnosti
+- `gratis_ai_agent_plan_started` — spuštěno při zahájení plánu Site Builderu
+- `gratis_ai_agent_plan_completed` — spuštěno při úspěšném dokončení plánu
+- `gratis_ai_agent_plan_failed` — spuštěno při zjištění neobnovitelné chyby v plánu
+
+### Filtry (Filters)
+
+- `gratis_ai_agent_abilities` — modifikuje registrovaný seznam možností předtím, než agent načte
+- `gratis_ai_agent_options_blocklist` — rozšíří nebo zúží bezpečnostní seznam možností
+- `gratis_ai_agent_benchmark_questions` — přidává vlastní testovací otázky do testovacího balíčku
+- `gratis_ai_agent_plan_plugins` — modifikuje seznam objevovaných pluginů během generování plánu webu
+
+## Podpora
+
+Pro podporu navštivte [ultimatemultisite.com](https://ultimatemultisite.com) nebo otevřete problém v repozitáři pluginu.
+
+## Seznam změn (Changelog)
+
+Podrobný historii verzí naleznete v [Changelog](./changelog).

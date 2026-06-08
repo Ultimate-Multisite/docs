@@ -1,0 +1,26 @@
+---
+id: wu_billing_address_fields
+title: Φίλτρο - wu_billing_address_fields
+sidebar_label: wu_billing_address_fields
+_i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
+---
+# Filter: wu_billing_address_fields
+
+Επιτρέπει στους developers plugins να φιλτράρουν τα πεδία της διεύθυνσης χρέωσης.
+
+## Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| $fields | `array` | Το array των πεδίων της διεύθυνσης χρέωσης. |
+| $zip_only | `bool` | Αν χρειάζεραμε μόνο τον ταχυδρομικό κώδικα και τη χώρα. |
+
+### Since
+
+- 2.0.0
+### Source
+
+Ορίζεται στο [`inc/objects/class-billing-address.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/objects/class-billing-address.php#L348) στην γραμμή 348
+
+
+## Returns

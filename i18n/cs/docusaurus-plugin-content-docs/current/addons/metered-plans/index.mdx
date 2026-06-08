@@ -1,0 +1,117 @@
+---
+title: Plány s měřením spotřeby
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Měřené plány
+
+Addon Ultimate Multisite: Metered Plans mění způsob, jakým fakturujete svým zákazníkům, a to díky flexibilní měřené fakturaci. Místo přísných hard limitů, které uživatele zablokují po překročení, umožňuje poplatky za přebytečné použití, které automaticky zákazníkům za další využití účtuje.
+
+## Klíčové funkce
+
+* **Měřená fakturace (Metered Billing)**: Zákazníkům účtujte na základě skutečného využití, nikoli na základě fixních úrovní.
+* **Správa přebytečného využití (Overage Management)**: Automaticky účtuje využití, které překročí limity plánu.
+* **Sledování využití (Usage Tracking)**: Monitorujte spotřebu zdrojů zákazníka v reálném čase.
+* **Flexibilní cenotvorba**: Nastavte vlastní sazby pro různé zdroje (úložiště, propustnost, webové stránky atd.).
+* **Fakturace AI tokenů**: Sledujte a účtujte vstupní a výstupní tokeny pro využití AI napříč subwebovými stránkami zákazníků.
+* **Automatické fakturace**: Generuje faktury automaticky, když jsou překročeny limity využití.
+* **Zprávy o využití**: Detailní analýza a zprávy o využití pro zákazníky i administrátory.
+
+## Ideální pro
+
+* **Hostingové poskytovatele**: Nabízejte škálovatelné plány, které rostou s potřebami zákazníků.
+* **SaaS platformy**: Fakturujte na základě skutečné spotřeby zdrojů.
+* **Agenturní sítě**: Flexibilní modely cenotvorby pro projekty klientů.
+* **Reseller hosting**: Umožňte partnerům nabízet cenotvorbu založenou na využití.
+
+## Jak to funguje
+
+1. Konfigurujte měřené zdroje (úložiště, propustnost, počet webových stránek atd.).
+2. Nastavte základní limity plánu a sazby za přebytečné použití.
+3. Systém automaticky sleduje využití napříč vaší sítí.
+4. Když zákazníci překročí limity, jsou vypočítány poplatky za přebytečné použití.
+5. Faktury jsou generovány automaticky na základě cyklu fakturace.
+6. Zákazníci mohou v reálném čase vidět své využití a nadcházející poplatky.
+
+## Fakturace AI tokenů
+
+Verze 1.1.0 přidává fakturaci AI tokenů pro sítě, které nabízejí funkce AI prostřednictvím WordPress AI Client SDK. Metered Plans monitoruje dokončené požadavky na generování AI, zaznamenává počet vstupních a výstupních tokenů pro aktuální subwebovou stránku a tyto tokeny převede na fakturovatelnou AI spotřebu pro aktuální období fakturace zákazníka.
+
+Použijte fakturaci AI tokenů, když chcete nabízet nástroje AI na stránkách zákazníků, aniž byste absorbovali nepředvídatelné náklady na modely. Každý požadavek je přiřazen k subwebové stránce, zákazníkovi, členství, poskytovateli a modelu, takže administrátoři mohou auditovat využití, zatímco zákazníci vidí, jak jejich spotřeba AI ovlivňuje jejich účet.
+
+### Konfigurace sazeb na token
+
+Sazby AI jsou konfigurovány pro každý model jako samostatné vstupní a výstupní sazby. Sazby jsou vypočítány za 1 milion tokenů, což odpovídá běžným stránkám s cenami poskytovatelů AI.
+
+1. V administraci sítě otevřete **Multisite Ultimate → Nastavení → Metered Plans**.
+2. Zapněte měření AI spotřeby pro produkt nebo členství, které má fakturovat využití AI.
+3. Přidejte položky sazeb modelu pomocí ID modelů, která vrátí váš konektor, jako jsou `gpt-4o`, `gpt-4o-mini` nebo jiný identifikátor kompatibilní s OpenAI modelem.
+4. Zadejte samostatné hodnoty **Vstupní sazba** a **Výstupní sazba** ve vaší měně za 1 milion tokenů.
+5. Nastavte limit AI spotřeby pro zákazníka a chování při překročení limitu pro plán.
+
+Pokud není nakonfigurováno přesné ID modelu, Metered Plans může provést shodu podle prefixu modelu. Například sazba nakonfigurovaná pro `claude-sonnet-4` může platit pro časově razítka ID modelů, která začínají tímto prefixem. Vývojáři mohou také upravit celkovou tabulku sazeb pomocí filtru [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Podporované AI konektory
+
+Fakturace AI tokenů funguje s konektory, které emitují události WordPress AI Client SDK generování a zahrnují využití tokenů v metadatech odpovědi. Zahrnuje to rodinu konektorů Ultimate Multisite AI dokumentovanou zde:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) pro API kompatibilní s OpenAI, včetně OpenAI, Mistral, Ollama-kompatibilních brán a dalších poskytovatelů, které vystavují kompatibilní metadata využití tokenů
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) pro využití WebLLM v prohlížeči, když jsou požadavky směrovány přes tok událostí AI Client SDK
+* Konektory poskytovatelů AI používané przez [Gratis AI Agent](../gratis-ai-agent/) při výběru poskytovatele, který hlásí počty tokenů pro prompt a dokončení přes SDK
+
+Vlastní konektory se mohou zúčastnit odesíláním standardních událostí `wp_ai_client_before_generate_result` a `wp_ai_client_after_generate_result` s metadaty modelu, poskytovatele a využití tokenů. Nastavení konektoru je vynucováno z hlavní stránky na subwebové stránky, takže zákaznické stránky používají poskytovatele a limity schválené sítí.
+
+### Využití účtu zákazníka
+
+Zákazníci vidí využití AI vedle svých dalších měřených zdrojů ve svém účtu. Řádek AI spotřeby zobrazuje celkový součet za aktuální období fakturace, který je odvozen z zaznamenaných tokenů pro prompt a dokončení, nakonfigurovaných sazeb modelu a jakéhokoli zahrnutého limitu v plánu.
+
+Pokud má zákazník uloženou platební kartu, využití nad zahrnutým limitem je považováno za fakturovatelný přebytek. Pokud je plán nakonfigurován pro hard cutoff a zákazník nemá k dispozici platební kartu, požadavky AI mohou být zablokovány, jakmile je dosažen limit a zákazník je vyzván k přidání platebních údajů před pokračováním.
+
+## Podporované zdroje
+
+* Úložiště disků
+* Propustnost/Přenos dat
+* Počet webových stránek
+* Počet uživatelů
+* Využití AI tokenů a AI spotřeba
+* Vlastní typy zdrojů
+
+## Požadavky
+
+* Multisite Ultimate 2.0.0 nebo vyšší
+* Instalace WordPress Multisite
+* PHP 7.4 nebo vyšší
+
+## Instalace
+
+1. Nahrajte soubory pluginu do `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivujte plugin na obrazovce „Plugins“ v WordPressu
+3. Přejděte na Multisite Ultimate → Nastavení → Metered Plans
+4. Konfigurujte své měřené zdroje a ceny
+5. Zapněte měřenou fakturaci pro produkty v editoru produktů
+
+## Často kptalé otázky
+
+## Co se stane, když zákazník překročí svůj limit?
+
+Místo blokování přístupu systém sleduje přebytek a přidá ho do jeho další faktury na základě sazeb, které jste nakonfigurovali.
+
+## Mohu nastavit jiné sazby za přebytečné použití pro různé produkty?
+
+Ano, každý produkt může mít unikátní měřené zdroje a ceny za přebytečné použití.
+
+## Jak jsou zákazníci informováni o využití?
+
+Zákazníci mohou vidět své aktuální využití ve svém dashboardu a dostat volitelné upozornění při přiblížení se nebo překročení limitů.
+
+## Jak je účtována spotřeba AI tokenů?
+
+Spotřeba AI tokenů je účtována na základě nakonfigurovaných vstupních a výstupních sazeb modelu za 1 milion tokenů. Metered Plans vynásobí počet tokenů pro prompt a dokončení každého požadavku těmito sazbami, přidá výsledek do aktuální AI spotřeby zákazníka za období fakturace a aplikuje limit nebo pravidla pro přebytečné použití plánu.
+
+## Mohu stále používat hard limity?
+
+Ano, měřená fakturace je pro každý produkt volitelná. Můžete kombinovat tradiční produkty s hard limity s produkty měřenou fakturací.
