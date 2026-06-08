@@ -1,0 +1,114 @@
+---
+title: Courriels
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+L'addon Ultimate Multisite : Emails permet aux propriétaires de réseau de fournir et de gérer les comptes e-mail des clients en parallèle des sites et des adhésions. La version 1.1.0 ajoute la gestion des comptes e-mail côté client, l'authentification unique (SSO) pour le webmail, le support du transfert CyberPanel, et des améliorations du provisionnement au moment du paiement.
+
+## Fonctionnalités clés
+
+* **Widget de compte e-mail client** : Les clients peuvent créer et gérer des comptes e-mail depuis leur page de compte sans ouvrir de ticket de support.
+* **SSO Webmail et liens magiques** : Les clients peuvent accéder au webmail directement depuis la page de compte avec une authentification en un clic, si le fournisseur le prend en charge.
+* **Changement de mot de passe** : Les clients et les administrateurs peuvent mettre à jour les mots de passe des boîtes aux lettres depuis le widget de gestion des e-mails.
+* **Provisionnement au paiement** : La création de comptes e-mail clients peut s'exécuter pendant le processus de paiement, garantissant que la boîte aux lettres est prête une fois l'achat terminé.
+* **Transferts CyberPanel** : Les réseaux basés sur CyberPanel peuvent créer et gérer des transferts e-mail dans le cadre du flux de service e-mail.
+* **Paramètres sensibles au fournisseur** : La page des paramètres filtre les fournisseurs pour n'afficher que les intégrations actives et configurées, de sorte que les administrateurs ne voient que les options utilisables.
+
+## Prérequis
+
+* Ultimate Multisite 2.0.0 ou supérieur
+* Installation WordPress Multisite
+* Au moins une intégration de fournisseur e-mail configurée
+* Identifiants API du fournisseur avec les autorisations de créer des boîtes aux lettres, de modifier les mots de passe et d'émettre des liens d'accès webmail, si pris en charge
+
+## Installation
+
+1. Téléchargez les fichiers du plugin dans `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activez l'addon au niveau du réseau depuis **Plugins** dans le panneau d'administration du réseau WordPress.
+3. Allez dans **Ultimate Multisite** > **Paramètres** et ouvrez les paramètres e-mail de l'addon.
+4. Activez les intégrations de fournisseurs e-mail que vous souhaitez que les clients utilisent.
+5. Enregistrez les paramètres, puis testez la création de compte avec un client non-production ou un site de staging.
+
+## Gestion des e-mails du compte client
+
+La version 1.1.0 ajoute un widget de gestion des e-mails à la page de compte client. Utilisez-le lorsque les clients doivent gérer eux-mêmes la création et la maintenance de la boîte aux lettres pour leurs propres sites.
+
+Depuis la page de compte, les clients peuvent :
+
+1. Voir les comptes e-mail connectés à leur adhésion ou site actuel.
+2. Créer une nouvelle boîte aux lettres si leur forfait le permet.
+3. Changer le mot de passe d'une boîte aux lettres existante.
+4. Ouvrir les fournisseurs webmail pris en charge via SSO ou une connexion par lien magique.
+
+Le widget utilise le système de page de compte d'Ultimate Multisite, de sorte que les actions sont limitées au contexte de compte que le client consulte. Cela empêche les clients de gérer des comptes e-mail appartenant à une autre adhésion ou site.
+
+## SSO Webmail et connexion par lien magique
+
+Le SSO Webmail donne aux clients une action directe **Ouvrir le webmail** depuis la page de compte. Lorsque le fournisseur actif le prend en charge, l'addon demande une URL d'accès de courte durée et redirige le client vers le webmail sans lui demander de copier les identifiants de la boîte aux lettres.
+
+Le comportement des fournisseurs peut varier :
+
+* Les fournisseurs disposant d'API SSO natives peuvent créer une session webmail authentifiée directe.
+* Les fournisseurs prenant en charge les liens magiques peuvent générer un lien de connexion à durée limitée.
+* Les fournisseurs sans support SSO ou lien magique doivent toujours afficher les détails de la boîte aux lettres et les actions de gestion des mots de passe, mais pas de bouton webmail en un clic.
+
+Activez l'accès webmail uniquement pour les fournisseurs pour lesquels vous avez configuré les identifiants API requis. Si l'action est manquante pour un fournisseur, confirmez d'abord que le fournisseur est actif, configuré et prend en charge les liens de connexion webmail.
+
+## Provisionnement au paiement
+
+L'addon peut créer des comptes e-mail clients dans le cadre du processus de paiement. Ceci est utile lorsque le forfait inclut une boîte aux lettres par défaut ou lorsque le formulaire de paiement collecte des détails de compte e-mail.
+
+Déploiement recommandé :
+
+1. Configurez le fournisseur et les limites de forfait avant d'activer le provisionnement au paiement.
+2. Testez un achat avec un produit de staging et confirmez que la boîte aux lettres est créée après le paiement.
+3. Examinez la page de compte client pour confirmer que la nouvelle boîte aux lettres apparaît dans le widget e-mail.
+4. Confirmez les actions de changement de mot de passe et de webmail avant d'activer le flux pour les produits de production.
+
+Si le provisionnement échoue, le compte et l'adhésion du client peuvent toujours exister, mais la boîte aux lettres nécessitera un suivi de l'administrateur. Vérifiez les journaux d'activité d'Ultimate Multisite et les journaux du fournisseur avant de réessayer.
+
+## Transferts e-mail CyberPanel
+
+Pour les réseaux basés sur CyberPanel, la version 1.1.0 ajoute le support des transferts e-mail. Utilisez les transferts lorsque les clients ont besoin d'adresses telles que `info@domaine-client.test` pour rediriger le courrier vers une autre boîte de réception sans créer une boîte aux lettres complète.
+
+Avant d'offrir des transferts, confirmez que l'intégration CyberPanel est configurée et accessible. Consultez le guide [Intégration CyberPanel](../../user-guide/administration/cyberpanel-integration) pour les constantes requises (hôte, nom d'utilisateur, mot de passe et package).
+
+## Journal des modifications
+
+### Version 1.1.0 - Publié le 2026-05-05
+
+* Nouveau : SSO Webmail et connexion par lien magique — les clients peuvent accéder au webmail directement depuis leur compte avec une authentification en un clic.
+* Nouveau : Fonctionnalité de changement de mot de passe ajoutée au widget de gestion des comptes e-mail.
+* Nouveau : Support des transferts e-mail CyberPanel.
+* Nouveau : Widget de gestion des e-mails sur la page de compte client pour la création et la gestion de compte en libre-service.
+* Nouveau : Création de compte e-mail client intégrée au flux de paiement pour un provisionnement automatique.
+* Correction : Le hook du widget de la page de compte a été mis à jour pour utiliser le bon modèle d'enregistrement UMS.
+* Correction : Le formulaire Créer un compte a été remplacé par du JS vanilla et une sortie de document HTML complète correcte.
+* Correction : Le widget de gestion des e-mails utilise désormais le système UMS currents pour les pages de compte administrateur.
+* Correction : Le formulaire de création de compte e-mail administrateur inclut un champ de mot de passe et utilise Email_Account_Manager.
+* Correction : Le spam de journalisation par requête a été supprimé de l'initialisation d'Email_Account_Manager.
+* Amélioré : La page des paramètres filtre désormais pour n'afficher que les fournisseurs e-mail actifs et configurés.
+
+## Foire aux questions
+
+## Les clients peuvent-ils créer leurs propres comptes e-mail ?
+
+Oui. Lorsque le widget de compte client est activé et que le forfait le permet, les clients peuvent créer et gérer leurs propres boîtes aux lettres depuis la page de compte.
+
+## Est-ce que tous les fournisseurs prennent en charge le SSO Webmail ?
+
+Non. Le support SSO et lien magique dépend du fournisseur e-mail actif. Les fournisseurs sans API d'accès peuvent toujours prendre en charge la création de boîtes aux lettres et les changements de mot de passe.
+
+## Est-ce que les administrateurs peuvent créer des comptes e-mail pour les clients ?
+
+Oui. Les administrateurs peuvent créer des comptes e-mail depuis l'interface d'administration, y compris définir le mot de passe initial lors de la création du compte.
+
+## Est-ce que les transferts sont la même chose que les boîtes aux lettres ?
+
+Non. Une boîte aux lettres stocke le courrier et dispose d'identifiants de connexion. Un transfert redirige le courrier vers une autre adresse et ne fournit pas de boîte de réception séparée.

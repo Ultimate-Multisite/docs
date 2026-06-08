@@ -1,0 +1,114 @@
+---
+title: E-Mails
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-Mails
+
+Das Ultimate Multisite: Emails Addon ermöglicht es Netzwerkbetreibern, Kunden-E-Mail-Konten zusammen mit Websites und Mitgliedschaften zu erstellen und zu verwalten. In Version 1.1.0 wurden die Verwaltung von E-Mail-Konten für Kunden, Single Sign-On (SSO) für Webmail, Unterstützung für CyberPanel Forwarder und Verbesserungen bei der Bereitstellung während des Checkouts hinzugefügt.
+
+## Hauptfunktionen
+
+* **Widget für Kunden-E-Mail-Konten**: Kunden können über ihre Kontoseite E-Mail-Konten erstellen und verwalten, ohne einen Support-Ticket eröffnen zu müssen.
+* **Webmail SSO und Magic Links**: Kunden können Webmail direkt von der Kontoseite mit einem Klick-Authentifizierung öffnen, sofern der Anbieter dies unterstützt.
+* **Passwortänderungen**: Kunden und Administratoren können Passwörter für Postfächer über das E-Mail-Verwaltungs-Widget aktualisieren.
+* **Bereitstellung beim Checkout**: Die Erstellung von Kunden-E-Mail-Konten kann während des Checkouts erfolgen, sodass das Postfach fertig ist, sobald der Kaufprozess abgeschlossen ist.
+* **CyberPanel Forwarder**: Netzwerke, die von CyberPanel betrieben werden, können E-Mail-Weiterleitungen erstellen und verwalten, als Teil des E-Mail-Dienstablaufs.
+* **Anbieter-spezifische Einstellungen**: Die Einstellungsseite filtert die Anbieter nach aktiven, konfigurierten Integrationen, sodass Administratoren nur nutzbare Optionen sehen.
+
+## Voraussetzungen
+
+* Ultimate Multisite 2.0.0 oder höher
+* WordPress Multisite-Installation
+* Mindestens eine konfigurierte E-Mail-Anbieter-Integration
+* API-Anmeldeinformationen des Anbieters mit Berechtigung zur Erstellung von Postfächern, zur Änderung von Passwörtern und zur Bereitstellung von Webmail-Zugangslinks, sofern unterstützt
+
+## Installation
+
+1. Laden Sie die Plugin-Dateien in `/wp-content/plugins/ultimate-multisite-emails` hoch.
+2. Aktivieren Sie das Addon im Netzwerk über **Plugins** im WordPress Netzwerk-Admin.
+3. Gehen Sie zu **Ultimate Multisite** > **Einstellungen** und öffnen Sie die Einstellungsseite für das Addon E-Mails.
+4. Aktivieren Sie die E-Mail-Anbieter-Integrationen, die Kunden nutzen sollen.
+5. Speichern Sie die Einstellungen und testen Sie anschließend die Kontoerstellung mit einem Nicht-Produktionskunden oder einer Staging-Seite.
+
+## E-Mail-Verwaltung des Kundenkontos
+
+Version 1.1.0 fügt ein E-Mail-Verwaltungs-Widget zur Kundenkontoseite hinzu. Verwenden Sie es, wenn Kunden die Erstellung und Wartung des Postfachs für ihre eigenen Websites selbst übernehmen sollen.
+
+Von der Kontoseite aus können Kunden:
+
+1. E-Mail-Konten einsehen, die mit ihrer aktuellen Mitgliedschaft oder Website verbunden sind.
+2. Ein neues Postfach erstellen, wenn ihr Plan zusätzliche Konten zulässt.
+3. Das Passwort eines bestehenden Postfachs ändern.
+4. Unterstützte Webmail-Anbieter über SSO oder einen Magic-Link-Login öffnen.
+
+Das Widget nutzt das aktuelle System der Ultimate Multisite Kontoseite, daher sind die Aktionen auf den Kontext des Kontos beschränkt, das der Kunde gerade ansieht. Dies verhindert, dass Kunden E-Mail-Konten verwalten, die zu einer anderen Mitgliedschaft oder Website gehören.
+
+## Webmail SSO und Magic-Link-Login
+
+Webmail SSO bietet Kunden eine direkte **Webmail öffnen**-Aktion von der Kontoseite aus. Wird dies vom aktiven Anbieter unterstützt, fordert das Addon eine kurzlebige Zugangs-URL an und leitet den Kunden direkt in das Webmail weiter, ohne dass er die Postfach-Anmeldedaten kopieren muss.
+
+Das Verhalten der Anbieter kann variieren:
+
+* Anbieter mit nativen SSO APIs können eine direkte authentifizierte Webmail-Sitzung erstellen.
+* Anbieter mit Magic-Link-Unterstützung können einen zeitlich begrenzten Login-Link generieren.
+* Anbieter ohne SSO- oder Magic-Link-Unterstützung sollten weiterhin die Postfachdetails und die Passwort-Verwaltungsaktionen anzeigen, aber keinen Ein-Klick-Webmail-Button.
+
+Aktivieren Sie den Webmail-Zugriff nur für Anbieter, bei denen Sie die erforderlichen API-Anmeldeinformationen konfiguriert haben. Wenn die Aktion für einen Anbieter fehlt, bestätigen Sie zuerst, dass der Anbieter aktiv, konfiguriert und Webmail-Login-Links unterstützt.
+
+## Bereitstellung beim Checkout
+
+Das Addon kann Kunden-E-Mail-Konten als Teil des Checkouts erstellen. Dies ist nützlich, wenn der Plan standardmäßig ein Postfach beinhaltet oder wenn das Checkout-Formular E-Mail-Kontodaten erfasst.
+
+Empfohlene Vorgehensweise:
+
+1. Konfigurieren Sie den Anbieter und die Planlimits, bevor Sie die Bereitstellung beim Checkout aktivieren.
+2. Testen Sie einen Kauf mit einem Staging-Produkt und bestätigen Sie, dass das Postfach nach dem Checkout erstellt wird.
+3. Überprüfen Sie die Kundenkontoseite, um zu bestätigen, dass das neue Postfach im E-Mail-Widget erscheint.
+4. Bestätigen Sie die Passwort-Änderungs- und Webmail-Aktionen, bevor Sie den Prozess für Produktionsprodukte aktivieren.
+
+Schlägt die Bereitstellung fehl, können das Kundenkonto und die Mitgliedschaft weiterhin existieren, während das Postfach eine Nachverfolgung durch den Administrator erfordert. Überprüfen Sie die Ultimate Multisite Aktivitätsprotokolle und die Anbieterprotokolle, bevor Sie es erneut versuchen.
+
+## CyberPanel E-Mail-Weiterleitungen
+
+Für von CyberPanel betriebene Netzwerke fügt Version 1.1.0 die Unterstützung für E-Mail-Weiterleitungen hinzu. Verwenden Sie Weiterleitungen, wenn Kunden Adressen wie `info@customer-domain.test` benötigen, um E-Mails an ein anderes Postfach umzuleiten, ohne ein vollständiges Postfach zu erstellen.
+
+Bevor Sie Weiterleitungen anbieten, bestätigen Sie, dass die CyberPanel-Integration konfiguriert und erreichbar ist. Details zu Host, Benutzername, Passwort und Paket-Konstanten finden Sie in der [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) Anleitung.
+
+## Changelog
+
+### Version 1.1.0 - Veröffentlicht am 2026-05-05
+
+* Neu: Webmail SSO und Magic-Link-Login — Kunden können direkt von ihrem Konto mit einem Klick-Authentifizierung auf Webmail zugreifen.
+* Neu: Funktion zur Passwortänderung wurde dem E-Mail-Verwaltungs-Widget hinzugefügt.
+* Neu: Unterstützung für CyberPanel E-Mail-Weiterleitungen.
+* Neu: E-Mail-Verwaltungs-Widget auf der Kundenkontoseite für die Selbstverwaltung von Konten.
+* Neu: Erstellung von Kunden-E-Mail-Konten integriert in den Checkout-Prozess für die automatische Bereitstellung.
+* Fix: Der Widget-Hook der Kontoseite wurde aktualisiert, um das korrekte UMS-Registrierungsmuster zu verwenden.
+* Fix: Das Formular „Konto erstellen“ wurde durch Vanilla JS und die korrekte vollständige HTML-Dokumentenausgabe ersetzt.
+* Fix: Das E-Mail-Verwaltungs-Widget verwendet nun das UMS currents System für Admin-Kontoseiten.
+* Fix: Das Formular zur Erstellung von Admin-E-Mail-Konten enthält ein Passwortfeld und verwendet Email_Account_Manager.
+* Fix: Spam-Protokolle pro Anfrage wurden aus der Initialisierung von Email_Account_Manager entfernt.
+* Verbessert: Die Einstellungsseite filtert nun, um nur aktive und konfigurierte E-Mail-Anbieter anzuzeigen.
+
+## Häufig gestellte Fragen
+
+## Können Kunden ihre eigenen E-Mail-Konten erstellen?
+
+Ja. Wenn das Widget für Kundenkonten aktiviert ist und der Plan E-Mail-Konten zulässt, können Kunden ihre eigenen Postfächer von der Kontoseite aus erstellen und verwalten.
+
+## Unterstützt jeder Anbieter Webmail SSO?
+
+Nein. Die Unterstützung für SSO und Magic Links hängt vom aktiven E-Mail-Anbieter ab. Anbieter ohne API für Zugangslinks können weiterhin die Erstellung von Postfächern und die Änderung von Passwörtern unterstützen.
+
+## Können Administratoren E-Mail-Konten für Kunden erstellen?
+
+Ja. Administratoren können E-Mail-Konten aus der Admin-Oberfläche erstellen, einschließlich der Festlegung des anfänglichen Passworts bei der Kontoerstellung.
+
+## Sind Weiterleitungen dasselbe wie Postfächer?
+
+Nein. Ein Postfach speichert E-Mails und verfügt über Anmeldeinformationen. Ein Weiterleiter leitet E-Mails an eine andere Adresse um und bietet keinen separaten Posteingang.

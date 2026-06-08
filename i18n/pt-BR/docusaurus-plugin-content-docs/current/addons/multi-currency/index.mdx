@@ -1,0 +1,117 @@
+---
+title: Multimoedas
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+O Ultimate Multisite: Multi-Currency permite que sua rede aceite pagamentos em múltiplas moedas. Ele converte automaticamente os preços usando taxas de câmbio em tempo real ou manuais, permite que você defina preços exatos por produto para qualquer moeda e detecta a moeda preferida de cada visitante via geolocalização — tudo gerenciado a partir de um único painel de administração.
+
+## Principais Recursos
+
+- **Conversão automática de taxas de câmbio** — os preços são convertidos da sua moeda base usando taxas obtidas do provedor escolhido
+- **Substituições de preços por produto** — defina preços exatos específicos para moedas em qualquer produto para ignorar a conversão automática
+- **Campo seletor de moeda no cadastro** — permite que os clientes escolham sua moeda preferida durante o checkout/cadastro
+- **Múltiplos provedores de taxas de câmbio** — ECB, Frankfurter, Stripe ou taxas totalmente manuais
+- **Detecção de moeda baseada em geolocalização** — pré-seleciona automaticamente a moeda que corresponde ao país do visitante
+- **Painel de administração** — gerencie moedas ativas, taxas de câmbio e configurações de provedores em um só lugar
+
+## Requisitos
+
+- Ultimate Multisite 2.0.0 ou superior
+- Instalação WordPress Multisite
+- PHP 7.4 ou superior
+
+## Instalação
+
+1. Faça o upload dos arquivos do plugin para `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Ative o plugin na tela **Plugins** do WordPress (Ativação de Rede)
+3. Navegue até **Ultimate Multisite → Multi-Currency** para abrir o painel de administração
+4. Adicione as moedas que você deseja aceitar e configure seu provedor de taxa de câmbio
+
+## Configuração
+
+### Painel de Administração
+
+O painel de administração Multi-Currency (**Ultimate Multisite → Multi-Currency**) é o local central para:
+
+- Adicionar, ativar ou desativar moedas
+- Escolher um provedor de taxa de câmbio e atualizar as taxas sob demanda
+- Revisar as taxas atuais para todas as moedas ativas
+- Definir taxas manuais quando os provedores automáticos não forem adequados
+
+### Provedores de Taxas de Câmbio
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — taxas diárias gratuitas para redes baseadas em EUR |
+| **Frankfurter** | API espelho do ECB de código aberto — gratuito, sem chave de API necessária |
+| **Stripe** | Usa as taxas de câmbio FX em tempo real do Stripe — requer uma integração Stripe ativa |
+| **Manual** | Você insere as taxas diretamente; sem chamadas de API externas |
+
+Selecione seu provedor em **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. As taxas podem ser atualizadas manualmente a qualquer momento ou agendadas para atualização automática.
+
+### Substituições de Preços por Produto
+
+Quando a conversão automática não é precisa o suficiente, você pode definir um preço exato para uma moeda específica em qualquer produto:
+
+1. Abra o editor do produto (**Ultimate Multisite → Products → Edit**)
+2. Role até a seção **Currency Pricing**
+3. Insira o preço exato para cada moeda que você deseja substituir
+4. Salve o produto
+
+Produtos sem substituição usam o preço convertido da sua moeda base.
+
+### Campo Seletor de Moeda no Cadastro
+
+O campo seletor de moeda pode ser adicionado ao seu fluxo de cadastro/checkout para que os clientes escolham sua moeda preferida no momento do registro:
+
+1. Vá para **Ultimate Multisite → Multi-Currency → Settings**
+2. Ative **Show currency selector on signup**
+3. Opcionalmente, defina uma moeda padrão ou deixe a geolocalização determinar o valor pré-selecionado
+
+A moeda selecionada é armazenada com a assinatura e usada para todas as cobranças subsequentes.
+
+### Detecção de Moeda Baseada em Geolocalização
+
+Quando a detecção de geolocalização está ativada, o addon mapeia o país do visitante para uma moeda e a pré-seleciona no campo seletor de moeda. Para ativar:
+
+1. Vá para **Ultimate Multisite → Multi-Currency → Settings**
+2. Ative **Detect currency from visitor location**
+3. Mapeie os países para moedas na tabela **Geolocation Mapping**
+
+Se não houver mapeamento para o país do visitante, a moeda base da rede é usada como fallback.
+
+## Perguntas Frequentes
+
+### O que acontece se um provedor de taxa de câmbio estiver indisponível?
+
+O addon volta a usar as últimas taxas obtidas com sucesso. Se nenhuma taxa já tiver sido obtida, ele volta a usar as taxas manuais que você configurou. É recomendado configurar taxas manuais como uma rede de segurança.
+
+### Posso usar provedores diferentes para moedas diferentes?
+
+Não — um provedor está ativo por vez para todas as moedas. Use **Manual** se você precisar de controle total sobre taxas individuais.
+
+### A geolocalização requer um plugin separado?
+
+Não é necessário nenhum plugin de geolocalização externo. O addon usa a detecção de IP para país embutida do WordPress. Para maior precisão, um serviço de geolocalização dedicado pode ser integrado via hooks de filtro fornecidos.
+
+### As substituições de preços por produto são aplicadas antes ou depois do imposto?
+
+As substituições de preços por produto definem o preço pré-imposto na moeda de destino. O imposto é calculado sobre o preço de substituição usando sua configuração de imposto existente.
+
+## Changelog
+
+### Versão 1.0.0 — Lançado em 2026-04-02
+
+- Novo: Suporte a múltiplas moedas com conversão automática de taxas de câmbio
+- Novo: Substituições de preços por produto para preços exatos específicos de moeda
+- Novo: Campo seletor de moeda no cadastro para o fluxo de checkout
+- Novo: Provedores de taxas de câmbio: ECB, Frankfurter, Stripe e manual
+- Novo: Detecção de moeda baseada em geolocalização
+- Novo: Painel de administração para gerenciamento de moedas e taxas de câmbio
+- Correção: O painel sempre mostra os preços na moeda base, independentemente da moeda selecionada

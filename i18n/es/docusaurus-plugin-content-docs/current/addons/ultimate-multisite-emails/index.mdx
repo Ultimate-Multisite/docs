@@ -1,0 +1,114 @@
+---
+title: Correos electrónicos
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+El addon Ultimate Multisite: Emails permite a los propietarios de redes aprovisionar y gestionar las cuentas de correo electrónico de los clientes junto con los sitios y las membresías. La versión 1.1.0 añade la gestión de cuentas de correo orientada al cliente, el inicio de sesión único (SSO) de webmail, el soporte para reenviadores de CyberPanel y mejoras en el aprovisionamiento durante el checkout.
+
+## Características clave
+
+* **Widget de cuenta de correo del cliente**: Los clientes pueden crear y gestionar cuentas de correo desde su página de cuenta sin necesidad de abrir un ticket de soporte.
+* **SSO de webmail y enlaces mágicos**: Los clientes pueden abrir webmail directamente desde la página de cuenta con autenticación de un solo clic, cuando el proveedor lo soporta.
+* **Cambio de contraseñas**: Los clientes y administradores pueden actualizar las contraseñas de los buzones de correo desde el widget de gestión de correo.
+* **Aprovisionamiento en el checkout**: La creación de cuentas de correo de clientes puede ejecutarse durante el checkout, por lo que el buzón estará listo después de que finalice el flujo de compra.
+* **Reenviadores de CyberPanel**: Las redes respaldadas por CyberPanel pueden crear y gestionar reenviadores de correo como parte del flujo de servicio de correo electrónico.
+* **Configuración sensible al proveedor**: La página de configuración filtra los proveedores para mostrar solo las integraciones activas y configuradas, de modo que los administradores solo vean opciones utilizables.
+
+## Requisitos
+
+* Ultimate Multisite 2.0.0 o superior
+* Instalación de WordPress Multisite
+* Al menos una integración de proveedor de correo electrónico configurada
+* Credenciales de API del proveedor con permiso para crear buzones de correo, cambiar contraseñas y emitir enlaces de acceso webmail, cuando sea compatible
+
+## Instalación
+
+1. Suba los archivos del plugin a `/wp-content/plugins/ultimate-multisite-emails`.
+2. Active el addon en la red desde **Plugins** en el administrador de red de WordPress.
+3. Vaya a **Ultimate Multisite** > **Settings** y abra la configuración de correo del addon.
+4. Habilite las integraciones de proveedores de correo electrónico que desea que los clientes utilicen.
+5. Guarde la configuración y luego pruebe la creación de cuentas con un cliente no productivo o un sitio de staging.
+
+## Gestión de correo electrónico de la cuenta del cliente
+
+La versión 1.1.0 añade un widget de gestión de correo a la página de cuenta del cliente. Úselo cuando los clientes deban realizar la creación y el mantenimiento de buzones de correo por cuenta propia para sus propios sitios.
+
+Desde la página de cuenta, los clientes pueden:
+
+1. Ver las cuentas de correo conectadas a su membresía o sitio actual.
+2. Crear un buzón nuevo si su plan lo permite.
+3. Cambiar la contraseña de un buzón existente.
+4. Abrir proveedores de webmail compatibles a través de SSO o un inicio de sesión con enlace mágico.
+
+El widget utiliza el sistema actual de la página de cuenta de Ultimate Multisite, por lo que las acciones están limitadas al contexto de la cuenta que el cliente está viendo. Esto evita que los clientes gestionen cuentas de correo que pertenecen a otra membresía o sitio.
+
+## SSO de webmail y inicio de sesión con enlace mágico
+
+El SSO de webmail proporciona a los clientes una acción directa de **Abrir webmail** desde la página de cuenta. Cuando el proveedor activo lo soporta, el addon solicita una URL de acceso de corta duración y redirige al cliente a webmail sin pedirle que copie las credenciales del buzón.
+
+El comportamiento del proveedor puede variar:
+
+* Los proveedores con APIs SSO nativas pueden crear una sesión de webmail autenticada directa.
+* Los proveedores con soporte para enlaces mágicos pueden generar un enlace de inicio de sesión con tiempo limitado.
+* Los proveedores sin soporte SSO o enlaces mágicos aún deben mostrar los detalles del buzón y las acciones de gestión de contraseñas, pero no un botón de webmail con un solo clic.
+
+Habilite el acceso webmail solo para los proveedores para los que haya configurado las credenciales de API necesarias. Si la acción falta para un proveedor, primero confirme que el proveedor está activo, configurado y que admite enlaces de inicio de sesión webmail.
+
+## Aprovisionamiento en el checkout
+
+El addon puede crear cuentas de correo de clientes como parte del checkout. Esto es útil cuando el plan incluye un buzón por defecto o cuando el formulario de checkout recopila detalles de la cuenta de correo.
+
+Implementación recomendada:
+
+1. Configure los límites del proveedor y del plan antes de habilitar el aprovisionamiento en el checkout.
+2. Pruebe una compra con un producto de staging y confirme que el buzón se crea después del checkout.
+3. Revise la página de cuenta del cliente para confirmar que el nuevo buzón aparece en el widget de correo.
+4. Confirme las acciones de cambio de contraseña y webmail antes de habilitar el flujo para productos en producción.
+
+Si el aprovisionamiento falla, la cuenta y la membresía del cliente aún pueden existir, pero el buzón requerirá seguimiento por parte del administrador. Revise los registros de actividad de Ultimate Multisite y los registros del proveedor antes de reintentar.
+
+## Reenviadores de correo de CyberPanel
+
+Para redes respaldadas por CyberPanel, la versión 1.1.0 añade soporte para reenviadores de correo. Utilice reenviadores cuando los clientes necesiten direcciones como `info@dominio-cliente.test` para redirigir el correo a otro buzón sin crear un buzón completo.
+
+Antes de ofrecer reenviadores, confirme que la integración de CyberPanel está configurada y es accesible. Consulte la guía [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) para conocer las constantes requeridas de host, nombre de usuario, contraseña y paquete.
+
+## Changelog
+
+### Versión 1.1.0 - Lanzada el 2026-05-05
+
+* Nuevo: Inicio de sesión SSO de webmail y enlaces mágicos: los clientes pueden acceder a webmail directamente desde su cuenta con autenticación de un solo clic.
+* Nuevo: Se añadió la funcionalidad de cambio de contraseña al widget de gestión de cuentas de correo.
+* Nuevo: Soporte para reenviadores de correo de CyberPanel.
+* Nuevo: Widget de gestión de correo en la página de cuenta del cliente para la creación y gestión de cuentas por cuenta propia.
+* Nuevo: Creación de cuentas de correo de clientes integrada en el flujo de checkout para aprovisionamiento automático.
+* Corrección: El hook del widget de la página de cuenta se actualizó para usar el patrón de registro correcto de UMS.
+* Corrección: El formulario de Crear Cuenta se reemplazó con JS vanilla y la salida correcta de documento HTML completo.
+* Corrección: El widget de gestión de correo ahora utiliza el sistema UMS currents para las páginas de cuenta de administrador.
+* Corrección: El formulario de creación de cuentas de correo de administrador incluye campo de contraseña y usa Email_Account_Manager.
+* Corrección: Se eliminó el spam de registro por solicitud de Email_Account_Manager.
+* Mejorado: La página de configuración ahora filtra para mostrar solo los proveedores de correo electrónico activos y configurados.
+
+## Preguntas frecuentes
+
+## ¿Pueden los clientes crear sus propias cuentas de correo?
+
+Sí. Cuando el widget de cuenta de cliente está habilitado y el plan lo permite, los clientes pueden crear y gestionar sus propios buzones de correo desde la página de cuenta.
+
+## ¿Todos los proveedores admiten SSO de webmail?
+
+No. El soporte para SSO y enlaces mágicos depende del proveedor de correo electrónico activo. Los proveedores sin una API de enlace de acceso aún pueden admitir la creación de buzones y cambios de contraseña.
+
+## ¿Pueden los administradores crear cuentas de correo para los clientes?
+
+Sí. Los administradores pueden crear cuentas de correo desde la interfaz de administración, incluyendo la configuración de la contraseña inicial al crear la cuenta.
+
+## ¿Son los reenviadores lo mismo que los buzones de correo?
+
+No. Un buzón almacena correo y tiene credenciales de inicio de sesión. Un reenviador redirige el correo a otra dirección y no proporciona un buzón separado.

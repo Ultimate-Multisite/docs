@@ -1,0 +1,143 @@
+---
+title: Agent IA gratuit
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent est un assistant IA autonome pour WordPress qui peut planifier, construire et gérer des sites WordPress complets à partir d'instructions en langage naturel. Il propose un ensemble structuré de **capacités** (*abilities*) — des actions discrètes et testables que l'agent peut déclencher — couvrant tout, de la gestion de contenu à la personnalisation du système de design. La version 1.9.0 ajoute des capacités de création de contenu, une revue visuelle de page via des captures d'écran côté client, cinq profils d'agent intégrés, ainsi que des drapeaux de fonctionnalité (*feature flags*) pour le contrôle d'accès et le branding.
+
+## Fonctionnalités Clés
+
+- **Système de capacités** (*Abilities system*) — un catalogue modulaire et extensible d'actions que l'agent peut exécuter sur votre installation WordPress
+- **Gestion de contenu** (*Content Management*) — créer des articles et des pages (y compris l'attribution de modèles de page), créer par lots plusieurs articles en un seul appel, définir des images à la une et construire des formulaires de contact
+- **Revue visuelle** (*Visual Review*) — capturer des captures d'écran de pages en direct, comparer les états avant/après, et obtenir une revue de design générée par IA couvrant la mise en page, la typographie, la couleur et l'accessibilité
+- **Cinq agents intégrés** — Rédacteur de contenu (*Content Writer*), Constructeur de site (*Site Builder*), Studio de design (*Design Studio*), Gestionnaire de plugins (*Plugin Manager*) et Assistant de support (*Support Assistant*) ; sélectionnables via le sélecteur d'agent dans l'en-tête du chat
+- **Drapeaux de fonctionnalité** (*Feature flags*) — interrupteurs de contrôle d'accès et de branding dans Réglages → Feature Flags pour les restrictions de rôle, le nommage en marque blanche (*white-label*) et la personnalisation des widgets
+- **Gestion des types de contenu personnalisés** (*Custom Post Type management*) — enregistrer, lister et supprimer des types de contenu personnalisés avec persistance après redémarrage
+- **Gestion des taxinomies personnalisées** (*Custom Taxonomy management*) — enregistrer, lister et supprimer des taxinomies personnalisées avec persistance
+- **Capacités de système de design** (*Design System abilities*) — injecter du CSS personnalisé, gérer des modèles de blocs (*block patterns*) sélectionnés, définir le logo du site et appliquer des préréglages `theme.json`
+- **Gestion des styles globaux** (*Global Styles management*) — lire et écrire des valeurs `theme.json` pour les palettes de couleurs, la typographie, l'espacement, et plus encore
+- **Gestion des menus de navigation** (*Navigation Menu management*) — créer et mettre à jour les menus de navigation et leurs éléments de manière programmatique
+- **Gestion des options** (*Options Management*) — lire et écrire des options WordPress avec une liste de blocage de sécurité intégrée pour protéger les paramètres critiques
+- **Registre de capacités installables** (*Installable Abilities Registry*) — découvrir et activer des packs de capacités supplémentaires sans modifier les fichiers du plugin de base
+- **Orchestration du constructeur de site v2** (*Site Builder Orchestration v2*) — plans de construction de site multi-étapes avec découverte de plugins, suivi de progression et récupération d'erreurs
+- **Commande de référence WP-CLI** (*WP-CLI benchmark command*) — exécuter la suite de référence des capacités de l'agent depuis la ligne de commande pour l'intégration continue (CI) et l'évaluation du modèle
+
+## Prérequis
+
+- WordPress 6.0 ou supérieur
+- PHP 8.1 ou supérieur
+- WordPress Multisite (activé au niveau du réseau) ou installation sur un seul site
+- Un plugin connecteur d'IA actif (Anthropic, OpenAI ou compatible)
+
+## Installation
+
+1. Téléchargez les fichiers du plugin dans `/wp-content/plugins/gratis-ai-agent`
+2. Activez le plugin via l'écran **Plugins** de WordPress
+3. Rendez-vous dans **Gratis AI Agent → Réglages** et connectez votre fournisseur d'IA
+4. (Optionnel) Parcourez le **Registre de capacités** (*Abilities Registry*) pour installer des packs de capacités supplémentaires
+
+## Démarrage Rapide
+
+Une fois activé et connecté à un fournisseur d'IA, ouvrez le panneau **Gratis AI Agent** dans la barre latérale d'administration de WordPress. Tapez une instruction en langage naturel et l'agent planifiera et exécutera les étapes requises en utilisant ses capacités disponibles.
+
+**Exemples d'instructions :**
+
+```
+Créer un type de contenu personnalisé "Portfolio" avec une taxonomie "Catégorie de projet".
+```
+
+```
+Injecter une palette de couleurs mode sombre dans le thème et définir la couleur primaire sur #1a1a2e.
+```
+
+```
+Construire un site web de restaurant avec un menu en ligne, un formulaire de réservation et une page de contact.
+```
+
+## Aperçu des Capacités
+
+Les capacités sont les actions atomiques que l'agent peut effectuer. Chaque capacité est une classe PHP enregistrée qui expose un schéma (paramètres et types de retour) que l'agent lit à l'exécution. Les capacités sont regroupées par domaines fonctionnels :
+
+| Domaine | Capacités |
+|---|---|
+| **Gestion de contenu** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Revue visuelle** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Types de contenu personnalisés** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Taxinomies personnalisées** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Système de design** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Styles globaux** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menus de navigation** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Gestion des options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Capacités installables** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Constructeur de site** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Consultez la [Référence des capacités](./abilities) pour la documentation complète des paramètres et des exemples d'utilisation.
+
+## WP-CLI
+
+Gratis AI Agent fournit une famille de commandes `wp gratis-ai-agent` pour exécuter des références et gérer les capacités depuis la ligne de commande. Consultez la [Référence WP-CLI](./wp-cli) pour la liste complète des commandes.
+
+```bash
+# Exécuter la suite complète de référence
+wp gratis-ai-agent benchmark
+
+# Lister les capacités installées
+wp gratis-ai-agent abilities list
+
+# Installer un pack de capacités
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration
+
+Tous les réglages se trouvent dans **Gratis AI Agent → Réglages** dans l'administration WordPress :
+
+| Réglage | Description |
+|---|---|
+| **Fournisseur d'IA** (*AI Provider*) | Sélectionnez et configurez le connecteur de fournisseur d'IA actif |
+| **Modèle** (*Model*) | Choisissez le modèle de langage à utiliser pour les sessions d'agent |
+| **Tokens Max** (*Max Tokens*) | Budget de jetons par requête (par défaut 4096) |
+| **Délai de capacité** (*Ability Timeout*) | Temps maximum pendant lequel une capacité individuelle peut s'exécuter (par défaut 30) |
+| **Journalisation de débogage** (*Debug Logging*) | Enregistre les appels de capacités et le raisonnement de l'agent dans le journal de débogage de WordPress |
+
+## Liste de blocage de sécurité pour la gestion des options
+
+La capacité de gestion des options comprend une liste de blocage intégrée qui empêche l'agent de lire ou d'écrire des options WordPress sensibles. La liste de blocage par défaut couvre :
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (options d'URL — utilisez un outil de migration dédié pour celles-ci)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (clés secrètes)
+- `active_plugins`, `template` (activation de plugin/thème — utilisez des capacités dédiées)
+- Les identifiants de passerelle de paiement et les clés API enregistrés par les plugins installés
+
+Des entrées supplémentaires peuvent être ajoutées via le filtre `gratis_ai_agent_options_blocklist`.
+
+## Hooks et Filtres
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — déclenché après l'enregistrement d'une capacité, reçoit le nom de la classe de capacité
+- `gratis_ai_agent_plan_started` — déclenché lorsqu'un plan de constructeur de site commence son exécution
+- `gratis_ai_agent_plan_completed` — déclenché lorsqu'un plan se termine avec succès
+- `gratis_ai_agent_plan_failed` — déclenché lorsqu'un plan rencontre une erreur irrécupérable
+
+### Filtres
+
+- `gratis_ai_agent_abilities` — modifier la liste des capacités enregistrées avant que l'agent ne la charge
+- `gratis_ai_agent_options_blocklist` — étendre ou réduire la liste de blocage de sécurité des options
+- `gratis_ai_agent_benchmark_questions` — ajouter des questions de référence personnalisées à la suite d'évaluation
+- `gratis_ai_agent_plan_plugins` — modifier la liste de découverte de plugins pendant la génération du plan de site
+
+## Support
+
+Pour obtenir de l'aide, visitez [ultimatemultisite.com](https://ultimatemultisite.com) ou ouvrez un problème dans le dépôt du plugin.
+
+## Journal des modifications
+
+Consultez le [Journal des modifications](./changelog) pour l'historique complet des versions.

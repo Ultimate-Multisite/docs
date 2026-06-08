@@ -1,0 +1,117 @@
+---
+title: Multi-Währung
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency ermöglicht es Ihrem Netzwerk, Zahlungen in mehreren Währungen zu akzeptieren. Es wandelt Preise automatisch mithilfe von Live- oder manuellen Wechselkursen um, lässt Ihnen die Festlegung exakter Produktpreise für jede Währung zu und erkennt die bevorzugte Währung jedes Besuchers über die Geolokalisierung – alles verwaltet von einem einzigen Admin-Dashboard aus.
+
+## Key Features
+
+- **Automatische Wechselkursumrechnung** — Preise werden mithilfe von Kursen, die von Ihrem gewählten Anbieter bezogen werden, von Ihrer Basiswährung umgerechnet.
+- **Produktpreisfestlegung (Overrides)** — Legen Sie exakte, währungsspezifische Preise für jedes Produkt fest, um die automatische Umrechnung zu umgehen.
+- **Währungsauswahl-Feld beim Registrieren** — Ermöglicht es Kunden, ihre bevorzugte Währung während des Checkouts/der Registrierung auszuwählen.
+- **Mehrere Wechselkursanbieter** — ECB, Frankfurter, Stripe oder vollständig manuelle Kurse.
+- **Währungsdetektion basierend auf Geolokalisierung** — Wählt automatisch die Währung aus, die zum Land des Besuchers passt.
+- **Admin-Dashboard** — Verwalten Sie aktive Währungen, Wechselkurse und Anbieter-Einstellungen an einem Ort.
+
+## Requirements
+
+- Ultimate Multisite 2.0.0 oder höher
+- WordPress Multisite Installation
+- PHP 7.4 oder höher
+
+## Installation
+
+1. Laden Sie die Plugin-Dateien in `/wp-content/plugins/ultimate-multisite-multi-currency` hoch.
+2. Aktivieren Sie das Plugin über den Bildschirm **Plugins** in WordPress (Netzwerk-Aktivierung).
+3. Navigieren Sie zu **Ultimate Multisite → Multi-Currency**, um das Admin-Dashboard zu öffnen.
+4. Fügen Sie die Währungen hinzu, die Sie akzeptieren möchten, und konfigurieren Sie Ihren Wechselkursanbieter.
+
+## Configuration
+
+### Admin Dashboard
+
+Das Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) ist der zentrale Ort, um:
+
+- Währungen hinzuzufügen, zu aktivieren oder zu deaktivieren.
+- Einen Wechselkursanbieter auszuwählen und Kurse bei Bedarf zu aktualisieren.
+- Die aktuellen Kurse für alle aktiven Währungen einzusehen.
+- Manuelle Kurse festzulegen, wenn automatische Anbieter nicht geeignet sind.
+
+### Exchange Rate Providers
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — kostenlose tägliche Kurse für EUR-basierte Netzwerke. |
+| **Frankfurter** | Open-source ECB Mirror API — kostenlos, kein API-Schlüssel erforderlich. |
+| **Stripe** | Nutzt die Live-FX-Kurse von Stripe — erfordert eine aktive Stripe-Integration. |
+| **Manual** | Sie geben die Kurse direkt ein; keine externen API-Aufrufe. |
+
+Wählen Sie Ihren Anbieter unter **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurse können jederzeit manuell aktualisiert oder für eine automatische Aktualisierung geplant werden.
+
+### Per-Product Pricing Overrides
+
+Wenn die automatische Umrechnung nicht präzise genug ist, können Sie einen exakten Preis für eine bestimmte Währung auf jedem Produkt festlegen:
+
+1. Öffnen Sie den Produkteditor (**Ultimate Multisite → Products → Edit**).
+2. Scrollen Sie zum Abschnitt **Currency Pricing**.
+3. Geben Sie den exakten Preis für jede Währung ein, die Sie überschreiben möchten.
+4. Speichern Sie das Produkt.
+
+Produkte ohne Override verwenden den umgerechneten Preis aus Ihrer Basiswährung.
+
+### Currency Selector Signup Field
+
+Das Währungsauswahl-Feld kann zu Ihrem Registrierungs-/Checkout-Prozess hinzugefügt werden, sodass Kunden ihre bevorzugte Währung bei der Registrierung auswählen:
+
+1. Gehen Sie zu **Ultimate Multisite → Multi-Currency → Settings**.
+2. Aktivieren Sie **Show currency selector on signup**.
+3. Optional legen Sie eine Standardwährung fest oder lassen Sie die Geolokalisierung den vorausgewählten Wert bestimmen.
+
+Die ausgewählte Währung wird mit dem Abonnement gespeichert und für alle nachfolgenden Abrechnungen verwendet.
+
+### Geolocation-Based Currency Detection
+
+Wenn die Geolokalisierungsdetektion aktiviert ist, ordnet das Addon das Land des Besuchers einer Währung zu und wählt diese im Währungsauswahl-Feld voraus. Um dies zu aktivieren:
+
+1. Gehen Sie zu **Ultimate Multisite → Multi-Currency → Settings**.
+2. Aktivieren Sie **Detect currency from visitor location**.
+3. Ordnen Sie Länder in der Tabelle **Geolocation Mapping** Währungen zu.
+
+Existiert keine Zuordnung für das Land des Besuchers, wird die Basiswährung des Netzwerks als Fallback verwendet.
+
+## Frequently Asked Questions
+
+### What happens if an exchange rate provider is unavailable?
+
+Das Addon fällt auf die zuletzt erfolgreich bezogenen Kurse zurück. Wurden noch nie Kurse bezogen, fällt es auf die manuellen Kurse zurück, die Sie konfiguriert haben. Es wird empfohlen, manuelle Kurse als Sicherheitsnetz einzurichten.
+
+### Can I use different providers for different currencies?
+
+Nein – für alle Währungen ist immer ein Anbieter aktiv. Verwenden Sie **Manual**, wenn Sie die volle Kontrolle über einzelne Kurse benötigen.
+
+### Does geolocation require a separate plugin?
+
+Es ist kein externes Geolocation-Plugin erforderlich. Das Addon nutzt die integrierte IP-zu-Land-Erkennung von WordPress. Für eine höhere Genauigkeit kann ein dedizierter Geolocation-Service über die bereitgestellten Filter-Hooks integriert werden.
+
+### Are per-product overrides applied before or after tax?
+
+Produkt-Overrides legen den Preis vor der Steuer in der Zielwährung fest. Die Steuer wird auf den Override-Preis aufgeschlagen, basierend auf Ihrer bestehenden Steuerkonfiguration.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Multi-currency support with automatic exchange rate conversion
+- New: Per-product pricing overrides for exact currency-specific prices
+- New: Currency selector signup field for the checkout flow
+- New: Exchange rate providers: ECB, Frankfurter, Stripe, and manual
+- New: Geolocation-based currency detection
+- New: Admin dashboard for managing currencies and exchange rates
+- Fix: Dashboard always showing prices in base currency regardless of selected currency

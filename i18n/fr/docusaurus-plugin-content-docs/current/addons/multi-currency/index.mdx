@@ -1,0 +1,117 @@
+---
+title: Multi-Devises
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite : Multi-Currency permet à votre réseau d'accepter des paiements dans plusieurs devises. Il convertit automatiquement les prix en utilisant des taux de change réels ou manuels, vous permet de définir des prix exacts par produit pour n'importe quelle devise et détecte la devise préférée de chaque visiteur via la géolocalisation — le tout géré depuis un seul tableau de bord administrateur.
+
+## Fonctionnalités clés
+
+- **Conversion automatique des taux de change** — les prix sont convertis depuis votre devise de base en utilisant des taux récupérés auprès de votre fournisseur choisi
+- **Dérogations de prix par produit** — définissez des prix exacts spécifiques à une devise sur n'importe quel produit pour contourner la conversion automatique
+- **Champ de sélection de devise lors de l'inscription** — permet aux clients de choisir leur devise préférée lors du paiement/de l'inscription
+- **Multiples fournisseurs de taux de change** — ECB, Frankfurter, Stripe, ou taux entièrement manuels
+- **Détection de devise basée sur la géolocalisation** — pré-sélectionne automatiquement la devise correspondant au pays du visiteur
+- **Tableau de bord administrateur** — gérez les devises actives, les taux de change et les paramètres des fournisseurs depuis un seul endroit
+
+## Prérequis
+
+- Ultimate Multisite 2.0.0 ou supérieur
+- Installation WordPress Multisite
+- PHP 7.4 ou supérieur
+
+## Installation
+
+1. Téléchargez les fichiers du plugin dans `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Activez le plugin via l'écran **Plugins** de WordPress (Activation réseau)
+3. Accédez à **Ultimate Multisite → Multi-Currency** pour ouvrir le tableau de bord administrateur
+4. Ajoutez les devises que vous souhaitez accepter et configurez votre fournisseur de taux de change
+
+## Configuration
+
+### Tableau de bord administrateur
+
+Le tableau de bord Multi-Currency (**Ultimate Multisite → Multi-Currency**) est l'endroit central pour :
+
+- Ajouter, activer ou désactiver des devises
+- Choisir un fournisseur de taux de change et rafraîchir les taux à la demande
+- Consulter les taux actuels pour toutes les devises actives
+- Définir des taux manuels lorsque les fournisseurs automatiques ne sont pas appropriés
+
+### Fournisseurs de taux de change
+
+| Fournisseur | Description |
+|---|---|
+| **ECB** | Banque centrale européenne — taux quotidiens gratuits pour les réseaux basés sur l'EUR |
+| **Frankfurter** | API miroir open-source de l'ECB — gratuit, aucune clé API requise |
+| **Stripe** | Utilise les taux de change FX en temps réel de Stripe — nécessite une intégration Stripe active |
+| **Manuel** | Vous entrez les taux directement ; aucun appel API externe |
+
+Sélectionnez votre fournisseur sous **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Les taux peuvent être rafraîchis manuellement à tout moment ou planifiés pour se mettre à jour automatiquement.
+
+### Dérogations de prix par produit
+
+Lorsque la conversion automatique n'est pas assez précise, vous pouvez définir un prix exact pour une devise spécifique sur n'importe quel produit :
+
+1. Ouvrez l'éditeur de produit (**Ultimate Multisite → Products → Edit**)
+2. Faites défiler jusqu'à la section **Currency Pricing**
+3. Entrez le prix exact pour chaque devise que vous souhaitez déroger
+4. Enregistrez le produit
+
+Les produits sans dérogation utilisent le prix converti de votre devise de base.
+
+### Champ de sélection de devise lors de l'inscription
+
+Le champ de sélection de devise peut être ajouté à votre flux d'inscription/de paiement afin que les clients choisissent leur devise préférée lors de l'enregistrement :
+
+1. Allez à **Ultimate Multisite → Multi-Currency → Settings**
+2. Activez **Show currency selector on signup**
+3. Optionnellement, définissez une devise par défaut ou laissez la géolocalisation déterminer la valeur pré-sélectionnée
+
+La devise sélectionnée est enregistrée avec l'abonnement et utilisée pour toutes les facturations ultérieures.
+
+### Détection de devise basée sur la géolocalisation
+
+Lorsque la détection de géolocalisation est activée, le plugin associe le pays du visiteur à une devise et la pré-sélectionne dans le champ de sélection de devise. Pour activer cette fonction :
+
+1. Allez à **Ultimate Multisite → Multi-Currency → Settings**
+2. Activez **Detect currency from visitor location**
+3. Associez les pays aux devises dans le tableau **Geolocation Mapping**
+
+Si aucune association n'existe pour le pays du visiteur, la devise de base du réseau est utilisée comme valeur par défaut.
+
+## Foire aux questions
+
+### Que se passe-t-il si un fournisseur de taux de change est indisponible ?
+
+Le plugin revient aux derniers taux récupérés avec succès. Si aucun taux n'a jamais été récupéré, il revient aux taux manuels que vous avez configurés. Il est recommandé de configurer des taux manuels comme filet de sécurité.
+
+### Puis-je utiliser différents fournisseurs pour différentes devises ?
+
+Non — un fournisseur est actif à la fois pour toutes les devises. Utilisez **Manual** si vous avez besoin d'un contrôle total sur les taux individuels.
+
+### La géolocalisation nécessite-t-elle un plugin séparé ?
+
+Aucun plugin de géolocalisation externe n'est requis. Le plugin utilise la détection IP-vers-pays intégrée de WordPress. Pour une précision accrue, un service de géolocalisation dédié peut être intégré via les hooks de filtre fournis.
+
+### Les dérogations de prix par produit sont-elles appliquées avant ou après la taxe ?
+
+Les dérogations de prix par produit définissent le prix avant taxe dans la devise cible. La taxe est calculée sur le prix de dérogation en utilisant votre configuration fiscale existante.
+
+## Journal des modifications
+
+### Version 1.0.0 — Publiée le 2026-04-02
+
+- Nouveau : Prise en charge multi-devises avec conversion automatique des taux de change
+- Nouveau : Dérogations de prix par produit pour des prix exacts spécifiques à une devise
+- Nouveau : Champ de sélection de devise lors de l'inscription pour le flux de paiement
+- Nouveau : Fournisseurs de taux de change : ECB, Frankfurter, Stripe et manuel
+- Nouveau : Détection de devise basée sur la géolocalisation
+- Nouveau : Tableau de bord administrateur pour la gestion des devises et des taux de change
+- Correction : Le tableau de bord affiche toujours les prix dans la devise de base quelle que soit la devise sélectionnée

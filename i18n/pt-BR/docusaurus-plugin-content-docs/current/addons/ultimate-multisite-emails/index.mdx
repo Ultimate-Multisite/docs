@@ -1,0 +1,114 @@
+---
+title: E-mails
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+O addon Ultimate Multisite: Emails permite que os proprietários de rede provisionem e gerenciem contas de e-mail dos clientes junto com os sites e membros. A versão 1.1.0 adiciona gerenciamento de contas de e-mail visível para o cliente, single sign-on (SSO) de webmail, suporte a encaminhadores do CyberPanel e melhorias no provisionamento no checkout.
+
+## Key Features
+
+* **Widget de conta de e-mail do cliente**: Os clientes podem criar e gerenciar contas de e-mail na página de conta sem precisar abrir um ticket de suporte.
+* **Webmail SSO e links mágicos**: Os clientes podem acessar o webmail diretamente da página de conta com autenticação de um clique, quando o provedor suportar.
+* **Alteração de senhas**: Clientes e administradores podem atualizar senhas de caixa de correio no widget de gerenciamento de e-mail.
+* **Provisionamento no checkout**: A criação da conta de e-mail do cliente pode ocorrer durante o checkout, garantindo que o caixa de correio esteja pronto após a conclusão do fluxo de compra.
+* **Encaminhadores do CyberPanel**: Redes com suporte ao CyberPanel podem criar e gerenciar encaminhadores de e-mail como parte do fluxo de serviço de e-mail.
+* **Configurações conscientes do provedor**: A página de configurações filtra os provedores para mostrar apenas as integrações ativas e configuradas, para que os administradores vejam apenas opções utilizáveis.
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 ou superior
+* Instalação de WordPress Multisite
+* Pelo menos uma integração de provedor de e-mail configurada
+* Credenciais da API do provedor com permissão para criar caixas de correio, alterar senhas e emitir links de acesso webmail, quando suportado
+
+## Installation
+
+1. Faça o upload dos arquivos do plugin para `/wp-content/plugins/ultimate-multisite-emails`.
+2. Ative o addon na rede a partir de **Plugins** no painel de administração da rede WordPress.
+3. Vá para **Ultimate Multisite** > **Settings** e abra as configurações de e-mail do addon.
+4. Habilite as integrações de provedor de e-mail que você deseja que os clientes usem.
+5. Salve as configurações e, em seguida, teste a criação de conta com um cliente não-produção ou um site de staging.
+
+## Customer Account Email Management
+
+A versão 1.1.0 adiciona um widget de gerenciamento de e-mail à página de conta do cliente. Use-o quando os clientes devem realizar a criação e manutenção de caixas de correio por conta própria para os próprios sites.
+
+Na página de conta, os clientes podem:
+
+1. Visualizar contas de e-mail conectadas à sua assinatura ou site atual.
+2. Criar um novo caixa de correio quando o plano permitir contas adicionais.
+3. Alterar a senha de um caixa de correio existente.
+4. Abrir provedores de webmail suportados através de SSO ou login com link mágico.
+
+O widget utiliza o sistema de páginas de conta do Ultimate Multisite, então as ações são limitadas ao contexto da conta que o cliente está visualizando. Isso impede que os clientes gerenciem contas de e-mail que pertencem a outra assinatura ou site.
+
+## Webmail SSO and Magic-Link Login
+
+O Webmail SSO oferece aos clientes uma ação direta de **Open webmail** na página de conta. Quando suportado pelo provedor ativo, o addon solicita um URL de acesso de curta duração e redireciona o cliente para o webmail sem pedir que ele copie as credenciais do caixa de correio.
+
+O comportamento do provedor pode variar:
+
+* Provedores com APIs nativas de SSO podem criar uma sessão de webmail autenticada direta.
+* Provedores com suporte a links mágicos podem gerar um link de login com tempo limitado.
+* Provedores sem suporte a SSO ou links mágicos ainda devem mostrar os detalhes do caixa de correio e as ações de gerenciamento de senha, mas sem o botão de webmail de um clique.
+
+Habilite o acesso webmail apenas para os provedores onde você configurou as credenciais de API necessárias. Se a ação estiver faltando para um provedor, primeiro confirme que o provedor está ativo, configurado e suporta links de login webmail.
+
+## Checkout Provisioning
+
+O addon pode criar contas de e-mail de clientes como parte do checkout. Isso é útil quando o plano inclui um caixa de correio por padrão ou quando o formulário de checkout coleta detalhes de conta de e-mail.
+
+Recomendação de implementação:
+
+1. Configure os limites do provedor e do plano antes de habilitar o provisionamento no checkout.
+2. Teste uma compra com um produto de staging e confirme se o caixa de correio é criado após o checkout.
+3. Revise a página de conta do cliente para confirmar se o novo caixa de correio aparece no widget de e-mail.
+4. Confirme as ações de alteração de senha e webmail antes de habilitar o fluxo para produtos de produção.
+
+Se o provisionamento falhar, a conta e a assinatura do cliente ainda podem existir, mas o caixa de correio exigirá acompanhamento do administrador. Verifique os logs de atividade do Ultimate Multisite e os logs do provedor antes de tentar novamente.
+
+## CyberPanel Email Forwarders
+
+Para redes com suporte ao CyberPanel, a versão 1.1.0 adiciona suporte a encaminhadores de e-mail. Use encaminhadores quando os clientes precisarem de endereços como `info@customer-domain.test` para redirecionar e-mails para outra caixa de correio sem criar um caixa de correio completo.
+
+Antes de oferecer encaminhadores, confirme que a integração do CyberPanel está configurada e acessível. Consulte o guia [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) para os constantes de host, nome de usuário, senha e pacote necessários.
+
+## Changelog
+
+### Version 1.1.0 - Released on 2026-05-05
+
+* New: Webmail SSO e login com link mágico — os clientes podem acessar o webmail diretamente da conta com autenticação de um clique.
+* New: Funcionalidade de alteração de senha adicionada ao widget de gerenciamento de conta de e-mail.
+* New: Suporte a encaminhadores de e-mail do CyberPanel.
+* New: Widget de gerenciamento de e-mail na página de conta do cliente para criação e gerenciamento por conta própria.
+* New: Criação de conta de e-mail do cliente integrada ao fluxo de checkout para provisionamento automático.
+* Fix: O hook do widget da página de conta foi atualizado para usar o padrão de registro correto do UMS.
+* Fix: O formulário Create Account foi substituído por JS vanilla e saída HTML completo correta.
+* Fix: O widget de gerenciamento de e-mail agora usa o sistema UMS currents para páginas de conta de administrador.
+* Fix: O formulário de criação de conta de e-mail do administrador inclui campo de senha e usa Email_Account_Manager.
+* Fix: Spam de log por requisição foi removido da inicialização do Email_Account_Manager.
+* Improved: A página de configurações agora filtra para mostrar apenas provedores de e-mail ativos e configurados.
+
+## Frequently Asked Questions
+
+## Os clientes podem criar suas próprias contas de e-mail?
+
+Sim. Quando o widget de conta do cliente estiver habilitado e o plano permitir contas de e-mail, os clientes podem criar e gerenciar seus próprios caixas de correio a partir da página de conta.
+
+## Todo provedor suporta Webmail SSO?
+
+Não. O suporte a SSO e links mágicos depende do provedor de e-mail ativo. Provedores sem API de link de acesso ainda podem suportar a criação de caixas de correio e alterações de senha.
+
+## Os administradores podem criar contas de e-mail para os clientes?
+
+Sim. Os administradores podem criar contas de e-mail a partir da interface de administração, incluindo a definição da senha inicial ao criar a conta.
+
+## Encaminhadores são o mesmo que caixas de correio?
+
+Não. Um caixa de correio armazena e-mails e possui credenciais de login. Um encaminhador redireciona e-mails para outro endereço e não fornece uma caixa de correio separada.
