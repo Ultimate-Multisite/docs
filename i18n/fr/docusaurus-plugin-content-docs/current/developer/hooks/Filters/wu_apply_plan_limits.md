@@ -17,6 +17,6 @@ Vous pouvez utiliser ce filtre pour exécuter du code arbitraire avant que les l
 ### Source
 
 - Défini dans [`inc/limits/class-post-type-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-post-type-limits.php#L52) à la ligne 52
-- Défini dans [`inc/limits/class-disk-space-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-disk-space-limits.php#L98) à la ligne 98
+- Défini dans [`inc/limits/class-di&#115;k-space-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-di%73k-space-limits.php#L98) à la ligne 98
 
 ## Returns

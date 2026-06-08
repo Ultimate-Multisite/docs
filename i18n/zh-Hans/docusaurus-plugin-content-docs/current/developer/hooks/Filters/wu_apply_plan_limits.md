@@ -17,6 +17,6 @@ _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ### Source
 
 - 在 `inc/limits/class-post-type-limits.php` 第 52 行定义
-- 在 `inc/limits/class-disk-space-limits.php` 第 98 行定义
+- 在 `inc/limits/class-di&#115;k-space-limits.php` 第 98 行定义
 
 ## Returns
