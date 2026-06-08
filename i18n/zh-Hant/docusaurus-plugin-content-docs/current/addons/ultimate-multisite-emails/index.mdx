@@ -1,0 +1,114 @@
+---
+title: 電子郵件
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# 電子郵件 (Emails)
+
+Ultimate Multisite: Emails 外掛讓網路擁有者能夠在管理網站和會員資格的同時，也能為客戶提供帳戶電子郵件的配置和管理功能。版本 1.1.0 新增了客戶端電子郵件帳戶管理、Webmail 單點登入 (SSO)、CyberPanel 轉寄器支援，以及優化了結帳時的帳戶配置流程。
+
+## 主要功能 (Key Features)
+
+* **客戶電子郵件帳戶小工具 (Customer email account widget)**：客戶無需開立支援工單，即可從其帳戶頁面建立和管理電子郵件帳戶。
+* **Webmail SSO 與魔法連結 (Webmail SSO and magic links)**：當服務提供者支援時，客戶可以直接從帳戶頁面透過單點登入 (one-click authentication) 進入 Webmail。
+* **密碼變更**：客戶和管理員都可以從電子郵件管理小工具更新信箱密碼。
+* **結帳時配置 (Checkout provisioning)**：客戶電子郵件帳戶的建立可以在結帳過程中執行，確保購買流程完成後，信箱即可使用。
+* **CyberPanel 轉寄器 (CyberPanel forwarders)**：使用 CyberPanel 的網路可以將電子郵件轉寄器作為電子郵件服務流程的一部分來建立和管理。
+* **提供者感知設定 (Provider-aware settings)**：設定頁面會篩選出目前啟用且已配置的整合服務提供者，讓管理員只看到可用的選項。
+
+## 需求 (Requirements)
+
+* Ultimate Multisite 2.0.0 或更高版本
+* WordPress Multisite 安裝
+* 至少一個已配置的電子郵件服務提供者整合
+* 具備建立信箱、變更密碼和提供 Webmail 存取連結權限的服務提供者 API 憑證
+
+## 安裝 (Installation)
+
+1. 將外掛檔案上傳到 `/wp-content/plugins/ultimate-multisite-emails`。
+2. 在 WordPress 網路管理員的 **Plugins** 中，對網路啟用此外掛。
+3. 前往 **Ultimate Multisite** > **Settings**，開啟外掛的電子郵件設定。
+4. 啟用您希望客戶使用的電子郵件服務提供者整合。
+5. 儲存設定後，請使用非生產環境的客戶帳戶或測試網站來測試帳戶建立流程。
+
+## 客戶帳戶電子郵件管理 (Customer Account Email Management)
+
+版本 1.1.0 在客戶帳戶頁面新增了電子郵件管理小工具。當客戶需要自行服務地建立和維護自己網站的信箱時，請使用此功能。
+
+從帳戶頁面，客戶可以：
+
+1. 查看與其目前會員資格或網站相關聯的電子郵件帳戶。
+2. 當其方案允許額外帳戶時，建立新的信箱。
+3. 變更現有信箱的密碼。
+4. 透過 SSO 或魔法連結登入支援的 Webmail 服務提供者。
+
+此小工具使用 Ultimate Multisite 帳戶頁面的現有系統，因此所有操作都會限定在客戶正在檢視的帳戶範圍內。這可以防止客戶管理屬於其他會員資格或網站的電子郵件帳戶。
+
+## Webmail SSO 與魔法連結登入 (Webmail SSO and Magic-Link Login)
+
+Webmail SSO 為客戶提供了從帳戶頁面直接「**開啟 Webmail**」的動作。當活動的服務提供者支援此功能時，外掛會請求一個短期存取 URL，並將客戶重定向到 Webmail，而無需要求他們複製信箱憑證。
+
+服務提供者的行為可能有所不同：
+
+* 具備原生 SSO API 的服務提供者可以建立直接的、經過驗證的 Webmail 會話。
+* 具備魔法連結支援的服務提供者可以生成一個時間限制的登入連結。
+* 沒有 SSO 或魔法連結支援的服務提供者，仍應顯示信箱詳細資訊和密碼管理動作，但不會有單點 Webmail 按鈕。
+
+請僅為您已配置所需 API 憑證的服務提供者啟用 Webmail 存取。如果某個服務提供者缺少此動作，請先確認該服務提供者是否已啟用、已配置，並且支援 Webmail 登入連結。
+
+## 結帳時配置 (Checkout Provisioning)
+
+外掛可以在結帳流程的一部分來建立客戶電子郵件帳戶。當方案預設包含一個信箱，或結帳表單收集了電子郵件帳戶詳細資訊時，此功能非常有用。
+
+建議的實施步驟：
+
+1. 在啟用結帳時配置功能前，先配置好服務提供者和方案限制。
+2. 使用測試產品進行購買，並確認信箱是否在結帳後成功建立。
+3. 檢查客戶帳戶頁面，確認新的信箱是否出現在電子郵件小工具中。
+4. 在為生產產品啟用此流程前，請確認密碼變更和 Webmail 動作正常。
+
+如果配置失敗，客戶帳戶和會員資格仍然存在，但信箱需要管理員手動跟進。在重試之前，請檢查 Ultimate Multisite 的活動日誌和服務提供者的日誌。
+
+## CyberPanel 電子郵件轉寄器 (CyberPanel Email Forwarders)
+
+對於使用 CyberPanel 的網路，版本 1.1.0 新增了電子郵件轉寄器支援。當客戶需要地址（例如 `info@customer-domain.test`）將郵件轉發到另一個信箱，但不需要建立完整的信箱時，請使用轉寄器。
+
+在提供轉寄器之前，請確認 CyberPanel 整合是否已配置且可連線。請參閱 [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) 文件，了解所需的主機、使用者名稱、密碼和套件常數。
+
+## 更新日誌 (Changelog)
+
+### Version 1.1.0 - 於 2026-05-05 發布
+
+* 新增：Webmail SSO 和魔法連結登入 — 客戶可以透過單點驗證直接從帳戶存取 Webmail。
+* 新增：電子郵件帳戶管理小工具增加了變更密碼功能。
+* 新增：CyberPanel 電子郵件轉寄器支援。
+* 新增：客戶帳戶頁面上的電子郵件管理小工具，用於自助建立和管理帳戶。
+* 新增：客戶電子郵件帳戶建立整合到結帳流程，實現自動配置。
+* 修復：帳戶頁面小工具 Hook 已更新，使用正確的 UMS 註冊模式。
+* 修復：Create Account 表單已替換為原生的 JS 和正確的完整 HTML 文件輸出。
+* 修復：電子郵件管理小工具現在使用 UMS currents 系統用於管理員帳戶頁面。
+* 修復：管理員電子郵件帳戶建立表單包含密碼欄位，並使用 Email_Account_Manager。
+* 修復：移除了 Email_Account_Manager 初始化時的每次請求日誌垃圾訊息。
+* 改進：設定頁面現在會篩選，只顯示啟用且已配置的電子郵件服務提供者。
+
+## 常見問題 (Frequently Asked Questions)
+
+## 客戶可以建立自己的電子郵件帳戶嗎？
+
+可以。當客戶帳戶小工具已啟用，且方案允許電子郵件帳戶時，客戶可以從帳戶頁面建立和管理自己的信箱。
+
+## 每個服務提供者都支援 Webmail SSO 嗎？
+
+不一定。SSO 和魔法連結的支援取決於活動的電子郵件服務提供者。沒有存取連結 API 的服務提供者，仍可以支援信箱建立和密碼變更。
+
+## 管理員可以為客戶建立電子郵件帳戶嗎？
+
+可以。管理員可以從管理介面建立電子郵件帳戶，包括在建立帳戶時設定初始密碼。
+
+## 轉寄器和信箱一樣嗎？
+
+不一樣。信箱用於儲存郵件並具有登入憑證。轉寄器用於將郵件轉發到另一個地址，但不會提供獨立的收件箱。

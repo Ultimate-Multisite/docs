@@ -1,0 +1,117 @@
+---
+title: کثیر کرنسی
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency آپ کے network کو مختلف کرنسیوں میں ادائیگی قبول کرنے کے قابل بناتا ہے۔ یہ خود بخود (automatically) موجودہ یا دستی exchange rates کا استعمال کرتے ہوئے قیمتوں کو تبدیل کرتا ہے، آپ کو کسی بھی کرنسی کے لیے ہر product کی مخصوص قیمت مقرر کرنے دیتا ہے، اور جیو لوکیشن (geolocation) کے ذریعے ہر visitor کی پسندیدہ کرنسی کا پتہ لگاتا ہے — یہ سب کچھ ایک ہی admin dashboard سے manage کیا جاتا ہے۔
+
+## Key Features
+
+- **Automatic exchange rate conversion** — آپ کی بنیادی کرنسی (base currency) سے rates کو تبدیل کیا جاتا ہے جو آپ کے منتخب کردہ provider سے حاصل کیے جاتے ہیں۔
+- **Per-product pricing overrides** — automatic conversion کو نظرانداز کرتے ہوئے کسی بھی product پر currency-specific مخصوص قیمتیں مقرر کریں۔
+- **Currency selector signup field** — یہ customers کو checkout/signup کے دوران اپنی پسندیدہ کرنسی منتخب کرنے دیتا ہے۔
+- **Multiple exchange rate providers** — ECB, Frankfurter, Stripe، یا مکمل طور پر دستی rates۔
+- **Geolocation-based currency detection** — خود بخود اس کرنسی کا انتخاب کر دیا جاتا ہے جو visitor کے ملک سے مطابقت رکھتی ہے۔
+- **Admin dashboard** — ایک ہی جگہ سے active currencies، exchange rates، اور provider settings کو manage کریں۔
+
+## Requirements
+
+- Ultimate Multisite 2.0.0 or higher
+- WordPress Multisite installation
+- PHP 7.4 or higher
+
+## Installation
+
+1. Plugin files کو `/wp-content/plugins/ultimate-multisite-multi-currency` پر upload کریں۔
+2. WordPress میں **Plugins** screen کے ذریعے plugin کو activate کریں (Network Activate)۔
+3. Admin dashboard کھولنے کے لیے **Ultimate Multisite → Multi-Currency** پر جائیں۔
+4. وہ currencies شامل کریں جو آپ قبول کرنا چاہتے ہیں اور اپنے exchange rate provider کو configure کریں۔
+
+## Configuration
+
+### Admin Dashboard
+
+Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) وہ مرکزی جگہ ہے جہاں آپ:
+
+- currencies شامل، enable، یا disable کر سکتے ہیں۔
+- ایک exchange rate provider کا انتخاب کر سکتے ہیں اور ضرورت پڑنے پر rates کو refresh کر سکتے ہیں۔
+- تمام active currencies کے لیے موجودہ rates کا جائزہ لے سکتے ہیں۔
+- دستی rates set کر سکتے ہیں جب automatic providers مناسب نہ ہوں۔
+
+### Exchange Rate Providers
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — EUR-based networks کے لیے مفت روزانہ rates۔ |
+| **Frankfurter** | Open-source ECB mirror API — مفت، API key کی ضرورت نہیں ہے۔ |
+| **Stripe** | Stripe کے live FX rates کا استعمال کرتا ہے — ایک active Stripe integration کی ضرورت ہے۔ |
+| **Manual** | آپ براہ راست rates درج کرتے ہیں؛ کسی بیرونی API کال کی ضرورت نہیں۔ |
+
+rates کو **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** کے تحت منتخب کریں۔ rates کو کسی بھی وقت دستی طور پر refresh کیا جا سکتا ہے یا خود بخود update ہونے کے لیے schedule کیا جا سکتا ہے۔
+
+### Per-Product Pricing Overrides
+
+جب automatic conversion کافی precise نہ ہو، تو آپ کسی بھی product پر کسی مخصوص currency کے لیے ایک exact price set کر سکتے ہیں:
+
+1. Product editor کھولیں (**Ultimate Multisite → Products → Edit**)
+2. **Currency Pricing** section تک scroll کریں۔
+3. ہر اس currency کے لیے exact price درج کریں جسے آپ override کرنا چاہتے ہیں۔
+4. product کو save کریں۔
+
+جن products پر override نہیں ہے، وہ آپ کی بنیادی کرنسی سے تبدیل شدہ قیمت استعمال کریں گے۔
+
+### Currency Selector Signup Field
+
+currency selector field کو آپ کے signup/checkout flow میں شامل کیا جا سکتا ہے تاکہ customers رجسٹریشن کے وقت اپنی پسندیدہ currency منتخب کر سکیں۔
+
+1. **Ultimate Multisite → Multi-Currency → Settings** پر جائیں۔
+2. **Show currency selector on signup** کو enable کریں۔
+3. اختیاری طور پر ایک default currency set کریں یا جیو لوکیشن کو pre-selected value طے کرنے دیں۔
+
+منتخب کردہ currency کو subscription کے ساتھ store کیا جاتا ہے اور تمام بعد کے billing کے لیے استعمال ہوتا ہے۔
+
+### Geolocation-Based Currency Detection
+
+جب geolocation detection enable ہوتا ہے، تو addon visitor کے ملک کو ایک currency سے map کرتا ہے اور currency selector field میں اسے pre-select کر دیتا ہے۔ enable کرنے کے لیے:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** پر جائیں۔
+2. **Detect currency from visitor location** کو enable کریں۔
+3. **Geolocation Mapping** table میں ممالک کو currencies سے map کریں۔
+
+اگر visitor کے ملک کے لیے کوئی mapping موجود نہیں ہے، تو network کی بنیادی کرنسی (base currency) fallback کے طور پر استعمال ہوتی ہے۔
+
+## Frequently Asked Questions
+
+### What happens if an exchange rate provider is unavailable?
+
+addon آخری کامیابی سے حاصل کردہ rates پر fallback کرتا ہے۔ اگر کبھی بھی کوئی rates حاصل نہیں ہوئے، تو یہ آپ کے configure کردہ manual rates پر fallback کرتا ہے۔ ایک حفاظتی جال (safety net) کے طور پر manual rates کو configure کرنا تجویز کیا جاتا ہے۔
+
+### Can I use different providers for different currencies?
+
+نہیں — تمام currencies کے لیے ایک وقت میں صرف ایک provider active ہوتا ہے۔ اگر آپ کو انفرادی rates پر مکمل کنٹرول چاہیے تو **Manual** استعمال کریں۔
+
+### Does geolocation require a separate plugin?
+
+کسی بیرونی geolocation plugin کی ضرورت نہیں ہے۔ addon WordPress کے built-in IP-to-country detection کا استعمال کرتا ہے۔ زیادہ درستگی کے لیے، فراہم کردہ filter hooks کے ذریعے ایک dedicated geolocation service کو integrate کیا جا سکتا ہے۔
+
+### Are per-product overrides applied before or after tax?
+
+Per-product overrides، ٹارگٹ currency میں pre-tax price set کرتے ہیں۔ tax کو آپ کی موجودہ tax configuration کا استعمال کرتے ہوئے override price کے اوپر calculate کیا جاتا ہے۔
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Automatic exchange rate conversion کے ساتھ Multi-currency support۔
+- New: Exact currency-specific prices کے لیے Per-product pricing overrides۔
+- New: Checkout flow کے لیے Currency selector signup field۔
+- New: Exchange rate providers: ECB, Frankfurter, Stripe, اور manual۔
+- New: Geolocation-based currency detection۔
+- New: Currencies اور exchange rates کو manage کرنے کے لیے Admin dashboard۔
+- Fix: Dashboard ہمیشہ selected currency سے قطع نظر base currency میں قیمتیں دکھاتا رہا۔

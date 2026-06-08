@@ -1,0 +1,116 @@
+---
+title: Tương thích Multisite của Tutor
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tương thích Multisite cho Tutor
+
+Một plugin WordPress bổ sung các bản sửa lỗi tương thích cho Tutor LMS trong môi trường multisite.
+
+## Mô tả
+
+Plugin này cung cấp các bản sửa lỗi tương thích cần thiết để chạy Tutor LMS trên mạng lưới WordPress multisite. Nó xử lý việc đăng ký người dùng, quản lý giảng viên, giới hạn khóa học và các chức năng cụ thể khác của multisite.
+
+## Tính năng
+
+- **Quản lý Bảng Cơ sở Dữ liệu**: Tự động phát hiện và tạo các bảng Tutor LMS bị thiếu do gặp lỗi ràng buộc khóa ngoại của multisite
+- **Đăng ký Người dùng Multisite**: Bộ xử lý AJAX tùy chỉnh để quản lý việc đăng ký người dùng trên nhiều site trong mạng lưới
+- **Quản lý Vai trò Giảng viên**: Tự động gán và quản lý vai trò giảng viên trong môi trường multisite
+- **Giới hạn Khóa học**: Tích hợp với Ultimate Multisite để quản lý giới hạn tạo khóa học và phễu dựa trên gói site
+- **Giao diện Admin Tùy chỉnh**: Giao diện quản lý và danh sách giảng viên nhận biết môi trường multisite
+- **Công cụ Admin**: Giao diện quản lý cơ sở dữ liệu dành cho quản trị viên mạng lưới và quản trị viên site
+
+## Yêu cầu
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (được tự động yêu cầu thông qua tiêu đề `Requires Plugins`)
+- Cài đặt WordPress Multisite
+- Plugin Ultimate Multisite (cho chức năng giới hạn khóa học)
+
+## Cài đặt
+
+1. Tải các tệp plugin lên thư mục `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Đảm bảo Tutor LMS đã được cài đặt và kích hoạt
+3. Kích hoạt plugin thông qua menu 'Plugins' trong WordPress
+4. Plugin sẽ tự động tích hợp với Tutor LMS
+
+## Cấu trúc Tệp
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Tệp plugin chính)
+├── includes/
+│   ├── class-database-manager.php (Tạo và quản lý bảng cơ sở dữ liệu)
+│   ├── class-admin-interface.php (Giao diện admin để quản lý cơ sở dữ liệu)
+│   ├── class-course-limits.php (Bộ xử lý giới hạn khóa học và phễu)
+│   ├── class-instructor-manager.php (Quản lý vai trò giảng viên)
+│   ├── class-ajax-handlers.php (Bộ xử lý AJAX tùy chỉnh)
+│   ├── class-query-helper.php (Tiện ích truy vấn cơ sở dữ liệu)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model người dùng multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Danh sách giảng viên tùy chỉnh)
+│       └── views/
+│           └── instructors.php (Giao diện admin giảng viên)
+└── README.md
+```
+
+## Chức năng Di chuyển từ Plugin MU
+
+Plugin này chứa các chức năng trước đây nằm trong `wp-content/mu-plugins/daves.php`:
+
+- Giới hạn thay đổi trạng thái khóa học
+- Giới hạn tạo khóa học
+- Tích hợp và giới hạn CartFlows
+- Quản lý vai trò giảng viên Tutor
+- Xử lý đăng ký người dùng multisite
+- Hiển thị ID sản phẩm khóa học
+
+## Quản lý Cơ sở Dữ liệu
+
+### Vấn đề
+
+Trong môi trường WordPress multisite, việc tạo bảng của Tutor LMS sẽ thất bại đối với các bảng có ràng buộc khóa ngoại tới bảng người dùng. Điều này xảy ra vì:
+
+- Các bảng dành riêng cho site sử dụng tiền tố như `wp_2_tutor_carts`
+- Khóa ngoại tham chiếu tới `wp_2_users` (không tồn tại)
+- Bảng người dùng thực tế là `wp_users` (được chia sẻ trên toàn mạng lưới)
+
+### Giải pháp
+
+Plugin này tự động:
+
+1. **Phát hiện các bảng bị thiếu**: Kiểm tra các bảng không thể tạo do lỗi ràng buộc khóa ngoại
+2. **Tạo bảng với tham chiếu chính xác**: Sử dụng tên bảng người dùng thích hợp (`wp_users` trong multisite)
+3. **Xử lý nhiều kịch bản**:
+   - Kích hoạt/kích hoạt lại plugin
+   - Tạo site mới trong mạng lưới
+   - Kiểm tra bảng thủ công qua giao diện admin
+
+### Các Bảng Bị Ảnh Hưởng
+
+- `tutor_coupon_usages` - Chứa khóa ngoại tới bảng người dùng
+- `tutor_carts` - Chứa khóa ngoại tới bảng người dùng
+- `tutor_notification_preferences` - Bảng TutorPro với khóa ngoại tới bảng người dùng
+
+### Giao diện Admin
+
+Truy cập các công cụ quản lý cơ sở dữ liệu tại:
+
+- **Quản trị viên Mạng lưới**: Settings → Tutor Multisite DB
+- **Quản trị viên Site**: Tools → Tutor Multisite DB
+
+Giao diện này cho phép bạn:
+- Xem các bảng bị thiếu trên tất cả các site
+- Kích hoạt thủ công việc tạo bảng
+- Kiểm tra cấu hình cơ sở dữ liệu
+- Xem thông tin trạng thái chi tiết
+
+## Hỗ trợ
+
+Plugin này được thiết kế đặc biệt cho nền tảng KursoPro. Để được hỗ trợ kỹ thuật, vui lòng liên hệ với đội ngũ phát triển.

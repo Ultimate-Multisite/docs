@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate：Mailchimp 整合
+
+將您的 Multisite Ultimate 網路與 Mailchimp 整合。您可以將特定的方案連結到 Mailchimp List，並在用戶註冊時自動將訂閱者新增到這些 List 中。
+
+## 安裝
+
+1. 將 'ultimate-multisite-mailchimp' 上傳到 `/wp-content/plugins/` 目錄
+2. 透過 WordPress Network Admin 的「Plugins」選單啟用此 plugin
+
+## 使用指南
+
+使用我們的 Ultimate Multisite: MailChimp 整合 Add-on，同步訂閱者的電子郵件到您的 MailChimp List 非常簡單。本教學旨在幫助您完成所有設定！
+
+## 取得 API key
+
+在我們深入了解各種可用設定之前，我們需要一個 MailChimp API key。這將允許 Ultimate Multisite 與 MailChimp API 進行通訊，以便在用戶註冊時檢索 List、Group，並將電子郵件地址新增到這些 List 和 Group 中。
+
+請遵循本教學來取得您自己的 Mailchimp API key：[About API Keys | Mailchimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_請在_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ _中新增您的 MailChimp API key_
+
+## 整合模式
+
+MailChimp Integration add-on 提供了兩種「整合模式」（integration modes），這意味著您可以使用此 add-on 進行電子郵件同步的兩種不同方式。
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_兩種整合模式，讓您更具彈性！_
+
+### 模式一：多個 List (Multiple Lists)
+
+預設模式使用**多個 List**。此模式允許您為每個方案選擇多個 MailChimp List。如果您的用戶群會被分到不同的 List，這是最佳選擇。
+
+舉例來說，假設您的 MailChimp 帳戶中有 3 個不同的 List：**Newsletter**、**Plan A** 和 **Plan B**。您希望所有用戶，無論他們屬於哪個方案，都能自動被包含在 Newsletter List 中，這樣他們就不會錯過您的更新。
+
+為此，您可以使用 Multiple Lists 模式，將 **Newsletter** 和 **Plan A** 這兩個 List 添加到 Plan A 的 MailChimp Settings，並將 **Newsletter** 和 **Plan B** 添加到 Plan B 的 MailChimp Settings。
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_選擇新帳戶和取消帳戶的預設 List_
+
+### 模式二：單個 List + 多個 Group (Single List + Multiple Groups)
+
+MailChimp 允許您將 List 分割成較小的用戶群組，稱為 **Groups**。這讓您擁有更高的控制權，因為您可以在不需在 MailChimp 上建立多個相同活動副本的情況下，向特定子群組的訂閱者發送活動（否則之後分析該活動的指標會很困難）。
+
+舉例來說，您可以擁有一個名為 **My Network Subscribers** 的單一 List，並在其中包含針對 **Plan A** 和 **Plan B** 的 Group。
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_如果使用「單個 List + 多個 Group」整合模式，請選擇預設的 List 和 Group_
+
+## 預設 List 和 Group
+
+在您決定了哪種整合模式最適合您的特定使用案例後，接下來就是選擇預設的 List（以及根據模式選擇 Group）。當某個方案沒有選擇特定的 List 時，就會使用預設 List。
+
+您也可以為取消帳戶選擇預設 List。每當用戶終止其訂閱並從您的網路中移除帳戶時，他們的電子郵件地址將會被移動到為取消帳戶設定的 List 中。
+
+## 啟用雙重訂閱 (Double Subscription)
+
+在同一個設定頁面，您將能夠啟用 **Double Subscription**。此選項會在用戶註冊時，將用戶新增到「已選擇的預設 List」**和**「該用戶方案所選擇的 List」這兩個地方。如果未啟用此選項，用戶只會被新增到該用戶方案所選擇的 List。如果該特定方案沒有設定 List，則用戶將會被新增到已選擇的預設 List。
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_用戶在註冊時可以同時訂閱預設 List 和方案的 List_
+
+## 為每個方案選擇 List 和 Group
+
+前往您的 **Plans**，然後選擇您想要編輯的方案。請注意，在 **Advanced Options** meta-box 中，會新增一個名為 MailChimp 的分頁。
+
+在這個分頁上，您可以為該方案選擇多個 List 或單個 List 和多個 Group（取決於整合模式）。
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_為您的每個方案選擇您想要使用的 List 和 Group_
+
+當有新用戶註冊該方案時，他們的電子郵件地址將會被新增到所選擇的 List 和 Group 中！

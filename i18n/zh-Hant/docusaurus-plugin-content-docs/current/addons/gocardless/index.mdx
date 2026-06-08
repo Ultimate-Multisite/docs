@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Ultimate Multisite：GoCardless 付款
+
+讓您的客戶可以使用 GoCardless 透過直接扣款（Direct Debit）為 Ultimate Multisite 的會員和產品付款！
+
+## 安裝
+
+1. 將 'ultimate-multisite-gocardless' 上傳到 '/wp-content/plugins/' 目錄
+2. 在 WordPress 的「外掛」選單中啟用此外掛
+3. 依照逐步嚮導（Wizard）設定外掛
+
+## 使用指南
+
+_GoCardless_ 是一個在**歐洲和英國**可用的支付閘道，它支援**直接扣款**付款方式。
+
+**Ultimate Multisite: GoCardless Gateway** 為 Ultimate Multisite 增加了 _GoCardless_ 的支援，讓您能夠使用直接扣款的方式向該地區的客戶收費。
+
+本教學將指導您如何設定 _GoCardless_，以便在您的 Ultimate Multisite 網路中開始接受透過此閘道收到的付款。
+
+_**注意：GoCardless 僅支援以下貨幣：**_ **EUR、GBP、AUD、SEK 和 DKK。**
+
+## 安裝附加元件
+
+首先，您需要為 Ultimate Multisite 安裝 GoCardless 附加元件。您可以前往 **Ultimate Multisite > 設定 > 附加元件（在側邊欄）**，然後從列表中選擇 GoCardless 附加元件。
+
+附加元件安裝並啟用後，請前往 **Ultimate Multisite > 設定 > 付款**，切換 GoCardless 選項，然後儲存。
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+## 取得存取權杖（Access Token）
+
+請在 _GoCardless_ 建立一個帳戶（或者，如果您想**先進行測試**，建議您在 _GoCardless_ 的沙盒環境（sandbox）建立帳戶）。登入後，導航到 **Developers** 選單項目。
+
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+
+在 **Developers** 頁面，點擊螢幕右上角的 **Create** 按鈕，然後點擊 **Access Token** 選項。
+
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+
+這將會開啟一個新的彈出視窗，讓您建立新的權杖。請為其設定一個容易識別的名稱，並確保在 **Scope** 選單中選擇 **Read-write access**（讀寫權限）。
+
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+
+存取權杖將會顯示在螢幕上。請複製它，並貼到您的 **Ultimate Multisite > 設定 > 付款 > GoCardless** 選單中。
+
+請務必將其貼到右側的欄位。如果這是**正式權杖（live token）**，請在貼上權杖之前，切換關閉 **sandbox mode**（沙盒模式）。
+
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+
+至此，第一步就完成了。接下來，您需要設定一個 Webhook 監聽器。
+
+## 設定 Webhook 監聽器
+
+當處理訂閱服務時，Ultimate Multisite 需要了解訂閱狀態的變化、新的付款發生，以及其他相關資訊。
+
+支付閘道通知 Ultimate Multisite 這些變化的方式是使用 **webhook 呼叫（webhook calls）**。因此，為了讓整合達到 100% 的功能，我們需要告訴 _GoCardless_ 應該呼叫哪個 URL 來傳送所有這些資訊。
+
+請回到您的 **GoCardless > Developers** 面板，再次點擊 Create 按鈕，但這次請選擇 **Webhook endpoint** 選項。
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->一個新的視窗會開啟，其中包含 Webhook endpoint 的選項。它會要求您提供 Webhook URL，所以請回到您的 **Ultimate Multisite 設定 > 付款 > GoCardless**，複製那裡列出的 Webhook URL：
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+此外，您還可以輸入一個 **webhook secret**，這個密鑰將用於簽署您的 webhook 呼叫。您在該欄位輸入的任何內容，都需要在 **Ultimate Multisite Webhook Secret 欄位**中也輸入一次。
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+
+最後，點擊 **Create webhook endpoint** 按鈕來完成端點設定，然後**也儲存您的 Ultimate Multisite 設定**。
+
+現在您應該已經可以接受 _GoCardless_ 的付款了！

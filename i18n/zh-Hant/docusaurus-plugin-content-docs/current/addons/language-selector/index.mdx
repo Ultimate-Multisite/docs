@@ -1,0 +1,75 @@
+---
+title: 語言選擇器
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# 語言選擇器
+
+Ultimate Multisite：註冊頁面語言選擇器
+
+為註冊流程新增一個語言選擇器欄位。
+
+## 安裝
+
+1. 將 'ultimate-multisite-language-selector' 上傳到 '/wp-content/plugins/' 目錄
+2. 透過 WordPress Network Admin 的「Plugins」選單啟用此外掛程式
+
+## 使用指南
+
+有了這個免費的附加元件，您的使用者就可以選擇他們希望在註冊流程和登入頁面看到的語言。
+
+在 [啟用您的授權](../../user-guide/getting-started/installing-ultimate-multisite.md) 後，您就可以安裝您的授權所賦予的 Ultimate Multisite 附加元件了。
+
+前往您的 Ultimate Multisite 設定頁面，然後在左側的選單中點擊 **Add-ons**。
+
+![Add-ons page](/img/admin/addons-page.png)
+
+_前往 Add-ons 頁面開始安裝語言選擇器_
+
+您可以在那裡找到我們提供的所有附加元件。
+
+免費的附加元件適用於所有客戶，無論他們訂閱了哪種方案。
+
+點擊附加元件縮圖下方的 **Install it Now!** 按鈕。然後在 Plugins 頁面啟用它。
+
+![Add-ons page with install button](/img/admin/addons-page.png)
+
+_點擊按鈕安裝附加元件_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_在 Plugins 頁面啟用它_
+
+現在，前往 Ultimate Multisite 的設定選單，並進入 **Network Settings** 分頁。在頁面底部，您會找到一個名為 **Languages** 的新區塊。
+
+![Settings page](/img/config/settings-general.png)
+
+_出現了一個全新的區塊！_
+
+您可以將其留空以顯示所有語言選項，或者選擇您希望啟用哪些語言。這些語言是您在 WordPress 設定中已安裝的語言。
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_此 WordPress 安裝可用的語言列表_
+
+儲存您所做的更改後，您選擇的語言將會顯示在登入頁面和註冊流程上。
+
+![Login and Registration settings](/img/config/settings-login-registration.png)
+
+_登入頁面上的語言選擇器_
+
+![Registration page](/img/config/registration-page.png)
+
+_註冊流程上的語言選擇器_
+
+## 透過 URL 設定語言
+
+您也可以透過在 URL 中加入 locale 參數來更改頁面的語言，而無需使用本地化參數。例如，如果您想將使用者重定向到義大利語的註冊頁面，請在 URL 中加入 `?locale=it_IT`。
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+必須在您的 WordPress network 中安裝該語言，此功能才能正常運作。

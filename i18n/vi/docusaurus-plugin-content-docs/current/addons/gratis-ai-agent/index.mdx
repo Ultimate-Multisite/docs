@@ -1,0 +1,143 @@
+---
+title: Tác nhân AI miễn phí
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent là một trợ lý AI tự động cho WordPress, có khả năng lập kế hoạch, xây dựng và quản lý toàn bộ các trang web WordPress chỉ bằng các hướng dẫn bằng ngôn ngữ tự nhiên. Nó cung cấp một bộ **khả năng** (abilities) có cấu trúc — là các hành động rời rạc, có thể kiểm thử mà agent có thể kích hoạt — bao gồm mọi thứ từ quản lý nội dung đến tùy chỉnh hệ thống thiết kế. Phiên bản 1.9.0 bổ sung khả năng tạo nội dung, xem lại trang trực quan qua ảnh chụp màn hình phía client, năm hồ sơ agent tích hợp sẵn, và các cờ tính năng (feature flags) để kiểm soát quyền truy cập và thương hiệu.
+
+## Key Features
+
+- **Hệ thống Abilities** — một danh mục hành động mô-đun, có thể mở rộng mà agent có thể kích hoạt trên cài đặt WordPress của bạn
+- **Quản lý Nội dung** — tạo bài viết và trang (bao gồm cả việc gán mẫu trang), tạo hàng loạt bài viết trong một lần gọi, đặt ảnh đại diện, và xây dựng các biểu mẫu liên hệ
+- **Xem lại Trực quan** — chụp ảnh màn hình các trang đang hoạt động, so sánh trạng thái trước/sau, và nhận đánh giá thiết kế do AI tạo ra, bao gồm bố cục, kiểu chữ, màu sắc và khả năng truy cập
+- **Năm agent tích hợp sẵn** — Content Writer, Site Builder, Design Studio, Plugin Manager và Support Assistant; có thể chuyển đổi qua Agent Picker trong tiêu đề chat
+- **Feature flags** — các công tắc bật/tắt để kiểm soát quyền truy cập và thương hiệu trong Settings → Feature Flags, dùng để giới hạn vai trò, đặt tên thương hiệu (white-label), và tùy chỉnh widget
+- **Quản lý Custom Post Type** — đăng ký, liệt kê và xóa các loại bài viết tùy chỉnh với khả năng duy trì dữ liệu sau khi khởi động lại
+- **Quản lý Custom Taxonomy** — đăng ký, liệt kê và xóa các loại phân loại tùy chỉnh với khả năng duy trì dữ liệu
+- **Abilities Hệ thống Thiết kế** — tiêm CSS tùy chỉnh, quản lý các mẫu block được tuyển chọn, đặt logo trang web, và áp dụng các preset theme.json
+- **Quản lý Global Styles** — đọc và ghi các giá trị theme.json cho bảng màu, kiểu chữ, khoảng cách, và nhiều hơn nữa
+- **Quản lý Menu Điều hướng** — tạo và cập nhật menu điều hướng cùng các mục của nó bằng lập trình
+- **Quản lý Tùy chọn (Options)** — đọc và ghi các tùy chọn WordPress với một danh sách chặn an toàn tích hợp để bảo vệ các cài đặt quan trọng
+- **Abilities Có thể Cài đặt** — khám phá và kích hoạt các gói khả năng bổ sung mà không cần sửa đổi các tệp plugin cốt lõi
+- **Site Builder Orchestration v2** — các kế hoạch xây dựng trang web nhiều bước với khả năng khám phá plugin, theo dõi tiến độ và phục hồi lỗi
+- **Lệnh benchmark WP-CLI** — chạy bộ kiểm tra khả năng của agent từ dòng lệnh cho CI và đánh giá mô hình
+
+## Requirements
+
+- WordPress 6.0 trở lên
+- PHP 8.1 trở lên
+- WordPress Multisite (kích hoạt cấp mạng) hoặc cài đặt trang web đơn
+- Một plugin kết nối AI đang hoạt động (Anthropic, OpenAI, hoặc tương thích)
+
+## Installation
+
+1. Tải các tệp plugin lên `/wp-content/plugins/gratis-ai-agent`
+2. Kích hoạt plugin qua màn hình **Plugins** trong WordPress
+3. Điều hướng đến **Gratis AI Agent → Settings** và kết nối nhà cung cấp AI của bạn
+4. (Tùy chọn) Duyệt qua **Abilities Registry** để cài đặt các gói khả năng bổ sung
+
+## Quick Start
+
+Sau khi kích hoạt và kết nối với nhà cung cấp AI, hãy mở bảng **Gratis AI Agent** trong thanh bên quản trị WordPress. Nhập một hướng dẫn bằng ngôn ngữ tự nhiên và agent sẽ lập kế hoạch và thực hiện các bước cần thiết bằng cách sử dụng các khả năng có sẵn của nó.
+
+**Ví dụ về hướng dẫn:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities Overview
+
+Abilities là các hành động nguyên tử (atomic actions) mà agent có thể thực hiện. Mỗi ability là một lớp PHP đã đăng ký, cung cấp một schema (các tham số và kiểu trả về) mà agent đọc khi chạy. Các abilities được nhóm thành các khu vực chức năng:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Xem [Abilities Reference](./abilities) để biết tài liệu đầy đủ về tham số và các ví dụ sử dụng.
+
+## WP-CLI
+
+Gratis AI Agent đi kèm với nhóm lệnh `wp gratis-ai-agent` để chạy các bài kiểm tra (benchmarks) và quản lý abilities từ dòng lệnh. Xem [WP-CLI Reference](./wp-cli) để biết danh sách lệnh đầy đủ.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration
+
+Tất cả các cài đặt đều nằm trong **Gratis AI Agent → Settings** trong quản trị WordPress:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | Chọn và cấu hình bộ kết nối nhà cung cấp AI đang hoạt động |
+| **Model** | Chọn mô hình ngôn ngữ để sử dụng cho các phiên agent |
+| **Max Tokens** | Ngân sách token cho mỗi yêu cầu (mặc định 4096) |
+| **Ability Timeout** | Thời gian tối đa mà một ability riêng lẻ có thể chạy (mặc định 30) |
+| **Debug Logging** | Ghi nhật ký các lệnh gọi ability và suy luận của agent vào nhật ký debug của WordPress |
+
+## Options Management Safety Blocklist
+
+Ability Quản lý Tùy chọn bao gồm một danh sách chặn an toàn tích hợp, ngăn agent đọc hoặc ghi các tùy chọn WordPress nhạy cảm. Danh sách chặn mặc định bao gồm:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (các tùy chọn URL — hãy sử dụng công cụ di chuyển chuyên dụng cho những mục này)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (các khóa bí mật)
+- `active_plugins`, `template` (kích hoạt plugin/theme — hãy sử dụng các abilities chuyên dụng)
+- Thông tin xác thực cổng thanh toán và các khóa API được đăng ký bởi các plugin đã cài đặt
+
+Các mục bổ sung có thể được thêm thông qua bộ lọc `gratis_ai_agent_options_blocklist`.
+
+## Hooks and Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — được kích hoạt sau khi một ability được đăng ký, nhận tên lớp ability
+- `gratis_ai_agent_plan_started` — được kích hoạt khi một kế hoạch xây dựng trang web bắt đầu thực thi
+- `gratis_ai_agent_plan_completed` — được kích hoạt khi một kế hoạch hoàn thành thành công
+- `gratis_ai_agent_plan_failed` — được kích hoạt khi một kế hoạch gặp lỗi không thể phục hồi
+
+### Filters
+
+- `gratis_ai_agent_abilities` — sửa đổi danh sách abilities đã đăng ký trước khi agent tải nó
+- `gratis_ai_agent_options_blocklist` — mở rộng hoặc giảm danh sách chặn an toàn các tùy chọn
+- `gratis_ai_agent_benchmark_questions` — thêm các câu hỏi benchmark tùy chỉnh vào bộ đánh giá
+- `gratis_ai_agent_plan_plugins` — sửa đổi danh sách khám phá plugin trong quá trình tạo kế hoạch trang web
+
+## Support
+
+Để được hỗ trợ, hãy truy cập [ultimatemultisite.com](https://ultimatemultisite.com) hoặc mở một vấn đề trong kho lưu trữ plugin.
+
+## Changelog
+
+Xem [Changelog](./changelog) để biết lịch sử phiên bản đầy đủ.

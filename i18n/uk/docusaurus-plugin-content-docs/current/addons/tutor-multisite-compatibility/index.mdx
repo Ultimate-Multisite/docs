@@ -1,0 +1,116 @@
+---
+title: Сумісність Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+WordPress-плагін, який додає виправлення сумісності для Tutor LMS у багатосайтових (multisite) середовищах.
+
+## Description
+
+Цей плагін надає необхідні виправлення сумісності для запуску Tutor LMS на мережах WordPress Multisite. Він обробляє реєстрацію користувачів, управління викладачами, обмеження курсів та інші функції, специфічні для багатосайтових мереж.
+
+## Features
+
+- **Database Table Management**: Автоматично виявляє та створює відсутні таблиці Tutor LMS, які не створюються через обмеження зовнішніх ключів (foreign key constraints) багатосайтової мережі
+- **Multisite User Enrollment**: Спеціальні AJAX-обробники для управління реєстрацією користувачів на різних сайтах мережі
+- **Instructor Role Management**: Автоматичне призначення та управління роллю викладача у багатосайтових середовищах
+- **Course Limitations**: Інтеграція з Ultimate Multisite для управління обмеженнями створення курсів та воронок (funnel) на основі планів сайту
+- **Custom Admin Views**: Інтерфейс списку та управління викладачами, адаптований для багатосайтових мереж
+- **Admin Tools**: Інтерфейс управління базою даних для адміністраторів мережі та сайтів
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Плагін Tutor LMS (автоматично вимагається через заголовок `Requires Plugins`)
+- Встановлення WordPress Multisite
+- Плагін Ultimate Multisite (для функціональності обмеження курсів)
+
+## Installation
+
+1. Завантажте файли плагіна до `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Переконайтеся, що Tutor LMS встановлено та активовано
+3. Активуйте плагін через меню 'Plugins' у WordPress
+4. Плагін автоматично інтегрується з Tutor LMS
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+Цей плагін містить функціональність, яка раніше знаходилася у `wp-content/mu-plugins/daves.php`:
+
+- Обмеження зміни статусу курсу
+- Обмеження створення курсів
+- Інтеграція та обмеження CartFlows
+- Управління роллю викладача Tutor
+- Обробка реєстрації користувачів Multisite
+- Відображення ID продукту курсу
+
+## Database Management
+
+### The Problem
+
+У багатосайтових середовищах WordPress Tutor LMS не може створити таблиці, які мають обмеження зовнішніх ключів до таблиці користувачів. Це відбувається, оскільки:
+
+- Специфічні для сайту таблиці використовують префікси на кшталт `wp_2_tutor_carts`
+- Зовнішні ключі посилаються на `wp_2_users` (якої не існує)
+- Фактична таблиця користувачів — `wp_users` (яка є спільною для всієї мережі)
+
+### The Solution
+
+Цей плагін автоматично:
+
+1. **Виявляє відсутні таблиці**: Перевіряє таблиці, які не вдалося створити через обмеження зовнішніх ключів
+2. **Створює таблиці з правильними посиланнями**: Використовує правильну назву таблиці користувачів (`wp_users` у multisite)
+3. **Обробляє кілька сценаріїв**:
+   - Активування/реактивація плагіна
+   - Створення нового сайту в мережі
+   - Ручна перевірка таблиць через адмін-інтерфейс
+
+### Affected Tables
+
+- `tutor_coupon_usages` - Містить зовнішній ключ до таблиці користувачів
+- `tutor_carts` - Містить зовнішній ключ до таблиці користувачів
+- `tutor_notification_preferences` - Таблиця TutorPro з зовнішнім ключем до таблиці користувачів
+
+### Admin Interface
+
+Доступ до інструментів управління базою даних:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Інтерфейс дозволяє вам:
+- Переглядати відсутні таблиці на всіх сайтах
+- Вручну ініціювати створення таблиць
+- Перевіряти конфігурацію бази даних
+- Переглядати деталі інформації про статус
+
+## Support
+
+Цей плагін спеціально розроблено для платформи KursoPro. Щодо технічної підтримки, зверніться до команди розробників.

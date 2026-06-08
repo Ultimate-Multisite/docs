@@ -1,0 +1,124 @@
+---
+title: ملٹی-ٹینینسی
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# ملٹی-ٹینینسی
+
+کارکردگی (performance) اور سیکیورٹی (security) کے لیے سب سائٹس کو مختلف سرورز اور ڈیٹا بیسز میں تقسیم کرنا۔
+
+## ضروریات
+
+- WordPress 5.3 یا اس سے زیادہ
+- PHP 7.4 یا اس سے زیادہ
+- Multisite Ultimate پلگ ان (فعال/active)
+
+## تنصیب (Installation)
+
+1. ایڈ آنڈ فائلوں کو اپنے `/wp-content/plugins/` ڈائریکٹری میں اپ لوڈ کریں۔
+2. ورڈپریس میں 'Plugins' مینیو کے ذریعے پلگ ان کو فعال (Activate) کریں۔
+3. نیٹ ورک ایڈمن میں ایڈ آنڈ کی سیٹنگز ترتیب دیں۔
+
+## ڈویلپمنٹ
+
+### سیٹ اپ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### پروجیکٹ کا ڈھانچہ (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP کلاسز اور انکلڈز
+│   ├── class-multisite-ultimate-updater.php  # اپ ڈیٹ ہینڈلر
+│   └── class-multi_tenancy-main.php             # بنیادی فنکشنلٹی
+├── tests/                        # یونٹ ٹیسٹس
+│   ├── bootstrap.php            # ٹیسٹ بوٹسٹریپ
+│   ├── class-*-base.php         # بنیادی ٹیسٹ کلاس
+│   └── class-*-test.php         # ٹیسٹ کیسز
+├── views/                       # ٹیمپلیٹ فائلز
+├── assets/                      # سٹیٹک ایسٹ
+│   ├── css/                     # اسٹائل شیٹس
+│   ├── js/                      # جاوا اسکرپٹ فائلز
+│   └── images/                  # تصاویر
+├── lang/                        # زبان کی فائلز
+├── composer.json                # PHP ڈیپینڈنسیز
+├── package.json                 # Node.js ڈیپینڈنسیز
+├── phpunit.xml.dist             # PHPUnit کنفیگریشن
+├── .phpcs.xml.dist              # کوڈ اسٹینڈرڈز کنفیگریشن
+└── rector.php                   # کوڈ کی جدید کاری کے قواعد
+```
+
+### ٹیسٹنگ
+
+اس ایڈ آنڈ میں ایک مکمل ٹیسٹنگ فریم ورک شامل ہے:
+
+- **یونٹ ٹیسٹس (Unit Tests)**: ورڈپریس ٹیسٹ سوٹ کے ساتھ PHPUnit پر مبنی ٹیسٹ۔
+- **بیس ٹیسٹ کلاس (Base Test Class)**: عام ٹیسٹ سچوئیشنز کے لیے مددگار طریقے (helper methods) فراہم کرتا ہے۔
+- **ٹیسٹ کوریج (Test Coverage)**: کوڈ کی کوریج کو ٹریک کرنے کے لیے ترتیب دیا گیا ہے۔
+- **ملٹی-سائٹ ٹیسٹنگ (Multisite Testing)**: ٹیسٹ ملٹی-سائٹ ماحول میں چلتے ہیں۔
+
+### کوڈ کے معیار (Code Standards)
+
+- **ورڈپریس کوڈنگ اسٹینڈرڈز (WordPress Coding Standards)**: PHPCS کے ذریعے نافذ کیے جاتے ہیں۔
+- **PHP 7.4+ کی مطابقت (Compatibility)**: جدید PHP فیچرز کی حمایت۔
+- **سٹیٹک اینالیسس (Static Analysis)**: ٹائپ چیکنگ کے لیے PHPStan کا انٹیگریشن۔
+- **کوڈ کی جدید کاری (Code Modernization)**: PHP اپ گریڈ کے لیے Rector قواعد۔
+
+### بلڈ سسٹم (Build System)
+
+- **ایسٹ پروسیسنگ (Asset Processing)**: CSS/JS فائلوں کے لیے منیفیکیشن (Minification)۔
+- **ترجمہ (Translation)**: POT فائل کی جنریشن۔
+- **پیکجنگ (Packaging)**: تقسیم کے لیے آرکائیو کی تخلیق۔
+- **ڈویلپمنٹ موڈ (Development Mode)**: ڈیبگنگ کے لیے غیر منیفائیڈ ایسٹ۔
+
+## ترتیب (Configuration)
+
+یہ ایڈ آنڈ نیٹ ورک ایڈمن انٹرفیس کے ذریعے قابل رسائی مختلف کنفیگریشن آپشنز کو سپورٹ کرتا ہے۔
+
+## ہکس اور فلٹرز (Hooks and Filters)
+
+### ایکشنز (Actions)
+
+- `ultimate-multisite-addon-template_init` - ایڈ آنڈ کے شروع ہونے کے بعد فعال ہوتا ہے۔
+- `ultimate-multisite-addon-template_loaded` - تمام ایڈ آنڈ فائلوں کے لوڈ ہونے کے بعد فعال ہوتا ہے۔
+
+### فلٹرز (Filters)
+
+- `ultimate-multisite-addon-template_settings` - ایڈ آنڈ کی سیٹنگز کو تبدیل کرنا۔
+- `ultimate-multisite-addon-template_enabled` - ایڈ آنڈ کی فعال/غیر فعال حیثیت کو تبدیل کرنا۔
+
+## لائسنس
+
+یہ ایڈ آنڈ GPL v3 یا اس سے زیادہ کے تحت لائسنس شدہ ہے۔
+
+## سپورٹ
+
+سپورٹ اور دستاویزات کے لیے، [MultisiteUltimate.com](https://multisiteultimate.com) وزٹ کریں۔
+## چینج لاگ (Changelog)
+
+- Version 1.0.1 (2025-09-28): پری فکس کو ultimate-multisite میں تبدیل کیا؛ ٹیکسٹ ڈومین کو اپ ڈیٹ کیا؛ ورژن بڑھایا۔
+
+
+- Version (2025-09-28): پری فکس کو ultimate-multisite میں تبدیل کیا؛ ٹیکسٹ ڈومین کو اپ ڈیٹ کیا؛ ورژن بڑھایا۔

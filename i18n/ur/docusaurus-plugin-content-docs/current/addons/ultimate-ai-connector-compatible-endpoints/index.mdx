@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector for Compatible Endpoints
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints آپ کے WordPress multisite network میں OpenAI-compatible AI provider APIs کو مربوط (integrate) کرتا ہے۔ آپ متعدد AI providers کو ترتیب دے سکتے ہیں — جن میں سے ہر ایک کا اپنا endpoint URL، API key، اور default model ہوتا ہے — اور یہ یقینی بناتے ہیں کہ اگر کوئی provider دستیاب نہ ہو تو درخواستیں خودکار طریقے سے اگلے provider پر منتقل (route) ہو جائیں۔
+
+## Key Features
+
+- **Multi-provider support**: آپ متعدد AI provider cards شامل کر سکتے ہیں، جن میں سے ہر ایک کا اپنا endpoint URL، API key، اور default model ہوتا ہے۔
+- **Drag-to-reorder**: ہر card پر موجود grip handle کا استعمال کرتے ہوئے providers کو ترجیح (priority) کے لحاظ سے ترتیب دیں۔ درخواستیں اسی ترتیب میں استعمال ہوں گی۔
+- **Automatic fallback routing**: اگر بنیادی provider دستیاب نہ ہو، تو درخواستیں خودکار طور پر اگلے configure کردہ provider پر منتقل ہو جائیں گی۔
+- **Per-provider configuration**: ہر provider کو اس کی اپنی credentials اور model selection کے ساتھ آزادانہ طور پر configure کیا جاتا ہے۔
+- **Card-based settings UI**: یہ مستحکم WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider) پر بنایا گیا ہے۔
+- **Auto-expand on add**: جب آپ نیا provider card شامل کرتے ہیں، تو وہ خود بخود پھیل جاتا ہے تاکہ آپ فوری طور پر تفصیلات بھر سکیں۔
+- **Script cache busting**: plugin update پر provider scripts کو cache-bust کیا جاتا ہے تاکہ یہ یقینی ہو سکے کہ تازہ ترین ورژن لوڈ ہو۔
+
+## Requirements
+
+- WordPress 5.3 یا اس سے زیادہ
+- PHP 7.4 یا اس سے زیادہ
+- Ultimate Multisite plugin (active)
+- ایک OpenAI-compatible API endpoint (self-hosted یا third-party)
+
+## Installation
+
+1. Addon files کو اپنے `/wp-content/plugins/` directory میں اپ لوڈ کریں۔
+2. WordPress میں 'Plugins' menu کے ذریعے plugin کو activate کریں۔
+3. Addon کو configure کرنے کے لیے **Ultimate Multisite → AI Connector** پر جائیں۔
+
+## Configuration
+
+### Multi-Provider Setup
+
+Configuration screen ایک card-based layout استعمال کرتی ہے جہاں ہر card ایک AI provider کی نمائندگی کرتا ہے۔ آپ جتنے providers چاہیں، شامل کر سکتے ہیں۔
+
+#### Adding a Provider
+
+1. network admin میں **Ultimate Multisite → AI Connector** پر جائیں۔
+2. **Add Provider** پر کلک کریں۔
+3. ایک نیا provider card ظاہر ہوتا ہے اور خود بخود پھیل جاتا ہے۔
+4. provider کی تفصیلات بھریں:
+   - **Provider Name** — ایک لیبل جو اس provider کی شناخت کے لیے استعمال ہوتا ہے (مثلاً: "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — OpenAI-compatible API کا base URL (مثلاً: `https://api.openai.com/v1`)
+   - **API Key** — اس provider کے لیے آپ کی API key
+   - **Default Model** — اس provider کے لیے بطور ڈیفالٹ استعمال ہونے والا model identifier (مثلاً: `gpt-4o`, `mistral-small`)
+5. **Save Settings** پر کلک کریں۔
+
+#### Removing a Provider
+
+کسی بھی provider card پر موجود **Remove** button پر کلک کر کے اسے delete کریں۔ تبدیلی کو لاگو کرنے کے لیے settings save کریں۔
+
+#### Reordering Providers
+
+کسی بھی provider card کے بائیں طرف موجود grip icon (⣿) کو کھینچ کر (drag) اسے دوبارہ ترتیب دیں۔ یہ ترتیب fallback کی ترجیح طے کرتی ہے: درخواستیں پہلے provider کو بھیجی جاتی ہیں اور اگر کوئی درخواست ناکام ہو جاتی ہے تو وہ اگلے providers پر منتقل ہو جاتی ہیں۔
+
+### Fallback Routing
+
+جب بنیادی provider کو بھیجی گئی درخواست ناکام ہو جاتی ہے — چاہے وہ timeout کی وجہ سے ہو، rate limit کی وجہ سے ہو، یا service outage کی وجہ سے ہو — تو connector خودکار طور پر فہرست میں اگلے provider کے ساتھ دوبارہ کوشش (retry) کرتا ہے۔ یہ اس وقت تک جاری رہتا ہے جب تک کہ کوئی provider کامیاب نہ ہو جائے یا تمام providers کو آزما لیا جائے۔
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback calling plugin یا theme کے لیے مکمل طور پر شفاف (transparent) ہوتا ہے — انہیں صرف ایک کامیاب جواب یا حتمی غلطی (final error) ملتی ہے، اس سے کوئی فرق نہیں پڑتا کہ کتنے providers کو آزما یا کیا گیا۔
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## Troubleshooting
+
+### No providers are listed
+
+اگر providers کی فہرست save کرنے کے بعد خالی ہے، تو تصدیق کریں کہ:
+
+- آپ نے providers شامل کرنے کے بعد **Save Settings** پر کلک کیا ہے۔
+- آپ کے براؤزر نے settings page کو save ہونے سے روکا نہیں ہے (براؤزر console میں JavaScript errors چیک کریں)۔
+- plugin active ہے اور آپ network admin screen پر موجود ہیں۔
+
+### Requests are failing for all providers
+
+- تصدیق کریں کہ ہر provider کا endpoint URL آپ کے server سے قابل رسائی (reachable) ہے (صرف آپ کے براؤزر سے نہیں)۔
+- چیک کریں کہ ہر API key درست ہے اور اس کی میعاد ختم نہیں ہوئی ہے۔
+- اپنے dashboard میں provider کی rate-limit اور quota status کا جائزہ لیں۔
+- connector سے تفصیلی error messages کو پکڑنے کے لیے WordPress debug logging (`WP_DEBUG_LOG`) کو enable کریں۔
+
+### A provider is not being used for fallback
+
+Drag-to-reorder fallback کے ترتیب کو تبدیل کرتا ہے۔ تصدیق کریں کہ جس provider کو آپ fallback requests وصول کرنے کی توقع کرتے ہیں، وہ فہرست میں صحیح جگہ پر موجود ہے اور اس کا endpoint URL اور API key درست ہے۔
+
+### New provider card does not expand automatically
+
+Auto-expand کے لیے آپ کے براؤزر میں JavaScript کا enable ہونا ضروری ہے۔ اگر card کلک کرنے پر نہیں پھیلتا، تو براؤزر console میں errors چیک کریں۔ card contents ہمیشہ card header پر کلک کر کے قابل رسائی ہوتے ہیں، چاہے auto-expand ٹرگر نہ ہو۔
+
+## Changelog
+
+مکمل version history کے لیے [Changelog](./changelog) دیکھیں۔

@@ -1,0 +1,19 @@
+---
+id: wu_apply_plan_limits
+title: Фільтр - wu_apply_plan_limits
+sidebar_label: wu_apply_plan_limits
+_i18n_hash: 494a7255a0f46d7f4b65acea6e3856bd
+---
+# Filter: wu_apply_plan_limits
+
+Дозволяє розробникам плагінів обійти встановлені обмеження.
+
+### З версії
+
+- 1.0.0
+### Джерело
+
+Визначено в [`inc/limits/class-fluent-forms-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limits/class-fluent-forms-limits.php#L39) на рядку 39
+
+
+## Повертає

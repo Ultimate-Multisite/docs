@@ -1,0 +1,124 @@
+---
+title: Trình xây dựng trang web bằng AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Yêu cầu
+
+- WordPress 5.3 trở lên
+- PHP 7.4 trở lên
+- Plugin Ultimate Multisite (đang kích hoạt)
+
+## Cài đặt
+
+1. Tải các tệp addon lên thư mục `/wp-content/plugins/` của bạn
+2. Kích hoạt plugin qua menu 'Plugins' trong WordPress
+3. Cấu hình các cài đặt addon trong khu vực quản trị mạng (network admin)
+
+## Phát triển
+
+### Thiết lập
+
+```bash
+# Cài đặt các dependencies
+composer install
+npm install
+
+# Chạy các bài kiểm thử
+npm run test
+
+# Chạy kiểm tra tiêu chuẩn mã nguồn
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Sửa các vấn đề về phong cách mã
+vendor/bin/phpcbf
+
+# Xây dựng cho môi trường sản xuất
+npm run build
+```
+
+### Cấu trúc dự án
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Các lớp và tệp bao gồm PHP
+│   ├── class-multisite-ultimate-updater.php  # Bộ xử lý cập nhật
+│   └── class-ai_site_builder-main.php             # Chức năng chính
+├── tests/                        # Các bài kiểm thử đơn vị
+│   ├── bootstrap.php            # Khởi tạo kiểm thử
+│   ├── class-*-base.php         # Lớp kiểm thử cơ sở
+│   └── class-*-test.php         # Các trường hợp kiểm thử
+├── views/                       # Các tệp mẫu (Template files)
+├── assets/                      # Tài sản tĩnh
+│   ├── css/                     # Các bảng kiểu (Stylesheets)
+│   ├── js/                      # Các tệp JavaScript
+│   └── images/                  # Hình ảnh
+├── lang/                        # Các tệp ngôn ngữ
+├── composer.json                # Dependencies PHP
+├── package.json                 # Dependencies Node.js
+├── phpunit.xml.dist             # Cấu hình PHPUnit
+├── .phpcs.xml.dist              # Cấu hình tiêu chuẩn mã nguồn
+└── rector.php                   # Quy tắc hiện đại hóa mã nguồn
+```
+
+### Kiểm thử
+
+Addon bao gồm một bộ khung kiểm thử toàn diện:
+
+- **Kiểm thử đơn vị (Unit Tests)**: Các bài kiểm thử dựa trên PHPUnit cùng bộ kiểm thử của WordPress.
+- **Lớp kiểm thử cơ sở (Base Test Class)**: Cung cấp các phương thức hỗ trợ cho các kịch bản kiểm thử chung.
+- **Độ bao phủ kiểm thử (Test Coverage)**: Được cấu hình để theo dõi độ bao phủ mã nguồn.
+- **Kiểm thử Multisite**: Các bài kiểm thử chạy trong môi trường multisite.
+
+### Tiêu chuẩn mã nguồn
+
+- **Tiêu chuẩn mã nguồn WordPress**: Được thực thi bằng PHPCS.
+- **Tương thích PHP 7.4+**: Hỗ trợ các tính năng PHP hiện đại.
+- **Phân tích tĩnh (Static Analysis)**: Tích hợp PHPStan để kiểm tra kiểu dữ liệu.
+- **Hiện đại hóa mã nguồn (Code Modernization)**: Các quy tắc Rector để nâng cấp PHP.
+
+### Hệ thống xây dựng (Build System)
+
+- **Xử lý tài sản (Asset Processing)**: Thu gọn (Minification) cho các tệp CSS/JS.
+- **Dịch thuật (Translation)**: Tạo tệp POT.
+- **Đóng gói (Packaging)**: Tạo kho lưu trữ (archive) để phân phối.
+- **Chế độ phát triển (Development Mode)**: Tài sản chưa thu gọn để gỡ lỗi.
+
+## Cấu hình
+
+Addon hỗ trợ nhiều tùy chọn cấu hình khác nhau, có thể truy cập qua giao diện quản trị mạng (network admin).
+
+## Hooks và Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Được kích hoạt sau khi khởi tạo addon.
+- `ultimate-multisite-ai-site-builder_loaded` - Được kích hoạt sau khi tất cả các tệp addon được tải.
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Sửa đổi cài đặt addon.
+- `ultimate-multisite-ai-site-builder_enabled` - Ghi đè trạng thái bật/tắt của addon.
+
+## Giấy phép
+
+Addon này được cấp phép theo GPL v3 trở lên.
+
+## Hỗ trợ
+
+Để được hỗ trợ và xem tài liệu, hãy truy cập [MultisiteUltimate.com](https://multisiteultimate.com)
+## Nhật ký thay đổi
+
+- Phiên bản 1.0.1 (2025-09-28): đổi tên tiền tố thành ultimate-multisite; cập nhật miền văn bản; tăng phiên bản.
+
+
+- Phiên bản (2025-09-28): đổi tên tiền tố thành ultimate-multisite; cập nhật miền văn bản; tăng phiên bản.

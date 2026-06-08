@@ -1,0 +1,94 @@
+---
+title: WooCommerce Integration
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration کا کام ہمارے Manual Gateway کے کام کرنے کے طریقے سے کافی ملتا جلتا ہے۔ یہ آپ کے صارفین کو بہت زیادہ لچک (flexibility) فراہم کرتا ہے، جس سے وہ آپ کی WooCommerce انسٹالیشن پر دستیاب کسی بھی ادائیگی کے فارم کا انتخاب کر سکتے ہیں۔ اور یہ بہت آسان ہے: جب صارف کا بلنگ پیریڈ ختم ہو جاتا ہے، تو صارف کی سبسکرپشن کو 'hold' پر رکھ دیا جاتا ہے۔ اسی وقت، نیٹ ورک کی مرکزی سائٹ پر WooCommerce انسٹالیشن میں ایک آرڈر بھی بنایا جاتا ہے۔ پھر صارف کو ان کے ای میل پر ایک انوائس موصول ہوتا ہے، جس میں ادائیگی کرنے کا لنک ہوتا ہے۔ ادائیگی وصول ہونے پر، سبسکرپریشن کو دوبارہ فعال (renew) کر دیا جاتا ہے۔
+
+## Features
+
+- Ultimate Multisite اور WooCommerce کے درمیان آسان انٹیگریشن
+- کئی ادائیگی کے طریقے دستیاب
+- WooCommerce Subscriptions کے ساتھ مکمل طور پر خودکار (automated) عمل
+
+## Documentation
+
+**WooCommerce Integration سیٹ اپ کرنا**
+
+**Ultimate Multisite کے ساتھ آپ کے ادائیگی کے آپشنز کو بڑھانا: WooCommerce Integration**
+
+## Installation
+
+1. 'ultimate-multisite-woocommerce' کو '/wp-content/plugins/' ڈائریکٹری میں اپ لوڈ کریں۔
+2. WordPress میں 'Plugins' مینیو کے ذریعے پلگ ان کو ایکٹیویٹ کریں۔
+3. پلگ ان کو سیٹ کرنے کے لیے مرحلہ وار ویزرڈ (Wizard) کی پیروی کریں۔
+
+## Usage Guide
+
+_**اہم نوٹ: یہ آرٹیکل Ultimate Multisite ورژن 2.x کے حوالے سے ہے۔**_
+
+_**توجہ:** Ultimate Multisite: WooCommerce Integration کے لیے آپ کی مرکزی سائٹ پر کم از کم WooCommerce کا ایکٹیویٹ ہونا ضروری ہے۔_
+
+ہم سمجھتے ہیں کہ کچھ ممالک میں _Stripe_ اور _PayPal_ دستیاب نہیں ہیں، جس کی وجہ سے Ultimate Multisite کے صارفین کو ہمارا پلگ ان مؤثر طریقے سے استعمال کرنے میں مشکلات پیش آ سکتی ہیں۔ اس لیے ہم نے _WooCommerce_ کو انٹیگریٹ کرنے کے لیے ایک **add-on** بنایا ہے۔
+
+_WooCommerce_ ایک بہت مقبول eCommerce پلگ ان ہے۔ دنیا بھر کے ڈویلپرز نے اس میں مختلف ادائیگی کے گیٹ وے کو شامل کرنے کے لیے add-ons بنائے ہیں۔ ہم نے اس کا فائدہ اٹھاتے ہوئے Ultimate Multisite بلنگ سسٹم میں استعمال ہونے والے ادائیگی کے گیٹ وے کو بڑھایا ہے۔
+
+## Setting It Up
+
+سب سے پہلے، آپ کو WooCommerce Integration add-on انسٹال کرنے کی ضرورت ہے جو **لائسنس یافتہ صارفین کے لیے مفت** ہے۔ اسے انسٹال کرنے کے لیے، اپنے super admin dashboard پر Ultimate Multisite پر کلک کریں اور **Add-ons** کا انتخاب کریں۔
+
+![Add-ons page](/img/admin/addons-page.png)
+
+یہاں آپ کو تمام Ultimate Multisite add-ons ملیں گے۔ **Ultimate Multisite: WooCommerce Integration** add-on پر کلک کریں۔
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+add-on کی تفصیلات کے ساتھ ایک ونڈو کھل جائے گی۔ بس **Install Now** پر کلک کریں۔
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+انسٹالیشن مکمل ہونے کے بعد، آپ کو پلگ انز پیج پر ری ڈائریکٹ کیا جائے گا۔ یہاں، بس **Network Activate** پر کلک کریں اور _WooCommerce_ add-on آپ کے نیٹ ورک پر ایکٹیویٹ ہو جائے گا۔
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+ایکٹیویٹ کرنے کے بعد، اگر آپ کی ویب سائٹ پر ابھی بھی WooCommerce پلگ ان انسٹال اور ایکٹیویٹ نہیں ہے، **تو آپ کو ایک یاد دہانی (reminder) ملے گی**۔
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+ایک بار انسٹال ہونے کے بعد، آپ کو Ultimate Multisite کی ادائیگی کی سیٹنگز کے تحت ایک اضافی آپشن نظر آئے گا۔ پھر آپ وہاں سے _WooCommerce_ آپشن کو **enable** کر سکتے ہیں۔
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+آپ کچھ بنیادی سیٹنگز کو کنفیگر کر سکتے ہیں، جیسے کہ وہ ڈسپلے نام جو فرنٹ اینڈ پر نظر آئے گا اور وہ ہدایات جو آپ کے صارفین کو ان کے چیک آؤٹ فلو میں گائیڈ کریں گی۔ اس کے بعد، آپ اپنی **Main site کے _WooCommerce_ سیٹنگز** پر جا کر وہ ادائیگی کا گیٹ وے فعال اور کنفیگر کر سکتے ہیں جو آپ استعمال کرنا چاہتے ہیں۔
+
+## How to manage the payment
+
+WooCommerce Integration کا کام ہمارے **Manual Gateway** کے کام کرنے کے طریقے سے کافی ملتا جلتا ہے۔ نقصان یہ ہے کہ ہر ادائیگی بلنگ پیریڈ کے آخر میں دستی طور پر (manually) ادا کی جانی چاہیے۔ یہ عمل اس طرح کام کرتا ہے:
+
+  * ایک بار جب صارف کا بلنگ سائیکل ختم ہو جاتا ہے، تو ممبرشپ کو **hold** پر رکھ دیا جاتا ہے۔ اسی وقت، آپ کے نیٹ ورک کی مرکزی سائٹ پر _WooCommerce_ انسٹالیشن میں ایک آرڈر بھی بنایا جاتا ہے۔
+
+  * صارفین کو پھر ان کے ای میل پر ایک انوائس موصول ہوتا ہے، جس میں ادائیگی کرنے کا لنک ہوتا ہے (یہ لنک ان کے سب سائیٹ ڈیش بورڈ سے بلنگ ہسٹری میں بھی نظر آتا ہے)۔ وہ لنک صارف کو _**WooCommerce**_ **checkout** پر ری ڈائریکٹ کرتا ہے، جہاں صارفین اپنی ادائیگی کرنے کے لیے **دستیاب _WooCommerce_ گیٹ وے** میں سے کسی ایک کا انتخاب کر سکیں گے۔
+
+  * ادائیگی وصول ہونے پر، ممبرشپ **renew** ہو جاتی ہے، ادائیگی Ultimate Multisite پر لاگ ہو جاتی ہے اور آرڈر کو مکمل (complete) سیٹ کر دیا جاتا ہے۔
+
+### Some Important Notes:
+
+  * Ultimate Multisite کی ڈیفالٹ فنکشنلٹی اس انٹیگریشن فارم کے ساتھ اب بھی کام کرتی ہے۔ مثال کے طور پر، **Subscription Management** سکرین سے **ریفنڈ جاری کرنا**، WooCommerce کے ساتھ رابطہ کرے گا تاکہ منتخب ادائیگی کے فارم کا استعمال کرتے ہوئے ریفنڈ جاری کیا جا سکے۔
+
+  * Ultimate Multisite: WooCommerce Integration کو کام کرنے کے لیے WP-Cron پر انحصار کرنا پڑتا ہے۔ یہ زیادہ تر اوقات میں بہت اچھا کام کرتا ہے، لیکن اگر سائٹ پر ٹریفک کم ہو تو کرون کو شیڈولڈ ایونٹس چیک کرنے کے لیے ترغیب نہیں ملتی اور ایونٹ چھوٹ جاتا ہے، جس کی وجہ سے ایگزیکیوشن میں تاخیر ہو سکتی ہے۔
+
+## Woocommerce Subscriptions Plugin
+
+ہر مہینے دستی طور پر ادائیگی شروع کرنا آخری صارفین کے لیے مثالی نہیں ہے کیونکہ ایک سبسکرپشن سے توقع ہوتی ہے کہ وہ ہر بلنگ سائیکل میں خودکار طور پر دوبارہ ہو جائے۔ اس لیے ہم نے WooCommerce Integration add-on کو **WooCommerce Subscriptions plugin** کو سپورٹ کرنے کے لیے ڈیزائن کیا ہے۔ یہ ادائیگی کو خودکار بنا دے گا، جس سے آپ کے آخری صارفین کے لیے لین دین آسان ہو جائے گا۔
+
+آپ کو بس [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) **انسٹال** کرنا ہے اور اسے اپنی **مرکزی سائٹ پر ایکٹیویٹ** کرنا ہے۔ پھر Ultimate Multisite کی ادائیگی کی سیٹنگز پر واپس جائیں اور **انٹیگریشن کو enable** کریں۔
+
+بس اتنا سا ہے۔ آپ کے آخری صارفین کو اب اپنے بلنگ سائیکل کے آخر میں دستی طور پر ادائیگی کرنے کی ضرورت نہیں پڑے گی۔
+
+آپ کی مرکزی سائٹ پر _WooCommerce_ کے تحت ایک آرڈر بننے کے علاوہ، یہ ہر اکاؤنٹ کے لیے ایک سبسکرپشن بھی بنائے گا۔

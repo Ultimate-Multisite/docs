@@ -1,0 +1,116 @@
+---
+title: Tutor 多站兼容性
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+一個為 Tutor LMS 在多站點環境中添加相容性修復的 WordPress 外掛。
+
+## Description
+
+本外掛為在 WordPress 多站點網路環境中運行 Tutor LMS 提供了必要的相容性修復。它處理了用戶註冊、講師管理、課程限制以及其他多站點特定的功能。
+
+## Features
+
+- **資料庫表格管理 (Database Table Management)**：自動偵測並建立因多站點外鍵約束而無法建立的 Tutor LMS 缺失表格。
+- **多站點用戶註冊 (Multisite User Enrollment)**：為跨網路站點管理用戶註冊提供自訂 AJAX 處理器。
+- **講師角色管理 (Instructor Role Management)**：在多站點環境中自動分配和管理講師角色。
+- **課程限制 (Course Limitations)**：與 Ultimate Multisite 整合，根據站點方案管理課程和漏斗創建限制。
+- **自訂管理介面 (Custom Admin Views)**：具備多站點意識的講師列表和管理介面。
+- **管理工具 (Admin Tools)**：為網路和站點管理員提供的資料庫管理介面。
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS 外掛 (透過 `Requires Plugins` 標頭自動強制要求)
+- WordPress Multisite 安裝
+- Ultimate Multisite 外掛 (用於課程限制功能)
+
+## Installation
+
+1. 將外掛檔案上傳至 `/wp-content/plugins/tutor-multisite-compatibility/`
+2. 確保已安裝並啟用了 Tutor LMS
+3. 透過 WordPress 的「外掛」選單啟用本外掛
+4. 本外掛將自動與 Tutor LMS 整合
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (主外掛檔案)
+├── includes/
+│   ├── class-database-manager.php (資料庫表格建立和管理)
+│   ├── class-admin-interface.php (資料庫管理的管理介面)
+│   ├── class-course-limits.php (課程和漏斗限制處理器)
+│   ├── class-instructor-manager.php (講師角色管理)
+│   ├── class-ajax-handlers.php (自訂 AJAX 處理器)
+│   ├── class-query-helper.php (資料庫查詢工具)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (多站點用戶模型)
+│   └── admin/
+│       ├── class-instructors-list.php (自訂講師列表)
+│       └── views/
+│           └── instructors.php (講師管理視圖)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+本外掛包含先前位於 `wp-content/mu-plugins/daves.php` 的功能：
+
+- 課程狀態變更限制
+- 課程創建限制
+- CartFlows 整合和限制
+- Tutor 講師角色管理
+- 多站點用戶註冊處理
+- 課程產品 ID 顯示
+
+## Database Management
+
+### The Problem
+
+在 WordPress 多站點環境中，Tutor LMS 嘗試建立的表格，如果包含指向用戶表的**外鍵約束**，就會失敗。這是因為：
+
+- 站點特定的表格使用前綴，例如 `wp_2_tutor_carts`
+- 外鍵引用的是 `wp_2_users` (此表不存在)
+- 實際的用戶表是 `wp_users` (在整個網路中是共用的)
+
+### The Solution
+
+本外掛會自動執行以下操作：
+
+1. **偵測缺失表格 (Detects Missing Tables)**：檢查因外鍵約束而未能建立的表格。
+2. **使用正確引用建立表格 (Creates Tables with Correct References)**：使用正確的用戶表名稱（在多站點環境中是 `wp_users`）。
+3. **處理多種情境 (Handles Multiple Scenarios)**：
+   - 外掛啟用/重新啟用
+   - 網路中創建新站點
+   - 透過管理介面手動檢查表格
+
+### Affected Tables
+
+- `tutor_coupon_usages` - 包含指向用戶表的外鍵
+- `tutor_carts` - 包含指向用戶表的外鍵
+- `tutor_notification_preferences` - 包含指向用戶表的 TutorPro 表
+
+### Admin Interface
+
+請至以下路徑存取資料庫管理工具：
+
+- **網路管理員 (Network Admin)**：設定 → Tutor Multisite DB
+- **站點管理員 (Site Admin)**：工具 → Tutor Multisite DB
+
+此介面允許您：
+- 查看所有站點的缺失表格
+- 手動觸發表格建立
+- 檢查資料庫配置
+- 查看詳細的狀態資訊
+
+## Support
+
+本外掛專為 KursoPro 平台設計。如需技術支援，請聯繫開發團隊。

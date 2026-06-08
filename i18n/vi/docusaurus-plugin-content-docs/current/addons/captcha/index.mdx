@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Ngăn chặn Bot. Bảo vệ Doanh thu. Không cần cấu hình phức tạp.**
+
+Bạn đang vận hành một mạng lưới đa trang (multisite) với các tên miền tùy chỉnh? Bạn hiểu nỗi đau này: Google reCAPTCHA và hCaptcha yêu cầu bạn phải đăng ký *mọi tên miền* trong bảng điều khiển quản trị của họ. Thêm một trang khách hàng mới? Cập nhật cấu hình captcha. Ánh xạ một tên miền tùy chỉnh? Cập nhật lại. Việc này không bao giờ kết thúc.
+
+**Ultimate Multisite: Captcha thay đổi mọi thứ.**
+
+## Cap Captcha: Bảo vệ Tự lưu trữ Hoạt động Trơn tru
+
+Nhà cung cấp **Cap Captcha** mới của chúng tôi là một bước đột phá cho các mạng lưới đa trang:
+
+* **Không cần cấu hình** — Chỉ cần kích hoạt addon là bạn đã được bảo vệ. Không cần khóa API, không cần tài khoản Google, không cần bảng điều khiển hCaptcha, không cần danh sách trắng tên miền.
+* **Hoạt động trên mọi tên miền tự động** — Các subdomain, tên miền được ánh xạ, tên miền khách hàng—tất cả đều được bảo vệ ngay lập tức.
+* **Tự lưu trữ & Riêng tư** — Dữ liệu của bạn không bao giờ rời khỏi máy chủ của bạn. Hoàn toàn tuân thủ GDPR mà không có theo dõi của bên thứ ba.
+* **Bằng chứng công việc Vô hình** — Người dùng giải một câu đố tính toán ở chế độ nền. Không cần bấm vào trụ cứu hỏa, không cần lưới hình ảnh gây khó chịu.
+* **Nhẹ** — Chỉ 20KB. Sẽ không làm chậm quá trình thanh toán của bạn.
+
+## Bảo vệ Kiểm tra Thẻ (Card Testing) của WooCommerce
+
+Các cuộc tấn công kiểm tra thẻ có thể khiến các thương nhân mất hàng tỷ đô la mỗi năm. Những kẻ lừa đảo sử dụng bot để xác thực các thẻ tín dụng bị đánh cắp trên quy trình thanh toán WooCommerce của bạn—bạn phải trả phí xử lý, còn chúng nhận được các số thẻ hợp lệ.
+
+**Chúng tôi bảo vệ nơi quan trọng nhất:**
+
+* **Bảo vệ API Cửa hàng** — Chặn các cuộc tấn công bot trên `/wp-json/wc/store/v1/checkout` mà các captcha form truyền thống thường bỏ qua.
+* **Tương thích với PayPal Payments** — Hoạt động liền mạch với WooCommerce PayPal Payments.
+* **Thống kê Thời gian thực** — Xem chính xác bạn đang chặn bao nhiêu cuộc tấn công.
+
+## Vẫn cần Google reCAPTCHA hoặc hCaptcha?
+
+Chúng tôi đã có giải pháp cho bạn. Hỗ trợ đầy đủ cho:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Dựa trên điểm số)
+* hCaptcha (Tiêu chuẩn)
+* hCaptcha (Invisible)
+
+Bạn có thể chuyển đổi giữa các nhà cung cấp bất cứ lúc nào từ cài đặt mạng lưới của mình.
+
+## Được xây dựng cho quy mô lớn
+
+* Cài đặt toàn mạng lưới với khả năng ghi đè theo từng trang
+* Bảng điều khiển thống kê để theo dõi mức độ bảo vệ
+* Mức độ bảo mật có thể điều chỉnh (Nhanh, Trung bình, Tối đa)
+* Thân thiện với nhà phát triển với kiến trúc nhà cung cấp có thể mở rộng
+
+## Cài đặt
+
+1. Tải `ultimate-multisite-captcha` lên thư mục `/wp-content/plugins/` của bạn
+2. Kích hoạt plugin ở cấp độ mạng lưới
+3. **Chỉ vậy thôi. Bạn đã được bảo vệ.**
+
+Cap Captcha tự động kích hoạt—không cần cài đặt cấu hình, không cần nhập khóa API. Mọi điểm cuối (endpoint) được hỗ trợ trên toàn bộ mạng lưới của bạn đều được bảo vệ ngay khi bạn kích hoạt.
+
+**Tùy chọn:** Để sử dụng Google reCAPTCHA hoặc hCaptcha thay thế, hãy điều hướng đến **Ultimate Multisite → Settings → Captcha** và chọn nhà cung cấp ưa thích của bạn.
+
+## Câu hỏi thường gặp
+
+## Tôi có cần cấu hình gì không?
+
+Không! Cap Captcha được bật tự động khi bạn kích hoạt addon. Toàn bộ mạng lưới của bạn được bảo vệ ngay lập tức—không cần cài đặt cấu hình, không cần nhập khóa API.
+
+## Tôi có cần khóa API cho Cap Captcha không?
+
+Không. Cap Captcha hoàn toàn tự lưu trữ. Không có tài khoản bên ngoài, không cần đăng ký tên miền, không cần đau đầu với cấu hình.
+
+## Điều này có làm chậm quá trình thanh toán của tôi không?
+
+Cap Captcha chỉ 20KB và chạy các thử thách bằng bằng chứng công việc ở chế độ nền. Khách hàng của bạn sẽ không nhận thấy bất kỳ độ trễ nào.
+
+## Nó có bảo vệ chống lại các cuộc tấn công kiểm tra thẻ không?
+
+Có! Không giống như các captcha truyền thống chỉ bảo vệ các form HTML, tích hợp WooCommerce của chúng tôi kết nối trực tiếp với Store API để chặn các cuộc tấn công bot ở cấp độ API—nơi hầu hết các cuộc tấn công kiểm tra thẻ xảy ra.
+
+## Tôi có thể sử dụng các nhà cung cấp captcha khác nhau trên các trang khác nhau không?
+
+Nhà cung cấp captcha được đặt ở cấp độ mạng lưới, nhưng bạn có thể điều chỉnh cài đặt độ khó dựa trên nhu cầu của mình.
+
+## Nó có tuân thủ GDPR không?
+
+Cap Captcha tự lưu trữ 100% và không gửi dữ liệu đến các dịch vụ bên ngoài. Đối với Google reCAPTCHA và hCaptcha, vui lòng xem các chính sách quyền riêng tư tương ứng của họ.
+
+## Giới hạn Tốc độ (Rate Limiting)
+
+Ultimate Multisite: Captcha v1.5.0 giới thiệu bộ giới hạn tốc độ (rate limiter) cứng giúp bảo vệ mạng lưới của bạn khỏi các cuộc tấn công brute-force và kiểm tra thẻ.
+
+### Cách thức hoạt động
+
+Bộ giới hạn tốc độ này đếm mọi yêu cầu GET và POST trên các bề mặt được bảo vệ bởi captcha:
+
+* **Các điểm cuối đăng nhập WordPress** — wp-login, register, lost-password, comments
+* **Thanh toán WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Khi một khách truy cập vượt quá giới hạn tốc độ, plugin sẽ phản hồi bằng:
+
+* Mã trạng thái **HTTP 429 (Too Many Requests)**
+* Tiêu đề **Retry-After** chỉ ra thời điểm cần thử lại
+* **Ngủ Tarpit ngẫu nhiên** (mặc định 1–5 giây, giới hạn cứng ở 15 giây) để làm chậm kẻ tấn công
+
+### Cấu hình
+
+#### Thời gian Tarpit
+
+Kiểm soát độ trễ ngẫu nhiên áp dụng cho các yêu cầu bị giới hạn tốc độ:
+
+* **`cap_rate_limit_tarpit_min`** — Thời gian ngủ tối thiểu tính bằng giây (mặc định: 1)
+* **`cap_rate_limit_tarpit_max`** — Thời gian ngủ tối đa tính bằng giây (mặc định: 5, giới hạn cứng ở 15)
+
+Các cài đặt này có sẵn trong **Ultimate Multisite → Settings → Captcha**.
+
+### Khả năng mở rộng
+
+#### Bộ lọc Danh sách Trắng IP (IP Whitelist Filter)
+
+Miễn trừ các dải IP đáng tin cậy khỏi giới hạn tốc độ:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Danh sách trắng dịch vụ giám sát của bạn
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Hành động Trước khi Chặn (Pre-Block Action)
+
+Thực thi logic tùy chỉnh ngay trước khi gửi lệnh chặn giới hạn tốc độ:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Ghi nhật ký việc chặn, thông báo cho quản trị viên, hoặc cập nhật số liệu tùy chỉnh
+    error_log( "Giới hạn tốc độ được kích hoạt cho $ip trên $surface" );
+}, 10, 2 );
+```
+
+## Phát hiện IP Máy khách & Proxy Tin cậy
+
+Ultimate Multisite: Captcha v1.5.0 giới thiệu tính năng phát hiện client-IP chống giả mạo. Phương thức `Captcha_Core::get_client_ip()` hiện là nguồn chân lý duy nhất để xác định IP của khách truy cập trên:
+
+* Khóa giỏ giới hạn tốc độ
+* `remoteip` của nhà cung cấp captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hash IP thống kê
+
+### Mô hình Tin cậy
+
+Plugin thực thi một hệ thống phân cấp IP tin cậy nghiêm ngặt:
+
+1. **REMOTE_ADDR** — Luôn tin cậy (IP của peer trực tiếp)
+2. **CF-Connecting-IP** — Chỉ được tôn trọng khi:
+   - Peer trực tiếp nằm trong dải IP Cloudflare hiện tại
+   - `cap_trust_cloudflare_headers` được bật (mặc định: TẮT)
+3. **X-Forwarded-For** — Chỉ được tôn trọng khi:
+   - Peer trực tiếp nằm trong danh sách proxy tin cậy do quản trị viên cấu hình
+   - Tiêu đề được phân tích từ phải sang trái, bỏ qua các bước nhảy tin cậy/Cloudflare
+
+### Cấu hình
+
+#### Tin cậy Tiêu đề Cloudflare
+
+Bật tin cậy tiêu đề `CF-Connecting-IP` của Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Đặt là BẬT để chọn tin cậy `CF-Connecting-IP`
+  - Mặc định: TẮT (disabled)
+  - Plugin đi kèm với bản chụp nhanh Cloudflare CIDR được đóng gói
+  - Các dải CIDR được làm mới hàng tuần qua wp-cron
+  - Sẽ sử dụng bản dự phòng đóng gói nếu việc làm mới thất bại
+
+#### Cấu hình Proxy Tin cậy
+
+Xác định các proxy và bộ cân bằng tải tuyến đầu của bạn:
+
+* **`cap_trusted_proxies`** — Vùng văn bản (Textarea) chứa các CIDR hoặc IP thuần (mỗi dòng một IP)
+  - Cho phép chú thích (các dòng bắt đầu bằng `#`)
+  - Nếu không có cài đặt này, `X-Forwarded-For` sẽ bị bỏ qua ngay cả khi giới hạn tốc độ được bật
+  - Ví dụ:
+    ```
+    # Bộ cân bằng tải của chúng tôi
+    192.0.2.0/24
+
+    # Proxy dự phòng
+    198.51.100.50
+    ```
+
+#### Tự động Phát hiện Khi Kích hoạt Lần đầu
+
+Khi bạn lần đầu tiên bật bộ giới hạn tốc độ, plugin sẽ phát hiện tư thế Cloudflare và proxy có khả năng của bạn và hiển thị thông báo quản trị viên "Áp dụng cài đặt đã phát hiện" chỉ bằng một cú nhấp chuột.
+
+* Plugin **không bao giờ ghi đè** các giá trị đã lưu của bạn
+* Nếu lưu lượng truy cập sau này cho thấy cấu hình của bạn không còn khớp với thực tế (ví dụ: Cloudflare thay đổi dải CIDR), một thông báo không thể bỏ qua sẽ hiển thị đề xuất cập nhật
+
+### Tại sao điều này quan trọng
+
+Một mô hình tin cậy IP nghiêm ngặt sẽ đóng một vector giả mạo quan trọng: các yêu cầu trực tiếp từ nguồn máy chủ mang tiêu đề `CF-Connecting-IP` giả mạo trước đây sẽ được tính bằng IP giả mạo thay vì IP peer thực tế. Điều này đặc biệt quan trọng đối với:
+
+* **Giới hạn tốc độ** — Kẻ tấn công không thể vượt qua giới hạn bằng cách giả mạo IP
+* **Thống kê** — Các số liệu tấn công của bạn phản ánh IP của khách truy cập thực tế, không phải IP giả mạo
+* **Xác minh Captcha** — Nhà cung cấp nhận được IP khách truy cập chính xác để đánh giá rủi ro

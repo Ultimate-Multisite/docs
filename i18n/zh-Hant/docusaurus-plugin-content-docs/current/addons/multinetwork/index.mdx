@@ -1,0 +1,100 @@
+---
+title: 多網路
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork 外掛擴充了您的 Ultimate Multisite 平台，提供了強大的多網路功能。此外掛讓您的客戶能夠購買和管理整個 WordPress 多網站網路，而不僅僅是單一網站。
+
+## Key Features
+
+* **Network Provisioning**: 自動建立和配置完整的 WordPress 多網站網路給您的客戶
+* **Network Templates**: 讓客戶在註冊前瀏覽、預覽和選擇預建的網路範本
+* **Network Management**: 對多網路環境提供完整的管理功能
+* **Isolated Networks**: 每個客戶網路都獨立運作，擁有自己的資料庫表格和配置
+* **Cross-Network SSO**: 透過魔法連結驗證，讓客戶無縫存取其子網路
+* **Scalable Architecture**: 透過優化的資源分配，高效處理多個網路
+* **Integration**: 與 Ultimate Multisite 的訂閱和計費系統無縫整合
+
+## Use Cases
+
+* **White Label Hosting**: 為客戶提供自己品牌化的多網站網路
+* **Agency Solutions**: 讓代理商能從單一平台管理多個客戶網路
+* **Enterprise Deployments**: 支援具有複雜多網路需求的大型組織
+* **Education Platforms**: 為不同的學校或部門建立獨立的網路
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 or higher
+* WordPress Multisite installation
+* PHP 7.4 or higher
+* MySQL 5.6 or higher
+
+## Installation
+
+1. Upload the plugin files to the `/wp-content/plugins/ultimate-multisite-multinetwork` directory
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Configure multinetwork settings through Ultimate Multisite → Settings
+
+## Network Templates
+
+版本 1.3.0 為購買新網路的客戶增加了範本的探索和選擇流程。當您希望每個新的客戶網路都能從預先準備好的結構、設計、內容庫或特定垂直領域的設定開始時，請使用網路範本。
+
+### Template previewer
+
+網路範本預覽器讓客戶在結帳前瀏覽可用的範本。每個範本都可以開在即時預覽面板中，讓客戶在購買網路前就能比較佈局和內容。
+
+使用預覽器可以幫助客戶：
+
+* 檢視每個可用網路範本的外觀和結構
+* 在不離開購買流程的情況下比較多個範本
+* 在註冊前選擇最符合其使用案例的範本
+
+請確保範本名稱和描述對客戶友好。當客戶能了解預期的使用案例時，預覽器特別有用，例如代理商網路、學校網路、加盟網路或白標託管套件。
+
+### Template picker at checkout
+
+範本選擇器可以作為一個欄位添加到註冊結帳流程中。配置後，客戶在結帳時選擇想要的網路範本，當他們的新網路被建置時，就會使用該範本。
+
+要在結帳流程中使用選擇器：
+
+1. 準備您想要作為範本提供的網路。
+2. 在相關的註冊或結帳表單中啟用 Multinetwork 範本選擇欄位。
+3. 選擇哪些範本應該可供該結帳流程使用。
+4. 發布結帳流程，並進行一次註冊測試，以確認所選範本已應用到新網路。
+
+如果結帳流程只提供一個網路產品，選擇器仍然可以作為一個引導式的入門步驟。對於多方案銷售漏斗，請只展示與所選產品或方案相容的範本。
+
+## Cross-Network Magic Link SSO
+
+跨網路魔法連結 SSO 讓客戶無需手動重新登入，就能在主要帳戶區域和子網路之間移動。當客戶點擊跨網路存取連結時，Ultimate Multisite 會生成一個時間限制的魔法連結，並將客戶驗證到目標網路。
+
+這提升了管理多個網路的客戶體驗，或讓客戶在購買後立即需要存取新克隆範本網路時的體驗。
+
+管理員檢查清單：
+
+* 確認 Multinetwork 外掛已在整個 WordPress 多網站安裝中啟用。
+* 確保在提供跨網路連結之前，客戶擁有正確的網路存取權限。
+* 保持網路網域和映射網域的正確配置，以確保魔法連結解析到預期的目標網路。
+* 更改網路、網域或結帳設定後，測試客戶儀表板和任何結帳後的存取按鈕。
+
+魔法連結應視為登入連結。它們旨在提供無縫的客戶存取，不應在預期會話之外轉發或重複使用。
+
+## Frequently Asked Questions
+
+### What is multinetwork?
+
+Multinetwork 是一個 WordPress 功能，它允許您在單一的 WordPress 安裝上運行多個獨立的多網站網路。
+
+### How is this different from regular multisite?
+
+普通的 multisite 允許一個網路內有多個網站。而 Multinetwork 允許多個網路，每個網路都有自己的網站，所有這些都包含在一個 WordPress 安裝中。
+
+### Does this require special server configuration?
+
+是的，multinetwork 需要特定的伺服器設定和配置。請查閱文件以獲取詳細的設定說明。

@@ -1,0 +1,101 @@
+---
+title: Trình xuất trang web
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+Chúng tôi hiểu rằng bạn cần khả năng di chuyển các trang con (subsites) trong mạng lưới của mình sang một cài đặt trang đơn lẻ và ngược lại, phòng trường hợp khách hàng của bạn quyết định chuyển trang web của họ. Tiện ích mở rộng Site Exporter và Importer giúp việc này trở nên dễ dàng hơn. Công cụ này xuất và nhập các trang web bằng file zip, loại file này cũng có thể dùng để sao lưu dữ liệu.
+
+## Features
+
+* Xuất và Nhập Trang Web (Export and Import Sites)
+
+* Giao diện dễ sử dụng
+
+* Tạo bản sao lưu trang web (Create site backup)
+
+## Documentation
+**Cách Xuất và Nhập một Trang Web**
+
+## Installation
+
+1. Tải **ultimate-multisite-site-exporter** lên thư mục **/wp-content/plugins/**
+2. Kích hoạt plugin thông qua menu **Plugins** trong WordPress
+3. Làm theo Trình hướng dẫn (Wizard) từng bước để thiết lập plugin
+
+## Usage Guide
+
+Với Ultimate Multisite, bạn có thể xuất một trang web từ mạng lưới của mình hoặc nhập một trang web vào cài đặt multisite hoặc single-site của bạn.
+
+Để bắt đầu quy trình, hãy truy cập trang add-ons của chúng tôi và cài đặt tiện ích mở rộng Ultimate Multisite: Site Exporter & Importer.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Truy cập trang Plugins của bạn và nhấp vào **Network Activate** (Kích hoạt Mạng) cho add-on bạn vừa cài đặt.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Tùy chọn **Export & Import** có thể được tìm thấy trên menu Ultimate Multisite, ở phía bên trái.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+Để xuất một trang web từ mạng lưới của bạn, hãy truy cập **Export & Import** trên menu Ultimate Multisite và, tại tab **Export Sites**, nhấp vào **Generate new Site Export** (Tạo bản xuất trang web mới).
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Tìm kiếm trang web bạn muốn xuất và chọn các mục bạn muốn bao gồm trong file xuất. Bạn có thể bao gồm các theme, plugin và uploads. Nếu trang web của bạn quá lớn, bạn có thể chọn chạy quá trình xuất ở chế độ nền (background).<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Nhấp vào nút **Export Site**. Trang web đã xuất của bạn sẽ có sẵn trong danh sách **Existing Exports**. Nhấp vào nút **Download ZIP** để tải file về. Các file ZIP xuất bao gồm một `index.php` và `readme.txt` tự khởi động, vì vậy chúng có thể được cài đặt trên một máy chủ mới mà không cần cài đặt trước một plugin nhập riêng biệt.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+Để xuất tất cả các trang con cùng một lúc, hãy truy cập **Export & Import** trên menu Ultimate Multisite và sử dụng tùy chọn **Network Export** trên màn hình xuất. Kho lưu trữ được tạo ra chứa tất cả các trang con trong một file ZIP duy nhất, dùng cho việc di chuyển máy chủ, xây dựng lại môi trường staging, hoặc sao lưu cấp mạng lưới.
+
+Các bản xuất mạng lưới có thể rất lớn. Hãy chạy chúng khi lưu lượng truy cập thấp và xác nhận rằng máy chủ có đủ dung lượng lưu trữ cho kho lưu trữ và bất kỳ uploads, plugin, và theme nào được bao gồm.
+
+## How to import a site
+
+Để nhập một trang web, hãy truy cập tab **Import a Site** và tải lên file .zip của trang web bạn muốn nhập. Bạn có thể thay đổi URL thành một URL mới hoặc giữ lại URL cũ bằng cách để trống ô này. Ngoài ra, bạn cũng có thể đánh dấu vào ô để xóa file .zip khỏi cài đặt của bạn sau khi nhập. Sau đó nhấp vào **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Quá trình này có thể mất một chút thời gian. Bạn sẽ thấy một bản nhập đang chờ xử lý trong danh sách bên dưới trình nhập.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Bạn có thể dừng quá trình bằng cách nhấp vào **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Sau khi quá trình hoàn tất, trang web của bạn đã có sẵn trên mạng lưới.
+
+## How to import a site on a single install
+
+Để nhập một trang web vào cài đặt đơn lẻ, trước tiên hãy cài đặt và kích hoạt trình nhập trên trang web của bạn. Bạn có thể tìm liên kết tải xuống nó ở tab exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Bạn có thể tìm thấy trình nhập trên menu **Tools**, ở phía bên trái, tại mục con **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Tải lên file .zip của trang web bạn muốn nhập. Bạn có thể thay đổi URL thành một URL mới hoặc giữ lại URL cũ bằng cách để trống ô này. Ngoài ra, bạn cũng có thể đánh dấu vào ô để xóa file .zip khỏi cài đặt của bạn sau khi nhập. Sau đó nhấp vào **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Quá trình này có thể mất một chút thời gian. Bạn sẽ thấy một bản nhập đang chờ xử lý trong danh sách bên dưới trình nhập.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Bạn có thể dừng quá trình bằng cách nhấp vào **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Sau khi quá trình hoàn tất, trang web của bạn sẽ được thay thế bằng trang web bạn vừa nhập.

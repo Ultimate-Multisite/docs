@@ -1,0 +1,117 @@
+---
+title: 計費方案
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# 計量型方案 (Metered Plans)
+
+Ultimate Multisite: Metered Plans 外掛改變了您向客戶計費的方式，它引入了靈活的計量型計費功能。它不再使用剛性的硬性限制來阻止用戶，而是啟用超額費用，自動為客戶的額外使用量進行計費。
+
+## 主要功能
+
+* **計量型計費 (Metered Billing)**：根據實際使用量向客戶收費，而非固定方案層級。
+* **超額管理 (Overage Management)**：自動為超出方案限制的使用量進行計費。
+* **使用量追蹤 (Usage Tracking)**：即時監控客戶的資源消耗。
+* **彈性定價 (Flexible Pricing)**：為不同的資源（儲存空間、頻寬、網站等）設定客製化費率。
+* **AI Token 計費 (AI Token Billing)**：追蹤並為跨客戶子站的 AI 輸入和輸出 Token 進行計費。
+* **自動發票 (Automatic Invoicing)**：當使用量超過預設閾值時，自動生成發票。
+* **使用量報告 (Usage Reports)**：為客戶和管理員提供詳細的使用量分析和報告。
+
+## 適用場景
+
+* **主機服務提供商 (Hosting Providers)**：提供能隨著客戶需求增長的擴展方案。
+* **SaaS 平台 (SaaS Platforms)**：根據實際的資源消耗量進行計費。
+* **代理商網路 (Agency Networks)**：為客戶專案提供彈性的定價模式。
+* **轉售主機 (Reseller Hosting)**：讓合作夥伴能夠提供基於使用量的定價。
+
+## 工作原理
+
+1. 設定計量資源（例如：磁碟空間、頻寬、網站數量等）。
+2. 設定基礎方案限制和超額費率。
+3. 系統會自動追蹤整個網路的使用量。
+4. 當客戶超出限制時，會計算超額費用。
+5. 根據計費週期自動生成發票。
+6. 客戶可以即時查看他們的使用量和即將到來的費用。
+
+## AI Token 計費
+
+版本 1.1.0 為提供 AI 功能的網路增加了 AI Token 計費功能，這些功能透過 WordPress AI Client SDK 實現。Metered Plans 會監聽完成的 AI 生成請求，記錄當前子站的輸入和輸出 Token 數量，並將這些 Token 轉換為客戶當前計費週期可計費的 AI 支出。
+
+當您希望在客戶網站上提供 AI 工具，但又不希望吸收不可預測的模型成本時，請使用 AI Token 計費。每個請求都會歸屬於子站、客戶、會員、提供商和模型，這樣管理員就可以審核使用量，而客戶也能看到他們的 AI 消耗如何影響帳戶。
+
+### 設定每 Token 費率
+
+AI 費率是針對每個模型，分別設定輸入和輸出的費率。費率是按每 100 萬 Token 計算的，這與常見的 AI 服務提供商的定價頁面是匹配的。
+
+1. 在網路管理員介面，開啟 **Multisite Ultimate → Settings → Metered Plans**。
+2. 為應該計費 AI 使用量的產品或會員，啟用 AI 支出計量。
+3. 使用您的連接器回傳的模型 ID，新增模型費率條目，例如 `gpt-4o`、`gpt-4o-mini` 或其他 OpenAI 相容的模型識別符。
+4. 在您的站點貨幣中，為每 100 萬 Token 分別輸入 **輸入費率 (Input Rate)** 和 **輸出費率 (Output Rate)** 值。
+5. 為方案設定客戶包含的 AI 支出額度以及超額後的處理方式。
+
+如果沒有設定確切的模型 ID，Metered Plans 可以透過模型前綴進行匹配。例如，為 `claude-sonnet-4` 設定的費率可以應用於以該前綴開頭的時間戳模型 ID。開發人員也可以使用 [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) 篩選器調整最終的費率表。
+
+### 支援的 AI 連接器
+
+AI Token 計費與那些會發出 WordPress AI Client SDK 生成事件，並在回應的元資料中包含 Token 使用量的連接器協同工作。這包括本處文件記錄的 Ultimate Multisite AI 連接器系列：
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/)：適用於 OpenAI 相容 API，包括 OpenAI、Mistral、Ollama 相容閘道，以及其他暴露相容 Token 使用量元資料的提供商。
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/)：適用於透過 AI Client SDK 事件流程路由請求時，瀏覽器原生的 WebLLM 使用量。
+* 由 [Gratis AI Agent](../gratis-ai-agent/) 使用的 AI 提供商連接器：當選定的提供商透過 SDK 報告提示和完成 Token 數量時。
+
+自訂連接器可以透過發出標準的 `wp_ai_client_before_generate_result` 和 `wp_ai_client_after_generate_result` 事件，並附帶模型、提供商和 Token 使用量元資料來參與。連接器設定會從主站強制執行到子站，確保客戶網站使用網路批准的提供商和限制。
+
+### 客戶帳戶使用量
+
+客戶可以在他們的帳戶區域，與其他計量資源一起查看 AI 使用量。AI 支出欄位顯示的是當前計費週期內，根據記錄的提示和完成 Token、設定的模型費率以及方案包含的額度計算出的總額。
+
+如果客戶有儲存付款方式，超出包含額度的使用量將被視為可計費的超額費用。如果方案設定了硬性截止點，且客戶沒有可用的付款方式，一旦達到額度，AI 請求可能會被阻止，並提示客戶在繼續前新增付款詳細資料。
+
+## 支援的資源
+
+* 磁碟儲存空間
+* 頻寬/資料傳輸量
+* 網站數量
+* 用戶數量
+* AI Token 使用量和 AI 支出
+* 自訂資源類型
+
+## 要求
+
+* Multisite Ultimate 2.0.0 或更高版本
+* WordPress Multisite 安裝
+* PHP 7.4 或更高版本
+
+## 安裝
+
+1. 將外掛檔案上傳到 `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. 在 WordPress 的「外掛」畫面中啟用外掛。
+3. 導航到 Multisite Ultimate → Settings → Metered Plans。
+4. 設定您的計量資源和定價。
+5. 在產品編輯器中，為產品啟用計量型計費。
+
+## 常見問題
+
+## 客戶超出限制會發生什麼？
+
+系統不會阻止存取，而是追蹤超額部分，並根據您設定的費率加到他們下一個發票中。
+
+## 我可以為不同的產品設定不同的超額費率嗎？
+
+是的，每個產品都可以擁有獨特的計量資源和超額定價。
+
+## 客戶如何知道使用量？
+
+客戶可以在他們的儀表板查看當前使用量，並且在接近或超出限制時，可以接收到可選的通知。
+
+## AI Token 使用量如何計費？
+
+AI Token 使用量是根據模型設定的每 100 萬 Token 的輸入和輸出費率來計費的。Metered Plans 會將每個請求的提示和完成 Token 數量乘以這些費率，將結果加到客戶當前計費週期的 AI 支出中，並套用方案的額度或超額規則。
+
+## 我還可以使用硬性限制嗎？
+
+是的，計量型計費是每個產品可選的。您可以將傳統的硬性限制產品與計量型產品混合使用。

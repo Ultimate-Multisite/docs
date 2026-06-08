@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector for WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM 能將瀏覽器原生的 AI 推理能力帶到您的 WordPress 多站點網路。它使用 WebLLM 和 MLC 引擎，在瀏覽器內部運行大型語言模型（LLM）——無需 API 金鑰、無需外部呼叫，也不會讓任何資料離開使用者的設備。
+
+## 主要功能
+
+- **瀏覽器端推理 (Browser-side inference)**：LLM 透過 WebLLM/MLC 在訪客的瀏覽器本地運行——無需伺服器 GPU
+- **浮動聊天小工具 (Floating chat widget)**：登入的使用者可以直接從前端介面提示瀏覽器端的 LLM
+- **管理列狀態指示器 (Admin-bar status indicator)**：在 WordPress 管理列可查看 WebLLM 引擎的即時狀態
+- **SharedWorker 執行時期 (SharedWorker runtime)**：多個瀏覽器分頁可以共用一個 GPU 工作階段，而不是互相爭奪 GPU 資源
+- **apiFetch 中間件 (apiFetch middleware)**：與 AI Client SDK 模式匹配的 WordPress REST 請求會透明地路由到本地 WebLLM 代理（broker）——無需迴路 HTTP 往返
+- **小工具設定介面 (Widget settings UI)**：連接器面板設定，用於切換聊天小工具並配置自動提示行為
+- **IndexedDB 快取 (IndexedDB cache)**：模型權重下載可以存活於會破壞預設 Cache API 路徑的 CDN 重定向中
+- **wpai 篩選器整合 (wpai filter integration)**：掛鉤到 `wpai_preferred_text_models` 篩選器，因此當配置後，AI Experiments 功能會路由到瀏覽器引擎
+
+## 要求
+
+- WordPress 5.3 或更高版本
+- PHP 7.4 或更高版本
+- Ultimate Multisite 插件（需啟用）
+- 支援 WebGPU 的瀏覽器（Chrome 113+、Edge 113+ 或已啟用 WebGPU 的 Firefox Nightly）
+
+## 安裝
+
+1. 將附加元件檔案上傳到您的 `/wp-content/plugins/` 目錄
+2. 透過 WordPress 的「外掛程式」選單啟用該插件
+3. 導航至 **Ultimate Multisite → AI Connector** 來配置附加元件
+
+## 浮動聊天小工具
+
+浮動聊天小工具允許任何登入的使用者直接從您的前端介面與瀏覽器端的 LLM 互動，無需離開當前頁面。
+
+### 功能說明
+
+啟用後，登入使用者的每個前端頁面角落都會出現一個聊天圖示。點擊該圖示會開啟一個聊天面板，使用者可以在其中輸入提示，並接收到來自本地運行 WebLLM 模型的回應。由於模型完全在瀏覽器中運行，因此回應是私密的，不涉及任何伺服器端處理。
+
+### 管理列狀態指示器
+
+WordPress 管理列包含一個狀態指示器，用於顯示 WebLLM 引擎的當前狀態：
+
+| 狀態 | 意義 |
+|--------|---------|
+| **Loading** | MLC 引擎正在初始化或下載模型權重 |
+| **Ready** | 模型已載入並可供推理使用 |
+| **Idle** | 引擎已載入，但 SharedWorker 分頁處於非活動狀態 |
+| **Error** | 引擎初始化失敗——請檢查瀏覽器控制台以了解詳細資訊 |
+
+此指示器會在不要求重新載入頁面的情況下即時更新。
+
+### 如何啟用或停用小工具
+
+1. 在網路管理員介面中，前往 **Ultimate Multisite → AI Connector**
+2. 找到 **Connector** 面板
+3. 切換 **Enable floating chat widget** 的開關（開啟或關閉）
+4. 儲存設定
+
+如果網路管理員授予了該權限，該小工具也可以從網站自身的管理員介面進行單站點的啟用或停用。
+
+## 小工具設定
+
+**Ultimate Multisite → AI Connector** 中的 Connector 面板包含以下浮動聊天小工具設定：
+
+### Enable Floating Chat Widget
+
+用於為整個網路切換聊天小工具的開關。如果停用，無論使用者角色為何，小工具都不會在任何前端頁面顯示。
+
+**預設值：** 關閉
+
+### Auto-Prompt Behaviour
+
+控制聊天小工具是否會在使用者開啟時自動發送提示。
+
+| 選項 | 行為 |
+|--------|-----------|
+| **Disabled** | 小工具開啟時為空白聊天——使用者需自行輸入提示 |
+| **Page context** | 小工具會預先填入一個基於當前頁面標題和內容的提示 |
+| **Custom prompt** | 小工具會開啟一個您在下方欄位定義的自訂提示 |
+
+當設定為 **Custom prompt** 時，會出現額外的文字欄位，您可以在其中輸入預設提示文字。支援基本的模板變數：
+
+- `{site_name}` — 當前網站的名稱
+- `{page_title}` — 當前頁面的標題
+- `{user_display_name}` — 登入使用者的顯示名稱
+
+**預設值：** 關閉
+
+## SharedWorker 執行時期
+
+版本 1.1.0 為 MLC 引擎引入了 SharedWorker 執行時期。以前，每個使用 WebLLM 的瀏覽器分頁都會載入自己模型的一個實例，導致在 VRAM 有限的設備上互相競爭 GPU 記憶體並造成效能問題。
+
+使用 SharedWorker 執行時期後，一個分頁充當引擎主機。所有其他分頁都透過工作者（worker）的訊息通道與這個單一實例進行通訊。結果是：
+
+- 所有開啟分頁共用一個 GPU 工作階段
+- 模型載入後回應更快（無需重複初始化）
+- 設備的峰值記憶體使用量更低
+
+SharedWorker 對使用者是透明的。管理列狀態指示器總是反映共享引擎的狀態，而不是單個分頁的狀態。
+
+## apiFetch 中間件
+
+該附加元件安裝了一個 `apiFetch` 中間件，用於攔截與 AI Client SDK 模式匹配的 WordPress REST API 請求。這些請求不會向伺服器發出迴路 HTTP 請求，而是直接路由到在 SharedWorker 中運行的本地 WebLLM 代理（broker）。
+
+這意味著使用標準 WordPress `apiFetch` API 來呼叫 AI 端點的插件和主題，在模型可用時將自動受益於瀏覽器端的模型，無需修改任何程式碼。
+
+## Hooks 和 Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — 將 WebLLM 瀏覽器引擎註冊為首選文字模型。當引擎配置並可用時，附加元件會自動掛鉤到此篩選器。
+- `ultimate_webllm_widget_enabled` — 為特定使用者或情境覆蓋小工具的啟用狀態。回傳 `true` 或 `false`。
+- `ultimate_webllm_auto_prompt` — 修改在發送到小工具之前的自動提示文字。接收提示字串和當前的 `WP_Post` 物件。
+
+## 疑難排解
+
+### 聊天小工具沒有出現
+
+- 確認使用者是否已登入——小工具僅顯示給已驗證的使用者
+- 檢查 Connector 面板中是否已開啟 **Enable floating chat widget**
+- 驗證使用者的瀏覽器是否支援 WebGPU（請參閱上方要求）
+
+### 管理列指示器顯示「Error」
+
+開啟瀏覽器開發者控制台 (F12)，尋找與 WebLLM 相關的錯誤。常見原因：
+
+- 瀏覽器不支援 WebGPU
+- 模型權重下載失敗——請檢查網路連線，並嘗試在瀏覽器開發工具（Application → IndexedDB）中清除 IndexedDB 快取
+- 瀏覽器擴充功能阻擋了 SharedWorker
+
+### 模型權重每次都會下載
+
+附加元件使用 IndexedDB 作為快取後端，以確保模型權重在 CDN 重定向中得以保留。如果權重在每次造訪時都會重新下載，請檢查瀏覽器的隱私設定或擴充功能是否清除了 IndexedDB。
+
+## Changelog
+
+請參閱 [Changelog](./changelog) 查看完整的版本歷史記錄。

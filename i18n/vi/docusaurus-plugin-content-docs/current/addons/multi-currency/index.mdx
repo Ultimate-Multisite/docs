@@ -1,0 +1,117 @@
+---
+title: Đa tiền tệ
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency giúp mạng lưới của bạn chấp nhận thanh toán bằng nhiều loại tiền tệ. Addon này tự động chuyển đổi giá bằng cách sử dụng tỷ giá hối đoái trực tiếp hoặc thủ công, cho phép bạn đặt giá chính xác theo từng sản phẩm cho bất kỳ loại tiền tệ nào, và phát hiện loại tiền tệ ưa thích của mỗi khách truy cập thông qua vị trí địa lý — tất cả được quản lý từ một bảng điều khiển admin duy nhất.
+
+## Key Features
+
+- **Automatic exchange rate conversion** — giá được chuyển đổi từ loại tiền tệ cơ sở của bạn bằng cách sử dụng tỷ giá lấy từ nhà cung cấp bạn chọn
+- **Per-product pricing overrides** — đặt giá cụ thể theo tiền tệ trên bất kỳ sản phẩm nào để bỏ qua việc chuyển đổi tự động
+- **Currency selector signup field** — cho phép khách hàng chọn loại tiền tệ ưa thích của họ trong quá trình thanh toán/đăng ký
+- **Multiple exchange rate providers** — ECB, Frankfurter, Stripe, hoặc tỷ giá hoàn toàn thủ công
+- **Geolocation-based currency detection** — tự động chọn trước loại tiền tệ phù hợp với quốc gia của khách truy cập
+- **Admin dashboard** — quản lý các loại tiền tệ đang hoạt động, tỷ giá hối đoái và cài đặt nhà cung cấp từ một nơi
+
+## Requirements
+
+- Ultimate Multisite 2.0.0 hoặc cao hơn
+- Cài đặt WordPress Multisite
+- PHP 7.4 hoặc cao hơn
+
+## Installation
+
+1. Tải các tệp plugin lên thư mục `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Kích hoạt plugin thông qua màn hình **Plugins** trong WordPress (Kích hoạt mạng lưới)
+3. Điều hướng đến **Ultimate Multisite → Multi-Currency** để mở bảng điều khiển admin
+4. Thêm các loại tiền tệ bạn muốn chấp nhận và cấu hình nhà cung cấp tỷ giá hối đoái
+
+## Configuration
+
+### Admin Dashboard
+
+Bảng điều khiển admin Multi-Currency (**Ultimate Multisite → Multi-Currency**) là nơi trung tâm để:
+
+- Thêm, kích hoạt hoặc vô hiệu hóa các loại tiền tệ
+- Chọn nhà cung cấp tỷ giá hối đoái và làm mới tỷ giá theo yêu cầu
+- Xem lại các tỷ giá hiện tại cho tất cả các loại tiền tệ đang hoạt động
+- Đặt tỷ giá thủ công khi các nhà cung cấp tự động không phù hợp
+
+### Exchange Rate Providers
+
+| Provider | Description |
+|---|---|
+| **ECB** | Ngân hàng Trung ương Châu Âu — tỷ giá hàng ngày miễn phí cho các mạng lưới dựa trên EUR |
+| **Frankfurter** | API gương (mirror API) của ECB mã nguồn mở — miễn phí, không yêu cầu khóa API |
+| **Stripe** | Sử dụng tỷ giá FX trực tiếp của Stripe — yêu cầu tích hợp Stripe đang hoạt động |
+| **Manual** | Bạn tự nhập tỷ giá; không cần gọi API bên ngoài |
+
+Chọn nhà cung cấp của bạn tại **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Tỷ giá có thể được làm mới thủ công bất cứ lúc nào hoặc lên lịch để tự động cập nhật.
+
+### Per-Product Pricing Overrides
+
+Khi việc chuyển đổi tự động chưa đủ chính xác, bạn có thể đặt giá chính xác cho một loại tiền tệ cụ thể trên bất kỳ sản phẩm nào:
+
+1. Mở trình chỉnh sửa sản phẩm (**Ultimate Multisite → Products → Edit**)
+2. Cuộn xuống phần **Currency Pricing**
+3. Nhập giá chính xác cho mỗi loại tiền tệ bạn muốn ghi đè
+4. Lưu sản phẩm
+
+Các sản phẩm không có giá ghi đè sẽ sử dụng giá đã chuyển đổi từ loại tiền tệ cơ sở của bạn.
+
+### Currency Selector Signup Field
+
+Trường chọn tiền tệ có thể được thêm vào quy trình đăng ký/thanh toán của bạn để khách hàng chọn loại tiền tệ ưa thích khi đăng ký:
+
+1. Truy cập **Ultimate Multisite → Multi-Currency → Settings**
+2. Bật **Show currency selector on signup**
+3. Tùy chọn đặt một loại tiền tệ mặc định hoặc để vị trí địa lý xác định giá trị được chọn trước
+
+Loại tiền tệ được chọn sẽ được lưu cùng với thông tin đăng ký và được sử dụng cho tất cả các lần thanh toán sau.
+
+### Geolocation-Based Currency Detection
+
+Khi tính năng phát hiện vị trí địa lý được bật, addon sẽ ánh xạ quốc gia của khách truy cập tới một loại tiền tệ và chọn trước loại tiền tệ đó trong trường chọn tiền tệ. Để bật tính năng này:
+
+1. Truy cập **Ultimate Multisite → Multi-Currency → Settings**
+2. Bật **Detect currency from visitor location**
+3. Ánh xạ các quốc gia tới các loại tiền tệ trong bảng **Geolocation Mapping**
+
+Nếu không có ánh xạ nào cho quốc gia của khách truy cập, loại tiền tệ cơ sở của mạng lưới sẽ được sử dụng làm phương án dự phòng.
+
+## Frequently Asked Questions
+
+### What happens if an exchange rate provider is unavailable?
+
+Addon sẽ tự động quay lại sử dụng các tỷ giá cuối cùng đã được lấy thành công. Nếu chưa bao giờ lấy được tỷ giá nào, nó sẽ sử dụng tỷ giá thủ công mà bạn đã cấu hình. Chúng tôi khuyến nghị bạn cấu hình tỷ giá thủ công như một biện pháp an toàn.
+
+### Can I use different providers for different currencies?
+
+Không — chỉ có một nhà cung cấp hoạt động tại một thời điểm cho tất cả các loại tiền tệ. Hãy sử dụng **Manual** nếu bạn cần kiểm soát hoàn toàn các tỷ giá riêng lẻ.
+
+### Does geolocation require a separate plugin?
+
+Không yêu cầu plugin vị trí địa lý bên ngoài nào. Addon sử dụng tính năng phát hiện IP-to-country tích hợp sẵn của WordPress. Để có độ chính xác cao hơn, bạn có thể tích hợp một dịch vụ vị trí địa lý chuyên dụng thông qua các hook bộ lọc được cung cấp.
+
+### Are per-product overrides applied before or after tax?
+
+Giá ghi đè theo sản phẩm đặt giá trước thuế bằng loại tiền tệ mục tiêu. Thuế được tính trên giá ghi đè bằng cách sử dụng cấu hình thuế hiện có của bạn.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Hỗ trợ đa tiền tệ với chuyển đổi tỷ giá hối đoái tự động
+- New: Ghi đè giá theo từng sản phẩm cho giá tiền tệ chính xác
+- New: Trường chọn tiền tệ khi đăng ký cho quy trình thanh toán
+- New: Nhà cung cấp tỷ giá hối đoái: ECB, Frankfurter, Stripe và thủ công
+- New: Phát hiện tiền tệ dựa trên vị trí địa lý
+- New: Bảng điều khiển admin để quản lý tiền tệ và tỷ giá hối đoái
+- Fix: Dashboard luôn hiển thị giá bằng loại tiền tệ cơ sở bất kể loại tiền tệ được chọn

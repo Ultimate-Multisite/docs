@@ -1,0 +1,117 @@
+---
+title: Gói theo mức sử dụng
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Metered Plans
+
+Addon Ultimate Multisite: Metered Plans giúp bạn thay đổi cách tính phí khách hàng bằng cách giới thiệu khả năng tính phí theo mức sử dụng linh hoạt. Thay vì các giới hạn cứng nhắc gây gián đoạn khi vượt quá, tính năng này cho phép tính phí vượt mức, tự động lập hóa đơn cho khách hàng đối với lượng sử dụng bổ sung.
+
+## Tính năng chính
+
+* **Tính phí theo mức sử dụng (Metered Billing)**: Tính phí cho khách hàng dựa trên mức sử dụng thực tế thay vì các gói cố định.
+* **Quản lý vượt mức (Overage Management)**: Tự động tính phí cho mức sử dụng vượt quá giới hạn gói.
+* **Theo dõi mức sử dụng (Usage Tracking)**: Giám sát mức tiêu thụ tài nguyên của khách hàng theo thời gian thực.
+* **Giá linh hoạt (Flexible Pricing)**: Thiết lập mức giá tùy chỉnh cho các tài nguyên khác nhau (bộ nhớ, băng thông, số lượng site, v.v.).
+* **Tính phí Token AI (AI Token Billing)**: Theo dõi và tính phí token đầu vào và đầu ra cho việc sử dụng AI trên các subsite của khách hàng.
+* **Hóa đơn tự động (Automatic Invoicing)**: Tự động tạo hóa đơn khi vượt qua ngưỡng sử dụng.
+* **Báo cáo sử dụng (Usage Reports)**: Phân tích và báo cáo chi tiết về mức sử dụng cho cả khách hàng và quản trị viên.
+
+## Lý tưởng cho
+
+* **Nhà cung cấp Hosting**: Cung cấp các gói mở rộng theo nhu cầu tăng trưởng của khách hàng.
+* **Nền tảng SaaS**: Tính phí dựa trên mức tiêu thụ tài nguyên thực tế.
+* **Mạng lưới Agency**: Mô hình giá linh hoạt cho các dự án của khách hàng.
+* **Hosting Reseller**: Cho phép đối tác cung cấp giá dựa trên mức sử dụng.
+
+## Cách thức hoạt động
+
+1. Cấu hình các tài nguyên tính phí (dung lượng đĩa, băng thông, số lượng site, v.v.).
+2. Thiết lập giới hạn gói cơ bản và mức phí vượt mức.
+3. Hệ thống tự động theo dõi mức sử dụng trên toàn mạng lưới của bạn.
+4. Khi khách hàng vượt quá giới hạn, phí vượt mức sẽ được tính toán.
+5. Hóa đơn được tạo tự động dựa trên chu kỳ thanh toán.
+6. Khách hàng có thể xem mức sử dụng và các khoản phí sắp tới theo thời gian thực.
+
+## Tính phí Token AI
+
+Phiên bản 1.1.0 bổ sung tính năng tính phí token AI cho các mạng lưới cung cấp tính năng AI thông qua WordPress AI Client SDK. Metered Plans sẽ lắng nghe các yêu cầu tạo AI đã hoàn thành, ghi lại số lượng token đầu vào và đầu ra cho subsite hiện tại, và chuyển đổi các token này thành chi phí AI có thể tính phí cho chu kỳ thanh toán hiện tại của khách hàng.
+
+Bạn nên sử dụng tính năng tính phí token AI khi bạn muốn cung cấp các công cụ AI trên các trang web của khách hàng mà không phải tự chịu các chi phí mô hình khó dự đoán. Mỗi yêu cầu sẽ được gán cho subsite, khách hàng, thành viên, nhà cung cấp và mô hình, giúp quản trị viên có thể kiểm tra mức sử dụng, đồng thời khách hàng có thể thấy việc tiêu thụ AI của họ ảnh hưởng đến tài khoản như thế nào.
+
+### Cấu hình Tỷ lệ theo Token
+
+Tỷ lệ AI được cấu hình cho từng mô hình dưới dạng tỷ lệ đầu vào và đầu ra riêng biệt. Tỷ lệ được tính trên mỗi 1 triệu token, phù hợp với các trang giá của nhà cung cấp AI phổ biến.
+
+1. Trong khu vực quản trị mạng lưới, mở **Multisite Ultimate → Settings → Metered Plans**.
+2. Bật tính năng đo lường chi phí AI cho sản phẩm hoặc thành viên cần tính phí sử dụng AI.
+3. Thêm các mục tỷ lệ mô hình bằng cách sử dụng các model ID được trả về bởi connector của bạn, chẳng hạn như `gpt-4o`, `gpt-4o-mini`, hoặc một định danh mô hình tương thích với OpenAI khác.
+4. Nhập các giá trị **Input Rate** (Tỷ lệ đầu vào) và **Output Rate** (Tỷ lệ đầu ra) riêng biệt bằng tiền tệ của trang web của bạn cho mỗi 1 triệu token.
+5. Thiết lập mức miễn phí AI và hành vi vượt mức cho gói của khách hàng.
+
+Khi không cấu hình model ID chính xác, Metered Plans có thể khớp bằng tiền tố mô hình. Ví dụ, tỷ lệ được cấu hình cho `claude-sonnet-4` có thể áp dụng cho các model ID được dấu thời gian và bắt đầu bằng tiền tố đó. Các nhà phát triển cũng có thể điều chỉnh bảng tỷ lệ cuối cùng bằng bộ lọc [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Các Bộ kết nối AI được hỗ trợ
+
+Tính năng tính phí token AI hoạt động với các connector phát ra sự kiện WordPress AI Client SDK generation và bao gồm việc sử dụng token trong siêu dữ liệu phản hồi. Điều này bao gồm họ connector AI Ultimate Multisite được tài liệu hóa tại đây:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) dành cho các API tương thích với OpenAI, bao gồm OpenAI, Mistral, các gateway tương thích Ollama, và các nhà cung cấp khác phơi bày siêu dữ liệu sử dụng token tương thích
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) dành cho việc sử dụng WebLLM gốc trình duyệt khi các yêu cầu được định tuyến qua luồng sự kiện AI Client SDK
+* Các connector nhà cung cấp AI được sử dụng bởi [Gratis AI Agent](../gratis-ai-agent/) khi nhà cung cấp được chọn báo cáo số lượng token prompt và completion thông qua SDK
+
+Các connector tùy chỉnh có thể tham gia bằng cách kích hoạt các sự kiện tiêu chuẩn `wp_ai_client_before_generate_result` và `wp_ai_client_after_generate_result` với siêu dữ liệu mô hình, nhà cung cấp và sử dụng token. Cài đặt connector được áp dụng từ trang web chính đến các subsite để đảm bảo các trang của khách hàng sử dụng các nhà cung cấp và giới hạn được mạng lưới phê duyệt.
+
+### Mức sử dụng Tài khoản Khách hàng
+
+Khách hàng sẽ thấy mức sử dụng AI cùng với các tài nguyên tính phí khác trong khu vực tài khoản của họ. Hàng AI spend hiển thị tổng chi phí của chu kỳ thanh toán hiện tại được suy ra từ các token prompt và completion đã ghi lại, tỷ lệ mô hình đã cấu hình và bất kỳ khoản miễn phí nào trong gói.
+
+Nếu khách hàng có phương thức thanh toán được lưu, mức sử dụng vượt quá khoản miễn phí sẽ được coi là vượt mức có thể tính phí. Nếu gói được cấu hình giới hạn cứng và khách hàng không có phương thức thanh toán nào khả dụng, các yêu cầu AI có thể bị chặn khi khoản miễn phí đạt mức và khách hàng được nhắc thêm chi tiết thanh toán trước khi tiếp tục.
+
+## Tài nguyên được hỗ trợ
+
+* Dung lượng lưu trữ đĩa
+* Băng thông/Truyền dữ liệu
+* Số lượng site
+* Số lượng người dùng
+* Sử dụng token AI và chi phí AI
+* Các loại tài nguyên tùy chỉnh
+
+## Yêu cầu
+
+* Multisite Ultimate 2.0.0 trở lên
+* Cài đặt WordPress Multisite
+* PHP 7.4 trở lên
+
+## Cài đặt
+
+1. Tải các tệp plugin lên `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Kích hoạt plugin thông qua màn hình 'Plugins' trong WordPress
+3. Điều hướng đến Multisite Ultimate → Settings → Metered Plans
+4. Cấu hình các tài nguyên và giá cả tính phí của bạn
+5. Bật tính năng tính phí theo mức sử dụng cho các sản phẩm trong trình chỉnh sửa sản phẩm
+
+## Câu hỏi thường gặp
+
+## Điều gì xảy ra khi khách hàng vượt quá giới hạn?
+
+Thay vì chặn truy cập, hệ thống sẽ theo dõi mức vượt quá và cộng nó vào hóa đơn tiếp theo của họ dựa trên các tỷ lệ bạn đã cấu hình.
+
+## Tôi có thể đặt các mức phí vượt mức khác nhau cho các sản phẩm khác nhau không?
+
+Có, mỗi sản phẩm có thể có các tài nguyên tính phí và giá vượt mức riêng biệt.
+
+## Khách hàng được thông báo về mức sử dụng như thế nào?
+
+Khách hàng có thể xem mức sử dụng hiện tại của họ trên dashboard và nhận thông báo tùy chọn khi sắp hoặc vượt quá giới hạn.
+
+## Việc sử dụng token AI được tính phí như thế nào?
+
+Việc sử dụng token AI được tính phí từ tỷ lệ đầu vào và đầu ra đã cấu hình của mô hình trên mỗi 1 triệu token. Metered Plans nhân số lượng token prompt và completion của mỗi yêu cầu với các tỷ lệ đó, cộng kết quả vào chi phí AI của chu kỳ thanh toán hiện tại của khách hàng, và áp dụng khoản miễn phí hoặc quy tắc vượt mức của gói.
+
+## Tôi vẫn có thể sử dụng giới hạn cứng không?
+
+Có, tính năng tính phí theo mức sử dụng là tùy chọn cho từng sản phẩm. Bạn có thể kết hợp các sản phẩm giới hạn cứng truyền thống với các sản phẩm tính phí theo mức sử dụng.

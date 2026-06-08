@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Multisite Ultimate: MailChimp Integration
+
+اپنے Multisite Ultimate نیٹ ورک کو اپنے MailChimp سے جوڑیں۔ آپ مخصوص پلانز کو MailChimp Lists سے لنک کر سکتے ہیں اور سائن اپ پر خودکار طریقے سے صارفین کو ان لسٹوں میں شامل کر سکتے ہیں۔
+
+## Installation
+
+1. 'ultimate-multisite-mailchimp' کو '/wp-content/plugins/' ڈائریکٹری میں اپ لوڈ کریں۔
+2. اپنے WordPress Network Admin میں 'Plugins' مینیو کے ذریعے پلگ ان کو ایکٹیویٹ کریں۔
+
+## Usage Guide
+
+ہمارے Ultimate Multisite: MailChimp Integration Add-on کے ساتھ اپنے صارفین کے ای میل ایڈریسز کو اپنی MailChimp لسٹوں کے ساتھ Sync کرنا بہت آسان ہے۔ یہ ٹیوٹوریل آپ کو ہر چیز سیٹ اپ کرنے میں مدد کرنے کے لیے ہے۔
+
+## Getting an API key
+
+مختلف سیٹنگز میں جانے سے پہلے، ہمیں ایک MailChimp API key کی ضرورت ہے۔ یہ Ultimate Multisite کو MailChimp API سے بات کرنے کی اجازت دے گا تاکہ وہ لسٹیں، گروپس حاصل کر سکے اور صارفین کے سائن اپ کرتے وقت ان لسٹوں اور گروپس میں ای میل ایڈریسز شامل کر سکے۔
+
+اپنا MailChimp API key حاصل کرنے کے لیے اس ٹیوٹوریل پر عمل کریں: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_اپنا MailChimp API key _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ پر شامل کریں۔
+
+## Integration Mode
+
+MailChimp Integration add-on دو "integration modes" پیش کرتا ہے، جس کا مطلب ہے کہ ای میل ایڈریسز کو Sync کرنے کے لیے آپ اس add-on کو استعمال کرنے کے دو مختلف طریقے ہیں۔
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_زیادہ لچک کے لیے دو انٹیگریشن موڈز!_
+
+### Mode 1: Multiple Lists
+
+ڈیفالٹ موڈ **Multiple Lists** کا استعمال کرتا ہے۔ یہ موڈ آپ کو ہر پلان کے لیے متعدد MailChimp لسٹیں منتخب کرنے کی اجازت دے گا۔ اگر آپ اپنے صارفین کو مختلف لسٹوں میں تقسیم (segment) کرتے ہیں تو یہ بہترین آپشن ہے۔
+
+مثال کے طور پر، فرض کریں کہ آپ کے MailChimp اکاؤنٹ پر 3 مختلف لسٹیں ہیں: **Newsletter**، **Plan A**، اور **Plan B**۔ آپ چاہتے ہیں کہ تمام صارفین، چاہے وہ کسی بھی پلان کے ہوں، Newsletter لسٹ میں بھی شامل ہوں، تاکہ وہ آپ کی اپ ڈیٹس سے محروم نہ رہیں۔
+
+اس مقصد کو حاصل کرنے کے لیے، آپ Multiple Lists موڈ کا استعمال کرتے ہوئے Plan A کی MailChimp Settings میں **Newsletter** اور **Plan A** دونوں لسٹیں، اور Plan B کی MailChimp Settings میں **Newsletter** اور **Plan B** دونوں لسٹیں شامل کر سکتے ہیں۔
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_نئے اکاؤنٹس اور منسوخ شدہ اکاؤنٹس کے لیے ڈیفالٹ لسٹیں منتخب کریں_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp آپ کو اپنی لسٹ کو صارفین کے چھوٹے گروپس میں تقسیم کرنے کی اجازت دیتا ہے جنہیں **Groups** کہا جاتا ہے۔ یہ آپ کو زیادہ کنٹرول دیتا ہے کیونکہ آپ کو ایک مخصوص گروپ کے ایک چھوٹے حصے (subset) کو کیمپین بھیجنے کے لیے متعدد کیمپین کی کاپیاں بنانے کی ضرورت نہیں ہوتی (جس سے بعد میں اس کیمپین کے میٹرکس کا تجزیہ کرنا مشکل ہو جاتا ہے)۔
+
+مثال کے طور پر، آپ کے پاس **My Network Subscribers** نام کی ایک ہی لسٹ ہو سکتی ہے، اور اس کے اندر **Plan A** اور **Plan B** کے لیے گروپس ہوں۔
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_ڈیفالٹ لسٹوں اور گروپس کا انتخاب کریں، اگر آپ "single list + multiple groups" انٹیگریشن موڈ استعمال کر رہے ہیں_
+
+## Default Lists and Groups
+
+ایک بار جب آپ منتخب کر لیتے ہیں کہ کون سا انٹیگریشن موڈ آپ کے مخصوص استعمال کے کیس کے لیے زیادہ مناسب ہے، تو وقت آ جاتا ہے کہ آپ ڈیفالٹ لسٹیں (اور موڈ کے لحاظ سے گروپس) منتخب کریں۔ ڈیفالٹ لسٹ کا استعمال اس وقت کیا جائے گا جب کسی خاص پلان کے لیے کوئی مخصوص لسٹ منتخب نہ ہو۔
+
+آپ منسوخ شدہ اکاؤنٹس کے لیے بھی ڈیفالٹ لسٹ منتخب کر سکتے ہیں۔ جب بھی کوئی صارف اپنی سبسکرپشن ختم کرتا ہے اور اپنا اکاؤنٹ آپ کے نیٹ ورک سے ہٹاتا ہے، تو اس کا ای میل ایڈریس منسوخ شدہ اکاؤنٹس کے لیے سیٹ کردہ لسٹ میں منتقل ہو جائے گا۔
+
+## Enabling Double Subscription
+
+اسی سیٹنگز پیج پر، آپ **Double Subscription** کو فعال کر سکیں گے۔ یہ آپشن صارف کو منتخب کردہ ڈیفالٹ لسٹ کے ساتھ ساتھ اس صارف کے پلان کے لیے منتخب کردہ لسٹ میں بھی شامل کر دے گا۔ اگر یہ آپشن فعال نہیں ہے، تو صارف کو صرف اس صارف کے پلان کے لیے منتخب کردہ لسٹ میں شامل کیا جائے گا۔ اگر اس خاص پلان کے لیے کچھ بھی سیٹ نہیں کیا گیا ہے، تو صارف کو منتخب کردہ ڈیفالٹ لسٹ میں شامل کیا جائے گا۔
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_آپ اپنے صارفین کو سائن اپ پر ڈیفالٹ لسٹ اور پلان کی لسٹ دونوں میں سبسکرائب کروا سکتے ہیں_
+
+## Selecting Lists and Groups for each of the Plans
+
+اپنے **Plans** پر جائیں اور وہ پلان منتخب کریں جسے آپ ایڈٹ کرنا چاہتے ہیں۔ نوٹ کریں کہ **Advanced Options** میٹا-باکس پر، MailChimp نام کا ایک نیا ٹیب دستیاب ہوگا۔
+
+اس ٹیب پر، آپ اس پلان کے لیے متعدد لسٹیں یا ایک ہی لسٹ اور متعدد گروپس (انٹیگریشن موڈ کے لحاظ سے) منتخب کرنے کے قابل ہوں گے۔
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_اپنے ہر پلان کے لیے استعمال ہونے والی لسٹیں اور گروپس منتخب کریں_
+
+جب کوئی نیا صارف اس پلان کے لیے سائن اپ کرتا ہے، تو اس کا ای میل ایڈریس منتخب کردہ لسٹوں اور گروپس میں شامل ہو جائے گا!

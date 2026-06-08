@@ -1,0 +1,111 @@
+---
+title: 適用於相容端點的 Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# 終極 AI 連接器：兼容端點
+
+終極 AI 連接器：兼容端點，能將與 OpenAI 兼容的 AI 供應商 API 整合到您的 WordPress 多站點網路中。您可以設定多個 AI 供應商——每個供應商都有自己的端點 URL、API 金鑰和預設模型——並在某個供應商無法使用時，自動路由請求並進行備援。
+
+## 主要功能
+
+- **多供應商支援**: 新增多張 AI 供應商卡片，每張卡片都包含其獨立的端點 URL、API 金鑰和預設模型。
+- **拖曳重新排序**: 使用每張卡片上的握把手柄（grip handle）依優先順序排列供應商；請求將按照順序使用這些供應商。
+- **自動備援路由**: 如果主要供應商無法使用，系統會自動將請求轉發到下一個已設定的供應商。
+- **獨立供應商配置**: 每個供應商都可獨立配置其憑證和模型選擇。
+- **基於卡片介面 (Card-based settings UI)**: 建立在穩定的 WordPress 6.9+ 卡片元件（CardBody, CardHeader, CardDivider）上。
+- **新增自動展開**: 新增的供應商卡片會自動展開，讓您能立即填寫詳細資訊。
+- **腳本快取清除 (Script cache busting)**: 在外掛程式更新時會清除供應商腳本的快取，確保載入的是最新版本。
+
+## 必要條件
+
+- WordPress 5.3 或更高版本
+- PHP 7.4 或更高版本
+- Ultimate Multisite plugin (啟用狀態)
+- 一個與 OpenAI 兼容的 API 端點（自託管或第三方）
+
+## 安裝
+
+1. 將 addon 檔案上傳到您的 `/wp-content/plugins/` 目錄
+2. 透過 WordPress 的「Plugins」選單啟用外掛程式
+3. 導航到 **Ultimate Multisite → AI Connector** 來設定此 addon
+
+## 設定
+
+### 多供應商設定
+
+設定畫面使用卡片式佈局，每張卡片代表一個 AI 供應商。您可以新增所需的供應商數量。
+
+#### 新增供應商
+
+1. 在網路管理員介面中，前往 **Ultimate Multisite → AI Connector**
+2. 點擊 **Add Provider**
+3. 一張新的供應商卡片會自動出現並展開
+4. 填寫供應商詳細資訊：
+   - **供應商名稱** — 用來識別此供應商的標籤（例如：「OpenAI」、「Mistral」、「本地 Ollama」）。
+   - **端點 URL** — 與 OpenAI 兼容 API 的基礎 URL（例如：`https://api.openai.com/v1`）。
+   - **API 金鑰** — 此供應商的 API 金鑰。
+   - **預設模型** — 預設為此供應商使用的模型識別符（例如：`gpt-4o`、`mistral-small`）。
+5. 點擊 **Save Settings**
+
+#### 移除供應商
+
+點擊任何供應商卡片上的 **Remove** 按鈕即可刪除它。請儲存設定以套用變更。
+
+#### 重新排序供應商
+
+拖曳任何供應商卡片左側的握把圖示 (⣿) 即可重新排序。順序決定了備援的優先級：如果第一次請求失敗，系統會嘗試下一個供應商，直到成功或所有供應商都嘗試完畢。
+
+### 備援路由
+
+由於超時、速率限制或服務中斷，當對主要供應商的請求失敗時，連接器會自動嘗試列表中的下一個供應商。這會持續向下嘗試，直到某個供應商成功，或所有供應商都嘗試完畢。
+
+| 情況 | 行為 |
+|----------|-----------|
+| 主要供應商回應 | 請求正常服務 |
+| 主要供應商失敗 | 嘗試下一個供應商 |
+| 所有供應商失敗 | 返回錯誤給呼叫方 |
+
+備援機制對呼叫的外掛程式或主題是透明的——無論嘗試了多少個供應商，它們最終只會收到一個成功的回應或一個最終的錯誤。
+
+### 供應商配置參考
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | 用來顯示此供應商的標籤 |
+| Endpoint URL | Yes | 與 OpenAI 兼容 API 的基礎 URL |
+| API Key | Yes | 此供應商的驗證金鑰 |
+| Default Model | Yes | 當請求中未指定模型時使用的模型識別符 |
+
+## 疑難排解
+
+### 未列出任何供應商
+
+如果儲存後供應商列表為空，請確認以下幾點：
+
+- 您是否在新增供應商後點擊了 **Save Settings**
+- 您的瀏覽器是否阻止了設定頁面儲存（請檢查瀏覽器控制台是否有 JavaScript 錯誤）
+- 外掛程式是否已啟用，並且您是否位於網路管理員畫面
+
+### 所有供應商的請求都失敗了
+
+- 確認每個供應商的端點 URL 從您的伺服器是可達的（不只是從您的瀏覽器可達）。
+- 檢查每個 API 金鑰是否有效且未過期。
+- 在供應商的 dashboard 中查看其速率限制和配額狀態。
+- 啟用 WordPress debug logging (`WP_DEBUG_LOG`) 以捕獲連接器詳細的錯誤訊息。
+
+### 某個供應商沒有用於備援
+
+拖曳重新排序會改變備援順序。請確認您預期會接收到備援請求的供應商是否已正確定位在列表中，並且其端點 URL 和 API 金鑰是否正確。
+
+### 新的供應商卡片沒有自動展開
+
+自動展開需要您的瀏覽器啟用 JavaScript。如果卡片點擊後沒有展開，請檢查瀏覽器控制台是否有錯誤。即使自動展開沒有觸發，您仍然可以透過點擊卡片標題來存取卡片內容。
+
+## 更新日誌
+
+請參閱 [Changelog](./changelog) 查看完整的版本歷史。

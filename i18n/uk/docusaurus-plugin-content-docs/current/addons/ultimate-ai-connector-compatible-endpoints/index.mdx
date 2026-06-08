@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector для сумісних кінцевих точок
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints інтегрує API провайдерів ШІ, сумісні з OpenAI, з вашою мережею WordPress multisite. Налаштуйте кілька провайдерів ШІ — кожен зі своїм унікальним URL-адресою endpoint, API-ключем та моделю за замовчуванням — і маршрутизуйте запити з автоматичним відкатом (fallback), якщо один із провайдерів недоступний.
+
+## Key Features
+
+- **Multi-provider support**: Додайте кілька карток провайдерів ШІ, кожна з яких має свою унікальну URL-адресу endpoint, API-ключ та модель за замовчуванням.
+- **Drag-to-reorder**: Визначайте пріоритет провайдерів, перетягуючи їх за ручку на кожній картці; запити використовуються у порядку пріоритету.
+- **Automatic fallback routing**: Якщо основний провайдер недоступний, запити автоматично перенаправляються до наступного налаштованого провайдера.
+- **Per-provider configuration**: Кожен провайдер налаштовується незалежно, зі своїми обліковими даними та вибором моделі.
+- **Card-based settings UI**: Створено на основі стабільних компонентів Card WordPress 6.9+ (CardBody, CardHeader, CardDivider).
+- **Auto-expand on add**: Нові картки провайдерів автоматично розкриваються, щоб ви могли негайно заповнити деталі.
+- **Script cache busting**: Скрипти провайдерів кешуються при оновленні плагіна, щоб гарантувати завантаження останньої версії.
+
+## Requirements
+
+- WordPress 5.3 або вище
+- PHP 7.4 або вище
+- Плагін Ultimate Multisite (активний)
+- API endpoint, сумісний з OpenAI (самостійно розміщений або сторонній)
+
+## Installation
+
+1. Завантажте файли аддону до каталогу `/wp-content/plugins/`
+2. Активуйте плагін через меню 'Plugins' у WordPress
+3. Перейдіть до **Ultimate Multisite → AI Connector**, щоб налаштувати аддон
+
+## Configuration
+
+### Multi-Provider Setup
+
+Екран налаштування використовує макет на основі карток, де кожна картка представляє одного провайдера ШІ. Ви можете додати стільки провайдерів, скільки вам потрібно.
+
+#### Adding a Provider
+
+1. Перейдіть до **Ultimate Multisite → AI Connector** у мережевій адмінці.
+2. Натисніть **Add Provider**.
+3. З'являється і автоматично розкривається нова картка провайдера.
+4. Заповніть деталі провайдера:
+   - **Provider Name** — мітка для ідентифікації цього провайдера (наприклад, "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** — базовий URL API, сумісного з OpenAI (наприклад, `https://api.openai.com/v1`).
+   - **API Key** — ваш API-ключ для цього провайдера.
+   - **Default Model** — ідентифікатор моделі, який буде використовуватися за замовчуванням для цього провайдера (наприклад, `gpt-4o`, `mistral-small`).
+5. Натисніть **Save Settings**.
+
+#### Removing a Provider
+
+Натисніть кнопку **Remove** на будь-якій картці провайдера, щоб видалити її. Збережіть налаштування, щоб застосувати зміни.
+
+#### Reordering Providers
+
+Перетягніть іконку ручки (⣿) з лівого боку будь-якої картки провайдера, щоб змінити порядок. Порядок визначає пріоритет відкату: запити надсилаються до першого провайдера і відкатуються до наступних провайдерів, якщо запит не вдається.
+
+### Fallback Routing
+
+Якщо запит до основного провайдера не вдається — через перевищення часу, обмеження швидкості або збій служби — коннектор автоматично повторює спробу з наступним провайдером у списку. Це продовжується вниз по списку, доки провайдер не успішить або доки не будуть спробовані всі провайдери.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Механізм відкату є прозорим для викликаючого плагіна чи теми — вони отримують або успішну відповідь, або кінцеву помилку, незалежно від кількості спробованих провайдерів.
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## Troubleshooting
+
+### No providers are listed
+
+Якщо список провайдерів порожній після збереження, переконайтеся, що:
+
+- Ви натиснули **Save Settings** після додавання провайдерів.
+- Ваш браузер не заблокував збереження сторінки налаштувань (перевірте консоль браузера на наявність помилок JavaScript).
+- Плагін активний, і ви перебуваєте на екрані мережевої адмінці.
+
+### Requests are failing for all providers
+
+- Перевірте, чи доступний URL endpoint кожного провайдера з вашого сервера (а не лише з вашого браузера).
+- Переконайтеся, що кожен API-ключ дійсний і не закінчився термін дії.
+- Перегляньте статус ліміту та квоти провайдера в його панелі керування.
+- Увімкніть логування налагодження WordPress (`WP_DEBUG_LOG`), щоб захопити детальні повідомлення про помилки від коннектора.
+
+### A provider is not being used for fallback
+
+Зміна порядку за допомогою перетягування змінює порядок відкату. Підтвердіть, що провайдер, який, на вашу думку, повинен отримувати запити відкату, розташований правильно у списку, а його endpoint URL та API-ключ є коректними.
+
+### New provider card does not expand automatically
+
+Автоматичне розкриття вимагає, щоб у вашому браузері було увімкнено JavaScript. Якщо картка не розкривається при натисканні, перевірте консоль браузера на наявність помилок. Вміст картки завжди доступний натисканням на заголовок картки, навіть якщо автоматичне розкриття не спрацювало.
+
+## Changelog
+
+Дивіться [Changelog](./changelog) для повного історії версій.

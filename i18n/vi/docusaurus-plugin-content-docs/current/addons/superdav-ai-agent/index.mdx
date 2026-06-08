@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent là một trợ lý AI nâng cao cho WordPress, mở rộng khả năng của Gratis AI Agent bằng các kỹ năng nhận diện chủ đề (theme-aware skills), khả năng tìm kiếm internet được cải tiến, và các tính năng xây dựng trang web (site builder) được tối ưu hóa. Phiên bản 1.16.0 bổ sung tính năng tạo logo tùy chỉnh, kiểm tra độ tương phản bảng màu, tải ảnh trong buổi phỏng vấn khám phá, tạo menu dịch vụ lưu trú có cấu trúc, và hiển thị bản xem trước trên máy tính/di động trong Theme Builder.
+
+## Tính năng chính
+
+- **Kỹ năng nhận diện chủ đề (Theme-aware skills)** — tự động điều chỉnh hướng dẫn và khả năng dựa trên chủ đề WordPress và các plugin bạn đang sử dụng
+- **Nhiều nhà cung cấp tìm kiếm internet** — bạn có thể chọn giữa Brave Search và Tavily để có kết quả tìm kiếm phong phú hơn và khả năng nghiên cứu nâng cao
+- **Biểu mẫu liên hệ trong Site Builder** — tạo các biểu mẫu liên hệ hoạt động đầy đủ ngay từ giao diện chat bằng cách sử dụng plugin biểu mẫu bạn đã cài đặt
+- **Site Builder nâng cao** — cải thiện các kế hoạch xây dựng trang web đa giai đoạn với khả năng khám phá plugin và phục hồi lỗi tốt hơn
+- **Kỹ năng chủ đề tích hợp** — hướng dẫn chuyên biệt cho Block Themes, Classic Themes, Kadence Blocks và Kadence Theme
+- **Tích hợp WooCommerce cải tiến** — được tái cấu trúc để sử dụng các API gốc của WooCommerce, giúp độ tin cậy và khả năng tương thích tốt hơn
+- **Tự động phát hiện nhà cung cấp** — tự động phát hiện và làm mới các plugin và chủ đề khả dụng khi chúng được kích hoạt hoặc vô hiệu hóa
+- **Tạo logo tùy chỉnh** — tạo và nhúng logo SVG tùy chỉnh với khả năng tự động làm sạch (sanitisation) an toàn namespace
+- **Kiểm tra độ tương phản bảng màu** — kiểm tra các cặp màu để đảm bảo tuân thủ khả năng tiếp cận WCAG trước khi áp dụng cho chủ đề của bạn
+- **Khám phá bằng ảnh** — tải ảnh trong buổi phỏng vấn khám phá Theme Builder để định hướng thiết kế
+- **Menu dịch vụ lưu trú** — tạo các trang menu đồ ăn và thức uống có cấu trúc cho nhà hàng, quán cà phê và các doanh nghiệp dịch vụ lưu trú
+- **Xem trước trên máy tính và di động** — xem trước thiết kế của bạn trên cả thiết bị máy tính và di động trong quá trình chọn hướng thiết kế
+- **Thu thập dữ liệu trang web cấp 1 (Tier 1 site scraping)** — sd-ai-agent/site-scrape hiện có sẵn theo mặc định để phân tích các trang web đối thủ và nguồn cảm hứng
+
+## Yêu cầu
+
+- WordPress 6.0 trở lên
+- PHP 8.1 trở lên
+- WordPress Multisite (kích hoạt ở cấp mạng) hoặc cài đặt trang web đơn
+- Một plugin kết nối nhà cung cấp AI đang hoạt động (Anthropic, OpenAI, hoặc tương thích)
+- Gratis AI Agent v1.9.0 trở lên (Superdav AI Agent mở rộng Gratis AI Agent)
+
+## Cài đặt
+
+1. Tải các tệp plugin lên `/wp-content/plugins/superdav-ai-agent`
+2. Kích hoạt plugin thông qua màn hình **Plugins** trong WordPress
+3. Đảm bảo Gratis AI Agent cũng đã được kích hoạt
+4. Điều hướng đến **Gratis AI Agent → Settings** và cấu hình nhà cung cấp tìm kiếm internet của bạn (tùy chọn)
+
+## Bắt đầu nhanh
+
+Sau khi kích hoạt, Superdav AI Agent sẽ tự động nâng cấp cài đặt Gratis AI Agent của bạn với các kỹ năng nhận diện chủ đề và các khả năng bổ sung. Mở bảng điều khiển **Gratis AI Agent** trong thanh bên quản trị WordPress và bắt đầu sử dụng các tính năng mới.
+
+**Ví dụ về hướng dẫn:**
+
+```
+Thêm một biểu mẫu liên hệ vào trang Liên hệ.
+```
+
+```
+Tìm kiếm trên web các phương pháp thực hành bảo mật WordPress mới nhất.
+```
+
+```
+Tạo một phần hero bằng cách sử dụng các mẫu khối của chủ đề đang hoạt động.
+```
+
+## Kỹ năng nhận diện chủ đề (Theme-Aware Skills)
+
+Superdav AI Agent tự động phát hiện chủ đề và các plugin đang hoạt động của bạn, tải kỹ năng nhận diện chủ đề thích hợp vào ngữ cảnh của trợ lý. Các kỹ năng khả dụng bao gồm:
+
+| Kỹ năng | Áp dụng cho |
+|---|---|
+| **Block Themes** | Các chủ đề sử dụng kiến trúc dựa trên khối của WordPress (Full Site Editing) |
+| **Classic Themes** | Các chủ đề WordPress truyền thống sử dụng mẫu PHP và trình soạn thảo cổ điển |
+| **Kadence Blocks** | Các trang web có plugin Kadence Blocks đang hoạt động |
+| **Kadence Theme** | Các trang web sử dụng Kadence theme làm chủ đề đang hoạt động |
+
+Xem [Kỹ năng nhận diện chủ đề](../../user-guide/configuration/theme-aware-skills) để biết hướng dẫn chi tiết về từng kỹ năng.
+
+## Nhà cung cấp tìm kiếm internet
+
+Superdav AI Agent v1.10.0 bổ sung **Tavily** như một lựa chọn thay thế cho Brave Search đối với các truy vấn tìm kiếm internet. Cả hai nhà cung cấp đều cung cấp kết quả tìm kiếm thời gian thực và có thể được cấu hình trong **Gratis AI Agent → Settings → Advanced**.
+
+| Nhà cung cấp | Tính năng | Thiết lập |
+|---|---|---|
+| **Brave Search** | Kết quả tìm kiếm nhanh, tập trung vào quyền riêng tư | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Kết quả tìm kiếm phong phú hơn, khả năng nghiên cứu nâng cao | [Tavily API](https://tavily.com/) |
+
+Xem [Tìm kiếm Internet](../../user-guide/configuration/internet-search) để biết hướng dẫn cấu hình.
+
+## Biểu mẫu liên hệ trong Site Builder
+
+Trợ lý Site Builder hiện có thể tạo biểu mẫu liên hệ trực tiếp từ giao diện chat. Bạn chỉ cần yêu cầu Site Builder tạo một biểu mẫu liên hệ, và nó sẽ tự động phát hiện plugin biểu mẫu bạn đã cài đặt (Contact Form 7, WPForms, Fluent Forms, hoặc Gravity Forms) và tạo ra một biểu mẫu sẵn sàng sử dụng.
+
+Xem [Biểu mẫu liên hệ trong Site Builder](../../user-guide/administration/site-builder-contact-forms) để biết hướng dẫn chi tiết.
+
+## Tính năng Theme Builder
+
+Theme Builder trong Superdav AI Agent v1.16.0 bao gồm các khả năng mới mạnh mẽ:
+
+### Phỏng vấn khám phá với tải ảnh
+
+Buổi phỏng vấn khám phá Theme Builder hiện bao gồm bước tải ảnh, nơi bạn có thể cung cấp nguồn cảm hứng trực quan. Tải ảnh về thương hiệu, trang web đối thủ hoặc nguồn cảm hứng thiết kế của bạn để giúp Theme Builder hiểu được định hướng thiết kế của bạn.
+
+Xem [Phỏng vấn khám phá](./theme-builder/discovery-interview.md) để biết hướng dẫn chi tiết.
+
+### Định hướng thiết kế với bản xem trước máy tính và di động
+
+Xem lại thiết kế của bạn trên cả thiết bị máy tính và di động trước khi Theme Builder tạo ra chủ đề hoàn chỉnh của bạn. Xem bản xem trước thời gian thực tại nhiều điểm ngắt đáp ứng (responsive breakpoints).
+
+Xem [Định hướng thiết kế](./theme-builder/design-direction.md) để biết hướng dẫn chi tiết.
+
+### Menu dịch vụ lưu trú
+
+Theme Builder hiện có thể tạo các trang menu đồ ăn và thức uống có cấu trúc cho nhà hàng, quán cà phê, quán bar và các doanh nghiệp dịch vụ lưu trú khác. Menu bao gồm giá cả, mô tả, thông tin ăn kiêng và cảnh báo dị ứng.
+
+Xem [Menu dịch vụ lưu trú](./theme-builder/hospitality-menus.md) để biết hướng dẫn chi tiết.
+
+### Khả năng mới
+
+- **[Tạo SVG Logo](./abilities/generate-logo-svg.md)** — tạo logo SVG tùy chỉnh với khả năng tự động làm sạch
+- **[Kiểm tra độ tương phản bảng màu](./abilities/validate-palette-contrast.md)** — kiểm tra các cặp màu để tuân thủ WCAG
+- **[Tạo Menu](./abilities/create-menu.md)** — tạo menu điều hướng với các nhãn điều hướng riêng biệt
+
+Xem [Công cụ và Cấu hình](./theme-builder/tools.md) để biết thông tin về các công cụ khả dụng và công cụ thu thập dữ liệu trang web cấp 1.
+
+## Cấu hình
+
+Tất cả các cài đặt đều nằm trong **Gratis AI Agent → Settings** trong quản trị WordPress. Superdav AI Agent bổ sung các tùy chọn cấu hình sau:
+
+| Cài đặt | Mô tả |
+|---|---|
+| **Internet Search Provider** | Chọn giữa Brave Search và Tavily (tùy chọn) |
+| **Tavily API Key** | Khóa API cho tìm kiếm internet Tavily (nếu chọn Tavily) |
+
+## Cải tiến trong v1.16.0
+
+- **Bộ nhớ cache AI Client** — hiện được hỗ trợ bởi transients để duy trì dữ liệu giữa các yêu cầu, ngăn ngừa mất dữ liệu trong các tác vụ agent chạy dài
+- **Công cụ thu thập dữ liệu trang web cấp 1 (Tier 1 site-scrape tool)** — sd-ai-agent/site-scrape hiện có sẵn theo mặc định trong Theme Builder để phân tích các trang web đối thủ và nguồn cảm hứng
+- **Liên kết hành động hàng plugin** — đã được sửa và đổi tên để rõ ràng hơn
+
+## Cải tiến trong v1.10.0
+
+- **Tích hợp WooCommerce được tái cấu trúc** — hiện sử dụng các API gốc của WooCommerce, giúp độ tin cậy và khả năng tương thích tốt hơn
+- **Tự động làm mới danh sách nhà cung cấp** — tự động phát hiện khi các plugin được kích hoạt hoặc vô hiệu hóa và cập nhật danh sách nhà cung cấp khả dụng
+- **Site Builder nâng cao** — cải thiện các kế hoạch xây dựng trang web đa giai đoạn với khả năng phục hồi lỗi tốt hơn
+- **Kỹ năng nhận diện chủ đề** — bốn kỹ năng tích hợp mới tự động thích ứng với chủ đề đang hoạt động của bạn
+
+## Sửa lỗi trong v1.10.0
+
+- Sửa lỗi `navigate-to` gây ra vòng lặp tải lại vô hạn trên một số trang quản trị
+- Sửa lỗi `list-posts` không phân giải chính xác tên danh mục và thẻ thành slug
+- Sửa lỗi các lệnh WP-CLI thiếu bí danh namespace sau khi tái cấu trúc trước đó
+- Sửa lỗi tự động hóa sự kiện xử lý mượt mà các trang web chưa tạo bảng tự động hóa
+- Sửa lỗi `memory-save` sử dụng tiền tố namespace chính xác trong trình xây dựng hướng dẫn hệ thống
+- Sửa lỗi kết quả công cụ vô hướng được bọc đúng cách trước khi trả về AI
+- Sửa lỗi thống kê sử dụng xử lý chính xác định dạng khóa khả năng cũ khi nâng cấp từ các phiên bản cũ hơn
+
+## Hỗ trợ
+
+Để được hỗ trợ, vui lòng truy cập [ultimatemultisite.com](https://ultimatemultisite.com) hoặc mở một vấn đề trong kho lưu trữ plugin.
+
+## Nhật ký thay đổi (Changelog)
+
+Xem [Changelog](./changelog) để biết lịch sử phiên bản đầy đủ.

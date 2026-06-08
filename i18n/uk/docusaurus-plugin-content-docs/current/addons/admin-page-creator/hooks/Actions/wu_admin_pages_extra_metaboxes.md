@@ -1,0 +1,16 @@
+---
+id: wu_admin_pages_extra_metaboxes
+title: Дія - wu_admin_pages_extra_metaboxes
+sidebar_label: wu_admin_pages_extra_metaboxes
+_i18n_hash: cf2856dc65b72864b0a61dd1db526944
+---
+# Action: wu_admin_pages_extra_metaboxes
+
+Дозволяє розробникам плагінів додавати нові опції метабоксу =)
+
+### Починаючи з
+
+- 1.0.1
+### Джерело
+
+Визначено у [`views/admin-pages/edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/edit-admin-page.php#L541) на рядку 541

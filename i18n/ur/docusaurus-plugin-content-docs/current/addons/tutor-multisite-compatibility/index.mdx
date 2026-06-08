@@ -1,0 +1,116 @@
+---
+title: ٹیوٹر ملٹی سائٹس مطابقت
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+ایک WordPress پلگ ان جو Tutor LMS کے لیے multisite ماحول میں مطابقت (compatibility) کی درستگی شامل کرتا ہے۔
+
+## Description
+
+یہ پلگ ان WordPress multisite نیٹ ورکس پر Tutor LMS چلانے کے لیے ضروری مطابقت کی درستگی فراہم کرتا ہے۔ یہ صارف کی رجسٹریشن (user enrollment)، انسٹرکٹر کے انتظام، کورس کی حدود، اور دیگر multisite سے متعلقہ خصوصیات کو سنبھالتا ہے۔
+
+## Features
+
+- **Database Table Management**: خودکار طور پر وہ گمشدہ Tutor LMS ٹیبلز بنا دیتا جو multisite foreign key constraints کی وجہ سے بننے میں ناکام ہو جاتے ہیں
+- **Multisite User Enrollment**: نیٹ ورک کی مختلف سائٹس پر صارف کی رجسٹریشن کو سنبھالنے کے لیے کسٹم AJAX ہینڈلرز
+- **Instructor Role Management**: multisite ماحول میں انسٹرکٹر کے کردار (role) کی خودکار تفویض اور انتظام
+- **Course Limitations**: سائٹ کے پلانز کی بنیاد پر کورس اور فنل بنانے کی حدود کو منظم کرنے کے لیے Ultimate Multisite کے ساتھ انٹیگریشن
+- **Custom Admin Views**: multisite سے آگاہ انسٹرکٹر کی فہرست اور انتظام کا انٹرفیس
+- **Admin Tools**: نیٹ ورک اور سائٹ ایڈمنسٹریٹرز کے لیے ڈیٹا بیس مینجمنٹ کا انٹرفیس
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (خودکار طور پر `Requires Plugins` ہیڈر کے ذریعے نافذ کیا جاتا ہے)
+- WordPress Multisite تنصیب
+- Ultimate Multisite plugin (کورس کی حدود کی خصوصیت کے لیے)
+
+## Installation
+
+1. پلگ ان فائلوں کو `/wp-content/plugins/tutor-multisite-compatibility/` پر اپ لوڈ کریں۔
+2. یقینی بنائیں کہ Tutor LMS انسٹال اور ایکٹیویٹ ہے۔
+3. WordPress میں 'Plugins' مینیو کے ذریعے پلگ ان کو ایکٹیویٹ کریں۔
+4. پلگ ان خودکار طور پر Tutor LMS کے ساتھ انٹیگریٹ ہو جائے گا۔
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+اس پلگ ان میں وہ خصوصیات شامل ہیں جو پہلے `wp-content/mu-plugins/daves.php` میں موجود تھیں:
+
+- کورس کی اسٹیٹس تبدیل کرنے کی حدود
+- کورس بنانے کی حدود
+- CartFlows انٹیگریشن اور حدود
+- Tutor انسٹرکٹر کردار کا انتظام
+- Multisite صارف کی رجسٹریشن کو سنبھالنا
+- کورس پروڈکٹ ID کا مظاہرہ
+
+## Database Management
+
+### The Problem
+
+WordPress multisite ماحول میں، Tutor LMS ٹیبلز کی تخلیق اس وقت ناکام ہو جاتی ہے جب ان ٹیبلز میں یوزرز ٹیبل سے foreign key constraints ہوں۔ ایسا اس لیے ہوتا ہے:
+
+- سائٹ کے مخصوص ٹیبلز `wp_2_tutor_carts` جیسے پری فکس استعمال کرتے ہیں
+- foreign keys `wp_2_users` کو حوالہ دیتے ہیں (جو موجود نہیں ہوتا)
+- اصل یوزرز ٹیبل `wp_users` ہے (جو پورے نیٹ ورک میں مشترک ہے)
+
+### The Solution
+
+یہ پلگ ان خودکار طور پر:
+
+1. **گمشدہ ٹیبلز کا پتہ لگاتا ہے**: ان ٹیبلز کی جانچ کرتا ہے جو foreign key constraints کی وجہ سے بننے میں ناکام ہو گئے تھے۔
+2. **صحیح حوالہ جات کے ساتھ ٹیبلز بناتا ہے**: مناسب یوزر ٹیبل کا نام (`multisite میں wp_users`) استعمال کرتا ہے۔
+3. **متعدد منظرناموں کو سنبھالتا ہے**:
+   - پلگ ان کی ایکٹیویشن/ری ایکٹیویشن
+   - نیٹ ورک میں نئی سائٹ کی تخلیق
+   - ایڈمن انٹرفیس کے ذریعے دستی ٹیبل کی جانچ
+
+### Affected Tables
+
+- `tutor_coupon_usages` - یوزرز ٹیبل سے foreign key رکھتا ہے
+- `tutor_carts` - یوزرز ٹیبل سے foreign key رکھتا ہے
+- `tutor_notification_preferences` - یوزرز ٹیبل سے foreign key والا TutorPro ٹیبل
+
+### Admin Interface
+
+ڈیٹا بیس مینجمنٹ ٹولز تک یہیں رسائی حاصل کریں:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+یہ انٹرفیس آپ کو یہ کرنے کی اجازت دیتا ہے:
+- تمام سائٹس پر گمشدہ ٹیبلز دیکھنا
+- دستی طور پر ٹیبل کی تخلیق کو ٹرگر کرنا
+- ڈیٹا بیس کی ترتیب (configuration) کی جانچ کرنا
+- تفصیلی اسٹیٹس کی معلومات دیکھنا
+
+## Support
+
+یہ پلگ ان خاص طور پر KursoPro پلیٹ فارم کے لیے ڈیزائن کیا گیا ہے۔ تکنیکی مدد کے لیے، ڈویلپمنٹ ٹیم سے رابطہ کریں۔

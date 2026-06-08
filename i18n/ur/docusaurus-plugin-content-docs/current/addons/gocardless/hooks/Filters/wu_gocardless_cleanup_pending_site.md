@@ -1,0 +1,26 @@
+---
+id: wu_gocardless_cleanup_pending_site
+title: Filter - wu_gocardless_cleanup_pending_site
+sidebar_label: wu_gocardless_cleanup_pending_site
+_i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
+---
+# Filter: wu_gocardless_cleanup_pending_site
+
+یہ اس وقت فعال ہوتا ہے جب GoCardless کی منسوخ شدہ رکنیت کے لیے کسی غیر ضروری (orphaned) پینڈنگ سائٹ کو ڈیلیٹ کیا جا رہا ہو۔
+
+ڈیلیٹ ہونے سے روکنے کے لیے اس فلٹر سے `false` ریٹرن کریں۔
+
+## پیرامیٹرز
+
+| Name | Type | وضاحت |
+|------|------|-------------|
+| $blog_id | `int` | پینڈنگ سائٹ کی WordPress بلاگ ID۔ |
+| $membership | `\WP_Ultimo\Models\Membership` | منسوخ شدہ رکنیت۔ |
+| $old_status | `string` | منسوخی سے پہلے کی حیثیت (status)۔ |
+
+### سے
+
+- 2.0.0
+### ماخذ
+
+[`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) میں لائن 1086 پر بیان کیا گیا ہے۔

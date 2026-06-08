@@ -1,0 +1,101 @@
+---
+title: 網站匯出器
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# 網站匯出器
+
+## 文件說明
+
+我們了解，如果您的客戶決定遷移網站，您需要能夠將網路中的子站點移動到單一網站安裝，反之亦然。Site Exporter 和 Importer 外掛讓這項任務變得更容易。這個工具使用 zip 檔案來匯出和匯入網站，這些 zip 檔案也可以用作備份。
+
+## 功能
+
+* 匯出和匯入網站
+
+* 易於使用的介面
+
+* 建立網站備份
+
+## 文件說明
+**如何匯出和匯入網站**
+
+## 安裝
+
+1. 將 **ultimate-multisite-site-exporter** 上傳到 **/wp-content/plugins/** 目錄
+2. 透過 WordPress 的 **Plugins** 選單啟用外掛
+3. 依照步驟引導式嚮導（Wizard）設定外掛
+
+## 使用指南
+
+使用 Ultimate Multisite，您可以將網站從您的網路匯出，或將網站匯入到您的多站點或單站點安裝。
+
+要開始流程，請前往我們的外掛頁面，安裝 Ultimate Multisite: Site Exporter & Importer 外掛。![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+前往您的 Plugins 頁面，點擊 **Network Activate** 來啟用您剛安裝的外掛。<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** 選項可以在 Ultimate Multisite 選單的左側找到。
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## 如何匯出網站
+
+若要從您的網路匯出網站，請前往 Ultimate Multisite 選單的 **Export & Import**，在 **Export Sites** 標籤頁中，點擊 **Generate new Site Export**。
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+搜尋您想要匯出的網站，並選擇您希望包含在匯出檔案中的項目。您可以包含主題、外掛和上傳檔案。如果您的網站太大，您可以選擇在背景執行匯出流程。<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+點擊 **Export Site** 按鈕。您匯出的網站將會出現在 **Existing Exports** 清單中。點擊 **Download ZIP** 按鈕即可下載檔案。匯出的 ZIP 檔案包含自啟動的 `index.php` 和 `readme.txt`，因此無需先安裝單獨的匯入外掛，即可在新的主機上安裝。<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## 如何匯出整個網路
+
+若要將所有子站點一起匯出，請前往 Ultimate Multisite 選單的 **Export & Import**，並在匯出畫面使用 **Network Export** 選項。生成的壓縮檔包含所有子站點，適用於主機遷移、預演環境重建或網路層級備份。
+
+網路匯出檔案可能會很大。建議在流量較低時執行，並確認伺服器有足夠的儲存空間來容納壓縮檔以及任何包含的上傳檔案、外掛和主題。
+
+## 如何匯入網站
+
+若要匯入網站，請前往 **Import a Site** 標籤頁，上傳您想要匯入的 .zip 檔案。您可以將 URL 更改為新的，或者保持舊的 URL，只需將欄位留空即可。此外，您還可以勾選刪除匯入後 .zip 檔案的選項。然後點擊 **Begin Import**。
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+此過程可能需要一些時間。您會在匯入器下方的清單中看到一個待處理的匯入項目。
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+您也可以點擊 **Cancel Import** 來停止流程。
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+流程完成後，您的網站就會出現在您的網路中了。
+
+## 如何在單站點安裝匯入網站
+
+若要將網站匯入到您的單站點安裝，請先在您的網站上安裝並啟用匯入器。您可以在匯出器標籤頁找到下載它的連結。
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+您可以在 **Tools** 選單的左側，子項目 **Export & Import** 中找到匯入器。
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+上傳您想要匯入的 .zip 檔案。您可以將 URL 更改為新的，或者保持舊的 URL，只需將欄位留空即可。此外，您還可以勾選刪除匯入後 .zip 檔案的選項。然後點擊 **Begin Import**。
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+此過程可能需要一些時間。您會在匯入器下方的清單中看到一個待處理的匯入項目。
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+您也可以點擊 **Cancel Import** 來停止流程。
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+流程完成後，您的網站將會被您剛才匯入的網站取代。

@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector cho các Endpoint tương thích
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Bộ Kết Nối AI Ultimate cho các Endpoint Tương Thích
+
+Bộ kết nối AI Ultimate cho các Endpoint Tương thích sẽ tích hợp các API của các nhà cung cấp AI tương thích với OpenAI vào mạng multisite WordPress của bạn. Bạn có thể cấu hình nhiều nhà cung cấp AI — mỗi nhà cung cấp có URL endpoint, khóa API và mô hình mặc định riêng — và định tuyến các yêu cầu với cơ chế tự động chuyển đổi dự phòng khi một nhà cung cấp không khả dụng.
+
+## Tính năng chính
+
+- **Hỗ trợ đa nhà cung cấp**: Thêm nhiều thẻ nhà cung cấp AI, mỗi thẻ có URL endpoint, khóa API và mô hình mặc định riêng.
+- **Sắp xếp lại bằng cách kéo**: Sắp xếp thứ tự ưu tiên của các nhà cung cấp bằng cách sử dụng tay cầm (grip handle) trên mỗi thẻ; các yêu cầu sẽ được gửi theo thứ tự này.
+- **Định tuyến dự phòng tự động**: Nếu nhà cung cấp chính không khả dụng, các yêu cầu sẽ tự động chuyển sang nhà cung cấp đã được cấu hình tiếp theo.
+- **Cấu hình theo từng nhà cung cấp**: Mỗi nhà cung cấp được cấu hình độc lập với thông tin xác thực và lựa chọn mô hình riêng.
+- **Giao diện cài đặt dựa trên thẻ (Card-based settings UI)**: Được xây dựng trên các thành phần Card ổn định của WordPress 6.9+ (CardBody, CardHeader, CardDivider).
+- **Tự động mở rộng khi thêm**: Các thẻ nhà cung cấp mới sẽ tự động mở rộng để bạn có thể điền chi tiết ngay lập tức.
+- **Khắc phục bộ nhớ cache script**: Các script của nhà cung cấp sẽ được loại bỏ cache khi plugin được cập nhật để đảm bảo phiên bản mới nhất được tải.
+
+## Yêu cầu
+
+- WordPress 5.3 trở lên
+- PHP 7.4 trở lên
+- Plugin Ultimate Multisite (đang kích hoạt)
+- Một endpoint API tương thích OpenAI (tự lưu trữ hoặc bên thứ ba)
+
+## Cài đặt
+
+1. Tải các tệp addon lên thư mục `/wp-content/plugins/` của bạn
+2. Kích hoạt plugin thông qua menu 'Plugins' trong WordPress
+3. Truy cập **Ultimate Multisite → AI Connector** để cấu hình addon
+
+## Cấu hình
+
+### Thiết lập Đa Nhà Cung Cấp
+
+Màn hình cấu hình sử dụng bố cục dựa trên thẻ, trong đó mỗi thẻ đại diện cho một nhà cung cấp AI. Bạn có thể thêm bao nhiêu nhà cung cấp tùy thích.
+
+#### Thêm Nhà Cung Cấp
+
+1. Truy cập **Ultimate Multisite → AI Connector** trong khu vực quản trị mạng (network admin).
+2. Nhấp vào **Add Provider** (Thêm Nhà Cung Cấp).
+3. Một thẻ nhà cung cấp mới sẽ xuất hiện và tự động mở rộng.
+4. Điền các chi tiết của nhà cung cấp:
+   - **Provider Name** (Tên Nhà Cung Cấp) — nhãn để nhận dạng nhà cung cấp này (ví dụ: "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** (URL Endpoint) — URL cơ sở của API tương thích OpenAI (ví dụ: `https://api.openai.com/v1`).
+   - **API Key** (Khóa API) — khóa API của bạn cho nhà cung cấp này.
+   - **Default Model** (Mô Hình Mặc Định) — định danh mô hình được sử dụng mặc định cho nhà cung cấp này (ví dụ: `gpt-4o`, `mistral-small`).
+5. Nhấp vào **Save Settings** (Lưu Cài Đặt).
+
+#### Xóa Nhà Cung Cấp
+
+Nhấp vào nút **Remove** (Xóa) trên bất kỳ thẻ nhà cung cấp nào để xóa nó. Lưu cài đặt để áp dụng thay đổi.
+
+#### Sắp xếp lại Nhà Cung Cấp
+
+Kéo biểu tượng tay cầm (⣿) ở bên trái bất kỳ thẻ nhà cung cấp nào để sắp xếp lại thứ tự. Thứ tự này quyết định mức độ ưu tiên dự phòng: các yêu cầu sẽ được gửi đến nhà cung cấp đầu tiên và sẽ chuyển sang các nhà cung cấp tiếp theo nếu yêu cầu thất bại.
+
+### Định Tuyến Dự Phòng (Fallback Routing)
+
+Khi một yêu cầu gửi đến nhà cung cấp chính thất bại — do hết thời gian chờ (timeout), giới hạn tốc độ (rate limit), hoặc gián đoạn dịch vụ — bộ kết nối sẽ tự động thử lại với nhà cung cấp tiếp theo trong danh sách. Quá trình này tiếp tục xuống danh sách cho đến khi một nhà cung cấp thành công hoặc tất cả các nhà cung cấp đã được thử.
+
+| Tình huống | Hành vi |
+|----------|-----------|
+| Nhà cung cấp chính phản hồi | Yêu cầu được xử lý bình thường |
+| Nhà cung cấp chính thất bại | Yêu cầu được thử lại với nhà cung cấp tiếp theo |
+| Tất cả nhà cung cấp thất bại | Lỗi được trả về cho bên gọi |
+
+Cơ chế dự phòng này hoàn toàn minh bạch đối với plugin hoặc theme gọi yêu cầu — chúng sẽ nhận được phản hồi thành công hoặc lỗi cuối cùng, bất kể đã thử bao nhiêu nhà cung cấp.
+
+### Tham khảo Cấu hình Nhà Cung Cấp
+
+| Trường | Bắt buộc | Mô tả |
+|-------|----------|-------------|
+| Provider Name | Có | Nhãn hiển thị cho nhà cung cấp này |
+| Endpoint URL | Có | URL cơ sở của API tương thích OpenAI |
+| API Key | Có | Khóa xác thực cho nhà cung cấp này |
+| Default Model | Có | Định danh mô hình được sử dụng khi không chỉ định mô hình trong yêu cầu |
+
+## Khắc phục sự cố
+
+### Không thấy nhà cung cấp nào được liệt kê
+
+Nếu danh sách nhà cung cấp trống sau khi lưu, hãy xác nhận rằng:
+
+- Bạn đã nhấp vào **Save Settings** (Lưu Cài Đặt) sau khi thêm các nhà cung cấp.
+- Trình duyệt của bạn không chặn việc lưu trang cài đặt (kiểm tra bảng điều khiển trình duyệt để tìm lỗi JavaScript).
+- Plugin đang hoạt động và bạn đang ở màn hình quản trị mạng.
+
+### Các yêu cầu bị lỗi cho tất cả các nhà cung cấp
+
+- Xác minh rằng URL endpoint của mỗi nhà cung cấp có thể truy cập được từ máy chủ của bạn (không chỉ từ trình duyệt của bạn).
+- Kiểm tra xem mỗi khóa API có hợp lệ và chưa hết hạn hay không.
+- Xem xét trạng thái giới hạn tốc độ và hạn mức của nhà cung cấp trong bảng điều khiển của họ.
+- Bật ghi nhật ký debug của WordPress (`WP_DEBUG_LOG`) để ghi lại các thông báo lỗi chi tiết từ bộ kết nối.
+
+### Một nhà cung cấp không được sử dụng cho dự phòng
+
+Sắp xếp lại bằng cách kéo sẽ thay đổi thứ tự dự phòng. Xác nhận rằng nhà cung cấp bạn mong đợi nhận yêu cầu dự phòng được đặt đúng vị trí trong danh sách và URL endpoint cùng khóa API của nó là chính xác.
+
+### Thẻ nhà cung cấp mới không tự động mở rộng
+
+Tính năng tự động mở rộng yêu cầu phải bật JavaScript trong trình duyệt của bạn. Nếu thẻ không mở rộng khi nhấp, hãy kiểm tra bảng điều khiển trình duyệt để tìm lỗi. Nội dung thẻ luôn có thể truy cập được bằng cách nhấp vào tiêu đề thẻ ngay cả khi tính năng tự động mở rộng không kích hoạt.
+
+## Nhật ký thay đổi (Changelog)
+
+Xem [Changelog](./changelog) để biết lịch sử phiên bản đầy đủ.

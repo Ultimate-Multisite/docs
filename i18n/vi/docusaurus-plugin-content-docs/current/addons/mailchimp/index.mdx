@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Ultimate Multisite: Tích hợp Mailchimp
+
+Bạn có thể kết nối mạng Ultimate Multisite của mình với Mailchimp. Bạn có thể liên kết các gói dịch vụ cụ thể với Danh sách Mailchimp và tự động thêm người đăng ký vào các danh sách đó khi họ đăng ký tài khoản.
+
+## Cài đặt
+
+1. Tải 'ultimate-multisite-mailchimp' lên thư mục '/wp-content/plugins/'
+2. Kích hoạt plugin này thông qua menu 'Plugins' trong Bảng quản trị Mạng WordPress (WordPress Network Admin)
+
+## Hướng dẫn sử dụng
+
+Việc đồng bộ email của người đăng ký với các danh sách MailChimp của bạn rất dễ dàng với Add-on Tích hợp MailChimp Ultimate Multisite của chúng tôi. Hướng dẫn này sẽ giúp bạn thiết lập mọi thứ một cách dễ dàng!
+
+## Lấy API key
+
+Trước khi đi sâu vào các cài đặt khác nhau, chúng ta cần một API key của MailChimp. Điều này cho phép Ultimate Multisite giao tiếp với API của MailChimp để lấy các danh sách, nhóm và thêm địa chỉ email vào các danh sách và nhóm đó khi người dùng đăng ký.
+
+Vui lòng làm theo hướng dẫn này để lấy API key MailChimp của riêng bạn: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Vui lòng thêm API key MailChimp của bạn tại_ _**Cài đặt Ultimate Multisite - > Cài đặt Add-on -> MailChimp**_
+
+## Chế độ tích hợp (Integration Mode)
+
+Add-on Tích hợp MailChimp cung cấp hai “chế độ tích hợp”, nghĩa là có hai cách khác nhau để bạn sử dụng add-on này nhằm đồng bộ hóa địa chỉ email.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Hai chế độ tích hợp để bạn có sự linh hoạt tối đa!_
+
+### Chế độ 1: Nhiều Danh sách (Multiple Lists)
+
+Chế độ mặc định sử dụng **Nhiều Danh sách (Multiple Lists)**. Chế độ này cho phép bạn chọn nhiều danh sách MailChimp cho mỗi gói dịch vụ. Đây là lựa chọn tốt nhất nếu bạn muốn phân loại người dùng của mình vào các danh sách khác nhau.
+
+Ví dụ, giả sử bạn có 3 danh sách khác nhau trên tài khoản Mailchimp của mình: **Bản tin (Newsletter)**, **Gói A (Plan A)** và **Gói B (Plan B)**. Bạn muốn tất cả người dùng, bất kể họ thuộc gói nào, cũng được đưa vào danh sách Bản tin, để họ không bỏ lỡ các cập nhật của bạn.
+
+Để làm được điều đó, bạn có thể sử dụng chế độ Nhiều Danh sách để thêm cả hai danh sách **Bản tin** và **Gói A** vào Cài đặt MailChimp của Gói A, và **Bản tin** và **Gói B** vào Cài đặt MailChimp của Gói B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Chọn các danh sách mặc định cho tài khoản mới và tài khoản đã hủy_
+
+### Chế độ 2: Một Danh sách + Nhiều Nhóm (Single List + Multiple Groups)
+
+Mailchimp cho phép bạn phân loại danh sách của mình thành các nhóm người dùng nhỏ hơn gọi là **Nhóm (Groups)**. Điều này giúp bạn kiểm soát tốt hơn vì bạn có thể gửi chiến dịch đến một nhóm người đăng ký cụ thể mà không cần phải tạo nhiều bản sao của cùng một chiến dịch trên Mailchimp (điều này sẽ gây khó khăn khi bạn muốn phân tích các chỉ số của chiến dịch đó sau này).
+
+Ví dụ, bạn có thể có một danh sách duy nhất tên là **Người đăng ký Mạng của tôi (My Network Subscribers)**, và bên trong danh sách đó có các nhóm dành cho **Gói A** và **Gói B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Chọn các danh sách và nhóm mặc định, nếu bạn sử dụng chế độ tích hợp “một danh sách + nhiều nhóm”_
+
+## Danh sách và Nhóm mặc định (Default Lists and Groups)
+
+Sau khi bạn chọn chế độ tích hợp nào phù hợp nhất với trường hợp sử dụng cụ thể của mình, đã đến lúc chọn các danh sách mặc định (và nhóm, tùy thuộc vào chế độ). Danh sách mặc định sẽ được sử dụng khi một gói dịch vụ cụ thể không chọn Danh sách nào.
+
+Bạn cũng có thể chọn danh sách mặc định cho các tài khoản đã hủy. Bất cứ khi nào người dùng chấm dứt đăng ký và xóa tài khoản khỏi mạng của bạn, địa chỉ email của họ sẽ được chuyển vào danh sách được thiết lập cho tài khoản đã hủy.
+
+## Bật Đăng ký kép (Double Subscription)
+
+Trên cùng trang cài đặt, bạn sẽ có thể bật **Đăng ký kép (Double Subscription)**. Tùy chọn này sẽ thêm người dùng vào cả danh sách mặc định đã chọn VÀ danh sách được chọn cho gói dịch vụ của người dùng đó. Nếu tùy chọn này không được bật, người dùng sẽ chỉ được thêm vào danh sách được chọn cho gói dịch vụ của họ. Nếu không có danh sách nào được thiết lập cho gói đó, người dùng sẽ được thêm vào danh sách mặc định đã chọn.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Người dùng của bạn có thể được đăng ký vào cả danh sách mặc định và danh sách của gói dịch vụ khi đăng ký_
+
+## Chọn Danh sách và Nhóm cho từng Gói dịch vụ
+
+Truy cập **Plans** (Các gói dịch vụ) và chọn gói bạn muốn chỉnh sửa. Lưu ý rằng trong hộp meta **Advanced Options**, sẽ có một tab mới tên là MailChimp.
+
+Trên tab đó, bạn sẽ có thể chọn nhiều danh sách hoặc một danh sách và nhiều nhóm (tùy thuộc vào chế độ tích hợp) cho gói dịch vụ đó.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Chọn các Danh sách và Nhóm bạn muốn sử dụng cho từng gói dịch vụ của mình_
+
+Khi một người dùng mới đăng ký gói dịch vụ đó, địa chỉ email của họ sẽ được thêm vào các danh sách và nhóm đã chọn!

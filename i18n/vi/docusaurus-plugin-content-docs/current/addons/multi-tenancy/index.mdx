@@ -1,0 +1,124 @@
+---
+title: Đa người thuê
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Đa người thuê (Multi-Tenancy)
+
+Phân tán các subsites (trang con) trên nhiều máy chủ và cơ sở dữ liệu để tăng hiệu suất và bảo mật.
+
+## Yêu cầu
+
+- WordPress 5.3 trở lên
+- PHP 7.4 trở lên
+- Plugin Multisite Ultimate (đang kích hoạt)
+
+## Cài đặt
+
+1. Tải các tệp addon lên thư mục `/wp-content/plugins/`
+2. Kích hoạt plugin thông qua menu 'Plugins' trong WordPress
+3. Cấu hình cài đặt addon trong khu vực quản trị mạng (network admin)
+
+## Phát triển
+
+### Thiết lập
+
+```bash
+# Cài đặt dependencies
+composer install
+npm install
+
+# Chạy tests
+npm run test
+
+# Chạy kiểm tra tiêu chuẩn mã hóa
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Sửa các vấn đề về phong cách mã
+vendor/bin/phpcbf
+
+# Build cho môi trường sản xuất
+npm run build
+```
+
+### Cấu trúc dự án
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Các lớp và tệp PHP
+│   ├── class-multisite-ultimate-updater.php  # Xử lý cập nhật
+│   └── class-multi_tenancy-main.php             # Chức năng chính
+├── tests/                        # Các bài kiểm thử đơn vị (Unit tests)
+│   ├── bootstrap.php            # Khởi tạo kiểm thử
+│   ├── class-*-base.php         # Lớp kiểm thử cơ sở
+│   └── class-*-test.php         # Các trường hợp kiểm thử
+├── views/                       # Các tệp template
+├── assets/                      # Tài sản tĩnh
+│   ├── css/                     # Các bảng kiểu (Stylesheets)
+│   ├── js/                      # Các tệp JavaScript
+│   └── images/                  # Hình ảnh
+├── lang/                        # Các tệp ngôn ngữ
+├── composer.json                # Dependencies PHP
+├── package.json                 # Dependencies Node.js
+├── phpunit.xml.dist             # Cấu hình PHPUnit
+├── .phpcs.xml.dist              # Cấu hình tiêu chuẩn mã hóa
+└── rector.php                   # Quy tắc hiện đại hóa mã
+```
+
+### Kiểm thử (Testing)
+
+Addon này bao gồm một bộ khung kiểm thử toàn diện:
+
+- **Unit Tests**: Các bài kiểm thử dựa trên PHPUnit cùng với bộ kiểm thử của WordPress
+- **Base Test Class**: Cung cấp các phương thức hỗ trợ cho các kịch bản kiểm thử chung
+- **Test Coverage**: Được cấu hình để theo dõi độ bao phủ mã (code coverage)
+- **Multisite Testing**: Các bài kiểm thử chạy trong môi trường multisite
+
+### Tiêu chuẩn mã hóa (Code Standards)
+
+- **WordPress Coding Standards**: Được thực thi bằng PHPCS
+- **Tương thích PHP 7.4+**: Hỗ trợ các tính năng PHP hiện đại
+- **Static Analysis**: Tích hợp PHPStan để kiểm tra kiểu dữ liệu (type checking)
+- **Code Modernization**: Các quy tắc Rector để nâng cấp PHP
+
+### Hệ thống Build (Build System)
+
+- **Asset Processing**: Thu nhỏ (Minification) các tệp CSS/JS
+- **Translation**: Tạo tệp POT
+- **Packaging**: Tạo kho lưu trữ (archive) để phân phối
+- **Development Mode**: Tài sản chưa thu nhỏ (unminified) để gỡ lỗi
+
+## Cấu hình (Configuration)
+
+Addon hỗ trợ nhiều tùy chọn cấu hình khác nhau, có thể truy cập thông qua giao diện quản trị mạng (network admin).
+
+## Hooks và Filters (Móc nối và Bộ lọc)
+
+### Actions (Hành động)
+
+- `ultimate-multisite-addon-template_init` - Được kích hoạt sau khi khởi tạo addon
+- `ultimate-multisite-addon-template_loaded` - Được kích hoạt sau khi tất cả các tệp addon được tải
+
+### Filters (Bộ lọc)
+
+- `ultimate-multisite-addon-template_settings` - Sửa đổi cài đặt addon
+- `ultimate-multisite-addon-template_enabled` - Ghi đè trạng thái bật/tắt của addon
+
+## Giấy phép (License)
+
+Addon này được cấp phép theo GPL v3 trở lên.
+
+## Hỗ trợ (Support)
+
+Để được hỗ trợ và xem tài liệu, hãy truy cập [MultisiteUltimate.com](https://multisiteultimate.com)
+## Nhật ký thay đổi (Changelog)
+
+- Phiên bản 1.0.1 (2025-09-28): đổi tiền tố thành ultimate-multisite; cập nhật text domain; tăng phiên bản.
+
+
+- Phiên bản (2025-09-28): đổi tiền tố thành ultimate-multisite; cập nhật text domain; tăng phiên bản.

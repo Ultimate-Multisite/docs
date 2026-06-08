@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent 是一款進階的 WordPress AI 助理，它在 Gratis AI Agent 的基礎上擴充了主題感知能力、增強了網路搜尋功能，並改善了網站建立器功能。版本 1.16.0 新增了自訂 Logo 生成、色盤對比度驗證、探索訪談中的照片上傳、結構化餐飲菜單生成，以及在主題建立器中的桌面/行動裝置預覽渲染功能。
+
+## 主要功能
+
+- **主題感知能力** — 根據您目前使用的 WordPress 主題和已安裝的外掛，自動調整指導和能力範圍
+- **多重網路搜尋提供者** — 可在 Brave Search 和 Tavily 之間選擇，以獲得更豐富的搜尋結果和進階研究能力
+- **網站建立器聯絡表單** — 您可以直接在聊天介面中使用已安裝的表單外掛，建立功能完整的聯絡表單
+- **增強的網站建立器** — 改善了多階段的網站建置規劃，具備更好的外掛發現和錯誤恢復機制
+- **內建主題能力** — 為區塊主題 (Block Themes)、經典主題 (Classic Themes)、Kadence Blocks 和 Kadence Theme 提供專業指導
+- **增強的 WooCommerce 整合** — 重構以使用原生的 WooCommerce API，提高可靠性和相容性
+- **自動提供者偵測** — 當外掛或主題被啟用或停用時，自動偵測並刷新可用的外掛和主題
+- **自訂 Logo 生成** — 生成並嵌入自訂 SVG Logo，並自動進行命名空間安全的清理
+- **色盤對比度驗證** — 在將顏色應用到主題之前，檢查顏色組合是否符合 WCAG 無障礙標準
+- **照片增強的探索** — 在主題建立器探索訪談期間上傳照片，以影響設計方向
+- **餐飲服務菜單** — 為餐廳、咖啡館和餐飲服務企業生成結構化的餐飲食品和飲料菜單頁面
+- **桌面和行動裝置預覽** — 在選擇設計方向時，可以在桌面和行動裝置上預覽您的設計
+- **Tier 1 網站爬取** — sd-ai-agent/site-scrape 預設可用，用於分析競爭對手和靈感網站
+
+## 要求
+
+- WordPress 6.0 或更高版本
+- PHP 8.1 或更高版本
+- WordPress Multisite（網路啟用）或單站點安裝
+- 一個活躍的 AI 提供者連接外掛（Anthropic、OpenAI 或相容版本）
+- Gratis AI Agent v1.9.0 或更高版本（Superdav AI Agent 擴充 Gratis AI Agent）
+
+## 安裝
+
+1. 將外掛檔案上傳到 `/wp-content/plugins/superdav-ai-agent`
+2. 透過 WordPress 的 **外掛** 畫面啟用外掛
+3. 確保 Gratis AI Agent 也已啟用
+4. 導航至 **Gratis AI Agent → 設定**，並配置您的網路搜尋提供者（可選）
+
+## 快速上手
+
+啟用後，Superdav AI Agent 會自動使用主題感知能力和額外的功能，增強您的 Gratis AI Agent 安裝。請開啟 WordPress 管理側邊欄的 **Gratis AI Agent** 面板，開始使用新功能。
+
+**範例指令：**
+
+```
+在聯絡頁面新增一個聯絡表單。
+```
+
+```
+搜尋網路最新的 WordPress 安全最佳實踐。
+```
+
+```
+使用目前主題的區塊模式建立一個英雄區塊。
+```
+
+## 主題感知能力
+
+Superdav AI Agent 會自動偵測您目前的主題和已安裝的外掛，並將適當的主題感知能力載入到助理的上下文環境中。可用的能力包括：
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | 使用 WordPress 區塊化 (Full Site Editing) 架構的主題 |
+| **Classic Themes** | 使用 PHP 模板和經典編輯器的傳統 WordPress 主題 |
+| **Kadence Blocks** | 啟用 Kadence Blocks 外掛的網站 |
+| **Kadence Theme** | 使用 Kadence 主題作為活動主題的網站 |
+
+請參閱 [主題感知能力](../../user-guide/configuration/theme-aware-skills) 以了解每項能力的詳細指導。
+
+## 網路搜尋提供者
+
+Superdav AI Agent v1.10.0 新增了 **Tavily** 作為 Brave Search 的替代網路搜尋查詢提供者。這兩個提供者都提供即時搜尋結果，並且可以在 **Gratis AI Agent → 設定 → 進階** 中進行配置。
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | 快速、注重隱私的搜尋結果 | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | 更豐富的搜尋結果，進階研究能力 | [Tavily API](https://tavily.com/) |
+
+請參閱 [網路搜尋](../../user-guide/configuration/internet-search) 以了解配置說明。
+
+## 網站建立器聯絡表單
+
+網站建立器助理現在可以直接從聊天介面建立聯絡表單。只需要求網站建立器建立一個聯絡表單，它就會自動偵測您已安裝的表單外掛（如 Contact Form 7、WPForms、Fluent Forms 或 Gravity Forms），並生成一個可立即使用的表單。
+
+請參閱 [網站建立器聯絡表單](../../user-guide/administration/site-builder-contact-forms) 以了解詳細指導。
+
+## 主題建立器功能
+
+Superdav AI Agent v1.16.0 的主題建立器包含強大的新功能：
+
+### 帶照片的探索訪談
+
+主題建立器的探索訪談現在包含照片上傳步驟，您可以提供視覺靈感。上傳您的品牌、競爭對手網站或設計靈感照片，以幫助主題建立器了解您的設計方向。
+
+請參閱 [探索訪談](./theme-builder/discovery-interview.md) 以了解詳細指導。
+
+### 帶桌面和行動裝置預覽的設計方向
+
+在主題建立器生成完整主題之前，請在桌面和行動裝置上審閱您的設計。可在多個響應式斷點查看即時預覽。
+
+請參閱 [設計方向](./theme-builder/design-direction.md) 以了解詳細指導。
+
+### 餐飲服務菜單
+
+主題建立器現在可以為餐廳、咖啡館、酒吧和其他餐飲服務企業生成結構化的食品和飲料菜單頁面。菜單包含價格、描述、飲食資訊和過敏原警告。
+
+請參閱 [餐飲服務菜單](./theme-builder/hospitality-menus.md) 以了解詳細指導。
+
+### 新增能力
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — 創建自訂 SVG Logo，並自動進行清理
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — 檢查顏色組合是否符合 WCAG 標準
+- **[Create Menu](./abilities/create-menu.md)** — 創建帶有區分導航標籤的導航菜單
+
+請參閱 [工具和配置](./theme-builder/tools.md) 以了解可用工具和 Tier 1 網站爬取工具的資訊。
+
+## 配置
+
+所有設定都在 WordPress 管理介面中的 **Gratis AI Agent → 設定** 下。Superdav AI Agent 新增了以下配置選項：
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | 在 Brave Search 和 Tavily 之間選擇（可選） |
+| **Tavily API Key** | Tavily 網路搜尋的 API 金鑰（如果選擇 Tavily） |
+
+## v1.16.0 的改進
+
+- **AI Client 快取** — 現在由快照 (transients) 支援，實現跨請求持久化，防止長時間運行的助理任務丟失資料
+- **Tier 1 網站爬取工具** — sd-ai-agent/site-scrape 現在預設在主題建立器中可用，用於分析競爭對手和靈感網站
+- **外掛行操作連結** — 已修正並重新命名以提高清晰度
+
+## v1.10.0 的改進
+
+- **WooCommerce 整合重構** — 現在使用原生的 WooCommerce API，提高可靠性和相容性
+- **提供者列表自動刷新** — 自動偵測外掛是否啟用或停用，並更新可用提供者列表
+- **增強的網站建立器** — 改善了多階段的網站建置規劃，具備更好的錯誤恢復機制
+- **主題感知能力** — 四種新的內建能力，可自動適應您目前的主題
+
+## v1.10.0 的錯誤修復
+
+- 修復了某些管理頁面上的 `navigate-to` 能力導致無限重新載入迴圈的問題
+- 修復了 `list-posts` 能力無法正確將分類和標籤名稱解析為 slug 的問題
+- 修復了 WP-CLI 指令在先前重構後缺少命名空間別名 (namespace aliases) 的問題
+- 修復了事件自動化在尚未建立自動化資料表的網站上能優雅處理的問題
+- 修復了 `memory-save` 能力在系統指令建立器中使用正確的命名空間前綴
+- 修復了純量工具結果在返回給 AI 之前能被正確包裹的問題
+- 修復了使用統計資料在從舊版本升級時，能正確處理舊版能力金鑰格式的問題
+
+## 支援
+
+如需支援，請造訪 [ultimatemultisite.com](https://ultimatemultisite.com) 或在外掛儲存庫中開啟一個問題。
+
+## 更新日誌
+
+請參閱 [更新日誌](./changelog) 查看完整的版本歷史記錄。

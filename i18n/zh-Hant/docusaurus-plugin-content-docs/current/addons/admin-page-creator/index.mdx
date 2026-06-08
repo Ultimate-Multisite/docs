@@ -1,0 +1,144 @@
+---
+title: 管理頁面創建器
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# 管理頁面建立器
+
+## 內容
+管理頁面建立器讓您可以在 WordPress 管理儀表板中輕鬆新增管理頁面和子頁面。它可以用於建立歡迎頁或教學頁，作為新用戶的登陸頁面。您可以使用 Beaver Builder、Elementor、Brizy 和 Oxygen 等頁面建立器，輕鬆設計這些頁面。
+
+它還提供自訂 HTML、CSS 和 JavaScript 的支援，以及基於方案和用戶角色的存取控制！
+
+## 功能特色
+* 支援自訂 HTML 和 CSS
+* JavaScript 支援
+* PHP 內容模式
+* 基於用戶角色的權限
+* 支援頁面建立器
+
+## 文件參考
+[使用 Ultimate Multisite 建立自訂管理頁面和子頁面：管理頁面建立器](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## 安裝
+
+1. 將 **ultimate-multisite-admin-page-creator** 上傳到 **/wp-content/plugins/** 目錄
+2. 透過 WordPress Network Admin 的 **Plugins** 選單啟用此外掛
+
+## 使用指南
+
+雖然 WordPress 使網站的前端內容添加非常容易，但要在管理端建立頁面和子頁面卻需要一些基礎的編碼技能。Ultimate Multisite: Admin Page Creator 的目標就是將前端的易用性帶到您網路網站的後端。
+
+## 為什麼要使用管理頁面建立器？
+
+也許您想在客戶的管理面板上提供包含教學內容的自訂頁面，也許您想新增一個包含常見問題和聯絡小工具的自訂頁面。使用管理頁面建立器，可能性是無限的，這就是我們今天教學要探討的內容。
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_現在可以建立嵌入 YouTube 播放清單的教學頁面了！_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_這是用戶儀表板面板上的最終結果_
+
+## 建立您的第一個自訂管理頁面
+
+安裝並啟用 Ultimate Multisite: Admin Page Creator 後，請前往您的網路管理選單，點擊「管理頁面 (Admin Pages)」。
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_網路管理中的自訂管理頁面列表_
+
+您會看到所有已建立的管理頁面列表（由於這是您第一次造訪，列表會是空的）。請點擊 **Add new Admin Page**。您將會被導向管理頁面編輯器。
+
+## 自訂管理頁面的元素
+
+在管理頁面編輯器中，您有許多不同的選項可以自訂您的頁面。
+
+### 頁面標題 (Page Title)
+
+這是顯示在頁面頂部的標題，而不是管理選單上的標籤。
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_輸入頁面標題_
+
+### 內容類型選擇器 (Content Type Selector)
+
+Ultimate Multisite: Admin Page Creator 在頁面內容方面為您提供了兩個選項：您可以使用預設的 WordPress WYSIWYG 編輯器，或切換到 HTML 編輯器。
+
+如果您不熟悉 HTML，請使用預設的 WordPress 編輯器。您將能夠像編輯一般文章或頁面一樣編輯頁面內容。
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_使用預設的 WordPress WYSIWYG 編輯器_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_使用 HTML 編輯器選項，帶有語法高亮和錯誤提醒_
+
+## 選單選項
+
+在側邊的「一般選項 (General Options)」元框中，您可以配置選單類型、標籤以及更多內容。
+
+### 選單類型 (Menu Types)
+
+您的新自訂管理頁面可以有兩種不同的選單類型：頂層選單 (top-level menu) 和子選單 (submenu)。
+
+頂層選單頁面，顧名思義，會將您新建立的頁面添加到管理選單中，與預設的 WordPress 頁面並列。
+
+如果您選擇頂層選項，您還可以選擇選單順序和選單圖標。
+
+如果您想讓此頁面成為子選單頁面，您就可以選擇一個父頁面來附加此頁面。您可以將自訂頁面添加到預設的 WordPress 頁面，或添加到您的頂層自訂管理頁面。
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_完全自訂此自訂頁面的選單項目_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_您也可以將此頁面作為其他選單頁面（包括您自己的頂層自訂頁面）的子選單。_
+
+## 進階選項
+
+您應該能夠將各種內容添加到您的自訂管理頁面中。這包括 CSS 規則和檔案、JavaScript，以及外部函式庫。您可以使用「進階選項 (Advanced Options)」分頁來完成這些操作。
+
+### 自訂 CSS (Custom CSS)
+
+在 CSS 分頁中，您可以添加您自己的自訂 CSS 代碼，也可以匯入來自遠端網站的 CSS 檔案（例如 CDN、Google Fonts 等）。
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_也支援自訂 CSS。您還可以包含外部樣式檔案！_
+
+### 自訂 JavaScript (Custom JavaScript)
+
+JavaScript 也是如此。您可以添加外部函式庫來用於您的自訂 JavaScript 代碼。
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_添加您自己的 JavaScript 代碼！_
+
+## 權限 (Permissions)
+
+在「進階選項」中，您還可以選擇哪些子站點可以存取此頁面。如果您計劃為不同的方案層級提供不同的獨家內容，這點會非常有用。
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_您可以完全控制此頁面將顯示在哪裡_
+
+**重要**：頁面必須同時滿足兩個條件才會顯示。這意味著，如果用戶是某個方案的客戶，但沒有選擇的角色（反之亦然），該頁面將不會出現在他們的面板上。
+
+## 啟用狀態 (Active)
+
+如果您想在不刪除或更改權限的情況下停用一個自訂管理頁面，只需取消勾選「啟用狀態 (Active)」即可。
+
+停用一個頂層頁面會自動停用所有附加到該父頁面的子頁面。
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_用戶面板上的最終結果！_

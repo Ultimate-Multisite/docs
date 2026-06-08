@@ -1,0 +1,100 @@
+---
+title: Nhiều mạng
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Tiện ích mở rộng Ultimate Multisite: Multinetwork mở rộng nền tảng Ultimate Multisite của bạn với chức năng multinetwork mạnh mẽ. Addon này cho phép khách hàng của bạn mua và quản lý toàn bộ các mạng lưới multisite WordPress, chứ không chỉ là các trang web riêng lẻ.
+
+## Tính năng chính
+
+* **Thiết lập mạng lưới (Network Provisioning)**: Tự động tạo và cấu hình các mạng lưới multisite WordPress hoàn chỉnh cho khách hàng của bạn.
+* **Mẫu mạng lưới (Network Templates)**: Cho phép khách hàng duyệt, xem trước và chọn một mẫu mạng lưới được xây dựng sẵn trước khi đăng ký.
+* **Quản lý mạng lưới (Network Management)**: Khả năng quản lý đầy đủ cho môi trường multinetwork.
+* **Mạng lưới độc lập (Isolated Networks)**: Mỗi mạng lưới của khách hàng hoạt động độc lập với các bảng cơ sở dữ liệu và cấu hình riêng.
+* **SSO xuyên mạng lưới (Cross-Network SSO)**: Cung cấp cho khách hàng quyền truy cập liền mạch vào các mạng con của họ bằng xác thực liên kết ma thuật (magic-link authentication).
+* **Kiến trúc có khả năng mở rộng (Scalable Architecture)**: Xử lý nhiều mạng lưới một cách hiệu quả với việc phân bổ tài nguyên tối ưu.
+* **Tích hợp (Integration)**: Tích hợp liền mạch với hệ thống đăng ký và thanh toán của Ultimate Multisite.
+
+## Trường hợp sử dụng
+
+* **Lưu trữ thương hiệu riêng (White Label Hosting)**: Cung cấp cho khách hàng các mạng lưới multisite mang thương hiệu riêng của họ.
+* **Giải pháp Agency**: Cho phép các agency quản lý nhiều mạng lưới khách hàng từ một nền tảng duy nhất.
+* **Triển khai Doanh nghiệp (Enterprise Deployments)**: Hỗ trợ các tổ chức lớn với các yêu cầu mạng lưới phức tạp.
+* **Nền tảng Giáo dục**: Tạo các mạng lưới riêng biệt cho các trường học hoặc phòng ban khác nhau.
+
+## Yêu cầu
+
+* Ultimate Multisite 2.0.0 trở lên
+* Cài đặt WordPress Multisite
+* PHP 7.4 trở lên
+* MySQL 5.6 trở lên
+
+## Cài đặt
+
+1. Tải các tệp plugin lên thư mục `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Kích hoạt plugin thông qua màn hình 'Plugins' trong WordPress
+3. Cấu hình các cài đặt multinetwork thông qua Ultimate Multisite → Settings
+
+## Mẫu mạng lưới (Network Templates)
+
+Phiên bản 1.3.0 bổ sung quy trình khám phá và chọn mẫu dành cho khách hàng mua mạng lưới mới. Bạn nên sử dụng mẫu mạng lưới khi bạn muốn mỗi mạng lưới khách hàng mới bắt đầu từ một cấu trúc, thiết kế, thư viện nội dung hoặc thiết lập chuyên ngành đã được chuẩn bị sẵn.
+
+### Trình xem mẫu (Template previewer)
+
+Trình xem mẫu mạng lưới cho phép khách hàng duyệt các mẫu có sẵn trước khi thanh toán. Mỗi mẫu có thể được mở trong một bảng xem trước trực tiếp, giúp khách hàng so sánh bố cục và nội dung trước khi mua mạng lưới.
+
+Sử dụng trình xem mẫu để giúp khách hàng:
+
+* Xem xét giao diện và cấu trúc của từng mẫu mạng lưới có sẵn.
+* So sánh nhiều mẫu mà không cần rời khỏi quy trình mua hàng.
+* Chọn mẫu phù hợp nhất với trường hợp sử dụng của họ trước khi đăng ký.
+
+Hãy giữ tên và mô tả mẫu thân thiện với khách hàng. Trình xem mẫu sẽ hữu ích nhất khi khách hàng có thể hiểu rõ trường hợp sử dụng dự kiến, chẳng hạn như mạng lưới agency, mạng lưới trường học, mạng lưới nhượng quyền thương mại, hoặc các gói lưu trữ thương hiệu riêng.
+
+### Chọn mẫu tại bước thanh toán (Template picker at checkout)
+
+Bộ chọn mẫu có thể được thêm vào quy trình thanh toán đăng ký dưới dạng một trường. Khi được cấu hình, khách hàng sẽ chọn mẫu mạng lưới họ muốn trong quá trình thanh toán, và mẫu đã chọn sẽ được áp dụng khi mạng lưới mới của họ được thiết lập.
+
+Để sử dụng bộ chọn mẫu trong quy trình thanh toán:
+
+1. Chuẩn bị các mạng lưới bạn muốn cung cấp dưới dạng mẫu.
+2. Bật trường chọn mẫu Multinetwork trong biểu mẫu đăng ký hoặc thanh toán liên quan.
+3. Chọn những mẫu nào nên có sẵn cho quy trình thanh toán đó.
+4. Xuất bản quy trình thanh toán và kiểm tra bằng cách đăng ký để xác nhận rằng mẫu đã chọn được áp dụng cho mạng lưới mới.
+
+Nếu một quy trình thanh toán chỉ cung cấp một sản phẩm mạng lưới, bộ chọn mẫu vẫn có thể hữu ích như một bước hướng dẫn khi onboarding. Đối với các phễu đa gói (multi-plan funnels), chỉ hiển thị các mẫu tương thích với sản phẩm hoặc gói đã chọn.
+
+## SSO Liên kết Ma thuật Xuyên Mạng lưới (Cross-Network Magic Link SSO)
+
+Cross-network magic link SSO cho phép khách hàng di chuyển giữa khu vực tài khoản chính và các mạng con mà không cần đăng nhập thủ công lại. Khi khách hàng nhấp vào liên kết truy cập xuyên mạng lưới, Ultimate Multisite sẽ tạo một liên kết ma thuật có thời hạn và xác thực khách hàng vào mạng đích.
+
+Điều này cải thiện trải nghiệm cho những khách hàng quản lý nhiều hơn một mạng lưới hoặc những người cần truy cập ngay lập tức vào các mạng lưới mẫu được nhân bản sau khi mua.
+
+Danh sách kiểm tra dành cho quản trị viên:
+
+* Xác nhận rằng addon Multinetwork đã được kích hoạt trên toàn bộ cài đặt multisite WordPress.
+* Đảm bảo rằng khách hàng có quyền truy cập mạng lưới chính xác trước khi họ được cung cấp các liên kết xuyên mạng lưới.
+* Giữ cấu hình tên miền mạng và tên miền ánh xạ (mapped domains) chính xác để liên kết ma thuật phân giải đến mạng lưới đích dự kiến.
+* Kiểm tra dashboard khách hàng và bất kỳ nút truy cập nào sau khi thanh toán sau khi thay đổi cài đặt mạng lưới, tên miền hoặc thanh toán.
+
+Liên kết ma thuật nên được coi là liên kết đăng nhập. Chúng được thiết kế để khách hàng truy cập liền mạch và không được chuyển tiếp hoặc tái sử dụng bên ngoài phiên dự kiến.
+
+## Câu hỏi thường gặp
+
+### Multinetwork là gì?
+
+Multinetwork là một tính năng của WordPress cho phép bạn chạy nhiều mạng lưới multisite độc lập trên một cài đặt WordPress duy nhất.
+
+### Điều này khác gì so với multisite thông thường?
+
+Multisite thông thường cho phép nhiều trang web trong một mạng lưới. Multinetwork cho phép nhiều mạng lưới, mỗi mạng lưới có các trang web riêng, tất cả nằm trong một cài đặt WordPress duy nhất.
+
+### Điều này có yêu cầu cấu hình máy chủ đặc biệt không?
+
+Có, multinetwork yêu cầu thiết lập và cấu hình máy chủ cụ thể. Vui lòng tham khảo tài liệu để biết hướng dẫn thiết lập chi tiết.

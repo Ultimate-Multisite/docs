@@ -1,0 +1,144 @@
+---
+title: Створювач сторінок адміністратора
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Content
+Створювач адмін-сторінок дозволить вам легко додавати нові адмін-сторінки та підсторінки в панель керування WordPress. Його можна використовувати для створення вітальної сторінки або навчального туторіалу, який може слугувати цільовою сторінкою для нових користувачів. Ви можете використовувати page builder, як-от Beaver Builder, Elementor, Brizy та Oxygen, для дизайну сторінок без жодних труднощів.
+
+Він також пропонує підтримку кастомного HTML, CSS та JavaScript, а також контроль доступу на основі плану та ролі користувача!
+
+## Features
+* Підтримка кастомного HTML та CSS
+* Підтримка JavaScript
+* Режим вмісту PHP
+* Дозволи на основі ролі користувача
+* Підтримка page builders
+
+## Documentation
+[Creating Custom Admin Pages and Sub-pages using Multisite Ultimate: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installation
+
+1. Завантажте **ultimate-multisite-admin-page-creator** до каталогу **/wp-content/plugins/**
+2. Активуйте плагін через меню **Plugins** у мережевому адмініструванні WordPress
+
+## Usage Guide
+
+Хоча WordPress робить додавання контенту на фронтенд сайтів дуже простим, створення сторінок та підсторінок на адмін-боці вимагає певних базових знань кодування. Ultimate Multisite: Admin Page Creator має на меті перенести таку ж простоту використання, як на фронтенді, у бекенд ваших мережевих сайтів.
+
+## Why use Admin Page Creator?
+
+Можливо, ви хочете запропонувати кастомну сторінку на адмін-панелі ваших клієнтів із туторіалами, можливо, ви хочете додати кастомну сторінку з FAQ та віджетом контактів. Можливості зі створенням адмін-сторінок безмежні, і саме це ми розглянемо в сьогоднішньому туторіалі.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_Тепер можливо створювати навчальну сторінку з вбудованим плейлистом YouTube!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Ось кінцевий результат на панелі керування користувача_
+
+## Creating your first Custom Admin Page
+
+Після встановлення та активації Ultimate Multisite: Admin Page Creator перейдіть до меню мережевого адміністрування та виберіть Admin Pages.
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Список кастомних адмін-сторінок у мережевому адмініструванні_
+
+Ви побачите список усіх адмін-сторінок, які ви створили до цього (оскільки це ваш перший візит, список буде порожнім). Просто натисніть **Add new Admin Page**. Вас перенаправить до редактора адмін-сторінки.
+
+## The elements of a Custom Admin Page
+
+На редакторі адмін-сторінки у вас буде кілька різних опцій для налаштування вашої сторінки.
+
+### Page Title
+
+Це заголовок, який буде відображатися у верхній частині сторінки, а не мітка в адмін-меню.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Введіть назву сторінки_
+
+### Content Type Selector
+
+Ultimate Multisite: Admin Page Creator надає вам дві опції щодо вмісту сторінки: ви можете використовувати стандартний WYSIWYG-редактор WordPress або переключитися на HTML-редактор.
+
+Якщо ви не знайомі з HTML, краще залишитися зі стандартним редактором WordPress. Ви зможете редагувати вміст сторінки так само, як і звичайний Пост або Сторінка.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Використання стандартного WYSIWYG-редактора WordPress_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Використання опції HTML-редактора з підсвічуванням синтаксису та попередженнями про помилки_
+
+## Menu Options
+
+Збоку, у мета-блоці General Options, ви зможете налаштувати тип меню, мітку та багато іншого.
+
+### Menu Types
+
+Ваша нова кастомна адмін-сторінка може мати два різні типи меню: головне меню (top-level menu) та підменю (submenu).
+
+Головна сторінка меню, як випливає з назви, додасть вашу щойно створену сторінку до адмін-меню поруч зі стандартними сторінками WordPress.
+
+Якщо ви виберете опцію головного меню, ви також зможете вибрати порядок меню та іконку.
+
+Якщо ви хочете, щоб ця сторінка була підменю, ви зможете вибрати батьківську сторінку, до якої приєднати цю сторінку. Ви можете додати свою кастомну сторінку до стандартних сторінок WordPress або до ваших кастомних головних адмін-сторінок.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Повністю налаштуйте елемент меню для цієї кастомної сторінки_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Ви також можете додати цю сторінку як підменю інших сторінок меню, включаючи ваші власні кастомні головні._
+
+## Advanced Options
+
+Ви повинні мати можливість додавати всілякий контент до своїх кастомних адмін-сторінок. Це включає правила та файли CSS, JavaScript, а також зовнішні бібліотеки. Ви можете зробити це за допомогою вкладки Advanced Options.
+
+### Custom CSS
+
+На вкладці CSS ви можете додати власний кастомний CSS-код, а також імпортувати CSS-файли з віддалених сайтів (наприклад, CDN, Google Fonts тощо).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Підтримується також кастомний CSS. Ви також можете включати зовнішні файли стилів!_
+
+### Custom JavaScript
+
+Те саме стосується JavaScript. Ви можете додавати зовнішні бібліотеки для використання у вашому кастомному JavaScript-коді.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Додайте власний JavaScript-код!_
+
+## Permissions
+
+Також у Advanced Options ви зможете вибрати, які сабсайтів матимуть доступ до цієї сторінки. Це корисно, якщо ви плануєте надавати різний ексклюзивний контент для різних рівнів плану, наприклад.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Ви маєте повний контроль над тим, де ця сторінка буде відображатися_
+
+**Важливо**: Обидві умови мають бути виконані, щоб сторінка відобразилася. Це означає, що якщо користувач є клієнтом певного плану, але не має однієї з вибраних ролей (або навпаки), сторінка не з'явиться на його панелі.
+
+## Active
+
+Якщо ви хочете вимкнути кастомну адмін-сторінку, не видаляючи її та не змінюючи дозволи, просто зніміть позначку з опції Active.
+
+Деактивація головної сторінки автоматично деактивує всі підсторінки, приєднані до цієї батьківської сторінки.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Кінцевий результат на панелі керування користувача!_

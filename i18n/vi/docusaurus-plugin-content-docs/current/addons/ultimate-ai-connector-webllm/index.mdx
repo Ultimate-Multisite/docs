@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector cho WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM mang khả năng suy luận AI gốc trình duyệt (browser-native AI inference) đến mạng lưới multisite WordPress của bạn. Nó chạy các mô hình ngôn ngữ lớn (LLM) hoàn toàn ngay trên trình duyệt của người dùng bằng WebLLM và engine MLC — không cần khóa API, không gọi đến dịch vụ bên ngoài, và không có dữ liệu nào rời khỏi thiết bị của người dùng.
+
+## Tính năng nổi bật
+
+- **Suy luận trên trình duyệt**: LLM chạy cục bộ ngay trên trình duyệt của khách truy cập thông qua WebLLM/MLC — không yêu cầu GPU máy chủ
+- **Widget chat nổi**: Người dùng đã đăng nhập có thể yêu cầu mô hình LLM trên trình duyệt trực tiếp từ giao diện người dùng (front end)
+- **Chỉ báo trạng thái trên Admin-bar**: Hiển thị trạng thái thời gian thực của engine WebLLM trên thanh quản trị WordPress
+- **SharedWorker runtime**: Nhiều tab trình duyệt chia sẻ một phiên GPU thay vì phải tranh giành tài nguyên GPU
+- **apiFetch middleware**: Các yêu cầu REST của WordPress khớp với mẫu AI Client SDK sẽ được định tuyến minh bạch đến bộ điều phối (broker) WebLLM cục bộ — không cần vòng lặp HTTP khứ hồi
+- **Giao diện cài đặt Widget**: Bảng cài đặt Connector để bật/tắt widget chat và cấu hình hành vi gợi ý tự động (auto-prompt)
+- **Bộ nhớ đệm IndexedDB**: Việc tải trọng số mô hình (model weight) vẫn hoạt động ngay cả khi có chuyển hướng CDN làm gián đoạn đường dẫn Cache API mặc định
+- **Tích hợp bộ lọc wpai**: Tích hợp vào bộ lọc `wpai_preferred_text_models` để tính năng AI Experiments tự động chuyển hướng đến engine trình duyệt khi được cấu hình
+
+## Yêu cầu
+
+- WordPress 5.3 trở lên
+- PHP 7.4 trở lên
+- Plugin Ultimate Multisite (đang kích hoạt)
+- Một trình duyệt hỗ trợ WebGPU (Chrome 113+, Edge 113+, hoặc Firefox Nightly với WebGPU được bật)
+
+## Cài đặt
+
+1. Tải các tệp addon lên thư mục `/wp-content/plugins/` của bạn
+2. Kích hoạt plugin thông qua menu 'Plugins' trong WordPress
+3. Truy cập **Ultimate Multisite → AI Connector** để cấu hình addon
+
+## Widget Chat Nổi
+
+Widget chat nổi cho phép bất kỳ người dùng nào đã đăng nhập tương tác với LLM trên trình duyệt trực tiếp từ giao diện người dùng của bạn, mà không cần rời khỏi trang họ đang xem.
+
+### Nó hoạt động như thế nào
+
+Khi được bật, một biểu tượng chat sẽ xuất hiện ở góc của mọi trang front-end dành cho người dùng đã đăng nhập. Nhấp vào biểu tượng này sẽ mở một bảng chat, nơi người dùng có thể nhập yêu cầu (prompts) và nhận phản hồi từ mô hình WebLLM chạy cục bộ. Vì mô hình chạy hoàn toàn trên trình duyệt, các phản hồi là riêng tư và không liên quan đến bất kỳ xử lý phía máy chủ nào.
+
+### Chỉ báo trạng thái trên Admin-Bar
+
+Thanh quản trị WordPress bao gồm một chỉ báo trạng thái hiển thị trạng thái hiện tại của engine WebLLM:
+
+| Trạng thái | Ý nghĩa |
+|--------|---------|
+| **Loading** | Engine MLC đang khởi tạo hoặc tải trọng số mô hình |
+| **Ready** | Mô hình đã được tải và sẵn sàng để suy luận |
+| **Idle** | Engine đã được tải nhưng tab SharedWorker chưa hoạt động |
+| **Error** | Engine không khởi tạo được — hãy kiểm tra bảng điều khiển (console) của trình duyệt để biết chi tiết |
+
+Chỉ báo này cập nhật theo thời gian thực mà không yêu cầu tải lại trang.
+
+### Cách bật hoặc tắt Widget
+
+1. Truy cập **Ultimate Multisite → AI Connector** trong khu vực quản trị mạng (network admin)
+2. Tìm bảng **Connector**
+3. Bật hoặc tắt **Enable floating chat widget**
+4. Lưu cài đặt
+
+Widget cũng có thể được bật hoặc tắt theo từng trang con (per-site) từ khu vực quản trị của trang đó nếu quản trị viên mạng đã cấp quyền này.
+
+## Cài đặt Widget
+
+Bảng Connector trong **Ultimate Multisite → AI Connector** chứa các cài đặt sau cho widget chat nổi:
+
+### Enable Floating Chat Widget (Bật Widget Chat Nổi)
+
+Bật hoặc tắt widget chat cho toàn bộ mạng. Khi bị tắt, widget sẽ không xuất hiện trên bất kỳ trang front-end nào, bất kể vai trò người dùng là gì.
+
+**Mặc định:** Tắt
+
+### Auto-Prompt Behaviour (Hành vi Gợi ý Tự động)
+
+Kiểm soát việc widget chat có tự động gửi một gợi ý (prompt) khi người dùng mở nó hay không.
+
+| Tùy chọn | Hành vi |
+|--------|-----------|
+| **Disabled** | Widget mở với một khung chat trống — người dùng tự nhập gợi ý của mình |
+| **Page context** | Widget mở với một gợi ý được điền sẵn dựa trên tiêu đề và nội dung của trang hiện tại |
+| **Custom prompt** | Widget mở với một gợi ý tùy chỉnh mà bạn định nghĩa trong ô bên dưới |
+
+Khi đặt thành **Custom prompt**, một trường văn bản bổ sung sẽ xuất hiện nơi bạn có thể nhập văn bản gợi ý mặc định. Hỗ trợ các biến mẫu cơ bản:
+
+- `{site_name}` — tên của trang web hiện tại
+- `{page_title}` — tiêu đề của trang hiện tại
+- `{user_display_name}` — tên hiển thị của người dùng đã đăng nhập
+
+**Mặc định:** Tắt
+
+## SharedWorker Runtime
+
+Phiên bản 1.1.0 giới thiệu SharedWorker runtime cho engine MLC. Trước đây, mỗi tab trình duyệt sử dụng WebLLM đều tải một phiên bản mô hình riêng, cạnh tranh về bộ nhớ GPU và gây ra vấn đề hiệu suất trên các thiết bị có VRAM hạn chế.
+
+Với SharedWorker runtime, một tab sẽ đóng vai trò là máy chủ engine. Tất cả các tab khác sẽ giao tiếp với phiên bản duy nhất đó thông qua kênh tin nhắn của worker. Kết quả là:
+
+- Một phiên GPU được chia sẻ trên tất cả các tab đang mở
+- Phản hồi nhanh hơn sau khi mô hình được tải (không khởi tạo lại nhiều lần)
+- Mức sử dụng bộ nhớ đỉnh thấp hơn trên thiết bị
+
+SharedWorker là tính năng minh bạch với người dùng. Chỉ báo trạng thái trên admin-bar luôn phản ánh trạng thái của engine được chia sẻ, chứ không phải của từng tab riêng lẻ.
+
+## apiFetch Middleware
+
+Addon cài đặt một middleware `apiFetch` chặn các yêu cầu API REST của WordPress khớp với mẫu AI Client SDK. Thay vì thực hiện yêu cầu HTTP vòng lặp khứ hồi đến máy chủ, các yêu cầu này được định tuyến trực tiếp đến bộ điều phối WebLLM cục bộ đang chạy trong SharedWorker.
+
+Điều này có nghĩa là các plugin và theme sử dụng API `apiFetch` tiêu chuẩn của WordPress để gọi các điểm cuối AI sẽ tự động hưởng lợi từ mô hình trên trình duyệt khi nó khả dụng, mà không cần thay đổi mã nguồn nào.
+
+## Hooks và Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Đăng ký engine trình duyệt WebLLM là mô hình văn bản ưu tiên. Addon tự động móc vào bộ lọc này khi engine được cấu hình và khả dụng.
+- `ultimate_webllm_widget_enabled` — Ghi đè trạng thái bật widget cho một người dùng hoặc ngữ cảnh cụ thể. Trả về `true` hoặc `false`.
+- `ultimate_webllm_auto_prompt` — Sửa đổi văn bản gợi ý tự động trước khi nó được gửi đến widget. Nhận chuỗi gợi ý và đối tượng `WP_Post` hiện tại.
+
+## Khắc phục sự cố
+
+### Widget chat không xuất hiện
+
+- Xác nhận người dùng đã đăng nhập — widget chỉ hiển thị cho người dùng đã xác thực
+- Kiểm tra xem **Enable floating chat widget** đã được bật trong bảng Connector chưa
+- Xác minh trình duyệt của người dùng hỗ trợ WebGPU (xem Yêu cầu ở trên)
+
+### Chỉ báo admin-bar hiển thị "Error"
+
+Mở bảng điều khiển nhà phát triển (F12) và tìm các lỗi liên quan đến WebLLM. Các nguyên nhân phổ biến:
+
+- Trình duyệt không hỗ trợ WebGPU
+- Tải trọng số mô hình thất bại — kiểm tra kết nối mạng và thử xóa bộ nhớ đệm IndexedDB trong công cụ nhà phát triển trình duyệt (Application → IndexedDB)
+- Một tiện ích mở rộng trình duyệt đang chặn SharedWorker
+
+### Trọng số mô hình tải lại mỗi lần
+
+Addon sử dụng IndexedDB làm bộ nhớ đệm backend để đảm bảo trọng số mô hình vẫn hoạt động ngay cả khi có chuyển hướng CDN. Nếu trọng số đang tải lại mỗi lần truy cập, hãy kiểm tra xem IndexedDB có bị xóa bởi cài đặt quyền riêng tư hoặc tiện ích mở rộng của trình duyệt hay không.
+
+## Nhật ký thay đổi
+
+Xem [Changelog](./changelog) để biết lịch sử phiên bản đầy đủ.
