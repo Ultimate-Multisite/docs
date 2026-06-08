@@ -1,0 +1,23 @@
+---
+id: wu_captcha_after_validation
+title: Action - wu_captcha_after_validation
+sidebar_label: wu_captcha_after_validation
+_i18n_hash: d257de780581abe25b44e1ec519f48d8
+---
+# Action: wu_captcha_after_validation
+
+ကက်ပ္ချာ စစ်ဆေးမှု အောင်မြင်ပြီးနောက် အလုပ်လုပ်သည့် Action တစ်ခု ဖြစ်ပါသည်။
+
+## Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| $result | `array` | စစ်ဆေးမှု ရလဒ် (validation result) ကို ကိုယ်စားပြုပါသည်။ |
+| $token | `string` | စစ်ဆေးခဲ့သည့် တိုကင် (token) ဖြစ်ပါသည်။ |
+
+### Since
+
+- 1.2.0
+### Source
+
+[`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L224) ၏ ၂၂၄ လိုင်းတွင် သတ်မှတ်ထားပါသည်။

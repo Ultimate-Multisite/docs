@@ -1,0 +1,111 @@
+---
+title: ကိုက်ညီသော Endpoints များအတွက် Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector သည် OpenAI နှင့် ကိုက်ညီသော AI ပံ့ပိုးပေးသူ API များကို သင့် WordPress multisite ကွန်ရက်နှင့် ပေါင်းစပ်ပေးပါသည်။ AI ပံ့ပိုးပေးသူများစွာကို စီစဉ်ဖွဲ့စည်းနိုင်သည်—တစ်ခုချင်းစီတွင် ၎င်း၏ ကိုယ်ပိုင် Endpoint URL၊ API key နှင့် Default Model တို့ ပါဝင်သည်။ ပံ့ပိုးပေးသူ တစ်ခု မရရှိနိုင်သည့်အခါ တောင်းဆိုမှုများကို အလိုအလျောက် ပြန်လည်ရယူပေးသည့် စနစ်လည်း ပါရှိပါသည်။
+
+## Key Features
+
+- **Multi-provider support**: AI ပံ့ပိုးပေးသူ ကတ်များစွာကို ထည့်သွင်းနိုင်ပြီး၊ တစ်ခုချင်းစီတွင် ၎င်း၏ ကိုယ်ပိုင် Endpoint URL၊ API key နှင့် Default Model တို့ ပါရှိသည်။
+- **Drag-to-reorder**: ပံ့ပိုးပေးသူများကို ဦးစားပေးအဆင့်အလိုက် စီစဉ်ရန် ကတ်တစ်ခုစီရှိ grip handle ကို အသုံးပြုနိုင်သည်; တောင်းဆိုမှုများသည် စီစဉ်ထားသည့် အစဉ်အတိုင်း ပံ့ပိုးပေးသူများကို အသုံးပြုမည်။
+- **Automatic fallback routing**: အဓိက ပံ့ပိုးပေးသူ မရရှိနိုင်ပါက၊ တောင်းဆိုမှုများသည် နောက်ထပ် စီစဉ်ထားသည့် ပံ့ပိုးပေးသူသို့ အလိုအလျောက် ပြန်လည်ရယူသွားမည်။
+- **Per-provider configuration**: ပံ့ပိုးပေးသူ တစ်ခုချင်းစီကို ၎င်း၏ ကိုယ်ပိုင် အထောက်အထားများနှင့် Model ရွေးချယ်မှုများဖြင့် သီးခြားစီ စီစဉ်ဖွဲ့စည်းနိုင်သည်။
+- **Card-based settings UI**: တည်ငြိမ်သော WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider) များကို အသုံးပြု၍ တည်ဆောက်ထားသည်။
+- **Auto-expand on add**: ပံ့ပိုးပေးသူ ကတ်အသစ်များထည့်လိုက်သည်နှင့် အလိုအလျောက် ကျယ်ပြန့်သွားသဖြင့် အသေးစိတ်အချက်အလက်များကို ချက်ချင်းဖြည့်စွက်နိုင်ပါသည်။
+- **Script cache busting**: ပလပ်အင်ကို update လုပ်သည့်အခါ ပံ့ပိုးပေးသူ script များကို cache-busting လုပ်ပေးခြင်းဖြင့် နောက်ဆုံးဗားရှင်းကို အမြဲတမ်း တင်ပေးနိုင်ပါသည်။
+
+## Requirements
+
+- WordPress 5.3 သို့မဟုတ် အထက်
+- PHP 7.4 သို့မဟုတ် အထက်
+- Ultimate Multisite plugin (အသက်ဝင်ရမည်)
+- OpenAI နှင့် ကိုက်ညီသော API endpoint (ကိုယ်တိုင် host လုပ်ထားသည်ဖြစ်စေ၊ third-party ဖြစ်သည်ဖြစ်စေ)
+
+## Installation
+
+1. Addon ဖိုင်များကို သင့် `/wp-content/plugins/` directory သို့ တင်ပါ။
+2. WordPress ၏ 'Plugins' menu မှတစ်ဆင့် ပလပ်အင်ကို Activate လုပ်ပါ။
+3. Addon ကို စီစဉ်ဖွဲ့စည်းရန် **Ultimate Multisite → AI Connector** သို့ သွားပါ။
+
+## Configuration
+
+### Multi-Provider Setup
+
+ဤ configuration screen သည် ကတ်အခြေခံ layout ကို အသုံးပြုထားပြီး၊ ကတ်တစ်ခုစီသည် AI ပံ့ပိုးပေးသူ တစ်ခုကို ကိုယ်စားပြုပါသည်။ လိုအပ်သလောက် ပံ့ပိုးပေးသူများကို ထည့်သွင်းနိုင်ပါသည်။
+
+#### Adding a Provider
+
+1. network admin တွင် **Ultimate Multisite → AI Connector** သို့ သွားပါ။
+2. **Add Provider** ကို နှိပ်ပါ။
+3. ပံ့ပိုးပေးသူ ကတ်အသစ်တစ်ခု ပေါ်လာပြီး အလိုအလျောက် ကျယ်ပြန့်သွားပါမည်။
+4. ပံ့ပိုးပေးသူ အသေးစိတ်အချက်အလက်များကို ဖြည့်စွက်ပါ-
+   - **Provider Name** — ဤပံ့ပိုးပေးသူကို ခွဲခြားသိရှိနိုင်ရန် label တစ်ခု (ဥပမာ- "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — OpenAI နှင့် ကိုက်ညီသော API ၏ base URL (ဥပမာ- `https://api.openai.com/v1`)
+   - **API Key** — ဤပံ့ပိုးပေးသူအတွက် သင့် API key
+   - **Default Model** — ဤပံ့ပိုးပေးသူအတွက် မူလအဖြစ် အသုံးပြုမည့် model identifier (ဥပမာ- `gpt-4o`, `mistral-small`)
+5. **Save Settings** ကို နှိပ်ပါ။
+
+#### Removing a Provider
+
+ပံ့ပိုးပေးသူ ကတ်တစ်ခုပေါ်ရှိ **Remove** ခလုတ်ကို နှိပ်ခြင်းဖြင့် ဖျက်ပစ်နိုင်ပါသည်။ ပြောင်းလဲမှုကို အသုံးပြုရန် settings များကို သိမ်းဆည်းပါ။
+
+#### Reordering Providers
+
+ပံ့ပိုးပေးသူ ကတ်တစ်ခု၏ ဘယ်ဘက်ခြမ်းရှိ grip icon (⣿) ကို ဆွဲချခြင်းဖြင့် အစီအစဉ်ကို ပြန်လည်စီစဉ်နိုင်သည်။ အစီအစဉ်သည် fallback ဦးစားပေးမှုကို ဆုံးဖြတ်ပေးသည်- တောင်းဆိုမှုများကို ပထမဆုံး ပံ့ပိုးပေးသူထံ ပေးပို့ပြီး၊ တောင်းဆိုမှုတစ်ခု ပျက်ယွင်းပါက နောက်ဆက်တွဲ ပံ့ပိုးပေးသူများထံ ပြန်လည်ရယူသွားမည်။
+
+### Fallback Routing
+
+အဓိက ပံ့ပိုးပေးသူထံ ပေးပို့သည့် တောင်းဆိုမှုတစ်ခုသည် timeout၊ rate limit သို့မဟုတ် service outage ကြောင့် ပျက်ယွင်းပါက၊ connector သည် စာရင်းရှိ နောက်ပံ့ပိုးပေးသူဖြင့် အလိုအလျောက် ပြန်လည်ကြိုးစားပေးမည်။ ဤအဆင့်သည် ပံ့ပိုးပေးသူ တစ်ခု အောင်မြင်သည်အထိ သို့မဟုတ် ပံ့ပိုးပေးသူအားလုံးကို စမ်းသပ်သည်အထိ ဆက်လက်လုပ်ဆောင်သွားမည်။
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback သည် ခေါ်ဆိုသည့် plugin သို့မဟုတ် theme အတွက် ပွင့်လင်းမြင်သာမှုရှိသည်—မည်မျှ ပံ့ပိုးပေးသူများကို စမ်းသပ်ခဲ့သည်ဖြစ်စေ၊ အောင်မြင်သော response သို့မဟုတ် နောက်ဆုံး error တစ်ခုကိုသာ ရရှိမည်။
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | ဤပံ့ပိုးပေးသူအတွက် ပြသမည့် label |
+| Endpoint URL | Yes | OpenAI နှင့် ကိုက်ညီသော API ၏ Base URL |
+| API Key | Yes | ဤပံ့ပိုးပေးသူအတွက် Authentication key |
+| Default Model | Yes | တောင်းဆိုမှုတွင် model မသတ်မှတ်ထားပါက အသုံးပြုမည့် Model identifier |
+
+## Troubleshooting
+
+### No providers are listed
+
+Settings များ သိမ်းပြီးနောက် ပံ့ပိုးပေးသူ စာရင်းသည် ဗလာဖြစ်နေပါက၊ အောက်ပါအချက်များကို စစ်ဆေးပါ။
+
+- ပံ့ပိုးပေးသူများထည့်ပြီးနောက် **Save Settings** ကို နှိပ်ခဲ့ခြင်း ရှိ၊ မရှိ။
+- သင့် browser က settings page ကို သိမ်းဆည်းခြင်းမှ တားမြစ်ထားခြင်း မရှိကြောင်း (JavaScript error များအတွက် browser console ကို စစ်ဆေးပါ)။
+- ပလပ်အင်သည် အသက်ဝင်နေပြီး network admin screen တွင် ရှိနေခြင်း။
+
+### Requests are failing for all providers
+
+- ပံ့ပိုးပေးသူ တစ်ခုချင်းစီ၏ endpoint URL သည် သင့် server မှ (သင့် browser မှသာမက) ရောက်ရှိနိုင်ကြောင်း စစ်ဆေးပါ။
+- API key တစ်ခုချင်းစီသည် မှန်ကန်ပြီး သက်တမ်းမကုန်သေးကြောင်း စစ်ဆေးပါ။
+- ၎င်းတို့၏ dashboard တွင် ပံ့ပိုးပေးသူ၏ rate-limit နှင့် quota အခြေအနေကို ပြန်လည်သုံးသပ်ပါ။
+- connector မှ အသေးစိတ် error message များကို ဖမ်းယူနိုင်ရန် WordPress debug logging (`WP_DEBUG_LOG`) ကို ဖွင့်ပါ။
+
+### A provider is not being used for fallback
+
+Drag-to-reorder သည် fallback အစီအစဉ်ကို ပြောင်းလဲပေးသည်။ fallback တောင်းဆိုမှုများ ရရှိမည်ဟု မျှော်လင့်ထားသည့် ပံ့ပိုးပေးသူသည် စာရင်းတွင် မှန်ကန်စွာ နေရာချထားခြင်း ရှိ၊ မရှိ၊ ၎င်း၏ endpoint URL နှင့် API key တို့ မှန်ကန်မှု ရှိ၊ မရှိ စစ်ဆေးပါ။
+
+### New provider card does not expand automatically
+
+Auto-expand လုပ်ဆောင်ရန်အတွက် သင့် browser တွင် JavaScript ကို ဖွင့်ထားရန် လိုအပ်ပါသည်။ ကတ်သည် နှိပ်လိုက်သည့်အခါ ကျယ်ပြန့်မသွားပါက၊ browser console တွင် error များရှိမရှိ စစ်ဆေးပါ။ Auto-expand မလုပ်ဆောင်နိုင်သော်လည်း ကတ် header ကို နှိပ်ခြင်းဖြင့် ကတ်ပါ အကြောင်းအရာများကို အမြဲတမ်း ရယူနိုင်ပါသည်။
+
+## Changelog
+
+အပြည့်အစုံ version history အတွက် [Changelog](./changelog) ကို ကြည့်ပါ။

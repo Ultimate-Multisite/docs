@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite တွဲဖက်အသုံးပြုနိုင်မှု
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Tutor LMS ကို Multisite ပတ်ဝန်းကျင်မှာ အသုံးပြုနိုင်ဖို့ တွဲဖက်အသုံးပြုနိုင်မှု ပြင်ဆင်ပေးတဲ့ WordPress ပလပ်အင်တစ်ခု ဖြစ်ပါတယ်။
+
+## Description
+
+ဒီပလပ်အင်က WordPress multisite network တွေမှာ Tutor LMS ကို အသုံးပြုဖို့အတွက် မရှိမဖြစ်လိုအပ်တဲ့ တွဲဖက်အသုံးပြုနိုင်မှု ပြင်ဆင်မှုတွေကို ပံ့ပိုးပေးပါတယ်။ အသုံးပြုသူ စာရင်းသွင်းခြင်း၊ သင်ကြားသူ စီမံခန့်ခွဲမှု၊ သင်တန်း ကန့်သတ်ချက်တွေနဲ့ multisite နဲ့ သက်ဆိုင်တဲ့ အခြားလုပ်ဆောင်ချက်တွေကိုလည်း ကိုင်တွယ်ပေးပါတယ်။
+
+## Features
+
+- **Database Table Management**: Multisite foreign key ကန့်သတ်ချက်တွေကြောင့် ပျက်ကျနိုင်တဲ့ မရှိတဲ့ Tutor LMS စားပွဲတွေကို အလိုအလျောက် ရှာဖွေဖန်တီးပေးခြင်း
+- **Multisite User Enrollment**: network ရဲ့ site အများအပြားမှာ အသုံးပြုသူ စာရင်းသွင်းမှုတွေကို စီမံခန့်ခွဲဖို့အတွက် စိတ်ကြယ်မှုရှိတဲ့ AJAX ကိုင်တွယ်သူများ (Custom AJAX handlers)
+- **Instructor Role Management**: Multisite ပတ်ဝန်းကျင်မှာ သင်ကြားသူ ရာထူးကို အလိုအလျောက် ခန့်အပ်ခြင်းနဲ့ စီမံခန့်ခွဲခြင်း
+- **Course Limitations**: Site plan တွေအပေါ် အခြေခံပြီး သင်တန်းနဲ့ funnel ဖန်တီးမှု ကန့်သတ်ချက်တွေကို စီမံခန့်ခွဲဖို့ Ultimate Multisite နဲ့ ပေါင်းစပ်ထားခြင်း
+- **Custom Admin Views**: Multisite ကို သိရှိနားလည်တဲ့ သင်ကြားသူ စာရင်းနဲ့ စီမံခန့်ခွဲမှု အင်တာဖေ့စ်
+- **Admin Tools**: network နဲ့ site စီမံခန့်ခွဲသူတွေအတွက် ဒေတာဘေ့စ် စီမံခန့်ခွဲမှု အင်တာဖေ့စ်
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (Requires Plugins header မှတစ်ဆင့် အလိုအလျောက် စစ်ဆေးသည်)
+- WordPress Multisite တပ်ဆင်ထားခြင်း
+- Ultimate Multisite plugin (သင်တန်း ကန့်သတ်ချက် လုပ်ဆောင်ချက်အတွက်)
+
+## Installation
+
+1. ပလပ်အင်ဖိုင်တွေကို `/wp-content/plugins/tutor-multisite-compatibility/` လမ်းကြောင်းမှာ တင်ပါ။
+2. Tutor LMS ကို တပ်ဆင်ပြီး အသက်သွင်းထားကြောင်း သေချာပါစေ။
+3. WordPress ရဲ့ 'Plugins' မီနူးကနေ ပလပ်အင်ကို အသက်သွင်းပါ။
+4. ပလပ်အင်က Tutor LMS နဲ့ အလိုအလျောက် ပေါင်းစပ်သွားမှာ ဖြစ်ပါတယ်။
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+ဒီပလပ်အင်မှာ အရင်က `wp-content/mu-plugins/daves.php` မှာ ပါခဲ့တဲ့ လုပ်ဆောင်ချက်တွေ ပါဝင်ပါတယ်-
+
+- သင်တန်း အခြေအနေ ပြောင်းလဲမှု ကန့်သတ်ချက်များ
+- သင်တန်း ဖန်တီးမှု ကန့်သတ်ချက်များ
+- CartFlows ပေါင်းစပ်မှုနဲ့ ကန့်သတ်ချက်များ
+- Tutor သင်ကြားသူ ရာထူး စီမံခန့်ခွဲမှု
+- Multisite အသုံးပြုသူ စာရင်းသွင်းမှု ကိုင်တွယ်ခြင်း
+- သင်တန်း product ID ပြသခြင်း
+
+## Database Management
+
+### The Problem
+
+WordPress multisite ပတ်ဝန်းကျင်တွေမှာ၊ အသုံးပြုသူ (users) စားပွဲနဲ့ နိုင်ငံခြားသော့ (foreign key) ချိတ်ဆက်ထားတဲ့ Tutor LMS စားပွဲတွေကို ဖန်တီးရာမှာ ကျရှုံးမှုတွေ ဖြစ်တတ်ပါတယ်။ ဘာကြောင့်လဲဆိုတော့-
+
+- Site တစ်ခုချင်းစီရဲ့ စားပွဲတွေက `wp_2_tutor_carts` လို prefix တွေ သုံးပါတယ်။
+- နိုင်ငံခြားသော့တွေက `wp_2_users` ကို ရည်ညွှန်းပေမယ့် (ဒါက မရှိပါဘူး)။
+- တကယ့်အသုံးပြုသူ စားပွဲကတော့ `wp_users` (network တစ်ခုလုံးမှာ မျှဝေသုံးတဲ့ စားပွဲ) ဖြစ်ပါတယ်။
+
+### The Solution
+
+ဒီပလပ်အင်က အလိုအလျောက်-
+
+1. **ပျောက်ဆုံးနေတဲ့ စားပွဲတွေကို ရှာဖွေပေးခြင်း**: နိုင်ငံခြားသော့ ကန့်သတ်ချက်တွေကြောင့် ဖန်တီးဖို့ ကျရှုံးခဲ့တဲ့ စားပွဲတွေကို စစ်ဆေးပေးပါတယ်။
+2. **မှန်ကန်တဲ့ ရည်ညွှန်းမှုတွေနဲ့ စားပွဲတွေ ဖန်တီးပေးခြင်း**: မှန်ကန်တဲ့ အသုံးပြုသူ စားပွဲနာမည် (`wp_users` in multisite) ကို အသုံးပြုပါတယ်။
+3. **အခြေအနေမျိုးစုံကို ကိုင်တွယ်ပေးခြင်း**:
+   - ပလပ်အင် အသက်သွင်းခြင်း/ပြန်လည်အသက်သွင်းခြင်း
+   - network မှာ site အသစ် ဖန်တီးခြင်း
+   - admin interface ကနေ လက်နဲ့ စားပွဲ စစ်ဆေးခြင်း
+
+### Affected Tables
+
+- `tutor_coupon_usages` - users စားပွဲကို နိုင်ငံခြားသော့နဲ့ ချိတ်ဆက်ထားသည်
+- `tutor_carts` - users စားပွဲကို နိုင်ငံခြားသော့နဲ့ ချိတ်ဆက်ထားသည်
+- `tutor_notification_preferences` - users စားပွဲကို နိုင်ငံခြားသော့နဲ့ ချိတ်ဆက်ထားတဲ့ TutorPro စားပွဲ
+
+### Admin Interface
+
+ဒေတာဘေ့စ် စီမံခန့်ခွဲမှု ကိရိယာတွေကို ဒီနေရာမှာ ဝင်ရောက်နိုင်ပါတယ်-
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+ဒီ interface ကနေ-
+- site အားလုံးမှာ ပျောက်ဆုံးနေတဲ့ စားပွဲတွေကို ကြည့်ရှုနိုင်တယ်
+- စားပွဲဖန်တီးမှုကို လက်နဲ့ အစပျိုးပေးနိုင်တယ်
+- ဒေတာဘေ့စ် စီမံခန့်ခွဲမှု အခြေအနေကို စစ်ဆေးနိုင်တယ်
+- အသေးစိတ် အခြေအနေ အချက်အလက်တွေကို ကြည့်ရှုနိုင်တယ်
+
+## Support
+
+ဒီပလပ်အင်ကို KursoPro platform အတွက် အထူးဒီဇိုင်းထုတ်ထားတာ ဖြစ်ပါတယ်။ နည်းပညာဆိုင်ရာ အကူအညီ လိုအပ်ပါက development team ကို ဆက်သွယ်မေးမြန်းနိုင်ပါတယ်။

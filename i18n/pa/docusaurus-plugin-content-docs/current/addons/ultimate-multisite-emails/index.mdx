@@ -1,0 +1,114 @@
+---
+title: ਈਮੇਲ
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+Ultimate Multisite: Emails addon network owners ਨੂੰ sites ਅਤੇ memberships ਦੇ ਨਾਲ-ਨਾਲ customer email accounts set up ਕਰਨ ਅਤੇ manage ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ। Version 1.1.0 ਵਿੱਚ customer-facing email account management, webmail single sign-on, CyberPanel forwarder support, ਅਤੇ checkout-time provisioning ਵਿੱਚ ਸੁਧਾਰ ਕੀਤੇ ਗਏ ਹਨ।
+
+## Key Features
+
+* **Customer email account widget**: ਹੁਣ customers ਆਪਣੀ account page ਤੋਂ ਹੀ email accounts bana aur manage ਕਰ ਸਕਦੇ ਹਨ, ਜਿਸ ਲਈ ਉਨ੍ਹਾਂ ਨੂੰ support ticket ਖੋਲ੍ਹਣ ਦੀ ਲੋੜ ਨਹੀਂ ਪਵੇਗੀ।
+* **Webmail SSO and magic links**: ਜੇ provider ਸਪੋਰਟ ਕਰਦਾ ਹੈ, ਤਾਂ customers ਇੱਕ-ਕਲਿੱਕ (one-click) authentication ਨਾਲ account page ਤੋਂ ਸਿੱਧਾ webmail ਖੋਲ੍ਹ ਸਕਦੇ ਹਨ।
+* **Password changes**: customers ਅਤੇ administrators email management widget ਤੋਂ mailbox passwords update ਕਰ ਸਕਦੇ ਹਨ।
+* **Checkout provisioning**: customer email account creation checkout ਦੌਰਾਨ ਹੋ ਸਕਦੀ ਹੈ, ਤਾਂ ਜੋ purchase flow ਪੂਰਾ ਹੋਣ ਤੋਂ ਬਾਅਦ mailbox ਤਿਆਰ ਹੋਵੇ।
+* **CyberPanel forwarders**: CyberPanel-backed networks email service flow ਦੇ ਹਿੱਸੇ ਵਜੋਂ email forwarders bana aur manage ਕਰ ਸਕਦੇ ਹਨ।
+* **Provider-aware settings**: settings page administrators ਲਈ providers ਨੂੰ ਸਿਰਫ਼ active, configure ਕੀਤੇ ਗਏ integrations ਤੱਕ ਫਿਲਟਰ ਕਰਦਾ ਹੈ, ਤਾਂ ਜੋ ਸਿਰਫ਼ ਵਰਤੋਂ ਯੋਗ options ਦਿਖਾਈ ਦੇਣ।
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+* WordPress Multisite installation
+* ਘੱਟੋ-ਘੱਟ ਇੱਕ configure ਕੀਤਾ ਗਿਆ email provider integration
+* Provider API credentials ਜਿਸ ਵਿੱਚ mailboxes ਬਣਾਉਣ, passwords ਬਦਲਣ, ਅਤੇ webmail access links ਜਾਰੀ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੋਵੇ (ਜਿੱਥੇ ਸਪੋਰਟ ਹੋਵੇ)
+
+## Installation
+
+1. Plugin files ਨੂੰ `/wp-content/plugins/ultimate-multisite-emails` 'ਤੇ upload ਕਰੋ।
+2. WordPress network admin ਵਿੱਚ **Plugins** ਤੋਂ addon ਨੂੰ Network activate ਕਰੋ।
+3. **Ultimate Multisite** > **Settings** 'ਤੇ ਜਾਓ ਅਤੇ addon email settings ਖੋਲ੍ਹੋ।
+4. ਉਹ email provider integrations enable ਕਰੋ ਜਿਨ੍ਹਾਂ ਨੂੰ ਤੁਸੀਂ customers ਵਰਤਣ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ।
+5. Settings save ਕਰੋ, ਅਤੇ ਫਿਰ ਕਿਸੇ non-production customer ਜਾਂ staging site ਨਾਲ account creation test ਕਰੋ।
+
+## Customer Account Email Management
+
+Version 1.1.0 ਵਿੱਚ customer account page 'ਤੇ ਇੱਕ email management widget ਜੋੜਿਆ ਗਿਆ ਹੈ। ਇਸਦੀ ਵਰਤੋਂ ਉਦੋਂ ਕਰੋ ਜਦੋਂ customers ਆਪਣੇ sites ਲਈ self-service ਨਾਲ mailbox creation ਅਤੇ maintenance ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਨ।
+
+Account page ਤੋਂ, customers ਇਹ ਕਰ ਸਕਦੇ ਹਨ:
+
+1. ਆਪਣੇ ਮੌਜੂਦਾ membership ਜਾਂ site ਨਾਲ ਜੁੜੇ email accounts ਦੇਖ ਸਕਦੇ ਹਨ।
+2. ਨਵਾਂ mailbox ਬਣਾ ਸਕਦੇ ਹਨ ਜਦੋਂ ਉਨ੍ਹਾਂ ਦਾ plan ਵਾਧੂ accounts ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
+3. ਕਿਸੇ ਮੌਜੂਦਾ mailbox ਦਾ password ਬਦਲ ਸਕਦੇ ਹਨ।
+4. SSO ਜਾਂ magic-link login ਰਾਹੀਂ ਸਪੋਰਟ ਕੀਤੇ webmail providers ਖੋਲ੍ਹ ਸਕਦੇ ਹਨ।
+
+ਇਹ widget Ultimate Multisite account-page currents system ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ actions ਉਸ account context ਤੱਕ ਸੀਮਿਤ ਹੁੰਦੇ ਹਨ ਜੋ customer ਦੇਖ ਰਿਹਾ ਹੈ। ਇਹ customers ਨੂੰ ਕਿਸੇ ਹੋਰ membership ਜਾਂ site ਨਾਲ ਸਬੰਧਤ email accounts manage ਕਰਨ ਤੋਂ ਰੋਕਦਾ ਹੈ।
+
+## Webmail SSO and Magic-Link Login
+
+Webmail SSO customers ਨੂੰ account page ਤੋਂ ਸਿੱਧਾ **Open webmail** action ਦਿੰਦਾ ਹੈ। ਜਦੋਂ ਇਹ active provider ਦੁਆਰਾ ਸਪੋਰਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ addon ਇੱਕ short-lived access URL ਮੰਗਦਾ ਹੈ ਅਤੇ customer ਨੂੰ webmail ਵਿੱਚ redirect ਕਰ ਦਿੰਦਾ ਹੈ, ਬਿਨਾਂ ਇਹ ਪੁੱਛੇ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ mailbox credentials copy ਕਰਨੇ ਪੈਣਗੇ।
+
+Provider ਦਾ behavior ਵੱਖਰਾ ਹੋ ਸਕਦਾ ਹੈ:
+
+* ਜਿਨ੍ਹਾਂ providers ਕੋਲ native SSO APIs ਹਨ, ਉਹ ਇੱਕ ਸਿੱਧਾ authenticated webmail session ਬਣਾ ਸਕਦੇ ਹਨ।
+* ਜਿਨ੍ਹਾਂ providers ਕੋਲ magic-link support ਹੈ, ਉਹ ਇੱਕ time-limited login link generate ਕਰ ਸਕਦੇ ਹਨ।
+* ਜਿਨ੍ਹਾਂ providers ਕੋਲ SSO ਜਾਂ magic-link support ਨਹੀਂ ਹੈ, ਉਹ ਫਿਰ ਵੀ mailbox details ਅਤੇ password-management actions ਦਿਖਾਉਣਗੇ, ਪਰ ਕੋਈ one-click webmail button ਨਹੀਂ ਹੋਵੇਗਾ।
+
+Webmail access ਸਿਰਫ਼ ਉਨ੍ਹਾਂ providers ਲਈ enable ਕਰੋ ਜਿੱਥੇ ਤੁਸੀਂ ਲੋੜੀਂਦੇ API credentials configure ਕੀਤੇ ਹਨ। ਜੇ ਕਿਸੇ provider ਲਈ action ਗਾਇਬ ਹੈ, ਤਾਂ ਪਹਿਲਾਂ confirm ਕਰੋ ਕਿ provider active, configured ਹੈ, ਅਤੇ webmail login links ਸਪੋਰਟ ਕਰਦਾ ਹੈ।
+
+## Checkout Provisioning
+
+Addon checkout ਦੇ ਹਿੱਸੇ ਵਜੋਂ customer email accounts ਬਣਾ ਸਕਦਾ ਹੈ। ਇਹ ਉਦੋਂ ਕੰਮ ਆਉਂਦਾ ਹੈ ਜਦੋਂ plan ਵਿੱਚ by default ਇੱਕ mailbox ਸ਼ਾਮਲ ਹੁੰਦਾ ਹੈ ਜਾਂ ਜਦੋਂ checkout form email-account details collect ਕਰਦਾ ਹੈ।
+
+Recommended rollout:
+
+1. Checkout provisioning enable ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ provider ਅਤੇ plan limits configure ਕਰੋ।
+2. ਇੱਕ staging product ਨਾਲ purchase test ਕਰੋ ਅਤੇ confirm ਕਰੋ ਕਿ checkout ਤੋਂ ਬਾਅਦ mailbox ਬਣ ਗਿਆ ਹੈ।
+3. customer account page ਦੀ review ਕਰੋ ਤਾਂ ਜੋ confirm ਹੋ ਸਕੇ ਕਿ nਵਾਂ mailbox email widget ਵਿੱਚ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੈ।
+4. production products ਲਈ flow enable ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ password-change ਅਤੇ webmail actions confirm ਕਰੋ।
+
+ਜੇ provisioning fail ਹੋ ਜਾਂਦਾ ਹੈ, ਤਾਂ customer account ਅਤੇ membership ਫਿਰ ਵੀ exist ਕਰ ਸਕਦੇ ਹਨ, ਭਾਵੇਂ mailbox ਲਈ administrator follow-up ਦੀ ਲੋੜ ਹੋਵੇ। retry ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ Ultimate Multisite activity logs ਅਤੇ provider logs check ਕਰੋ।
+
+## CyberPanel Email Forwarders
+
+CyberPanel-backed networks ਲਈ, version 1.1.0 ਵਿੱਚ email forwarder support ਜੋੜਿਆ ਗਿਆ ਹੈ। forwarders ਦੀ ਵਰਤੋਂ ਉਦੋਂ ਕਰੋ ਜਦੋਂ customers ਨੂੰ `info@customer-domain.test` ਵਰਗੇ addresses ਚਾਹੀਦੇ ਹੋਣ ਤਾਂ ਜੋ ਉਹ mail ਨੂੰ ਪੂਰੇ mailbox ਬਣਾਏ ਬਿਨਾਂ ਕਿਸੇ ਹੋਰ inbox 'ਤੇ redirect ਕਰ ਸਕਣ।
+
+forwarders ਦੇਣ ਤੋਂ ਪਹਿਲਾਂ, confirm ਕਰੋ ਕਿ CyberPanel integration configure ਅਤੇ reachable ਹੈ। ਲੋੜੀਂਦੇ host, username, password, ਅਤੇ package constants ਲਈ [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide ਦੇਖੋ।
+
+## Changelog
+
+### Version 1.1.0 - Released on 2026-05-05
+
+* New: Webmail SSO and magic-link login — customers can access webmail directly from their account with one-click authentication.
+* New: Change password functionality added to the email account management widget.
+* New: CyberPanel email forwarder support.
+* New: Email management widget on the customer account page for self-service account creation and management.
+* New: Customer email account creation integrated into the checkout flow for automatic provisioning.
+* Fix: Account page widget hook updated to use the correct UMS registration pattern.
+* Fix: Create Account form replaced with vanilla JS and correct full HTML document output.
+* Fix: Email management widget now uses the UMS currents system for admin account pages.
+* Fix: Admin email account creation form includes password field and uses Email_Account_Manager.
+* Fix: Per-request log spam removed from Email_Account_Manager initialization.
+* Improved: Settings page now filters to show only active and configured email providers.
+
+## Frequently Asked Questions
+
+## ਕੀ customers ਆਪਣੇ email accounts ਬਣਾ ਸਕਦੇ ਹਨ?
+
+ਹਾਂ। ਜਦੋਂ customer account widget enable ਹੁੰਦਾ ਹੈ ਅਤੇ plan email accounts ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਤਾਂ customers account page ਤੋਂ ਆਪਣੇ mailboxes ਬਣਾ ਅਤੇ manage ਕਰ ਸਕਦੇ ਹਨ।
+
+## ਕੀ ਹਰ provider webmail SSO ਸਪੋਰਟ ਕਰਦਾ ਹੈ?
+
+ਨਹੀਂ। SSO ਅਤੇ magic-link support active email provider 'ਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ। ਜਿਨ੍ਹਾਂ providers ਕੋਲ access-link API ਨਹੀਂ ਹੈ, ਉਹ ਫਿਰ ਵੀ mailbox creation ਅਤੇ password changes ਸਪੋਰਟ ਕਰ ਸਕਦੇ ਹਨ।
+
+## ਕੀ administrators customers ਲਈ email accounts ਬਣਾ ਸਕਦੇ ਹਨ?
+
+ਹਾਂ। administrators admin interface ਤੋਂ email accounts ਬਣਾ ਸਕਦੇ ਹਨ, ਜਿਸ ਵਿੱਚ account ਬਣਾਉਂਦੇ ਸਮੇਂ initial password set ਕਰਨਾ ਵੀ ਸ਼ਾਮਲ ਹੈ।
+
+## ਕੀ forwarders mailboxes ਦੇ ਬਰਾਬਰ ਹਨ?
+
+ਨਹੀਂ। ਇੱਕ mailbox mail ਸਟੋਰ ਕਰਦਾ ਹੈ ਅਤੇ ਉਸਦੇ login credentials ਹੁੰਦੇ ਹਨ। ਇੱਕ forwarder mail ਨੂੰ ਕਿਸੇ ਹੋਰ address 'ਤੇ redirect ਕਰਦਾ ਹੈ ਅਤੇ ਕੋਈ ਵੱਖਰਾ inbox ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦਾ।

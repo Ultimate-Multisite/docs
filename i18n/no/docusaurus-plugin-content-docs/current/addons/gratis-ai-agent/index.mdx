@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent er en autonom WordPress AI-assistent som kan planlegge, bygge og administrere komplette WordPress-nettsteder kun basert på naturlig språkinstruksjoner. Den eksponerer et strukturert sett med **evner** — diskrete, testbare handlinger som agenten kan kalle — som dekker alt fra innholdshåndtering til tilpasning av designsystemet. Versjon 1.9.0 legger til evner for innholdsskaping, visuell sidegjennomgang via klient-side skjermbilder, fem innebygde agentprofiler og funksjonsflagg for tilgangskontroll og merkevarebygging.
+
+## Hovedfunksjoner
+
+- **Evnesystem** — et modulært og utvidbart katalog over handlinger agenten kan utføre på WordPress-installasjonen din
+- **Innholdshåndtering** — opprett innlegg og sider (inkludert tildeling av side-maler), batch-opprett flere innlegg i ett kall, sett fremhevede bilder og bygg kontaktskjemaer
+- **Visuell gjennomgang** — fanger skjermbilder av levende sider, sammenligner før/etter-tilstander, og gir en AI-generert designgjennomgang som dekker layout, typografi, farge og tilgjengelighet
+- **Fem innebygde agenter** — Content Writer, Site Builder, Design Studio, Plugin Manager og Support Assistant; kan byttes via Agent Picker i chat-headeren
+- **Funksjonsflagg** — tilgangskontroll- og merkevarebyggingsbrytere i Settings → Feature Flags for rollebegrensninger, white-label navngivning og widget-tilpasning
+- **Håndtering av tilpasset posttype** — registrerer, lister og sletter tilpassede posttyper med persistens over omstarter
+- **Håndtering av tilpasset taksonomi** — registrerer, lister og sletter tilpassede taksonomier med persistens
+- **Designsystem-evner** — injiserer tilpasset CSS, administrerer kuraterte blokkmønstre, setter nettstedets logo og anvender theme.json-presets
+- **Håndtering av globale stiler** — leser og skriver theme.json-verdier for fargepaletter, typografi, avstand og mer
+- **Håndtering av navigasjonsmenyer** — oppretter og oppdaterer navigasjonsmenyer og deres elementer programmeringsmessig
+- **Håndtering av innstillinger (Options)** — leser og skriver WordPress-innstillinger med en innebygd sikkerhetsblokkliste for å beskytte kritiske innstillinger
+- **Installerbare evne-registre** — oppdager og aktiverer ekstra evne-pakker uten å endre kjernepugin-filer
+- **Site Builder Orchestration v2** — flertrinns plan for nettstedsbygging med plugin-oppdagelse, fremdriftssporing og feilgjenoppretting
+- **WP-CLI benchmark-kommando** — kjører agentens ytelsestest-suite fra kommandolinjen for CI og modellvurdering
+
+## Krav
+
+- WordPress 6.0 eller høyere
+- PHP 8.1 eller høyere
+- WordPress Multisite (nettverksaktivert) eller enkeltstående installasjon
+- Et aktivt AI-leverandør-plugin (Anthropic, OpenAI eller kompatibelt)
+
+## Installasjon
+
+1. Last opp plugin-filene til `/wp-content/plugins/gratis-ai-agent`
+2. Aktiver pluginet via **Plugins**-skjermen i WordPress
+3. Gå til **Gratis AI Agent → Settings** og koble til AI-leverandøren din
+4. (Valgfritt) Bla gjennom **Abilities Registry** for å installere ekstra evne-pakker
+
+## Rask start
+
+Når det er aktivert og koblet til en AI-leverandør, åpner du **Gratis AI Agent**-panelet i WordPress-admin-sidestolpen. Skriv inn en naturlig språkinstruksjon, og agenten vil planlegge og utføre de nødvendige trinnene ved hjelp av tilgjengelige evner.
+
+**Eksempler på instruksjoner:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Oversikt over evner
+
+Evner er de atomiske handlingene agenten kan utføre. Hver evne er en registrert PHP-klasse som eksponerer et skjema (parametere og returtyper) som agenten leser under kjøretiden. Evnene er gruppert etter funksjonelle områder:
+
+| Område | Evner |
+|---|---|
+| **Innholdshåndtering** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visuell gjennomgang** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Tilpasset posttype** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Tilpasset taksonomi** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Designsystem** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globale stiler** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigasjonsmenyer** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Håndtering av innstillinger** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installerbare evner** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Se [Abilities Reference](./abilities) for full dokumentasjon av parametere og bruks eksempler.
+
+## WP-CLI
+
+Gratis AI Agent inkluderer en `wp gratis-ai-agent` kommando-familie for å kjøre ytelsestester og administrere evner fra kommandolinjen. Se [WP-CLI Reference](./wp-cli) for den fullstendige kommando-listen.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurasjon
+
+Alle innstillingene finner du under **Gratis AI Agent → Settings** i WordPress-admin:
+
+| Innstilling | Beskrivelse |
+|---|---|
+| **AI Provider** | Velg og konfigurer den aktive AI-leverandør-koblingen |
+| **Model** | Velg språkmodellen som skal brukes for agent-sesjoner |
+| **Max Tokens** | Token-budsjett per forespørsel (standard 4096) |
+| **Ability Timeout** | Maksimalt antall sekunder en enkelt evne kan kjøre (standard 30) |
+| **Debug Logging** | Logger evne-kall og agentens resonnement til WordPress debug-loggen |
+
+## Sikkerhetsblokkliste for Options Management
+
+Evne-håndteringen inkluderer en innebygd blokkliste som hindrer agenten i å lese eller skrive sensitive WordPress-innstillinger. Standard blokklisten dekker:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-innstillinger — bruk et dedikert migrasjonsverktøy for disse)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (hemmelige nøkler)
+- `active_plugins`, `template` (plugin/tema-aktivering — bruk dedikerte evner)
+- Betalingsgateway-legitimasjoner og API-nøkler registrert av installerte plugins
+
+Ytterligere oppføringer kan legges til via filteret `gratis_ai_agent_options_blocklist`.
+
+## Hooks og Filtre
+
+### Handlinger (Actions)
+
+- `gratis_ai_agent_ability_registered` — utløses etter at en evne er registrert, mottar evne-klassenavnet
+- `gratis_ai_agent_plan_started` — utløses når en site builder-plan begynner å kjøre
+- `gratis_ai_agent_plan_completed` — utløses når en plan fullføres vellykket
+- `gratis_ai_agent_plan_failed` — utløses når en plan støter på en uopprettelig feil
+
+### Filtre (Filters)
+
+- `gratis_ai_agent_abilities` — modifiserer den registrerte evnelisten før agenten laster den
+- `gratis_ai_agent_options_blocklist` — utvider eller reduserer sikkerhetsblokklisten for innstillinger
+- `gratis_ai_agent_benchmark_questions` — legger til tilpassede ytelsestest-spørsmål i evalueringssuiten
+- `gratis_ai_agent_plan_plugins` — modifiserer listen over plugins under generering av site-plan
+
+## Support
+
+For support, besøk [ultimatemultisite.com](https://ultimatemultisite.com) eller åpne en issue i plugin-repositoryet.
+
+## Endringslogg (Changelog)
+
+Se [Changelog](./changelog) for full versjonshistorikk.

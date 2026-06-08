@@ -1,0 +1,89 @@
+---
+title: မေးလ်ချင်မ်
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Multisite Ultimate: MailChimp Integration
+
+သင့်ရဲ့ Multisite Ultimate network ကို MailChimp နဲ့ ချိတ်ဆက်အသုံးပြုနိုင်ပါတယ်။ အသုံးပြုသူတွေ စာရင်းသွင်းတဲ့အခါ MailChimp Lists တွေနဲ့ ချိတ်ဆက်ထားတဲ့ အချို့ plan တွေရဲ့ အဖွဲ့ဝင်တွေကို အလိုအလျောက် ထို lists တွေထဲကို ထည့်ပေးနိုင်ပါတယ်။
+
+## Installation
+
+၁။ 'ultimate-multisite-mailchimp' ကို '/wp-content/plugins/' directory ထဲကို upload လုပ်ပါ။
+၂။ သင့်ရဲ့ WordPress Network Admin ထဲက 'Plugins' menu ကနေ plugin ကို activate လုပ်ပါ။
+
+## Usage Guide
+
+ကျွန်တော်တို့ရဲ့ Ultimate Multisite: MailChimp Integration Add-on ကို အသုံးပြုပြီး အဖွဲ့ဝင်တွေရဲ့ email တွေကို MailChimp lists တွေနဲ့ sync လုပ်တာဟာ တကယ်ကို လွယ်ကူပါတယ်။ ဒီ tutorial ဟာ အရာအားလုံးကို ဘယ်လို setup လုပ်ရမလဲဆိုတာ အကူအညီပေးဖို့ ရည်ရွယ်ပါတယ်။
+
+## Getting an API key
+
+ကွဲပြားတဲ့ settings တွေအကြောင်း ပြောဆိုမယ့် အပိုင်းမတိုင်ခင်မှာ MailChimp API key တစ်ခု လိုအပ်ပါတယ်။ ဒီ API key က Ultimate Multisite ကို MailChimp API နဲ့ စကားပြောခွင့်ပေးမှာဖြစ်ပြီး၊ အသုံးပြုသူတွေ စာရင်းသွင်းတဲ့အခါ lists တွေ၊ groups တွေ ပြန်ယူနိုင်ပြီး email address တွေကို အဲဒီ lists နဲ့ groups တွေထဲကို ထည့်ပေးနိုင်မှာ ဖြစ်ပါတယ်။
+
+သင့်ကိုယ်ပိုင် MailChimp API key ကို ရယူဖို့ ဒီ tutorial ကို လိုက်နာပါ- [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_သင့်ရဲ့ MailChimp API key ကို_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ _မှာ ထည့်ပေးပါ။
+
+## Integration Mode
+
+MailChimp Integration add-on မှာ “integration modes” နှစ်မျိုး ပေးထားပါတယ်။ ဆိုလိုတာက email address တွေကို sync လုပ်ဖို့အတွက် ကွဲပြားတဲ့ နည်းလမ်းနှစ်မျိုး ရှိပါတယ်။
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_ပိုမိုပြောင်းလွယ်ပြင်လွယ်ရှိစေဖို့ integration mode နှစ်မျိုး!_
+
+### Mode 1: Multiple Lists
+
+default mode က **Multiple Lists** ကို အသုံးပြုပါတယ်။ ဒီ mode ကို အသုံးပြုခြင်းအားဖြင့် plan တစ်ခုချင်းစီအတွက် MailChimp lists အများအပြားကို ရွေးချယ်နိုင်မှာ ဖြစ်ပါတယ်။ သင့်ရဲ့ အသုံးပြုသူတွေကို lists အမျိုးမျိုးအဖြစ် ခွဲခြားထားတယ်ဆိုရင် ဒါဟာ အကောင်းဆုံး ရွေးချယ်မှုပါပဲ။
+
+ဥပမာအနေနဲ့၊ သင့်ရဲ့ MailChimp account မှာ **Newsletter**၊ **Plan A** နဲ့ **Plan B** ဆိုပြီး lists သုံးခုရှိတယ်လို့ စိတ်ကူးကြည့်ရအောင်။ သင့်ရဲ့ အသုံးပြုသူအားလုံးကို သူတို့ရဲ့ plan ဘာပဲဖြစ်ဖြစ် Newsletter list ထဲမှာလည်း ပါဝင်စေချင်တာကြောင့် အမြဲတမ်း အကြောင်းအရာအသစ်တွေ မလွတ်စေချင်တာပါ။
+
+ဒါကို အောင်မြင်စေဖို့အတွက် Multiple Lists mode ကို အသုံးပြုပြီး Plan A MailChimp Settings မှာ **Newsletter** နဲ့ **Plan A** lists နှစ်ခုကိုလည်းကောင်း၊ Plan B MailChimp Settings မှာ **Newsletter** နဲ့ **Plan B** lists နှစ်ခုကိုလည်းကောင်း ထည့်ပေးနိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_အကောင့်အသစ်တွေနဲ့ ပယ်ဖျက်ထားတဲ့ အကောင့်တွေအတွက် default lists ကို ရွေးချယ်ပါ။_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp က သင့်ရဲ့ list ကို **Groups** လို့ခေါ်တဲ့ အသုံးပြုသူငယ်အုပ်လေးတွေအဖြစ် ခွဲခြားပေးနိုင်ပါတယ်။ ဒါက သင့်ကို ပိုပြီး ထိန်းချုပ်နိုင်မှု ပေးပါတယ်။ ဘာလို့လဲဆိုတော့ MailChimp ပေါ်မှာ campaign အတုအများကြီး ဖန်တီးစရာမလိုဘဲ သင့်ရဲ့ အဖွဲ့ဝင်အချို့ကို campaign ပို့နိုင်လို့ပါ (ဒီလိုလုပ်ရင် နောက်ပိုင်းမှာ အဲဒီ campaign ရဲ့ metrics တွေကို ခွဲခြမ်းစိတ်ဖြာရတာ ခက်ခဲနိုင်ပါတယ်)။
+
+ဥပမာအနေနဲ့၊ **My Network Subscribers** ဆိုတဲ့ single list တစ်ခုရှိပြီး၊ အဲဒီထဲမှာ **Plan A** နဲ့ **Plan B** အတွက် groups တွေရှိနိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_“single list + multiple groups” integration mode ကို အသုံးပြုပါက default lists နဲ့ groups တွေကို ရွေးချယ်ပါ။_
+
+## Default Lists and Groups
+
+ဘယ် integration mode က သင့်ရဲ့ အသုံးပြုမှုအခြေအနေနဲ့ ပိုသင့်တော်လဲဆိုတာ ရွေးချယ်ပြီးသွားရင် default lists (နဲ့ mode ပေါ်မူတည်ပြီး groups) တွေကို ရွေးချယ်ရမှာ ဖြစ်ပါတယ်။ သတ်မှတ်ထားတဲ့ list တစ်ခု မရှိတဲ့ plan တစ်ခုအတွက် default list ကို အသုံးပြုမှာ ဖြစ်ပါတယ်။
+
+အကောင့်ပယ်ဖျက်သူတွေအတွက် default list ကိုလည်း ရွေးချယ်နိုင်ပါတယ်။ အသုံးပြုသူတစ်ဦးက သူရဲ့ subscription ကို ရပ်နားပြီး သင့်ရဲ့ network ကနေ သူ့ရဲ့ account ကို ဖယ်ရှားလိုက်တဲ့အခါ သူ့ရဲ့ email address ဟာ ပယ်ဖျက်ထားတဲ့ အကောင့်တွေအတွက် သတ်မှတ်ထားတဲ့ list ထဲကို ရွှေ့သွားမှာ ဖြစ်ပါတယ်။
+
+## Enabling Double Subscription
+
+အဲဒီ settings page ပေါ်မှာပဲ **Double Subscription** ကို enable လုပ်နိုင်မှာ ဖြစ်ပါတယ်။ ဒီ option က အသုံးပြုသူကို default list ရွေးထားတဲ့ list နဲ့ အဲဒီ user ရဲ့ plan အတွက် ရွေးထားတဲ့ list နှစ်ခုစလုံးထဲကို ထည့်ပေးမှာ ဖြစ်ပါတယ်။ ဒီ option ကို enable မလုပ်ထားဘူးဆိုရင် အသုံးပြုသူကို အဲဒီ user ရဲ့ plan အတွက် ရွေးထားတဲ့ list ထဲကိုပဲ ထည့်ပေးမှာ ဖြစ်ပါတယ်။ အကယ်၍ အဲဒီ plan အတွက် ဘာမှ သတ်မှတ်မထားဘူးဆိုရင်တော့ default list ရွေးထားတဲ့ list ထဲကို ထည့်ပေးမှာ ဖြစ်ပါတယ်။
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_စာရင်းသွင်းတဲ့အခါ default list နဲ့ plan ရဲ့ list နှစ်ခုစလုံးမှာ သင့်အသုံးပြုသူတွေ စာရင်းသွင်းထားနိုင်ပါတယ်။_
+
+## Selecting Lists and Groups for each of the Plans
+
+သင့်ရဲ့ **Plans** ကို သွားပြီး ပြင်ချင်တဲ့ plan ကို ရွေးချယ်ပါ။ **Advanced Options** meta-box မှာ MailChimp လို့ခေါ်တဲ့ tab အသစ်တစ်ခု ပေါ်လာတာကို သတိပြုပါ။
+
+အဲဒီ tab ပေါ်မှာ အဲဒီ plan အတွက် multiple lists ဒါမှမဟုတ် single list နဲ့ multiple groups (integration mode ပေါ်မူတည်ပြီး) တွေကို ရွေးချယ်နိုင်မှာ ဖြစ်ပါတယ်။
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_သင့်ရဲ့ plan တစ်ခုချင်းစီအတွက် အသုံးပြုလိုတဲ့ Lists နဲ့ Groups တွေကို ရွေးချယ်ပါ။_
+
+အသုံးပြုသူအသစ်တစ်ဦးက အဲဒီ plan အတွက် စာရင်းသွင်းတဲ့အခါ သူ့ရဲ့ email address ဟာ ရွေးချယ်ထားတဲ့ lists နဲ့ groups တွေထဲကို ထည့်ပေးမှာ ဖြစ်ပါတယ်။

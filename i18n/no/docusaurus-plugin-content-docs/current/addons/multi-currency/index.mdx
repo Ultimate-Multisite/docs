@@ -1,0 +1,117 @@
+---
+title: Flere valutaer
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency gjør det mulig for nettverket ditt å akseptere betalinger i flere valutaer. Det konverterer priser automatisk ved hjelp av sanntids- eller manuelle vekslingskurser, lar deg sette nøyaktige priser per produkt for enhver valuta, og oppdager kundenes foretrukne valuta via geolokasjon — alt administrert fra ett enkelt admin dashboard.
+
+## Key Features
+
+- **Automatic exchange rate conversion** — priser konverteres fra din basevaluta ved hjelp av kurser hentet fra din valgte leverandør
+- **Per-product pricing overrides** — sett nøyaktige valuta-spesifikke priser på ethvert produkt for å omgå automatisk konvertering
+- **Currency selector signup field** — lar kunder velge sin foretrukne valuta under kassen/registreringen
+- **Multiple exchange rate providers** — ECB, Frankfurter, Stripe, eller fullstendig manuelle kurser
+- **Geolocation-based currency detection** — velger automatisk valutaen som samsvarer med besøkendes land
+- **Admin dashboard** — administrer aktive valutaer, vekslingskurser og leverandørinnstillinger fra ett sted
+
+## Requirements
+
+- Ultimate Multisite 2.0.0 eller høyere
+- WordPress Multisite installasjon
+- PHP 7.4 eller høyere
+
+## Installation
+
+1. Last opp plugin-filene til `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktiver pluginet via **Plugins**-skjermen i WordPress (Network Activate)
+3. Naviger til **Ultimate Multisite → Multi-Currency** for å åpne admin dashboardet
+4. Legg til valutaene du ønsker å akseptere og konfigurer din vekslingskursleverandør
+
+## Configuration
+
+### Admin Dashboard
+
+Multi-Currency admin dashboardet (**Ultimate Multisite → Multi-Currency**) er det sentrale stedet for å:
+
+- Legge til, aktivere eller deaktivere valutaer
+- Velge en vekslingskursleverandør og oppdatere kurser på forespørsel
+- Gjennomgå gjeldende kurser for alle aktive valutaer
+- Sette manuelle kurser når automatiske leverandører ikke er egnet
+
+### Exchange Rate Providers
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — gratis daglige kurser for EUR-baserte nettverk |
+| **Frankfurter** | Open-source ECB mirror API — gratis, krever ikke API-nøkkel |
+| **Stripe** | Bruker Stripes sanntids valutakurser — krever en aktiv Stripe-integrasjon |
+| **Manual** | Du oppgir kursene direkte; ingen eksterne API-kall |
+
+Velg din leverandør under **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kursene kan oppdateres manuelt når som helst eller planlegges for automatisk oppdatering.
+
+### Per-Product Pricing Overrides
+
+Når automatisk konvertering ikke er presis nok, kan du sette en nøyaktig pris for en spesifikk valuta på ethvert produkt:
+
+1. Åpne produktredaktøren (**Ultimate Multisite → Products → Edit**)
+2. Scroll ned til seksjonen **Currency Pricing**
+3. Oppgi den nøyaktige prisen for hver valuta du ønsker å overstyre
+4. Lagre produktet
+
+Produkter uten overstyring bruker den konverterte prisen fra din basevaluta.
+
+### Currency Selector Signup Field
+
+Valutavalskoperasjonen kan legges til i din registrerings-/kasseflyt slik at kundene velger sin foretrukne valuta ved registrering:
+
+1. Gå til **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktiver **Show currency selector on signup**
+3. Du kan valgfritt sette en standardvaluta eller la geolokasjonen bestemme forhåndsvalget
+
+Den valgte valutaen lagres med abonnementet og brukes for all påfølgende fakturering.
+
+### Geolocation-Based Currency Detection
+
+Når geolokasjonsdeteksjon er aktivert, mapper tilleggspakken besøkendes land til en valuta og velger den forhåndsvalgt i valutavalskoperasjonen. For å aktivere:
+
+1. Gå til **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktiver **Detect currency from visitor location**
+3. Kartlegg land til valutaer i tabellen **Geolocation Mapping**
+
+Hvis det ikke finnes kartlegging for et besøkendes land, brukes nettverkets basevaluta som fallback.
+
+## Frequently Asked Questions
+
+### What happens if an exchange rate provider is unavailable?
+
+Tilleggspakken faller tilbake på de sist vellykket hentede kursene. Hvis ingen kurser noensinne er hentet, faller den tilbake på de manuelle kursene du har konfigurert. Det anbefales å konfigurere manuelle kurser som en sikkerhetsnett.
+
+### Can I use different providers for different currencies?
+
+Nei — én leverandør er aktiv om gangen for alle valutaer. Bruk **Manual** hvis du trenger full kontroll over individuelle kurser.
+
+### Does geolocation require a separate plugin?
+
+Det kreves ikke et eksternt geolokasjonsplugin. Tilleggspakken bruker WordPress' innebygde IP-til-land-deteksjon. For høyere nøyaktighet kan en dedikert geolokasjonstjeneste integreres via de angitte filterhookene.
+
+### Are per-product overrides applied before or after tax?
+
+Prisoverstyringer per produkt setter prisen før skatt i målvalutaen. Skatten beregnes oppå overstyringsprisen ved hjelp av din eksisterende skattekonfigurasjon.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Multi-currency support with automatic exchange rate conversion
+- New: Per-product pricing overrides for exact currency-specific prices
+- New: Currency selector signup field for the checkout flow
+- New: Exchange rate providers: ECB, Frankfurter, Stripe, and manual
+- New: Geolocation-based currency detection
+- New: Admin dashboard for managing currencies and exchange rates
+- Fix: Dashboard always showing prices in base currency regardless of selected currency

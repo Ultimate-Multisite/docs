@@ -1,0 +1,23 @@
+---
+id: wu_page_this-id_after_render
+title: 'Action - wu_page_{$this->id}_after_render'
+sidebar_label: 'wu_page_{$this->id}_after_render'
+_i18n_hash: 8366130ec913af612a31f8385db10a0b
+---
+# Action: wu_page_{$this->id}_after_render
+
+ਪਲੱਗਇਨ ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਪੇਜ ਪ੍ਰਿੰਟ ਹੋਣ ਤੋਂ ਬਾਅਦ ਵਾਧੂ ਕੰਟੈਂਟ ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
+
+## Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| $page_id | `string` | ਇਸ ਪੇਜ ਦੀ ID। |
+| $page | `object` | ਪੇਜ ਦਾ ਆਬਜੈਕਟ। |
+
+### Since
+
+- 1.8.2
+### Source
+
+[`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L423) ਵਿੱਚ ਲਾਈਨ 423 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।

@@ -1,0 +1,99 @@
+---
+title: Pengeksport Tapak
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+Kami faham keperluan untuk memindahkan subsite dalam network anda ke satu pemasangan laman tunggal dan sebaliknya, sekiranya pelanggan anda memutuskan untuk memigrasikan laman web mereka. Addon Site Exporter dan Importer ini memudahkan tugas tersebut. Alat ini mengeksport dan mengimport laman menggunakan fail zip, yang juga boleh berfungsi sebagai sandaran (backup).
+
+## Features
+
+* Eksport dan Import Laman
+* Antara muka yang mudah digunakan
+* Mencipta sandaran laman
+
+## Documentation
+**Cara Eksport dan Import Laman**
+
+## Installation
+
+1. Muat naik **ultimate-multisite-site-exporter** ke direktori **/wp-content/plugins/**
+2. Aktifkan plugin melalui menu **Plugins** dalam WordPress
+3. Ikuti Wizard langkah demi langkah untuk menyediakan plugin
+
+## Usage Guide
+
+Dengan Ultimate Multisite, anda boleh mengeksport laman dari network anda atau mengimport laman ke pemasangan multisite atau single-site anda.
+
+Untuk memulakan proses, pergi ke halaman add-ons kami dan pasang add-on Ultimate Multisite: Site Exporter & Importer.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Pergi ke halaman Plugins anda dan klik untuk **Network Activate** add-on yang baru anda pasang.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Pilihan **Export & Import** boleh didapati pada menu Ultimate Multisite, di sebelah kiri.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+Untuk mengeksport laman dari network anda, pergi ke **Export & Import** pada menu Ultimate Multisite dan, pada tab **Export Sites**, klik untuk **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Cari laman yang anda ingin eksport dan pilih item yang anda ingin sertakan dalam fail eksport. Anda boleh menyertakan tema, plugin, dan muat naik. Jika laman anda terlalu besar, anda boleh memilih untuk menjalankan proses eksport dalam latar belakang.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Klik butang **Export Site**. Laman yang dieksport akan tersedia dalam senarai **Existing Exports**. Klik butang **Download ZIP** untuk memuat turun fail tersebut. ZIP Eksport merangkumi `index.php` dan `readme.txt` yang boleh memulakan sendiri, jadi ia boleh dipasang pada hos baharu tanpa perlu memasang plugin importer berasingan terlebih dahulu.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+Untuk mengeksport semua subsite bersama-sama, pergi ke **Export & Import** pada menu Ultimate Multisite dan gunakan pilihan **Network Export** pada skrin eksport. Arkib yang dijana mengandungi semua subsite dalam satu ZIP untuk migrasi hos, pembinaan semula staging, atau sandaran peringkat network.
+
+Eksport network boleh menjadi besar. Jalankan apabila trafik rendah dan sahkan bahawa pelayan mempunyai storan yang mencukupi untuk arkib dan sebarang muat naik, plugin, dan tema yang disertakan.
+
+## How to import a site
+
+Untuk mengimport laman, pergi ke tab **Import a Site** dan muat naik fail .zip laman yang anda ingin import. Anda boleh mengubah URL kepada yang baharu atau mengekalkan URL lama dengan membiarkan ruang kosong. Selain itu, anda juga boleh menyemak kotak untuk memadam fail .zip dari pemasangan anda selepas import. Kemudian klik untuk **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Proses ini mungkin mengambil sedikit masa. Anda akan melihat import tertangguh dalam senarai di bawah importer.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Anda boleh menghentikan proses dengan mengklik **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Selepas proses selesai, laman anda sudah tersedia dalam network anda.
+
+## How to import a site on a single install
+
+Untuk mengimport laman ke pemasangan tunggal anda, pasang dan aktifkan importer pada laman anda terlebih dahulu. Anda boleh mencari pautan untuk memuat turunnya pada tab exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Anda boleh mencari importer pada menu **Tools**, di sebelah kiri, pada subitem **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Muat naik fail .zip laman yang anda ingin import. Anda boleh mengubah URL kepada yang baharu atau mengekalkan URL lama dengan membiarkan ruang kosong. Selain itu, anda juga boleh menyemak kotak untuk memadam fail .zip dari pemasangan anda selepas import. Kemudian klik untuk **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Proses ini mungkin mengambil sedikit masa. Anda akan melihat import tertangguh dalam senarai di bawah importer.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Anda boleh menghentikan proses dengan mengklik **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Selepas proses selesai, laman anda akan digantikan dengan laman yang baru anda import.

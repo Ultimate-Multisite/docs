@@ -1,0 +1,100 @@
+---
+title: ਬਹੁ-ਨੈੱਟਵਰਕ
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork addon aapki Ultimate Multisite platform ko shaktishali multinetwork functionality ke saath badhata hai. Yeh addon aapke customers ko sirf alag-alag sites hi nahi, balki poore WordPress multisite networks ko kharidne aur manage karne ki ijazat deta hai.
+
+## Key Features
+
+* **Network Provisioning**: Aapke customers ke liye poore WordPress multisite networks ko automatically banana aur configure karna.
+* **Network Templates**: Customers ko sign up karne se pehle prebuilt network template browse, preview, aur chune jaane dete hain.
+* **Network Management**: Multinetwork environments ke liye poori tarah se management ki suvidha.
+* **Isolated Networks**: Har customer network apne database tables aur configuration ke saath akele kaam karta hai.
+* **Cross-Network SSO**: Magic-link authentication ke zariye customers ko unke sub-networks tak aasani se pahunch dete hain.
+* **Scalable Architecture**: Optimized resource allocation ke saath kai networks ko aasani se handle karna.
+* **Integration**: Ultimate Multisite ke subscription aur billing systems ke saath behtar tareeke se jodh jaata hai.
+
+## Use Cases
+
+* **White Label Hosting**: Customers ko unke khud ke branded multisite networks dena.
+* **Agency Solutions**: Agencies ko ek hi platform se multiple client networks manage karne mein madad karna.
+* **Enterprise Deployments**: Bade sansthaon ko complex multi-network requirements ke saath support karna.
+* **Education Platforms**: Alag-alag schools ya departments ke liye alag networks banana.
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 or higher
+* WordPress Multisite installation
+* PHP 7.4 or higher
+* MySQL 5.6 or higher
+
+## Installation
+
+1. Plugin files ko `/wp-content/plugins/ultimate-multisite-multinetwork` directory mein upload karein.
+2. WordPress mein 'Plugins' screen ke zariye plugin activate karein.
+3. Ultimate Multisite → Settings ke zariye multinetwork settings configure karein.
+
+## Network Templates
+
+Version 1.3.0 un customers ke liye ek template discovery aur selection flow jodta hai jo naye networks kharid rahe hain. Network templates ka istemal tab karein jab aap chahte hain ki har naya customer network ek taiyar structure, design, content library, ya vertical-specific setup se shuru ho.
+
+### Template previewer
+
+Network template previewer customers ko checkout karne se pehle available templates browse karne deta hai. Har template ko ek live preview panel mein khola ja sakta hai, taaki customers network kharidne se pehle layouts aur content ki tulna kar saken.
+
+Customers ki madad karne ke liye previewer ka istemal karein:
+
+* Har available network template ke look aur structure ko dekhne ke liye.
+* Purchase flow se bahar hue bina multiple templates ki tulna karne ke liye.
+* Sign up karne se pehle us template ko chunne ke liye jo unke use case se sabse zyada mel khata ho.
+
+Template names aur descriptions ko customer-friendly rakhein. Previewer sabse zyada upyogi hota hai jab customers intended use case samajh paate hain, jaise ki agency networks, school networks, franchise networks, ya white-label hosting bundles.
+
+### Template picker at checkout
+
+Template picker ko signup checkout flow mein ek field ke taur par joda ja sakta hai. Configure karne par, customers checkout ke dauran woh network template chunte hain jo woh chahte hain, aur jab unka naya network provision hota hai toh chuna hua template istemal hota hai.
+
+Checkout flow mein picker ka istemal karne ke liye:
+
+1. Woh networks taiyar karein jo aap templates ke taur par offer karna chahte hain.
+2. Relevant signup ya checkout form mein Multinetwork template selection field enable karein.
+3. Chunein ki kaun se templates us checkout flow ke liye available hone chahiye.
+4. Checkout flow publish karein aur confirm karne ke liye ek signup test karein ki chuna hua template naye network par apply ho raha hai.
+
+Agar koi checkout flow sirf ek network product offer karta hai, tab bhi picker ek guided onboarding step ke taur par upyogi ho sakta hai. Multi-plan funnels ke liye, sirf woh templates dikhayein jo chune hue product ya plan ke saath compatible hain.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO customers ko unke primary account area aur sub-networks ke beech manually sign in kiye bina move karne deta hai. Jab koi customer cross-network access link follow karta hai, toh Ultimate Multisite ek time-limited magic link generate karta hai aur customer ko destination network mein authenticate karta hai.
+
+Yeh un customers ke liye experience ko behtar banata hai jo ek se zyada networks manage karte hain ya jinhe purchase ke turant baad naye clone kiye gaye template networks tak pahunchne ki zaroorat hoti hai.
+
+Admin checklist:
+
+* Confirm karein ki Multinetwork addon WordPress multisite installation mein active hai.
+* Ensure karein ki customers ko cross-network links offer karne se pehle sahi network access ho.
+* Network domains aur mapped domains ko sahi tarah se configure rakhein taaki magic links intended destination network tak resolve ho.
+* Network, domain, ya checkout settings badalne ke baad customer dashboard aur kisi bhi post-checkout access buttons ka test karein.
+
+Magic links ko login links ki tarah treat kiya jaana chahiye. Yeh seamless customer access ke liye design kiye gaye hain aur inhein intended session ke bahar forward ya reuse nahi kiya jaana chahiye.
+
+## Frequently Asked Questions
+
+### What is multinetwork?
+
+Multinetwork ek WordPress feature hai jo aapko ek hi WordPress installation par multiple independent multisite networks chalaane ki ijazat deta hai.
+
+### How is this different from regular multisite?
+
+Regular multisite ek network ke andar multiple sites ki ijazat deta hai. Multinetwork multiple networks ki ijazat deta hai, jismein har network ke apne sites hote hain, aur yeh sab ek hi WordPress installation ke andar hote hain.
+
+### Does this require special server configuration?
+
+Haan, multinetwork ko specific server setup aur configuration ki zaroorat hoti hai. Kripya detailed setup instructions ke liye documentation dekhein.

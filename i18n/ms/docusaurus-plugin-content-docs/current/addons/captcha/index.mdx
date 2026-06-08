@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Hentikan Bot. Lindungi Pendapatan. Tanpa Pening Kepala Konfigurasi.**
+
+Mengendalikan rangkaian multisite dengan domain tersuai? Anda pasti tahu kesusahannya: Google reCAPTCHA dan hCaptcha memerlukan anda mendaftarkan *setiap domain* dalam konsol pentadbiran mereka. Menambah tapak pelanggan baharu? Kemas kini konfigurasi captcha. Memetakan domain tersuai? Kemas kini lagi. Ia tidak pernah berakhir.
+
+**Ultimate Multisite: Captcha mengubah segalanya.**
+
+## Cap Captcha: Perlindungan Self-Hosted Yang Berfungsi Dengan Mudah
+
+Penyedia **Cap Captcha** baharu kami adalah pengubah permainan untuk rangkaian multisite:
+
+* **Konfigurasi Sifar** — Aktifkan addon ini dan anda sudah dilindungi. Tiada kunci API, tiada akaun Google, tiada dashboard hCaptcha, tiada senarai putih domain.
+* **Berfungsi pada Setiap Domain Secara Automatik** — Subdomain, domain dipetakan, domain pelanggan—semuanya dilindungi serta-merta.
+* **Self-Hosted & Peribadi** — Data anda tidak pernah meninggalkan pelayan anda. Sepenuhnya mematuhi GDPR tanpa pengesanan pihak ketiga.
+* **Bukti Kerja Tak Ketara** — Pengguna menyelesaikan teka-teki komputasi di latar belakang. Tiada mencubit pili bomba, tiada grid imej yang membuatkan anda frustrasi.
+* **Ringan** — Hanya 20KB. Tidak akan melambatkan proses pembayaran anda.
+
+## Perlindungan Ujian Kad WooCommerce
+
+Serangan ujian kad boleh menelan belanja berbilion dolar daripada peniaga setiap tahun. Penipu menggunakan bot untuk mengesahkan kad kredit curi terhadap proses pembayaran WooCommerce anda—anda membayar yuran pemprosesan, mereka mendapat nombor kad yang sah.
+
+**Kami melindungi di tempat yang paling penting:**
+
+* **Perlindungan API Kedai** — Menyekat serangan bot pada `/wp-json/wc/store/v1/checkout` yang memintas captcha borang tradisional
+* **Serasi dengan Pembayaran PayPal** — Berfungsi dengan lancar dengan WooCommerce PayPal Payments
+* **Statistik Masa Nyata** — Lihat dengan tepat berapa banyak serangan yang anda sekat
+
+## Masih Perlukan Google reCAPTCHA atau hCaptcha?
+
+Kami ada penyelesaiannya. Sokongan penuh untuk:
+
+* Google reCAPTCHA v2 (Kotak Semak)
+* Google reCAPTCHA v2 (Tidak Ketara)
+* Google reCAPTCHA v3 (Berdasarkan Skor)
+* hCaptcha (Standard)
+* hCaptcha (Tidak Ketara)
+
+Tukar antara penyedia pada bila-bila masa dari tetapan rangkaian anda.
+
+## Dibina untuk Skala
+
+* Tetapan seluruh rangkaian dengan penimbalan (overrides) setiap tapak
+* Dashboard statistik untuk memantau perlindungan
+* Tahap keselamatan boleh laras (Cepat, Sederhana, Maksimum)
+* Mesra Pembangun dengan seni bina penyedia yang boleh diperluaskan
+
+## Pemasangan
+
+1. Muat naik `ultimate-multisite-captcha` ke direktori `/wp-content/plugins/` anda
+2. Aktifkan plugin di peringkat Rangkaian
+3. **Itu sahaja. Anda dilindungi.**
+
+Cap Captcha diaktifkan secara automatik—tiada tetapan untuk dikonfigurasi, tiada kunci API untuk dimasukkan. Setiap endpoint yang disokong di seluruh rangkaian anda dilindungi sebaik sahaja anda mengaktifkannya.
+
+**Pilihan:** Untuk menggunakan Google reCAPTCHA atau hCaptcha pula, navigasi ke **Ultimate Multisite → Settings → Captcha** dan pilih penyedia pilihan anda.
+
+## Soalan Lazim
+
+## Adakah saya perlu mengkonfigurasi apa-apa?
+
+Tidak! Cap Captcha diaktifkan secara automatik apabila anda mengaktifkan addon ini. Seluruh rangkaian anda dilindungi serta-merta—tiada tetapan untuk dikonfigurasi, tiada kunci API untuk dimasukkan.
+
+## Adakah saya perlukan kunci API untuk Cap Captcha?
+
+Tidak. Cap Captcha adalah self-hosted sepenuhnya. Tiada akaun luaran, tiada pendaftaran domain, tiada sakit kepala konfigurasi.
+
+## Adakah ini akan melambatkan proses pembayaran saya?
+
+Cap Captcha hanya 20KB dan menjalankan cabaran bukti kerja di latar belakang. Pelanggan anda tidak akan perasan sebarang kelewatan.
+
+## Adakah ini melindungi daripada serangan ujian kad?
+
+Ya! Tidak seperti captcha tradisional yang hanya melindungi borang HTML, integrasi WooCommerce kami terus menyambung ke Store API untuk menyekat serangan bot pada peringkat API—di mana kebanyakan serangan ujian kad berlaku.
+
+## Bolehkah saya menggunakan penyedia captcha yang berbeza pada tapak yang berbeza?
+
+Penyedia captcha ditetapkan di peringkat rangkaian, tetapi anda boleh melaraskan tetapan kesukaran berdasarkan keperluan anda.
+
+## Adakah ini mematuhi GDPR?
+
+Cap Captcha 100% self-hosted tanpa data dihantar ke perkhidmatan luaran. Untuk Google reCAPTCHA dan hCaptcha, sila semak polisi privasi masing-masing.
+
+## Had Kadar (Rate Limiting)
+
+Ultimate Multisite: Captcha v1.5.0 memperkenalkan had kadar (rate limiter) hentian keras yang melindungi rangkaian anda daripada serangan brute-force dan ujian kad.
+
+### Cara Ia Berfungsi
+
+Had kadar ini mengira setiap permintaan GET dan POST pada permukaan yang dilindungi captcha:
+
+* **Endpoint log masuk WordPress** — wp-login, register, lost-password, comments
+* **Pembayaran WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Apabila pelawat melebihi had kadar, plugin akan membalas dengan:
+
+* Status kod **HTTP 429 (Too Many Requests)**
+* Header **Retry-After** yang menunjukkan bila untuk cuba semula
+* **Tidur tarpit rawak** (1–5 saat secara lalai, dihadkan keras pada 15 saat) untuk melambatkan penyerang
+
+### Konfigurasi
+
+#### Masa Tarpit (Tarpit Timing)
+
+Kawal kelewatan rawak yang dikenakan pada permintaan yang dihadkan kadar:
+
+* **`cap_rate_limit_tarpit_min`** — Tempoh tidur minimum dalam saat (lalai: 1)
+* **`cap_rate_limit_tarpit_max`** — Tempoh tidur maksimum dalam saat (lalai: 5, dihadkan keras pada 15)
+
+Tetapan ini tersedia dalam **Ultimate Multisite → Settings → Captcha**.
+
+### Kebolehluasan (Extensibility)
+
+#### Penapis Senarai Putih IP (IP Whitelist Filter)
+
+Mengecualikan julat IP yang dipercayai daripada had kadar:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Senarai putih perkhidmatan pemantauan anda
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Tindakan Pra-Sekatan (Pre-Block Action)
+
+Laksanakan logik tersuai serta-merta sebelum sebarang sekatan had kadar dihantar:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log sekatan, maklumkan pentadbir, atau kemas kini metrik tersuai
+    error_log( "Had kadar dicetuskan untuk $ip pada $surface" );
+}, 10, 2 );
+```
+
+## Pengesanan IP Klien & Proxy Dipercayai
+
+Ultimate Multisite: Captcha v1.5.0 memperkenalkan pengesanan client-IP yang tahan spoof. Kaedah `Captcha_Core::get_client_ip()` kini merupakan sumber kebenaran tunggal untuk pengatribusian IP pelawat merentasi:
+
+* Kunci bakul had kadar
+* `remoteip` penyedia captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hash IP statistik
+
+### Model Kepercayaan
+
+Plugin ini menguatkuasakan hierarki kepercayaan IP yang ketat:
+
+1. **REMOTE_ADDR** — Sentiasa dipercayai (IP rakan sebaya segera)
+2. **CF-Connecting-IP** — Hanya dihormati apabila:
+   - Rakan sebaya segera berada di dalam julat IP Cloudflare semasa
+   - `cap_trust_cloudflare_headers` diaktifkan (lalai: OFF)
+3. **X-Forwarded-For** — Hanya dihormati apabila:
+   - Rakan sebaya segera berada dalam senarai proxy dipercayai yang dikonfigurasi pentadbir anda
+   - Header diproses dari kanan ke kiri, melangkau lompatan/hop Cloudflare/dipercayai
+
+### Konfigurasi
+
+#### Kepercayaan Header Cloudflare
+
+Aktifkan kepercayaan header `CF-Connecting-IP` Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Tetapkan kepada ON untuk memilih kepercayaan `CF-Connecting-IP`
+  - Lalai: OFF (dimatikan)
+  - Plugin ini disertakan dengan snapshot Cloudflare CIDR yang dibundel
+  - Julat CIDR dikemas kini setiap minggu melalui wp-cron
+  - Fallback bundel digunakan jika kemas kini gagal
+
+#### Konfigurasi Proxy Dipercayai
+
+Tentukan proxy dan load-balancer barisan hadapan anda:
+
+* **`cap_trusted_proxies`** — Textarea CIDR atau IP kosong (satu setiap baris)
+  - Komen dibenarkan (baris yang bermula dengan `#`)
+  - Tanpa tetapan ini, `X-Forwarded-For` diabaikan walaupun had kadar diaktifkan
+  - Contoh:
+    ```
+    # Load balancer kami
+    192.0.2.0/24
+
+    # Proxy sandaran
+    198.51.100.50
+    ```
+
+#### Pengesanan Auto-Aktif Pertama
+
+Apabila anda pertama kali mengaktifkan had kadar, plugin mengesan postur Cloudflare dan proxy anda yang mungkin dan memaparkan notis pentadbir "Guna tetapan yang dikesan" sekali klik.
+
+* Plugin **tidak pernah menimpa** nilai yang disimpan
+* Jika trafik berikutnya menunjukkan konfigurasi anda tidak lagi sepadan dengan realiti (cth., Cloudflare menukar julat CIDR), notis ketidakpadanan yang tidak boleh ditutup akan muncul dengan kemas kini yang disyorkan
+
+### Mengapa Ini Penting
+
+Model kepercayaan IP yang ketat menutup vektor spoofing kritikal: permintaan dari pelayan asal langsung yang membawa header `CF-Connecting-IP` palsu sebelum ini akan dibakul oleh IP palsu itu dan bukannya rakan sebaya sebenar. Ini sangat penting untuk:
+
+* **Had kadar** — Penyerang tidak boleh memintas had dengan memalsukan IP
+* **Statistik** — Metrik serangan anda mencerminkan IP pelawat sebenar, bukan yang palsu
+* **Pengesahan Captcha** — Penyedia menerima IP pelawat yang betul untuk penilaian risiko

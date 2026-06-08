@@ -1,0 +1,124 @@
+---
+title: Multi-tenancy
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Fordeler sub-nettsteder over flere servere og databaser for bedre ytelse og sikkerhet
+
+## Krav
+
+- WordPress 5.3 eller nyere
+- PHP 7.4 eller nyere
+- Multisite Ultimate-plugin (aktiv)
+
+## Installasjon
+
+1. Last opp addon-filene til katalogen din `/wp-content/plugins/`
+2. Aktiver pluginet via menyen 'Plugins' i WordPress
+3. Konfigurer addon-innstillingene i nettverksadministrasjonen
+
+## Utvikling
+
+### Oppsett
+
+```bash
+# Installer avhengigheter
+composer install
+npm install
+
+# Kjør tester
+npm run test
+
+# Kjør sjekker for kodekrav
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Rett opp kodefeil
+vendor/bin/phpcbf
+
+# Bygg for produksjon
+npm run build
+```
+
+### Prosjektstruktur
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP-klasser og inkluderinger
+│   ├── class-multisite-ultimate-updater.php  # Oppdateringshåndterer
+│   └── class-multi_tenancy-main.php             # Hovedfunksjonalitet
+├── tests/                        # Enhetstester
+│   ├── bootstrap.php            # Test-oppsett
+│   ├── class-*-base.php         # Basis testklasse
+│   └── class-*-test.php         # Testtilfeller
+├── views/                       # Malfiler
+├── assets/                      # Statiske ressurser
+│   ├── css/                     # Stilark
+│   ├── js/                      # JavaScript-filer
+│   └── images/                  # Bilder
+├── lang/                        # Språkfiler
+├── composer.json                # PHP-avhengigheter
+├── package.json                 # Node.js-avhengigheter
+├── phpunit.xml.dist             # PHPUnit-konfigurasjon
+├── .phpcs.xml.dist              # Kodekrav-konfigurasjon
+└── rector.php                   # Kodeoppgraderingsregler
+```
+
+### Testing
+
+Addonet inkluderer et omfattende testrammeverk:
+
+- **Enhetstester (Unit Tests)**: PHPUnit-baserte tester med WordPress test suite
+- **Basis Testklasse (Base Test Class)**: Gir hjelpefunksjoner for vanlige testscenarier
+- **Testdekning (Test Coverage)**: Konfigurert for å spore kodekdekning
+- **Multisite Testing**: Tester kjøres i et multisite-miljø
+
+### Kodekrav
+
+- **WordPress Coding Standards**: Håndhevet via PHPCS
+- **PHP 7.4+ Kompatibilitet**: Støtter moderne PHP-funksjoner
+- **Statisk Analyse (Static Analysis)**: PHPStan-integrasjon for typesjekking
+- **Kodeoppgradering (Code Modernization)**: Rector-regler for PHP-oppgraderinger
+
+### Byggsystem (Build System)
+
+- **Asset Prosessering**: Minifisering av CSS/JS-filer
+- **Oversettelse (Translation)**: Generering av POT-filer
+- **Pakking (Packaging)**: Opprettelse av arkiver for distribusjon
+- **Utviklingsmodus (Development Mode)**: Ikke-minifiserte ressurser for feilsøking
+
+## Konfigurasjon
+
+Addonet støtter ulike konfigurasjonsalternativer som er tilgjengelige via nettverksadministrasjonsgrensesnittet.
+
+## Hooks og Filtre
+
+### Handlinger (Actions)
+
+- `ultimate-multisite-addon-template_init` - Utløses etter addon-initialisering
+- `ultimate-multisite-addon-template_loaded` - Utløses etter at alle addon-filer er lastet
+
+### Filtre (Filters)
+
+- `ultimate-multisite-addon-template_settings` - Endre addon-innstillinger
+- `ultimate-multisite-addon-template_enabled` - Overstyre addon-aktiveringsstatus
+
+## Lisens
+
+Dette addonet er lisensiert under GPL v3 eller nyere.
+
+## Støtte
+
+For støtte og dokumentasjon, besøk [MultisiteUltimate.com](https://multisiteultimate.com)
+## Endringslogg (Changelog)
+
+- Versjon 1.0.1 (2025-09-28): omdøper prefiks til ultimate-multisite; oppdaterer tekstdomene; versjonsøkning.
+
+
+- Versjon (2025-09-28): omdøper prefiks til ultimate-multisite; oppdaterer tekstdomene; versjonsøkning.

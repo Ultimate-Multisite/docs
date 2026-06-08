@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector untuk WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM membawa keupayaan inferens AI asli pelayar (browser-native AI inference) ke rangkaian multisite WordPress anda. Ia menjalankan model bahasa besar (large language models) sepenuhnya di dalam pelayar menggunakan WebLLM dan enjin MLC — tiada kunci API, tiada panggilan luaran, dan tiada data yang meninggalkan peranti pengguna.
+
+## Ciri-ciri Utama
+
+- **Inferens di sisi pelayar**: LLM berjalan secara tempatan di pelayar pelawat melalui WebLLM/MLC — tidak memerlukan GPU pelayan
+- **Widget sembang terapung**: Pengguna yang log masuk boleh memberikan arahan kepada LLM di sisi pelayar terus dari bahagian hadapan (front end)
+- **Indikator status admin-bar**: Status WebLLM masa nyata boleh dilihat di bar admin WordPress
+- **SharedWorker runtime**: Pelbagai tab pelayar berkongsi satu sesi GPU berbanding bersaing untuk sumber GPU
+- **apiFetch middleware**: Permintaan REST WordPress yang sepadan dengan corak AI Client SDK akan dirutekan secara telus ke broker WebLLM tempatan — tiada perjalanan pulang-pergi HTTP loopback
+- **UI tetapan widget**: Tetapan panel Connector untuk menghidupkan atau mematikan widget sembang dan mengkonfigurasi tingkah laku auto-prompt
+- **IndexedDB cache**: Muat turun berat model kekal walaupun berlaku pengalihan CDN yang memecahkan laluan Cache API lalai
+- **integrasi wpai filter**: Menyambung ke filter `wpai_preferred_text_models` supaya ciri AI Experiments merutekan ke enjin pelayar apabila dikonfigurasi
+
+## Keperluan
+
+- WordPress 5.3 atau lebih tinggi
+- PHP 7.4 atau lebih tinggi
+- Plugin Ultimate Multisite (aktif)
+- Pelayar dengan sokongan WebGPU (Chrome 113+, Edge 113+, atau Firefox Nightly dengan WebGPU diaktifkan)
+
+## Pemasangan
+
+1. Muat naik fail addon ke direktori `/wp-content/plugins/` anda
+2. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
+3. Navigasi ke **Ultimate Multisite → AI Connector** untuk mengkonfigurasi addon
+
+## Widget Sembang Terapung
+
+Widget sembang terapung membolehkan mana-mana pengguna yang log masuk berinteraksi dengan LLM di sisi pelayar terus dari bahagian hadapan anda, tanpa meninggalkan halaman yang sedang mereka lihat.
+
+### Apa Fungsinya
+
+Apabila diaktifkan, ikon sembang akan muncul di sudut setiap halaman hadapan untuk pengguna yang log masuk. Mengklik ikon tersebut akan membuka panel sembang di mana pengguna boleh menaip arahan dan menerima respons daripada model WebLLM yang berjalan secara tempatan. Oleh kerana model berjalan sepenuhnya di dalam pelayar, respons adalah peribadi dan tidak melibatkan sebarang pemprosesan sisi pelayan.
+
+### Indikator Status Admin-Bar
+
+Bar admin WordPress merangkumi indikator status yang menunjukkan keadaan semasa enjin WebLLM:
+
+| Status | Maksud |
+|--------|---------|
+| **Loading** | Enjin MLC sedang memulakan atau memuat turun berat model |
+| **Ready** | Model telah dimuatkan dan tersedia untuk inferens |
+| **Idle** | Enjin telah dimuatkan tetapi tab SharedWorker tidak aktif |
+| **Error** | Enjin gagal dimulakan — semak konsol pelayar untuk butiran |
+
+Indikator ini dikemas kini secara masa nyata tanpa memerlukan muat semula halaman.
+
+### Cara Mengaktifkan atau Mematikan Widget
+
+1. Pergi ke **Ultimate Multisite → AI Connector** dalam pentadbiran rangkaian
+2. Cari panel **Connector**
+3. Tukar suis **Enable floating chat widget** kepada hidup atau mati
+4. Simpan tetapan
+
+Widget ini juga boleh dihidupkan atau dimatikan bagi setiap tapak dari pentadbiran tapak itu sendiri jika pentadbir rangkaian telah memberikan keupayaan tersebut.
+
+## Tetapan Widget
+
+Panel Connector dalam **Ultimate Multisite → AI Connector** mengandungi tetapan berikut untuk widget sembang terapung:
+
+### Enable Floating Chat Widget
+
+Menghidupkan atau mematikan widget sembang untuk keseluruhan rangkaian. Apabila dimatikan, widget tidak akan muncul pada mana-mana halaman hadapan, tanpa mengira peranan pengguna.
+
+**Lalai:** Mati
+
+### Auto-Prompt Behaviour
+
+Mengawal sama ada widget sembang secara automatik menghantar arahan apabila pengguna membukanya.
+
+| Pilihan | Tingkah Laku |
+|--------|-----------|
+| **Disabled** | Widget dibuka kepada sembang kosong — pengguna menaip arahan sendiri |
+| **Page context** | Widget dibuka dengan arahan yang telah diisi berdasarkan tajuk dan kandungan halaman semasa |
+| **Custom prompt** | Widget dibuka dengan arahan tersuai yang anda tentukan dalam medan di bawah |
+
+Apabila ditetapkan kepada **Custom prompt**, medan teks tambahan akan muncul di mana anda boleh memasukkan teks arahan lalai. Menyokong pemboleh ubah templat asas:
+
+- `{site_name}` — nama tapak semasa
+- `{page_title}` — tajuk halaman semasa
+- `{user_display_name}` — nama paparan pengguna yang log masuk
+
+**Lalai:** Mati
+
+## SharedWorker Runtime
+
+Versi 1.1.0 memperkenalkan SharedWorker runtime untuk enjin MLC. Sebelum ini, setiap tab pelayar yang menggunakan WebLLM memuatkan instans modelnya sendiri, bersaing untuk memori GPU dan menyebabkan isu prestasi pada peranti dengan VRAM terhad.
+
+Dengan SharedWorker runtime, satu tab bertindak sebagai hos enjin. Semua tab lain berkomunikasi dengan instans tunggal itu melalui saluran mesej pekerja (worker's message channel). Hasilnya:
+
+- Satu sesi GPU dikongsi merentasi semua tab yang dibuka
+- Respons lebih pantas setelah model dimuatkan (tiada inisialisasi berulang)
+- Penggunaan memori puncak yang lebih rendah pada peranti
+
+SharedWorker adalah telus kepada pengguna. Indikator status admin-bar sentiasa mencerminkan keadaan enjin yang dikongsi, bukan tab individu.
+
+## apiFetch Middleware
+
+Addon ini memasang middleware `apiFetch` yang mencegat permintaan REST API WordPress yang sepadan dengan corak AI Client SDK. Daripada membuat permintaan HTTP loopback ke pelayan, permintaan ini dirutekan terus ke broker WebLLM tempatan yang berjalan dalam SharedWorker.
+
+Ini bermakna plugin dan tema yang menggunakan API `apiFetch` standard WordPress untuk memanggil titik akhir AI akan mendapat manfaat secara automatik daripada model sisi pelayar apabila ia tersedia, tanpa memerlukan sebarang perubahan kod.
+
+## Hooks dan Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Mendaftarkan enjin pelayar WebLLM sebagai model teks pilihan. Addon ini menyambung ke filter ini secara automatik apabila enjin dikonfigurasi dan tersedia.
+- `ultimate_webllm_widget_enabled` — Menimpa status widget diaktifkan untuk pengguna atau konteks tertentu. Kembalikan `true` atau `false`.
+- `ultimate_webllm_auto_prompt` — Mengubah teks auto-prompt sebelum ia dihantar ke widget. Menerima rentetan arahan dan objek `WP_Post` semasa.
+
+## Penyelesaian Masalah
+
+### Widget sembang tidak muncul
+
+- Sahkan pengguna telah log masuk — widget ini hanya dipaparkan kepada pengguna yang disahkan
+- Semak bahawa **Enable floating chat widget** ditukar kepada hidup dalam panel Connector
+- Sahkan pelayar pengguna menyokong WebGPU (lihat Keperluan di atas)
+
+### Indikator admin-bar menunjukkan "Error"
+
+Buka konsol pembangun pelayar (F12) dan cari ralat berkaitan WebLLM. Punca biasa:
+
+- Pelayar tidak menyokong WebGPU
+- Muat turun berat model gagal — semak sambungan rangkaian dan cuba kosongkan cache IndexedDB dalam alat pembangun pelayar (Application → IndexedDB)
+- Sambungan pelayar (browser extension) menyekat SharedWorker
+
+### Berat model dimuat turun setiap kali
+
+Addon ini menggunakan IndexedDB sebagai backend cache untuk memastikan berat model kekal walaupun berlaku pengalihan CDN. Jika berat dimuat turun semula pada setiap lawatan, semak bahawa IndexedDB tidak dikosongkan oleh tetapan privasi pelayar atau sambungan.
+
+## Changelog
+
+Lihat [Changelog](./changelog) untuk sejarah versi penuh.

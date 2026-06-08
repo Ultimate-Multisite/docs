@@ -1,0 +1,117 @@
+---
+title: Pelbagai Mata Wang
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency membolehkan rangkaian anda menerima pembayaran dalam pelbagai mata wang. Ia secara automatik menukar harga menggunakan kadar pertukaran hidup atau manual, membenarkan anda menetapkan harga tepat bagi setiap produk dalam mana-mana mata wang, dan mengesan mata wang pilihan setiap pelawat melalui geolokasi — semuanya diuruskan dari satu papan pemuka pentadbir.
+
+## Ciri-ciri Utama
+
+- **Penukaran kadar pertukaran automatik** — harga ditukar daripada mata wang asas anda menggunakan kadar yang diambil daripada pembekal pilihan anda
+- **Penindasan harga per-produk** — tetapkan harga spesifik mata wang pada mana-mana produk untuk memintas penukaran automatik
+- **Medan pendaftaran pemilih mata wang** — membenarkan pelanggan memilih mata wang pilihan mereka semasa daftar/checkout
+- **Pelbagai pembekal kadar pertukaran** — ECB, Frankfurter, Stripe, atau kadar manual sepenuhnya
+- **Pengesanan mata wang berasaskan geolokasi** — secara automatik memilih mata wang yang sepadan dengan negara pelawat
+- **Papan pemuka pentadbir** — uruskan mata wang aktif, kadar pertukaran, dan tetapan pembekal dari satu tempat
+
+## Keperluan
+
+- Ultimate Multisite 2.0.0 atau lebih tinggi
+- Pemasangan WordPress Multisite
+- PHP 7.4 atau lebih tinggi
+
+## Pemasangan
+
+1. Muat naik fail plugin ke `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktifkan plugin melalui skrin **Plugins** dalam WordPress (Aktifkan Rangkaian)
+3. Navigasi ke **Ultimate Multisite → Multi-Currency** untuk membuka papan pemuka pentadbir
+4. Tambah mata wang yang anda ingin terima dan konfigurasikan pembekal kadar pertukaran anda
+
+## Konfigurasi
+
+### Papan Pemuka Pentadbir
+
+Papan pemuka pentadbir Multi-Currency (**Ultimate Multisite → Multi-Currency**) adalah tempat pusat untuk:
+
+- Menambah, mengaktifkan, atau menyahaktifkan mata wang
+- Memilih pembekal kadar pertukaran dan menyegarkan kadar mengikut permintaan
+- Menyemak kadar semasa untuk semua mata wang aktif
+- Menetapkan kadar manual apabila pembekal automatik tidak sesuai
+
+### Pembekal Kadar Pertukaran
+
+| Pembekal | Penerangan |
+|---|---|
+| **ECB** | European Central Bank — kadar harian percuma untuk rangkaian berasaskan EUR |
+| **Frankfurter** | API cermin ECB sumber terbuka — percuma, tiada kunci API diperlukan |
+| **Stripe** | Menggunakan kadar FX hidup Stripe — memerlukan integrasi Stripe yang aktif |
+| **Manual** | Anda memasukkan kadar secara langsung; tiada panggilan API luaran |
+
+Pilih pembekal anda di bawah **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kadar boleh disegarkan secara manual pada bila-bila masa atau dijadualkan untuk dikemas kini secara automatik.
+
+### Penindasan Harga Per-Produk
+
+Apabila penukaran automatik tidak cukup tepat, anda boleh menetapkan harga tepat untuk mata wang tertentu pada mana-mana produk:
+
+1. Buka editor produk (**Ultimate Multisite → Products → Edit**)
+2. Gulir ke bahagian **Currency Pricing**
+3. Masukkan harga tepat untuk setiap mata wang yang ingin anda tindih
+4. Simpan produk
+
+Produk tanpa penindasan akan menggunakan harga yang ditukar daripada mata wang asas anda.
+
+### Medan Pendaftaran Pemilih Mata Wang
+
+Medan pemilih mata wang boleh ditambah ke aliran pendaftaran/checkout anda supaya pelanggan memilih mata wang pilihan mereka semasa mendaftar:
+
+1. Pergi ke **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktifkan **Show currency selector on signup**
+3. Secara pilihan tetapkan mata wang lalai atau biarkan geolokasi menentukan nilai pra-pilihan
+
+Mata wang yang dipilih disimpan bersama langganan dan digunakan untuk semua bil berikutnya.
+
+### Pengesanan Mata Wang Berasaskan Geolokasi
+
+Apabila pengesanan geolokasi diaktifkan, addon memetakan negara pelawat kepada mata wang dan memilihnya secara pra-pilihan dalam medan pemilih mata wang. Untuk mengaktifkan:
+
+1. Pergi ke **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktifkan **Detect currency from visitor location**
+3. Petakan negara kepada mata wang dalam jadual **Geolocation Mapping**
+
+Jika tiada pemetaan wujud untuk negara pelawat, mata wang asas rangkaian digunakan sebagai pilihan sandaran.
+
+## Soalan Lazim
+
+### Apa yang berlaku jika pembekal kadar pertukaran tidak tersedia?
+
+Addon akan kembali kepada kadar yang berjaya diambil kali terakhir. Jika tiada kadar pernah diambil, ia akan kembali kepada kadar manual yang telah anda konfigurasikan. Disyorkan untuk mengkonfigurasikan kadar manual sebagai langkah keselamatan.
+
+### Bolehkah saya menggunakan pembekal yang berbeza untuk mata wang yang berbeza?
+
+Tidak — satu pembekal aktif pada satu masa untuk semua mata wang. Gunakan **Manual** jika anda memerlukan kawalan penuh ke atas kadar individu.
+
+### Adakah geolokasi memerlukan plugin berasingan?
+
+Tiada plugin geolokasi luaran diperlukan. Addon menggunakan pengesanan IP-ke-negara terbina dalam WordPress. Untuk ketepatan yang lebih tinggi, perkhidmatan geolokasi khusus boleh diintegrasikan melalui *hook* penapis yang disediakan.
+
+### Adakah penindasan per-produk dikenakan sebelum atau selepas cukai?
+
+Penindasan per-produk menetapkan harga pra-cukai dalam mata wang sasaran. Cukai dikira di atas harga penindasan menggunakan konfigurasi cukai anda yang sedia ada.
+
+## Log Perubahan
+
+### Versi 1.0.0 — Dikeluarkan pada 2026-04-02
+
+- Baharu: Sokongan multi-mata wang dengan penukaran kadar pertukaran automatik
+- Baharu: Penindasan harga per-produk untuk harga spesifik mata wang yang tepat
+- Baharu: Medan pendaftaran pemilih mata wang untuk aliran checkout
+- Baharu: Pembekal kadar pertukaran: ECB, Frankfurter, Stripe, dan manual
+- Baharu: Pengesanan mata wang berasaskan geolokasi
+- Baharu: Papan pemuka pentadbir untuk mengurus mata wang dan kadar pertukaran
+- Pembaikan: Papan pemuka sentiasa menunjukkan harga dalam mata wang asas tanpa mengira mata wang yang dipilih

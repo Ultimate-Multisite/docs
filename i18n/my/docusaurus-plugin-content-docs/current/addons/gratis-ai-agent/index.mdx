@@ -1,0 +1,143 @@
+---
+title: အခမဲ့ AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent ဆိုတာ natural language ညွှန်ကြားချက်တွေကနေပြီး WordPress website တွေကို စီမံကိန်းဆွဲတာ၊ တည်ဆောက်တာနဲ့ စီမံခန့်ခွဲတာတွေ လုပ်နိုင်တဲ့ autonomous WordPress AI assistant တစ်ခုပါ။ ဒါဟာ content စီမံခန့်ခွဲမှုကနေ design system ကို စိတ်ကြိုက်ပြင်ဆင်တာအထိ အရာအားလုံးကို ဖုံးလွှမ်းထားတဲ့၊ **abilities** (စွမ်းဆောင်ရည်များ) ဆိုတဲ့ စနစ်တကျဖွဲ့စည်းထားတဲ့၊ စမ်းသပ်နိုင်တဲ့ လုပ်ဆောင်ချက်အစုအဝေးတွေကို ပေးစွမ်းပါတယ်။ Version 1.9.0 မှာ content ဖန်တီးနိုင်တဲ့ abilities တွေ၊ client-side screenshot တွေကနေ visual page review လုပ်နိုင်မှု၊ built-in agent profile ငါးခု၊ ပြီးတော့ access control နဲ့ branding အတွက် feature flags တွေ ထပ်ပေါင်းထည့်ထားပါတယ်။
+
+## Key Features
+
+- **Abilities system** — ဒါကတော့ agent က သင့် WordPress installation ပေါ်မှာ ခေါ်သုံးနိုင်တဲ့ လုပ်ဆောင်ချက်တွေရဲ့ module တစ်ခု၊ ချဲ့ထွင်နိုင်တဲ့ စာရင်းတစ်ခုပါ
+- **Content Management** — post တွေနဲ့ page တွေ ဖန်တီးနိုင်ခြင်း (page template သတ်မှတ်တာအပါအဝင်)၊ post အများအပြားကို တစ်ခါတည်း batch-create လုပ်နိုင်ခြင်း၊ featured image တွေ သတ်မှတ်နိုင်ခြင်း၊ နဲ့ contact form တွေ တည်ဆောက်နိုင်ခြင်း
+- **Visual Review** — live page တွေရဲ့ screenshot တွေ ရိုက်ယူနိုင်ခြင်း၊ before/after အခြေအနေတွေကို နှိုင်းယှဉ်နိုင်ခြင်း၊ ပြီးတော့ layout၊ typography၊ colour နဲ့ accessibility အပါအဝင် AI ကနေ ဖန်တီးပေးတဲ့ design review ကို ရရှိနိုင်ခြင်း
+- **Five built-in agents** — Content Writer, Site Builder, Design Studio, Plugin Manager, နဲ့ Support Assistant တို့ဖြစ်ပြီး chat header က Agent Picker ကနေ ပြောင်းလဲအသုံးပြုနိုင်ပါတယ်
+- **Feature flags** — Settings → Feature Flags မှာ တွေ့ရတဲ့ access-control နဲ့ branding အတွက် toggle တွေဖြစ်ပြီး role restriction၊ white-label နာမည်ပေးခြင်း၊ နဲ့ widget customisation အတွက် အသုံးပြုနိုင်ပါတယ်
+- **Custom Post Type management** — custom post type တွေကို register လုပ်ခြင်း၊ list လုပ်ခြင်း၊ နဲ့ delete လုပ်ခြင်း (restart လုပ်ရင်တောင် အချက်အလက်တွေ မပျက်စေရ)
+- **Custom Taxonomy management** — custom taxonomies တွေကို register လုပ်ခြင်း၊ list လုပ်ခြင်း၊ နဲ့ delete လုပ်ခြင်း (အချက်အလက်တွေ မပျက်စေရ)
+- **Design System abilities** — custom CSS တွေ ထည့်သွင်းနိုင်ခြင်း၊ curated block patterns တွေကို စီမံခန့်ခွဲနိုင်ခြင်း၊ site logo သတ်မှတ်နိုင်ခြင်း၊ နဲ့ theme.json presets တွေ အသုံးပြုနိုင်ခြင်း
+- **Global Styles management** — colour palettes၊ typography၊ spacing စတဲ့ theme.json values တွေကို ဖတ်ပြီး ရေးနိုင်ခြင်း
+- **Navigation Menu management** — navigation menu တွေနဲ့ သူတို့ရဲ့ items တွေကို programmatically ဖန်တီးပြီး update လုပ်နိုင်ခြင်း
+- **Options Management** — critical settings တွေကို ကာကွယ်ဖို့ built-in safety blocklist ပါတဲ့ WordPress options တွေကို ဖတ်ပြီး ရေးနိုင်ခြင်း
+- **Installable Abilities Registry** — core plugin files တွေကို ပြင်ဆင်စရာမလိုဘဲ အပို abilities pack တွေကို ရှာဖွေပြီး activate လုပ်နိုင်ခြင်း
+- **Site Builder Orchestration v2** — plugin discovery၊ progress tracking နဲ့ error recovery ပါတဲ့ multi-step site build plans များ
+- **WP-CLI benchmark command** — CI နဲ့ model evaluation အတွက် command line ကနေ agent capability benchmark suite ကို run နိုင်ခြင်း
+
+## Requirements
+
+- WordPress 6.0 ဒါမှ အမြင့်
+- PHP 8.1 ဒါမှ အမြင့်
+- WordPress Multisite (network-activated) ဒါမှ single-site installation
+- အသက်ဝင်တဲ့ AI provider connector plugin (Anthropic, OpenAI, ဒါမှ ဒါနဲ့လိုက်ဖက်တဲ့ဟာ)
+
+## Installation
+
+1. plugin files တွေကို `/wp-content/plugins/gratis-ai-agent` ကို upload လုပ်ပါ
+2. WordPress ရဲ့ **Plugins** screen ကနေ plugin ကို activate လုပ်ပါ
+3. **Gratis AI Agent → Settings** ကို သွားပြီး AI provider ကို ချိတ်ဆက်ပါ
+4. (ရွေးချယ်နိုင်သည်) အပို abilities pack တွေ install လုပ်ဖို့ **Abilities Registry** ကို ကြည့်ရှုပါ
+
+## Quick Start
+
+Activate လုပ်ပြီး AI provider နဲ့ ချိတ်ဆက်ပြီးတာနဲ့ WordPress admin sidebar မှာ **Gratis AI Agent** panel ကို ဖွင့်ပါ။ natural language ညွှန်ကြားချက်တစ်ခု ရိုက်ထည့်လိုက်ရုံနဲ့ agent က သူ့မှာရှိတဲ့ abilities တွေကို အသုံးပြုပြီး လိုအပ်တဲ့ အဆင့်တွေကို စီမံကိန်းဆွဲပြီး အကောင်အထည်ဖော်ပေးပါလိမ့်မယ်။
+
+**ဥပမာ ညွှန်ကြားချက်များ:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities Overview
+
+Abilities ဆိုတာ agent လုပ်ဆောင်နိုင်တဲ့ atomic actions တွေ ဖြစ်ပါတယ်။ abilities တစ်ခုချင်းစီဟာ agent က runtime မှာ ဖတ်ရတဲ့ schema (parameters နဲ့ return types) ကို ပေးစွမ်းတဲ့ register လုပ်ထားတဲ့ PHP class တစ်ခု ဖြစ်ပါတယ်။ abilities တွေကို လုပ်ဆောင်ချက်နယ်ပယ်အလိုက် အုပ်စုဖွဲ့ထားပါတယ်-
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+အသေးစိတ် parameter documentation နဲ့ usage examples တွေအတွက် [Abilities Reference](./abilities) ကို ကြည့်ရှုနိုင်ပါတယ်။
+
+## WP-CLI
+
+Gratis AI Agent က command line ကနေ benchmark တွေ run နိုင်ဖို့နဲ့ abilities တွေကို စီမံခန့်ခွဲနိုင်ဖို့ `wp gratis-ai-agent` command family ကို ပါဝင်ပေးထားပါတယ်။ command အပြည့်အစုံ စာရင်းအတွက် [WP-CLI Reference](./wp-cli) ကို ကြည့်ရှုနိုင်ပါတယ်။
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration
+
+settings အားလုံးကို WordPress admin မှာ **Gratis AI Agent → Settings** အောက်မှာ တွေ့ရမှာပါ-
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | အသုံးပြုမယ့် active AI provider connector ကို ရွေးချယ်ပြီး configure လုပ်ပါ |
+| **Model** | agent session အတွက် အသုံးပြုမယ့် language model ကို ရွေးချယ်ပါ |
+| **Max Tokens** | တစ်ခါတောင်းဆိုမှုအတွက် token budget (default 4096) |
+| **Ability Timeout** | abilities တစ်ခုချင်းစီ အများဆုံး run နိုင်တဲ့ စက္ကန့်အရေအတွက် (default 30) |
+| **Debug Logging** | ability ခေါ်ဆိုမှုတွေနဲ့ agent reasoning တွေကို WordPress debug log မှာ မှတ်တမ်းတင်ခြင်း |
+
+## Options Management Safety Blocklist
+
+Options Management ability မှာ sensitive WordPress options တွေကို agent က ဖတ်တာ ဒါမှမဟုတ် ရေးတာကို တားမြစ်ပေးတဲ့ built-in blocklist ပါဝင်ပါတယ်။ default blocklist မှာ အောက်ပါအရာတွေ ပါဝင်ပါတယ်-
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options များ — ဒါတွေအတွက် dedicated migration tool ကို အသုံးပြုပါ)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (secret keys များ)
+- `active_plugins`, `template` (plugin/theme activation — dedicated abilities တွေကို အသုံးပြုပါ)
+- installed plugins တွေက မှတ်ပုံတင်ထားတဲ့ Payment gateway credentials နဲ့ API keys များ
+
+အပို entries တွေကို `gratis_ai_agent_options_blocklist` filter ကနေ ထပ်ထည့်နိုင်ပါတယ်။
+
+## Hooks and Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — ability တစ်ခု register လုပ်ပြီးတဲ့အခါ trigger ဖြစ်ပြီး ability class name ကို လက်ခံရရှိပါတယ်
+- `gratis_ai_agent_plan_started` — site builder plan တစ်ခု စတင် execute လုပ်တဲ့အခါ trigger ဖြစ်ပါတယ်
+- `gratis_ai_agent_plan_completed` — plan တစ်ခု အောင်မြင်စွာ ပြီးဆုံးတဲ့အခါ trigger ဖြစ်ပါတယ်
+- `gratis_ai_agent_plan_failed` — plan တစ်ခု ပြန်လည်ရရှိနိုင်တဲ့ error နဲ့ ကြုံတွေ့တဲ့အခါ trigger ဖြစ်ပါတယ်
+
+### Filters
+
+- `gratis_ai_agent_abilities` — agent က load လုပ်ခါနီးမှာ register လုပ်ထားတဲ့ ability list ကို ပြင်ဆင်နိုင်ပါတယ်
+- `gratis_ai_agent_options_blocklist` — options safety blocklist ကို ချဲ့ထွင်တာ ဒါမှမဟုတ် လျှော့ချတာ လုပ်နိုင်ပါတယ်
+- `gratis_ai_agent_benchmark_questions` — evaluation suite မှာ custom benchmark questions တွေ ထပ်ထည့်နိုင်ပါတယ်
+- `gratis_ai_agent_plan_plugins` — site plan generate လုပ်နေစဉ် plugin discovery list ကို ပြင်ဆင်နိုင်ပါတယ်
+
+## Support
+
+Support အတွက် [ultimatemultisite.com](https://ultimatemultisite.com) ကို သွားရောက်နိုင်ပါတယ် ဒါမှမဟုတ် plugin repository မှာ issue တစ်ခုဖွင့်နိုင်ပါတယ်။
+
+## Changelog
+
+version history အပြည့်အစုံကို [Changelog](./changelog) မှာ ကြည့်ရှုနိုင်ပါတယ်။

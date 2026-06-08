@@ -1,0 +1,116 @@
+---
+title: ਟਿਊਟਰ ਮਲਟੀਸਾਈਟ ਅਨੁਕੂਲਤਾ
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+ਇੱਕ WordPress plugin ਜੋ Tutor LMS ਲਈ multisite environments ਵਿੱਚ compatibility fixes ਜੋੜਦਾ ਹੈ।
+
+## Description
+
+ਇਹ plugin WordPress multisite networks 'ਤੇ Tutor LMS ਚਲਾਉਣ ਲਈ ਜ਼ਰੂਰੀ compatibility fixes ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ। ਇਹ user enrollment, instructor management, course limitations, ਅਤੇ ਹੋਰ multisite-specific functionality ਨੂੰ ਸੰਭਾਲਦਾ ਹੈ।
+
+## Features
+
+- **Database Table Management**: Multisite foreign key constraints ਕਾਰਨ ਗਵਾਹੀਆਂ (missing) Tutor LMS tables ਨੂੰ ਆਪਣੇ ਆਪ ਲੱਭਦਾ ਅਤੇ ਬਣਾਉਂਦਾ ਹੈ।
+- **Multisite User Enrollment**: network sites 'ਤੇ user enrollment manage ਕਰਨ ਲਈ custom AJAX handlers।
+- **Instructor Role Management**: multisite environments ਵਿੱਚ automatic instructor role assignment ਅਤੇ management।
+- **Course Limitations**: site plans ਦੇ ਆਧਾਰ 'ਤੇ course ਅਤੇ funnel creation limits manage ਕਰਨ ਲਈ Ultimate Multisite ਨਾਲ integration।
+- **Custom Admin Views**: multisite-aware instructor list ਅਤੇ management interface।
+- **Admin Tools**: network ਅਤੇ site administrators ਲਈ database management interface।
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (automatically enforced via `Requires Plugins` header)
+- WordPress Multisite installation
+- Ultimate Multisite plugin (course limitations functionality ਲਈ)
+
+## Installation
+
+1. plugin files ਨੂੰ `/wp-content/plugins/tutor-multisite-compatibility/` 'ਤੇ upload ਕਰੋ।
+2. ਯਕੀਨੀ ਬਣਾਓ ਕਿ Tutor LMS install ਅਤੇ activate ਹੈ।
+3. WordPress ਵਿੱਚ 'Plugins' menu ਰਾਹੀਂ plugin activate ਕਰੋ।
+4. plugin ਆਪਣੇ ਆਪ Tutor LMS ਨਾਲ integrate ਹੋ ਜਾਵੇਗਾ।
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+ਇਸ plugin ਵਿੱਚ ਉਹ functionality ਸ਼ਾਮਲ ਹੈ ਜੋ ਪਹਿਲਾਂ `wp-content/mu-plugins/daves.php` ਵਿੱਚ ਸੀ:
+
+- Course status change limitations
+- Course creation limitations
+- CartFlows integration and limits
+- Tutor instructor role management
+- Multisite user enrollment handling
+- Course product ID display
+
+## Database Management
+
+### The Problem
+
+WordPress multisite environments ਵਿੱਚ, Tutor LMS table creation, users table ਨਾਲ foreign key constraints ਕਾਰਨ ਫੇਲ੍ਹ ਹੋ ਜਾਂਦੀ ਹੈ। ਇਹ ਇਸ ਲਈ ਹੁੰਦਾ ਹੈ ਕਿਉਂਕਿ:
+
+- Site-specific tables `wp_2_tutor_carts` ਵਰਗੇ prefixes ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਨ।
+- Foreign keys `wp_2_users` ਨੂੰ reference ਕਰਦੇ ਹਨ (ਜੋ ਮੌਜੂਦ ਨਹੀਂ ਹੈ)।
+- ਅਸਲ users table `wp_users` ਹੈ (ਜੋ ਸਾਰੇ network ਵਿੱਚ ਸਾਂਝਾ ਹੈ)।
+
+### The Solution
+
+ਇਹ plugin ਆਪਣੇ ਆਪ:
+
+1. **Missing Tables Detect ਕਰਦਾ ਹੈ**: foreign key constraints ਕਾਰਨ ਨਾ ਬਣ ਸਕਣ ਵਾਲੀਆਂ tables ਦੀ ਜਾਂਚ ਕਰਦਾ ਹੈ।
+2. **Correct References ਨਾਲ Tables ਬਣਾਉਂਦਾ ਹੈ**: ਸਹੀ user table name (`wp_users` in multisite) ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ।
+3. **Multiple Scenarios ਨੂੰ Handle ਕਰਦਾ ਹੈ**:
+   - Plugin activation/reactivation
+   - Network ਵਿੱਚ ਨਵਾਂ site creation
+   - Admin interface ਰਾਹੀਂ manual table checking
+
+### Affected Tables
+
+- `tutor_coupon_usages` - users table ਨੂੰ foreign key ਨਾਲ ਰੱਖਦਾ ਹੈ
+- `tutor_carts` - users table ਨੂੰ foreign key ਨਾਲ ਰੱਖਦਾ ਹੈ
+- `tutor_notification_preferences` - users table ਨੂੰ foreign key ਨਾਲ ਰੱਖਣ ਵਾਲੀ TutorPro table
+
+### Admin Interface
+
+database management tools ਤੱਕ ਪਹੁੰਚ ਕਰੋ:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+ਇਹ interface ਤੁਹਾਨੂੰ ਇਹ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ:
+- ਸਾਰੇ sites 'ਤੇ missing tables ਦੇਖਣਾ
+- table creation ਨੂੰ manually trigger ਕਰਨਾ
+- database configuration ਦੀ ਜਾਂਚ ਕਰਨਾ
+- detailed status information ਦੇਖਣਾ
+
+## Support
+
+ਇਹ plugin ਖਾਸ ਤੌਰ 'ਤੇ KursoPro platform ਲਈ design ਕੀਤਾ ਗਿਆ ਹੈ। technical support ਲਈ, development team ਨਾਲ ਸੰਪਰਕ ਕਰੋ।

@@ -1,0 +1,144 @@
+---
+title: Admin Page Creator
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Innhold
+Admin Page Creator lar deg enkelt legge til nye admin-sider og under-sider i WordPress-administrasjonspanelet (dashboard). Det kan brukes til å lage en velkomstside eller en opplæringsguide som fungerer som en landingsside for nye brukere. Du kan bruke sidebyggere som Beaver Builder, Elementor, Brizy og Oxygen for å designe sidene uten problemer.
+
+Det tilbyr også støtte for tilpasset HTML, CSS og JavaScript, i tillegg til tilgangskontroll basert på plan og brukerrolle!
+
+## Funksjoner
+* Støtte for tilpasset HTML og CSS
+* JavaScript-støtte
+* PHP Content Mode
+* Tillatelser basert på brukerrolle
+* Støtte for sidebyggere
+
+## Dokumentasjon
+[Oppretting av tilpassede admin-sider og under-sider med Ultimate Multisite: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installasjon
+
+1. Last opp **ultimate-multisite-admin-page-creator** til katalogen **/wp-content/plugins/**
+2. Aktiver pluginet via **Plugins**-menyen i ditt WordPress Network Admin
+
+## Brukerveiledning
+
+Mens WordPress gjør det veldig enkelt å legge til innhold på nettsidens forside, krever det å lage sider og under-sider på admin-siden noe grunnleggende koding. Ultimate Multisite: Admin Page Creator har som mål å bringe den samme brukervennligheten fra forsiden til bakenden av nettstedene i nettverket ditt.
+
+## Hvorfor bruke Admin Page Creator?
+
+Kanskje du ønsker å tilby en tilpasset side på kundenes admin-panel med opplæringsmateriell, eller kanskje du vil legge til en tilpasset side med FAQ og en kontakthåndteringswidget. Mulighetene er grenseløse med Admin Page Creator, og det er det vi skal utforske i dagens veiledning.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_Å lage en opplæringsguide med en innebygd YouTube-spilleliste er nå mulig!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Her er det endelige resultatet på brukerens Dashboard Panel_
+
+## Opprette din første tilpassede admin-side
+
+Etter at du har installert og aktivert Ultimate Multisite: Admin Page Creator, naviger til nettverksadmin-menyen og gå til Admin Pages.
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Liste over tilpassede admin-sider i Network Admin_
+
+Du vil se en liste over alle admin-sidene du har opprettet så langt (siden dette er ditt første besøk, vil listen være tom). Klikk på **Add new Admin Page**. Du blir omdirigert til redigereren for Admin Page.
+
+## Elementene i en tilpasset admin-side
+
+På Admin Page editor har du en rekke forskjellige alternativer for å tilpasse siden din.
+
+### Page Title
+
+Dette er tittelen som vises øverst på siden, ikke navnet i admin-menyen.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Skriv inn en Page Title_
+
+### Content Type Selector
+
+Ultimate Multisite: Admin Page Creator gir deg to alternativer når det gjelder innholdet på siden: du kan enten bruke standard WordPress WYSIWYG-editor eller bytte til en HTML-editor.
+
+Hvis du ikke er kjent med HTML, hold deg til standard WordPress-editor. Du vil kunne redigere innholdet på siden akkurat som du ville gjort med et normalt innlegg eller en side.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Bruk av standard WordPress WYSIWYG-editor_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Bruk av HTML-editor-alternativet, med syntaksutheving og feilvarsler_
+
+## Menyelementer
+
+På siden, i General Options meta-boksen, kan du konfigurere menytype, etikett og mye mer.
+
+### Menu Types
+
+Din nye tilpassede admin-side kan ha to forskjellige menytyper: toppnivåmeny og undermeny.
+
+En toppnivåmeny-side, som navnet antyder, vil legge til den nylig opprettede siden din i admin-menyen sammen med standard WordPress-sider.
+
+Hvis du velger toppnivå-alternativet, kan du også velge menyeorden og et menyeikon.
+
+Hvis du ønsker å gjøre denne siden til en undermeny, kan du velge en foreldre-side for å koble denne siden til. Du kan legge til din tilpassede side i standard WordPress-sider eller i dine toppnivå-tilpassede admin-sider.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Tilpass menyelementet for denne Custom Page_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Du kan også legge til denne siden som en undermeny til andre menysider, inkludert dine egne toppnivå-tilpassede sider._
+
+## Avanserte alternativer
+
+Du bør kunne legge til alle slags innhold på dine tilpassede admin-sider. Dette inkluderer CSS-regler og filer, JavaScript og eksterne biblioteker. Du kan gjøre dette ved hjelp av Advanced Options Tab.
+
+### Custom CSS
+
+På CSS-fanen kan du legge til din egen tilpassede CSS-kode, samt importere CSS-filer fra eksterne steder (som CDN-er, Google Fonts, osv.).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Tilpasset CSS støttes også. Du kan også inkludere eksterne stilfiler!_
+
+### Custom JavaScript
+
+Det samme gjelder for JavaScript. Du kan legge til eksterne biblioteker som skal brukes i din tilpassede JavaScript-kode.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Legg til din egen JavaScript-kode!_
+
+## Tillatelser
+
+Også i Advanced Options kan du velge hvilke under-sider som skal ha tilgang til denne siden. Dette er nyttig hvis du planlegger å vise forskjellig eksklusivt innhold til ulike plannivåer, for eksempel.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Du har full kontroll over hvor denne siden skal vises_
+
+**Viktig**: Begge betingelsene må være oppfylt for at siden skal vises. Det betyr at hvis brukeren er en kunde av en gitt plan, men ikke har en av de valgte rollene (eller omvendt), vil siden ikke vises på panelet deres.
+
+## Aktiv
+
+Hvis du vil deaktivere en tilpasset admin-side uten å slette den eller rote med tillatelsene, bare fjern krysset fra Active-alternativet.
+
+Å deaktivere en toppnivåside vil automatisk deaktivere alle under-sider som er knyttet til den foreldre-siden.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Det endelige resultatet på brukerpanelet!_

@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent ialah pembantu AI WordPress lanjutan yang memperluaskan Gratis AI Agent dengan kemahiran yang sedar tema, keupayaan carian internet yang dipertingkatkan, dan ciri pembina laman (site builder) yang lebih baik. Versi 1.16.0 menambah penjanaan logo tersuai, pengesahan kontras palet, muat naik foto dalam temu duga penemuan, penjanaan menu hospitaliti berstruktur, dan paparan pratonton desktop/mudah alih dalam Theme Builder.
+
+## Ciri Utama
+
+- **Kemahiran yang sedar tema** — menyesuaikan panduan dan keupayaan secara automatik berdasarkan tema WordPress dan plugin yang anda gunakan
+- **Pelbagai penyedia carian internet** — pilih antara Brave Search dan Tavily untuk hasil carian yang lebih kaya dan keupayaan penyelidikan lanjutan
+- **Borang hubungan pembina laman** — cipta borang hubungan yang berfungsi sepenuhnya terus dari antara muka sembang menggunakan plugin borang anda
+- **Pembina laman yang dipertingkatkan** — pelan binaan laman berfasa berganda yang diperbaiki dengan penemuan plugin dan pemulihan ralat yang lebih baik
+- **Kemahiran tema terbina dalam** — panduan khusus untuk Block Themes, Classic Themes, Kadence Blocks, dan Kadence Theme
+- **Integrasi WooCommerce yang diperbaiki** — disusun semula untuk menggunakan API WooCommerce asli bagi kebolehpercayaan dan keserasian yang lebih baik
+- **Pengesanan penyedia automatik** — mengesan dan menyegarkan plugin dan tema yang tersedia secara automatik apabila ia diaktifkan atau dinyahaktifkan
+- **Penjanaan logo tersuai** — jana dan tanam logo SVG tersuai dengan sanitasi automatik yang selamat ruang nama
+- **Pengesahan kontras palet** — semak pasangan warna untuk pematuhan kebolehaksesan WCAG sebelum diaplikasikan pada tema anda
+- **Penemuan dipertingkatkan dengan foto** — muat naik foto semasa temu duga penemuan Theme Builder untuk mempengaruhi arah reka bentuk
+- **Menu hospitaliti** — jana halaman menu makanan dan minuman berstruktur untuk restoran, kafe, dan perniagaan hospitaliti
+- **Pratonton desktop dan mudah alih** — pratonton reka bentuk anda pada peranti desktop dan mudah alih semasa pemilihan arah reka bentuk
+- **Pengikis laman (site scraping) Tahap 1** — sd-ai-agent/site-scrape kini tersedia secara lalai untuk menganalisis laman web pesaing dan inspirasi
+
+## Keperluan
+
+- WordPress 6.0 atau lebih tinggi
+- PHP 8.1 atau lebih tinggi
+- WordPress Multisite (diaktifkan rangkaian) atau pemasangan laman tunggal
+- Plugin penyambung AI aktif (Anthropic, OpenAI, atau yang serasi)
+- Gratis AI Agent v1.9.0 atau lebih tinggi (Superdav AI Agent memperluaskan Gratis AI Agent)
+
+## Pemasangan
+
+1. Muat naik fail plugin ke `/wp-content/plugins/superdav-ai-agent`
+2. Aktifkan plugin melalui skrin **Plugins** dalam WordPress
+3. Pastikan Gratis AI Agent juga diaktifkan
+4. Navigasi ke **Gratis AI Agent → Settings** dan konfigurasikan penyedia carian internet anda (pilihan)
+
+## Permulaan Pantas
+
+Setelah diaktifkan, Superdav AI Agent secara automatik meningkatkan pemasangan Gratis AI Agent anda dengan kemahiran yang sedar tema dan keupayaan tambahan. Buka panel **Gratis AI Agent** di sidebar admin WordPress dan mula menggunakan ciri baharu.
+
+**Contoh arahan:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## Kemahiran Berdasarkan Tema
+
+Superdav AI Agent mengesan tema aktif dan plugin yang dipasang secara automatik, memuatkan kemahiran yang sesuai berdasarkan tema ke dalam konteks pembantu. Kemahiran yang tersedia termasuk:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | Tema yang menggunakan seni bina berasaskan blok WordPress (Full Site Editing) |
+| **Classic Themes** | Tema WordPress tradisional yang menggunakan templat PHP dan editor klasik |
+| **Kadence Blocks** | Laman web dengan plugin Kadence Blocks yang aktif |
+| **Kadence Theme** | Laman web dengan tema Kadence sebagai tema aktif |
+
+Lihat [Kemahiran Berdasarkan Tema](../../user-guide/configuration/theme-aware-skills) untuk panduan terperinci bagi setiap kemahiran.
+
+## Penyedia Carian Internet
+
+Superdav AI Agent v1.10.0 menambah **Tavily** sebagai alternatif kepada Brave Search untuk pertanyaan carian internet. Kedua-dua penyedia menawarkan hasil carian masa nyata dan boleh dikonfigurasikan dalam **Gratis AI Agent → Settings → Advanced**.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | Hasil carian pantas, fokus privasi | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Hasil carian lebih kaya, keupayaan penyelidikan lanjutan | [Tavily API](https://tavily.com/) |
+
+Lihat [Carian Internet](../../user-guide/configuration/internet-search) untuk arahan konfigurasi.
+
+## Borang Hubungan Pembina Laman
+
+Agen Site Builder kini boleh mencipta borang hubungan terus dari antara muka sembang. Hanya minta Site Builder untuk mencipta borang hubungan, dan ia akan mengesan plugin borang anda yang dipasang (Contact Form 7, WPForms, Fluent Forms, atau Gravity Forms) dan menjana borang sedia digunakan.
+
+Lihat [Borang Hubungan Pembina Laman](../../user-guide/administration/site-builder-contact-forms) untuk panduan terperinci.
+
+## Ciri Theme Builder
+
+Theme Builder dalam Superdav AI Agent v1.16.0 merangkumi keupayaan baharu yang berkuasa:
+
+### Temu Duga Penemuan dengan Muat Naik Foto
+
+Temu duga penemuan Theme Builder kini merangkumi langkah muat naik foto di mana anda boleh memberikan inspirasi visual. Muat naik foto jenama anda, laman web pesaing, atau inspirasi reka bentuk untuk membantu Theme Builder memahami arah reka bentuk anda.
+
+Lihat [Temu Duga Penemuan](./theme-builder/discovery-interview.md) untuk panduan terperinci.
+
+### Arah Reka Bentuk dengan Pratonton Desktop dan Mudah Alih
+
+Semak reka bentuk anda pada peranti desktop dan mudah alih sebelum Theme Builder menjana tema lengkap anda. Lihat pratonton masa nyata pada pelbagai titik henti responsif.
+
+Lihat [Arah Reka Bentuk](./theme-builder/design-direction.md) untuk panduan terperinci.
+
+### Menu Hospitaliti
+
+Theme Builder kini boleh menjana halaman menu makanan dan minuman berstruktur untuk restoran, kafe, bar, dan perniagaan hospitaliti lain. Menu termasuk harga, penerangan, maklumat diet, dan amaran alergen.
+
+Lihat [Menu Hospitaliti](./theme-builder/hospitality-menus.md) untuk panduan terperinci.
+
+### Keupayaan Baharu
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — cipta logo SVG tersuai dengan sanitasi automatik
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — semak pasangan warna untuk pematuhan WCAG
+- **[Create Menu](./abilities/create-menu.md)** — cipta menu navigasi dengan label navigasi yang berbeza
+
+Lihat [Tools and Configuration](./theme-builder/tools.md) untuk maklumat mengenai alat yang tersedia dan alat pengikis laman (site-scrape) Tahap 1.
+
+## Konfigurasi
+
+Semua tetapan berada di bawah **Gratis AI Agent → Settings** dalam admin WordPress. Superdav AI Agent menambah pilihan konfigurasi berikut:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Pilih antara Brave Search dan Tavily (pilihan) |
+| **Tavily API Key** | Kunci API untuk carian internet Tavily (jika Tavily dipilih) |
+
+## Peningkatan dalam v1.16.0
+
+- **Cache klien AI** — kini disokong oleh transients untuk kekekalan merentasi permintaan, menghalang kehilangan data pada tugas agen yang berjalan lama
+- **Alat pengikis laman (site-scrape) Tahap 1** — sd-ai-agent/site-scrape kini tersedia secara lalai dalam Theme Builder untuk menganalisis laman web pesaing dan inspirasi
+- **Pautan tindakan baris plugin** — diperbetulkan dan dinamakan semula untuk kejelasan
+
+## Peningkatan dalam v1.10.0
+
+- **Integrasi WooCommerce disusun semula** — kini menggunakan API WooCommerce asli untuk kebolehpercayaan dan keserasian yang lebih baik
+- **Penyegaran senarai penyedia automatik** — mengesan secara automatik apabila plugin diaktifkan atau dinyahaktifkan dan mengemas kini senarai penyedia yang tersedia
+- **Pembina laman yang dipertingkatkan** — pelan binaan laman berfasa berganda yang diperbaiki dengan pemulihan ralat yang lebih baik
+- **Kemahiran yang sedar tema** — empat kemahiran terbina dalam baharu yang menyesuaikan secara automatik dengan tema aktif anda
+
+## Pembetulan Pepijat dalam v1.10.0
+
+- Membetulkan keupayaan `navigate-to` yang menyebabkan gelung muat semula tanpa henti pada beberapa halaman admin
+- Membetulkan keupayaan `list-posts` yang tidak menyelesaikan nama kategori dan tag kepada slug dengan betul
+- Membetulkan arahan WP-CLI yang hilang alias ruang nama selepas penyusunan semula sebelumnya
+- Membetulkan automasi acara yang mengendalikan dengan baik laman web di mana jadual automasi belum dicipta
+- Membetulkan keupayaan `memory-save` menggunakan awalan ruang nama yang betul dalam pembina arahan sistem
+- Membetulkan hasil alat skalar dibungkus dengan betul sebelum dikembalikan kepada AI
+- Membetulkan statistik penggunaan yang mengendalikan format kunci keupayaan warisan semasa peningkatan dari versi yang lebih lama
+
+## Sokongan
+
+Untuk sokongan, lawati [ultimatemultisite.com](https://ultimatemultisite.com) atau buka isu dalam repositori plugin.
+
+## Changelog
+
+Lihat [Changelog](./changelog) untuk sejarah versi penuh.

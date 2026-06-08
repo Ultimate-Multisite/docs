@@ -1,0 +1,116 @@
+---
+title: Keserasian Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Kompatibiliti Tutor Multisite
+
+Plugin WordPress yang menyediakan pembaikan kompatibiliti untuk Tutor LMS dalam persekitaran multisite.
+
+## Penerangan
+
+Plugin ini menyediakan pembaikan kompatibiliti penting untuk menjalankan Tutor LMS pada rangkaian WordPress multisite. Ia menguruskan pendaftaran pengguna, pengurusan pengajar, had kursus, dan fungsi khusus multisite yang lain.
+
+## Ciri-ciri
+
+- **Pengurusan Jadual Pangkalan Data**: Mengesan dan mencipta secara automatik jadual Tutor LMS yang hilang yang gagal kerana kekangan kunci asing multisite
+- **Pendaftaran Pengguna Multisite**: Pengendali AJAX tersuai untuk menguruskan pendaftaran pengguna merentasi tapak rangkaian
+- **Pengurusan Peranan Pengajar**: Penugasan dan pengurusan peranan pengajar automatik dalam persekitaran multisite
+- **Had Kursus**: Integrasi dengan Ultimate Multisite untuk menguruskan had penciptaan kursus dan corong berdasarkan pelan tapak
+- **Paparan Pentadbir Tersuai**: Antaramuka senarai dan pengurusan pengajar yang sedar multisite
+- **Alat Pentadbir**: Antaramuka pengurusan pangkalan data untuk pentadbir rangkaian dan tapak
+
+## Keperluan
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (diwajibkan secara automatik melalui header `Requires Plugins`)
+- Pemasangan WordPress Multisite
+- Plugin Ultimate Multisite (untuk fungsi had kursus)
+
+## Pemasangan
+
+1. Muat naik fail plugin ke `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Pastikan Tutor LMS telah dipasang dan diaktifkan
+3. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
+4. Plugin akan berintegrasi secara automatik dengan Tutor LMS
+
+## Struktur Fail
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Fail plugin utama)
+├── includes/
+│   ├── class-database-manager.php (Penciptaan dan pengurusan jadual pangkalan data)
+│   ├── class-admin-interface.php (Antaramuka pentadbir untuk pengurusan pangkalan data)
+│   ├── class-course-limits.php (Pengendali had kursus dan corong)
+│   ├── class-instructor-manager.php (Pengurusan peranan pengajar)
+│   ├── class-ajax-handlers.php (Pengendali AJAX tersuai)
+│   ├── class-query-helper.php (Utiliti pertanyaan pangkalan data)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model pengguna multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Senarai pengajar tersuai)
+│       └── views/
+│           └── instructors.php (Paparan pentadbir pengajar)
+└── README.md
+```
+
+## Fungsi yang Dipindahkan dari Plugin MU
+
+Plugin ini mengandungi fungsi yang sebelum ini berada di `wp-content/mu-plugins/daves.php`:
+
+- Had perubahan status kursus
+- Had penciptaan kursus
+- Integrasi dan had CartFlows
+- Pengurusan peranan pengajar Tutor
+- Pengendalian pendaftaran pengguna multisite
+- Paparan ID produk kursus
+
+## Pengurusan Pangkalan Data
+
+### Masalah
+
+Dalam persekitaran WordPress multisite, penciptaan jadual Tutor LMS gagal untuk jadual dengan kekangan kunci asing kepada jadual pengguna. Ini berlaku kerana:
+
+- Jadual khusus tapak menggunakan awalan seperti `wp_2_tutor_carts`
+- Kunci asing merujuk kepada `wp_2_users` (yang tidak wujud)
+- Jadual pengguna sebenar ialah `wp_users` (dikongsi merentasi rangkaian)
+
+### Penyelesaian
+
+Plugin ini secara automatik:
+
+1. **Mengesan Jadual yang Hilang**: Menyemak jadual yang gagal dicipta kerana kekangan kunci asing
+2. **Mencipta Jadual dengan Rujukan Betul**: Menggunakan nama jadual pengguna yang betul (`wp_users` dalam multisite)
+3. **Mengendalikan Pelbagai Senario**:
+   - Pengaktifan/pengaktifan semula plugin
+   - Penciptaan tapak baharu dalam rangkaian
+   - Pemeriksaan jadual manual melalui antaramuka pentadbir
+
+### Jadual Terjejas
+
+- `tutor_coupon_usages` - Mengandungi kunci asing kepada jadual pengguna
+- `tutor_carts` - Mengandungi kunci asing kepada jadual pengguna
+- `tutor_notification_preferences` - Jadual TutorPro dengan kunci asing kepada jadual pengguna
+
+### Antaramuka Pentadbir
+
+Akses alat pengurusan pangkalan data di:
+
+- **Pentadbir Rangkaian**: Settings → Tutor Multisite DB
+- **Pentadbir Tapak**: Tools → Tutor Multisite DB
+
+Antaramuka ini membolehkan anda untuk:
+- Melihat jadual yang hilang merentasi semua tapak
+- Mencetuskan penciptaan jadual secara manual
+- Menyemak konfigurasi pangkalan data
+- Melihat maklumat status terperinci
+
+## Sokongan
+
+Plugin ini direka khas untuk platform KursoPro. Untuk sokongan teknikal, sila hubungi pasukan pembangunan.

@@ -1,0 +1,124 @@
+---
+title: AI ဆိုဒ်တည်ဆောက်ကိရိယာ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## လိုအပ်ချက်များ (Requirements)
+
+- WordPress 5.3 သို့မဟုတ် အထက်
+- PHP 7.4 သို့မဟုတ် အထက်
+- Multisite Ultimate plugin (အသက်ဝင်ရမည်)
+
+## တပ်ဆင်ခြင်း (Installation)
+
+1. Addon ဖိုင်များကို သင့်ရဲ့ `/wp-content/plugins/` directory ထဲသို့ တင်ပါ။
+2. WordPress ရဲ့ 'Plugins' menu မှတစ်ဆင့် Plugin ကို အသက်သွင်းပါ။
+3. Network Admin မှာ Addon settings များကို စနစ်တကျ ချိန်ညှိပါ။
+
+## ဖွံ့ဖြိုးတိုးတက်မှု (Development)
+
+### စတင်ပြင်ဆင်ခြင်း (Setup)
+
+```bash
+# Dependencies များကို တင်ခြင်း
+composer install
+npm install
+
+# စမ်းသပ်မှုများ လုပ်ဆောင်ခြင်း
+npm run test
+
+# Code standards စစ်ဆေးခြင်း
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Code style ပြဿနာများကို ပြင်ဆင်ခြင်း
+vendor/bin/phpcbf
+
+# Production အတွက် Build လုပ်ခြင်း
+npm run build
+```
+
+### Project Structure (စီမံကဏ္ဍဖွဲ့စည်းပုံ)
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP class များနှင့် include များ
+│   ├── class-multisite-ultimate-updater.php  # Update ကို ကိုင်တွယ်သူ
+│   └── class-ai_site_builder-main.php             # အဓိက လုပ်ဆောင်ချက်
+├── tests/                        # Unit tests များ
+│   ├── bootstrap.php            # Test အတွက် စတင်မှု
+│   ├── class-*-base.php         # အခြေခံ test class
+│   └── class-*-test.php         # စမ်းသပ်မှုများ
+├── views/                       # Template ဖိုင်များ
+├── assets/                      # Static assets များ
+│   ├── css/                     # Stylesheets များ
+│   ├── js/                      # JavaScript ဖိုင်များ
+│   └── images/                  # ပုံများ
+├── lang/                        # ဘာသာစကား ဖိုင်များ
+├── composer.json                # PHP dependencies များ
+├── package.json                 # Node.js dependencies များ
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### စမ်းသပ်မှုများ (Testing)
+
+ဤ Addon တွင် အပြည့်အဝ စမ်းသပ်မှု စနစ် (testing framework) ပါဝင်သည်-
+
+- **Unit Tests**: WordPress test suite နှင့် အသုံးပြုသည့် PHPUnit အခြေခံ စမ်းသပ်မှုများ
+- **Base Test Class**: အများစု အသုံးပြုရလေ့ရှိသော စမ်းသပ်မှု အခြေအနေများအတွက် အထောက်အကူပြု လုပ်ဆောင်ချက်များ ပေးသည်
+- **Test Coverage**: Code coverage ကို စောင့်ကြည့်ရန် စနစ်တကျ ချိန်ညှိထားသည်
+- **Multisite Testing**: Multisite ပတ်ဝန်းကျင်တွင် စမ်းသပ်မှုများ လုပ်ဆောင်သည်
+
+### Code Standards (ကုဒ် စံနှုန်းများ)
+
+- **WordPress Coding Standards**: PHPCS မှတစ်ဆင့် အကောင်အထည်ဖော်ထားသည်
+- **PHP 7.4+ Compatibility**: ခေတ်မီ PHP အင်္ဂါရပ်များကို ပံ့ပိုးပေးသည်
+- **Static Analysis**: Type checking အတွက် PHPStan ကို ပေါင်းစပ်ထားသည်
+- **Code Modernization**: PHP upgrade အတွက် Rector rules များ
+
+### Build System (တည်ဆောက်မှု စနစ်)
+
+- **Asset Processing**: CSS/JS ဖိုင်များအတွက် Minification လုပ်ခြင်း
+- **Translation**: POT file ထုတ်ပေးခြင်း
+- **Packaging**: ဖြန့်ဝေရန် Archive ဖန်တီးခြင်း
+- **Development Mode**: Debugging အတွက် Minified မလုပ်ထားသော assets များ
+
+## Configuration (ဖွဲ့စည်းပုံ)
+
+ဤ Addon သည် network admin interface မှတစ်ဆင့် ဝင်ရောက်နိုင်သော ဖွဲ့စည်းပုံ ရွေးချယ်မှု အမျိုးမျိုးကို ပံ့ပိုးပေးပါသည်။
+
+## Hooks and Filters (Hooks နှင့် Filters)
+
+### Actions (လုပ်ဆောင်ချက်များ)
+
+- `ultimate-multisite-ai-site-builder_init` - Addon ကို စတင်ချိန်ပြီးနောက် အလုပ်လုပ်သည်
+- `ultimate-multisite-ai-site-builder_loaded` - Addon ဖိုင်အားလုံး တင်ပြီးနောက် အလုပ်လုပ်သည်
+
+### Filters (စစ်ထုတ်မှုများ)
+
+- `ultimate-multisite-ai-site-builder_settings` - Addon settings များကို ပြုပြင်ရန်
+- `ultimate-multisite-ai-site-builder_enabled` - Addon ဖွင့်/ပိတ် အခြေအနေကို အစားထိုးရန်
+
+## License (လိုင်စင်)
+
+ဤ Addon ကို GPL v3 သို့မဟုတ် နောက်ပိုင်းဗားရှင်းအောက်တွင် လိုင်စင်ပေးထားပါသည်။
+
+## Support (အကူအညီ)
+
+အကူအညီနှင့် စာရွက်စာတမ်းများအတွက် [MultisiteUltimate.com](https://multisiteultimate.com) သို့ ဝင်ရောက်ကြည့်ရှုပါ။
+## Changelog (ပြောင်းလဲမှု မှတ်တမ်း)
+
+- Version 1.0.1 (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အပ်ဒိတ်လုပ်ခြင်း၊ version တိုးမြှင့်ခြင်း။
+
+
+- Version (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အပ်ဒိတ်လုပ်ခြင်း၊ version တိုးမြှင့်ခြင်း။

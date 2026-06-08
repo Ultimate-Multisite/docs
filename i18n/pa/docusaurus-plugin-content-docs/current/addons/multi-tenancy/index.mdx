@@ -1,0 +1,124 @@
+---
+title: ਮਲਟੀ-ਟੇਨੈਂਸੀ
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy (ਬਹੁ-ਭੂਮਿਕਾ)
+
+ਕਾਰਗਰਤਾ (performance) ਅਤੇ ਸੁਰੱਖਿਆ ਲਈ ਸਬਸਾਈਟਾਂ ਨੂੰ ਸਰਵਰਾਂ ਅਤੇ ਡਾਟਾਬੇਸਾਂ ਵਿੱਚ ਵੰਡਣਾ।
+
+## ਲੋੜਾਂ (Requirements)
+
+- WordPress 5.3 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- PHP 7.4 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- Multisite Ultimate plugin (active)
+
+## ਇੰਸਟਾਲੇਸ਼ਨ (Installation)
+
+1. Addon files ਨੂੰ ਆਪਣੇ `/wp-content/plugins/` ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਅਪਲੋਡ ਕਰੋ।
+2. WordPress ਵਿੱਚ 'Plugins' ਮੀਨੂ ਰਾਹੀਂ plugin ਨੂੰ ਐਕਟਿਵੇਟ ਕਰੋ।
+3. ਨੈਟਵਰਕ ਐਡਮਿਨ ਵਿੱਚ addon ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਕੰフィਗਰ ਕਰੋ।
+
+## ਡਿਵੈਲਪਮੈਂਟ (Development)
+
+### ਸੈਟਅਪ (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ਪ੍ਰੋਜੈਕਟ ਸਟਰਕਚਰ (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### ਟੈਸਟਿੰਗ (Testing)
+
+ਇਸ addon ਵਿੱਚ ਇੱਕ ਵਿਆਪਕ ਟੈਸਟਿੰਗ ਫਰੇਮਵਰਕ ਸ਼ਾਮਲ ਹੈ:
+
+- **Unit Tests**: WordPress test suite ਨਾਲ PHPUnit-ਆਧਾਰਿਤ ਟੈਸਟ।
+- **Base Test Class**: ਆਮ ਟੈਸਟ ਸਿਨੈਰੀਓਜ਼ ਲਈ ਮਦਦਗਾਰ ਤਰੀਕੇ (helper methods) ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ।
+- **Test Coverage**: ਕੋਡ ਕਵਰੇਜ ਨੂੰ ਟਰੈਕ ਕਰਨ ਲਈ ਕੰフィਗਰ ਕੀਤਾ ਗਿਆ।
+- **Multisite Testing**: ਟੈਸਟ ਇੱਕ multisite environment ਵਿੱਚ ਚੱਲਦੇ ਹਨ।
+
+### ਕੋਡ ਸਟੈਂਡਰਡਜ਼ (Code Standards)
+
+- **WordPress Coding Standards**: PHPCS ਰਾਹੀਂ ਲਾਗੂ ਕੀਤਾ ਗਿਆ।
+- **PHP 7.4+ Compatibility**: ਆਧੁਨਿਕ PHP ਫੀਚਰ ਸਪੋਰਟ ਕੀਤੇ ਗਏ।
+- **Static Analysis**: ਟਾਈਪ ਚੈਕਿੰਗ ਲਈ PHPStan ইন্ਟੀਗ੍ਰੇਸ਼ਨ।
+- **Code Modernization**: PHP ਅਪਗ੍ਰੇਡ ਲਈ Rector ਨਿਯਮ।
+
+### ਬਿਲਡ ਸਿਸਟਮ (Build System)
+
+- **Asset Processing**: CSS/JS ਫਾਈਲਾਂ ਲਈ Minification।
+- **Translation**: POT ਫਾਈਲ ਜਨਰੇਸ਼ਨ।
+- **Packaging**: ਡਿਸਟ੍ਰੀਬਿਊਸ਼ਨ ਲਈ Archive ਬਣਾਉਣਾ।
+- **Development Mode**: ਡੀਬੱਗਿੰਗ ਲਈ Unminified assets।
+
+## ਕੰフィਗਰੇਸ਼ਨ (Configuration)
+
+ਇਹ addon ਨੈਟਵਰਕ ਐਡਮਿਨ ਇੰਟਰਫੇਸ ਰਾਹੀਂ ਪਹੁੰਚਯੋਗ ਕਈ ਕੰフィਗਰੇਸ਼ਨ ਵਿਕਲਪਾਂ ਦਾ ਸਹਾਰਾ ਦਿੰਦਾ ਹੈ।
+
+## Hooks and Filters
+
+### Actions (ਐਕਸ਼ਨ)
+
+- `ultimate-multisite-addon-template_init` - Addon initialize ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- `ultimate-multisite-addon-template_loaded` - ਸਾਰੇ addon files load ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+
+### Filters (ਫਿਲਟਰ)
+
+- `ultimate-multisite-addon-template_settings` - Addon ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣ ਲਈ।
+- `ultimate-multisite-addon-template_enabled` - Addon ਦੇ enable/disable ਸਟੇਟਸ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰਨ ਲਈ।
+
+## ਲਾਇਸੈਂਸ (License)
+
+ਇਹ addon GPL v3 ਜਾਂ ਇਸ ਤੋਂ ਬਾਅਦ ਦੇ ਲਾਇਸੈਂਸ ਹੇਠ ਲਾਇਸੈਂਸ ਕੀਤਾ ਗਿਆ ਹੈ।
+
+## ਸਪੋਰਟ (Support)
+
+ਸਪੋਰਟ ਅਤੇ ਡਾਕੂਮੈਂਟੇਸ਼ਨ ਲਈ, [MultisiteUltimate.com](https://multisiteultimate.com) 'ਤੇ ਜਾਓ।
+## Changelog (ਬਦਲਾਅ ਦਾ ਰਿਕਾਰਡ)
+
+- Version 1.0.1 (2025-09-28): prefix ਨੂੰ ultimate-multisite ਵਿੱਚ ਰੀਨੇਮ ਕਰਨਾ; text domain ਨੂੰ ਅਪਡੇਟ ਕਰਨਾ; version bump।
+
+
+- Version (2025-09-28): prefix ਨੂੰ ultimate-multisite ਵਿੱਚ ਰੀਨੇਮ ਕਰਨਾ; text domain ਨੂੰ ਅਪਡੇਟ ਕਰਨਾ; version bump।

@@ -1,0 +1,143 @@
+---
+title: ਮੁਫ਼ਤ AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent ਇੱਕ ਆਟੋਨੋਮਸ (autonomous) WordPress AI ਸਹਾਇਕ ਹੈ ਜੋ ਕੁਦਰਤੀ ਭਾਸ਼ਾ ਦੇ ਨਿਰਦੇਸ਼ਾਂ ਰਾਹੀਂ ਪੂਰੇ WordPress ਸਾਈਟਾਂ ਨੂੰ ਪਲੈਨ ਕਰ ਸਕਦਾ ਹੈ, ਬਣਾ ਸਕਦਾ ਹੈ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰ ਸਕਦਾ ਹੈ। ਇਹ **abilities** ਦਾ ਇੱਕ ਢਾਂਚਾਗਤ ਸੈੱਟ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ — ਇਹ ਉਹ ਵੱਖ-ਵੱਖ, ਟੈਸਟ ਕਰਨ ਯੋਗ ਕਾਰਵਾਈਆਂ ਹਨ ਜਿਨ੍ਹਾਂ ਨੂੰ agent ਵਰਤ ਸਕਦਾ ਹੈ — ਜੋ ਕੰਟੈਂਟ ਮੈਨੇਜਮੈਂਟ ਤੋਂ ਲੈ ਕੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਕਸਟਮਾਈਜ਼ੇਸ਼ਨ ਤੱਕ ਹਰ ਚੀਜ਼ ਨੂੰ ਕਵਰ ਕਰਦੀਆਂ ਹਨ। Version 1.9.0 ਵਿੱਚ ਕੰਟੈਂਟ ਬਣਾਉਣ ਦੀਆਂ abilities, client-side ਸਕ੍ਰੀਨਸ਼ਾਟ ਰਾਹੀਂ ਵਿਜ਼ੂਅਲ ਪੇਜ ਰਿਵਿਊ, ਪੰਜ ਬਿਲਟ-ਇਨ agent profiles, ਅਤੇ access control ਅਤੇ branding ਲਈ feature flags ਜੋੜੇ ਗਏ ਹਨ।
+
+## ਮੁੱਖ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ (Key Features)
+
+- **Abilities system** — ਇੱਕ ਮੋਡਿਊਲਰ, ਵਿਸਤ੍ਰਿਤ ਕੈਟਾਲਾਗ ਜਿਸ ਰਾਹੀਂ agent ਤੁਹਾਡੀ WordPress installation 'ਤੇ ਕਾਰਵਾਈਆਂ ਕਰ ਸਕਦਾ ਹੈ।
+- **Content Management** — ਪੋਸਟ ਅਤੇ ਪੇਜ ਬਣਾਉਣਾ (ਪੇਜ ਟੈਂਪਲੇਟ ਸੈਟ ਕਰਨਾ ਸਮੇਤ), ਇੱਕੋ ਕਾਲ ਵਿੱਚ ਕਈ ਪੋਸਟ ਬਣਾਉਣਾ, ਫੀਚਰਡ ਇਮੇਜ ਸੈੱਟ ਕਰਨਾ, ਅਤੇ ਕੰਟੈਕਟ ਫਾਰਮ ਬਣਾਉਣਾ।
+- **Visual Review** — ਲਾਈਵ ਪੇਜਾਂ ਦੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਲੈਣਾ, ਪਹਿਲਾਂ/ ਬਾਅਦ ਦੇ ਸਥਾਨਾਂ (before/after states) ਦਾ ਫਰਕ ਕਰਨਾ, ਅਤੇ layout, typography, colour, ਅਤੇ accessibility ਨੂੰ ਕਵਰ ਕਰਦੇ ਹੋਏ AI-ਜਨਰੇਟਿਡ ਡਿਜ਼ਾਈਨ ਰਿਵਿਊ ਪ੍ਰਾਪਤ ਕਰਨਾ।
+- **ਪੰਜ ਬਿਲਟ-ਇਨ agent** — Content Writer, Site Builder, Design Studio, Plugin Manager, ਅਤੇ Support Assistant; ਇਹਨਾਂ ਨੂੰ ਚੈਟ ਹੈਡਰ ਵਿੱਚ Agent Picker ਰਾਹੀਂ ਬਦਲਿਆ ਜਾ ਸਕਦਾ ਹੈ।
+- **Feature flags** — Settings → Feature Flags ਵਿੱਚ access-control ਅਤੇ branding ਟੋਗਲ, ਜੋ role restrictions, white-label naming, ਅਤੇ widget customisation ਲਈ ਹਨ।
+- **Custom Post Type management** — custom post types ਨੂੰ register ਕਰਨਾ, list ਕਰਨਾ, ਅਤੇ delete ਕਰਨਾ, ਜੋ restart ਹੋਣ 'ਤੇ ਵੀ ਬਣੇ ਰਹਿੰਦੇ ਹਨ।
+- **Custom Taxonomy management** — custom taxonomies ਨੂੰ register ਕਰਨਾ, list ਕਰਨਾ, ਅਤੇ delete ਕਰਨਾ, ਜੋ persistence ਰੱਖਦੇ ਹਨ।
+- **Design System abilities** — custom CSS inject ਕਰਨਾ, curated block patterns ਨੂੰ manage ਕਰਨਾ, site logo ਸੈੱਟ ਕਰਨਾ, ਅਤੇ theme.json presets ਲਾਗੂ ਕਰਨਾ।
+- **Global Styles management** — colour palettes, typography, spacing, ਅਤੇ ਹੋਰ ਲਈ theme.json values ਨੂੰ read ਅਤੇ write ਕਰਨਾ।
+- **Navigation Menu management** — navigation menus ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ items ਨੂੰ programmatically ਬਣਾਉਣਾ ਅਤੇ update ਕਰਨਾ।
+- **Options Management** — WordPress options ਨੂੰ read ਅਤੇ write ਕਰਨਾ, ਜਿਸ ਵਿੱਚ critical settings ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਇੱਕ built-in safety blocklist ਹੈ।
+- **Installable Abilities Registry** — core plugin files ਨੂੰ modify ਕੀਤੇ ਬਿਨਾਂ ਵਾਧੂ ability packs ਲੱਭਣਾ ਅਤੇ activate ਕਰਨਾ।
+- **Site Builder Orchestration v2** — plugin discovery, progress tracking, ਅਤੇ error recovery ਵਾਲੇ multi-step site build plans।
+- **WP-CLI benchmark command** — CI ਅਤੇ model evaluation ਲਈ command line ਤੋਂ agent capability benchmark suite ਚਲਾਉਣਾ।
+
+## ਲੋੜਾਂ (Requirements)
+
+- WordPress 6.0 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- PHP 8.1 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- WordPress Multisite (network-activated) ਜਾਂ single-site installation
+- ਇੱਕ active AI provider connector plugin (Anthropic, OpenAI, ਜਾਂ compatible)
+
+## ਇੰਸਟਾਲੇਸ਼ਨ (Installation)
+
+1. plugin files ਨੂੰ `/wp-content/plugins/gratis-ai-agent` 'ਤੇ upload ਕਰੋ।
+2. WordPress ਵਿੱਚ **Plugins** screen ਰਾਹੀਂ plugin ਨੂੰ activate ਕਰੋ।
+3. **Gratis AI Agent → Settings** 'ਤੇ ਜਾਓ ਅਤੇ ਆਪਣੇ AI provider ਨੂੰ connect ਕਰੋ।
+4. (ਵਿਕਲਪਿਕ) ਵਾਧੂ ability packs install ਕਰਨ ਲਈ **Abilities Registry** ਨੂੰ browse ਕਰੋ।
+
+## ਜਲਦੀ ਸ਼ੁਰੂਆਤ (Quick Start)
+
+ਇੱਕ ਵਾਰ activate ਹੋਣ ਅਤੇ AI provider ਨਾਲ connect ਹੋਣ ਤੋਂ ਬਾਅਦ, WordPress admin sidebar ਵਿੱਚ **Gratis AI Agent** panel ਖੋਲ੍ਹੋ। ਇੱਕ natural language instruction ਟਾਈਪ ਕਰੋ ਅਤੇ agent ਆਪਣੀਆਂ ਉਪਲਬਧ abilities ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਲੋੜੀਂਦੇ ਕਦਮਾਂ ਨੂੰ plan ਕਰਕੇ execute ਕਰ ਦੇਵੇਗਾ।
+
+**ਉਦਾਹਰਨ ਨਿਰਦੇਸ਼:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities ਦਾ ਸੰਖੇਪ ਵੇਰਵਾ (Abilities Overview)
+
+Abilities ਉਹ ਐਟੋਮਿਕ ਕਾਰਵਾਈਆਂ ਹਨ ਜੋ agent ਕਰ ਸਕਦਾ ਹੈ। ਹਰ ability ਇੱਕ registered PHP class ਹੁੰਦੀ ਹੈ ਜੋ ਇੱਕ schema (parameters ਅਤੇ return types) ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ ਜਿਸਨੂੰ agent runtime 'ਤੇ ਪੜ੍ਹਦਾ ਹੈ। Abilities ਨੂੰ ਕਾਰਜਸ਼ੀਲ ਖੇਤਰਾਂ (functional areas) ਵਿੱਚ ਸਮੂਹਿਕ੍ਰਿਤ ਕੀਤਾ ਗਿਆ ਹੈ:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+ਪੂਰੇ parameter documentation ਅਤੇ usage examples ਲਈ [Abilities Reference](./abilities) ਵੇਖੋ।
+
+## WP-CLI
+
+Gratis AI Agent command line ਤੋਂ benchmarks ਚਲਾਉਣ ਅਤੇ abilities manage ਕਰਨ ਲਈ `wp gratis-ai-agent` command family ਨਾਲ ਆਉਂਦਾ ਹੈ। ਪੂਰੀ command list ਲਈ [WP-CLI Reference](./wp-cli) ਵੇਖੋ।
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## ਕਨਫਿਗਰੇਸ਼ਨ (Configuration)
+
+ਸਾਰੀਆਂ ਸੈਟਿੰਗਾਂ WordPress admin ਵਿੱਚ **Gratis AI Agent → Settings** ਹੇਠਾਂ ਹਨ:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | active AI provider connector ਨੂੰ select ਅਤੇ configure ਕਰੋ। |
+| **Model** | agent sessions ਲਈ ਵਰਤਣ ਲਈ language model ਚੁਣੋ। |
+| **Max Tokens** | ਪ੍ਰਤੀ-request token budget (default 4096)। |
+| **Ability Timeout** | ਇੱਕ individual ability ਕਿੰਨੇ ਵੱਧ ਸੈਕਿੰਡ ਤੱਕ ਚੱਲ ਸਕਦੀ ਹੈ (default 30)। |
+| **Debug Logging** | ability calls ਅਤੇ agent reasoning ਨੂੰ WordPress debug log ਵਿੱਚ record ਕਰੋ। |
+
+## Options Management Safety Blocklist
+
+Options Management ability ਵਿੱਚ ਇੱਕ built-in blocklist ਸ਼ਾਮਲ ਹੈ ਜੋ agent ਨੂੰ sensitive WordPress options ਨੂੰ read ਜਾਂ write ਕਰਨ ਤੋਂ ਰੋਕਦੀ ਹੈ। default blocklist ਵਿੱਚ ਇਹ ਸ਼ਾਮਲ ਹਨ:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options — ਇਨ੍ਹਾਂ ਲਈ ਇੱਕ dedicated migration tool ਵਰਤੋ)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (secret keys)
+- `active_plugins`, `template` (plugin/theme activation — dedicated abilities ਵਰਤੋ)
+- Payment gateway credentials ਅਤੇ API keys ਜੋ installed plugins ਦੁਆਰਾ register ਕੀਤੇ ਗਏ ਹਨ।
+
+ਵਧੇਰੇ entries ਨੂੰ `gratis_ai_agent_options_blocklist` filter ਰਾਹੀਂ ਜੋੜਿਆ ਜਾ ਸਕਦਾ ਹੈ।
+
+## Hooks ਅਤੇ Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — ability register ਹੋਣ ਤੋਂ ਬਾਅਦ trigger ਹੁੰਦਾ ਹੈ, ability class name ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ।
+- `gratis_ai_agent_plan_started` — ਜਦੋਂ site builder plan execute ਹੋਣਾ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ ਤਾਂ trigger ਹੁੰਦਾ ਹੈ।
+- `gratis_ai_agent_plan_completed` — ਜਦੋਂ ਇੱਕ plan ਸਫਲਤਾਪੂਰਵਕ ਖਤਮ ਹੁੰਦਾ ਹੈ ਤਾਂ trigger ਹੁੰਦਾ ਹੈ।
+- `gratis_ai_agent_plan_failed` — ਜਦੋਂ ਇੱਕ plan ਨੂੰ recover ਨਾ ਕੀਤਾ ਜਾ ਸਕਣ ਵਾਲੀ error ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪੈਂਦਾ ਹੈ ਤਾਂ trigger ਹੁੰਦਾ ਹੈ।
+
+### Filters
+
+- `gratis_ai_agent_abilities` — agent ਇਸਨੂੰ load ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ registered ability list ਨੂੰ modify ਕਰਦਾ ਹੈ।
+- `gratis_ai_agent_options_blocklist` — options safety blocklist ਨੂੰ extend ਜਾਂ reduce ਕਰਦਾ ਹੈ।
+- `gratis_ai_agent_benchmark_questions` — evaluation suite ਵਿੱਚ custom benchmark questions ਜੋੜਦਾ ਹੈ।
+- `gratis_ai_agent_plan_plugins` — site plan generation ਦੌਰਾਨ plugin discovery list ਨੂੰ modify ਕਰਦਾ ਹੈ।
+
+## ਸਪੋਰਟ (Support)
+
+ਸਪੋਰਟ ਲਈ, [ultimatemultisite.com](https://ultimatemultisite.com) 'ਤੇ ਜਾਓ ਜਾਂ plugin repository ਵਿੱਚ ਇੱਕ issue ਖੋਲ੍ਹੋ।
+
+## Changelog
+
+ਪੂਰਾ version history ਲਈ [Changelog](./changelog) ਵੇਖੋ।

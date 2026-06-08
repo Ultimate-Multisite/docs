@@ -1,0 +1,101 @@
+---
+title: ဝက်ဘ်ဆိုဒ် အကူးအပြောင်း
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+သင့်ရဲ့ ဝက်ဘ်ဆိုဒ် ကွန်ရက် (network) အတွင်းရှိ လက်အောက် ဝက်ဘ်ဆိုဒ် (subsites) တွေကို တစ်ခုတည်းသော site တစ်ခုဆီ ရွှေ့ပြောင်းဖို့၊ ဒါမှမဟုတ် သင့်ရဲ့ customer က သူတို့ရဲ့ ဝက်ဘ်ဆိုဒ်ကို ပြောင်းရွှေ့ဖို့ ဆုံးဖြတ်ခဲ့ရင် အပြန်အလှန် ဘယ်လိုလုပ်ရမလဲဆိုတဲ့ လိုအပ်ချက်ကို ကျွန်တော်တို့ နားလည်ပါတယ်။ Site Exporter နဲ့ Importer add-on က ဒီအလုပ်ကို ပိုမိုလွယ်ကူစေပါတယ်။ ဒီ tool ဟာ zip file တွေကို အသုံးပြုပြီး site တွေကို export လုပ်တာ၊ import လုပ်တာ လုပ်ပေးနိုင်ပြီး ဒါဟာ backup အဖြစ်လည်း အသုံးပြုနိုင်ပါတယ်။
+
+## Features
+
+* Site များကို Export လုပ်ခြင်းနှင့် Import လုပ်ခြင်း
+
+* အသုံးပြုရလွယ်ကူသော interface
+
+* Site backup ဖန်တီးခြင်း
+
+## Documentation
+**Site တစ်ခုကို ဘယ်လို Export လုပ်ပြီး Import လုပ်မလဲ**
+
+## Installation
+
+1. **ultimate-multisite-site-exporter** ကို **/wp-content/plugins/** directory ထဲသို့ upload လုပ်ပါ။
+2. WordPress ရဲ့ **Plugins** menu ကနေ plugin ကို activate လုပ်ပါ။
+3. plugin ကို စနစ်တကျ တည်ဆောက်နိုင်ဖို့ အဆင့်ဆင့် လမ်းညွှန် (Wizard) ကို လိုက်နာပါ။
+
+## Usage Guide
+
+Ultimate Multisite ကို အသုံးပြုပြီး သင့်ရဲ့ ကွန်ရက်ကနေ site တစ်ခုကို export လုပ်နိုင်သလို၊ သင့်ရဲ့ multisite ဒါမှမဟုတ် single-site installation ကို site တစ်ခု import လုပ်နိုင်ပါတယ်။
+
+လုပ်ငန်းစဉ်ကို စတင်ဖို့အတွက် ကျွန်တော်တို့ရဲ့ add-ons page ကို သွားပြီး Ultimate Multisite: Site Exporter & Importer add-on ကို install လုပ်ပါ။![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+သင့်ရဲ့ Plugins page ကို သွားပြီး အခုမှ install လုပ်လိုက်တဲ့ add-on ကို **Network Activate** လုပ်ဖို့ နှိပ်ပါ။<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** option ကို Ultimate Multisite menu ရဲ့ ဘယ်ဘက်ခြမ်းမှာ တွေ့နိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+သင့်ရဲ့ ကွန်ရက်ကနေ site တစ်ခုကို export လုပ်ဖို့အတွက် Ultimate Multisite menu က **Export & Import** ကို သွားပြီး **Export Sites** tab မှာ **Generate new Site Export** ကို နှိပ်ပါ။
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+export လုပ်မယ့် site ကို ရှာဖွေပြီး export လုပ်မယ့် file ထဲမှာ ပါဝင်စေချင်တဲ့ အချက်အလက်တွေကို ရွေးချယ်ပါ။ themes တွေ၊ plugins တွေနဲ့ uploads တွေကို ထည့်သွင်းနိုင်ပါတယ်။ သင့်ရဲ့ site က အရမ်းကြီးနေရင် background မှာ export လုပ်ငန်းစဉ်ကို run ခိုင်းဖို့ ရွေးချယ်နိုင်ပါတယ်။<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** button ကို နှိပ်ပါ။ export လုပ်လိုက်တဲ့ site ကို **Existing Exports** list မှာ တွေ့ရပါလိမ့်မယ်။ file ကို download လုပ်ဖို့ **Download ZIP** button ကို နှိပ်ပါ။ Export ZIP တွေမှာ self-booting `index.php` နဲ့ `readme.txt` ပါဝင်တဲ့အတွက် အသစ်တည်ထောင်ထားတဲ့ host ပေါ်မှာ အထူး importer plugin တစ်ခုကို အရင် install လုပ်စရာမလိုဘဲ တင်နိုင်ပါတယ်။<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+လက်အောက် ဝက်ဘ်ဆိုဒ်အားလုံးကို အတူတကွ export လုပ်ဖို့အတွက် Ultimate Multisite menu က **Export & Import** ကို သွားပြီး export screen ပေါ်က **Network Export** option ကို အသုံးပြုပါ။ ဒီလို generate လုပ်လိုက်တဲ့ archive ထဲမှာ host ပြောင်းရွှေ့မှုတွေ၊ staging rebuild တွေ၊ ဒါမှမဟုတ် ကွန်ရက်အဆင့် backup တွေအတွက် လက်အောက် ဝက်ဘ်ဆိုဒ်အားလုံးကို single ZIP တစ်ခုထဲမှာ ပါဝင်စေပါတယ်။
+
+Network export တွေက အရွယ်အစားကြီးနိုင်ပါတယ်။ ဒါကြောင့် traffic နည်းတဲ့အချိန်မှာ run ပါ။ ပြီးတော့ archive နဲ့ ပါဝင်တဲ့ uploads, plugins, themes တွေအတွက် server မှာ လုံလောက်တဲ့ storage ရှိမရှိ စစ်ဆေးပေးပါ။
+
+## How to import a site
+
+site တစ်ခု import လုပ်ဖို့အတွက် **Import a Site** tab ကို သွားပြီး import လုပ်မယ့် site ရဲ့ .zip file ကို upload လုပ်ပါ။ URL ကို အသစ်တစ်ခုအဖြစ် ပြောင်းလဲနိုင်သလို၊ နေရာလွတ်ထားခြင်းအားဖြင့် အရင် URL ကိုလည်း ထားရှိနိုင်ပါတယ်။ ဒါ့အပြင် import လုပ်ပြီးတဲ့အခါ .zip file ကို သင့်ရဲ့ installation ကနေ ဖျက်ပစ်ဖို့ box ကိုလည်း အမှန်ခြစ်နိုင်ပါတယ်။ ပြီးရင် **Begin Import** ကို နှိပ်ပါ။
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+လုပ်ငန်းစဉ်က နည်းနည်းကြာနိုင်ပါတယ်။ importer အောက်က list မှာ pending import ကို မြင်ရပါလိမ့်မယ်။
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+**Cancel Import** ကို နှိပ်ခြင်းအားဖြင့် လုပ်ငန်းစဉ်ကို ရပ်တန့်နိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+လုပ်ငန်းစဉ် ပြီးဆုံးသွားရင် သင့်ရဲ့ site ဟာ သင့်ရဲ့ ကွန်ရက်မှာ အသင့်ရှိနေပါပြီ။
+
+## How to import a site on a single install
+
+single install ကို site တစ်ခု import လုပ်ဖို့အတွက် အရင်ဆုံး importer ကို install လုပ်ပြီး activate လုပ်ပါ။ download လုပ်ဖို့ link ကို exporter tab မှာ တွေ့နိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+importer ကို **Tools** menu ရဲ့ ဘယ်ဘက်ခြမ်းက **Export & Import** subitem မှာ တွေ့နိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+import လုပ်မယ့် site ရဲ့ .zip file ကို upload လုပ်ပါ။ URL ကို အသစ်တစ်ခုအဖြစ် ပြောင်းလဲနိုင်သလို၊ နေရာလွတ်ထားခြင်းအားဖြင့် အရင် URL ကိုလည်း ထားရှိနိုင်ပါတယ်။ ဒါ့အပြင် import လုပ်ပြီးတဲ့အခါ .zip file ကို သင့်ရဲ့ installation ကနေ ဖျက်ပစ်ဖို့ box ကိုလည်း အမှန်ခြစ်နိုင်ပါတယ်။ ပြီးရင် **Begin Import** ကို နှိပ်ပါ။
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+လုပ်ငန်းစဉ်က နည်းနည်းကြာနိုင်ပါတယ်။ importer အောက်က list မှာ pending import ကို မြင်ရပါလိမ့်မယ်။
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+**Cancel Import** ကို နှိပ်ခြင်းအားဖြင့် လုပ်ငန်းစဉ်ကို ရပ်တန့်နိုင်ပါတယ်။
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+လုပ်ငန်းစဉ် ပြီးဆုံးသွားရင် သင့်ရဲ့ site ဟာ အခုမှ import လုပ်လိုက်တဲ့ site နဲ့ အစားထိုးသွားပါလိမ့်မယ်။

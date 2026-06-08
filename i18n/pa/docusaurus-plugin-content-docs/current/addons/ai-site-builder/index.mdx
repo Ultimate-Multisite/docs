@@ -1,0 +1,124 @@
+---
+title: AI ਸਾਈਟ ਬਿਲਡਰ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## ਲੋੜੀਂਦੀਆਂ ਚੀਜ਼ਾਂ (Requirements)
+
+- WordPress 5.3 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- PHP 7.4 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- Multisite Ultimate plugin (active)
+
+## ਇੰਸਟਾਲੇਸ਼ਨ (Installation)
+
+1. ਐਡਨ ਫਾਈਲਾਂ ਨੂੰ ਆਪਣੀ `/wp-content/plugins/` ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਅਪਲੋਡ ਕਰੋ।
+2. WordPress ਵਿੱਚ 'Plugins' ਮੀਨੂ ਰਾਹੀਂ plugin ਨੂੰ ਐਕਟਿਵੇਟ ਕਰੋ।
+3. ਨੈਟਵਰਕ ਐਡਮਿਨ ਵਿੱਚ ਐਡਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਕੰフィਗਰ ਕਰੋ।
+
+## ਡਿਵੈਲਪਮੈਂਟ (Development)
+
+### ਸੈਟਅਪ (Setup)
+
+```bash
+# Dependencies ਇੰਸਟਾਲ ਕਰੋ
+composer install
+npm install
+
+# ਟੈਸਟ ਚਲਾਓ
+npm run test
+
+# ਕੋਡ ਸਟੈਂਡਰਡਸ ਦੀ ਜਾਂਚ ਕਰੋ
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# ਕੋਡ ਸਟਾਈਲ ਦੀਆਂ ਸਮੱਸਿਆਵਾਂ ਠੀਕ ਕਰੋ
+vendor/bin/phpcbf
+
+# ਪ੍ਰੋਡਕਸ਼ਨ ਲਈ ਬਿਲਡ ਕਰੋ
+npm run build
+```
+
+### ਪ੍ਰੋਜੈਕਟ ਸਟਰਕਚਰ (Project Structure)
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP ਕਲਾਸਾਂ ਅਤੇ ਇੰਕਲੂਡਸ
+│   ├── class-multisite-ultimate-updater.php  # ਅਪਡੇਟ ਹੈਂਡਲਰ
+│   └── class-ai_site_builder-main.php             # ਮੁੱਖ ਕਾਰਜਸ਼ੀਲਤਾ
+├── tests/                        # ਯੂਨਿਟ ਟੈਸਟਸ
+│   ├── bootstrap.php            # ਟੈਸਟ ਬੂਟਸਟ੍ਰੈਪ
+│   ├── class-*-base.php         # ਬੇਸ ਟੈਸਟ ਕਲਾਸ
+│   └── class-*-test.php         # ਟੈਸਟ ਕੇਸ
+├── views/                       # ਟੈਂਪਲੇਟ ਫਾਈਲਾਂ
+├── assets/                      # ਸਟੈਟਿਕ ਐਸੈਟਸ
+│   ├── css/                     # ਸਟਾਈਲਸ਼ੀਟਸ
+│   ├── js/                      # ਜੈਵਸਕ੍ਰਿਪਟ ਫਾਈਲਾਂ
+│   └── images/                  # ਤਸਵੀਰਾਂ
+├── lang/                        # ਭਾਸ਼ਾ ਫਾਈਲਾਂ
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # ਕੋਡ ਸਟੈਂਡਰਡਸ configuration
+└── rector.php                   # ਕੋਡ ਮਾਡਰਨਾਈਜ਼ੇਸ਼ਨ ਨਿਯਮ
+```
+
+### ਟੈਸਟਿੰਗ (Testing)
+
+ਇਸ ਐਡਨ ਵਿੱਚ ਇੱਕ ਪੂਰਾ ਟੈਸਟਿੰਗ ਫਰੇਮਵਰਕ ਸ਼ਾਮਲ ਹੈ:
+
+- **Unit Tests**: WordPress ਟੈਸਟ ਸੂਟ ਨਾਲ PHPUnit-ਆਧਾਰਿਤ ਟੈਸਟ।
+- **Base Test Class**: ਆਮ ਟੈਸਟ ਸਿਨੈਰੀਓਜ਼ ਲਈ ਹੈਲਪਰ ਮੈਥਡਸ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ।
+- **Test Coverage**: ਕੋਡ ਕਵਰੇਜ ਨੂੰ ਟਰੈਕ ਕਰਨ ਲਈ ਕੰフィਗਰ ਕੀਤਾ ਗਿਆ ਹੈ।
+- **Multisite Testing**: ਟੈਸਟ ਮਲਟੀਸਾਈਟ (multisite) ماحول ਵਿੱਚ ਚੱਲਦੇ ਹਨ।
+
+### ਕੋਡ ਸਟੈਂਡਰਡਸ (Code Standards)
+
+- **WordPress Coding Standards**: PHPCS ਰਾਹੀਂ ਲਾਗੂ ਕੀਤਾ ਗਿਆ।
+- **PHP 7.4+ Compatibility**: ਆਧੁਨਿਕ PHP ਫੀਚਰ ਸਪੋਰਟ ਕੀਤੇ ਗਏ।
+- **Static Analysis**: ਟਾਈਪ ਚੈਕਿੰਗ ਲਈ PHPStan ইন্ਟੀਗ੍ਰੇਸ਼ਨ।
+- **Code Modernization**: PHP ਅਗ੍ਰੇਡ ਲਈ Rector ਨਿਯਮ।
+
+### ਬਿਲਡ ਸਿਸਟਮ (Build System)
+
+- **Asset Processing**: CSS/JS ਫਾਈਲਾਂ ਲਈ ਮਿਨੀਫਿਕੇਸ਼ਨ।
+- **Translation**: POT ਫਾਈਲ ਜਨਰੇਸ਼ਨ।
+- **Packaging**: ਡਿਸਟ੍ਰੀਬਿਊਸ਼ਨ ਲਈ ਆਰਕਾਈਵ ਕ੍ਰिएशन।
+- **Development Mode**: ਡੀਬੱਗਿੰਗ ਲਈ ਅਨਮਿਨੀਫਾਈਡ ਐਸੈਟਸ।
+
+## ਕੰフィਗਰੇਸ਼ਨ (Configuration)
+
+ਇਹ ਐਡਨ ਨੈਟਵਰਕ ਐਡਮਿਨ ਇੰਟਰਫੇਸ ਰਾਹੀਂ ਪਹੁੰਚਣ ਵਾਲੇ ਕਈ ਕੰフィਗਰੇਸ਼ਨ ਵਿਕਲਪਾਂ ਦਾ ਸਹਾਰਾ ਦਿੰਦਾ ਹੈ।
+
+## Hooks ਅਤੇ Filters
+
+### Actions (ਐਕਸ਼ਨ)
+
+- `ultimate-multisite-ai-site-builder_init` - ਐਡਨ ਇਨੀਸ਼ੀਅਲਾਈਜ਼ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- `ultimate-multisite-ai-site-builder_loaded` - ਸਾਰੇ ਐਡਨ ਫਾਈਲਾਂ ਲੋਡ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+
+### Filters (ਫਿਲਟਰ)
+
+- `ultimate-multisite-ai-site-builder_settings` - ਐਡਨ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣ ਲਈ।
+- `ultimate-multisite-ai-site-builder_enabled` - ਐਡਨ ਦੇ enable/disable ਸਟੇਟਸ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰਨ ਲਈ।
+
+## ਲਾਇਸੈਂਸ (License)
+
+ਇਹ ਐਡਨ GPL v3 ਜਾਂ ਇਸ ਤੋਂ ਬਾਅਦ ਦੇ ਲਾਇਸੈਂਸ ਹੇਠ ਲਾਇਸੈਂਸ ਕੀਤਾ ਗਿਆ ਹੈ।
+
+## ਸਪੋਰਟ (Support)
+
+ਸਪੋਰਟ ਅਤੇ ਡਾਕੂਮੈਂਟੇਸ਼ਨ ਲਈ, [MultisiteUltimate.com](https://multisiteultimate.com) 'ਤੇ ਜਾਓ।
+## Changelog
+
+- Version 1.0.1 (2025-09-28): prefix ਨੂੰ ultimate-multisite ਵਿੱਚ ਰੀਨੇਮ ਕੀਤਾ; text domain ਅਪਡੇਟ ਕੀਤਾ; version ਵੰਪ।
+
+
+- Version (2025-09-28): prefix ਨੂੰ ultimate-multisite ਵਿੱਚ ਰੀਨੇਮ ਕੀਤਾ; text domain ਅਪਡੇਟ ਕੀਤਾ; version ਵੰਪ।

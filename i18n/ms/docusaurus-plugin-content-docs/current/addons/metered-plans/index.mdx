@@ -1,0 +1,117 @@
+---
+title: Pelan Berukur
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Pelan Berukur (Metered Plans)
+
+Addon Ultimate Multisite: Metered Plans mengubah cara anda mengenakan bil kepada pelanggan dengan memperkenalkan keupayaan pengbilan berukur yang fleksibel. Daripada had keras yang ketat yang akan menyekat pengguna apabila had itu terlampaui, anda boleh membolehkan caj lebihan (overage charges) yang secara automatik membilkan pelanggan untuk penggunaan tambahan.
+
+## Ciri-ciri Utama
+
+* **Pengbilan Berukur (Metered Billing)**: Kenakan caj kepada pelanggan berdasarkan penggunaan sebenar, bukannya peringkat tetap.
+* **Pengurusan Lebihan (Overage Management)**: Secara automatik membilkan penggunaan yang melebihi had pelan.
+* **Pemantauan Penggunaan (Usage Tracking)**: Memantau penggunaan sumber pelanggan secara masa nyata.
+* **Harga Fleksibel (Flexible Pricing)**: Tetapkan kadar tersuai untuk sumber yang berbeza (storan, lebar jalur, tapak, dsb.).
+* **Pengbilan Token AI (AI Token Billing)**: Mengesan dan membilkan token input dan output untuk penggunaan AI merentasi subsite pelanggan.
+* **Invois Automatik (Automatic Invoicing)**: Menjana invois secara automatik apabila ambang penggunaan terlampaui.
+* **Laporan Penggunaan (Usage Reports)**: Analitik dan pelaporan penggunaan terperinci untuk pelanggan dan pentadbir.
+
+## Sesuai Untuk
+
+* **Penyedia Hosting**: Menawarkan pelan yang boleh diskalakan mengikut keperluan pelanggan.
+* **Platform SaaS**: Membilkan berdasarkan penggunaan sumber sebenar.
+* **Rangkaian Agensi**: Model harga yang fleksibel untuk projek klien.
+* **Reseller Hosting**: Membolehkan rakan kongsi menawarkan harga berasaskan penggunaan.
+
+## Cara Ia Berfungsi
+
+1. Konfigurasikan sumber berukur (ruang cakera, lebar jalur, bilangan tapak, dsb.).
+2. Tetapkan had pelan asas dan kadar lebihan.
+3. Sistem secara automatik mengesan penggunaan di seluruh rangkaian anda.
+4. Apabila pelanggan melebihi had, caj lebihan dikira.
+5. Invois dijana secara automatik berdasarkan kitaran pengbilan.
+6. Pelanggan boleh melihat penggunaan dan caj akan datang mereka secara masa nyata.
+
+## Pengbilan Token AI
+
+Versi 1.1.0 menambah pengbilan token AI untuk rangkaian yang menawarkan ciri AI melalui WordPress AI Client SDK. Metered Plans mendengar permintaan penjanaan AI yang selesai, merekodkan kiraan token input dan output untuk subsite semasa, dan menukarkan token tersebut menjadi perbelanjaan AI yang boleh dibilkan untuk tempoh pengbilan pelanggan semasa.
+
+Gunakan pengbilan token AI apabila anda ingin menawarkan alat AI pada tapak pelanggan tanpa menyerap kos model yang tidak menentu. Setiap permintaan dikaitkan dengan subsite, pelanggan, keahlian, penyedia, dan model supaya pentadbir boleh mengaudit penggunaan manakala pelanggan boleh melihat bagaimana penggunaan AI mereka mempengaruhi akaun mereka.
+
+### Konfigurasikan Kadar Per-Token
+
+Kadar AI dikonfigurasikan bagi setiap model sebagai kadar input dan output yang berasingan. Kadar dikira setiap 1 juta token, yang sepadan dengan halaman harga penyedia AI yang biasa.
+
+1. Dalam pentadbir rangkaian, buka **Multisite Ultimate → Settings → Metered Plans**.
+2. Aktifkan pengukur perbelanjaan AI untuk produk atau keahlian yang sepatutnya membilkan penggunaan AI.
+3. Tambah entri kadar model menggunakan ID model yang dipulangkan oleh konektor anda, seperti `gpt-4o`, `gpt-4o-mini`, atau pengenal model yang serasi dengan OpenAI yang lain.
+4. Masukkan nilai **Kadar Input** dan **Kadar Output** yang berasingan dalam mata wang tapak anda bagi setiap 1 juta token.
+5. Tetapkan elaun perbelanjaan AI termasuk pelanggan dan tingkah laku lebihan untuk pelan tersebut.
+
+Apabila ID model yang tepat tidak dikonfigurasikan, Metered Plans boleh padan mengikut awalan model. Contohnya, kadar yang dikonfigurasikan untuk `claude-sonnet-4` boleh digunakan untuk ID model bercap waktu yang bermula dengan awalan tersebut. Pembangun juga boleh melaraskan jadual kadar akhir dengan filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Konektor AI Disokong
+
+Pengbilan token AI berfungsi dengan konektor yang mengeluarkan acara penjanaan WordPress AI Client SDK dan memasukkan penggunaan token dalam metadata respons. Ini termasuk keluarga konektor Ultimate Multisite AI yang didokumentasikan di sini:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) untuk API yang serasi dengan OpenAI, termasuk OpenAI, Mistral, gateway serasi Ollama, dan penyedia lain yang mendedahkan metadata penggunaan token yang serasi
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) untuk penggunaan WebLLM asli pelayar apabila permintaan dirutekan melalui aliran acara AI Client SDK
+* Konektor penyedia AI yang digunakan oleh [Gratis AI Agent](../gratis-ai-agent/) apabila penyedia yang dipilih melaporkan kiraan token prompt dan completion melalui SDK
+
+Konektor tersuai boleh mengambil bahagian dengan mencetuskan acara standard `wp_ai_client_before_generate_result` dan `wp_ai_client_after_generate_result` dengan metadata model, penyedia, dan penggunaan token. Tetapan konektor dikuatkuasakan dari tapak utama ke subsite supaya tapak pelanggan menggunakan penyedia dan had yang diluluskan oleh rangkaian.
+
+### Penggunaan Akaun Pelanggan
+
+Pelanggan melihat penggunaan AI bersama dengan sumber berukur mereka yang lain di kawasan akaun mereka. Bar perbelanjaan AI menunjukkan jumlah tempoh pengbilan semasa yang diperoleh daripada token prompt dan completion yang direkodkan, kadar model yang dikonfigurasikan, dan sebarang elaun termasuk pada pelan.
+
+Jika pelanggan mempunyai kaedah pembayaran yang disimpan, penggunaan melebihi elaun termasuk dianggap sebagai lebihan yang boleh dibilkan. Jika pelan dikonfigurasikan untuk had keras dan pelanggan tiada kaedah pembayaran yang tersedia, permintaan AI boleh disekat setelah elaun dicapai dan pelanggan diminta untuk menambah butiran pembayaran sebelum meneruskan.
+
+## Sumber Disokong
+
+* Storan cakera
+* Lebar jalur/Pemindahan data
+* Bilangan tapak
+* Bilangan pengguna
+* Penggunaan token AI dan perbelanjaan AI
+* Jenis sumber tersuai
+
+## Keperluan
+
+* Multisite Ultimate 2.0.0 atau lebih tinggi
+* Pemasangan WordPress Multisite
+* PHP 7.4 atau lebih tinggi
+
+## Pemasangan
+
+1. Muat naik fail plugin ke `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktifkan plugin melalui skrin 'Plugins' dalam WordPress
+3. Navigasi ke Multisite Ultimate → Settings → Metered Plans
+4. Konfigurasikan sumber berukur dan harga anda
+5. Aktifkan pengbilan berukur untuk produk dalam editor produk
+
+## Soalan Lazim
+
+## Apa yang berlaku apabila pelanggan melebihi had mereka?
+
+Daripada menyekat akses, sistem mengesan lebihan dan menambahkannya kepada invois mereka yang seterusnya berdasarkan kadar yang anda konfigurasikan.
+
+## Bolehkah saya menetapkan kadar lebihan yang berbeza untuk produk yang berbeza?
+
+Ya, setiap produk boleh mempunyai sumber berukur dan harga lebihan yang unik.
+
+## Bagaimana pelanggan dimaklumkan tentang penggunaan?
+
+Pelanggan boleh melihat penggunaan semasa mereka dalam dashboard mereka dan menerima pemberitahuan pilihan apabila menghampiri atau melebihi had.
+
+## Bagaimana penggunaan token AI dihargai?
+
+Penggunaan token AI dihargai daripada kadar input dan output yang dikonfigurasikan model bagi setiap 1 juta token. Metered Plans mendarabkan kiraan token prompt dan completion setiap permintaan dengan kadar tersebut, menambah hasilnya kepada perbelanjaan AI tempoh pengbilan pelanggan semasa, dan mengaplikasikan elaun atau peraturan lebihan pelan.
+
+## Bolehkah saya masih menggunakan had keras?
+
+Ya, pengbilan berukur adalah pilihan bagi setiap produk. Anda boleh mencampurkan produk had keras tradisional dengan produk berukur.

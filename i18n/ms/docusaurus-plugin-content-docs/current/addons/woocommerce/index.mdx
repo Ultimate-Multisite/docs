@@ -1,0 +1,94 @@
+---
+title: Integrasi WooCommerce
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integrasi WooCommerce
+
+Integrasi WooCommerce berfungsi dengan cara yang sangat serupa dengan cara Pintu Masuk Manual (Manual Gateway) kami. Ia menawarkan fleksibiliti yang sangat tinggi kepada pengguna anda, membolehkan mereka memilih mana-mana bentuk pembayaran yang tersedia pada pemasangan WooCommerce anda. Dan ia mudah: apabila tempoh bil pengguna tamat, langganan pengguna akan ditangguhkan. Pada masa yang sama, pesanan akan dibuat pada pemasangan WooCommerce di laman utama rangkaian. Pengguna kemudian akan menerima invois dalam e-mel mereka, dengan pautan untuk melakukan pembayaran. Setelah pembayaran diterima, langganan akan diperbaharui.
+
+## Ciri-ciri
+
+- Integrasi yang mudah antara Ultimate Multisite dan WooCommerce
+- Beberapa kaedah pembayaran tersedia
+- Proses yang sepenuhnya automatik dengan WooCommerce Subscriptions
+
+## Dokumentasi
+
+**Menyediakan Integrasi WooCommerce**
+
+**Memperluaskan Pilihan Pembayaran anda dengan Ultimate Multisite: Integrasi WooCommerce**
+
+## Pemasangan
+
+1. Muat naik 'ultimate-multisite-woocommerce' ke direktori '/wp-content/plugins/'
+2. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
+3. Ikuti Wizard langkah demi langkah untuk menyediakan plugin
+
+## Panduan Penggunaan
+
+_**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
+
+_**PERHATIAN:** Ultimate Multisite: Integrasi WooCommerce memerlukan WooCommerce diaktifkan sekurang-kurangnya pada laman utama anda._
+
+Kami faham bahawa _Stripe_ dan _PayPal_ tidak tersedia di sesetengah negara yang mengehadkan atau menghalang pengguna Ultimate Multisite daripada menggunakan plugin kami dengan berkesan. Oleh itu, kami telah mencipta **add-on untuk menyepadukan _WooCommerce_**.
+
+_WooCommerce_ ialah plugin e-dagang yang sangat popular. Pembangun di seluruh dunia telah mencipta add-on untuk menyepadukan pelbagai pintu masuk pembayaran ke dalamnya. Kami mengambil kesempatan ini untuk memperluaskan pintu masuk pembayaran yang boleh anda gunakan dalam sistem bil Ultimate Multisite.
+
+## Menyediakannya
+
+Pertama, anda perlu memasang add-on Integrasi WooCommerce yang **percuma untuk pengguna berlesen**. Untuk memasangnya, klik pada Ultimate Multisite pada dashboard super admin anda dan pilih **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Di sini anda boleh mencari semua add-on Ultimate Multisite. Klik pada add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Satu tetingkap akan muncul dengan butiran add-on. Hanya klik pada **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Selepas pemasangan selesai, anda akan dialihkan ke halaman plugins. Di sini, hanya klik pada **Network Activate** dan add-on _WooCommerce_ akan diaktifkan pada rangkaian anda.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Selepas mengaktifkannya, jika anda masih belum memasang dan mengaktifkan plugin WooCommerce pada laman web anda, **anda akan menerima peringatan**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Setelah dipasang, anda akan melihat pilihan tambahan di bawah tetapan pembayaran Ultimate Multisite. Anda kemudian boleh **mengaktifkan** pilihan _WooCommerce_ dari situ.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Anda boleh mengkonfigurasi beberapa tetapan asas seperti nama paparan yang akan dipaparkan di bahagian hadapan dan arahan untuk membimbing pengguna anda dalam aliran pembayaran mereka. Kemudian anda boleh pergi ke **tetapan _WooCommerce_ laman utama anda** untuk mengaktifkan dan mengkonfigurasi pintu masuk pembayaran yang anda mahu gunakan.
+
+## Cara menguruskan pembayaran
+
+Integrasi WooCommerce berfungsi dengan cara yang sangat serupa dengan cara **Pintu Masuk Manual** kami berfungsi. Kelemahannya ialah setiap pembayaran mesti dibayar secara manual pada akhir tempoh bil. Berikut adalah cara aliran ini berfungsi:
+
+  * Apabila kitaran bil pengguna tamat, keahlian akan **ditangguhkan**. Pada masa yang sama, pesanan akan dibuat pada pemasangan _WooCommerce_ di laman utama rangkaian anda.
+
+  * Pengguna kemudian akan menerima invois dalam e-mel mereka, dengan pautan untuk melakukan pembayaran (pautan itu juga muncul dalam sejarah bil mereka dari dashboard subsite). Pautan itu akan mengalihkan pengguna ke **checkout _WooCommerce_**, di mana pengguna akan dapat memilih salah satu **pintu masuk _WooCommerce_ yang tersedia** untuk memproses pembayaran mereka.
+
+  * Setelah pembayaran diterima, keahlian akan **diperbaharui**, pembayaran akan direkodkan pada Ultimate Multisite dan pesanan ditetapkan untuk lengkap.
+
+### Beberapa Nota Penting:
+
+  * Fungsi lalai Ultimate Multisite masih berfungsi dengan borang integrasi ini. Contohnya, **mengeluarkan bayaran balik** dari skrin **Pengurusan Langganan** akan berkomunikasi dengan WooCommerce untuk mengeluarkan bayaran balik menggunakan bentuk pembayaran yang dipilih.
+
+  * Ultimate Multisite: Integrasi WooCommerce bergantung pada WP-Cron untuk berfungsi. Ini berfungsi dengan sangat baik kebanyakan masa, tetapi jika laman web mempunyai trafik yang rendah, cron tidak akan dipicu untuk menyemak acara yang dijadualkan dan acara itu terlepas, yang boleh menyebabkan kelewatan pelaksanaan.
+
+## Plugin Woocommerce Subscriptions
+
+Memulakan pembayaran secara manual setiap bulan bukanlah ideal untuk pengguna akhir kerana langganan dijangka berulang secara automatik setiap kitaran bil. Oleh itu, kami mereka add-on Integrasi WooCommerce untuk **menyokong plugin WooCommerce Subscriptions**. Ini akan mengautomasikan pembayaran untuk memudahkan transaksi bagi pengguna akhir anda.
+
+Semua yang perlu anda lakukan ialah **memasang** [plugin Woocommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) dan memastikan ia **diaktifkan pada laman utama anda**. Kemudian kembali ke tetapan pembayaran Ultimate Multisite dan **dayakan integrasi**.
+
+Dan itu sahaja. Pengguna akhir anda tidak perlu lagi membuat pembayaran secara manual pada akhir kitaran bil mereka.
+
+Selain pesanan yang dibuat pada laman utama anda di bawah _WooCommerce_, ia juga akan mencipta langganan untuk setiap akaun.

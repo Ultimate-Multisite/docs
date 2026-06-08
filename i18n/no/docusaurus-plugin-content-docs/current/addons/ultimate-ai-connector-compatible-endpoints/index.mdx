@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector for kompatible endepunkter
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints integrerer OpenAI-kompatible AI-leverandør-API-er med ditt WordPress multisite-nettverk. Du kan konfigurere flere AI-leverandører – hver med sin egen endepunkt-URL, API-nøkkel og standardmodell – og rute forespørsler med automatisk fallback når en leverandør er utilgjengelig.
+
+## Nøkkelfunksjoner
+
+- **Støtte for flere leverandører**: Legg til flere AI-leverandørkort, hver med sin egen endepunkt-URL, API-nøkkel og standardmodell
+- **Dra-og-omorganiser**: Arranger leverandørene etter prioritet ved å bruke gripehåndtaket på hvert kort; forespørsler bruker leverandørene i rekkefølge
+- **Automatisk fallback-ruting**: Hvis primærleverandøren er utilgjengelig, faller forespørsler automatisk tilbake til neste konfigurerte leverandør
+- **Konfigurasjon per leverandør**: Hver leverandør konfigureres uavhengig med sine egne legitimasjoner og modellvalg
+- **UI basert på kort**: Bygget på stabile WordPress 6.9+ Card-komponenter (CardBody, CardHeader, CardDivider)
+- **Automatisk utvidelse ved legging til**: Nye leverandørkort utvides automatisk slik at du umiddelbart kan fylle inn detaljene
+- **Script cache busting**: Leverandør-scripts blir cache-busted ved plugin-oppdatering for å sikre at den nyeste versjonen lastes
+
+## Krav
+
+- WordPress 5.3 eller høyere
+- PHP 7.4 eller høyere
+- Ultimate Multisite plugin (aktiv)
+- Et OpenAI-kompatibelt API-endepunkt (selvhostet eller tredjeparts)
+
+## Installasjon
+
+1. Last opp addon-filene til `/wp-content/plugins/`-mappen din
+2. Aktiver pluginet via 'Plugins'-menyen i WordPress
+3. Naviger til **Ultimate Multisite → AI Connector** for å konfigurere addon-en
+
+## Konfigurasjon
+
+### Oppsett av flere leverandører
+
+Konfigurasjonsskjermen bruker et kortbasert layout der hvert kort representerer én AI-leverandør. Du kan legge til så mange leverandører som du trenger.
+
+#### Legge til en leverandør
+
+1. Gå til **Ultimate Multisite → AI Connector** i nettverksadministrasjonen
+2. Klikk på **Add Provider**
+3. Et nytt leverandørkort vises og utvides automatisk
+4. Fyll inn leverandørdetaljene:
+   - **Provider Name** — en etikett for å identifisere denne leverandøren (f.eks. "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — basis-URL-en til det OpenAI-kompatible API-et (f.eks. `https://api.openai.com/v1`)
+   - **API Key** — din API-nøkkel for denne leverandøren
+   - **Default Model** — modellidentifikatoren som skal brukes som standard for denne leverandøren (f.eks. `gpt-4o`, `mistral-small`)
+5. Klikk på **Save Settings**
+
+#### Fjerne en leverandør
+
+Klikk på **Remove**-knappen på ethvert leverandørkort for å slette det. Lagre innstillingene for å anvende endringen.
+
+#### Omorganisere leverandører
+
+Dra gripeikonet (⣿) på venstre side av ethvert leverandørkort for å omorganisere det. Rekkefølgen bestemmer fallback-prioriteten: forespørsler sendes til den første leverandøren og faller tilbake til påfølgende leverandører hvis en forespørsel feiler.
+
+### Fallback-ruting
+
+Hvis en forespørsel til primærleverandøren feiler – på grunn av utløpt tid, rate limit eller tjenesteutfall – prøver konnektoren automatisk på nytt med neste leverandør i listen. Dette fortsetter nedover listen til en leverandør lykkes, eller alle leverandørene er prøvd.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback er gjennomsiktig for det kallende pluginet eller temaet – de mottar enten et vellykket svar eller en endelig feil, uavhengig av hvor mange leverandører som ble prøvd.
+
+### Referanse for leverandørkonfigurasjon
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## Feilsøking
+
+### Ingen leverandører er listet
+
+Hvis leverandørlisten er tom etter lagring, bekreft at:
+
+- Du klikket **Save Settings** etter å ha lagt til leverandørene
+- Nettleseren din ikke blokkerte lagringen av innstillingssiden (sjekk nettleserens konsoll for JavaScript-feil)
+- Pluginet er aktivt og du er på nettverksadministrasjonsskjermen
+
+### Forespørsler feiler for alle leverandører
+
+- Verifiser at hver leverandørs endepunkt-URL er nåbar fra serveren din (ikke bare fra nettleseren din)
+- Sjekk at hver API-nøkkel er gyldig og ikke har utløpt
+- Gjennomgå leverandørens rate-limit og kvotastatus i deres dashbord
+- Aktiver WordPress debug logging (`WP_DEBUG_LOG`) for å fange detaljerte feilmeldinger fra konnektoren
+
+### En leverandør brukes ikke for fallback
+
+Dra-og-omorganisering endrer fallback-rekkefølgen. Bekreft at leverandøren du forventer skal motta fallback-forespørsler er riktig plassert i listen, og at endepunkt-URL-en og API-nøkkelen er korrekte.
+
+### Nytt leverandørkort utvider seg ikke automatisk
+
+Automatisk utvidelse krever at JavaScript er aktivert i nettleseren din. Hvis kortet ikke utvider seg ved klikk, sjekk nettleserens konsoll for feil. Kortinnholdet er alltid tilgjengelig ved å klikke på kortoverskriften selv om automatisk utvidelse ikke utløses.
+
+## Changelog
+
+Se [Changelog](./changelog) for full versikoversikt.

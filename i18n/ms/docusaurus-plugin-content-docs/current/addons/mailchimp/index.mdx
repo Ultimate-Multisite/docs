@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Ultimate Multisite: Integrasi Mailchimp
+
+Sambungkan rangkaian Multisite Ultimate anda ke Mailchimp anda. Anda boleh menghubungkan pelan tertentu ke Senarai Mailchimp dan secara automatik menambah pelanggan ke senarai tersebut semasa pendaftaran.
+
+## Pemasangan
+
+1. Muat naik 'ultimate-multisite-mailchimp' ke direktori '/wp-content/plugins/'
+2. Aktifkan plugin melalui menu 'Plugins' dalam Pentadbir Rangkaian WordPress anda
+
+## Panduan Penggunaan
+
+Menyegerakkan e-mel pelanggan dengan senarai MailChimp anda sangat mudah dengan Add-on Integrasi MailChimp Ultimate Multisite kami. Tutorial ini bertujuan untuk membantu anda menyediakan semua tetapan!
+
+## Mendapatkan Kunci API
+
+Sebelum kita mula melihat pelbagai tetapan yang tersedia, kita memerlukan kunci API MailChimp. Ini membolehkan Ultimate Multisite berhubung dengan API MailChimp untuk mengambil senarai, kumpulan, dan menambah alamat e-mel ke senarai dan kumpulan tersebut apabila pengguna mendaftar.
+
+Ikuti tutorial ini untuk mendapatkan kunci API MailChimp anda sendiri: [About API Keys | Mailchimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Sila masukkan kunci API MailChimp anda pada_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Mod Integrasi
+
+Add-on Integrasi MailChimp menawarkan dua “mod integrasi”, yang bermakna terdapat dua cara berbeza anda boleh menggunakan add-on ini untuk menyegerakkan alamat e-mel.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dua mod integrasi untuk fleksibiliti yang lebih baik!_
+
+### Mod 1: Senarai Berganda (Multiple Lists)
+
+Mod lalai menggunakan **Senarai Berganda (Multiple Lists)**. Mod ini membolehkan anda memilih beberapa senarai MailChimp untuk setiap pelan. Ini adalah pilihan terbaik jika anda membahagikan pengguna anda kepada senarai yang berbeza.
+
+Contohnya, katakan anda mempunyai 3 senarai berbeza dalam akaun Mailchimp anda: **Newsletter**, **Plan A**, dan **Plan B**. Anda mahu semua pengguna, tanpa mengira pelan mereka, juga dimasukkan dalam senarai Newsletter, supaya mereka tidak terlepas kemas kini anda.
+
+Untuk mencapai itu, anda boleh menggunakan mod Senarai Berganda untuk menambah senarai **Newsletter** dan **Plan A** ke Tetapan MailChimp Plan A, dan **Newsletter** dan **Plan B** ke Tetapan MailChimp Plan B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Pilih senarai lalai untuk akaun baharu dan akaun yang dibatalkan_
+
+### Mod 2: Senarai Tunggal + Kumpulan Berganda (Single List + Multiple Groups)
+
+MailChimp membolehkan anda membahagikan senarai anda kepada kumpulan pengguna yang lebih kecil yang dipanggil **Kumpulan (Groups)**. Ini membolehkan anda mempunyai kawalan yang lebih baik kerana anda boleh menghantar kempen kepada subset pelanggan tertentu tanpa perlu membuat salinan berbilang kempen yang sama di MailChimp (yang menyukarkan analisis metrik kempen tersebut selepas ini).
+
+Contohnya, anda boleh mempunyai satu senarai bernama **Pelanggan Rangkaian Saya,** dan di dalamnya terdapat kumpulan untuk **Plan A** dan **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Pilih senarai dan kumpulan lalai, jika menggunakan mod integrasi “senarai tunggal + kumpulan berganda”_
+
+## Senarai dan Kumpulan Lalai
+
+Selepas anda memilih mod integrasi mana yang paling sesuai dengan kes penggunaan anda, tiba masanya untuk memilih senarai lalai (dan kumpulan, bergantung pada mod). Senarai lalai akan digunakan apabila pelan tertentu tidak mempunyai Senarai yang dipilih.
+
+Anda juga boleh memilih senarai lalai untuk akaun yang dibatalkan. Setiap kali pengguna menamatkan langganan dan mengeluarkan akaun mereka daripada rangkaian anda, alamat e-mel mereka akan dipindahkan ke senarai yang ditetapkan untuk akaun yang dibatalkan.
+
+## Mengaktifkan Langganan Berganda (Double Subscription)
+
+Pada halaman tetapan yang sama, anda akan dapat mengaktifkan **Langganan Berganda (Double Subscription)**. Pilihan ini akan menambah pengguna ke senarai lalai yang dipilih DAN senarai yang dipilih untuk pelan pengguna tersebut. Jika pilihan ini tidak diaktifkan, pengguna hanya akan ditambah ke senarai yang dipilih untuk pelan pengguna. Jika tiada yang ditetapkan untuk pelan tertentu, maka pengguna akan ditambah ke senarai lalai yang dipilih.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Anda boleh membuat pengguna anda melanggan senarai lalai dan senarai pelan semasa pendaftaran_
+
+## Memilih Senarai dan Kumpulan untuk Setiap Pelan
+
+Pergi ke **Plans** anda dan pilih pelan yang ingin anda sunting. Perhatikan bahawa pada meta-kotak **Advanced Options**, tab baharu bernama MailChimp akan tersedia.
+
+Pada tab itu, anda akan dapat memilih beberapa senarai atau satu senarai dan beberapa kumpulan (bergantung pada mod integrasi) untuk pelan tersebut.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Pilih Senarai dan Kumpulan yang anda ingin gunakan untuk setiap pelan anda_
+
+Apabila pengguna baharu mendaftar untuk pelan itu, alamat e-mel mereka akan ditambah ke senarai dan kumpulan yang dipilih!

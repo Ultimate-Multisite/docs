@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite Kompatibilitet
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Et WordPress-plugin som legger til kompatibilitetsfikser for Tutor LMS i fler-nettsted-miljøer (multisite).
+
+## Beskrivelse
+
+Dette pluginet gir essensielle kompatibilitetsfikser for å kjøre Tutor LMS på WordPress multisite-nettverk. Det håndterer brukerpåmelding, instruktørstyring, kursbegrensninger og annen funksjonalitet spesifikk for multisite.
+
+## Funksjoner
+
+- **Databasehåndtering**: Oppdager og oppretter automatisk manglende Tutor LMS-tabeller som feiler på grunn av multisite-fremmednøkkelbegrensninger
+- **Multisite Brukerpåmelding**: Tilpassede AJAX-håndterere for å administrere brukerpåmelding på tvers av nettverkets nettsteder
+- **Instruktørrollehåndtering**: Automatisk tildeling og administrasjon av instruktørroller i multisite-miljøer
+- **Kursbegrensninger**: Integrasjon med Ultimate Multisite for å administrere begrensninger på kurs- og funnel-opprettelse basert på nettstedsplaner
+- **Tilpassede Admin-visninger**: Multisite-bevisst liste og grensesnitt for instruktørstyring
+- **Admin-verktøy**: Grensesnitt for databasehåndtering for nettverks- og nettstedsadministratorer
+
+## Krav
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (påkrevet automatisk via `Requires Plugins` header)
+- WordPress Multisite-installasjon
+- Ultimate Multisite plugin (for funksjonaliteten knyttet til kursbegrensninger)
+
+## Installasjon
+
+1. Last opp pluginfilene til `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Forsikre deg om at Tutor LMS er installert og aktivert
+3. Aktiver pluginet via 'Plugins'-menyen i WordPress
+4. Pluginet vil automatisk integrere seg med Tutor LMS
+
+## Filstruktur
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Hovedpluginfil)
+├── includes/
+│   ├── class-database-manager.php (Databaseopprettelse og -håndtering)
+│   ├── class-admin-interface.php (Admin-grensesnitt for databasehåndtering)
+│   ├── class-course-limits.php (Håndterere for kurs- og funnelbegrensninger)
+│   ├── class-instructor-manager.php (Instruktørrollehåndtering)
+│   ├── class-ajax-handlers.php (Tilpassede AJAX-håndterere)
+│   ├── class-query-helper.php (Databaseforespørsel-verktøy)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite-bruker-modell)
+│   └── admin/
+│       ├── class-instructors-list.php (Tilpasset instruktørliste)
+│       └── views/
+│           └── instructors.php (Instruktøradmin-visning)
+└── README.md
+```
+
+## Funksjonalitet Flyttet fra MU Plugin
+
+Dette pluginet inneholder funksjonalitet som tidligere var i `wp-content/mu-plugins/daves.php`:
+
+- Begrensninger for endring av kursstatus
+- Begrensninger for opprettelse av kurs
+- CartFlows-integrasjon og begrensninger
+- Tutor instruktørrollehåndtering
+- Håndtering av brukerpåmelding i multisite
+- Visning av kursprodukt-ID
+
+## Databasehåndtering
+
+### Problemet
+
+I WordPress multisite-miljøer feiler opprettelsen av Tutor LMS-tabeller for tabeller med fremmednøkkelbegrensninger til brukertabellen. Dette skjer fordi:
+
+- Nettstedsspesifikke tabeller bruker prefikser som `wp_2_tutor_carts`
+- Fremmednøklene refererer til `wp_2_users` (som ikke eksisterer)
+- Den faktiske brukertabellen er `wp_users` (delt på tvers av hele nettverket)
+
+### Løsningen
+
+Dette pluginet gjør automatisk følgende:
+
+1. **Oppdager Manglende Tabeller**: Sjekker etter tabeller som feilet å opprettes på grunn av fremmednøkkelbegrensninger
+2. **Oppretter Tabeller med Korrekte Referanser**: Bruker det riktige navnet på brukertabellen (`wp_users` i multisite)
+3. **Håndterer Flere Scenarier**:
+   - Pluginaktivering/reaktivering
+   - Opprettelse av nytt nettsted i nettverket
+   - Manuell sjekk av tabeller via admin-grensesnittet
+
+### Berørte Tabeller
+
+- `tutor_coupon_usages` - Inneholder fremmednøkkel til brukertabellen
+- `tutor_carts` - Inneholder fremmednøkkel til brukertabellen
+- `tutor_notification_preferences` - TutorPro-tabell med fremmednøkkel til brukertabellen
+
+### Admin-grensesnitt
+
+Få tilgang til verktøyene for databasehåndtering på:
+
+- **Nettverksadmin**: Innstillinger → Tutor Multisite DB
+- **Nettstedsadmin**: Verktøy → Tutor Multisite DB
+
+Grensesnittet lar deg:
+- Se manglende tabeller på tvers av alle nettsteder
+- Manuelt utløse opprettelse av tabeller
+- Sjekke databasekonfigurasjonen
+- Se detaljert statusinformasjon
+
+## Support
+
+Dette pluginet er spesifikt designet for KursoPro-plattformen. For teknisk support, kontakt utviklingsteamet.

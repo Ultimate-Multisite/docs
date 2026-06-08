@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent ialah pembantu AI WordPress autonomi yang boleh merancang, membina, dan menguruskan laman web WordPress lengkap melalui arahan bahasa semula jadi. Ia mendedahkan set **Abilities** yang tersusun — tindakan diskret dan boleh diuji yang boleh dipanggil oleh agen — meliputi segala-galanya daripada pengurusan kandungan hingga kustomisasi sistem reka bentuk. Versi 1.9.0 menambah kemampuan penciptaan kandungan, semakan halaman visual melalui tangkapan skrin sisi klien, lima profil agen terbina dalam, dan *feature flags* untuk kawalan akses dan penjenamaan.
+
+## Ciri-ciri Utama
+
+- **Sistem Abilities** — katalog tindakan yang modular dan boleh diperluaskan yang boleh dipanggil oleh agen pada pemasangan WordPress anda
+- **Pengurusan Kandungan** — mencipta pos dan halaman (termasuk menetapkan templat halaman), mencipta banyak pos secara pukal dalam satu panggilan, menetapkan imej utama, dan membina borang hubungan
+- **Semakan Visual** — mengambil tangkapan skrin halaman langsung, membandingkan keadaan sebelum/selepas, dan mendapatkan semakan reka bentuk yang dijana AI meliputi susun atur, tipografi, warna, dan kebolehaksesan
+- **Lima Agen Terbina** — Content Writer, Site Builder, Design Studio, Plugin Manager, dan Support Assistant; boleh ditukar melalui Agent Picker di tajuk sembang
+- **Feature flags** — suis kawalan akses dan penjenamaan dalam Settings → Feature Flags untuk sekatan peranan, penamaan *white-label*, dan kustomisasi widget
+- **Pengurusan Custom Post Type** — mendaftarkan, menyenaraikan, dan memadamkan *custom post types* dengan kekekalan merentasi permulaan semula
+- **Pengurusan Custom Taxonomy** — mendaftarkan, menyenaraikan, dan memadamkan *custom taxonomies* dengan kekekalan
+- **Abilities Sistem Reka Bentuk** — menyuntik CSS tersuai, menguruskan corak blok yang dikurasi, menetapkan logo laman, dan menggunakan tetapan *theme.json*
+- **Pengurusan Gaya Global** — membaca dan menulis nilai *theme.json* untuk palet warna, tipografi, jarak, dan banyak lagi
+- **Pengurusan Menu Navigasi** — mencipta dan mengemas kini menu navigasi dan itemnya secara programatik
+- **Pengurusan Pilihan (Options)** — membaca dan menulis pilihan WordPress dengan senarai hitam keselamatan terbina dalam untuk melindungi tetapan kritikal
+- **Pendaftar Abilities Boleh Dipasang** — menemui dan mengaktifkan pakej kemampuan tambahan tanpa mengubah fail *plugin* teras
+- **Site Builder Orchestration v2** — pelan binaan laman berbilang langkah dengan penemuan *plugin*, penjejakan kemajuan, dan pemulihan ralat
+- **Perintah benchmark WP-CLI** — menjalankan suite *benchmark* keupayaan agen dari talian arahan untuk CI dan penilaian model
+
+## Keperluan
+
+- WordPress 6.0 atau lebih tinggi
+- PHP 8.1 atau lebih tinggi
+- WordPress Multisite (diaktifkan rangkaian) atau pemasangan laman tunggal
+- *Plugin* penyambung penyedia AI yang aktif (Anthropic, OpenAI, atau yang serasi)
+
+## Pemasangan
+
+1. Muat naik fail *plugin* ke `/wp-content/plugins/gratis-ai-agent`
+2. Aktifkan *plugin* melalui skrin **Plugins** dalam WordPress
+3. Navigasi ke **Gratis AI Agent → Settings** dan sambungkan penyedia AI anda
+4. (Pilihan) Jelajahi **Abilities Registry** untuk memasang pakej kemampuan tambahan
+
+## Permulaan Pantas
+
+Setelah diaktifkan dan disambungkan kepada penyedia AI, buka panel **Gratis AI Agent** di bar sisi pentadbir WordPress. Taip arahan bahasa semula jadi dan agen akan merancang serta melaksanakan langkah-langkah yang diperlukan menggunakan *abilities* yang tersedia.
+
+**Contoh arahan:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Gambaran Keseluruhan Abilities
+
+*Abilities* ialah tindakan atomik yang boleh dilakukan oleh agen. Setiap *ability* ialah kelas PHP yang didaftarkan yang mendedahkan skema (parameter dan jenis pulangan) yang dibaca oleh agen semasa masa larian. *Abilities* dikumpulkan ke dalam kawasan fungsi:
+
+| Area | Abilities |
+|---|---|
+| **Pengurusan Kandungan** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Semakan Visual** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Sistem Reka Bentuk** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Gaya Global** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menu Navigasi** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Pengurusan Pilihan** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Abilities Boleh Dipasang** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Lihat [Abilities Reference](./abilities) untuk dokumentasi parameter penuh dan contoh penggunaan.
+
+## WP-CLI
+
+Gratis AI Agent membekalkan keluarga perintah `wp gratis-ai-agent` untuk menjalankan *benchmark* dan mengurus *abilities* dari talian arahan. Lihat [WP-CLI Reference](./wp-cli) untuk senarai perintah penuh.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurasi
+
+Semua tetapan berada di **Gratis AI Agent → Settings** dalam pentadbir WordPress:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | Pilih dan konfigurasikan penyambung penyedia AI yang aktif |
+| **Model** | Pilih model bahasa untuk digunakan bagi sesi agen |
+| **Max Tokens** | Bajet token bagi setiap permintaan (lalai 4096) |
+| **Ability Timeout** | Masa maksimum dalam saat yang boleh dijalankan oleh satu *ability* (lalai 30) |
+| **Debug Logging** | Log panggilan *ability* dan penaakulan agen ke log pepijat WordPress |
+
+## Senarai Hitam Keselamatan Pengurusan Pilihan
+
+*Ability* Pengurusan Pilihan merangkumi senarai hitam terbina dalam yang menghalang agen daripada membaca atau menulis pilihan WordPress yang sensitif. Senarai hitam lalai meliputi:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (pilihan URL — gunakan alat migrasi khusus untuk ini)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (kunci rahsia)
+- `active_plugins`, `template` (pengaktifan *plugin*/tema — gunakan *abilities* khusus)
+- Kredensial *payment gateway* dan kunci API yang didaftarkan oleh *plugin* yang dipasang
+
+Entri tambahan boleh ditambah melalui *filter* `gratis_ai_agent_options_blocklist`.
+
+## Hooks dan Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — dipicu selepas *ability* didaftarkan, menerima nama kelas *ability*
+- `gratis_ai_agent_plan_started` — dipicu apabila pelan *site builder* mula dilaksanakan
+- `gratis_ai_agent_plan_completed` — dipicu apabila pelan selesai dengan jayanya
+- `gratis_ai_agent_plan_failed` — dipicu apabila pelan menemui ralat yang tidak boleh dipulihkan
+
+### Filters
+
+- `gratis_ai_agent_abilities` — mengubah senarai *ability* yang didaftarkan sebelum agen memuatkannya
+- `gratis_ai_agent_options_blocklist` — memperluaskan atau mengurangkan senarai hitam keselamatan pilihan
+- `gratis_ai_agent_benchmark_questions` — menambah soalan *benchmark* tersuai ke suite penilaian
+- `gratis_ai_agent_plan_plugins` — mengubah senarai penemuan *plugin* semasa penjanaan pelan laman
+
+## Sokongan
+
+Untuk sokongan, lawati [ultimatemultisite.com](https://ultimatemultisite.com) atau buka isu dalam repositori *plugin*.
+
+## Changelog
+
+Lihat [Changelog](./changelog) untuk sejarah versi penuh.

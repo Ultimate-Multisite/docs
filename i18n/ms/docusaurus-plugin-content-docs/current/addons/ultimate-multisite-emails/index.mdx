@@ -1,0 +1,114 @@
+---
+title: Emel
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emel
+
+Addon Ultimate Multisite: Emel membolehkan pemilik rangkaian menyediakan dan mengurus akaun emel pelanggan bersama dengan tapak web dan keahlian. Versi 1.1.0 menambah pengurusan akaun emel yang boleh diakses pelanggan, log masuk tunggal (single sign-on) webmail, sokongan pemancar (forwarder) CyberPanel, dan peningkatan penyediaan semasa proses pembayaran.
+
+## Ciri Utama
+
+* **Widget akaun emel pelanggan**: Pelanggan boleh mencipta dan mengurus akaun emel mereka dari halaman akaun tanpa perlu membuka tiket sokongan.
+* **SSO Webmail dan pautan ajaib (magic links)**: Pelanggan boleh membuka webmail terus dari halaman akaun dengan pengesahan satu klik apabila penyedia (provider) menyokongnya.
+* **Perubahan kata laluan**: Pelanggan dan pentadbir boleh mengemas kini kata laluan peti mel dari widget pengurusan emel.
+* **Penyediaan semasa pembayaran**: Penciptaan akaun emel pelanggan boleh dijalankan semasa proses pembayaran, jadi peti mel sedia selepas aliran pembelian selesai.
+* **Pemancar CyberPanel**: Rangkaian yang disokong oleh CyberPanel boleh mencipta dan mengurus pemancar emel sebagai sebahagian daripada aliran perkhidmatan emel.
+* **Tetapan sedar penyedia**: Halaman tetapan menapis penyedia kepada integrasi yang aktif dan dikonfigurasi, jadi pentadbir hanya melihat pilihan yang boleh digunakan.
+
+## Keperluan
+
+* Ultimate Multisite 2.0.0 atau lebih tinggi
+* Pemasangan WordPress Multisite
+* Sekurang-kurangnya satu integrasi penyedia emel yang dikonfigurasi
+* Kredensial API penyedia dengan kebenaran untuk mencipta peti mel, menukar kata laluan, dan mengeluarkan pautan akses webmail jika disokong
+
+## Pemasangan
+
+1. Muat naik fail plugin ke `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktifkan addon rangkaian dari **Plugins** dalam pentadbir rangkaian WordPress.
+3. Pergi ke **Ultimate Multisite** > **Settings** dan buka tetapan emel addon.
+4. Aktifkan integrasi penyedia emel yang anda mahu pelanggan gunakan.
+5. Simpan tetapan, kemudian uji penciptaan akaun dengan pelanggan bukan pengeluaran atau tapak staging.
+
+## Pengurusan Emel Akaun Pelanggan
+
+Versi 1.1.0 menambah widget pengurusan emel ke halaman akaun pelanggan. Gunakan ini apabila pelanggan perlu mengurus dan mencipta peti mel mereka sendiri (self-service).
+
+Dari halaman akaun, pelanggan boleh:
+
+1. Melihat akaun emel yang disambungkan kepada keahlian atau tapak mereka semasa.
+2. Mencipta peti mel baharu apabila pelan mereka membenarkan akaun tambahan.
+3. Menukar kata laluan peti mel sedia ada.
+4. Membuka penyedia webmail yang disokong melalui SSO atau log masuk pautan ajaib.
+
+Widget ini menggunakan sistem semasa halaman akaun Ultimate Multisite, jadi tindakan dihadkan kepada konteks akaun yang sedang dilihat oleh pelanggan. Ini menghalang pelanggan daripada mengurus akaun emel yang milik keahlian atau tapak lain.
+
+## SSO Webmail dan Log Masuk Pautan Ajaib
+
+SSO Webmail memberikan pelanggan tindakan **Buka webmail** terus dari halaman akaun. Apabila disokong oleh penyedia aktif, addon akan meminta URL akses jangka pendek dan mengalihkan pelanggan ke webmail tanpa meminta mereka menyalin kelayakan peti mel.
+
+Tingkah laku penyedia boleh berbeza:
+
+* Penyedia dengan API SSO asli boleh mencipta sesi webmail yang disahkan secara langsung.
+* Penyedia dengan sokongan pautan ajaib boleh menjana pautan log masuk terhad masa.
+* Penyedia tanpa sokongan SSO atau pautan ajaib masih perlu memaparkan butiran peti mel dan tindakan pengurusan kata laluan, tetapi tiada butang webmail satu klik.
+
+Aktifkan akses webmail hanya untuk penyedia di mana anda telah mengkonfigurasi kredensial API yang diperlukan. Jika tindakan itu hilang untuk sesebuah penyedia, sahkan dahulu bahawa penyedia itu aktif, dikonfigurasi, dan menyokong pautan log masuk webmail.
+
+## Penyediaan Semasa Pembayaran
+
+Addon ini boleh mencipta akaun emel pelanggan sebagai sebahagian daripada proses pembayaran. Ini berguna apabila pelan termasuk peti mel secara lalai atau apabila borang pembayaran mengumpul butiran akaun emel.
+
+Pelaksanaan yang disyorkan:
+
+1. Konfigurasi penyedia dan had pelan sebelum mengaktifkan penyediaan semasa pembayaran.
+2. Uji pembelian dengan produk staging dan sahkan peti mel dicipta selepas pembayaran.
+3. Semak halaman akaun pelanggan untuk mengesahkan peti mel baharu muncul dalam widget emel.
+4. Sahkan tindakan perubahan kata laluan dan webmail sebelum mengaktifkan aliran untuk produk pengeluaran.
+
+Jika penyediaan gagal, akaun dan keahlian pelanggan masih boleh wujud manakala peti mel memerlukan susulan pentadbir. Semak log aktiviti Ultimate Multisite dan log penyedia sebelum mencuba semula.
+
+## Pemancar Emel CyberPanel
+
+Untuk rangkaian yang disokong oleh CyberPanel, versi 1.1.0 menambah sokongan pemancar emel. Gunakan pemancar apabila pelanggan memerlukan alamat seperti `info@domain-pelanggan.test` untuk mengalihkan emel ke peti masuk lain tanpa mencipta peti mel penuh.
+
+Sebelum menawarkan pemancar, sahkan bahawa integrasi CyberPanel telah dikonfigurasi dan boleh diakses. Lihat panduan [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) untuk pemalar hos, nama pengguna, kata laluan, dan pakej yang diperlukan.
+
+## Log Perubahan
+
+### Versi 1.1.0 - Dikeluarkan pada 2026-05-05
+
+* Baharu: SSO Webmail dan log masuk pautan ajaib — pelanggan boleh mengakses webmail terus dari akaun mereka dengan pengesahan satu klik.
+* Baharu: Fungsi tukar kata laluan ditambah pada widget pengurusan akaun emel.
+* Baharu: Sokongan pemancar emel CyberPanel.
+* Baharu: Widget pengurusan emel pada halaman akaun pelanggan untuk penciptaan dan pengurusan akaun kendiri.
+* Baharu: Penciptaan akaun emel pelanggan disepadukan ke dalam aliran pembayaran untuk penyediaan automatik.
+* Pembaikan: Hook widget halaman akaun dikemas kini untuk menggunakan corak pendaftaran UMS yang betul.
+* Pembaikan: Borang Cipta Akaun digantikan dengan vanilla JS dan output dokumen HTML penuh yang betul.
+* Pembaikan: Widget pengurusan emel kini menggunakan sistem semasa UMS untuk halaman akaun pentadbir.
+* Pembaikan: Borang penciptaan akaun emel pentadbir termasuk medan kata laluan dan menggunakan Email_Account_Manager.
+* Pembaikan: Spam log per-request dikeluarkan dari inisialisasi Email_Account_Manager.
+* Diperbaiki: Halaman tetapan kini menapis untuk menunjukkan hanya penyedia emel yang aktif dan dikonfigurasi.
+
+## Soalan Lazim
+
+## Bolehkah pelanggan mencipta akaun emel mereka sendiri?
+
+Ya. Apabila widget akaun pelanggan diaktifkan dan pelan membenarkan akaun emel, pelanggan boleh mencipta dan mengurus peti mel mereka sendiri dari halaman akaun.
+
+## Adakah setiap penyedia menyokong SSO webmail?
+
+Tidak. Sokongan SSO dan pautan ajaib bergantung pada penyedia emel aktif. Penyedia tanpa API pautan akses masih boleh menyokong penciptaan peti mel dan perubahan kata laluan.
+
+## Bolehkah pentadbir mencipta akaun emel untuk pelanggan?
+
+Ya. Pentadbir boleh mencipta akaun emel dari antara muka pentadbir, termasuk menetapkan kata laluan awal semasa mencipta akaun.
+
+## Adakah pemancar sama dengan peti mel?
+
+Tidak. Peti mel menyimpan emel dan mempunyai kelayakan log masuk. Pemancar mengalihkan emel ke alamat lain dan tidak menyediakan peti masuk berasingan.

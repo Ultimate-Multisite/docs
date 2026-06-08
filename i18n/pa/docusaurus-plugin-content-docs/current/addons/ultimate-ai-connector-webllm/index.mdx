@@ -1,0 +1,144 @@
+---
+title: WebLLM ਲਈ ਅਲਟੀਮੇਟ AI ਕਨੈਕਟਰ
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM ਤੁਹਾਡੇ WordPress multisite network ਵਿੱਚ browser-native AI inference ਲਿਆਉਂਦਾ ਹੈ। ਇਹ WebLLM ਅਤੇ MLC engine ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਵੱਡੇ ਭਾਸ਼ਾਈ ਮਾਡਲ (large language models) ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ browser ਵਿੱਚ ਚਲਾਉਂਦਾ ਹੈ — ਕੋਈ API keys ਨਹੀਂ, ਕੋਈ external calls ਨਹੀਂ, ਅਤੇ ਕੋਈ data user ਦੇ device ਨੂੰ ਨਹੀਂ ਛੱਡਦਾ।
+
+## ਮੁੱਖ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ (Key Features)
+
+- **Browser-side inference**: LLM WebLLM/MLC ਰਾਹੀਂ ਸਿੱਧਾ ਵਿਜ਼ੀਟਰ ਦੇ browser ਵਿੱਚ ਚੱਲਦਾ ਹੈ — server GPU ਦੀ ਲੋੜ ਨਹੀਂ
+- **Floating chat widget**: logged-in user front end ਤੋਂ ਸਿੱਧੇ browser-side LLM ਨੂੰ prompt ਦੇ ਸਕਦੇ ਹਨ
+- **Admin-bar status indicator**: WordPress admin bar ਵਿੱਚ WebLLM engine ਦੀ real-time status ਦਿਖਾਈ ਦਿੰਦੀ ਹੈ
+- **SharedWorker runtime**: ਕਈ browser tabs GPU resources ਲਈ ਲੜਨ ਦੀ ਬਜਾਏ ਇੱਕ GPU session ਸਾਂਝਾ ਕਰਦੇ ਹਨ
+- **apiFetch middleware**: WordPress REST requests ਜੋ AI Client SDK pattern ਨਾਲ ਮਿਲਦੇ ਹਨ, ਉਹ transparently local WebLLM broker ਨੂੰ ਰੂਟ ਕੀਤੇ ਜਾਂਦੇ ਹਨ — ਕੋਈ loopback HTTP round-trip ਨਹੀਂ
+- **Widget settings UI**: Chat widget ਨੂੰ toggle ਕਰਨ ਅਤੇ auto-prompt behaviour configure ਕਰਨ ਲਈ Connector panel settings
+- **IndexedDB cache**: Model weight downloads CDN redirects ਤੋਂ ਬਚਦੇ ਹਨ ਜੋ default Cache API path ਨੂੰ ਤੋੜ ਦਿੰਦੇ ਹਨ
+- **wpai filter integration**: `wpai_preferred_text_models` filter ਵਿੱਚ hook ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ AI Experiments feature, configure ਹੋਣ 'ਤੇ browser engine 'ਤੇ ਰੂਟ ਹੋ ਸਕੇ
+
+## ਲੋੜਾਂ (Requirements)
+
+- WordPress 5.3 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- PHP 7.4 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
+- Ultimate Multisite plugin (active)
+- WebGPU support ਵਾਲਾ browser (Chrome 113+, Edge 113+, ਜਾਂ WebGPU enable ਕੀਤਾ ਗਿਆ Firefox Nightly)
+
+## Installation
+
+1. Addon files ਨੂੰ ਆਪਣੇ `/wp-content/plugins/` directory ਵਿੱਚ upload ਕਰੋ
+2. WordPress ਵਿੱਚ 'Plugins' menu ਰਾਹੀਂ plugin activate ਕਰੋ
+3. Addon configure ਕਰਨ ਲਈ **Ultimate Multisite → AI Connector** 'ਤੇ ਜਾਓ
+
+## Floating Chat Widget
+
+ਇਹ floating chat widget ਕਿਸੇ ਵੀ logged-in user ਨੂੰ ਆਪਣੀ front end ਤੋਂ ਸਿੱਧਾ browser-side LLM ਨਾਲ ਗੱਲਬਾਤ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਬਿਨਾਂ ਇਸ ਪੰਨੇ ਨੂੰ ਸੇਟ ਕਰਨ ਦੇ ਜਿਸ 'ਤੇ ਉਹ ਹੈ।
+
+### ਇਹ ਕੀ ਕਰਦਾ ਹੈ (What It Does)
+
+ਜਦੋਂ ਇਹ enable ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ logged-in users ਲਈ ਹਰ front-end page ਦੇ ਕੋਨੇ ਵਿੱਚ ਇੱਕ chat icon ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ। ਇਸ icon 'ਤੇ ਕਲਿੱਕ ਕਰਨ ਨਾਲ ਇੱਕ chat panel ਖੁੱਲ੍ਹਦਾ ਹੈ ਜਿੱਥੇ user prompts ਟਾਈਪ ਕਰ ਸਕਦਾ ਹੈ ਅਤੇ locally running WebLLM model ਤੋਂ responses ਪ੍ਰਾਪਤ ਕਰ ਸਕਦਾ ਹੈ। ਕਿਉਂਕਿ model ਪੂਰੀ ਤਰ੍ਹਾਂ browser ਵਿੱਚ ਚੱਲਦਾ ਹੈ, ਇਸ ਲਈ responses private ਹੁੰਦੇ ਹਨ ਅਤੇ ਕਿਸੇ server-side processing ਦੀ ਲੋੜ ਨਹੀਂ ਹੁੰਦੀ।
+
+### Admin-Bar Status Indicator
+
+WordPress admin bar ਵਿੱਚ ਇੱਕ status indicator ਸ਼ਾਮਲ ਹੈ ਜੋ WebLLM engine ਦੀ ਮੌਜੂਦਾ ਹਾਲਤ ਦਿਖਾਉਂਦਾ ਹੈ:
+
+| Status | Meaning |
+|--------|---------|
+| **Loading** | MLC engine initialize ਹੋ ਰਿਹਾ ਹੈ ਜਾਂ model weights download ਹੋ ਰਹੇ ਹਨ |
+| **Ready** | model load ਹੋ ਗਿਆ ਹੈ ਅਤੇ inference ਲਈ ਉਪਲਬਧ ਹੈ |
+| **Idle** | engine load ਹੋ ਗਿਆ ਹੈ ਪਰ SharedWorker tab active ਨਹੀਂ ਹੈ |
+| **Error** | engine initialize ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਹੋ ਗਿਆ — details ਲਈ browser console ਦੀ ਜਾਂਚ ਕਰੋ |
+
+ਇਹ indicator page reload ਕੀਤੇ ਬਿਨਾਂ real time ਵਿੱਚ update ਹੁੰਦਾ ਹੈ।
+
+### Widget ਨੂੰ Enable ਜਾਂ Disable ਕਿਵੇਂ ਕਰੀਏ
+
+1. network admin ਵਿੱਚ **Ultimate Multisite → AI Connector** 'ਤੇ ਜਾਓ
+2. **Connector** panel ਲੱਭੋ
+3. **Enable floating chat widget** ਨੂੰ on ਜਾਂ off ਕਰੋ
+4. settings save ਕਰੋ
+
+ਜੇ network administrator ਨੇ ਇਹ capability ਦਿੱਤੀ ਹੈ, ਤਾਂ widget ਨੂੰ site ਦੇ ਆਪਣੇ admin ਤੋਂ ਵੀ per-site enable ਜਾਂ disable ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।
+
+## Widget Settings
+
+**Ultimate Multisite → AI Connector** ਵਿੱਚ Connector panel, floating chat widget ਲਈ ਹੇਠ ਲਿਖੀਆਂ settings ਰੱਖਦਾ ਹੈ:
+
+### Enable Floating Chat Widget
+
+ਇਹ ਪੂਰੇ network ਲਈ chat widget ਨੂੰ on ਜਾਂ off ਕਰਦਾ ਹੈ। ਜਦੋਂ ਇਹ disable ਹੁੰਦਾ ਹੈ, ਤਾਂ widget ਕੋਈ ਵੀ front-end page 'ਤੇ ਨਹੀਂ ਦਿਖਾਈ ਦੇਵੇਗਾ, ਭਾਵੇਂ user role ਕੋਈ ਵੀ ਹੋਵੇ।
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+ਇਹ control ਕਰਦਾ ਹੈ ਕਿ ਕੀ chat widget ਕਿਸੇ user ਦੁਆਰਾ ਇਸਨੂੰ ਖੋਲ੍ਹਣ 'ਤੇ automatically ਕੋਈ prompt ਭੇਜਦਾ ਹੈ।
+
+| Option | Behaviour |
+|--------|-----------|
+| **Disabled** | widget ਇੱਕ ਖਾਲੀ chat ਨਾਲ ਖੁੱਲ੍ਹਦਾ ਹੈ — user ਆਪਣਾ prompt ਟਾਈਪ ਕਰਦਾ ਹੈ |
+| **Page context** | widget ਇੱਕ prompt ਨਾਲ ਖੁੱਲ੍ਹਦਾ ਹੈ ਜੋ ਮੌਜੂਦਾ page ਦੇ title ਅਤੇ content ਦੇ ਆਧਾਰ 'ਤੇ pre-filled ਹੁੰਦਾ ਹੈ |
+| **Custom prompt** | widget ਇੱਕ custom prompt ਨਾਲ ਖੁੱਲ੍ਹਦਾ ਹੈ ਜੋ ਤੁਸੀਂ ਹੇਠਾਂ ਦਿੱਤੇ field ਵਿੱਚ define ਕਰਦੇ ਹੋ |
+
+ਜਦੋਂ ਇਸਨੂੰ **Custom prompt** ਸੈੱਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਇੱਕ ਵਾਧੂ text field ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ default prompt text enter ਕਰ ਸਕਦੇ ਹੋ। ਇਹ basic template variables ਨੂੰ support ਕਰਦਾ ਹੈ:
+
+- `{site_name}` — ਮੌਜੂਦਾ site ਦਾ ਨਾਮ
+- `{page_title}` — ਮੌਜੂਦਾ page ਦਾ title
+- `{user_display_name}` — logged-in user ਦਾ display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Version 1.1.0 MLC engine ਲਈ SharedWorker runtime ਪੇਸ਼ ਕਰਦਾ ਹੈ। ਪਹਿਲਾਂ, ਹਰ browser tab ਜੋ WebLLM ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਸੀ, model ਦੀ ਆਪਣੀ instance load ਕਰਦਾ ਸੀ, ਜਿਸ ਨਾਲ GPU memory ਲਈ ਟਕਰਾਅ ਹੁੰਦਾ ਸੀ ਅਤੇ limited VRAM ਵਾਲੇ devices 'ਤੇ performance issues ਆਉਂਦੇ ਸਨ।
+
+SharedWorker runtime ਨਾਲ, ਇੱਕ tab engine host ਵਜੋਂ ਕੰਮ ਕਰਦਾ ਹੈ। ਬਾਕੀ ਸਾਰੇ tabs worker ਦੇ message channel ਰਾਹੀਂ ਉਸ ਇੱਕ instance ਨਾਲ ਗੱਲਬਾਤ ਕਰਦੇ ਹਨ। ਨਤੀਜਾ:
+
+- ਸਾਰੀਆਂ ਖੁੱਲ੍ਹੀ tabs ਵਿੱਚ ਸਾਂਝਾ ਇੱਕ GPU session
+- model load ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੇਜ਼ responses (koi repeated initialisation ਨਹੀਂ)
+- device 'ਤੇ ਘੱਟ peak memory usage
+
+SharedWorker users ਲਈ transparent ਹੈ। admin-bar status indicator ਹਮੇਸ਼ਾ shared engine ਦੀ state ਨੂੰ reflect ਕਰਦਾ ਹੈ, ਨਾ ਕਿ individual tab ਨੂੰ।
+
+## apiFetch Middleware
+
+ਇਹ addon ਇੱਕ `apiFetch` middleware install ਕਰਦਾ ਹੈ ਜੋ WordPress REST API requests ਨੂੰ intercept ਕਰਦਾ ਹੈ ਜੋ AI Client SDK pattern ਨਾਲ ਮਿਲਦੇ ਹਨ। ਸਰਵਰ ਨੂੰ loopback HTTP request ਕਰਨ ਦੀ ਬਜਾਏ, ਇਹ requests ਸਿੱਧੇ SharedWorker ਵਿੱਚ chal ਰਹੇ local WebLLM broker ਨੂੰ ਰੂਟ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।
+
+ਇਸਦਾ ਮਤਲਬ ਹੈ ਕਿ plugins ਅਤੇ themes ਜੋ AI endpoints ਨੂੰ call ਕਰਨ ਲਈ standard WordPress `apiFetch` API ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਨ, ਉਹ ਆਪਣੇ ਆਪ browser-side model ਤੋਂ ਲਾਭ ਲੈਣਗੇ ਜਦੋਂ ਇਹ ਉਪਲਬਧ ਹੋਵੇਗਾ, ਜਿਸ ਲਈ ਕੋਈ code change ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — WebLLM browser engine ਨੂੰ ਇੱਕ preferred text model ਵਜੋਂ register ਕਰਦਾ ਹੈ। ਜਦੋਂ engine configure ਅਤੇ ਉਪਲਬਧ ਹੁੰਦਾ ਹੈ, ਤਾਂ addon ਇਸ filter ਵਿੱਚ automatically hook ਕਰਦਾ ਹੈ।
+- `ultimate_webllm_widget_enabled` — ਕਿਸੇ ਖਾਸ user ਜਾਂ context ਲਈ widget enabled state ਨੂੰ override ਕਰਦਾ ਹੈ। `true` ਜਾਂ `false` return ਕਰੋ।
+- `ultimate_webllm_auto_prompt` — widget ਨੂੰ ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ auto-prompt text ਨੂੰ modify ਕਰਦਾ ਹੈ। ਇਹ prompt string ਅਤੇ ਮੌਜੂਦਾ `WP_Post` object ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ।
+
+## Troubleshooting
+
+### Chat widget ਨਹੀਂ ਦਿਖਾਈ ਦਿੰਦਾ
+
+- ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ user logged in ਹੈ — widget ਸਿਰਫ਼ authenticated users ਨੂੰ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ
+- ਜਾਂਚ ਕਰੋ ਕਿ Connector panel ਵਿੱਚ **Enable floating chat widget** toggle on ਕੀਤਾ ਗਿਆ ਹੈ
+- ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ user ਦਾ browser WebGPU ਨੂੰ support ਕਰਦਾ ਹੈ (ਉਪਰ ਲੋੜਾਂ ਦੇਖੋ)
+
+### Admin-bar indicator "Error" ਦਿਖਾਉਂਦਾ ਹੈ
+
+browser developer console (F12) ਖੋਲ੍ਹੋ ਅਤੇ WebLLM-related errors ਲੱਭੋ। ਆਮ ਕਾਰਨ:
+
+- browser WebGPU ਨੂੰ support ਨਹੀਂ ਕਰਦਾ
+- Model weight download fail ਹੋ ਗਿਆ — network connectivity ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ browser developer tools (Application → IndexedDB) ਵਿੱਚ IndexedDB cache clear ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ
+- ਕੋਈ browser extension SharedWorker ਨੂੰ block ਕਰ ਰਿਹਾ ਹੈ
+
+### Model weights ਹਰ ਵਾਰ download ਹੁੰਦੇ ਹਨ
+
+addon model weights ਨੂੰ survive ਕਰਨ ਲਈ IndexedDB ਨੂੰ cache backend ਵਜੋਂ ਵਰਤਦਾ ਹੈ। ਜੇ weights ਹਰ ਵਿਜ਼ਿਟ 'ਤੇ re-download ਹੋ ਰਹੇ ਹਨ, ਤਾਂ ਜਾਂਚ ਕਰੋ ਕਿ IndexedDB ਨੂੰ browser privacy setting ਜਾਂ extension ਦੁਆਰਾ clear ਤਾਂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਰਿਹਾ।
+
+## Changelog
+
+ਪੂਰਾ version history ਲਈ [Changelog](./changelog) ਦੇਖੋ।

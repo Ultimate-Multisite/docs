@@ -1,0 +1,144 @@
+---
+title: အကောင်းဆုံး AI Connector for WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM သည် သင့် WordPress multisite network အတွက် browser-native AI inference ကို ယူဆောင်လာပေးပါသည်။ ၎င်းသည် WebLLM နှင့် MLC engine ကို အသုံးပြု၍ ဘာသာစကားကြီးမော်ဒယ် (large language models) များကို browser အတွင်း၌သာ အပြည့်အဝလည်ပတ်စေပါသည်။ API key များ မလိုအပ်ပါ၊ external calls များ မလိုအပ်ပါ၊ အသုံးပြုသူ၏ device မှ data များ ဘယ်မှမထွက်ခွာရပါ။
+
+## အဓိက အင်္ဂါရပ်များ (Key Features)
+
+- **Browser-side inference**: LLM ကို WebLLM/MLC မှတစ်ဆင့် သွားရောက်သူ (visitor) ၏ browser အတွင်း၌သာ လည်ပတ်စေသည် — server GPU မလိုအပ်ပါ။
+- **Floating chat widget**: login လုပ်ထားသော အသုံးပြုသူများသည် front end မှပင် browser-side LLM ကို တိုက်ရိုက် အသုံးပြု၍ မေးမြန်းနိုင်ပါသည်။
+- **Admin-bar status indicator**: WebLLM engine ၏ အခြေအနေကို WordPress admin bar တွင် အချိန်နှင့်တပြေးညီ မြင်တွေ့ရမည်။
+- **SharedWorker runtime**: browser tab များစွာသည် GPU အရင်းအမြစ်များအတွက် ယှဉ်ပြိုင်ရမည့်အစား SharedWorker တစ်ခုမှ GPU session တစ်ခုကို မျှဝေအသုံးပြုသည်။
+- **apiFetch middleware**: AI Client SDK ပုံစံနှင့် ကိုက်ညီသော WordPress REST requests များကို local WebLLM broker သို့ အလိုအလျောက် လမ်းကြောင်းပြောင်းပေးသည် — loopback HTTP round-trip မရှိပါ။
+- **Widget settings UI**: chat widget ကို ဖွင့်/ပိတ် လုပ်ရန်နှင့် auto-prompt အပြုအမူကို စီစဉ်ရန် Connector panel settings များ။
+- **IndexedDB cache**: Model weight များ download လုပ်ခြင်းသည် default Cache API path ပျက်စီးသွားသည့် CDN redirects များကို ကျော်လွန်၍ အသက်ရှင်နေစေသည်။
+- **wpai filter integration**: `wpai_preferred_text_models` filter တွင် hook လုပ်ထားခြင်းကြောင့် AI Experiments feature သည် စီစဉ်ထားပါက browser engine သို့ လမ်းကြောင်းပြောင်းပေးမည်။
+
+## လိုအပ်ချက်များ (Requirements)
+
+- WordPress 5.3 သို့မဟုတ် အထက်
+- PHP 7.4 သို့မဟုတ် အထက်
+- Ultimate Multisite plugin (active ဖြစ်ရမည်)
+- WebGPU ပံ့ပိုးမှုရှိသော browser (Chrome 113+, Edge 113+, သို့မဟုတ် WebGPU ကို ဖွင့်ထားသော Firefox Nightly)
+
+## တပ်ဆင်ခြင်း (Installation)
+
+1. Addon files များကို သင့် `/wp-content/plugins/` directory သို့ upload လုပ်ပါ။
+2. WordPress ၏ 'Plugins' menu မှတစ်ဆင့် plugin ကို activate လုပ်ပါ။
+3. Addon ကို စီစဉ်ရန် **Ultimate Multisite → AI Connector** သို့ သွားပါ။
+
+## Floating Chat Widget
+
+Floating chat widget သည် login လုပ်ထားသော အသုံးပြုသူ မည်သူမဆို သူတို့ရှိနေသည့် page မှ မခွာဘဲ browser-side LLM နှင့် တိုက်ရိုက် အပြန်အလှန်ဆက်သွယ်နိုင်စေပါသည်။
+
+### ဘာလုပ်ပေးသလဲ (What It Does)
+
+ဖွင့်ထားပါက၊ login လုပ်ထားသော အသုံးပြုသူများအတွက် front-end page အားလုံး၏ ထောင့်တစ်နေရာတွင် chat icon တစ်ခု ပေါ်လာမည်။ ထို icon ကို နှိပ်လိုက်ပါက chat panel တစ်ခု ပွင့်လာပြီး အသုံးပြုသူသည် prompt များ ရိုက်ထည့်ကာ၊ local တွင် လည်ပတ်နေသော WebLLM model မှ အဖြေများကို ရရှိနိုင်သည်။ model သည် browser အတွင်း၌သာ အပြည့်အဝ လည်ပတ်သောကြောင့် အဖြေများသည် private ဖြစ်ပြီး server-side processing တစ်စုံတစ်ရာ မပါဝင်ပါ။
+
+### Admin-Bar Status Indicator
+
+WordPress admin bar တွင် WebLLM engine ၏ လက်ရှိအခြေအနေကို ပြသသည့် status indicator ပါရှိသည်-
+
+| Status | အဓိပ္ပာယ် (Meaning) |
+|--------|---------|
+| **Loading** | MLC engine သည် စတင်ခြင်း (initialising) သို့မဟုတ် model weights များ download လုပ်နေခြင်း |
+| **Ready** | model ကို load လုပ်ပြီး inference အတွက် အသင့်ဖြစ်နေပြီ |
+| **Idle** | engine ကို load လုပ်ထားသော်လည်း SharedWorker tab သည် အလုပ်မလုပ်ဘဲ ရှိနေခြင်း |
+| **Error** | engine စတင်ရန် ပျက်ကွက်ခြင်း — အသေးစိတ်အချက်အလက်များအတွက် browser console ကို စစ်ဆေးပါ |
+
+indicator သည် page reload မလိုဘဲ အချိန်နှင့်တပြေးညီ အပ်ဒိတ်လုပ်ပေးပါသည်။
+
+### Widget ကို ဖွင့်ခြင်း သို့မဟုတ် ပိတ်ခြင်း (How to Enable or Disable the Widget)
+
+1. network admin တွင် **Ultimate Multisite → AI Connector** သို့ သွားပါ။
+2. **Connector** panel ကို ရှာပါ။
+3. **Enable floating chat widget** ကို ဖွင့်သည် သို့မဟုတ် ပိတ်ပါ။
+4. settings များကို save လုပ်ပါ။
+
+network administrator က အခွင့်အရေး ပေးထားပါက site ၏ ကိုယ်ပိုင် admin မှတစ်ဆင့်လည်း widget ကို ဖွင့်ခြင်း သို့မဟုတ် ပိတ်ခြင်း ပြုလုပ်နိုင်ပါသည်။
+
+## Widget Settings
+
+**Ultimate Multisite → AI Connector** ရှိ Connector panel တွင် floating chat widget အတွက် အောက်ပါ settings များ ပါဝင်သည်-
+
+### Enable Floating Chat Widget
+
+network တစ်ခုလုံးအတွက် chat widget ကို ဖွင့်သည် သို့မဟုတ် ပိတ်သည်။ ပိတ်ထားပါက အသုံးပြုသူ role မည်သို့ပင်ဖြစ်စေ front-end page မည်သည့်နေရာတွင်မှ widget ပေါ်မည်မဟုတ်ပါ။
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+chat widget ကို အသုံးပြုသူက ဖွင့်လိုက်သည့်အခါ prompt အလိုအလျောက် ပေးပို့မည်လားဆိုသည်ကို ထိန်းချုပ်သည်။
+
+| Option | အပြုအမူ (Behaviour) |
+|--------|-----------|
+| **Disabled** | widget သည် အလွတ် chat ဖြင့် ဖွင့်လာမည် — အသုံးပြုသူကိုယ်တိုင် prompt ရိုက်ထည့်ရမည် |
+| **Page context** | widget သည် လက်ရှိ page ၏ title နှင့် content အပေါ် အခြေခံ၍ prompt တစ်ခုဖြင့် ကြိုတင်ဖြည့်ထားကာ ဖွင့်လာမည် |
+| **Custom prompt** | widget သည် အောက်ပါ field တွင် သင်သတ်မှတ်ထားသော custom prompt တစ်ခုဖြင့် ဖွင့်လာမည် |
+
+**Custom prompt** အဖြစ် သတ်မှတ်ပါက၊ default prompt text ကို ထည့်သွင်းနိုင်သည့် အပို text field တစ်ခု ပေါ်လာမည်။ အခြေခံ template variables များကို ပံ့ပိုးပေးသည်-
+
+- `{site_name}` — လက်ရှိ site ၏ အမည်
+- `{page_title}` — လက်ရှိ page ၏ ခေါင်းစဉ်
+- `{user_display_name}` — login လုပ်ထားသော အသုံးပြုသူ၏ display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Version 1.1.0 သည် MLC engine အတွက် SharedWorker runtime ကို မိတ်ဆက်ပေးပါသည်။ ယခင်က WebLLM ကို အသုံးပြုသည့် browser tab တစ်ခုစီတိုင်းသည် model ၏ ကိုယ်ပိုင် instance ကို load လုပ်ခဲ့ရပြီး၊ VRAM နည်းပါးသော device များတွင် စွမ်းဆောင်ရည်ပြဿနာများ ဖြစ်စေခဲ့သည်။
+
+SharedWorker runtime ဖြင့် tab တစ်ခုသည် engine host အဖြစ် လုပ်ဆောင်သည်။ အခြား tab အားလုံးသည် ထို single instance နှင့် worker ၏ message channel မှတစ်ဆင့် ဆက်သွယ်ကြသည်။ ရလဒ်မှာ-
+
+- ဖွင့်ထားသော tab အားလုံးအတွက် GPU session တစ်ခုကို မျှဝေအသုံးပြုခြင်း
+- model ကို load လုပ်ပြီးသည်နှင့် ပိုမိုမြန်ဆန်သော အဖြေများ (initialisation ထပ်ခါထပ်ခါ မလုပ်ရ)
+- device ပေါ်တွင် peak memory usage နည်းပါးခြင်း
+
+SharedWorker သည် အသုံးပြုသူများအတွက် မြင်သာမှုမရှိပါ။ admin-bar status indicator သည် အမြဲတမ်း မျှဝေထားသော engine ၏ အခြေအနေကိုသာ ပြသမည်ဖြစ်ပြီး၊ တစ်ဦးချင်း tab ၏ အခြေအနေကို မပြပါ။
+
+## apiFetch Middleware
+
+Addon သည် `apiFetch` middleware တစ်ခုကို တပ်ဆင်ပေးထားပြီး ၎င်းသည် AI Client SDK ပုံစံနှင့် ကိုက်ညီသော WordPress REST API requests များကို ကြားဖြတ်ဖမ်းယူသည်။ ဤ requests များကို server သို့ loopback HTTP request အဖြစ် ပို့မည့်အစား SharedWorker တွင် လည်ပတ်နေသော local WebLLM broker သို့ တိုက်ရိုက် လမ်းကြောင်းပြောင်းပေးသည်။
+
+၎င်းသည် plugins နှင့် themes များက AI endpoints ကို ခေါ်ဆိုရန် standard WordPress `apiFetch` API ကို အသုံးပြုပါက၊ code ပြင်ဆင်ရန် မလိုဘဲ၊ model ရရှိနိုင်သည့်အခါ browser-side model မှ အလိုအလျောက် အကျိုးခံစားရမည်ဟု အဓိပ္ပာယ်ရသည်။
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — WebLLM browser engine ကို preferred text model အဖြစ် မှတ်ပုံတင်သည်။ engine ကို စီစဉ်ပြီး ရရှိနိုင်သည့်အခါ addon သည် ဤ filter တွင် အလိုအလျောက် hook လုပ်သည်။
+- `ultimate_webllm_widget_enabled` — သတ်မှတ်ထားသော အသုံးပြုသူ သို့မဟုတ် context အတွက် widget enabled အခြေအနေကို အစားထိုးနိုင်သည်။ `true` သို့မဟုတ် `false` ကို ပြန်ပေးပါ။
+- `ultimate_webllm_auto_prompt` — widget သို့ ပေးပို့မည့် auto-prompt text ကို ပြင်ဆင်နိုင်သည်။ prompt string နှင့် လက်ရှိ `WP_Post` object ကို ရရှိသည်။
+
+## Troubleshooting
+
+### Chat widget မပေါ်ခြင်း
+
+- အသုံးပြုသူသည် login လုပ်ထားကြောင်း အတည်ပြုပါ — widget ကို အတည်ပြုထားသော အသုံးပြုသူများအတွက်သာ ပြသသည်။
+- Connector panel တွင် **Enable floating chat widget** ကို ဖွင့်ထားကြောင်း စစ်ဆေးပါ။
+- အသုံးပြုသူ၏ browser သည် WebGPU ကို ပံ့ပိုးမှုရှိကြောင်း စစ်ဆေးပါ (အထက်ရှိ Requirements ကို ကြည့်ပါ)
+
+### Admin-bar indicator တွင် "Error" ပြသခြင်း
+
+browser developer console (F12) ကို ဖွင့်ပြီး WebLLM နှင့် သက်ဆိုင်သည့် error များကို ရှာဖွေပါ။ အဖြစ်များသော အကြောင်းရင်းများမှာ-
+
+- browser သည် WebGPU ကို ပံ့ပိုးမှုမရှိခြင်း
+- Model weight download ပျက်ကွက်ခြင်း — network connectivity ကို စစ်ဆေးပြီး browser developer tools (Application → IndexedDB) တွင် IndexedDB cache ကို ရှင်းလင်းကြည့်ပါ။
+- browser extension တစ်ခုက SharedWorker ကို ပိတ်ဆို့ထားခြင်း
+
+### Model weights အမြဲ download လုပ်နေခြင်း
+
+addon သည် model weights များ CDN redirects များကို ကျော်လွန်စေရန် IndexedDB ကို cache backend အဖြစ် အသုံးပြုသည်။ အကယ်၍ weights များသည် အကြိမ်တိုင်း ဝင်ရောက်တိုင်း ပြန်လည် download လုပ်နေပါက၊ IndexedDB ကို browser privacy setting သို့မဟုတ် extension တစ်ခုက ရှင်းလင်းခြင်း မရှိစေရန် စစ်ဆေးပါ။
+
+## Changelog
+
+အပြည့်အစုံ version history အတွက် [Changelog](./changelog) ကို ကြည့်ပါ။

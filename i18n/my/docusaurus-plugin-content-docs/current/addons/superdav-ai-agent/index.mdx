@@ -1,0 +1,161 @@
+---
+title: စူပါဒက်ဗ် AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent ဆိုတာက WordPress အတွက် အဆင့်မြင့် AI assistant တစ်ခုဖြစ်ပြီး၊ Gratis AI Agent ကို theme-aware skills တွေ၊ ပိုမိုကောင်းမွန်တဲ့ internet search စွမ်းရည်တွေနဲ့ site builder features တွေနဲ့ ချဲ့ထွင်ထားတာ ဖြစ်ပါတယ်။ Version 1.16.0 မှာ custom logo ထုတ်လုပ်ခြင်း၊ palette contrast စစ်ဆေးခြင်း၊ discovery interview အတွက် photo upload လုပ်ခြင်း၊ structured hospitality menu တွေ ထုတ်လုပ်ခြင်းနဲ့ Theme Builder မှာ desktop/mobile preview ပြသခြင်း စတဲ့ အင်္ဂါရပ်အသစ်တွေ ထပ်ပေါင်းထားပါတယ်။
+
+## အဓိက အင်္ဂါရပ်များ (Key Features)
+
+- **Theme-aware skills** — အသုံးပြုနေတဲ့ WordPress theme နဲ့ install လုပ်ထားတဲ့ plugins တွေအပေါ် မူတည်ပြီး လမ်းညွှန်မှုနဲ့ စွမ်းရည်တွေကို အလိုအလျောက် လိုက်လျောညီထွေ ပြောင်းလဲပေးပါတယ်
+- **Multiple internet search providers** — ပိုမိုကြွယ်ဝတဲ့ search ရလဒ်တွေနဲ့ အဆင့်မြင့် သုတေသန စွမ်းရည်တွေအတွက် Brave Search နဲ့ Tavily တို့ထဲကနေ ရွေးချယ်နိုင်ပါတယ်
+- **Site builder contact forms** — install လုပ်ထားတဲ့ form plugin ကို အသုံးပြုပြီး chat interface ကနေ တိုက်ရိုက် အလုပ်လုပ်နိုင်တဲ့ contact form တွေကို ဖန်တီးနိုင်ပါတယ်
+- **Enhanced site builder** — ပိုမိုကောင်းမွန်တဲ့ plugin discovery နဲ့ error recovery တွေနဲ့ multi-phase site build plan တွေကို မြှင့်တင်ထားပါတယ်
+- **Built-in theme skills** — Block Themes, Classic Themes, Kadence Blocks, နဲ့ Kadence Theme တွေအတွက် အထူးပြု လမ်းညွှန်မှုတွေ ပေးပါတယ်
+- **Improved WooCommerce integration** — ယုံကြည်စိတ်ချရမှုနဲ့ compatibility ပိုကောင်းစေဖို့ native WooCommerce APIs တွေကို အသုံးပြုတဲ့ ပုံစံနဲ့ ပြန်လည်ဖွဲ့စည်းထားပါတယ်
+- **Automatic provider detection** — plugins တွေ ဒါမှမဟုတ် themes တွေကို activate လုပ်တာ ဒါမှမဟုတ် deactivate လုပ်တာနဲ့ အသုံးပြုနိုင်တဲ့ plugins နဲ့ themes တွေကို အလိုအလျောက် သိရှိပြီး refresh လုပ်ပေးပါတယ်
+- **Custom logo generation** — automatic namespace-safe sanitisation နဲ့အတူ custom SVG logo တွေကို ထုတ်လုပ်ပြီး embed လုပ်နိုင်ပါတယ်
+- **Palette contrast validation** — theme မှာ အသုံးပြုမယ့် အရောင်အတွဲတွေကို WCAG accessibility စံနှုန်းတွေနဲ့ ကိုက်ညီမှုရှိမရှိ စစ်ဆေးပေးပါတယ်
+- **Photo-enhanced discovery** — Theme Builder discovery interview လုပ်တဲ့အချိန်မှာ photo တွေ upload လုပ်နိုင်ပြီး ဒီဇိုင်းလမ်းကြောင်းကို လွှမ်းမိုးနိုင်ပါတယ်
+- **Hospitality menus** — စားသောက်ဆိုင်များ၊ ကော်ဖီဆိုင်များနှင့် ဧည့်ခံဝန်ဆောင်မှုလုပ်ငန်းများအတွက် structured အစားအသောက်နှင့် အဖျော်ယမကာ menu စာမျက်နှာများကို ထုတ်လုပ်ပေးပါတယ်
+- **Desktop and mobile previews** — ဒီဇိုင်းလမ်းကြောင်းကို ရွေးချယ်တဲ့အချိန်မှာ desktop နဲ့ mobile စက်ပစ္စည်းတွေပေါ်မှာ preview ကြည့်နိုင်ပါတယ်
+- **Tier 1 site scraping** — sd-ai-agent/site-scrape ကို ယခုအခါ default အနေနဲ့ ရရှိနိုင်ပြီဖြစ်ပြီး ပြိုင်ဘက်နဲ့ စိတ်ကူးရတဲ့ website တွေကို ခွဲခြမ်းစိတ်ဖြာနိုင်ပါတယ်
+
+## လိုအပ်ချက်များ (Requirements)
+
+- WordPress 6.0 သို့မဟုတ် အထက်
+- PHP 8.1 သို့မဟုတ် အထက်
+- WordPress Multisite (network-activated) သို့မဟုတ် single-site installation
+- အသက်ဝင်နေတဲ့ AI provider connector plugin (Anthropic, OpenAI, သို့မဟုတ် တွဲဖက်နိုင်သော)
+- Gratis AI Agent v1.9.0 သို့မဟုတ် အထက် (Superdav AI Agent သည် Gratis AI Agent ကို ချဲ့ထွင်ထားသည်)
+
+## တပ်ဆင်ခြင်း (Installation)
+
+1. plugin file တွေကို `/wp-content/plugins/superdav-ai-agent` မှာ upload လုပ်ပါ။
+2. WordPress ရဲ့ **Plugins** screen ကနေ plugin ကို activate လုပ်ပါ။
+3. Gratis AI Agent ကိုလည်း activate လုပ်ထားကြောင်း သေချာပါစေ။
+4. **Gratis AI Agent → Settings** ကို သွားပြီး internet search provider ကို configure လုပ်ပေးပါ (ရွေးချယ်စရာ)။
+
+## အသုံးပြုပုံ အကျဉ်းချုပ် (Quick Start)
+
+Activate လုပ်ပြီးတာနဲ့ Superdav AI Agent ဟာ theme-aware skills တွေနဲ့ အပိုဆောင်း စွမ်းရည်တွေနဲ့ သင့်ရဲ့ Gratis AI Agent installation ကို အလိုအလျောက် မြှင့်တင်ပေးပါလိမ့်မယ်။ WordPress admin sidebar မှာရှိတဲ့ **Gratis AI Agent** panel ကို ဖွင့်ပြီး အင်္ဂါရပ်အသစ်တွေကို အသုံးပြု စတင်နိုင်ပါတယ်။
+
+**ဥပမာ ညွှန်ကြားချက်များ:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## Theme-Aware Skills
+
+Superdav AI Agent ဟာ အသုံးပြုနေတဲ့ theme နဲ့ install လုပ်ထားတဲ့ plugins တွေကို အလိုအလျောက် သိရှိပြီး သင့်ရဲ့ assistant ရဲ့ context ထဲကို သင့်တော်တဲ့ theme-aware skill ကို load လုပ်ပေးပါတယ်။ ရရှိနိုင်တဲ့ skills တွေမှာ အောက်ပါအတိုင်း ပါဝင်ပါတယ်-
+
+| Skill | အသုံးပြုနိုင်သည် |
+|---|---|
+| **Block Themes** | WordPress block-based (Full Site Editing) architecture ကို အသုံးပြုတဲ့ Themes များ |
+| **Classic Themes** | PHP templates နဲ့ classic editor ကို အသုံးပြုတဲ့ ရိုးရာ WordPress Themes များ |
+| **Kadence Blocks** | Kadence Blocks plugin ကို အသုံးပြုထားတဲ့ Sites များ |
+| **Kadence Theme** | Kadence theme ကို အသုံးပြုထားတဲ့ Sites များ |
+
+အသေးစိတ် လမ်းညွှန်မှုများအတွက် [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) ကို ကြည့်ရှုနိုင်ပါတယ်။
+
+## Internet Search Providers
+
+Superdav AI Agent v1.10.0 မှာ internet search query တွေအတွက် Brave Search ကို အစားထိုးအနေနဲ့ **Tavily** ကို ထပ်ပေါင်းထားပါတယ်။ ပံ့ပိုးပေးသူ နှစ်ဦးစလုံးက real-time search ရလဒ်တွေကို ပေးစွမ်းနိုင်ပြီး **Gratis AI Agent → Settings → Advanced** မှာ configure လုပ်နိုင်ပါတယ်။
+
+| Provider | အင်္ဂါရပ်များ | Setup |
+|---|---|---|
+| **Brave Search** | မြန်ဆန်ပြီး privacy ကို အဓိကထားတဲ့ search ရလဒ်များ | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | ပိုမိုကြွယ်ဝတဲ့ search ရလဒ်များ၊ အဆင့်မြင့် သုတေသန စွမ်းရည်များ | [Tavily API](https://tavily.com/) |
+
+configuration ညွှန်ကြားချက်များအတွက် [Internet Search](../../user-guide/configuration/internet-search) ကို ကြည့်ရှုပါ။
+
+## Site Builder Contact Forms
+
+Site Builder agent ဟာ chat interface ကနေ တိုက်ရိုက် contact form တွေ ဖန်တီးနိုင်ပါပြီ။ Site Builder ကို contact form တစ်ခု ဖန်တီးခိုင်းရုံနဲ့၊ သူက သင့်ရဲ့ install လုပ်ထားတဲ့ form plugin (Contact Form 7, WPForms, Fluent Forms, သို့မဟုတ် Gravity Forms) ကို အလိုအလျောက် သိရှိပြီး အသုံးပြုဖို့ အသင့်ဖြစ်တဲ့ form တစ်ခုကို ထုတ်ပေးပါလိမ့်မယ်။
+
+အသေးစိတ် လမ်းညွှန်မှုများအတွက် [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) ကို ကြည့်ရှုပါ။
+
+## Theme Builder Features
+
+Superdav AI Agent v1.16.0 မှာ Theme Builder ဟာ စွမ်းအားမြင့်တဲ့ အင်္ဂါရပ်အသစ်တွေ ပါဝင်လာပါတယ်-
+
+### Photo Upload ပါဝင်တဲ့ Discovery Interview
+
+Theme Builder discovery interview မှာ အခုဆိုရင် photo upload အဆင့်တစ်ခု ပါဝင်လာပြီး၊ ဒီဇိုင်းဆိုင်ရာ စိတ်ကူးဉာဏ်တွေကို မြင်ရတဲ့ပုံတွေနဲ့ ပံ့ပိုးပေးနိုင်ပါတယ်။ သင့် brand၊ ပြိုင်ဘက် website တွေ ဒါမှမဟုတ် ဒီဇိုင်း စိတ်ကူးဉာဏ်တွေရဲ့ ဓာတ်ပုံတွေကို upload လုပ်ခြင်းအားဖြင့် Theme Builder ကို သင့်ရဲ့ ဒီဇိုင်းလမ်းကြောင်းကို နားလည်စေနိုင်ပါတယ်။
+
+အသေးစိတ် လမ်းညွှန်မှုများအတွက် [Discovery Interview](./theme-builder/discovery-interview.md) ကို ကြည့်ရှုပါ။
+
+### Desktop and Mobile Previews ပါတဲ့ Design Direction
+
+Theme Builder က သင့်ရဲ့ theme အပြည့်အစုံကို ထုတ်ပေးခင်မှာ desktop နဲ့ mobile စက်ပစ္စည်းနှစ်ခုလုံးပေါ်မှာ သင့်ရဲ့ ဒီဇိုင်းကို ပြန်လည်စစ်ဆေးနိုင်ပါတယ်။ responsive breakpoints အမျိုးမျိုးမှာ real-time preview တွေကို ကြည့်ရှုနိုင်ပါတယ်။
+
+အသေးစိတ် လမ်းညွှန်မှုများအတွက် [Design Direction](./theme-builder/design-direction.md) ကို ကြည့်ရှုပါ။
+
+### Hospitality Menus
+
+Theme Builder ဟာ စားသောက်ဆိုင်များ၊ ကော်ဖီဆိုင်များ၊ ဘားများနှင့် အခြား ဧည့်ခံဝန်ဆောင်မှုလုပ်ငန်းများအတွက် structured အစားအသောက်နှင့် အဖျော်ယမကာ menu စာမျက်နှာများကို ထုတ်လုပ်ပေးနိုင်ပါပြီ။ Menu တွေမှာ ဈေးနှုန်း၊ ဖော်ပြချက်၊ အစားအသောက်ဆိုင်ရာ အချက်အလက်နဲ့ ဓာတ်မတည့်မှု သတိပေးချက်တွေ ပါဝင်ပါတယ်။
+
+အသေးစိတ် လမ်းညွှန်မှုများအတွက် [Hospitality Menus](./theme-builder/hospitality-menus.md) ကို ကြည့်ရှုပါ။
+
+### အင်္ဂါရပ်အသစ်များ (New Abilities)
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — automatic sanitisation နဲ့အတူ custom SVG logo တွေကို ဖန်တီးနိုင်ပါတယ်
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — WCAG compliance အတွက် အရောင်အတွဲတွေကို စစ်ဆေးပေးပါတယ်
+- **[Create Menu](./abilities/create-menu.md)** — ရှင်းလင်းတဲ့ navigation label တွေနဲ့ navigation menu တွေကို ဖန်တီးနိုင်ပါတယ်
+
+ရရှိနိုင်တဲ့ tools တွေနဲ့ Tier 1 site-scrape tool အကြောင်း အချက်အလက်များအတွက် [Tools and Configuration](./theme-builder/tools.md) ကို ကြည့်ရှုပါ။
+
+## Configuration
+
+setting အားလုံးကို WordPress admin မှာ **Gratis AI Agent → Settings** အောက်မှာ ရှိပါတယ်။ Superdav AI Agent က အောက်ပါ configuration option တွေကို ထပ်ပေါင်းပေးထားပါတယ်-
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Brave Search နဲ့ Tavily တို့ထဲကနေ ရွေးချယ်နိုင်ပါတယ် (ရွေးချယ်စရာ) |
+| **Tavily API Key** | Tavily internet search အတွက် API key (Tavily ကို ရွေးချယ်ပါက) |
+
+## v1.16.0 တွင် မြှင့်တင်မှုများ (Improvements in v1.16.0)
+
+- **AI Client cache** — အချိန်ကြာမြင့်တဲ့ agent လုပ်ငန်းတွေမှာ data ပျောက်ဆုံးတာမျိုး မဖြစ်အောင် cross-request persistence အတွက် transients တွေနဲ့ ပံ့ပိုးပေးထားပါတယ်
+- **Tier 1 site-scrape tool** — sd-ai-agent/site-scrape ကို ယခုအခါ Theme Builder မှာ default အနေနဲ့ ရရှိနိုင်ပြီဖြစ်ပြီး ပြိုင်ဘက်နဲ့ စိတ်ကူးရတဲ့ website တွေကို ခွဲခြမ်းစိတ်ဖြာနိုင်ပါတယ်
+- **Plugin row action links** — ရှင်းလင်းစေရန် ပြင်ဆင်ပြီး အမည်ပြောင်းလဲထားပါတယ်
+
+## v1.10.0 တွင် မြှင့်တင်မှုများ (Improvements in v1.10.0)
+
+- **WooCommerce integration refactored** — ယုံကြည်စိတ်ချရမှုနဲ့ compatibility ပိုကောင်းစေဖို့ native WooCommerce APIs တွေကို အသုံးပြုတဲ့ ပုံစံနဲ့ ပြန်လည်ဖွဲ့စည်းထားပါတယ်
+- **Provider list auto-refresh** — plugins တွေ activate လုပ်တာ ဒါမှမဟုတ် deactivate လုပ်တာကို အလိုအလျောက် သိရှိပြီး ရရှိနိုင်တဲ့ provider list ကို update လုပ်ပေးပါတယ်
+- **Enhanced site builder** — ပိုမိုကောင်းမွန်တဲ့ error recovery တွေနဲ့ multi-phase site build plan တွေကို မြှင့်တင်ထားပါတယ်
+- **Theme-aware skills** — သင့်ရဲ့ active theme နဲ့ အလိုအလျောက် လိုက်လျောညီထွေ ပြောင်းလဲပေးတဲ့ built-in skills အသစ် ၄ ခု ပါဝင်လာပါတယ်
+
+## v1.10.0 တွင် Bug Fixes များ (Bug Fixes in v1.10.0)
+
+- အချို့ admin pages တွေမှာ infinite reload loop ဖြစ်စေတဲ့ `navigate-to` ability ကို ပြင်ဆင်ထားပါတယ်
+- category နဲ့ tag name တွေကို slug အဖြစ် မှန်ကန်စွာ resolve မလုပ်နိုင်တဲ့ `list-posts` ability ကို ပြင်ဆင်ထားပါတယ်
+- ယခင် refactor လုပ်မှုတွေအပြီးမှာ namespace alias တွေ ပျောက်နေတဲ့ WP-CLI command တွေကို ပြင်ဆင်ထားပါတယ်
+- automation tables တွေ မရှိသေးတဲ့ site တွေမှာ event automation ကို graceful အနေနဲ့ ကိုင်တွယ်နိုင်အောင် ပြင်ဆင်ထားပါတယ်
+- system instruction builder မှာ မှန်ကန်တဲ့ namespace prefix ကို အသုံးပြုတဲ့ `memory-save` ability ကို ပြင်ဆင်ထားပါတယ်
+- scalar tool results တွေကို AI ကို ပြန်ပေးတဲ့အခါ မှန်ကန်စွာ wrap လုပ်ပေးနိုင်အောင် ပြင်ဆင်ထားပါတယ်
+- အရင် version တွေက legacy ability key format ကို upgrade လုပ်တဲ့အခါ usage statistics တွေ မှန်ကန်စွာ ကိုင်တွယ်နိုင်အောင် ပြင်ဆင်ထားပါတယ်
+
+## Support
+
+Support အတွက် [ultimatemultisite.com](https://ultimatemultisite.com) ကို သွားရောက်နိုင်ပါတယ် ဒါမှမဟုတ် plugin repository မှာ issue တစ်ခုဖွင့်နိုင်ပါတယ်။
+
+## Changelog
+
+version history အပြည့်အစုံကို [Changelog](./changelog) မှာ ကြည့်ရှုနိုင်ပါတယ်။

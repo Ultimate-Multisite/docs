@@ -1,0 +1,123 @@
+---
+title: အသုံးပြုသူအများအပြားစနစ်
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# အသုံးပြုသူအများအပြား စီမံခန့်ခွဲမှု (Multi-Tenancy)
+
+စွမ်းဆောင်ရည်မြင့်မားစေရန်နှင့် လုံခြုံရေးအတွက် ဆားဗာများနှင့် ဒေတာဘေ့စ်များအနှံ့အပြားတွင် ဆားဘ်ဆိုဒ်များကို ခွဲဝေထားခြင်း။
+
+## လိုအပ်ချက်များ
+
+- WordPress 5.3 သို့မဟုတ် အထက်
+- PHP 7.4 သို့မဟုတ် အထက်
+- Multisite Ultimate plugin (အသက်ဝင်ရမည်)
+
+## တပ်ဆင်ခြင်း
+
+၁။ အပိုဆောင်းဖိုင်များကို သင့်ရဲ့ `/wp-content/plugins/` directory ထဲသို့ တင်ပါ။
+၂။ WordPress ရှိ 'Plugins' မီနူးမှတစ်ဆင့် plugin ကို အသက်သွင်းပါ။
+၃။ network admin တွင် အပိုဆောင်းဆက်တင်များကို စနစ်တကျ ပြုလုပ်ပါ။
+
+## ဖွံ့ဖြိုးတိုးတက်မှု
+
+### စတင်ပြင်ဆင်မှု (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ပရောဂျက်ဖွဲ့စည်းပုံ (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### စမ်းသပ်မှု (Testing)
+
+ဤအပိုဆောင်းတွင် အပြည့်အစုံ စမ်းသပ်မှုဘောင် (testing framework) ပါဝင်သည်-
+
+- **Unit Tests**: WordPress test suite နှင့် အခြေခံထားသော PHPUnit စမ်းသပ်မှုများ။
+- **Base Test Class**: အဖြစ်များသော စမ်းသပ်မှု အခြေအနေများအတွက် အထောက်အကူပြု နည်းလမ်းများ ပေးသည်။
+- **Test Coverage**: ကုဒ်အကျုံးဝင်မှုကို စောင့်ကြည့်ရန် စနစ်တကျ ပြုလုပ်ထားသည်။
+- **Multisite Testing**: စမ်းသပ်မှုများကို multisite ပတ်ဝန်းကျင်တွင် လုပ်ဆောင်သည်။
+
+### ကုဒ်စံနှုန်းများ (Code Standards)
+
+- **WordPress Coding Standards**: PHPCS မှတစ်ဆင့် အကောင်အထည်ဖော်သည်။
+- **PHP 7.4+ Compatibility**: ခေတ်မီ PHP အင်္ဂါရပ်များကို ပံ့ပိုးထားသည်။
+- **Static Analysis**: အမျိုးအစားစစ်ဆေးမှု (type checking) အတွက် PHPStan ကို ပေါင်းစပ်ထားသည်။
+- **Code Modernization**: PHP အဆင့်မြှင့်တင်မှုများအတွက် Rector စည်းမျဉ်းများ။
+
+### တည်ဆောက်မှုစနစ် (Build System)
+
+- **Asset Processing**: CSS/JS ဖိုင်များအတွက် Minification လုပ်ခြင်း။
+- **Translation**: POT ဖိုင်များ ထုတ်ပေးခြင်း။
+- **Packaging**: ဖြန့်ဝေရန်အတွက် Archive ဖိုင်များ ဖန်တီးခြင်း။
+- **Development Mode**: အမှားရှာဖွေရန်အတွက် Minify မလုပ်ထားသော assets များ။
+
+## စနစ်ဖွဲ့စည်းမှု (Configuration)
+
+ဤအပိုဆောင်းသည် network admin interface မှတစ်ဆင့် ရယူနိုင်သော စနစ်ဖွဲ့စည်းမှု ရွေးချယ်စရာများစွာကို ပံ့ပိုးပေးသည်။
+
+## Hooks နှင့် Filters များ
+
+### Actions (လုပ်ဆောင်ချက်များ)
+
+- `ultimate-multisite-addon-template_init` - အပိုဆောင်းကို စတင်အသုံးပြုပြီးနောက် အလုပ်လုပ်သည်။
+- `ultimate-multisite-addon-template_loaded` - အပိုဆောင်းဖိုင်အားလုံး တင်ပြီးနောက် အလုပ်လုပ်သည်။
+
+### Filters (စစ်ထုတ်မှုများ)
+
+- `ultimate-multisite-addon-template_settings` - အပိုဆောင်းဆက်တင်များကို ပြင်ဆင်သည်။
+- `ultimate-multisite-addon-template_enabled` - အပိုဆောင်းကို ဖွင့်/ပိတ် အခြေအနေကို အစားထိုးသည်။
+
+## လိုင်စင်
+
+ဤအပိုဆောင်းသည် GPL v3 သို့မဟုတ် နောက်ပိုင်းဗားရှင်းအောက်တွင် လိုင်စင်ရထားသည်။
+
+## အကူအညီရယူရန်
+
+အကူအညီနှင့် စာရွက်စာတမ်းများအတွက် [MultisiteUltimate.com](https://multisiteultimate.com) သို့ ဝင်ရောက်ကြည့်ရှုပါ။
+## ပြောင်းလဲမှုမှတ်တမ်း (Changelog)
+
+- Version 1.0.1 (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အဆင့်မြှင့်ခြင်း၊ version ကို တိုးမြှင့်ခြင်း။
+
+- Version (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အဆင့်မြှင့်ခြင်း၊ version ကို တိုးမြှင့်ခြင်း။

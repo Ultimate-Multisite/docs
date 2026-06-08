@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Stopp bots. Beskytt inntektene. Null konfigurasjonsstress.**
+
+Driver du et multisite-nettverk med custom domains? Du kjenner smerten: Google reCAPTCHA og hCaptcha krever at du registrerer *hvert eneste domene* i deres admin-konsoll. Legger du til et nytt kundested? Oppdater captcha-konfigurasjonen. Mapper du et custom domain? Oppdater igjen. Det tar aldri slutt.
+
+**Ultimate Multisite: Captcha endrer alt.**
+
+## Cap Captcha: Selvhostet beskyttelse som bare virker
+
+Vår nye **Cap Captcha**-leverandør er en game-changer for multisite-nettverk:
+
+* **Null konfigurasjon** — Aktiver addon-et og du er beskyttet. Ingen API-nøkler, ingen Google-konto, ingen hCaptcha-dashboard, ingen domene-whitelisting.
+* **Virker på alle domener automatisk** — Underdomener, mappede domener, kundedomener – de er alle beskyttet umiddelbart.
+* **Selvhostet og privat** — Dataene dine forlater aldri serveren din. Fullt GDPR-kompatibel uten tredjeparts sporing.
+* **Usynlig Proof-of-Work** — Brukere løser en beregningsmessig oppgave i bakgrunnen. Ingen klikking på brannhydranter, ingen frustrerende bildegallerier.
+* **Lettvekt** — Bare 20KB. Sakker ikke ned kassen din.
+
+## WooCommerce Card Testing Protection
+
+Card testing-angrep koster forhandlere milliarder årlig. Svindlere bruker bots for å validere stjålne kredittkort mot WooCommerce-kassen din – du betaler behandlingsgebyrene, og de får gyldige kortnummer.
+
+**Vi beskytter der det betyr mest:**
+
+* **Store API Protection** — Blokerer bot-angrep på `/wp-json/wc/store/v1/checkout` som omgår tradisjonelle form-captchas
+* **PayPal Payments Compatible** — Fungerer sømløst med WooCommerce PayPal Payments
+* **Real-Time Statistics** — Se nøyaktig hvor mange angrep du blokkerer
+
+## Trenger du fortsatt Google reCAPTCHA eller hCaptcha?
+
+Vi har dekket deg. Full støtte for:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Bytt mellom leverandører når som helst fra nettverksinnstillingene dine.
+
+## Bygget for skala
+
+* Nettverksomfattende innstillinger med overstyringer per site
+* Statistikk-dashboard for å overvåke beskyttelsen
+* Justerbare sikkerhetsnivåer (Rask, Medium, Maksimum)
+* Utvikler-vennlig med utvidbar leverandørarkitektur
+
+## Installasjon
+
+1. Last opp `ultimate-multisite-captcha` til `/wp-content/plugins/`-mappen din
+2. Aktiver pluginet på nettverksnivå
+3. **Det var alt. Du er beskyttet.**
+
+Cap Captcha aktiveres automatisk – ingen innstillinger å konfigurere, ingen API-nøkler å taste inn. Alle støttede endepunkter på tvers av hele nettverket ditt er beskyttet i det øyeblikket du aktiverer det.
+
+**Valgfritt:** For å bruke Google reCAPTCHA eller hCaptcha i stedet, naviger til **Ultimate Multisite → Settings → Captcha** og velg foretrukket leverandør.
+
+## Ofte stilte spørsmål
+
+## Trenger jeg å konfigurere noe?
+
+Nei! Cap Captcha aktiveres automatisk når du aktiverer addon-et. Hele nettverket ditt er beskyttet umiddelbart – ingen innstillinger å konfigurere, ingen API-nøkler å taste inn.
+
+## Trenger jeg API-nøkler for Cap Captcha?
+
+Nei. Cap Captcha er helt selvhostet. Ingen eksterne kontoer, ingen domeneregistrering, ingen konfigurasjonshodeverk.
+
+## Vil dette sakke ned kassen min?
+
+Cap Captcha er kun 20KB og kjører proof-of-work-utfordringer i bakgrunnen. Kundene dine vil ikke merke noen forsinkelse.
+
+## Beskytter dette mot card testing-angrep?
+
+Ja! I motsetning til tradisjonelle captchas som bare beskytter HTML-skjemaer, kobler vår WooCommerce-integrasjon seg direkte til Store API for å blokkere bot-angrep på API-nivå – der de fleste card testing-angrep skjer.
+
+## Kan jeg bruke forskjellige captcha-leverandører på forskjellige sites?
+
+Captcha-leverandøren settes på nettverksnivå, men du kan justere vanskelighetsgraden basert på dine behov.
+
+## Er dette GDPR-kompatibelt?
+
+Cap Captcha er 100% selvhostet uten at data sendes til eksterne tjenester. For Google reCAPTCHA og hCaptcha, vennligst se gjennom deres respektive personvernerklæringer.
+
+## Rate Limiting
+
+Ultimate Multisite: Captcha v1.5.0 introduserer en hard-stop rate limiter som beskytter nettverket ditt mot brute-force- og card-testing-angrep.
+
+### Hvordan det fungerer
+
+Rate limiter teller hver GET- og POST-forespørsel på captcha-beskyttede overflater:
+
+* **WordPress login endpoints** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Når en besøkende overskrider rate limiten, svarer pluginet med:
+
+* **HTTP 429 (Too Many Requests)** statuskode
+* **Retry-After** header som indikerer når man kan prøve igjen
+* **Randomisert tarpit sleep** (1–5 sekunder som standard, hard-begrenset til 15 sekunder) for å bremse angriperne
+
+### Konfigurasjon
+
+#### Tarpit Timing
+
+Kontroller den randomiserte forsinkelsen som brukes på rate-begrensede forespørsler:
+
+* **`cap_rate_limit_tarpit_min`** — Minimum forsinkelsestid i sekunder (standard: 1)
+* **`cap_rate_limit_tarpit_max`** — Maksimum forsinkelsestid i sekunder (standard: 5, hard-begrenset til 15)
+
+Disse innstillingene er tilgjengelige i **Ultimate Multisite → Settings → Captcha**.
+
+### Utvidbarhet
+
+#### IP Whitelist Filter
+
+Fritar betrodde IP-områder fra rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist din overvåkningsservice
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pre-Block Action
+
+Kjør custom logikk umiddelbart før en rate-limit-blokk sendes:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Logg blokken, varsle administratorer, eller oppdatere custom metrics
+    error_log( "Rate limit utløst for $ip på $surface" );
+}, 10, 2 );
+```
+
+## Client IP Detection & Trusted Proxies
+
+Ultimate Multisite: Captcha v1.5.0 introduserer spoof-resistent client-IP-deteksjon. Metoden `Captcha_Core::get_client_ip()` er nå den eneste kilden til sannhet for besøkendes IP-tilskrivning på tvers av:
+
+* Rate-limit bucket keys
+* Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Statistics IP hashes
+
+### Tillitsmodell
+
+Pluginet håndhever en streng IP-tillærarkjede:
+
+1. **REMOTE_ADDR** — Alltid betrodd (den umiddelbare peers IP)
+2. **CF-Connecting-IP** — Kun æret når:
+   - Den umiddelbare peer er inne i et gjeldende Cloudflare IP-område
+   - `cap_trust_cloudflare_headers` er aktivert (standard: AV)
+3. **X-Forwarded-For** — Kun æret når:
+   - Den umiddelbare peer er i din admin-konfigurerte trusted-proxy-liste
+   - Headeren parses fra høyre til venstre, og hopper over betrodde/Cloudflare-hopp
+
+### Konfigurasjon
+
+#### Cloudflare Header Trust
+
+Aktiver tillit til Cloudflare's `CF-Connecting-IP` header:
+
+* **`cap_trust_cloudflare_headers`** — Sett til ON for å velge inn i `CF-Connecting-IP` tillit
+  - Standard: AV (deaktivert)
+  - Pluginet leveres med et pakket Cloudflare CIDR-øyeblikksbilde
+  - CIDR-områder oppdateres ukentlig via wp-cron
+  - Pakket fallback brukes hvis oppdateringen feiler
+
+#### Trusted Proxy Configuration
+
+Definer dine front-line proxies og load-balancers:
+
+* **`cap_trusted_proxies`** — Tekstområde med CIDR-er eller rene IP-er (én per linje)
+  - Kommentarer er tillatt (linjer som starter med `#`)
+  - Uten denne innstillingen ignoreres `X-Forwarded-For` selv når rate limiter er aktivert
+  - Eksempel:
+    ```
+    # Vår load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### First-Enable Auto-Detection
+
+Når du først aktiverer rate limiteren, oppdager pluginet ditt sannsynlige Cloudflare- og proxy-oppsett og viser en "Apply detected settings"-admin-varsel med ett klikk.
+
+* Pluginet **overskriver aldri** dine lagrede verdier
+* Hvis påfølgende trafikk antyder at konfigurasjonen din ikke lenger samsvarer med virkeligheten (f.eks. at Cloudflare har endret CIDR-områder), dukker et ikke-avvisbart mismatch-varsel opp med anbefalt oppdatering
+
+### Hvorfor dette betyr noe
+
+En streng IP-tillitsmodell stenger en kritisk spoofing-vektor: direkte forespørsler fra opprinnelseservern som bærer en forfalsket `CF-Connecting-IP` header ville tidligere blitt plassert i en "bucket" basert på den forfalskede IP-en i stedet for den virkelige peer. Dette er spesielt viktig for:
+
+* **Rate limiting** — Angripere kan ikke omgå grenser ved å forfalske IP-er
+* **Statistics** — Angrepsmetrikkene dine gjenspeiler virkelige besøkende IP-er, ikke forfalskede
+* **Captcha verification** — Leverandørene mottar riktig besøkende IP for risikovurdering

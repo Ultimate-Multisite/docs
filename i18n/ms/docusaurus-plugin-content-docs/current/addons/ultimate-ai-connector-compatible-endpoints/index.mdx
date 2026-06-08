@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector untuk Endpoint Serasi
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints menyepadukan API penyedia AI yang serasi dengan OpenAI ke dalam rangkaian multisite WordPress anda. Konfigurasikan pelbagai penyedia AI — setiap satunya dengan URL endpoint, Kunci API, dan model lalai tersendiri — dan laluan permintaan dengan fungsi *fallback* automatik apabila penyedia tertentu tidak tersedia.
+
+## Ciri Utama
+
+- **Sokongan pelbagai penyedia**: Tambah pelbagai kad penyedia AI, setiap satunya dengan URL endpoint, Kunci API, dan model lalai tersendiri.
+- **Susun Semula dengan Seret (Drag-to-reorder)**: Susun penyedia mengikut keutamaan menggunakan pemegang (grip handle) pada setiap kad; permintaan akan menggunakan penyedia mengikut urutan.
+- **Laluan *Fallback* Automatik**: Jika penyedia utama tidak tersedia, permintaan akan secara automatik beralih kepada penyedia yang dikonfigurasikan seterusnya.
+- **Konfigurasi setiap penyedia**: Setiap penyedia dikonfigurasikan secara bebas dengan kelayakan dan pilihan modelnya sendiri.
+- **Antaramuka Tetapan Berasaskan Kad**: Dibina menggunakan komponen Kad WordPress 6.9+ yang stabil (CardBody, CardHeader, CardDivider).
+- **Auto-expand semasa tambah**: Kad penyedia baharu akan mengembang secara automatik supaya anda boleh mengisi butiran dengan segera.
+- **Membatalkan Cache Skrip**: Skrip penyedia akan dibatalkan *cache*-nya semasa kemas kini plugin untuk memastikan versi terkini dimuatkan.
+
+## Keperluan
+
+- WordPress 5.3 atau lebih tinggi
+- PHP 7.4 atau lebih tinggi
+- Plugin Ultimate Multisite (aktif)
+- Endpoint API yang serasi dengan OpenAI (self-hosted atau pihak ketiga)
+
+## Pemasangan
+
+1. Muat naik fail *addon* ke direktori `/wp-content/plugins/` anda
+2. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
+3. Navigasi ke **Ultimate Multisite → AI Connector** untuk mengkonfigurasikan *addon*
+
+## Konfigurasi
+
+### Persediaan Pelbagai Penyedia
+
+Skrin konfigurasi menggunakan susun atur berasaskan kad di mana setiap kad mewakili satu penyedia AI. Anda boleh menambah bilangan penyedia yang anda perlukan.
+
+#### Menambah Penyedia
+
+1. Pergi ke **Ultimate Multisite → AI Connector** dalam pentadbir rangkaian
+2. Klik **Add Provider**
+3. Kad penyedia baharu akan muncul dan mengembang secara automatik
+4. Isi butiran penyedia:
+   - **Provider Name** — label untuk mengenal pasti penyedia ini (cth. "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — URL asas API yang serasi dengan OpenAI (cth. `https://api.openai.com/v1`)
+   - **API Key** — Kunci API anda untuk penyedia ini
+   - **Default Model** — pengenal model yang digunakan secara lalai untuk penyedia ini (cth. `gpt-4o`, `mistral-small`)
+5. Klik **Save Settings**
+
+#### Membuang Penyedia
+
+Klik butang **Remove** pada mana-mana kad penyedia untuk membuangnya. Simpan tetapan untuk mengaplikasikan perubahan.
+
+#### Menyusun Semula Penyedia
+
+Seret ikon pemegang (⣿) di sebelah kiri mana-mana kad penyedia untuk menyusun semula. Urutan menentukan keutamaan *fallback*: permintaan akan dihantar ke penyedia pertama dan akan *fallback* kepada penyedia seterusnya jika permintaan gagal.
+
+### Laluan *Fallback*
+
+Apabila permintaan ke penyedia utama gagal — disebabkan oleh *timeout*, had kadar (*rate limit*), atau gangguan perkhidmatan — penyambung ini akan cuba semula secara automatik dengan penyedia seterusnya dalam senarai. Ini akan berterusan ke bawah senarai sehingga penyedia berjaya atau semua penyedia telah dicuba.
+
+| Senario | Tingkah Laku |
+|----------|-----------|
+| Penyedia utama bertindak balas | Permintaan disajikan secara normal |
+| Penyedia utama gagal | Permintaan dicuba semula dengan penyedia seterusnya |
+| Semua penyedia gagal | Ralat dipulangkan kepada pemanggil |
+
+*Fallback* adalah telus kepada plugin atau tema pemanggil — mereka akan menerima sama ada respons berjaya atau ralat akhir, tanpa mengira berapa banyak penyedia yang telah dicuba.
+
+### Rujukan Konfigurasi Penyedia
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Label paparan untuk penyedia ini |
+| Endpoint URL | Yes | URL asas API yang serasi dengan OpenAI |
+| API Key | Yes | Kunci pengesahan untuk penyedia ini |
+| Default Model | Yes | Pengenal model yang digunakan apabila tiada model yang ditentukan dalam permintaan |
+
+## Penyelesaian Masalah
+
+### Tiada penyedia disenaraikan
+
+Jika senarai penyedia kosong selepas menyimpan, sahkan bahawa:
+
+- Anda telah klik **Save Settings** selepas menambah penyedia
+- Pelayar anda tidak menyekat halaman tetapan daripada disimpan (semak konsol pelayar untuk ralat JavaScript)
+- Plugin aktif dan anda berada di skrin pentadbir rangkaian
+
+### Permintaan gagal untuk semua penyedia
+
+- Sahkan URL endpoint setiap penyedia boleh diakses dari pelayan anda (bukan hanya dari pelayar anda)
+- Semak bahawa setiap Kunci API adalah sah dan belum luput
+- Semak status had kadar dan kuota penyedia dalam *dashboard* mereka
+- Aktifkan *debug logging* WordPress (`WP_DEBUG_LOG`) untuk menangkap mesej ralat terperinci daripada penyambung
+
+### Penyedia tidak digunakan untuk *fallback*
+
+Menyusun semula dengan seret akan mengubah urutan *fallback*. Sahkan penyedia yang anda jangkakan menerima permintaan *fallback* berada pada kedudukan yang betul dalam senarai dan bahawa URL endpoint serta Kunci API-nya adalah betul.
+
+### Kad penyedia baharu tidak mengembang secara automatik
+
+Auto-expand memerlukan JavaScript diaktifkan dalam pelayar anda. Jika kad tidak mengembang apabila diklik, semak konsol pelayar untuk ralat. Kandungan kad sentiasa boleh diakses dengan mengklik tajuk kad walaupun auto-expand tidak berfungsi.
+
+## Changelog
+
+Sila lihat [Changelog](./changelog) untuk sejarah versi penuh.
