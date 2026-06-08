@@ -1,0 +1,101 @@
+---
+title: சைட் எக்ஸ்போர்ட்டர்
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+உங்கள் வாடிக்கையாளர் தங்கள் வலைத்தளத்தை மாற்றுவதற்கு (migrate) முடிவு செய்தால், துணை வலைத்தளங்களை (subsites) உங்கள் நெட்வொர்க்கில் இருந்து ஒரு ஒற்றை தளத்திற்கு (single site) நகர்த்துவது அல்லது அதற்கு நேர்மாறாகச் செய்வது எவ்வளவு அவசியம் என்று எங்களுக்குத் தெரியும். Site Exporter மற்றும் Importer அட-ஆன் (addon) இந்த வேலையை எளிதாக்குகிறது. இந்த கருவி, zip கோப்புகளைப் பயன்படுத்தி தளங்களை ஏற்றுவதற்கும் (export) இறக்குவதற்கும் (import) உதவுகிறது. இது ஒரு காப்புப் பிரதியாகவும் (backup) செயல்பட முடியும்.
+
+## Features
+
+* தளங்களை ஏற்றுதல் மற்றும் இறக்குதல் (Export and Import Sites)
+
+* பயன்படுத்த எளிதான இடைமுகம் (Easy-to-use interface)
+
+* தள காப்புப் பிரதியை உருவாக்குதல் (Create site backup)
+
+## Documentation
+**ஒரு தளத்தை எப்படி ஏற்றுவது மற்றும் இறக்குவது**
+
+## Installation
+
+1. **ultimate-multisite-site-exporter** என்பதை **/wp-content/plugins/** கோப்பகத்தில் பதிவேற்றவும் (Upload).
+2. WordPress-ல் உள்ள **Plugins** மெனு மூலம் பிளக்-இன்-ஐ செயல்படுத்தவும் (Activate).
+3. பிளக்-இன்-ஐ அமைக்க படிப்படியான விஸார்ட் (Wizard) வழிமுறைகளைப் பின்பற்றவும்.
+
+## Usage Guide
+
+Ultimate Multisite உடன், உங்கள் நெட்வொர்க்கில் இருந்து ஒரு தளத்தை நீங்கள் ஏற்றுவது அல்லது உங்கள் மல்டிசைட் அல்லது ஒற்றை-தள நிறுவலில் ஒரு தளத்தை இறக்குவது போன்றவற்றைச் செய்யலாம்.
+
+இந்த செயல்முறையைத் தொடங்க, எங்கள் அட-ஆன் பக்கத்திற்குச் சென்று, Ultimate Multisite: Site Exporter & Importer அட-ஆனை நிறுவவும்.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+உங்கள் Plugins பக்கத்திற்குச் சென்று, நீங்கள் நிறுவிய அட-ஆனை **Network Activate** செய்ய கிளிக் செய்யவும்.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** என்ற விருப்பத்தை Ultimate Multisite மெனுவில், இடதுபுறமாக காணலாம்.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+உங்கள் நெட்வொர்க்கில் இருந்து ஒரு தளத்தை ஏற்றுவதற்கு, Ultimate Multisite மெனுவில் **Export & Import** என்பதற்குச் சென்று, **Export Sites** என்ற டேபில், **Generate new Site Export** என்பதைக் கிளிக் செய்யவும்.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+நீங்கள் எதை ஏற்று விரும்புகிறீர்களோ, அந்தத் தளத்தை தேடி, நீங்கள் ஏற்றுமதி செய்யும் கோப்பில் சேர்க்க விரும்பும் அம்சங்களைத் தேர்ந்தெடுக்கவும். நீங்கள் Themes, Plugins மற்றும் Uploads ஆகியவற்றைச் சேர்க்கலாம். உங்கள் தளம் மிகவும் பெரியதாக இருந்தால், பின்னணியில் (background) ஏற்றுமதி செயல்முறையை இயக்கத் தேர்வு செய்யலாம்.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** பொத்தானை கிளிக் செய்யவும். நீங்கள் ஏற்றுமதி செய்த தளம் **Existing Exports** பட்டியலில் கிடைக்கும். கோப்பைப் பதிவிறக்க **Download ZIP** பொத்தானை கிளிக் செய்யவும். Export ZIP-கள் ஒரு சுய-பூட் செய்யும் `index.php` மற்றும் `readme.txt` ஆகியவற்றை உள்ளடக்கியிருப்பதால், தனிப்பட்ட Importer பிளக்-இன்-ஐ நிறுவ வேண்டிய அவசியம் இல்லாமல், புதிய ஹோஸ்டில் இவற்றை நிறுவ முடியும்.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+அனைத்து துணை வலைத்தளங்களையும் ஒரே நேரத்தில் ஏற்றுவதற்கு, Ultimate Multisite மெனுவில் **Export & Import** என்பதற்குச் சென்று, ஏற்றுமதி திரையில் உள்ள **Network Export** விருப்பத்தைப் பயன்படுத்தவும். உருவாக்கப்பட்ட ஆர்கைவ் (archive) ஆனது, ஹோஸ்ட் மாற்றுதல், ஸ்டேஜிங் மறுசீரமைப்பு அல்லது நெட்வொர்க் அளவிலான காப்புப் பிரதிகள் போன்றவற்றுக்காக அனைத்து துணை வலைத்தளங்களையும் ஒரே ZIP கோப்பில் கொண்டிருக்கும்.
+
+நெட்வொர்க் ஏற்றுமதிகள் பெரியதாக இருக்கலாம். எனவே, போக்குவரத்து குறைவாக இருக்கும்போது இவற்றை இயக்கவும். மேலும், ஆர்கைவ் மற்றும் சேர்க்கப்பட்ட Uploads, Plugins, Themes ஆகியவற்றிற்கான போதுமான சேமிப்பகத்தை சர்வர் கொண்டுள்ளது என்பதை உறுதிப்படுத்தவும்.
+
+## How to import a site
+
+ஒரு தளத்தை இறக்குவதற்கு, **Import a Site** என்ற டேபிற்குச் சென்று, நீங்கள் இறக்குமதி செய்ய விரும்பும் தளத்தின் .zip கோப்பை பதிவேற்றவும். நீங்கள் URL-ஐ புதியதாக மாற்றலாம் அல்லது இடத்தை காலியாக விடுவதன் மூலம் பழைய URL-ஐ வைத்திருக்கலாம். மேலும், இறக்குமதி செய்த பிறகு உங்கள் நிறுவலில் இருந்து .zip கோப்பை நீக்க ஒரு பெட்டியை (box) தேர்வு செய்யலாம். பிறகு **Begin Import** என்பதைக் கிளிக் செய்யவும்.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+இந்த செயல்முறை சிறிது நேரம் எடுக்கலாம். Importer-க்குக் கீழே உள்ள பட்டியலில் நீங்கள் ஒரு நிலுவையில் உள்ள இறக்குமதியைக் (pending import) காணலாம்.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+**Cancel Import** என்பதைக் கிளிக் செய்வதன் மூலம் செயல்முறையை நிறுத்தலாம்.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+செயல்முறை முடிந்த பிறகு, உங்கள் தளம் ஏற்கனவே உங்கள் நெட்வொர்க்கில் கிடைத்துவிடும்.
+
+## How to import a site on a single install
+
+உங்கள் ஒற்றை நிறுவலில் (single install) ஒரு தளத்தை இறக்குமதி செய்ய, முதலில் Importer-ஐ உங்கள் தளத்தில் நிறுவவும் மற்றும் செயல்படுத்தவும். இதை பதிவிறக்க செய்வதற்கான இணைப்பை Exporter டேபில் காணலாம்.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Importer-ஐ **Tools** மெனுவில், இடதுபுறமாக, **Export & Import** என்ற துணைப் பிரிவில் காணலாம்.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+நீங்கள் இறக்குமதி செய்ய விரும்பும் தளத்தின் .zip கோப்பை பதிவேற்றவும். நீங்கள் URL-ஐ புதியதாக மாற்றலாம் அல்லது இடத்தை காலியாக விடுவதன் மூலம் பழைய URL-ஐ வைத்திருக்கலாம். மேலும், இறக்குமதி செய்த பிறகு உங்கள் நிறுவலில் இருந்து .zip கோப்பை நீக்க ஒரு பெட்டியை (box) தேர்வு செய்யலாம். பிறகு **Begin Import** என்பதைக் கிளிக் செய்யவும்.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+இந்த செயல்முறை சிறிது நேரம் எடுக்கலாம். Importer-க்குக் கீழே உள்ள பட்டியலில் நீங்கள் ஒரு நிலுவையில் உள்ள இறக்குமதியைக் (pending import) காணலாம்.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+**Cancel Import** என்பதைக் கிளிக் செய்வதன் மூலம் செயல்முறையை நிறுத்தலாம்.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+செயல்முறை முடிந்த பிறகு, நீங்கள் இப்போது இறக்குமதி செய்த தளத்தால் உங்கள் தளம் மாற்றியமைக்கப்படும்.

@@ -1,0 +1,116 @@
+---
+title: ట్యూటర్ మల్టీసైట్ అనుకూలత
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite అనుకూలత (Compatibility)
+
+ఇది Tutor LMS కోసం multisite వాతావరణాలలో అనుకూలత పరిష్కారాలను జోడించే ఒక WordPress plugin.
+
+## వివరణ (Description)
+
+WordPress multisite నెట్‌వర్క్‌లలో Tutor LMS ను నడపడానికి ఈ ప్లాగీన్ ముఖ్యమైన అనుకూలత పరిష్కారాలను అందిస్తుంది. ఇది యూజర్ ఎన్‌రోల్‌మెంట్, ఇన్‌స్ట్రక్టర్ నిర్వహణ, కోర్సు పరిమితులు మరియు ఇతర multisite-నిర్దిష్ట ఫంక్షనాలిటీలను నిర్వహిస్తుంది.
+
+## ఫీచర్లు (Features)
+
+- **డేటాబేస్ టేబుల్ నిర్వహణ (Database Table Management)**: multisite ఫారన్ కీ కన్స్ట్రైంట్‌ల కారణంగా విఫలమయ్యే తప్పిపోయిన Tutor LMS టేబుల్స్‌ను స్వయంచాలకంగా గుర్తించి, సృష్టిస్తుంది.
+- **multisite యూజర్ ఎన్‌రోల్‌మెంట్**: నెట్‌వర్క్ సైట్‌ల అంతటా యూజర్ ఎన్‌రోల్‌మెంట్‌ను నిర్వహించడానికి కస్టమ్ AJAX హ్యాండ్లర్‌లు.
+- **ఇన్‌స్ట్రక్టర్ రోల్ నిర్వహణ (Instructor Role Management)**: multisite వాతావరణాలలో స్వయంచాలక ఇన్‌స్ట్రక్టర్ రోల్ కేటాయింపు మరియు నిర్వహణ.
+- **కోర్సు పరిమితులు (Course Limitations)**: సైట్ ప్లాన్‌ల ఆధారంగా కోర్సు మరియు ఫన్నెల్ సృష్టి పరిమితులను నిర్వహించడానికి Ultimate Multisite తో అనుసంధానం.
+- **కస్టమ్ అడ్మిన్ వ్యూస్ (Custom Admin Views)**: multisite-అవగాహన కలిగిన ఇన్‌స్ట్రక్టర్ జాబితా మరియు నిర్వహణ ఇంటర్‌ఫేస్.
+- **అడ్మిన్ టూల్స్ (Admin Tools)**: నెట్‌వర్క్ మరియు సైట్ అడ్మినిస్ట్రేటర్ల కోసం డేటాబేస్ నిర్వహణ ఇంటర్‌ఫేస్.
+
+## అవసరాలు (Requirements)
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (ఇది `Requires Plugins` హెడర్ ద్వారా స్వయంచాలకంగా అమలు చేయబడుతుంది)
+- WordPress Multisite ఇన్‌స్టాలేషన్
+- Ultimate Multisite plugin (కోర్సు పరిమితులు ఫంక్షనాలిటీ కోసం)
+
+## ఇన్‌స్టాలేషన్ (Installation)
+
+1. ప్లాగీన్ ఫైళ్లను `/wp-content/plugins/tutor-multisite-compatibility/` లో అప్‌లోడ్ చేయండి.
+2. Tutor LMS ఇన్‌స్టాల్ చేయబడి మరియు యాక్టివేట్ చేయబడిందని నిర్ధారించుకోండి.
+3. WordPress లోని 'Plugins' మెనూ ద్వారా ప్లాగీన్‌ను యాక్టివేట్ చేయండి.
+4. ఈ ప్లాగీన్ స్వయంచాలకంగా Tutor LMS తో అనుసంధానం అవుతుంది.
+
+## ఫైల్ నిర్మాణం (File Structure)
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (ప్రధాన ప్లాగీన్ ఫైల్)
+├── includes/
+│   ├── class-database-manager.php (డేటాబేస్ టేబుల్ సృష్టి మరియు నిర్వహణ)
+│   ├── class-admin-interface.php (డేటాబేస్ నిర్వహణ కోసం అడ్మిన్ ఇంటర్‌ఫేస్)
+│   ├── class-course-limits.php (కోర్సు మరియు ఫన్నెల్ పరిమితి హ్యాండ్లర్‌లు)
+│   ├── class-instructor-manager.php (ఇన్‌స్ట్రక్టర్ రోల్ నిర్వహణ)
+│   ├── class-ajax-handlers.php (కస్టమ్ AJAX హ్యాండ్లర్‌లు)
+│   ├── class-query-helper.php (డేటాబేస్ క్వెరీ యుటిలిటీలు)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (multisite యూజర్ మోడల్)
+│   └── admin/
+│       ├── class-instructors-list.php (కస్టమ్ ఇన్‌స్ట్రక్టర్ జాబితా)
+│       └── views/
+│           └── instructors.php (ఇన్‌స్ట్రక్టర్ అడ్మిన్ వ్యూ)
+└── README.md
+```
+
+## MU ప్లాగీన్ నుండి తరలించబడిన ఫంక్షనాలిటీ (Functionality Moved from MU Plugin)
+
+ఈ ప్లాగీన్‌లో గతంలో `wp-content/mu-plugins/daves.php` లో ఉన్న ఫంక్షనాలిటీ ఉంది:
+
+- కోర్సు స్టేటస్ మార్పు పరిమితులు (Course status change limitations)
+- కోర్సు సృష్టి పరిమితులు (Course creation limitations)
+- CartFlows అనుసంధానం మరియు పరిమితులు (CartFlows integration and limits)
+- Tutor ఇన్‌స్ట్రక్టర్ రోల్ నిర్వహణ (Tutor instructor role management)
+- multisite యూజర్ ఎన్‌రోల్‌మెంట్ హ్యాండ్లింగ్ (Multisite user enrollment handling)
+- కోర్సు ఉత్పత్తి ID ప్రదర్శన (Course product ID display)
+
+## డేటాబేస్ నిర్వహణ (Database Management)
+
+### సమస్య (The Problem)
+
+WordPress multisite వాతావరణాలలో, యూజర్ల టేబుల్‌కు ఫారన్ కీ కన్స్ట్రైంట్‌లు ఉన్న టేబుల్స్ కోసం Tutor LMS టేబుల్ సృష్టి విఫలమవుతుంది. దీనికి కారణం:
+
+- సైట్-నిర్దిష్ట టేబుల్స్ `wp_2_tutor_carts` వంటి ప్రిఫిక్స్‌లను ఉపయోగిస్తాయి.
+- ఫారన్ కీలు `wp_2_users` (అస్సలు లేనిది) ను రిఫర్ చేస్తాయి.
+- వాస్తవ యూజర్ల టేబుల్ `wp_users` (నెట్‌వర్క్‌ అంతటా షేర్ చేయబడుతుంది).
+
+### పరిష్కారం (The Solution)
+
+ఈ ప్లాగీన్ స్వయంచాలకంగా:
+
+1. **తప్పిపోయిన టేబుల్స్‌ను గుర్తిస్తుంది (Detects Missing Tables)**: ఫారన్ కీ కన్స్ట్రైంట్‌ల కారణంగా సృష్టించడంలో విఫలమైన టేబుల్స్‌ను తనిఖీ చేస్తుంది.
+2. **సరైన రిఫరెన్స్‌లతో టేబుల్స్‌ను సృష్టిస్తుంది (Creates Tables with Correct References)**: సరైన యూజర్ టేబుల్ పేరును (`wp_users` multisite లో) ఉపయోగిస్తుంది.
+3. **అనేక దృశ్యాలను నిర్వహిస్తుంది (Handles Multiple Scenarios)**:
+   - ప్లాగీన్ యాక్టివేషన్/రీయాక్టివేషన్
+   - నెట్‌వర్క్‌లో కొత్త సైట్ సృష్టి
+   - అడ్మిన్ ఇంటర్‌ఫేస్ ద్వారా మాన్యువల్ టేబుల్ తనిఖీ
+
+### ప్రభావితమైన టేబుల్స్ (Affected Tables)
+
+- `tutor_coupon_usages` - యూజర్ల టేబుల్‌కు ఫారన్ కీ కలిగి ఉంటుంది.
+- `tutor_carts` - యూజర్ల టేబుల్‌కు ఫారన్ కీ కలిగి ఉంటుంది.
+- `tutor_notification_preferences` - యూజర్ల టేబుల్‌కు ఫారన్ కీ ఉన్న TutorPro టేబుల్.
+
+### అడ్మిన్ ఇంటర్‌ఫేస్ (Admin Interface)
+
+డేటాబేస్ నిర్వహణ టూల్స్‌ను ఈ చిరునామాలో యాక్సెస్ చేయండి:
+
+- **నెట్‌వర్క్ అడ్మిన్**: Settings → Tutor Multisite DB
+- **సైట్ అడ్మిన్**: Tools → Tutor Multisite DB
+
+ఈ ఇంటర్‌ఫేస్ మీకు వీటిని చేయడానికి అనుమతిస్తుంది:
+- అన్ని సైట్‌లలో తప్పిపోయిన టేబుల్స్‌ను వీక్షించడం.
+- మాన్యువల్‌గా టేబుల్ సృష్టిని ట్రిగ్గర్ చేయడం.
+- డేటాబేస్ కాన్ఫిగరేషన్‌ను తనిఖీ చేయడం.
+- వివరణాత్మక స్టేటస్ సమాచారాన్ని వీక్షించడం.
+
+## సపోర్ట్ (Support)
+
+ఈ ప్లాగీన్ ప్రత్యేకంగా KursoPro ప్లాట్‌ఫామ్ కోసం రూపొందించబడింది. సాంకేతిక మద్దతు కోసం, దయచేసి డెవలప్‌మెంట్ టీమ్‌ను సంప్రదించండి.

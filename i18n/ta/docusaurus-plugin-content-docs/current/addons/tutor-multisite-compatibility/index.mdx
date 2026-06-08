@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite இணக்கத்தன்மை
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Tutor LMS-ஐ multisite சூழல்களில் பயன்படுத்த தேவையான இணக்கத்தன்மை திருத்தங்களைச் சேர்க்கும் ஒரு WordPress plugin.
+
+## விளக்கம் (Description)
+
+WordPress multisite நெட்வொர்க்குகளில் Tutor LMS-ஐ இயக்குவதற்குத் தேவையான அத்தியாவசிய இணக்கத்தன்மை திருத்தங்களை இந்த plugin வழங்குகிறது. இது பயனர் சேர்க்கை (user enrollment), ஆசிரியர் மேலாண்மை (instructor management), பாட வரம்புகள் (course limitations) மற்றும் பிற multisite-குறிப்பிட்ட செயல்பாடுகளைக் கையாளுகிறது.
+
+## அம்சங்கள் (Features)
+
+- **Database Table Management**: multisite வெளிநாட்டு விசை கட்டுப்பாடுகள் (foreign key constraints) காரணமாக தோல்வியடையும் காணாமல் போன Tutor LMS அட்டவணைகளை (tables) தானாகவே கண்டறிந்து உருவாக்கும்.
+- **Multisite User Enrollment**: நெட்வொர்க் தளங்களில் பயனர் சேர்க்கையை நிர்வகிக்க தனிப்பயன் AJAX handlers.
+- **Instructor Role Management**: multisite சூழல்களில் தானியங்கி ஆசிரியர் பங்கு ஒதுக்கீடு மற்றும் மேலாண்மை.
+- **Course Limitations**: தளத் திட்டங்களின் (site plans) அடிப்படையில் பாடங்கள் மற்றும் ஃபனல் உருவாக்கும் வரம்புகளை நிர்வகிக்க Ultimate Multisite உடன் ஒருங்கிணைப்பு.
+- **Custom Admin Views**: multisite-ஐ கருத்தில் கொண்ட ஆசிரியர் பட்டியல் மற்றும் மேலாண்மை இடைமுகம்.
+- **Admin Tools**: நெட்வொர்க் மற்றும் தள நிர்வாகிகளுக்கான தரவுத்தள மேலாண்மை இடைமுகம்.
+
+## தேவைகள் (Requirements)
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (இது `Requires Plugins` தலைப்பின் மூலம் தானாகவே செயல்படுத்தப்படும்)
+- WordPress Multisite நிறுவல்
+- Ultimate Multisite plugin (பாட வரம்புகள் செயல்பாட்டிற்கு)
+
+## நிறுவுதல் (Installation)
+
+1. plugin கோப்புகளை `/wp-content/plugins/tutor-multisite-compatibility/` என்ற இடத்தில் பதிவேற்றவும்.
+2. Tutor LMS நிறுவப்பட்டு செயல்படுத்தப்பட்டுள்ளதை உறுதி செய்யவும்.
+3. WordPress-ல் உள்ள 'Plugins' மெனு வழியாக இந்த plugin-ஐ செயல்படுத்தவும்.
+4. இந்த plugin தானாகவே Tutor LMS உடன் ஒருங்கிணைந்து செயல்படும்.
+
+## கோப்பு அமைப்பு (File Structure)
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (முக்கிய plugin கோப்பு)
+├── includes/
+│   ├── class-database-manager.php (தரவுத்தள அட்டவணை உருவாக்கம் மற்றும் மேலாண்மை)
+│   ├── class-admin-interface.php (தரவுத்தள மேலாண்மைக்கான நிர்வாக இடைமுகம்)
+│   ├── class-course-limits.php (பாட மற்றும் ஃபனல் வரம்பு கையாளுபவர்கள்)
+│   ├── class-instructor-manager.php (ஆசிரியர் பங்கு மேலாண்மை)
+│   ├── class-ajax-handlers.php (தனிப்பயன் AJAX handlers)
+│   ├── class-query-helper.php (தரவுத்தள வினவல் பயன்பாடுகள்)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite பயனர் மாதிரி)
+│   └── admin/
+│       ├── class-instructors-list.php (தனிப்பயன் ஆசிரியர் பட்டியல்)
+│       └── views/
+│           └── instructors.php (ஆசிரியர் நிர்வாகப் பார்வை)
+└── README.md
+```
+
+## MU Plugin இலிருந்து மாற்றப்பட்ட செயல்பாடுகள் (Functionality Moved from MU Plugin)
+
+இந்த plugin ஆனது முன்பு `wp-content/mu-plugins/daves.php`-ல் இருந்த செயல்பாடுகளைக் கொண்டுள்ளது:
+
+- பாட நிலை மாற்ற வரம்புகள் (Course status change limitations)
+- பாட உருவாக்கும் வரம்புகள் (Course creation limitations)
+- CartFlows ஒருங்கிணைப்பு மற்றும் வரம்புகள்
+- Tutor ஆசிரியர் பங்கு மேலாண்மை
+- Multisite பயனர் சேர்க்கை கையாளுதல்
+- பாட தயாரிப்பு ID காட்சிப்படுத்தல்
+
+## தரவுத்தள மேலாண்மை (Database Management)
+
+### சிக்கல் (The Problem)
+
+WordPress multisite சூழல்களில், users அட்டவணையுடன் வெளிநாட்டு விசை கட்டுப்பாடுகள் (foreign key constraints) உள்ள அட்டவணைகளை Tutor LMS உருவாக்கத் தவறிவிடுகிறது. இதற்குக் காரணம்:
+
+- தள-குறிப்பிட்ட அட்டவணைகள் `wp_2_tutor_carts` போன்ற முன்னொட்டுகளை (prefixes) பயன்படுத்துகின்றன.
+- வெளிநாட்டு விசைகள் `wp_2_users` (இது இல்லை) ஐப் பார்க்கின்றன.
+- உண்மையான பயனர்கள் அட்டவணை `wp_users` (நெட்வொர்க் முழுவதும் பகிரப்பட்டது) ஆகும்.
+
+### தீர்வு (The Solution)
+
+இந்த plugin தானாகவே:
+
+1. **காணாமல் போன அட்டவணைகளைக் கண்டறிதல்**: வெளிநாட்டு விசை கட்டுப்பாடுகள் காரணமாக உருவாக்கத் தவறிய அட்டவணைகளைச் சரிபார்க்கிறது.
+2. **சரியான குறிப்புடன் அட்டவணைகளை உருவாக்குதல்**: சரியான பயனர் அட்டவணைப் பெயரை (`wp_users` multisite-ல்) பயன்படுத்துகிறது.
+3. **பல சூழ்நிலைகளைக் கையாளுதல்**:
+   - Plugin செயல்படுத்தல்/மீண்டும் செயல்படுத்துதல்
+   - நெட்வொர்க்கில் புதிய தளம் உருவாக்கம்
+   - நிர்வாக இடைமுகம் வழியாக கையேடு அட்டவணைச் சரிபார்ப்பு
+
+### பாதிக்கப்பட்ட அட்டவணைகள் (Affected Tables)
+
+- `tutor_coupon_usages` - users அட்டவணையுடன் வெளிநாட்டு விசையைக் கொண்டுள்ளது
+- `tutor_carts` - users அட்டவணையுடன் வெளிநாட்டு விசையைக் கொண்டுள்ளது
+- `tutor_notification_preferences` - users அட்டவணையுடன் வெளிநாட்டு விசையைக் கொண்ட TutorPro அட்டவணை
+
+### நிர்வாக இடைமுகம் (Admin Interface)
+
+தரவுத்தள மேலாண்மை கருவிகளை இங்கே அணுகவும்:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+இந்த இடைமுகம் உங்களுக்கு பின்வரும் செயல்பாடுகளைச் செய்ய அனுமதிக்கிறது:
+- அனைத்து தளங்களிலும் காணாமல் போன அட்டவணைகளைக் காணுதல்
+- கையேடாக அட்டவணை உருவாக்கத்தைத் தூண்டுதல்
+- தரவுத்தள உள்ளமைவைச் சரிபார்த்தல்
+- விரிவான நிலைத் தகவல்களைப் பார்த்தல்
+
+## ஆதரவு (Support)
+
+இந்த plugin குறிப்பாக KursoPro தளத்திற்காக வடிவமைக்கப்பட்டுள்ளது. தொழில்நுட்ப ஆதரவு தேவைப்பட்டால், மேம்பாட்டுக் குழுவைத் (development team) தொடர்பு கொள்ளவும்.

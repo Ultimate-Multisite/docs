@@ -1,0 +1,40 @@
+---
+title: การซิงค์เนื้อหา
+sidebar_position: 1
+_i18n_hash: 48333aecfa57a9cf6daf84a8d8322ef2
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-content-sync" name="Content Sync" />
+
+# Content Sync
+
+Multisite Ultimate: Content Sync
+
+Addon นี้สำหรับ Multisite Ultimate ช่วยให้ผู้ดูแลระบบเครือข่ายสามารถซิงค์เนื้อหาจากเว็บไซต์ใด ๆ ไปยังเว็บไซต์อื่น ๆ ในเครือข่ายได้ รองรับโพสต์ประเภททั้งหมด รวมถึงโพสต์, หน้า, custom post types, และ Elementor templates Addon นี้มีอินเทอร์เฟซแบบ multi-step wizard สำหรับเลือกเนื้อหาและเว็บไซต์เป้าหมาย พร้อมฟังก์ชัน batch processing และการแสดงผลความคืบหน้าแบบเรียลไทม์
+
+## Features
+
+* Content Selection: Grid card แบบภาพขนาดย่อพร้อมตัวกรองประเภทโพสต์
+* All Post Types: ซิงค์โพสต์, หน้า, สินค้า, Elementor templates, และ custom post type ใด ๆ
+* Site Selection: เลือกเว็บไซต์ที่จะซิงค์เนื้อหาไปถึง โดยมีการยกเว้นเว็บไซต์ต้นทาง และการเลือกเว็บไซต์ลูกล่วงหน้า
+* Batch Processing: ซิงค์ไปยัง 10 เว็บไซต์ในครั้งเดียว พร้อมอัปเดตความคืบหน้า
+* Media Sync: คัดลอกและแมปไฟล์สื่อ (รูปภาพ, วิดีโอ) จากเนื้อหาโพสต์ไปยังเว็บไซต์เป้าหมายโดยอัตโนมัติ
+* Taxonomy Sync: รักษาหมวดหมู่ (categories), แท็ก (tags), และ custom taxonomies
+* Elementor Support: รองรับ Elementor templates อย่างเต็มรูปแบบ พร้อมการสร้าง CSS ใหม่และการแมป ID template
+* Conflict Resolution: ตัวเลือกในการแทนที่เนื้อหาที่มีอยู่หรือข้ามไป
+* Cache Management: ล้างแคช Elementor โดยอัตโนมัติบนเว็บไซต์เป้าหมายหลังการซิงค์
+
+## Requirements
+
+* WordPress 5.3 or higher
+* PHP 7.4 or higher
+* Multisite Ultimate plugin (active)
+* Elementor plugin (optional, required for Elementor template sync)
+
+## Installation
+
+1. อัปโหลด 'ultimate-multisite-content-sync' ไปยังไดเรกทอรี '/wp-content/plugins/'
+2. เปิดใช้งานปลั๊กอินผ่านเมนู 'Plugins' ใน WordPress Network Admin ของคุณ
+3. กำหนดค่าการตั้งค่าใน Ultimate Multisite → Settings → Content Sync
+4. ไปที่ Ultimate Multisite → Content Sync เพื่อเริ่มการซิงค์

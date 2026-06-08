@@ -1,0 +1,117 @@
+---
+title: แผนตามการใช้งาน
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Metered Plans
+
+Ultimate Multisite: Metered Plans addon ช่วยเปลี่ยนวิธีการคิดค่าบริการลูกค้าของคุณ ด้วยการเพิ่มความสามารถในการเรียกเก็บเงินแบบ Metered Billing ที่ยืดหยุ่น แทนที่จะใช้ขีดจำกัดที่ตายตัวซึ่งจะบล็อกผู้ใช้เมื่อเกินขีดจำกัด คุณสามารถเปิดใช้งานค่าใช้จ่ายส่วนเกิน (overage charges) ซึ่งจะเรียกเก็บเงินจากลูกค้าโดยอัตโนมัติสำหรับการใช้งานที่เกินมา
+
+## Key Features
+
+* **Metered Billing**: คิดค่าบริการจากปริมาณการใช้งานจริง ไม่ใช่ตามระดับที่กำหนดไว้ตายตัว
+* **Overage Management**: เรียกเก็บเงินโดยอัตโนมัติสำหรับการใช้งานที่เกินขีดจำกัดของแผน
+* **Usage Tracking**: ติดตามการใช้ทรัพยากรของลูกค้าได้แบบเรียลไทม์
+* **Flexible Pricing**: กำหนดอัตราค่าบริการที่กำหนดเองสำหรับทรัพยากรที่แตกต่างกัน (เช่น พื้นที่จัดเก็บ, แบนด์วิดท์, จำนวนเว็บไซต์ ฯลฯ)
+* **AI Token Billing**: ติดตามและเรียกเก็บเงินสำหรับโทเค็นอินพุตและเอาต์พุตสำหรับการใช้งาน AI ทั่วทั้ง subsites ของลูกค้า
+* **Automatic Invoicing**: สร้างใบแจ้งหนี้โดยอัตโนมัติเมื่อมีการใช้งานเกินเกณฑ์ที่กำหนด
+* **Usage Reports**: รายงานและวิเคราะห์การใช้งานโดยละเอียดสำหรับลูกค้าและผู้ดูแลระบบ
+
+## Perfect For
+
+* **Hosting Providers**: เสนอแผนบริการที่ปรับขนาดได้ตามความต้องการของลูกค้า
+* **SaaS Platforms**: คิดค่าบริการตามการใช้ทรัพยากรจริง
+* **Agency Networks**: โมเดลราคาที่ยืดหยุ่นสำหรับโปรเจกต์ของลูกค้า
+* **Reseller Hosting**: ช่วยให้พาร์ทเนอร์สามารถเสนอราคาตามปริมาณการใช้งานได้
+
+## How It Works
+
+1. กำหนดทรัพยากรแบบ Metered (เช่น พื้นที่ดิสก์, แบนด์วิดท์, จำนวนเว็บไซต์ ฯลฯ)
+2. กำหนดขีดจำกัดของแผนพื้นฐานและอัตราค่าใช้จ่ายส่วนเกิน
+3. ระบบจะติดตามการใช้งานทั่วทั้งเครือข่ายของคุณโดยอัตโนมัติ
+4. เมื่อลูกค้าใช้เกินขีดจำกัด จะมีการคำนวณค่าใช้จ่ายส่วนเกิน
+5. ใบแจ้งหนี้จะถูกสร้างขึ้นโดยอัตโนมัติตามรอบบิล
+6. ลูกค้าสามารถดูการใช้งานและค่าใช้จ่ายที่กำลังจะมาถึงได้แบบเรียลไทม์
+
+## AI Token Billing
+
+Version 1.1.0 เพิ่มการเรียกเก็บเงินตามโทเค็น AI สำหรับเครือข่ายที่ให้บริการคุณสมบัติ AI ผ่าน WordPress AI Client SDK Metered Plans จะรอรับคำขอสร้าง AI ที่เสร็จสมบูรณ์ บันทึกจำนวนโทเค็นอินพุตและเอาต์พุตสำหรับ subsite ปัจจุบัน และแปลงโทเค็นเหล่านั้นเป็นค่าใช้จ่าย AI ที่สามารถเรียกเก็บเงินได้สำหรับรอบบิลปัจจุบันของลูกค้า
+
+ควรใช้ AI token billing เมื่อคุณต้องการเสนอเครื่องมือ AI บนเว็บไซต์ของลูกค้าโดยไม่ต้องรับภาระค่าใช้จ่ายโมเดลที่คาดเดาไม่ได้ แต่ละคำขอจะถูกระบุแหล่งที่มาไปยัง subsite, ลูกค้า, สมาชิกภาพ, ผู้ให้บริการ และโมเดล ดังนั้นผู้ดูแลระบบจึงสามารถตรวจสอบการใช้งานได้ ขณะที่ลูกค้าสามารถดูได้ว่าการบริโภค AI ของพวกเขาส่งผลต่อบัญชีอย่างไร
+
+### Configure Per-Token Rates
+
+อัตราค่า AI จะถูกกำหนดค่าแยกกันสำหรับอินพุตและเอาต์พุตสำหรับแต่ละโมเดล อัตราจะคำนวณต่อ 1 ล้านโทเค็น ซึ่งตรงกับหน้าการกำหนดราคาของผู้ให้บริการ AI ทั่วไป
+
+1. ในส่วนของ network admin ให้เปิด **Multisite Ultimate → Settings → Metered Plans**
+2. เปิดใช้งาน AI spend metering สำหรับ product หรือ membership ที่ควรเรียกเก็บค่าใช้จ่าย AI
+3. เพิ่มรายการอัตราโมเดลโดยใช้ model IDs ที่ส่งคืนโดย connector ของคุณ เช่น `gpt-4o`, `gpt-4o-mini`, หรือตัวระบุโมเดลที่เข้ากันได้กับ OpenAI อื่นๆ
+4. ป้อนค่า **Input Rate** และ **Output Rate** แยกกันในสกุลเงินของเว็บไซต์ของคุณต่อ 1 ล้านโทเค็น
+5. กำหนดวงเงิน AI spend ที่รวมอยู่ในแผนของลูกค้า และพฤติกรรมเมื่อเกินวงเงิน
+
+เมื่อไม่ได้กำหนด model ID ที่แน่นอน Metered Plans สามารถจับคู่ได้ด้วย model prefix ตัวอย่างเช่น อัตราที่กำหนดสำหรับ `claude-sonnet-4` สามารถใช้ได้กับ model IDs ที่มี timestamp และขึ้นต้นด้วย prefix นั้น นักพัฒนายังสามารถปรับตารางอัตราสุดท้ายได้ด้วย filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates)
+
+### Supported AI Connectors
+
+AI token billing ทำงานร่วมกับ connectors ที่ปล่อยเหตุการณ์การสร้าง WordPress AI Client SDK และรวมการใช้โทเค็นไว้ใน metadata ของการตอบกลับ ซึ่งรวมถึง Ultimate Multisite AI connector family ที่จัดทำเอกสารไว้ที่นี่:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) สำหรับ API ที่เข้ากันได้กับ OpenAI รวมถึง OpenAI, Mistral, Ollama-compatible gateways และผู้ให้บริการอื่น ๆ ที่เปิดเผย metadata การใช้โทเค็นที่เข้ากันได้
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) สำหรับการใช้งาน WebLLM แบบ native ในเบราว์เซอร์ เมื่อคำขอถูกส่งผ่าน AI Client SDK event flow
+* AI provider connectors ที่ใช้โดย [Gratis AI Agent](../gratis-ai-agent/) เมื่อผู้ให้บริการที่เลือกรายงานจำนวนโทเค็น prompt และ completion ผ่าน SDK
+
+Custom connectors สามารถเข้าร่วมได้โดยการยิงเหตุการณ์มาตรฐาน `wp_ai_client_before_generate_result` และ `wp_ai_client_after_generate_result` พร้อมด้วย metadata ของโมเดล, ผู้ให้บริการ และการใช้โทเค็น การตั้งค่า connector จะถูกบังคับใช้จาก site หลักไปยัง subsites เพื่อให้แน่ใจว่าเว็บไซต์ของลูกค้าใช้ผู้ให้บริการและขีดจำกัดที่ได้รับการอนุมัติจากเครือข่าย
+
+### Customer Account Usage
+
+ลูกค้าจะเห็นการใช้งาน AI ควบคู่ไปกับทรัพยากร Metered อื่นๆ ในพื้นที่บัญชีของพวกเขา แถว AI spend จะแสดงยอดรวมรอบบิลปัจจุบันที่ได้มาจากโทเค็น prompt และ completion ที่บันทึกไว้, อัตราโมเดลที่กำหนดค่าไว้, และวงเงินที่รวมอยู่ในแผน
+
+หากลูกค้ามีวิธีการชำระเงินที่บันทึกไว้ การใช้งานที่เกินวงเงินที่รวมไว้จะถือเป็นค่าใช้จ่ายส่วนเกินที่เรียกเก็บเงินได้ หากแผนถูกกำหนดค่าให้เป็น hard cutoff และลูกค้าไม่มีวิธีการชำระเงิน ระบบ AI อาจถูกบล็อกเมื่อถึงวงเงิน และลูกค้าจะได้รับแจ้งให้เพิ่มรายละเอียดการชำระเงินก่อนดำเนินการต่อ
+
+## Supported Resources
+
+* Disk storage
+* Bandwidth/Data transfer
+* Number of sites
+* Number of users
+* AI token usage and AI spend
+* Custom resource types
+
+## Requirements
+
+* Multisite Ultimate 2.0.0 or higher
+* WordPress Multisite installation
+* PHP 7.4 or higher
+
+## Installation
+
+1. อัปโหลดไฟล์ plugin ไปที่ `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. เปิดใช้งาน plugin ผ่านหน้า 'Plugins' ใน WordPress
+3. ไปที่ Multisite Ultimate → Settings → Metered Plans
+4. กำหนดทรัพยากรและราคาแบบ Metered ของคุณ
+5. เปิดใช้งาน metered billing สำหรับ products ใน product editor
+
+## Frequently Asked Questions
+
+## What happens when a customer exceeds their limit?
+
+แทนที่จะบล็อกการเข้าถึง ระบบจะติดตามค่าใช้จ่ายส่วนเกินและเพิ่มเข้าไปในใบแจ้งหนี้ครั้งถัดไปของพวกเขาตามอัตราที่คุณกำหนดค่าไว้
+
+## Can I set different overage rates for different products?
+
+ได้ แต่ละ product สามารถมีทรัพยากรแบบ Metered และราคาส่วนเกินที่ไม่ซ้ำกันได้
+
+## How are customers notified about usage?
+
+ลูกค้าสามารถดูการใช้งานปัจจุบันได้ใน dashboard ของพวกเขา และรับการแจ้งเตือนตามตัวเลือกเมื่อใกล้ถึงหรือเกินขีดจำกัด
+
+## How is AI token usage priced?
+
+การใช้โทเค็น AI จะถูกกำหนดราคาจากอัตราอินพุตและเอาต์พุตที่กำหนดค่าไว้ของโมเดลต่อ 1 ล้านโทเค็น Metered Plans จะคูณจำนวนโทเค็น prompt และ completion ของแต่ละคำขอด้วยอัตราเหล่านั้น, เพิ่มผลลัพธ์เข้ากับ AI spend รอบบิลปัจจุบันของลูกค้า, และใช้กฎวงเงินหรือส่วนเกินของแผน
+
+## Can I still use hard limits?
+
+ได้ การเรียกเก็บเงินแบบ Metered เป็นทางเลือกสำหรับแต่ละ product คุณสามารถผสมผสานผลิตภัณฑ์แบบ hard-limit แบบดั้งเดิมกับผลิตภัณฑ์แบบ Metered ได้

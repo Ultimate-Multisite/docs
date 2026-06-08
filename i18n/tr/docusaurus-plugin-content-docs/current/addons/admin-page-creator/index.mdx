@@ -1,0 +1,144 @@
+---
+title: Yönetici Sayfası Oluşturucu
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## İçerik
+Admin sayfa oluşturucu, WordPress admin dashboard içinde yeni admin sayfaları ve alt sayfaları kolayca eklemenize olanak tanır. Yeni kullanıcılar için bir karşılama sayfası veya eğitim sayfası oluşturmak amacıyla kullanılabilir ve bu sayfa bir açılış sayfası (landing page) görevi görebilir. Sayfaları zahmetsizce tasarlamak için Beaver Builder, Elementor, Brizy ve Oxygen gibi sayfa oluşturucuları kullanabilirsiniz.
+
+Ayrıca, plan ve kullanıcı rolüne dayalı erişim kontrolü ile birlikte özel HTML, CSS ve JavaScript desteği de sunar!
+
+## Özellikler
+* Özel HTML ve CSS Desteği
+* JavaScript Desteği
+* PHP İçerik Modu
+* Kullanıcı Rolüne Dayalı İzin
+* Sayfa Oluşturuculara Destek
+
+## Dokümantasyon
+[Ultimate Multisite ile Özel Admin Sayfaları ve Alt Sayfalar Oluşturma: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Kurulum
+
+1. **ultimate-multisite-admin-page-creator** eklentisini **/wp-content/plugins/** dizinine yükleyin
+2. Eklentiyi WordPress Network Admin'deki **Plugins** menüsünden etkinleştirin
+
+## Kullanım Kılavuzu
+
+WordPress'in sitelerin ön yüzüne içerik eklemeyi çok kolay yapmasına rağmen, admin tarafında sayfa ve alt sayfalar oluşturmak biraz temel kodlama bilgisi gerektirir. Ultimate Multisite: Admin Page Creator, bu kolay kullanım deneyimini ağ sitelerinizin arka yüzüne taşımayı amaçlar.
+
+## Admin Page Creator'ı Neden Kullanmalısınız?
+
+Belki müşterilerinizin admin paneline eğitimler içeren özel bir sayfa sunmak istersiniz, belki de SSS'ler ve bir iletişim widget'ı içeren özel bir sayfa eklemek istersiniz. Admin Page Creator ile olasılıklar sonsuz ve bugün yapacağımız eğitimde bunları keşfedeceğiz.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_Gömülü bir YouTube oynatma listesi ile Eğitim Sayfası oluşturmak artık mümkün!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_İşte kullanıcının Dashboard Panel'indeki son sonuç_
+
+## İlk Özel Admin Sayfanızı Oluşturma
+
+Ultimate Multisite: Admin Page Creator'ı kurup etkinleştirdikten sonra, ağ admin menünüze gidin ve Admin Pages'a tıklayın.
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Network Admin'deki Özel Admin Sayfaları listesi_
+
+Şimdiye kadar oluşturduğunuz tüm admin sayfalarının bir listesini göreceksiniz (ilk ziyaretiniz olduğu için liste boş olacaktır). Devam edin ve **Add new Admin Page**'a tıklayın. Admin Page düzenleyicisine yönlendirileceksiniz.
+
+## Bir Özel Admin Sayfasının Öğeleri
+
+Admin Page düzenleyicisinde, sayfanızı özelleştirmek için birçok farklı seçeneğiniz olacak.
+
+### Sayfa Başlığı
+
+Bu, admin menü etiketi değil, sayfanın en üstünde gösterilecek başlıktır.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Bir Sayfa Başlığı Girin_
+
+### İçerik Türü Seçici
+
+Ultimate Multisite: Admin Page Creator, sayfanın içeriği konusunda size iki seçenek sunar: varsayılan WordPress WYSIWYG düzenleyiciyi kullanabilir veya bir HTML düzenleyicisine geçebilirsiniz.
+
+HTML konusunda deneyimli değilseniz, varsayılan WordPress düzenleyicisinde kalın. Sayfanın içeriğini normal bir Gönderi veya Sayfa'da yapacağınız gibi düzenleyebileceksiniz.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Varsayılan WordPress WYSIWYG düzenleyicisini kullanma_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Sözdizimi vurgulama ve hata uyarıları ile HTML düzenleyici seçeneğini kullanma_
+
+## Menü Seçenekleri
+
+Yan tarafta, General Options meta-kutusu üzerinde, menü türünü, etiketini ve çok daha fazlasını yapılandırabileceksiniz.
+
+### Menü Türleri
+
+Yeni özel admin sayfanız iki farklı menü türüne sahip olabilir: üst düzey menü (top-level menu) ve alt menü (submenu).
+
+Adından da anlaşılacağı gibi, üst düzey bir menü sayfası, yeni oluşturduğunuz sayfayı varsayılan WordPress sayfalarının yanına admin menüsüne ekleyecektir.
+
+Üst düzey seçeneği seçerseniz, menü sırasını ve bir menü simgesini de seçebileceksiniz.
+
+Bu sayfayı bir alt menü sayfası yapmak isterseniz, bu sayfayı bağlayacağınız bir üst sayfa seçebilirsiniz. Özel sayfanızı varsayılan WordPress sayfalarına veya üst düzey özel admin sayfalarınıza ekleyebilirsiniz.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Bu Özel Sayfa için menü öğesini tamamen özelleştirin_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Bu sayfayı, kendi özel üst düzey sayfalarınız dahil olmak üzere, diğer menü sayfalarının alt menüsü olarak da ekleyebilirsiniz._
+
+## Gelişmiş Seçenekler
+
+Özel admin sayfalarınıza her türlü içeriği ekleyebilmeniz gerekir. Buna CSS kuralları ve dosyaları, JavaScript ve harici kütüphaneler de dahildir. Bunu Gelişmiş Seçenekler sekmesini kullanarak yapabilirsiniz.
+
+### Özel CSS
+
+CSS sekmesinde kendi özel CSS kodunuzu ekleyebilir ve uzaktaki sitelerden (CDN'ler, Google Fonts vb.) CSS dosyaları içe aktarabilirsiniz.
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Özel CSS de desteklenir. Harici stil dosyaları da ekleyebilirsiniz!_
+
+### Özel JavaScript
+
+JavaScript için de aynı geçerlidir. Özel JavaScript kodunuzda kullanmak üzere harici kütüphaneler ekleyebilirsiniz.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Kendi JavaScript kodunuzu ekleyin!_
+
+## İzinler
+
+Ayrıca Gelişmiş Seçenekler'de, hangi alt sitelerin bu sayfaya erişebileceğini seçebileceksiniz. Bu, örneğin farklı plan katmanlarına farklı özel içerikler sunmayı planlıyorsanız kullanışlıdır.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Bu sayfanın nerede görüneceği üzerinde tam kontrolünüz var_
+
+**Önemli**: Sayfanın gösterilmesi için her iki koşulun da karşılanması gerekir. Bu, kullanıcı belirli bir planın müşterisi olsa bile, seçilen rollerden birine sahip değilse (veya tam tersi) sayfanın panelinde görünmeyeceği anlamına gelir.
+
+## Aktif
+
+Bir özel admin sayfayı silmeden veya izinlerle uğraşmadan devre dışı bırakmak isterseniz, sadece Aktif seçeneğinin işaretini kaldırın.
+
+Üst düzey bir sayfayı devre dışı bırakmak, o üst sayfaya bağlı tüm alt sayfaları otomatik olarak devre dışı bırakacaktır.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Kullanıcı panelindeki son sonuç!_

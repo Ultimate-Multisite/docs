@@ -1,0 +1,117 @@
+---
+title: Çoklu Para Birimi
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Çoklu Para Birimi" />
+
+# Çoklu Para Birimi
+
+Ultimate Multisite: Multi-Currency, ağınızın birden fazla para biriminde ödeme kabul etmesini sağlar. Canlı veya manuel döviz kurları kullanarak fiyatları otomatik olarak dönüştürür, herhangi bir ürün için istediğiniz para biriminde tam fiyat belirlemenize olanak tanır ve coğrafi konum (geolocation) yoluyla her ziyaretçinin tercih ettiği para birimini tespit eder — tüm bunlar tek bir yönetici kontrol panelinden yönetilir.
+
+## Temel Özellikler
+
+- **Otomatik döviz kuru dönüşümü** — Fiyatlar, seçtiğiniz sağlayıcıdan çekilen kurlar kullanılarak temel para biriminizden dönüştürülür.
+- **Ürüne özel fiyat belirlemeleri** — Otomatik dönüşümü atlamak için herhangi bir ürüne para birimine özel tam fiyatlar belirleyebilirsiniz.
+- **Para birimi seçici kayıt alanı** — Müşterilerin ödeme/kayıt sırasında tercih ettikleri para birimini seçmelerine olanak tanır.
+- **Birden fazla döviz kuru sağlayıcısı** — ECB, Frankfurter, Stripe veya tamamen manuel kurlar.
+- **Coğrafi konuma dayalı para birimi tespiti** — Ziyaretçinin ülkesine uygun para birimini otomatik olarak önceden seçer.
+- **Yönetici kontrol paneli** — Aktif para birimlerini, döviz kurlarını ve sağlayıcı ayarlarını tek bir yerden yönetin.
+
+## Gereksinimler
+
+- Ultimate Multisite 2.0.0 veya üzeri
+- WordPress Multisite kurulumu
+- PHP 7.4 veya üzeri
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-multi-currency` konumuna yükleyin.
+2. Eklentiyi WordPress'te **Eklentiler** ekranından etkinleştirin (Ağda Etkinleştir).
+3. Yönetici kontrol paneline ulaşmak için **Ultimate Multisite → Multi-Currency** yolunu izleyin.
+4. Kabul etmek istediğiniz para birimlerini ekleyin ve döviz kuru sağlayıcınızı yapılandırın.
+
+## Yapılandırma
+
+### Yönetici Kontrol Paneli
+
+Multi-Currency yönetici kontrol paneli (**Ultimate Multisite → Multi-Currency**), aşağıdaki işlemleri yapabileceğiniz merkezi yerdir:
+
+- Para birimleri ekleme, etkinleştirme veya devre dışı bırakma.
+- Bir döviz kuru sağlayıcısı seçme ve kurları talep üzerine yenileme.
+- Tüm aktif para birimlerinin güncel kurlarını gözden geçirme.
+- Otomatik sağlayıcılar uygun olmadığında manuel kurlar belirleme.
+
+### Döviz Kuru Sağlayıcıları
+
+| Sağlayıcı | Açıklama |
+|---|---|
+| **ECB** | Avrupa Merkez Bankası — EUR tabanlı ağlar için ücretsiz günlük kurlar. |
+| **Frankfurter** | Açık kaynaklı ECB yansıtma API'si — Ücretsizdir, API anahtarı gerektirmez. |
+| **Stripe** | Stripe'ın canlı FX kurlarını kullanır — Aktif bir Stripe entegrasyonu gerektirir. |
+| **Manuel** | Kurları doğrudan siz girersiniz; harici API çağrısı yapılmaz. |
+
+Sağlayıcınızı **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** altından seçin. Kurlar istediğiniz zaman manuel olarak veya otomatik güncellenmesi için zamanlanarak yenilenebilir.
+
+### Ürüne Özel Fiyat Belirlemeleri
+
+Otomatik dönüşüm yeterince hassas olmadığında, herhangi bir ürün için belirli bir para biriminde tam bir fiyat belirleyebilirsiniz:
+
+1. Ürün düzenleyicisini açın (**Ultimate Multisite → Products → Edit**).
+2. **Currency Pricing** (Para Birimi Fiyatlandırması) bölümüne kaydırın.
+3. Üzerine yazmak istediğiniz her para birimi için tam fiyatı girin.
+4. Ürünü kaydedin.
+
+Üzerine yazma yapılmayan ürünler, temel para biriminizden dönüştürülmüş fiyatı kullanır.
+
+### Para Birimi Seçici Kayıt Alanı
+
+Para birimi seçici alanı, müşterilerin kayıt sırasında tercih ettikleri para birimini seçmelerini sağlamak için kayıt/ödeme akışınıza eklenebilir:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** yolunu izleyin.
+2. **Show currency selector on signup** (Kayıt sırasında para birimi seçicisini göster) seçeneğini etkinleştirin.
+3. İsteğe bağlı olarak bir varsayılan para birimi belirleyebilir veya coğrafi konumun önceden seçilen değeri belirlemesine izin verebilirsiniz.
+
+Seçilen para birimi abonelikle birlikte saklanır ve tüm sonraki faturalandırmalarda kullanılır.
+
+### Coğrafi Konuma Dayalı Para Birimi Tespiti
+
+Coğrafi konum tespiti etkinleştirildiğinde, eklenti ziyaretçinin ülkesini bir para birimine eşleştirir ve bunu para birimi seçici alanında önceden seçer. Etkinleştirmek için:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** yolunu izleyin.
+2. **Detect currency from visitor location** (Ziyaretçi konumundan para birimi tespit et) seçeneğini etkinleştirin.
+3. Ülke-para birimi eşleştirmelerini **Geolocation Mapping** (Coğrafi Konum Eşleştirme) tablosunda yapın.
+
+Bir ziyaretçinin ülkesi için eşleştirme yoksa, ağın temel para birimi yedek olarak kullanılır.
+
+## Sıkça Sorulan Sorular
+
+### Bir döviz kuru sağlayıcısı kullanılamazsa ne olur?
+
+Eklenti, en son başarılı bir şekilde çekilen kurlara geri döner. Hiçbir kur çekilmemişse, yapılandırdığınız manuel kurlara geri döner. Güvenlik ağı olarak manuel kurları yapılandırmanız önerilir.
+
+### Farklı para birimleri için farklı sağlayıcılar kullanabilir miyim?
+
+Hayır — tüm para birimleri için tek bir sağlayıcı aktif olur. Bireysel kurlar üzerinde tam kontrol istiyorsanız **Manuel** kullanın.
+
+### Coğrafi konum ayrı bir eklenti gerektirir mi?
+
+Harici bir coğrafi konum eklentisi gerekmez. Eklenti, WordPress'in yerleşik IP'den ülkeye tespit özelliğini kullanır. Daha yüksek doğruluk için, sağlanan filtre hook'ları aracılığıyla özel bir coğrafi konum hizmeti entegre edilebilir.
+
+### Ürüne özel fiyat belirlemeleri vergi öncesi mi yoksa sonrası mı uygulanır?
+
+Ürüne özel belirlemeler, hedef para biriminde vergi öncesi fiyatı belirler. Vergi, mevcut vergi yapılandırmanızı kullanarak belirleme fiyatı üzerine hesaplanır.
+
+## Değişiklik Günlüğü
+
+### Sürüm 1.0.0 — Yayınlanma Tarihi 2026-04-02
+
+- Yeni: Otomatik döviz kuru dönüşümü ile çoklu para birimi desteği.
+- Yeni: Tam para birimi özel fiyatları için ürüne özel fiyat belirlemeleri.
+- Yeni: Ödeme akışı için para birimi seçici kayıt alanı.
+- Yeni: Döviz kuru sağlayıcıları: ECB, Frankfurter, Stripe ve manuel.
+- Yeni: Coğrafi konuma dayalı para birimi tespiti.
+- Yeni: Para birimlerini ve döviz kurlarını yönetmek için yönetici kontrol paneli.
+- Düzeltme: Seçilen para biriminden bağımsız olarak kontrol panelinin her zaman temel para biriminde fiyat göstermesi.

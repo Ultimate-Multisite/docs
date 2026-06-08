@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite Uyumluluğu
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Tutor LMS'i multisite ortamlarında kullanmanız için uyumluluk düzeltmeleri ekleyen bir WordPress eklentisi.
+
+## Açıklama
+
+Bu eklenti, Tutor LMS'i WordPress multisite ağlarında çalıştırmak için gerekli uyumluluk düzeltmelerini sağlar. Kullanıcı kaydı, eğitmen yönetimi, kurs kısıtlamaları ve diğer multisite'a özgü işlevselliği yönetir.
+
+## Özellikler
+
+- **Veritabanı Tablosu Yönetimi**: Multisite yabancı anahtar kısıtlamaları nedeniyle başarısız olan eksik Tutor LMS tablolarını otomatik olarak algılar ve oluşturur.
+- **Multisite Kullanıcı Kaydı**: Ağdaki siteler genelinde kullanıcı kaydını yönetmek için özel AJAX işleyicileri.
+- **Eğitmen Rolü Yönetimi**: Multisite ortamlarında otomatik eğitmen rolü atama ve yönetimi.
+- **Kurs Kısıtlamaları**: Site planlarına göre kurs ve funnel oluşturma limitlerini yönetmek için Ultimate Multisite ile entegrasyon.
+- **Özel Yönetici Görünümleri**: Multisite farkındalığı olan eğitmen listesi ve yönetim arayüzü.
+- **Yönetici Araçları**: Ağ ve site yöneticileri için veritabanı yönetim arayüzü.
+
+## Gereksinimler
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS eklentisi (Otomatik olarak `Requires Plugins` başlığı aracılığıyla zorunlu kılınır)
+- WordPress Multisite kurulumu
+- Ultimate Multisite eklentisi (Kurs kısıtlamaları işlevi için)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/tutor-multisite-compatibility/` konumuna yükleyin.
+2. Tutor LMS'in kurulu ve etkin olduğundan emin olun.
+3. Eklentiyi WordPress'te 'Eklentiler' menüsünden etkinleştirin.
+4. Eklenti, Tutor LMS ile otomatik olarak entegre olacaktır.
+
+## Dosya Yapısı
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Ana eklenti dosyası)
+├── includes/
+│   ├── class-database-manager.php (Veritabanı tablo oluşturma ve yönetimi)
+│   ├── class-admin-interface.php (Veritabanı yönetimi için yönetici arayüzü)
+│   ├── class-course-limits.php (Kurs ve funnel limit işleyicileri)
+│   ├── class-instructor-manager.php (Eğitmen rolü yönetimi)
+│   ├── class-ajax-handlers.php (Özel AJAX işleyicileri)
+│   ├── class-query-helper.php (Veritabanı sorgu yardımcıları)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite kullanıcı modeli)
+│   └── admin/
+│       ├── class-instructors-list.php (Özel eğitmen listesi)
+│       └── views/
+│           └── instructors.php (Eğitmen yönetici görünümü)
+└── README.md
+```
+
+## MU Eklentisinden Taşınan İşlevsellik
+
+Bu eklenti, daha önce `wp-content/mu-plugins/daves.php` dosyasında bulunan işlevselliği içermektedir:
+
+- Kurs durumu değiştirme kısıtlamaları
+- Kurs oluşturma kısıtlamaları
+- CartFlows entegrasyonu ve limitleri
+- Tutor eğitmen rolü yönetimi
+- Multisite kullanıcı kaydı yönetimi
+- Kurs ürün ID'sinin gösterilmesi
+
+## Veritabanı Yönetimi
+
+### Sorun
+
+WordPress multisite ortamlarında, Tutor LMS tablosu oluşturma işlemi, kullanıcı tablosuna yabancı anahtar kısıtlaması olan tablolar için başarısız olur. Bunun nedeni şudur:
+
+- Siteye özel tablolar `wp_2_tutor_carts` gibi ön ekler kullanır.
+- Yabancı anahtarlar `wp_2_users`'a referans verir (ki bu tablo mevcut değildir).
+- Gerçek kullanıcı tablosu ise `wp_users`'dır (ağ genelinde paylaşılır).
+
+### Çözüm
+
+Bu eklenti otomatik olarak şunları yapar:
+
+1. **Eksik Tabloları Algılar**: Yabancı anahtar kısıtlamaları nedeniyle oluşturulamamış tabloları kontrol eder.
+2. **Doğru Referanslarla Tabloları Oluşturur**: Doğru kullanıcı tablosu adını (`wp_users` multisite'ta) kullanır.
+3. **Birden Fazla Senaryoyu Yönetir**:
+   - Eklenti etkinleştirme/yeniden etkinleştirme
+   - Ağda yeni site oluşturma
+   - Yönetici arayüzü üzerinden manuel tablo kontrolü
+
+### Etkilenen Tablolar
+
+- `tutor_coupon_usages` - Kullanıcı tablosuna yabancı anahtar içerir.
+- `tutor_carts` - Kullanıcı tablosuna yabancı anahtar içerir.
+- `tutor_notification_preferences` - Kullanıcı tablosuna yabancı anahtar içeren TutorPro tablosu.
+
+### Yönetici Arayüzü
+
+Veritabanı yönetim araçlarına şu adresten erişebilirsiniz:
+
+- **Ağ Yöneticisi**: Ayarlar → Tutor Multisite DB
+- **Site Yöneticisi**: Araçlar → Tutor Multisite DB
+
+Bu arayüz size şunları yapma imkanı sunar:
+- Tüm sitelerdeki eksik tabloları görüntüleme
+- Tablo oluşturmayı manuel olarak tetikleme
+- Veritabanı yapılandırmasını kontrol etme
+- Detaylı durum bilgilerini görüntüleme
+
+## Destek
+
+Bu eklenti özel olarak KursoPro platformu için tasarlanmıştır. Teknik destek için geliştirici ekibiyle iletişime geçin.

@@ -1,0 +1,94 @@
+---
+title: WooCommerce ஒருங்கிணைப்பு
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration, எங்கள் Manual Gateway செயல்படும் விதத்தைப் போலவே செயல்படுகிறது. இது உங்கள் பயனர்களுக்கு அதிக நெகிழ்வுத்தன்மையை வழங்குகிறது, உங்கள் WooCommerce நிறுவலில் கிடைக்கும் எந்தவொரு கட்டண முறையையும் (payment forms) தேர்வு செய்ய அனுமதிக்கிறது. இது மிகவும் எளிமையானது: பயனரின் பில்லிங் காலம் முடிந்தவுடன், அந்தப் பயனர் சந்தா தற்காலிகமாக நிறுத்தப்படும் (put on hold). அதே நேரத்தில், நெட்வொர்க்கின் பிரதான தளத்தில் (main site) ஒரு order உருவாக்கப்படும். பின்னர், பணம் செலுத்துவதற்கான இணைப்பத்துடன் (link) ஒரு invoice பயனரின் மின்னஞ்சல் முகவரிக்கு அனுப்பப்படும். பணம் பெறப்பட்டவுடன், சந்தா புதுப்பிக்கப்படும் (renewed).
+
+## Features
+
+- Ultimate Multisite மற்றும் WooCommerce இடையே எளிதான ஒருங்கிணைப்பு (Easy integration)
+- பல கட்டண முறைகள் கிடைக்கின்றன (Several payment methods available)
+- WooCommerce Subscriptions உடன் முற்றிலும் தானியங்கி செயல்முறை (Completely automated process)
+
+## Documentation
+
+**WooCommerce Integration-ஐ அமைப்பது எப்படி**
+
+**Ultimate Multisite உடன் உங்கள் கட்டண விருப்பங்களை நீட்டிப்பது: WooCommerce Integration**
+
+## Installation
+
+1. 'ultimate-multisite-woocommerce' என்பதை '/wp-content/plugins/' என்ற கோப்பகத்தில் (directory) பதிவேற்றவும் (Upload).
+2. WordPress-ல் உள்ள 'Plugins' மெனு வழியாக プラгіன்-ஐ Activate செய்யவும்.
+3. プラгіன்-ஐ அமைக்க படிப்படியான Wizard-ஐப் பின்பற்றவும்.
+
+## Usage Guide
+
+_**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐப் பற்றியது.**_
+
+_**கவனம்:** Ultimate Multisite: WooCommerce Integration செயல்பட, உங்கள் பிரதான தளத்தில் (main site) குறைந்தபட்சம் WooCommerce செயல்படுத்தப்பட்டிருக்க வேண்டும்._
+
+_Stripe_ மற்றும் _PayPal_ ஆகியவை சில நாடுகளில் கிடைக்காததால், Ultimate Multisite பயனர்கள் எங்கள் プラгіன்-ஐ திறம்படப் பயன்படுத்துவதைத் தடுக்கும் அல்லது கட்டுப்படுத்தும் நிலையில், நாங்கள் ஒரு **add-on-ஐ உருவாக்கி _WooCommerce_-ஐ ஒருங்கிணைக்கச் செய்துள்ளோம்**.
+
+_WooCommerce_ என்பது மிகவும் பிரபலமான ஒரு eCommerce プラгіன். உலகெங்கிலும் உள்ள டெவலப்பர்கள் இதற்கு வெவ்வேறு கட்டண நுழைவாயிலிகளை (payment gateways) ஒருங்கிணைக்க add-on-களை உருவாக்கியுள்ளனர். Ultimate Multisite பில்லிங் அமைப்பில் நீங்கள் பயன்படுத்தக்கூடிய கட்டண நுழைவாயிலிகளை நீட்டிக்க இதை நாங்கள் பயன்படுத்திக் கொண்டோம்.
+
+## Setting It Up
+
+முதலில், நீங்கள் WooCommerce Integration add-on-ஐ நிறுவ வேண்டும். இது **உரிமம் பெற்ற பயனர்களுக்கு இலவசம்**. இதை நிறுவ, உங்கள் super admin dashboard-ல் Ultimate Multisite-ஐ கிளிக் செய்து **Add-ons** என்பதைத் தேர்ந்தெடுக்கவும்.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+இங்கே அனைத்து Ultimate Multisite add-on-களையும் நீங்கள் காணலாம். **Ultimate Multisite: WooCommerce Integration** add-on-ஐ கிளிக் செய்யவும்.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+add-on விவரங்களுடன் ஒரு சாளரம் (window) தோன்றும். நீங்கள் **Install Now** என்பதைக் கிளிக் செய்தால் போதும்.
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+நிறுவல் முடிந்த பிறகு, நீங்கள் プラгіன் பக்கத்திற்கு (plugins page) திருப்பி விடப்படுவீர்கள். இங்கே, **Network Activate** என்பதைக் கிளிக் செய்தால், _WooCommerce_ add-on உங்கள் நெட்வொர்க்கில் செயல்படுத்தப்படும்.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+செயல்படுத்திய பிறகு, உங்கள் இணையதளத்தில் இன்னும் WooCommerce プラгіன் நிறுவப்பட்டு செயல்படுத்தப்படவில்லை என்றால், **உங்களுக்கு ஒரு நினைவூட்டல் (reminder) கிடைக்கும்**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+நிறுவப்பட்ட பிறகு, Ultimate Multisite கட்டண அமைப்புகளின் (payments settings) கீழ் நீங்கள் ஒரு கூடுதல் விருப்பத்தைக் காண்பீர்கள். அங்கிருந்து நீங்கள் _WooCommerce_ விருப்பத்தை **enable** செய்யலாம்.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+இங்கே, பிரதான தளத்தில் (front end) காட்டப்படும் display name மற்றும் உங்கள் பயனர்களை checkout flow-ல் வழிநடத்த உதவும் வழிமுறைகள் போன்ற சில அடிப்படை அமைப்புகளை நீங்கள் கட்டமைக்கலாம். பின்னர், நீங்கள் உங்கள் **பிரதான தளத்தின் _WooCommerce_ அமைப்புகளுக்குச் (settings)** சென்று பயன்படுத்த விரும்பும் கட்டண நுழைவாயிலியை (payment gateway) செயல்படுத்தி கட்டமைக்கலாம்.
+
+## How to manage the payment
+
+WooCommerce Integration, எங்கள் **Manual Gateway** செயல்படும் விதத்தைப் போலவே செயல்படுகிறது. இதன் குறைபாடு என்னவென்றால், ஒவ்வொரு கட்டணமும் பில்லிங் காலத்தின் முடிவிலும் கைமுறையாக (manually) செலுத்தப்பட வேண்டும். செயல்முறை எப்படி வேலை செய்கிறது என்பதைக் கீழே காணலாம்:
+
+  * பயனரின் பில்லிங் சுழற்சி முடிந்தவுடன், உறுப்பினர் தற்காலிகமாக **நிறுத்தப்படும் (on hold)**. அதே நேரத்தில், உங்கள் நெட்வொர்க்கின் பிரதான தளத்தில் _WooCommerce_ நிறுவலில் ஒரு order உருவாக்கப்படும்.
+
+  * பயனர்களுக்கு பணம் செலுத்துவதற்கான இணைப்பத்துடன் (link) ஒரு invoice மின்னஞ்சல் மூலம் அனுப்பப்படும் (இந்த இணைப்பு அவர்களின் subsite dashboard-ல் உள்ள பில்லிங் வரலாற்றிலும் தோன்றும்). அந்த இணைப்பு பயனரை _**WooCommerce**_ **checkout** பக்கத்திற்கு திருப்பி விடுமாறும், அங்கு பணம் செலுத்த, **கிடைக்கக்கூடிய _WooCommerce_ நுழைவாயிலிகளில் (available _WooCommerce_ gateways)** ஒன்றைத் தேர்வு செய்ய பயனர்கள் முடியும்.
+
+  * பணம் பெறப்பட்டவுடன், உறுப்பினர் **புதுப்பிக்கப்படும் (renewed)**, பணம் Ultimate Multisite-ல் பதிவு செய்யப்படும், மேலும் order முடிக்கப்பட்டதாக (complete) அமைக்கப்படும்.
+
+### Some Important Notes:
+
+  * Ultimate Multisite-ன் இயல்புநிலை செயல்பாடு (default functionality) இந்த ஒருங்கிணைப்பு வடிவத்துடன் இன்னும் வேலை செய்கிறது. உதாரணமாக, **Subscription Management** திரையிலிருந்து **பணம் திரும்பப் பெறுதல் (issuing refunds)** என்பது, தேர்ந்தெடுக்கப்பட்ட கட்டண முறையைப் பயன்படுத்தி பணம் திரும்பப் பெற WooCommerce உடன் தொடர்பு கொள்ளும்.
+
+  * Ultimate Multisite: WooCommerce Integration செயல்பட WP-Cron-ஐ நம்பியுள்ளது. இது பெரும்பாலான நேரங்களில் நன்றாக வேலை செய்கிறது, ஆனால் தளத்தில் குறைந்த போக்குவரத்து (low traffic) இருந்தால், cron திட்டமிடப்பட்ட நிகழ்வுகளைச் சரிபார்க்க தூண்டப்படாது, இதனால் நிகழ்வு தவறவிடப்பட்டு, செயலாக்க தாமதத்தை (execution delays) ஏற்படுத்தக்கூடும்.
+
+## Woocommerce Subscriptions Plugin
+
+ஒவ்வொரு மாதமும் கைமுறையாக பணம் செலுத்துவது இறுதிப் பயனர்களுக்கு உகந்ததல்ல, ஏனெனில் ஒரு சந்தா ஒவ்வொரு பில்லிங் சுழற்சியிலும் தானாகவே மீண்டும் வர வேண்டும் என்று எதிர்பார்க்கப்படுகிறது. எனவே, உங்கள் இறுதிப் பயனர்களுக்கு பரிவர்த்தனையை எளிதாக்க, WooCommerce Integration add-on ஆனது **WooCommerce Subscriptions プラгіன்-ஆல் ஆதரவளிக்க** வடிவமைக்கப்பட்டுள்ளது.
+
+நீங்கள் செய்ய வேண்டியதெல்லாம் [Woocommerce Subscriptions プラгіன்](https://woocommerce.com/products/woocommerce-subscriptions/) என்பதை **நிறுவி** அதை உங்கள் **பிரதான தளத்தில் (main site)** **செயல்படுத்த வேண்டும் (activated)**. பின்னர் Ultimate Multisite கட்டண அமைப்புகளுக்குச் சென்று **ஒருங்கிணைப்பை இயக்கவும் (enable the integration)**.
+
+அவ்வளவுதான். உங்கள் இறுதிப் பயனர்கள் இனி தங்கள் பில்லிங் சுழற்சியின் முடிவில் கைமுறையாக பணம் செலுத்த வேண்டியதில்லை.
+
+உங்கள் பிரதான தளத்தில் _WooCommerce_ இன் கீழ் ஒரு order உருவாக்கப்படுவதைத் தவிர, இது ஒவ்வொரு கணக்கிற்கும் ஒரு சந்தாவையும் உருவாக்கும்.

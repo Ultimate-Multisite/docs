@@ -1,0 +1,100 @@
+---
+title: Çoklu Ağ
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork eklentisi, Ultimate Multisite platformunuzu güçlü bir multinetwork işlevselliğiyle genişletir. Bu eklenti, müşterilerinizin yalnızca bireysel siteleri değil, tüm WordPress multisite ağlarını satın almasına ve yönetmesine olanak tanır.
+
+## Temel Özellikler
+
+* **Ağ Kurulumu (Network Provisioning)**: Müşterileriniz için eksiksiz WordPress multisite ağlarını otomatik olarak oluşturur ve yapılandırır.
+* **Ağ Şablonları (Network Templates)**: Müşterilerin kayıt olmadan önce önceden hazırlanmış bir ağ şablonunu incelemesine, önizlemesine ve seçmesine izin verir.
+* **Ağ Yönetimi (Network Management)**: Multinetwork ortamları için tam yönetim yetenekleri sunar.
+* **İzole Ağlar (Isolated Networks)**: Her müşteri ağı, kendi veritabanı tabloları ve yapılandırması ile bağımsız olarak çalışır.
+* **Ağlar Arası SSO (Cross-Network SSO)**: Müşterilerin alt ağlarına sihirli bağlantı (magic-link) kimlik doğrulaması ile sorunsuz erişim sağlamasını sağlar.
+* **Ölçeklenebilir Mimari (Scalable Architecture)**: Optimize edilmiş kaynak tahsisi ile birden fazla ağı verimli bir şekilde yönetir.
+* **Entegrasyon (Integration)**: Ultimate Multisite'ın abonelik ve faturalandırma sistemleriyle sorunsuz bir şekilde entegre olur.
+
+## Kullanım Senaryoları
+
+* **Beyaz Etiketli Hosting (White Label Hosting)**: Müşterilerinize kendi markalı multisite ağlarını sunun.
+* **Ajans Çözümleri (Agency Solutions)**: Ajansların tek bir platformdan birden fazla müşteri ağını yönetmesini sağlayın.
+* **Kurumsal Dağıtımlar (Enterprise Deployments)**: Karmaşık çoklu ağ gereksinimleri olan büyük kuruluşları destekleyin.
+* **Eğitim Platformları (Education Platforms)**: Farklı okullar veya departmanlar için ayrı ağlar oluşturun.
+
+## Gereksinimler
+
+* Ultimate Multisite 2.0.0 veya üzeri
+* WordPress Multisite kurulumu
+* PHP 7.4 veya üzeri
+* MySQL 5.6 veya üzeri
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-multinetwork` dizinine yükleyin.
+2. WordPress'te 'Plugins' ekranı üzerinden eklentiyi etkinleştirin.
+3. Multinetwork ayarlarını Ultimate Multisite → Settings üzerinden yapılandırın.
+
+## Ağ Şablonları (Network Templates)
+
+Sürüm 1.3.0, yeni ağlar satın alan müşteriler için bir şablon keşif ve seçim akışı ekler. Her yeni müşteri ağının hazırlanan bir yapıdan, tasarımdan, içerik kütüphanesinden veya sektöre özel bir kurulumdan başlamasını istediğinizde ağ şablonlarını kullanın.
+
+### Şablon Önizleyici (Template previewer)
+
+Ağ şablonu önizleyicisi, müşterilerin ödeme yapmadan önce mevcut şablonları incelemesine olanak tanır. Her şablon, canlı bir önizleme panelinde açılabilir, böylece müşteriler bir ağ satın almadan önce düzenleri ve içerikleri karşılaştırabilirler.
+
+Müşterilere yardımcı olmak için önizleyiciyi kullanın:
+
+* Mevcut her ağ şablonunun görünümünü ve yapısını incelemek
+* Satın alma akışından ayrılmadan birden fazla şablonu karşılaştırmak
+* Kayıt olmadan önce kullanım senaryolarına en uygun şablonu seçmek
+
+Şablon adlarını ve açıklamalarını müşteri dostu tutun. Önizleyici, müşterilerin ajans ağları, okul ağları, franchise ağları veya beyaz etiketli hosting paketleri gibi amaçlanan kullanım senaryolarını anlayabileceği durumlarda en kullanışlıdır.
+
+### Ödeme Sırasındaki Şablon Seçici (Template picker at checkout)
+
+Şablon seçici, kayıt sırasında ödeme akışına bir alan olarak eklenebilir. Yapılandırıldığında, müşteriler ödeme sırasında istediği ağ şablonunu seçer ve yeni ağları kurulduğunda seçilen şablon kullanılır.
+
+Bir ödeme akışında seçiciyi kullanmak için:
+
+1. Şablon olarak sunmak istediğiniz ağları hazırlayın.
+2. İlgili kayıt veya ödeme formunda Multinetwork şablon seçici alanını etkinleştirin.
+3. Hangi şablonların o ödeme akışı için mevcut olması gerektiğini seçin.
+4. Ödeme akışını yayınlayın ve seçilen şablonun yeni ağa uygulandığını doğrulamak için bir kayıt testi yapın.
+
+Bir ödeme akışı yalnızca tek bir ağ ürünü sunuyorsa, seçici hala rehberli bir başlangıç adımı olarak faydalı olabilir. Çoklu plan hunileri (multi-plan funnels) için, yalnızca seçilen ürün veya planla uyumlu şablonları gösterin.
+
+## Ağlar Arası Sihirli Bağlantı SSO (Cross-Network Magic Link SSO)
+
+Ağlar arası sihirli bağlantı SSO, müşterilerin birincil hesap alanları ile alt ağları arasında manuel olarak tekrar giriş yapmadan geçiş yapmasını sağlar. Bir müşteri ağlar arası bir erişim bağlantısını takip ettiğinde, Ultimate Multisite zaman sınırlı bir sihirli bağlantı oluşturur ve müşteriyi hedef ağda kimlik doğrulaması yapar.
+
+Bu, birden fazla ağ yöneten veya satın aldıktan hemen sonra yeni klonlanmış şablon ağlarına erişmesi gereken müşteriler için deneyimi iyileştirir.
+
+Yönetici kontrol listesi:
+
+* WordPress multisite kurulumu genelinde Multinetwork eklentisinin etkin olduğundan emin olun.
+* Müşterilere ağlar arası bağlantılar sunulmadan önce doğru ağ erişimine sahip olduklarından emin olun.
+* Sihirli bağlantıların amaçlanan hedef ağa yönlendirilmesi için ağ alan adlarının ve eşlenmiş alan adlarının doğru yapılandırıldığından emin olun.
+* Ağ, alan adı veya ödeme ayarlarını değiştirdikten sonra müşteri kontrol panelini ve herhangi bir ödeme sonrası erişim düğmesini test edin.
+
+Sihirli bağlantılar giriş bağlantıları olarak ele alınmalıdır. Sorunsuz müşteri erişimi için tasarlanmıştır ve amaçlanan oturum dışında iletilmemeli veya yeniden kullanılmamalıdır.
+
+## Sıkça Sorulan Sorular
+
+### Multinetwork nedir?
+
+Multinetwork, tek bir WordPress kurulumunda birden fazla bağımsız multisite ağı çalıştırmanıza olanak tanıyan bir WordPress özelliğidir.
+
+### Bu, normal multisiteden nasıl farklıdır?
+
+Normal multisite, tek bir ağ içinde birden fazla siteye izin verir. Multinetwork ise, her biri kendi sitelerine sahip, ancak hepsi tek bir WordPress kurulumu içindeki birden fazla ağa izin verir.
+
+### Bu özel sunucu yapılandırması gerektirir mi?
+
+Evet, multinetwork özel sunucu kurulumu ve yapılandırması gerektirir. Detaylı kurulum talimatları için lütfen dokümantasyona başvurun.

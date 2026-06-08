@@ -1,0 +1,144 @@
+---
+title: WebLLM కోసం అత్యుత్తమ AI కనెక్టర్
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM మీ WordPress multisite networkకి browser-native AI inference సామర్థ్యాన్ని తీసుకువస్తుంది. ఇది WebLLM మరియు MLC engine ఉపయోగించి పెద్ద భాషా నమూనాలను (large language models) పూర్తిగా browserలోనే నడుపుతుంది — అంటే API keys అవసరం లేదు, బయటి కాల్స్ అవసరం లేదు, మరియు డేటా ఎప్పుడూ యూజర్ పరికరం నుండి బయటకు పోదు.
+
+## ముఖ్య లక్షణాలు (Key Features)
+
+- **Browser-side inference**: LLM అనేది WebLLM/MLC ద్వారా స్థానికంగా (locally) సందర్శకుడి browserలోనే నడుస్తుంది — సర్వర్ GPU అవసరం లేదు
+- **Floating chat widget**: లాగిన్ అయిన యూజర్లు ఫ్రంట్ ఎండ్ నుండి నేరుగా browser-side LLM కి ప్రశ్నలు అడగవచ్చు
+- **Admin-bar status indicator**: WebLLM engine యొక్క రియల్-టైమ్ స్టేటస్ WordPress admin bar లో కనిపిస్తుంది
+- **SharedWorker runtime**: బహుళ browser tabs లు GPU వనరుల కోసం పోరాడకుండా, ఒకే GPU సెషన్‌ను పంచుకుంటాయి
+- **apiFetch middleware**: AI Client SDK pattern కు సరిపోయే WordPress REST requests లు స్వయంచాలకంగా స్థానిక WebLLM broker కు రూట్ చేయబడతాయి — దీనివల్ల loopback HTTP round-trip అవసరం లేదు
+- **Widget settings UI**: చాట్ విడ్జెట్‌ను ఆన్/ఆఫ్ చేయడానికి మరియు ఆటో-ప్రాంప్ట్ ప్రవర్తనను కాన్ఫిగర్ చేయడానికి కనెక్టర్ ప్యానెల్ సెట్టింగ్‌లు
+- **IndexedDB cache**: Model weight డౌన్‌లోడ్‌లు, డిఫాల్ట్ Cache API path ని విచ్ఛిన్నం చేసే CDN redirects ల నుండి కూడా రక్షించబడతాయి
+- **wpai filter integration**: AI Experiments ఫీచర్, కాన్ఫిగర్ చేయబడితే, browser engine కు రూట్ అయ్యేలా `wpai_preferred_text_models` filter లో హుక్ అవుతుంది
+
+## అవసరాలు (Requirements)
+
+- WordPress 5.3 లేదా అంతకంటే ఎక్కువ
+- PHP 7.4 లేదా అంతకంటే ఎక్కువ
+- Ultimate Multisite plugin (యాక్టివేట్ చేయబడింది)
+- WebGPU సపోర్ట్ ఉన్న browser (Chrome 113+, Edge 113+, లేదా WebGPU ఎనేబుల్ చేయబడిన Firefox Nightly)
+
+## ఇన్‌స్టాలేషన్ (Installation)
+
+1. అడ్-ఆన్ ఫైళ్లను మీ `/wp-content/plugins/` డైరెక్టరీలోకి అప్‌లోడ్ చేయండి
+2. WordPress లోని 'Plugins' మెనూ ద్వారా ప్లగిన్‌ను యాక్టివేట్ చేయండి
+3. అడ్-ఆన్‌ను కాన్ఫిగర్ చేయడానికి **Ultimate Multisite → AI Connector**కి వెళ్లండి
+
+## Floating Chat Widget
+
+ఈ ఫ్లోటింగ్ చాట్ విడ్జెట్, లాగిన్ అయిన ఏ యూజర్‌నైనా, వారు ఉన్న పేజీని విడిచిపెట్టకుండానే, నేరుగా మీ ఫ్రంట్ ఎండ్ నుండి browser-side LLM తో ఇంటరాక్ట్ అవ్వడానికి అనుమతిస్తుంది.
+
+### ఇది ఏమి చేస్తుంది (What It Does)
+
+ఇది ఎనేబుల్ చేయబడినప్పుడు, లాగిన్ అయిన యూజర్ల కోసం ప్రతి ఫ్రంట్-ఎండ్ పేజీ మూలలో ఒక చాట్ ఐకాన్ కనిపిస్తుంది. ఈ ఐకాన్‌పై క్లిక్ చేయడం వలన ఒక చాట్ ప్యానెల్ ఓపెన్ అవుతుంది, ఇక్కడ యూజర్ ప్రాంప్ట్‌లు టైప్ చేయవచ్చు మరియు స్థానికంగా నడుస్తున్న WebLLM model నుండి ప్రతిస్పందనలు పొందవచ్చు. model పూర్తిగా browserలోనే నడుస్తుంది కాబట్టి, ప్రతిస్పందనలు ప్రైవేట్‌గా ఉంటాయి మరియు ఏ సర్వర్-సైడ్ ప్రాసెసింగ్ కూడా అవసరం లేదు.
+
+### Admin-Bar Status Indicator
+
+WordPress admin bar లో WebLLM engine యొక్క ప్రస్తుత స్థితిని చూపించే ఒక status indicator ఉంటుంది:
+
+| Status | అర్థం (Meaning) |
+|--------|---------|
+| **Loading** | MLC engine ప్రారంభమవుతోంది లేదా model weights డౌన్‌లోడ్ అవుతున్నాయి |
+| **Ready** | model లోడ్ చేయబడి, inference కోసం అందుబాటులో ఉంది |
+| **Idle** | engine లోడ్ చేయబడింది కానీ SharedWorker tab యాక్టివ్‌గా లేదు |
+| **Error** | engine ప్రారంభించడానికి విఫలమైంది — వివరాల కోసం browser consoleని తనిఖీ చేయండి |
+
+ఈ indicator పేజీని reload చేయకుండానే రియల్ టైమ్‌లో అప్‌డేట్ అవుతుంది.
+
+### విడ్జెట్‌ను ఎనేబుల్ లేదా డిసేబుల్ చేయడం ఎలా (How to Enable or Disable the Widget)
+
+1. network admin లో **Ultimate Multisite → AI Connector**కి వెళ్లండి
+2. **Connector** ప్యానెల్‌ను కనుగొనండి
+3. **Enable floating chat widget** ను ఆన్ లేదా ఆఫ్ చేయండి
+4. సెట్టింగ్‌లను సేవ్ చేయండి
+
+network administrator ఆ సామర్థ్యాన్ని (capability) ఇచ్చినట్లయితే, యూజర్ సొంత admin నుండి కూడా విడ్జెట్‌ను ఎనేబుల్ లేదా డిసేబుల్ చేయవచ్చు.
+
+## Widget Settings
+
+**Ultimate Multisite → AI Connector** లోని Connector ప్యానెల్‌లో ఫ్లోటింగ్ చాట్ విడ్జెట్ కోసం ఈ క్రింది సెట్టింగ్‌లు ఉంటాయి:
+
+### Enable Floating Chat Widget
+
+ఇది మొత్తం network కోసం చాట్ విడ్జెట్‌ను ఆన్ లేదా ఆఫ్ చేస్తుంది. ఇది డిసేబుల్ చేయబడినప్పుడు, యూజర్ పాత్ర (user role) ఏదైనా సరే, ఏ ఫ్రంట్-ఎండ్ పేజీలోనూ విడ్జెట్ కనిపించదు.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+యూజర్ విడ్జెట్‌ను తెరిచినప్పుడు అది ఆటోమేటిక్‌గా ప్రాంప్ట్‌ను పంపాలా వద్దా అని నియంత్రిస్తుంది.
+
+| Option | ప్రవర్తన (Behaviour) |
+|--------|-----------|
+| **Disabled** | విడ్జెట్ ఖాళీ చాట్‌తో ఓపెన్ అవుతుంది — యూజర్ సొంత ప్రాంప్ట్‌ను టైప్ చేస్తారు |
+| **Page context** | విడ్జెట్ ప్రస్తుత పేజీ యొక్క శీర్షిక (title) మరియు కంటెంట్ ఆధారంగా ప్రీ-ఫిల్డ్ ప్రాంప్ట్‌తో ఓపెన్ అవుతుంది |
+| **Custom prompt** | విడ్జెట్ కింద ఉన్న ఫీల్డ్‌లో మీరు నిర్వచించిన కస్టమ్ ప్రాంప్ట్‌తో ఓపెన్ అవుతుంది |
+
+**Custom prompt** కి సెట్ చేసినప్పుడు, డిఫాల్ట్ ప్రాంప్ట్ టెక్స్ట్‌ను ఎంటర్ చేయగలిగే అదనపు టెక్స్ట్ ఫీల్డ్ కనిపిస్తుంది. ఇది ప్రాథమిక template variables లను సపోర్ట్ చేస్తుంది:
+
+- `{site_name}` — ప్రస్తుత సైట్ పేరు
+- `{page_title}` — ప్రస్తుత పేజీ శీర్షిక
+- `{user_display_name}` — లాగిన్ అయిన యూజర్ యొక్క display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Version 1.1.0 MLC engine కోసం SharedWorker runtime ను పరిచయం చేసింది. గతంలో, WebLLM ఉపయోగించే ప్రతి browser tab దాని స్వంత model యొక్క instance ను లోడ్ చేసుకునేది, ఇది GPU memory కోసం పోటీ పడటంతో, పరిమిత VRAM ఉన్న పరికరాలపై పనితీరు సమస్యలకు దారితీసేది.
+
+SharedWorker runtime తో, ఒక tab engine host గా పనిచేస్తుంది. మిగిలిన అన్ని tabs లు ఆ single instance ద్వారా worker యొక్క message channel ద్వారా కమ్యూనికేట్ చేస్తాయి. ఫలితం:
+
+- అన్ని ఓపెన్ tabs లలో పంచుకోబడిన ఒకే GPU session
+- model లోడ్ అయిన తర్వాత వేగవంతమైన ప్రతిస్పందనలు (పునరావృత ప్రారంభీకరణ లేదు)
+- పరికరంలో తక్కువ peak memory వినియోగం
+
+SharedWorker అనేది యూజర్లకు కనిపించదు (transparent). admin-bar status indicator ఎల్లప్పుడూ పంచుకోబడిన engine యొక్క స్థితిని ప్రతిబింబిస్తుంది, వ్యక్తిగత tab ని కాదు.
+
+## apiFetch Middleware
+
+ఈ అడ్-ఆన్, AI Client SDK pattern కు సరిపోయే WordPress REST API requests లను అడ్డగించే (intercept) ఒక `apiFetch` middleware ను ఇన్‌స్టాల్ చేస్తుంది. సర్వర్‌కు loopback HTTP request చేయడం బదులు, ఈ requests లు SharedWorker లో నడుస్తున్న స్థానిక WebLLM broker కు నేరుగా రూట్ చేయబడతాయి.
+
+దీని అర్థం ఏమిటంటే, AI endpoints లను కాల్ చేయడానికి ప్రామాణిక WordPress `apiFetch` API ని ఉపయోగించే plugins మరియు themes లు, కోడ్ మార్పులు అవసరం లేకుండా, అందుబాటులో ఉన్నప్పుడు browser-side model నుండి స్వయంచాలకంగా ప్రయోజనం పొందుతాయి.
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — WebLLM browser engine ను preferred text model గా రిజిస్టర్ చేయండి. engine కాన్ఫిగర్ చేయబడి మరియు అందుబాటులో ఉన్నప్పుడు, అడ్-ఆన్ ఈ filter లో ఆటోమేటిక్‌గా హుక్ అవుతుంది.
+- `ultimate_webllm_widget_enabled` — నిర్దిష్ట యూజర్ లేదా సందర్భం కోసం విడ్జెట్ ఎనేబుల్ స్థితిని ఓవర్‌రైడ్ చేయండి. `true` లేదా `false` తిరిగి ఇవ్వండి.
+- `ultimate_webllm_auto_prompt` — ఇది విడ్జెట్‌కు పంపబడే ముందు ఆటో-ప్రాంప్ట్ టెక్స్ట్‌ను మార్చండి. ఇది ప్రాంప్ట్ స్ట్రింగ్ మరియు ప్రస్తుత `WP_Post` object ను అందుకుంటుంది.
+
+## Troubleshooting
+
+### చాట్ విడ్జెట్ కనిపించడం లేదు
+
+- యూజర్ లాగిన్ అయ్యారో లేదో నిర్ధారించుకోండి — విడ్జెట్ కేవలం authenticated యూజర్లకు మాత్రమే చూపబడుతుంది
+- Connector ప్యానెల్‌లో **Enable floating chat widget** ఆన్ చేయబడిందో లేదో తనిఖీ చేయండి
+- యూజర్ యొక్క browser WebGPU ను సపోర్ట్ చేస్తుందో లేదో ధృవీకరించండి (పైన అవసరాలు చూడండి)
+
+### admin-bar indicator లో "Error" కనిపిస్తుంది
+
+browser developer console (F12) ను తెరవండి మరియు WebLLM-సంబంధిత లోపాలను (errors) చూడండి. సాధారణ కారణాలు:
+
+- browser WebGPU ను సపోర్ట్ చేయదు
+- Model weight డౌన్‌లోడ్ విఫలమైంది — నెట్‌వర్క్ కనెక్టివిటీని తనిఖీ చేయండి మరియు browser developer tools (Application → IndexedDB) లో IndexedDB cache ను క్లియర్ చేయడానికి ప్రయత్నించండి
+- ఒక browser extension SharedWorker ని బ్లాక్ చేస్తోంది
+
+### ప్రతిసారీ Model weights డౌన్‌లోడ్ అవుతున్నాయి
+
+model weights లు CDN redirects ల నుండి రక్షించబడటానికి అడ్-ఆన్ IndexedDB ని cache backend గా ఉపయోగిస్తుంది. ప్రతి సందర్శనలో weights మళ్లీ డౌన్‌లోడ్ అవుతుంటే, IndexedDB అనేది browser privacy setting లేదా extension ద్వారా క్లియర్ కావడం లేదని తనిఖీ చేయండి.
+
+## Changelog
+
+పూర్తి version చరిత్ర కోసం [Changelog](./changelog) చూడండి.

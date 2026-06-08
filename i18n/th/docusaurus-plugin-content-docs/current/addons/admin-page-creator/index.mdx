@@ -1,0 +1,144 @@
+---
+title: ตัวสร้างหน้าผู้ดูแลระบบ
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Content
+Admin Page Creator ช่วยให้คุณสามารถเพิ่มหน้า Admin และหน้าย่อยใหม่ ๆ ภายในแดชบอร์ด (dashboard) ของ WordPress ได้อย่างง่ายดาย คุณสามารถใช้เครื่องมือนี้เพื่อสร้างหน้าต้อนรับ (welcome page) หรือหน้าบทเรียน (tutorial page) ซึ่งสามารถทำหน้าที่เป็นหน้าสำหรับลงจอด (landing page) สำหรับผู้ใช้ใหม่ได้ คุณสามารถใช้ page builder เช่น Beaver Builder, Elementor, Brizy, และ Oxygen ในการออกแบบหน้าต่าง ๆ ได้อย่างราบรื่น
+
+นอกจากนี้ยังรองรับการใส่ HTML, CSS, และ JavaScript แบบกำหนดเอง รวมถึงการควบคุมการเข้าถึง (access control) ตามแผน (plan) และบทบาทของผู้ใช้ (user role) อีกด้วย!
+
+## Features
+* รองรับ Custom HTML และ CSS
+* รองรับ JavaScript
+* โหมดเนื้อหา PHP (PHP Content Mode)
+* การอนุญาตตามบทบาทของผู้ใช้ (Permission based on User role)
+* รองรับ Page builders
+
+## Documentation
+[Creating Custom Admin Pages and Sub-pages using Multisite Ultimate: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installation
+
+1. อัปโหลด **ultimate-multisite-admin-page-creator** ไปยังไดเรกทอรี **/wp-content/plugins/**
+2. เปิดใช้งานปลั๊กอินผ่านเมนู **Plugins** ใน Network Admin ของ WordPress
+
+## Usage Guide
+
+แม้ว่า WordPress จะทำให้การเพิ่มเนื้อหาในส่วนหน้า (front end) ของเว็บไซต์เป็นเรื่องง่ายมาก แต่การสร้างหน้าและหน้าย่อยในส่วน Admin นั้นจำเป็นต้องใช้ทักษะการเขียนโค้ดพื้นฐาน Ultimate Multisite: Admin Page Creator จึงมีเป้าหมายที่จะนำความง่ายในการใช้งานแบบเดียวกับส่วนหน้ามาสู่ส่วนหลังบ้าน (back end) ของเว็บไซต์ในเครือข่ายของคุณ
+
+## Why use Admin Page Creator?
+
+บางทีคุณอาจต้องการเสนอหน้าเฉพาะบนแผงควบคุม (admin panel) ของลูกค้าของคุณ เช่น หน้าบทเรียน หรืออาจต้องการเพิ่มหน้าที่มีคำถามที่พบบ่อย (FAQs) และวิดเจ็ตติดต่อ ความเป็นไปได้กับ Admin Page Creator นั้นไม่มีที่สิ้นสุด และนี่คือสิ่งที่เราจะมาสำรวจในบทช่วยสอนวันนี้
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_ตอนนี้สามารถสร้างหน้าบทเรียนพร้อมเพลย์ลิสต์ YouTube แบบฝังได้แล้ว!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_นี่คือผลลัพธ์สุดท้ายบนแผงควบคุม (Dashboard Panel) ของผู้ใช้_
+
+## Creating your first Custom Admin Page
+
+หลังจากติดตั้งและเปิดใช้งาน Ultimate Multisite: Admin Page Creator แล้ว ให้ไปที่เมนู Network Admin ของคุณและเลือก Admin Pages
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_รายการ Custom Admin Pages บน Network Admin_
+
+คุณจะเห็นรายการหน้า Admin ทั้งหมดที่คุณสร้างมาจนถึงตอนนี้ (เนื่องจากเป็นการเข้าชมครั้งแรก รายการจึงว่างเปล่า) จากนั้นคลิก **Add new Admin Page** คุณจะถูกนำไปยังหน้าแก้ไข Admin Page
+
+## The elements of a Custom Admin Page
+
+ในหน้าแก้ไข Admin Page คุณจะมีตัวเลือกมากมายในการปรับแต่งหน้าของคุณ
+
+### Page Title
+
+นี่คือชื่อที่จะแสดงที่ด้านบนของหน้า ไม่ใช่ป้ายกำกับในเมนู Admin
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_ป้อนชื่อหน้า (Page Title)_
+
+### Content Type Selector
+
+Ultimate Multisite: Admin Page Creator ให้ตัวเลือกสองแบบสำหรับเนื้อหาของหน้า: คุณสามารถใช้ WYSIWYG editor ของ WordPress แบบค่าเริ่มต้น หรือสลับไปใช้ HTML editor
+
+หากคุณไม่คุ้นเคยกับ HTML ให้ใช้ editor ของ WordPress แบบค่าเริ่มต้น คุณจะสามารถแก้ไขเนื้อหาของหน้าได้เหมือนกับการแก้ไข Post หรือ Page ทั่วไป
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_การใช้ WYSIWYG editor ของ WordPress แบบค่าเริ่มต้น_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_การใช้ตัวเลือก HTML editor พร้อมการเน้นไวยากรณ์ (syntax highlight) และการแจ้งเตือนข้อผิดพลาด_
+
+## Menu Options
+
+ทางด้านข้าง ในกล่องข้อมูล (meta-box) ตัวเลือกทั่วไป (General Options) คุณจะสามารถกำหนดประเภทเมนู ป้ายกำกับ และอื่น ๆ ได้
+
+### Menu Types
+
+หน้า Admin แบบกำหนดเองใหม่ของคุณสามารถมีประเภทเมนูได้สองแบบ: เมนูระดับบนสุด (top-level menu) และเมนูย่อย (submenu)
+
+หน้าเมนูระดับบนสุด ตามชื่อแล้ว จะเพิ่มหน้าที่คุณสร้างขึ้นใหม่เข้าไปในเมนู Admin เคียงข้างหน้าของ WordPress แบบค่าเริ่มต้น
+
+หากคุณเลือกตัวเลือก top-level คุณจะสามารถเลือกลำดับเมนูและไอคอนเมนูได้ด้วย
+
+หากคุณต้องการให้หน้านี้เป็นหน้าเมนูย่อย คุณจะสามารถเลือกหน้าหลัก (parent page) เพื่อแนบหน้านี้ได้ คุณสามารถเพิ่มหน้าแบบกำหนดเองของคุณไปยังหน้า WordPress แบบค่าเริ่มต้น หรือไปยังหน้า Admin แบบกำหนดเองระดับบนสุดของคุณได้
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_ปรับแต่งรายการเมนูสำหรับ Custom Page นี้ได้อย่างสมบูรณ์_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_คุณยังสามารถเพิ่มหน้านี้เป็นเมนูย่อยของหน้าเมนูอื่น ๆ รวมถึงหน้าระดับบนสุดแบบกำหนดเองของคุณเองด้วย_
+
+## Advanced Options
+
+คุณควรจะสามารถเพิ่มเนื้อหาได้หลากหลายประเภทลงในหน้า Admin แบบกำหนดเองของคุณ ซึ่งรวมถึงกฎและไฟล์ CSS, JavaScript, และไลบรารีภายนอกด้วย คุณสามารถทำได้โดยใช้แท็บ Advanced Options
+
+### Custom CSS
+
+ในแท็บ CSS คุณสามารถเพิ่มโค้ด CSS แบบกำหนดเองของคุณเอง รวมถึงนำเข้าไฟล์ CSS จากเว็บไซต์ภายนอก (เช่น CDN, Google Fonts ฯลฯ)
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_รองรับ Custom CSS ด้วย คุณยังสามารถรวมไฟล์สไตล์ภายนอกได้ด้วย!_
+
+### Custom JavaScript
+
+สำหรับ JavaScript ก็เช่นกัน คุณสามารถเพิ่มไลบรารีภายนอกเพื่อใช้กับโค้ด JavaScript แบบกำหนดเองของคุณได้
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_เพิ่มโค้ด JavaScript ของคุณเองได้เลย!_
+
+## Permissions
+
+ใน Advanced Options คุณยังสามารถเลือกได้ว่า Sub-sites ใดบ้างที่จะสามารถเข้าถึงหน้านี้ได้ สิ่งนี้มีประโยชน์หากคุณวางแผนที่จะให้บริการเนื้อหาพิเศษที่แตกต่างกันสำหรับแผน (plan) ที่แตกต่างกัน ตัวอย่างเช่น
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_คุณสามารถควบคุมได้อย่างสมบูรณ์ว่าหน้านี้จะแสดงที่ใด_
+
+**สำคัญ** : ทั้งสองเงื่อนไขต้องเป็นจริงเพื่อให้หน้าแสดงผล นั่นหมายความว่าหากผู้ใช้เป็นลูกค้าของแผนที่กำหนด แต่ไม่มีบทบาทที่เลือก (หรือในทางกลับกัน) หน้านั้นจะไม่ปรากฏบนแผงควบคุมของพวกเขา
+
+## Active
+
+หากคุณต้องการปิดการใช้งาน Admin Page แบบกำหนดเองโดยที่ยังไม่ต้องการลบหรือยุ่งกับสิทธิ์การเข้าถึง เพียงแค่ยกเลิกการเลือกตัวเลือก Active
+
+การปิดใช้งานหน้าระดับบนสุดจะปิดใช้งานหน้าย่อยทั้งหมดที่แนบกับหน้าหลักนั้นโดยอัตโนมัติ
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_ผลลัพธ์สุดท้ายบนแผงควบคุมของผู้ใช้!_

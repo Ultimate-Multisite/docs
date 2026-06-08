@@ -1,0 +1,143 @@
+---
+title: இலவச AI ஏஜென்ட்
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent என்பது ஒரு சுயமாக இயங்கும் WordPress AI உதவியாளர் ஆகும். இது இயல்பான மொழி வழிமுறைகள் மூலம் முழுமையான WordPress தளங்களை திட்டமிட்டு, உருவாக்கி, நிர்வகிக்க முடியும். இது உள்ளடக்க மேலாண்மை முதல் வடிவமைப்பு அமைப்பு தனிப்பயனாக்கம் வரை அனைத்தையும் உள்ளடக்கிய, **திறன்கள் (abilities)** எனப்படும் கட்டமைக்கப்பட்ட தொகுப்பை வெளிப்படுத்துகிறது — இவை ஏஜென்ட் தூண்டக்கூடிய தனித்தனி, சோதிக்கக்கூடிய செயல்பாடுகள். Version 1.9.0 ஆனது உள்ளடக்க உருவாக்கும் திறன்கள், கிளையன்ட்-சைட் ஸ்கிரீன்ஷாட்களின் மூலம் காட்சிப் பக்க ஆய்வு, ஐந்து உள்ளமைக்கப்பட்ட ஏஜென்ட் சுயவிவரங்கள் மற்றும் அணுகல் கட்டுப்பாடு மற்றும் பிராண்டிங்கிற்கான அம்ச கொடிகளை (feature flags) சேர்க்கிறது.
+
+## முக்கிய அம்சங்கள் (Key Features)
+
+- **Abilities system** — உங்கள் WordPress நிறுவலில் ஏஜென்ட் தூண்டக்கூடிய செயல்பாடுகளின் ஒரு மாடுலர், விரிவாக்கக்கூடிய பட்டியல்.
+- **உள்ளடக்க மேலாண்மை (Content Management)** — பதிவுகள் மற்றும் பக்கங்களை உருவாக்குதல் (பக்க வார்ப்புருக்களை ஒதுக்குவது உட்பட), ஒரே அழைப்பில் பல பதிவுகளைத் தொகுத்து உருவாக்குதல், சிறப்பம்சப் படங்களை அமைத்தல் மற்றும் தொடர்பு படிவங்களை உருவாக்குதல்.
+- **காட்சி ஆய்வு (Visual Review)** — நேரடிப் பக்கங்களின் ஸ்கிரீன்ஷாட்களைப் படம்பிடித்தல், முன்பு/பின்னர் நிலைகளை ஒப்பிடுதல் (diff), மேலும் லேஅவுட், டைப்போகிராஃபி, நிறம் மற்றும் அணுகல்தன்மை ஆகியவற்றை உள்ளடக்கிய AI உருவாக்கப்பட்ட வடிவமைப்பு ஆய்வைப் பெறுதல்.
+- **ஐந்து உள்ளமைக்கப்பட்ட ஏஜென்ட்கள் (Five built-in agents)** — Content Writer, Site Builder, Design Studio, Plugin Manager, மற்றும் Support Assistant; இவை Chat header-ல் உள்ள Agent Picker மூலம் மாற்றியமைக்கலாம்.
+- **Feature flags** — பங்கு கட்டுப்பாடுகள் (role restrictions), வெள்ளை-லேபிள் பெயரிடல் (white-label naming), மற்றும் விட்ஜெட் தனிப்பயனாக்கத்திற்காக Settings → Feature Flags-ல் உள்ள அணுகல் கட்டுப்பாட்டு மற்றும் பிராண்டிங் ஸ்விட்சுகள்.
+- **Custom Post Type மேலாண்மை** — மீண்டும் துவக்கினாலும் நிலைத்தன்மையுடன் தனிப்பயன் பதிவு வகைகளை (custom post types) பதிவு செய்தல், பட்டியலிடுதல் மற்றும் நீக்குதல்.
+- **Custom Taxonomy மேலாண்மை** — மீண்டும் துவக்கினாலும் நிலைத்தன்மையுடன் தனிப்பயன் வகைப்பாடுகளை (custom taxonomies) பதிவு செய்தல், பட்டியலிடுதல் மற்றும் நீக்குதல்.
+- **Design System abilities** — தனிப்பயன் CSS-ஐ செருகுதல், தொகுக்கப்பட்ட block வடிவங்களை (block patterns) நிர்வகித்தல், தளத்தின் லோகோவை அமைத்தல் மற்றும் theme.json ப்ரீசெட்களைப் பயன்படுத்துதல்.
+- **Global Styles மேலாண்மை** — வண்ணத் தட்டுகள் (colour palettes), டைப்போகிராஃபி, இடைவெளி (spacing) மற்றும் பலவற்றிற்கான theme.json மதிப்புகளைப் படித்தல் மற்றும் எழுதுதல்.
+- **Navigation Menu மேலாண்மை** — வழிசெலுத்தல் மெனுக்களை (navigation menus) மற்றும் அவற்றின் உருப்படிகளை நிரல் ரீதியாக (programmatically) உருவாக்குதல் மற்றும் புதுப்பித்தல்.
+- **Options Management** — முக்கியமான அமைப்புகளைப் பாதுகாக்க உள்ளமைக்கப்பட்ட பாதுகாப்புப் பட்டியலுடன் (safety blocklist) WordPress விருப்பங்களை (options) படித்தல் மற்றும் எழுதுதல்.
+- **Installable Abilities Registry** — முக்கிய plugin கோப்புகளை மாற்றாமல் கூடுதல் ability தொகுப்புகளைக் கண்டறிந்து செயல்படுத்துதல்.
+- **Site Builder Orchestration v2** — plugin கண்டுபிடிப்பு, முன்னேற்றத்தைக் கண்காணித்தல் மற்றும் பிழை மீட்பு ஆகியவற்றுடன் கூடிய பல-படித் தள உருவாக்கத் திட்டங்கள்.
+- **WP-CLI benchmark command** — CI மற்றும் மாதிரி மதிப்பீட்டிற்காக கட்டளை வரியில் இருந்து ஏஜென்ட் திறமை தரச் சோதனைகளை (benchmark suite) இயக்குதல்.
+
+## தேவைகள் (Requirements)
+
+- WordPress 6.0 அல்லது அதற்கு மேல்
+- PHP 8.1 அல்லது அதற்கு மேல்
+- WordPress Multisite (network-activated) அல்லது single-site நிறுவல்
+- ஒரு செயலில் உள்ள AI provider connector plugin (Anthropic, OpenAI, அல்லது இணக்கமானது)
+
+## நிறுவுதல் (Installation)
+
+1. plugin கோப்புகளை `/wp-content/plugins/gratis-ai-agent` என்ற இடத்தில் பதிவேற்றவும்.
+2. WordPress-ல் உள்ள **Plugins** திரையின் மூலம் plugin-ஐ செயல்படுத்துங்கள்.
+3. **Gratis AI Agent → Settings** என்பதற்குச் சென்று உங்கள் AI provider-ஐ இணைக்கவும்.
+4. (விரும்பினால்) கூடுதல் ability தொகுப்புகளை நிறுவ **Abilities Registry**-ஐ உலாவவும்.
+
+## விரைவான தொடக்கம் (Quick Start)
+
+செயல்படுத்தப்பட்டு, ஒரு AI provider உடன் இணைக்கப்பட்ட பிறகு, WordPress நிர்வாக பக்க பட்டிபகுதியில் உள்ள **Gratis AI Agent** பேனலைத் திறக்கவும். ஒரு இயல்பான மொழி வழிமுறையை உள்ளிடவும், ஏஜென்ட் அது கிடைக்கக்கூடிய திறன்களைப் பயன்படுத்தி தேவையான படிகளைத் திட்டமிட்டு செயல்படுத்தும்.
+
+**உதாரண வழிமுறைகள்:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities கண்ணோட்டம் (Abilities Overview)
+
+திறன்கள் (Abilities) என்பது ஏஜென்ட் செய்யக்கூடிய அணு செயல்பாடுகள் (atomic actions) ஆகும். ஒவ்வொரு திறனும் ஒரு பதிவு செய்யப்பட்ட PHP class ஆகும். இது ஒரு ஸ்கீமாவை (parameters மற்றும் return types) வெளிப்படுத்துகிறது, இதை ஏஜென்ட் இயக்க நேரத்தில் (at runtime) படிக்கிறது. திறன்கள் செயல்பாட்டுப் பகுதிகளாகக் (functional areas) குழுப்படுத்தப்பட்டுள்ளன:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+முழுமையான அளவுரு ஆவணங்கள் மற்றும் பயன்பாட்டு எடுத்துக்காட்டுகளுக்கு [Abilities Reference](./abilities)-ஐப் பார்க்கவும்.
+
+## WP-CLI
+
+Gratis AI Agent ஆனது கட்டளை வரியிலிருந்து (command line) தரச் சோதனைகளை இயக்குவதற்கும், திறன்களை நிர்வகிப்பதற்கும் `wp gratis-ai-agent` என்ற கட்டளை குடும்பத்தை வழங்குகிறது. முழு கட்டளைப் பட்டியலுக்கும் [WP-CLI Reference](./wp-cli)-ஐப் பார்க்கவும்.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## உள்ளமைவு (Configuration)
+
+அனைத்து அமைப்புகளும் WordPress நிர்வாகப் பக்கத்தில் **Gratis AI Agent → Settings** என்ற பிரிவில் உள்ளன:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | செயலில் உள்ள AI provider connector-ஐத் தேர்ந்தெடுத்து உள்ளமைக்கவும் |
+| **Model** | ஏஜென்ட் அமர்வுகளுக்குப் பயன்படுத்த வேண்டிய மொழி மாதிரியைத் தேர்வு செய்யவும் |
+| **Max Tokens** | ஒவ்வொரு கோரிக்கைக்கும் டோக்கன் வரவு (இயல்புநிலை 4096) |
+| **Ability Timeout** | ஒரு தனிப்பட்ட திறன் இயங்கக்கூடிய அதிகபட்ச வினாடிகள் (இயல்புநிலை 30) |
+| **Debug Logging** | ஏஜென்ட் பகுத்தறிவு மற்றும் ability அழைப்புகளை WordPress debug log-ல் பதிவு செய்யவும் |
+
+## Options Management பாதுகாப்புப் பட்டியல் (Options Management Safety Blocklist)
+
+Options Management ability ஆனது, முக்கியமான WordPress விருப்பங்களைப் படிக்கவோ அல்லது எழுதவோ முடியாது என்பதைத் தடுக்கும் உள்ளமைக்கப்பட்ட பாதுகாப்புப் பட்டியலைக் கொண்டுள்ளது. இயல்புநிலைப் பட்டியல் பின்வருவனவற்றை உள்ளடக்கியது:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL விருப்பங்கள் — இவற்றிற்கு ஒரு பிரத்யேக இடம்பெயர்வு கருவியைப் பயன்படுத்தவும்)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (ரகசிய விசைகள்)
+- `active_plugins`, `template` (plugin/theme செயல்படுத்தல் — பிரத்யேக திறன்களைப் பயன்படுத்தவும்)
+- நிறுவப்பட்ட plugin-கள் மூலம் பதிவுசெய்யப்பட்ட கட்டண நுழைவாயில் சான்றுகள் மற்றும் API விசைகள்
+
+கூடுதல் உள்ளீடுகளை `gratis_ai_agent_options_blocklist` filter மூலம் சேர்க்கலாம்.
+
+## Hooks மற்றும் Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — ஒரு ability பதிவு செய்யப்பட்ட பிறகு தூண்டப்படுகிறது, ability class பெயரைப் பெறுகிறது.
+- `gratis_ai_agent_plan_started` — ஒரு site builder திட்டம் செயல்படுத்தத் தொடங்கும் போது தூண்டப்படுகிறது.
+- `gratis_ai_agent_plan_completed` — ஒரு திட்டம் வெற்றிகரமாக முடிந்ததும் தூண்டப்படுகிறது.
+- `gratis_ai_agent_plan_failed` — ஒரு திட்டம் மீட்க முடியாத பிழையை சந்திக்கும் போது தூண்டப்படுகிறது.
+
+### Filters
+
+- `gratis_ai_agent_abilities` — ஏஜென்ட் அதை ஏற்றும் முன் பதிவு செய்யப்பட்ட ability பட்டியலை மாற்றியமைக்கவும்.
+- `gratis_ai_agent_options_blocklist` — விருப்பங்கள் பாதுகாப்புப் பட்டியலை நீட்டிக்க அல்லது குறைக்கவும்.
+- `gratis_ai_agent_benchmark_questions` — மதிப்பீட்டுத் தொகுப்பில் தனிப்பயன் தரச் சோதனை கேள்விகளைச் சேர்க்கவும்.
+- `gratis_ai_agent_plan_plugins` — site plan உருவாக்கும் போது plugin கண்டுபிடிப்புப் பட்டியலை மாற்றியமைக்கவும்.
+
+## ஆதரவு (Support)
+
+ஆதரவு தேவைப்பட்டால், [ultimatemultisite.com](https://ultimatemultisite.com)-க்குச் செல்லவும் அல்லது plugin களஞ்சியத்தில் ஒரு சிக்கலை (issue) உருவாக்கவும்.
+
+## மாற்றப் பதிவுகள் (Changelog)
+
+முழு பதிப்பு வரலாற்றாவதற்கு [Changelog](./changelog)-ஐப் பார்க்கவும்.

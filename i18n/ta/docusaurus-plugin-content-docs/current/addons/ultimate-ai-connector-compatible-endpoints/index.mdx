@@ -1,0 +1,111 @@
+---
+title: பொருத்தமான எண்ட்பாயிண்டுகளுக்கான Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# இணக்கமான Endpoints க்கான Ultimate AI Connector
+
+Ultimate AI Connector for Compatible Endpoints ஆனது, OpenAI-compatible AI provider APIs-ஐ உங்கள் WordPress multisite network உடன் ஒருங்கிணைக்கிறது. பல AI providers-ஐ உள்ளமைக்கலாம் — ஒவ்வொன்றுக்கும் அதன் சொந்த endpoint URL, API key மற்றும் default model இருக்கும். மேலும், ஒரு provider கிடைக்காதபோது, கோரிக்கைகளை தானாகவே மாற்று வழி (automatic fallback) மூலம் வழிநடத்தும்.
+
+## முக்கிய அம்சங்கள்
+
+- **பல வழங்குநர் ஆதரவு (Multi-provider support)**: பல AI provider cards-களைச் சேர்க்கலாம். ஒவ்வொன்றுக்கும் தனித்தனி endpoint URL, API key மற்றும் default model இருக்கும்.
+- **இழுத்து மீண்டும் வரிசைப்படுத்தல் (Drag-to-reorder)**: ஒவ்வொரு card-இன் மீடியிலும் உள்ள grip handle-ஐப் பயன்படுத்தி, வழங்குநர்களை முன்னுரிமை அடிப்படையில் வரிசைப்படுத்தலாம்; கோரிக்கைகள் இந்த வரிசைப்படி வழங்குநர்களைப் பயன்படுத்துகின்றன.
+- **தானியங்கி fallback வழித்தடம் (Automatic fallback routing)**: முதன்மை provider கிடைக்கவில்லை என்றால், கோரிக்கைகள் தானாகவே அடுத்ததாக உள்ளமைக்கப்பட்ட provider-க்கு மாற்று வழி (fallback) மூலம் அனுப்பப்படும்.
+- **ஒவ்வொரு வழங்குநருக்கும் தனித்தனி உள்ளமைவு (Per-provider configuration)**: ஒவ்வொரு provider-ம் அதன் சொந்த credentials மற்றும் model தேர்வுகளுடன் தனித்தனியாக உள்ளமைக்கப்படுகிறது.
+- **Card-அடிப்படையிலான அமைப்புகள் UI**: நிலையான WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider) மூலம் உருவாக்கப்பட்டது.
+- **சேர்ப்பதன் மூலம் தானாக விரிவாக்கம் (Auto-expand on add)**: புதிய provider cards தானாகவே விரிவாக்கப்படும், இதனால் நீங்கள் உடனடியாக விவரங்களை நிரப்ப முடியும்.
+- **ஸ்கிரிப்ட் கேச் உடைத்தல் (Script cache busting)**: பிளUGINம் புதுப்பிக்கப்படும்போது, provider ஸ்கிரிப்ட்கள் கேச் உடைக்கப்பட்டு (cache-busted) சமீபத்திய பதிப்பு ஏற்றப்படுவதை உறுதி செய்கிறது.
+
+## தேவைகள்
+
+- WordPress 5.3 அல்லது அதற்கு மேல்
+- PHP 7.4 அல்லது அதற்கு மேல்
+- Ultimate Multisite plugin (செயல்படுத்தப்பட்டிருக்க வேண்டும்)
+- ஒரு OpenAI-compatible API endpoint (சுயமாக ஹோஸ்ட் செய்யப்பட்டதாகவோ அல்லது மூன்றாம் தரப்பு மூலமாகவோ இருக்கலாம்)
+
+## நிறுவுதல்
+
+1. addon கோப்புகளை உங்கள் `/wp-content/plugins/` கோப்பகத்தில் பதிவேற்றவும்.
+2. WordPress-இல் உள்ள 'Plugins' மெனு மூலம் பிளUGINத்தை செயல்படுத்தவும்.
+3. addon-ஐ உள்ளமைக்க **Ultimate Multisite → AI Connector** என்பதற்குச் செல்லவும்.
+
+## உள்ளமைவு
+
+### பல வழங்குநர் அமைப்பு (Multi-Provider Setup)
+
+இந்த உள்ளமைவு screen ஆனது card-அடிப்படையிலான வடிவமைப்பைப் பயன்படுத்துகிறது. இதில் ஒவ்வொரு card-ம் ஒரு AI provider-ஐக் குறிக்கிறது. உங்களுக்குத் தேவையான அளவு providers-ஐ நீங்கள் சேர்க்கலாம்.
+
+#### ஒரு வழங்குநரைச் சேர்த்தல் (Adding a Provider)
+
+1. network admin-இல் **Ultimate Multisite → AI Connector** என்பதற்குச் செல்லவும்.
+2. **Add Provider** என்பதைக் கிளிக் செய்யவும்.
+3. ஒரு புதிய provider card தோன்றி தானாகவே விரிவாக்கப்படும்.
+4. பின்வரும் provider விவரங்களை நிரப்பவும்:
+   - **Provider Name** — இந்த provider-ஐ அடையாளம் காண ஒரு label (உதாரணமாக: "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — OpenAI-compatible API-இன் அடிப்படை URL (உதாரணமாக: `https://api.openai.com/v1`)
+   - **API Key** — இந்த provider-க்கான உங்கள் API key
+   - **Default Model** — இந்த provider-க்கு இயல்பாகப் பயன்படுத்த வேண்டிய model identifier (உதாரணமாக: `gpt-4o`, `mistral-small`)
+5. **Save Settings** என்பதைக் கிளிக் செய்யவும்.
+
+#### ஒரு வழங்குநரை நீக்குதல் (Removing a Provider)
+
+ஒரு provider card-இல் உள்ள **Remove** பொத்தானைக் கிளிக் செய்வதன் மூலம் அதை நீக்கலாம். மாற்றங்களைச் செயல்படுத்த அமைப்புகளைச் சேமிக்கவும்.
+
+#### வழங்குநர்களை மீண்டும் வரிசைப்படுத்துதல் (Reordering Providers)
+
+எந்த ஒரு provider card-இன் இடது பக்கத்தில் உள்ள grip icon (⣿)-ஐ இழுப்பதன் மூலம் அதை மீண்டும் வரிசைப்படுத்தலாம். இந்த வரிசைதான் fallback முன்னுரிமையை (fallback priority) தீர்மானிக்கிறது: கோரிக்கைகள் முதல் provider-க்கு அனுப்பப்பட்டு, ஒரு கோரிக்கை தோல்வியடைந்தால் அடுத்தடுத்த providers-க்கு மாற்று வழி அனுப்பப்படும்.
+
+### Fallback வழித்தடம் (Fallback Routing)
+
+முதன்மை provider-க்கு அனுப்பப்படும் ஒரு கோரிக்கை தோல்வியடைந்தால் — அது timeout, rate limit அல்லது service outage காரணமாக இருக்கலாம் — connector தானாகவே பட்டியலில் உள்ள அடுத்த provider-உடன் மீண்டும் முயற்சிக்கிறது. ஒரு provider வெற்றி பெறும் வரை அல்லது அனைத்து providers-உம் முயற்சி செய்யப்படும் வரை இது தொடரும்.
+
+| சூழ்நிலை (Scenario) | நடத்தை (Behaviour) |
+|----------|-----------|
+| முதன்மை provider பதிலளித்தால் | கோரிக்கை இயல்பாக வழங்கப்படுகிறது |
+| முதன்மை provider தோல்வியடைந்தால் | அடுத்த provider உடன் கோரிக்கை மீண்டும் முயற்சிக்கப்படுகிறது |
+| அனைத்து providers-உம் தோல்வியடைந்தால் | அழைப்பவருக்கு (caller) பிழை திரும்ப அனுப்பப்படுகிறது |
+
+Fallback என்பது அழைக்கும் plugin அல்லது theme-க்கு வெளிப்படையானது (transparent) — எத்தனை providers முயற்சி செய்யப்பட்டிருந்தாலும், அவை வெற்றிகரமான பதிலையோ அல்லது இறுதி பிழையையோ மட்டுமே அவை பெறும்.
+
+### Provider உள்ளமைவு குறிப்பு (Provider Configuration Reference)
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | இந்த provider-க்கான காட்சி label |
+| Endpoint URL | Yes | OpenAI-compatible API-இன் அடிப்படை URL |
+| API Key | Yes | இந்த provider-க்கான அங்கீகார key |
+| Default Model | Yes | கோரிக்கையில் model குறிப்பிடப்படாதபோது பயன்படுத்தப்படும் model identifier |
+
+## சிக்கல் தீர்க்கும் வழிமுறைகள் (Troubleshooting)
+
+### providers எதுவும் பட்டியலிடப்படவில்லை
+
+சேமித்த பிறகு provider பட்டியல் காலியாக இருந்தால், பின்வருவனவற்றை உறுதிப்படுத்தவும்:
+
+- providers-ஐ சேர்த்த பிறகு நீங்கள் **Save Settings** என்பதைக் கிளிக் செய்துள்ளீர்களா?
+- உங்கள் browser, அமைப்புகள் பக்கத்தை சேமிப்பதைத் தடுத்ததா (JavaScript பிழைகளுக்காக browser console-ஐச் சரிபார்க்கவும்)?
+- பிளUGINம் செயல்படுத்தப்பட்டிருக்கிறதா மற்றும் நீங்கள் network admin screen-இல் இருக்கிறீர்களா?
+
+### அனைத்து providers-க்கும் கோரிக்கைகள் தோல்வியடைகின்றன
+
+- ஒவ்வொரு provider-இன் endpoint URL-ம் உங்கள் சர்வரில் இருந்து அணுகக்கூடியதா என்பதைச் சரிபார்க்கவும் (உங்கள் browser-இல் இருந்து மட்டும் அல்ல).
+- ஒவ்வொரு API key-ம் செல்லுபடியானது மற்றும் காலாவதியாகவில்லை என்பதைச் சரிபார்க்கவும்.
+- அவற்றின் dashboard-இல் provider-இன் rate-limit மற்றும் quota நிலையை மதிப்பாய்வு செய்யவும்.
+- connector-இன் விரிவான பிழைச் செய்திகளைப் பிடிக்க WordPress debug logging (`WP_DEBUG_LOG`) என்பதை இயக்கவும்.
+
+### fallback-க்காக ஒரு provider பயன்படுத்தப்படவில்லை
+
+Drag-to-reorder ஆனது fallback வரிசையை மாற்றுகிறது. fallback கோரிக்கைகளைப் பெற நீங்கள் எதிர்பார்க்கும் provider பட்டியலில் சரியாக வைக்கப்பட்டுள்ளதா மற்றும் அதன் endpoint URL மற்றும் API key சரியானதா என்பதை உறுதிப்படுத்தவும்.
+
+### புதிய provider card தானாக விரிவாக்கப்படவில்லை
+
+Auto-expand செயல்பட உங்கள் browser-இல் JavaScript இயக்கப்பட வேண்டும். card கிளிக் செய்யும் போது விரிவாக்கவில்லை என்றால், browser console-இல் பிழைகளைச் சரிபார்க்கவும். auto-expand செயல்படவில்லை என்றாலும், card header-ஐ கிளிக் செய்வதன் மூலம் card உள்ளடக்கங்கள் எப்போதும் அணுகக்கூடியதாக இருக்கும்.
+
+## Changelog
+
+முழு பதிப்பு வரலாற்றைப் பார்க்க [Changelog](./changelog)-ஐப் பார்க்கவும்.

@@ -1,0 +1,89 @@
+---
+title: మెయిల్చింప్
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Multisite Ultimate: MailChimp Integration
+
+మీ Multisite Ultimate నెట్‌వర్క్‌ను మీ MailChimp తో అనుసంధానించండి. మీరు కొన్ని ప్లాన్‌లను MailChimp Lists తో లింక్ చేయవచ్చు మరియు సైన్అప్ అయినప్పుడు సబ్‌స్క్రైబర్‌లను ఆ లిస్టులలో ఆటోమేటిక్‌గా యాడ్ చేయవచ్చు.
+
+## Installation
+
+1. 'ultimate-multisite-mailchimp' ను '/wp-content/plugins/' డైరెక్టరీలోకి అప్‌లోడ్ చేయండి
+2. మీ WordPress Network Admin లోని 'Plugins' మెనూ ద్వారా ప్లగిన్‌ను యాక్టివేట్ చేయండి
+
+## Usage Guide
+
+మా Ultimate Multisite: MailChimp Integration Add-on తో మీ సబ్‌స్క్రైబర్‌ల ఈమెయిల్‌లను మీ MailChimp లిస్టులతో సింక్ చేయడం చాలా సులభం. ఈ ట్యుటోరియల్ మీకు అన్ని సెటప్‌లను ఎలా పూర్తి చేయాలో సహాయం చేస్తుంది!
+
+## Getting an API key
+
+అందుబాటులో ఉన్న వివిధ సెట్టింగ్‌లలోకి వెళ్లడానికి ముందు, మాకు ఒక MailChimp API key అవసరం. వినియోగదారులు సైన్అప్ అయినప్పుడు లిస్టులు, గ్రూప్‌లను పొందడానికి మరియు ఆ లిస్టులు, గ్రూప్‌లలో ఈమెయిల్ చిరునామాలను జోడించడానికి Ultimate Multisite కి MailChimp API తో మాట్లాడే సామర్థ్యం ఇది ఇస్తుంది.
+
+మీ సొంత MailChimp API key పొందడానికి ఈ ట్యుటోరియల్‌ను అనుసరించండి: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_మీ MailChimp API key ను_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ లో జోడించండి
+
+## Integration Mode
+
+MailChimp Integration add-on రెండు "integration modes" అందిస్తుంది. అంటే, ఈమెయిల్ చిరునామాలను సింక్ చేయడానికి మీరు ఈ add-on ను ఉపయోగించడానికి రెండు వేర్వేరు మార్గాలు ఉన్నాయి.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_ఎక్కువ ఫ్లెక్సిబిలిటీ కోసం రెండు ఇంటిగ్రేషన్ మోడ్‌లు!_
+
+### Mode 1: Multiple Lists
+
+డిఫాల్ట్ మోడ్ **Multiple Lists** ను ఉపయోగిస్తుంది. ఈ మోడ్ ప్రతి ప్లాన్ కోసం మీరు బహుళ MailChimp లిస్టులను ఎంచుకోవడానికి అనుమతిస్తుంది. మీరు మీ వినియోగదారులను వివిధ లిస్టులుగా విభజించినట్లయితే ఇది ఉత్తమ ఎంపిక.
+
+ఉదాహరణకు, మీ MailChimp ఖాతాలో మీకు 3 వేర్వేరు లిస్టులు ఉన్నాయని అనుకుందాం: **Newsletter**, **Plan A**, మరియు **Plan B**. మీ ప్లాన్ ఏమైనా, అన్ని వినియోగదారులు Newsletter లిస్టులో కూడా ఉండాలి, తద్వారా వారు మీ అప్‌డేట్‌లను మిస్ కాకుండా ఉంటారు.
+
+దీన్ని సాధించడానికి, మీరు Multiple Lists మోడ్‌ను ఉపయోగించి Plan A MailChimp Settings లో **Newsletter** మరియు **Plan A** అనే రెండు లిస్టులను, మరియు Plan B MailChimp Settings లో **Newsletter** మరియు **Plan B** అనే రెండు లిస్టులను జోడించవచ్చు.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_కొత్త ఖాతాలు మరియు రద్దు చేసిన ఖాతాల కోసం డిఫాల్ట్ లిస్టులను ఎంచుకోండి_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp ద్వారా మీరు మీ లిస్ట్‌ను **Groups** అని పిలువబడే చిన్న వినియోగదారుల సమూహాలుగా విభజించవచ్చు. దీని వలన మీకు ఎక్కువ నియంత్రణ లభిస్తుంది, ఎందుకంటే మీరు MailChimp లో ఒకే Campaign యొక్క బహుళ కాపీలను సృష్టించకుండా, మీ సబ్‌స్క్రైబర్‌లలోని నిర్దిష్ట ఉపసమితికి Campaign పంపవచ్చు (దీని వలన ఆ Campaign యొక్క మెట్రిక్స్ తర్వాత విశ్లేషించడం కష్టమవుతుంది).
+
+ఉదాహరణకు, మీరు **My Network Subscribers** అనే ఒకే లిస్ట్ కలిగి ఉండవచ్చు, మరియు దాని లోపల **Plan A** మరియు **Plan B** కోసం గ్రూప్‌లు ఉండవచ్చు.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_“single list + multiple groups” ఇంటిగ్రేషన్ మోడ్‌ను ఉపయోగిస్తుంటే, డిఫాల్ట్ లిస్టులు మరియు గ్రూప్‌లను ఎంచుకోండి_
+
+## Default Lists and Groups
+
+ఏ ఇంటిగ్రేషన్ మోడ్ మీ ప్రత్యేక అవసరానికి బాగా సరిపోతుందో ఎంచుకున్న తర్వాత, డిఫాల్ట్ లిస్టులను (మరియు మోడ్‌ను బట్టి గ్రూప్‌లను) ఎంచుకునే సమయం వచ్చింది. ఒక నిర్దిష్ట ప్లాన్‌కు ప్రత్యేక లిస్ట్ ఎంచుకోనప్పుడు డిఫాల్ట్ లిస్ట్ ఉపయోగించబడుతుంది.
+
+మీరు రద్దు చేసిన ఖాతాల కోసం కూడా డిఫాల్ట్ లిస్ట్‌ను ఎంచుకోవచ్చు. వినియోగదారుడు తన సబ్‌స్క్రిప్షన్‌ను రద్దు చేసి, తన ఖాతాను మీ నెట్‌వర్క్ నుండి తొలగించిన ప్రతిసారీ, అతని/ఆమె ఈమెయిల్ చిరునామా రద్దు చేసిన ఖాతాల కోసం సెట్ చేయబడిన లిస్ట్‌కు తరలించబడుతుంది.
+
+## Enabling Double Subscription
+
+అదే సెట్టింగ్ పేజీలో, మీరు **Double Subscription** ను ఎనేబుల్ చేయగలరు. ఈ ఆప్షన్ వినియోగదారుని ఎంచుకున్న డిఫాల్ట్ లిస్ట్ మరియు ఆ వినియోగదారు ప్లాన్‌కు ఎంచుకున్న లిస్ట్ రెండింటిలో కూడా జోడిస్తుంది. ఈ ఆప్షన్ ఎనేబుల్ చేయకపోతే, వినియోగదారుని కేవలం వినియోగదారు ప్లాన్‌కు ఎంచుకున్న లిస్ట్‌కే జోడిస్తారు. ఆ ప్రత్యేక ప్లాన్‌కు ఏమీ సెట్ చేయకపోతే, వినియోగదారుని ఎంచుకున్న డిఫాల్ట్ లిస్ట్‌కు జోడిస్తారు.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_సైన్-అప్‌ సమయంలో మీ వినియోగదారులు డిఫాల్ట్ లిస్ట్ మరియు ప్లాన్ లిస్ట్ రెండింటికీ సబ్‌స్క్రైబ్ చేయబడవచ్చు_
+
+## Selecting Lists and Groups for each of the Plans
+
+మీ **Plans** కి వెళ్లండి మరియు మీరు ఎడిట్ చేయాలనుకుంటున్న ప్లాన్‌ను ఎంచుకోండి. **Advanced Options** మెటా-బాక్స్‌లో, MailChimp అనే కొత్త ట్యాబ్ అందుబాటులో ఉంటుందని గమనించండి.
+
+ఆ ట్యాబ్‌లో, మీరు ఆ ప్లాన్‌కు బహుళ లిస్టులు లేదా ఒకే లిస్ట్ మరియు బహుళ గ్రూప్‌లను (ఇంటిగ్రేషన్ మోడ్‌ను బట్టి) ఎంచుకోగలరు.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_మీ ప్లాన్‌ల ప్రతిదానికీ ఉపయోగించాలనుకునే లిస్టులు మరియు గ్రూప్‌లను ఎంచుకోండి_
+
+ఆ ప్లాన్‌కు కొత్త వినియోగదారు సైన్-అప్ అయినప్పుడు, అతని ఈమెయిల్ చిరునామా ఎంచుకున్న లిస్టులు మరియు గ్రూప్‌లలో జోడించబడుతుంది!

@@ -1,0 +1,116 @@
+---
+title: ความเข้ากันได้ของ Tutor กับ Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+ปลั๊กอิน WordPress ที่เพิ่มการแก้ไขความเข้ากันได้สำหรับ Tutor LMS ในสภาพแวดล้อมแบบ Multisite
+
+## Description
+
+ปลั๊กอินนี้ช่วยแก้ไขปัญหาความเข้ากันได้ที่จำเป็นสำหรับการใช้งาน Tutor LMS บนเครือข่าย WordPress multisite โดยเฉพาะ ปลั๊กอินนี้จะจัดการเรื่องการลงทะเบียนผู้ใช้ (user enrollment) การจัดการผู้สอน (instructor management) ข้อจำกัดของคอร์ส และฟังก์ชันเฉพาะอื่นๆ ของ multisite
+
+## Features
+
+- **Database Table Management**: ตรวจจับและสร้างตาราง Tutor LMS ที่ขาดหายไปโดยอัตโนมัติ ซึ่งอาจเกิดข้อผิดพลาดเนื่องจากข้อจำกัด foreign key ของ multisite
+- **Multisite User Enrollment**: จัดการการลงทะเบียนผู้ใช้ข้ามไซต์เครือข่ายด้วย AJAX handlers แบบกำหนดเอง
+- **Instructor Role Management**: การกำหนดและจัดการบทบาทผู้สอนโดยอัตโนมัติในสภาพแวดล้อม multisite
+- **Course Limitations**: เชื่อมต่อกับ Ultimate Multisite เพื่อจัดการข้อจำกัดในการสร้างคอร์สและ Funnel ตามแผนของไซต์
+- **Custom Admin Views**: หน้าจอการจัดการและรายการผู้สอนที่รับรู้ถึงสภาพแวดล้อม multisite
+- **Admin Tools**: ส่วนติดต่อผู้ใช้สำหรับการจัดการฐานข้อมูลสำหรับผู้ดูแลระบบเครือข่ายและผู้ดูแลระบบไซต์
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (บังคับใช้โดยอัตโนมัติผ่านส่วนหัว `Requires Plugins`)
+- การติดตั้ง WordPress Multisite
+- Ultimate Multisite plugin (สำหรับฟังก์ชันข้อจำกัดคอร์ส)
+
+## Installation
+
+1. อัปโหลดไฟล์ปลั๊กอินไปยัง `/wp-content/plugins/tutor-multisite-compatibility/`
+2. ตรวจสอบให้แน่ใจว่าได้ติดตั้งและเปิดใช้งาน Tutor LMS แล้ว
+3. เปิดใช้งานปลั๊กอินผ่านเมนู 'Plugins' ใน WordPress
+4. ปลั๊กอินจะผสานรวมกับ Tutor LMS โดยอัตโนมัติ
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (ไฟล์ปลั๊กอินหลัก)
+├── includes/
+│   ├── class-database-manager.php (การสร้างและจัดการตารางฐานข้อมูล)
+│   ├── class-admin-interface.php (ส่วนติดต่อผู้ใช้สำหรับจัดการฐานข้อมูล)
+│   ├── class-course-limits.php (ตัวจัดการข้อจำกัดคอร์สและ Funnel)
+│   ├── class-instructor-manager.php (การจัดการบทบาทผู้สอน)
+│   ├── class-ajax-handlers.php (AJAX handlers แบบกำหนดเอง)
+│   ├── class-query-helper.php (ยูทิลิตี้การสอบถามฐานข้อมูล)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (โมเดลผู้ใช้ multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (รายการผู้สอนแบบกำหนดเอง)
+│       └── views/
+│           └── instructors.php (มุมมองผู้ดูแลระบบผู้สอน)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+ปลั๊กอินนี้มีฟังก์ชันการทำงานที่เคยอยู่ใน `wp-content/mu-plugins/daves.php`:
+
+- ข้อจำกัดการเปลี่ยนสถานะคอร์ส
+- ข้อจำกัดการสร้างคอร์ส
+- การผสานรวมและข้อจำกัดของ CartFlows
+- การจัดการบทบาทผู้สอนของ Tutor
+- การจัดการการลงทะเบียนผู้ใช้ multisite
+- การแสดง ID ผลิตภัณฑ์คอร์ส
+
+## Database Management
+
+### The Problem
+
+ในสภาพแวดล้อม WordPress multisite การสร้างตารางของ Tutor LMS จะล้มเหลวสำหรับตารางที่มีข้อจำกัด foreign key ที่อ้างอิงถึงตารางผู้ใช้ (users table) สาเหตุเกิดจาก:
+
+- ตารางเฉพาะไซต์ใช้ prefix เช่น `wp_2_tutor_carts`
+- Foreign keys อ้างอิงถึง `wp_2_users` (ซึ่งไม่มีอยู่จริง)
+- ตารางผู้ใช้จริงคือ `wp_users` (ซึ่งใช้ร่วมกันทั่วทั้งเครือข่าย)
+
+### The Solution
+
+ปลั๊กอินนี้จะดำเนินการโดยอัตโนมัติ:
+
+1. **Detects Missing Tables**: ตรวจสอบตารางที่ล้มเหลวในการสร้างเนื่องจากข้อจำกัด foreign key
+2. **Creates Tables with Correct References**: ใช้ชื่อตารางผู้ใช้ที่ถูกต้อง (`wp_users` ใน multisite)
+3. **Handles Multiple Scenarios**:
+   - การเปิดใช้งาน/เปิดใช้งานใหม่ของปลั๊กอิน
+   - การสร้างไซต์ใหม่ในเครือข่าย
+   - การตรวจสอบตารางด้วยตนเองผ่านหน้าผู้ดูแลระบบ
+
+### Affected Tables
+
+- `tutor_coupon_usages` - มี foreign key อ้างอิงถึงตารางผู้ใช้
+- `tutor_carts` - มี foreign key อ้างอิงถึงตารางผู้ใช้
+- `tutor_notification_preferences` - ตาราง TutorPro ที่มี foreign key อ้างอิงถึงตารางผู้ใช้
+
+### Admin Interface
+
+เข้าถึงเครื่องมือจัดการฐานข้อมูลได้ที่:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+ส่วนติดต่อผู้ใช้นี้ช่วยให้คุณสามารถ:
+- ดูตารางที่ขาดหายไปในทุกไซต์
+- ทริกเกอร์การสร้างตารางด้วยตนเอง
+- ตรวจสอบการตั้งค่าฐานข้อมูล
+- ดูข้อมูลสถานะโดยละเอียด
+
+## Support
+
+ปลั๊กอินนี้ออกแบบมาโดยเฉพาะสำหรับแพลตฟอร์ม KursoPro หากต้องการความช่วยเหลือด้านเทคนิค โปรดติดต่อทีมพัฒนา

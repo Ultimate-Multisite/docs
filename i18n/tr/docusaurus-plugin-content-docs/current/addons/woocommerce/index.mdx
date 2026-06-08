@@ -1,0 +1,94 @@
+---
+title: WooCommerce Entegrasyonu
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Entegrasyonu
+
+WooCommerce Integration, Manuel Gateway'imizin çalışma şekline çok benzer bir şekilde çalışır. Kullanıcılarınıza çok fazla esneklik sunar ve WooCommerce kurulumunuzda bulunan herhangi bir ödeme formunu seçmelerine olanak tanır. Bu çok basit: Kullanıcının ödeme dönemi sona erdiğinde, kullanıcı aboneliği askıya alınır. Aynı zamanda, ağın ana sitesindeki WooCommerce kurulumunda bir sipariş oluşturulur. Kullanıcı daha sonra e-posta adresine, ödeme yapması için bir bağlantı içeren bir fatura alır. Ödeme alındığında, abonelik yenilenir.
+
+## Özellikler
+
+- Ultimate Multisite ve WooCommerce arasında kolay entegrasyon
+- Kullanılabilir birden fazla ödeme yöntemi
+- WooCommerce Subscriptions ile tamamen otomatikleştirilmiş süreç
+
+## Dokümantasyon
+
+**WooCommerce Entegrasyonunu Kurmak**
+
+**Ultimate Multisite ile Ödeme Seçeneklerinizi Genişletme: WooCommerce Entegrasyonu**
+
+## Kurulum
+
+1. 'ultimate-multisite-woocommerce' dosyasını '/wp-content/plugins/' dizinine yükleyin
+2. WordPress'te 'Eklentiler' menüsünden eklentiyi etkinleştirin
+3. Eklentiyi kurmak için adım adım Sihirbaz'ı takip edin
+
+## Kullanım Kılavuzu
+
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne atıfta bulunmaktadır.**_
+
+_**DİKKAT:** Ultimate Multisite: WooCommerce Integration, en azından ana sitenizde WooCommerce'ın etkinleştirilmesini gerektirir._
+
+_Stripe_ ve _PayPal_'ın bazı ülkelerde bulunmadığını ve bu durumun Ultimate Multisite kullanıcılarının eklentimizi etkili bir şekilde kullanmasını kısıtlayabildiğini veya zorlaştırabildiğini biliyoruz. Bu yüzden _WooCommerce_'ı entegre etmek için bir **ek eklenti** oluşturduk.
+
+_WooCommerce_, çok popüler bir e-ticaret eklentisidir. Dünya çapındaki geliştiriciler, farklı ödeme ağ geçitlerini entegre etmek için ona eklentiler (add-ons) oluşturmuşlardır. Biz de bu durumu kullanarak Ultimate Multisite faturalandırma sisteminde kullanabileceğiniz ödeme ağ geçitlerini genişlettik.
+
+## Kurulumu Yapma
+
+Öncelikle, lisanslı kullanıcılar için **ücretsiz** olan WooCommerce Integration eklentisini kurmanız gerekir. Kurmak için, süper yönetici kontrol panelinizdeki Ultimate Multisite'a tıklayın ve **Eklentiler (Add-ons)** seçeneğini seçin.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Burada tüm Ultimate Multisite eklentilerini bulabilirsiniz. **Ultimate Multisite: WooCommerce Integration** eklentisine tıklayın.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Eklenti detaylarıyla birlikte bir pencere açılacaktır. Sadece **Şimdi Yükle (Install Now)**'a tıklayın.
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Kurulum tamamlandıktan sonra, eklentiler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir (Network Activate)**'e tıklamanız yeterli ve _WooCommerce_ eklentisi ağınızda etkinleştirilmiş olacaktır.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Etkinleştirdikten sonra, web sitenizde hala WooCommerce eklentisi kurulu ve etkinleştirilmemişse, **bir hatırlatma alacaksınız**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Kurulduktan sonra, Ultimate Multisite ödeme ayarları altında ek bir seçenek göreceksiniz. Oradan _WooCommerce_ seçeneğini **etkinleştirebilirsiniz**.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Burada, ön yüzde görünecek görüntü adı ve kullanıcıların ödeme akışlarında rehberlik etmesi için talimatlar gibi bazı temel ayarları yapılandırabilirsiniz. Ardından, tercih ettiğiniz ödeme ağ geçidini etkinleştirmek ve yapılandırmak için **Ana sitenizin _WooCommerce_ ayarları** bölümüne gidebilirsiniz.
+
+## Ödemeyi Yönetme
+
+WooCommerce Integration, **Manuel Gateway**'imizin çalışma şekline çok benzer bir şekilde çalışır. Dezavantajı ise, her ödemenin ödeme döneminin sonunda manuel olarak yapılması gerektiğidir. Akış şu şekilde işler:
+
+  * Kullanıcının ödeme döngüsü sona erdiğinde, üyelik **askıya alınır**. Aynı zamanda, ağınızın ana sitesindeki _WooCommerce_ kurulumunda bir sipariş oluşturulur.
+
+  * Kullanıcılar daha sonra e-posta adreslerine, ödeme yapması için bir bağlantı içeren bir fatura alır (bu bağlantı ayrıca alt site kontrol panelindeki ödeme geçmişlerinde de görünür). Bu bağlantı, kullanıcıyı _**WooCommerce**_ **ödeme (checkout)** sayfasına yönlendirir; burada kullanıcılar ödemelerini gerçekleştirmek için **mevcut _WooCommerce_ ağ geçitlerinden** birini seçebilirler.
+
+  * Ödeme alındığında, üyelik **yenilenir**, ödeme Ultimate Multisite'a kaydedilir ve sipariş tamamlanmış olarak ayarlanır.
+
+### Bazı Önemli Notlar:
+
+  * Ultimate Multisite'ın varsayılan işlevi bu entegrasyon formu ile hala çalışır. Örneğin, **Abonelik Yönetimi** ekranından **geri ödeme yapılması** işlemi, seçilen ödeme formunu kullanarak geri ödemeyi yapmak için WooCommerce ile iletişim kuracaktır.
+
+  * Ultimate Multisite: WooCommerce Integration, çalışmak için WP-Cron'a güvenir. Bu çoğu zaman çok iyi çalışır, ancak site düşük trafiğe sahipse, cron planlanmış etkinlikleri kontrol etmesi için tetiklenmez ve etkinlik kaçırılır, bu da yürütme gecikmelerine neden olabilir.
+
+## Woocommerce Subscriptions Eklentisi
+
+Bir aboneliğin her ödeme döngüsünde otomatik olarak tekrarlanması beklendiği için, her ay manuel olarak ödeme başlatmak son kullanıcılar için ideal değildir. Bu yüzden WooCommerce Integration eklentisini **WooCommerce Subscriptions eklentisini destekleyecek** şekilde tasarladık. Bu, işlemi son kullanıcılarınız için kolaylaştırmak amacıyla ödemeyi otomatikleştirir.
+
+Yapmanız gereken tek şey [Woocommerce Subscriptions eklentisini](https://woocommerce.com/products/woocommerce-subscriptions/) **kurmak** ve **ana sitenizde etkinleştirmek**tir. Ardından Ultimate Multisite ödeme ayarlarına geri dönün ve **entegrasyonu etkinleştirin**.
+
+İşte bu kadar. Son kullanıcılarınız artık ödeme döngülerinin sonunda manuel olarak ödeme yapmak zorunda kalmayacak.
+
+Ana sitenizde _WooCommerce_ altında bir sipariş oluşturulmasının yanı sıra, her hesap için bir abonelik de oluşturulacaktır.

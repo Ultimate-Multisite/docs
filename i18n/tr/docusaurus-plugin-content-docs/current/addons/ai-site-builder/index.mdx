@@ -1,0 +1,124 @@
+---
+title: Yapay Zeka Site Oluşturucu
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Gereksinimler
+
+- WordPress 5.3 veya üzeri
+- PHP 7.4 veya üzeri
+- Multisite Ultimate eklentisi (aktif)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin.
+2. WordPress'te 'Eklentiler' menüsünden eklentiyi etkinleştirin.
+3. Eklenti ayarlarını ağ yöneticisinden yapılandırın.
+
+## Geliştirme
+
+### Kurulum
+
+```bash
+# Bağımlılıkları kurun
+composer install
+npm install
+
+# Testleri çalıştırın
+npm run test
+
+# Kod standart kontrollerini çalıştırın
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Kod stil sorunlarını düzeltin
+vendor/bin/phpcbf
+
+# Üretim için derleyin
+npm run build
+```
+
+### Proje Yapısı
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP sınıfları ve dahil edilen dosyalar
+│   ├── class-multisite-ultimate-updater.php  # Güncelleme işleyicisi
+│   └── class-ai_site_builder-main.php             # Ana işlevsellik
+├── tests/                        # Birim testleri
+│   ├── bootstrap.php            # Test başlangıç dosyası
+│   ├── class-*-base.php         # Temel test sınıfı
+│   └── class-*-test.php         # Test senaryoları
+├── views/                       # Şablon dosyaları
+├── assets/                      # Statik varlıklar
+│   ├── css/                     # Stil sayfaları
+│   ├── js/                      # JavaScript dosyaları
+│   └── images/                  # Görseller
+├── lang/                        # Dil dosyaları
+├── composer.json                # PHP bağımlılıkları
+├── package.json                 # Node.js bağımlılıkları
+├── phpunit.xml.dist             # PHPUnit yapılandırması
+├── .phpcs.xml.dist              # Kod standartları yapılandırması
+└── rector.php                   # Kod modernizasyonu kuralları
+```
+
+### Test Etme
+
+Eklenti, kapsamlı bir test çatısı içerir:
+
+- **Birim Testleri**: WordPress test paketi ile PHPUnit tabanlı testler
+- **Temel Test Sınıfı**: Ortak test senaryoları için yardımcı yöntemler sağlar
+- **Test Kapsamı**: Kod kapsamını izlemek üzere yapılandırılmıştır
+- **Multisite Testi**: Testler multisite ortamında çalışır
+
+### Kod Standartları
+
+- **WordPress Kod Standartları**: PHPCS aracılığıyla zorunlu kılınır
+- **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
+- **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
+- **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
+
+### Derleme Sistemi
+
+- **Varlık İşleme**: CSS/JS dosyaları için küçültme (Minification)
+- **Çeviri**: POT dosyası oluşturma
+- **Paketleme**: Dağıtım için arşiv oluşturma
+- **Geliştirme Modu**: Hata ayıklama için küçültülmemiş varlıklar
+
+## Yapılandırma
+
+Eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
+
+## Hook'lar ve Filtreler
+
+### Aksiyonlar
+
+- `ultimate-multisite-ai-site-builder_init` - Eklenti başlatıldıktan sonra tetiklenir
+- `ultimate-multisite-ai-site-builder_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
+
+### Filtreler
+
+- `ultimate-multisite-ai-site-builder_settings` - Eklenti ayarlarını değiştirir
+- `ultimate-multisite-ai-site-builder_enabled` - Eklentinin etkin/devre dışı durumunu geçersiz kılar
+
+## Lisans
+
+Bu eklenti, GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
+
+## Destek
+
+Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin.
+## Değişiklik Geçmişi
+
+- Version 1.0.1 (2025-09-28): Ön eki ultimate-multisite olarak yeniden adlandırdı; metin alanını güncelledi; sürüm artışı.
+
+
+- Version (2025-09-28): Ön eki ultimate-multisite olarak yeniden adlandırdı; metin alanını güncelledi; sürüm artışı.

@@ -1,0 +1,124 @@
+---
+title: బహుళ-అద్దెత్వం
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy (బహుళ-నివాసిత్వం)
+
+పనితీరు (performance) మరియు భద్రత (security) కోసం సబ్‌సైట్‌లను వివిధ సర్వర్లు మరియు డేటాబేస్‌లలో పంపిణీ చేయడం.
+
+## అవసరాలు (Requirements)
+
+- WordPress 5.3 లేదా అంతకన్నా ఎక్కువ వెర్షన్
+- PHP 7.4 లేదా అంతకన్నా ఎక్కువ వెర్షన్
+- Multisite Ultimate ప్లగిన్ (యాక్టివేట్ చేయబడి ఉండాలి)
+
+## ఇన్‌స్టాలేషన్ (Installation)
+
+1. అడాన్ ఫైళ్లను మీ `/wp-content/plugins/` డైరెక్టరీలోకి అప్‌లోడ్ చేయండి.
+2. వర్డ్‌ప్రెస్ లోని 'Plugins' మెనూ ద్వారా ప్లగిన్‌ను యాక్టివేట్ చేయండి.
+3. నెట్‌వర్క్ అడ్మిన్ లో అడాన్ సెట్టింగ్‌లను కాన్ఫిగర్ చేయండి.
+
+## అభివృద్ధి (Development)
+
+### సెటప్ (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ప్రాజెక్ట్ నిర్మాణం (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP క్లాసులు మరియు ఇన్‌క్లూడ్స్
+│   ├── class-multisite-ultimate-updater.php  # అప్‌డేట్ హ్యాండ్లర్
+│   └── class-multi_tenancy-main.php             # ప్రధాన కార్యాచరణ
+├── tests/                        # యూనిట్ టెస్ట్‌లు
+│   ├── bootstrap.php            # టెస్ట్ బూట్‌స్ట్రాప్
+│   ├── class-*-base.php         # బేస్ టెస్ట్ క్లాస్
+│   └── class-*-test.php         # టెస్ట్ కేసులు
+├── views/                       # టెంప్లేట్ ఫైళ్లు
+├── assets/                      # స్టాటిక్ ఆస్తులు
+│   ├── css/                     # స్టైల్‌షీట్‌లు
+│   ├── js/                      # జావాస్క్రిప్ట్ ఫైళ్లు
+│   └── images/                  # చిత్రాలు
+├── lang/                        # భాషా ఫైళ్లు
+├── composer.json                # PHP డిపెండెన్సీలు
+├── package.json                 # Node.js డిపెండెన్సీలు
+├── phpunit.xml.dist             # PHPUnit కాన్ఫిగరేషన్
+├── .phpcs.xml.dist              # కోడ్ ప్రమాణాలు కాన్ఫిగరేషన్
+└── rector.php                   # కోడ్ ఆధునికీకరణ నియమాలు
+```
+
+### టెస్టింగ్ (Testing)
+
+ఈ అడాన్ సమగ్రమైన టెస్టింగ్ ఫ్రేమ్‌వర్క్‌ను కలిగి ఉంది:
+
+- **యూనిట్ టెస్ట్‌లు (Unit Tests)**: వర్డ్‌ప్రెస్ టెస్ట్ సూట్‌తో కూడిన PHPUnit ఆధారిత టెస్ట్‌లు.
+- **బేస్ టెస్ట్ క్లాస్ (Base Test Class)**: సాధారణ టెస్ట్ దృశ్యాల కోసం సహాయక పద్ధతులను (helper methods) అందిస్తుంది.
+- **టెస్ట్ కవరేజ్ (Test Coverage)**: కోడ్ కవరేజీని ట్రాక్ చేయడానికి కాన్ఫిగర్ చేయబడింది.
+- **మల్టీసైట్ టెస్టింగ్ (Multisite Testing)**: టెస్ట్‌లు మల్టీసైట్ ఎన్విరాన్‌మెంట్‌లో రన్ అవుతాయి.
+
+### కోడ్ ప్రమాణాలు (Code Standards)
+
+- **WordPress కోడింగ్ స్టాండర్డ్స్**: PHPCS ద్వారా అమలు చేయబడుతుంది.
+- **PHP 7.4+ అనుకూలత (Compatibility)**: ఆధునిక PHP ఫీచర్లు మద్దతు ఇస్తాయి.
+- **స్టాటిక్ అనాలిసిస్ (Static Analysis)**: టైప్ చెకింగ్ కోసం PHPStan ఇంటిగ్రేషన్.
+- **కోడ్ ఆధునికీకరణ (Code Modernization)**: PHP అప్‌గ్రేడ్‌ల కోసం Rector నియమాలు.
+
+### బిల్డ్ సిస్టమ్ (Build System)
+
+- **ఆస్సెట్ ప్రాసెసింగ్ (Asset Processing)**: CSS/JS ఫైళ్ల కోసం మినిఫికేషన్.
+- **ట్రాన్స్‌లేషన్ (Translation)**: POT ఫైల్ జనరేషన్.
+- **ప్యాకేజింగ్ (Packaging)**: పంపిణీ కోసం ఆర్కైవ్ సృష్టి.
+- **డెవలప్‌మెంట్ మోడ్ (Development Mode)**: డీబగ్గింగ్ కోసం మినిఫై చేయని ఆస్తులు.
+
+## కాన్ఫిగరేషన్ (Configuration)
+
+ఈ అడాన్ నెట్‌వర్క్ అడ్మిన్ ఇంటర్‌ఫేస్ ద్వారా అందుబాటులో ఉండే వివిధ కాన్ఫిగరేషన్ ఎంపికలను మద్దతు ఇస్తుంది.
+
+## హుక్స్ మరియు ఫిల్టర్లు (Hooks and Filters)
+
+### యాక్షన్‌లు (Actions)
+
+- `ultimate-multisite-addon-template_init` - అడాన్ ఇనిషియలైజేషన్ తర్వాత ట్రిగ్గర్ అవుతుంది.
+- `ultimate-multisite-addon-template_loaded` - అన్ని అడాన్ ఫైళ్లు లోడ్ అయిన తర్వాత ట్రిగ్గర్ అవుతుంది.
+
+### ఫిల్టర్లు (Filters)
+
+- `ultimate-multisite-addon-template_settings` - అడాన్ సెట్టింగ్‌లను మార్చడానికి.
+- `ultimate-multisite-addon-template_enabled` - అడాన్ ఎనేబుల్/డిసేబుల్ స్టేటస్‌ను ఓవర్‌రైడ్ చేయడానికి.
+
+## లైసెన్స్ (License)
+
+ఈ అడాన్ GPL v3 లేదా అంతకన్నా ఎక్కువ కింద లైసెన్స్ చేయబడింది.
+
+## సపోర్ట్ (Support)
+
+సపోర్ట్ మరియు డాక్యుమెంటేషన్ కోసం, [MultisiteUltimate.com](https://multisiteultimate.com) ని సందర్శించండి.
+## Changelog
+
+- Version 1.0.1 (2025-09-28): ప్రిఫిక్స్‌ను ultimate-multisiteగా పేరు మార్చబడింది; టెక్స్ట్ డొమైన్ అప్‌డేట్ చేయబడింది; వెర్షన్ బంప్.
+
+
+- Version (2025-09-28): ప్రిఫిక్స్‌ను ultimate-multisiteగా పేరు మార్చబడింది; టెక్స్ట్ డొమైన్ అప్‌డేట్ చేయబడింది; వెర్షన్ బంప్.

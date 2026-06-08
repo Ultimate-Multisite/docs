@@ -1,0 +1,124 @@
+---
+title: Çoklu Kiracılık
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Çok Kiracılı Yapı (Multi-Tenancy)
+
+Performans ve güvenlik için alt siteleri sunucular ve veritabanları arasında dağıtma
+
+## Gereksinimler
+
+- WordPress 5.3 veya üzeri
+- PHP 7.4 veya üzeri
+- Multisite Ultimate eklentisi (aktif)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
+2. WordPress'te 'Plugins' menüsünden eklentiyi etkinleştirin
+3. Eklenti ayarlarını network admin üzerinden yapılandırın
+
+## Geliştirme
+
+### Kurulum
+
+```bash
+# Bağımlılıkları kur
+composer install
+npm install
+
+# Testleri çalıştır
+npm run test
+
+# Kod standartları kontrollerini çalıştır
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Kod stil sorunlarını düzelt
+vendor/bin/phpcbf
+
+# Üretim için derle
+npm run build
+```
+
+### Proje Yapısı
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP sınıfları ve dahil edilen dosyalar
+│   ├── class-multisite-ultimate-updater.php  # Güncelleme işleyicisi
+│   └── class-multi_tenancy-main.php             # Ana işlevsellik
+├── tests/                        # Birim testleri
+│   ├── bootstrap.php            # Test başlatma dosyası
+│   ├── class-*-base.php         # Temel test sınıfı
+│   └── class-*-test.php         # Test senaryoları
+├── views/                       # Şablon dosyaları
+├── assets/                      # Statik varlıklar
+│   ├── css/                     # Stil sayfaları
+│   ├── js/                      # JavaScript dosyaları
+│   └── images/                  # Görseller
+├── lang/                        # Dil dosyaları
+├── composer.json                # PHP bağımlılıkları
+├── package.json                 # Node.js bağımlılıkları
+├── phpunit.xml.dist             # PHPUnit yapılandırması
+├── .phpcs.xml.dist              # Kod standartları yapılandırması
+└── rector.php                   # Kod modernizasyonu kuralları
+```
+
+### Test Etme
+
+Eklenti, kapsamlı bir test çatısı içerir:
+
+- **Birim Testleri**: WordPress test paketi ile PHPUnit tabanlı testler
+- **Temel Test Sınıfı**: Yaygın test senaryoları için yardımcı metotlar sağlar
+- **Test Kapsamı**: Kod kapsamını izlemek için yapılandırılmıştır
+- **Multisite Testi**: Testler multisite ortamında çalışır
+
+### Kod Standartları
+
+- **WordPress Kodlama Standartları**: PHPCS aracılığıyla zorunlu kılınır
+- **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
+- **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
+- **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
+
+### Derleme Sistemi
+
+- **Varlık İşleme**: CSS/JS dosyaları için küçültme (Minification)
+- **Çeviri**: POT dosyası oluşturma
+- **Paketleme**: Dağıtım için arşiv oluşturma
+- **Geliştirme Modu**: Hata ayıklama için küçültülmemiş varlıklar
+
+## Yapılandırma
+
+Eklenti, network admin arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
+
+## Hook'lar ve Filtreler
+
+### Aksiyonlar (Actions)
+
+- `ultimate-multisite-addon-template_init` - Eklenti başlatıldıktan sonra tetiklenir
+- `ultimate-multisite-addon-template_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
+
+### Filtreler (Filters)
+
+- `ultimate-multisite-addon-template_settings` - Eklenti ayarlarını değiştirir
+- `ultimate-multisite-addon-template_enabled` - Eklenti etkin/devre dışı durumunu geçersiz kılar
+
+## Lisans
+
+Bu eklenti, GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
+
+## Destek
+
+Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com)'u ziyaret edin.
+## Değişiklik Geçmişi
+
+- Sürüm 1.0.1 (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+
+
+- Sürüm (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.

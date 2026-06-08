@@ -1,0 +1,60 @@
+---
+title: PayFast
+sidebar_position: 1
+_i18n_hash: 349c9806b1fae34fbbd124d7c131b63b
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-payfast" name="PayFast" />
+
+# PayFast
+
+Multisite Ultimate: Payfast Gateway
+
+เพิ่ม Payfast ซึ่งเป็นเกตเวย์การชำระเงินออนไลน์ที่รวดเร็วและปลอดภัยในแอฟริกาใต้ ให้เป็นตัวเลือกการชำระเงินสำหรับ Multisite Ultimate
+
+## การติดตั้ง
+
+1. อัปโหลด 'ultimate-multisite-payfast' ไปยังไดเรกทอรี '/wp-content/plugins/'
+2. เปิดใช้งานปลั๊กอินผ่านเมนู 'Plugins' ใน WordPress
+3. ทำตามขั้นตอนของ Wizard เพื่อตั้งค่าปลั๊กอิน
+
+## คู่มือการใช้งาน
+
+PayFast เป็นผู้ประมวลผลการชำระเงินออนไลน์ชั้นนำสำหรับธุรกิจในแอฟริกาใต้ โดยมุ่งเน้นการช่วยให้ร้านค้าออนไลน์เติบโตด้วยการทำให้ธุรกรรมเป็นไปอย่างราบรื่นและปลอดภัย ตามคำขอของผู้ใช้ Ultimate Multisite เราจึงตัดสินใจสร้าง add-on ที่ทำให้สามารถเชื่อมต่อกับ PayFast ได้ บทความนี้จะแสดงวิธีการตั้งค่า PayFast ให้เป็นเกตเวย์การชำระเงินของคุณ เพื่อรับเงินในเครือข่าย Ultimate Multisite
+
+ขั้นตอนแรกคือการติดตั้ง add-on
+
+# วิธีติดตั้ง add-on Payfast:
+
+ไปที่หน้า add-ons และเลือก add-on Ultimate Multisite: Payfast Gateway
+
+![Add-ons page](/img/admin/addons-page.png)
+
+หน้าต่าง add-on จะปรากฏขึ้น คลิกที่ Install Now
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+หลังจากติดตั้งเสร็จแล้ว คุณจะถูกนำไปยังหน้า plugins ที่นี่ เพียงแค่คลิก Network Activate และ add-on _Payfast_ ก็จะถูกเปิดใช้งานในเครือข่ายของคุณ
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PayFast addon -->
+
+# การตั้งค่า PayFast
+
+หลังจากติดตั้ง add-on แล้ว คุณสามารถไปที่การตั้งค่า Ultimate Multisite และเริ่มกำหนดค่า PayFast ได้
+
+ในหน้า **Ultimate Multisite settings** คุณจะพบแท็บ "Payments" ใต้แท็บนี้ คุณควรเห็น **"Payfast"** พร้อมปุ่มสลับ (toggle button) เพื่อเปิดหรือปิดเกตเวย์การชำระเงินนี้
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)ให้คลิกที่ปุ่มสลับเพื่อเปิดใช้งาน จากนั้นกล่องจะขยายออกเพื่อแสดงช่องข้อมูลต่างๆ ที่คุณต้องกรอก เช่น **Merchant ID, Merchant Key และ PassPhrase** คุณสามารถรับข้อมูลเหล่านี้ได้จากบัญชี **Payfast** ของคุณ
+
+<!-- Screenshot unavailable: PayFast expanded settings showing Merchant ID, Merchant Key, and PassPhrase fields -->
+
+ขั้นตอนต่อไปคือการเข้าสู่ระบบบัญชี PayFast ของคุณเพื่อรับข้อมูลที่คุณต้องการ
+
+เมื่อเข้าสู่ระบบแล้ว คุณจะเห็นข้อมูลรับรอง (credentials) ที่จำเป็นจากหน้า dashboard ของบัญชี **Payfast** ของคุณทันที
+
+<!-- Screenshot unavailable: PayFast account dashboard showing Merchant ID and Merchant Key credentials -->คุณสามารถคัดลอกและวางข้อมูลรับรองเหล่านั้นเพื่อกรอกรายละเอียดในการตั้งค่า Ultimate Multisite ของคุณ จากนั้นคลิกปุ่ม **"Save settings"** เพื่อบันทึกการเปลี่ยนแปลง
+
+<!-- Screenshot unavailable: Ultimate Multisite PayFast settings with credentials populated and Save button -->
+
+แค่นี้ก็เสร็จสมบูรณ์แล้ว! การเชื่อมต่อการชำระเงิน PayFast ของคุณก็เสร็จสมบูรณ์แล้ว!

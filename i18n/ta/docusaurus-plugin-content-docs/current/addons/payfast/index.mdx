@@ -1,0 +1,60 @@
+---
+title: PayFast
+sidebar_position: 1
+_i18n_hash: 349c9806b1fae34fbbd124d7c131b63b
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-payfast" name="PayFast" />
+
+# PayFast
+
+Multisite Ultimate: Payfast Gateway
+
+இது Payfast-ஐ - இது தென் ஆப்பிரிக்காவில் உள்ள ஒரு வேகமான மற்றும் பாதுகாப்பான ஆன்லைன் கட்டண நுழைவாயில் (online payments gateway) - Multisite Ultimate கட்டண விருப்பமாகச் சேர்க்கிறது.
+
+## நிறுவுதல் (Installation)
+
+1. 'ultimate-multisite-payfast' என்பதை '/wp-content/plugins/' என்ற கோப்பகத்தில் (directory) பதிவேற்றவும்.
+2. WordPress-ல் உள்ள 'Plugins' மெனு மூலம் இந்த plugin-ஐ Activate செய்யவும்.
+3. plugin-ஐ அமைக்க, படிப்படியான Wizard-ஐப் பின்பற்றவும்.
+
+## பயன்படுத்துவதற்கான வழிகாட்டி (Usage Guide)
+
+PayFast என்பது தென் ஆப்பிரிக்காவில் உள்ள வணிகங்களுக்கான முன்னணி ஆன்லைன் கட்டணச் செயலி (online payment processor) ஆகும். பரிவர்த்தனைகளைத் தடையற்றதாகவும் பாதுகாப்பானதாகவும் மாற்றுவதன் மூலம், ஆன்லைன் வணிகர்கள் வளர உதவுவதே இதன் நோக்கம். Ultimate Multisite பயனரின் கோரிக்கையின்படி, PayFast உடன் ஒருங்கிணைப்பை (integration) சாத்தியமாக்கும் ஒரு addon-ஐ உருவாக்க நாங்கள் முடிவு செய்தோம். உங்கள் Ultimate Multisite நெட்வொர்க்கில் பணம் பெற, PayFast-ஐ உங்கள் கட்டண நுழைவாயிலாக (payment gateway) எப்படி அமைப்பது என்பதை இந்தக் கட்டுரை விளக்குகிறது.
+
+முதல் படி, இந்த addon-ஐ நிறுவுவதுதான்.
+
+# Payfast addon-ஐ எப்படி நிறுவுவது:
+
+add-ons பக்கத்திற்குச் சென்று, Ultimate Multisite: Payfast Gateway addon-ஐத் தேர்ந்தெடுக்கவும்.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+addon சாளரம் (window) திறக்கும். 'Install Now' என்பதைக் கிளிக் செய்யவும்.
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+நிறுவுதல் முடிந்த பிறகு, நீங்கள் plugins பக்கத்திற்கு திருப்பி விடப்படுவீர்கள். இங்கே, 'Network Activate' என்பதைக் கிளிக் செய்தால் போதும், _Payfast_ addon உங்கள் நெட்வொர்க்கில் செயல்படுத்தப்படும்.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PayFast addon -->
+
+# PayFast-ஐ அமைப்பது (Setting Up PayFast)
+
+addon-ஐ நிறுவிய பிறகு, நீங்கள் Ultimate Multisite settings-க்குச் சென்று PayFast-ஐ கட்டமைக்க (configure) தொடங்கலாம்.
+
+**Ultimate Multisite settings** பக்கத்தின் கீழ், நீங்கள் "Payments" என்ற tab-ஐக் காணலாம். இந்த tab-ன் கீழ், இந்த கட்டண நுழைவாயிலைத் (payment gateway) திறக்கவும் அல்லது முடக்கவும் உதவும் ஒரு toggle button உடன் "**Payfast** " என்ற விருப்பம் இருக்க வேண்டும்.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)நீங்கள் அதை இயக்க (enable) toggle button-ஐ கிளிக் செய்யவும். இது பின்னர், **Merchant ID, Merchant Key மற்றும் PassPhrase** போன்ற நீங்கள் நிரப்ப வேண்டிய வெவ்வேறு புலங்களைக் (fields) காண்பிக்கும் வகையில் பெட்டியை விரிவாக்கும். இந்தத் தகவலை உங்கள் **Payfast** கணக்கிலிருந்து பெறலாம்.
+
+<!-- Screenshot unavailable: PayFast expanded settings showing Merchant ID, Merchant Key, and PassPhrase fields -->
+
+அடுத்த படி, உங்களுக்குத் தேவையான தகவலைப் பெற உங்கள் PayFast கணக்கில் உள்நுழைய (login) வேண்டும்.
+
+Upon logging in, you can immediately see the credentials you need from your **Payfast** account dashboard.
+
+<!-- Screenshot unavailable: PayFast account dashboard showing Merchant ID and Merchant Key credentials -->நீங்கள் அந்த விவரங்களை (credential) நகலெடுத்து (copy) ஒட்டி (paste) உங்கள் Ultimate Multisite settings-ல் உள்ள விவரங்களை நிரப்பலாம். பின்னர் மாற்றங்களைச் சேமிக்க **"Save settings** " பொத்தானைக் கிளிக் செய்யவும்.
+
+<!-- Screenshot unavailable: Ultimate Multisite PayFast settings with credentials populated and Save button -->
+
+அவ்வளவுதான், உங்கள் PayFast கட்டண ஒருங்கிணைப்பு (payment integration) முடிந்தது!

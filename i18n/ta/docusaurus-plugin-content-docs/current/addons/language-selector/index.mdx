@@ -1,0 +1,75 @@
+---
+title: மொழித் தேர்வி
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# மொழித் தேர்வி (Language Selector)
+
+Multisite Ultimate: Sign-up-இல் மொழித் தேர்வி
+
+Sign-up செயல்முறைக்கு (flow) ஒரு மொழித் தேர்வி புலத்தைச் சேர்க்கவும்.
+
+## நிறுவுதல் (Installation)
+
+1. 'ultimate-multisite-language-selector'-ஐ '/wp-content/plugins/' கோப்பகத்தில் (directory) பதிவேற்றவும்
+2. உங்கள் WordPress Network Admin-ல் உள்ள 'Plugins' மெனு மூலம் இந்த plugin-ஐ செயல்படுத்தவும் (Activate).
+
+## பயன்படுத்துவதற்கான வழிகாட்டி (Usage Guide)
+
+இந்த இலவச add-on மூலம், உங்கள் பயனர்கள் sign-up செயல்முறை மற்றும் login பக்கத்தில் எந்த மொழியைப் பார்க்க விரும்புகிறார்கள் என்பதைத் தேர்வு செய்ய அனுமதிக்கலாம்.
+
+உங்கள் உரிமத்தை [செயல்படுத்திய பிறகு](../../user-guide/getting-started/installing-ultimate-multisite.md), உங்கள் உரிமம் அணுகலை வழங்கும் Ultimate Multisite add-ons-களை நீங்கள் நிறுவ முடியும்.
+
+உங்கள் Ultimate Multisite settings பக்கத்திற்குச் சென்று, பின்னர் இடதுபுறத்தில் உள்ள மெனுவில், _Add-ons_ என்ற லேபிக்கில் கிளிக் செய்யவும்.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+_Language Selector-ஐ நிறுவ தொடங்க Add-ons பக்கத்திற்குச் செல்லவும்_
+
+அங்கு, நாங்கள் வழங்கும் அனைத்து add-ons-களையும் நீங்கள் காணலாம்.
+
+சந்தாத் திட்டம் (subscription plan) எதுவாக இருந்தாலும், எங்கள் அனைத்து வாடிக்கையாளர்களுக்கும் இலவச add-ons கிடைக்கின்றன.
+
+add-on-ன் சிறுபடம் (thumbnail)-க்கு கீழே உள்ள _Install it Now!_ என்ற பொத்தானை கிளிக் செய்யவும். பின்னர் Plugins பக்கத்தில் அதை செயல்படுத்தவும்.
+
+![Add-ons page with install button](/img/admin/addons-page.png)
+
+_add-on-ஐ நிறுவ பொத்தானை கிளிக் செய்யவும்_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_உங்கள் Plugins பக்கத்தில் அதை செயல்படுத்தவும்_
+
+இப்போது, Ultimate Multisite-ன் Settings மெனுவுக்குச் சென்று, _Network Settings_ என்ற tab-க்குள் செல்லவும். அங்கே, பக்கத்தின் கீழே, _Languages_ என்று அழைக்கப்படும் ஒரு புதிய பிரிவைக் (section) காண்பீர்கள்.
+
+![Settings page](/img/config/settings-general.png)
+
+_புதிதாக ஒரு பிரிவு தோன்றியுள்ளது!_
+
+அனைத்து மொழிகளையும் விருப்பங்களாக (options) காட்ட இதை காலியாக விடலாம் அல்லது நீங்கள் கிடைக்கச் செய்ய விரும்பும் மொழிகளைத் தேர்ந்தெடுக்கலாம். இந்த மொழிகள் உங்கள் WordPress அமைப்பில் (set up) நிறுவப்பட்ட மொழிகளாகும்.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_இந்த WP நிறுவலில் கிடைக்கும் மொழிகளின் பட்டியல்_
+
+நீங்கள் செய்த மாற்றங்களைச் சேமித்த பிறகு, நீங்கள் தேர்ந்தெடுத்த மொழிகளுடன் கூடிய ஒரு தேர்வு மெனு (selection menu) Login பக்கத்திலும், Sign-up Flow-லும் காட்டப்படும்.
+
+![Login and Registration settings](/img/config/settings-login-registration.png)
+
+_Login பக்கத்தில் மொழித் தேர்வி_
+
+![Registration page](/img/config/registration-page.png)
+
+_Sign-up Flow-ல் மொழித் தேர்வி_
+
+## URL மூலம் மொழியை அமைத்தல் (Setting the Language via the URL)
+
+நீங்கள் URL-ல் உள்ள locale parameter-ஐத் தவிர்த்து, ஒரு பக்கத்தின் மொழியையும் மாற்ற முடியும். உதாரணமாக, நீங்கள் இத்தாலிய மொழியில் உள்ள ஒரு பதிவுப் பக்கத்திற்கு (register page) திருப்பிவிட விரும்பினால், URL-ல் ?locale=it_IT சேர்க்கவும்.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+இது வேலை செய்ய, அந்த மொழி உங்கள் WordPress network-ல் நிறுவப்பட்டிருக்க வேண்டும்.

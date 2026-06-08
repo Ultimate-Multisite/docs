@@ -1,0 +1,40 @@
+---
+title: உள்ளடக்க ஒத்திசைவு
+sidebar_position: 1
+_i18n_hash: 48333aecfa57a9cf6daf84a8d8322ef2
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-content-sync" name="Content Sync" />
+
+# உள்ளடக்க ஒத்திசைவு (Content Sync)
+
+Multisite Ultimate: உள்ளடக்க ஒத்திசைவு
+
+Multisite Ultimate-க்கான இந்த Addon, நெட்வொர்க் நிர்வாகிகள் (network administrators) எந்த ஒரு தளத்தின் உள்ளடக்கத்தையும் (content) நெட்வொர்க்கில் உள்ள மற்ற தளங்களுக்கு ஒத்திசைக்க (synchronize) அனுமதிக்கிறது. இது போஸ்ட்கள், பக்கங்கள் (pages), கஸ்டம் போஸ்ட் வகைகள் (custom post types), மற்றும் Elementor டெம்ப்ளேட்டுகள் உட்பட அனைத்து போஸ்ட் வகைகளையும் ஆதரிக்கிறது. உள்ளடக்கத்தைத் தேர்ந்தெடுப்பதற்கும், இலக்கு தளங்களைத் (target sites) தேர்ந்தெடுப்பதற்கும் பல-படி வழிகாட்டி இடைமுகம் (multi-step wizard interface) இதில் உள்ளது. மேலும், தொகுப்பு செயலாக்கம் (batch processing) மற்றும் நிகழ்நேர முன்னேற்ற பின்னூட்டம் (real-time progress feedback) ஆகியவையும் இதில் உள்ளன.
+
+## அம்சங்கள் (Features)
+
+* உள்ளடக்கத் தேர்வு (Content Selection): சிறுபடங்கள் (thumbnails) மற்றும் போஸ்ட் வகை வடிகட்டுதல் (post type filtering) கொண்ட காட்சி அட்டவணை அமைப்பு (Visual card grid).
+* அனைத்து போஸ்ட் வகைகளும் (All Post Types): போஸ்ட்கள், பக்கங்கள், தயாரிப்புகள் (products), Elementor டெம்ப்ளேட்டுகள் மற்றும் எந்தவொரு கஸ்டம் போஸ்ட் வகையையும் ஒத்திசைக்க முடியும்.
+* தளம் தேர்வு (Site Selection): எந்தெந்த தளங்களுக்கு உள்ளடக்கத்தை ஒத்திசைக்க வேண்டும் என்பதைத் தேர்ந்தெடுக்கலாம். மூலத் தளம் விலக்கு (source site exclusion) மற்றும் குழந்தை தளம் முன்-தேர்வு (child site pre-selection) வசதிகள் உள்ளன.
+* தொகுப்பு செயலாக்கம் (Batch Processing): ஒரே நேரத்தில் 10 தளங்களுக்கு ஒத்திசைத்து, முன்னேற்றப் புதுப்பிப்புகளை வழங்கும்.
+* மீடியா ஒத்திசைவு (Media Sync): போஸ்ட் உள்ளடக்கத்தில் இருந்து மீடியா கோப்புகளை (படங்கள், வீடியோக்கள்) தானாகவே நகலெடுத்து, இலக்கு தளங்களில் மீண்டும் இணைக்கும் (remaps).
+* வகைப்பாட்டு ஒத்திசைவு (Taxonomy Sync): பிரிவுகள் (categories), குறிச்சொற்கள் (tags), மற்றும் கஸ்டம் வகைப்பாடுகள் (custom taxonomies) ஆகியவற்றை அப்படியே பாதுகாக்கும்.
+* Elementor ஆதரவு (Elementor Support): CSS மறுஉருவாக்கம் (CSS regeneration) மற்றும் டெம்ப்ளேட் ID மறுவரைபடம் (template ID remapping) ஆகியவற்றுடன் Elementor டெம்ப்ளேட்டுகளுக்கு முழு ஆதரவு.
+* முரண்பாடு தீர்வு (Conflict Resolution): ஏற்கனவே உள்ள உள்ளடக்கத்தை மாற்ற வேண்டுமா அல்லது தவிர்க்க வேண்டுமா என்ற விருப்பம்.
+* கேச் மேலாண்மை (Cache Management): ஒத்திசைவு முடிந்த பிறகு இலக்கு தளங்களில் Elementor கேச் தானாகவே அழிக்கப்படும்.
+
+## தேவைகள் (Requirements)
+
+* WordPress 5.3 அல்லது அதற்கு மேல்
+* PHP 7.4 அல்லது அதற்கு மேல்
+* Multisite Ultimate plugin (செயல்படுத்தப்பட்டிருக்க வேண்டும்)
+* Elementor plugin (விரும்பினால், Elementor டெம்ப்ளேட் ஒத்திசைவுக்கு தேவை)
+
+## நிறுவுதல் (Installation)
+
+1. 'ultimate-multisite-content-sync' என்பதை '/wp-content/plugins/' என்ற கோப்பகத்தில் (directory) பதிவேற்றவும்.
+2. உங்கள் WordPress Network Admin-ல் உள்ள 'Plugins' மெனு மூலம் இந்த plugin-ஐ செயல்படுத்தவும் (Activate).
+3. Ultimate Multisite → Settings → Content Sync என்ற இடத்தில் அமைப்புகளை (settings) உள்ளமைக்கவும்.
+4. ஒத்திசைவைத் தொடங்க Ultimate Multisite → Content Sync என்ற பகுதிக்குச் செல்லவும்.

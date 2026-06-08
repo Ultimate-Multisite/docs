@@ -1,0 +1,101 @@
+---
+title: సైట్ ఎక్స్‌పోర్టర్
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+మీ నెట్‌వర్క్‌లోని సబ్‌సైట్‌లను ఒకే సైట్ ఇన్‌స్టాలేషన్‌లోకి తరలించాల్సిన అవసరాన్ని, లేదా మీ కస్టమర్ తమ వెబ్‌సైట్‌ను మైగ్రేట్ చేయాలనుకుంటే దీనికి విరుద్ధంగా చేయాల్సిన అవసరాన్ని మేము అర్థం చేసుకున్నాము. ఈ Site Exporter మరియు Importer add-on ఈ పనిని సులభతరం చేస్తుంది. ఈ టూల్ సైట్‌లను zip ఫైల్స్ ఉపయోగించి ఎగుమతి (export) మరియు దిగుమతి (import) చేస్తుంది, వీటిని బ్యాకప్‌గా కూడా ఉపయోగించవచ్చు.
+
+## Features
+
+* సైట్‌లను ఎగుమతి చేయడం మరియు దిగుమతి చేయడం (Export and Import Sites)
+
+* ఉపయోగించడానికి సులభమైన ఇంటర్‌ఫేస్ (Easy-to-use interface)
+
+* సైట్ బ్యాకప్ సృష్టించడం (Create site backup)
+
+## Documentation
+**సైట్‌ను ఎగుమతి చేయడం మరియు దిగుమతి చేయడం ఎలా**
+
+## Installation
+
+1. **ultimate-multisite-site-exporter** ను **/wp-content/plugins/** డైరెక్టరీలోకి అప్‌లోడ్ చేయండి.
+2. WordPress లోని **Plugins** మెనూ ద్వారా ప్లగిన్‌ను యాక్టివేట్ చేయండి.
+3. ప్లగిన్‌ను సెటప్ చేయడానికి స్టెప్ బై స్టెప్ విజర్డ్‌ను అనుసరించండి.
+
+## Usage Guide
+
+Ultimate Multisite తో మీరు మీ నెట్‌వర్క్ నుండి సైట్‌ను ఎగుమతి చేయవచ్చు లేదా మీ మల్టీసైట్ లేదా సింగిల్-సైట్ ఇన్‌స్టాలేషన్‌లో సైట్‌ను దిగుమతి చేయవచ్చు.
+
+ఈ ప్రక్రియను ప్రారంభించడానికి, మా add-ons పేజీకి వెళ్లి Ultimate Multisite: Site Exporter & Importer add-on ను ఇన్‌స్టాల్ చేయండి.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+మీ Plugins పేజీకి వెళ్లి, మీరు ఇప్పుడే ఇన్‌స్టాల్ చేసిన add-on ను **Network Activate** చేయడానికి క్లిక్ చేయండి.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** ఆప్షన్ Ultimate Multisite మెనూలో, ఎడమ వైపున కనిపిస్తుంది.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+మీ నెట్‌వర్క్ నుండి సైట్‌ను ఎగుమతి చేయడానికి, Ultimate Multisite మెనూలోని **Export & Import** కి వెళ్లి, **Export Sites** ట్యాబ్‌లో, **Generate new Site Export** పై క్లిక్ చేయండి.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+మీరు ఎగుమతి చేయాలనుకుంటున్న సైట్‌ను శోధించి, ఎగుమతి చేయబడిన ఫైల్‌లో చేర్చాలనుకునే అంశాలను ఎంచుకోండి. మీరు థీమ్‌లు, ప్లగిన్‌లు మరియు అప్‌లోడ్‌లను చేర్చవచ్చు. మీ సైట్ చాలా పెద్దదిగా ఉంటే, మీరు బ్యాక్‌గ్రౌండ్‌లో ఎగుమతి ప్రక్రియను నడపడానికి ఎంచుకోవచ్చు.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** బటన్‌పై క్లిక్ చేయండి. మీరు ఎగుమతి చేసిన సైట్ **Existing Exports** జాబితాలో అందుబాటులో ఉంటుంది. ఫైల్‌ను డౌన్‌లోడ్ చేయడానికి **Download ZIP** బటన్‌పై క్లిక్ చేయండి. ఎగుమతి ZIP లు స్వయంగా బూట్ అయ్యే `index.php` మరియు `readme.txt` ను కలిగి ఉంటాయి, కాబట్టి వాటిని ప్రత్యేకమైన ఇంపార్టర్ ప్లగిన్‌ను ఇన్‌స్టాల్ చేయకుండా కొత్త హోస్ట్‌లో ఇన్‌స్టాల్ చేయవచ్చు.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+అన్ని సబ్‌సైట్‌లను కలిపి ఎగుమతి చేయడానికి, Ultimate Multisite మెనూలోని **Export & Import** కి వెళ్లి, ఎగుమతి స్క్రీన్‌పై **Network Export** ఆప్షన్‌ను ఉపయోగించండి. ఈ రూపొందించబడిన ఆర్కైవ్ (archive) హోస్ట్ మైగ్రేషన్‌లు, స్టేజింగ్ రీబిల్డ్‌లు లేదా నెట్‌వర్క్-స్థాయి బ్యాకప్‌ల కోసం అన్ని సబ్‌సైట్‌లను ఒకే ZIP లో కలిగి ఉంటుంది.
+
+నెట్‌వర్క్ ఎగుమతులు పెద్దవిగా ఉండవచ్చు. ట్రాఫిక్ తక్కువగా ఉన్నప్పుడు వీటిని నడపండి మరియు ఆర్కైవ్, అలాగే చేర్చబడిన ఏవైనా అప్‌లోడ్‌లు, ప్లగిన్‌లు మరియు థీమ్‌ల కోసం సర్వర్‌కు తగినంత స్టోరేజ్ ఉందో లేదో నిర్ధారించుకోండి.
+
+## How to import a site
+
+సైట్‌ను దిగుమతి చేయడానికి, **Import a Site** ట్యాబ్‌కి వెళ్లి, మీరు దిగుమతి చేయాలనుకుంటున్న సైట్ యొక్క .zip ఫైల్‌ను అప్‌లోడ్ చేయండి. మీరు URLను కొత్తదానికి మార్చవచ్చు లేదా ఖాళీగా ఉంచడం ద్వారా పాత URLను అలాగే ఉంచవచ్చు. అలాగే, దిగుమతి అయిన తర్వాత మీ ఇన్‌స్టాలేషన్ నుండి .zip ఫైల్‌ను తొలగ చేయడానికి మీరు పెట్టెను (box) చెక్ చేయవచ్చు. ఆపై **Begin Import** పై క్లిక్ చేయండి.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+ఈ ప్రక్రియ కొంచెం సమయం పట్టవచ్చు. మీరు ఇంపార్టర్ కింద ఉన్న జాబితాలో పెండింగ్‌లో ఉన్న దిగుమతిని (pending import) చూడవచ్చు.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+**Cancel Import** పై క్లిక్ చేయడం ద్వారా మీరు ప్రక్రియను ఆపవచ్చు.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+ప్రక్రియ పూర్తయిన తర్వాత, మీ సైట్ ఇప్పటికే మీ నెట్‌వర్క్‌లో అందుబాటులో ఉంటుంది.
+
+## How to import a site on a single install
+
+మీ సింగిల్ ఇన్‌స్టాల్‌లో సైట్‌ను దిగుమతి చేయడానికి, ముందుగా మీ సైట్‌లో ఇంపార్టర్‌ను ఇన్‌స్టాల్ చేసి యాక్టివేట్ చేయండి. దీనిని డౌన్‌లోడ్ చేయడానికి లింక్ ఎక్స్‌పోర్టర్ ట్యాబ్‌లో కనుగొనవచ్చు.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+ఇంపార్టర్‌ను **Tools** మెనూలో, ఎడమ వైపున, **Export & Import** అనే సబ్-ఐటమ్‌లో కనుగొనవచ్చు.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+మీరు దిగుమతి చేయాలనుకుంటున్న సైట్ యొక్క .zip ఫైల్‌ను అప్‌లోడ్ చేయండి. మీరు URLను కొత్తదానికి మార్చవచ్చు లేదా ఖాళీగా ఉంచడం ద్వారా పాత URLను అలాగే ఉంచవచ్చు. అలాగే, దిగుమతి అయిన తర్వాత మీ ఇన్‌స్టాలేషన్ నుండి .zip ఫైల్‌ను తొలగ చేయడానికి మీరు పెట్టెను (box) చెక్ చేయవచ్చు. ఆపై **Begin Import** పై క్లిక్ చేయండి.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+ఈ ప్రక్రియ కొంచెం సమయం పట్టవచ్చు. మీరు ఇంపార్టర్ కింద ఉన్న జాబితాలో పెండింగ్‌లో ఉన్న దిగుమతిని (pending import) చూడవచ్చు.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+**Cancel Import** పై క్లిక్ చేయడం ద్వారా మీరు ప్రక్రియను ఆపవచ్చు.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+ప్రక్రియ పూర్తయిన తర్వాత, మీరు ఇప్పుడే దిగుమతి చేసిన సైట్‌తో మీ సైట్ భర్తీ చేయబడుతుంది.

@@ -1,0 +1,111 @@
+---
+title: అనుకూల ఎండ్‌పాయింట్‌ల కోసం అత్యుత్తమ AI కనెక్టర్
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints అనేది OpenAI-compatible AI provider APIs ని మీ WordPress multisite network తో అనుసంధానిస్తుంది. మీరు బహుళ AI providers లను కాన్ఫిగర్ చేయవచ్చు — ప్రతిదానికీ దాని స్వంత endpoint URL, API key, మరియు default model ఉంటాయి — మరియు ఒక provider అందుబాటులో లేనప్పుడు, requests ఆటోమేటిక్‌గా fallback అయ్యేలా రూట్ చేయవచ్చు.
+
+## ముఖ్య లక్షణాలు (Key Features)
+
+- **బహుళ-provider మద్దతు (Multi-provider support)**: మీరు అనేక AI provider cards లను జోడించవచ్చు. ప్రతిదానికీ దాని స్వంత endpoint URL, API key, మరియు default model ఉంటాయి.
+- **డ్రాగ్-టు-రీఆర్డర్ (Drag-to-reorder)**: ప్రతి card పై ఉన్న grip handle ఉపయోగించి providers లను ప్రాధాన్యత క్రమంలో అమర్చవచ్చు; requests ఈ క్రమంలోని providers లను ఉపయోగిస్తాయి.
+- **ఆటోమేటిక్ ఫాల్‌బ్యాక్ రూటింగ్ (Automatic fallback routing)**: ప్రధాన provider అందుబాటులో లేకపోతే, requests ఆటోమేటిక్‌గా తదుపరి కాన్ఫిగర్ చేసిన provider కు మారుతాయి (fallback అవుతాయి).
+- **ప్రతి-provider కాన్ఫిగరేషన్ (Per-provider configuration)**: ప్రతి provider ని దాని స్వంత credentials మరియు model selection తో స్వతంత్రంగా కాన్ఫిగర్ చేయవచ్చు.
+- **card-ఆధారిత సెట్టింగ్స్ UI (Card-based settings UI)**: ఇది stable WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider) పై నిర్మించబడింది.
+- **జోడించినప్పుడు ఆటో-ఎక్స్‌పాండ్ (Auto-expand on add)**: కొత్త provider cards లు ఆటోమేటిక్‌గా ఎక్స్‌పాండ్ అవుతాయి, తద్వారా మీరు వెంటనే వివరాలను పూరించవచ్చు.
+- **స్క్రిప్ట్ కాష్ బస్టింగ్ (Script cache busting)**: ప్లగిన్ అప్‌డేట్ అయినప్పుడు provider scripts లు cache-busted అవుతాయి, తద్వారా తాజా వెర్షన్ లోడ్ అవుతుందని నిర్ధారించబడుతుంది.
+
+## అవసరాలు (Requirements)
+
+- WordPress 5.3 లేదా అంతకన్నా ఎక్కువ
+- PHP 7.4 లేదా అంతకన్నా ఎక్కువ
+- Ultimate Multisite plugin (యాక్టివేట్ చేయబడింది)
+- ఒక OpenAI-compatible API endpoint (self-hosted లేదా third-party)
+
+## ఇన్‌స్టాలేషన్ (Installation)
+
+1. addon files లను మీ `/wp-content/plugins/` డైరెక్టరీలోకి అప్‌లోడ్ చేయండి.
+2. WordPress లోని 'Plugins' మెనూ ద్వారా ప్లగిన్‌ను యాక్టివేట్ చేయండి.
+3. addon ను కాన్ఫిగర్ చేయడానికి **Ultimate Multisite → AI Connector** కు వెళ్లండి.
+
+## కాన్ఫిగరేషన్ (Configuration)
+
+### బహుళ-Provider సెటప్ (Multi-Provider Setup)
+
+ఈ కాన్ఫిగరేషన్ screen లో card-based లేఅవుట్ ఉపయోగించబడుతుంది, ఇక్కడ ప్రతి card ఒక AI provider ని సూచిస్తుంది. మీకు అవసరమైనన్ని providers లను జోడించవచ్చు.
+
+#### ఒక Provider ని జోడించడం (Adding a Provider)
+
+1. network admin లో **Ultimate Multisite → AI Connector** కు వెళ్లండి.
+2. **Add Provider** పై క్లిక్ చేయండి.
+3. ఒక కొత్త provider card కనిపిస్తుంది మరియు ఆటోమేటిక్‌గా ఎక్స్‌పాండ్ అవుతుంది.
+4. provider వివరాలను పూరించండి:
+   - **Provider Name** — ఈ provider ని గుర్తించడానికి ఒక లేబుల్ (ఉదాహరణకు, "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** — OpenAI-compatible API యొక్క base URL (ఉదాహరణకు, `https://api.openai.com/v1`).
+   - **API Key** — ఈ provider కోసం మీ API key.
+   - **Default Model** — ఈ provider కోసం డిఫాల్ట్‌గా ఉపయోగించాల్సిన model identifier (ఉదాహరణకు, `gpt-4o`, `mistral-small`).
+5. **Save Settings** పై క్లిక్ చేయండి.
+
+#### ఒక Provider ని తొలగించడం (Removing a Provider)
+
+ఏదైనా provider card పై ఉన్న **Remove** బటన్ పై క్లిక్ చేయడం ద్వారా దాన్ని తొలగించవచ్చు. మార్పును వర్తింపజేయడానికి సెట్టింగ్స్ సేవ్ చేయండి.
+
+#### Providers లను రీఆర్డర్ చేయడం (Reordering Providers)
+
+ఏదైనా provider card యొక్క ఎడమ వైపున ఉన్న grip icon (⣿) ను లాగడం ద్వారా దానిని రీఆర్డర్ చేయవచ్చు. ఈ క్రమం ఫాల్‌బ్యాక్ ప్రాధాన్యతను నిర్ణయిస్తుంది: requests మొదటి provider కు పంపబడతాయి మరియు ఒక request విఫలమైతే, తదుపరి providers కు fallback అవుతాయి.
+
+### ఫాల్‌బ్యాక్ రూటింగ్ (Fallback Routing)
+
+ప్రధాన provider కు పంపిన request, timeout, rate limit, లేదా service outage కారణంగా విఫలమైతే — కనెక్టర్ ఆటోమేటిక్‌గా జాబితాలోని తదుపరి provider తో మళ్లీ ప్రయత్నిస్తుంది (retries). ఇది ఒక provider విజయవంతం అయ్యే వరకు లేదా అన్ని providers ప్రయత్నించే వరకు కొనసాగుతుంది.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback అనేది calling plugin లేదా theme కు కనిపించదు — ఎన్ని providers ప్రయత్నించినా, వారికి విజయవంతమైన response లేదా తుది error మాత్రమే అందుతుంది.
+
+### Provider కాన్ఫిగరేషన్ రిఫరెన్స్ (Provider Configuration Reference)
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | ఈ provider కోసం ప్రదర్శించబడే లేబుల్ |
+| Endpoint URL | Yes | OpenAI-compatible API యొక్క base URL |
+| API Key | Yes | ఈ provider కోసం Authentication key |
+| Default Model | Yes | request లో model పేర్కొనబడనప్పుడు ఉపయోగించే model identifier |
+
+## ట్రబుల్‌షూటింగ్ (Troubleshooting)
+
+### providers లు జాబితా చేయబడకపోతే (No providers are listed)
+
+సేవ్ చేసిన తర్వాత provider list ఖాళీగా ఉంటే, దయచేసి ఈ విషయాలను నిర్ధారించుకోండి:
+
+- providers లను జోడించిన తర్వాత మీరు **Save Settings** పై క్లిక్ చేశారా?
+- మీ బ్రౌజర్ సెట్టింగ్స్ పేజీని సేవ్ చేయకుండా బ్లాక్ చేయలేదని నిర్ధారించుకోండి (JavaScript errors కోసం బ్రౌజర్ కన్సోల్‌ను తనిఖీ చేయండి).
+- ప్లగిన్ యాక్టివ్‌గా ఉందా మరియు మీరు network admin screen లో ఉన్నారా?
+
+### అన్ని providers లకు requests విఫలమైతే (Requests are failing for all providers)
+
+- ప్రతి provider యొక్క endpoint URL మీ సర్వర్ నుండి అందుబాటులో ఉందో లేదో ధృవీకరించండి (కేవలం మీ బ్రౌజర్ నుండి మాత్రమే కాదు).
+- ప్రతి API key చెల్లుబాటు అయ్యేదిగా మరియు గడువు ముగియలేదని తనిఖీ చేయండి.
+- వారి డాష్‌బోర్డ్‌లో provider యొక్క rate-limit మరియు quota స్థితిని సమీక్షించండి.
+- కనెక్టర్ నుండి వివరణాత్మక error messages ను క్యాప్చర్ చేయడానికి WordPress debug logging (`WP_DEBUG_LOG`) ను ఎనేబుల్ చేయండి.
+
+### fallback కోసం ఒక provider ఉపయోగించబడకపోతే (A provider is not being used for fallback)
+
+Drag-to-reorder అనేది fallback order ను మారుస్తుంది. fallback requests పొందాలని మీరు ఆశించే provider జాబితాలో సరిగ్గా స్థానంలో ఉందో లేదో మరియు దాని endpoint URL మరియు API key సరైనవో కాదా అని నిర్ధారించుకోండి.
+
+### కొత్త provider card ఆటోమేటిక్‌గా ఎక్స్‌పాండ్ కాకపోతే (New provider card does not expand automatically)
+
+Auto-expand కు మీ బ్రౌజర్‌లో JavaScript ఎనేబుల్ అవసరం. card క్లిక్ చేసినప్పుడు ఎక్స్‌పాండ్ కాకపోతే, బ్రౌజర్ కన్సోల్‌లో errors కోసం తనిఖీ చేయండి. auto-expand ట్రిగ్గర్ చేయకపోయినా, card header పై క్లిక్ చేయడం ద్వారా card contents ఎల్లప్పుడూ అందుబాటులో ఉంటాయి.
+
+## Changelog
+
+పూర్తి వెర్షన్ చరిత్ర కోసం [Changelog](./changelog) చూడండి.
