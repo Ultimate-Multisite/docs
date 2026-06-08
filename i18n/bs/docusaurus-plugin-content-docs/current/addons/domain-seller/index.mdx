@@ -1,0 +1,129 @@
+---
+title: Prodavac domena
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
+
+# Domain Seller
+
+**Multisite Ultimate: Domain Seller** pretvara vaš WordPress Multisite network u moćnu platformu za prodaju domena. Omogućava klijentima da registruju prilagođene domene direktno tokom registracije ili sa svog dashboarda, sa proverom dostupnosti u realnom vremenu i transparentnim cijenama.
+
+### Zašto Domain Seller?
+
+Registracija domena je jedna od najtraženijih dodatnih usluga (upsell) za bilo koju WaaS (Website as a Service) platformu. Umjesto da klijente usmjeravate ka trećoj strani registraciji, možete im direktno ponuditi domene — zadržavajući više prihoda u vašem networku, a istovremeno pružajući klijentima bezbrižno iskustvo.
+
+### Ključne značajke
+
+#### Podrška više registara domena
+* **OpenSRS** — Potpuna registracija, obnova i upravljanje
+* **Namecheap** — Kompletnu integraciju sa WhoisGuard-om i sandbox testiranjem
+* **Ekstensibilna arhitektura** — Izgrađeno na obrascu Integration Registry, što olakšava dodavanje više provajdera
+* **Ugrađeno testiranje konekcije** — Validira vjerodajnice i konektivnost provajdera prije pokretanja
+
+#### Vođeni čarobnik za postavljanje
+* **Onboarding jednim klikom** — Vodi vas kroz konfiguraciju provajdera, uvoz TLD-ova i kreiranje domenskih proizvoda
+* **Automatski sink TLD-a** — Uvozi sve dostupne TLD-ove i veleprodajne cijene od vaših povezanih provajdera
+* **Kreiranje podrazumevanog proizvoda** — Kreira domenski proizvod spreman za upotrebu sa razumnim podrazumevanim maržama
+
+#### Fleksibilno određivanje cijena domena
+* **Tri načina marže** — Procentualna marža, fiksna marža ili fiksna cijena po TLD-u
+* **Proizvodi specifični za TLD** — Kreirajte zasebne domenske proizvode za različite grupe TLD-ova (.com/.net, .io, kodovi zemalja, itd.)
+* **Uvodna cijena** — Ponudite popustenu cijenu za prvu godinu kako biste privukli nove registracije
+* **Cijena u realnom vremenu** — Živo veleprodajne cijene od provajdera sa inteligentnim keširanjem
+* **Podrška kuponima** — Potpuna kompatibilnost sa Multisite Ultimate kodovima za popust
+
+#### WHOIS zaštita privatnosti
+* **Konfiguracija po proizvodu** — Postavite WHOIS privatnost na Isključeno, Uvijek uključeno ili Izbor klijenta
+* **Opt-in klijenta** — Kada je postavljeno na Izbor klijenta, polje za označavanje na naplati omogućava klijentima dodavanje zaštite privatnosti
+* **Konfigurišane cijene** — Postavite godišnju cijenu za dodatak privatnosti, ili ga ponudite besplatno
+* **Integracija sa registrarom** — Automatski omogućava WhoisGuard (Namecheap) ili WHOIS privatnost (OpenSRS) u trenutku registracije
+
+#### Jedinstveno iskustvo naplate
+* **Tri domenska načina** — Klijenti biraju između poddomena (besplatno), registracije novog domena ili mapiranja postojećeg domena koji već posjeduju
+* **Pretraga domena u realnom vremenu** — Provera dostupnosti pokretana AJAX-om bez ponovnog učitavanja stranice
+* **Pametni predlozi** — Alternativni TLD predlozi kada je preferirani domen zauzet
+* **Transparentne cijene** — Jasno prikazivanje cijene registracije, cijene obnove i opcione naknade za WHOIS privatnost
+* **Polja za kontakt registratora** — Prikuplja potrebne informacije o registratoru (ime, adresa, telefon) u okviru procesa naplate
+* **Automatski generisani URL sajta** — Adresa sajta se automatski izvodi iz izabranog domena
+
+#### Sistem automatske obnove
+* **Obnove vezane za članstvo** — Domeni se automatski obnavljaju dok je članstvo klijenta aktivno
+* **Pametno planiranje** — Zadaci obnove postavljaju se na osnovu datuma isteka domena
+* **Logika ponavljanja** — Inteligentno ponavljanje za neuspješne pokušaje obnove
+* **Obavještenja putem e-pošte** — Konfigurišane upozorenja za nadolazeće obnove, uspješne obnove, neuspjele i isteke
+
+#### Upravljanje DNS-om klijenta
+* **DNS samostalno upravljanje** — Klijenti mogu dodati, urediti i obrisati DNS zapise (A, AAAA, CNAME, MX, TXT) sa svog dashboarda
+* **Status domena** — Status registracije u realnom vremenu, datumi isteka i informacije o nameserverima
+* **Automatsko mapiranje domena** — Registrovani ili postojeći domeni se automatski mapiraju na sajt klijenta
+
+#### Administracijske alate
+* **Ručna registracija domena** — Registrujte domene u ime klijenta sa admin panela
+* **Monitoring domena** — Pregled svih domena klijenta, statusa i datuma isteka sa jedne stranice
+* **Logovanje specifično za provajdera** — Odvojeni kanali logova za svakog registra (npr. domain-seller-namecheap.log)
+* **Detalji registracije** — Pregled informacija o registratoru i podataka o registraciji na glavnoj stranici uređivanja domena
+
+### Podržani provajderi
+
+* **OpenSRS** — Potpuna integracija sa registracijom, obnovom, upravljanjem DNS-om i WHOIS privatnošću
+* **Namecheap** — Potpuna integracija sa registracijom, obnovom, proverom dostupnosti u grupama, i besplatnim WhoisGuard-om
+* **GoDaddy** — Registracija i obnova
+* **ResellerClub** — Registracija, obnova i upravljanje DNS-om
+* **NameSilo** — Registracija i obnova
+* **Enom** — Registracija, obnova i upravljanje DNS-om
+
+### Tehnički detalji
+
+* **Zahteva:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Arhitektura:** Integration Registry pattern sa Domain_Selling_Capability interfejsom
+* **Autoloading:** Jetpack autoloader sa PSR-4 mapiranjem klasa
+* **Standardi:** WordPress kodni standardi, strogo tipiziranje, pripremljeni statementi
+
+## Instalacija
+
+1. Osigurajte da je **Multisite Ultimate v2.4.12+** instaliran i aktiviran na network nivou
+2. Postavite plugin u `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Aktivišite plugin na network nivou iz **Plugins** u WordPress Network Adminu
+4. **Setup Wizard** se automatski pokreće pri prvoj aktivaciji — pratite korake kako biste:
+   * Povezali vašeg registra domena (OpenSRS ili Namecheap)
+   * Testirali konekciju
+   * Uvezli dostupne TLD-ove i veleprodajne cijene
+   * Kreirali vaš prvi domenski proizvod sa maržom cijena
+5. Dodajte polje **Domain Selection** na vaš formular za naplatu u **Ultimate Multisite > Checkout Forms**
+
+## Često postavljana pitanja
+
+### Koju verziju Multisite Ultimate je potrebno?
+
+Verzija 2.4.12 ili viša. Dodatak nije kompatibilan sa WP Ultimo v1.x ili verzijama Ultimate Multisite ispod 2.4.12.
+
+### Koji provajderi domena su podržani?
+
+Potpuno podržano je šest registra: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo** i **Enom**. Arhitektura Integration Registry dodatka čini jednostavno dodavanje prilagođenih provajdera — pogledajte [developer guide](/developer/integration-guide/custom-registrar).
+
+### Mogu li ponuditi WHOIS zaštitu privatnosti?
+
+Da. Svaki domenski proizvod ima podešavanje WHOIS Privatnosti sa tri načina: Isključeno, Uvijek uključeno ili Izbor klijenta. Kada je postavljeno na Izbor klijenta, klijenti vide polje za označavanje tokom naplate sa cijenom (ili "Besplatno" za Namecheap WhoisGuard). Flag privatnosti automatski se prenosi registraru u trenutku registracije.
+
+### Mogu li postaviti različite cijene za različite TLD-ove?
+
+Da. Kreirajte zasebne domenske proizvode za različite grupe TLD-ova. Svaki proizvod može imati svoj tip marže (procentualna, fiksna marža ili fiksna cijena), podržane TLD-ove i uvodnu cijenu.
+
+### Koje opcije naplate vide klijenti?
+
+Polje Domain Selection daje klijentima tri kartice: **Subdomain** (koriste besplatni poddomen na vašem networku), **Register New Domain** (pretražuju i registruju novi domen) i **Existing Domain** (mapiraju domen koji već posjeduju). Pojaviće se samo načini koje vi omogućite.
+
+### Da li podržava automatske obnove?
+
+Da. Domeni se mogu postaviti na automatsku obnovu i vezani su za status članstva klijenta. Naplata obnove obrađuje se putem postojećeg gatewaya za plaćanje klijenta.
+
+### Mogu li klijenti upravljati svojim DNS zapisima?
+
+Da. Klijenti dobijaju interfejs za upravljanje DNS-om na svom dashboardu da dodaju, uređuju i brišu A, AAAA, CNAME, MX i TXT zapise. Upravljanje DNS-om je dostupno sa OpenSRS, ResellerClub i Enom.
+
+### Da li postoji čarobnik za postavljanje?
+
+Da. Setup wizard se automatski pokreće pri prvoj aktivaciji i vodi vas kroz povezivanje registra, uvoz TLD-ova i kreiranje vašeg prvog domenskog proizvoda. Možete ponovo pokrenuti čarobnika i iz postavki dodatka.

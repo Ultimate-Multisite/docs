@@ -1,0 +1,117 @@
+---
+title: Multimoneda
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency permet que la teva xarxa accepti pagaments en múltiples divises. Converteix els preus automàticament utilitzant tipus de canvi en temps real o manuals, et permet establir preus exactes per producte per a qualsevol divisa i detecta la divisa preferida de cada visitant mitjançant geolocalització, tot gestionat des d'un únic *dashboard* d'administració.
+
+## Funcionalitats Clau
+
+- **Conversió automàtica de tipus de canvi** — els preus es converteixen des de la teva divisa base utilitzant tipus de canvi obtinguts del proveïdor que hagis triat.
+- **Derogacions de preus per producte** — configura preus exactes específiques de divisa en qualsevol producte per saltar la conversió automàtica.
+- **Camp de selector de divisa al registre** — permet als clients triar la divisa que prefereixen durant el *checkout*/registre.
+- **Múltiples proveïdors de tipus de canvi** — ECB, Frankfurter, Stripe, o tipus manuals complets.
+- **Detecció de divisa basada en geolocalització** — preselecciona automàticament la divisa que coincideixi amb el país del visitant.
+- **Dashboard d'administració** — gestiona les divises actives, els tipus de canvi i la configuració dels proveïdors des d'un únic lloc.
+
+## Requisits
+
+- Ultimate Multisite 2.0.0 o més recent
+- Instal·lació de WordPress Multisite
+- PHP 7.4 o més recent
+
+## Instal·lació
+
+1. Carrega els fitxers del *plugin* a `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Activa el *plugin* a través de la pantalla de **Plugins** de WordPress (Activació de Xarxa)
+3. Navega a **Ultimate Multisite → Multi-Currency** per obrir el *dashboard* d'administració.
+4. Afafeu les divises que voleu acceptar i configureu el vostre proveïdor de tipus de canvi.
+
+## Configuració
+
+### Dashboard d'Administració
+
+El *dashboard* d'administració de Multi-Currency (**Ultimate Multisite → Multi-Currency**) és el lloc central per:
+
+- Afegir, activar o desactivar divises.
+- Triar un proveïdor de tipus de canvi i refrescar els tipus de canvi quan ho necessiteu.
+- Revisar els tipus actuals de totes les divises actives.
+- Establir tipus manuals quan els proveïdors automàtics no són adequats.
+
+### Proveïdors de Tipus de Canvi
+
+| Proveïdor | Descripció |
+|---|---|
+| **ECB** | Banc Europeu de la Terra — tipus diaris gratuïts per xarxes basades en EUR. |
+| **Frankfurter** | API mirall de l'ECB de font obert — gratuït, no requereix clau API. |
+| **Stripe** | Utilitza els tipus de canvi en temps real de Stripe — requereix una integració activa de Stripe. |
+| **Manual** | Tu entrella els tipus directament; sense crides a API externes. |
+
+Seleccioneu el vostre proveïdor sota **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Els tipus poden refrescar-se manualment en qualsevol moment o programar-se per actualitzar-se automàticament.
+
+### Derogacions de Preus per Producte
+
+Quan la conversió automàtica no és prou precisa, podeu establir un preu exact per a una divisa específica en qualsevol producte:
+
+1. Obreu l'editor del producte (**Ultimate Multisite → Products → Edit**)
+2. Desplaueu fins a la secció **Currency Pricing**
+3. Introduïu el preu exact per a cada divisa que voleu derogar.
+4. Guardeu el producte.
+
+Els productes sense derogació utilitzen el preu convertit de la vostra divisa base.
+
+### Camp de Selector de Divisa al Registre
+
+El camp de selector de divisa es pot afegir al vostre flux de registre/checkout perquè els clients trien la divisa que prefereixen al registrar-se:
+
+1. Navega a **Ultimate Multisite → Multi-Currency → Settings**
+2. Activa **Show currency selector on signup**
+3. Opcionalment, configura una divisa predeterminada o deixa que la geolocalització determini el valor preseleccionat.
+
+La divisa seleccionada es guarda amb la subscripció i s'utilitza per a tota la facturació posterior.
+
+### Detecció de Divisa basada en Geolocalització
+
+Quan la detecció de geolocalització està activada, l'addon mapeja el país del visitant a una divisa i la preselecciona al camp de selector de divisa. Per activar-ho:
+
+1. Navega a **Ultimate Multisite → Multi-Currency → Settings**
+2. Activa **Detect currency from visitor location**
+3. Mappa els països a les divises a la taula **Geolocation Mapping**.
+
+Si no hi ha mapeig per un país visitant, es fa servir la divisa base de la xarxa com a alternativa.
+
+## Preguntes Freqüents
+
+### Què passa si un proveïdor de tipus de canvi no està disponible?
+
+L'addon es retira als últims tipus obtinguts amb èxit. Si mai no s'han obtingut tipus, es retira als tipus manuals que heu configurat. Es recomana configurar tipus manuals com a net de seguretat.
+
+### Estic a la voluntat d'utilitzar proveïdors diferents per a divises diferents?
+
+No — un proveïdor és actiu a la vegada per a totes les divises. Utitzeu **Manual** si necessiteu control complet sobre els tipus individuals.
+
+### La geolocalització requereix un *plugin* separat?
+
+No és necessari cap *plugin* de geolocalització extern. L'addon utilitza la detecció IP-a-país integrada de WordPress. Per a una major precisió, es pot integrar un servei de geolocalització dedicat mitjançant els *hooks* de filtre proporcionats.
+
+### Les derogacions per producte es compleixen abans o després de l'impost?
+
+Les derogacions per producte estableixen el preu abans de l'impost en la divisa objectiu. L'impost es calcula sobre el preu de la derogació utilitzant la vostra configuració d'impostos existent.
+
+## Historial de Versió
+
+### Versió 1.0.0 — Llibertat el 2026-04-02
+
+- Nou: Suport a múltiples divises amb conversió automàtica de tipus de canvi.
+- Nou: Derogacions de preus per producte per a preus exactes específics de divisa.
+- Nou: Camp de selector de divisa al registre per al flux de *checkout*.
+- Nou: Proveïdors de tipus de canvi: ECB, Frankfurter, Stripe i manual.
+- Nou: Detecció de divisa basada en geolocalització.
+- Nou: Dashboard d'administració per gestionar divises i tipus de canvi.
+- Correcció: El *dashboard* sempre mostra els preus en la divisa base, independentment de la divisa seleccionada.

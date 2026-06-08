@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Ultimate Multisite: Pagkonektar sa MailChimp
+
+I-konektar ang imong Ultimate Multisite network ngadto sa imong MailChimp. Mahimo nimong i-link ang pipila ka plans sa mga MailChimp Lists ug awtomatik nga magdugang og subscribers aning lists kon mo-sign up sila.
+
+## Pag-install (Installation)
+
+1. I-upload ang 'ultimate-multisite-mailchimp' ngadto sa direktoryo nga '/wp-content/plugins/'
+2. I-activate ang plugin pinaagi sa 'Plugins' menu sa imong WordPress Network Admin
+
+## Giya sa Paggamit (Usage Guide)
+
+Dili kaayo lisod i-sync ang email address sa mga subscribers sa imong MailChimp lists gamit ang atong Ultimate Multisite: MailChimp Integration Add-on. Ang tutorial ni nagtumong aron matabangan ka sa pag-set up sa tanan!
+
+## Pagkuha og API key
+
+Sa dili pa kita magsugod sa pagtan-aw sa lain-laing settings, kinahanglan nato ang usa ka MailChimp API key. Kini maoy magtugot sa Ultimate Multisite nga makigsulti sa MailChimp API aron makuha ang mga lists ug groups, ug dugangan og email address kining mga lists ug groups kon mo-sign up ang mga user.
+
+Sunda kini nga tutorial aron makuha nimo ang imong kaugalingong MailChimp API key: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Idugang ang imong MailChimp API key sa_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integration Mode (Mode sa Pagkonektar)
+
+Ang MailChimp Integration add-on nagtanyag og duha ka "integration modes," nga nagpasabot nga adunay duha ka lain-laing paagi nga imong magamit ang add-on aron i-sync ang mga email address.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Duha ka integration modes para sa mas dako nga flexibility!_
+
+### Mode 1: Multiple Lists (Daghang Lists)
+
+Ang default mode naggamit og **Multiple Lists**. Kini nga mode magtugot kanimo sa pagpili og daghang MailChimp lists alang sa matag plan. Mao kini ang labing maayo nga kapilian kon gusto nimong i-segment ang imong mga user ngadto sa lain-laing lists.
+
+Pananglitan, isulti nato nga aduna kay 3 ka lahi nga lists sa imong MailChimp account: **Newsletter**, **Plan A**, ug **Plan B**. Gusto nimo nga ang tanang user, bisan unsay ilang plan, apil usab sa Newsletter list, aron dili sila makalapas sa imong mga update.
+
+Aron maabot kana, mahimo kang mogamit sa Multiple Lists mode aron dugangan ang duha ka lists nga **Newsletter** ug **Plan A** sa Plan A MailChimp Settings, ug ang **Newsletter** ug **Plan B** sa Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Pilia ang default lists alang sa mga bag-ong account ug alang sa mga na-cancel nga account_
+
+### Mode 2: Single List + Multiple Groups (Usa ka Lista + Daghang Grupo)
+
+Gitugot sa MailChimp nimo nga i-segment ang imong list ngadto sa mas gagmayng grupo sa mga user nga gitawag og **Groups**. Kini nagtugot kanimo nga adunay mas dako nga kontrol kay mahimo kang magpadala og campaign ngadto sa usa ka piho nga bahin sa imong subscribers nga dili na kinahanglan nga maghimo og daghang kopya sa parehas nga campaign sa MailChimp (nga makapalisud sa pag-analyze sa metrics sa maong campaign pagkahuman).
+
+Pananglitan, mahimo kang adunay usa ka list nga gitawag og **My Network Subscribers**, ug sulod niini aduna kay mga groups para sa **Plan A** ug **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Pilia ang default lists ug groups, kon naggamit sa “single list + multiple groups” integration mode_
+
+## Default Lists ug Groups (Default nga Mga Lista ug Grupo)
+
+Pagkahuman nimo pagpili kung unsay integration mode ang mas makatarunganon alang sa imong sitwasyon, panahon na aron pilion ang default lists (ug groups, depende sa mode). Ang default list gamiton kon ang usa ka plan walay piho nga List nga gipili.
+
+Mahimo usab kang mopili og default list para sa mga na-cancel nga account. Kanus-a nga ang usa ka user mo-terminate sa iyang subscription ug mawala ang iyang account gikan sa imong network, ang iyang email address ilihok ngadto sa list set alang sa mga na-cancel nga accounts.
+
+## Pagpasiugda sa Double Subscription (Double Subscription)
+
+Sa samang settings page, makahimo ka usab sa pag-enable sa **Double Subscription**. Kini nga option magdugang sa user sa default list nga gipili UG sa list nga gipili alang sa plan sa user. Kon dili ma-enable kining option, ang user apil lang sa list nga gipili para sa plan sa user. Kon walay gi-set para anang piho nga plan, dayon ang user adto sa default list nga gipili.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Mahimo nimong ipa-subscribe ang imong mga user sa default list ug sa list sa plan kon mo-sign up_
+
+## Pagpili og Lists ug Groups alang sa Matag Plan
+
+Pangadto sa imong **Plans** ug pilia ang plan nga gusto nimo i-edit. Pahibaloi nga sa **Advanced Options** meta-box, adunay bag-ong tab nga gitawag og MailChimp.
+
+Sa maong tab, mahimo kang mopili og daghang lists o usa ka single list ug daghang groups (depende sa integration mode) alang anang plan.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Pilia ang Lists ug Groups nga gusto nimong gamiton para sa matag usa sa imong mga plans_
+
+Kon adunay bag-ong user nga mo-sign up para anang plan, ang iyang email address idugang sa gipili nga lists ug groups!

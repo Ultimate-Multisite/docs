@@ -1,0 +1,114 @@
+---
+title: Emails
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+L'addon Ultimate Multisite: Emails permet als propietaris de la xarxa proporcionar i gestionar comptes de correu electrònic dels clients juntament amb els llocs web i les membresdiess. La versió 1.1.0 afegeix la gestió de comptes de correu electrònic per part del client, l'autenticació única (SSO) de webmail, el suport de reencaminadors de CyberPanel i millores en la provisió durant el pagament.
+
+## Funcionalitats clau
+
+* **Widget de comptes de correu electrònic del client**: Els clients poden crear i gestionar comptes de correu electrònic des de la seva pàgina de compte sense haver de crear un tiqueti de suport.
+* **SSO de Webmail i enllaços màgics**: Els clients poden accedir a webmail directament des de la pàgina de compte amb autenticació d'un clic, quan el proveïdor ho suporta.
+* **Canvis de contrasenya**: Els clients i els administradors poden actualitzar les contrasenyes de la caixa de correu des del widget de gestió de correu electrònic.
+* **Provisiònalització al pagament**: La creació del compte de correu electrònic del client pot esdevenir durant el pagament, de manera que la caixa de correu estigui preparada quan es completi el flux de compra.
+* **Reencaminadors de CyberPanel**: Les xarxes basades en CyberPanel poden crear i gestionar reencaminadors de correu electrònic com a part del flux de servei de correu electrònic.
+* **Configuració conscient del proveïdor**: La pàgina de configuració filtra els proveïdors per mostrar només les integracions actives i configurades, de manera que els administradors només vegin opcions utilitzables.
+
+## Requisits
+
+* Ultimate Multisite 2.0.0 o més alta
+* Instal·lació de WordPress Multisite
+* Almenys una integració de proveïdor de correu electrònic configurada
+* Credencials API del proveïdor amb permís per crear caixes de correu, canviar contrasenyes i emetre enllaços d'accés webmail, quan sigui suportat
+
+## Instal·lació
+
+1. Carrega els fitxers del plugin a `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activa l'addon a nivell de xarxa des de **Plugins** a l'administració de la xarxa de WordPress.
+3. Navega a **Ultimate Multisite** > **Settings** i obre la configuració de correu electrònic de l'addon.
+4. Habilita les integracions de proveïdors de correu electrònic que vols que els clients utilitzin.
+5. Guarda la configuració i prova la creació de comptes amb un client no productiu o un lloc de *staging*.
+
+## Gestió de correu electrònic del compte del client
+
+La versió 1.1.0 afegeix un widget de gestió de correu electrònic a la pàgina de compte del client. Utilitza aquest widget quan els clients han de fer autogestió de la creació i manteniment de la caixa de correu per els seus pròprops llocs.
+
+Des de la pàgina de compte, els clients poden:
+
+1. Veure els comptes de correu electrònic connectats a la seva membresria o lloc actual.
+2. Crear una nova caixa de correu quan el seu pla permet comptes addicionals.
+3. Canviar la contrasenya d'una caixa de correu existent.
+4. Obrir proveïdors de webmail suportats mitjançant SSO o un missatge d'accés màgic.
+
+El widget utilitza el sistema actual de pàgines de comptes d'Ultimate Multisite, per tant, les accions es limiten al context de compte que el client està veient. Això evita que els clients gestionin comptes de correu electrònic que pertanyen a una altra membresria o lloc.
+
+## SSO de Webmail i Login amb Enllaç Màgic
+
+El SSO de Webmail proporciona als clients una acció directa de **Open webmail** des de la pàgina de compte. Quan el proveïdor actiu ho suporta, l'addon sol·licita una URL d'accés de curta durada i redirigeix el client a webmail sense que hagi de copiar les credencials de la caixa de correu.
+
+El comportament del proveïdor pot variar:
+
+* Els proveïdors amb API de SSO natives poden crear una sessió de webmail autenticada i directa.
+* Els proveïdors amb suport d'enllaç màgic poden generar un enllaç de login limitat en el temps.
+* Els proveïdors sense suport de SSO o enllaç màgic encara han de mostrar els detalls de la caixa de correu i les accions de gestió de contrasenyes, però sense el botó de webmail d'un clic.
+
+Habilita l'accés a webmail només per als proveïdors per què hagi configurat les credencials API necessàries. Si l'acció falta per un proveïdor, confirma primer que el proveïdor és actiu, configurat i que suporta enllaços de login webmail.
+
+## Provisiònalització al pagament
+
+L'addon pot crear comptes de correu electrònic de clients com a part del pagament. Això és útil quan el pla inclou una caixa de correu per defecte o quan el formulari de pagament recull detalls de comptes de correu electrònic.
+
+Procediment recomanat:
+
+1. Configura el proveïdor i els límits del pla abans d'habilitar la provisiònalització al pagament.
+2. Prova una compra amb un producte de *staging* i confirma que la caixa de correu es crea després del pagament.
+3. Revisa la pàgina de compte del client per confirmar que la nova caixa de correu apareix al widget de correu electrònic.
+4. Confirma les accions de canvi de contrasenya i webmail abans d'habilitar el flux per als productes de producció.
+
+Si la provisiònalització falla, el compte i la membresria del client poden continuar existint mentre que la caixa de correu requereix el seguiment de l'administrador. Comprova els logs d'activitat d'Ultimate Multisite i els logs del proveïdor abans de tornar a intentar.
+
+## Reencaminadors de correu electrònic de CyberPanel
+
+Per a xarxes basades en CyberPanel, la versió 1.1.0 afegeix suport de reencaminadors de correu electrònic. Utilitza reencaminadors quan els clients necessiten adreces com `info@dominí-client.test` per redirigir el correu a una altra caixa de correu sense crear una caixa de correu completa.
+
+Abans de oferir reencaminadors, confirma que l'integració de CyberPanel està configurada i és accessible. Consulta la guia [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) per als constants requerits de l'host, l'usuari, la contrasenya i el paquet.
+
+## Historial de versions
+
+### Versió 1.1.0 - Llibertat el 2026-05-05
+
+* Nou: SSO de Webmail i login amb enllaç màgic — els clients poden accedir a webmail directament des de la seva compte amb autenticació d'un clic.
+* Nou: Funcionalitat de canvi de contrasenya afegida al widget de gestió de comptes de correu electrònic.
+* Nou: Suport a reencaminadors de correu electrònic de CyberPanel.
+* Nou: Widget de gestió de correu electrònic a la pàgina de compte del client per autogestió de la creació i gestió de comptes.
+* Nou: Creació de comptes de correu electrònic del client integrada al flux de pagament per a una provisiónalització automàtica.
+* Fix: L'hook del widget de la pàgina de compte actualitzat per utilitzar el correcte patró d'registrament UMS.
+* Fix: El formulari de Creació de Comptes substituït per JS vanilla i la correcta sortida de document HTML complet.
+* Fix: El widget de gestió de correu electrònic ara utilitza el sistema UMS currents per a les pàgines de comptes d'administració.
+* Fix: El formulari de creació de comptes de correu electrònic d'administrador inclou camp de contrasenya i utilitza Email_Account_Manager.
+* Fix: Spam de log per sol·licitat eliminat de l'inicialització de Email_Account_Manager.
+* Millorat: La pàgina de configuració ara filtra per mostrar només els proveïdors de correu electrònic actius i configurats.
+
+## Preguntes freqüents
+
+## Què podem fer els clients amb els seus propis comptes de correu electrònic?
+
+Sí. Quan el widget de comptes de client està habilitat i el pla permet comptes de correu electrònic, els clients poden crear i gestionar les seves pròpies caixes de correu des de la pàgina de compte.
+
+## Què proveïdor suporta SSO de webmail?
+
+No. El suport de SSO i enllaç màgic depèn del proveïdor de correu electrònic actiu. Els proveïdors sense API d'enllaç d'accés encara poden suportar la creació de caixes de correu i canvis de contrasenya.
+
+## Poden els administradors crear comptes de correu electrònic per als clients?
+
+Sí. Els administradors poden crear comptes de correu electrònic des de l'interfície d'administració, incloent la configuració de la contrasenya inicial quan es crea el compte.
+
+## Són els reencaminadors iguals que les caixes de correu?
+
+No. Una caixa de correu emmagatzema correu i té credencials de login. Un reencaminador redirige el correu a una altra adreça i no proporciona una caixa de correu separada.

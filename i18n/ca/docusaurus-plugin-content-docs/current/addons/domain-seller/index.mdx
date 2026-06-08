@@ -1,0 +1,129 @@
+---
+title: Venedor de domini
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
+
+# Domain Seller
+
+**Multisite Ultimate: Domain Seller** transforma la teva xarxa WordPress Multisite en una potent plataforma de venda de domini. Permet als clients registrar domini personalitzats directament durant l'alta o des del seu *dashboard*, amb verificació de disponibilitat en temps real i preus transparents.
+
+### Per què Domain Seller?
+
+La registració de domini és un dels *upsell* més sol·licitats per a qualsevol plataforma WaaS (Website as a Service). En lloc de redirigir els teus clients a un registrador de tercera pàrtea, pots oferir domini directament, mantenint més ingressos a la teva xarxa i proporcionant als clients una experiència fluida.
+
+### Funcionalitats clau
+
+#### Suport per a múltiples registradors de domini
+* **OpenSRS** — Registració, renovació i gestió complets
+* **Namecheap** — Integració completa amb WhoisGuard i proves de *sandbox*
+* **Arquitectura extensible** — Construït sobre el patró Integration Registry, cosa que facilita l'afecció de més proveïdors
+* **Proves de connexió integrades** — Valida les credencials i la connectivitat del proveïdor abans de passar a l'operació
+
+#### *Wizard* de configuració guiada
+* **Alta amb un clic** — Et guia per la configuració del proveïdor, l'importació de TLD i la creació de productes de domini
+* **Sincronització automàtica de TLD** — Importa tots els TLD disponibles i els preus majoroll de els teus proveïdors connectats
+* **Creació de producte per defecte** — Crea un producte de domini preparat per utilitzar amb preus majorats sensats
+
+#### Preus de domini flexibles
+* **Tres modes de majoració** — Majoració percentual, majoració fixa o preu fix per TLD
+* **Productes específics de TLD** — Crea productes de domini separats per diferents grups de TLD (.com/.net, .io, codis de país, etc.)
+* **Preus introductoris** — Ofereix un preu de primera any descompès per atraure noves registracions
+* **Preus en temps real** — Preus majoroll en directe dels proveïdors amb *caching* intel·ligent
+* **Suport de cupons** — Compatibilitat completa amb els codis de descompte de Multisite Ultimate
+
+#### Protecció de privacitat WHOIS
+* **Configuració per producte** — Estableix la privacitat WHOIS com a Deshabilitat, Sempre Inclòs o Elecció del Client
+* **Opció del client** — Quan es configura com a Elecció del Client, una casella de selecció al *checkout* permet als clients afegir protecció de privacitat
+* **Preu configurable** — Estableix un preu per any per l'add-on de privacitat, o ofereix-ho gratis
+* **Integració amb el registrador** — Habilita automàticament WhoisGuard (Namecheap) o privacitat WHOIS (OpenSRS) al moment de la registració
+
+#### Experiència de *checkout* unificada
+* **Tres modes de domini** — Els clients trien entre un subdomain (gratuit), registrar un domini nou, o mapejar un domini existent que ja posseïn
+* **Cerca de domini en temps real** — Verificació de disponibilitat amb AJAX sense recarregar la pàgina
+* **Suggeriments intel·ligents** — Suggeriments alternatius de TLD quan el domini preferit està ocupat
+* **Preus transparents** — Mostra clara del preu de registració, preu de renovació i taxa opcional de privacitat WHOIS
+* **Campos de contacte del registrant** — Recull la informació requerida del registrant (nom, adreça, telèfon) de manera *inline* durant el *checkout*
+* **URL del lloc automàtic** — L'adreça del lloc es deriva automàticament del domini seleccionat
+
+#### Sistema d'autorenovació
+* **Renovacions vinculades a la membresia** — Els domini es renoven automàticament mentre la membresia del client estigui activa
+* **Programació intel·ligent** — Les tasques de renovació es fan cola basades en les dates de caducitat del domini
+* **Lògica de reintent** — Reintents intel·ligents per als intents de renovació fallits
+* **Notificacions per correu electrònic** — Alertas configurables per renovacions prèvies, renovacions exitoses, fallades i caducitats
+
+#### Gestió de DNS del client
+* **DNS de servei propi** — Els clients poden afegir, editar i eliminar registres DNS (A, AAAA, CNAME, MX, TXT) des del seu *dashboard*
+* **Estat del domini** — Estat de registració en temps real, dates de caducitat i informació de *nameserver*
+* **Mapeig automàtic de domini** — Els domini registrats o existents es mapegen automàticament al lloc del client
+
+#### Utilitaris d'administració
+* **Registració manual de domini** — Registra domini en nom dels clients des del panell d'administració
+* **Monitorització de domini** — Veu tots els domini dels clients, els estatuts i les dates de caducitat des d'una sola pàgina
+* **Registre específic del proveïdor** — Canals de registre separats per a cada registrador (p. ex., domain-seller-namecheap.log)
+* **Detalls de registració** — Veu la informació del registrant i les dades de registració a la pàgina d'edició del domini principal
+
+### Proveïdors suportats
+
+* **OpenSRS** — Integració completa amb registració, renovació, gestió de DNS i privacitat WHOIS
+* **Namecheap** — Integració completa amb registració, renovació, verificació de disponibilitat per grup, i WhoisGuard gratuït
+* **GoDaddy** — Registració i renovació
+* **ResellerClub** — Registració, renovació i gestió de DNS
+* **NameSilo** — Registració i renovació
+* **Enom** — Registració, renovació i gestió de DNS
+
+### Detalls tècnics
+
+* **Requer:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Arquitectura:** Patró Integration Registry amb l'interface Domain_Selling_Capability
+* **Autoloading:** Jetpack autoloader amb mapeig de classes PSR-4
+* **Estàndards:** Estàndards de codificació de WordPress, tipització estricta, *prepared statements*
+
+## Instal·lació
+
+1. Assegura't que **Multisite Ultimate v2.4.12+** està instal·lat i activat a nivell de xarxa
+2. Carrega el *plugin* a `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Activa el *plugin* a nivell de xarxa des de **Plugins** a l'Admin de la Xarxa de WordPress
+4. El **Wizard de configuració** s'inicia automàticament a la primera activació; segueix els passos per:
+   * Conectar el teu registrador de domini (OpenSRS o Namecheap)
+   * Provar la connexió
+   * Importar els TLD disponibles i els preus majoroll
+   * Crear el teu primer producte de domini amb majoració de preus
+5. Afegir el camp **Selecció de domini** al teu formulari de *checkout* en **Ultimate Multisite > Checkout Forms**
+
+## Preguntes freqüents
+
+### Quina versió de Multisite Ultimate és requerida?
+
+Versió 2.4.12 o superior. L'add-on no és compatible amb WP Ultimo v1.x ni amb versions de Ultimate Multisite inferiors a 2.4.12.
+
+### Quins proveïdors de domini estan suportats?
+
+S'hi suporten completament sis registradors: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo** i **Enom**. L'arquitectura Integration Registry de l'add-on facilita l'afecció de proveïdors personalitzats; consulta la [guia per desenvolupadors](/developer/integration-guide/custom-registrar).
+
+### Puc oferir protecció de privacitat WHOIS?
+
+Sí. Cada producte de domini té una configuració de privacitat WHOIS amb tres modes: Deshabilitat, Sempre Inclòs o Elecció del Client. Quan es configura com a Elecció del Client, els clients veuen una casella de selecció durant el *checkout* amb el preu (o "Gratuit" per WhoisGuard de Namecheap). La bandera de privacitat es passa automàticament al registrador al moment de la registració.
+
+### Puc establir preus diferents per a diferents TLD?
+
+Sí. Crea productes de domini separats per diferents grups de TLD. Cada producte pot tenir el seu propi tipus de majoració (percentatge, majoració fixa o preu fix), TLDs suportats i preus introductoris.
+
+### Quines opcions de *checkout* veuen els clients?
+
+El camp Selecció de domini mostra als clients tres pestañes: **Subdomain** (utilitzar un subdomain gratuït a la teva xarxa), **Registrar domini nou** (cercar i registrar un domini nou) i **Domini existent** (mapejar un domini que ja posseïn). Només apareixeran els modes que tu actives.
+
+### És compatible amb renovacions automàtiques?
+
+Sí. Els domini poden configurar-se per renovar automàticament i estan vinculats a l'estat de membresia del client. Els pagaments de renovació es processen a través de la passarela de pagament existent del client.
+
+### Els clients poden gestionar els seus registres DNS?
+
+Sí. Els clients reben una interfície de gestió de DNS al seu *dashboard* per afegir, editar i eliminar registres A, AAAA, CNAME, MX i TXT. La gestió de DNS està disponible amb OpenSRS, ResellerClub i Enom.
+
+### Hi ha un *wizard* de configuració?
+
+Sí. El *wizard* de configuració s'executa automàticament a la primera activació i et guia per connectar un registrador, importar TLDs i crear el teu primer producte de domini. També pots re-executar el *wizard* des de la configuració de l'add-on.

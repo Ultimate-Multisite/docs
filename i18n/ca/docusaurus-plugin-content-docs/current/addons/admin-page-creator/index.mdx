@@ -1,0 +1,144 @@
+---
+title: Creador de pàgina d'administració
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Creador de pàgines d'administració
+
+## Contingut
+El creador de pàgines d'administració et permetrà afegir fàcilment noves pàgines i subpàgines dins del panell d'administració de WordPress. Es pot utilitzar per crear una pàgina de benvinguda o una pàgina tutorial que serveixi com a pàgina de destinació (landing page) per a nous usuaris. Pots utilitzar page builders com Beaver Builder, Elementor, Brizy i Oxygen per dissenyar les pàgines sense complicacions.
+
+També ofereix suport per a HTML, CSS i JavaScript personalitzats, així com control d'accés basat en el pla i el rol de l'usuari!
+
+## Funcionalitats
+* Suport a HTML i CSS personalitzats
+* Suport a JavaScript
+* Mode de contingut PHP
+* Permissió basada en el rol de l'usuari
+* Suport a page builders
+
+## Documentació
+[Crear pàgines i subpàgines d'administració personalitzades utilitzant Ultimate Multisite: Creador de pàgines d'administració](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Instal·lació
+
+1. Carrega **ultimate-multisite-admin-page-creator** al directori **/wp-content/plugins/**
+2. Activa el plugin mitjançant el menú **Plugins** del Panell d'Administració de la teva rede (Network Admin)
+
+## Guia d'ús
+
+Mentre que WordPress facilita molt l'afecció de contingut al front end dels llocs web, crear pàgines i subpàgines a la banda d'administració requereix algunes habilitats bàsiques de codificació. Ultimate Multisite: Admin Page Creator té com a objectiu portar aquesta mateixa facilitat d'ús del front end al back end dels llocs web de la teva rede.
+
+## Per què utilitzar Admin Page Creator?
+
+Potser vols oferir una pàgina personalitzada al panell d'administració dels teus clients amb tutorials, o potser vols afegir una pàgina personalitzada amb FAQ i un widget de contacte. Les possibilitats són infinites amb Admin Page Creator, i això és el que explorarem en el tutorial d'avui.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_És possible crear una pàgina de tutorials amb una reproducció de YouTube incorporada!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Aquest és el resultat final al Panell de Control de l'usuari._
+
+## Creant la teva primera Pàgina d'Administració Personalitzada
+
+Després d'instal·lar i activar Ultimate Multisite: Admin Page Creator, dirigeix-te al menú d'administració de la teva rede i accedeix a Pàgines d'Administració (Admin Pages).
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Llista de Pàgines d'Administració Personalitzades al Panell de la Rede_
+
+Veràs una llista de totes les pàgines d'administració que has creat fins ara (ja que és la teva primera visita, la llista estarà buida). Continua i fes clic a **Add new Admin Page**. Seràs redirigit a l'editor de Pàgina d'Administració.
+
+## Els elements d'una Pàgina d'Administració Personalitzada
+
+A l'editor de Pàgina d'Administració, tindràs un nombre de opcions diferents per personalitzar la teva pàgina.
+
+### Títol de la Pàgina
+
+Aquest és el títol que es mostrarà en la part superior de la pàgina, no l'etiqueta del menú d'administració.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Introduir un Títol de Pàgina_
+
+### Selector de Tipus de Contingut
+
+Ultimate Multisite: Admin Page Creator et ofereix dues opcions quan es tracta del contingut de la pàgina: pots utilitzar l'editor WYSIWYG predeterminat de WordPress o passar a un editor HTML.
+
+Si no et coneixes l'HTML, afegeix-te a l'editor predeterminat de WordPress. Podràs editar el contingut de la pàgina igual que faries amb un Post o una Pàgina normal.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Utilitzant l'editor WYSIWYG predeterminat de WordPress_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Utilitzant l'opció d'editor HTML, amb ressaltat de sintaxi i alertes d'errors_
+
+## Opcions de Menú
+
+A la banda, a la caixa meta Opcions Generals (General Options), podràs configurar el tipus de menú, l'etiqueta i molt més.
+
+### Tipus de Menú
+
+La teva nova pàgina d'administració personalitzada pot tenir dos tipus de menú diferents: menú de nivell superior (top-level menu) i submenú.
+
+Una pàgina de menú de nivell superior, com el que suggereix el nom, afegirà la pàgina que acabes de crear al menú d'administració juntament amb les pàgines predeterminades de WordPress.
+
+Si seleccioneixes l'opció de nivell superior, també podreu seleccionar l'ordre del menú i un ícone de menú.
+
+Si vols que aquesta pàgina sigui una pàgina de submenú, podràs seleccionar una pàgina mare a la qual adjuntar aquesta pàgina. Pots afegir la teva pàgina personalitzada a pàgines predeterminades de WordPress o a les teves pàgines d'administració personalitzades de nivell superior.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Personalitzar completament l'element de menú per a aquesta Pàgina Personalitzada_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_També pots afegir aquesta pàgina com a submenú d'altres menús, incloent els teus propis de nivell superior personalitzats._
+
+## Opcions Avançades
+
+Hauries de poder afegir tot tipus de contingut a les teves pàgines d'administració personalitzades. Això inclou regles i fitxers CSS, JavaScript i biblioteques externes. Pots fer-ho utilitzant la pestanya Opcions Avançades (Advanced Options Tab).
+
+### CSS Personalitzat
+
+A la pestanya CSS, pots afegir el teu propi codi CSS personalitzat, així com importar fitxers CSS de sites remots (com CDNs, Google Fonts, etc.).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_També es suporta CSS personalitzat. Pots incloure fitxers de estil externs!_
+
+### JavaScript Personalitzat
+
+El mateix és vàlid per a JavaScript. Pots afegir biblioteques externes per utilitzar-les en el teu codi JavaScript personalitzat.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Afegir el teu propi codi JavaScript!_
+
+## Permissió
+
+També a les Opcions Avançades, podràs seleccionar quins sub-sites tindran accés a aquesta pàgina. Això és útil si planegeixes servir contingut exclusiu diferent a diferents nivells de pla, per exemple.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Tens control total sobre on va mostrar-se aquesta pàgina_
+
+**Important** : Les dues condicions han de ser complides perquè la pàgina es mostri. Això significa que si l'usuari és client d'un pla determinat, però no té un dels rols seleccionats (o viceversa), la pàgina no apareixerà al seu panell.
+
+## Actiu
+
+Si vols deshabilitar una pàgina d'administració personalitzada sense eliminar-la o modificar els permisos, només desmarca l'opció Actiu (Active).
+
+Desactivar una pàgina de nivell superior desactivarà automàticament totes les subpàgines adjuntes a aquesta pàgina mare.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_El resultat final al panell de l'usuari!_

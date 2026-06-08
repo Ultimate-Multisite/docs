@@ -1,0 +1,114 @@
+---
+title: Mga Email
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+Ang Ultimate Multisite: Emails addon nagtugot sa mga network owner nga mag-provision ug magdumala og customer email accounts uban sa mga site ug membership. Ang Version 1.1.0 nagdugang og customer-facing email account management, webmail single sign-on, CyberPanel forwarder support, ug mga pagpauswag sa provisioning panahon sa checkout.
+
+## Mga Panguna nga Kinaiya (Key Features)
+
+* **Customer email account widget**: Mahimo sa mga customer maghimo ug magdumala og email accounts gikan sa ilang account page nga dili na kinahanglan mag-open og support ticket.
+* **Webmail SSO and magic links**: Mahimo sa mga customer magbukas og webmail direkta gikan sa account page uban sa usa ka click para sa authentication kung suportado kini sa provider.
+* **Pagbag-o sa Password**: Ang mga customer ug administrator mahimong mag-update sa password sa mailbox gikan sa email management widget.
+* **Checkout provisioning**: Mahimo nga ma-create ang customer email account panahon sa checkout aron andam na ang mailbox human matapos ang proseso sa pagpalit.
+* **CyberPanel forwarders**: Ang mga network nga gi-backed sa CyberPanel mahimong maghimo ug magdumala og email forwarders isip bahin sa email service flow.
+* **Provider-aware settings**: Ang settings page nag-filter sa mga provider ngadto sa active, configured integrations aron ang mga administrator makakita lang sa mga opsyon nga magamit.
+
+## Mga Kinahanglanon (Requirements)
+
+* Ultimate Multisite 2.0.0 o mas taas pa
+* WordPress Multisite installation
+* Alang tulo ang koneksyon sa email provider
+* Provider API credentials nga may permiso sa paghimo og mailboxes, pag-usab sa mga password, ug paghatag og webmail access links kung suportado
+
+## Installation
+
+1. I-upload ang mga file sa plugin sa `/wp-content/plugins/ultimate-multisite-emails`.
+2. I-activate ang addon pinaagi sa **Plugins** sa WordPress network admin.
+3. Adto sa **Ultimate Multisite** > **Settings** ug buksan ang email settings sa addon.
+4. I-enable ang mga email provider integrations nga gusto ninyong gamiton sa mga customer.
+5. I-save ang settings, unya i-test ang paghimo og account uban ang usa ka non-production customer o staging site.
+
+## Customer Account Email Management
+
+Ang Version 1.1.0 nagdugang og email management widget sa customer account page. Gamita kini kung ang mga customer kinahanglan mismo maghimo ug magpadayon sa mailbox para sa ilang kaugalingon nga mga site.
+
+Gikan sa account page, ang mga customer mahimong:
+
+1. Makita ang mga email account nga konektado sa ilang kasamtangang membership o site.
+2. Paghimo og bag-ong mailbox kung gitugotan sa ilang plano ang dugang nga mga account.
+3. Usbon ang password sa nag-ingon nga mailbox.
+4. Buksan ang supported webmail providers pinaagi sa SSO o magic-link login.
+
+Ang widget naggamit sa Ultimate Multisite account-page currents system, busa ang mga aksyon limitado sa konteksto sa account nga giatan-aw sa customer. Kini makapugong sa mga customer nga magpadagan og email accounts nga nagpabilin sa laing membership o site.
+
+## Webmail SSO and Magic-Link Login
+
+Ang Webmail SSO naghatag sa mga customer og direkta nga **Open webmail** action gikan sa account page. Kung suportado kini sa aktibo nga provider, ang addon mangayo og short-lived access URL ug mag-redirect sa customer ngadto sa webmail nga dili na kinahanglan nga kopyahon nila ang mailbox credentials.
+
+Ang pamatasan sa provider mahimong magkalain:
+
+* Ang mga provider nga adunay native SSO APIs makakabaton og direkta nga authenticated webmail session.
+* Ang mga provider nga adunay magic-link support makahimo og time-limited login link.
+* Ang mga provider nga walay SSO o magic-link support kinahanglan gihapon magpakita sa detalye sa mailbox ug password-management actions, apan walay one-click webmail button.
+
+I-enable ang webmail access lamang alang sa mga provider diin na-configure nimo ang gikinahanglang API credentials. Kung wala kini nga aksyon para sa usa ka provider, una kumpirmaha nga aktibo, naka-configure, ug suportado pa sa webmail login links ang provider.
+
+## Checkout Provisioning
+
+Mahimo sa addon nga makakabaton og customer email accounts isip bahin sa checkout. Kini nindot kung ang plano naglakip na og mailbox by default o kung ang checkout form mangolekta og mga detalye sa email-account.
+
+Gipakaon nga rollout:
+
+1. I-configure ang provider ug plan limits sa dili pa i-enable ang checkout provisioning.
+2. I-test ang pagpalit gamit ang staging product ug kumpirmaha nga na-create ang mailbox human sa checkout.
+3. I-review ang customer account page aron masiguro nga ang bag-ong mailbox modapad sa email widget.
+4. Kumpirmaha ang password-change ug webmail actions sa dili pa i-enable ang flow alang sa production products.
+
+Kung dili malampasan ang pag-provision, magpabilin gihapon ang account sa customer ug membership bisan pa nga kinahanglan pa og follow-up sa administrator para sa mailbox. Siguraduhon nga i-check ang Ultimate Multisite activity logs ug provider logs sa dili pa mo-retry.
+
+## CyberPanel Email Forwarders
+
+Para sa mga network nga gi-support sa CyberPanel, ang version 1.1.0 nagdugang og suporta sa email forwarder. Gamita ang forwarders kung kinahanglan sa mga customer ang mga address sama sa `info@customer-domain.test` aron i-redirect ang mail ngadto sa laing inbox nga dili na kinahanglan maghimo og tibuok mailbox.
+
+Sa dili pa magtanyag og forwarders, siguruha nga naka-configure ug makaabot ang CyberPanel integration. Tan-awa ang [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide para sa gikinahanglang host, username, password, ug package constants.
+
+## Changelog
+
+### Version 1.1.0 - Gili-release niadtong 2026-05-05
+
+* Bag-ong: Webmail SSO ug magic-link login — ang mga customer pwede mag-access sa webmail direkta gikan sa ilang account gamit ang one-click authentication.
+* Bag-ong: Dugang nga functionality para sa pag-change og password sa email account management widget.
+* Bag-ong: Suporta na sa CyberPanel email forwarder.
+* Bag-ong: Email management widget sa customer account page para sa self-service account creation ug management.
+* Bag-ong: Ang paghimo og customer email account gi-integrate na sa checkout flow para sa automatic provisioning.
+* Fix: Gi-update ang account page widget hook aron gamiton ang husto nga UMS registration pattern.
+* Fix: Ang Create Account form napulihan gamit ang vanilla JS ug husto nga full HTML document output.
+* Fix: Ang Email management widget karon naggamit sa UMS current system para sa admin account pages.
+* Fix: Ang Admin email account creation form naglakip na og password field ug naggamit sa Email_Account_Manager.
+* Fix: Gawas na ang per-request log spam gikan sa initialization sa Email_Account_Manager.
+* Improved: Ang settings page karon magfilter para ipakita lang ang mga active ug configured nga email provider.
+
+## Mga Kasagaran nga Pangutana (Frequently Asked Questions)
+
+## Pwede ba paghimo og kaugalingong email account ang mga customer?
+
+Oo. Kung gi-enable ang customer account widget ug ang plan nagtugot sa email accounts, ang mga customer pwede maghimo ug magmanage sa ilang kaugalingon nga mailboxes gikan sa account page.
+
+## Ang tanang provider ba suportado ang webmail SSO?
+
+Dili. Ang SSO ug magic-link support nagdepende sa active nga email provider. Ang mga provider nga walay access-link API pwede gihapon magsuporta sa paghimo og mailbox ug pag-change og password.
+
+## Mahimo ba sa mga administrator ang paghimo og email accounts para sa mga customer?
+
+Oo. Ang mga administrator makahimo og email accounts gikan sa admin interface, lakip na ang pagset sa initial password kung naghimo sila og account.
+
+## Pareha ba ang forwarder ug mailbox?
+
+Dili. Ang mailbox nag-store og mail ug adunay login credentials. Ang forwarder nag-redirect sa mail ngadto sa lain nga address ug wala maghatag og usa ka laing inbox.

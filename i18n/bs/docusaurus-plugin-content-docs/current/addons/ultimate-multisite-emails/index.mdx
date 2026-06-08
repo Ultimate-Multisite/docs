@@ -1,0 +1,114 @@
+---
+title: E-mailovi
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-mail ad-on
+
+Ultimate Multisite: E-mail ad-on omogućava vlasnicima mreže da ne samo da postavljaju, već i upravljaju e-mail računima klijenata, zajedno sa samim sajtovima i članstvima. Verzija 1.1.0 dodaje upravljanje e-mail računima za klijente, webmail prijavu sa jedinstvenom pristupnom točkom (SSO), podršku za CyberPanel forwardere i poboljšanja prilikom kreiranja računa tokom checkout procesa.
+
+## Ključne značajke
+
+* **Widget za e-mail račune klijenta**: Klijenti mogu kreirati i upravljati e-mail računima sa svoje stranice računa, bez potrebe za otvaranjem zahtjeva za podršku.
+* **Webmail SSO i magični linkovi**: Klijenti mogu direktno pristupiti webmailu sa stranice računa sa jednim klikom, ako to pružalac podržava.
+* **Promjena lozinke**: Klijenti i administratorima je omogućeno ažuriranje lozinki e-mail sandučeva putem widgeta za upravljanje e-mailom.
+* **Kreiranje tokom checkouta**: Kreiranje e-mail računa klijenta može se izvršiti tokom checkout procesa, tako da je sandučić spreman nakon završetka kupovine.
+* **CyberPanel forwarderi**: Mreže zasnovane na CyberPanelu mogu kreirati i upravljati e-mail forwarderima kao dio e-mail usluge.
+* **Podešavanja ovisna o pružalcu**: Stranica podešavanja filtrira pružatelje na aktivne, konfigurirane integracije, tako da administrator vidi samo upotrebljive opcije.
+
+## Zahtjevi
+
+* Ultimate Multisite 2.0.0 ili noviji
+* Instalacija WordPress Multisite
+* Integracija barem jednog e-mail pružatelja, konfigurisanog za rad
+* API vjerodajnice pružatelja sa dozvolom za kreiranje sandučeva, promjenu lozinki i izdavanje webmail pristupnih linkova, gdje je to podržano
+
+## Instalacija
+
+1. Postavite fajlove plugin-a na `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktiviraćete ad-on na nivou mreže iz **Plugins** u WordPress network adminu.
+3. Idite na **Ultimate Multisite** > **Settings** i otvorite podešavanja e-mail ad-ona.
+4. Omogućite e-mail integracije pružatelja koje želite da klijenti koriste.
+5. Sačuvajte podešavanja, a zatim testirajte kreiranje računa sa ne-produkcionim klijentom ili staging sajtom.
+
+## Upravljanje e-mail računima klijenta
+
+Verzija 1.1.0 dodaje widget za upravljanje e-mailom na stranicu računa klijenta. Koristite ga kada klijenti treba da sami upravljaju kreiranjem i održavanjem sandučeva za svoje sajtove.
+
+Sa stranice računa, klijenti mogu:
+
+1. Pregledati e-mail račune povezane sa njihovim trenutnim članstvom ili sajtom.
+2. Kreirati novi sandučić kada njihov plan dozvoljava dodatne račune.
+3. Promijeniti lozinku postojećeg sandučića.
+4. Otvoriti podržane webmail pružatelje putem SSO ili prijave sa magičnim linkom.
+
+Widget koristi sistem za stranicu računa Ultimate Multisite, tako da su sve akcije ograničene na kontekst računa koji klijent pregleda. Ovo sprječava da klijenti upravljaju e-mail računima koji pripadaju nekom drugom članstvu ili sajtu.
+
+## Webmail SSO i prijava sa magičnim linkom
+
+Webmail SSO daje klijentima direktnu akciju **Open webmail** sa stranice računa. Kada je to podržano od strane aktivnog pružatelja, ad-on traži kratkotrajni pristupni URL i preusmjerava klijenta u webmail bez da ga traži da kopira vjerodajnice sandučića.
+
+Ponašanje pružatelja može varirati:
+
+* Prušatelji sa nativnim SSO API-jima mogu kreirati direktnu autentifikovanu webmail sesiju.
+* Prušatelji sa podrškom za magične linkove mogu generisati link za prijavu ograničenog vremenom.
+* Prušatelji bez SSO ili podrške za magične linkove bi i dalje trebali prikazati detalje sandučića i akcije za upravljanje lozinkama, ali bez dugmeta za webmail klikom.
+
+Omogućite pristup webmailu samo za pružatelje za koje ste konfigurirali potrebne API vjerodajnice. Ako akcija nedostaje za nekog pružatelja, prvo potvrdite da je pružatelj aktivan, konfigurisan i da podržava webmail linkove za prijavu.
+
+## Kreiranje tokom checkouta
+
+Ad-on može kreirati e-mail račune klijenta kao dio checkout procesa. Ovo je korisno kada plan podrazumijevano uključuje sandučić ili kada formular za checkout prikuplja detalje e-mail računa.
+
+Preporučeni postupak:
+
+1. Konfigurišite ograničenja pružatelja i plana prije omogućavanja kreiranja tokom checkouta.
+2. Testirajte kupovinu sa staging proizvodom i potvrdite da li je sandučić kreiran nakon checkouta.
+3. Pregledajte stranicu računa klijenta kako biste potvrdili da li se novi sandučić pojavljuje u e-mail widgetu.
+4. Potvrdite akcije promjene lozinke i webmaila prije omogućavanja procesa za produkcione proizvode.
+
+Ako kreiranje ne uspije, račun i članstvo klijenta i dalje mogu postojati, dok sandučić zahtijeva intervenciju administratora. Provjerite logove aktivnosti Ultimate Multisite i logove pružatelja prije ponovnog pokušaja.
+
+## CyberPanel e-mail forwarderi
+
+Za mreže zasnovane na CyberPanelu, verzija 1.1.0 dodaje podršku za e-mail forwardere. Koristite forwardere kada klijenti trebaju adrese poput `info@customer-domain.test` da preusmjere poštu na drugi sandučić, bez kreiranja punog sandučića.
+
+Prije ponudbe forwardera, potvrdite da je CyberPanel integracija konfigurirana i dostupna. Pogledajte vodič [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) za potrebne konstante hosta, korisničko ime, lozinku i paket.
+
+## Changelog
+
+### Verzija 1.1.0 - Obraćeno 2026-05-05
+
+* Novo: Webmail SSO i prijava magičnim linkom — klijenti mogu pristupiti webmailu direktno sa svog računa sa jednim klikom.
+* Novo: Funkcionalnost promjene lozinke dodata u widget za upravljanje e-mail računima.
+* Novo: Podrška za CyberPanel e-mail forwardere.
+* Novo: Widget za upravljanje e-mailom na stranici računa klijenta za samostalno kreiranje i upravljanje računima.
+* Novo: Kreiranje e-mail računa klijenta integrisano u checkout proces za automatsko postavljanje.
+* Popravka: Hook widgeta stranice računa ažuriran da koristi ispravan UMS registracioni obrazac.
+* Popravka: Formular za kreiranje računa zamijenjen sa vanilla JS i ispravnim punim HTML dokumentom.
+* Popravka: Widget za upravljanje e-mailom sada koristi UMS currents sistem za admin stranice računa.
+* Popravka: Formular za kreiranje e-mail računa administratora uključuje polje za lozinku i koristi Email_Account_Manager.
+* Popravka: Spam log po zahtjevanju uklonjen iz inicijalizacije Email_Account_Manager.
+* Poboljšano: Stranica podešavanja sada filtrira da prikazuje samo aktivne i konfigurirane e-mail pružatelje.
+
+## Često postavljana pitanja
+
+## Mogu li klijenti kreirati sopstvene e-mail račune?
+
+Da. Kada je widget za račun klijenta omogućen i plan dozvoljava e-mail račune, klijenti mogu kreirati i upravljati sopstvenim sandučićima sa stranice računa.
+
+## Da li svaki pružatelj podržava webmail SSO?
+
+Ne. Podrška za SSO i magične linkove zavisi od aktivnog e-mail pružatelja. Prušatelji bez API-ja za pristupne linkove i dalje mogu podržavati kreiranje sandučića i promjenu lozinki.
+
+## Mogu li administratorima kreirati e-mail račune za klijente?
+
+Da. Administratori mogu kreirati e-mail račune sa admin interfejsa, uključujući postavljanje početne lozinke prilikom kreiranja računa.
+
+## Da li su forwarderi isto što i sandučići?
+
+Ne. Sandučić čuva poštu i ima vjerodajnice za prijavu. Forwarder preusmjerava poštu na drugu adresu i ne pruža zaseban sandučić.

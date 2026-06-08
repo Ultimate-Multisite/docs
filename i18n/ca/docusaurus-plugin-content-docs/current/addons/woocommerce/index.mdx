@@ -1,0 +1,94 @@
+---
+title: Integració amb WooCommerce
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integració amb WooCommerce
+
+L'Integració amb WooCommerce funciona de manera molt similar a com funciona la nostra Passarela Manual. Ofereix molta flexibilitat als vostres usuaris, permetent-li triar qualsevol dels mòduls de pagament disponibles a la vostra instal·lació de WooCommerce. I és senzill: quan el període de facturació de l'usuari acaba, la subscripció de l'usuari es posa en suspens. Al mateix temps, es crearà una comanda a la instal·lació de WooCommerce del site principal de la xarxa. L'usuari rebrà després una factura al seu correu electrònic, amb un enllaç per efectuar el pagament. Quan es rebi el pagament, la subscripció es renova.
+
+## Funcionalitats
+
+- Integració fàcil entre Ultimate Multisite i WooCommerce
+- Varies metodres de pagament disponibles
+- Procés completament automatitzat amb WooCommerce Subscriptions
+
+## Documentació
+
+**Configurar l'Integració amb WooCommerce**
+
+**Estendre les vostres opcions de pagament amb Ultimate Multisite: Integració amb WooCommerce**
+
+## Instal·lació
+
+1. Carregueu 'ultimate-multisite-woocommerce' al directori '/wp-content/plugins/'
+2. Activeu el plugin des del menú 'Plugins' de WordPress
+3. Seguiu el Wizard pas a pas per configurar el plugin
+
+## Guia d'ús
+
+_**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
+
+_**ATENCIÓ:** Ultimate Multisite: WooCommerce Integration requereix que WooCommerce estigui activat almenys al vostre site principal._
+
+Entenem que _Stripe_ i _PayPal_ no estan disponibles en alguns països, cosa que limita o obstaculitza que els usuaris d'Ultimate Multisite utilitzin efectivament el nostre plugin. Per això, hem creat un **add-on per integrar _WooCommerce_**.
+
+_WooCommerce_ és un plugin de comerç electrònic molt popular. Desenvolutores de tot el món han creat add-ons per integrar diferents passarelles de pagament. Hem sabut d'això per estendre les passarelles de pagament que podeu utilitzar en el sistema de facturació d'Ultimate Multisite.
+
+## Configuració
+
+Primer, ha deureu instal·lar l'add-on d'Integració amb WooCommerce, que és **grat per als usuaris llicenciats**. Per instal·lar-lo, feu clic a Ultimate Multisite al vostre *dashboard* de superadministrador i seleccioneu **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Aquí podeu trobar tots els add-ons d'Ultimate Multisite. Feu clic a l'add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+S'obrirà una finestra amb els detalls de l'add-on. Només feu clic a **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Després de completar l'instal·lació, es redirigueu a la pàgina de plugins. Aquí, només feu clic a **Network Activate** i l'add-on _WooCommerce_ s'activarà a la vostra xarxa.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Després de l'activació, si encara no teniu el plugin WooCommerce instal·lat i activat al vostre website, **rebreu un recordatori**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Una vegada instal·lat, veureu una opció addicional a les configuracions de pagament d'Ultimate Multisite. Desllunt, podeu **habilitar** l'opció _WooCommerce_ des d'allà.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Podeu configurar algunes configuracions bàsiques, com el nom d'affichage que s'mostrarà al *front end* i les instruccions per guiar els vostres usuaris durant el seu flux de *checkout*. Després podeu accedir a les **configuracions de _WooCommerce_ del vostre site principal** per habilitar i configurar la passarela de pagament que preferiu utilitzar.
+
+## Com gestionar el pagament
+
+L'Integració amb WooCommerce funciona de manera molt similar a com funciona la nostra **Passarela Manual**. L'inconvenient és que cada pagament ha de ser pagat manualment al final del període de facturació. A continuació, com funciona el flux:
+
+  * Quan el cicle de facturació de l'usuari acaba, la membresia es posa **en suspens**. Al mateix temps, es crearà una comanda a la instal·lació de _WooCommerce_ del site principal de la vostra xarxa.
+
+  * Els usuaris rebreu després una factura al seu correu electrònic, amb un enllaç per efectuar el pagament (l'enllaç també apareix a l'historial de facturació del seu *dashboard* de subsite). Aquest enllaç redirigeix l'usuari al **checkout** de _**WooCommerce**_, on els usuaris podran seleccionar una de les **passarelles _WooCommerce_ disponibles** per processar el seu pagament.
+
+  * Quan es rebi el pagament, la membresia es **renova**, el pagament es registra a Ultimate Multisite i la comanda es marca com completada.
+
+### Algunes notes importants:
+
+  * La funcionalitat per defecte d'Ultimate Multisite encara funciona amb aquest format d'integració. Per exemple, **emissions de reembolsos** des de l'e pantalla de **Gestió de Subscripcions** comunicarà amb WooCommerce per emetre el reembòs utilitzant el mòdul de pagament seleccionat.
+
+  * Ultimate Multisite: WooCommerce Integration depèn de WP-Cron per funcionar. Això funciona molt bé la major part del temps, però si el site té un trànsit baix, el cron no s'activa per comprovar esdeveniments programats i l'esdeveniment es perd, cosa que pot causar retards en l'execució.
+
+## Plugin WooCommerce Subscriptions
+
+Iniciar manualment un pagament cada mes no és ideal per als usuaris finals, ja que es espera que una subscripció es repte automàticament cada cicle de facturació. Per això, hem dissenyat l'add-on d'Integració amb WooCommerce per **donar suport al plugin WooCommerce Subscriptions**. Això automatitzarà el pagament i farà que la transacció sigui més fàcil per als vostres usuaris finals.
+
+Només ha deureu **instal·lar** el [plugin Woocommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) i que estigui **activat al vostre site principal**. Després, torneu a les configuracions de pagament d'Ultimate Multisite i **habiliti la integració**.
+
+I és tot. Els vostres usuaris finals ja no haurà de fer un pagament manual al final del seu cicle de facturació.
+
+A més de que es crei una comanda al vostre site principal sota _WooCommerce_, també crearà una subscripció per a cada compte.

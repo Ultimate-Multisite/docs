@@ -1,0 +1,116 @@
+---
+title: Compatibilitat del Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Compatibilitat de Tutor Multisite
+
+Un plugin de WordPress que afegeix correccions de compatibilitat per a Tutor LMS en entorns multisite.
+
+## Descripció
+
+Aquest plugin ofereix correccions essencials de compatibilitat per executar Tutor LMS en xarxes multisite de WordPress. Gestiona l'inscripció d'usuàri, la gestió d'instructors, les limitacions de cursos i altra funcionalitat específica de multisite.
+
+## Funcionalitats
+
+- **Gestió de taules de base de dades**: Detecta i crea automàticament les taules faltants de Tutor LMS que fallen a causa de les restriccions de clau externa (foreign key) de multisite.
+- **Inscripció d'usuàri en multisite**: Gestors AJAX personalitzats per gestionar l'inscripció d'usuàri en diversos sites de la xarxa.
+- **Gestió de rol d'instructor**: Assignació i gestió automàtica del rol d'instructor en entorns multisite.
+- **Limitacions de cursos**: Integració amb Ultimate Multisite per gestionar les limitacions de creació de cursos i funnels basades en els plans de site.
+- **Vistes d'administració personalitzades**: Interfície de gestió i llista d'instructors consciente de multisite.
+- **Utilitaris d'administració**: Interfície de gestió de la base de dades per als administradors de la xarxa i del site.
+
+## Requisits
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (aplicat automàticament mitjançant l'encàfar `Requires Plugins`)
+- Instal·lació de WordPress Multisite
+- Plugin Ultimate Multisite (per la funcionalitat de limitacions de cursos)
+
+## Instal·lació
+
+1. Carrega els fitxers del plugin a `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Assegura't que Tutor LMS està instal·lat i activat
+3. Activa el plugin des del menú 'Plugins' de WordPress
+4. El plugin s'integrarà automàticament amb Tutor LMS
+
+## Estructura de fitxers
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Fitxer principal del plugin)
+├── includes/
+│   ├── class-database-manager.php (Creació i gestió de taules de base de dades)
+│   ├── class-admin-interface.php (Interfície d'administració per a la gestió de la base de dades)
+│   ├── class-course-limits.php (Gestors de limitacions de cursos i funnels)
+│   ├── class-instructor-manager.php (Gestió del rol d'instructor)
+│   ├── class-ajax-handlers.php (Gestors AJAX personalitzats)
+│   ├── class-query-helper.php (Utilitaris de consulta de base de dades)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model d'usuàri multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Llista d'instructors personalitzada)
+│       └── views/
+│           └── instructors.php (Vista d'administració d'instructors)
+└── README.md
+```
+
+## Funcionalitat traslladada del plugin MU
+
+Aquest plugin conté funcionalitat que estava prèviament en `wp-content/mu-plugins/daves.php`:
+
+- Limitacions de canvi de estat de cursos
+- Limitacions de creació de cursos
+- Integració i limitacions de CartFlows
+- Gestió del rol d'instructor de Tutor
+- Gestió d'inscripció d'usuàri multisite
+- Afichage de l'ID del producte de cursos
+
+## Gestió de la base de dades
+
+### El problema
+
+En entorns multisite de WordPress, la creació de taules de Tutor LMS falla per a les taules amb restriccions de clau externa (foreign key) a la taula d'usuàri. Això succeeix perquè:
+
+- Les taules específiques del site utilitzen prefixos com `wp_2_tutor_carts`
+- Les clau externes refereixen a `wp_2_users` (que no existeix)
+- La taula real d'usuàri és `wp_users` (compartida a tota la xarxa)
+
+### La solució
+
+Aquest plugin ho fa automàticament:
+
+1. **Detecta taules faltants**: Comprova les taules que no van poder crear-se a causa de les restriccions de clau externa.
+2. **Crea taules amb referències correctes**: Utilitza el nom proper de la taula d'usuàri (`wp_users` en multisite).
+3. **Gestiona múltiples escenaris**:
+   - Activació/reactivació del plugin
+   - Creació de nous sites en la xarxa
+   - Comprovació manual de taules a través de l'interfície d'administració
+
+### Taules afectades
+
+- `tutor_coupon_usages` - Conté clau externa a la taula d'usuàri
+- `tutor_carts` - Conté clau externa a la taula d'usuàri
+- `tutor_notification_preferences` - Taula de TutorPro amb clau externa a la taula d'usuàri
+
+### Interfície d'administració
+
+Accedeu als eines de gestió de la base de dades a:
+
+- **Admin de la xarxa**: Configuració → Tutor Multisite DB
+- **Admin del site**: Utilitaris → Tutor Multisite DB
+
+L'interfície us permet:
+- Veure taules faltants en tots els sites
+- Activar manualment la creació de taules
+- Comprovar la configuració de la base de dades
+- Veure informació d'estat detallada
+
+## Suport
+
+Aquest plugin està dissenyat específicament per a la plataforma KursoPro. Per a suport tècnic, contactegeu amb l'equip de desenvolupament.

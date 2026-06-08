@@ -1,0 +1,94 @@
+---
+title: Integracija sa WooCommerce-om
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration radi na vrlo sličan način kao i naš Manual Gateway. Nudi mnogo fleksibilnosti vašim korisnicima, omogućavajući im da odaberu bilo koji od načina plaćanja dostupnih na vašoj WooCommerce instalaciji. I jednostavnije: kada period plaćanja korisnika istekne, pretplata korisnika se stavlja u suspenziju. Istovremeno, na WooCommerce instalaciji glavnog sajta mreže kreiraće se porudžbina. Korisnik zatim prima fakturu na e-mail, sa linkom za izvršavanje plaćanja. Nakon prijema plaćanja, pretplata se obnavlja.
+
+## Features
+
+- Laka integracija između Ultimate Multisite i WooCommerce-a
+- Dostupno više načina plaćanja
+- Potpuno automatiziran proces sa WooCommerce Subscriptions
+
+## Documentation
+
+**Setting Up The WooCommerce Integration**
+
+**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+
+## Installation
+
+1. Upload 'ultimate-multisite-woocommerce' u direktorij `/wp-content/plugins/`
+2. Aktivizirajte plugin kroz meni 'Plugins' u WordPressu
+3. Pratite korak po korak Wizard za podešavanje plugin-a
+
+## Usage Guide
+
+_**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
+
+_**PAŽNJA:** Ultimate Multisite: WooCommerce Integration zahtijeva da je WooCommerce aktiviran barem na vašem glavnom sajtu._
+
+Razumemo da _Stripe_ i _PayPal_ nisu dostupni u nekim zemljama, što ograničava ili otežava Ultimate Multisite korisnicima efikasno korištenje našeg plugin-a. Zato smo kreirali **dodatak za integraciju _WooCommerce_**.
+
+_WooCommerce_ je vrlo popularan e-commerce plugin. Programeri širom svijeta kreiraju dodatke za integraciju različitih gateway-a plaćanja. Iskoristili smo to kako bismo proširili gatewaye plaćanja koje možete koristiti u Ultimate Multisite sistemu za naplatu.
+
+## Setting It Up
+
+Prvo, morate instalirati dodatak WooCommerce Integration, koji je **besplatan za licencirane korisnike**. Da biste ga instalirali, kliknite na Ultimate Multisite na vašem super admin dashboardu i odaberite **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Ovdje možete pronaći sve Ultimate Multisite add-on-e. Kliknite na dodatak **Ultimate Multisite: WooCommerce Integration**.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Pojaviće se prozor sa detaljima add-ona. Samo kliknite na **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Nakon instalacije, bit ćete preusmjereni na stranicu plugin-a. Tamo, samo kliknite na **Network Activate** i _WooCommerce_ add-on će biti aktiviran na vašoj mreži.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Nakon aktivacije, ako i dalje niste instalirali i aktivirali WooCommerce plugin na vašem web sajtu, **primjeći ćete podsjetnik**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Nakon instalacije, vidjet ćete dodatnu opciju pod postavkama plaćanja Ultimate Multisite-a. Odatle možete **uključiti** opciju _WooCommerce_.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Možete konfigurirati neke osnovne postavke, kao što je naziv koji će se prikazati na prednjoj strani i uputstva koja će voditi vaše korisnike kroz proces plaćanja. Zatim možete otići na **WooCommerce postavke vašeg glavnog sajta** da uključite i konfigurišete gateway plaćanja koji preferirate.
+
+## How to manage the payment
+
+WooCommerce Integration radi na vrlo sličan način kao i naš **Manual Gateway**. Mana je u tome što svako plaćanje mora biti plaćeno ručno na kraju perioda plaćanja. Evo kako teče proces:
+
+  * Kada korisnikov ciklus plaćanja istekne, članstvo se stavlja **u suspenziju**. Istovremeno, na WooCommerce instalaciji glavnog sajta mreže kreiraće se porudžbina.
+
+  * Korisnici zatim primaju fakturu na e-mail, sa linkom za izvršavanje plaćanja (taj link se takođe pojavljuje u njihovoj istoriji plaćanja sa njihovog subsite dashboarda). Taj link preusmjerava korisnika na **WooCommerce checkout**, gdje će korisnici moći odabrati jedan od **dostupnih WooCommerce gateway-a** kako bi obradili svoje plaćanje.
+
+  * Nakon prijema plaćanja, članstvo se **obnavlja**, plaćanje se loguje na Ultimate Multisite, a porudžbina se postavlja na završen.
+
+### Some Important Notes:
+
+  * Podrazumevana funkcionalnost Ultimate Multisite i dalje radi sa ovom integracijom. Na primjer, **izdajanje povrata novca** sa ekrana **Subscription Management** komuniciraće sa WooCommerce-om kako bi izvršilo povrat novca koristeći odabrani način plaćanja.
+
+  * Ultimate Multisite: WooCommerce Integration zavisi od WP-Cron da bi radio. Ovo radi vrlo dobro većinom puta, ali ako sajt ima nizak promet, cron neće biti podstaknut da provjeri zakazane događaje i događaj će biti propušten, što može uzrokovati kašnjenja u izvršavanju.
+
+## Woocommerce Subscriptions Plugin
+
+Ručno pokretanje plaćanja svakog mjeseca nije idealno za krajnje korisnike, jer se očekuje da pretplata automatski ponavlja tokom svakog ciklusa plaćanja. Zato smo dizajnirali WooCommerce Integration add-on da **podrži WooCommerce Subscriptions plugin**. Ovo će automatizirati plaćanje i olakšati transakciju vašim krajnjim korisnicima.
+
+Sve što trebate učiniti je **instalirati** [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) i imati ga **aktiviran na vašem glavnom sajtu**. Zatim se vratite na Ultimate Multisite postavke plaćanja i **uključite integraciju**.
+
+I to je sve. Vaši krajnji korisnici više neće morati ručno plaćati na kraju svog ciklusa plaćanja.
+
+Pored kreiranja porudžbine na vašem glavnom sajtu pod _WooCommerce_, kreiraće se i pretplata za svaki račun.

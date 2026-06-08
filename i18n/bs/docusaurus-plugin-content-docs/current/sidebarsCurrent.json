@@ -1,0 +1,218 @@
+{
+  "sidebar.userGuideSidebar.category.Getting Started": {
+    "message": "Početak rada",
+    "description": "The label for category Getting Started in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Administration": {
+    "message": "Administracija",
+    "description": "The label for category Administration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Configuration": {
+    "message": "Konfiguracija",
+    "description": "The label for category Configuration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Mapping": {
+    "message": "Mapiranje domena",
+    "description": "The label for category Domain Mapping in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Domain Seller": {
+    "message": "Prodavač domena",
+    "description": "The label for category Domain Seller in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Host Integrations": {
+    "message": "Integracije hosta",
+    "description": "The label for category Host Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Payment Gateways": {
+    "message": "Plaćanje",
+    "description": "The label for category Payment Gateways in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Client Management": {
+    "message": "Upravljanje klijentima",
+    "description": "The label for category Client Management in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Integrations": {
+    "message": "Integracije",
+    "description": "The label for category Integrations in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Customization": {
+    "message": "Prilagodba",
+    "description": "The label for category Customization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Development": {
+    "message": "Razvoj",
+    "description": "The label for category Development in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Localization": {
+    "message": "Lokalizacija",
+    "description": "The label for category Localization in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Troubleshooting": {
+    "message": "Rješavanje problema",
+    "description": "The label for category Troubleshooting in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Migration": {
+    "message": "Migracija",
+    "description": "The label for category Migration in sidebar userGuideSidebar"
+  },
+  "sidebar.userGuideSidebar.category.Miscellaneous": {
+    "message": "Raznoliko",
+    "description": "The label for category Miscellaneous in sidebar userGuideSidebar"
+  },
+  "sidebar.developerSidebar.category.Hooks Reference": {
+    "message": "Referenca na hookove",
+    "description": "The label for category Hooks Reference in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.REST API": {
+    "message": "REST API",
+    "description": "The label for category REST API in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Integration Guide": {
+    "message": "Vodič za integraciju",
+    "description": "The label for category Integration Guide in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Code Examples": {
+    "message": "Primjeri koda",
+    "description": "The label for category Code Examples in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.Addon Development": {
+    "message": "Razvoj dodatka",
+    "description": "The label for category Addon Development in sidebar developerSidebar"
+  },
+  "sidebar.addonsSidebar.category.WooCommerce Integration": {
+    "message": "Integracija s WooCommerceom",
+    "description": "The label for category WooCommerce Integration in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Site Exporter": {
+    "message": "Izvoz sajta",
+    "description": "The label for category Site Exporter in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AffiliateWP": {
+    "message": "AffiliateWP",
+    "description": "The label for category AffiliateWP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Connector for Compatible Endpoints": {
+    "message": "AI konektor za kompatibilne endpointove",
+    "description": "The label for category AI Connector for Compatible Endpoints in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Connector for WebLLM": {
+    "message": "AI Konektor za WebLLM",
+    "description": "The label for category AI Connector for WebLLM in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.AI Site Builder": {
+    "message": "AI Izgradilac Sajta",
+    "description": "The label for category AI Site Builder in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gratis AI Agent": {
+    "message": "Besplatan AI Agent",
+    "description": "The label for category Gratis AI Agent in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Superdav AI Agent": {
+    "message": "Superdav AI Agent",
+    "description": "The label for category Superdav AI Agent in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Analytics": {
+    "message": "Analitika",
+    "description": "The label for category Analytics in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Captcha": {
+    "message": "Captcha",
+    "description": "The label for category Captcha in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Chuck Norris Facts": {
+    "message": "Čak Norisovi fakti",
+    "description": "The label for category Chuck Norris Facts in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Content Sync": {
+    "message": "Sinkronizacija sadržaja",
+    "description": "The label for category Content Sync in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Domain Seller": {
+    "message": "Prodavač domena",
+    "description": "The label for category Domain Seller in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Emails": {
+    "message": "E-mailovi",
+    "description": "The label for category Emails in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Fluent Forms": {
+    "message": "Fluent Forms",
+    "description": "The label for category Fluent Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.GoCardless": {
+    "message": "GoCardless",
+    "description": "The label for category GoCardless in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Gravity Forms": {
+    "message": "Gravity Forms",
+    "description": "The label for category Gravity Forms in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Language Selector": {
+    "message": "Odabir jezika",
+    "description": "The label for category Language Selector in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Loco Translate": {
+    "message": "Loko Prevod",
+    "description": "The label for category Loco Translate in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailchimp": {
+    "message": "Mailchimp",
+    "description": "The label for category Mailchimp in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Mailster": {
+    "message": "Mailster",
+    "description": "The label for category Mailster in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Metered Plans": {
+    "message": "Planirani planovi",
+    "description": "The label for category Metered Plans in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Network": {
+    "message": "Multinet",
+    "description": "The label for category Multi-Network in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Tenancy": {
+    "message": "Multitenancy",
+    "description": "The label for category Multi-Tenancy in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.PayFast": {
+    "message": "PayFast",
+    "description": "The label for category PayFast in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Plugin & Theme Manager": {
+    "message": "Upravljač dodataka i tema",
+    "description": "The label for category Plugin & Theme Manager in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Agents": {
+    "message": "Agenti podrške",
+    "description": "The label for category Support Agents in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Support Tickets": {
+    "message": "Podrška za prijave",
+    "description": "The label for category Support Tickets in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.VAT": {
+    "message": "PDD",
+    "description": "The label for category VAT in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Admin Page Creator": {
+    "message": "Kreator administrirane stranice",
+    "description": "The label for category Admin Page Creator in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Addon Template": {
+    "message": "Dodatni šablon",
+    "description": "The label for category Addon Template in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Tutor Multisite Compatibility": {
+    "message": "Kompatibilnost Tutor Multisite-a",
+    "description": "The label for category Tutor Multisite Compatibility in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Material WP": {
+    "message": "Materijal WP",
+    "description": "The label for category Material WP in sidebar addonsSidebar"
+  },
+  "sidebar.addonsSidebar.category.Multi-Currency": {
+    "message": "Višeciljna valuta",
+    "description": "The label for category Multi-Currency in sidebar addonsSidebar"
+  }
+}

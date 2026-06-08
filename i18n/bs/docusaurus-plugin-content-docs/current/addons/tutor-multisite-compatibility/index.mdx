@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite Kompatibilnost
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Kompatibilnost Tutor Multisite
+
+WordPress plugin koji dodaje popravke kompatibilnosti za Tutor LMS u multisite okruženjima.
+
+## Opis
+
+Ovaj plugin pruža esencijalne popravke kompatibilnosti za pokretanje Tutor LMS-a na WordPress multisite mrežama. On upravlja upisom korisnika, upravljanjem instruktorima, ograničenjima kurseva i drugom funkcionalnošću specifičnom za multisite.
+
+## Funkcionalnosti
+
+- **Upravljanje bazama podataka (Database Table Management)**: Automatski detektuje i kreira nedostajuće tabele Tutor LMS-a koje ne uspijevaju zbog ograničenja vanjskog ključa (foreign key constraints) multisite okruženja.
+- **Upis korisnika u Multisite (Multisite User Enrollment)**: Prilagođeni AJAX rukovaoci za upravljanje upisom korisnika preko svih sajtova u mreži.
+- **Upravljanje ulogama instruktora (Instructor Role Management)**: Automatsko dodjeljivanje i upravljanje ulogama instruktora u multisite okruženjima.
+- **Ograničenja kurseva (Course Limitations)**: Integracija sa Ultimate Multisite za upravljanje ograničenjima kreiranja kurseva i funala na osnovu planova sajtova.
+- **Prilagođeni pregledi za administratora (Custom Admin Views)**: Pregled i interfejs za upravljanje instruktorima koji je svjestan multisite strukture.
+- **Alati za administratora (Admin Tools)**: Interfejs za upravljanje bazom podataka za administratora mreže i sajtova.
+
+## Zahtjevi
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (automatski zahtijevan putem zaglavlja `Requires Plugins`)
+- Instalacija WordPress Multisite
+- Plugin Ultimate Multisite (za funkcionalnost ograničenja kurseva)
+
+## Instalacija
+
+1. Upload fajlove plugin-a na `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Osigurajte da je Tutor LMS instaliran i aktiviran
+3. Aktivizujte plugin preko menija 'Plugins' u WordPressu
+4. Plugin će se automatski integrisati sa Tutor LMS-om
+
+## Struktura fajlova
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Glavni fajl plugin-a)
+├── includes/
+│   ├── class-database-manager.php (Kreiranje i upravljanje tabelama baze podataka)
+│   ├── class-admin-interface.php (Admin interfejs za upravljanje bazom podataka)
+│   ├── class-course-limits.php (Rukovaoci ograničenja kurseva i funala)
+│   ├── class-instructor-manager.php (Upravljanje ulogama instruktora)
+│   ├── class-ajax-handlers.php (Prilagođeni AJAX rukovaoci)
+│   ├── class-query-helper.php (Alati za upite baze podataka)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite model korisnika)
+│   └── admin/
+│       ├── class-instructors-list.php (Prilagođeni spisak instruktora)
+│       └── views/
+│           └── instructors.php (Admin prikaz instruktora)
+└── README.md
+```
+
+## Funkcionalnost premeštena iz MU Plugin-a
+
+Ovaj plugin sadrži funkcionalnost koja je ranije bila u `wp-content/mu-plugins/daves.php`:
+
+- Ograničenja promjene statusa kursa
+- Ograničenja kreiranja kurseva
+- Integracija i ograničenja CartFlows-a
+- Upravljanje ulogama instruktora Tutor-a
+- Rukovanje upisom korisnika u multisite okruženju
+- Prikaz ID-a proizvoda kursa
+
+## Upravljanje bazom podataka
+
+### Problem
+
+U WordPress multisite okruženjima, kreiranje tabela Tutor LMS-a ne uspijeva za tabele koje imaju ograničenja vanjskog ključa na tabelu korisnika. To se dešava zato što:
+
+- Specifične za sajt tabele koriste prefikse poput `wp_2_tutor_carts`
+- Vanjski ključ referencira `wp_2_users` (što ne postoji)
+- Stvarna tabela korisnika je `wp_users` (koja je zajednička za cijelu mrežu)
+
+### Rješenje
+
+Ovaj plugin automatski:
+
+1. **Detektuje nedostajuće tabele**: Provjerava tabele koje nisu uspjele biti kreirane zbog ograničenja vanjskog ključa.
+2. **Kreira tabele sa ispravnim referencama**: Koristi ispravno ime tabele korisnika (`wp_users` u multisite okruženju).
+3. **Upravlja više scenarija**:
+   - Aktivacija/reaktivacija plugin-a
+   - Kreiranje novog sajta u mreži
+   - Ručno provjeravanje tabela preko admin interfejsa
+
+### Dotaknute tabele
+
+- `tutor_coupon_usages` - Sadrži vanjski ključ na tabelu korisnika
+- `tutor_carts` - Sadrži vanjski ključ na tabelu korisnika
+- `tutor_notification_preferences` - Tabela TutorPro-a sa vanjskim ključem na tabelu korisnika
+
+### Admin interfejs
+
+Pristupite alatima za upravljanje bazom podataka na:
+
+- **Admin mreže**: Settings → Tutor Multisite DB
+- **Admin sajta**: Tools → Tutor Multisite DB
+
+Interfejs vam omogućava da:
+- Vidite nedostajuće tabele na svim sajtovima
+- Ručno pokrenete kreiranje tabela
+- Provjerite konfiguraciju baze podataka
+- Vidite detaljne informacije o statusu
+
+## Podrška
+
+Ovaj plugin je specifično dizajniran za platformu KursoPro. Za tehničku podršku, kontaktirajte razvojni tim.

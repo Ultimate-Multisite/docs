@@ -1,0 +1,101 @@
+---
+title: Exportador de sites
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Exportador de Sites
+
+## Contingut
+
+Entenem la necessitat de poder moure subsites dins de la teva xarxa cap a una única instal·lació de site i viceversa, en cas que el teu client decideixi migrar el seu website. L'add-on Site Exporter i Importer facilita aquesta tasca. Aquesta eina exporta i importa sites utilitzant fitxers zip, que també poden servir com a copia de seguretat.
+
+## Funcionalitats
+
+* Exportació i importació de sites
+
+* Interfície fàcil d'ús
+
+* Creació de còpies de seguretat de sites
+
+## Documentació
+**Com exportar i importar un site**
+
+## Instal·lació
+
+1. Carrega **ultimate-multisite-site-exporter** al directori **/wp-content/plugins/**
+2. Activa el plugin des del menú **Plugins** de WordPress
+3. Segueix l'Assistant pas a pas per configurar el plugin
+
+## Guia d'ús
+
+Amb Ultimate Multisite pots exportar un site de la teva xarxa o importar un site a la teva instal·lació multisite o de site únic.
+
+Per començar el procés, veu a la nostra pàgina d'add-ons i instala l'add-on Ultimate Multisite: Site Exporter & Importer.![Pàgina d'add-ons](/img/admin/addons-page.png)
+
+![Pàgina d'add-ons amb opció d'instal·lació](/img/admin/addons-page.png)
+
+Veu a la teva pàgina de Plugins i fes clic per **Activar a nivell de xarxa** l'add-on que acabes d'instal·lar.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+L'opció **Export & Import** es pot trobar al menú Ultimate Multisite, a l'esquerra.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Com exportar un site
+
+Per exportar un site de la teva xarxa, veu a **Export & Import** al menú Ultimate Multisite i, a la pestanya **Export Sites**, fes clic per **Generar una nova exportació de site**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Busca el site que vols exportar i selecciona els elements que vols incloure en el fitxer exportat. Pots incloure temes, plugins i caricatures. Si el teu site és massa gran, pots triar executar el procés d'exportació en el fons.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Fes clic al botó **Export Site**. El teu site exportat estarà disponible a la llista **Existing Exports**. Fes clic al botó **Download ZIP** per descarregar el fitxer. Els ZIP d'exportació inclouen un `index.php` i `readme.txt` autoeixecutables, així que es poden instal·lar en un allotjament nou sense haver d'instal·lar abans un plugin d'importació separat.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Com exportar tota la xarxa
+
+Per exportar tots els subsites junts, veu a **Export & Import** al menú Ultimate Multisite i utilitza l'opció **Network Export** a la pantalla d'exportació. L'arxiu generat conté tots els subsites en un únic ZIP per a migracions de host, reconstruccions de staging o còpies de seguretat a nivell de xarxa.
+
+Les exportacions de xarxa poden ser grans. Executa-les quan el trànsit sigui baix i confirma que el servidor té suficient emmagatzematge per l'arxiu i qualsevol caricatura, plugin o tema inclòs.
+
+## Com importar un site
+
+Per importar un site, veu a la pestanya **Import a Site** i carrega el fitxer .zip del site que vols importar. Pots modificar l'URL per enllà a una nova o mantenir l'URL antiga deixant l'espai en blanc. També pots marcar la casella per eliminar el fitxer .zip de la teva instal·lació després de l'import. Després, fes clic a **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+El procés pot trigar una mica. Veuràs una importació pendent a la llista sota l'importador.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Pots aturar el procés fent clic a **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Després que el procés es completi, el teu site ja està disponible a la teva xarxa.
+
+## Com importar un site en una instal·lació única
+
+Per importar un site a la teva instal·lació única, primer has de instal·lar i activar l'importador al teu site. Pots trobar el enllaç per descarregar-lo a la pestanya exportador.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Pots trobar l'importador al menú **Tools**, a l'esquerra, en el subelement **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Carrega el fitxer .zip del site que vols importar. Pots modificar l'URL per enllà a una nova o mantenir l'URL antiga deixant l'espai en blanc. També pots marcar la casella per eliminar el fitxer .zip de la teva instal·lació després de l'import. Després, fes clic a **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+El procés pot trigar una mica. Veuràs una importació pendent a la llista sota l'importador.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Pots aturar el procés fent clic a **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Després que el procés es termini, el teu site serà substituït pel site que acabes d'importar.

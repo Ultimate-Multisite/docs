@@ -1,0 +1,124 @@
+---
+title: Constructor de sites amb IA
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Requisits
+
+- WordPress 5.3 o superior
+- PHP 7.4 o superior
+- Plugin Ultimate Multisite (activat)
+
+## Instal·lació
+
+1. Carrega els fitxers de l'addon al teu directori `/wp-content/plugins/`
+2. Activa el plugin des del menú 'Plugins' de WordPress
+3. Configura les impostes de l'addon a l'administració de la xarxa
+
+## Desenvolupament
+
+### Configuració
+
+```bash
+# Instal·la les dependències
+composer install
+npm install
+
+# Executa les proves
+npm run test
+
+# Comprova els estàndards de codi
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Soluciona els problemes de estil de codi
+vendor/bin/phpcbf
+
+# Crea la versió per a producció
+npm run build
+```
+
+### Estructura del projecte
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Classes i incloques de PHP
+│   ├── class-multisite-ultimate-updater.php  # Gestor d'actualitzacions
+│   └── class-ai_site_builder-main.php             # Funcionalitat principal
+├── tests/                        # Proves unitàries
+│   ├── bootstrap.php            # Bootstrap de proves
+│   ├── class-*-base.php         # Classe base de proves
+│   └── class-*-test.php         # Casos de prova
+├── views/                       # Fitxers de plantilla
+├── assets/                      # Recursos estàtics
+│   ├── css/                     # Fitxers de estil
+│   ├── js/                      # Fitxers de JavaScript
+│   └── images/                  # Imatges
+├── lang/                        # Fitxers de llengua
+├── composer.json                # Dependències de PHP
+├── package.json                 # Dependències de Node.js
+├── phpunit.xml.dist             # Configuració de PHPUnit
+├── .phpcs.xml.dist              # Configuració dels estàndards de codi
+└── rector.php                   # Regles de modernització de codi
+```
+
+### Provesament (Testing)
+
+L'addon inclou un marc de provesament complet:
+
+- **Unit Tests**: Proves basades en PHPUnit amb la suite de proves de WordPress
+- **Base Test Class**: Proporciona mètodes d'ajutador per a escenaris de prova comuns
+- **Test Coverage**: Configurat per rastrejar la cobertura del codi
+- **Multisite Testing**: Les proves s'executen en un entorn multisite
+
+### Estàndards de codi
+
+- **Estàndards de codi de WordPress**: Aplicats mitjançant PHPCS
+- **Compatibilitat PHP 7.4+**: Suporta les funcionalitats modernes de PHP
+- **Anàlisi estàtica**: Integració de PHPStan per a la verificació de tipus
+- **Modernització de codi**: Regles de Rector per a les actualitzacions de PHP
+
+### Sistema de compilació (Build System)
+
+- **Processament de recursos**: Minificació per a fitxers CSS/JS
+- **Traducció**: Generació de fitxer POT
+- **Empaquetat (Packaging)**: Creació d'arxiu per a la distribució
+- **Mode de desenvolupament**: Recursos no minificats per a la depuració
+
+## Configuració
+
+L'addon suporta diverses opcions de configuració accessibles a través de l'interfície d'administració de la xarxa.
+
+## Hooks i Filtres
+
+### Accions (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - S'executa després de l'inicialització de l'addon
+- `ultimate-multisite-ai-site-builder_loaded` - S'executa després de carregar tots els fitxers de l'addon
+
+### Filtres (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifica les impostes de l'addon
+- `ultimate-multisite-ai-site-builder_enabled` - Sobrepassa l'estat d'habilitar/deshabilitar l'addon
+
+## Llicència
+
+Aquest addon està llicenciós sota GPL v3 o posterior.
+
+## Suport
+
+Per a suport i documentació, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+## Historial de canvis (Changelog)
+
+- Versió 1.0.1 (2025-09-28): canvi de prefix a ultimate-multisite; actualització del domini de text; increment de versió.
+
+
+- Versió (2025-09-28): canvi de prefix a ultimate-multisite; actualització del domini de text; increment de versió.

@@ -1,0 +1,100 @@
+---
+title: Više mreža
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork dodatak proširuje vašu Ultimate Multisite platformu moćnim funkcionacijama za više mreža (multinetwork). Ovaj dodatak omogućava vašim klijentima da kupuju i upravljaju cijelim WordPress multisite mrežama, a ne samo pojedinačnim sajtovima.
+
+## Ključne značajke
+
+* **Pružanje mreža (Network Provisioning)**: Automatski kreira i konfiguriše potpune WordPress multisite mreže za vaše klijente.
+* **Šabloni mreža (Network Templates)**: Omogućava klijentima da pregledaju, predgledaju i odaberu gotov šablon mreže prije prijave.
+* **Upravljanje mrežama (Network Management)**: Potpune mogućnosti upravljanja okruženjima više mreža.
+* **Izolovane mreže (Isolated Networks)**: Svaka klijentska mreža radi nezavisno, sa vlastitim tabelama baze podataka i konfiguracijom.
+* **SSO između mreža (Cross-Network SSO)**: Pruža klijentima besprekoran pristup svojim podmrežama pomoću autentifikacije magic link-om.
+* **Skalabilna arhitektura (Scalable Architecture)**: Efektivno upravlja više mreža optimizacijom resursa.
+* **Integracija (Integration)**: Besprekorno se integriše sa sistemima pretplate i naplate Ultimate Multisite-a.
+
+## Primjeri upotrebe
+
+* **White Label Hosting**: Pružajte klijentima vlastite multisite mreže sa vlastitim brendom.
+* **Agencijske rješenja**: Omogućite agencijama da upravljaju više klijentskih mreža sa jedne platforme.
+* **Enterprise implementacije**: Podržava velike organizacije sa kompleksnim zahtjevima više mreža.
+* **Platforme za obrazovanje**: Kreirajte zasebne mreže za različite škole ili odjele.
+
+## Zahtjevi
+
+* Ultimate Multisite 2.0.0 ili noviji
+* Instalacija WordPress Multisite-a
+* PHP 7.4 ili noviji
+* MySQL 5.6 ili noviji
+
+## Instalacija
+
+1. Postavite datoteke plugin-a u direktorij `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivizujte plugin preko ekrana 'Plugins' u WordPressu.
+3. Konfigurišite postavke više mreža preko Ultimate Multisite → Settings.
+
+## Šabloni mreža
+
+Versija 1.3.0 dodaje proces otkrivanja i odabira šablona za klijente koji kupuju nove mreže. Koristite šablone mreža kada želite da svaka nova klijentska mreža počne sa pripremljenom strukturom, dizajnom, bibliotekom sadržaja ili specifičnom postavkom za određenu industriju.
+
+### Predglednik šablona (Template previewer)
+
+Predglednik šablona mreže omogućava klijentima da pregledaju dostupne šablone prije plaćanja. Svaki šablon može se otvoriti u panelu za uživo predgled, tako da klijenti mogu uporediti raspored i sadržaj prije nego što kupe mrežu.
+
+Koristite predglednik kako biste pomogli klijentima da:
+
+* Preglede izgled i strukturu svakog dostupnog šablona mreže.
+* Uporede više šablona bez napuštanja toka kupovine.
+* Izaberu šablon koji najbolje odgovara njihovom slučaju upotrebe prije prijave.
+
+Držite nazive i opise šablona prilagođenima za klijente. Predglednik je najkorisniji kada klijenti mogu razumjeti namjeravan slučaj upotrebe, kao što su agencijske mreže, školske mreže, franšizne mreže ili paketi white label hostinga.
+
+### Odabir šablona pri plaćanju (Template picker at checkout)
+
+Odabir šablona može se dodati u tok prijave i plaćanja kao polje. Kada je konfigurisano, klijenti biraju šablon mreže koji žele tokom plaćanja, a odabrani šablon se koristi kada se njihova nova mreža konfiguriše.
+
+Kako koristiti picker u toku plaćanja:
+
+1. Pripremite mreže koje želite da ponudite kao šablone.
+2. Omogućite polje za odabir šablona više mreža u relevantnom formularu za prijavu ili plaćanje.
+3. Odaberite koji šabloni bi trebalo da budu dostupni za taj tok plaćanja.
+4. Objavite tok plaćanja i testirajte prijavu kako biste potvrdili da je odabrani šablon primijenjen na novu mrežu.
+
+Ako tok plaćanja nudi samo jedan proizvod mreže, picker i dalje može biti koristan kao vođeni korak u uvođenju. Za funele sa više planova, prikazujte samo šablone koji su kompatibilni sa odabranim proizvodom ili planom.
+
+## SSO magic link između mreža (Cross-Network Magic Link SSO)
+
+SSO magic link između mreža omogućava klijentima da se kreću između svog glavnog naloga i podmreža bez ponovnog ručnog prijavljivanja. Kada klijent prati link za pristup između mreža, Ultimate Multisite generiše vremenski ograničen magic link i autentifikuje klijenta u odredišnu mrežu.
+
+Ovo poboljšava iskustvo za klijente koji upravljaju više mreža ili koji moraju odmah pristupiti novokloniranim mrežama šablona nakon kupovine.
+
+Kontrolna lista za administratora:
+
+* Potvrdite da je dodatak Multinetwork aktivan na cijeloj WordPress multisite instalaciji.
+* Osigurajte da klijenti imaju ispravan pristup mreži prije nego što im se ponude linkovi između mreža.
+* Držite domene mreža i mapirane domene ispravno konfigurisane kako bi magic linkovi usmjeravali na namjernu odredišnu mrežu.
+* Testirajte dashboard klijenta i sve gumbe za pristup nakon plaćanja, nakon promjene postavki mreže, domena ili plaćanja.
+
+Magic linkovi treba tretirati kao linkovi za prijavu. Dizajnirani su za besprekoran pristup klijenta i ne smiju se proslijediti niti ponovno koristiti izvan namjernog sesije.
+
+## Često postavljana pitanja
+
+### Šta je multinetwork?
+
+Multinetwork je funkcija WordPressa koja vam omogućava da pokrenete više nezavisnih multisite mreža na jednoj WordPress instalaciji.
+
+### Kako se ovo razlikuje od običnog multisite-a?
+
+Obični multisite omogućava više sajtova unutar jedne mreže. Multinetwork omogućava više mreža, svaka sa svojim sajtovima, sve unutar jedne WordPress instalacije.
+
+### Da li je potrebna posebna server konfiguracija?
+
+Da, multinetwork zahtijeva specifičnu postavku i konfiguraciju servera. Molimo vas da se posjetite dokumentaciji radi detaljnih uputstava za postavljanje.

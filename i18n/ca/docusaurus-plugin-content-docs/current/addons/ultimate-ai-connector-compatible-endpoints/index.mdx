@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector per a punts d'acció compatibles
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+L'Ultimate AI Connector for Compatible Endpoints integra les API de proveïdors d'IA compatibles amb OpenAI amb la teva xarxa multisite de WordPress. Configura múltiples proveïdors d'IA — cada un amb la seva pròpia URL d'endpoint, clau API i model predeterminat — i dirigeix les sol·licituds amb una reserva automàtica quan un proveïdor no està disponible.
+
+## Funcionalitats Clau
+
+- **Suport multipl de proveïdors**: Afegir múltiples cartes de proveïdors d'IA, cada una amb la seva pròpia URL d'endpoint, clau API i model predeterminat.
+- **Reordenar amb arrastrament**: Organitza els proveïdors per prioritat utilitzant la manilla de sorpassament de cada carta; les sol·licituds utilitzen els proveïdors en l'ordre.
+- **Ruteig automàtic de reserva**: Si el proveïdor principal no està disponible, les sol·licituds es reserven automàticament al següent proveïdor configurat.
+- **Configuració per proveïdor**: Cada proveïdor es configura de manera independent i amb les seves pròpies credencials i selecció de models.
+- **Interfície d'usuari basada en cartes**: Construït sobre els components Card de WordPress 6.9+ (CardBody, CardHeader, CardDivider), que són estables.
+- **Auto-expansió al afegir**: Les noves cartes de proveïdors s'expanden automàticament perquè puguis omplir els detalls immediatament.
+- **Eliminació de cache de scripts**: Els scripts dels proveïdors es desactiven de cache quan s'actualitza el plugin per garantir que es carrega la versió més recent.
+
+## Requisits
+
+- WordPress 5.3 o més recent
+- PHP 7.4 o més recent
+- Plugin Ultimate Multisite (activat)
+- Un endpoint API compatible amb OpenAI (auto-alojat o de tercera pàrida)
+
+## Instal·lació
+
+1. Carrega els fitxers de l'addon al teu directori `/wp-content/plugins/`
+2. Activa el plugin des del menú 'Plugins' de WordPress
+3. Navega a **Ultimate Multisite → AI Connector** per configurar l'addon
+
+## Configuració
+
+### Configuració de Múltiples Proveïdors
+
+L'e pantalla de configuració utilitza un disseny basat en cartes, on cada carta representa un proveïdor d'IA. Pots afegir tant de proveïdors com necessitis.
+
+#### Afegir un Proveïdor
+
+1. Veu a **Ultimate Multisite → AI Connector** a l'administració de la xarxa.
+2. Fes clic a **Add Provider**.
+3. Apareix una nova carta de proveïdor i s'expandeix automàticament.
+4. Omple els detalls del proveïdor:
+   - **Provider Name** — una etiqueta per identificar aquest proveïdor (ex.: "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** — l'URL base de l'API compatible amb OpenAI (ex.: `https://api.openai.com/v1`).
+   - **API Key** — la teva clau API per a aquest proveïdor.
+   - **Default Model** — l'identificador de model per utilitzar per defecte per aquest proveïdor (ex.: `gpt-4o`, `mistral-small`).
+5. Fes clic a **Save Settings**.
+
+#### Eliminar un Proveïdor
+
+Fes clic al botó **Remove** de qualsevol carta de proveïdor per eliminar-lo. Guarda la configuració per aplicar el canvi.
+
+#### Reordenar Proveïdors
+
+Arrasga l'ícone de sorpassament (⣿) a la banda esquerra de qualsevol carta de proveïdor per reordenar-lo. L'ordre determina la prioritat de reserva: les sol·licituds es canvien al primer proveïdor i es reserven als proveïdors posteriors si una sol·licitud falla.
+
+### Ruteig de Reserva (Fallback Routing)
+
+Quan una sol·licitud al proveïdor principal falla — a causa d'un temps d'espera, un límit de taxa o una interrupció del servei — el connector intenta automàticament amb el següent proveïdor de la llista. Això continua per la llista fins que un proveïdor té èxit o es han provat tots els proveïdors.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+La reserva és transparente per al plugin o el tema que crida — reben o una resposta de succès o un error final, independentment del nombre de proveïdors que s'hagin provat.
+
+### Referència de Configuració de Proveïdors
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## Solucionar Problemes
+
+### No hi ha proveïdors listats
+
+Si la llista de proveïdors està buida després de guardar, confirma que:
+
+- Fes clic a **Save Settings** després d'afegir els proveïdors.
+- El teu navegador no va blocar que la pàgina de configuració es guardés (comprova la consola del navegador per errors de JavaScript).
+- El plugin està actiu i et trobes a la pantalla d'administració de la xarxa.
+
+### Les sol·licituds estan fallant per tots els proveïdors
+
+- Comprova que l'endpoint URL de cada proveïdor és arribable des del teu servidor (no només des del teu navegador).
+- Comprova que cada clau API és vàlida i que no ha caducat.
+- Revisa l'estat de límit de taxa i quota del proveïdor al seu dashboard.
+- Activa el *debug logging* de WordPress (`WP_DEBUG_LOG`) per capturar missatges d'error detallats del connector.
+
+### Un proveïdor no s'està utilitzant per la reserva
+
+Reordenar amb arrastament canvia l'ordre de reserva. Confirma que el proveïdor que esperes que rebi sol·licituds de reserva està posicionado correctament a la llista i que la seva URL d'endpoint i clau API són correctes.
+
+### La nova carta de proveïdor no s'expandeix automàticament
+
+L'auto-expansió requereix que JavaScript estigui habilitat al teu navegador. Si la carta no s'expandeix al fer clic, comprova la consola del navegador per errors. El contingut de la carta sempre és accessible fent clic a l'encàfar de la carta, encara que l'auto-expansió no s'activi.
+
+## Changelog
+
+Veure [Changelog](./changelog) per a la història completa de versions.

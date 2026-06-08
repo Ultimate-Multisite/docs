@@ -1,0 +1,143 @@
+---
+title: Besplatni AI agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent je autonomni WordPress AI asistent koji može planirati, izgraditi i upravljati kompletnim WordPress sajtovima samo na osnovu uputa prirodnim jezikom. On eksponira strukturirani set **sposobnosti** (abilities) — diskretne, testabilne akcije koje agent može aktivirati — pokrivajući sve, od upravljanja sadržajem do prilagođavanja dizajnerskog sistema. Verzija 1.9.0 dodaje sposobnosti kreiranja sadržaja, vizuelni pregled stranica putem snimaka zaslona na strani klijenta, pet ugrađenih profila agenta i feature flags za kontrolu pristupa i brendiranje.
+
+## Ključne značajke
+
+- **Sistem sposobnosti (Abilities system)** — modularan, proširiv katalog akcija koje agent može aktivirati na vašoj WordPress instalaciji.
+- **Upravljanje sadržajem (Content Management)** — kreiranje postova i stranica (uključujući dodjelu šablona stranica), masovno kreiranje više postova u jednom pozivu, postavljanje glavnih slika i izrada kontakt formulara.
+- **Vizuelni pregled (Visual Review)** — snimanje snimaka zaslona sa živih stranica, poređenje stanja prije/poslije i dobijanje AI-generisanog dizajnerskog pregleda koji pokriva raspored, tipografiju, boju i pristupačnost.
+- **Pet ugrađenih agenta** — Content Writer, Site Builder, Design Studio, Plugin Manager i Support Assistant; prebacivni putem Agent Picker-a u zaglavlju chata.
+- **Feature flags** — prekidači za kontrolu pristupa i brendiranje u Podešavanja → Feature Flags za ograničenja uloga, white-label imenovanje i prilagođavanje widgeta.
+- **Upravljanje Custom Post Type-ovima** — registracija, listanje i brisanje custom post tipova sa trajanjem nakon ponovnog pokretanja.
+- **Upravljanje Custom Taxonomy-ima** — registracija, listanje i brisanje custom taksonomija sa trajanjem.
+- **Sposobnosti dizajnerskog sistema (Design System abilities)** — ubacivanje prilagođenog CSS-a, upravljanje kuriranim blok šablonima, postavljanje logotipa sa sajta i primjena tema.json predmodela.
+- **Upravljanje globalnim stilovima (Global Styles management)** — čitanje i pisanje vrijednosti tema.json za palete boja, tipografiju, razmak i više.
+- **Upravljanje navigacionim menijima (Navigation Menu management)** — programsko kreiranje i ažuriranje navigacionih menija i njihovih stavki.
+- **Upravljanje opcijama (Options Management)** — čitanje i pisanje WordPress opcija sa ugrađenom sigurnosnom bloklistom za zaštitu kritičnih postavki.
+- **Instalabilni registar sposobnosti (Installable Abilities Registry)** — otkrivanje i aktiviranje dodatnih paketa sposobnosti bez mijenjanja core plugin datoteka.
+- **Site Builder Orchestration v2** — planovi izgradnje sa sajta u više koraka sa otkrivanjem pluginova, praćenjem napretka i oporavkom od grešaka.
+- **WP-CLI benchmark komanda** — pokretanje paketa testiranja sposobnosti agenta sa komandne linije za CI i evaluaciju modela.
+
+## Zahtjevi
+
+- WordPress 6.0 ili noviji
+- PHP 8.1 ili noviji
+- WordPress Multisite (aktivirano na nivou mreže) ili instalacija sa jednim sajtom
+- Aktivan plugin konektor AI provajdera (Anthropic, OpenAI ili kompatibilan)
+
+## Instalacija
+
+1. Postavite plugin datoteke u `/wp-content/plugins/gratis-ai-agent`
+2. Aktivizujte plugin putem ekrana **Plugins** u WordPressu.
+3. Idite na **Gratis AI Agent → Settings** i povežite svoj AI provajder.
+4. (Opcionalno) Pregledajte **Abilities Registry** radi instalacije dodatnih paketa sposobnosti.
+
+## Brzo početak
+
+Nakon aktivacije i povezivanja sa AI provajderom, otvorite panel **Gratis AI Agent** u bočnom meniju WordPress administracije. Ukucajte uput prirodnim jezikom, a agent će planirati i izvršiti potrebne korake koristeći dostupne sposobnosti.
+
+**Primjeri uputa:**
+
+```
+Kreiraj custom post tip "Portfolio" sa taksonomijom "Project Category".
+```
+
+```
+Injectuj paletu boja za tamni režim u temu i postavi primarnu boju na #1a1a2e.
+```
+
+```
+Izgradi restoran sajt sa online menijem, formularom za rezervaciju i stranicom za kontakt.
+```
+
+## Pregled sposobnosti (Abilities Overview)
+
+Sposobnosti su atomične akcije koje agent može izvršiti. Svaka sposobnost je registrovana PHP klasa koja eksponira shemu (parametri i tipove povrata) koju agent čita u radnom vremenu. Sposobnosti su grupisane po funkcionalnim oblastima:
+
+| Oblast | Sposobnosti |
+|---|---|
+| **Upravljanje sadržajem** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizuelni pregled** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Tipovi** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taksonomije** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dizajnerski sistem** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globalni stilovi** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigacioni meniji** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Upravljanje opcijama** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Instalabilne sposobnosti** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Pogledajte [Abilities Reference](./abilities) za kompletnu dokumentaciju parametara i primjere upotrebe.
+
+## WP-CLI
+
+Gratis AI Agent dolazi sa familijom komandi `wp gratis-ai-agent` za pokretanje testiranja i upravljanje sposobnostima sa komandne linije. Pogledajte [WP-CLI Reference](./wp-cli) za kompletnu listu komandi.
+
+```bash
+# Pokreni kompletan set testiranja
+wp gratis-ai-agent benchmark
+
+# Listaj instalirane sposobnosti
+wp gratis-ai-agent abilities list
+
+# Instaliraj paket sposobnosti
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguracija
+
+Sve postavke se nalaze pod **Gratis AI Agent → Settings** u WordPress administraciji:
+
+| Postavka | Opis |
+|---|---|
+| **AI Provider** | Izaberite i konfigurišite aktivni AI provajder konektor |
+| **Model** | Izaberite jezični model koji će se koristiti za sesije agenta |
+| **Max Tokens** | Budžet tokena po zahtevu (podrazumevano 4096) |
+| **Ability Timeout** | Maksimalno sekundi koliko jedna sposobnost može trajati (podrazumevano 30) |
+| **Debug Logging** | Loguje pozive sposobnosti i razmišljanje agenta u WordPress debug log |
+
+## Sigurnosna bloklista za upravljanje opcijama
+
+Sposobnost Upravljanja opcijama uključuje ugrađenu bloklistu koja sprečava agenta da čita ili piše osetljive WordPress opcije. Podrazumevana bloklista pokriva:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (Opcije URL-a — koristite posvećen alat za migraciju za ovo)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (tajne ključeve)
+- `active_plugins`, `template` (aktivacija pluginova/tema — koristite posvećene sposobnosti)
+- Akreditivne podatke i API ključeve gatewaya za plaćanja registrovane od strane instaliranih pluginova.
+
+Dodatne unose možete dodati putem filtera `gratis_ai_agent_options_blocklist`.
+
+## Hooks i Filteri
+
+### Akcije (Actions)
+
+- `gratis_ai_agent_ability_registered` — aktivira se nakon registracije sposobnosti, prima naziv klase sposobnosti
+- `gratis_ai_agent_plan_started` — aktivira se kada počinje izvršavanje plana izgradnje sajta
+- `gratis_ai_agent_plan_completed` — aktivira se kada plan uspješno završi
+- `gratis_ai_agent_plan_failed` — aktivira se kada plan naiđe na neopravljivu grešku
+
+### Filteri (Filters)
+
+- `gratis_ai_agent_abilities` — mijenja listu registrovane sposobnosti prije nego što je agent učita
+- `gratis_ai_agent_options_blocklist` — proširuje ili smanjuje sigurnosnu bloklistu opcija
+- `gratis_ai_agent_benchmark_questions` — dodaje prilagođena pitanja za set testiranja
+- `gratis_ai_agent_plan_plugins` — mijenja listu otkrivenih pluginova tokom generisanja plana sajta
+
+## Podrška
+
+Za podršku, posjetite [ultimatemultisite.com](https://ultimatemultisite.com) ili otvorite issue u repozitorijumu plugin-a.
+
+## Changelog
+
+Pogledajte [Changelog](./changelog) za kompletnu historiju verzija.

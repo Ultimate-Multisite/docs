@@ -1,0 +1,124 @@
+---
+title: Višestanačnost
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Raspoređivanje pod-sajtova na više servera i baza podataka radi boljeg performansa i sigurnosti.
+
+## Zahtjevi
+
+- WordPress 5.3 ili noviji
+- PHP 7.4 ili noviji
+- Plugin Multisite Ultimate (aktiviran)
+
+## Instalacija
+
+1. Otpremite fajlove dodatka u direktorij `/wp-content/plugins/`
+2. Aktivizirajte plugin preko menija 'Plugins' u WordPressu
+3. Podesite postavke dodatka u administraciji mreže (network admin)
+
+## Razvoj
+
+### Postavljanje
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura projekta
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP klase i uključivanja
+│   ├── class-multisite-ultimate-updater.php  # Handler za ažuriranje
+│   └── class-multi_tenancy-main.php             # Glavna funkcionalnost
+├── tests/                        # Unit testovi
+│   ├── bootstrap.php            # Bootstrap za testiranje
+│   ├── class-*-base.php         # Osnovna klasa za testiranje
+│   └── class-*-test.php         # Testni slučajevi
+├── views/                       # Fajlovi šablona
+├── assets/                      # Statički resursi
+│   ├── css/                     # Stilovi
+│   ├── js/                      # JavaScript fajlovi
+│   └── images/                  # Slike
+├── lang/                        # Fajlovi jezika
+├── composer.json                # PHP zavisnosti
+├── package.json                 # Node.js zavisnosti
+├── phpunit.xml.dist             # PHPUnit konfiguracija
+├── .phpcs.xml.dist              # Konfiguracija standarda koda
+└── rector.php                   # Pravila modernizacije koda
+```
+
+### Testiranje
+
+Dodatak uključuje sveobuhvatnu okvir za testiranje:
+
+- **Unit Testovi**: Testovi zasnovani na PHPUnit-u sa WordPress test paketom
+- **Osnovna klasa za testiranje**: Pruža pomoćne metode za uobičajene scenarije testiranja
+- **Pokrivenost testovima**: Konfigurisano za praćenje pokrivenosti koda
+- **Testiranje na više sajtova**: Testovi se pokreću u okruženju više sajtova
+
+### Standardi koda
+
+- **WordPress Standardi kodiranja**: Enforsirano putem PHPCS-a
+- **Kompatibilnost sa PHP 7.4+**: Podržane su moderne PHP značajke
+- **Statička analiza**: Integracija PHPStan-a za provjeru tipova
+- **Modernizacija koda**: Pravila Rector-a za nadogradnju PHP-a
+
+### Sistem izgradnje (Build System)
+
+- **Obrada resursa (Asset Processing)**: Minifikacija za CSS/JS fajlove
+- **Prevođenje (Translation)**: Generisanje POT fajlova
+- **Pakovanje (Packaging)**: Kreiranje arhive za distribuciju
+- **Režim razvoja (Development Mode)**: Neminifikovani resursi za debagiranje
+
+## Konfiguracija
+
+Dodatak podržava različite opcije konfiguracije dostupne putem interfejsa administracije mreže.
+
+## Hookovi i Filteri
+
+### Akcije (Actions)
+
+- `ultimate-multisite-addon-template_init` - Pokreće se nakon inicijalizacije dodatka
+- `ultimate-multisite-addon-template_loaded` - Pokreće se nakon učitavanja svih fajlova dodatka
+
+### Filteri (Filters)
+
+- `ultimate-multisite-addon-template_settings` - Modifikuje postavke dodatka
+- `ultimate-multisite-addon-template_enabled` - Prekida/prepisuje status omogućavanja/onemogućavanja dodatka
+
+## Licenca
+
+Ovaj dodatak licenciran je pod GPL v3 ili noviji.
+
+## Podrška
+
+Za podršku i dokumentaciju, posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Izmjene (Changelog)
+
+- Verzija 1.0.1 (2025-09-28): Promijenjen prefiks u ultimate-multisite; ažuriran domen teksta; povećanje verzije.
+
+
+- Verzija (2025-09-28): Promijenjen prefiks u ultimate-multisite; ažuriran domen teksta; povećanje verzije.

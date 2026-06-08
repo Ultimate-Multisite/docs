@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector per WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+L'Ultimate AI Connector for WebLLM porta la inferència d'IA nativa del navegador a la teva xarxa multisite de WordPress. Executa models de llenguatge gran (LLM) completament al navegador utilitzant WebLLM i el motor MLC, sense necessitat de clau API, sense trucades externes i sense que dades deixin el dispositiu de l'usuari.
+
+## Funcionalitats Clau
+
+- **Inferència al navegador**: L'LLM s'executa localment al navegador del visitant mitjançant WebLLM/MLC — no és necessari GPU de servidor
+- **Widget de xat flotant**: Els usuaris connectats poden donar *prompts* a l'LLM del navegador directament des del *front end*
+- **Indicador d'estat a la barra d'administració**: L'estat en temps real del motor WebLLM és visible a la barra d'administració de WordPress
+- **SharedWorker runtime**: Múltiples pestanyes del navegador comparteixen una sessió de GPU en lloc de competir per recursos de GPU
+- **apiFetch middleware**: Les sol·licituds REST de WordPress que coincideixen amb el patró de l'AI Client SDK són encaminades de manera transparente al *broker* local de WebLLM — sense tràmits HTTP de *loopback*
+- **UI de configuració del widget**: Configuració del panell Connector per activar o desactivar el widget de xat i configurar el comportament de *auto-prompt*
+- **Cache IndexedDB**: Les descàrretes de pes de model sobreviuen a les redireccions CDN que estan afectant a la ruta predeterminada de l'API de Cache
+- **Integració wpai filter**: S'engancha al filtre `wpai_preferred_text_models` perquè la funcionalitat AI Experiments encamini cap al motor del navegador quan està configurat
+
+## Requisits
+
+- WordPress 5.3 o més recent
+- PHP 7.4 o més recent
+- Plugin Ultimate Multisite (activat)
+- Un navegador amb suport de WebGPU (Chrome 113+, Edge 113+, o Firefox Nightly amb WebGPU habilitat)
+
+## Instal·lació
+
+1. Carrega els fitxers de l'addon al teu directori `/wp-content/plugins/`
+2. Activa el plugin des del menú 'Plugins' de WordPress
+3. Navega a **Ultimate Multisite → AI Connector** per configurar l'addon
+
+## Widget de Xat Flotant
+
+El widget de xat flotant permet a qualsevol usuari connectat interactuar amb l'LLM del navegador directament des del teu *front end*, sense haver de deixar la pàgina on es troba.
+
+### Què fa
+
+Quan està activat, apareix un ícone de xat a l'esquina de cada pàgina de *front end* per als usuaris connectats. Fegir l'ícone abre una panella de xat on l'usuari pot escriure *prompts* i rebre respostes del model WebLLM que s'executa localment. Com que el model s'executa completament al navegador, les respostes són privades i no impliquen cap processament a nivell de servidor.
+
+### Indicador d'estat a la barra d'administració
+
+La barra d'administració de WordPress inclou un indicador d'estat que mostra l'estat actual del motor WebLLM:
+
+| Estat | Significat |
+|--------|---------|
+| **Loading** | El motor MLC està inicialitzant o descàrregant pes de model |
+| **Ready** | El model està carregat i disponible per inferència |
+| **Idle** | El motor està carregat, però la pestanya SharedWorker no està activa |
+| **Error** | El motor no va poder inicialitzar-se — comprova la consola del navegador per detalls |
+
+L'indicador s'actualitza en temps real sense necessitat de recarregar la pàgina.
+
+### Com activar o desactivar el widget
+
+1. Veu a **Ultimate Multisite → AI Connector** a l'administració de la xarxa
+2. Troba el panell **Connector**
+3. Activa o desactiva **Enable floating chat widget**
+4. Guarda la configuració
+
+El widget també es pot activar o desactivar per site de l'administració del propi site, si l'administrador de la xarxa ho ha permès.
+
+## Configuració del Widget
+
+El panell Connector en **Ultimate Multisite → AI Connector** conté les siguientes configuracions per al widget de xat flotant:
+
+### Enable Floating Chat Widget
+
+Activa o desactiva el widget de xat per a tota la xarxa. Quan està desactivat, el widget no apareix en cap pàgina de *front end*, independentment del rol de l'usuari.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+Contreles si el widget de xat envia automàticament un *prompt* quan un usuari l'obre.
+
+| Opció | Comportament |
+|--------|-----------|
+| **Disabled** | El widget s'obre amb un xat buit — l'usuari escriu el seu propi *prompt* |
+| **Page context** | El widget s'obre amb un *prompt* pre-rellen basat en el títol i el contingut de la pàgina actual |
+| **Custom prompt** | El widget s'obre amb un *prompt* personalitzat que defines en el camp de sota |
+
+Quan està configurat com a **Custom prompt**, apareix un camp de text addicional on pots introduir el text del *prompt* predeterminat. Suporta variables de plantilla bàsiques:
+
+- `{site_name}` — el nom del site actual
+- `{page_title}` — el títol de la pàgina actual
+- `{user_display_name}` — el nom d'usuari visible de l'usuari connectat
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+La versió 1.1.0 introdueix un *SharedWorker runtime* per al motor MLC. Anteriorment, cada pestanya del navegador que utilitzava WebLLM carregava la seva pròpia instància del model, competint per la memòria de GPU i causant problemes de rendiment en dispositius amb VRAM limitada.
+
+Amb el *SharedWorker runtime*, una pestanya actua com a l'host del motor. Totes les altres pestanyes es comuniquen amb aquesta única instància mitjançant el canal de missatges del *worker*. El resultat:
+
+- Una sessió de GPU compartida entre totes les pestanyes obertes
+- Respostes més ràpides una vegada que el model està carregat (sense inicialitzacions repetides)
+- Menor consum màxim de memòria al dispositiu
+
+El *SharedWorker* és transparent per als usuaris. L'indicador d'estat de la barra d'administració sempre reflecteja l'estat del motor compartit, no el de la pestanya individual.
+
+## apiFetch Middleware
+
+L'addon instal·la un *middleware* `apiFetch` que intercepta les sol·licituds REST API de WordPress que coincideixen amb el patró de l'AI Client SDK. En lloc de fer una sol·licitud HTTP de *loopback* al servidor, aquestes sol·licituds són encaminades directament al *broker* local de WebLLM que s'executa al *SharedWorker*.
+
+Això significa que els plugins i els temes que utilitzen l'API estàndard `apiFetch` de WordPress per anar a fer crides a *endpoints* d'IA rebran automàticament els beneficis del model al navegador quan està disponible, sense necessitat de canvis de codi.
+
+## Hooks i Filtres
+
+### Filtres
+
+- `wpai_preferred_text_models` — Registra el motor de navegador WebLLM com a model de text preferit. L'addon s'engancha a aquest filtre automàticament quan el motor està configurat i disponible.
+- `ultimate_webllm_widget_enabled` — Sobrescreu l'estat de habilitació del widget per a un usuari o context específic. Has de retornar `true` o `false`.
+- `ultimate_webllm_auto_prompt` — Modifica el text de l'*auto-prompt* abans que s'enviï al widget. Reull la cadena del *prompt* i l'objecte `WP_Post` actual.
+
+## Solucionar Problemes
+
+### El widget de xat no apareix
+
+- Confirma que l'usuari està connectat — el widget només es mostra a usuaris autenticats
+- Comprova que **Enable floating chat widget** estigui activat al panell Connector
+- Verifica que el navegador de l'usuari suporti WebGPU (veure Requisits)
+
+### L'indicador de la barra d'administració mostra "Error"
+
+Obre la consola de desenvolupador del navegador (F12) i busca errors relacionats amb WebLLM. Causes comunes:
+
+- El navegador no suporta WebGPU
+- Fallida la descàrrega dels pes del model — comprova la connectivitat de la xarxa i intenta netejar la cache d'IndexedDB a les eines de desenvolupador del navegador (Application → IndexedDB)
+- Una extensió del navegador està bloquejant el SharedWorker
+
+### Els pes del model es descarrega cada vegada
+
+L'addon utilitza IndexedDB com a *backend* de cache per assegurar que els pes del model sobreviuen a les redireccions CDN. Si els pes es descarrega de nou a cada visita, comprova que IndexedDB no està sent netejat per una configuració de privacitat del navegador o una extensió.
+
+## Changelog
+
+Veure [Changelog](./changelog) per a la història completa de versions.

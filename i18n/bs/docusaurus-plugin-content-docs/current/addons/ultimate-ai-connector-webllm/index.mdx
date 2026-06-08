@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector za WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM donosi AI inferencu koja radi direktno u pregledniku na vašu WordPress multisite mrežu. On pokreće velike jezične modele (LLM) potpuno u pregledniku koristeći WebLLM i MLC engine — nema API ključeva, nema vanjskih poziva, niti podataka koji napuštaju uređaj korisnika.
+
+## Ključne značajke
+
+- **Inferenca na strani preglednika**: LLM radi lokalno u pregledniku posjetitelja putem WebLLM/MLC — nije potreban GPU na serveru
+- **Plutajući chat widget**: Prijavljeni korisnici mogu direktno pokrenuti LLM na strani preglednika s front-enda
+- **Indikator statusa u admin-baru**: Status WebLLM enginea u stvarnom vremenu vidljiv je u WordPress admin-baru
+- **SharedWorker runtime**: Više tabova u pregledniku dijele jednu GPU sesiju umjesto da se bore za GPU resurse
+- **apiFetch middleware**: WordPress REST zahtjevi koji odgovaraju obrascu AI Client SDK transparentno se usmjeravaju lokalnom WebLLM brokeru — nema HTTP povratnog kruženja (loopback)
+- **UI za postavke widgeta**: Panel konektora za uključivanje chat widgeta i konfiguriranje ponašanja automatskog prompta
+- **IndexedDB cache**: Preuzimanje težina modela preživljava CDN preusmjeravanja koja narušavaju podrazumevani Cache API put
+- **wpai filter integracija**: Hook-uje se u filter `wpai_preferred_text_models` kako bi funkcija AI Experiments usmjerila na preglednički engine kada je konfigurirano
+
+## Zahtjevi
+
+- WordPress 5.3 ili noviji
+- PHP 7.4 ili noviji
+- Ultimate Multisite plugin (aktiviran)
+- Preglednik s podrškom za WebGPU (Chrome 113+, Edge 113+, ili Firefox Nightly s omogućenim WebGPU)
+
+## Instalacija
+
+1. Postavite addon datoteke u direktorij `/wp-content/plugins/`
+2. Aktivizirajte plugin putem menija 'Plugins' u WordPressu
+3. Idite na **Ultimate Multisite → AI Connector** za konfiguriranje addona
+
+## Plutajući chat widget
+
+Plutajući chat widget omogućuje bilo kojem prijavljenom korisniku da komunicira s LLM-om na strani preglednika direktno s vašeg front-enda, bez napuštanja stranice na kojoj se nalazi.
+
+### Što radi
+
+Kada je omogućen, chat ikona se pojavljuje u kutu svake front-end stranice za prijavljene korisnike. Klikom na ikonu otvara se chat panel gdje korisnik može upisati promptove i primiti odgovore od lokalno pokrenog WebLLM modela. Budući da model radi potpuno u pregledniku, odgovori su privatni i ne uključuju nikakvu obradu na strani servera.
+
+### Indikator statusa u admin-baru
+
+WordPress admin bar uključuje indikator statusa koji prikazuje trenutno stanje WebLLM enginea:
+
+| Status | Značenje |
+|--------|---------|
+| **Loading** | MLC engine se inicijalizira ili preuzima težine modela |
+| **Ready** | Model je učitan i dostupan za inferencu |
+| **Idle** | Engine je učitan, ali SharedWorker tab nije aktivan |
+| **Error** | Engine nije uspio inicijalizirati — provjerite konzolu preglednika radi detalja |
+
+Indikator se ažurira u stvarnom vremenu bez potrebe za ponovnim učitavanjem stranice.
+
+### Kako omogućiti ili onemogućiti widget
+
+1. Idite na **Ultimate Multisite → AI Connector** u network adminu
+2. Pronađite panel **Connector**
+3. Uključite ili isključite **Enable floating chat widget**
+4. Sačuvajte postavke
+
+Widget se također može uključiti ili isključiti po stranici iz samog admina stranice ako je network administrator dodijelio tu mogućnost.
+
+## Postavke widgeta
+
+Panel Connector u **Ultimate Multisite → AI Connector** sadrži sljedeće postavke za plutajući chat widget:
+
+### Enable Floating Chat Widget
+
+Uključuje ili isključuje chat widget za cijelu mrežu. Kada je onemogućen, widget se ne pojavljuje na nijednoj front-end stranici, bez obzira na ulogu korisnika.
+
+**Podrazumevano:** Isključeno
+
+### Auto-Prompt Behaviour
+
+Kontrolira je li chat widget automatski šalje prompt kada ga korisnik otvori.
+
+| Opcija | Ponašanje |
+|--------|-----------|
+| **Disabled** | Widget se otvara s praznim chatom — korisnik unosi vlastiti prompt |
+| **Page context** | Widget se otvara s promptom koji je unaprijed popunjen na temelju naslova i sadržaja trenutne stranice |
+| **Custom prompt** | Widget se otvara s prilagođenim promptom koji definirate u polju ispod |
+
+Kada je postavljeno na **Custom prompt**, pojavljuje se dodatno tekstualno polje gdje možete unijeti tekst podrazumevanog prompta. Podržava osnovne varijable šablona:
+
+- `{site_name}` — naziv trenutne stranice
+- `{page_title}` — naslov trenutne stranice
+- `{user_display_name}` — prikazan naziv prijavljenog korisnika
+
+**Podrazumevano:** Isključeno
+
+## SharedWorker Runtime
+
+Versija 1.1.0 uvodi SharedWorker runtime za MLC engine. Ranije je svaki tab u pregledniku koji je koristio WebLLM učitavao vlastitu instancu modela, natječući se za GPU memoriju i uzrokujući probleme s performansama na uređajima s ograničenom VRAM-om.
+
+Sa SharedWorker runtimeom, jedan tab djeluje kao host enginea. Svi ostali tabovi komuniciraju s tom jedinom instancom putem kanalice poruka radnika (worker's message channel). Rezultat je:
+
+- Jedna GPU sesija dijeljena svim otvorenim tabovima
+- Brži odgovori nakon učitavanja modela (bez ponovnog inicijaliziranja)
+- Niža potrošnja memorije na vrhuncu uređaja
+
+SharedWorker je nevidljiv za korisnike. Indikator statusa u admin-baru uvijek odražava stanje dijeljenog enginea, a ne pojedinačnog taba.
+
+## apiFetch Middleware
+
+Addon instalira `apiFetch` middleware koji presreće WordPress REST API zahtjeve koji odgovaraju obrascu AI Client SDK. Umjesto slanja loopback HTTP zahtjeva serveru, ovi zahtjevi se usmjeravaju izravno lokalnom WebLLM brokeru koji radi u SharedWorkeru.
+
+To znači da će pluginovi i teme koje koriste standardni WordPress `apiFetch` API za pozivanje AI endpointa automatski imati koristi od modela na strani preglednika kada je dostupan, bez potrebe za promjenama koda.
+
+## Hooks i Filteri
+
+### Filteri
+
+- `wpai_preferred_text_models` — Registruje WebLLM preglednički engine kao preferirani tekstualni model. Addon se automatski hook-uje u ovaj filter kada je engine konfiguriran i dostupan.
+- `ultimate_webllm_widget_enabled` — Prekriva stanje omogućavanja widgeta za specifičnog korisnika ili kontekst. Vratite `true` ili `false`.
+- `ultimate_webllm_auto_prompt` — Modificira tekst automatskog prompta prije nego što se pošalje widgetu. Prima prompt string i trenutni `WP_Post` objekt.
+
+## Rješavanje problema
+
+### Widget se ne pojavljuje
+
+- Potvrdite da je korisnik prijavljen — widget je prikazan samo autentificiranim korisnicima
+- Provjerite je li **Enable floating chat widget** uključeno u panelu Connector
+- Provjerite je li preglednik korisnika podržava WebGPU (vidjeti Zahtjevi gore)
+
+### Indikator u admin-baru prikazuje "Error"
+
+Otvorite konzolu za razvoj preglednika (F12) i potražite greške vezane uz WebLLM. Uobičajeni uzroci:
+
+- Preglednik ne podržava WebGPU
+- Preuzimanje težina modela nije uspješno — provjerite mrežnu povezanost i pokušajte obrisati IndexedDB cache u alatima za razvoj preglednika (Application → IndexedDB)
+- Dodatak u pregledniku blokira SharedWorker
+
+### Težine modela se preuzimaju svaki put
+
+Addon koristi IndexedDB kao cache backend kako bi osigurao da težine modela preživje CDN preusmjeravanja. Ako se težine ponovno preuzimaju pri svakom posjeti, provjerite da li IndexedDB nije obrisan postavkama privatnosti preglednika ili nekim dodatkom.
+
+## Changelog
+
+Pogledajte [Changelog](./changelog) za potpunu povijest verzija.

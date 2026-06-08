@@ -1,0 +1,129 @@
+---
+title: Nagbaligya og Domain
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
+
+# Domain Seller
+
+**Multisite Ultimate: Domain Seller** makapalambo sa imong WordPress Multisite network ngadto sa usa ka gamhanang plataporma sa pagbaligya og domain. Mahimo kining tugutan ang mga kustomer nga magparehistro og custom domains direkta panahon sa sign-up o gikan sa ilang dashboard, uban ang real-time availability checking ug klaro nga pagpagawas sa presyo.
+
+### Ngano man Domain Seller?
+
+Ang pagparehistro og domain usa sa labing gipangayo nga upsell para sa bisan unsang WaaS (Website as a Service) platform. Imbes nga ipadala nimo ang imong mga kustomer ngadto sa third-party registrar, mahimo kang magtanyag og domains direkta — makapabilin ka og mas daghang kita sa imong network samtang naghatag og sayon ug walay kalisdanan nga kasinatian sa mga kustomer.
+
+### Mga Importanteng Features
+
+#### Suporta sa Daglang Domain Registrar
+* **OpenSRS** — Kompleto nga pagparehistro, pag-renew, ug pagdumala
+* **Namecheap** — Kumpleto nga integrasyon uban ang WhoisGuard ug sandbox testing
+* **Extensible Architecture** — Gibuhat base sa Integration Registry pattern, nagpalalom niini aron dali ra magdugang og daghang providers
+* **Built-in Connection Testing** — Pag-validate sa credentials ug koneksyon sa provider sa dili pa kini mogamit
+
+#### Guided Setup Wizard (Pamaagi sa Pagsugod)
+* **One-click onboarding** — Maggiya kanimo sa pag-configure sa provider, TLD import, ug paghimo og domain product
+* **Automatic TLD sync** — Mo-import sa tanang available nga TLDs ug wholesale pricing gikan sa imong konektadong providers
+* **Default product creation** — Makahimo og andam na gamiton nga domain product uban ang makatarunganon nga default markup
+
+#### Flexible Domain Pricing (Flexible nga Pagpresyo sa Domain)
+* **Three markup modes** — Percentage markup, fixed markup, o fixed price kada TLD
+* **TLD-specific products** — Makahimo og lahi nga domain products para sa nagkalain-laing TLD groups (.com/.net, .io, country codes, etc.)
+* **Introductory pricing** — Paghatag og diskwento nga presyo sa unang tuig aron makadani og bag-ong pagparehistro
+* **Real-time pricing** — Live wholesale pricing gikan sa mga providers uban ang smart caching
+* **Coupon support** — Kumpleto nga compatibility sa Multisite Ultimate discount codes
+
+#### WHOIS Privacy Protection
+* **Per-product configuration** — Pagtakda sa WHOIS privacy ngadto sa Disabled, Always Included, o Customer Choice
+* **Customer opt-in** — Kung gitakda sa Customer Choice, ang usa ka checkbox sa checkout makapahimo sa mga kustomer nga magdugang og privacy protection
+* **Configurable pricing** — Pagtakda og presyo kada tuig para sa privacy add-on, o paghatag niini nga libre
+* **Registrar integration** — Awto nga pagpahaktol sa WhoisGuard (Namecheap) o WHOIS privacy (OpenSRS) panahon sa pagparehistro
+
+#### Unified Checkout Experience (Klaro nga Kasinatian sa Pagbayad)
+* **Three domain modes** — Ang mga kustomer mopili tali sa usa ka subdomain (libre), pagparehistro og bag-ong domain, o pag-map sa existing domain nga ilang tag-iya na
+* **Real-time domain search** — AJAX-powered availability checking nga walay page reloads
+* **Smart suggestions** — Alternative TLD suggestions kung ang gipili nga domain wala pa available
+* **Transparent pricing** — Klaro nga pagpakita sa registration price, renewal price, ug optional WHOIS privacy fee
+* **Registrant contact fields** — Mangolekta og required registrant info (name, address, phone) direkta sa checkout
+* **Auto-generated site URL** — Ang site address awtomatikong makakuha gikan sa napili nga domain
+
+#### Auto-Renewal System (Sistema sa Awto nga Pag-renew)
+* **Membership-tied renewals** — Ang mga domains mo-renew awtomatiko samtang aktibo ang membership sa kustomer
+* **Smart scheduling** — Ang renewal jobs i-queue base sa expiry dates sa domain
+* **Retry logic** — Smart retries para sa mga napakyas nga pag-attempt sa pag-renew
+* **Email notifications** — Ma-configure nga alerts alang sa moabot na nga renewals, malampuson nga renewals, failures, ug expirations
+
+#### Customer DNS Management (Pagdumala sa DNS sa Kustomer)
+* **Self-service DNS** — Ang mga kustomer makadugang, makabag-o, ug makapahawa og DNS records (A, AAAA, CNAME, MX, TXT) gikan sa ilang dashboard
+* **Domain status** — Real-time nga status sa pagparehistro, expiry dates, ug nameserver information
+* **Automatic domain mapping** — Ang mga na-register o existing domains awtomatikong ma-map ngadto sa site sa kustomer
+
+#### Admin Tools (Mga Gamit sa Administrator)
+* **Manual domain registration** — Pagparehistro og domains alang sa mga kustomer gikan sa admin panel
+* **Domain monitoring** — Makita ang tanang customer domains, statuses, ug expiry dates gikan sa usa ka pahina
+* **Provider-specific logging** — Lahi nga log channels para sa matag registrar (e.g., domain-seller-namecheap.log)
+* **Registration details** — Pagtan-aw sa registrant info ug registration data sa core domain edit page
+
+### Mga Suportado nga Providers
+
+* **OpenSRS** — Kumpleto nga integrasyon uban ang pagparehistro, pag-renew, DNS management, ug WHOIS privacy
+* **Namecheap** — Kumpleto nga integrasyon uban ang pagparehistro, pag-renew, batch availability checking, ug libreng WhoisGuard
+* **GoDaddy** — Pagparehistro ug pag-renew
+* **ResellerClub** — Pagparehistro, pag-renew, ug DNS management
+* **NameSilo** — Pagparehistro ug pag-renew
+* **Enom** — Pagparehistro, pag-renew, ug DNS management
+
+### Technical Details (Detalye sa Teknolohiya)
+
+* **Gikinahanglan:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Architecture:** Integration Registry pattern uban ang Domain_Selling_Capability interface
+* **Autoloading:** Jetpack autoloader with PSR-4 class mapping
+* **Standards:** WordPress coding standards, strict typing, prepared statements
+
+## Installation (Pagsugod)
+
+1. Siguroha nga naka-install ug network-activated ang **Multisite Ultimate v2.4.12+**
+2. I-upload ang plugin ngadto sa `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Network-activate ang plugin gikan sa **Plugins** sa WordPress Network Admin
+4. Ang **Setup Wizard** awtomatikong mo-launch pagkauna nga activation — sundon ang mga lakang aron:
+   * Ikonekta ang imong domain registrar (OpenSRS o Namecheap)
+   * I-test ang koneksyon
+   * Importar ang available TLDs ug wholesale pricing
+   * Makahimo sa imong unang domain product uban ang markup sa presyo
+5. Dugangi ang **Domain Selection** field sa imong checkout form sa **Ultimate Multisite > Checkout Forms**
+
+## Frequently Asked Questions (Kasagarang Pangutana)
+
+### Unsang bersyon sa Multisite Ultimate ang gikinahanglan?
+
+Bersyon 2.4.12 o mas taas pa. Dili kini compatible sa WP Ultimo v1.x o mga bersyon sa Ultimate Multisite nga ubos pa sa 2.4.12.
+
+### Unsang domain providers ang suportado?
+
+Anim ka registrars ang bug-os nga suportado: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo**, ug **Enom**. Ang Integration Registry architecture sa addon nagpalalom niini aron dali ra magdugang og custom providers — tan-awa ang [developer guide](/developer/integration-guide/custom-registrar).
+
+### Makahatag ba ko og WHOIS privacy protection?
+
+Oo. Ang matag domain product adunay WHOIS Privacy setting nga may tulo ka modes: Disabled, Always Included, o Customer Choice. Kung gitakda sa Customer Choice, ang mga kustomer makakita og checkbox panahon sa checkout uban ang presyo (o "Free" para sa WhoisGuard sa Namecheap). Ang privacy flag awtomatikong ipasa ngadto sa registrar pagkahuman sa pagparehistro.
+
+### Makahimo ba ko og lain-laing presyo alang sa nagkalain-laing TLDs?
+
+Oo. Makakahimo ka og lahi nga domain products para sa nagkalain-laing TLD groups. Ang matag product mahimong adunay kaugalingon nga markup type (percentage, fixed markup, o fixed price), suportado nga TLDs, ug introductory pricing.
+
+### Unsang mga pagpili sa checkout ang makita sa mga kustomer?
+
+Ang Domain Selection field naghatag sa mga kustomer og tulo ka tabs: **Subdomain** (gamit ang libreng subdomain sa imong network), **Register New Domain** (pagpangita ug pagparehistro og bag-ong domain), ug **Existing Domain** (pag-map sa domain nga tag-iya na). Ang mga modes nga imong i-enable ra ang makita.
+
+### Suportado ba ni ang automatic renewals?
+
+Oo. Ang mga domains mahimong itakda aron mo-renew awtomatiko ug konektado kini sa status sa membership sa kustomer. Ang bayad sa pag-renew iproseso pinaagi sa kasamtangang payment gateway sa kustomer.
+
+### Makapangita ba ang mga kustomer sa ilang DNS records?
+
+Oo. Ang mga kustomer makakuha og DNS management interface sa ilang dashboard aron magdugang, magbag-o, ug magpahawa og A, AAAA, CNAME, MX, ug TXT records. Ang DNS management available uban ang OpenSRS, ResellerClub, ug Enom.
+
+### Aduna ba'y setup wizard?
+
+Oo. Ang setup wizard awtomatikong mo-run pagkauna nga activation ug maggiya kanimo sa pagkonekta og registrar, pag-import og TLDs, ug paghimo sa imong unang domain product. Mahimo ka usab i-re-run ang wizard gikan sa addon settings.

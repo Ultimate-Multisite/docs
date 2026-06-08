@@ -1,0 +1,117 @@
+---
+title: Planovi sa mjernom jedinicom
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Planovi po potrošnji" />
+
+# Planovi po potrošnji
+
+Ultimate Multisite: Planovi po potrošnji dodatak mijenja način na koji naplaćujete vašim klijentima uvodeći fleksibilne mogućnosti naplate zasnovane na potrošnji. Umjesto rigidnih hard limita koji blokiraju korisnike kada se pređe granica, omogućite naplatu viška potrošnje koja automatski naplaćuje klijentima dodatnu upotrebu.
+
+## Ključne značajke
+
+* **Naplata po potrošnji (Metered Billing)**: Naplaćujte klijentima na osnovu stvarne potrošnje, a ne fiksnih nivoa.
+* **Upravljanje viškom potrošnje (Overage Management)**: Automatski naplaćivanje potrošnje koja prelazi granice plana.
+* **Praćenje potrošnje (Usage Tracking)**: Praćenje potrošnje resursa klijenta u stvarnom vremenu.
+* **Fleksibilno određivanje cijena (Flexible Pricing)**: Postavljanje prilagođenih tarifa za različite resurse (skladišni prostor, propusnost, sajtovi itd.).
+* **Naplata AI tokena (AI Token Billing)**: Praćenje i naplaćivanje tokena za unos i izlaz za korištenje AI u više pod-sajtova klijenta.
+* **Automatsko izdavanje računa (Automatic Invoicing)**: Automatsko generisanje računa kada se prekorače pragovi potrošnje.
+* **Izvještaji o potrošnji (Usage Reports)**: Detaljna analiza i izvještavanje o potrošnji za klijente i administratorima.
+
+## Savršeno za
+
+* **Hosting provajdere**: Ponudite skalabilne planove koji rastu uz potrebe klijenta.
+* **SaaS platforme**: Naplaćujte na osnovu stvarne potrošnje resursa.
+* **Agencijske mreže**: Fleksibilni modeli određivanja cijena za projekte klijenta.
+* **Reseller hosting**: Omogućite partnerima da nude naplatu zasnovanu na potrošnji.
+
+## Kako funkcioniše
+
+1. Konfigurišite resurse po potrošnji (skladišni prostor, propusnost, broj sajtova itd.).
+2. Postavite osnovne granice plana i stope za višak potrošnje.
+3. Sistem automatski prati potrošnju širom vaše mreže.
+4. Kada klijenti pređu granice, izračunaju se naknade za višak potrošnje.
+5. Računi se automatski generišu na osnovu ciklusa naplate.
+6. Klijenti mogu u stvarnom vremenu pregledati svoju potrošnju i nadolazeće naplate.
+
+## Naplata AI tokena
+
+Version 1.1.0 dodaje naplatu AI tokena za mreže koje nude AI funkcije putem WordPress AI Client SDK. Planovi po potrošnji sluša zahtjeve za završenu AI generaciju, bilježi brojače tokena za unos i izlaz za trenutni pod-sajt, i pretvara te tokene u naplaćeni AI trošak za trenutni period naplate klijenta.
+
+Koristite naplatu AI tokena kada želite ponuditi AI alate na sajtovima klijenta bez da apsorbujete nepredvidive troškove modela. Svaki zahtjev je pripisan pod-sajtu, klijentu, članstvu, provajderu i modelu, tako da administratorima mogu revidirati potrošnju, dok klijenti mogu vidjeti kako njihova AI potrošnja utječe na njihov račun.
+
+### Konfigurisanje tarifa po tokenu
+
+AI tarife se konfigurišu po modelu kao zasebne stope za unos i izlaz. Tarife se izračunavaju po 1 milion tokena, što odgovara uobičajnim stranicama s cijenama AI provajdera.
+
+1. U adminu mreže, otvorite **Multisite Ultimate → Settings → Metered Plans**.
+2. Omogućite mjerenje AI troška za proizvod ili članstvo koje treba naplaćivati AI potrošnju.
+3. Dodajte unose model tarifa koristeći ID modele koji vam vraća vaš konektor, kao što su `gpt-4o`, `gpt-4o-mini`, ili drugi identifikator modela kompatibilan sa OpenAI-om.
+4. Unesite zasečne vrijednosti **Input Rate** i **Output Rate** u valutu vašeg sajta po 1 milion tokena.
+5. Postavite dozvolu AI troška za klijenta i ponašanje u slučaju viška potrošnje za plan.
+
+Kada nije konfigurisiran tačan ID modela, Planovi po potrošnji mogu upariti po prefiksu modela. Na primjer, tarifa konfigurisana za `claude-sonnet-4` može se primijeniti na vremenski označene ID modele koji počinju sa tim prefiksom. Programeri također mogu prilagoditi konačnu tabelu tarifa pomoću filtera [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Podržani AI konektori
+
+Naplata AI tokena radi sa konektorima koji emituju događaje WordPress AI Client SDK generacije i uključuju korištenje tokena u metadata odgovora. Ovo uključuje porodicu Ultimate Multisite AI konektora dokumentovanu ovdje:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) za API-je kompatibilne sa OpenAI-om, uključujući OpenAI, Mistral, Ollama-kompatibilne gatewaye i druge provajdere koji izlažu kompatibilne metadata korištenja tokena
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) za korištenje WebLLM-a na pregledniku kada se zahtjevi usmjeravaju kroz tok događaja AI Client SDK
+* AI konektori provajdera korišteni od strane [Gratis AI Agent](../gratis-ai-agent/) kada provajder koji je odabran izvještava brojače tokena za prompt i završetak kroz SDK
+
+Prilagođeni konektori mogu učestvovati emitovanjem standardnih događaja `wp_ai_client_before_generate_result` i `wp_ai_client_after_generate_result` sa metadata modela, provajdera i korištenja tokena. Podešavanja konektora primjenjuju se od glavnog sajta na pod-sajtove, tako da klijentski sajtovi koriste provajdere i limite odobrene na nivou mreže.
+
+### Potrošnja računa klijenta
+
+Klijenti vide AI potrošnju uz svoje druge resurse po potrošnji u svom području računa. Red AI troška prikazuje ukupnu potrošnju za trenutni period naplate, izvedenu iz zabilježenih tokena za prompt i završetak, konfigurisane stope modela i bilo kakvu uključenu dozvolu na planu.
+
+Ako klijent ima način plaćanja na računu, potrošnja iznad uključene dozvole tretira se kao naplaćeni višak potrošnje. Ako je plan konfigurisan za hard cutoff i klijent nema dostupan način plaćanja, AI zahtjevi mogu biti blokirani kada se dozvola doseže i klijent je upućen da doda podatke o plaćanju prije nastavka.
+
+## Podržani resursi
+
+* Skladišni prostor
+* Propusnost/Transfer podataka
+* Broj sajtova
+* Broj korisnika
+* Potrošnja AI tokena i AI trošak
+* Prilagođeni tipovi resursa
+
+## Zahtjevi
+
+* Multisite Ultimate 2.0.0 ili više
+* Instalacija WordPress Multisite
+* PHP 7.4 ili više
+
+## Instalacija
+
+1. Postavite fajlove plugin-a u `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivizujte plugin preko ekrana 'Plugins' u WordPressu
+3. Idite na Multisite Ultimate → Settings → Metered Plans
+4. Konfigurišite svoje resurse po potrošnji i određivanje cijena
+5. Omogućite naplatu po potrošnji za proizvode u editoru proizvoda
+
+## Često postavljana pitanja
+
+## Šta se dešava kada klijent prekorači svoj limit?
+
+Umjesto blokiranja pristupa, sistem prati višak potrošnje i dodaje ga na sljedeći račun na osnovu tarifa koje ste konfigurisali.
+
+## Mogu li postaviti različite stope za višak potrošnje za različite proizvode?
+
+Da, svaki proizvod može imati jedinstvene resurse po potrošnji i određivanje cijena za višak potrošnje.
+
+## Kako klijenti primaju obavijesti o potrošnji?
+
+Klijenti mogu vidjeti svoju trenutnu potrošnju na svom dashboardu i primiti opcione obavijesti kada se približe ili prekorače limite.
+
+## Kako se naplaćuje potrošnja AI tokena?
+
+Potrošnja AI tokena se naplaćuje na osnovu konfigurisiranih stopa za unos i izlaz modela po 1 milion tokena. Planovi po potrošnji množe brojače tokena za prompt i završetak svakog zahtjeva sa tim stopama, dodaju rezultat trenutnom AI trošku klijenta za period naplate i primjenjuju dozvolu ili pravila za višak potrošnje plana.
+
+## Mogu li i dalje koristiti hard limite?
+
+Da, naplata po potrošnji je opcionalna po proizvodu. Možete kombinovati tradicionalne proizvode sa hard limitima sa proizvodima po potrošnji.

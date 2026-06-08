@@ -1,0 +1,124 @@
+---
+title: Pagpaambit sa mga serbisyo alang sa daghang kustomer
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Aron mapataas ang performance ug seguridad, ipangbahin sa nagkalain-laing server ug database ang mga subsite.
+
+## Requirements
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Multisite Ultimate plugin (active)
+
+## Installation
+
+1. I-upload ang addon files sa imong `/wp-content/plugins/` directory
+2. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
+3. I-configure ang addon settings sa network admin
+
+## Development
+
+### Setup
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Project Structure
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Testing
+
+Ang addon naglakip og kumpleto nga testing framework:
+
+- **Unit Tests**: Mga test nga gigamit ang PHPUnit ug WordPress test suite
+- **Base Test Class**: Naghatag og mga helper method para sa kasagarang sitwasyon sa pag-test
+- **Test Coverage**: Gi-configure aron masubay ang code coverage
+- **Multisite Testing**: Ang mga test nagpadagan sa multisite environment
+
+### Code Standards
+
+- **WordPress Coding Standards**: Gipatuman pinaagi sa PHPCS
+- **PHP 7.4+ Compatibility**: Gi-suporta ang modernong features sa PHP
+- **Static Analysis**: Integrasyon sa PHPStan para sa type checking
+- **Code Modernization**: Mga rules sa Rector alang sa pag-upgrade sa PHP
+
+### Build System
+
+- **Asset Processing**: Minification (pagpaminus) alang sa CSS/JS files
+- **Translation**: Paghimo og POT file
+- **Packaging**: Pagmugna og archive para sa pag-distribute
+- **Development Mode**: Walay minified assets para sa debugging
+
+## Configuration
+
+Ang addon nagsuporta og lain-laing configuration option nga makita pinaagi sa network admin interface.
+
+## Hooks and Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Mo-trigger pagkahuman sa inisyalisa ang addon
+- `ultimate-multisite-addon-template_loaded` - Mo-trigger pagkahuman ma-load tanan nga files sa addon
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Pag-usab sa mga setting sa addon
+- `ultimate-multisite-addon-template_enabled` - Pag-override sa status kung ang addon naka-enable o disabled
+
+## License
+
+Kini nga addon gi-license ubos sa GPL v3 o mas bag-o pa.
+
+## Support
+
+Para sa suporta ug dokumentasyon, bisitaha ang [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Version 1.0.1 (2025-09-28): gipalit ang prefix ngadto sa ultimate-multisite; gi-update ang text domain; version bump.
+
+
+- Version  (2025-09-28): gipalit ang prefix ngadto sa ultimate-multisite; gi-update ang text domain; version bump.

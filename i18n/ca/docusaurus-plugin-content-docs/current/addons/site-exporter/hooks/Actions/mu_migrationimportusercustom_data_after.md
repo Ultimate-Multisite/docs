@@ -1,0 +1,23 @@
+---
+id: mu_migrationimportusercustom_data_after
+title: Acció - mu_migration/import/user/custom_data_after
+sidebar_label: mu_migration/import/user/custom_data_after
+_i18n_hash: 4775c44fa3c63582f55cfb9f99312646
+---
+# Acció: mu_migration/import/user/custom_data_after
+
+S'executa després d'exportar les dades personalitzades de l'usuari.
+
+## Paràmetres
+
+| Nom | Tipus | Descripció |
+|------|------|-------------|
+| $user_data | `array` | L'array amb les dades de l'usuari. |
+| $user | `\WP_User` | L'objecte de l'usuari. |
+
+### Des de
+
+- 0.1.0
+### Font
+
+Definit en [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) a la línia 165

@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector za kompatibilne endpoint-e
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints integriše OpenAI-kompatibilne API provajdere umjetne inteligencije sa vašom WordPress multisite mrežom. Konfigurišite više AI provajdera — svaki sa svojim Endpoint URL-om, API ključem i modelom po defaultu — i usmjeravajte zahtjeve sa automatskim fallback-om kada je neki provajder nedostupan.
+
+## Ključne značajke
+
+- **Podrška za više provajdera**: Dodajte više kartica AI provajdera, svaka sa svojim Endpoint URL-om, API ključem i modelom po defaultu.
+- **Povlačenje za ponovno uređenje**: Rasporedite provajdere po prioritetu koristeći ručicu za hvatanje (grip handle) na svakoj kartici; zahtjevi koriste provajdere po redoslijedu.
+- **Automatsko usmjeravanje sa fallback-om**: Ako primarni provajder nije dostupan, zahtjevi automatski se prebacuju na sljedeći konfigurisani provajder.
+- **Konfiguracija po provajderu**: Svaki provajder je nezavisno konfigurisan sa sopstvenim vjerovnicima i izborom modela.
+- **UI zasnovan na karticama**: Izgrađeno na stabilnim WordPress 6.9+ Card komponentama (CardBody, CardHeader, CardDivider).
+- **Auto-ekspanzija pri dodavanju**: Nove kartice provajdera automatski se proširuju kako biste odmah unijeli detalje.
+- **Cache busting za skripte**: Skripte provajdera se "cache-bust" prilikom ažuriranja plugin-a kako bi se osiguralo da se učita najnovija verzija.
+
+## Zahtjevi
+
+- WordPress 5.3 ili noviji
+- PHP 7.4 ili noviji
+- Ultimate Multisite plugin (aktiviran)
+- OpenAI-kompatibilni API endpoint (samohostiran ili treće strane)
+
+## Instalacija
+
+1. Upload addon fajlove u direktorij `/wp-content/plugins/`
+2. Aktivizirajte plugin kroz meni 'Plugins' u WordPressu.
+3. Idite na **Ultimate Multisite → AI Connector** da konfigurišete addon.
+
+## Konfiguracija
+
+### Postavljanje više provajdera
+
+Ekran za konfiguraciju koristi raspored zasnovan na karticama, gdje svaka kartica predstavlja jednog AI provajdera. Možete dodati koliko provajdera god trebate.
+
+#### Dodavanje provajdera
+
+1. Idite na **Ultimate Multisite → AI Connector** u network adminu.
+2. Kliknite na **Add Provider**.
+3. Pojavi se nova kartica provajdera i automatski se proširi.
+4. Unesite detalje provajdera:
+   - **Provider Name** — oznaka za identifikaciju ovog provajdera (npr. "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** — osnovna URL adresa OpenAI-kompatibilnog API-ja (npr. `https://api.openai.com/v1`).
+   - **API Key** — vaš API ključ za ovog provajdera.
+   - **Default Model** — identifikator modela koji se koristi po defaultu za ovog provajdera (npr. `gpt-4o`, `mistral-small`).
+5. Kliknite na **Save Settings**.
+
+#### Uklanjanje provajdera
+
+Kliknite na gumb **Remove** na bilo kojoj kartici provajdera da biste ga obrisali. Sačuvajte postavke da biste primijenili promjenu.
+
+#### Ponovno uređenje provajdera
+
+Povucite ikonu za hvatanje (⣿) na lijevoj strani bilo koje kartice provajdera da biste je ponovno uredili. Redoslijed određuje prioritet fallback-a: zahtjevi se šalju prvom provajderu, a ako zahtjev ne uspije, fallback se prebacuje na sljedeće provajdere.
+
+### Fallback usmjeravanje
+
+Kada zahtjev primarnom provajderu ne uspije — zbog isteka vremena (timeout), ograničenja brzine (rate limit) ili prekida usluge — konektor automatski pokušava ponovo sa sljedećim provajderom u listi. Ovo se nastavlja niz listu dok provajder ne uspije ili dok se ne isprobaju svi provajderi.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Zahtjev se isporučuje normalno |
+| Primary provider fails | Zahtjev se ponavlja sa sljedećim provajderom |
+| All providers fail | Greška se vraća pozivaču |
+
+Fallback je transparentan za plugin ili temu koji poziva — oni primaju ili uspješan odgovor ili konačnu grešku, bez obzira na koliko je provajdera pokušano.
+
+### Reference za konfiguraciju provajdera
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Oznaka za prikaz ovog provajdera |
+| Endpoint URL | Yes | Osnovna URL adresa OpenAI-kompatibilnog API-ja |
+| API Key | Yes | Ključ za autentifikaciju za ovog provajdera |
+| Default Model | Yes | Identifikator modela koji se koristi kada nije naveden model u zahtjevu |
+
+## Rješavanje problema
+
+### Nema provajdera navedenih
+
+Ako je lista provajdera prazna nakon spremanja, potvrdite da:
+
+- Kliknuli ste na **Save Settings** nakon dodavanja provajdera.
+- Vaš preglednik nije blokirao spremanje stranice postavki (provjerite konzolu preglednika za JavaScript greške).
+- Plugin je aktivan i nalazite se na stranici network admina.
+
+### Zahtjevi ne uspijevaju za sve provajdere
+
+- Provjerite da li je Endpoint URL svakog provajdera dostupan sa vašeg servera (ne samo iz vašeg preglednika).
+- Provjerite da li je svaki API ključ validan i da nije istekao.
+- Pregledajte status ograničenja brzine (rate-limit) i kvote provajdera u njihovom dashboardu.
+- Omogućite WordPress debug logging (`WP_DEBUG_LOG`) da uhvatite detaljne poruke o greškama od konektora.
+
+### Provajder se ne koristi za fallback
+
+Povlačenje za ponovno uređenje mijenja redoslijed fallback-a. Potvrdite da je provajder koji očekujete da će primiti fallback zahtjeve pravilno pozicioniran u listi i da su njegov Endpoint URL i API ključ ispravni.
+
+### Nova kartica provajdera ne proširuje automatski
+
+Auto-ekspanzija zahtijeva da je JavaScript omogućen u vašem pregledniku. Ako kartica ne proširi klikom, provjerite konzolu preglednika za greške. Sadržaj kartice je uvijek dostupan klikom na zaglavlje kartice, čak i ako auto-ekspanzija ne pokrene.
+
+## Changelog
+
+Pogledajte [Changelog](./changelog) za potpunu historiju verzija.

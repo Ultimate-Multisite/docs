@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent és un assistent d'IA avançat per WordPress que amplia Gratis AI Agent amb habilitats conscients del tema, capacitats millorades de cerca a internet i funcions millorades del constructor de sites. La versió 1.16.0 afegeix la generació de logos personalitzats, la validació de contrast de paletes, l'enviament de fotos en l'entrevista de descobriment, la generació de menús d'hospitalitat estructurats i la renderització de previsualització per a escriptori de taula i mòbil a Theme Builder.
+
+## Funcionalitats Clau
+
+- **Habilitats conscients del tema** — s'adapta automàticament la guia i les capacitats basant-se en el tema WordPress actiu i els plugins instal·lats
+- **Múltiples proveïdors de cerca a internet** — tria entre Brave Search i Tavily per a resultats de cerca més ricus i capacitats de recerca avançades
+- **Formularis de contacte del constructor de sites** — crea formularis de contacte completament funcionals directament des de l'interfície de xat utilitzant el plugin de formularis instal·lat
+- **Constructor de sites millorat** — plans de construcció de sites millorats en múltiples fases amb una millor detecció de plugins i recuperació d'errors
+- **Habilitats integrades del tema** — guia especialitzada per a Block Themes, Classic Themes, Kadence Blocks i Kadence Theme
+- **Integració millorada de WooCommerce** — refactoritzat per utilitzar les API natives de WooCommerce per a una millor fiabilitat i compatibilitat
+- **Detecció automàtica de proveïdors** — detecta i actualitza automàticament els plugins i temes disponibles quan es activen o desactiven
+- **Generació de logos personalitzats** — genera i incorpora logos SVG personalitzats amb sanitització automàtica segura de namespace
+- **Validació de contrast de paletes** — comprueba les parelles de colors per a la complimentació amb l'accessibilitat WCAG abans d'aplicar-les al teu tema
+- **Descobriment en fotos** — carrega fotos durant l'entrevista de descobriment de Theme Builder per influir en la direcció del disseny
+- **Menús d'hospitalitat** — genera pàgines de menús d'alimentació i beguda estructurats per a restaurants, cafeteries i empreses d'hospitalitat
+- **Previsualitzacions de taula i mòbil** — previsualitza el teu disseny en dispositius de taula i mòbil durant la selecció de la direcció del disseny
+- **Rasping de sites de Nivel 1** — sd-ai-agent/site-scrape ja està disponible per defecte per analitzar llocs web de competència i inspiració
+
+## Requisits
+
+- WordPress 6.0 o més alt
+- PHP 8.1 o més alt
+- WordPress Multisite (activat a nivell de xarxa) o instal·lació de site únic
+- Un plugin connector d'IA actiu (Anthropic, OpenAI o compatible)
+- Gratis AI Agent v1.9.0 o més alt (Superdav AI Agent amplia Gratis AI Agent)
+
+## Instal·lació
+
+1. Carrega els fitxers del plugin a `/wp-content/plugins/superdav-ai-agent`
+2. Activa el plugin a través de la pantalla **Plugins** de WordPress
+3. Assegura't que Gratis AI Agent també està activat
+4. Navega a **Gratis AI Agent → Settings** i configura el teu proveïdor de cerca a internet (opcional)
+
+## Inici Ràpid
+
+Una vegada actiat, Superdav AI Agent millora automàticament la teva instal·lació de Gratis AI Agent amb habilitats conscients del tema i capacitats addicionals. Obre el panell de **Gratis AI Agent** a la barra lateral d'administració de WordPress i comença a utilitzar les noves funcions.
+
+**Exemples d'instruccions:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## Habilitats Conscients del Tema
+
+Superdav AI Agent detecta automàticament el teu tema actiu i els plugins instal·lats, carregant l'habilitat conscient del tema adequada al context de l'assistent. Les habilitats disponibles inclouen:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | Temes que utilitzen l'arquitectura basada en blocs de WordPress (Full Site Editing) |
+| **Classic Themes** | Temes WordPress tradicionals que utilitzen templates PHP i l'editor clàssic |
+| **Kadence Blocks** | Sites amb el plugin Kadence Blocks actiu |
+| **Kadence Theme** | Sites amb el tema Kadence com a tema actiu |
+
+Consulta [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) per a una guia detallada sobre cada habilitat.
+
+## Proveïdors de Cerca a Internet
+
+Superdav AI Agent v1.10.0 afegeix **Tavily** com a alternativa a Brave Search per a les truyades de cerca a internet. Ambdós proveïdors ofereixen resultats de cerca en temps real i es poden configurar en **Gratis AI Agent → Settings → Advanced**.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | Resultats de cerca ràpids i enfocats en la privacitat | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Resultats de cerca més ricus, capacitats de recerca avançades | [Tavily API](https://tavily.com/) |
+
+Consulta [Internet Search](../../user-guide/configuration/internet-search) per a les instruccions de configuració.
+
+## Formularis de Contacte del Constructor de Sites
+
+L'agent de Site Builder ja pot crear formularis de contacte directament des de l'interfície de xat. Simplement demana al Site Builder que crei un formulari de contacte, i aquest detectarà automàticament el teu plugin de formularis instal·lat (Contact Form 7, WPForms, Fluent Forms o Gravity Forms) i generarà un formulari de gaudir immediatament.
+
+Consulta [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) per a una guia detallada.
+
+## Funcionalitats de Theme Builder
+
+Theme Builder en Superdav AI Agent v1.16.0 inclou noves i potents capacitats:
+
+### Entrevista de Descobriment amb Carregament de Fotos
+
+L'entrevista de descobriment de Theme Builder ara inclou un pas de carregament de fotos on pots proporcionar inspiració visual. Carrega fotos de la teva marca, llocs web de competència o inspiració de disseny per ajudar Theme Builder a entendre la teva direcció de disseny.
+
+Consulta [Discovery Interview](./theme-builder/discovery-interview.md) per a una guia detallada.
+
+### Direcció de Disseny amb Previsualitzacions de Taula i Mòbil
+
+Revisa el teu disseny tant en dispositius de taula com de mòbil abans que Theme Builder generi el teu tema complet. Veu previsualitzacions en temps real en múltiples punts de ruptura responsius.
+
+Consulta [Design Direction](./theme-builder/design-direction.md) per a una guia detallada.
+
+### Menús d'Hospitalitat
+
+Theme Builder ja pot generar pàgines de menús d'alimentació i beguda estructurats per a restaurants, cafeteries, bars i altres empreses d'hospitalitat. Els menús inclouen preus, descripcions, informació dietètica i advertències d'al·lergens.
+
+Consulta [Hospitality Menus](./theme-builder/hospitality-menus.md) per a una guia detallada.
+
+### Noves Capacitats
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — crea logos SVG personalitzats amb sanitització automàtica
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — comprueba les parelles de colors per a la complimentació WCAG
+- **[Create Menu](./abilities/create-menu.md)** — crea menús de navegació amb etiquetes de navegació distinctes
+
+Consulta [Tools and Configuration](./theme-builder/tools.md) per a informació sobre els eines disponibles i l'eina de rapsing de sites de Nivel 1.
+
+## Configuració
+
+Toutes les configuracions es troben en **Gratis AI Agent → Settings** a l'administració de WordPress. Superdav AI Agent afegeix les siguientes opcions de configuració:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Triar entre Brave Search i Tavily (opcional) |
+| **Tavily API Key** | Clau API per a la cerca a internet de Tavily (si es selecciona Tavily) |
+
+## Millores en v1.16.0
+
+- **AI Client cache** — ara suportat per transients per persistència entre requistes, prevenint la pèrdua de dades en tasques d'agent de llarga durada
+- **Eina de rapsing de sites de Nivel 1** — sd-ai-agent/site-scrape ja està disponible per defecte a Theme Builder per analitzar llocs web de competència i inspiració
+- **Enllaços d'acció de fil de plugins** — corregits i renombrats per a una major claritat
+
+## Millores en v1.10.0
+
+- **Integració de WooCommerce refactoritzada** — ara utilitza les API natives de WooCommerce per a una millor fiabilitat i compatibilitat
+- **Actualització automàtica de la llista de proveïdors** — detecta automàticament quan es canvien els plugins i actualitza la llista de proveïdors disponibles
+- **Constructor de sites millorat** — plans de construcció de sites millorats en múltiples fases amb una millor recuperació d'errors
+- **Habilitats conscients del tema** — quatre noves habilitats integrades que s'adapten automàticament al teu tema actiu
+
+## Correccions de Bugs en v1.10.0
+
+- Corregida l'habilitat `navigate-to` que causava bucles de recarregament infinit en alguns pàgines d'administració
+- Corregida l'habilitat `list-posts` que no resolia correctament els noms de categoria i etiqueta a slugs
+- Corregits els comandos WP-CLI que manquen d'alias de namespace després d'una refactorització prèvia
+- Corregida l'automatització d'esdeveniments per gestionar gràciament els sites on les taules d'automatització encara no han demanat
+- Corregida l'habilitat `memory-save` utilitzant el prefix de namespace correcte a l'constructor d'instruccions del sistema
+- Corregits els resultats de l'eina escalar que es guarden correctament abans de ser retornats a l'IA
+- Corregida la estadístiques d'ús que gestionen correctament el format antic de clau d'habilitat en l'actualització des de versions anteriors
+
+## Suport
+
+Per a suport, visita [ultimatemultisite.com](https://ultimatemultisite.com) o obert un problema al repository del plugin.
+
+## Changelog
+
+Consulta el [Changelog](./changelog) per a la història completa de versions.

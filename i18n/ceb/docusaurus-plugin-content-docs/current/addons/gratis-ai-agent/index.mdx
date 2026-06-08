@@ -1,0 +1,143 @@
+---
+title: Libreng AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Ang Gratis AI Agent usa ka *autonomous* nga WordPress AI assistant nga makaplano, makamando, ug makapangita og kompleto nga mga website sa WordPress pinaagi sa natural language instructions. Nagpahibalo kini og structured set sa **abilities** — ang mga discrete, masulayan nga aksyon nga mahimong gamiton sa agent — nga naglakip sa tanan gikan sa content management hangtod sa pag-customize sa design system. Ang Version 1.9.0 nagdugang og *content creation abilities*, visual page review pinaagi sa client-side screenshots, lima ka built-in nga profile sa agent, ug feature flags alang sa access control ug branding.
+
+## Key Features
+
+- **Abilities system** — usa ka modular, mapalapad nga katalogo sa mga aksyon nga mahimong gamiton sa agent sa imong WordPress installation
+- **Content Management** — paghimo og posts ug pages (lakip ang pag-assign og page templates), batch-create og daghang posts sa usa ka tawag, pagtakda og featured images, ug paghimo og contact forms
+- **Visual Review** — makakuha og screenshots sa mga live nga pages, makakita sa kalainan sa before/after states, ug makadawat og AI-generated design review nga naglakip sa layout, typography, kolor, ug accessibility
+- **Five built-in agents** — Content Writer, Site Builder, Design Studio, Plugin Manager, ug Support Assistant; mahimong usbon pinaagi sa Agent Picker sa chat header
+- **Feature flags** — mga toggle alang sa access control ug branding sa Settings → Feature Flags para sa role restrictions, white-label naming, ug widget customisation
+- **Custom Post Type management** — pagparehistro, paglista, ug pagtangtang og custom post types nga nagpabilin bisan pa sa restart
+- **Custom Taxonomy management** — pagparehistro, paglista, ug pagtangtang og custom taxonomies nga adunay persistence
+- **Design System abilities** — pag-inject og custom CSS, pagdumala sa curated block patterns, pagtakda sa site logo, ug paggamit og theme.json presets
+- **Global Styles management** — pagbasa ug pagsulat sa mga vales sa theme.json alang sa color palettes, typography, spacing, ug uban pa
+- **Navigation Menu management** — paghimo ug pag-update sa navigation menus ug ang ilang items programmatically
+- **Options Management** — pagbasa ug pagsulat sa WordPress options nga adunay built-in safety blocklist aron maprotektahan ang critical settings
+- **Installable Abilities Registry** — pagdiskobre ug pag-activate og dugang ability packs nga dili makapausab sa core plugin files
+- **Site Builder Orchestration v2** — multi-step site build plans uban ang plugin discovery, progress tracking, ug error recovery
+- **WP-CLI benchmark command** — pagpadagan sa agent capability benchmark suite gikan sa command line alang sa CI ug model evaluation
+
+## Requirements
+
+- WordPress 6.0 or higher
+- PHP 8.1 or higher
+- WordPress Multisite (network-activated) or single-site installation
+- Usa ka aktibo nga AI provider connector plugin (Anthropic, OpenAI, o compatible)
+
+## Installation
+
+1. I-upload ang mga plugin files ngadto sa `/wp-content/plugins/gratis-ai-agent`
+2. I-activate ang plugin pinaagi sa **Plugins** screen sa WordPress
+3. Adto sa **Gratis AI Agent → Settings** ug i-connect ang imong AI provider
+4. (Opsyonal) Pag-browse sa **Abilities Registry** aron mag-install og dugang ability packs
+
+## Quick Start
+
+Pagka-activate ug konektado na sa usa ka AI provider, ablihi ang **Gratis AI Agent** panel sa WordPress admin sidebar. I-type lang ang natural language instruction ug planoon ug ipatuman sa agent ang gikinahanglang mga lakang gamit ang iyang available abilities.
+
+**Example instructions:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities Overview
+
+Ang abilities mao ang atomic actions nga mahimo sa agent. Ang matag ability usa ka registered PHP class nga nagpahibalo og schema (parameters ug return types) nga babasa sa agent at runtime. Ang mga abilities grupo sa functional areas:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Tan-awa ang [Abilities Reference](./abilities) alang sa kompleto nga dokumentasyon sa parameter ug mga example sa paggamit.
+
+## WP-CLI
+
+Nagdala ang Gratis AI Agent og `wp gratis-ai-agent` command family para sa pagpadagan sa benchmarks ug pagdumala sa abilities gikan sa command line. Tan-awa ang [WP-CLI Reference](./wp-cli) alang sa kompleto nga listahan sa mga commands.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration
+
+Ang tanang settings naa sa **Gratis AI Agent → Settings** sa WordPress admin:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | Pagpili ug pag-configure sa aktibo nga AI provider connector |
+| **Model** | Pagpili sa language model nga gamiton alang sa agent sessions |
+| **Max Tokens** | Token budget kada request (default 4096) |
+| **Ability Timeout** | Kinatibuk-ang segundo nga mahimong padagan ang usa ka ability (default 30) |
+| **Debug Logging** | Pagrekord sa mga tawag sa ability ug reasoning sa agent ngadto sa WordPress debug log |
+
+## Options Management Safety Blocklist
+
+Ang Options Management ability naglakip og built-in blocklist nga makapugong sa agent gikan pagbasa o pagsulat og sensitibo nga WordPress options. Ang default blocklist naglangkob sa:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options — gamita ang dedicated migration tool para niini)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (secret keys)
+- `active_plugins`, `template` (plugin/theme activation — gamita ang dedicated abilities)
+- Payment gateway credentials ug API keys nga gi-register sa mga installed plugins
+
+Mahimo magdugang og dugang entries pinaagi sa `gratis_ai_agent_options_blocklist` filter.
+
+## Hooks and Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — mo-trigger pagkahuman ma-register ang usa ka ability, makadawat sa ability class name
+- `gratis_ai_agent_plan_started` — mo-trigger kung magsugod ang site builder plan sa pagpatuman
+- `gratis_ai_agent_plan_completed` — mo-trigger kung malampuson nga matapos ang usa ka plano
+- `gratis_ai_agent_plan_failed` — mo-trigger kung makasinati og dili maayo nga error ang usa ka plano
+
+### Filters
+
+- `gratis_ai_agent_abilities` — pag-modify sa registered ability list sa wala pa kini i-load sa agent
+- `gratis_ai_agent_options_blocklist` — pagpalapad o pagpamenos sa options safety blocklist
+- `gratis_ai_agent_benchmark_questions` — pagdugang og custom benchmark questions sa evaluation suite
+- `gratis_ai_agent_plan_plugins` — pag-modify sa plugin discovery list atol sa site plan generation
+
+## Support
+
+Alang sa suporta, bisita sa [ultimatemultisite.com](https://ultimatemultisite.com) o ablihi ang usa ka issue sa plugin repository.
+
+## Changelog
+
+Tan-awa ang [Changelog](./changelog) alang sa kompleto nga version history.

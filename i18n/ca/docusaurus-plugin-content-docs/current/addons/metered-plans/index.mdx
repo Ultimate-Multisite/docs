@@ -1,0 +1,117 @@
+---
+title: Plans mesurats
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Plans Mètriques
+
+L'addon Ultimate Multisite: Metered Plans transforma la manera com factureis els vostres clients, introduint capacitats flexibles de facturació mètriqua. En lloc de límits rígids i fixes que bloquegen els usuaris quan es superen, permeteu càrrecs per sobre que facturen automàticament als clients per l'ús addicional.
+
+## Funcionalitats Clau
+
+* **Facturació Mètriqua**: Cobreu als clients basat en l'ús real i no en nivells fixes.
+* **Gestió de Sobredemanda**: Factura automàticament l'ús que excedeix els límits del pla.
+* **Seguiment d'Ús**: Monitoritzeu el consum de recursos dels clients en temps real.
+* **Preu Flexible**: Configureu tarifes personalitzades per diferents recursos (emmagatzematge, banda, sites, etc.).
+* **Facturació de Tokens AI**: Registra i factura els tokens d'entrada i sortida per a l'ús AI en els subsites dels clients.
+* **Facturació Automàtica**: Genera factures automàticament quan es superen els límits d'ús.
+* **Informes d'Ús**: Anàlixa i informes detallats d'ús per als clients i administradors.
+
+## Ideal Per
+
+* **Proveïdors d'Hosting**: Ofereix plans escalables que creixen amb les necessitats del client.
+* **Platformes SaaS**: Factura basat en el consum real de recursos.
+* **Xarxes d'Agències**: Models de preu flexibles per projectes de clients.
+* **Hosting de Re-venda**: Permet als col·lectius oferir preus basats en l'ús.
+
+## Com Funciona
+
+1. Configureu els recursos mètriques (espai de disc, banda, nombre de sites, etc.).
+2. Estableix els límits del pla base i les tarifes de sobre.
+3. El sistema registra automàticament l'ús de tota la vostra xarxa.
+4. Quan els clients superen els límits, es calculen els càrrecs per sobre.
+5. Les factures es generen automàticament segons el cicle de facturació.
+6. Els clients poden veure el seu ús i els càrrecs venents en temps real.
+
+## Facturació de Tokens AI
+
+La versió 1.1.0 afegeix la facturació de tokens AI per a xarxes que ofereixen funcionalitats AI mitjançant el WordPress AI Client SDK. Metered Plans escolta les sol·licituds de generació AI acabades, registra el compte de tokens d'entrada i sortida per al subsite actual i converteix aquests tokens en despesa AI facturable per al període de facturació actual del client.
+
+Utilitza la facturació de tokens AI quan vols oferir eines AI en els sites dels clients sense absorbir costos imprevisible de models. Cada sol·licitud s'atribueix al subsite, al client, a la membresia, al proveïdor i al model, de manera que els administradors puguin auditar l'ús i els clients puguin veure com el seu consum AI afecta el seu compte.
+
+### Configurar Tarifes per Token
+
+Les tarifes AI es configuren per model com a tarifes separades d'entrada i sortida. Els preus es calculen per 1 milió de tokens, cosa que coincideix amb les pàgines de preus dels proveïdors AI més comunes.
+
+1. A l'administració de la xarxa, obriu **Multisite Ultimate → Settings → Metered Plans**.
+2. Habilitau la comptabilitat de despeses AI per al producte o membresia que hauria de facturar l'ús AI.
+3. Afegiu entrades de tarifa de model utilitzant els IDs de model retornats pel vostre connector, com ara `gpt-4o`, `gpt-4o-mini`, o un altre identificador de model compatible amb OpenAI.
+4. Introduïu valors separats de **Input Rate** i **Output Rate** en la vostra moneda de site per 1 milió de tokens.
+5. Estableix la dotació AI inclosa del client i el comportament de sobre per al pla.
+
+Quan no es configura un ID de model exact, Metered Plans pot fer la correspondència per prefix de model. Per exemple, una tarifa configurada per `claude-sonnet-4` pot aplicar-se a IDs de model amb marca de temps que comencen per aquest prefix. Els desenvolupadors també poden ajustar la taula de tarifes final amb el filtre [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Connectors AI Suportats
+
+La facturació de tokens AI funciona amb connectors que emeten esdeveniments de generació del WordPress AI Client SDK i inclouen l'ús de tokens a la metadades de la resposta. Això inclou la família de connectors Ultimate Multisite AI documentada aquí:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) per a API compatibles amb OpenAI, incloent OpenAI, Mistral, gateways compatibles amb Ollama, i altres proveïdors que exposen metadades de consum de tokens compatibles
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) per a l'ús WebLLM natiu del navegador quan les sol·licituds es rotegen a través del flux d'esdeveniments del AI Client SDK
+* Connectors de proveïdors AI utilitzats per [Gratis AI Agent](../gratis-ai-agent/) quan el proveïdor seleccionat reporta els comptes de tokens de prompt i completació a través del SDK
+
+Els connectors personalitzats poden participar emetent els esdeveniments estàndard `wp_ai_client_before_generate_result` i `wp_ai_client_after_generate_result` amb metadades de model, proveïdor i ús de tokens. La configuració dels connectors s'aplica des del site principal als subsites, de manera que els sites dels clients utilitzin els proveïdors i límits aprovats per la xarxa.
+
+### Ús del Compte del Client
+
+Els clients veuen l'ús AI juntament amb els seus altres recursos mètriques a la seva àrea de compte. La fila de despesa AI mostra el total del període de facturació actual derivat dels tokens de prompt i completació registrats, les tarifes de model configurades i qualsevol dotació inclosa al pla.
+
+Si un client té un mòdul de pagament registrat, l'ús superior a la dotació inclosa es considera sobredeixa facturable. Si el pla està configurat per un tancament fix i el client no té un mòdul de pagament disponible, les sol·licituds AI poden ser bloquejades una vegada que s'aconsegueixi la dotació i el client sigui requerit que afegeixi detalls de pagament abans de continuar.
+
+## Recursos Suportats
+
+* Emmagatzematge de disc
+* Banda/Transferència de dades
+* Nombre de sites
+* Nombre d'usuaris
+* Ús de tokens AI i despesa AI
+* Tipus de recursos personalitzats
+
+## Requisits
+
+* Multisite Ultimate 2.0.0 o més alt
+* Instal·lació de WordPress Multisite
+* PHP 7.4 o més alt
+
+## Instal·lació
+
+1. Carregueu els fitxers del plugin a `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Activau el plugin a través de la pantalla 'Plugins' de WordPress
+3. Navegueu a Multisite Ultimate → Settings → Metered Plans
+4. Configureu els vostres recursos mètriques i preus.
+5. Habilitau la facturació mètriqua per als productes a l'editor de productes.
+
+## Preguntes Freqüents
+
+## Què passa quan un client supera el seu límit?
+
+En lloc de bloquear l'accés, el sistema registra la sobredeixa i l'afegeix a la seva pròxima factura basat en les tarifes que heu configurat.
+
+## Incridar diferents tarifes de sobre per a diferents productes?
+
+Sí, cada producte pot tenir recursos mètriques i preus de sobre únics.
+
+## Com són notificats els clients sobre l'ús?
+
+Els clients poden veure el seu ús actual al seu dashboard i rebre notificacions opcionals quan s'aproxima o es supera els límits.
+
+## Com es preu l'ús de tokens AI?
+
+L'ús de tokens AI es preu a tarifes d'entrada i sortida configurades del model per 1 milió de tokens. Metered Plans multiplica els comptes de tokens de prompt i completació de cada sol·licitud per aquestes tarifes, afegeix el resultat a la despesa AI actual del període de facturació del client i aplica la dotació o les regles de sobre del pla.
+
+## Incridar encara límits fixes?
+
+Sí, la facturació mètriqua és opcional per producte. Podeu combinar productes tradicionals de límit fix amb productes mètriques.

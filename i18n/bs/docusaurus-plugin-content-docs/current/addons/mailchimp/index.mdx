@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Ultimate Multisite: Integracija sa Mailchimp-om
+
+Povežite svoju Ultimate Multisite mrežu sa Mailchimp-om. Možete povezati određene pakete (planove) sa Mailchimp Listama i automatski dodati pretplatnike na te liste prilikom registracije.
+
+## Instalacija
+
+1.  Upload-ujte 'ultimate-multisite-mailchimp' u direktorij `/wp-content/plugins/`
+2.  Aktivirajte plugin kroz meni 'Plugins' u administraciji vaše WordPress mreže
+
+## Vodič za korištenje
+
+Sinhronizacija e-mail adresa pretplatnika sa vašim MailChimp listama zaista je laka sa našim Ultimate Multisite: MailChimp Integration Add-on-om. Ovaj tutorijal namijenjen je da vam pomogne da sve postavite!
+
+## Dobivanje API ključa
+
+Prije nego što krenemo sa različitim dostupnim postavkama, potrebne nam su MailChimp API ključ. Ovo omogućava Ultimate Multisite da komunicira sa Mailchimp API-jem kako bi preuzimao liste, grupe i dodavao e-mail adrese na te liste i grupe kada se korisnici registruju.
+
+Pratite ovaj tutorijal kako biste dobili svoj MailChimp API ključ: [About API Keys | Mailchimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Dodajte svoj MailChimp API ključ na_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Način integracije
+
+MailChimp Integration add-on nudi dva "načina integracije", što znači da postoji dva različita načina na koja možete koristiti add-on za sinhronizaciju e-mail adresa.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dva načina integracije za veću fleksibilnost!_
+
+### Način 1: Više lista (Multiple Lists)
+
+Podrazumevani način koristi **Više lista (Multiple Lists)**. Ovaj način vam omogućava da odaberete više MailChimp lista za svaki od planova. Ovo je najbolja opcija ako segmentirate svoje korisnike u različite liste.
+
+Na primjer, pretpostavimo da imate 3 različite liste na vašem Mailchimp računu: **Newsletter**, **Plan A** i **Plan B**. Želite da svi korisnici, bez obzira na plan, budu uključeni i na Newsletter listi, kako ne bi propustili vaše ažuriranje.
+
+Da biste to postigli, možete koristiti način Više lista da dodate i listu **Newsletter** i listu **Plan A** u MailChimp postavke za Plan A, te listu **Newsletter** i listu **Plan B** u MailChimp postavke za Plan B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Odaberite podrazumevane liste za nove i za otkazane račune_
+
+### Način 2: Jedna lista + Više grupa (Single List + Multiple Groups)
+
+MailChimp vam omogućava da segmentirate svoju listu u manje grupe korisnika nazvane **Grupe (Groups)**. Ovo vam daje više kontrole jer možete poslati kampanju specifičnom podskupu svojih pretplatnika bez potrebe da kreirate više kopija iste kampanje na MailChimp-u (što otežava analizu metrika te kampanje kasnije).
+
+Na primjer, možete imati jednu listu nazvanu **Pretplatnici moje mreže (My Network Subscribers)**, a unutar nje imati grupe za **Plan A** i **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Odaberite podrazumevane liste i grupe, ako koristite način integracije "jedna lista + više grupa"_
+
+## Podrazumevane liste i grupe
+
+Nakon što odaberete koji način integracije ima više smisla za vaš specifičan slučaj, vrijeme je da odaberete podrazumevane liste (i grupe, ovisno o načinu). Podrazumevana lista će se koristiti kada određeni plan nema odabranu specifičnu listu.
+
+Takođe možete odabrati podrazumevanu listu za otkazane račune. Kad god korisnik prekine svoju pretplatu i ukloni svoj račun iz vaše mreže, njegova e-mail adresa će biti premeštena na listu postavljenu za otkazane račune.
+
+## Omogućavanje dvostruke pretplate
+
+Na istoj stranici postavki, bit će vam omogućeno da aktivirate **Dvostruku pretplatu (Double Subscription)**. Ova opcija će dodati korisnika i na podrazumevanu listu koja je odabrana I na listu koja je odabrana za plan tog korisnika. Ako ova opcija nije omogućena, korisnik će biti dodan samo na listu odabranu za plan. Ako nije postavljeno ništa za taj određeni plan, korisnik će biti dodan na podrazumevanu listu koja je odabrana.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Vaši korisnici mogu biti pretplaćeni i na podrazumevanu listu i na listu plana prilikom registracije_
+
+## Odabir lista i grupa za svaki od planova
+
+Idite na svoje **Planove (Plans)** i odaberite plan koji želite da uredite. Imajte na umu da će na meta-boxu **Napredne opcije (Advanced Options)** biti dostupna nova kartica nazvana MailChimp.
+
+Na toj kartici, bit će vam omogućeno da odaberete više lista ili jednu listu i više grupa (ovisno o načinu integracije) za taj plan.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Odaberite Liste i Grupe koje želite koristiti za svaki od vaših planova_
+
+Kada se novi korisnik registruje za taj plan, njegova e-mail adresa će biti dodata na odabrane liste i grupe!

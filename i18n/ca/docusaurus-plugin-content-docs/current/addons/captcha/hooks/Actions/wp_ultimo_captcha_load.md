@@ -1,0 +1,16 @@
+---
+id: wp_ultimo_captcha_load
+title: Acció - wp_ultimo_captcha_load
+sidebar_label: wp_ultimo_captcha_load
+_i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
+---
+# Action: wp_ultimo_captcha_load
+
+S'executa quan es han carregat totes les dependències necessàries.
+
+### Des de
+
+- 1.0.0
+### Font
+
+Definit en [`ultimate-multisite-captcha.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/ultimate-multisite-captcha.php#L240) a la línia 240

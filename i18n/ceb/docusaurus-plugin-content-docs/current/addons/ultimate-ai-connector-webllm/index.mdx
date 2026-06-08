@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector para sa WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector para sa WebLLM
+
+Ang Ultimate AI Connector para sa WebLLM nagdadala og browser-native AI inference sa imong WordPress multisite network. Nag-run kini og mga large language models puro sa browser gamit ang WebLLM ug MLC engine — walay API keys, walay external calls, walay data nga moadto gikan sa device sa user.
+
+## Mga Panguna nga Features
+
+- **Browser-side inference**: Ang LLM nag-run lokal sa browser sa bisita pinaagi sa WebLLM/MLC — walay server GPU nga kinahanglan
+- **Floating chat widget**: Ang mga logged-in users makaprompt direkta sa browser-side LLM gikan sa front end
+- **Admin-bar status indicator**: Real-time nga status sa WebLLM engine nga makita sa WordPress admin bar
+- **SharedWorker runtime**: Nag-share ang daghang browser tabs og usa ka GPU session imbes nga mag-away sa mga resources sa GPU
+- **apiFetch middleware**: Ang mga WordPress REST requests nga nag-match sa AI Client SDK pattern kay transparent nga gidala ngadto sa lokal WebLLM broker — walay loopback HTTP round-trip
+- **Widget settings UI**: Mga setting sa connector panel para i-toggle ang chat widget ug i-configure ang auto-prompt behaviour
+- **IndexedDB cache**: Ang pag-download sa model weight nagpabilin bisan pa sa CDN redirects nga makasira sa default Cache API path
+- **wpai filter integration**: Nag-hook kini sa `wpai_preferred_text_models` filter aron ang AI Experiments feature ma-route ngadto sa browser engine kung gi-configure
+
+## Mga Kinahanglanon
+
+- WordPress 5.3 o mas taas
+- PHP 7.4 o mas taas
+- Ultimate Multisite plugin (aktibo)
+- Browser nga may suporta sa WebGPU (Chrome 113+, Edge 113+, o Firefox Nightly nga may WebGPU enabled)
+
+## Installation
+
+1. I-upload ang mga files sa addon sa imong `/wp-content/plugins/` directory
+2. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
+3. Mag-navigate ng **Ultimate Multisite → AI Connector** para i-configure ang addon
+
+## Floating Chat Widget
+
+Ang floating chat widget nagtugot sa bisan unsang logged-in user nga makig-interact sa browser-side LLM direkta gikan sa imong front end, nga dili kinahanglan mobiya ang page nga ilang anaa.
+
+### Unsa Niini Ang Buhaton
+
+Kung gi-enable, adunay chat icon nga moabot sa suok sa matag front-end page para sa mga logged-in user. Ang pag-click sa icon magbukas og chat panel diin ang user makatagbo og prompts ug makadawat og mga tubag gikan sa locally running WebLLM model. Tungod kay ang model nag-run gyud sa browser, ang mga tubag kay private ug dili kini maglakip sa server-side processing.
+
+### Admin-Bar Status Indicator
+
+Ang WordPress admin bar adunay status indicator nga nagpakita sa kasamtangang kahimtang sa WebLLM engine:
+
+| Status | Kahulogan |
+|--------|---------|
+| **Loading** | Ang MLC engine nag-initialise o nag-download og model weights |
+| **Ready** | Ang model na-load na ug available para sa inference |
+| **Idle** | Ang engine na-load na pero ang SharedWorker tab wala aktibo |
+| **Error** | Napakyas ang engine sa pag-initialise — tan-aw sa browser console para sa mga detalye |
+
+Ang indicator mag-update sa real time nga dili kinahanglan og pag-reload sa page.
+
+### Unsaon Pag-Enable o Pag-Disable sa Widget
+
+1. Adto sa **Ultimate Multisite → AI Connector** sa network admin
+2. Pangitaa ang **Connector** panel
+3. I-toggle ang **Enable floating chat widget** on or off
+4. I-save ang settings
+
+Mahimo usab i-enable o i-disable ang widget kada site gikan sa kaugalingong admin sa site kung gihatag na kini nga gahom sa network administrator.
+
+## Mga Setting sa Widget
+
+Ang Connector panel sa **Ultimate Multisite → AI Connector** naglangkob sa mosunod nga mga setting para sa floating chat widget:
+
+### Enable Floating Chat Widget
+
+Nag-toggle kini sa pag-on o pag-off sa chat widget alang sa tibuok network. Kung gidesable, dili moabot ang widget sa bisan unsang front-end page, bisan unsa pa ang role sa user.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+Nagkontrol kung ang chat widget magpadala ba og prompt awtomatiko kung ma-open kini sa usa ka user.
+
+| Option | Behaviour |
+|--------|-----------|
+| **Disabled** | Ang widget moabli sa walay sulod nga chat — ang user mismo ang magsulat sa ilang prompt |
+| **Page context** | Ang widget moabli uban og pre-filled nga prompt base sa title ug content sa kasamtang nga page |
+| **Custom prompt** | Ang widget moabli uban og custom prompt nga imong gi-define sa field sa ubos |
+
+Kung gi-set kini sa **Custom prompt**, adunay dugang text field nga moabot diin mahimo nimong i-enter ang default prompt text. Suporta kini sa basic template variables:
+
+- `{site_name}` — ang ngalan sa kasamtang site
+- `{page_title}` — ang titulo sa kasamtang pahina
+- `{user_display_name}` — ang display name sa user nga naka-log in
+
+**Default:** Gidapit (Disabled)
+
+## SharedWorker Runtime
+
+Ang Version 1.1.0 nagpaila og SharedWorker runtime para sa MLC engine. Kaniadto, matag browser tab nga naggamit sa WebLLM nag-load sa iyang kaugalingong instance sa model, nagkompetensya sa GPU memory ug nakapahimo og problema sa performance sa mga device nga limitado ang VRAM.
+
+Uban sa SharedWorker runtime, usa ka tab maoy engine host. Ang tanang ubang tabs magkomunika niini pinaagi sa message channel sa worker. Ang resulta:
+
+- Usa ka GPU session nga gi-share sa tanang bukas nga tabs
+- Mas dali nga mga tubag kung na-load na ang model (walay pag-restart sa initialisation)
+- Mas ubos nga peak memory usage sa device
+
+Ang SharedWorker kay transparent sa mga user. Ang status indicator sa admin-bar kanunay nagpakita sa kahimtang sa gi-share nga engine, dili sa indibidwal nga tab.
+
+## apiFetch Middleware
+
+Ang addon mag-install og `apiFetch` middleware nga mang-intercept sa WordPress REST API requests nga nag-match sa AI Client SDK pattern. Imbis nga maghimo kini og loopback HTTP request ngadto sa server, kining mga request direkta nga i-route sa lokal nga WebLLM broker nga nag-run sa SharedWorker.
+
+Nagpasabot ni nga ang mga plugin ug theme nga naggamit sa standard WordPress `apiFetch` API aron tawgon ang AI endpoints awtomatikong makabenepisyo gikan sa model sa browser kung available kini, walay kinahanglan nga usbon og code.
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — I-register ang WebLLM browser engine isip paborit nga text model. Ang addon ato mag-hook in ani filter awtomatiko kung ma-configure ug available na ang engine.
+- `ultimate_webllm_widget_enabled` — Mapalitan (override) ni ang estado sa pag-enable sa widget para sa usa ka specific user o konteksto. Magbalik og `true` o `false`.
+- `ultimate_webllm_auto_prompt` — Usbon (modify) kini nga text sa auto-prompt kung i-send na kini sa widget. Makadawat kini og prompt string ug ang kasamtang nga `WP_Post` object.
+
+## Troubleshooting
+
+### Wala moabot ang chat widget
+
+- Siguraduhon nga naka-login ang user — ang widget ipakita lang sa mga authenticated users
+- Siguraduhon nga **Enable floating chat widget** na gi-toggle on sa Connector panel
+- I-verify kung ang browser sa user nagsuporta og WebGPU (tan-aw sa Requirements sa ibabaw)
+
+### Ang admin-bar indicator nagpakita og "Error"
+
+Ablihi ang browser developer console (F12) ug pangitaa ang mga error nga may kalabotan sa WebLLM. Mga kasagaran nga hinungdan:
+
+- Ang browser dili suportado og WebGPU
+- Mapakyas ang pag-download sa model weights — tan-aw sa network connectivity ug sulayi i-clear ang IndexedDB cache sa browser developer tools (Application → IndexedDB)
+- Usa ka browser extension ang nagbarro sa SharedWorker
+
+### Nag-download ang model weights kada higayon
+
+Ang addon naggamit og IndexedDB isip cache backend para masiguro nga molungtad ang model weights bisan pa sa CDN redirects. Kung gi-re-download ang mga weights sa matag pagbisita, siguroha nga wala kini ma-clear sa browser privacy setting o extension.
+
+## Changelog
+
+Tan-awa ang [Changelog](./changelog) para sa tibuok kasaysayan sa bersyon.

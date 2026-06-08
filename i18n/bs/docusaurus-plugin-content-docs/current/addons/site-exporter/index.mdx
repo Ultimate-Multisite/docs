@@ -1,0 +1,101 @@
+---
+title: Eksporter sajta
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Izvoznik Sajta
+
+## Sadržaj
+
+Razumemo potrebu da se pod-sajlovi (subsites) unutar vaše mreže premeštaju na jednu instalaciju sajta i obrnuto, ako vaš klijent odluči da migriraju svoj sajt. Dodatak (addon) Site Exporter i Importer olakšava ovaj zadatak. Ovaj alat izvozi i uvozi sajtove koristeći zip fajlove, koji takođe mogu poslužiti kao rezervna kopija (backup).
+
+## Funkcionalnosti
+
+* Izvoz i Uvoz Sajtova
+
+* Lako korišteno sučelje
+
+* Kreiranje rezervne kopije sajta
+
+## Dokumentacija
+**Kako Izvesti i Uvesti Sajt**
+
+## Instalacija
+
+1. Uploadujte **ultimate-multisite-site-exporter** u direktorij **/wp-content/plugins/**
+2. Aktivizujte plugin kroz meni **Plugins** u WordPressu
+3. Pratite Wizard korak po korak kako biste postavili plugin
+
+## Vodič za korištenje
+
+Sa Ultimate Multisite-om možete izvesti sajt iz vaše mreže ili uvesti sajt na vaš multisajt ili single-site instalaciju.
+
+Da biste započeli proces, idite na našu stranicu sa dodacima (add-ons page) i instalirajte Ultimate Multisite: Site Exporter & Importer addon.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Idite na svoju stranicu Plugins i kliknite na **Network Activate** za addon koji ste upravo instalirali.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Opcija **Export & Import** nalazi se u meniju Ultimate Multisite, na lijevoj strani.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Kako izvesti sajt
+
+Da biste izveli sajt iz vaše mreže, idite na **Export & Import** u meniju Ultimate Multisite i na kartici **Export Sites** kliknite na **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Pretražite sajt koji želite da izvezete i izaberite stavke koje želite da uključite u izvešćeni fajl. Možete uključiti teme, pluginove i uploadovane fajlove. Ako je vaš sajt prevelik, možete odabrati da proces izvoza radi u pozadini.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Kliknite na dugme **Export Site**. Izvešćeni sajt će biti dostupan na listi **Existing Exports**. Kliknite na dugme **Download ZIP** da preuzmete fajl. Export ZIP fajlovi uključuju samostalno pokretni `index.php` i `readme.txt`, tako da se mogu instalirati na novom hostu bez prethodne instalacije zasebnog importer plugin-a.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Kako izvesti cijelu mrežu
+
+Da biste izveli sve pod-sajtove zajedno, idite na **Export & Import** u meniju Ultimate Multisite i koristite opciju **Network Export** na ekranu za izvoz. Generisovani arhiv sadrži sve pod-sajtove u jednom ZIP fajlu za migracije hosta, ponovno postavljanje staging okruženja ili rezervne kopije na nivou mreže.
+
+Mrežni izvozi mogu biti veliki. Pokrenite ih kada je promet nizak i potvrdite da server ima dovoljno skladišne memorije za arhivu i sve uključene uploadovane fajlove, pluginove i teme.
+
+## Kako uvesti sajt
+
+Da biste uveli sajt, idite na karticu **Import a Site** i uploadujte .zip fajl sajta koji želite da uvezete. Možete promeniti URL na novi ili zadržati stari URL ostavljanjem polja praznim. Takođe, možete označiti polje za brisanje .zip fajla iz vaše instalacije nakon uvoza. Zatim kliknite na **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Proces može potrajati neko vrijeme. Vidjet ćete čekajući uvoz (pending import) u listi ispod importera.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Možete zaustaviti proces klikom na **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Nakon što proces završi, vaš sajt je već dostupan na vašoj mreži.
+
+## Kako uvesti sajt na single instalaciju
+
+Da biste uveli sajt na vaš single instalaciju, prvo instalirajte i aktivirajte importer na svom sajtu. Link za preuzimanje možete pronaći na kartici exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Importer možete pronaći u meniju **Tools**, na lijevoj strani, pod stavkom **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Uploadujte .zip fajl sajta koji želite da uvezete. Možete promeniti URL na novi ili zadržati stari URL ostavljanjem polja praznim. Takođe, možete označiti polje za brisanje .zip fajla iz vaše instalacije nakon uvoza. Zatim kliknite na **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Proces može potrajati neko vrijeme. Vidjet ćete čekajući uvoz (pending import) u listi ispod importera.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Možete zaustaviti proces klikom na **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Nakon što proces završi, vaš sajt će biti zamijenjen sa sajtom koji ste upravo uveli.

@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Ultimate Multisite: Pagbayad gamit ang GoCardless
+
+Pasagdi nimo ang imong mga kustomer nga makabayad alang sa Ultimate Multisite memberships ug products pinaagi sa Direct Debit gamit ang GoCardless!
+
+## Pagsugod (Installation)
+
+1. I-upload ang 'ultimate-multisite-gocardless' ngadto sa direktoryo nga '/wp-content/plugins/'
+2. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
+3. Sunda ang step by step Wizard aron ma-setup ang plugin
+
+## Giya sa Paggamit (Usage Guide)
+
+Ang _GoCardless_ usa ka payment gateway nga magamit sa **Europe ug sa UK** nga nagtugot sa mga pagbayad pinaagi sa **Direct Debit**.
+
+Gidugang sa **Ultimate Multisite: GoCardless Gateway** ang suporta sa _GoCardless_ sa Ultimate Multisite, nga makapahimo kanimo sa pagkuha og bayad gikan sa imong mga kustomer anang rehiyon gamit ang Direct Debit.
+
+Kini nga tutorial maghisgot unsaon pag-setup sa _GoCardless_ aron magsugod ka pagdawat og bayad pinaagi niini sa imong Ultimate Multisite network.
+
+_**Pasaylo: Ang GoCardless naglihok lamang uban ang mosunod nga mga currency:**_ **EUR, GBP, AUD, SEK, ug DKK.**
+
+## Pag-install sa Add-on
+
+Sa una, kinahanglan nimo i-install ang GoCardless add-on para sa Ultimate Multisite. Mahimo nimong buhaton kini pinaagi sa pagadto sa **Ultimate Multisite > Settings > Add-ons (sa sidebar)**. Ug pilia ang GoCardless add-on anang listahan.
+
+Human ma-install ug ma-activate ang add-on, adto ka sa **Ultimate Multisite > Settings > Payments**, i-toggle ang GoCardless option, ug i-save.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+## Pagkuha og Access Token
+
+Pagmugna og account sa _GoCardless_ (o sa _GoCardless_ sandbox, kon gusto nimo **una kining sulayan**, nga mao ang girekomendar). Dayon, pagkahuman mag-log in, adto ka sa menu item nga **Developers**.
+
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+
+Sa pahina nga **Developers**, i-klik ang **Create** button sa top-right corner sa screen, dayon i-klik ang option nga **Access Token**.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+
+Mopadayon kini og bag-ong modal window, nga magtugot kanimo pagmugna og bag-ong token. Hatagi kini og makaila nga ngalan ug siguroha nga napili nimo ang **Read-write access** option sa **Scope** menu.
+
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+
+Ang access token makita sa screen. Kopyaha kana ug i-paste kini sa imong **Ultimate Multisite > Settings > Payments > GoCardless** menu.
+
+Siguraduhon nga ilihok kini sa tamang field. Kon kini usa ka **live token**, i-toggle ang **sandbox mode off** una pa nimo i-paste ang token.
+
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+
+Mao na ang unang lakang. Sunod, kinahanglan nimong i-setup ang usa ka webhook listener.
+
+## Pag-set up sa Webhook Listener
+
+Kon naghisgot bahin og subscriptions, kinahanglan nga makadungog ang Ultimate Multisite mahitungod sa mga pagbag-o sa status sa subscription, bag-ong mga bayad nga gihimo, ug uban pang mga butang sama niana.
+
+Ang paagi sa pagpahibalo sa payment gateways ngadto sa Ultimate Multisite bahin aning mga kausaban mao ang paggamit og **webhook calls**. Tungod niini, aron molihok ang integration sa 100%, kinahanglan namong ipahibalo kang _GoCardless_ unsang URL ang tawagon nimo uban sa tanan nga impormasyon.
+
+Pagbalik ka sa imong **GoCardless > Developers** panel ug i-klik pag-usab ang Create button, apan niining higayona, pilia ang **Webhook endpoint** option.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->Mopadayon og bag-ong window nga adunay mga opsyon sa webhook endpoint. Nangayo kini og webhook URL, busa adto ka pagbalik sa imong **Ultimate Multisite settings > Payments > GoCardless** ug kopyaha ang webhook URL nga nakalista didto:
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+Dugang pa, mahimo kang mo-enter og **webhook secret** nga gamiton aron pirmahan ang imong mga webhook calls. Bisan unsa man ang imong i-enter anang field, kinahanglan nimo kining i-enter usab sa **Ultimate Multisite Webhook Secret field**.
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+
+Tapuson pinaagi sa pag-save sa endpoint pinaagi sa pag-klik sa **Create webhook endpoint** button ug dayon i-save usab ang imong Ultimate Multisite settings.
+
+Andam ka na nga dawaton ang _GoCardless_!
