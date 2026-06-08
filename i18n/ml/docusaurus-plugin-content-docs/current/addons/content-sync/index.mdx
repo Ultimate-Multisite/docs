@@ -1,0 +1,40 @@
+---
+title: ഉള്ളടക്ക സമന്വയം
+sidebar_position: 1
+_i18n_hash: 48333aecfa57a9cf6daf84a8d8322ef2
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-content-sync" name="Content Sync" />
+
+# Content Sync
+
+Multisite Ultimate: Content Sync
+
+Multisite Ultimate-നുള്ള ഈ add-on, network administrator-മാരെ സഹായിക്കുന്നു. ഇത് ഏതൊരു സൈറ്റിലെ ഉള്ളടക്കത്തെയും (content) network-ലെ മറ്റ് സൈറ്റുകളിലേക്ക് sync ചെയ്യാൻ അനുവദിക്കുന്നു. പോസ്റ്റുകൾ, പേജുകൾ, custom post types, Elementor templates എന്നിവ ഉൾപ്പെടെ എല്ലാ post types-ഉം ഇതിന് പിന്തുണ നൽകുന്നു. ഉള്ളടക്കം തിരഞ്ഞെടുക്കുന്നതിനും ലക്ഷ്യമിടുന്ന സൈറ്റുകൾ (target sites) തിരഞ്ഞെടുക്കുന്നതിനും വേണ്ടി ഇതിൽ ഒരു multi-step wizard interface ഉണ്ട്. ഇതിൽ batch processing-ഉം real-time progress feedback-ഉം ലഭിക്കും.
+
+## പ്രത്യേകതകൾ (Features)
+
+* Content Selection: തംബ്നെയിലുകളോടുകൂടിയ വിഷ്വൽ കാർഡ് ഗ്രിഡ്, കൂടാതെ post type ഫിൽട്ടറിംഗ്.
+* All Post Types: പോസ്റ്റുകൾ, പേജുകൾ, ഉൽപ്പന്നങ്ങൾ (products), Elementor templates, ഏത് custom post type എന്നിവ sync ചെയ്യാം.
+* Site Selection: ഉള്ളടക്കം sync ചെയ്യേണ്ട സൈറ്റുകൾ തിരഞ്ഞെടുക്കാം. source site ഒഴിവാക്കാനും child site മുൻകൂട്ടി തിരഞ്ഞെടുക്കാനും ഇത് സഹായിക്കുന്നു.
+* Batch Processing: പ്രോഗ്രസ് അപ്ഡേറ്റുകളോടുകൂടി ഒരേ സമയം 10 സൈറ്റുകളിലേക്ക് sync ചെയ്യാം.
+* Media Sync: പോസ്റ്റ് ഉള്ളടക്കത്തിലെ മീഡിയ ഫയലുകൾ (images, videos) ഓട്ടോമാറ്റിക്കായി കോപ്പി ചെയ്യുകയും target sites-ലേക്ക് remap ചെയ്യുകയും ചെയ്യുന്നു.
+* Taxonomy Sync: കാറ്റഗറികൾ, ടാഗുകൾ, custom taxonomies എന്നിവ സംരക്ഷിക്കുന്നു.
+* Elementor Support: CSS regeneration, template ID remapping എന്നിവയോടുകൂടി Elementor templates-ന് പൂർണ്ണ പിന്തുണ.
+* Conflict Resolution: നിലവിലുള്ള ഉള്ളടക്കം മാറ്റിസ്ഥാപിക്കാനുള്ള (replace) ഓപ്ഷൻ അല്ലെങ്കിൽ അത് ഒഴിവാക്കാനുള്ള (skip) ഓപ്ഷൻ.
+* Cache Management: sync ചെയ്ത ശേഷം target sites-ലെ Elementor cache ഓട്ടോമാറ്റിക്കായി ക്ലിയർ ചെയ്യുന്നു.
+
+## ആവശ്യകതകൾ (Requirements)
+
+* WordPress 5.3 or higher
+* PHP 7.4 or higher
+* Multisite Ultimate plugin (active)
+* Elementor plugin (optional, required for Elementor template sync)
+
+## ഇൻസ്റ്റാളേഷൻ (Installation)
+
+1. 'ultimate-multisite-content-sync' എന്നത് '/wp-content/plugins/' ഡയറക്‌ടറിയിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.
+2. നിങ്ങളുടെ WordPress Network Admin-ലെ 'Plugins' മെനു വഴി plugin ആക്ടിവേറ്റ് ചെയ്യുക.
+3. Ultimate Multisite → Settings → Content Sync-ൽ സെറ്റിംഗ്സ് കോൺഫിഗർ ചെയ്യുക.
+4. sync ചെയ്യാൻ തുടങ്ങാൻ Ultimate Multisite → Content Sync-ലേക്ക് പോകുക.

@@ -1,0 +1,144 @@
+---
+title: WebLLM-നുള്ള Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM നിങ്ങളുടെ WordPress multisite network-ലേക്ക് browser-native AI inference എത്തിക്കുന്നു. ഇത് WebLLM, MLC engine എന്നിവ ഉപയോഗിച്ച് വലിയ ഭാഷാ മോഡലുകൾ (large language models) മുഴുവനായും browser-ൽ പ്രവർത്തിപ്പിക്കുന്നു — API keys ആവശ്യമില്ല, external calls ആവശ്യമില്ല, ഉപയോക്താവിന്റെ ഉപകരണത്തിൽ നിന്ന് ഡാറ്റ പുറത്തേക്ക് പോകുന്നില്ല.
+
+## പ്രധാന സവിശേഷതകൾ (Key Features)
+
+- **Browser-side inference**: LLM, WebLLM/MLC വഴി വിസിറ്ററുടെ browser-ൽ തന്നെ പ്രവർത്തിക്കുന്നു — സെർവർ GPU ആവശ്യമില്ല
+- **Floating chat widget**: ലോഗിൻ ചെയ്ത ഉപയോക്താക്കൾക്ക് front end-ൽ നിന്ന് തന്നെ browser-side LLM-മായി നേരിട്ട് സംവദിക്കാൻ കഴിയും
+- **Admin-bar status indicator**: WebLLM engine-ന്റെ തത്സമയ സ്റ്റാറ്റസ് WordPress admin bar-ൽ കാണാം
+- **SharedWorker runtime**: ഒന്നിലധികം browser tabs, GPU വിഭവങ്ങൾക്കായി മത്സരിക്കുന്നതിന് പകരം, ഒരു GPU സെഷൻ പങ്കിടുന്നു
+- **apiFetch middleware**: AI Client SDK pattern-ന് അനുയോജ്യമായ WordPress REST requests, local WebLLM broker-ലേക്ക് സുതാര്യമായി റൂട്ട് ചെയ്യുന്നു — loopback HTTP round-trip ഒഴിവാക്കുന്നു
+- **Widget settings UI**: chat widget ഓണാക്കാനും auto-prompt സ്വഭാവം സജ്ജമാക്കാനുമുള്ള Connector panel ക്രമീകരണങ്ങൾ
+- **IndexedDB cache**: Model weight ഡൗൺലോഡുകൾ, default Cache API path തടസ്സപ്പെടുത്തുന്ന CDN redirects-ൽ പോലും നിലനിൽക്കുന്നു
+- **wpai filter integration**: `wpai_preferred_text_models` എന്ന filter-ൽ hook ചെയ്യുന്നു, അതിനാൽ AI Experiments സവിശേഷത, ക്രമീകരിക്കുന്നുണ്ടെങ്കിൽ, browser engine-ലേക്ക് റൂട്ട് ചെയ്യും
+
+## ആവശ്യകതകൾ (Requirements)
+
+- WordPress 5.3 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
+- PHP 7.4 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
+- Ultimate Multisite plugin (active ആയിരിക്കണം)
+- WebGPU സപ്പോർട്ട് ഉള്ള ഒരു browser (Chrome 113+, Edge 113+, അല്ലെങ്കിൽ WebGPU പ്രവർത്തനക്ഷമമാക്കിയ Firefox Nightly)
+
+## ഇൻസ്റ്റാളേഷൻ (Installation)
+
+1. addon ഫയലുകൾ നിങ്ങളുടെ `/wp-content/plugins/` ഡയറക്‌ടറിയിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക
+2. WordPress-ലെ 'Plugins' മെനു വഴി plugin activate ചെയ്യുക
+3. addon ക്രമീകരിക്കാൻ **Ultimate Multisite → AI Connector** എന്നതിലേക്ക് പോകുക
+
+## Floating Chat Widget
+
+ഈ floating chat widget ഉപയോഗിച്ച്, ലോഗിൻ ചെയ്ത ഏത് ഉപയോക്താവിനും, അവർ ഇപ്പോൾ കാണുന്ന പേജ് വിട്ട് പോകാതെ, front end-ൽ നിന്ന് തന്നെ browser-side LLM-മായി സംവദിക്കാൻ കഴിയും.
+
+### ഇത് എന്തുചെയ്യുന്നു (What It Does)
+
+ഇത് ഓണാക്കുമ്പോൾ, ലോഗിൻ ചെയ്ത ഉപയോക്താക്കൾക്ക് വേണ്ടി എല്ലാ front-end പേജുകളുടെയും കോണറിൽ ഒരു chat icon പ്രത്യക്ഷപ്പെടും. ഈ ഐക്കണിൽ ക്ലിക്ക് ചെയ്യുമ്പോൾ ഒരു chat panel തുറക്കുന്നു. അവിടെ ഉപയോക്താവിന് prompts ടൈപ്പ് ചെയ്യാനും, പ്രാദേശികമായി പ്രവർത്തിക്കുന്ന WebLLM model-ൽ നിന്ന് മറുപടികൾ സ്വീകരിക്കാനും കഴിയും. model മുഴുവനായും browser-ൽ പ്രവർത്തിക്കുന്നതിനാൽ, മറുപടികൾ സ്വകാര്യമാണ്, കൂടാതെ സെർവർ-സൈഡ് പ്രോസസ്സിംഗ് ഇതിൽ ഉൾപ്പെടുന്നില്ല.
+
+### Admin-Bar Status Indicator
+
+WordPress admin bar-ൽ ഒരു status indicator ഉൾപ്പെടുത്തിയിട്ടുണ്ട്. ഇത് WebLLM engine-ന്റെ നിലവിലെ അവസ്ഥ കാണിക്കുന്നു:
+
+| Status | അർത്ഥം (Meaning) |
+|--------|---------|
+| **Loading** | MLC engine initialising ചെയ്യുകയോ model weights ഡൗൺലോഡ് ചെയ്യുകയോ ചെയ്യുന്നു |
+| **Ready** | model ലോഡ് ചെയ്യുകയും inference-ന് ലഭ്യമാവുകയും ചെയ്തു |
+| **Idle** | engine ലോഡ് ചെയ്തിരിക്കുന്നു, പക്ഷേ SharedWorker tab സജീവമല്ല |
+| **Error** | engine initialise ചെയ്യാൻ പരാജയപ്പെട്ടു — വിശദാംശങ്ങൾക്കായി browser console പരിശോധിക്കുക |
+
+ഒരു പേജ് റീലോഡ് ചെയ്യാതെ തന്നെ ഈ indicator തത്സമയം അപ്ഡേറ്റ് ചെയ്യും.
+
+### Widget ഓണാക്കാനും ഓഫ് ചെയ്യാനും (How to Enable or Disable the Widget)
+
+1. network admin-ൽ **Ultimate Multisite → AI Connector** ലേക്ക് പോകുക
+2. **Connector** panel കണ്ടെത്തുക
+3. **Enable floating chat widget** ഓൺ അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക
+4. ക്രമീകരണങ്ങൾ save ചെയ്യുക
+
+network administrator-ന് ആ കഴിവ് നൽകിയിട്ടുണ്ടെങ്കിൽ, സൈറ്റിന്റെ സ്വന്തം admin-ൽ നിന്നും widget ഓണാക്കാനും ഓഫ് ചെയ്യാനും സാധിക്കും.
+
+## Widget ക്രമീകരണങ്ങൾ (Widget Settings)
+
+**Ultimate Multisite → AI Connector** -ലെ Connector panel-ൽ floating chat widget-നായി താഴെ പറയുന്ന ക്രമീകരണങ്ങൾ അടങ്ങിയിരിക്കുന്നു:
+
+### Enable Floating Chat Widget
+
+ഇത് entire network-ന് വേണ്ടി chat widget ഓൺ അല്ലെങ്കിൽ ഓഫ് ചെയ്യുന്നു. ഇത് ഡിസേബിൾ ചെയ്യുമ്പോൾ, user role എന്തുതന്നെയായാലും, front-end-ലെ ഒരു പേജിലും widget കാണില്ല.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+ഒരു ഉപയോക്താവ് widget തുറക്കുമ്പോൾ, അത് സ്വയമേവ ഒരു prompt അയക്കുമോ എന്ന് ഇത് നിയന്ത്രിക്കുന്നു.
+
+| Option | Behaviour |
+|--------|-----------|
+| **Disabled** | widget ഒരു empty chat-മായി തുറക്കുന്നു — ഉപയോക്താവ് സ്വന്തമായി prompt ടൈപ്പ് ചെയ്യണം |
+| **Page context** | widget, നിലവിലെ പേജിന്റെ title, content എന്നിവയുടെ അടിസ്ഥാനത്തിൽ ഒരു prompt മുൻകൂട്ടി പൂരിപ്പിച്ചാണ് തുറക്കുന്നത് |
+| **Custom prompt** | widget, താഴെയുള്ള field-ൽ നിങ്ങൾ നിർവചിക്കുന്ന ഒരു custom prompt-മായി തുറക്കുന്നു |
+
+**Custom prompt** എന്ന് സജ്ജമാക്കുമ്പോൾ, default prompt text നൽകാൻ കഴിയുന്ന ഒരു അധിക text field പ്രത്യക്ഷപ്പെടും. അടിസ്ഥാന template variables എന്നിവ ഇതിന് പിന്തുണ നൽകുന്നു:
+
+- `{site_name}` — നിലവിലെ സൈറ്റിന്റെ പേര്
+- `{page_title}` — നിലവിലെ പേജിന്റെ title
+- `{user_display_name}` — ലോഗിൻ ചെയ്ത ഉപയോക്താവിന്റെ display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Version 1.1.0 MLC engine-നായി ഒരു SharedWorker runtime അവതരിപ്പിക്കുന്നു. മുമ്പ്, WebLLM ഉപയോഗിക്കുന്ന ഓരോ browser tab-ഉം model-ന്റെ സ്വന്തം instance ലോഡ് ചെയ്യുകയും, ഇത് പരിമിതമായ VRAM ഉള്ള ഉപകരണങ്ങളിൽ പ്രകടന പ്രശ്നങ്ങൾ ഉണ്ടാക്കുകയും ചെയ്തിരുന്നു.
+
+SharedWorker runtime ഉപയോഗിക്കുമ്പോൾ, ഒരു tab engine host ആയി പ്രവർത്തിക്കുന്നു. മറ്റ് എല്ലാ tabs-ഉം worker-ന്റെ message channel വഴി ആ ഒറ്റ instance-മായി ആശയവിനിമയം നടത്തുന്നു. ഫലം:
+
+- തുറന്ന എല്ലാ tabs-ലും പങ്കിട്ട ഒരു GPU സെഷൻ
+- model ലോഡ് ചെയ്ത ശേഷം വേഗതയേറിയ മറുപടികൾ (ആവർത്തിച്ചുള്ള initialisation ഇല്ല)
+- ഉപകരണത്തിൽ കുറഞ്ഞ peak memory ഉപയോഗം
+
+SharedWorker ഉപയോക്താക്കൾക്ക് സുതാര്യമാണ്. admin-bar status indicator എപ്പോഴും shared engine-ന്റെ അവസ്ഥയാണ് പ്രതിഫലിപ്പിക്കുന്നത്, individual tab-ന്റേതല്ല.
+
+## apiFetch Middleware
+
+ഈ addon, AI Client SDK pattern-ന് അനുയോജ്യമായ WordPress REST API requests തടയുന്ന ഒരു `apiFetch` middleware ഇൻസ്റ്റാൾ ചെയ്യുന്നു. സെർവറിലേക്ക് ഒരു loopback HTTP request അയക്കുന്നതിന് പകരം, ഈ requests SharedWorker-ൽ പ്രവർത്തിക്കുന്ന local WebLLM broker-ലേക്ക് നേരിട്ട് റൂട്ട് ചെയ്യപ്പെടുന്നു.
+
+ഇതിനർത്ഥം, AI endpoints വിളിക്കാൻ standard WordPress `apiFetch` API ഉപയോഗിക്കുന്ന plugins-ഉം themes-ഉം, ആവശ്യമായ കോഡ് മാറ്റങ്ങൾ കൂടാതെ, model ലഭ്യമാകുമ്പോൾ browser-side model-ന്റെ പ്രയോജനം സ്വയം നേടും എന്നതാണ്.
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — WebLLM browser engine-നെ ഒരു preferred text model ആയി രജിസ്റ്റർ ചെയ്യുന്നു. engine ക്രമീകരിക്കുകയും ലഭ്യമാവുകയും ചെയ്യുമ്പോൾ, addon ഈ filter-ൽ സ്വയമേവ hook ചെയ്യുന്നു.
+- `ultimate_webllm_widget_enabled` — ഒരു പ്രത്യേക ഉപയോക്താവിനോ അല്ലെങ്കിൽ സന്ദർഭത്തിനോ വേണ്ടി widget-ന്റെ enabled state മാറ്റാൻ കഴിയും. `true` അല്ലെങ്കിൽ `false` തിരികെ നൽകുക.
+- `ultimate_webllm_auto_prompt` — widget-ലേക്ക് അയക്കുന്നതിന് മുമ്പ് auto-prompt text മാറ്റാൻ കഴിയും. prompt string-ഉം നിലവിലെ `WP_Post` object-ഉം ഇത് സ്വീകരിക്കുന്നു.
+
+## ട്രബിൾഷൂട്ടിംഗ് (Troubleshooting)
+
+### chat widget കാണുന്നില്ല
+
+- ഉപയോക്താവ് ലോഗിൻ ചെയ്തിട്ടുണ്ടോ എന്ന് ഉറപ്പാക്കുക — ഈ widget ഓതന്റിക്കേറ്റഡ് ഉപയോക്താക്കൾക്ക് മാത്രമേ കാണൂ
+- Connector panel-ൽ **Enable floating chat widget** ഓൺ ചെയ്തിട്ടുണ്ടോ എന്ന് പരിശോധിക്കുക
+- ഉപയോക്താവിന്റെ browser WebGPU സപ്പോർട്ട് ചെയ്യുന്നുണ്ടോ എന്ന് പരിശോധിക്കുക (മുകളിൽ ആവശ്യകതകൾ കാണുക)
+
+### admin-bar indicator "Error" കാണിക്കുന്നു
+
+browser developer console (F12) തുറന്ന് WebLLM-മായി ബന്ധപ്പെട്ട എന്തെങ്കിലും errors ഉണ്ടോ എന്ന് നോക്കുക. സാധാരണ കാരണങ്ങൾ:
+
+- browser-ന് WebGPU സപ്പോർട്ട് ഇല്ല
+- Model weight ഡൗൺലോഡ് പരാജയപ്പെട്ടു — network connectivity പരിശോധിക്കുകയും browser developer tools-ലെ IndexedDB cache ക്ലിയർ ചെയ്യാൻ ശ്രമിക്കുകയും ചെയ്യുക (Application → IndexedDB)
+- ഒരു browser extension SharedWorker-നെ തടയുന്നു
+
+### Model weights എപ്പോഴും ഡൗൺലോഡ് ആകുന്നു
+
+model weights CDN redirects-ൽ പോലും നിലനിൽക്കുന്നു എന്ന് ഉറപ്പാക്കാൻ addon IndexedDB-യെ cache backend ആയി ഉപയോഗിക്കുന്നു. ഓരോ സന്ദർശനത്തിലും weights വീണ്ടും ഡൗൺലോഡ് ആകുന്നുണ്ടെങ്കിൽ, IndexedDB ഒരു browser privacy setting അല്ലെങ്കിൽ extension വഴി ക്ലിയർ ആവുകയാണോ എന്ന് പരിശോധിക്കുക.
+
+## Changelog
+
+പൂർണ്ണമായ version history-ക്ക് [Changelog](./changelog) കാണുക.

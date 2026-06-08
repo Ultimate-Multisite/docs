@@ -1,0 +1,144 @@
+---
+title: ಶ್ರೇಷ್ಠ AI ಸಂಪರ್ಕಕ for WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM ನಿಮ್ಮ WordPress multisite network ಗೆ browser-native AI inference ಅನ್ನು ತರುತ್ತದೆ. ಇದು WebLLM ಮತ್ತು MLC engine ಬಳಸಿ ದೊಡ್ಡ ಭಾಷಾ ಮಾದರಿಗಳನ್ನು (large language models) ಸಂಪೂರ್ಣವಾಗಿ browser ನಲ್ಲಿಯೇ ನಡೆಸುತ್ತದೆ — ಯಾವುದೇ API keys, ಯಾವುದೇ external calls, ಮತ್ತು ಯಾವುದೇ data ಬಳಕೆದಾರರ ಸಾಧನವನ್ನು ಬಿಡುವುದಿಲ್ಲ.
+
+## ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು (Key Features)
+
+- **Browser-side inference**: LLM ಅನ್ನು WebLLM/MLC ಮೂಲಕ ಸ್ಥಳೀಯವಾಗಿ (locally) ಭೇಟಿ ನೀಡುವವರ browser ನಲ್ಲಿ ನಡೆಸಲಾಗುತ್ತದೆ — server GPU ಅಗತ್ಯವಿಲ್ಲ
+- **Floating chat widget**: ಲಾಗ್ ಇನ್ ಆಗಿರುವ ಬಳಕೆದಾರರು front end ನಿಂದ ನೇರವಾಗಿ browser-side LLM ಗೆ prompt ನೀಡಬಹುದು
+- **Admin-bar status indicator**: WebLLM engine ನ ನೈಜ-ಸಮಯದ ಸ್ಥಿತಿ WordPress admin bar ನಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ
+- **SharedWorker runtime**: ಅನೇಕ browser tabs, GPU ಸಂಪನ್ಮ kaynakಗಳ ಮೇಲೆ ಹೋರಾಡದ ಬದಲಿಗೆ, ಒಂದೇ GPU session ಅನ್ನು ಹಂಚಿಕೊಳ್ಳುತ್ತವೆ
+- **apiFetch middleware**: AI Client SDK pattern ಗೆ ಹೊಂದಿಕೆಯಾಗುವ WordPress REST requests ಅನ್ನು ಸ್ಥಳೀಯ WebLLM broker ಗೆ ಪಾರದರ್ಶಕವಾಗಿ (transparently) ಮಾರ್ಗಿಸಲಾಗುತ್ತದೆ — loopback HTTP round-trip ಇಲ್ಲ
+- **Widget settings UI**: chat widget ಅನ್ನು ಆನ್/ಆಫ್ ಮಾಡಲು ಮತ್ತು auto-prompt ನಡವಳಿಕೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಲು Connector panel settings
+- **IndexedDB cache**: Model weight ಡೌನ್‌ಲೋಡ್‌ಗಳು, default Cache API path ಅನ್ನು ಮುರಿಯುವ CDN redirects ನಂತರವೂ ಉಳಿಯುತ್ತವೆ
+- **wpai filter integration**: `wpai_preferred_text_models` filter ಗೆ hook ಆಗುತ್ತದೆ, ಇದರಿಂದ AI Experiments feature ಕಾನ್ಫಿಗರ್ ಮಾಡಿದಾಗ browser engine ಗೆ ಹೋಗುತ್ತದೆ
+
+## ಅಗತ್ಯತೆಗಳು (Requirements)
+
+- WordPress 5.3 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನದು
+- PHP 7.4 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನದು
+- Ultimate Multisite plugin (active)
+- WebGPU ಬೆಂಬಲವಿರುವ browser (Chrome 113+, Edge 113+, ಅಥವಾ WebGPU ಅನ್ನು ಆನ್ ಮಾಡಿದ Firefox Nightly)
+
+## ಅಳವಡಿಕೆ (Installation)
+
+1. addon files ಅನ್ನು ನಿಮ್ಮ `/wp-content/plugins/` directory ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
+2. WordPress ನಲ್ಲಿ 'Plugins' ಮೆನುವಿನ ಮೂಲಕ plugin ಅನ್ನು ಆಕ್ಟಿವೇಟ್ ಮಾಡಿ
+3. addon ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಲು **Ultimate Multisite → AI Connector** ಗೆ ಹೋಗಿ
+
+## Floating Chat Widget
+
+ಈ floating chat widget ಅನ್ನು ಬಳಸುವುದರಿಂದ, ಲಾಗ್ ಇನ್ ಆಗಿರುವ ಯಾವುದೇ ಬಳಕೆದಾರರು, ಅವರು ಇರುವ ಪುಟವನ್ನು ಬಿಡದೆ, ನಿಮ್ಮ front end ನಿಂದ ನೇರವಾಗಿ browser-side LLM ಜೊತೆ ಸಂವಹನ ನಡೆಸಬಹುದು.
+
+### ಇದು ಏನು ಮಾಡುತ್ತದೆ (What It Does)
+
+ಇದು ಆನ್ ಮಾಡಿದಾಗ, ಲಾಗ್ ಇನ್ ಆಗಿರುವ ಬಳಕೆದಾರರ ಪ್ರತಿ front-end ಪುಟದ ಮೂಲೆಯಲ್ಲಿ ಒಂದು chat icon ಕಾಣಿಸುತ್ತದೆ. ಈ ಐಕಾನ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿದರೆ ಒಂದು chat panel ತೆರೆದುಕೊಳ್ಳುತ್ತದೆ, ಅಲ್ಲಿ ಬಳಕೆದಾರರು prompt ಟೈಪ್ ಮಾಡಿ, ಸ್ಥಳೀಯವಾಗಿ running ಆಗಿರುವ WebLLM model ನಿಂದ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಪಡೆಯಬಹುದು. model ಸಂಪೂರ್ಣವಾಗಿ browser ನಲ್ಲಿ ರನ್ ಆಗುವುದರಿಂದ, ಪ್ರತಿಕ್ರಿಯೆಗಳು ಖಾಸಗಿ (private) ಆಗಿರುತ್ತವೆ ಮತ್ತು ಯಾವುದೇ server-side processing ಅಗತ್ಯವಿರುವುದಿಲ್ಲ.
+
+### Admin-Bar Status Indicator
+
+WordPress admin bar ನಲ್ಲಿ ಒಂದು status indicator ಇರುತ್ತದೆ, ಇದು WebLLM engine ನ ಪ್ರಸ್ತುತ ಸ್ಥಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ:
+
+| Status | Meaning |
+|--------|---------|
+| **Loading** | MLC engine ಆರಂಭವಾಗುತ್ತಿದೆ ಅಥವಾ model weights ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತಿದೆ |
+| **Ready** | model ಲೋಡ್ ಆಗಿದೆ ಮತ್ತು inference ಗಾಗಿ ಲಭ್ಯವಿದೆ |
+| **Idle** | engine ಲೋಡ್ ಆಗಿದೆ ಆದರೆ SharedWorker tab ಸಕ್ರಿಯವಾಗಿಲ್ಲ |
+| **Error** | engine ಆರಂಭಿಸಲು ವಿಫಲವಾಯಿತು — ವಿವರಗಳಿಗಾಗಿ browser console ಅನ್ನು ಪರಿಶೀಲಿಸಿ |
+
+ಈ indicator page reload ಮಾಡುವ ಅಗತ್ಯವಿಲ್ಲದೆ ನೈಜ-ಸಮಯದಲ್ಲಿ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ.
+
+### Widget ಅನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡುವುದು ಹೇಗೆ (How to Enable or Disable the Widget)
+
+1. network admin ನಲ್ಲಿ **Ultimate Multisite → AI Connector** ಗೆ ಹೋಗಿ
+2. **Connector** panel ಅನ್ನು ಹುಡುಕಿ
+3. **Enable floating chat widget** ಅನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಿ
+4. ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಸೇವ್ ಮಾಡಿ
+
+network administrator ಆ ಸಾಮರ್ಥ್ಯವನ್ನು (capability) ನೀಡಿದ್ದರೆ, ಆ site ನ ಸ್ವಂತ admin ನಿಂದಲೂ widget ಅನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಬಹುದು.
+
+## Widget Settings
+
+**Ultimate Multisite → AI Connector** ನಲ್ಲಿರುವ Connector panel ನಲ್ಲಿ floating chat widget ಗಾಗಿ ಈ ಕೆಳಗಿನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಇವೆ:
+
+### Enable Floating Chat Widget
+
+ಇದು ಇಡೀ network ಗಾಗಿ chat widget ಅನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡುತ್ತದೆ. ಇದನ್ನು ಡಿಸೇಬಲ್ ಮಾಡಿದರೆ, ಬಳಕೆದಾರರ ಪಾತ್ರ ಏನೇ ಇರಲಿ, ಯಾವುದೇ front-end ಪುಟದಲ್ಲಿ widget ಕಾಣಿಸುವುದಿಲ್ಲ.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+ಬಳಕೆದಾರರು chat widget ತೆರೆದಾಗ ಅದು ಸ್ವಯಂಚಾಲಿತವಾಗಿ prompt ಕಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ.
+
+| Option | Behaviour |
+|--------|-----------|
+| **Disabled** | widget ಖಾಲಿ chat ನಲ್ಲಿ ತೆರೆದುಕೊಳ್ಳುತ್ತದೆ — ಬಳಕೆದಾರರು ತಮ್ಮದೇ prompt ಟೈಪ್ ಮಾಡುತ್ತಾರೆ |
+| **Page context** | widget ಪ್ರಸ್ತುತ ಪುಟದ ಶೀರ್ಷಿಕೆ ಮತ್ತು ವಿಷಯದ ಆಧಾರದ ಮೇಲೆ ಪೂರ್ವ-ಭರ್ತಿ (pre-filled) prompt ಯೊಂದಿಗೆ ತೆರೆದುಕೊಳ್ಳುತ್ತದೆ |
+| **Custom prompt** | widget ನೀವು ಕೆಳಗಿನ ಫೀಲ್ಡ್‌ನಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸುವ custom prompt ಯೊಂದಿಗೆ ತೆರೆದುಕೊಳ್ಳುತ್ತದೆ |
+
+**Custom prompt** ಗೆ ಸೆಟ್ ಮಾಡಿದಾಗ, ನೀವು default prompt text ಅನ್ನು ನಮೂದಿಸಲು ಹೆಚ್ಚುವರಿ text field ಕಾಣಿಸುತ್ತದೆ. ಇದು ಮೂಲಭೂತ template variables ಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ:
+
+- `{site_name}` — ಪ್ರಸ್ತುತ site ನ ಹೆಸರು
+- `{page_title}` — ಪ್ರಸ್ತುತ ಪುಟದ ಶೀರ್ಷಿಕೆ
+- `{user_display_name}` — ಲಾಗ್ ಇನ್ ಆಗಿರುವ ಬಳಕೆದಾರರ display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Version 1.1.0 MLC engine ಗಾಗಿ SharedWorker runtime ಅನ್ನು ಪರಿಚಯಿಸುತ್ತದೆ. ಹಿಂದೆ, WebLLM ಬಳಸುವ ಪ್ರತಿ browser tab ತನ್ನದೇ ಆದ model instance ಅನ್ನು ಲೋಡ್ ಮಾಡಿಕೊಳ್ಳುತ್ತಿತ್ತು, ಇದು GPU memory ಗಾಗಿ ಸ್ಪರ್ಧಿಸಿ, ಸೀಮಿತ VRAM ಇರುವ ಸಾಧನಗಳಲ್ಲಿ performance ಸಮಸ್ಯೆಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತಿತ್ತು.
+
+SharedWorker runtime ಜೊತೆ, ಒಂದು tab engine host ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಇತರ ಎಲ್ಲಾ tabs, worker ನ message channel ಮೂಲಕ ಆ ಒಂದೇ instance ಜೊತೆ ಸಂವಹನ ನಡೆಸುತ್ತವೆ. ಇದರ ಫಲಿತಾಂಶ:
+
+- ಎಲ್ಲಾ open tabs ನಲ್ಲಿ ಹಂಚಿಕೆಯಾದ ಒಂದು GPU session
+- model ಲೋಡ್ ಆದ ನಂತರ ವೇಗವಾದ ಪ್ರತಿಕ್ರಿಯೆಗಳು (ಪುನರಾವರ್ತಿತ initialisation ಇಲ್ಲ)
+- ಸಾಧನದಲ್ಲಿ ಕಡಿಮೆ peak memory usage
+
+SharedWorker ಬಳಕೆದಾರರಿಗೆ ಪಾರದರ್ಶಕವಾಗಿರುತ್ತದೆ. admin-bar status indicator ಯಾವಾಗಲೂ ಹಂಚಿಕೆಯಾದ engine ನ ಸ್ಥಿತಿಯನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ, individual tab ನಲ್ಲದ ಸ್ಥಿತಿಯನ್ನು ಅಲ್ಲ.
+
+## apiFetch Middleware
+
+ಈ addon ಒಂದು `apiFetch` middleware ಅನ್ನು ಅಳವಡಿಸುತ್ತದೆ, ಇದು AI Client SDK pattern ಗೆ ಹೊಂದಿಕೆಯಾಗುವ WordPress REST API requests ಅನ್ನು intercepts ಮಾಡುತ್ತದೆ. ಈ requests ಗಳನ್ನು server ಗೆ loopback HTTP request ಮಾಡುವ ಬದಲು, SharedWorker ನಲ್ಲಿ running ಆಗಿರುವ ಸ್ಥಳೀಯ WebLLM broker ಗೆ ನೇರವಾಗಿ ಮಾರ್ಗಿಸಲಾಗುತ್ತದೆ.
+
+ಇದರರ್ಥ, AI endpoints ಕರೆಯ ಮಾಡಲು standard WordPress `apiFetch` API ಅನ್ನು ಬಳಸುವ plugins ಮತ್ತು themes, ಯಾವುದೇ code ಬದಲಾವಣೆಗಳ ಅಗತ್ಯವಿಲ್ಲದೆ, model ಲಭ್ಯವಿದ್ದರೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪ್ರಯೋಜನ ಪಡೆಯುತ್ತವೆ.
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — WebLLM browser engine ಅನ್ನು preferred text model ಆಗಿ ನೋಂದಾಯಿಸುತ್ತದೆ. engine ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ ಲಭ್ಯವಿದ್ದರೆ, addon ಈ filter ಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ hook ಆಗುತ್ತದೆ.
+- `ultimate_webllm_widget_enabled` — ನಿರ್ದಿಷ್ಟ ಬಳಕೆದಾರ ಅಥವಾ ಸಂದರ್ಭಕ್ಕಾಗಿ widget enabled state ಅನ್ನು ಮರುನಿರ್ಧರಿಸುತ್ತದೆ (Override). `true` ಅಥವಾ `false` ಅನ್ನು ಮರಳಿ ನೀಡಿ.
+- `ultimate_webllm_auto_prompt` — widget ಗೆ ಕಳುಹಿಸುವ ಮೊದಲು auto-prompt text ಅನ್ನು ಮಾರ್ಪಡಿಸುತ್ತದೆ. ಇದು prompt string ಮತ್ತು ಪ್ರಸ್ತುತ `WP_Post` object ಅನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ.
+
+## Troubleshooting
+
+### chat widget ಕಾಣಿಸುವುದಿಲ್ಲ
+
+- ಬಳಕೆದಾರರು ಲಾಗ್ ಇನ್ ಆಗಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ — widget ಅನ್ನು ಅಧಿಕೃತ ಬಳಕೆದಾರರಿಗೆ ಮಾತ್ರ ತೋರಿಸಲಾಗುತ್ತದೆ
+- Connector panel ನಲ್ಲಿ **Enable floating chat widget** ಆನ್ ಮಾಡಲಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
+- ಬಳಕೆದಾರರ browser WebGPU ಅನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ (ಮೇಲಿನ ಅಗತ್ಯತೆಗಳನ್ನು ನೋಡಿ)
+
+### admin-bar indicator "Error" ತೋರಿಸುತ್ತದೆ
+
+browser developer console (F12) ತೆರೆಯಿರಿ ಮತ್ತು WebLLM-ಸಂಬಂಧಿತ ದೋಷಗಳನ್ನು (errors) ಹುಡುಕಿ. ಸಾಮಾನ್ಯ ಕಾರಣಗಳು:
+
+- browser WebGPU ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ
+- Model weight ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಯಿತು — network connectivity ಅನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು browser developer tools ನಲ್ಲಿ IndexedDB ಅನ್ನು clear ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ (Application → IndexedDB)
+- browser extension ಒಂದು SharedWorker ಅನ್ನು ಬ್ಲಾಕ್ ಮಾಡುತ್ತಿದೆ
+
+### Model weights ಪ್ರತಿ ಬಾರಿಯೂ ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತದೆ
+
+model weights survival ಮಾಡಲು addon IndexedDB ಅನ್ನು cache backend ಆಗಿ ಬಳಸುತ್ತದೆ. weights ಪ್ರತಿ ಭೇಟಿಯಲ್ಲೂ ಮರು-ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದ್ದರೆ, IndexedDB ಅನ್ನು browser privacy setting ಅಥವಾ extension ನಿಂದ clear ಮಾಡಲಾಗುತ್ತಿಲ್ಲ ಎಂದು ಪರಿಶೀಲಿಸಿ.
+
+## Changelog
+
+ಪೂರ್ಣ version history ಗಾಗಿ [Changelog](./changelog) ನೋಡಿ.

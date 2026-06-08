@@ -1,0 +1,24 @@
+---
+id: wu_rest_get_items
+title: गाळणी - wu_rest_get_items
+sidebar_label: wu_rest_get_items
+_i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
+---
+# Filter: wu_rest_get_items
+
+हा फिल्टर (Filter) विनंती (request) पुढे जाण्याची परवानगी आहे की नाही हे ठरवतो.
+
+## पॅरामीटर्स
+
+| Name | Type | Description |
+|------|------|-------------|
+| $allowed | `bool` | सुरुवातीचे रिटर्न व्हॅल्यू. |
+| $rest_base | `array` | ॲन्टिटी स्लग् (Entity slug). |
+| $this | `\Base_Manager` | ऑब्जेक्ट इन्स्टन्स (The object instance). |
+
+### Since
+
+- 2.0.0
+### Source
+
+[`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) मध्ये लाइन 336 वर परिभाषित केले आहे.

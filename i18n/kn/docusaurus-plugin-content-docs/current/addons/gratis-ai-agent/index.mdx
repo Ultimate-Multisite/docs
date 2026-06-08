@@ -1,0 +1,143 @@
+---
+title: ಉಚಿತ AI ಏಜೆಂಟ್
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent ಎಂಬುದು ಸ್ವಾಯತ್ತ (autonomous) WordPress AI ಸಹಾಯಕವಾಗಿದೆ. ಇದು ನೈಸರ್ಗಿಕ ಭಾಷೆಯ ಸೂಚನೆಗಳ ಮೂಲಕ ಸಂಪೂರ್ಣ WordPress ಸೈಟ್‌ಗಳನ್ನು ಯೋಜಿಸಲು, ನಿರ್ಮಿಸಲು ಮತ್ತು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ಇದು **ಸಾಮರ್ಥ್ಯಗಳ (abilities)** ಒಂದು ರಚನಾತ್ಮಕ ಸೆಟ್ ಅನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ — ಇವು ಏಜೆಂಟ್ ಕರೆಯಬಹುದಾದ ವಿಭಜಿತ, ಪರೀಕ್ಷಿಸಬಹುದಾದ ಕ್ರಿಯೆಗಳಾಗಿವೆ — ಇದು ಕಂಟೆಂಟ್ ನಿರ್ವಹಣೆಯಿಂದ ಹಿಡಿದು design system ಕಸ್ಟಮೈಸೇಶನ್‌ವರೆಗಿನ ಎಲ್ಲವನ್ನೂ ಒಳಗೊಂಡಿದೆ. Version 1.9.0 ರಲ್ಲಿ ಕಂಟೆಂಟ್ ರಚಿಸುವ ಸಾಮರ್ಥ್ಯಗಳು, client-side ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳ ಮೂಲಕ ದೃಶ್ಯ ಪುಟದ ವಿಮರ್ಶೆ, ಐದು ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್ ಪ್ರೊಫೈಲ್‌ಗಳು ಮತ್ತು access control ಮತ್ತು branding ಗಾಗಿ feature flags ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
+
+## ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು (Key Features)
+
+- **Abilities system** — ನಿಮ್ಮ WordPress installation ಮೇಲೆ ಏಜೆಂಟ್ ಕರೆಯಬಹುದಾದ ಕ್ರಿಯೆಗಳ ಒಂದು ಮಾಡ್ಯುಲರ್, ವಿಸ್ತರಿಸಬಹುದಾದ ಕ್ಯಾಟಲಾಗ್.
+- **Content Management** — ಪೋಸ್ಟ್‌ಗಳು ಮತ್ತು ಪುಟಗಳನ್ನು ರಚಿಸುವುದು (ಪುಟ ಟೆಂಪ್ಲೇಟ್‌ಗಳನ್ನು ನಿಯೋಜಿಸುವುದು ಸೇರಿದಂತೆ), ಒಂದೇ ಕರೆಯಲ್ಲಿ ಅನೇಕ ಪೋಸ್ಟ್‌ಗಳನ್ನು ಬ್ಯಾಚ್-ಕ್ರೀate ಮಾಡುವುದು, ಫೀಚರ್ಡ್ ಇಮೇಜ್‌ಗಳನ್ನು ಹೊಂದಿಸುವುದು ಮತ್ತು contact forms ಅನ್ನು ನಿರ್ಮಿಸುವುದು.
+- **Visual Review** — ಲೈವ್ ಪುಟಗಳ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಸೆರೆಹಿಡಿಯುವುದು, before/after ಸ್ಥಿತಿಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವುದು, ಮತ್ತು ಲೇಔಟ್, ಟೈಪೋಗ್ರಫಿ, ಬಣ್ಣ ಮತ್ತು accessibility ಒಳಗೊಂಡ AI-ಉತ್ಪಾದಿತ design review ಪಡೆಯುವುದು.
+- **ಐದು ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್‌ಗಳು** — Content Writer, Site Builder, Design Studio, Plugin Manager, ಮತ್ತು Support Assistant; ಇವುಗಳನ್ನು chat header ನಲ್ಲಿರುವ Agent Picker ಮೂಲಕ ಬದಲಾಯಿಸಬಹುದು.
+- **Feature flags** — role restrictions, white-label naming, ಮತ್ತು widget customisation ಗಾಗಿ Settings → Feature Flags ನಲ್ಲಿ access-control ಮತ್ತು branding ಟೋಗಲ್‌ಗಳು.
+- **Custom Post Type management** — restart ಆದರೂ ಉಳಿಯುವಂತೆ custom post types ಅನ್ನು register, list ಮತ್ತು delete ಮಾಡುವುದು.
+- **Custom Taxonomy management** — restart ಆದರೂ ಉಳಿಯುವಂತೆ custom taxonomies ಅನ್ನು register, list ಮತ್ತು delete ಮಾಡುವುದು.
+- **Design System abilities** — custom CSS ಅನ್ನು inject ಮಾಡುವುದು, curated block patterns ಅನ್ನು ನಿರ್ವಹಿಸುವುದು, site logo ಅನ್ನು ಹೊಂದಿಸುವುದು ಮತ್ತು theme.json presets ಅನ್ನು ಅನ್ವಯಿಸುವುದು.
+- **Global Styles management** — colour palettes, typography, spacing ಮತ್ತು ಹೆಚ್ಚಿನವುಗಳಿಗಾಗಿ theme.json ಮೌಲ್ಯಗಳನ್ನು ಓದುವುದು ಮತ್ತು ಬರೆಯುವುದು.
+- **Navigation Menu management** — navigation menus ಮತ್ತು ಅವುಗಳ ಐಟಂಗಳನ್ನು ಪ್ರೋಗ್ರಾಮ್ಯಾಟಿಕ್‌ವಾಗಿ ರಚಿಸುವುದು ಮತ್ತು ಅಪ್ಡೇಟ್ ಮಾಡುವುದು.
+- **Options Management** — ನಿರ್ಣಾಯಕ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ರಕ್ಷಿಸಲು ಅಂತರ್ನಿರ್ಮಿತ safety blocklist ಯೊಂದಿಗೆ WordPress options ಅನ್ನು ಓದುವುದು ಮತ್ತು ಬರೆಯುವುದು.
+- **Installable Abilities Registry** — core plugin files ಅನ್ನು ಮಾರ್ಪಡಿಸದೆ ಹೆಚ್ಚುವರಿ ability packs ಅನ್ನು ಕಂಡುಹಿಡಿಯುವುದು ಮತ್ತು ಸಕ್ರಿಯಗೊಳಿಸುವುದು.
+- **Site Builder Orchestration v2** — plugin discovery, progress tracking, ಮತ್ತು error recovery ಜೊತೆಗೆ multi-step site build plans.
+- **WP-CLI benchmark command** — CI ಮತ್ತು model evaluation ಗಾಗಿ command line ನಿಂದ ಏಜೆಂಟ್ ಸಾಮರ್ಥ್ಯಗಳ benchmark suite ಅನ್ನು ನಡೆಸುವುದು.
+
+## ಅವಶ್ಯಕತೆಗಳು (Requirements)
+
+- WordPress 6.0 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನದು
+- PHP 8.1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನದು
+- WordPress Multisite (network-activated) ಅಥವಾ single-site installation
+- ಒಂದು ಸಕ್ರಿಯ AI provider connector plugin (Anthropic, OpenAI, ಅಥವಾ ಹೊಂದಾಣಿಕೆಯ)
+
+## installation
+
+1. plugin files ಅನ್ನು `/wp-content/plugins/gratis-ai-agent` ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.
+2. WordPress ನಲ್ಲಿರುವ **Plugins** screen ಮೂಲಕ plugin ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
+3. **Gratis AI Agent → Settings** ಗೆ ಹೋಗಿ ಮತ್ತು ನಿಮ್ಮ AI provider ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.
+4. (ಐಚ್ಛಿಕ) ಹೆಚ್ಚುವರಿ ability packs ಅನ್ನು install ಮಾಡಲು **Abilities Registry** ಅನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ.
+
+## ಆರಂಭಿಕ ಬಳಕೆ (Quick Start)
+
+ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು AI provider ಗೆ ಸಂಪರ್ಕಿಸಿದ ನಂತರ, WordPress admin sidebar ನಲ್ಲಿರುವ **Gratis AI Agent** ಪ್ಯಾನೆಲ್‌ ತೆರೆಯಿರಿ. ನೈಸರ್ಗಿಕ ಭಾಷೆಯ ಸೂಚನೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ, ಮತ್ತು ಏಜೆಂಟ್ ಲಭ್ಯವಿರುವ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಅಗತ್ಯ ಹಂತಗಳನ್ನು ಯೋಜಿಸಿ ಮತ್ತು ಕಾರ್ಯಗತಗೊಳಿಸುತ್ತದೆ.
+
+**ಉದಾಹರಣೆ ಸೂಚನೆಗಳು:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Abilities ಅವಲೋಕನ (Abilities Overview)
+
+ಸಾಮರ್ಥ್ಯಗಳು (Abilities) ಎಂದರೆ ಏಜೆಂಟ್ ನಿರ್ವಹಿಸಬಹುದಾದ ಪರಮಾಣು ಕ್ರಿಯೆಗಳು (atomic actions). ಪ್ರತಿ ಸಾಮರ್ಥ್ಯವು ಒಂದು registered PHP class ಆಗಿದ್ದು, ಅದು ಒಂದು ಸ್ಕೀಮಾ (parameters ಮತ್ತು return types) ಅನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ, ಇದನ್ನು ಏಜೆಂಟ್ ರನ್ ಟೈಮಿನಲ್ಲಿ ಓದುತ್ತದೆ. ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಕ್ರಿಯಾತ್ಮಕ ಪ್ರದೇಶಗಳಾಗಿ ಗುಂಪು ಮಾಡಲಾಗಿದೆ:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+ಪೂರ್ಣ parameter documentation ಮತ್ತು usage examples ಗಾಗಿ [Abilities Reference](./abilities) ನೋಡಿ.
+
+## WP-CLI
+
+Gratis AI Agent ಎಂಬುದು command line ನಿಂದ benchmark ನಡೆಸಲು ಮತ್ತು abilities ಅನ್ನು ನಿರ್ವಹಿಸಲು `wp gratis-ai-agent` command family ಅನ್ನು ಒದಗಿಸುತ್ತದೆ. ಸಂಪೂರ್ಣ command ಪಟ್ಟಿಗಾಗಿ [WP-CLI Reference](./wp-cli) ನೋಡಿ.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## configuration
+
+ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು WordPress admin ನಲ್ಲಿ **Gratis AI Agent → Settings** ಅಡಿಯಲ್ಲಿವೆ:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | ಸಕ್ರಿಯ AI provider connector ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು configure ಮಾಡಿ |
+| **Model** | ಏಜೆಂಟ್ session ಗಾಗಿ ಬಳಸಬೇಕಾದ language model ಅನ್ನು ಆರಿಸಿ |
+| **Max Tokens** | ಪ್ರತಿ-request token budget (default 4096) |
+| **Ability Timeout** | ಒಂದು individual ability ಎಷ್ಟು ಸೆಕೆಂಡುಗಳವರೆಗೆ ರನ್ ಆಗಬಹುದು (default 30) |
+| **Debug Logging** | ability calls ಮತ್ತು agent reasoning ಅನ್ನು WordPress debug log ಗೆ ಲಾಗ್ ಮಾಡಿ |
+
+## Options Management Safety Blocklist
+
+Options Management ability ಯಲ್ಲಿ ಅಂತರ್ನಿರ್ಮಿತ blocklist ಇದೆ, ಇದು ಏಜೆಂಟ್ ಅನ್ನು ಸೂಕ್ಷ್ಮ WordPress options ಅನ್ನು ಓದುವುದರಿಂದ ಅಥವಾ ಬರೆಯುವುದರಿಂದ ತಡೆಯುತ್ತದೆ. default blocklist ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಒಳಗೊಂಡಿದೆ:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options — ಇವುಗಳಿಗಾಗಿ ಮೀಸಲಾದ migration tool ಬಳಸಿ)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (secret keys)
+- `active_plugins`, `template` (plugin/theme activation — ಮೀಸಲಾದ abilities ಬಳಸಿ)
+- installed plugins ನಿಂದ ನೋಂದಾಯಿಸಲಾದ Payment gateway credentials ಮತ್ತು API keys
+
+ಹೆಚ್ಚುವರಿ ಎಂಟ್ರಿಗಳನ್ನು `gratis_ai_agent_options_blocklist` filter ಮೂಲಕ ಸೇರಿಸಬಹುದು.
+
+## Hooks and Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — ಒಂದು ability ಅನ್ನು register ಮಾಡಿದ ನಂತರ déclared, ability class name ಅನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ.
+- `gratis_ai_agent_plan_started` — site builder plan ಕಾರ್ಯಗತಗೊಳಿಸಲು ಪ್ರಾರಂಭವಾದಾಗ déclared.
+- `gratis_ai_agent_plan_completed` — plan ಯಶಸ್ವಿಯಾಗಿ ಮುಗಿದಾಗ déclared.
+- `gratis_ai_agent_plan_failed` — plan ಯ ಮರುಪಡೆಯಲಾಗದ error ಎದುರಿಸಿದಾಗ déclared.
+
+### Filters
+
+- `gratis_ai_agent_abilities` — ಏಜೆಂಟ್ ಅದನ್ನು ಲೋಡ್ ಮಾಡುವ ಮೊದಲು registered ability list ಅನ್ನು ಮಾರ್ಪಡಿಸುತ್ತದೆ.
+- `gratis_ai_agent_options_blocklist` — options safety blocklist ಅನ್ನು ವಿಸ್ತರಿಸ거나 ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.
+- `gratis_ai_agent_benchmark_questions` — evaluation suite ಗೆ custom benchmark questions ಸೇರಿಸುತ್ತದೆ.
+- `gratis_ai_agent_plan_plugins` — site plan generation ಸಮಯದಲ್ಲಿ plugin discovery list ಅನ್ನು ಮಾರ್ಪಡಿಸುತ್ತದೆ.
+
+## Support
+
+ಸಹಾಯಕ್ಕಾಗಿ, [ultimatemultisite.com](https://ultimatemultisite.com) ಗೆ ಭೇಟಿ ನೀಡಿ ಅಥವಾ plugin repository ನಲ್ಲಿ issue ತೆರೆಯಿರಿ.
+
+## Changelog
+
+ಪೂರ್ಣ version history ಗಾಗಿ [Changelog](./changelog) ನೋಡಿ.

@@ -1,0 +1,124 @@
+---
+title: ಬಹು-ಬಾಡಿಗೆ
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy (ಬಹು-ಬಾಹ್ಯತೆ)
+
+ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಭದ್ರತೆಗಾಗಿ ಸಬ್‌ಸೈಟ್‌ಗಳನ್ನು (subsites) ಸರ್ವರ್‌ಗಳು ಮತ್ತು ಡೇಟಾಬೇಸ್‌ಗಳಲ್ಲಿ ವಿತರಿಸುವುದು.
+
+## ಅಗತ್ಯತೆಗಳು (Requirements)
+
+- WordPress 5.3 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
+- PHP 7.4 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
+- Multisite Ultimate plugin (ಸಕ್ರಿಯವಾಗಿರಬೇಕು)
+
+## ಅಳವಡಿಕೆ (Installation)
+
+1. ಆಡ್‌ಆನ್ ಫೈಲ್‌ಗಳನ್ನು ನಿಮ್ಮ `/wp-content/plugins/` ಡೈರೆಕ್ಟರಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.
+2. WordPress ನಲ್ಲಿರುವ 'Plugins' ಮೆನುವಿನ ಮೂಲಕ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
+3. ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್‌ನಲ್ಲಿ ಆಡ್‌ಆನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ.
+
+## ಅಭಿವೃದ್ಧಿ (Development)
+
+### ಸೆಟಪ್ (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ಪ್ರಾಜೆಕ್ಟ್ ರಚನೆ (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP ಕ್ಲಾಸ್‌ಗಳು ಮತ್ತು ಇನ್‌ಕ್ಲೂಡ್‌ಗಳು
+│   ├── class-multisite-ultimate-updater.php  # ಅಪ್‌ಡೇಟ್ ಹ್ಯಾಂಡಲರ್
+│   └── class-multi_tenancy-main.php             # ಮುಖ್ಯ ಕಾರ್ಯನಿರ್ವಹಣೆ
+├── tests/                        # ಯೂನಿಟ್ ಟೆಸ್ಟ್‌ಗಳು
+│   ├── bootstrap.php            # ಟೆಸ್ಟ್ ಬೂಟ್‌ಸ್ಟ್ರಾಪ್
+│   ├── class-*-base.php         # ಮೂಲ ಟೆಸ್ಟ್ ಕ್ಲಾಸ್
+│   └── class-*-test.php         # ಟೆಸ್ಟ್ ಕೇಸ್‌ಗಳು
+├── views/                       # ಟೆಂಪ್ಲೇಟ್ ಫೈಲ್‌ಗಳು
+├── assets/                      # ಸ್ಟ್ಯಾಟಿಕ್ ಆಸ್ಸೆಟ್‌ಗಳು
+│   ├── css/                     # ಸ್ಟೈಲ್‌ಶೀಟ್‌ಗಳು
+│   ├── js/                      # ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್‌ಗಳು
+│   └── images/                  # ಚಿತ್ರಗಳು
+├── lang/                        # ಭಾಷಾ ಫೈಲ್‌ಗಳು
+├── composer.json                # PHP ಅವಲಂಬನೆಗಳು
+├── package.json                 # Node.js ಅವಲಂಬನೆಗಳು
+├── phpunit.xml.dist             # PHPUnit ಕಾನ್ಫಿಗರೇಶನ್
+├── .phpcs.xml.dist              # ಕೋಡ್ ಮಾನದಂಡಗಳ ಕಾನ್ಫಿಗರೇಶನ್
+└── rector.php                   # ಕೋಡ್ ಆಧುನೀಕರಣ ನಿಯಮಗಳು
+```
+
+### ಟೆಸ್ಟಿಂಗ್ (Testing)
+
+ಈ ಆಡ್‌ಆನ್ ಒಂದು ಸಮಗ್ರ ಟೆಸ್ಟಿಂಗ್ ಫ್ರೇಮ್‌ವರ್క్‌ವನ್ನು ಒಳಗೊಂಡಿದೆ:
+
+- **Unit Tests**: WordPress ಟೆಸ್ಟ್ ಸೂಟ್‌ ಜೊತೆ PHPUnit ಆಧಾರಿತ ಟೆಸ್ಟ್‌ಗಳು
+- **Base Test Class**: ಸಾಮಾನ್ಯ ಟೆಸ್ಟ್ ಸನ್ನಿವೇಶಗಳಿಗೆ ಸಹಾಯ ಮಾಡುವ ವಿಧಾನಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ
+- **Test Coverage**: ಕೋಡ್ ಕವರೇಜ್ ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗಿದೆ
+- **Multisite Testing**: ಟೆಸ್ಟ್‌ಗಳು ಬಹು-ಸೈಟ್ ಪರಿಸರದಲ್ಲಿ (multisite environment) ನಡೆಯುತ್ತವೆ
+
+### ಕೋಡ್ ಮಾನದಂಡಗಳು (Code Standards)
+
+- **WordPress Coding Standards**: PHPCS ಮೂಲಕ ಜಾರಿಗೊಳಿಸಲಾಗಿದೆ
+- **PHP 7.4+ Compatibility**: ಆಧುನಿಕ PHP ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ
+- **Static Analysis**: ಟೈಪ್ ಚೆಕಿಂಗ್‌ಗಾಗಿ PHPStan ಏಕೀಕರಣ
+- **Code Modernization**: PHP ಅಪ್‌ಗ್ರೇಡ್‌ಗಾಗಿ Rector ನಿಯಮಗಳು
+
+### ಬಿಲ್ಡ್ ಸಿಸ್ಟಮ್ (Build System)
+
+- **Asset Processing**: CSS/JS ಫೈಲ್‌ಗಳಿಗೆ ಮಿನೀಫಿಕೇಶನ್ (Minification)
+- **Translation**: POT ಫೈಲ್ ಉತ್ಪಾದನೆ
+- **Packaging**: ವಿತರಣೆಗಾಗಿ ಆರ್ಕೈವ್ ರಚನೆ
+- **Development Mode**: ಡಿಬಗ್ಗಿಂಗ್‌ಗಾಗಿ ಮಿನೀಫೈ ಮಾಡದ ಆಸ್ಸೆಟ್‌ಗಳು
+
+## ಕಾನ್ಫಿಗರೇಶನ್ (Configuration)
+
+ಈ ಆಡ್‌ಆನ್ ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್ ಇಂಟರ್‌ಫೇಸ್ ಮೂಲಕ ಲಭ್ಯವಿರುವ ವಿವಿಧ ಕಾನ್ಫಿಗರೇಶನ್ ಆಯ್ಕೆಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.
+
+## Hooks ಮತ್ತು Filters
+
+### Actions (ಕ್ರಿಯೆಗಳು)
+
+- `ultimate-multisite-addon-template_init` - ಆಡ್‌ಆನ್ ಪ್ರಾರಂಭವಾದ ನಂತರ déclared ಆಗುತ್ತದೆ (Fired)
+- `ultimate-multisite-addon-template_loaded` - ಎಲ್ಲಾ ಆಡ್‌ಆನ್ ಫೈಲ್‌ಗಳು ಲೋಡ್ ಆದ ನಂತರ déclared ಆಗುತ್ತದೆ
+
+### Filters (ಫಿಲ್ಟರ್‌ಗಳು)
+
+- `ultimate-multisite-addon-template_settings` - ಆಡ್‌ಆನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು
+- `ultimate-multisite-addon-template_enabled` - ಆಡ್‌ಆನ್ ಆನ್/ಆಫ್ ಸ್ಥಿತಿಯನ್ನು ಬದಲಾಯಿಸಲು
+
+## ಪರವಾನಗಿ (License)
+
+ಈ ಆಡ್‌ಆನ್ GPL v3 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯ ಅಡಿಯಲ್ಲಿ ಪರವಾನಗಿ ಪಡೆದಿದೆ.
+
+## ಬೆಂಬಲ (Support)
+
+ಬೆಂಬಲ ಮತ್ತು ದಾಖಲೆಗಳಿಗಾಗಿ, [MultisiteUltimate.com](https://multisiteultimate.com) ಗೆ ಭೇಟಿ ನೀಡಿ.
+## ಬದಲಾವಣೆಗಳ ದಾಖಲೆ (Changelog)
+
+- Version 1.0.1 (2025-09-28): ಪ್ರಿಫಿಕ್ಸ್ ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; ಟೆಕ್ಸ್ಟ್ ಡೊಮೇನ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; ಆವೃತ್ತಿ ಹೆಚ್ಚಿಸಲಾಗಿದೆ.
+
+
+- Version (2025-09-28): ಪ್ರಿಫಿಕ್ಸ್ ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; ಟೆಕ್ಸ್ಟ್ ಡೊಮೇನ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; ಆವೃತ್ತಿ ಹೆಚ್ಚಿಸಲಾಗಿದೆ.

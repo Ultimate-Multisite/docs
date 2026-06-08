@@ -1,0 +1,124 @@
+---
+title: AI साईट बिल्डर
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## आवश्यक गोष्टी (Requirements)
+
+- WordPress 5.3 किंवा त्याहून अधिक
+- PHP 7.4 किंवा त्याहून अधिक
+- Multisite Ultimate plugin (सक्रिय)
+
+## इन्स्टॉलेशन (Installation)
+
+1. addon फाइल्स तुमच्या `/wp-content/plugins/` डिरेक्टरीमध्ये अपलोड करा
+2. वर्डप्रेसमधील 'Plugins' मेनूद्वारे प्लगइन सक्रिय करा
+3. नेटवर्क ॲडमिनमध्ये addon सेटिंग्ज कॉन्फिगर करा
+
+## डेव्हलपमेंट (Development)
+
+### सेटअप (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### प्रोजेक्ट स्ट्रक्चर (Project Structure)
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### टेस्टिंग (Testing)
+
+या addon मध्ये एक सर्वसमावेशक टेस्टिंग फ्रेमवर्क समाविष्ट आहे:
+
+- **युनिट टेस्ट्स (Unit Tests)**: वर्डप्रेस टेस्ट सूटसह PHPUnit-आधारित टेस्ट्स
+- **बेस टेस्ट क्लास (Base Test Class)**: सामान्य टेस्ट परिस्थितींसाठी मदतनीस मेथड्स (helper methods) पुरवतो
+- **टेस्ट कव्हरेज (Test Coverage)**: कोड कव्हरेज ट्रॅक करण्यासाठी कॉन्फिगर केले आहे
+- **मल्टीसाइट टेस्टिंग (Multisite Testing)**: टेस्ट्स मल्टीसाइट वातावरणात चालतात
+
+### कोड स्टँडर्ड्स (Code Standards)
+
+- **वर्डप्रेस कोडिंग स्टँडर्ड्स (WordPress Coding Standards)**: PHPCS द्वारे लागू केले जातात
+- **PHP 7.4+ कंपॅटिबिलिटी (Compatibility)**: आधुनिक PHP फीचर्सला सपोर्ट
+- **स्टॅटिक ॲनालिसिस (Static Analysis)**: टाइप चेक करण्यासाठी PHPStan इंटिग्रेशन
+- **कोड मॉडर्नायझेशन (Code Modernization)**: PHP अपग्रेडसाठी Rector नियम
+
+### बिल्ड सिस्टम (Build System)
+
+- **ॲसेट प्रोसेसिंग (Asset Processing)**: CSS/JS फाइल्ससाठी मिनिफिकेशन (Minification)
+- **ट्रान्सलेशन (Translation)**: POT फाइल जनरेशन
+- **पॅकेजिंग (Packaging)**: वितरणासाठी आर्काइव्ह तयार करणे
+- **डेव्हलपमेंट मोड (Development Mode)**: डीबगिंगसाठी अनमिनिफाइड ॲसेट्स
+
+## कॉन्फिगरेशन (Configuration)
+
+हे addon नेटवर्क ॲडमिन इंटरफेसद्वारे उपलब्ध असलेल्या विविध कॉन्फिगरेशन पर्याय (configuration options) सपोर्ट करते.
+
+## हुक्स आणि फिल्टर्स (Hooks and Filters)
+
+### ॲक्शन्स (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - addon सुरू झाल्यानंतर (initialization) ट्रिगर होते
+- `ultimate-multisite-ai-site-builder_loaded` - सर्व addon फाइल्स लोड झाल्यानंतर ट्रिगर होते
+
+### फिल्टर्स (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - addon सेटिंग्जमध्ये बदल करण्यासाठी
+- `ultimate-multisite-ai-site-builder_enabled` - addon सक्रिय/निष्क्रिय (enable/disable) स्थितीवर ओव्हरराईड करण्यासाठी
+
+## लायसन्स (License)
+
+या addon ला GPL v3 किंवा त्यापुढील लायसन्स अंतर्गत परवाना (licensed) मिळाला आहे.
+
+## सपोर्ट (Support)
+
+सपोर्ट आणि डॉक्युमेंटेशनसाठी, [MultisiteUltimate.com](https://multisiteultimate.com) ला भेट द्या.
+## चेंजलॉग (Changelog)
+
+- Version 1.0.1 (2025-09-28): prefix 'ultimate-multisite' मध्ये बदल; टेक्स्ट डोमेन अपडेट केले; व्हर्जन वाढवले.
+
+
+- Version (2025-09-28): prefix 'ultimate-multisite' मध्ये बदल; टेक्स्ट डोमेन अपडेट केले; व्हर्जन वाढवले.

@@ -1,0 +1,124 @@
+---
+title: AI ಸೈಟ್ ಬಿಲ್ಡರ್
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Requirements
+
+- WordPress 5.3 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
+- PHP 7.4 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
+- Multisite Ultimate plugin (ಸಕ್ರಿಯವಾಗಿರಬೇಕು)
+
+## Installation
+
+1. Addon files ಅನ್ನು ನಿಮ್ಮ `/wp-content/plugins/` ಡೈರೆಕ್ಟರಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
+2. WordPress ನಲ್ಲಿರುವ 'Plugins' ಮೆನುವಿನ ಮೂಲಕ plugin ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ (Activate ಮಾಡಿ)
+3. ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್‌ನಲ್ಲಿ addon ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ
+
+## Development
+
+### Setup
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Project Structure
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Testing
+
+ಈ addon ಒಂದು ಸಮಗ್ರ ಟೆಸ್ಟಿಂಗ್ ಫ್ರೇಮ್‌ವರ್ಕ್ ಅನ್ನು ಒಳಗೊಂಡಿದೆ:
+
+- **Unit Tests**: WordPress test suite ಜೊತೆಗೆ PHPUnit ಆಧಾರಿತ ಪರೀಕ್ಷೆಗಳು
+- **Base Test Class**: ಸಾಮಾನ್ಯ test ಸನ್ನಿವೇಶಗಳಿಗೆ ಸಹಾಯ ಮಾಡುವ ವಿಧಾನಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ
+- **Test Coverage**: ಕೋಡ್ ಕವರೇಜ್ ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗಿದೆ
+- **Multisite Testing**: ಈ tests ಅನ್ನು multisite environment ನಲ್ಲಿ ನಡೆಸಲಾಗುತ್ತದೆ
+
+### Code Standards
+
+- **WordPress Coding Standards**: PHPCS ಮೂಲಕ ಜಾರಿಗೊಳಿಸಲಾಗಿದೆ
+- **PHP 7.4+ Compatibility**: ಆಧುನಿಕ PHP ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ
+- **Static Analysis**: ಟೈಪ್ ಚೆಕಿಂಗ್‌ಗಾಗಿ PHPStan integration
+- **Code Modernization**: PHP upgrades ಗಾಗಿ Rector rules
+
+### Build System
+
+- **Asset Processing**: CSS/JS files ಗಾಗಿ Minification
+- **Translation**: POT file generation
+- **Packaging**: ವಿತರಣೆಗಾಗಿ Archive ರಚನೆ
+- **Development Mode**: debugging ಗಾಗಿ Unminified assets
+
+## Configuration
+
+ಈ addon, network admin interface ಮೂಲಕ ಲಭ್ಯವಿರುವ ವಿವಿಧ configuration options ಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.
+
+## Hooks and Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Addon initialization ಆದ ನಂತರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (Fired)
+- `ultimate-multisite-ai-site-builder_loaded` - ಎಲ್ಲಾ addon files ಲೋಡ್ ಆದ ನಂತರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (Fired)
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Addon ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು
+- `ultimate-multisite-ai-site-builder_enabled` - Addon enable/disable ಸ್ಥಿತಿಯನ್ನು ಬದಲಾಯಿಸಲು (Override)
+
+## License
+
+ಈ addon GPL v3 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯ ಅಡಿಯಲ್ಲಿ ಲೈಸೆನ್ಸ್ ಆಗಿದೆ.
+
+## Support
+
+ಸಹಾಯ ಮತ್ತು documentation ಗಾಗಿ, [MultisiteUltimate.com](https://multisiteultimate.com) ಗೆ ಭೇಟಿ ನೀಡಿ
+## Changelog
+
+- Version 1.0.1 (2025-09-28): prefix ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; text domain ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; version bump.
+
+
+- Version (2025-09-28): prefix ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; text domain ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; version bump.

@@ -1,0 +1,124 @@
+---
+title: AI സൈറ്റ് ബിൽഡർ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## ആവശ്യകതകൾ
+
+- WordPress 5.3 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
+- PHP 7.4 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
+- Multisite Ultimate plugin (active)
+
+## ഇൻസ്റ്റാളേഷൻ
+
+1. ആഡ്-ഓൺ ഫയലുകൾ നിങ്ങളുടെ `/wp-content/plugins/` ഡയറക്‌ടറിയിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.
+2. WordPress-ലെ 'Plugins' മെനുവിലൂടെ പ്ലഗിൻ ആക്ടിവേറ്റ് ചെയ്യുക.
+3. നെറ്റ്‌വർക്ക് അഡ്മിനിൽ ആഡ്-ഓൺ സെറ്റിംഗുകൾ കോൺഫിഗർ ചെയ്യുക.
+
+## ഡെവലപ്‌മെന്റ്
+
+### സെറ്റപ്പ്
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### പ്രോജക്റ്റ് ഘടന
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### ടെസ്റ്റിംഗ്
+
+ഈ ആഡ്-ഓണിൽ ഒരു സമഗ്രമായ ടെസ്റ്റിംഗ് ഫ്രെയിംവർക്ക് ഉൾപ്പെടുന്നു:
+
+- **യൂണിറ്റ് ടെസ്റ്റുകൾ**: WordPress ടെസ്റ്റ് സ്യൂട്ടുമായി ബന്ധിപ്പിച്ച PHPUnit അടിസ്ഥാനമാക്കിയുള്ള ടെസ്റ്റുകൾ.
+- **ബേസ് ടെസ്റ്റ് ക്ലാസ്**: സാധാരണ ടെസ്റ്റ് സാഹചര്യങ്ങൾക്കായുള്ള സഹായ രീതികൾ (helper methods) നൽകുന്നു.
+- **ടെസ്റ്റ് കവറേജ്**: കോഡ് കവറേജ് ട്രാക്ക് ചെയ്യാൻ കോൺഫിഗർ ചെയ്തിരിക്കുന്നു.
+- **മൾട്ടിസൈറ്റ് ടെസ്റ്റിംഗ്**: മൾട്ടിസൈറ്റ് എൻവയോൺമെന്റിൽ ടെസ്റ്റുകൾ പ്രവർത്തിപ്പിക്കുന്നു.
+
+### കോഡ് സ്റ്റാൻഡേർഡുകൾ
+
+- **WordPress കോഡിംഗ് സ്റ്റാൻഡേർഡുകൾ**: PHPCS വഴി നടപ്പിലാക്കുന്നു.
+- **PHP 7.4+ അനുയോജ്യത**: ആധുനിക PHP ഫീച്ചറുകൾ പിന്തുണയ്ക്കുന്നു.
+- **സ്റ്റാറ്റിക് അനാലിസിസ്**: ടൈപ്പ് ചെക്കിംഗിനായി PHPStan സംയോജിപ്പിക്കുന്നു.
+- **കോഡ് ആധുനികവൽക്കരണം**: PHP അപ്‌ഗ്രേഡുകൾക്കായുള്ള Rector നിയമങ്ങൾ.
+
+### ബിൽഡ് സിസ്റ്റം
+
+- **ആസ്തി പ്രോസസ്സിംഗ്**: CSS/JS ഫയലുകൾക്ക് മിനിഫിക്കേഷൻ.
+- **വിവർത്തനം**: POT ഫയൽ ജനറേഷൻ.
+- **പാക്കേജിംഗ്**: വിതരണത്തിനായി ആർക്കൈവ് സൃഷ്ടിക്കൽ.
+- **ഡെവലപ്‌മെന്റ് മോഡ്**: ഡീബഗ്ഗിംഗിനായി മിനിഫൈ ചെയ്യാത്ത ആസ്തികൾ.
+
+## കോൺഫിഗറേഷൻ
+
+നെറ്റ്‌വർക്ക് അഡ്മിൻ ഇന്റർഫേസ് വഴി ലഭ്യമായ വിവിധ കോൺഫിഗറേഷൻ ഓപ്ഷനുകൾ ഈ ആഡ്-ഓൺ പിന്തുണയ്ക്കുന്നു.
+
+## Hooks-ഉം Filters-ഉം
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - ആഡ്-ഓൺ ഇനിഷ്യലൈസേഷൻ കഴിഞ്ഞ ശേഷം പ്രവർത്തിപ്പിക്കുന്നു.
+- `ultimate-multisite-ai-site-builder_loaded` - എല്ലാ ആഡ്-ഓൺ ഫയലുകളും ലോഡ് ചെയ്ത ശേഷം പ്രവർത്തിപ്പിക്കുന്നു.
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - ആഡ്-ഓൺ സെറ്റിംഗുകൾ മാറ്റാൻ.
+- `ultimate-multisite-ai-site-builder_enabled` - ആഡ്-ഓൺ പ്രവർത്തനക്ഷമമാക്കാനുള്ള/നിർജ്ജീവമാക്കാനുള്ള സ്റ്റാറ്റസ് മാറ്റാൻ.
+
+## ലൈസൻസ്
+
+ഈ ആഡ്-ഓൺ GPL v3 അല്ലെങ്കിൽ അതിനുശേഷമുള്ള ലൈസൻ പ്രകാരമാണ് ലൈസൻസ് ചെയ്തിരിക്കുന്നത്.
+
+## സപ്പോർട്ട്
+
+സപ്പോർട്ട്, ഡോക്യുമെന്റേഷൻ എന്നിവയ്ക്കായി [MultisiteUltimate.com](https://multisiteultimate.com) സന്ദർശിക്കുക.
+## ചേഞ്ച്‌ലോഗ്
+
+- Version 1.0.1 (2025-09-28): പ്രിഫിക്സ് ultimate-multisite എന്ന് മാറ്റുക; ടെക്സ്റ്റ് ഡൊമെയ്ൻ അപ്‌ഡേറ്റ് ചെയ്യുക; വേർഷൻ കൂട്ടുക.
+
+
+- Version (2025-09-28): പ്രിഫിക്സ് ultimate-multisite എന്ന് മാറ്റുക; ടെക്സ്റ്റ് ഡൊമെയ്ൻ അപ്‌ഡേറ്റ് ചെയ്യുക; വേർഷൻ കൂട്ടുക.

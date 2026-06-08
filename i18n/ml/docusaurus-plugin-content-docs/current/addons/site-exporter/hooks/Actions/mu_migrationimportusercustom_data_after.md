@@ -1,0 +1,23 @@
+---
+id: mu_migrationimportusercustom_data_after
+title: Action - mu_migration/import/user/custom_data_after
+sidebar_label: mu_migration/import/user/custom_data_after
+_i18n_hash: 4775c44fa3c63582f55cfb9f99312646
+---
+# Action: mu_migration/import/user/custom_data_after
+
+കസ്റ്റം യൂസർ ഡാറ്റ എക്‌സ്‌പോർട്ട് ചെയ്തതിന് ശേഷം ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
+
+## പാരാമീറ്ററുകൾ
+
+| പേര് | തരം | വിവരണം |
+|------|------|-------------|
+| $user_data | `array` | യൂസർ ഡാറ്റ അടങ്ങിയ ആറെ (array). |
+| $user | `\WP_User` | യൂസർ ഒബ്ജക്റ്റ്. |
+
+### മുതൽ
+
+- 0.1.0
+### സ്രോതസ്സ്
+
+[`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) എന്ന ഫയലിലെ 165-ാം വരിയിൽ നിർവചിച്ചിരിക്കുന്നു.

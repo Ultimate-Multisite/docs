@@ -1,0 +1,124 @@
+---
+title: बहु-भागाकारता
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# मल्टि-टेनन्सी (Multi-Tenancy)
+
+कार्यक्षमता (performance) आणि सुरक्षिततेसाठी सबसाइट्स वेगवेगळ्या सर्व्हर आणि डेटाबेसवर विभागणे.
+
+## आवश्यकता (Requirements)
+
+- WordPress 5.3 किंवा त्याहून अधिक
+- PHP 7.4 किंवा त्याहून अधिक
+- Multisite Ultimate प्लगइन (सक्रिय)
+
+## इन्स्टॉलेशन (Installation)
+
+1. ॲडऑन फाइल्स तुमच्या `/wp-content/plugins/` डिरेक्टरीमध्ये अपलोड करा.
+2. वर्डप्रेसमधील 'Plugins' मेनूद्वारे प्लगइन सक्रिय करा.
+3. नेटवर्क ॲडमिनमध्ये ॲडऑन सेटिंग्ज कॉन्फिगर करा.
+
+## विकास (Development)
+
+### सेटअप (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### प्रोजेक्टची रचना (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP क्लासेस आणि समाविष्ट (includes)
+│   ├── class-multisite-ultimate-updater.php  # अपडेट हँडलर
+│   └── class-multi_tenancy-main.php             # मुख्य कार्यक्षमता
+├── tests/                        # युनिट टेस्ट्स (Unit tests)
+│   ├── bootstrap.php            # टेस्ट बूटस्ट्रॅप
+│   ├── class-*-base.php         # बेस टेस्ट क्लास
+│   └── class-*-test.php         # टेस्ट केसेस
+├── views/                       # टेम्पलेट फाइल्स
+├── assets/                      # स्थिर ॲसेट्स (Static assets)
+│   ├── css/                     # स्टाइलशीट्स
+│   ├── js/                      # जावास्क्रिप्ट फाइल्स
+│   └── images/                  # इमेजेस
+├── lang/                        # भाषा फाइल्स
+├── composer.json                # PHP डिपेंडन्सीज
+├── package.json                 # Node.js डिपेंडन्सीज
+├── phpunit.xml.dist             # PHPUnit कॉन्फिगरेशन
+├── .phpcs.xml.dist              # कोड स्टँडर्ड्स कॉन्फिगरेशन
+└── rector.php                   # कोड मॉडर्नायझेशन नियम
+```
+
+### टेस्टिंग (Testing)
+
+या ॲडऑनमध्ये एक सर्वसमावेशक टेस्टिंग फ्रेमवर्क समाविष्ट आहे:
+
+- **युनिट टेस्ट्स (Unit Tests)**: वर्डप्रेस टेस्ट सूटसह PHPUnit-आधारित टेस्ट्स.
+- **बेस टेस्ट क्लास (Base Test Class)**: सामान्य टेस्ट परिस्थितींसाठी मदतनीस पद्धती (helper methods) पुरवतो.
+- **टेस्ट कव्हरेज (Test Coverage)**: कोड कव्हरेज ट्रॅक करण्यासाठी कॉन्फिगर केले आहे.
+- **मल्टिसाइट टेस्टिंग (Multisite Testing)**: टेस्ट्स मल्टिसाइट वातावरणात चालतात.
+
+### कोड स्टँडर्ड्स (Code Standards)
+
+- **वर्डप्रेस कोडिंग स्टँडर्ड्स (WordPress Coding Standards)**: PHPCS द्वारे लागू केले जातात.
+- **PHP 7.4+ सुसंगतता (Compatibility)**: आधुनिक PHP वैशिष्ट्ये समर्थित आहेत.
+- **स्टॅटिक ॲनालिसिस (Static Analysis)**: टाइप तपासणीसाठी PHPStan इंटिग्रेशन.
+- **कोड मॉडर्नायझेशन (Code Modernization)**: PHP अपग्रेडसाठी Rector नियम.
+
+### बिल्ड सिस्टीम (Build System)
+
+- **ॲसेट प्रोसेसिंग (Asset Processing)**: CSS/JS फाइल्ससाठी मिनिफिकेशन.
+- **भाषांतर (Translation)**: POT फाइल निर्मिती.
+- **पॅकेजिंग (Packaging)**: वितरणासाठी आर्काइव्ह निर्मिती.
+- **डेव्हलपमेंट मोड (Development Mode)**: डीबगिंगसाठी अनमिनिफाइड ॲसेट्स.
+
+## कॉन्फिगरेशन (Configuration)
+
+ॲडऑन नेटवर्क ॲडमिन इंटरफेसद्वारे उपलब्ध असलेल्या विविध कॉन्फिगरेशन पर्याय (configuration options) समर्थन करते.
+
+## हुक्स आणि फिल्टर्स (Hooks and Filters)
+
+### ॲक्शन्स (Actions)
+
+- `ultimate-multisite-addon-template_init` - ॲडऑन सुरू झाल्यावर (initialization) ट्रिगर होते.
+- `ultimate-multisite-addon-template_loaded` - सर्व ॲडऑन फाइल्स लोड झाल्यावर ट्रिगर होते.
+
+### फिल्टर्स (Filters)
+
+- `ultimate-multisite-addon-template_settings` - ॲडऑन सेटिंग्जमध्ये बदल करण्यासाठी.
+- `ultimate-multisite-addon-template_enabled` - ॲडऑनचे सक्षम/अक्षम (enable/disable) स्टेटस ओव्हरराईड करण्यासाठी.
+
+## लायसन्स (License)
+
+हे ॲडऑन GPL v3 किंवा त्यापुढील लायसन्स अंतर्गत आहे.
+
+## सपोर्ट (Support)
+
+सपोर्ट आणि डॉक्युमेंटेशनसाठी, [MultisiteUltimate.com](https://multisiteultimate.com) ला भेट द्या.
+## बदलांचा इतिहास (Changelog)
+
+- Version 1.0.1 (2025-09-28): प्रीफिक्स (prefix) ultimate-multisite मध्ये बदलले; टेक्स्ट डोमेन (text domain) अपडेट केले; व्हर्जन वाढवले.
+
+
+- Version (2025-09-28): प्रीफिक्स (prefix) ultimate-multisite मध्ये बदलले; टेक्स्ट डोमेन (text domain) अपडेट केले; व्हर्जन वाढवले.
