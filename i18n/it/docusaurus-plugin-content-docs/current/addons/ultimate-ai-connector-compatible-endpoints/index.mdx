@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector per Endpoint Compatibili
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+L'Ultimate AI Connector for Compatible Endpoints integra le API dei fornitori di AI compatibili con OpenAI con la tua rete multisite WordPress. Configura più fornitori di AI — ognuno con la propria URL di endpoint, chiave API e modello predefinito — e instaura il routing delle richieste con un fallback automatico quando un fornitore non è disponibile.
+
+## Funzionalità principali
+
+- **Supporto multi-fornitore**: Aggiungi più schede per fornitori di AI, ognuna con la propria URL di endpoint, chiave API e modello predefinito.
+- **Riordino tramite trascinamento**: Organizza i fornitori per priorità utilizzando la maniglia su ogni scheda; le richieste utilizzano i fornitori in ordine.
+- **Routing con fallback automatico**: Se il fornitore primario non è disponibile, le richieste vengono automaticamente reindirizzate al fornitore configurato successivo.
+- **Configurazione per fornitore**: Ogni fornitore è configurato in modo indipendente con le proprie credenziali e la selezione del modello.
+- **Interfaccia utente basata su schede**: Costruita su componenti Card stabili di WordPress 6.9+ (CardBody, CardHeader, CardDivider).
+- **Auto-espansione all'aggiunta**: Le nuove schede per i fornitori si espandono automaticamente in modo che tu possa inserire i dettagli immediatamente.
+- **Cache busting per script**: Gli script dei fornitori vengono "cache-busted" (aggiornati per evitare la cache) al momento dell'aggiornamento del plugin per garantire che venga caricata l'ultima versione.
+
+## Requisiti
+
+- WordPress 5.3 o superiore
+- PHP 7.4 o superiore
+- Plugin Ultimate Multisite (attivo)
+- Un endpoint API compatibile con OpenAI (self-hosted o di terze parti)
+
+## Installazione
+
+1. Carica i file dell'addon nella directory `/wp-content/plugins/`
+2. Attiva il plugin dal menu 'Plugin' di WordPress
+3. Vai su **Ultimate Multisite → AI Connector** per configurare l'addon
+
+## Configurazione
+
+### Configurazione multi-fornitore
+
+La schermata di configurazione utilizza un layout basato su schede, dove ogni scheda rappresenta un fornitore di AI. Puoi aggiungere quanti fornitori ti servono.
+
+#### Aggiungere un fornitore
+
+1. Vai su **Ultimate Multisite → AI Connector** nell'admin della rete.
+2. Clicca su **Add Provider**.
+3. Appare e si espande automaticamente una nuova scheda fornitore.
+4. Inserisci i dettagli del fornitore:
+   - **Provider Name** — un'etichetta per identificare questo fornitore (es. "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** — l'URL base dell'API compatibile con OpenAI (es. `https://api.openai.com/v1`).
+   - **API Key** — la tua chiave API per questo fornitore.
+   - **Default Model** — l'identificatore del modello da utilizzare di default per questo fornitore (es. `gpt-4o`, `mistral-small`).
+5. Clicca su **Save Settings**.
+
+#### Rimuovere un fornitore
+
+Clicca sul pulsante **Remove** su qualsiasi scheda fornitore per eliminarla. Salva le impostazioni per applicare la modifica.
+
+#### Riordinare i fornitori
+
+Trascina l'icona a maniglia (⣿) sul lato sinistro di qualsiasi scheda fornitore per riordinarla. L'ordine determina la priorità di fallback: le richieste vengono inviate al primo fornitore e vengono reindirizzate ai fornitori successivi se la richiesta fallisce.
+
+### Routing con fallback
+
+Quando una richiesta al fornitore primario fallisce — a causa di un timeout, di un limite di richieste (rate limit) o di un'interruzione del servizio — il connettore tenta automaticamente con il fornitore successivo nell'elenco. Questo continua lungo l'elenco finché un fornitore ha successo o finché tutti i fornitori non sono stati provati.
+
+| Scenario | Comportamento |
+|----------|-----------|
+| Il fornitore primario risponde | La richiesta viene gestita normalmente |
+| Il fornitore primario fallisce | La richiesta viene riprovata con il fornitore successivo |
+| Tutti i fornitori falliscono | Viene restituito un errore al chiamante |
+
+Il fallback è trasparente per il plugin o il tema chiamante: riceveranno una risposta di successo o un errore finale, indipendentemente da quanti fornitori siano stati provati.
+
+### Riferimento configurazione fornitore
+
+| Campo | Richiesto | Descrizione |
+|-------|----------|-------------|
+| Provider Name | Sì | Etichetta di visualizzazione per questo fornitore |
+| Endpoint URL | Sì | URL base dell'API compatibile con OpenAI |
+| API Key | Sì | Chiave di autenticazione per questo fornitore |
+| Default Model | Sì | Identificatore del modello utilizzato quando nessun modello è specificato nella richiesta |
+
+## Risoluzione dei problemi
+
+### Non sono elencati fornitori
+
+Se l'elenco dei fornitori è vuoto dopo aver salvato, conferma che:
+
+- Hai cliccato su **Save Settings** dopo aver aggiunto i fornitori.
+- Il tuo browser non ha bloccato il salvataggio della pagina delle impostazioni (controlla la console del browser per errori JavaScript).
+- Il plugin è attivo e ti trovi sulla schermata dell'admin della rete.
+
+### Le richieste falliscono per tutti i fornitori
+
+- Verifica che l'endpoint URL di ogni fornitore sia raggiungibile dal tuo server (e non solo dal tuo browser).
+- Controlla che ogni chiave API sia valida e non sia scaduta.
+- Rivedi lo stato del rate-limit e della quota del fornitore nel loro dashboard.
+- Abilita il debug logging di WordPress (`WP_DEBUG_LOG`) per catturare messaggi di errore dettagliati dal connettore.
+
+### Un fornitore non viene utilizzato per il fallback
+
+Il riordino tramite trascinamento cambia l'ordine di fallback. Conferma che il fornitore che ti aspetti riceva le richieste di fallback sia posizionato correttamente nell'elenco e che il suo endpoint URL e la sua chiave API siano corretti.
+
+### La nuova scheda fornitore non si espande automaticamente
+
+L'auto-espansione richiede che JavaScript sia abilitato nel tuo browser. Se la scheda non si espande al clic, controlla la console del browser per eventuali errori. I contenuti della scheda sono sempre accessibili cliccando sull'intestazione della scheda anche se l'auto-espansione non si attiva.
+
+## Changelog
+
+Consulta [Changelog](./changelog) per la cronologia completa delle versioni.

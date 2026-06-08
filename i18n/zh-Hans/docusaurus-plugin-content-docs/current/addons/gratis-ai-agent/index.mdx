@@ -1,0 +1,143 @@
+---
+title: 免费 AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent 是一个自主的 WordPress AI 助手，能够通过自然语言指令规划、构建和管理完整的 WordPress 网站。它提供了一套结构化的**能力**（abilities）——这些是离散的、可测试的动作，代理可以调用它们，涵盖了从内容管理到设计系统定制的方方面面。版本 1.9.0 新增了内容创建能力、通过客户端截图进行视觉页面审查、五个内置代理角色，以及用于访问控制和品牌化的功能开关。
+
+## 核心功能
+
+- **能力系统 (Abilities system)** — 一个模块化、可扩展的动作目录，代理可以在您的 WordPress 安装上调用这些动作。
+- **内容管理 (Content Management)** — 创建文章和页面（包括分配页面模板）、批量创建多篇文章、设置特色图片和构建联系表单。
+- **视觉审查 (Visual Review)** — 捕获实时页面的截图、比较修改前后的状态，并获得一份涵盖布局、排版、颜色和可访问性的 AI 生成设计审查报告。
+- **五个内置代理 (Five built-in agents)** — 包括内容撰写者 (Content Writer)、网站构建器 (Site Builder)、设计工作室 (Design Studio)、插件管理器 (Plugin Manager) 和支持助手 (Support Assistant)；您可以在聊天顶部的代理选择器中切换它们。
+- **功能开关 (Feature flags)** — 在“设置 → 功能开关”中设置的访问控制和品牌化开关，用于角色限制、白标签命名和小工具定制。
+- **自定义文章类型管理 (Custom Post Type management)** — 注册、列出和删除自定义文章类型，并在重启后保持持久性。
+- **自定义分类法管理 (Custom Taxonomy management)** — 注册、列出和删除自定义分类法，并保持持久性。
+- **设计系统能力 (Design System abilities)** — 注入自定义 CSS、管理精选的区块模式、设置网站 Logo 和应用 theme.json 预设。
+- **全局样式管理 (Global Styles management)** — 读取和写入 theme.json 中的颜色调色板、排版、间距等值。
+- **导航菜单管理 (Navigation Menu management)** — 编程创建和更新导航菜单及其项目。
+- **选项管理 (Options Management)** — 读取和写入 WordPress 选项，内置安全黑名单以保护关键设置。
+- **可安装能力注册表 (Installable Abilities Registry)** — 在不修改核心插件文件的情况下，发现和激活额外的能力包。
+- **网站构建器编排 v2 (Site Builder Orchestration v2)** — 支持多步骤的网站构建计划，包括插件发现、进度跟踪和错误恢复。
+- **WP-CLI 基准命令 (WP-CLI benchmark command)** — 从命令行运行代理能力基准测试套件，用于 CI 和模型评估。
+
+## 要求
+
+- WordPress 6.0 或更高版本
+- PHP 8.1 或更高版本
+- WordPress Multisite（网络激活）或单站点安装
+- 一个活动的 AI 提供商连接插件（Anthropic、OpenAI 或兼容插件）
+
+## 安装
+
+1. 将插件文件上传到 `/wp-content/plugins/gratis-ai-agent`
+2. 通过 WordPress 的**插件**界面激活插件
+3. 导航到 **Gratis AI Agent → 设置** 并连接您的 AI 提供商
+4. (可选) 浏览**能力注册表**以安装额外的能力包
+
+## 快速上手
+
+激活并连接到 AI 提供商后，打开 WordPress 管理侧边栏中的 **Gratis AI Agent** 面板。输入自然语言指令，代理将使用其可用能力来规划和执行所需的步骤。
+
+**示例指令：**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## 能力概览
+
+能力是代理可以执行的原子动作。每项能力都是一个注册的 PHP 类，它暴露了一个模式（参数和返回类型），代理在运行时会读取这个模式。能力按功能区域进行分组：
+
+| 区域 | 能力 |
+|---|---|
+| **内容管理** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **视觉审查** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **自定义文章类型** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **自定义分类法** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **设计系统** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **全局样式** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **导航菜单** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **选项管理** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **可安装能力** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **网站构建器** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+有关完整的参数文档和使用示例，请参阅 [Abilities Reference](./abilities)。
+
+## WP-CLI
+
+Gratis AI Agent 提供了一个 `wp gratis-ai-agent` 命令家族，用于从命令行运行基准测试和管理能力。有关完整的命令列表，请参阅 [WP-CLI Reference](./wp-cli)。
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## 配置
+
+所有设置都在 WordPress 管理后台的 **Gratis AI Agent → 设置** 下：
+
+| 设置 | 描述 |
+|---|---|
+| **AI Provider** | 选择并配置活动的 AI 提供商连接器 |
+| **Model** | 选择用于代理会话的语言模型 |
+| **Max Tokens** | 每请求的令牌预算（默认为 4096） |
+| **Ability Timeout** | 单个能力运行的最大秒数（默认为 30） |
+| **Debug Logging** | 将能力调用和代理推理记录到 WordPress 调试日志中 |
+
+## 选项管理安全黑名单
+
+选项管理能力包含一个内置黑名单，可以防止代理读取或写入敏感的 WordPress 选项。默认黑名单涵盖：
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home`（URL 选项 — 请使用专用的迁移工具处理这些）
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key`（密钥）
+- `active_plugins`, `template`（插件/主题激活 — 请使用专用能力）
+- 由已安装插件注册的支付网关凭证和 API 密钥
+
+可以通过 `gratis_ai_agent_options_blocklist` 过滤器添加额外的条目。
+
+## Hooks 和 Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — 在能力注册后触发，接收能力类名
+- `gratis_ai_agent_plan_started` — 在网站构建计划开始执行时触发
+- `gratis_ai_agent_plan_completed` — 在计划成功完成时触发
+- `gratis_ai_agent_plan_failed` — 在计划遇到不可恢复错误时触发
+
+### Filters
+
+- `gratis_ai_agent_abilities` — 在代理加载能力列表之前修改注册的能力列表
+- `gratis_ai_agent_options_blocklist` — 扩展或缩减选项安全黑名单
+- `gratis_ai_agent_benchmark_questions` — 向评估套件添加自定义基准问题
+- `gratis_ai_agent_plan_plugins` — 在网站计划生成过程中修改插件发现列表
+
+## 支持
+
+如需支持，请访问 [ultimatemultisite.com](https://ultimatemultisite.com) 或在插件仓库中提交问题。
+
+## Changelog
+
+有关完整的版本历史记录，请参阅 [Changelog](./changelog)。

@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector for WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM 将浏览器原生的 AI 推理能力带入您的 WordPress 多站点网络。它使用 WebLLM 和 MLC 引擎在浏览器中完全运行大型语言模型（LLM）——无需 API 密钥，无需外部调用，用户数据不会离开设备。
+
+## 主要功能
+
+- **浏览器端推理**: LLM 通过 WebLLM/MLC 在访客的浏览器本地运行——无需服务器 GPU
+- **浮动聊天小组件**: 登录用户可以直接从前端提示浏览器端的 LLM
+- **管理栏状态指示器**: 在 WordPress 管理栏实时显示 WebLLM 引擎的状态
+- **SharedWorker 运行时**: 多个浏览器标签页共享一个 GPU 会话，而不是互相争抢 GPU 资源
+- **apiFetch 中间件**: 匹配 AI Client SDK 模式的 WordPress REST 请求会被透明地路由到本地 WebLLM 代理——无需回环 HTTP 往返
+- **小组件设置 UI**: 连接器面板设置，用于切换聊天小组件并配置自动提示行为
+- **IndexedDB 缓存**: 模型权重下载能够抵抗破坏默认 Cache API 路径的 CDN 重定向
+- **wpai 过滤器集成**: 挂钩到 `wpai_preferred_text_models` 过滤器，确保 AI Experiments 功能在配置后路由到浏览器引擎
+
+## 要求
+
+- WordPress 5.3 或更高版本
+- PHP 7.4 或更高版本
+- Ultimate Multisite 插件（已激活）
+- 支持 WebGPU 的浏览器（Chrome 113+、Edge 113+ 或启用 WebGPU 的 Firefox Nightly）
+
+## 安装
+
+1. 将插件文件上传到您的 `/wp-content/plugins/` 目录
+2. 通过 WordPress 的“插件”菜单激活插件
+3. 导航到 **Ultimate Multisite → AI Connector** 配置插件
+
+## 浮动聊天小组件
+
+浮动聊天小组件允许任何登录用户直接从您的前端与浏览器端的 LLM 进行交互，而无需离开当前页面。
+
+### 功能描述
+
+启用后，在所有登录用户的前端页面角落都会出现一个聊天图标。点击该图标会打开一个聊天面板，用户可以在其中输入提示词，并接收到来自本地运行的 WebLLM 模型生成的回复。由于模型完全在浏览器中运行，因此回复是私密的，不涉及任何服务器端处理。
+
+### 管理栏状态指示器
+
+WordPress 管理栏包含一个状态指示器，显示 WebLLM 引擎的当前状态：
+
+| 状态 | 含义 |
+|--------|---------|
+| **Loading** | MLC 引擎正在初始化或下载模型权重 |
+| **Ready** | 模型已加载并可用于推理 |
+| **Idle** | 引擎已加载，但 SharedWorker 标签页未激活 |
+| **Error** | 引擎初始化失败——请检查浏览器控制台获取详细信息 |
+
+该指示器会在不刷新页面的情况下实时更新。
+
+### 如何启用或禁用小组件
+
+1. 在网络管理员处转到 **Ultimate Multisite → AI Connector**
+2. 找到 **Connector** 面板
+3. 切换 **Enable floating chat widget** 的开关（开启或关闭）
+4. 保存设置
+
+如果网络管理员授予了该权限，用户也可以在各自站点（site）的后台管理中启用或禁用此小组件。
+
+## 小组件设置
+
+**Ultimate Multisite → AI Connector** 中的 Connector 面板包含以下浮动聊天小组件设置：
+
+### Enable Floating Chat Widget（启用浮动聊天小组件）
+
+用于为整个网络开关聊天小组件。如果禁用，无论用户角色如何，小组件都不会出现在任何前端页面。
+
+**默认值:** 关闭
+
+### Auto-Prompt Behaviour（自动提示行为）
+
+控制聊天小组件是否在用户打开时自动发送提示词。
+
+| 选项 | 行为 |
+|--------|-----------|
+| **Disabled** | 小组件打开时为空聊天——用户需要输入自己的提示词 |
+| **Page context** | 小组件打开时会根据当前页面的标题和内容预填充一个提示词 |
+| **Custom prompt** | 小组件打开时会使用您在下方字段定义的自定义提示词 |
+
+如果设置为 **Custom prompt**，则会出现一个额外的文本字段，您可以在其中输入默认的提示词文本。支持基本的模板变量：
+
+- `{site_name}` — 当前站点的名称
+- `{page_title}` — 当前页面的标题
+- `{user_display_name}` — 登录用户的显示名称
+
+**默认值:** 关闭
+
+## SharedWorker 运行时
+
+版本 1.1.0 为 MLC 引擎引入了 SharedWorker 运行时。以前，使用 WebLLM 的每个浏览器标签页都会加载自己独立的模型实例，争抢 GPU 内存，导致设备 VRAM 有限时出现性能问题。
+
+使用 SharedWorker 运行时后，一个标签页充当引擎宿主。所有其他标签页都通过工作进程的消息通道与该单个实例进行通信。结果是：
+
+- 所有打开的标签页共享一个 GPU 会话
+- 模型加载后响应更快（无需重复初始化）
+- 设备峰值内存使用量更低
+
+SharedWorker 对用户是透明的。管理栏状态指示器始终反映共享引擎的状态，而不是单个标签页的状态。
+
+## apiFetch 中间件
+
+该插件安装了一个 `apiFetch` 中间件，用于拦截匹配 AI Client SDK 模式的 WordPress REST API 请求。这些请求不会向服务器发起回环 HTTP 请求，而是直接路由到运行在 SharedWorker 中的本地 WebLLM 代理。
+
+这意味着使用标准 WordPress `apiFetch` API 调用 AI 端点的插件和主题，在模型可用时将自动受益于浏览器端的模型，无需修改代码。
+
+## Hooks and Filters（钩子和过滤器）
+
+### 过滤器
+
+- `wpai_preferred_text_models` — 将 WebLLM 浏览器引擎注册为首选文本模型。当引擎配置并可用时，插件会自动挂钩到此过滤器。
+- `ultimate_webllm_widget_enabled` — 为特定用户或上下文覆盖小组件的启用状态。返回 `true` 或 `false`。
+- `ultimate_webllm_auto_prompt` — 修改发送到小组件的自动提示词文本。接收提示词字符串和当前的 `WP_Post` 对象。
+
+## 故障排除
+
+### 聊天小组件不显示
+
+- 确认用户是否已登录——小组件仅显示给已认证用户
+- 检查 Connector 面板中是否已开启 **Enable floating chat widget**
+- 验证用户浏览器是否支持 WebGPU（参见上方的要求）
+
+### 管理栏指示器显示“Error”
+
+打开浏览器开发者控制台（F12），查找与 WebLLM 相关的错误。常见原因：
+
+- 浏览器不支持 WebGPU
+- 模型权重下载失败——请检查网络连接，并尝试在浏览器开发者工具（Application → IndexedDB）中清除 IndexedDB 缓存
+- 浏览器扩展程序阻止了 SharedWorker
+
+### 模型权重每次都下载
+
+该插件使用 IndexedDB 作为缓存后端，以确保模型权重在 CDN 重定向后仍然可用。如果权重每次访问都在重新下载，请检查浏览器隐私设置或扩展程序是否清除了 IndexedDB。
+
+## Changelog（变更日志）
+
+请参阅 [Changelog](./changelog) 查看完整的版本历史记录。

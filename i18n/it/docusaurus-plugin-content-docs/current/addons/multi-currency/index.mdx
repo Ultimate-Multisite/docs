@@ -1,0 +1,117 @@
+---
+title: Multi-Valuta
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency permette alla tua rete di accettare pagamenti in diverse valute. Converte automaticamente i prezzi utilizzando tassi di cambio live o manuali, ti consente di impostare prezzi esatti per prodotto in qualsiasi valuta e rileva la valuta preferita di ogni visitatore tramite geolocalizzazione, il tutto gestito da un unico dashboard amministrativo.
+
+## Funzionalità Principali
+
+- **Conversione automatica del tasso di cambio** — i prezzi vengono convertiti dalla tua valuta base utilizzando tassi recuperati dal provider che hai scelto
+- **Sovrascrittura dei prezzi per prodotto** — imposta prezzi esatti specifici per valuta su qualsiasi prodotto per bypassare la conversione automatica
+- **Campo selettore valuta per l'iscrizione** — permette ai clienti di scegliere la valuta preferita durante il checkout/l'iscrizione
+- **Più provider di tassi di cambio** — ECB, Frankfurter, Stripe o tassi completamente manuali
+- **Rilevamento valuta basato sulla geolocalizzazione** — pre-seleziona automaticamente la valuta che corrisponde al paese del visitatore
+- **Dashboard amministrativo** — gestisci valute attive, tassi di cambio e impostazioni dei provider da un unico posto
+
+## Requisiti
+
+- Ultimate Multisite 2.0.0 o superiore
+- Installazione WordPress Multisite
+- PHP 7.4 o superiore
+
+## Installazione
+
+1. Carica i file del plugin in `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Attiva il plugin dalla schermata **Plugin** di WordPress (Attiva a livello di rete)
+3. Vai su **Ultimate Multisite → Multi-Currency** per aprire il dashboard amministrativo
+4. Aggiungi le valute che desideri accettare e configura il tuo provider di tassi di cambio
+
+## Configurazione
+
+### Dashboard Amministrativo
+
+Il dashboard amministrativo Multi-Currency (**Ultimate Multisite → Multi-Currency**) è il punto centrale per:
+
+- Aggiungere, abilitare o disabilitare valute
+- Scegliere un provider di tassi di cambio e aggiornare i tassi su richiesta
+- Controllare i tassi attuali per tutte le valute attive
+- Impostare tassi manuali quando i provider automatici non sono adatti
+
+### Provider di Tassi di Cambio
+
+| Provider | Descrizione |
+|---|---|
+| **ECB** | Banca Centrale Europea — tassi giornalieri gratuiti per reti basate sull'EUR |
+| **Frankfurter** | API specchio ECB open-source — gratuito, non è richiesta alcuna chiave API |
+| **Stripe** | Utilizza i tassi FX live di Stripe — richiede un'integrazione Stripe attiva |
+| **Manual** | Inserisci tu i tassi; nessuna chiamata API esterna |
+
+Seleziona il tuo provider sotto **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. I tassi possono essere aggiornati manualmente in qualsiasi momento o programmati per aggiornarsi automaticamente.
+
+### Sovrascrittura dei Prezzi per Prodotto
+
+Quando la conversione automatica non è abbastanza precisa, puoi impostare un prezzo esatto per una valuta specifica su qualsiasi prodotto:
+
+1. Apri l'editor del prodotto (**Ultimate Multisite → Products → Edit**)
+2. Scorri fino alla sezione **Currency Pricing**
+3. Inserisci il prezzo esatto per ogni valuta che desideri sovrascrivere
+4. Salva il prodotto
+
+I prodotti senza sovrascrittura utilizzano il prezzo convertito dalla tua valuta base.
+
+### Campo Selettore Valuta per l'Iscrizione
+
+Il campo selettore valuta può essere aggiunto al tuo flusso di iscrizione/checkout in modo che i clienti scelgano la valuta preferita durante la registrazione:
+
+1. Vai su **Ultimate Multisite → Multi-Currency → Settings**
+2. Abilita **Show currency selector on signup**
+3. Opzionalmente imposta una valuta predefinita o lascia che la geolocalizzazione determini il valore pre-selezionato
+
+La valuta selezionata viene salvata con l'abbonamento e utilizzata per tutte le fatturazioni successive.
+
+### Rilevamento Valuta Basato sulla Geolocalizzazione
+
+Quando il rilevamento geolocalizzazione è abilitato, l'addon mappa il paese del visitatore a una valuta e la pre-seleziona nel campo selettore valuta. Per abilitarlo:
+
+1. Vai su **Ultimate Multisite → Multi-Currency → Settings**
+2. Abilita **Detect currency from visitor location**
+3. Mappa i paesi alle valute nella tabella **Geolocation Mapping**
+
+Se non esiste una mappatura per il paese del visitatore, viene utilizzata la valuta base della rete come fallback.
+
+## Domande Frequenti
+
+### Cosa succede se un provider di tassi di cambio non è disponibile?
+
+L'addon torna agli ultimi tassi di cambio recuperati con successo. Se non sono mai stati recuperati tassi, torna ai tassi manuali che hai configurato. Si raccomanda di configurare i tassi manuali come rete di sicurezza.
+
+### Posso usare provider diversi per valute diverse?
+
+No — un provider è attivo alla volta per tutte le valute. Usa **Manual** se hai bisogno di pieno controllo sui singoli tassi.
+
+### La geolocalizzazione richiede un plugin separato?
+
+Non è richiesto alcun plugin di geolocalizzazione esterno. L'addon utilizza il rilevamento IP-a-paese integrato di WordPress. Per una maggiore accuratezza, un servizio di geolocalizzazione dedicato può essere integrato tramite i hook di filtro forniti.
+
+### Le sovrascritture per prodotto vengono applicate prima o dopo le tasse?
+
+Le sovrascritture per prodotto impostano il prezzo pre-tasse nella valuta di destinazione. Le tasse vengono calcolate sul prezzo sovrascritto utilizzando la tua configurazione fiscale esistente.
+
+## Changelog
+
+### Versione 1.0.0 — Rilasciata il 2026-04-02
+
+- Nuovo: Supporto multi-valuta con conversione automatica del tasso di cambio
+- Nuovo: Sovrascrittura dei prezzi per prodotto per prezzi esatti specifici per valuta
+- Nuovo: Campo selettore valuta per il flusso di checkout
+- Nuovo: Provider di tassi di cambio: ECB, Frankfurter, Stripe e manuale
+- Nuovo: Rilevamento valuta basato sulla geolocalizzazione
+- Nuovo: Dashboard amministrativo per la gestione di valute e tassi di cambio
+- Fix: Dashboard che mostra sempre i prezzi nella valuta base indipendentemente dalla valuta selezionata

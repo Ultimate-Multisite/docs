@@ -1,0 +1,143 @@
+---
+title: 無料AIエージェント
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agentは、自然言語の指示に基づいて、完全なWordPressサイトを計画し、構築し、管理できる自律型のWordPress AIアシスタントです。コンテンツ管理からデザインシステムのカスタマイズに至るまで、構造化された一連の**アビリティ（abilities）**—エージェントが呼び出すことができる、個別のテスト可能なアクション—を公開します。バージョン1.9.0では、コンテンツ作成アビリティ、クライアントサイドのスクリーンショットによるビジュアルページレビュー、5つの組み込みエージェントプロファイル、アクセス制御とブランディングのためのフィーチャーフラグが追加されました。
+
+## 主な機能
+
+- **アビリティシステム** — エージェントがWordPressインストール上で呼び出すことができる、モジュール式で拡張可能なアクションカタログ
+- **コンテンツ管理** — 投稿や固定ページを作成する（ページテンプレートの割り当てを含む）、複数の投稿を一度に一括作成する、アイキャッチ画像を設定する、お問い合わせフォームを構築する
+- **ビジュアルレビュー** — ライブページのスクリーンショットをキャプチャし、ビフォー/アフターの状態を比較し、レイアウト、タイポグラフィ、カラー、アクセシビリティを網羅したAIによるデザインレビューを取得する
+- **5つの組み込みエージェント** — コンテンツライター、サイトビルダー、デザインスタジオ、プラグインマネージャー、サポートアシスタント。チャットヘッダーのAgent Pickerから切り替え可能
+- **フィーチャーフラグ** — 設定 → フィーチャーフラグから、ロール制限、ホワイトラベル名、ウィジェットのカスタマイズを行うアクセス制御およびブランディングのトグル
+- **カスタム投稿タイプ管理** — カスタム投稿タイプを登録、一覧表示、削除し、再起動後も永続的に保持する
+- **カスタムタクソノミー管理** — カスタムタクソノミーを登録、一覧表示、削除し、永続的に保持する
+- **デザインシステムアビリティ** — カスタムCSSを注入し、キュレーションされたブロックパターンを管理し、サイトロゴを設定し、theme.jsonのプリセットを適用する
+- **グローバルスタイル管理** — カラーパレット、タイポグラフィ、スペーシングなどのtheme.jsonの値を読み取り、書き込む
+- **ナビゲーションメニュー管理** — ナビゲーションメニューとそのアイテムをプログラム的に作成および更新する
+- **オプション管理** — クリティカルな設定を保護するための組み込みの安全なブロックリストを備え、WordPressオプションを読み取り、書き込む
+- **インストール可能なアビリティレジストリ** — コアプラグインファイルを変更することなく、追加のアビリティパックを発見し、有効化する
+- **Site Builder Orchestration v2** — プラグインの発見、進捗追跡、エラー回復を備えた多段階のサイト構築プラン
+- **WP-CLIベンチマークコマンド** — CIやモデル評価のために、コマンドラインからエージェントの機能ベンチマークスイートを実行する
+
+## 要件
+
+- WordPress 6.0以上
+- PHP 8.1以上
+- WordPress Multisite（ネットワーク有効化）またはシングルサイトインストール
+- アクティブなAIプロバイダーコネクタプラグイン（Anthropic、OpenAI、または互換性のあるもの）
+
+## インストール
+
+1. プラグインファイルを `/wp-content/plugins/gratis-ai-agent` にアップロードします。
+2. WordPressの**プラグイン**画面からプラグインを有効化します。
+3. **Gratis AI Agent → 設定**に移動し、AIプロバイダーを接続します。
+4. （オプション）**アビリティレジストリ**を閲覧して、追加のアビリティパックをインストールします。
+
+## クイックスタート
+
+有効化し、AIプロバイダーに接続したら、WordPress管理サイドバーの**Gratis AI Agent**パネルを開きます。自然言語の指示を入力するだけで、エージェントが利用可能なアビリティを使用して必要なステップを計画し、実行します。
+
+**指示の例:**
+
+```
+「ポートフォリオ」というカスタム投稿タイプと、「プロジェクトカテゴリ」というタクソノミーを作成してください。
+```
+
+```
+テーマにダークモードのカラーパレットを注入し、プライマリカラーを #1a1a2e に設定してください。
+```
+
+```
+オンラインメニュー、予約フォーム、お問い合わせページを備えたレストランのウェブサイトを構築してください。
+```
+
+## アビリティの概要
+
+アビリティとは、エージェントが実行できる原子的なアクションです。各アビリティは、エージェントが実行時に読み取るスキーマ（パラメータと戻り値の型）を公開する、登録されたPHPクラスです。アビリティは機能的なエリアに分類されています。
+
+| エリア | アビリティ |
+|---|---|
+| **コンテンツ管理** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **ビジュアルレビュー** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **カスタム投稿タイプ** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **カスタムタクソノミー** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **デザインシステム** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **グローバルスタイル** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **ナビゲーションメニュー** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **オプション管理** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **インストール可能なアビリティ** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **サイトビルダー** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+完全なパラメータドキュメントと使用例については、[Abilities Reference](./abilities)を参照してください。
+
+## WP-CLI
+
+Gratis AI Agentは、コマンドラインからベンチマークの実行やアビリティの管理を行うための `wp gratis-ai-agent` コマンドファミリーを提供します。完全なコマンドリストについては、[WP-CLI Reference](./wp-cli)を参照してください。
+
+```bash
+# 全てのベンチマークスイートを実行
+wp gratis-ai-agent benchmark
+
+# インストールされているアビリティを一覧表示
+wp gratis-ai-agent abilities list
+
+# アビリティパックをインストール
+wp gratis-ai-agent abilities install <slug>
+```
+
+## 設定
+
+すべての設定は、WordPress管理画面の**Gratis AI Agent → 設定**にあります。
+
+| 設定 | 説明 |
+|---|---|
+| **AI Provider** | アクティブなAIプロバイダーコネクタを選択し、設定します |
+| **Model** | エージェントセッションに使用する言語モデルを選択します |
+| **Max Tokens** | リクエストごとのトークン予算（デフォルト 4096） |
+| **Ability Timeout** | 個々のアビリティが実行できる最大秒数（デフォルト 30） |
+| **Debug Logging** | アビリティの呼び出しとエージェントの推論をWordPressのデバッグログに記録します |
+
+## オプション管理の安全なブロックリスト
+
+オプション管理アビリティには、エージェントが機密性の高いWordPressオプションを読み取ったり書き込んだりするのを防ぐ、組み込みのブロックリストが含まれています。デフォルトのブロックリストには以下が含まれます。
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home`（URLオプション — これらには専用の移行ツールを使用してください）
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key`（シークレットキー）
+- `active_plugins`, `template`（プラグイン/テーマの有効化 — 専用のアビリティを使用してください）
+- インストールされたプラグインによって登録された決済ゲートウェイの認証情報やAPIキー
+
+追加のエントリは、`gratis_ai_agent_options_blocklist`フィルター経由で追加できます。
+
+## フックとフィルター
+
+### アクション (Actions)
+
+- `gratis_ai_agent_ability_registered` — アビリティが登録された後に発火し、アビリティのクラス名を受け取ります
+- `gratis_ai_agent_plan_started` — サイトビルダーのプランが実行を開始したときに発火します
+- `gratis_ai_agent_plan_completed` — プランが正常に完了したときに発火します
+- `gratis_ai_agent_plan_failed` — プランが回復不能なエラーに遭遇したときに発火します
+
+### フィルター (Filters)
+
+- `gratis_ai_agent_abilities` — エージェントがロードする前に、登録されたアビリティリストを修正します
+- `gratis_ai_agent_options_blocklist` — オプションの安全なブロックリストを拡張または縮小します
+- `gratis_ai_agent_benchmark_questions` — 評価スイートにカスタムのベンチマーク質問を追加します
+- `gratis_ai_agent_plan_plugins` — サイトプラン生成中にプラグインの発見リストを修正します
+
+## サポート
+
+サポートについては、[ultimatemultisite.com](https://ultimatemultisite.com)にアクセスするか、プラグインリポジトリでIssueを開いてください。
+
+## 変更履歴 (Changelog)
+
+完全なバージョン履歴については、[Changelog](./changelog)を参照してください。

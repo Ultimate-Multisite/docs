@@ -1,0 +1,114 @@
+---
+title: Email
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Email
+
+L'addon Ultimate Multisite: Email permette ai gestori di rete di fornire e gestire gli account email dei clienti insieme ai siti e alle iscrizioni. La versione 1.1.0 aggiunge la gestione degli account email visibile al cliente, il single sign-on (SSO) per webmail, il supporto per il reindirizzamento (forwarder) di CyberPanel e miglioramenti nel provisioning al momento del checkout.
+
+## Funzionalità principali
+
+* **Widget account email del cliente**: I clienti possono creare e gestire account email dalla loro pagina account senza aprire un ticket di supporto.
+* **Webmail SSO e link magici**: I clienti possono aprire webmail direttamente dalla pagina account con un'autenticazione con un clic, quando il provider lo supporta.
+* **Cambio password**: Clienti e amministratori possono aggiornare le password della casella di posta elettronica dal widget di gestione email.
+* **Provisioning al checkout**: La creazione dell'account email del cliente può avvenire durante il checkout, in modo che la casella di posta sia pronta dopo il completamento del flusso di acquisto.
+* **Forwarder CyberPanel**: Le reti basate su CyberPanel possono creare e gestire i forwarder email come parte del flusso di servizio email.
+* **Impostazioni sensibili al provider**: La pagina delle impostazioni filtra i provider per mostrare solo le integrazioni attive e configurate, in modo che gli amministratori vedano solo opzioni utilizzabili.
+
+## Requisiti
+
+* Ultimate Multisite 2.0.0 o superiore
+* Installazione di WordPress Multisite
+* Almeno un'integrazione di provider email configurata
+* Credenziali API del provider con permessi per creare caselle di posta, cambiare password e emettere link di accesso webmail, ove supportato
+
+## Installazione
+
+1. Carica i file del plugin in `/wp-content/plugins/ultimate-multisite-emails`.
+2. Attiva l'addon a livello di rete da **Plugin** nell'area di amministrazione di rete WordPress.
+3. Vai su **Ultimate Multisite** > **Impostazioni** e apri le impostazioni dell'addon email.
+4. Abilita le integrazioni di provider email che vuoi che i clienti utilizzino.
+5. Salva le impostazioni e poi testa la creazione dell'account con un cliente non di produzione o su un sito di staging.
+
+## Gestione account email del cliente
+
+La versione 1.1.0 aggiunge un widget di gestione email alla pagina account del cliente. Usalo quando i clienti dovrebbero gestire autonomamente la creazione e la manutenzione della casella di posta per i propri siti.
+
+Dalla pagina account, i clienti possono:
+
+1. Visualizzare gli account email collegati alla loro iscrizione o sito attuale.
+2. Creare una nuova casella di posta quando il loro piano lo consente per account aggiuntivi.
+3. Cambiare la password di una casella di posta esistente.
+4. Aprire i provider webmail supportati tramite SSO o un login con link magico.
+
+Il widget utilizza il sistema corrente della pagina account di Ultimate Multisite, quindi le azioni sono limitate al contesto dell'account che il cliente sta visualizzando. Questo impedisce ai clienti di gestire account email appartenenti a un'altra iscrizione o sito.
+
+## Webmail SSO e Login con Link Magici
+
+Webmail SSO fornisce ai clienti un'azione diretta **Apri webmail** dalla pagina account. Quando supportato dal provider attivo, l'addon richiede un URL di accesso a breve termine e reindirizza il cliente alla webmail senza chiedergli di copiare le credenziali della casella di posta.
+
+Il comportamento del provider può variare:
+
+* I provider con API SSO native possono creare una sessione webmail autenticata diretta.
+* I provider con supporto per link magici possono generare un link di accesso a tempo limitato.
+* I provider senza supporto SSO o link magici dovrebbero comunque mostrare i dettagli della casella di posta e le azioni di gestione password, ma nessun pulsante webmail con un clic.
+
+Abilita l'accesso webmail solo per i provider per cui hai configurato le credenziali API richieste. Se l'azione manca per un provider, conferma prima che il provider sia attivo, configurato e supporti i link di accesso webmail.
+
+## Provisioning al checkout
+
+L'addon può creare account email dei clienti come parte del checkout. Questo è utile quando il piano include una casella di posta di default o quando il modulo di checkout raccoglie dettagli dell'account email.
+
+Rollout consigliato:
+
+1. Configura i limiti del provider e del piano prima di abilitare il provisioning al checkout.
+2. Testa un acquisto con un prodotto di staging e conferma che la casella di posta venga creata dopo il checkout.
+3. Rivedi la pagina account del cliente per confermare che la nuova casella di posta appaia nel widget email.
+4. Conferma le azioni di cambio password e webmail prima di abilitare il flusso per i prodotti di produzione.
+
+Se il provisioning fallisce, l'account e l'iscrizione del cliente possono comunque esistere, mentre la casella di posta richiede un intervento manuale dell'amministratore. Controlla i log di attività di Ultimate Multisite e i log del provider prima di riprovare.
+
+## Forwarder email CyberPanel
+
+Per le reti basate su CyberPanel, la versione 1.1.0 aggiunge il supporto per i forwarder email. Usa i forwarder quando i clienti hanno bisogno di indirizzi come `info@dominio-cliente.test` per reindirizzare le email in un'altra casella di posta senza creare una casella di posta completa.
+
+Prima di offrire i forwarder, conferma che l'integrazione CyberPanel sia configurata e raggiungibile. Consulta la guida [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) per i costanti richiesti di host, username, password e pacchetto.
+
+## Changelog
+
+### Versione 1.1.0 - Rilasciata il 2026-05-05
+
+* Nuovo: Webmail SSO e login con link magici — i clienti possono accedere alla webmail direttamente dal loro account con un'autenticazione con un clic.
+* Nuovo: Funzionalità di cambio password aggiunta al widget di gestione account email.
+* Nuovo: Supporto per i forwarder email CyberPanel.
+* Nuovo: Widget di gestione email sulla pagina account del cliente per la creazione e gestione autonoma degli account.
+* Nuovo: Creazione dell'account email del cliente integrata nel flusso di checkout per un provisioning automatico.
+* Fix: L'hook del widget della pagina account è stato aggiornato per utilizzare il pattern di registrazione UMS corretto.
+* Fix: Il modulo "Crea Account" è stato sostituito con JS vanilla e l'output HTML completo corretto.
+* Fix: Il widget di gestione email ora utilizza il sistema UMS currents per le pagine account amministratori.
+* Fix: Il modulo di creazione account email amministratore include il campo password e utilizza Email_Account_Manager.
+* Fix: Spam log richiesto per richiesta rimosso dall'inizializzazione di Email_Account_Manager.
+* Migliorato: La pagina delle impostazioni ora filtra per mostrare solo i provider email attivi e configurati.
+
+## Domande frequenti
+
+## I clienti possono creare i propri account email?
+
+Sì. Quando il widget account del cliente è abilitato e il piano lo consente, i clienti possono creare e gestire le proprie caselle di posta dalla pagina account.
+
+## Tutti i provider supportano lo SSO webmail?
+
+No. Il supporto SSO e link magici dipende dal provider email attivo. I provider senza API di accesso possono comunque supportare la creazione di caselle di posta e i cambi di password.
+
+## Gli amministratori possono creare account email per i clienti?
+
+Sì. Gli amministratori possono creare account email dall'interfaccia di amministrazione, inclusa l'impostazione della password iniziale durante la creazione dell'account.
+
+## I forwarder sono la stessa cosa delle caselle di posta?
+
+No. Una casella di posta memorizza le email e ha credenziali di accesso. Un forwarder reindirizza le email a un altro indirizzo e non fornisce una casella di posta separata.
