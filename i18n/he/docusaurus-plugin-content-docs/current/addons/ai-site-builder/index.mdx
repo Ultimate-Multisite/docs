@@ -1,0 +1,123 @@
+---
+title: בונה אתרים מבוסס AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# בונה אתרים מבוסס AI
+
+ultimate-multisite-ai-site-builder
+
+## דרישות קדם
+
+- WordPress 5.3 ומעלה
+- PHP 7.4 ומעלה
+- תוסף Multisite Ultimate (פעיל)
+
+## התקנה
+
+1. העלה את קבצי התוסף לתיקייה `/wp-content/plugins/`
+2. הפעל את התוסף דרך תפריט 'Plugins' ב-WordPress
+3. הגדר את הגדרות התוסף במנהל הרשת (network admin)
+
+## פיתוח
+
+### הגדרה
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### מבנה הפרויקט
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### בדיקות
+
+התוסף כולל מסגרת בדיקות מקיפה:
+
+- **בדיקות יחידה (Unit Tests)**: בדיקות מבוססות PHPUnit עם חבילת בדיקות של WordPress
+- **מחלקת בדיקה בסיסית (Base Test Class)**: מספקת מתודות עזר לתרחישי בדיקה נפוצים
+- **כיסוי בדיקות (Test Coverage)**: מוגדר למעקב אחר כיסוי הקוד
+- **בדיקות רשת מרובת אתרים (Multisite Testing)**: הבדיקות רצות בסביבת Multisite
+
+### תקני קוד
+
+- **WordPress Coding Standards**: אוכפים באמצעות PHPCS
+- **תאימות ל-PHP 7.4+**: נתמכות תכונות PHP מודרניות
+- **ניתוח סטטי (Static Analysis)**: שילוב PHPStan לבדיקת סוגי נתונים
+- **מודרניזציה של קוד (Code Modernization)**: כללי Rector לשדרוגי PHP
+
+### מערכת בנייה (Build System)
+
+- **עיבוד נכסים (Asset Processing)**: מיניפיקציה לקבצי CSS/JS
+- **תרגום (Translation)**: יצירת קובצי POT
+- **אריזה (Packaging)**: יצירת ארכיון להפצה
+- **מצב פיתוח (Development Mode)**: נכסים לא ממוזערים (unminified) לצורך דיבוג
+
+## תצורה
+
+התוסף תומך באפשרויות תצורה שונות הנגישות דרך ממשק מנהל הרשת.
+
+## Hooks ופילטרים
+
+### פעולות (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - מופעל לאחר אתחול התוסף
+- `ultimate-multisite-ai-site-builder_loaded` - מופעל לאחר טעינת כל קבצי התוסף
+
+### פילטרים (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - שינוי הגדרות התוסף
+- `ultimate-multisite-ai-site-builder_enabled` - דריסה של סטטוס ההפעלה/כיבוי של התוסף
+
+## רישיון
+
+התוסף הזה מורשה תחת GPL v3 או גרסה מאוחרת יותר.
+
+## תמיכה
+
+לתמיכה ותיעוד, בקר ב-[MultisiteUltimate.com](https://multisiteultimate.com)
+## יומן שינויים
+
+- Version 1.0.1 (2025-09-28): rename prefix to ultimate-multisite; update text domain; version bump.
+
+- Version (2025-09-28): rename prefix to ultimate-multisite; update text domain; version bump.

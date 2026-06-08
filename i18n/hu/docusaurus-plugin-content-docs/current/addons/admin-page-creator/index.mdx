@@ -1,0 +1,144 @@
+---
+title: Admin Oldalt Létő
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Oldaltáblázat Létő
+
+## Tartalom
+Az Admin Oldaltáblázat Létő lehetővé teszi, hogy könnyedén hozzáadjon új admin oldaltáblázatokat és altáblázatokat a WordPress admin dashboard-on belül. Használható üdvözlő oldal vagy oktatóoldal létrehozásához, amely landoló oldalként szolgálhat új felhasználók számára. Oldaltáblázatokat olyan page builder-ekkel, mint Beaver Builder, Elementor, Brizy és Oxygen hozható létre, nehéz nélkül.
+
+Emellett saját HTML-, CSS- és JavaScript-támogatást, valamint a terven és a felhasználói szerepkörön alapuló hozzáférés-kontrollt biztosít!
+
+## Funkciók
+* Saját HTML és CSS támogatása
+* JavaScript támogatás
+* PHP tartalommód
+* Engedélyek a felhasználói szerepkör alapján
+* Oldaltáblázat-szerkesztők támogatása
+
+## Dokumentáció
+[Creating Custom Admin Pages and Sub-pages using Multisite Ultimate: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Telepítés
+
+1. Töltse fel az **ultimate-multisite-admin-page-creator** fájlt a **/wp-content/plugins/** könyvtárba
+2. Aktiválja a plugin-t a WordPress Network Admin **Plugins** menüpontján keresztül
+
+## Használati Útmutató
+
+Bár a WordPress nagyon egyszerűvé teszi a tartalom hozzáadását az oldalak előlapára, az admin oldalak és altáblázatok létrehozása alapvető kódolási készségeket igényel. Az Ultimate Multisite: Admin Page Creator célja, hogy ezt az előlapra jellemző egyszerű használhatóságot eljuttassa a hálózat oldalak hátsó részébe is.
+
+## Miért használjam az Admin Page Creator-t?
+
+Talán szeretne egy saját oldaltáblázatot biztosítani az ügyfeleinek admin panel-jön oktatóanyagokkal, vagy talán szeretne egy saját oldaltáblázatot hozzáadni, amely FAQ-kat és egy kapcsolatfelvételi widget-et tartalmaz. Az Admin Page Creator lehetőségei végtelenek, és ezt fogjuk feltárni mai oktatóanyagunkban.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_Oktatóanyagok oldaltáblázat létrehozása beágyazott YouTube playlist-el most lehetséges!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Így néz ki a végső eredmény az felhasználó Dashboard Panel-jén._
+
+## Első Saját Admin Oldaltáblázat Létrehozása
+
+Az Ultimate Multisite: Admin Page Creator telepítése és aktiválása után navigáljon a hálózat admin menüjéhez, és az Admin Pages menüpontra.
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Saját oldaltáblázat listája a Network Admin-en_
+
+Látni fogja az összes eddig létrehozott admin oldaltáblázat listáját (mivel ez az első látogatása, az lista üres lesz). Kattintson az **Add new Admin Page** gombra. Az Admin Page szerkesztő felületére irányítja.
+
+## Egy Saját Admin Oldaltáblázat Elemei
+
+Az Admin Page szerkesztő felületén számos különböző opciót talál, amelyekkel testre szabhatja az oldaltáblázatát.
+
+### Oldaltáblázat Címe
+
+Ez az az oldal tetején megjelenő cím, nem az admin menü címkéje.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Oldaltáblázat Címe beírása_
+
+### Tartalomtípus Kiválasztó
+
+Az Ultimate Multisite: Admin Page Creator két lehetőséget biztosít a tartalom tekintetében: vagy használhatja az alapértelmezett WordPress WYSIWYG szerkesztőt, vagy átállhat egy HTML szerkesztőre.
+
+Ha nem ismerős az HTML, ragaszkodjon az alapértelmezett WordPress szerkesztőhöz. Az oldaltartalmat úgy tudja szerkeszteni, mint egy normál Bejegyzés vagy Oldal tartalmát.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Az alapértelmezett WordPress WYSIWYG szerkesztő használata_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Az HTML szerkesztő opció használata, szintaktikus kiemeléssel és hibaüzenetekkel_
+
+## Menü Opciók
+
+A sávon, a General Options meta-box-ban látható, hogy a menü típust, címkét és sok más elemet konfigurálhatja.
+
+### Menü Típusok
+
+Az új saját admin oldaltáblázatának két különböző menü típusa lehet: felső szintű menü és altáblázat.
+
+Egy felső szintű menüoldaltáblázat, ahogy a neve sugallja, hozzáadja az éppen létrehozott oldaltáblázatot az admin menühez a standard WordPress oldaltáblázatokkal együtt.
+
+Ha a felső szintű opciót választja, akkor a menürendmenetet és egy menü ikonját is tudja kiválasztani.
+
+Ha altáblázatként szeretné létrehozni ezt az oldaltáblázatot, akkor egy szülőoldaltáblázatot kell választania, ahhoz, hogy ez az oldaltáblázat hozzáadódjon. Saját oldaltáblázatát hozzáadhatja a standard WordPress oldaltáblázatainak vagy a felső szintű saját admin oldaltáblázatainak.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Teljesen testre szabhatóvá teheti a menüelemeket ehhez az Oldaltáblázathoz_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Ezt az oldaltáblázatot más menüoldaltáblázatok altáblázataként is hozzáadhatja, beleértve saját felső szintű oldaltáblázatait is._
+
+## Haladó Opciók
+
+Az Ultimate Multisite: Admin Page Creator lehetővé teszi, hogy számos típusú tartalmat adjon hozzá a saját admin oldaltáblázatainak. Ezek include CSS szabályokat és fájlokat, JavaScript-et, valamint külső könyvtárakat is. Ezt az Advanced Options fül segítségével teheti meg.
+
+### Saját CSS
+
+Az CSS fülön saját, testre szabott CSS kódot adhat hozzá, valamint külső weboldalakról (mint a CDN-ek, Google Fonts stb.) CSS fájlok importálását is.
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Saját CSS támogatása is elérhető. Külső stílusfájlok hozzáadása is lehetséges!_
+
+### Saját JavaScript
+
+Ugyanez érvényes a JavaScriptre. Külső könyvtárakat adhat hozzá a saját JavaScript kódjához.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Saját JavaScript kód hozzáadása!_
+
+## Engedélyek
+
+Az Advanced Options-ban látható, hogy mely altáblázatok kapnak hozzáférést ehhez az oldaltáblázathoz. Ez hasznos, ha különböző exkluzív tartalmat terveznek biztosítani különböző tervszinteknek, például.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Teljes kontrollja van abban, hogy hol fog ez az oldaltáblázat megjelenjen_
+
+**Fontos**: Az oldaltáblázat megjelenítéséhez mindkét feltételnek kell teljesülnie. Ez azt jelenti, hogy ha a felhasználó egy adott terv ügyfele, de nem rendelkezik az által választott szerepkörök egyikével (vagy fordítva), az oldaltáblázat nem jelenik meg a paneljén.
+
+## Aktív
+
+Ha szeretné egy saját admin oldaltáblázatot kikapcsolni anélkül, hogy törölné vagy megváltoztatná az engedélyeket, egyszerűen csak nezza ki az Active opciót.
+
+Egy felső szintű oldaltáblázat kikapcsolása automatikusan kikapcsolja az ahhoz tartozó összes altáblázatot.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_A végső eredmény a felhasználó paneljén!_

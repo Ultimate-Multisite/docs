@@ -1,0 +1,24 @@
+---
+id: wu_dashboard_widgets
+title: Akció - wu_dashboard_widgets
+sidebar_label: wu_dashboard_widgets
+_i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
+---
+# Action: wu_dashboard_widgets
+
+Engedi a plugin fejlesztőknek widgetek hozzáadását a Hálózati Dashboard Panelhez.
+
+## Paraméterek
+
+| Name | Type | Description |
+|------|------|-------------|
+| $tab | `string` | Az aktuális lap. |
+| $screen | `\WP_Screen` | A képernyő objektum. |
+| $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite admin oldali példány. |
+
+### Korszaka
+
+- 2.0.0
+### Forrás
+
+Meghatározva a [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) címen, 225-sorban.

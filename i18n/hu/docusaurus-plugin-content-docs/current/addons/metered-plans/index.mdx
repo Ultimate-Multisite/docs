@@ -1,0 +1,117 @@
+---
+title: Méréssel ellátott csomagok
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Mért alapú előfizetések" />
+
+# Mért alapú előfizetések
+
+Az Ultimate Multisite: Mért alapú előfizetések addon funkciója átalakítja a fizetési módszerét az ügyfeleinek, rugalmas, mért alapú számlázási lehetőségekkel. Ne használja szigorú, fix határokat, amelyek blokkolják a felhasználókat a túllépés esetén; helyette engedélyezze a túliont díjakat, amelyek automatikusan számlázzák az ügyfelet a kiegészítő használatért.
+
+## Főbb funkciók
+
+* **Mért alapú számlázás**: Az ügyfeleket a tényleges használat alapján számlázza, nem fix díjszint alapján.
+* **Túliont kezelés**: Automatizálja a túllépés esetén történő használat számlázását.
+* **Használat nyomon követése**: Valós időben monitorozza az ügyfél erőforrás-felhasználását.
+* **Rugalmas árazás**: Alkalmazson egyedi díjakat különböző erőforrásokhoz (tárolás, sávszélesség, oldalak, stb.).
+* **AI Token számlázás**: Követi és számlázza az AI bemeneti és kimeneti tokenek számát az ügyfél aloldalain keresztül.
+* **Automatikus számlázás**: Automatizálja a számlák generálását, amikor a használati küszöbök elérik őket.
+* **Használati jelentések**: Részletes használati analitika és jelentéskészítés az ügyfelek és a rendszergazdák számára.
+
+## Ideális erre
+
+* **Hosting szolgáltatók**: Kínálják olyan méretképző előfizetéseket, amelyek a felhasználói igényekkel nőnek együtt.
+* **SaaS platformok**: A tényleges erőforrás-felhasználásra alapuló számlázás.
+* **Ügynökségi hálózatok**: Rugalmas árazási modellek ügyfél projektekhez.
+* **Reseller hosting**: Megengedik a partnereknek, hogy használat alapú árazást kínáljanak.
+
+## Hogyan működik
+
+1. Konfigurálja a mért alapú erőforrásokat (lemezterület, sávszélesség, oldalak száma, stb.).
+2. Állítsa be az alapvető előfizetési limitációkat és a túliont díjakat.
+3. A rendszer automatikusan követi a használatot az egész hálózatán keresztül.
+4. Amikor az ügyfelek túllépnek a limitációkon, a túliont díjak számításra kerülnek.
+5. A számlák automatikusan generálódnak a számlázási ciklus alapján.
+6. Az ügyfelek valós időben láthatják a használatukat és az elkövetkező díjakat.
+
+## AI Token számlázás
+
+A 1.1.0 verzió hozzáadja az AI token számlázást azoknak a hálózatoknak, amelyek az AI funkciókat biztosítják a WordPress AI Client SDK segítségével. A Mért alapú előfizetések figyeli az elvégzett AI generációs kéréseket, rögzíti a bemeneti és kimeneti tokenek számát az aktuális aloldal számára, és ezt a tokeneket számlázható AI kiadási költséggé alakítja az ügyfél aktuális számlázási időszakára.
+
+Használja az AI token számlázást, ha az AI eszközöket szeretné biztosítani az ügyfél oldalakon anélkül, hogy elnyelné a váratlan modellköltségeket. Minden kérést az aloldalra, az ügyfélre, a tagságra, a szolgáltatóra és a modellre attribútál, így a rendszergazdák auditálhatják a használatot, míg az ügyfelek láthatják, hogyan befolyásolja az AI fogyasztásuk számláját.
+
+### Token alapú díjak konfigurálása
+
+Az AI díjaket a modellreként, külön bemeneti és kimeneti díjakként kell konfigurálni. A díjak 1 millió tokenra számítanak, ami megehangolja az általános AI szolgáltatók árazási oldalait.
+
+1. A hálózat admin felületén nyissa meg a **Multisite Ultimate → Beállítások → Mért alapú előfizetések** menüpontot.
+2. Aktiválja az AI kiadási költség mért alapú számlázását az adott termékhez vagy tagsághoz, amelynek az AI használatot kell számláznia.
+3. Adjon hozzá modell díjbejegyzéseket a csatlakozójától kapott modell ID-k segítségével, például `gpt-4o`, `gpt-4o-mini` vagy más OpenAI-kompatibilis modell azonosító.
+4. Adjon meg külön **Bemeneti díjat** és **Kimeneti díjat** az oldal pénzneme szerint 1 millió tokenra.
+5. Állítsa be az ügyfél beépített AI kiadási költség-toleranciáját és a túliont viselkedését az előfizetéshez.
+
+Ha nincs pontos modell ID konfigurálva, a Mért alapú előfizetések a modell prefixusza alapján találgat. Például egy `claude-sonnet-4` számára konfigurált díj alkalmazható olyan időbélyegző modell ID-kra, amelyek ezzel a prefixuszsal kezdődnek. A fejlesztők tovább finomíthatják a végleges díjatáblázatot a [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) szűrővel.
+
+### Támogatott AI csatlakozók
+
+Az AI token számlázás olyan csatlakozókkal működik, amelyek kiemitted WordPress AI Client SDK generációs eseményeket, és a token-használatot a válasz metadatában is tartalmazzák. Ez magában foglalja az Ultimate Multisite AI csatlakozó családját, amelyet itt dokumentáltunk:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) az OpenAI-kompatibilis API-k számára, beleértve az OpenAI-t, Mistral-t, Ollama-kompatibilis gateway-eket, és más szolgáltatókat, amelyek kompatibilis token-használati metadatokat biztosítanak
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) a böngésző alapú WebLLM használatára, amikor a kérések az AI Client SDK eseményfolyamaton keresztül jutnak el
+* Az AI szolgáltató csatlakozói, amelyeket a [Gratis AI Agent](../gratis-ai-agent/) használ, amikor a kiválasztott szolgáltató a prompt és a completion tokenek számát küldi az SDK-n keresztül
+
+Egyedi csatlakozók is részt vehetnek, ha kiírják a standard `wp_ai_client_before_generate_result` és `wp_ai_client_after_generate_result` eseményeket modelllel, szolgáltatóval és token-használat metadatával. A csatlakozó beállításai a fő oldaltól kerülnek végreítésre az aloldalakra, így az ügyfél oldalai a hálózat által jóváhagyott szolgáltatókat és limitációkat használják.
+
+### Ügyfél számlajelzése
+
+Az ügyfelek az AI használatot más mért alapú erőforrásaik mellett látják az ügyfél tàiasszonyában. Az AI kiadási költség sorát a rögzített prompt és completion tokenekből származó aktuális számlázási időszak teljes összege, a konfigurált modell díjak és az előfizetéshez tartozó bármilyen beépített tolerancia határozzák meg.
+
+Ha az ügyfélnek fizetési módszer van rögzítve, a beépített tolerancián meghaladó használat számlázható túliont díjként kezelhető. Ha az előfizetés fix szigorú limitációra van konfigurálva, és az ügyfélnek nincs elérhető fizetési módszere, az AI kérések blokkolhatók, amint elérhető a tolerancia, és az ügyfélnek meg kell kérni a fizetési adatait a folytatás előtt.
+
+## Támogatott erőforrások
+
+* Hardlemez tárhely
+* Sávszélesség/Adatátvitel
+* Oldalak száma
+* Felhasználók száma
+* AI token használat és AI kiadási költség
+* Egyedi erőforrástípusok
+
+## Feltételek
+
+* Multisite Ultimate 2.0.0 vagy magasabb verzió
+* WordPress Multisite telepítés
+* PHP 7.4 vagy magasabb
+
+## Telepítés
+
+1. Töltse fel a plugin fájlait a `/wp-content/plugins/ultimate-multisite-metered-plans` útvonalra.
+2. Aktiválja a plugin-t a WordPress 'Plugins' képernyőjéről.
+3. Navigáljon az Ultimate Multisite → Beállítások → Mért alapú előfizetések menüpontra.
+4. Konfigurálja a mért alapú erőforrásait és az árazást.
+5. Aktiválja a mért alapú számlázást a termék szerkesztőjében lévő termékek számára.
+
+## Gyakran járt kérdések
+
+## Mi történik, ha az ügyfél túllépi a limitációját?
+
+A rendszer nem blokkolja az hozzáférést, hanem rögzíti a túllépést, és hozzáadja az ügyfél következő számlájához a konfigurált díjak alapján.
+
+## Konfigurálhatok különböző túliont díjakat különböző termékekhez?
+
+Igen, minden terméknek lehet egyedi mért alapú erőforrásai és túliont árazása.
+
+## Hogyan értesítik az ügyfeleket a használatról?
+
+Az ügyfelek láthatják az aktuális használatukat a dashboardjukon, és opcionális értesítéseket kapnak, amikor közelítkeznek vagy meghaladják a limitációkat.
+
+## Hogyan árazottuk az AI token használatot?
+
+Az AI token használatát a modell konfigurált bemeneti és kimeneti díja alapján számítják 1 millió tokenra. A Mért alapú előfizetések szorozza ki minden kérés prompt és completion tokenek számát ezekkel a díjakkal, hozzáadja az eredményt az ügyfél aktuális számlázási időszakának AI kiadási költségéhez, és alkalmazza az előfizetés toleranciáját vagy túliont szabályait.
+
+## Megőrizhetem a fix limitációkat?
+
+Igen, a mért alapú számlázás opcionális minden termékhez. Keverheti a hagyományos fix limitációjú termékeket a mért alapú termékekkel.

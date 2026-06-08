@@ -1,0 +1,84 @@
+---
+title: גו-קארדלס
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Ultimate Multisite: תשלום באמצעות GoCardless
+
+אפשר ללקוחות שלך לשלם עבור מנויים ומוצרים של Ultimate Multisite באמצעות חיוב ישיר (Direct Debit) עם GoCardless!
+
+## התקנה
+
+1. העלה את 'ultimate-multisite-gocardless' לתיקייה '/wp-content/plugins/'
+2. הפעל את ה-plugin דרך תפריט ה-'Plugins' ב-WordPress
+3. עקוב אחר המדריך המפורט (Wizard) להגדרת ה-plugin
+
+## מדריך שימוש
+
+_GoCardless_ הוא שער תשלום (payment gateway) הזמין **באירופה ובבריטניה** ומאפשר תשלומים באמצעות **חיוב ישיר (Direct Debit)**.
+
+התוסף **Ultimate Multisite: GoCardless Gateway** מוסיף תמיכה ב-GoCardless ל-Ultimate Multisite, ומאפשר לך לגבות מהלקוחות שלך באזור הזה באמצעות חיוב ישיר.
+
+מדריך זה יכסה כיצד להגדיר את GoCardless כדי להתחיל לקבל תשלומים דרכו ברשת Ultimate Multisite שלך.
+
+_**שים לב: GoCardless עובד רק עם המטבעות הבאים:**_ **EUR, GBP, AUD, SEK, ו-DKK.**
+
+## התקנת התוסף (Add-on)
+
+ראשית, תצטרך להתקין את תוסף GoCardless עבור Ultimate Multisite. אתה יכול לעשות זאת על ידי מעבר אל **Ultimate Multisite > Settings > Add-ons (בסרגל הצד)** ובחירת תוסף GoCardless מהרשימה.
+
+לאחר שהתוסף הותקן והופעל, עבור אל **Ultimate Multisite > Settings > Payments**, הפעל את האפשרות GoCardless ושמור.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+## קבלת Access Token
+
+צור חשבון ב-GoCardless (או ב-GoCardless sandbox, אם אתה רוצה **לבחון אותו קודם**, וזה מומלץ). לאחר ההתחברות, נווט אל פריט התפריט **Developers**.
+
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+
+בעמוד **Developers**, לחץ על כפתור **Create** בפינה הימנית העליונה של המסך, ואז לחץ על האפשרות **Access Token**.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+
+זה יפתח חלון מודאלי חדש, המאפשר לך ליצור Token חדש. תן לו שם מזהה וודא שאתה בוחר באפשרות **Read-write access** בתפריט **Scope**.
+
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+
+ה-access token יופיע על המסך. העתק אותו והדבק אותו אל הממשק **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+ודא שאתה מציב אותו בשדה הנכון. אם זהו **live token**, כבה את **sandbox mode** לפני הדבקת ה-token.
+
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+
+זהו השלב הראשון. עכשיו, אתה צריך להגדיר מאזין Webhook.
+
+## הגדרת מאזין Webhook Listener
+
+כאשר מדובר במנויים, Ultimate Multisite צריך לשמוע על שינויים במצב המנוי, על תשלומים חדשים שבוצעו ודברים דומים.
+
+הדרך שבה שערים תשלום (payment gateways) מודיעים ל-Ultimate Multisite על שינויים אלה היא באמצעות **קריאות Webhook**. משום הסיבה הזו, כדי שהאינטגרציה תעבוד ב-100%, אנחנו צריכים להגיד ל-GoCardless לאיזה URL לקרוא עם כל המידע הזה.
+
+חזור לפאנל **GoCardless > Developers** ולחץ שוב על כפתור Create, אבל הפעם בחר באפשרות **Webhook endpoint**.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->חלון חדש ייפתח עם אפשרויות ה-webhook endpoint. הוא מבקש את כתובת ה-webhook URL, אז חזור אל **Ultimate Multisite settings > Payments > GoCardless** והעתק את כתובת ה-webhook שנמצאת שם:
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+בנוסף, אתה יכול להזין **webhook secret** ששימש לסימון קריאות ה-webhook שלך. כל דבר שתזין בשדה הזה, תצטרך להזין גם בשדה **Ultimate Multisite Webhook Secret**.
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+
+סיים על ידי שמירת ה-endpoint בלחיצה על כפתור **Create webhook endpoint** ואז **שמור גם את הגדרות Ultimate Multisite שלך**.
+
+אתה אמור להיות מוכן לקבל תשלומים מ-GoCardless עכשיו!

@@ -1,0 +1,114 @@
+---
+title: Email
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Email
+
+Addon Ultimate Multisite: Emails memungkinkan pemilik jaringan untuk menyediakan dan mengelola akun email pelanggan bersama dengan situs dan keanggotaan. Versi 1.1.0 menambahkan manajemen akun email yang dilihat pelanggan, single sign-on (SSO) webmail, dukungan penerusan (forwarder) CyberPanel, dan peningkatan penyediaan saat checkout.
+
+## Fitur Utama
+
+* **Widget akun email pelanggan**: Pelanggan dapat membuat dan mengelola akun email dari halaman akun mereka tanpa perlu membuat tiket dukungan.
+* **SSO Webmail dan tautan ajaib (magic links)**: Pelanggan dapat membuka webmail langsung dari halaman akun dengan otentikasi satu klik, jika penyedia layanan mendukungnya.
+* **Perubahan kata sandi**: Pelanggan dan administrator dapat memperbarui kata sandi kotak surat dari widget manajemen email.
+* **Penyediaan saat checkout**: Pembuatan akun email pelanggan dapat berjalan selama proses checkout sehingga kotak surat siap setelah alur pembelian selesai.
+* **Penerusan CyberPanel**: Jaringan yang didukung CyberPanel dapat membuat dan mengelola penerusan email sebagai bagian dari alur layanan email.
+* **Pengaturan sadar penyedia (Provider-aware settings)**: Halaman pengaturan memfilter penyedia layanan ke integrasi yang aktif dan sudah dikonfigurasi sehingga administrator hanya melihat opsi yang dapat digunakan.
+
+## Persyaratan
+
+* Ultimate Multisite 2.0.0 atau lebih tinggi
+* Instalasi WordPress Multisite
+* Setidaknya satu integrasi penyedia email yang dikonfigurasi
+* Kredensial API penyedia dengan izin untuk membuat kotak surat, mengubah kata sandi, dan mengeluarkan tautan akses webmail jika didukung
+
+## Instalasi
+
+1. Unggah file plugin ke `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktifkan addon jaringan dari **Plugins** di admin jaringan WordPress.
+3. Buka **Ultimate Multisite** > **Settings** dan buka pengaturan email addon.
+4. Aktifkan integrasi penyedia email yang ingin Anda gunakan oleh pelanggan.
+5. Simpan pengaturan, lalu uji pembuatan akun dengan pelanggan non-produksi atau situs staging.
+
+## Manajemen Email Akun Pelanggan
+
+Versi 1.1.0 menambahkan widget manajemen email ke halaman akun pelanggan. Gunakan ini ketika pelanggan harus melakukan layanan mandiri (self-service) untuk pembuatan dan pemeliharaan kotak surat mereka sendiri.
+
+Dari halaman akun, pelanggan dapat:
+
+1. Melihat akun email yang terhubung dengan keanggotaan atau situs mereka saat ini.
+2. Membuat kotak surat baru jika paket mereka mengizinkan akun tambahan.
+3. Mengubah kata sandi kotak surat yang sudah ada.
+4. Membuka penyedia webmail yang didukung melalui SSO atau login tautan ajaib.
+
+Widget ini menggunakan sistem *currents* halaman akun Ultimate Multisite, sehingga tindakan dibatasi pada konteks akun yang dilihat pelanggan. Ini mencegah pelanggan mengelola akun email yang milik keanggotaan atau situs lain.
+
+## SSO Webmail dan Login Tautan Ajaib
+
+SSO Webmail memberikan tindakan **Buka webmail** langsung kepada pelanggan dari halaman akun. Ketika didukung oleh penyedia layanan aktif, addon akan meminta URL akses berumur pendek dan mengarahkan pelanggan ke webmail tanpa meminta mereka menyalin kredensial kotak surat.
+
+Perilaku penyedia layanan dapat bervariasi:
+
+* Penyedia dengan API SSO asli dapat membuat sesi webmail terautentikasi langsung.
+* Penyedia dengan dukungan tautan ajaib dapat menghasilkan tautan login berbatas waktu.
+* Penyedia tanpa dukungan SSO atau tautan ajaib seharusnya tetap menampilkan detail kotak surat dan tindakan manajemen kata sandi, tetapi tidak ada tombol webmail satu klik.
+
+Aktifkan akses webmail hanya untuk penyedia tempat Anda telah mengonfigurasi kredensial API yang diperlukan. Jika tindakan tersebut hilang untuk suatu penyedia, pertama-tama konfirmasikan bahwa penyedia tersebut aktif, dikonfigurasi, dan mendukung tautan login webmail.
+
+## Penyediaan Saat Checkout
+
+Addon dapat membuat akun email pelanggan sebagai bagian dari checkout. Ini berguna ketika paket secara default sudah menyertakan kotak surat atau ketika formulir checkout mengumpulkan detail akun email.
+
+Rekomendasi peluncuran:
+
+1. Konfigurasi penyedia dan batas paket sebelum mengaktifkan penyediaan saat checkout.
+2. Uji pembelian dengan produk staging dan konfirmasi bahwa kotak surat dibuat setelah checkout.
+3. Tinjau halaman akun pelanggan untuk memastikan kotak surat baru muncul di widget email.
+4. Konfirmasi tindakan perubahan kata sandi dan webmail sebelum mengaktifkan alur untuk produk produksi.
+
+Jika penyediaan gagal, akun dan keanggotaan pelanggan masih dapat ada meskipun kotak surat memerlukan tindak lanjut administrator. Periksa log aktivitas Ultimate Multisite dan log penyedia sebelum mencoba lagi.
+
+## Penerusan Email CyberPanel
+
+Untuk jaringan yang didukung CyberPanel, versi 1.1.0 menambahkan dukungan penerusan email. Gunakan penerusan ketika pelanggan memerlukan alamat seperti `info@customer-domain.test` untuk meneruskan email ke kotak masuk lain tanpa membuat kotak surat penuh.
+
+Sebelum menawarkan penerusan, konfirmasikan bahwa integrasi CyberPanel telah dikonfigurasi dan dapat dijangkau. Lihat panduan [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) untuk konstanta host, nama pengguna, kata sandi, dan paket yang diperlukan.
+
+## Changelog
+
+### Versi 1.1.0 - Dirilis pada 2026-05-05
+
+* Baru: SSO Webmail dan login tautan ajaib — pelanggan dapat mengakses webmail langsung dari akun mereka dengan otentikasi satu klik.
+* Baru: Fungsionalitas ubah kata sandi ditambahkan ke widget manajemen akun email.
+* Baru: Dukungan penerusan email CyberPanel.
+* Baru: Widget manajemen email di halaman akun pelanggan untuk pembuatan dan manajemen akun mandiri.
+* Baru: Pembuatan akun email pelanggan diintegrasikan ke alur checkout untuk penyediaan otomatis.
+* Perbaikan: Hook widget halaman akun diperbarui untuk menggunakan pola registrasi UMS yang benar.
+* Perbaikan: Formulir Buat Akun diganti dengan vanilla JS dan output dokumen HTML lengkap yang benar.
+* Perbaikan: Widget manajemen email sekarang menggunakan sistem *currents* UMS untuk halaman akun admin.
+* Perbaikan: Formulir pembuatan akun email admin menyertakan kolom kata sandi dan menggunakan Email_Account_Manager.
+* Perbaikan: Spam log per-request dihapus dari inisialisasi Email_Account_Manager.
+* Peningkatan: Halaman pengaturan sekarang memfilter untuk hanya menampilkan penyedia email yang aktif dan dikonfigurasi.
+
+## Pertanyaan yang Sering Diajukan
+
+## Bisakah pelanggan membuat akun email mereka sendiri?
+
+Ya. Ketika widget akun pelanggan diaktifkan dan paket mengizinkan akun email, pelanggan dapat membuat dan mengelola kotak surat mereka sendiri dari halaman akun.
+
+## Apakah setiap penyedia layanan mendukung SSO webmail?
+
+Tidak. Dukungan SSO dan tautan ajaib tergantung pada penyedia email aktif. Penyedia tanpa API tautan akses masih dapat mendukung pembuatan kotak surat dan perubahan kata sandi.
+
+## Bisakah administrator membuat akun email untuk pelanggan?
+
+Ya. Administrator dapat membuat akun email dari antarmuka admin, termasuk mengatur kata sandi awal saat membuat akun.
+
+## Apakah penerusan sama dengan kotak surat?
+
+Tidak. Kotak surat menyimpan email dan memiliki kredensial login. Penerusan mengarahkan email ke alamat lain dan tidak menyediakan kotak masuk terpisah.

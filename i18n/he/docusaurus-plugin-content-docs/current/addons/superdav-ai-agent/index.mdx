@@ -1,0 +1,161 @@
+---
+title: Superdav AI סוכן
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent הוא עוזר AI מתקדם לוורדפרס, המרחיב את Gratis AI Agent ביכולות מודעות לנושא (theme-aware skills), יכולות חיפוש אינטרנט משופרות, ותכונות משופרות לבניית אתרים. גרסה 1.16.0 מוסיפה יצירת לוגו מותאם אישית, אימות ניגודיות פלטה, העלאת תמונות בראיון הגילוי, יצירת תפריטי אירוח מובנים, והצגת תצוגה מוקדמת למחשב ולנייד ב-Theme Builder.
+
+## תכונות עיקריות
+
+- **יכולות מודעות לנושא (Theme-aware skills)** — מתאים אוטומטית את ההדרכה והיכולות בהתבסס על ערכת הנושא (Theme) הפעילה של וורדפרס והפלאגינים המותקנים.
+- **ספקי חיפוש אינטרנט מרובים** — בחר בין Brave Search ל-Tavily לקבלת תוצאות חיפוש עשירות ויכולות מחקר מתקדמות יותר.
+- **טפסי יצירת קשר בבונה אתרים** — צור טפסי יצירת קשר מתפקדים במלואם ישירות מממשק הצ'אט, באמצעות פלאגין הטפסים המותקן שלך.
+- **בונה אתרים משופר** — תוכניות בניית אתרים מרובות-שלבים משופרות, עם גילוי פלאגינים וזיהוי שגיאות טובים יותר.
+- **יכולות מובנות לנושא** — הדרכה מיוחדת עבור Block Themes, Classic Themes, Kadence Blocks, ו-Kadence Theme.
+- **אינטגרציה משופרת עם WooCommerce** — שופץ להשתמש ב-WooCommerce APIs המובנים ליציבות ותאימות טובות יותר.
+- **זיהוי ספק אוטומטי** — מזהה ומעדכן אוטומטית פלאגינים וערכות נושא זמינים כאשר הם מופעלים או מבוטלים.
+- **יצירת לוגו מותאם אישית** — צור והטמע לוגואים SVG מותאמים אישית עם סניטציה אוטומטית ובטוחה בנתיב (namespace-safe).
+- **אימות ניגודיות פלטה** — בדוק זוגות צבעים לצורך עמידה בתקני נגישות WCAG לפני יישומם על ערכת הנושא שלך.
+- **גילוי מועשר בתמונות** — העלה תמונות במהלך ראיון הגילוי ב-Theme Builder כדי להשפיע על כיוון העיצוב.
+- **תפריטי אירוח** — צור דפי תפריטי אוכל ומשקאות מובנים למסעדות, בתי קפה ועסקים בתחום האירוח.
+- **תצוגות מקדימות למחשב ולנייד** — צפה בעיצוב שלך במכשירי מחשב ונייד במהלך בחירת כיוון העיצוב.
+- **גירוד אתר ברמה 1 (Tier 1 site scraping)** — sd-ai-agent/site-scrape זמין כברירת מחדל כעת לניתוח אתרי מתחרים והשראה.
+
+## דרישות מקדימות
+
+- WordPress 6.0 ומעלה
+- PHP 8.1 ומעלה
+- WordPress Multisite (מופעל ברמת הרשת) או התקנה באתר יחיד
+- פלאגין מחבר AI פעיל (Anthropic, OpenAI, או תואם)
+- Gratis AI Agent v1.9.0 ומעלה (Superdav AI Agent מרחיב את Gratis AI Agent)
+
+## התקנה
+
+1. העלה את קבצי הפלאגין למיקום `/wp-content/plugins/superdav-ai-agent`
+2. הפעל את הפלאגין במסך **Plugins** בוורדפרס
+3. ודא ש-Gratis AI Agent מופעל גם כן
+4. נווט אל **Gratis AI Agent → Settings** והגדר את ספק חיפוש האינטרנט שלך (אופציונלי)
+
+## התחלה מהירה
+
+לאחר ההפעלה, Superdav AI Agent משפר אוטומטית את התקנת Gratis AI Agent שלך עם יכולות מודעות לנושא ויכולות נוספות. פתח את הפאנל **Gratis AI Agent** בסרגל הצד של מנהל וורדפרס והתחל להשתמש בתכונות החדשות.
+
+**דוגמאות הנחיות:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## יכולות מודעות לנושא (Theme-Aware Skills)
+
+Superdav AI Agent מזהה אוטומטית את ערכת הנושא הפעילה והפלאגינים המותקנים שלך, ומטעין את יכולת מודעת לנושא המתאימה להקשר של העוזר. יכולות זמינות כוללות:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | ערכות נושא המשתמשות בארכיטקטורת מבוססת בלוקים של וורדפרס (Full Site Editing) |
+| **Classic Themes** | ערכות נושא וורדפרס מסורתיות המשתמשות בתבניות PHP ובעורך הקלאסי |
+| **Kadence Blocks** | אתרים עם פלאגין Kadence Blocks פעיל |
+| **Kadence Theme** | אתרים עם ערכת הנושא Kadence כערכת הנושא הפעילה |
+
+ראה [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) להדרכה מפורטת על כל יכולת.
+
+## ספקי חיפוש אינטרנט
+
+Superdav AI Agent v1.10.0 מוסיף את **Tavily** כחלופה ל-Brave Search עבור שאילתות חיפוש אינטרנט. שני הספקים מציעים תוצאות חיפוש בזמן אמת וניתן להגדיר אותם ב-**Gratis AI Agent → Settings → Advanced**.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | תוצאות חיפוש מהירות וממוקדות בפרטיות | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | תוצאות חיפוש עשירות, יכולות מחקר מתקדמות | [Tavily API](https://tavily.com/) |
+
+ראה [Internet Search](../../user-guide/configuration/internet-search) להוראות הגדרה.
+
+## טפסי יצירת קשר בבונה אתרים
+
+עוזר ה-Site Builder יכול כעת ליצור טפסי יצירת קשר ישירות מממשק הצ'אט. פשוט בקש מה-Site Builder ליצור טופס יצירת קשר, והוא יזהה אוטומטית את פלאגין הטפסים המותקן שלך (Contact Form 7, WPForms, Fluent Forms, או Gravity Forms) ויפיק טופס מוכן לשימוש.
+
+ראה [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) להדרכה מפורטת.
+
+## תכונות בונה אתרים (Theme Builder)
+
+Theme Builder ב-Superdav AI Agent v1.16.0 כולל יכולות חדשות וחזקות:
+
+### ראיון גילוי עם העלאת תמונות
+
+לראיון הגילוי ב-Theme Builder נוספה כעת שלב העלאת תמונות, שבו תוכל לספק השראה ויזואלית. העלה תמונות של המותג שלך, אתרי מתחרים או השראה עיצובית כדי לעזור ל-Theme Builder להבין את כיוון העיצוב שלך.
+
+ראה [Discovery Interview](./theme-builder/discovery-interview.md) להדרכה מפורטת.
+
+### כיוון עיצוב עם תצוגות מקדימות למחשב ולנייד
+
+עיין בעיצוב שלך גם במכשירי מחשב וגם במכשירי נייד לפני ש-Theme Builder מייצר את ערכת הנושא המלאה שלך. צפה בתצוגות מקדימות בזמן אמת בנקודות שבירה רספונסיביות מרובות.
+
+ראה [Design Direction](./theme-builder/design-direction.md) להדרכה מפורטת.
+
+### תפריטי אירוח
+
+Theme Builder יכול כעת ליצור דפי תפריטי אוכל ומשקאות מובנים למסעדות, בתי קפה, ברים ועסקים אחרים בתחום האירוח. התפריטים כוללים תמחור, תיאורים, מידע תזונתי ואזהרות אלרגן.
+
+ראה [Hospitality Menus](./theme-builder/hospitality-menus.md) להדרכה מפורטת.
+
+### יכולות חדשות
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — צור לוגואים SVG מותאמים אישית עם סניטציה אוטומטית
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — בדוק זוגות צבעים לצורך עמידה בתקני WCAG
+- **[Create Menu](./abilities/create-menu.md)** — צור תפריטי ניווט עם תוויות ניווט מובחנות
+
+ראה [Tools and Configuration](./theme-builder/tools.md) לקבלת מידע על הכלים הזמינים ועל כלי הגירוד האתר ברמה 1.
+
+## הגדרות (Configuration)
+
+כל ההגדרות נמצאות תחת **Gratis AI Agent → Settings** במנהל וורדפרס. Superdav AI Agent מוסיף את אפשרויות ההגדרה הבאות:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | בחר בין Brave Search ל-Tavily (אופציונלי) |
+| **Tavily API Key** | מפתח API לחיפוש אינטרנט של Tavily (אם נבחר Tavily) |
+
+## שיפורים בגרסה 1.16.0
+
+- **AI Client cache** — מוגן כעת על ידי transients לצורך המשכיות בין בקשות, ומונע אובדן נתונים במשימות ארוכות של העוזר.
+- **כלי גירוד אתר ברמה 1 (Tier 1 site-scrape tool)** — sd-ai-agent/site-scrape זמין כברירת מחדל ב-Theme Builder לניתוח אתרי מתחרים והשראה.
+- **קישורי פעולה בשורת הפלאגין** — תוקנו ושונתה השמות שלהם לבהירות.
+
+## שיפורים בגרסה 1.10.0
+
+- **WooCommerce integration refactored** — משתמש כעת ב-WooCommerce APIs המובנים ליציבות ותאימות טובות יותר.
+- **Provider list auto-refresh** — מזהה אוטומטית מתי פלאגינים מופעלים או מבוטלים ומעדכן את רשימת הספקים הזמינים.
+- **Enhanced site builder** — תוכניות בניית אתרים מרובות-שלבים משופרות עם יכולת שחזור שגיאות טובה יותר.
+- **Theme-aware skills** — ארבע יכולות מובנות חדשות שמתאימות אוטומטית לערכת הנושא הפעילה שלך.
+
+## תיקוני באגים בגרסה 1.10.0
+
+- תוקן ה-`navigate-to` ability שגרם ללולאות טעינה אינסופיות במספר דפי המנהל.
+- תוקן ה-`list-posts` ability שלא פתר נכון שמות קטגוריות ותגיות ל-slugs.
+- תוקנו פקודות WP-CLI שחסרו כינויי נתיב (namespace aliases) לאחר ריפקטורינג קודם.
+- תוקן טיפול באירועים אוטומטיים במקרים שבהם טבלאות האוטומציה עדיין לא נוצרו.
+- תוקן ה-`memory-save` ability שמשתמש בקידומת ה-namespace הנכונה ב-system instruction builder.
+- תוקן שתוצאות כלי סקלר (scalar tool) המעטפות כראוי לפני שהן מוחזרות ל-AI.
+- תוקן ניהול סטטיסטיקות השימוש המטפל נכון במבנה מפתח הישן (legacy ability key format) בעדכון מגרסאות ישנות יותר.
+
+## תמיכה
+
+לתמיכה, בקר ב-[ultimatemultisite.com](https://ultimatemultisite.com) או פתק Issue במאגר הפלאגינים.
+
+## יומן שינויים (Changelog)
+
+ראה את [Changelog](./changelog) עבור היסטוריית הגרסאות המלאה.

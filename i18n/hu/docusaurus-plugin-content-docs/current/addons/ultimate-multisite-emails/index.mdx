@@ -1,0 +1,114 @@
+---
+title: E-mailküldemények
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-mail címek
+
+Az Ultimate Multisite: E-mail címek bővítménye lehetővé teszi a hálózat tulajdonosok számára, hogy a weboldalak és tagságok mellett kezeljenek és biztosítsanak ügyfél e-mail címeket. Az 1.1.0 verzió hozzáad egy ügyfél oldalon látható e-mail címkezelést, webmail single sign-on (SSO) funkciót, CyberPanel továbbító támogatást, valamint javított e-mail cím elrendelési folyamatot a fizetéskor.
+
+## Főbb funkciók
+
+* **Ügyfél e-mail cím funkciója (widget):** Az ügyfelek e-mail címeket hozhatnak létre és kezelhetnek az ügyfél oldalukról, anélkül, hogy támogatási jegyeket kellene nyitniuk.
+* **Webmail SSO és varázsló linkek:** Az ügyfelek közvetlenül az ügyfél oldalon érhetnek el webmail fiókokat, egy kattintással történő hitelesítéssel, ha a szolgáltató támogatja.
+* **Jelszó megváltoztatása:** Az ügyfelek és az adminisztrátorok e-mail címkezelő funkcióból frissíthetik a postafiók jelszavát.
+* **Elrendelés a fizetéskor:** Az ügyfél e-mail címek létrehozása a fizetési folyamat során történhet, így a postafiók készen áll a vásárlás befejezése után.
+* **CyberPanel továbbítók:** A CyberPanel alapú hálózatok e-mail továbbítókat hozhatnak létre és kezelhetnek az e-mail szolgáltatás részeként.
+* **Szolgáltató-tudatos beállítások:** Az üzenetkezelő oldal szűrőzi a szolgáltatókat, csak az aktív, konfigurált integrációkat mutatva, így az adminisztrátorok csak használható opciókat látnak.
+
+## Feltételek
+
+* Ultimate Multisite 2.0.0 vagy magasabb verzió
+* WordPress Multisite telepítés
+* Legalább egy konfigurált e-mail szolgáltató integráció
+* A szolgáltató API hitelesítő adatai, amelyeknek engedélye van a postafiókok létrehozására, jelszavak megváltoztatására és webmail hozzáférési linkek kiállítására (ahol támogatott).
+
+## Telepítés
+
+1. Töltse fel a bővítmény fájljait a `/wp-content/plugins/ultimate-multisite-emails` útvonalra.
+2. Aktiválja a bővítményt a WordPress hálózat adminisztrációs felületén a **Bővítmények** menüpont alatt.
+3. Navigáljon az **Ultimate Multisite** > **Beállítások** menüpontra, és nyissa meg a bővítmény e-mail beállításait.
+4. Aktiválja az e-mail szolgáltató integrációkat, amelyeket az ügyfelek használnak.
+5. Mentse el a beállításokat, majd tesztelje az ügyfél fiók létrehozását egy nem-produkciós ügyfélen vagy staging oldalon.
+
+## Ügyfél Fiók E-mail Címkezelése
+
+Az 1.1.0 verzió hozzáad egy e-mail címkezelő funkciót az ügyfél fiók oldalára. Használja akkor, ha az ügyfeleknek saját oldalakhoz e-mail címeket kell hozni és karban tartani maguknak.
+
+Az ügyfelek az ügyfél oldalon:
+
+1. Látják az aktuális tagságukhoz vagy oldalukhoz kapcsolódó e-mail címeket.
+2. Létrehozhatnak új postafiókot, ha a tervük további címeket engedélyez.
+3. Megváltoztathatnak egy meglévő postafiók jelszavát.
+4. Megnyithetnek támogatott webmail szolgáltatókat SSO vagy varázsló linkekkel történő bejelentkezéssel.
+
+A funkció az Ultimate Multisite ügyféloldal aktuális rendszerét használja, így az elvégzett műveletek csak az ügyfél által nézelt fiók kontextusában érvényesek. Ez megakadályozza, hogy az ügyfelek olyan e-mail címeket kezeljenek, amelyek más tagsághoz vagy oldalhoz tartoznak.
+
+## Webmail SSO és Varázsló Link Bejelentkezés
+
+A Webmail SSO közvetlen **Webmail megnyitása** funkciót biztosít az ügyfél oldalon. Ha az aktív szolgáltató támogatja, a bővítmény egy rövid érvényű hozzáférési URL-t kér és átirányítja az ügyfelet a webmail fiókba, anélkül, hogy meg kellene másolniuk a postafiók hitelesítő adatait.
+
+A szolgáltató viselkedése eltérő lehet:
+
+* A natív SSO API-kkal rendelkező szolgáltatók közvetlen, hiteles webmail munkamenet létrehozását biztosíthatják.
+* A varázsló link támogatással rendelkező szolgáltatók időkorlátolt bejelentkezési linket generálhatnak.
+* Azok a szolgáltatók, amelyek nem rendelkeznek SSO-val vagy varázsló link támogatással, még így is megjeleníthetik a postafiók részleteit és a jelszókezelési funkciókat, de nem biztosítanak egy kattintásos webmail gombot.
+
+Csak olyan szolgáltatók esetén aktiválja a webmail hozzáférést, ahol beállították a szükséges API hitelesítő adatokat. Ha egy szolgáltató esetében hiányzik az akció, először ellenőrizze, hogy a szolgáltató aktív, konfigurált és támogatja-e a webmail bejelentkezési linkeket.
+
+## Elrendelés a Fizetéskor
+
+A bővítmény e-mail címeket hozhat létre az ügyfél fizetési folyamatának részét képezőként. Ez hasznos, ha a terv alapértelmezésként tartalmaz postafiókot, vagy ha a fizetési űrlap e-mail címek adatait gyűjti.
+
+Ajánlott bevezetés:
+
+1. Konfigurálja a szolgáltatót és a tervkorlátokat, mielőtt aktiválja az elrendelési funkciót.
+2. Tesztelje egy vásárlást staging termékkel, és erősítse meg, hogy a postafiók létreházozik a fizetési folyamat után.
+3. Vizsgálja át az ügyfél oldalt, hogy megerősítse, hogy a új postafiók megjelenik az e-mail cím funkcióban.
+4. Ellenőrizze a jelszóváltoztatás és webmail funkciókat, mielőtt a folyamatot a produkciós termékekre aktiválja.
+
+Ha az elrendelés sikertelen, az ügyfél fiókja és tagsága létezhet, de a postafiókhoz adminisztrátoroknak kell manuálisan beavatkozniuk. Ellenőrizze az Ultimate Multisite aktivitási naplókat és a szolgáltató naplókat, mielőtt újra megpróbálja.
+
+## CyberPanel E-mail Továbbítók
+
+A CyberPanel alapú hálózatok számára az 1.1.0 verzió hozzáad e-mail továbbító támogatást. Használja a továbbítókat, ha az ügyfeleknek olyan címekre van szükség, mint például `info@customer-domain.test`, hogy e-maileket más postafiókba továbbítsanak, anélkül, hogy teljes postafiókot kellene létrehozniuk.
+
+Mielőtt továbbítókat kínál, erősítse meg, hogy a CyberPanel integráció konfigurált és elérhető. Látogasson el a [CyberPanel Integráció](../../user-guide/administration/cyberpanel-integration) útmutatóhoz a szükséges host, felhasználónév, jelszó és csomag állandó értékeket érhetőségé.
+
+## Újraírógönyv (Changelog)
+
+### Verzió 1.1.0 - Kiadás dátuma: 2026-05-05
+
+* Új: Webmail SSO és varázsló link bejelentkezés – az ügyfelek egy kattintással érhetnek el webmail fiókokat az oldalukról.
+* Új: Jelszóváltoztatás funkció hozzáadása az e-mail címkezelő funkcióhoz.
+* Új: CyberPanel e-mail továbbító támogatás.
+* Új: E-mail címkezelő funkció az ügyfél oldalon, önkielrendelés és -kezeléshez.
+* Új: Ügyfél e-mail cím létrehozása integrálva az elrendelési folyamatba automatikus elrendeléshez.
+* Javítás: Az ügyféloldal funkciója (widget hook) frissítve, hogy a helyes UMS regisztrációs mintát használja.
+* Javítás: Az „Ügyfél fiók létrehozása” űrlapot vanilla JS-re és helyes teljes HTML dokumentum kimenetére helyezték.
+* Javítás: Az e-mail címkezelő funkció most az UMS currents rendszert használja az adminisztrációs fiókoldalakra.
+* Javítás: Az admin e-mail cím létrehozási űrlap tartalmazza a jelszó mezőt, és az Email_Account_Manager-t használja.
+* Javítás: A kérésenkénti napló spam eltávolítása az Email_Account_Manager inicializálásából.
+* Javított: Az üzenetkezelő oldal most szűrőzi, hogy csak az aktív és konfigurált e-mail szolgáltatókat lássa.
+
+## Gyakran Ismételt Kérdések
+
+## Az ügyfelek saját e-mail címeket hozhatnak létre maguknak?
+
+Igen. Amikor az ügyfél fiók funkciója aktiválva és a terv e-mail címeket engedélyez, az ügyfelek saját postafiókokat hozhatnak létre és kezelhetnek az ügyfél oldalukról.
+
+## Minden szolgáltató támogatja-e a webmail SSO-t?
+
+Nem. Az SSO és varázsló link támogatása az aktív e-mail szolgáltatótól függ. Azok a szolgáltatók, amelyek nem rendelkeznek hozzáférési link API-jával, még így is támogatják a postafiók létrehozását és a jelszavak megváltoztatását.
+
+## Az adminisztrátorok létrehozhatnak e-mail címeket az ügyfelek számára?
+
+Igen. Az adminisztrátorok e-mail címeket hozhatnak létre az adminisztrációs felületen, beleértve az első jelszó beállítását is a fiók létrehozásakor.
+
+## A továbbítók ugyanazok-e, mint a postafiókok?
+
+Nem. Egy postafiók tárolja az e-maileket és rendelkezik bejelentkezési hitelesítő adatokkal. Egy továbbító pedig más címre irányítja a postákat, és nem biztosít külön beérkező fiókot.

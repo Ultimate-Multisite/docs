@@ -1,0 +1,123 @@
+---
+title: ריבוי דיירים
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# ריבונות מרובת משתמשים (Multi-Tenancy)
+
+פיזור אתרים משנה (subsites) על פני שרתים ומסדי נתונים שונים לשיפור הביצועים והאבטחה.
+
+## דרישות
+
+- WordPress 5.3 או גבוה יותר
+- PHP 7.4 או גבוה יותר
+- תוסף Multisite Ultimate (פעיל)
+
+## התקנה
+
+1. העלה את קבצי ה-addon לתיקייה `/wp-content/plugins/` שלך
+2. הפעל את ה-plugin דרך תפריט 'Plugins' ב-WordPress
+3. הגדר את הגדרות ה-addon במנהל הרשת (network admin)
+
+## פיתוח
+
+### הגדרה
+
+```bash
+# התקנת תלויות
+composer install
+npm install
+
+# הרצת בדיקות
+npm run test
+
+# הרצת בדיקות תקני קוד
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# תיקון בעיות סגנון קוד
+vendor/bin/phpcbf
+
+# בנייה לסביבת הפקה
+npm run build
+```
+
+### מבנה הפרויקט
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # מחלקות וקבצי PHP נכללים
+│   ├── class-multisite-ultimate-updater.php  # מטפל עדכונים
+│   └── class-multi_tenancy-main.php             # פונקציונליות ראשית
+├── tests/                        # בדיקות יחידה
+│   ├── bootstrap.php            # אתחול בדיקות
+│   ├── class-*-base.php         # מחלקת בדיקה בסיסית
+│   └── class-*-test.php         # מקרי בדיקה
+├── views/                       # קבצי תבנית
+├── assets/                      # נכסים סטטיים
+│   ├── css/                     # גיליונות סגנון
+│   ├── js/                      # קבצי JavaScript
+│   └── images/                  # תמונות
+├── lang/                        # קבצי שפה
+├── composer.json                # תלויות PHP
+├── package.json                 # תלויות Node.js
+├── phpunit.xml.dist             # תצורת PHPUnit
+├── .phpcs.xml.dist              # תצורת תקני קוד
+└── rector.php                   # כללי מודרניזציה של קוד
+```
+
+### בדיקות
+
+ה-addon כולל מסגרת בדיקות מקיפה:
+
+- **Unit Tests**: בדיקות מבוססות PHPUnit עם חבילת בדיקות של WordPress
+- **Base Test Class**: מספק שיטות עזר למצבי בדיקה נפוצים
+- **Test Coverage**: מוגדר למעקב אחר כיסוי קוד
+- **Multisite Testing**: הבדיקות רצות בסביבת MultiSite
+
+### תקני קוד
+
+- **WordPress Coding Standards**: נאכפים באמצעות PHPCS
+- **PHP 7.4+ Compatibility**: תמיכה בתכונות PHP מודרניות
+- **Static Analysis**: שילוב PHPStan לבדיקת סוגי נתונים
+- **Code Modernization**: כללי Rector לשדרוגי PHP
+
+### מערכת בנייה
+
+- **Asset Processing**: מיניפיקציה לקבצי CSS/JS
+- **Translation**: יצירת קובצי POT
+- **Packaging**: יצירת ארכיון להפצה
+- **Development Mode**: נכסים לא ממוזערים לצורך דיבוג
+
+## תצורה
+
+ה-addon תומך באפשרויות תצורה שונות הנגישות דרך ממשק מנהל הרשת.
+
+## Hooks ופילטרים
+
+### פעולות (Actions)
+
+- `ultimate-multisite-addon-template_init` - מופעל לאחר אתחול ה-addon.
+- `ultimate-multisite-addon-template_loaded` - מופעל לאחר טעינת כל קבצי ה-addon.
+
+### פילטרים (Filters)
+
+- `ultimate-multisite-addon-template_settings` - שינוי הגדרות ה-addon.
+- `ultimate-multisite-addon-template_enabled` - דריסה של סטטוס הפעלה/כיבוי ה-addon.
+
+## רישיון
+
+ה-addon הזה מורשה תחת GPL v3 או גרסה מאוחרת יותר.
+
+## תמיכה
+
+לתמיכה ולתיעוד, בקרו ב-[MultisiteUltimate.com](https://multisiteultimate.com)
+## יומן שינויים
+
+- גרסה 1.0.1 (2025-09-28): שינוי הקידומת ל-ultimate-multisite; עדכון תחום הטקסט; העלאת גרסה.
+
+- גרסה (2025-09-28): שינוי הקידומת ל-ultimate-multisite; עדכון תחום הטקסט; העלאת גרסה.

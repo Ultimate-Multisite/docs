@@ -1,0 +1,144 @@
+---
+title: Pembuat Halaman Admin
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Konten
+Admin page creator akan memungkinkan Anda untuk dengan mudah menambahkan halaman admin dan sub-halaman baru di dalam dashboard admin WordPress. Ini dapat digunakan untuk membuat halaman selamat datang atau halaman tutorial yang dapat berfungsi sebagai halaman arahan (landing page) bagi pengguna baru. Anda dapat menggunakan page builder seperti Beaver Builder, Elementor, Brizy, dan Oxygen untuk mendesain halaman tanpa kesulitan.
+
+Ini juga menawarkan dukungan HTML, CSS, dan JavaScript kustom, serta kontrol akses berdasarkan paket (plan) dan peran pengguna (user role)!
+
+## Fitur
+* Dukungan HTML dan CSS Kustom
+* Dukungan JavaScript
+* Mode Konten PHP
+* Izin berdasarkan Peran Pengguna
+* Dukungan untuk page builder
+
+## Dokumentasi
+[Creating Custom Admin Pages and Sub-pages using Multisite Ultimate: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Instalasi
+
+1. Upload **ultimate-multisite-admin-page-creator** ke direktori **/wp-content/plugins/**
+2. Aktifkan plugin melalui menu **Plugins** di Network Admin WordPress Anda
+
+## Panduan Penggunaan
+
+Meskipun WordPress membuat penambahan konten di bagian depan (front end) situs sangat mudah, membuat halaman dan sub-halaman di sisi admin memerlukan sedikit keterampilan coding dasar. Ultimate Multisite: Admin Page Creator bertujuan untuk membawa kemudahan penggunaan yang sama seperti di front end ke back end situs jaringan Anda.
+
+## Mengapa Menggunakan Admin Page Creator?
+
+Mungkin Anda ingin menawarkan halaman kustom di panel admin klien Anda dengan tutorial, atau mungkin Anda ingin menambahkan halaman kustom dengan FAQ dan widget kontak. Kemungkinannya tidak terbatas dengan Admin Page Creator, dan itulah yang akan kita jelajahi dalam tutorial hari ini.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_Membuat Halaman Tutorial dengan playlist YouTube tertanam kini mungkin!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Inilah hasil akhirnya di Panel Dashboard pengguna_
+
+## Membuat Halaman Admin Kustom Pertama Anda
+
+Setelah menginstal dan mengaktifkan Ultimate Multisite: Admin Page Creator, buka menu admin jaringan Anda dan pergi ke Admin Pages.
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Daftar Halaman Admin Kustom di Network Admin_
+
+Anda akan melihat daftar semua halaman admin yang telah Anda buat sejauh ini (karena ini kunjungan pertama Anda, daftarnya akan kosong). Silakan klik **Add new Admin Page**. Anda akan diarahkan ke editor Admin Page.
+
+## Elemen-elemen Halaman Admin Kustom
+
+Di editor Admin Page, Anda akan memiliki sejumlah opsi berbeda untuk menyesuaikan halaman Anda.
+
+### Judul Halaman (Page Title)
+
+Ini adalah judul yang akan ditampilkan di bagian atas halaman, bukan label menu admin.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Masukkan Judul Halaman_
+
+### Pemilih Tipe Konten (Content Type Selector)
+
+Ultimate Multisite: Admin Page Creator memberi Anda dua pilihan terkait konten halaman: Anda dapat menggunakan editor WYSIWYG WordPress default atau beralih ke editor HTML.
+
+Jika Anda tidak familiar dengan HTML, tetap gunakan editor default WordPress. Anda akan dapat mengedit konten halaman seperti yang Anda lakukan pada Post atau Page biasa.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Menggunakan editor WYSIWYG default WordPress_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Menggunakan opsi editor HTML, dengan penyorotan sintaks dan peringatan kesalahan_
+
+## Opsi Menu
+
+Di sisi samping, pada meta-box General Options, Anda akan dapat mengonfigurasi tipe menu, label, dan banyak lagi.
+
+### Tipe Menu
+
+Halaman admin kustom baru Anda dapat memiliki dua tipe menu berbeda: menu tingkat atas (top-level menu) dan sub-menu.
+
+Halaman menu tingkat atas, seperti namanya, akan menambahkan halaman yang baru Anda buat ke menu admin bersama halaman default WordPress.
+
+Jika Anda memilih opsi tingkat atas, Anda juga akan dapat memilih urutan menu dan ikon menu.
+
+Jika Anda ingin menjadikan halaman ini sebagai sub-menu, Anda dapat memilih halaman induk (parent page) untuk melampirkan halaman ini. Anda dapat menambahkan halaman kustom Anda ke halaman default WordPress atau ke halaman admin kustom tingkat atas Anda.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Kustomisasi item menu untuk Halaman Kustom ini sepenuhnya_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Anda juga dapat menambahkan halaman ini sebagai sub-menu dari halaman menu lain, termasuk yang tingkat atas kustom Anda sendiri._
+
+## Opsi Lanjutan
+
+Anda seharusnya dapat menambahkan segala macam konten ke halaman admin kustom Anda. Itu termasuk aturan dan file CSS, JavaScript, dan pustaka eksternal juga. Anda dapat melakukannya menggunakan Tab Opsi Lanjutan (Advanced Options Tab).
+
+### CSS Kustom (Custom CSS)
+
+Di tab CSS, Anda dapat menambahkan kode CSS kustom Anda sendiri, serta mengimpor file CSS dari situs jarak jauh (seperti CDN, Google Fonts, dll).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_CSS Kustom juga didukung. Anda juga dapat menyertakan file gaya eksternal!_
+
+### JavaScript Kustom (Custom JavaScript)
+
+Hal yang sama berlaku untuk JavaScript. Anda dapat menambahkan pustaka eksternal untuk digunakan pada kode JavaScript kustom Anda.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Tambahkan kode JavaScript Anda sendiri!_
+
+## Izin (Permissions)
+
+Juga di Opsi Lanjutan, Anda akan dapat memilih sub-situs mana yang akan memiliki akses ke halaman ini. Ini berguna jika Anda berencana untuk menyajikan konten eksklusif yang berbeda kepada tingkatan paket (plan) yang berbeda, misalnya.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Anda memiliki kendali penuh atas tempat halaman ini akan ditampilkan_
+
+**Penting**: Kedua kondisi harus terpenuhi agar halaman dapat ditampilkan. Artinya, jika pengguna adalah klien dari paket tertentu, tetapi tidak memiliki salah satu peran yang dipilih (atau sebaliknya), halaman tersebut tidak akan muncul di panel mereka.
+
+## Aktif (Active)
+
+Jika Anda ingin menonaktifkan halaman admin kustom tanpa menghapusnya atau mengacaukan izin, cukup hapus centang opsi Aktif (Active).
+
+Menonaktifkan halaman tingkat atas akan secara otomatis menonaktifkan semua sub-halaman yang terlampir pada halaman induk tersebut.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Hasil akhir di panel pengguna!_

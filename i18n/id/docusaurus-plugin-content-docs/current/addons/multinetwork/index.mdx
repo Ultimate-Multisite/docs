@@ -1,0 +1,100 @@
+---
+title: Multi-Jaringan
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Addon Ultimate Multisite: Multinetwork memperluas platform Ultimate Multisite Anda dengan fungsionalitas multinetwork yang kuat. Addon ini memungkinkan pelanggan Anda untuk membeli dan mengelola seluruh jaringan multisite WordPress, tidak hanya situs individual.
+
+## Fitur Utama
+
+* **Penyediaan Jaringan (Network Provisioning)**: Secara otomatis membuat dan mengonfigurasi seluruh jaringan multisite WordPress untuk pelanggan Anda.
+* **Template Jaringan (Network Templates)**: Memungkinkan pelanggan untuk menjelajahi, melihat pratinjau, dan memilih template jaringan siap pakai sebelum mendaftar.
+* **Manajemen Jaringan**: Kemampuan manajemen penuh untuk lingkungan multinetwork.
+* **Jaringan Terisolasi (Isolated Networks)**: Setiap jaringan pelanggan beroperasi secara independen dengan tabel database dan konfigurasi sendiri.
+* **SSO Lintas Jaringan (Cross-Network SSO)**: Memberikan akses mulus kepada pelanggan ke sub-jaringan mereka dengan otentikasi magic-link.
+* **Arsitektur Skalabel**: Menangani banyak jaringan secara efisien dengan alokasi sumber daya yang optimal.
+* **Integrasi**: Terintegrasi secara mulus dengan sistem langganan dan penagihan Ultimate Multisite.
+
+## Kasus Penggunaan
+
+* **Hosting White Label**: Menyediakan jaringan multisite berlabel merek sendiri kepada pelanggan.
+* **Solusi Agensi**: Memungkinkan agensi untuk mengelola banyak jaringan klien dari satu platform.
+* **Penerapan Enterprise**: Mendukung organisasi besar dengan persyaratan multi-jaringan yang kompleks.
+* **Platform Pendidikan**: Membuat jaringan terpisah untuk sekolah atau departemen yang berbeda.
+
+## Persyaratan
+
+* Ultimate Multisite 2.0.0 atau lebih tinggi
+* Instalasi WordPress Multisite
+* PHP 7.4 atau lebih tinggi
+* MySQL 5.6 atau lebih tinggi
+
+## Instalasi
+
+1. Unggah file plugin ke direktori `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktifkan plugin melalui layar 'Plugins' di WordPress
+3. Konfigurasi pengaturan multinetwork melalui Ultimate Multisite → Settings
+
+## Template Jaringan
+
+Versi 1.3.0 menambahkan alur penemuan dan pemilihan template bagi pelanggan yang membeli jaringan baru. Gunakan template jaringan ketika Anda ingin setiap jaringan pelanggan baru dimulai dari struktur, desain, perpustakaan konten, atau pengaturan spesifik vertikal yang sudah disiapkan.
+
+### Pratinjau Template (Template previewer)
+
+Pratinjau template jaringan memungkinkan pelanggan menjelajahi template yang tersedia sebelum checkout. Setiap template dapat dibuka di panel pratinjau langsung, sehingga pelanggan dapat membandingkan tata letak dan konten sebelum membeli jaringan.
+
+Gunakan pratinjau ini untuk membantu pelanggan:
+
+* Meninjau tampilan dan struktur dari setiap template jaringan yang tersedia.
+* Membandingkan beberapa template tanpa meninggalkan alur pembelian.
+* Memilih template yang paling sesuai dengan kasus penggunaan mereka sebelum mendaftar.
+
+Pastikan nama dan deskripsi template ramah bagi pelanggan. Pratinjau ini paling berguna ketika pelanggan dapat memahami kasus penggunaan yang dimaksud, seperti jaringan agensi, jaringan sekolah, jaringan waralaba, atau paket hosting white-label.
+
+### Pemilih Template saat Checkout (Template picker at checkout)
+
+Pemilih template dapat ditambahkan ke alur checkout pendaftaran sebagai sebuah field. Setelah dikonfigurasi, pelanggan memilih template jaringan yang mereka inginkan selama checkout, dan template yang dipilih akan digunakan saat jaringan baru mereka disediakan.
+
+Cara menggunakan pemilih ini dalam alur checkout:
+
+1. Siapkan jaringan yang ingin Anda tawarkan sebagai template.
+2. Aktifkan field pemilihan template Multinetwork di formulir pendaftaran atau checkout yang relevan.
+3. Pilih template mana yang harus tersedia untuk alur checkout tersebut.
+4. Publikasikan alur checkout dan uji pendaftaran untuk memastikan template yang dipilih diterapkan pada jaringan baru.
+
+Jika alur checkout hanya menawarkan satu produk jaringan, pemilih ini masih berguna sebagai langkah *onboarding* terpandu. Untuk *funnel* multi-plan, tampilkan hanya template yang kompatibel dengan produk atau rencana yang dipilih.
+
+## SSO Magic Link Lintas Jaringan (Cross-Network Magic Link SSO)
+
+SSO magic link lintas jaringan memungkinkan pelanggan berpindah antara area akun utama dan sub-jaringan mereka tanpa harus masuk secara manual lagi. Ketika pelanggan mengikuti tautan akses lintas jaringan, Ultimate Multisite akan menghasilkan magic link berbatas waktu dan mengotentikasi pelanggan ke jaringan tujuan.
+
+Ini meningkatkan pengalaman bagi pelanggan yang mengelola lebih dari satu jaringan atau yang perlu mengakses jaringan template yang baru dikloning segera setelah pembelian.
+
+Daftar periksa Admin:
+
+* Pastikan addon Multinetwork aktif di seluruh instalasi multisite WordPress.
+* Pastikan pelanggan memiliki akses jaringan yang benar sebelum mereka ditawari tautan lintas jaringan.
+* Jaga agar domain jaringan dan domain pemetaan dikonfigurasi dengan benar sehingga magic link diarahkan ke jaringan tujuan yang dimaksud.
+* Uji dashboard pelanggan dan tombol akses apa pun setelah checkout setelah mengubah pengaturan jaringan, domain, atau checkout.
+
+Link magic harus diperlakukan sebagai link login. Link ini dirancang untuk akses pelanggan yang mulus dan tidak boleh diteruskan atau digunakan kembali di luar sesi yang dimaksud.
+
+## Pertanyaan yang Sering Diajukan
+
+### Apa itu multinetwork?
+
+Multinetwork adalah fitur WordPress yang memungkinkan Anda menjalankan banyak jaringan multisite independen pada satu instalasi WordPress.
+
+### Bagaimana ini berbeda dari multisite biasa?
+
+Multisite biasa memungkinkan banyak situs dalam satu jaringan. Multinetwork memungkinkan banyak jaringan, masing-masing dengan situsnya sendiri, semuanya dalam satu instalasi WordPress.
+
+### Apakah ini memerlukan konfigurasi server khusus?
+
+Ya, multinetwork memerlukan pengaturan dan konfigurasi server khusus. Silakan merujuk dokumentasi untuk petunjuk pengaturan terperinci.

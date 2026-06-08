@@ -1,0 +1,143 @@
+---
+title: סוכן AI חינם
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent הוא עוזר AI אוטונומי ל-WordPress שיכול לתכנן, לבנות ולנהל אתרי WordPress שלמים באמצעות הנחיות בשפה טבעית. הוא חושף מערך מובנה של **Abilities** — פעולות בדידות הניתנות לבדיקה שהסוכן יכול להפעיל — המכסות הכל, החל מניהול תוכן ועד התאמה אישית של מערכת העיצוב. גרסה 1.9.0 מוסיפה יכולות יצירת תוכן, סקירה ויזואלית של דפים באמצעות צילומי מסך בצד הלקוח, חמישה פרופילי סוכנים מובנים, ודגלי תכונה (feature flags) לשליטה בגישה ובמיתוג.
+
+## תכונות עיקריות
+
+- **מערכת Abilities** — קטלוג מודולרי וניתן להרחבה של פעולות שהסוכן יכול להפעיל בהתקנת WordPress שלך.
+- **ניהול תוכן** — יצירת פוסטים ודפים (כולל הקצאת תבניות דפים), יצירת מספר פוסטים בבת אחת בקריאה אחת, הגדרת תמונות ממוקדות, ובניית טפסי יצירת קשר.
+- **סקירה ויזואלית** — לכידת צילומי מסך של דפים חיים, השוואת מצבי לפני/אחרי, וקבלת סקירת עיצוב שנוצרה על ידי AI המכסה פריסה, טיפוגרפיה, צבע ואפשרויות נגישות.
+- **חמישה סוכנים מובנים** — Content Writer, Site Builder, Design Studio, Plugin Manager ו-Support Assistant; ניתן להחליף ביניהם באמצעות Agent Picker בכותרת הצ'אט.
+- **Feature flags** — מתגים לשליטה בגישה ובמיתוג בהגדרות → Feature Flags, למגבלות תפקיד, שמות מותג (white-label) והתאמה אישית של ווידג'טים.
+- **ניהול Custom Post Type** — רישום, רשימה ומחיקה של סוגי פוסטים מותאמים אישית עם שמירה על המצב לאחר הפעלה מחדש.
+- **ניהול Custom Taxonomy** — רישום, רשימה ומחיקה של טקסונומיות מותאמות אישית עם שמירה על המצב.
+- **Abilities של Design System** — הזרקת CSS מותאם אישית, ניהול תבניות בלוקים שנבחרות, הגדרת לוגו האתר, והפעלת presets של theme.json.
+- **ניהול Global Styles** — קריאה וכתיבה של ערכי theme.json עבור פלטות צבעים, טיפוגרפיה, מרווחים ועוד.
+- **ניהול תפריטי ניווט** — יצירה ועדכון של תפריטי ניווט והפריטים בהם באופן תכנותי.
+- **ניהול Options** — קריאה וכתיבה של אפשרויות WordPress עם רשימת חסימה מובנית למניעת שינוי הגדרות קריטיות.
+- **Installable Abilities Registry** — גילוי והפעלת חבילות Abilities נוספות ללא שינוי קבצי ה-plugin הליבה.
+- **Site Builder Orchestration v2** — תוכניות בניית אתרים מרובות שלבים עם גילוי פלאגינים, מעקב אחר התקדמות ותיקון שגיאות.
+- **WP-CLI benchmark command** — הרצת מחזור בדיקות (benchmark suite) של יכולות הסוכן מקומפקס הקונסולה לצורך CI והערכת מודלים.
+
+## דרישות מקדימות
+
+- WordPress 6.0 ומעלה
+- PHP 8.1 ומעלה
+- WordPress Multisite (מופעל ברמת הרשת) או התקנת אתר יחיד
+- Plugin מחבר AI פעיל (Anthropic, OpenAI או תואם)
+
+## התקנה
+
+1. העלה את קבצי ה-plugin למיקום `/wp-content/plugins/gratis-ai-agent`
+2. הפעל את ה-plugin דרך מסך **Plugins** ב-WordPress
+3. נווט אל **Gratis AI Agent → Settings** וחבר את ספק ה-AI שלך
+4. (אופציונלי) עיין ב-**Abilities Registry** כדי להתקין חבילות Abilities נוספות
+
+## התחלה מהירה
+
+לאחר ההפעלה והחיבור לספק AI, פתח את הפאנל **Gratis AI Agent** בסרגל הצד של מנהל ה-WordPress. הקלד הנחיה בשפה טבעית והסוכן יתכנן ויבצע את השלבים הנדרשים באמצעות ה-Abilities הזמינות לו.
+
+**דוגמאות הנחיות:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## סקירת Abilities
+
+Abilities הן הפעולות האטומיות שהסוכן יכול לבצע. כל Ability הוא מחלקת PHP רשומה החושפת סכמה (פרמטרים וסוגי החזרה) שהסוכן קורא בזמן ריצה. Abilities מקובצות לפי תחומי פונקציונליים:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+ראה את [Abilities Reference](./abilities) למסמך מלא של פרמטרים ודוגמאות שימוש.
+
+## WP-CLI
+
+Gratis AI Agent מספק משפחת פקודות `wp gratis-ai-agent` להרצת בדיקות וניהול Abilities מקומפקס הקונסולה. ראה את [WP-CLI Reference](./wp-cli) לרשימת הפקודות המלאה.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## תצורה
+
+כל ההגדרות נמצאות תחת **Gratis AI Agent → Settings** במנהל ה-WordPress:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | בחר והגדר את מחבר ספק ה-AI הפעיל |
+| **Model** | בחר את מודל השפה שברצונך להשתמש בו עבור סשנים של הסוכן |
+| **Max Tokens** | תקציב טוקנים לכל בקשה (ברירת מחדל 4096) |
+| **Ability Timeout** | זמן מקסימלי (בשניות) שבו Ability בודדת יכול לרוץ (ברירת מחדל 30) |
+| **Debug Logging** | רישום קריאות Abilities וההיגיון של הסוכן ליומן ה-debug של WordPress |
+
+## רשימת חסימה לבטיחות ניהול Options
+
+Ability ניהול ה-Options כוללת רשימת חסימה מובנית המונעת מהסוכן לקרוא או לכתוב אפשרויות WordPress רגישות. רשימת החסימה המוגדרת כברירת מחדל מכסה:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (אפשרויות URL — השתמש בכלי מיגרציה ייעודיים עבור אלו)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (מפתחות סודיים)
+- `active_plugins`, `template` (הפעלת פלאגין/תבנית — השתמש ב-Abilities ייעודיות)
+- פרטי כניסה ו-API keys של שערים תשלום שנרשמו על ידי פלאגינים מותקנים
+
+ניתן להוסיף ערכים נוספים באמצעות ה-filter `gratis_ai_agent_options_blocklist`.
+
+## Hooks ו-Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — מופעל לאחר רישום Ability, מקבל את שם מחלקת ה-Ability
+- `gratis_ai_agent_plan_started` — מופעל כאשר תוכנית בניית אתר מתחילה לביצוע
+- `gratis_ai_agent_plan_completed` — מופעל כאשר תוכנית מסתיימת בהצלחה
+- `gratis_ai_agent_plan_failed` — מופעל כאשר תוכנית נתקלת בשגיאה שאינה ניתנת להתאוששות
+
+### Filters
+
+- `gratis_ai_agent_abilities` — שינוי רשימת Abilities הרשומה לפני שהסוכן טוען אותה
+- `gratis_ai_agent_options_blocklist` — הרחבה או צמצום רשימת החסימה הבטיחותית של ה-Options
+- `gratis_ai_agent_benchmark_questions` — הוספת שאלות benchmark מותאמות אישית למחזור ההערכה
+- `gratis_ai_agent_plan_plugins` — שינוי רשימת גילוי הפלאגינים במהלך יצירת תוכנית האתר
+
+## תמיכה
+
+לתמיכה, בקר ב-[ultimatemultisite.com](https://ultimatemultisite.com) או פתק Issue במאגר ה-plugin.
+
+## Changelog
+
+ראה את [Changelog](./changelog) היסטוריית הגרסאות המלאה.

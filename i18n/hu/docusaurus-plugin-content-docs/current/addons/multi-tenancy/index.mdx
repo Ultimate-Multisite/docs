@@ -1,0 +1,125 @@
+---
+title: Multi-tenancy
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Elosztja a subsite-okat (altoldalakat) több szerveren és adatbázison a teljesítmény és a biztonság érdekében.
+
+## Feltételek
+
+- WordPress 5.3 vagy annál újabb
+- PHP 7.4 vagy annál újabb
+- Multisite Ultimate plugin (aktív)
+
+## Telepítés
+
+1. Töltse fel az addon fájljait a `/wp-content/plugins/` könyvtárba
+2. Aktiválja az addont a WordPress 'Plugins' menüpontja keresztül
+3. Konfigurálja az addon beállításait a hálózat admin felületen
+
+## Fejlesztés
+
+### Beállítások
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projektstruktúra
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP osztályok és include-k
+│   ├── class-multisite-ultimate-updater.php  # Frissítő kezelő
+│   └── class-multi_tenancy-main.php             # Fő funkció
+├── tests/                        # Egységtesztek
+│   ├── bootstrap.php            # Teszt bootstrap
+│   ├── class-*-base.php         # Bázisteszteszkategória
+│   └── class-*-test.php         # Tesztforgatóköregek
+├── views/                       # Sablonfájlok
+├── assets/                      # Statikus assetek
+│   ├── css/                     # Stíluslapok
+│   ├── js/                      # JavaScript fájlok
+│   └── images/                  # Képek
+├── lang/                        # Nyelvfájlok
+├── composer.json                # PHP függőségek
+├── package.json                 # Node.js függőségek
+├── phpunit.xml.dist             # PHPUnit konfiguráció
+├── .phpcs.xml.dist              # Kódstandardok konfiguráció
+└── rector.php                   # Kódmodernizációs szabályok
+```
+
+### Tesztelés
+
+Az addon egy átfogó tesztelő keretrendszert tartalmaz:
+
+- **Egységtesztek (Unit Tests)**: PHPUnit alapú tesztek a WordPress teszt suite-el
+- **Bázisteszteszkategória (Base Test Class)**: Segédmetódusokat biztosít gyakori tesztforgatóköregekhez
+- **Tesztfedettség (Test Coverage)**: Beállítva a kódfedettség nyomon követésére
+- **Multisite tesztelés**: A tesztek egy multisite környezetben futnak
+
+### Kódstandardok
+
+- **WordPress Kódstandardok**: PHPCS segítségével biztosított
+- **PHP 7.4+ Kompatibilitás**: Támogatja a modern PHP funkciók
+- **Statikus elemzés (Static Analysis)**: PHPStan integráció típusellenőrzéshez
+- **Kódmodernizáció**: Rector szabályok PHP frissítéshez
+
+### Build Rendszer
+
+- **Asset feldolgozás**: Minifikáció a CSS/JS fájlokhoz
+- **Fordítás**: POT fájl generálás
+- **Csomagolás (Packaging)**: Archívum létrehozása a kiosztáshoz
+- **Fejlesztési mód (Development Mode)**: Minifikáció nélküli assetek hibakerőzéshez
+
+## Konfiguráció
+
+Az addon számos konfigurációs opciót támogat, amelyek a hálózat admin felületen érhetők el.
+
+## Hooks és Szűrők
+
+### Akciók (Actions)
+
+- `ultimate-multisite-addon-template_init` - Elküldődik az addon inicializációja után
+- `ultimate-multisite-addon-template_loaded` - Elküldődik az addon összes fájljának betöltése után
+
+### Szűrők (Filters)
+
+- `ultimate-multisite-addon-template_settings` - Megváltoztatja az addon beállításait
+- `ultimate-multisite-addon-template_enabled` - Áthullja az addon aktiválás/deaktiválás állapotát
+
+## Licenc
+
+Ez az addon a GPL v3 vagy annál újabb licenc alatt áll.
+
+## Támogatás
+
+Támogatás és dokumentációért látogasson el a [MultisiteUltimate.com](https://multisiteultimate.com) oldalra.
+
+## Újraírások (Changelog)
+
+- Version 1.0.1 (2025-09-28): a prefix nevének megváltoztatása ultimate-multisite-ra; szövegdomén megfrissítése; verzió emelése.
+
+
+- Version (2025-09-28): a prefix nevének megváltoztatása ultimate-multisite-ra; szövegdomén megfrissítése; verzió emelése.

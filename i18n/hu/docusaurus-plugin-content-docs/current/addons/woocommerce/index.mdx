@@ -1,0 +1,94 @@
+---
+title: WooCommerce Integráció
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+A WooCommerce Integration működési elve nagyon hasonló ahhoz, ahogyan a Manuális Gateway-ünk működik. Nagyon sok rugalmasságot biztosít a felhasználóknak, lehetővé téve számukra, hogy bármelyik fizetési formát válasszanak ki, amely elérhető a WooCommerce telepítésükön. És egyszerű: amikor a felhasználói számlázási időszaka lejár, az előfizetés felfüggesztésre kerül. Ugyanakkor egy rendelés lesz létrehozva a hálózat fő oldalán lévő WooCommerce telepítésen. A felhasználó ezután e-mailben kap egy számlát, amelyen található egy link a fizetés elvégzéséhez. Miután a fizetés beérkezett, az előfizetés megújul.
+
+## Funkciók
+
+- Egyszerű integráció az Ultimate Multisite és a WooCommerce között
+- Több fizetési módszer elérhető
+- Teljesen automatizált folyamat a WooCommerce Subscriptions segítségével
+
+## Dokumentáció
+
+**Beállítás az Ultimate Multisite-on: WooCommerce Integration**
+
+**Bővítezed a fizetési lehetőségeidet az Ultimate Multisite-on: WooCommerce Integration**
+
+## Telepítés
+
+1. Töltse fel az 'ultimate-multisite-woocommerce' fájlt a '/wp-content/plugins/' könyvtárba
+2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontján keresztül
+3. Kövesse a lépésről lépésre haladó Wizard-t a plugin beállításához
+
+## Használati Útoguide
+
+_**FONTOS MEGJEGYZÉS: Ez az cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
+
+_**FIGYELEM:** Az Ultimate Multisite: WooCommerce Integration funkcióhoz feltételezi, hogy a WooCommerce legalább a fő oldalán aktiválva van._
+
+Megértjük, hogy egyes országokban nem érhető el a _Stripe_ és a _PayPal_, ami korlátozhatja vagy akadályozhatja az Ultimate Multisite felhasználóknak a pluginunk hatékony használatát. Ezért hoztunk létre egy **add-on-t az _WooCommerce_ integrációjához**.
+
+Az _WooCommerce_ egy nagyon népszerű e-kerces plugin. A világ fejlesztői hoztak add-on-okat, hogy különböző fizetési gateway-kkel integrálják. Mi kihasználtuk ezt, hogy bővíteni tudjuk az Ultimate Multisite számlázási rendszerében használható fizetési gateway-eket.
+
+## Beállítása
+
+Először kell telepíteni az Ultimate Multisite-on elérhető WooCommerce Integration add-on-ját, amely **ingedi a licencelt felhasználók számára**. Ahhoz, hogy telepítse, kattintson az Ultimate Multisite-ra a super admin dashboard-ján, és válassza ki az **Add-ons** opciót.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Itt találja az összes Ultimate Multisite add-on-ját. Kattintson az **Ultimate Multisite: WooCommerce Integration** add-on-jára.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Egy ablak fog megny להיni az add-on részleteivel. Csak kattintson az **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+A telepítés után továbbításra kerül a plugin-ok oldalára. Itt kattintson az **Network Activate** gombra, és az _WooCommerce_ add-on aktiválódik a hálózatán.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Aktiválás után, ha még nem telepítette és aktiválta a WooCommerce plugin-jét az oldalán, **emléketet kap**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Telepítve láthatja az Ultimate Multisite fizetési beállításai alatt egy további opciót. Ekkor tudja **aktiválni** az _WooCommerce_ opciót.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Beállíthat néhány alapvető opciót, például a megjelenő nevét a front-end-en, valamint utasításokat a felhasználóinak a checkout folyamatában. Ezután navigálhat az **Fő oldal _WooCommerce_ beállításaihoz**, hogy aktiválja és beállítsa a fizetési gateway-t, amelyet szeretne használni.
+
+## Fizetési kezelése
+
+A WooCommerce Integration működési elve nagyon hasonló ahhoz, ahogyan a **Manuális Gateway**-ünk működik. A hátrány az, hogy minden fizetést kézi módon kell elvégezni a számlázási időszak végén. Így működik a folyamat:
+
+  * Amikor a felhasználói számlázási ciklus lejár, az tagság **felfüggesztésre kerül**. Ugyanakkor egy rendelés lesz létrehozva a hálózat fő oldalán lévő _WooCommerce_ telepítésen.
+
+  * A felhasználók e-mailben kapnak egy számlát, amelyen található egy link a fizetés elvégzéséhez (ez a link az aloldal (subsite) adminisztrációs felületén található számlázási előzményeiben is megjelenik). Ez a link továbbítja a felhasználót a _**WooCommerce**_ **checkout** oldalra, ahol a felhasználók kiválaszthatják az **elérhető _WooCommerce_ gateway-ek** közül, hogy elvégezzék a fizetésüket.
+
+  * Miután a fizetés beérkezett, a tagság **megújul**, a fizetés Ultimate Multisite-on rögzül, és a rendelés teljesítésre kerül.
+
+### Néhány fontos megjegyzés:
+
+  * Az Ultimate Multisite alapvető funkciója továbbra is működik az ezen integrációs formával. Például a **refundálás elvégezése** a **Subscription Management** képernyőről kommunikál a WooCommerce-szal, hogy a kiválasztott fizetési formát használva elvégezze a visszatérítést.
+
+  * Az Ultimate Multisite: WooCommerce Integration a WP-Cron-ra támaszkodik. Ez legtöbb esetben nagyon jól működik, de ha az oldal alacsony forgalmú, akkor a cron nem kérdezi meg a programozott események ellenőrzését, és az esemény elmarad, ami késlekedést okozhat a végrehajtásban.
+
+## Woocommerce Subscriptions Plugin
+
+Az kézi fizetés elvégzése minden hónap az ideális megoldás nem a végfelhasználók számára, mivel egy előfizetésnek automatikusan kell megújulnia minden számlázási ciklusban. Ezért terveztük az WooCommerce Integration add-on-ját, hogy **támogatja a WooCommerce Subscriptions plugin-jét**. Ez automatizálja a fizetést, így egyszerűbbé téve a tranzakciót a végfelhasználóknak.
+
+Csak meg kell telepítenie a [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) és **aktiválni kell a fő oldalán**. Ezután térjen vissza az Ultimate Multisite fizetési beállításaihoz, és **aktiválja az integrációt**.
+
+Egge ennyibe jó. A végfelhasználóknak már nem kell kézi fizetést elvégezniük a számlázási ciklus végén.
+
+Az, hogy egy rendelés létrehozódik a fő oldalán az _WooCommerce_ alatt, emellett egy előfizetés is létrehozódik minden fiók számára.

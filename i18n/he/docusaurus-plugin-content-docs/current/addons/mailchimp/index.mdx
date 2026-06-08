@@ -1,0 +1,89 @@
+---
+title: מיילצ'ימפ
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Ultimate Multisite: אינטגרציה עם MailChimp
+
+אתה יכול לחבר את רשת ה-Multisite Ultimate שלך ל-MailChimp. ניתן לקשר תוכניות מסוימות לרשימות (Lists) ב-MailChimp ולהוסיף אוטומטית את המנויים לרשימות הללו בעת ההרשמה.
+
+## התקנה
+
+1. העלה את 'ultimate-multisite-mailchimp' לתיקייה '/wp-content/plugins/'
+2. הפעל את ה-plugin דרך תפריט ה-'Plugins' במנהל הרשת של WordPress שלך
+
+## מדריך שימוש
+
+סנכרון כתובות המייל של המנויים עם רשימות ה-MailChimp שלך קל מאוד באמצעות תוסף ה-Ultimate Multisite: MailChimp Integration. המדריך הזה נועד לעזור לך להגדיר הכל!
+
+## קבלת מפתח API (API key)
+
+לפני שנתחיל לעבור על ההגדרות השונות הזמינות, אנחנו צריכים מפתח API של MailChimp. זה יאפשר ל-Ultimate Multisite לתקשר עם ה-API של MailChimp כדי לשלוף רשימות, קבוצות (Groups) ולהוסיף כתובות מייל לרשימות ולקבוצות הללו כאשר משתמשים נרשמים.
+
+עקוב אחר המדריך הזה כדי לקבל את מפתח ה-API של MailChimp שלך: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_הוסף את מפתח ה-API של MailChimp שלך ב_ _**הגדרות Ultimate Multisite - > הגדרות תוסף (Add-on Settings) -> MailChimp**_
+
+## מצב האינטגרציה (Integration Mode)
+
+תוסף ה-MailChimp Integration מציע שני "מצבי אינטגרציה", כלומר יש שתי דרכים שונות שבהן תוכל להשתמש בתוסף כדי לסנכרן כתובות מייל.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_שני מצבי אינטגרציה גמישות יותר!_
+
+### מצב 1: רשימות מרובות (Multiple Lists)
+
+המצב הדיפולטי (ברירת המחדל) משתמש ב**רשימות מרובות**. מצב זה יאפשר לך לבחור מספר רשימות MailChimp עבור כל תוכנית. זו האופציה הטובה ביותר אם אתה מחלק את המשתמשים שלך לרשימות שונות.
+
+לדוגמה, נניח שיש לך 3 רשימות שונות בחשבון ה-MailChimp שלך: **Newsletter** , **Plan A** , ו-**Plan B**. אתה רוצה שכל המשתמשים, ללא קשר לתוכנית שלהם, יכללו גם ברשימת ה-Newsletter, כדי שלא יחמיצו את העדכונים שלך.
+
+כדי להשיג זאת, אתה יכול להשתמש במצב Multiple Lists כדי להוסיף את שתי הרשימות **Newsletter** ו-**Plan A** בהגדרות MailChimp של Plan A, ואת **Newsletter** ו-**Plan B** בהגדרות MailChimp של Plan B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_בחר את הרשימות הדיפולטיות עבור חשבונות חדשים וחשבונות שבוטלו_
+
+### מצב 2: רשימה אחת + קבוצות מרובות (Single List + Multiple Groups)
+
+MailChimp מאפשר לך להפריד את הרשימה שלך לקבוצות קטנות יותר של משתמשים הנקראות **Groups**. זה מאפשר לך שליטה רבה יותר, מכיוון שאתה יכול לשלוח קמפיין למجموعة משנה ספציפית של המנויים שלך מבלי ליצור מספר עותקים של אותו קמפיין ב-MailChimp (וזה מקשה על ניתוח המדדים של הקמפיין הזה לאחר מכן).
+
+לדוגמה, אתה יכול להחזיק רשימה אחת בשם **My Network Subscribers,** ובתוכה להחזיק קבוצות עבור **Plan A** ו-**Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_בחר את הרשימות והקבוצות הדיפולטיות, אם אתה משתמש במצב אינטגרציה "רשימה אחת + קבוצות מרובות"_
+
+## רשימות וקבוצות דיפולטיות (Default Lists and Groups)
+
+לאחר שבחרת איזה מצב אינטגרציה הגיוני יותר עבור מקרה השימוש הספציפי שלך, הגיע הזמן לבחור את הרשימות הדיפולטיות (וכן את הקבוצות, תלוי במצב). הרשימה הדיפולטיות תשמש כאשר לתוכנית מסוימת לא נבחרה רשימה ספציפית.
+
+אתה יכול גם לבחור רשימה דיפולטיות עבור חשבונות שבוטלו. בכל פעם שמשתמש מסיים את המנוי שלו ומוציא את החשבון שלו מהרשת שלך, כתובת המייל שלו תועבר לרשימה המוגדרת עבור חשבונות שבוטלו.
+
+## הפעלת מנוי כפול (Double Subscription)
+
+באותה דף הגדרות, תוכל להפעיל את **Double Subscription**. אפשרות זו תוסיף את המשתמש הן לרשימה הדיפולטיות שנבחרה **והן** לרשימה שנבחרה עבור התוכנית של המשתמש. אם אפשרות זו אינה מופעלת, המשתמש יתווסף רק לרשימה שנבחרה עבור התוכנית שלו. אם לא הוגדר דבר עבור תוכנית מסוימת, המשתמש יתווסף לרשימה הדיפולטיות שנבחרה.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_תוכל לגרום למשתמשים שלך להיות רשומים הן לרשימה הדיפולטיות והן לרשימה של התוכנית בעת ההרשמה_
+
+## בחירת רשימות וקבוצות לכל תוכנית
+
+עבור ל**Plans** שלך ובחר את התוכנית שברצונך לערוך. שימו לב שבתיבת המטא-נתונים **Advanced Options** תופיע לשונית חדשה בשם MailChimp.
+
+בלשונית הזו, תוכל לבחור מספר רשימות או רשימה אחת וקבוצות מרובות (תלוי במצב האינטגרציה) עבור תוכנית זו.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_בחר את הרשימות והקבוצות שברצונך להשתמש בהן עבור כל אחת מהתוכניות שלך_
+
+כאשר משתמש חדש נרשם לתוכנית זו, כתובת המייל שלו תתווסף לרשימות ולקבוצות שנבחרו!

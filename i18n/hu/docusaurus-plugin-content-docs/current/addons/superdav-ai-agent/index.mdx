@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+A Superdav AI Agent egy fejlett WordPress AI asszisztens, amely a Gratis AI Agent-et kiegészíti témához igazított képességekkel, javított internetkereső funkciókkal és továbbfejlesztett oldalépítő funkciókkal. Az 1.16.0 verzió hozzáad egyedi logógenerációt, palettakontraszt validációt, fényképek feltöltését a felfedező interjú során, strukturált vendéglátói menügenerációt, valamint a Theme Builderben történő desktop/mobil előnézetet.
+
+## Főbb funkciók
+
+- **A témához igazított képességek** — automatikusan alkalmazkodik az útmutatásokhoz és képességekhez az aktív WordPress témádhoz és telepített pluginekedhez.
+- **Összes internetkereső szolgáltató** — választani vagy Brave Search-ot, vagy Tavily-t használhatsz gazdagabb keresési eredmények és fejlettebb kutatási képességek érdekében.
+- **Oldalépítő kapcsolatfelvételi űrlapok** — közvetlenül a chat felületéről hozhatsz létre teljesen működő kapcsolatfelvételi űrlapokat a telepített űrlap plugineddel.
+- **Fejlesztett oldalépítő** — javított több fázisú oldalépítési terveket jobb plugin felfedezéssel és hiba-felühetőséggel.
+- **Beépített témaképességek** — speciális útmutatások a Block Themes, Classic Themes, Kadence Blocks és Kadence Theme számára.
+- **Jobb WooCommerce integráció** — átalakítva használja a natív WooCommerce API-kat jobb megbízhatóság és kompatibilitás érdekében.
+- **Automatikus szolgáltató-feldetekezés** — automatikusan érzékeli és frissíti a rendelkezésre álló plugineket és témákat aktiválásuk vagy deaktiválásuk esetén.
+- **Egyedi logógeneráció** — generál és beágyazható egyedi SVG logókat automatikus, névterület-biztonságos sanitizációval.
+- **Palettakontraszt validáció** — ellenőrzi a színpárokat a WCAG hozzáférhetőségi megfelelőség érdekében, mielőtt alkalmazza őket a témádra.
+- **Fényképekkel enyhített felfedezés** — feltölthet fényképeket a Theme Builder felfedező interjú során, hogy befolyásolják a tervezési irányokat.
+- **Vendéglátói menük** — generál strukturált élelmiszer- és italmenő oldalt éttermeknek, kávézóknek és vendéglátói vállalkozásoknak.
+- **Desktop és mobil előnézetek** — tervezésirány meghatározása során előnézheted a dizájnodat desktop és mobil eszközökön.
+- **Tier 1 oldal-szkraping** — az sd-ai-agent/site-scrape alapértelmezés szerint elérhető az ellenszériák és inspirációs weboldalak elemzéséhez.
+
+## Feltételek
+
+- WordPress 6.0 vagy annál magasabb
+- PHP 8.1 vagy annál magasabb
+- WordPress Multisite (hálózat-aktivált) vagy single-site telepítés
+- Egy aktív AI szolgáltató-konnektor plugin (Anthropic, OpenAI vagy kompatibilis)
+- Gratis AI Agent v1.9.0 vagy annál magasabb (Superdav AI Agent kiegészíti a Gratis AI Agent-et)
+
+## Telepítés
+
+1. Töltse fel a plugin fájljait a `/wp-content/plugins/superdav-ai-agent` útvonalba.
+2. Aktiválja a pluginet a WordPress **Pluginok** képernyőjén.
+3. Győződjön meg róla, hogy a Gratis AI Agent is aktivált.
+4. Navigáljon a **Gratis AI Agent → Beállítások** menüpontra és konfigurálja az internetkereső szolgáltatóját (opcionális).
+
+## Gyors elindítás
+
+A lần aktiválás után a Superdav AI Agent automatikusan kiegészíti a Gratis AI Agent telepítését témához igazított képességekkel és további funkciókkal. Nyissa meg a **Gratis AI Agent** panelét a WordPress admin oldali sávjában, és kezdje el használni az új funkciókat.
+
+**Példa utasítások:**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## A témához igazított képességek
+
+A Superdav AI Agent automatikusan érzékeli az aktív témád és telepített pluginekedet, és a megfelelő témához igazított képességet tölti be az asszisztens kontextusába. A rendelkezésre álló képességek include:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | Témák, amelyek a WordPress blokk alapú (Full Site Editing) architektúrát használják |
+| **Classic Themes** | Hagyományos WordPress témák, amelyek PHP sablonokat és a klasszikus szerkesztőt használnak |
+| **Kadence Blocks** | Oldalak, amelyek aktív a Kadence Blocks pluginnel |
+| **Kadence Theme** | Oldalak, amelyek aktív témaként a Kadence Theme-et használják |
+
+Részletes útmutatást olvashatsz a [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) oldalon minden képességről.
+
+## Internetkereső szolgáltatók
+
+A Superdav AI Agent v1.10.0 hozzáadja **Tavily-t** alternatívának a Brave Search-nek az internetkeresési lekérdezésekhez. Mindkét szolgáltató valós idejű keresési eredményeket biztosít, és a **Gratis AI Agent → Beállítások → Advanced** menüpont alatt konfigurálható.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | Gyors, adatvédelmi szempontú keresési eredmények | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Gazdagabb keresési eredmények, fejlettebb kutatási képességek | [Tavily API](https://tavily.com/) |
+
+A konfigurációs utasításokhoz lásd a [Internet Search](../../user-guide/configuration/internet-search) oldalt.
+
+## Oldalépítő kapcsolatfelvételi űrlapok
+
+Az Oldalépítő agent most közvetlenül a chat felületéről hoz létre kapcsolatfelvételi űrlapokat. Egyszerűen kérdezd meg az Oldalépítőt, hogy hozzon létre egy kapcsolatfelvételi űrlapot, és az automatikusan érzékeli a telepített űrlap pluginedet (Contact Form 7, WPForms, Fluent Forms vagy Gravity Forms), és generál egy azonnal használható űrlapot.
+
+Részletes útmutatást lásd a [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) oldalon.
+
+## Theme Builder funkciók
+
+A Theme Builder a Superdav AI Agent v1.16.0 verziójában számos új, erőteljes funkciót tartalmaz:
+
+### Felfedező interjú fényképek feltöltésével
+
+A Theme Builder felfedező interjúja most tartalmaz egy fényképek feltöltésének lépését, ahol vizuális inspirációt adhatsz. Tölts fel fényképeket a márkádól, versenytársaidról vagy tervezési inspirációk forrásából, hogy segítsék a Theme Buildernek megérteni a tervezési irányodat.
+
+Részletes útmutatást lásd a [Discovery Interview](./theme-builder/discovery-interview.md) oldalon.
+
+### Tervezési irány desktop és mobil előnézetekkel
+
+Ellenőrizd a dizájnodat mind a desktop, mind a mobil eszközön, mielőtt a Theme Builder generálja az általad kívánt teljes témát. Látni fogod a valós idejű előnézeteket több responsív pontszekcióban.
+
+Részletes útmutatást lásd a [Design Direction](./theme-builder/design-direction.md) oldalon.
+
+### Vendéglátói menük
+
+A Theme Builder most képes generálni strukturált élelmiszer- és italmenő oldalt éttermeknek, kávézóknek, báróknak és más vendéglátói vállalkozásoknak. A menüek tartalmazzák az árakat, leírásokat, diétás információkat és allergiatájékoztatásokat.
+
+Részletes útmutatást lásd a [Hospitality Menus](./theme-builder/hospitality-menus.md) oldalon.
+
+### Új képességek
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — hoz létre egyedi SVG logókat automatikus sanitizációval
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — ellenőrzi a színpárokat a WCAG megfelelőség szempontjából
+- **[Create Menu](./abilities/create-menu.md)** — hoz létre navigációs menüeket különálló navigációs címkékkel
+
+A rendelkezésre álló eszközök és a Tier 1 oldal-szkraping eszköz információihoz lásd a [Tools and Configuration](./theme-builder/tools.md) oldalt.
+
+## Konfiguráció
+
+Az összes beállítás a WordPress admin oldalon a **Gratis AI Agent → Beállítások** menüpont alatt található. A Superdav AI Agent a következő konfigurációs opciókat ad hozzá:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Válaszd ki a Brave Search és a Tavily közül (opcionális) |
+| **Tavily API Key** | API kulcs a Tavily internetkereső számára (ha a Tavily-t választják) |
+
+## Javítások a v1.16.0-ban
+
+- **AI Client cache** — most transzientekkel támasztott, így a több kérésre átütő tartósságot biztosít, megakadályozva az adatok elvesztését a hosszú futási agent feladatok során.
+- **Tier 1 site-scrape tool** — az sd-ai-agent/site-scrape alapértelmezés szerint elérhető a Theme Builderben az ellenszériák és inspirációs weboldalak elemzéséhez.
+- **Plugin sor akció-linkek** — javítva és átnevezve a tisztább felhasználói élmény érdekében.
+
+## Javítások a v1.10.0-ban
+
+- **WooCommerce integráció átalakítása** — most használja a natív WooCommerce API-kat jobb megbízhatóság és kompatibilitás érdekében.
+- **Szolgáltatólista automatikus frissítése** — automatikusan érzékeli, hogy a pluginek aktiváltak vagy deaktiváltak, és frissíti a rendelkezésre álló szolgáltatólistát.
+- **Fejlesztett oldalépítő** — javított több fázisú oldalépítési terveket jobb hiba-felühetőséggel.
+- **Témához igazított képességek** — négy új beépített képesség, amelyek automatikusan alkalmazkodnak az aktív témádhoz.
+
+## Hibajavítások a v1.10.0-ban
+
+- Javította a `navigate-to` képességet, amely egyes admin oldalakon végtelen újrafrissítési ciklusokat okozott.
+- Javította a `list-posts` képességet, amely nem oldotta fel megfelelően a kategória és címke neveit slug-kra.
+- Javította a WP-CLI parancsokat, amelyek hiányzó névterület-aliasokat tartalmaztak egy korábbi átalakítás után.
+- Javította az eseményautomatizációt, amely szépen kezelőzi azokat az oldalakat, ahol az automatizációs táblák még nem lettek létrehozva.
+- Javította a `memory-save` képességet, amely a megfelelő névterület előfixust használja a rendszer utasításépítőben.
+- Javította, hogy a skáláris eszköz-eredményeket megfelelően ölelékbe helyezi, mielőtt visszaadja az AI-nak.
+- Javította, hogy a használati statisztikák megfelelően kezeljék a régi képesség-kulcs formátumát az idősebb verzióktól való frissítés során.
+
+## Támogatás
+
+Támogatásért látogasson el a [ultimatemultisite.com](https://ultimatemultisite.com) oldalra, vagy nyitson egy hibajelentést a plugin repozitóriumban.
+
+## Changelog
+
+A teljes verzió-történethez lásd a [Changelog](./changelog) oldalt.

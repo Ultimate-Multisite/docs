@@ -1,0 +1,75 @@
+---
+title: Nyelvválasztó
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Nyelvválasztó
+
+Multisite Ultimate: Nyelvválasztó a regisztráció során
+
+Egy nyelvválasztó mező hozzáadása a regisztrációs folyamathoz.
+
+## Telepítés
+
+1. Töltse fel az 'ultimate-multisite-language-selector'-t a '/wp-content/plugins/' könyvtárba
+2. Aktiválja a plugin-t a WordPress Network Admin menüjében, a 'Plugins' (Plugin-ok) menüpont alatt
+
+## Használat Útmutató
+
+Ezzel a ingyenes add-onnal lehetővé teheti a felhasználói számára, hogy elválaszthatják, milyen nyelvet szeretnének látni a regisztrációs folyamaton és a bejelentkezési oldalon.
+
+A [licenc aktiválásával](../../user-guide/getting-started/installing-ultimate-multisite.md) hozzáférhet Ultimate Multisite add-onokhoz, amelyeket a licenc biztosít.
+
+Kattintson az Ultimate Multisite beállítási oldalára, majd a bal oldali menüből kattintson az _Add-ons_ (Add-onok) címkére.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+_Kattintson az Add-ons oldalra, hogy elkezdi telepíteni a Language Selector-t_
+
+Itthon találja az összes add-ont, amelyet kínálunk.
+
+Az ingyenes add-onok elérhetők minden ügyfelünk számára, függetlenül attól, hogy milyen előfizetési tervet választottak.
+
+Kattintson az add-on miniatűrje alatt található _Install it Now!_ (Most telepítem!) gombra. Ezután aktiválja a Plugins oldalon.
+
+![Add-ons page with install button](/img/admin/addons-page.png)
+
+_Kattintson a gombra az add-on telepítéséhez_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_Aktiválja a Plugins oldalán_
+
+Most navigáljon az Ultimate Multisite Beállítások menüpontjára, és lépjen a _Network Settings_ (Hálózati Beállítások) fülre. Oldaltason, az oldal alján talál egy új szekciót, nevet: _Languages_ (Nyelvek).
+
+![Settings page](/img/config/settings-general.png)
+
+_Egy teljesen új szekció jelenik meg!_
+
+Üresen hagyhatja, ha minden nyelvet opcióként szeretne megjeleníteni, vagy kiválaszthatja, melyeket szeretne elérhetővé tenni. A nyelvek azok, amelyeket a WordPress telepítésében installált.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_Lista a jelenlegi WP telepítésen elérhető nyelvekről_
+
+A módosítások mentése után a kiválasztott nyelvekkel rendelkező választómenü megjelenik a Bejelentkezési oldalon, valamint a Regisztrációs folyamaton is.
+
+![Login and Registration settings](/img/config/settings-login-registration.png)
+
+_Nyelvválasztó a Bejelentkezési oldalon_
+
+![Registration page](/img/config/registration-page.png)
+
+_Nyelvválasztó a Regisztrációs folyamaton_
+
+## Nyelv beállítása az URL segítségével
+
+Az oldalon lévő nyelvet az URL-ben található helyi (locale) paraméter elkerülésével is megváltoztathatja. Például, ha az olasz nyelven szeretne átirányítani egy regisztrációs oldalra, adja hozzá az URL-hez: ?locale=it_IT.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Ehhez a nyelvet telepíteni kell az Ön WordPress hálózatán.

@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Ultimate Multisite: Integrasi MailChimp
+
+Integrasikan jaringan Multisite Ultimate Anda ke MailChimp. Anda dapat menghubungkan rencana tertentu ke Daftar MailChimp dan secara otomatis menambahkan pelanggan ke daftar-daftar tersebut saat pendaftaran.
+
+## Instalasi
+
+1. Unggah 'ultimate-multisite-mailchimp' ke direktori '/wp-content/plugins/'
+2. Aktifkan plugin melalui menu 'Plugins' di Admin Jaringan WordPress Anda
+
+## Panduan Penggunaan
+
+Sinkronisasi email pelanggan dengan daftar MailChimp Anda sangat mudah dengan Add-on Integrasi MailChimp Ultimate Multisite kami. Tutorial ini bertujuan untuk membantu Anda menyiapkan semuanya!
+
+## Mendapatkan Kunci API
+
+Sebelum kita masuk ke berbagai pengaturan yang tersedia, kita memerlukan kunci API MailChimp. Ini akan memungkinkan Ultimate Multisite untuk berkomunikasi dengan API MailChimp guna mengambil daftar, grup, dan menambahkan alamat email ke daftar dan grup tersebut saat pengguna mendaftar.
+
+Ikuti tutorial ini untuk mendapatkan kunci API MailChimp Anda sendiri: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Tambahkan kunci API MailChimp Anda di_ _**Pengaturan Ultimate Multisite - > Pengaturan Add-on -> MailChimp**_
+
+## Mode Integrasi
+
+Add-on Integrasi MailChimp menawarkan dua “mode integrasi”, yang berarti ada dua cara berbeda Anda dapat menggunakan add-on ini untuk menyinkronkan alamat email.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dua mode integrasi untuk fleksibilitas yang lebih besar!_
+
+### Mode 1: Daftar Ganda (Multiple Lists)
+
+Mode bawaan menggunakan **Daftar Ganda (Multiple Lists)**. Mode ini memungkinkan Anda memilih beberapa daftar MailChimp untuk setiap rencana. Ini adalah pilihan terbaik jika Anda membagi pengguna Anda ke dalam daftar yang berbeda.
+
+Misalnya, anggaplah Anda memiliki 3 daftar berbeda di akun MailChimp Anda: **Newsletter**, **Plan A**, dan **Plan B**. Anda ingin semua pengguna, terlepas dari rencana mereka, juga dimasukkan ke daftar Newsletter, sehingga mereka tidak ketinggalan pembaruan Anda.
+
+Untuk mencapai itu, Anda dapat menggunakan mode Daftar Ganda untuk menambahkan daftar **Newsletter** dan **Plan A** ke Pengaturan MailChimp Plan A, dan **Newsletter** dan **Plan B** ke Pengaturan MailChimp Plan B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Pilih daftar default untuk akun baru dan akun yang dibatalkan_
+
+### Mode 2: Daftar Tunggal + Grup Ganda (Single List + Multiple Groups)
+
+MailChimp memungkinkan Anda membagi daftar Anda menjadi grup pengguna yang lebih kecil yang disebut **Grup (Groups)**. Ini memungkinkan Anda memiliki kontrol lebih karena Anda dapat mengirim kampanye ke subset pelanggan tertentu tanpa harus membuat salinan kampanye yang sama di MailChimp (yang menyulitkan analisis metrik kampanye tersebut setelahnya).
+
+Misalnya, Anda dapat memiliki satu daftar bernama **Pelanggan Jaringan Saya**, dan di dalamnya terdapat grup untuk **Plan A** dan **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Pilih daftar dan grup default, jika menggunakan mode integrasi “daftar tunggal + grup ganda”_
+
+## Daftar dan Grup Default
+
+Setelah Anda memilih mode integrasi mana yang paling sesuai dengan kasus penggunaan Anda, saatnya memilih daftar default (dan grup, tergantung mode). Daftar default akan digunakan ketika rencana tertentu tidak memiliki Daftar spesifik yang dipilih.
+
+Anda juga dapat memilih daftar default untuk akun yang dibatalkan. Setiap kali pengguna mengakhiri langganan dan menghapus akunnya dari jaringan Anda, alamat emailnya akan dipindahkan ke daftar yang ditetapkan untuk akun yang dibatalkan.
+
+## Mengaktifkan Langganan Ganda (Double Subscription)
+
+Di halaman pengaturan yang sama, Anda akan dapat mengaktifkan **Langganan Ganda (Double Subscription)**. Opsi ini akan menambahkan pengguna ke daftar default yang dipilih DAN daftar yang dipilih untuk rencana pengguna tersebut. Jika opsi ini tidak diaktifkan, pengguna hanya akan ditambahkan ke daftar yang dipilih untuk rencana pengguna. Jika tidak ada yang ditetapkan untuk rencana tertentu, maka pengguna akan ditambahkan ke daftar default yang dipilih.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Anda dapat membuat pengguna Anda berlangganan daftar default dan daftar rencana saat mendaftar_
+
+## Memilih Daftar dan Grup untuk Setiap Rencana
+
+Buka **Rencana (Plans)** Anda dan pilih rencana yang ingin Anda edit. Perhatikan bahwa di meta-box **Opsi Lanjutan (Advanced Options)**, akan tersedia tab baru bernama MailChimp.
+
+Di tab tersebut, Anda dapat memilih beberapa daftar atau satu daftar dan beberapa grup (tergantung mode integrasi) untuk rencana tersebut.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Pilih Daftar dan Grup yang ingin Anda gunakan untuk setiap rencana Anda_
+
+Ketika pengguna baru mendaftar untuk rencana tersebut, alamat emailnya akan ditambahkan ke daftar dan grup yang dipilih!

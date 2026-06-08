@@ -1,0 +1,124 @@
+---
+title: AI oldalsajtóépítő
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Előfeltételek
+
+- WordPress 5.3 vagy magasabb
+- PHP 7.4 vagy magasabb
+- Multisite Ultimate plugin (aktiválva)
+
+## Telepítés
+
+1. Töltse fel az addon fájljait a `/wp-content/plugins/` könyvtárába
+2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontján keresztül
+3. Konfigurálja az addon beállításait a hálózat adminisztrációjában
+
+## Fejlesztés
+
+### Beállítás
+
+```bash
+# Telepíti a függőségeket
+composer install
+npm install
+
+# Futatja a teszteket
+npm run test
+
+# Futatja a kódstílus ellenőrzéseket
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Javítja a kódstílus problémáit
+vendor/bin/phpcbf
+
+# Összeszerelése a produkcióhoz
+npm run build
+```
+
+### Projektstruktúra
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP osztályok és include-k
+│   ├── class-multisite-ultimate-updater.php  # Frissítő kezelő
+│   └── class-ai_site_builder-main.php             # Fő funkciókosság
+├── tests/                        # Egységtesztek
+│   ├── bootstrap.php            # Teszt bootstrap
+│   ├── class-*-base.php         # Alap teszt osztály
+│   └── class-*-test.php         # Teszt przypadkok
+├── views/                       # Sablon fájlok
+├── assets/                      # Statikus fájlok
+│   ├── css/                     # Stíluslapok
+│   ├── js/                      # JavaScript fájlok
+│   └── images/                  # Képek
+├── lang/                        # Nyelvi fájlok
+├── composer.json                # PHP függőségek
+├── package.json                 # Node.js függőségek
+├── phpunit.xml.dist             # PHPUnit konfiguráció
+├── .phpcs.xml.dist              # Kódstandardok konfiguráció
+└── rector.php                   # Kódmodernizációs szabályok
+```
+
+### Tesztelés
+
+Az addon egy átfogó tesztelő keretet tartalmaz:
+
+- **Egységtesztelés (Unit Tests)**: PHPUnit alapú tesztek a WordPress teszt suite-el
+- **Alap Teszt Osztály (Base Test Class)**: Segítő metódusokat biztosít gyakori teszt forgatókönyemekhez
+- **Tesztfedettség (Test Coverage)**: Konfigurálva a kódfedettség nyomon követésére
+- **Multisite Tesztelés**: A tesztek multisite környezetben futnak
+
+### Kódstandardok
+
+- **WordPress Kódstandardok**: PHPCS segítségével biztosított
+- **PHP 7.4+ Kompatibilitás**: Támogatott modern PHP funkciók
+- **Statisztikus Elemzés (Static Analysis)**: PHPStan integráció típusellenőrzéshez
+- **Kódmodernizáció**: Rector szabályok PHP frissítéshez
+
+### Összerelési Rendszer (Build System)
+
+- **Asset Kezelés**: Minifikáció a CSS/JS fájlokhoz
+- **Fordítás**: POT fájl generálás
+- **Csomagolás**: Archív létrehozása a kiosztáshoz
+- **Fejlesztési Mód**: Nem minifikált assetek hibakerőzéshez
+
+## Konfiguráció
+
+Az addon számos konfigurációs opciót támogat, amelyek a hálózat adminisztrációs felületen érhetők el.
+
+## Hooks és Szűrők
+
+### Akciók (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - Elküldődik az addon inicializációja után
+- `ultimate-multisite-ai-site-builder_loaded` - Elküldődik az addon összes fájljának betöltése után
+
+### Szűrők (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - Megváltoztatja az addon beállításait
+- `ultimate-multisite-ai-site-builder_enabled` - Áthullja az addon aktiválás/deaktiválás állapotát
+
+## Licenc
+
+Ez az addon a GPL v3 vagy annál újabb licenc alatt áll.
+
+## Támogatás
+
+Támogatás és dokumentációért látogasson el ide: [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Verzió 1.0.1 (2025-09-28): a prefix átnevezése ultimate-multisite-re; szövegdomén átfrissítése; verzió emelése.
+
+
+- Verzió (2025-09-28): a prefix átnevezése ultimate-multisite-re; szövegdomén átfrissítése; verzió emelése.

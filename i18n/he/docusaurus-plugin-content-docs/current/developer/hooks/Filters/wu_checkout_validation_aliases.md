@@ -1,0 +1,23 @@
+---
+id: wu_checkout_validation_aliases
+title: פילטר - wu_checkout_validation_aliases
+sidebar_label: wu_checkout_validation_aliases
+_i18n_hash: e081aa9a71c29c9afde90759a29ab237
+---
+# Filter: wu_checkout_validation_aliases
+
+מאפשר למפתחי תוספים להוסיף כינויים מותאמים אישית במאמת הטפסים.
+
+## פרמטרים
+
+| Name | Type | Description |
+|------|------|-------------|
+| $validation_aliases | `array` | המערך המכיל מזהה => כינוי. |
+| $checkout | `\Checkout` | מחלקת הצ'קאאוט. |
+
+### מאז
+
+- 2.1
+### מקור
+
+מוגדר ב-[inc/checkout/class-checkout.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L2153) בשורה 2153

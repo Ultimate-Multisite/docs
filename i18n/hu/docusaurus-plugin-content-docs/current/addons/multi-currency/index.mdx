@@ -1,0 +1,117 @@
+---
+title: Multi-valutású
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Több pénznemű (Multi-Currency)
+
+Ultimate Multisite: Multi-Currency lehetővé teszi, hogy a hálózatának több pénznemű fizetéseket fogadjon el. Automatikusan konvertálja az árakat élő vagy kézi árfolyamok alapján, lehetővé teszi, hogy pontos, termék별 árakat állítson be bármilyen pénzneműre, és a látogatók által preferált pénzneműjét a geolokáció segítségével detektálja – mindezt egyetlen admin dashboard-on keresztül kezelheti.
+
+## Főbb funkciók (Key Features)
+
+- **Automatikus árfolyam konverzió** – az árakat a kiválasztott szolgáltató által lekérdezett árfolyamok alapján konvertálja az alap pénzneműből.
+- **Termék별 árak átírása (Per-product pricing overrides)** – pontos, pénzneműre specifikus árak beállítása bármilyen terméken, hogy elkerülje az automatikus konverziót.
+- **Pénzneműválasztó regisztrációs mező (Currency selector signup field)** – lehetővé teszi az ügyfelek számára, hogy a checkout/regisztráció során kiválasszák a preferált pénzneműjüket.
+- **Több árfolyam szolgáltató** – ECB, Frankfurter, Stripe, vagy teljesen kézi árfolyamok.
+- **Geolokáció alapú pénznemű detektálás** – automatikusan előválasztja azt a pénzneműt, amely illeszkedik a látogató országához.
+- **Admin dashboard** – kezelheti az aktív pénzneműket, az árfolyamokat és a szolgáltató beállításait egy helyről.
+
+## Feltételek (Requirements)
+
+- Ultimate Multisite 2.0.0 vagy magasabb verzió
+- WordPress Multisite telepítés
+- PHP 7.4 vagy magasabb
+
+## Telepítés (Installation)
+
+1. Töltse fel a plugin fájlokat a `/wp-content/plugins/ultimate-multisite-multi-currency` útvonalba.
+2. Aktiválja a plugin-t a WordPress **Plugins** képernyőjén (Hálózati aktiválás).
+3. Navigáljon a **Ultimate Multisite → Multi-Currency** oldalra, hogy megnyissa az admin dashboard-ot.
+4. Adja hozzá azokat a pénzneműket, amelyeket elfogadni szeretne, és konfigurálja árfolyam szolgáltatóját.
+
+## Konfiguráció (Configuration)
+
+### Admin Dashboard
+
+A Multi-Currency admin dashboard (Ultimate Multisite → Multi-Currency) a központi hely, ahol:
+
+- Pénzneműk hozzáadása, aktiválása vagy kikapcsolása.
+- Árfolyam szolgáltató kiválasztása és a folyamatos frissítés igénybevétele.
+- Az aktuális árfolyamok áttekintése az összes aktív pénzneműre.
+- Kézi árfolyamok beállítása, ha az automatikus szolgáltatók nem megfelelőek.
+
+### Árfolyam szolgáltatók (Exchange Rate Providers)
+
+| Provider | Leírás |
+|---|---|
+| **ECB** | Európai Központi Bank – ingyenes napi árfolyamok EUR alapú hálózatokhoz. |
+| **Frankfurter** | Open-source ECB tükör API-je – ingyenes, nincs API kulcs szükséges. |
+| **Stripe** | Használja Stripe élő FX árfolyamait – aktív Stripe integrációt igényel. |
+| **Manual** | Ön adja meg az árfolyamokat; nincs külső API hívás. |
+
+Válassza ki a szolgáltatóját az **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** útvonalon. Az árfolyamokat bármikor kézi módon frissítheti, vagy ütemezheti automatikus frissítésre.
+
+### Termék별 árak átírása (Per-Product Pricing Overrides)
+
+Amikor az automatikus konverzió nem elég pontos, pontos árat állíthat be egy adott pénzneműre bármilyen terméken:
+
+1. Nyitssa meg a termék szerkesztőjét (**Ultimate Multisite → Products → Edit**).
+2. Keresse meg a **Pénznemű Árkimutatás (Currency Pricing)** szekcióját.
+3. Adja meg a pontos árat minden pénzneműre, amelyet átírni szeretne.
+4. Mentse el a terméket.
+
+Termékek, amelyek átírás nélkül maradnak, az alap pénzneműből konvertált árat használják.
+
+### Pénzneműválasztó regisztrációs mező (Currency Selector Signup Field)
+
+A pénzneműválasztó mezőt hozzáadható a regisztrációs/checkout folyamatához, így az ügyfelek a regisztráció során kiválaszthatják a preferált pénzneműjüket:
+
+1. Navigáljon a **Ultimate Multisite → Multi-Currency → Settings** oldalra.
+2. Aktiválja a **Show currency selector on signup** opciót.
+3. Opcionálisan állíthat be egy alapértelmezett pénzneműt, vagy hagyhatja, hogy a geolokáció határozza meg az előválasztott értéket.
+
+A kiválasztott pénznemű a fiókhoz kerül mentésre és minden későbbi számlázáshoz használható.
+
+### Geolokáció alapú pénznemű detektálás (Geolocation-Based Currency Detection)
+
+Amikor aktiválja a geolokáció detektálást, az addon térképezi a látogató országát egy pénzneműre és előválasztja azt a pénzneműt a pénzneműválasztó mezőben. Aktiváláshoz:
+
+1. Navigáljon a **Ultimate Multisite → Multi-Currency → Settings** oldalra.
+2. Aktiválja a **Detect currency from visitor location** opciót.
+3. Térképezze a country-eket pénzneműkre a **Geolocation Mapping** táblázatában.
+
+Ha nincs mappázva egy látogató országára, a hálózat alap pénzneműjét használják fallbackként.
+
+## Gyakran jártalmat kérdések (Frequently Asked Questions)
+
+### Mi történik, ha az árfolyam szolgáltató elérhetetlen?
+
+Az addon az utolsó sikeresen lekérdezett árfolyamokra tér vissza. Ha még soha nem lekérdezett árfolyam volt, a beállított kézi árfolyamokra tér vissza. Ajánlott kézi árfolyamok beállítása biztonsági hálóként.
+
+### Lehet-e, hogy különböző szolgáltatókat használjak különböző pénzneműkre?
+
+Nem – az összes pénznemű számára egyszerre csak egy szolgáltató aktív. Használja a **Manual** opciót, ha teljes kontrollt szeretne az egyedi árfolyamokon.
+
+### A geolokáció külön plugin-t igényel?
+
+Nem szükséges külső geolokációs plugin. Az addon használja WordPress beépített IP-ről országra történő detektálást. Magasabb pontosság érdekében dedikált geolokációs szolgáltatást integrálhat a biztosított filter hook-ok segítségével.
+
+### A termék별 átírások az adó előtt-e vagy után-e kerülnek alkalmazásra?
+
+A termék별 átírások az adó előtti árat állítják be a cél pénzneműben. Az adót az átírás árára számítják ki, az istniejące adókonfigurációját használva.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Multi-currency support with automatic exchange rate conversion (Új: Több pénznemű támogatás automatikus árfolyam konverzióval)
+- New: Per-product pricing overrides for exact currency-specific prices (Új: Termék별 árak átírása pontos, pénzneműre specifikus árakért)
+- New: Currency selector signup field for the checkout flow (Új: Pénzneműválasztó regisztrációs mező a checkout folyamathoz)
+- New: Exchange rate providers: ECB, Frankfurter, Stripe, and manual (Új: Árfolyam szolgáltatók: ECB, Frankfurter, Stripe és kézi)
+- New: Geolocation-based currency detection (Új: Geolokáció alapú pénznemű detektálás)
+- New: Admin dashboard for managing currencies and exchange rates (Új: Admin dashboard pénzneműk és árfolyamok kezelésére)
+- Fix: Dashboard always showing prices in base currency regardless of selected currency (Javítás: A dashboard mindig az alap pénzneműben mutatja az árakat, függetlenül a kiválasztott pénzneműtől)

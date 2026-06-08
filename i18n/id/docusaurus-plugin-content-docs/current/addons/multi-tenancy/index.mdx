@@ -1,0 +1,124 @@
+---
+title: Multi-Tenancy
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Mendistribusikan subsites di berbagai server dan database untuk meningkatkan performa dan keamanan
+
+## Persyaratan
+
+- WordPress 5.3 atau lebih tinggi
+- PHP 7.4 atau lebih tinggi
+- Plugin Ultimate Multisite (aktif)
+
+## Instalasi
+
+1. Unggah file addon ke direktori `/wp-content/plugins/` Anda
+2. Aktifkan plugin melalui menu 'Plugins' di WordPress
+3. Konfigurasi pengaturan addon di admin jaringan
+
+## Pengembangan
+
+### Setup
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Project Structure
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Kelas dan include PHP
+│   ├── class-multisite-ultimate-updater.php  # Penangan pembaruan
+│   └── class-multi_tenancy-main.php             # Fungsionalitas utama
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Bootstrap pengujian
+│   ├── class-*-base.php         # Kelas uji dasar
+│   └── class-*-test.php         # Kasus uji
+├── views/                       # File template
+├── assets/                      # Aset statis
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # File JavaScript
+│   └── images/                  # Gambar
+├── lang/                        # File bahasa
+├── composer.json                # Dependencies PHP
+├── package.json                 # Dependencies Node.js
+├── phpunit.xml.dist             # Konfigurasi PHPUnit
+├── .phpcs.xml.dist              # Konfigurasi standar kode
+└── rector.php                   # Aturan modernisasi kode
+```
+
+### Pengujian
+
+Addon ini mencakup kerangka pengujian yang komprehensif:
+
+- **Unit Tests**: Pengujian berbasis PHPUnit dengan suite pengujian WordPress
+- **Base Test Class**: Menyediakan metode bantu untuk skenario pengujian umum
+- **Test Coverage**: Dikonfigurasi untuk melacak cakupan kode
+- **Multisite Testing**: Pengujian berjalan di lingkungan multisite
+
+### Code Standards
+
+- **WordPress Coding Standards**: Diterapkan melalui PHPCS
+- **PHP 7.4+ Compatibility**: Mendukung fitur PHP modern
+- **Static Analysis**: Integrasi PHPStan untuk pemeriksaan tipe data
+- **Code Modernization**: Aturan Rector untuk peningkatan PHP
+
+### Build System
+
+- **Asset Processing**: Minifikasi untuk file CSS/JS
+- **Translation**: Pembuatan file POT
+- **Packaging**: Pembuatan arsip untuk distribusi
+- **Development Mode**: Aset yang tidak diminifikasi untuk debugging
+
+## Konfigurasi
+
+Addon ini mendukung berbagai opsi konfigurasi yang dapat diakses melalui antarmuka admin jaringan.
+
+## Hooks dan Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Dipicu setelah inisialisasi addon
+- `ultimate-multisite-addon-template_loaded` - Dipicu setelah semua file addon dimuat
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Memodifikasi pengaturan addon
+- `ultimate-multisite-addon-template_enabled` - Mengganti status aktif/nonaktif addon
+
+## Lisensi
+
+Addon ini dilisensikan di bawah GPL v3 atau yang lebih baru.
+
+## Dukungan
+
+Untuk dukungan dan dokumentasi, kunjungi [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Versi 1.0.1 (2025-09-28): ganti awalan menjadi ultimate-multisite; perbarui domain teks; peningkatan versi.
+
+
+- Versi (2025-09-28): ganti awalan menjadi ultimate-multisite; perbarui domain teks; peningkatan versi.

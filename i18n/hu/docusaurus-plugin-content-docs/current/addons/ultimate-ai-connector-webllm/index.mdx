@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector WebLLM-hez
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Az Ultimate AI Connector for WebLLM böngésző alapú AI inferenciát hoz létre a WordPress multisite hálózatába. A nagy nyelvi modellek (LLM) teljes egészében a böngészőben futnak WebLLM és az MLC motor segítségével – nincs API kulcs, nincs külső hívás, és az adat nem távozik a felhasználó eszközéről.
+
+## Főbb funkciók
+
+- **Böngésző oldali inferencia**: Az LLM helyileg fut a látogató böngészőjében WebLLM/MLC segítségével – nincs szükség szerver GPU-jára
+- **Úszó chat widget**: Bejelentkezett felhasználók közvetlenül a böngésző oldali LLM-től kérdéseket tehetnek fel a front-end felületen
+- **Admin-bar állapotjelző**: A WebLLM motor valós idejű állapotát láthatóvává teszi a WordPress admin-bar-ban
+- **SharedWorker futási környezet**: Több böngésző lap egyetlen GPU munkamenetét használja, és nem verseng a GPU erőforrásaiért
+- **apiFetch middleware**: A WordPress REST kérések, amelyek az AI Client SDK mintát követik, átláthatóan továbbítódnak a helyi WebLLM broker-hez – nincs visszacsapásos HTTP ciklus
+- **Widget beállítások UI**: Kapcsolófelület a chat widget kikapcsolására és az automatikus prompt viselkedésének konfigurálására
+- **IndexedDB cache**: A modell súlyainak letöltése megmarad CDN átirányítások ellen, amelyek megszakítják az alapértelmezett Cache API útvonalát
+- **wpai filter integráció**: Beépül a `wpai_preferred_text_models` filterbe, így az AI Experiments funkciója a böngésző motorra irányul, ha az úgy van beállítva
+
+## Feltételek
+
+- WordPress 5.3 vagy magasabb
+- PHP 7.4 vagy magasabb
+- Ultimate Multisite plugin (aktív)
+- Egy böngésző WebGPU támogatással (Chrome 113+, Edge 113+, vagy Firefox Nightly WebGPU bekapcsolásával)
+
+## Telepítés
+
+1. Töltse fel az addon fájlokat a `/wp-content/plugins/` könyvtárába
+2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontján keresztül
+3. Navigáljon az **Ultimate Multisite → AI Connector** menüpontra a widget beállításainak konfigurálásához
+
+## Úszó Chat Widget
+
+Az úszó chat widget lehetővé teszi bármely bejelentkezett felhasználónak, hogy közvetlenül a front-end felületéről interagáljon a böngésző oldali LLM-mel, anélkül, hogy elhagyná az adott oldalt.
+
+### Mit csinál
+
+Engedélyezve a widget egy chat ikon jelenik meg minden front-end oldal sarokában a bejelentkezett felhasználók számára. Az ikon rákattintása egy chat panel nyitását eredményezi, ahol a felhasználó beírhat promptokat és kap válaszokat a helyileg futó WebLLM modellektől. Mivel a modell teljes egészében a böngészőben fut, a válaszok magánultak és nem igényelnek semmilyen szerver oldali feldolgozást.
+
+### Admin-Bar állapotjelző
+
+A WordPress admin-bar tartalmaz egy állapotjelzőt, amely mutatja a WebLLM motor aktuális állapotát:
+
+| Állapot | Jelentés |
+|--------|---------|
+| **Loading** | Az MLC motor inicializálódik vagy letölti a modell súlyait |
+| **Ready** | A modell betöltve és inferenciára használatképes |
+| **Idle** | Az motor betöltve, de a SharedWorker lap nem aktív |
+| **Error** | Az motor nem sikerült inicializálni — ellenőrizze a böngésző konzolját a részletekért |
+
+Az indikátor valós időben frissül anélkül, hogy oldalfrissítést igényelne.
+
+### Hogyan engedélyezzük vagy kikapcsoljuk a widgetet
+
+1. Navigáljon az **Ultimate Multisite → AI Connector** menüpontra a hálózat admin felületén
+2. Keresse meg a **Connector** panel-t
+3. Kapcsolja be vagy ki az **Enable floating chat widget** kapcsolót
+4. Mentse a beállításokat
+
+A widgetet az egysitésten belül is engedélyezheti vagy kikapcsolhatja az adott oldal admin felületéről, ha a hálózat admin ezt a lehetőséget biztosította.
+
+## Widget Beállítások
+
+A **Ultimate Multisite → AI Connector** menüpontban található Connector panel a következő beállításokat tartalmazza az úszó chat widgethez:
+
+### Enable Floating Chat Widget
+
+Kapcsolja be vagy ki a chat widgetet az egész hálózat számára. Kikapcsolva a widget nem jelenik meg semmilyen front-end oldalon, függetlenül a felhasználói szereptől.
+
+**Alapértelmezett:** Ki van kapcsolva
+
+### Auto-Prompt Viselkedés
+
+Kontrollálja, hogy a chat widget automatikusan küldi-e promptot, amikor egy felhasználó megnyitja.
+
+| Opció | Viselkedés |
+|--------|-----------|
+| **Disabled** | A widget üres chat panelként nyílik — a felhasználó saját promptot ír |
+| **Page context** | A widget egy előre töltött promptol nyílik, amely alapul a jelenlegi oldal címén és tartalmán |
+| **Custom prompt** | A widget egy saját promptol nyílik, amelyet az alábbi mezőben definiál |
+
+Ha **Custom prompt**-ra állítja, egy további szövegmező jelenik meg, ahol a szöveges alappromptot adhatja meg. Támogatja az alapvető template változókat:
+
+- `{site_name}` — az aktuális oldal neve
+- `{page_title}` — az aktuális oldal címe
+- `{user_display_name}` — a bejelentkezett felhasználó megjelenített neve
+
+**Alapértelmezett:** Ki van kapcsolva
+
+## SharedWorker Runtime
+
+Az 1.1.0 verzió bevezet egy SharedWorker futási környezetet az MLC motor számára. Korábban minden böngésző lap, amely használta a WebLLM-et, saját modell példányát töltötte be, versengve a GPU memória miatt, ami teljesítményproblémákat okozott a korlátozott VRAM-eszközökön.
+
+A SharedWorker futási környezet segítségével egy lapként funkcionál az motor hostja. Minden más lap a SingleWorker-en keresztül kommunikál ezzel az egyetlen példánnyal. Az eredmény:
+
+- Egy GPU munkamenet minden nyitott lap számára megosztva
+- Gyorsabb válaszok a modell betöltése után (nem kell ismételt inicializáció)
+- Alacsonyabb csúcsmemória felhasználás az eszközön
+
+A SharedWorker átlátható a felhasználók számára. Az admin-bar állapotjelzője mindig tükrözi a megosztott motor állapotát, nem pedig az egyedi lapot.
+
+## apiFetch Middleware
+
+Az addon egy `apiFetch` middleware-t telepít, amely megakadályozza a WordPress REST API kéréseket, amelyek az AI Client SDK mintát követik. Ennek helyett ezek a kérések közvetlenül továbbítódnak a SharedWorker-ben futó helyi WebLLM broker-hez.
+
+Ez azt jelenti, hogy a standard WordPress `apiFetch` API-t használó pluginok és témák automatikusan részesülnek a böngésző oldali modellektől, ha azok elérhetők, és nincs szükség kódmódosításra.
+
+## Hooks és Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Regisztrálja a WebLLM böngésző motorát mint preferált szöveges modellt. Az addon automatikusan kapcsolódik ehhez a filterhez, amikor az motor konfigurálva és elérhető.
+- `ultimate_webllm_widget_enabled` — Áthidalja a widget engedélyezett állapotát egy adott felhasználó vagy kontextus számára. Vissít egy `true` vagy `false` értéket.
+- `ultimate_webllm_auto_prompt` — Modifikálja az automatikus prompt szövegét, mielőtt elküldődik a widgethez. Megkapja a prompt szövegét és az aktuális `WP_Post` objektumát.
+
+## Hibaelhárítás
+
+### A chat widget nem jelenik meg
+
+- Kérjük vissza, hogy a felhasználó bejelentkezett-e — a widgetet csak hiteles felhasználóknak mutatjuk meg
+- Ellenőrizze, hogy az **Enable floating chat widget** kapcsoló be van állítva a Connector panel-ben
+- Vizsgálja meg, hogy a felhasználó böngészője támogatja-e a WebGPU-t (lásd a Feltételek)
+
+### Az admin-bar indikátora "Error"-t mutat
+
+Nyissa meg a böngésző fejlesztői konzolját (F12) és keresse meg a WebLLM-hez kapcsolódó hibaüzeneteket. Gyakori okok:
+
+- A böngésző nem támogatja a WebGPU-t
+- A modell súlyainak letöltése sikertelen — ellenőrizze a hálózat kapcsolatot és próbálja meg törölni az IndexedDB cache-t a böngésző fejlesztői eszközökben (Application → IndexedDB)
+- Egy böngésző bővítmény blokkolja a SharedWorker-t
+
+### A modell súlyai minden alkalommal letöltődnek
+
+Az addon az IndexedDB-t használja cache alapként, hogy biztosítsa, hogy a modell súlyai megmaradjanak a CDN átirányítások ellen. Ha a súlyok minden látogatáskor újra letöltődnek, ellenőrizze, hogy a böngésző magánéletének beállításai vagy bővítmények nem törlik az IndexedDB-t.
+
+## Changelog
+
+Látogasson el a [Changelog](./changelog) oldalra a teljes verzió történetéért.

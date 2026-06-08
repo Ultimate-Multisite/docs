@@ -1,0 +1,101 @@
+---
+title: Oldalt exporter
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Oldal Exportálása
+
+## Tartalom
+
+Megértjük, hogy szükség van a weboldalok (subsite-ok) átvitelére a hálózatukban egyetlen oldalra, és fordítva is, ha az ügyfelejük úgy dönt, hogy áttelepíti az oldalát. Az Site Exporter és Importer add-on ezt a feladatot egyszerűvé teszi. Ez az eszköz zip fájlok segítségével exportálja és importálja az oldalakat, amelyek biztonsági mentésként is szolgálhatnak.
+
+## Funkciók
+
+* Oldalak Exportálása és Importálása
+
+* Könnyen használható felület
+
+* Oldal biztonsági mentése létrehozása
+
+## Dokumentáció
+**Hogyan exportáljak és importáljak egy oldalt**
+
+## Telepítés
+
+1. Töltse fel az **ultimate-multisite-site-exporter** fájlt a **/wp-content/plugins/** könyvtárba
+2. Aktiválja a plugin-ot a WordPress **Plugins** menüpontján keresztül
+3. Kövesse a lépésről lépésre haladó Wizard-t a plugin beállításához
+
+## Használat Útmutató
+
+Az Ultimate Multisite segítségével exportálhat egy oldalt a hálózatából, vagy importálhat egy oldalt a multisite vagy single-site telepítésére.
+
+A folyamat elindításához navigáljon a „add-ons” oldalunkra, és telepítse az Ultimate Multisite: Site Exporter & Importer add-ont.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Gyerjen a Plugins oldalára, és kattintson az add-onra, amelyet éppen telepített, hogy **Network Activate**-elje.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Az **Export & Import** opciót az Ultimate Multisite menüjén, bal oldalon találja.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Hogyan exportáljak egy oldalt
+
+Ha egy oldalt exportálni szeretne a hálózatából, navigáljon az Ultimate Multisite menüjében az **Export & Import** opcióra, és az **Export Sites** fülön kattintson a **Generate new Site Export** gombra.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Keresse meg az oldalt, amelyet exportálni szeretne, és válassza ki azokat az elemeket, amelyeket a kiexportált fájlban szeretne tartalmazni. Meg tudja adni a témákat (themes), plugin-okat és feltöltéseket (uploads). Ha az oldala túl nagy, háttérben futtatott exportálási folyamatot választhat.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Kattintson az **Export Site** gombra. A kiexportált oldala az **Existing Exports** listában lesz elérhető. Kattintson a **Download ZIP** gombra a fájl letöltéséhez. Az export ZIP-ek tartalmaznak egy önindító `index.php`-t és `readme.txt`-et, így őket friss hostra telepíthetik anélkül, hogy előtte külön importer plugin-ot kellene telepíteni.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Hogyan exportáljak az egész hálózatot
+
+Ahhoz, hogy az összes subsite-ot együtt exportálja, navigáljon az Ultimate Multisite menüjében az **Export & Import** opcióra, és az export képernyőn használja az **Network Export** opciót. A generált archivum tartalmazza az összes subsite-ot egyetlen ZIP fájlban, ami a host átvitelhez, staging újraépítéshez vagy hálózat szintű biztonsági mentéshez használható.
+
+A hálózat exportálása nagy lehet. Ha ezt a folyamatot alacsony forgalmú időszakban végezzi el, és megerősíti, hogy a szerver elegendő tárhelyet biztosít az archivum és az összes beágyazott feltöltéshez, plugin-hoz és témához.
+
+## Hogyan importáljak egy oldalt
+
+Egy oldalt importálni ahhoz, hogy a **Import a Site** fülre navigáljon, és feltöltse az importálni kívánt oldal .zip fájlát. Az URL-t újra állíthatja, vagy az oldalt tartani a régi URL-l, ha üresen hagyja a mezőt. Ezenkően, jelölheti ki a négyzetet, hogy az importálás után törölje a .zip fájlt a telepítéséből. Ezután kattintson a **Begin Import** gombra.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+A folyamat egy kicsit időt vehet. Az importer alatt látható listában egy függőben lévő importálást fog látni.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+A folyamatot az **Cancel Import** gombra kattintva állíthatja le.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Miután a folyamat befejeződött, az oldala már elérhető a hálózatán.
+
+## Hogyan importáljak egy oldalt single-site telepítésre
+
+Egy oldalt single-site telepítésére importálni ahhoz, először telepítse és aktiválja az importer-t az oldalán. A letöltéshez szükséges linket az exporter fülön találja.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Az importer-t a **Tools** menüjén, bal oldalon, az **Export & Import** almenüpont alatt találja.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Feltöltse az importálni kívánt oldal .zip fájlát. Az URL-t újra állíthatja, vagy az oldalt tartani a régi URL-l, ha üresen hagyja a mezőt. Ezenkően, jelölheti ki a négyzetet, hogy az importálás után törölje a .zip fájlt a telepítéséből. Ezután kattintson a **Begin Import** gombra.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+A folyamat egy kicsit időt vehet. Az importer alatt látható listában egy függőben lévő importálást fog látni.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+A folyamatot az **Cancel Import** gombra kattintva állíthatja le.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Miután a folyamat befejeződött, az oldala az általa éppen importált oldallal helyettesítve kerül.

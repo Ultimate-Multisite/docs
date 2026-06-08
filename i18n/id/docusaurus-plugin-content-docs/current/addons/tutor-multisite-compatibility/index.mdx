@@ -1,0 +1,116 @@
+---
+title: Kompatibilitas Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Kompatibilitas Tutor Multisite
+
+Sebuah plugin WordPress yang menambahkan perbaikan kompatibilitas untuk Tutor LMS di lingkungan multisite.
+
+## Deskripsi
+
+Plugin ini menyediakan perbaikan kompatibilitas penting untuk menjalankan Tutor LMS di jaringan WordPress multisite. Plugin ini menangani pendaftaran pengguna, manajemen instruktur, batasan kursus, dan fungsionalitas spesifik multisite lainnya.
+
+## Fitur
+
+- **Manajemen Tabel Database**: Secara otomatis mendeteksi dan membuat tabel Tutor LMS yang hilang yang gagal karena batasan kunci asing multisite
+- **Pendaftaran Pengguna Multisite**: Penangan AJAX kustom untuk mengelola pendaftaran pengguna di seluruh situs jaringan
+- **Manajemen Peran Instruktur**: Penugasan dan manajemen peran instruktur otomatis di lingkungan multisite
+- **Batasan Kursus**: Integrasi dengan Ultimate Multisite untuk mengelola batasan pembuatan kursus dan *funnel* berdasarkan paket situs
+- **Tampilan Admin Kustom**: Antarmuka daftar dan manajemen instruktur yang sadar multisite
+- **Alat Admin**: Antarmuka manajemen database untuk administrator jaringan dan situs
+
+## Persyaratan
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (ditegakkan secara otomatis melalui *header* `Requires Plugins`)
+- Instalasi WordPress Multisite
+- Plugin Ultimate Multisite (untuk fungsionalitas batasan kursus)
+
+## Instalasi
+
+1. Unggah file plugin ke `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Pastikan Tutor LMS sudah terinstal dan diaktifkan
+3. Aktifkan plugin melalui menu 'Plugins' di WordPress
+4. Plugin akan terintegrasi secara otomatis dengan Tutor LMS
+
+## Struktur File
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (File plugin utama)
+├── includes/
+│   ├── class-database-manager.php (Pembuatan dan manajemen tabel database)
+│   ├── class-admin-interface.php (Antarmuka admin untuk manajemen database)
+│   ├── class-course-limits.php (Penangan batasan kursus dan *funnel*)
+│   ├── class-instructor-manager.php (Manajemen peran instruktur)
+│   ├── class-ajax-handlers.php (Penangan AJAX kustom)
+│   ├── class-query-helper.php (Utilitas kueri database)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model pengguna multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Daftar instruktur kustom)
+│       └── views/
+│           └── instructors.php (Tampilan admin instruktur)
+└── README.md
+```
+
+## Fungsionalitas yang Dipindahkan dari Plugin MU
+
+Plugin ini berisi fungsionalitas yang sebelumnya berada di `wp-content/mu-plugins/daves.php`:
+
+- Batasan perubahan status kursus
+- Batasan pembuatan kursus
+- Integrasi dan batasan CartFlows
+- Manajemen peran instruktur Tutor
+- Penanganan pendaftaran pengguna multisite
+- Tampilan ID produk kursus
+
+## Manajemen Database
+
+### Masalahnya
+
+Di lingkungan WordPress multisite, pembuatan tabel Tutor LMS gagal untuk tabel dengan batasan kunci asing ke tabel pengguna. Ini terjadi karena:
+
+- Tabel spesifik situs menggunakan awalan seperti `wp_2_tutor_carts`
+- Kunci asing merujuk ke `wp_2_users` (yang tidak ada)
+- Tabel pengguna yang sebenarnya adalah `wp_users` (dibagikan di seluruh jaringan)
+
+### Solusinya
+
+Plugin ini secara otomatis:
+
+1. **Mendeteksi Tabel yang Hilang**: Memeriksa tabel yang gagal dibuat karena batasan kunci asing
+2. **Membuat Tabel dengan Referensi yang Benar**: Menggunakan nama tabel pengguna yang benar (`wp_users` di multisite)
+3. **Menangani Beberapa Skenario**:
+   - Aktivasi/reaktivasi plugin
+   - Pembuatan situs baru di jaringan
+   - Pemeriksaan tabel manual melalui antarmuka admin
+
+### Tabel yang Terpengaruh
+
+- `tutor_coupon_usages` - Berisi kunci asing ke tabel pengguna
+- `tutor_carts` - Berisi kunci asing ke tabel pengguna
+- `tutor_notification_preferences` - Tabel TutorPro dengan kunci asing ke tabel pengguna
+
+### Antarmuka Admin
+
+Akses alat manajemen database di:
+
+- **Admin Jaringan**: Settings → Tutor Multisite DB
+- **Admin Situs**: Tools → Tutor Multisite DB
+
+Antarmuka ini memungkinkan Anda untuk:
+- Melihat tabel yang hilang di semua situs
+- Memicu pembuatan tabel secara manual
+- Memeriksa konfigurasi database
+- Melihat informasi status terperinci
+
+## Dukungan
+
+Plugin ini dirancang khusus untuk platform KursoPro. Untuk dukungan teknis, hubungi tim pengembang.

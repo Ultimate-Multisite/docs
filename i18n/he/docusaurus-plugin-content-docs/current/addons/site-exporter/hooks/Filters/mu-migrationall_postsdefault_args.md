@@ -1,0 +1,26 @@
+---
+id: mu-migrationall_postsdefault_args
+title: מסנן - mu-migration/all_posts/default_args
+sidebar_label: mu-migration/all_posts/default_args
+_i18n_hash: 1f2b84b278afa4069806497ea0036b4c
+---
+# Filter: mu-migration/all_posts/default_args
+
+מסנן את ארגומנטים ברירת המחדל עבור שאילתת פוסטים במתודה `all_posts`.
+
+## פרמטרים
+
+| שם | סוג | תיאור |
+|------|------|-------------|
+| $default_args | `array` | מערך ארגומנטים ברירת המחדל. |
+
+### מאז
+
+- 0.2.0
+### מקור
+
+מוגדר ב[`inc/mu-migration/includes/commands/class-mu-migration-base.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-base.php#L70) בשורה 70
+
+
+## מחזיר
+מערך ארגומנטים ברירת המחדל.

@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite Kompatibilitás
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Egy WordPress plugin, amely kompatibilitási javításokat ad hozzá a Tutor LMS-hez multisite környezetekben.
+
+## Leírás
+
+Ez a plugin biztosítja az alapvető kompatibilitási javításokat a Tutor LMS futtatásához a WordPress multisite hálózatokon. Kezeli a felhasználói beiratkozást, az oktatók kezelését, a tanemény korlátait és más multisite specifikus funkciókat.
+
+## Funkciók
+
+- **Adatbázistáblák Kezelése**: Automatikusan észleli és létrehozza azokat a hiányzó Tutor LMS táblákat, amelyek a multisite külső kulcs korlátozások miatt nem hozódnak létre.
+- **Multisite Felhasználói Beiratkozás**: Saját AJAX kezelő funkciók a felhasználói beiratkozás kezeléséhez a hálózat összes oldalán.
+- **Oktató Szerep Kezelése**: Automatikus oktató szerep hozzárendelése és kezelése multisite környezetekben.
+- **Tanemény Korlátozások**: Integráció az Ultimate Multisite-lel a tanemény- és funnel-létre vonatkozó korlátok kezeléséhez az oldal ütemtervei alapján.
+- **Egyedi Admin Felületek**: Multisite-t figyelembe vevő oktatólista és kezelő felület.
+- **Admin Eszközkészlet**: Adatbáziskezelő felület a hálózat- és oldalszintű adminok számára.
+
+## Feltételek
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (automatikusan kötelező a `Requires Plugins` fejléce alapján)
+- WordPress Multisite telepítés
+- Ultimate Multisite plugin (a tanemény korlátozási funkcióhoz)
+
+## Telepítés
+
+1. Töltse fel a plugin fájlait a `/wp-content/plugins/tutor-multisite-compatibility/` útvonalba.
+2. Győződjön meg róla, hogy a Tutor LMS telepítve és aktiválva van.
+3. Aktiválja a pluginet a WordPress 'Plugins' menüpontján keresztül.
+4. A plugin automatikusan integrálódik a Tutor LMS-el.
+
+## Fájlstruktúra
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Fő plugin fájl)
+├── includes/
+│   ├── class-database-manager.php (Adatbázistábla létrehozása és kezelése)
+│   ├── class-admin-interface.php (Admin felület az adatbázis kezeléséhez)
+│   ├── class-course-limits.php (Tanemény- és funnel korlátozó kezelők)
+│   ├── class-instructor-manager.php (Oktató szerep kezelő)
+│   ├── class-ajax-handlers.php (Személyre szabott AJAX kezelők)
+│   ├── class-query-helper.php (Adatbázis lekérdezési utilitások)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite felhasználói modell)
+│   └── admin/
+│       ├── class-instructors-list.php (Egyedi oktatólista)
+│       └── views/
+│           └── instructors.php (Oktató admin nézete)
+└── README.md
+```
+
+## Funkciók, amelyek áttekeredtek az MU Plugin-ből
+
+Ez a plugin tartalmaz funkciókat, amelyek korábban a `wp-content/mu-plugins/daves.php` fájlban voltak:
+
+- Tanemény státuszváltozás korlátozásai
+- Tanemény létrehozási korlátozások
+- CartFlows integrációja és korlátai
+- Tutor oktató szerep kezelése
+- Multisite felhasználói beiratkozás kezelése
+- Tanemény termék ID megjelenítése
+
+## Adatbázis Kezelése
+
+### A Probléma
+
+A WordPress multisite környezetekben a Tutor LMS táblák létrehozása sikertelen lehet azokat a táblák esetében, amelyek külső kulcs korlátozásokkal kapcsolódnak a felhasználók táblájához. Ennek oka:
+
+- Az oldal-specifikus táblák olyan prefixeket használnak, mint például `wp_2_tutor_carts`
+- A külső kulcsök a `wp_2_users` táblára utalnak (ami nem létezik)
+- Az aktuális felhasználók táblája a `wp_users` (ami a hálózat minden oldalán közös)
+
+### A Megoldás
+
+Ez a plugin automatikusan:
+
+1. **Észri hiányzó táblákat**: Ellenőrzi azokat a táblákat, amelyek külső kulcs korlátozások miatt nem hozódnak létre.
+2. **Létrehoz táblákat a helyes hivatkozásokkal**: Meghasználja a megfelelő felhasználók táblanévet (`wp_users` a multisite környezetben).
+3. **Kézeli több forgatókönyvet**:
+   - Plugin aktiválása/reaktiválása
+   - Új oldal létrehozása a hálózatban
+   - Manuális tábla ellenőrzés az admin felületen keresztül
+
+### Érintett Táblák
+
+- `tutor_coupon_usages` - Tartalmaz külső kulcsot a felhasználók táblájához
+- `tutor_carts` - Tartalmaz külső kulcsot a felhasználók táblájához
+- `tutor_notification_preferences` - TutorPro tábla, amely külső kulcsot tartalmaz a felhasználók táblájához
+
+### Admin Felület
+
+Hozzáférés az adatbázis kezelő eszközökhöz a következő helyen:
+
+- **Hálózat Admin**: Beállítások → Tutor Multisite DB
+- **Oldal Admin**: Eszközök → Tutor Multisite DB
+
+Az felület lehetővé teszi, hogy:
+- Látja a hiányzó táblákat az összes oldalon.
+- Manuálisan indítsa el a táblák létrehozását.
+- Ellenőrizze az adatbázis konfigurációját.
+- Látja a részletes állapotinformációkat.
+
+## Támogatás
+
+Ez a plugin kifejezetten a KursoPro platformhoz készült. A műszaki támogatás érdekében kérjük, vegye fel kapcsolatot a fejlesztői csapattal.

@@ -1,0 +1,82 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Ultimate Multisite: GoCardless Fizetési Kapu
+
+Engedélyezze ügyfeleinek, hogy a Multisite Ultimate előfizetéseit és termékeinek fizetését Közvetett Banki Átutalással (Direct Debit) a GoCardless segítségével végezzék!
+
+## Telepítés
+
+1. Töltse fel az 'ultimate-multisite-gocardless' fájlt a '/wp-content/plugins/' könyvtárba
+2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontja alatt
+3. Kövesse a lépésről lépésre haladó Wizard utasításait a plugin beállításához
+
+## Használati Útoguide
+
+A _GoCardless_ egy fizetési kapu, amely **Európában és az Egyesült Királyságban** elérhető, és **Közvetett Banki Átutalást (Direct Debit)** tesz lehetővé.
+
+Az **Ultimate Multisite: GoCardless Fizetési Kapu** hozzáadja a _GoCardless_ támogatást az Ultimate Multisite-hoz, így lehetővé téve, hogy e régióban Közvetett Banki Átutalással vegye el az ügyfeleikétől az összegeket.
+
+Ez az útmutató bemutatja, hogyan kell beállítani a _GoCardless_ küldagyására, hogy el tudja kezdeni az elszámolásokat az Ultimate Multisite hálózatán.
+
+_**Megjegyzés: A GoCardless csak az alábbi fizetőeszközökkel működik:**_ **EUR, GBP, AUD, SEK és DKK.**
+
+## Az Add-on Telepítése
+
+Először is, telepítenie kell a GoCardless add-ont az Ultimate Multisite-hoz. Ezt megteheti, hogy navigál **Ultimate Multisite > Settings > Add-ons** (a sávszínen) és kiválasztja a GoCardless add-ont a listából.
+
+Miután az add-on telepítve és aktiválva van, navigáljon **Ultimate Multisite > Settings > Payments** menüpontra, kapcsolja be a GoCardless opciót, és mentse el.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+## Az Access Token Megszerezdése
+
+Létre kell hozni egy fiókot a _GoCardless_ felületen (vagy a _GoCardless_ sandbox felületen, ha először **tesztelni** szeretné, ami ajánlott). Bejelentkezése után navigáljon a **Developers** menüpontra.
+
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+
+A **Developers** oldalon kattintson a képernyő jobb felső sarkában található **Create** gombra, majd kattintson az **Access Token** opcióra.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+
+Ez egy új modális ablakot nyit meg, amely lehetővé teszi az új token létrehozását. Adjon neki egy könnyen felismerhető nevet, és ügyeljen arra, hogy a **Scope** menüpont alatt az **Olvasási-írási hozzáférés (Read-write access)** opciót válassza ki.
+
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+
+Az access token megjelenik a képernyőn. Másolja le ezt az értéket, és illítsé be az **Ultimate Multisite > Settings > Payments > GoCardless** menüpontra.
+
+Győződjön meg róla, hogy a jobb oldali mezőbe helyezi. Ha **éles token** **n** , kapcsolja ki a **sandbox mode** opciót, mielőtt beilleszinti az értéket.
+
+![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+
+Ennyi volt az első lépéshez. Tovább, egy webhook hallgató (webhook listener) beállítását kell végeznie.
+
+## A Webhook Hallgató Beállítása
+
+Az előfizetések kezelésénél az Ultimate Multisitenek tudnia kell, ha változik az előfizetési státusz, ha érkeznek új fizetések, és más hasonló dolgok.
+
+A fizetési kapuk általában **webhook hívásokkal (webhook calls)** értesítik az Ultimate Multisite-ot ezekről a változásokról. Emiatt, hogy az integráció 100%-ban működjön, meg kell mondanunk a _GoCardless_nek, hogy melyik URL-re hívja meg ezekkel az információkkal.
+
+Visszatérjen a **GoCardless > Developers** panelhez, és kattintson újra a Create gombra, de most már válassza ki az **Webhook endpoint** opciót.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->Egy új ablak fog nyílni a webhook endpoint opciókkal. A webhook URL-t kér. Ezért térjen vissza az **Ultimate Multisite settings > Payments > GoCardless** menüpontra, és másolja ki az ott listált webhook URL-t:
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+Ezenkívül, beírhat egy **webhook titkos kulcsot (webhook secret)**, amelyet a webhook hívásainak aláírására fog használni. Amit ezen a mezőben ír, azt ugyanazokkal kell beírnia az **Ultimate Multisite Webhook Secret** mezőbe is.
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+Befejezésként mentse el az endpointet a **Create webhook endpoint** gombra kattintással, és ne feledje el **menteni az Ultimate Multisite beállításait is**.
+
+Most már készen áll az _GoCardless_ elfogadására!

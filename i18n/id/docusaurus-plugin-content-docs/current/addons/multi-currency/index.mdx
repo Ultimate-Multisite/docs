@@ -1,0 +1,117 @@
+---
+title: Multi-Mata Uang
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Mata Uang
+
+Ultimate Multisite: Multi-Mata Uang memungkinkan jaringan Anda menerima pembayaran dalam berbagai mata uang. Ini secara otomatis mengonversi harga menggunakan nilai tukar langsung atau manual, memungkinkan Anda mengatur harga per produk yang tepat untuk mata uang apa pun, dan mendeteksi mata uang pilihan pengunjung melalui geolokasi — semuanya dikelola dari satu dashboard admin.
+
+## Fitur Utama
+
+- **Konversi nilai tukar otomatis** — harga dikonversi dari mata uang dasar Anda menggunakan nilai tukar yang diambil dari penyedia pilihan Anda
+- **Pengaturan harga per produk** — atur harga spesifik mata uang pada produk apa pun untuk melewati konversi otomatis
+- **Kolom pemilih mata uang saat pendaftaran** — memungkinkan pelanggan memilih mata uang pilihan mereka saat checkout/pendaftaran
+- **Berbagai penyedia nilai tukar** — ECB, Frankfurter, Stripe, atau nilai manual sepenuhnya
+- **Deteksi mata uang berbasis geolokasi** — secara otomatis memilih mata uang yang sesuai dengan negara pengunjung
+- **Dashboard admin** — kelola mata uang aktif, nilai tukar, dan pengaturan penyedia dari satu tempat
+
+## Persyaratan
+
+- Ultimate Multisite 2.0.0 atau lebih tinggi
+- Instalasi WordPress Multisite
+- PHP 7.4 atau lebih tinggi
+
+## Instalasi
+
+1. Unggah file plugin ke `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktifkan plugin melalui layar **Plugins** di WordPress (Aktifkan Jaringan)
+3. Arahkan ke **Ultimate Multisite → Multi-Currency** untuk membuka dashboard admin
+4. Tambahkan mata uang yang ingin Anda terima dan konfigurasikan penyedia nilai tukar Anda
+
+## Konfigurasi
+
+### Dashboard Admin
+
+Dashboard admin Multi-Mata Uang (**Ultimate Multisite → Multi-Currency**) adalah tempat pusat untuk:
+
+- Menambah, mengaktifkan, atau menonaktifkan mata uang
+- Memilih penyedia nilai tukar dan menyegarkan nilai tukar sesuai permintaan
+- Meninjau nilai tukar saat ini untuk semua mata uang aktif
+- Mengatur nilai manual ketika penyedia otomatis tidak cocok
+
+### Penyedia Nilai Tukar
+
+| Penyedia | Deskripsi |
+|---|---|
+| **ECB** | Bank Sentral Eropa — nilai harian gratis untuk jaringan berbasis EUR |
+| **Frankfurter** | API cermin ECB sumber terbuka — gratis, tidak memerlukan kunci API |
+| **Stripe** | Menggunakan nilai tukar FX langsung dari Stripe — memerlukan integrasi Stripe yang aktif |
+| **Manual** | Anda memasukkan nilai tukar secara langsung; tidak ada panggilan API eksternal |
+
+Pilih penyedia Anda di **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Nilai tukar dapat disegarkan secara manual kapan saja atau dijadwalkan untuk diperbarui secara otomatis.
+
+### Pengaturan Harga Per Produk
+
+Ketika konversi otomatis tidak cukup akurat, Anda dapat mengatur harga yang tepat untuk mata uang tertentu pada produk apa pun:
+
+1. Buka editor produk (**Ultimate Multisite → Products → Edit**)
+2. Gulir ke bagian **Currency Pricing**
+3. Masukkan harga yang tepat untuk setiap mata uang yang ingin Anda atur ulang
+4. Simpan produk
+
+Produk tanpa pengaturan ulang akan menggunakan harga yang dikonversi dari mata uang dasar Anda.
+
+### Kolom Pemilih Mata Uang Saat Pendaftaran
+
+Kolom pemilih mata uang dapat ditambahkan ke alur pendaftaran/checkout Anda sehingga pelanggan memilih mata uang pilihan mereka saat mendaftar:
+
+1. Buka **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktifkan **Show currency selector on signup**
+3. Opsional mengatur mata uang default atau membiarkan geolokasi menentukan nilai yang dipilih sebelumnya
+
+Mata uang yang dipilih akan disimpan dengan langganan dan digunakan untuk semua penagihan berikutnya.
+
+### Deteksi Mata Uang Berbasis Geolokasi
+
+Ketika deteksi geolokasi diaktifkan, addon memetakan negara pengunjung ke mata uang dan memilihnya sebelumnya di kolom pemilih mata uang. Untuk mengaktifkan:
+
+1. Buka **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktifkan **Detect currency from visitor location**
+3. Petakan negara ke mata uang di tabel **Geolocation Mapping**
+
+Jika tidak ada pemetaan untuk negara pengunjung, mata uang dasar jaringan akan digunakan sebagai cadangan.
+
+## Pertanyaan yang Sering Diajukan
+
+### Apa yang terjadi jika penyedia nilai tukar tidak tersedia?
+
+Addon akan kembali menggunakan nilai tukar terakhir yang berhasil diambil. Jika nilai tukar belum pernah diambil, ia akan kembali menggunakan nilai manual yang telah Anda konfigurasikan. Disarankan untuk mengonfigurasi nilai manual sebagai jaring pengaman.
+
+### Bisakah saya menggunakan penyedia yang berbeda untuk mata uang yang berbeda?
+
+Tidak — satu penyedia aktif pada satu waktu untuk semua mata uang. Gunakan **Manual** jika Anda membutuhkan kendali penuh atas nilai individual.
+
+### Apakah geolokasi memerlukan plugin terpisah?
+
+Tidak diperlukan plugin geolokasi eksternal. Addon menggunakan deteksi IP-ke-negara bawaan WordPress. Untuk akurasi yang lebih tinggi, layanan geolokasi khusus dapat diintegrasikan melalui hook filter yang disediakan.
+
+### Apakah pengaturan ulang per produk diterapkan sebelum atau sesudah pajak?
+
+Pengaturan ulang per produk menetapkan harga pra-pajak dalam mata uang target. Pajak dihitung di atas harga pengaturan ulang menggunakan konfigurasi pajak Anda yang sudah ada.
+
+## Changelog
+
+### Versi 1.0.0 — Dirilis pada 2026-04-02
+
+- Baru: Dukungan multi-mata uang dengan konversi nilai tukar otomatis
+- Baru: Pengaturan harga per produk untuk harga spesifik mata uang yang tepat
+- Baru: Kolom pemilih mata uang saat pendaftaran untuk alur checkout
+- Baru: Penyedia nilai tukar: ECB, Frankfurter, Stripe, dan manual
+- Baru: Deteksi mata uang berbasis geolokasi
+- Baru: Dashboard admin untuk mengelola mata uang dan nilai tukar
+- Perbaikan: Dashboard selalu menampilkan harga dalam mata uang dasar terlepas dari mata uang yang dipilih

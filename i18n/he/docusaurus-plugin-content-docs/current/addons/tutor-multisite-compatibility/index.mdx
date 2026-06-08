@@ -1,0 +1,116 @@
+---
+title: תאימות למולטי-אתר מאמן
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="תאימות Tutor Multisite" />
+
+# תאימות Tutor Multisite
+
+תוסף WordPress שמוסיף תיקוני תאימות עבור Tutor LMS בסביבת Multisite.
+
+## תיאור
+
+תוסף זה מספק תיקוני תאימות חיוניים להפעלת Tutor LMS ברשתות WordPress Multisite. הוא מטפל בהרשמה של משתמשים, ניהול מנחים, הגבלות קורסים ותכונות נוספות הספציפיות לסביבת Multisite.
+
+## תכונות
+
+- **ניהול טבלאות מסד נתונים**: מזהה אוטומטית ויוצר טבלאות Tutor LMS חסרות שנכשלות עקב אילוצי מפתח זר (foreign key constraints) של Multisite.
+- **הרשמה של משתמשים ב-Multisite**: מטפלי AJAX מותאמים אישית לניהול הרשמה של משתמשים ברחבי אתרי הרשת.
+- **ניהול תפקיד מנחה**: הקצאה וניהול אוטומטי של תפקיד מנחה בסביבת Multisite.
+- **הגבלות קורסים**: אינטגרציה עם Ultimate Multisite לניהול הגבלות יצירת קורסים ומשפכי לימוד (funnels) בהתבסס על תוכניות האתר.
+- **תצוגות מותאמות אישית למנהל**: ממשק ניהול ורשימת מנחים מודעים למבנה Multisite.
+- **כלים למנהל**: ממשק ניהול מסד נתונים למנהלי הרשת ולמנהלי האתר.
+
+## דרישות
+
+- WordPress 5.0+
+- PHP 7.4+
+- תוסף Tutor LMS (מוגדר אוטומטית באמצעות כותרת `Requires Plugins`)
+- התקנת WordPress Multisite
+- תוסף Ultimate Multisite (ליכולת ניהול הגבלות קורסים)
+
+## התקנה
+
+1. העלה את קבצי התוסף למיקום `/wp-content/plugins/tutor-multisite-compatibility/`
+2. ודא ש-Tutor LMS מותקן ומופעל
+3. הפעל את התוסף דרך תפריט 'Plugins' ב-WordPress
+4. התוסף יתממשק אוטומטית עם Tutor LMS
+
+## מבנה הקבצים
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (קובץ התוסף הראשי)
+├── includes/
+│   ├── class-database-manager.php (יצירה וניהול טבלאות מסד נתונים)
+│   ├── class-admin-interface.php (ממשק מנהל לניהול מסד נתונים)
+│   ├── class-course-limits.php (מטפלים להגבלות קורסים ומשפכי לימוד)
+│   ├── class-instructor-manager.php (ניהול תפקיד מנחה)
+│   ├── class-ajax-handlers.php (מטפלי AJAX מותאמים אישית)
+│   ├── class-query-helper.php (כלי עזר ל-SQL)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (מודל משתמש Multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (רשימת מנחים מותאמת אישית)
+│       └── views/
+│           └── instructors.php (תצוגת מנהל למנחים)
+└── README.md
+```
+
+## פונקציונליות שהועברה מתוסף MU
+
+תוסף זה מכיל פונקציונליות שהייתה קודם במיקום `wp-content/mu-plugins/daves.php`:
+
+- הגבלות שינוי סטטוס קורס
+- הגבלות יצירת קורסים
+- אינטגרציה והגבלות CartFlows
+- ניהול תפקיד מנחה של Tutor
+- טיפול בהרשמת משתמשים ב-Multisite
+- הצגת מזהה מוצר קורס
+
+## ניהול מסד נתונים
+
+### הבעיה
+
+בסביבות WordPress Multisite, יצירת טבלאות Tutor LMS נכשלת עבור טבלאות עם אילוצי מפתח זר (foreign key constraints) לטבלת המשתמשים. זה קורה מכיוון ש:
+
+- טבלאות ספציפיות לאתר משתמשות בקידומות כמו `wp_2_tutor_carts`
+- מפתחות זרים מפנים ל-`wp_2_users` (שאינו קיים)
+- טבלת המשתמשים האמיתית היא `wp_users` (משותפת ברשת).
+
+### הפתרון
+
+תוסף זה מבצע אוטומטית:
+
+1. **זיהוי טבלאות חסרות**: בודק טבלאות שנכשלו ביצירה עקב אילוצי מפתח זר.
+2. **יצירת טבלאות עם הפניות נכונות**: משתמש בשם טבלת המשתמשים המתאים (`wp_users` ב-Multisite).
+3. **טיפול בתרחישים מרובים**:
+   - הפעלת/הפעלה מחדש של התוסף
+   - יצירת אתר חדש ברשת
+   - בדיקה ידנית של הטבלאות דרך ממשק המנהל
+
+### טבלאות מושפעות
+
+- `tutor_coupon_usages` - מכילה מפתח זר לטבלת המשתמשים
+- `tutor_carts` - מכילה מפתח זר לטבלת המשתמשים
+- `tutor_notification_preferences` - טבלת TutorPro עם מפתח זר לטבלת המשתמשים
+
+### ממשק המנהל
+
+גש כלים לניהול מסד הנתונים בכתובת:
+
+- **מנהל הרשת**: הגדרות → Tutor Multisite DB
+- **מנהל האתר**: כלים → Tutor Multisite DB
+
+הממשק מאפשר לך:
+- לצפות בטבלאות חסרות בכל האתרים
+- להפעיל ידנית יצירת טבלאות
+- לבדוק את תצורת מסד הנתונים
+- לצפות במידע סטטוס מפורט
+
+## תמיכה
+
+תוסף זה תוכנן במיוחד עבור פלטפורמת KursoPro. לתמיכה טכנית, אנא צור קשר עם צוות הפיתוח.
