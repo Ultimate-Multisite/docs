@@ -1,0 +1,124 @@
+---
+title: મલ્ટી-ટેનન્સી
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# મલ્ટી-ટેનન્સી (Multi-Tenancy)
+
+પ્રદર્શન (performance) અને સુરક્ષા (security) માટે સબસાઇટ્સને સર્વર અને ડેટાબેઝમાં વહેંચો.
+
+## જરૂરીયાતો (Requirements)
+
+- WordPress 5.3 અથવા તેનાથી વધુ
+- PHP 7.4 અથવા તેનાથી વધુ
+- Multisite Ultimate plugin (સક્રિય)
+
+## ઇન્સ્ટોલેશન (Installation)
+
+૧. એડ-ઓન ફાઇલોને તમારા `/wp-content/plugins/` ડિરેક્ટરીમાં અપલોડ કરો
+૨. WordPress માં 'Plugins' મેનુ દ્વારા પ્લગિન એક્ટિવેટ કરો
+૩. નેટવર્ક એડમિનમાં એડ-ઓન સેટિંગ્સ કન્ફિગર કરો
+
+## ડેવલપમેન્ટ (Development)
+
+### સેટઅપ (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### પ્રોજેક્ટ સ્ટ્રક્ચર (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### ટેસ્ટિંગ (Testing)
+
+આ એડ-ઓન એક વ્યાપક ટેસ્ટિંગ ફ્રેમવર્ક સાથે આવે છે:
+
+- **યુનિટ ટેસ્ટ્સ (Unit Tests)**: WordPress ટેસ્ટ સ્યુટ સાથે PHPUnit-આધારિત ટેસ્ટ્સ
+- **બેઝ ટેસ્ટ ક્લાસ (Base Test Class)**: સામાન્ય ટેસ્ટ દૃશ્યો માટે મદદરૂપ પદ્ધતિઓ (helper methods) પ્રદાન કરે છે
+- **ટેસ્ટ કવરેજ (Test Coverage)**: કોડ કવરેજ ટ્રેક કરવા માટે કન્ફિગર કરેલ છે
+- **મલ્ટીસાઇટ ટેસ્ટિંગ (Multisite Testing)**: મલ્ટીસાઇટ એન્વાયર્નમેન્ટમાં ટેસ્ટ ચાલે છે
+
+### કોડ સ્ટાન્ડર્ડ્સ (Code Standards)
+
+- **WordPress કોડિંગ સ્ટાન્ડર્ડ્સ (Coding Standards)**: PHPCS દ્વારા લાગુ કરવામાં આવે છે
+- **PHP 7.4+ સુસંગતતા (Compatibility)**: આધુનિક PHP સુવિધાઓને સપોર્ટ કરે છે
+- **સ્ટેટિક એનાલિસિસ (Static Analysis)**: ટાઇપ ચેકિંગ માટે PHPStan નું ઇન્ટિગ્રેશન
+- **કોડ મોડર્નાઇઝેશન (Code Modernization)**: PHP અપગ્રેડ માટે Rector નિયમો
+
+### બિલ્ડ સિસ્ટમ (Build System)
+
+- **એસેટ પ્રોસેસિંગ (Asset Processing)**: CSS/JS ફાઇલો માટે મિનિફિકેશન (Minification)
+- **ભાષાંતર (Translation)**: POT ફાઇલ જનરેશન
+- **પેકેજિંગ (Packaging)**: વિતરણ માટે આર્કાઇવ બનાવવું
+- **ડેવલપમેન્ટ મોડ (Development Mode)**: ડિબગિંગ માટે અનમિનિફાઇડ એસેટ્સ
+
+## કન્ફિગરેશન (Configuration)
+
+આ એડ-ઓન નેટવર્ક એડમિન ઇન્ટરફેસ દ્વારા ઉપલબ્ધ વિવિધ કન્ફિગરેશન વિકલ્પોને સપોર્ટ કરે છે.
+
+## હૂક્સ અને ફિલ્ટર્સ (Hooks and Filters)
+
+### એક્શન્સ (Actions)
+
+- `ultimate-multisite-addon-template_init` - એડ-ઓન શરૂ થયા પછી ટ્રિગર થાય છે
+- `ultimate-multisite-addon-template_loaded` - બધા એડ-ઓન ફાઇલો લોડ થયા પછી ટ્રિગર થાય છે
+
+### ફિલ્ટર્સ (Filters)
+
+- `ultimate-multisite-addon-template_settings` - એડ-ઓન સેટિંગ્સમાં ફેરફાર કરો
+- `ultimate-multisite-addon-template_enabled` - એડ-ઓન enable/disable સ્ટેટસને ઓવરરાઇડ કરો
+
+## લાયસન્સ (License)
+
+આ એડ-ઓન GPL v3 અથવા તેના પછીના સંસ્કરણ હેઠળ લાયસન્સ પ્રાપ્ત છે.
+
+## સપોર્ટ (Support)
+
+સપોર્ટ અને ડોક્યુમેન્ટેશન માટે, [MultisiteUltimate.com](https://multisiteultimate.com) ની મુલાકાત લો
+## ચેન્જલોગ (Changelog)
+
+- વર્ઝન 1.0.1 (2025-09-28): પ્રીફિક્સને ultimate-multisite માં નામ બદલ્યું; ટેક્સ્ટ ડોમેન અપડેટ કર્યો; વર્ઝન વધાર્યું.
+
+
+- વર્ઝન (2025-09-28): પ્રીફિક્સને ultimate-multisite માં નામ બદલ્યું; ટેક્સ્ટ ડોમેન અપડેટ કર્યો; વર્ઝન વધાર્યું.

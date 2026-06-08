@@ -1,0 +1,161 @@
+---
+title: સુપરદાવ AI એજન્ટ
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent એક અદ્યતન WordPress AI સહાયક છે જે Gratis AI Agent ને theme-aware skills, સુધારેલી ઇન્ટરનેટ સર્ચ ક્ષમતાઓ અને સુધારેલ સાઇટ બિલ્ડર ફીચર્સ સાથે વિસ્તૃત કરે છે. વર્ઝન 1.16.0 માં કસ્ટમ લોગો જનરેશન, પેલેટ કોન્ટ્રાસ્ટ વેલિડેશન, ડિસ્કવરી ઇન્ટરવ્યુમાં ફોટો અપલોડ, સ્ટ્રક્ચર્ડ હોસ્પિટાલિટી મેનુ જનરેશન અને Theme Builder માં ડેસ્કટોપ/મોબાઇલ પ્રિવ્યૂ રેન્ડરિંગ ઉમેરવામાં આવ્યું છે.
+
+## મુખ્ય વિશેષતાઓ (Key Features)
+
+- **Theme-aware skills** — તમારા active WordPress theme અને install કરેલા plugins ના આધારે માર્ગદર્શન અને ક્ષમતાઓ આપમેળે અનુકૂલિત કરે છે.
+- **બહુવિધ ઇન્ટરનેટ સર્ચ પ્રદાતાઓ (Multiple internet search providers)** — વધુ સમૃદ્ધ સર્ચ પરિણામો અને અદ્યતન સંશોધન ક્ષમતાઓ માટે Brave Search અને Tavily વચ્ચે પસંદગી કરો.
+- **સાઇટ બિલ્ડર કોન્ટેક્ટ ફોર્મ્સ (Site builder contact forms)** — તમારા ઇન્સ્ટોલ કરેલા ફોર્મ plugin નો ઉપયોગ કરીને સીધા ચેટ ઇન્ટરફેસમાંથી સંપૂર્ણ કાર્યરત કોન્ટેક્ટ ફોર્મ બનાવો.
+- **સુધારેલ સાઇટ બિલ્ડર (Enhanced site builder)** — વધુ સારા plugin discovery અને error recovery સાથે સુધારેલ મલ્ટી-ફેઝ સાઇટ બિલ્ડ પ્લાન.
+- **બિલ્ટ-ઇન થીમ સ્કિલ્સ (Built-in theme skills)** — Block Themes, Classic Themes, Kadence Blocks, અને Kadence Theme માટે વિશિષ્ટ માર્ગદર્શન.
+- **સુધારેલ WooCommerce એકીકરણ (Improved WooCommerce integration)** — વધુ સારી વિશ્વસનીયતા અને સુસંગતતા માટે native WooCommerce APIs નો ઉપયોગ કરવા માટે રિફેક્ટર કરવામાં આવ્યું છે.
+- **ઓટોમેટિક પ્રદાતા શોધ (Automatic provider detection)** — જ્યારે plugins અને themes activate અથવા deactivate કરવામાં આવે છે ત્યારે ઉપલબ્ધ plugins અને themes ને આપમેળે detect અને refresh કરે છે.
+- **કસ્ટમ લોગો જનરેશન (Custom logo generation)** — ઓટોમેટિક namespace-safe sanitisation સાથે કસ્ટમ SVG લોગો જનરેટ કરો અને એમ્બેડ કરો.
+- **પેલેટ કોન્ટ્રાસ્ટ વેલિડેશન (Palette contrast validation)** — તમારા theme પર લાગુ કરતાં પહેલાં WCAG એક્સેસિબિલિટી અનુપાલન માટે કલર જોડીઓ તપાસો.
+- **ફોટો-એન્હાન્સ્ડ ડિસ્કવરી (Photo-enhanced discovery)** — ડિઝાઇન દિશાને પ્રભાવિત કરવા માટે Theme Builder discovery interview દરમિયાન ફોટા અપલોડ કરો.
+- **હોસ્પિટાલિટી મેનુ (Hospitality menus)** — રેસ્ટોરન્ટ્સ, કેફે અને હોસ્પિટાલિટી વ્યવસાયો માટે સ્ટ્રક્ચર્ડ ફૂડ અને બેવરેજ મેનુ પેજીસ જનરેટ કરો.
+- **ડેસ્કટોપ અને મોબાઇલ પ્રિવ્યૂ (Desktop and mobile previews)** — ડિઝાઇન-દિશા પસંદગી દરમિયાન ડેસ્કટોપ અને મોબાઇલ ઉપકરણો પર તમારા ડિઝાઇનનું પ્રિવ્યૂ લો.
+- **Tier 1 સાઇટ સ્ક્રૅપિંગ (Tier 1 site scraping)** — sd-ai-agent/site-scrape હવે સ્પર્ધક અને પ્રેરણાદાયી વેબસાઇટ્સનું વિશ્લેષણ કરવા માટે ડિફોલ્ટ રૂપે ઉપલબ્ધ છે.
+
+## જરૂરિયાતો (Requirements)
+
+- WordPress 6.0 અથવા તેથી વધુ
+- PHP 8.1 અથવા તેથી વધુ
+- WordPress Multisite (network-activated) અથવા single-site installation
+- એક active AI provider connector plugin (Anthropic, OpenAI, અથવા compatible)
+- Gratis AI Agent v1.9.0 અથવા તેથી વધુ (Superdav AI Agent, Gratis AI Agent ને વિસ્તૃત કરે છે)
+
+## ઇન્સ્ટોલેશન (Installation)
+
+1. plugin files ને `/wp-content/plugins/superdav-ai-agent` પર અપલોડ કરો.
+2. WordPress માં **Plugins** સ્ક્રીન દ્વારા plugin activate કરો.
+3. ખાતરી કરો કે Gratis AI Agent પણ activate થયેલ છે.
+4. **Gratis AI Agent → Settings** પર જાઓ અને તમારા ઇન્ટરનેટ સર્ચ પ્રદાતા (વૈકલ્પિક) ને configure કરો.
+
+## ઝડપી શરૂઆત (Quick Start)
+
+એકવાર activate થઈ જાય, Superdav AI Agent આપમેળે theme-aware skills અને વધારાની ક્ષમતાઓ સાથે તમારા Gratis AI Agent installation ને enhance કરે છે. WordPress admin sidebar માં **Gratis AI Agent** પેનલ ખોલો અને નવી સુવિધાઓનો ઉપયોગ કરવાનું શરૂ કરો.
+
+**ઉદાહરણ સૂચનાઓ (Example instructions):**
+
+```
+Add a contact form to the Contact page.
+```
+
+```
+Search the web for the latest WordPress security best practices.
+```
+
+```
+Create a hero section using the active theme's block patterns.
+```
+
+## Theme-Aware Skills
+
+Superdav AI Agent આપમેળે તમારા active theme અને install કરેલા plugins ને detect કરે છે, અને સહાયકના context માં યોગ્ય theme-aware skill load કરે છે. ઉપલબ્ધ skills માં શામેલ છે:
+
+| Skill | Applies To |
+|---|---|
+| **Block Themes** | WordPress block-based (Full Site Editing) architecture નો ઉપયોગ કરતા themes |
+| **Classic Themes** | PHP templates અને classic editor નો ઉપયોગ કરતા પરંપરાગત WordPress themes |
+| **Kadence Blocks** | Kadence Blocks plugin સાથેની સાઇટ્સ |
+| **Kadence Theme** | Kadence theme સાથેની સાઇટ્સ |
+
+દરેક skill પર વિગતવાર માર્ગદર્શન માટે [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) જુઓ.
+
+## Internet Search Providers
+
+Superdav AI Agent v1.10.0 માં ઇન્ટરનેટ સર્ચ ક્વેરીઝ માટે Brave Search નો વિકલ્પ તરીકે **Tavily** ઉમેરવામાં આવ્યું છે. બંને પ્રદાતાઓ real-time સર્ચ પરિણામો આપે છે અને તેને **Gratis AI Agent → Settings → Advanced** માં configure કરી શકાય છે.
+
+| Provider | Features | Setup |
+|---|---|---|
+| **Brave Search** | ઝડપી, privacy-focused સર્ચ પરિણામો | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | વધુ સમૃદ્ધ સર્ચ પરિણામો, અદ્યતન સંશોધન ક્ષમતાઓ | [Tavily API](https://tavily.com/) |
+
+configuration instructions માટે [Internet Search](../../user-guide/configuration/internet-search) જુઓ.
+
+## Site Builder Contact Forms
+
+Site Builder agent હવે ચેટ ઇન્ટરફેસમાંથી સીધા કોન્ટેક્ટ ફોર્મ બનાવી શકે છે. ફક્ત Site Builder ને કોન્ટેક્ટ ફોર્મ બનાવવાનું કહો, અને તે આપમેળે તમારા ઇન્સ્ટોલ કરેલા ફોર્મ plugin (Contact Form 7, WPForms, Fluent Forms, અથવા Gravity Forms) ને detect કરશે અને ઉપયોગ માટે તૈયાર ફોર્મ જનરેટ કરશે.
+
+વિગતવાર માર્ગદર્શન માટે [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) જુઓ.
+
+## Theme Builder Features
+
+Superdav AI Agent v1.16.0 માં Theme Builder માં શક્તિશાળી નવી ક્ષમતાઓ શામેલ છે:
+
+### Photo Upload સાથે Discovery Interview
+
+Theme Builder discovery interview માં હવે ફોટો અપલોડ સ્ટેપ શામેલ છે જ્યાં તમે વિઝ્યુઅલ ઇન્સ્પિરેશન પ્રદાન કરી શકો છો. Theme Builder ને તમારી ડિઝાઇન દિશા સમજવામાં મદદ કરવા માટે તમારા બ્રાન્ડ, સ્પર્ધક સાઇટ્સ અથવા ડિઝાઇન ઇન્સ્પિરેશનના ફોટા અપલોડ કરો.
+
+વિગતવાર માર્ગદર્શન માટે [Discovery Interview](./theme-builder/discovery-interview.md) જુઓ.
+
+### Desktop અને Mobile Previews સાથે Design Direction
+
+Theme Builder દ્વારા તમારું સંપૂર્ણ theme જનરેટ થાય તે પહેલાં ડેસ્કટોપ અને મોબાઇલ બંને ઉપકરણો પર તમારા ડિઝાઇનનો review કરો. બહુવિધ responsive breakpoints પર real-time previews જુઓ.
+
+વિગતવાર માર્ગદર્શન માટે [Design Direction](./theme-builder/design-direction.md) જુઓ.
+
+### Hospitality Menus
+
+Theme Builder હવે રેસ્ટોરન્ટ્સ, કેફે, બાર અને અન્ય હોસ્પિટાલિટી વ્યવસાયો માટે સ્ટ્રક્ચર્ડ ફૂડ અને બેવરેજ મેનુ પેજીસ જનરેટ કરી શકે છે. મેનુમાં કિંમતો, વર્ણનો, આહારની માહિતી અને એલર્જન ચેતવણીઓ શામેલ છે.
+
+વિગતવાર માર્ગદર્શન માટે [Hospitality Menus](./theme-builder/hospitality-menus.md) જુઓ.
+
+### નવી ક્ષમતાઓ (New Abilities)
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — ઓટોમેટિક sanitisation સાથે કસ્ટમ SVG લોગો બનાવો.
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — WCAG અનુપાલન માટે કલર જોડીઓ તપાસો.
+- **[Create Menu](./abilities/create-menu.md)** — અલગ નેવિગેશન લેબલ્સ સાથે નેવિગેશન મેનુ બનાવો.
+
+ઉપલબ્ધ ટૂલ્સ અને Tier 1 site-scrape ટૂલ વિશે માહિતી માટે [Tools and Configuration](./theme-builder/tools.md) જુઓ.
+
+## Configuration
+
+બધી સેટિંગ્સ WordPress admin માં **Gratis AI Agent → Settings** હેઠળ છે. Superdav AI Agent નીચેના configuration options ઉમેરે છે:
+
+| Setting | Description |
+|---|---|
+| **Internet Search Provider** | Brave Search અને Tavily વચ્ચે પસંદ કરો (વૈકલ્પિક) |
+| **Tavily API Key** | Tavily ઇન્ટરનેટ સર્ચ માટે API key (જો Tavily પસંદ કરવામાં આવે તો) |
+
+## v1.16.0 માં સુધારાઓ (Improvements in v1.16.0)
+
+- **AI Client cache** — હવે cross-request persistence માટે transients દ્વારા સપોર્ટેડ છે, જે લાંબા સમય સુધી ચાલતા agent tasks પર ડેટા ગુમાવવાથી અટકાવે છે.
+- **Tier 1 site-scrape tool** — sd-ai-agent/site-scrape હવે Theme Builder માં ડિફોલ્ટ રૂપે ઉપલબ્ધ છે, જે સ્પર્ધક અને પ્રેરણાદાયી વેબસાઇટ્સનું વિશ્લેષણ કરવા માટે છે.
+- **Plugin row action links** — સ્પષ્ટતા માટે સુધારેલ અને નામ બદલવામાં આવેલ.
+
+## v1.10.0 માં સુધારાઓ (Improvements in v1.10.0)
+
+- **WooCommerce integration refactored** — હવે વધુ સારી વિશ્વસનીયતા અને સુસંગતતા માટે native WooCommerce APIs નો ઉપયોગ કરે છે.
+- **Provider list auto-refresh** — આપમેળે detect કરે છે કે plugins activate અથવા deactivate કરવામાં આવ્યા છે અને ઉપલબ્ધ પ્રદાતાની યાદી અપડેટ કરે છે.
+- **Enhanced site builder** — વધુ સારા error recovery સાથે સુધારેલ મલ્ટી-ફેઝ સાઇટ બિલ્ડ પ્લાન.
+- **Theme-aware skills** — ચાર નવી બિલ્ટ-ઇન skills જે આપમેળે તમારા active theme ને અનુકૂલિત થાય છે.
+
+## v1.10.0 માં bug fix (Bug Fixes in v1.10.0)
+
+- અમુક admin pages પર infinite reload loops Causing `navigate-to` ability fix કરવામાં આવી.
+- કેટેગરી અને ટેગ નામોને slugs માં યોગ્ય રીતે resolve ન થતી `list-posts` ability fix કરવામાં આવી.
+- અગાઉના refactor પછી WP-CLI commands માં namespace aliases ખૂટવાની સમસ્યા fix કરવામાં આવી.
+- event automation માં એવી સાઇટ્સને gracefully handle કરવાની સમસ્યા fix કરવામાં આવી જ્યાં automation tables હજી બનાવવામાં આવી નથી.
+- system instruction builder માં સાચો namespace prefix વાપરતી `memory-save` ability fix કરવામાં આવી.
+- AI ને પાછા આપતા પહેલા scalar tool results ને યોગ્ય રીતે wrap કરવાની સમસ્યા fix કરવામાં આવી.
+- જૂના સંસ્કરણોમાંથી અપગ્રેડ કરતી વખતે usage statistics માં legacy ability key format ને યોગ્ય રીતે handle કરવાની સમસ્યા fix કરવામાં આવી.
+
+## સપોર્ટ (Support)
+
+સપોર્ટ માટે, [ultimatemultisite.com](https://ultimatemultisite.com) ની મુલાકાત લો અથવા plugin repository માં એક issue ખોલો.
+
+## Changelog
+
+સંપૂર્ણ version history માટે [Changelog](./changelog) જુઓ.

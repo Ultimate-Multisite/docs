@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector para sa Compatible Endpoints
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ang Ultimate AI Connector for Compatible Endpoints ay nag-i-integrate ng mga OpenAI-compatible AI provider APIs sa iyong WordPress multisite network. I-configure ang maraming AI providers — bawat isa ay may sariling endpoint URL, API key, at default model — at i-ruruta ang mga request na may automatic fallback kapag walang available na provider.
+
+## Key Features
+
+- **Multi-provider support**: Magdagdag ng maraming AI provider cards, bawat isa ay may sariling endpoint URL, API key, at default model
+- **Drag-to-reorder**: Ayusin ang mga provider ayon sa priority gamit ang grip handle sa bawat card; ang mga request ay gagamit ng mga provider sa pagkakasunod-sunod
+- **Automatic fallback routing**: Kung hindi available ang primary provider, awtomatikong magfa-fallback ang mga request sa susunod na naka-configure na provider
+- **Per-provider configuration**: Ang bawat provider ay hiwalay na naka-configure gamit ang sarili nitong credentials at pagpili ng model
+- **Card-based settings UI**: Binuo gamit ang stable WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider)
+- **Auto-expand on add**: Ang mga bagong provider cards ay awtomatikong nag-e-expand para makapaglagay ka agad ng detalye
+- **Script cache busting**: Ang mga script ng provider ay cache-busted sa pag-update ng plugin para masigurong ang pinakabagong bersyon ang naglo-load
+
+## Requirements
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Ultimate Multisite plugin (active)
+- An OpenAI-compatible API endpoint (self-hosted or third-party)
+
+## Installation
+
+1. I-upload ang mga addon files sa iyong `/wp-content/plugins/` directory
+2. I-activate ang plugin sa pamamagitan ng 'Plugins' menu sa WordPress
+3. Pumunta sa **Ultimate Multisite → AI Connector** para i-configure ang addon
+
+## Configuration
+
+### Multi-Provider Setup
+
+Gumagamit ang configuration screen ng card-based layout kung saan ang bawat card ay kumakatawan sa isang AI provider. Maaari kang magdagdag ng maraming providers hangga't kailangan mo.
+
+#### Adding a Provider
+
+1. Pumunta sa **Ultimate Multisite → AI Connector** sa network admin
+2. I-click ang **Add Provider**
+3. May lumabas na bagong provider card at awtomatikong nag-e-expand
+4. Punan ang mga detalye ng provider:
+   - **Provider Name** — isang label para matukoy ang provider na ito (hal. "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — ang base URL ng OpenAI-compatible API (hal. `https://api.openai.com/v1`)
+   - **API Key** — ang iyong API key para sa provider na ito
+   - **Default Model** — ang model identifier na gagamitin by default para sa provider na ito (hal. `gpt-4o`, `mistral-small`)
+5. I-click ang **Save Settings**
+
+#### Removing a Provider
+
+I-click ang **Remove** button sa anumang provider card para burahin ito. I-save ang settings para ma-apply ang pagbabago.
+
+#### Reordering Providers
+
+I-drag ang grip icon (⣿) sa kaliwang bahagi ng anumang provider card para ayusin ang pagkaka-order nito. Ang pagkakasunod-sunod ang nagtatakda ng fallback priority: ang mga request ay ipapadala sa unang provider at magfa-fallback sa mga susunod na providers kung mag-fail ang request.
+
+### Fallback Routing
+
+Kapag nag-fail ang request sa primary provider — dahil sa timeout, rate limit, o service outage — awtomatikong susubukan ng connector ang susunod na provider sa listahan. Magpapatuloy ito pababa sa listahan hanggang sa magtagumpay ang isang provider o matapos na ang lahat ng providers.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Normal na na-serve ang request |
+| Primary provider fails | Susubukan muli ang request sa susunod na provider |
+| All providers fail | Error ang ibabalik sa caller |
+
+Ang fallback ay transparent sa calling plugin o theme — makakatanggap sila ng successful response o final error, anuman ang dami ng providers na sinubukan.
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label para sa provider na ito |
+| Endpoint URL | Yes | Base URL ng OpenAI-compatible API |
+| API Key | Yes | Authentication key para sa provider na ito |
+| Default Model | Yes | Model identifier na ginagamit kapag walang model na tinukoy sa request |
+
+## Troubleshooting
+
+### No providers are listed
+
+Kung walang nakalistang providers pagkatapos mag-save, kumpirmahin na:
+
+- Nag-click ka ng **Save Settings** pagkatapos magdagdag ng mga providers
+- Hindi hinarang ng iyong browser ang pag-save ng settings page (tingnan ang browser console para sa JavaScript errors)
+- Active ang plugin at nasa network admin screen ka
+
+### Requests are failing for all providers
+
+- I-verify na ang endpoint URL ng bawat provider ay ma-reach mula sa iyong server (hindi lang mula sa iyong browser)
+- Tiyakin na ang bawat API key ay valid at hindi pa expired
+- Suriin ang rate-limit at quota status ng provider sa kanilang dashboard
+- I-enable ang WordPress debug logging (`WP_DEBUG_LOG`) para makakuha ng detalyadong error messages mula sa connector
+
+### A provider is not being used for fallback
+
+Binabago ng drag-to-reorder ang fallback order. Kumpirmahin na ang provider na inaasahan mong makakatanggap ng fallback requests ay tama ang posisyon sa listahan at tama ang endpoint URL at API key nito.
+
+### New provider card does not expand automatically
+
+Ang auto-expand ay nangangailangan ng JavaScript na naka-enable sa iyong browser. Kung hindi nag-e-expand ang card pag-click, tingnan ang browser console para sa mga error. Ang nilalaman ng card ay laging ma-access sa pag-click sa card header kahit na hindi mag-trigger ang auto-expand.
+
+## Changelog
+
+Tingnan ang [Changelog](./changelog) para sa kumpletong version history.

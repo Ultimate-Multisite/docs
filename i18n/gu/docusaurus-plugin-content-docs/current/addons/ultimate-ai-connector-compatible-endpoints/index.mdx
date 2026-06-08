@@ -1,0 +1,111 @@
+---
+title: સર્વશ્રેષ્ઠ AI કનેક્ટર સુસંગત એન્ડપોઇન્ટ્સ માટે
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints તમારા WordPress multisite network માં OpenAI-compatible AI provider APIs ને એકસાથે લાવે છે. તમે અનેક AI providers ને configure કરી શકો છો — દરેકનો પોતાનો endpoint URL, API key અને default model હોય છે — અને જ્યારે કોઈ provider ઉપલબ્ધ ન હોય ત્યારે requests ને આપમેળે fallback સાથે route કરી શકો છો.
+
+## Key Features
+
+- **Multi-provider support**: તમે અનેક AI provider cards ઉમેરી શકો છો, જેમાં દરેકનો પોતાનો endpoint URL, API key અને default model હોય છે.
+- **Drag-to-reorder**: દરેક card પર આપેલા grip handle નો ઉપયોગ કરીને providers ને priority પ્રમાણે ગોઠવો; requests આ ક્રમમાં providers નો ઉપયોગ કરે છે.
+- **Automatic fallback routing**: જો primary provider ઉપલબ્ધ ન હોય, તો requests આપમેળે આગલા configure કરેલા provider પર fallback કરે છે.
+- **Per-provider configuration**: દરેક provider ને તેની પોતાની credentials અને model selection સાથે સ્વતંત્ર રીતે configure કરવામાં આવે છે.
+- **Card-based settings UI**: stable WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider) પર બનેલું.
+- **Auto-expand on add**: નવા provider cards આપમેળે expand થાય છે જેથી તમે તરત જ વિગતો ભરી શકો.
+- **Script cache busting**: ખાતરી કરવા માટે કે સૌથી નવી version load થાય, plugin update પર provider scripts ને cache-busted કરવામાં આવે છે.
+
+## Requirements
+
+- WordPress 5.3 or higher
+- PHP 7.4 or higher
+- Ultimate Multisite plugin (active)
+- An OpenAI-compatible API endpoint (self-hosted or third-party)
+
+## Installation
+
+1. addon files ને તમારા `/wp-content/plugins/` directory માં upload કરો.
+2. WordPress માં 'Plugins' મેનૂ દ્વારા plugin activate કરો.
+3. addon configure કરવા માટે **Ultimate Multisite → AI Connector** પર જાઓ.
+
+## Configuration
+
+### Multi-Provider Setup
+
+configuration screen માં એક card-based layout નો ઉપયોગ થાય છે, જ્યાં દરેક card એક AI provider નું પ્રતિનિધિત્વ કરે છે. તમે જેટલા providers ની જરૂર હોય તેટલા ઉમેરી શકો છો.
+
+#### Adding a Provider
+
+1. network admin માં **Ultimate Multisite → AI Connector** પર જાઓ.
+2. **Add Provider** પર ક્લિક કરો.
+3. એક નવો provider card દેખાય છે અને આપમેળે expand થાય છે.
+4. provider ની વિગતો ભરો:
+   - **Provider Name** — આ provider ને ઓળખવા માટેનું એક label (દા.ત., "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — OpenAI-compatible API નો base URL (દા.ત., `https://api.openai.com/v1`)
+   - **API Key** — આ provider માટે તમારી API key.
+   - **Default Model** — આ provider માટે default તરીકે ઉપયોગમાં લેવા માટેનું model identifier (દા.ત., `gpt-4o`, `mistral-small`)
+5. **Save Settings** પર ક્લિક કરો.
+
+#### Removing a Provider
+
+કોઈપણ provider card પર આપેલા **Remove** button પર ક્લિક કરીને તેને delete કરો. ફેરફાર લાગુ કરવા માટે settings save કરો.
+
+#### Reordering Providers
+
+કોઈપણ provider card ની ડાબી બાજુએ આપેલા grip icon (⣿) ને drag કરીને તેને reorder કરો. આ ક્રમ fallback priority નક્કી કરે છે: requests પહેલા provider ને મોકલવામાં આવે છે અને જો request નિષ્ફળ જાય તો તે subsequent providers પર fallback કરે છે.
+
+### Fallback Routing
+
+જ્યારે primary provider ને request fails થાય — timeout, rate limit, અથવા service outage ને કારણે — ત્યારે connector આપમેળે list માં આગલા provider સાથે retry કરે છે. આ process list ની નીચે સુધી ચાલુ રહે છે જ્યાં સુધી કોઈ provider સફળ ન થાય અથવા બધા providers અજમાવવામાં ન આવે.
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+Fallback calling plugin અથવા theme માટે transparent છે — તેમને સફળ response અથવા અંતિમ error મળે છે, ભલે કેટલા providers અજમાવવામાં આવ્યા હોય.
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## Troubleshooting
+
+### No providers are listed
+
+જો providers ની list save કર્યા પછી ખાલી હોય, તો confirm કરો કે:
+
+- તમે providers ઉમેર્યા પછી **Save Settings** પર ક્લિક કર્યું છે.
+- તમારા browser એ settings page ને save થવા દીધું નથી (JavaScript errors માટે browser console તપાસો).
+- plugin active છે અને તમે network admin screen પર છો.
+
+### Requests are failing for all providers
+
+- verify કરો કે દરેક provider નો endpoint URL તમારા server માંથી reachable છે (ફક્ત તમારા browser માંથી નહીં).
+- check કરો કે દરેક API key valid છે અને expire નથી થઈ.
+- તેમના dashboard માં provider ના rate-limit અને quota status ની સમીક્ષા કરો.
+- connector માંથી detailed error messages capture કરવા માટે WordPress debug logging (`WP_DEBUG_LOG`) enable કરો.
+
+### A provider is not being used for fallback
+
+Drag-to-reorder fallback order બદલે છે. confirm કરો કે જે provider ને fallback requests મળવાની અપેક્ષા છે તે list માં યોગ્ય રીતે position થયેલો છે અને તેનો endpoint URL અને API key correct છે.
+
+### New provider card does not expand automatically
+
+Auto-expand માટે તમારા browser માં JavaScript enable હોવું જરૂરી છે. જો card click પર expand ન થાય, તો browser console માં errors તપાસો. card contents હંમેશા card header પર click કરીને accessible હોય છે ભલે auto-expand trigger ન થાય.
+
+## Changelog
+
+સંપૂર્ણ version history માટે [Changelog](./changelog) જુઓ.

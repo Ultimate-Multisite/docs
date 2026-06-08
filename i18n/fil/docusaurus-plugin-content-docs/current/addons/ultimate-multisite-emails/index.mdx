@@ -1,0 +1,114 @@
+---
+title: Mga email
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+Ang Ultimate Multisite: Emails addon ay nagpapahintulot sa mga network owner na mag-set up at mag-manage ng mga email account ng customer kasabay ng mga site at membership. Idinadagdag ng Version 1.1.0 ang pamamahala ng email account na nakikita ng customer, webmail single sign-on, suporta sa CyberPanel forwarder, at mga pagpapabuti sa pag-set up habang nagche-checkout.
+
+## Key Features
+
+* **Customer email account widget**: Ang mga customer ay makakagawa at makakapag-manage ng email account mula sa kanilang account page nang hindi na kailangang mag-open ng support ticket.
+* **Webmail SSO at magic links**: Ang mga customer ay makakapag-open ng webmail nang direkta mula sa account page sa pamamagitan ng one-click authentication, kung sinusuportahan ito ng provider.
+* **Password changes**: Ang mga customer at administrator ay makakapag-update ng password ng mailbox mula sa email management widget.
+* **Checkout provisioning**: Ang paglikha ng email account ng customer ay maaaring tumakbo habang nagche-checkout, kaya handa na ang mailbox pagkatapos matapos ang purchase flow.
+* **CyberPanel forwarders**: Ang mga network na gumagamit ng CyberPanel ay maaaring gumawa at mag-manage ng email forwarder bilang bahagi ng email service flow.
+* **Provider-aware settings**: Ang settings page ay nagfi-filter ng mga provider para ipakita lamang ang mga aktibo at naka-configure na integration, kaya ang mga administrator ay makakakita lamang ng mga opsyon na magagamit.
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 or higher
+* WordPress Multisite installation
+* At least one configured email provider integration
+* Provider API credentials na may pahintulot na gumawa ng mailboxes, magpalit ng password, at mag-isyu ng webmail access links kung sinusuportahan
+
+## Installation
+
+1. I-upload ang mga plugin file sa `/wp-content/plugins/ultimate-multisite-emails`.
+2. I-network activate ang addon mula sa **Plugins** sa WordPress network admin.
+3. Pumunta sa **Ultimate Multisite** > **Settings** at buksan ang addon email settings.
+4. I-enable ang mga email provider integration na gusto mong gamitin ng mga customer.
+5. I-save ang settings, pagkatapos ay subukan ang paglikha ng account gamit ang isang non-production customer o staging site.
+
+## Customer Account Email Management
+
+Nagdadagdag ang Version 1.1.0 ng isang email management widget sa customer account page. Gamitin ito kapag ang mga customer ay dapat mag-self-service sa paglikha at pagpapanatili ng mailbox para sa sarili nilang mga site.
+
+Mula sa account page, ang mga customer ay maaaring:
+
+1. Tingnan ang mga email account na konektado sa kanilang kasalukuyang membership o site.
+2. Gumawa ng bagong mailbox kapag pinapayagan ng kanilang plan ang karagdagang account.
+3. Magpalit ng kasalukuyang password ng mailbox.
+4. Buksan ang mga sinusuportahang webmail provider sa pamamagitan ng SSO o magic-link login.
+
+Gumagamit ang widget ng Ultimate Multisite account-page currents system, kaya ang mga aksyon ay nakakulong sa account context na tinitingnan ng customer. Pinipigilan nito ang mga customer na i-manage ang mga email account na pag-aari ng ibang membership o site.
+
+## Webmail SSO and Magic-Link Login
+
+Nagbibigay ang Webmail SSO ng direktang **Open webmail** action sa mga customer mula sa account page. Kapag sinusuportahan ito ng aktibong provider, hihilingin ng addon ang isang short-lived access URL at ire-redirect ang customer sa webmail nang hindi na hinihiling na kopyahin nila ang mailbox credentials.
+
+Maaaring mag-iba ang pag-uugali ng provider:
+
+* Ang mga provider na may native SSO APIs ay maaaring gumawa ng direktang authenticated webmail session.
+* Ang mga provider na may magic-link support ay maaaring bumuo ng time-limited login link.
+* Ang mga provider na walang SSO o magic-link support ay dapat pa ring magpakita ng detalye ng mailbox at mga aksyon sa pag-manage ng password, ngunit walang one-click webmail button.
+
+I-enable ang webmail access lamang para sa mga provider kung saan naka-configure ka ng kinakailangang API credentials. Kung wala ang action para sa isang provider, kumpirmahin muna na ang provider ay aktibo, naka-configure, at sumusuporta sa webmail login links.
+
+## Checkout Provisioning
+
+Maaari ring gumawa ng customer email accounts ang addon habang nagche-checkout. Ito ay kapaki-pakinabang kapag ang plan ay kasama na ang isang mailbox by default o kapag ang checkout form ay kumukuha ng detalye ng email account.
+
+Inirerekomendang pag-rollout:
+
+1. I-configure ang provider at plan limits bago i-enable ang checkout provisioning.
+2. Subukan ang isang pagbili gamit ang isang staging product at kumpirmahin na nilikha ang mailbox pagkatapos ng checkout.
+3. Suriin ang customer account page para kumpirmahin na ang bagong mailbox ay lumilitaw sa email widget.
+4. Kumpirmahin ang mga aksyon sa pagpalit ng password at webmail bago i-enable ang flow para sa mga production products.
+
+Kung mabigo ang provisioning, ang customer account at membership ay maaari pa ring umiral habang ang mailbox ay nangangailangan ng follow-up mula sa administrator. Tingnan ang Ultimate Multisite activity logs at ang provider logs bago muling subukan.
+
+## CyberPanel Email Forwarders
+
+Para sa mga network na gumagamit ng CyberPanel, nagdadagdag ang version 1.1.0 ng suporta sa email forwarder. Gamitin ang forwarders kapag kailangan ng mga customer ang mga address tulad ng `info@customer-domain.test` para i-redirect ang mail sa ibang inbox nang hindi gumagawa ng buong mailbox.
+
+Bago mag-alok ng forwarders, kumpirmahin na naka-configure at maabot ang CyberPanel integration. Tingnan ang [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide para sa kinakailangang host, username, password, at package constants.
+
+## Changelog
+
+### Version 1.1.0 - Released on 2026-05-05
+
+* New: Webmail SSO at magic-link login — ang mga customer ay maaaring mag-access ng webmail nang direkta mula sa kanilang account sa pamamagitan ng one-click authentication.
+* New: Idinagdag ang functionality na pagpalit ng password sa email account management widget.
+* New: Suporta sa CyberPanel email forwarder.
+* New: Email management widget sa customer account page para sa self-service account creation at management.
+* New: Ang paglikha ng email account ng customer ay isinama sa checkout flow para sa automatic provisioning.
+* Fix: In-update ang account page widget hook para gumamit ng tamang UMS registration pattern.
+* Fix: Pinalitan ang Create Account form ng vanilla JS at tamang full HTML document output.
+* Fix: Gumagamit na ang email management widget ng UMS currents system para sa admin account pages.
+* Fix: Ang admin email account creation form ay may kasamang password field at gumagamit ng Email_Account_Manager.
+* Fix: Tinanggal ang per-request log spam mula sa Email_Account_Manager initialization.
+* Improved: Ang settings page ay nagfi-filter na para ipakita lamang ang mga aktibo at naka-configure na email providers.
+
+## Frequently Asked Questions
+
+## Can customers create their own email accounts?
+
+Oo. Kapag naka-enable ang customer account widget at pinapayagan ng plan ang mga email account, ang mga customer ay maaaring gumawa at mag-manage ng sarili nilang mailboxes mula sa account page.
+
+## Does every provider support webmail SSO?
+
+Hindi. Ang suporta sa SSO at magic-link ay nakadepende sa aktibong email provider. Ang mga provider na walang access-link API ay maaari pa ring sumuporta sa paglikha ng mailbox at pagpapalit ng password.
+
+## Can administrators create email accounts for customers?
+
+Oo. Ang mga administrator ay maaaring gumawa ng email accounts mula sa admin interface, kasama na ang pagtatakda ng initial password kapag nililikha ang account.
+
+## Are forwarders the same as mailboxes?
+
+Hindi. Ang mailbox ay nag-iimbak ng mail at may mga login credentials. Ang forwarder ay nagre-redirect ng mail sa ibang address at hindi nagbibigay ng hiwalay na inbox.

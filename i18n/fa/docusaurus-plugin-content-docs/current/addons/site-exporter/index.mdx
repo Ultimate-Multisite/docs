@@ -1,0 +1,101 @@
+---
+title: صادر سایت
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## محتوا
+
+ما نیاز به امکان انتقال ساب‌سایت‌ها در شبکه شما به یک نصب سایت واحد و بالعکس را درک می‌کنیم، در صورتی که مشتری شما تصمیم به مهاجرت وب‌سایت خود بگیرد. افزونه Site Exporter و Importer این کار را آسان‌تر می‌کند. این ابزار سایت‌ها را با استفاده از فایل‌های زیپ (zip) خروجی و وارد می‌کند که می‌تواند به عنوان یک پشتیبان (backup) نیز عمل کند.
+
+## ویژگی‌ها
+
+* خروجی و وارد کردن سایت‌ها
+
+* رابط کاربری آسان
+
+* ایجاد پشتیبان سایت
+
+## مستندات
+**نحوه خروجی و وارد کردن یک سایت**
+
+## نصب
+
+1. **ultimate-multisite-site-exporter** را در دایرکتوری **/wp-content/plugins/** آپلود کنید
+2. افزونه را از طریق منوی **Plugins** در WordPress فعال کنید
+3. مراحل گام به گام ویزارد را دنبال کنید تا افزونه را تنظیم نمایید
+
+## راهنمای استفاده
+
+با Ultimate Multisite، می‌توانید یک سایت را از شبکه خود خروجی بگیرید یا یک سایت را به نصب چندسایتی (multisite) یا تک‌سایتی (single-site) خود وارد کنید.
+
+برای شروع این فرآیند، به صفحه افزونه‌های ما بروید و افزونه Ultimate Multisite: Site Exporter & Importer را نصب کنید.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+به صفحه Plugins خود بروید و روی افزونه‌ای که نصب کرده‌اید، کلیک کنید تا آن را در سطح شبکه (Network Activate) فعال کنید.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+گزینه **Export & Import** را می‌توانید در منوی Ultimate Multisite، در سمت چپ، پیدا کنید.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## نحوه خروجی گرفتن یک سایت
+
+برای خروجی گرفتن یک سایت از شبکه خود، به **Export & Import** در منوی Ultimate Multisite بروید و در تب **Export Sites**، روی **Generate new Site Export** کلیک کنید.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+سایتی که می‌خواهید خروجی بگیرید را جستجو کرده و مواردی که می‌خواهید در فایل خروجی قرار گیرند را انتخاب کنید. می‌توانید تم‌ها (themes)، پلاگین‌ها (plugins) و آپلودها (uploads) را شامل کنید. اگر سایت شما خیلی بزرگ است، می‌توانید انتخاب کنید که فرآیند خروجی را در پس‌زمینه (background) اجرا کند.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+روی دکمه **Export Site** کلیک کنید. سایت خروجی شما در لیست **Existing Exports** در دسترس خواهد بود. برای دانلود فایل، روی دکمه **Download ZIP** کلیک کنید. فایل‌های زیپ خروجی شامل یک `index.php` و `readme.txt` خود-بوت‌کننده هستند، بنابراین می‌توان آن‌ها را روی یک هاست تازه بدون نصب پلاگین واردکننده جداگانه نصب کرد.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## نحوه خروجی گرفتن کل شبکه
+
+برای خروجی گرفتن تمام ساب‌سایت‌ها به صورت یکجا، به **Export & Import** در منوی Ultimate Multisite بروید و از گزینه **Network Export** در صفحه خروجی استفاده کنید. آرشیو تولید شده شامل تمام ساب‌سایت‌ها در یک فایل زیپ برای مهاجرت هاست، بازسازی محیط استیجینگ (staging) یا پشتیبان‌گیری در سطح شبکه است.
+
+خروجی‌های شبکه ممکن است حجیم باشند. آن‌ها را زمانی اجرا کنید که ترافیک کم است و مطمئن شوید که سرور فضای کافی برای آرشیو و هرگونه آپلود، پلاگین و تم شامل آن را دارد.
+
+## نحوه وارد کردن یک سایت
+
+برای وارد کردن یک سایت، به تب **Import a Site** بروید و فایل .zip سایت مورد نظر را آپلود کنید. می‌توانید آدرس (URL) آن را به آدرس جدیدی تغییر دهید یا با خالی گذاشتن فضا، آدرس قدیمی را حفظ کنید. همچنین، می‌توانید تیک حذف فایل .zip از نصب خود را پس از وارد کردن بزنید. سپس روی **Begin Import** کلیک کنید.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+این فرآیند ممکن است کمی طول بکشد. شما یک وارد کردن در انتظار (pending import) در لیست زیر واردکننده خواهید دید.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+می‌توانید با کلیک روی **Cancel Import** فرآیند را متوقف کنید.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+پس از تکمیل فرآیند، سایت شما از قبل در شبکه شما در دسترس است.
+
+## نحوه وارد کردن یک سایت در نصب تک‌سایتی
+
+برای وارد کردن یک سایت به نصب تک‌سایتی خود، ابتدا واردکننده (importer) را در سایت خود نصب و فعال کنید. می‌توانید لینک دانلود آن را در تب خروجی‌گیر (exporter tab) پیدا کنید.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+می‌توانید واردکننده را در منوی **Tools**، در سمت چپ، در زیربخش **Export & Import** پیدا کنید.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+فایل .zip سایت مورد نظر را آپلود کنید. می‌توانید آدرس (URL) آن را به آدرس جدیدی تغییر دهید یا با خالی گذاشتن فضا، آدرس قدیمی را حفظ کنید. همچنین، می‌توانید تیک حذف فایل .zip از نصب خود را پس از وارد کردن بزنید. سپس روی **Begin Import** کلیک کنید.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+این فرآیند ممکن است کمی طول بکشد. شما یک وارد کردن در انتظار (pending import) در لیست زیر واردکننده خواهید دید.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+می‌توانید با کلیک روی **Cancel Import** فرآیند را متوقف کنید.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+پس از اتمام فرآیند، سایت شما با سایتی که به تازگی وارد کرده‌اید، جایگزین خواهد شد.

@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimp Integration
+
+Ikonekta ang iyong Multisite Ultimate network sa Mailchimp mo. Maaari mong i-link ang ilang plans sa Mailchimp Lists at awtomatikong idagdag ang mga subscriber sa mga listahang iyon kapag nag-sign up ang mga user.
+
+## Installation
+
+1. I-upload ang 'ultimate-multisite-mailchimp' sa directory na '/wp-content/plugins/'
+2. I-activate ang plugin sa pamamagitan ng 'Plugins' menu sa iyong WordPress Network Admin
+
+## Usage Guide
+
+Ang pag-sync ng email ng mga subscriber sa iyong MailChimp lists ay napakadali gamit ang Ultimate Multisite: MailChimp Integration Add-on namin. Ang tutorial na ito ay para gabayan ka sa pag-set up ng lahat!
+
+## Getting an API key
+
+Bago tayo magsimula sa iba't ibang settings, kailangan muna natin ng MailChimp API key. Ito ang magpapahintulot sa Ultimate Multisite na makipag-usap sa MailChimp API para makuha ang mga lists, groups, at para maidagdag ang mga email address sa mga lists at groups na iyon kapag nag-sign up ang mga user.
+
+Sundin ang tutorial na ito para makuha ang sarili mong MailChimp API key: [About API Keys | Mailchimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Idagdag ang iyong MailChimp API key sa_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integration Mode
+
+Nag-aalok ang MailChimp Integration add-on ng dalawang “integration modes,” na nangangahulugang may dalawang paraan ka para gamitin ang add-on para i-sync ang mga email address.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dalawang integration modes para sa mas malaking flexibility!_
+
+### Mode 1: Multiple Lists
+
+Ang default mode ay gumagamit ng **Multiple Lists**. Ang mode na ito ay magpapahintulot sa iyo na pumili ng maraming MailChimp lists para sa bawat plan. Ito ang pinakamahusay na opsyon kung gusto mong i-segment ang iyong mga user sa iba't ibang lists.
+
+Halimbawa, sabihin nating mayroon kang 3 magkakaibang lists sa iyong MailChimp account: **Newsletter**, **Plan A**, at **Plan B**. Gusto mo na lahat ng user, anuman ang plan nila, ay kasama rin sa Newsletter list, para hindi sila makaligtaan ang iyong mga update.
+
+Para magawa iyon, maaari mong gamitin ang Multiple Lists mode para idagdag ang lists na **Newsletter** at **Plan A** sa Plan A MailChimp Settings, at ang **Newsletter** at **Plan B** sa Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Pumili ng default lists para sa mga bagong account at para sa mga na-cancel na account_
+
+### Mode 2: Single List + Multiple Groups
+
+Pinapayagan ka ng MailChimp na i-segment ang iyong list sa mas maliliit na grupo ng mga user na tinatawag na **Groups**. Nagbibigay-daan ito sa iyo na magkaroon ng mas maraming kontrol dahil maaari kang magpadala ng campaign sa isang tiyak na subset ng iyong mga subscriber nang hindi mo kailangang gumawa ng maraming kopya ng parehong campaign sa MailChimp (na nagpapahirap sa pag-analyze ng metrics ng campaign pagkatapos).
+
+Halimbawa, maaari kang magkaroon ng isang listang tinatawag na **My Network Subscribers,** at sa loob nito ay may mga groups para sa **Plan A** at **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Pumili ng default lists at groups, kung gagamitin ang “single list + multiple groups” integration mode_
+
+## Default Lists and Groups
+
+Pagkatapos mong piliin kung anong integration mode ang mas akma sa iyong sitwasyon, oras na para pumili ng default lists (at groups, depende sa mode). Ang default list ay gagamitin kapag ang isang plan ay walang tinukoy na List.
+
+Maaari ka ring pumili ng default list para sa mga na-cancel na account. Sa tuwing magtatapos ang subscription ng isang user at aalisin ang kanyang account sa iyong network, ang kanyang email address ay ililipat sa list set para sa mga na-cancel na account.
+
+## Enabling Double Subscription
+
+Sa parehong settings page, makikita mo ang pag-enable ng **Double Subscription**. Idadagdag ng opsyon na ito ang user sa default list na napili AT sa list na napili para sa plan ng user. Kung hindi naka-enable ang opsyon na ito, ang user ay idadagdag lamang sa list na napili para sa plan ng user. Kung walang napili para sa partikular na plan, idadagdag naman ang user sa default list na napili.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Maaari mong i-subscribe ang iyong mga user sa default list at sa list ng plan pag-sign-up_
+
+## Selecting Lists and Groups for each of the Plans
+
+Pumunta sa iyong **Plans** at piliin ang plan na gusto mong i-edit. Tandaan na sa **Advanced Options** meta-box, may makikita kang bagong tab na tinatawag na MailChimp.
+
+Sa tab na iyon, makakapili ka ng maraming lists o isang single list at multiple groups (depende sa integration mode) para sa plan na iyon.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Pumili ng Lists at Groups na gusto mong gamitin para sa bawat plan mo_
+
+Kapag may bagong user na nag-sign up para sa plan na iyon, idadagdag ang kanyang email address sa mga napiling lists at groups!

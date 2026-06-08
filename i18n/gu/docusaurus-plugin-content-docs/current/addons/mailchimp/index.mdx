@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: MailChimp Integration
+
+તમારા Multisite Ultimate ને તમારા Mailchimp સાથે જોડો. તમે ચોક્કસ પ્લાન (plans) ને Mailchimp Lists સાથે લિંક કરી શકો છો અને સબસ્ક્રાઇબર્સને સાઇનઅપ થવા પર આપોઆપ તે લિસ્ટમાં ઉમેરી શકો છો.
+
+## Installation
+
+1. 'ultimate-multisite-mailchimp' ને '/wp-content/plugins/' ડિરેક્ટરીમાં અપલોડ કરો
+2. તમારા WordPress Network Admin માં 'Plugins' મેનૂ દ્વારા પ્લગઇન એક્ટિવેટ કરો
+
+## Usage Guide
+
+અમારા Ultimate Multisite: MailChimp Integration Add-on સાથે સબસ્ક્રાઇબર્સના ઇમેઇલ્સને તમારા MailChimp લિસ્ટ સાથે Sync (સિંક) કરવું ખૂબ જ સરળ છે. આ ટ્યુટોરીયલ તમને બધું સેટઅપ કરવામાં મદદ કરવા માટે છે!
+
+## Getting an API key
+
+અલગ અલગ સેટિંગ્સમાં ઊંડાણપૂર્વક જવા કરતાં પહેલાં, આપણને એક MailChimp API key ની જરૂર છે. આનાથી Ultimate Multisite ને MailChimp API સાથે વાતચીત કરવાની મંજૂરી મળશે, જેથી યુઝર્સ સાઇનઅપ થાય ત્યારે લિસ્ટ્સ, ગ્રુપ્સ મેળવી શકે અને ઇમેઇલ એડ્રેસ તે લિસ્ટ્સ અને ગ્રુપ્સમાં ઉમેરી શકે.
+
+તમારી પોતાની MailChimp API key મેળવવા માટે આ ટ્યુટોરીયલ અનુસરો: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_તમારી MailChimp API key ઉમેરો_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integration Mode
+
+MailChimp Integration add-on બે "integration modes" ઓફર કરે છે, જેનો અર્થ છે કે ઇમેઇલ એડ્રેસ Sync કરવા માટે તમે આ add-on નો ઉપયોગ કરવાની બે અલગ રીતો છે.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_વધારે લવચીકતા માટે બે ઇન્ટિગ્રેશન મોડ્સ!_
+
+### Mode 1: Multiple Lists
+
+ડિફોલ્ટ મોડ **Multiple Lists** નો ઉપયોગ કરે છે. આ મોડ તમને દરેક પ્લાન માટે અનેક MailChimp લિસ્ટ પસંદ કરવાની મંજૂરી આપશે. જો તમે તમારા યુઝર્સને અલગ-અલગ લિસ્ટમાં વિભાજિત (segment) કરો છો, તો આ શ્રેષ્ઠ વિકલ્પ છે.
+
+ઉદાહરણ તરીકે, ધારો કે તમારા MailChimp એકાઉન્ટ પર તમારી પાસે 3 અલગ-અલગ લિસ્ટ છે: **Newsletter**, **Plan A**, અને **Plan B**. તમે ઈચ્છો છો કે બધા યુઝર્સ, ભલે તેમનો પ્લાન કંઈ પણ હોય, તે Newsletter લિસ્ટમાં પણ સામેલ રહે, જેથી તેઓ તમારા અપડેટ્સ ચૂકી ન જાય.
+
+આ હાંસલ કરવા માટે, તમે Multiple Lists મોડનો ઉપયોગ કરીને Plan A MailChimp Settings માં **Newsletter** અને **Plan A** બંને લિસ્ટ ઉમેરી શકો છો, અને Plan B MailChimp Settings માં **Newsletter** અને **Plan B** ઉમેરી શકો છો.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_નવા એકાઉન્ટ્સ અને કેન્સલ થયેલા એકાઉન્ટ્સ માટે ડિફોલ્ટ લિસ્ટ પસંદ કરો_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp તમને તમારી લિસ્ટને **Groups** નામના નાના યુઝર ગ્રુપ્સમાં વિભાજિત કરવાની મંજૂરી આપે છે. આ તમને વધુ નિયંત્રણ આપે છે, કારણ કે તમારે MailChimp પર એક જ કેમ્પેઇન (campaign) ની અનેક નકલો બનાવવાની જરૂર નથી, જ્યારે તમે તમારા સબસ્ક્રાઇબર્સના ચોક્કસ સબસેટને કેમ્પેઇન મોકલી શકો છો (જેનાથી પાછળથી તે કેમ્પેઇનના મેટ્રિક્સનું વિશ્લેષણ કરવું મુશ્કેલ બની જાય છે).
+
+ઉદાહરણ તરીકે, તમારી પાસે **My Network Subscribers** નામની એક જ લિસ્ટ હોઈ શકે છે, અને તેની અંદર **Plan A** અને **Plan B** માટે ગ્રુપ્સ હોઈ શકે છે.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_જો તમે “single list + multiple groups” ઇન્ટિગ્રેશન મોડનો ઉપયોગ કરી રહ્યા છો, તો ડિફોલ્ટ લિસ્ટ અને ગ્રુપ્સ પસંદ કરો_
+
+## Default Lists and Groups
+
+એકવાર તમે નક્કી કરો કે કયો ઇન્ટિગ્રેશન મોડ તમારા ચોક્કસ ઉપયોગના કિસ્સા માટે વધુ યોગ્ય છે, પછી ડિફોલ્ટ લિસ્ટ (અને મોડના આધારે ગ્રુપ્સ) પસંદ કરવાનો સમય આવી ગયો છે. જ્યારે કોઈ ચોક્કસ પ્લાન માટે કોઈ ચોક્કસ લિસ્ટ પસંદ ન હોય, ત્યારે ડિફોલ્ટ લિસ્ટનો ઉપયોગ કરવામાં આવશે.
+
+તમે કેન્સલ થયેલા એકાઉન્ટ્સ માટે પણ ડિફોલ્ટ લિસ્ટ પસંદ કરી શકો છો. જ્યારે પણ કોઈ યુઝર તેની સબ્સ્ક્રિપ્શન સમાપ્ત કરે અને તમારા નેટવર્કમાંથી પોતાનું એકાઉન્ટ દૂર કરે, ત્યારે તેનો ઇમેઇલ એડ્રેસ કેન્સલ થયેલા એકાઉન્ટ્સ માટે સેટ કરેલી લિસ્ટમાં ખસેડવામાં આવશે.
+
+## Enabling Double Subscription
+
+તે જ સેટિંગ્સ પેજ પર, તમે **Double Subscription** ને enable કરી શકશો. આ વિકલ્પ યુઝરને પસંદ કરેલી ડિફોલ્ટ લિસ્ટ અને તે યુઝરના પ્લાન માટે પસંદ કરેલી લિસ્ટ બંનેમાં ઉમેરશે. જો આ વિકલ્પ enable ન હોય, તો યુઝરને ફક્ત તે લિસ્ટમાં ઉમેરવામાં આવશે જે તે યુઝરના પ્લાન માટે પસંદ કરવામાં આવી છે. જો તે ચોક્કસ પ્લાન માટે કંઈ સેટ ન હોય, તો યુઝરને પસંદ કરેલી ડિફોલ્ટ લિસ્ટમાં ઉમેરવામાં આવશે.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_સાઇન-અપ પર તમારા યુઝર્સને ડિફોલ્ટ લિસ્ટ અને પ્લાનની લિસ્ટ બંનેમાં સબ્સ્ક્રાઇબ કરી શકાય છે_
+
+## Selecting Lists and Groups for each of the Plans
+
+તમારા **Plans** પર જાઓ અને જે પ્લાન તમે એડિટ કરવા માંગો છો તે પસંદ કરો. નોંધ કરો કે **Advanced Options** મેટા-બોક્સ પર, MailChimp નામની એક નવી ટેબ ઉપલબ્ધ હશે.
+
+તે ટેબ પર, તમે તે પ્લાન માટે અનેક લિસ્ટ અથવા એક જ લિસ્ટ અને અનેક ગ્રુપ્સ (ઇન્ટિગ્રેશન મોડના આધારે) પસંદ કરી શકશો.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_તમારા દરેક પ્લાન માટે તમે કઈ લિસ્ટ અને ગ્રુપ્સનો ઉપયોગ કરવા માંગો છો તે પસંદ કરો_
+
+જ્યારે કોઈ નવો યુઝર તે પ્લાન માટે સાઇન-અપ કરે છે, ત્યારે તેનો ઇમેઇલ એડ્રેસ પસંદ કરેલી લિસ્ટ અને ગ્રુપ્સમાં ઉમેરાઈ જશે!

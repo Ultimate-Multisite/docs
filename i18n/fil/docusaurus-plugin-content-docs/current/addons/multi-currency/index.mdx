@@ -1,0 +1,117 @@
+---
+title: Multi-Currency
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency ay nagpapahintulot sa iyong network na tumanggap ng bayad sa iba't ibang currency. Awtomatikong kino-convert nito ang mga presyo gamit ang live o manual na exchange rates, pinapayagan kang magtakda ng eksaktong presyo bawat produkto para sa anumang currency, at natutukoy ang preferred currency ng bawat bisita sa pamamagitan ng geolocation — lahat ay pinamamahalaan mula sa iisang admin dashboard.
+
+## Key Features
+
+- **Automatic exchange rate conversion** — kino-convert ang mga presyo mula sa iyong base currency gamit ang rates na kinukuha mula sa napili mong provider
+- **Per-product pricing overrides** — magtakda ng eksaktong presyo na specific sa currency sa anumang produkto para hindi na kailangan ang awtomatikong pag-convert
+- **Currency selector signup field** — pinapayagan ang mga customer na piliin ang kanilang preferred currency habang nag-checkout/nagre-sign up
+- **Multiple exchange rate providers** — ECB, Frankfurter, Stripe, o ganap na manual na rates
+- **Geolocation-based currency detection** — awtomatikong pinipili ang currency na tumutugma sa bansa ng bisita
+- **Admin dashboard** — pamahalaan ang mga active currencies, exchange rates, at provider settings mula sa isang lugar
+
+## Requirements
+
+- Ultimate Multisite 2.0.0 or higher
+- WordPress Multisite installation
+- PHP 7.4 or higher
+
+## Installation
+
+1. I-upload ang mga plugin files sa `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. I-activate ang plugin sa pamamagitan ng **Plugins** screen sa WordPress (Network Activate)
+3. Pumunta sa **Ultimate Multisite → Multi-Currency** para buksan ang admin dashboard
+4. Idagdag ang mga currency na gusto mong tanggapin at i-configure ang iyong exchange rate provider
+
+## Configuration
+
+### Admin Dashboard
+
+Ang Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) ang sentral na lugar para:
+
+- Magdagdag, mag-enable, o mag-disable ng mga currency
+- Pumili ng exchange rate provider at i-refresh ang rates on demand
+- Suriin ang kasalukuyang rates para sa lahat ng active currencies
+- Magtakda ng manual rates kapag hindi angkop ang automatic providers
+
+### Exchange Rate Providers
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — libreng daily rates para sa mga network na base sa EUR |
+| **Frankfurter** | Open-source ECB mirror API — libre, walang kailangan na API key |
+| **Stripe** | Gumagamit ng live FX rates ng Stripe — nangangailangan ng active Stripe integration |
+| **Manual** | Ikaw mismo ang magta-type ng rates; walang external API calls |
+
+Pumili ng provider sa ilalim ng **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Ang rates ay maaaring i-refresh nang mano-mano anumang oras o i-schedule para mag-update nang awtomatiko.
+
+### Per-Product Pricing Overrides
+
+Kapag hindi sapat ang pagiging eksakto ng automatic conversion, maaari kang magtakda ng eksaktong presyo para sa isang specific currency sa anumang produkto:
+
+1. Buksan ang product editor (**Ultimate Multisite → Products → Edit**)
+2. Mag-scroll pababa sa **Currency Pricing** section
+3. Ilagay ang eksaktong presyo para sa bawat currency na gusto mong i-override
+4. I-save ang produkto
+
+Ang mga produkto na walang override ay gagamit ng converted price mula sa iyong base currency.
+
+### Currency Selector Signup Field
+
+Ang currency selector field ay maaaring idagdag sa iyong signup/checkout flow para ang mga customer ay makapili ng kanilang preferred currency sa pagrehistro:
+
+1. Pumunta sa **Ultimate Multisite → Multi-Currency → Settings**
+2. I-enable ang **Show currency selector on signup**
+3. Opsyonal na magtakda ng default currency o hayaan ang geolocation na mag-determine ng pre-selected value
+
+Ang napiling currency ay itinatago kasama ang subscription at ginagamit para sa lahat ng susunod na billing.
+
+### Geolocation-Based Currency Detection
+
+Kapag naka-enable ang geolocation detection, itinatapat ng addon ang bansa ng bisita sa isang currency at awtomatikong pinipili ito sa currency selector field. Para ma-enable:
+
+1. Pumunta sa **Ultimate Multisite → Multi-Currency → Settings**
+2. I-enable ang **Detect currency from visitor location**
+3. I-map ang mga bansa sa currencies sa **Geolocation Mapping** table
+
+Kung walang mapping para sa bansa ng bisita, ang base currency ng network ang gagamitin bilang fallback.
+
+## Frequently Asked Questions
+
+### What happens if an exchange rate provider is unavailable?
+
+Babalik ang addon sa huling matagumpay na nakuha na rates. Kung walang rates na kailanman na nakuha, babalik ito sa manual rates na iyong naka-configure. Inirerekomenda na i-configure ang manual rates bilang safety net.
+
+### Can I use different providers for different currencies?
+
+Hindi — isang provider lang ang active sa oras para sa lahat ng currencies. Gamitin ang **Manual** kung kailangan mo ng kumpletong kontrol sa bawat rate.
+
+### Does geolocation require a separate plugin?
+
+Hindi kailangan ng external geolocation plugin. Gumagamit ang addon ng built-in IP-to-country detection ng WordPress. Para sa mas mataas na accuracy, ang isang dedicated geolocation service ay maaaring i-integrate sa pamamagitan ng provided filter hooks.
+
+### Are per-product overrides applied before or after tax?
+
+Ang per-product overrides ay nagtatakda ng pre-tax price sa target currency. Ang tax ay kinakalkula sa ibabaw ng override price gamit ang iyong kasalukuyang tax configuration.
+
+## Changelog
+
+### Version 1.0.0 — Released on 2026-04-02
+
+- New: Multi-currency support with automatic exchange rate conversion
+- New: Per-product pricing overrides for exact currency-specific prices
+- New: Currency selector signup field for the checkout flow
+- New: Exchange rate providers: ECB, Frankfurter, Stripe, and manual
+- New: Geolocation-based currency detection
+- New: Admin dashboard for managing currencies and exchange rates
+- Fix: Dashboard always showing prices in base currency regardless of selected currency

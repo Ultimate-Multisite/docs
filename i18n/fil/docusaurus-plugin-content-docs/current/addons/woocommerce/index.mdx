@@ -1,0 +1,94 @@
+---
+title: Pagsasama sa WooCommerce
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+Ang WooCommerce Integration ay gumagana sa paraang halos katulad ng paggana ng ating Manual Gateway. Nag-aalok ito ng maraming flexibility sa mga user mo, na nagpapahintulot sa kanila na pumili ng anumang payment form na available sa iyong WooCommerce install. At simple lang ito: kapag natapos na ang billing period ng user, suspindihan (put on hold) ang subscription ng user. Kasabay nito, gagawa ng order sa WooCommerce install ng main site ng network. Pagkatapos, makakatanggap ang user ng invoice sa kanilang email, kasama ang link para makapagbayad. Kapag natanggap na ang bayad, magre-renew ang subscription.
+
+## Features
+
+- Madaling i-integrate ang Ultimate Multisite at WooCommerce
+- Maraming payment methods na available
+- Ganap na automated process gamit ang WooCommerce Subscriptions
+
+## Documentation
+
+**Setting Up The WooCommerce Integration**
+
+**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+
+## Installation
+
+1. I-upload ang 'ultimate-multisite-woocommerce' sa direktoryong '/wp-content/plugins/'
+2. I-activate ang plugin sa pamamagitan ng 'Plugins' menu sa WordPress
+3. Sundin ang step by step Wizard para i-set up ang plugin
+
+## Usage Guide
+
+_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
+
+_**ATENSYON:** Kailangan ng Ultimate Multisite: WooCommerce Integration na naka-activate ang WooCommerce kahit sa main site mo._
+
+Naiintindihan namin na hindi available ang _Stripe_ at _PayPal_ sa ilang bansa, na naglilimita o nagpapahirap sa mga user ng Ultimate Multisite na epektibong gamitin ang plugin namin. Kaya gumawa kami ng isang **add-on para i-integrate ang _WooCommerce_**.
+
+Ang _WooCommerce_ ay isang napakapopular na eCommerce plugin. Gumawa ang mga developer sa buong mundo ng mga add-on para i-integrate ito sa iba't ibang payment gateways. Sinamantala namin ito para mapalawak ang mga payment gateways na magagamit mo sa Ultimate Multisite billing system.
+
+## Setting It Up
+
+Una, kailangan mong i-install ang WooCommerce Integration add-on na **libre para sa mga licensed user**. Para i-install ito, i-click ang Ultimate Multisite sa super admin dashboard mo at piliin ang **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Dito mo makikita ang lahat ng Ultimate Multisite add-ons. I-click ang **Ultimate Multisite: WooCommerce Integration** add-on.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+May lalabas na window na may detalye ng add-on. I-click lang ang **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Pagkatapos ma-install, ire-redirect ka sa plugins page. Dito, i-click lang ang **Network Activate** at ma-a-activate ang _WooCommerce_ add-on sa network mo.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Pagkatapos i-activate, kung wala ka pa ring naka-install at naka-activate ang WooCommerce plugin sa website mo, **makakatanggap ka ng paalala**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Kapag na-install na, makakakita ka ng dagdag na option sa ilalim ng Ultimate Multisite payments settings. Doon mo pwedeng **i-enable** ang _WooCommerce_ option.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Maaari mong i-configure ang ilang basic settings tulad ng display name na lalabas sa front end at mga instructions para gabayan ang mga user mo sa kanilang checkout flow. Pagkatapos, pwede kang pumunta sa **Main site’s _WooCommerce_ settings** para i-enable at i-configure ang payment gateway na gusto mong gamitin.
+
+## How to manage the payment
+
+Ang WooCommerce Integration ay gumagana sa paraang halos katulad ng paggana ng ating **Manual Gateway**. Ang downside nito ay ang bawat bayad ay kailangang bayaran nang mano-mano sa pagtatapos ng billing period. Ganito ang daloy ng proseso:
+
+  * Kapag natapos na ang billing cycle ng user, suspindihan (put on hold) ang membership. Kasabay nito, gagawa ng order sa _WooCommerce_ install sa main site ng network mo.
+
+  * Makakatanggap ang mga user ng invoice sa kanilang email, kasama ang link para makapagbayad (ang link na ito ay lalabas din sa kanilang billing history mula sa subsite dashboard). Ang link na iyon ay magre-redirect sa user sa **_WooCommerce_ checkout**, kung saan makakapili ang mga user ng isa sa **available _WooCommerce_ gateways** para maproseso ang kanilang bayad.
+
+  * Kapag natanggap na ang bayad, magre-renew ang membership, ire-record ang bayad sa Ultimate Multisite, at itatakda ang order na complete.
+
+### Some Important Notes:
+
+  * Ang default functionality ng Ultimate Multisite ay gumagana pa rin sa integration form na ito. Halimbawa, ang **pag-iisyu ng refunds** mula sa **Subscription Management** screen ay makikipag-ugnayan sa WooCommerce para mag-isyu ng refund gamit ang napiling payment form.
+
+  * Ang Ultimate Multisite: WooCommerce Integration ay umaasa sa WP-Cron para gumana. Napakaganda nitong gumana sa karamihan ng pagkakataon, ngunit kung mababa ang traffic ng site, hindi pa-prompt ang cron para mag-check ng scheduled events at maaaring ma-miss ang event, na maaaring magdulot ng pagkaantala sa pagpapatupad.
+
+## Woocommerce Subscriptions Plugin
+
+Hindi ideal para sa mga end-user na mano-manong magbayad tuwing buwan dahil inaasahan na ang subscription ay awtomatikong magre-recur tuwing billing cycle. Kaya dinisenyo namin ang WooCommerce Integration add-on para **suportahan ang WooCommerce Subscriptions plugin**. Ito ang mag-a-automate ng pagbabayad para mas madali ang transaksyon para sa mga end-user mo.
+
+Lahat ang kailangan mong gawin ay **i-install** ang [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) at ipa-**activate ito sa main site mo**. Pagkatapos, bumalik sa Ultimate Multisite payments settings at **i-enable ang integration**.
+
+At iyon na. Hindi na kailangang mano-manong magbayad ang mga end-user mo sa pagtatapos ng kanilang billing cycle.
+
+Bukod sa paggawa ng order sa main site mo sa ilalim ng _WooCommerce_, gagawa rin ito ng subscription para sa bawat account.

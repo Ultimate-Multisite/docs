@@ -1,0 +1,129 @@
+---
+title: Nagbebenta ng Domain
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
+
+# Domain Seller
+
+**Multisite Ultimate: Domain Seller** ay nagpapalit sa iyong WordPress Multisite network para maging isang makapangyarihang plataporma para sa pagbebenta ng domain. Payagan ang mga customer na magrehistro ng custom domains nang direkta habang nag-sign up o mula sa kanilang dashboard, kasama ang real-time availability checking at malinaw na pagpepresyo.
+
+### Bakit Domain Seller?
+
+Ang pagrehistro ng domain ay isa sa pinaka-hinihinging upsell para sa anumang WaaS (Website as a Service) platform. Sa halip na ipadala ang iyong mga customer sa isang third-party registrar, maaari kang mag-alok ng mga domain nang direkta — na nagpapanatili ng mas maraming kita sa iyong network habang nagbibigay sa mga customer ng isang madali at walang aberyang karanasan.
+
+### Mga Pangunahing Feature
+
+#### Suporta sa Maramihang Domain Registrar
+* **OpenSRS** — Kumpletong pagrehistro, pag-renew, at pamamahala
+* **Namecheap** — Kumpletong integrasyon sa WhoisGuard at sandbox testing
+* **Extensible Architecture** — Binuo sa Integration Registry pattern, na nagpapadali sa pagdaragdag ng mas maraming provider
+* **Built-in Connection Testing** — I-validate ang credentials at koneksyon ng provider bago maging live
+
+#### Guided Setup Wizard
+* **One-click onboarding** — Gagabay sa iyo sa pag-configure ng provider, pag-import ng TLD, at paggawa ng domain product
+* **Automatic TLD sync** — Nag-i-import ng lahat ng available na TLD at wholesale pricing mula sa iyong mga konektadong provider
+* **Default product creation** — Gumagawa ng domain product na handa nang gamitin na may makatwirang default markup
+
+#### Flexible Domain Pricing
+* **Tatlong markup mode** — Percentage markup, fixed markup, o fixed price per TLD
+* **TLD-specific products** — Gumawa ng hiwalay na domain product para sa iba't ibang TLD groups (.com/.net, .io, country codes, atbp.)
+* **Introductory pricing** — Mag-alok ng discounted first-year price para makaakit ng mga bagong rehistrasyon
+* **Real-time pricing** — Live wholesale pricing mula sa mga provider na may matalinong caching
+* **Coupon support** — Kumpletong compatibility sa Multisite Ultimate discount codes
+
+#### WHOIS Privacy Protection
+* **Per-product configuration** — Itakda ang WHOIS privacy sa Disabled, Always Included, o Customer Choice
+* **Customer opt-in** — Kapag itinakda sa Customer Choice, may checkbox sa checkout para payagan ang mga customer na magdagdag ng privacy protection
+* **Configurable pricing** — Magtakda ng per-year price para sa privacy add-on, o mag-alok na libre
+* **Registrar integration** — Awtomatikong nagpapa-enable ng WhoisGuard (Namecheap) o WHOIS privacy (OpenSRS) sa oras ng pagrehistro
+
+#### Unified Checkout Experience
+* **Tatlong domain mode** — Pinipili ng mga customer kung gusto nilang mag-subdomain (libre), magrehistro ng bagong domain, o i-map ang isang existing domain na pag-aari na nila
+* **Real-time domain search** — AJAX-powered availability checking na walang page reloads
+* **Smart suggestions** — Alternatibong TLD suggestions kapag na-take na ang preferred domain
+* **Transparent pricing** — Malinaw na pagpapakita ng registration price, renewal price, at optional WHOIS privacy fee
+* **Registrant contact fields** — Kinokolekta ang kinakailangang impormasyon ng registrant (pangalan, address, telepono) nang inline habang nagche-checkout
+* **Auto-generated site URL** — Ang site address ay awtomatikong kinukuha mula sa napiling domain
+
+#### Auto-Renewal System
+* **Membership-tied renewals** — Awtomatikong nagre-renew ang mga domain habang aktibo ang membership ng customer
+* **Smart scheduling** — Ang mga renewal jobs ay naka-queue batay sa mga petsa ng pag-expire ng domain
+* **Retry logic** — Matalinong pagsubok muli para sa mga failed renewal attempts
+* **Email notifications** — Mga configurable alerto para sa mga paparating na renewal, matagumpay na renewal, pagkabigo, at pag-expire
+
+#### Customer DNS Management
+* **Self-service DNS** — Maaaring magdagdag, mag-edit, at mag-delete ang mga customer ng DNS records (A, AAAA, CNAME, MX, TXT) mula sa kanilang dashboard
+* **Domain status** — Real-time registration status, expiry dates, at nameserver information
+* **Automatic domain mapping** — Ang mga na-register o existing domains ay awtomatikong ini-map sa site ng customer
+
+#### Admin Tools
+* **Manual domain registration** — Magrehistro ng domain para sa mga customer mula sa admin panel
+* **Domain monitoring** — Tingnan ang lahat ng domain ng customer, status, at expiry dates mula sa isang pahina
+* **Provider-specific logging** — Hiwalay na log channels para sa bawat registrar (hal. domain-seller-namecheap.log)
+* **Registration details** — Tingnan ang registrant info at registration data sa core domain edit page
+
+### Mga Sinusuportahang Provider
+
+* **OpenSRS** — Kumpletong integrasyon sa pagrehistro, pag-renew, DNS management, at WHOIS privacy
+* **Namecheap** — Kumpletong integrasyon sa pagrehistro, pag-renew, batch availability checking, at libreng WhoisGuard
+* **GoDaddy** — Pagrehistro at pag-renew
+* **ResellerClub** — Pagrehistro, pag-renew, at DNS management
+* **NameSilo** — Pagrehistro at pag-renew
+* **Enom** — Pagrehistro, pag-renew, at DNS management
+
+### Technical Details
+
+* **Kailangan:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Architecture:** Integration Registry pattern with Domain_Selling_Capability interface
+* **Autoloading:** Jetpack autoloader with PSR-4 class mapping
+* **Standards:** WordPress coding standards, strict typing, prepared statements
+
+## Installation
+
+1. Siguraduhin na naka-install at network-activated ang **Multisite Ultimate v2.4.12+**
+2. I-upload ang plugin sa `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Network-activate ang plugin mula sa **Plugins** sa WordPress Network Admin
+4. Awtomatikong maglulunsad ang **Setup Wizard** sa unang aktibasyon — sundin ang mga hakbang para:
+   * Ikonekta ang iyong domain registrar (OpenSRS o Namecheap)
+   * Subukan ang koneksyon
+   * I-import ang available TLDs at wholesale pricing
+   * Gumawa ng iyong unang domain product na may pricing markup
+5. Idagdag ang **Domain Selection** field sa iyong checkout form sa **Ultimate Multisite > Checkout Forms**
+
+## Frequently Asked Questions
+
+### Anong bersyon ng Multisite Ultimate ang kailangan?
+
+Bersyon 2.4.12 o mas mataas. Hindi tugma ang addon sa WP Ultimo v1.x o sa mga bersyon ng Ultimate Multisite na mas mababa sa 2.4.12.
+
+### Anong domain providers ang sinusuportahan?
+
+Anim na registrars ang ganap na sinusuportahan: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo**, at **Enom**. Ginagawang simple ng Integration Registry architecture ng addon ang pagdaragdag ng custom providers — tingnan ang [developer guide](/developer/integration-guide/custom-registrar).
+
+### Maaari ba akong mag-alok ng WHOIS privacy protection?
+
+Oo. Ang bawat domain product ay may WHOIS Privacy setting na may tatlong mode: Disabled, Always Included, o Customer Choice. Kapag itinakda sa Customer Choice, makakakita ang mga customer ng checkbox sa checkout kasama ang presyo (o "Free" para sa WhoisGuard ng Namecheap). Ang privacy flag ay awtomatikong ipinapasa sa registrar sa oras ng pagrehistro.
+
+### Maaari ba akong magtakda ng iba't ibang presyo para sa iba't ibang TLDs?
+
+Oo. Gumawa ng hiwalay na domain products para sa iba't ibang TLD groups. Ang bawat product ay maaaring magkaroon ng sarili nitong markup type (percentage, fixed markup, o fixed price), sinusuportahang TLDs, at introductory pricing.
+
+### Anong mga pagpipilian sa checkout ang nakikita ng mga customer?
+
+Ang Domain Selection field ay nagbibigay sa mga customer ng tatlong tabs: **Subdomain** (gumamit ng libreng subdomain sa iyong network), **Register New Domain** (maghanap at magrehistro ng bagong domain), at **Existing Domain** (i-map ang domain na pag-aari na nila). Ang mga mode na i-e-enable mo lang ang lalabas.
+
+### Sinusuportahan ba nito ang automatic renewals?
+
+Oo. Ang mga domain ay maaaring itakda para sa auto-renew at nakatali sa status ng membership ng customer. Ang mga bayad sa renewal ay pinoproseso sa pamamagitan ng kasalukuyang payment gateway ng customer.
+
+### Maaari bang pamahalaan ng mga customer ang kanilang DNS records?
+
+Oo. Ang mga customer ay makakakuha ng DNS management interface sa kanilang dashboard para magdagdag, mag-edit, at mag-delete ng A, AAAA, CNAME, MX, at TXT records. Ang DNS management ay available sa OpenSRS, ResellerClub, at Enom.
+
+### Mayroon bang setup wizard?
+
+Oo. Ang setup wizard ay awtomatikong tumatakbo sa unang aktibasyon at gagabay sa iyo sa pagkokonekta ng isang registrar, pag-import ng TLDs, at paggawa ng iyong unang domain product. Maaari mo ring i-re-run ang wizard mula sa addon settings.

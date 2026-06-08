@@ -1,0 +1,124 @@
+---
+title: سازنده سایت با هوش مصنوعی
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# سازنده سایت هوش مصنوعی
+
+ultimate-multisite-ai-site-builder
+
+## پیش‌نیازها
+
+- WordPress نسخه ۵.۳ یا بالاتر
+- PHP نسخه ۷.۴ یا بالاتر
+- افزونه Ultimate Multisite (فعال باشد)
+
+## نصب
+
+۱. فایل‌های افزونه را در مسیر `/wp-content/plugins/` آپلود کنید.
+۲. افزونه را از طریق منوی 'Plugins' در وردپرس فعال کنید.
+۳. تنظیمات افزونه را در بخش مدیریت شبکه (network admin) پیکربندی کنید.
+
+## توسعه
+
+### راه‌اندازی
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ساختار پروژه
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # کلاس‌ها و فایل‌های شامل PHP
+│   ├── class-multisite-ultimate-updater.php  # مدیریت به‌روزرسانی
+│   └── class-ai_site_builder-main.php             # عملکرد اصلی
+├── tests/                        # تست‌های واحد (Unit tests)
+│   ├── bootstrap.php            # بوت‌استرپ تست
+│   ├── class-*-base.php         # کلاس پایه تست
+│   └── class-*-test.php         # موارد تست
+├── views/                       # فایل‌های قالب (Template files)
+├── assets/                      # دارایی‌های استاتیک
+│   ├── css/                     # فایل‌های استایل (Stylesheets)
+│   ├── js/                      # فایل‌های جاوااسکریپت
+│   └── images/                  # تصاویر
+├── lang/                        # فایل‌های زبان
+├── composer.json                # وابستگی‌های PHP
+├── package.json                 # وابستگی‌های Node.js
+├── phpunit.xml.dist             # پیکربندی PHPUnit
+├── .phpcs.xml.dist              # پیکربندی استانداردهای کدنویسی
+└── rector.php                   # قوانین مدرن‌سازی کد
+```
+
+### تست‌گیری
+
+این افزونه شامل یک چارچوب تست جامع است:
+
+- **تست‌های واحد (Unit Tests)**: تست‌های مبتنی بر PHPUnit با مجموعه تست وردپرس
+- **کلاس پایه (Base Test Class)**: متدهای کمکی برای سناریوهای تست رایج فراهم می‌کند
+- **پوشش تست (Test Coverage)**: برای ردیابی پوشش کد پیکربندی شده است
+- **تست‌گیری چندسایتی (Multisite Testing)**: تست‌ها در محیط چندسایتی اجرا می‌شوند
+
+### استانداردهای کدنویسی
+
+- **استانداردهای کدنویسی وردپرس**: با PHPCS اعمال می‌شود
+- **سازگاری با PHP 7.4+**: از ویژگی‌های مدرن PHP پشتیبانی می‌کند
+- **تحلیل استاتیک (Static Analysis)**: یکپارچه‌سازی PHPStan برای بررسی نوع داده (type checking)
+- **مدرن‌سازی کد**: قوانین Rector برای ارتقاء PHP
+
+### سیستم ساخت (Build System)
+
+- **پردازش دارایی‌ها (Asset Processing)**: کوچک‌سازی (Minification) برای فایل‌های CSS/JS
+- **ترجمه (Translation)**: تولید فایل POT
+- **بسته‌بندی (Packaging)**: ایجاد آرشیو برای توزیع
+- **حالت توسعه (Development Mode)**: دارایی‌های بدون کوچک‌سازی برای اشکال‌زدایی (debugging)
+
+## پیکربندی
+
+این افزونه از گزینه‌های پیکربندی مختلفی پشتیبانی می‌کند که از طریق رابط مدیریت شبکه (network admin) قابل دسترسی هستند.
+
+## هوک‌ها و فیلترها
+
+### اکشن‌ها (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - پس از مقداردهی اولیه افزونه اجرا می‌شود
+- `ultimate-multisite-ai-site-builder_loaded` - پس از بارگذاری تمام فایل‌های افزونه اجرا می‌شود
+
+### فیلترها (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - تغییر تنظیمات افزونه
+- `ultimate-multisite-ai-site-builder_enabled` - بازنویسی وضعیت فعال/غیرفعال بودن افزونه
+
+## مجوز
+
+این افزونه تحت GPL v3 یا نسخه‌های جدیدتر مجوز داده شده است.
+
+## پشتیبانی
+
+برای پشتیبانی و مستندات، به [MultisiteUltimate.com](https://multisiteultimate.com) مراجعه کنید.
+## تاریخچه تغییرات (Changelog)
+
+- نسخه ۱.۰.۱ (۲۰۲۵-۰۹-۲۸): تغییر پیشوند به ultimate-multisite؛ به‌روزرسانی دامنه متن؛ افزایش نسخه.
+
+
+- نسخه (۲۰۲۵-۰۹-۲۸): تغییر پیشوند به ultimate-multisite؛ به‌روزرسانی دامنه متن؛ افزایش نسخه.

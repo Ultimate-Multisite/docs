@@ -1,0 +1,94 @@
+---
+title: WooCommerce Integration
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration આપણા Manual Gateway જેવી જ રીતે કામ કરે છે. તે તમારા યુઝર્સને ખૂબ જ વધુ લવચીકતા આપે છે, જેનાથી તેઓ તમારા WooCommerce ઇન્સ્ટોલેશન પર ઉપલબ્ધ કોઈપણ પેમેન્ટ ફોર્મ પસંદ કરી શકે છે. અને તે સરળ છે: એકવાર યુઝરનો બિલિંગ સમયગાળો પૂરો થાય, પછી યુઝરનું સબ્સ્ક્રિપ્શન 'on hold' થઈ જાય છે. તે જ સમયે, નેટવર્કની મુખ્ય સાઇટના WooCommerce ઇન્સ્ટોલેશન પર એક ઓર્ડર બનાવવામાં આવશે. પછી યુઝરને તેમના ઇમેઇલમાં પેમેન્ટ કરવા માટેના લિંક સાથે એક ઇન્વોઇસ મળે છે. એકવાર પેમેન્ટ પ્રાપ્ત થઈ જાય, પછી સબ્સ્ક્રિપ્શનનું નવીકરણ (renew) થઈ જાય છે.
+
+## Features
+
+- Ultimate Multisite અને WooCommerce વચ્ચે સરળ ઇntegation
+- ઘણા બધા પેમેન્ટ પદ્ધતિઓ ઉપલબ્ધ
+- WooCommerce Subscriptions સાથે સંપૂર્ણ સ્વચાલિત પ્રક્રિયા
+
+## Documentation
+
+**Setting Up The WooCommerce Integration**
+
+**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+
+## Installation
+
+1. 'ultimate-multisite-woocommerce' ને '/wp-content/plugins/' ડિરેક્ટરીમાં અપલોડ કરો
+2. WordPress માં 'Plugins' મેનૂ દ્વારા પ્લગઇનને એક્ટિવેટ કરો
+3. પ્લગઇનને સેટ કરવા માટે સ્ટેપ-બાય-સ્ટેપ વિઝાર્ડને અનુસરો
+
+## Usage Guide
+
+_**મહત્વની નોંધ: આ લેખ Ultimate Multisite વર્ઝન 2.x નો સંદર્ભ આપે છે.**_
+
+_**ધ્યાન આપો:** Ultimate Multisite: WooCommerce Integration ને ઓછામાં ઓછા તમારી મુખ્ય સાઇટ પર WooCommerce એક્ટિવેટ થયેલ હોવું જરૂરી છે._
+
+અમે જાણીએ છીએ કે કેટલાક દેશોમાં _Stripe_ અને _PayPal_ ઉપલબ્ધ નથી, જે Ultimate Multisite યુઝર્સને અમારું પ્લગઇન અસરકારક રીતે વાપરવાથી મર્યાદિત અથવા અવરોધિત કરી શકે છે. તેથી અમે _WooCommerce_ ને ઇntegrate કરવા માટે એક **add-on** બનાવ્યું છે.
+
+_WooCommerce_ એક ખૂબ જ લોકપ્રિય eCommerce plugin છે. વિશ્વભરના ડેવલપર્સ દ્વારા તેમાં વિવિધ પેમેન્ટ ગેટવેને ઇntegrate કરવા માટે add-ons બનાવવામાં આવ્યા છે. અમે આનો લાભ લઈને Ultimate Multisite billing system માં તમે ઉપયોગ કરી શકો તેવા પેમેન્ટ ગેટવેને વિસ્તૃત કર્યા છે.
+
+## Setting It Up
+
+સૌ પ્રથમ, તમારે WooCommerce Integration add-on ઇન્સ્ટોલ કરવાની જરૂર છે જે **લાઇસન્સવાળા યુઝર્સ માટે મફત** છે. તેને ઇન્સ્ટોલ કરવા માટે, તમારા super admin dashboard પર Ultimate Multisite પર ક્લિક કરો અને **Add-ons** પસંદ કરો.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+અહીં તમને બધા Ultimate Multisite add-ons મળી શકે છે. **Ultimate Multisite: WooCommerce Integration** add-on પર ક્લિક કરો.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+add-on વિગતો સાથે એક વિન્ડો પોપ-અપ થશે. ફક્ત **Install Now** પર ક્લિક કરો.
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+ઇન્સ્ટોલેશન પૂર્ણ થયા પછી, તમને plugins page પર રીડાયરેક્ટ કરવામાં આવશે. અહીં, ફક્ત **Network Activate** પર ક્લિક કરો અને _WooCommerce_ add-on તમારા નેટવર્ક પર એક્ટિવેટ થઈ જશે.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+એક્ટિવેટ કર્યા પછી પણ, જો તમારી વેબસાઇટ પર WooCommerce plugin ઇન્સ્ટોલ અને એક્ટિવેટ થયેલ ન હોય, **તો તમને એક રીમાઇન્ડર મળશે**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+એકવાર ઇન્સ્ટોલ થઈ જાય, પછી તમને Ultimate Multisite payments settings હેઠળ એક વધારાનો વિકલ્પ દેખાશે. ત્યાંથી તમે _WooCommerce_ વિકલ્પને **enable** કરી શકો છો.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+તમે કેટલાક મૂળભૂત સેટિંગ્સ (basic settings) ગોઠવી શકો છો, જેમ કે જે ડિસ્પ્લે નેમ ફ્રન્ટ એન્ડમાં દેખાશે અને તમારા યુઝર્સને તેમના ચેકઆઉટ ફ્લોમાં માર્ગદર્શન આપવા માટેની સૂચનાઓ. પછી તમે ઉપયોગ કરવા માંગતા પેમેન્ટ ગેટવેને enable અને configure કરવા માટે તમારી **Main site’s _WooCommerce_ settings** પર જઈ શકો છો.
+
+## How to manage the payment
+
+WooCommerce Integration આપણા **Manual Gateway** જેવી જ રીતે કામ કરે છે. નુકસાન એ છે કે દરેક ચુકવણી બિલિંગ સમયગાળાના અંતે મેન્યુઅલી ચૂકવવી પડે છે. અહીં ફ્લો કેવી રીતે કામ કરે છે:
+
+  * એકવાર યુઝરનો બિલિંગ ચક્ર (billing cycle) સમાપ્ત થાય, પછી સભ્યપદ **on hold** થઈ જાય છે. તે જ સમયે, તમારા નેટવર્કની મુખ્ય સાઇટ પર _WooCommerce_ ઇન્સ્ટોલેશન પર એક ઓર્ડર બનાવવામાં આવશે.
+
+  * પછી યુઝરને પેમેન્ટ કરવા માટેના લિંક સાથે તેમના ઇમેઇલમાં એક ઇન્વોઇસ મળે છે (આ લિંક તેમના સબસાઇટ ડેશબોર્ડમાંથી તેમના બિલિંગ હિસ્ટરીમાં પણ દેખાય છે). તે લિંક યુઝરને _**WooCommerce**_ **checkout** પર રીડાયરેક્ટ કરે છે, જ્યાં યુઝર્સ તેમના પેમેન્ટને process કરવા માટે **ઉપલબ્ધ _WooCommerce_ ગેટવે** માંથી એક પસંદ કરી શકશે.
+
+  * એકવાર પેમેન્ટ પ્રાપ્ત થઈ જાય, પછી સભ્યપદ **renew** થઈ જાય છે, પેમેન્ટ Ultimate Multisite પર લોગ થાય છે અને ઓર્ડરને complete તરીકે સેટ કરવામાં આવે છે.
+
+### Some Important Notes:
+
+  * Ultimate Multisite ની ડિફોલ્ટ કાર્યક્ષમતા (default functionality) આ ઇntegation ફોર્મ સાથે હજી પણ કામ કરે છે. ઉદાહરણ તરીકે, **Subscription Management** સ્ક્રીનમાંથી **refunds ઇશ્યૂ કરવા**થી પસંદ કરેલા પેમેન્ટ ફોર્મનો ઉપયોગ કરીને refund ઇશ્યૂ કરવા માટે WooCommerce સાથે વાતચીત થશે.
+
+  * Ultimate Multisite: WooCommerce Integration ને કામ કરવા માટે WP-Cron પર આધાર રાખે છે. આ મોટાભાગના સમયમાં ખૂબ સારું કામ કરે છે, પરંતુ જો સાઇટ પર ટ્રાફિક ઓછો હોય તો cron ને શેડ્યૂલ કરેલા ઇવેન્ટ્સ તપાસવા માટે પ્રોમ્પ્ટ કરવામાં આવતું નથી અને ઇવેન્ટ ચૂકી જાય છે, જેના કારણે execution માં વિલંબ થઈ શકે છે.
+
+## Woocommerce Subscriptions Plugin
+
+સબ્સ્ક્રિપ્શન માટે દર મહિને મેન્યુઅલી પેમેન્ટ શરૂ કરવું અંતિમ યુઝર્સ માટે આદર્શ નથી, કારણ કે સબ્સ્ક્રિપ્શન દરેક બિલિંગ ચક્રમાં આપમેળે પુનરાવર્તિત (automatically recur) થવાની અપેક્ષા હોય છે. તેથી અમે WooCommerce Integration add-on ડિઝાઇન કર્યો છે જેથી તે **WooCommerce Subscriptions plugin** ને સપોર્ટ કરી શકે. આ તમારા અંતિમ યુઝર્સ માટે વ્યવહારને સરળ બનાવવા માટે પેમેન્ટને સ્વચાલિત કરશે.
+
+તમારે ફક્ત [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) **ઇન્સ્ટોલ** કરવાની અને તેને **તમારી મુખ્ય સાઇટ પર એક્ટિવેટ** કરવાની જરૂર છે. પછી Ultimate Multisite payments settings પર પાછા જાઓ અને **integration enable** કરો.
+
+બસ, આટલું જ છે. તમારા અંતિમ યુઝર્સને હવે તેમના બિલિંગ ચક્રના અંતે મેન્યુઅલી પેમેન્ટ કરવાની જરૂર રહેશે નહીં.
+
+તમારી મુખ્ય સાઇટ પર _WooCommerce_ હેઠળ ઓર્ડર બનવા સિવાય, તે દરેક એકાઉન્ટ માટે એક સબ્સ્ક્રિપ્શન પણ બનાવશે.

@@ -1,0 +1,124 @@
+---
+title: چند مستأجری
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# چند مستأجری (Multi-Tenancy)
+
+توزیع زیرساخت‌های فرعی (subsites) در سرورها و دیتابیس‌های مختلف برای بهبود عملکرد و امنیت
+
+## پیش‌نیازها (Requirements)
+
+- WordPress نسخه ۵.۳ یا بالاتر
+- PHP نسخه ۷.۴ یا بالاتر
+- پلاگین Ultimate Multisite (فعال باشد)
+
+## نصب (Installation)
+
+۱. فایل‌های افزونه (addon) را در مسیر `/wp-content/plugins/` آپلود کنید.
+۲. پلاگین را از طریق منوی 'Plugins' در وردپرس فعال کنید.
+۳. تنظیمات افزونه را در پنل مدیریت شبکه (network admin) پیکربندی نمایید.
+
+## توسعه (Development)
+
+### راه‌اندازی (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ساختار پروژه (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # کلاس‌ها و فایل‌های شامل PHP
+│   ├── class-multisite-ultimate-updater.php  # مدیریت به‌روزرسانی
+│   └── class-multi_tenancy-main.php             # عملکرد اصلی
+├── tests/                        # تست‌های واحد (Unit tests)
+│   ├── bootstrap.php            # بوت‌استرپ تست
+│   ├── class-*-base.php         # کلاس پایه تست
+│   └── class-*-test.php         # موارد تست
+├── views/                       # فایل‌های قالب (Template files)
+├── assets/                      # دارایی‌های استاتیک
+│   ├── css/                     # فایل‌های استایل (Stylesheets)
+│   ├── js/                      # فایل‌های جاوا اسکریپت (JavaScript files)
+│   └── images/                  # تصاویر
+├── lang/                        # فایل‌های زبان
+├── composer.json                # وابستگی‌های PHP
+├── package.json                 # وابستگی‌های Node.js
+├── phpunit.xml.dist             # پیکربندی PHPUnit
+├── .phpcs.xml.dist              # پیکربندی استانداردهای کد
+└── rector.php                   # قوانین مدرن‌سازی کد
+```
+
+### تست‌گیری (Testing)
+
+این افزونه یک چارچوب تست جامع شامل موارد زیر را فراهم می‌کند:
+
+- **تست‌های واحد (Unit Tests)**: تست‌های مبتنی بر PHPUnit با مجموعه تست وردپرس
+- **کلاس پایه تست (Base Test Class)**: متدهای کمکی برای سناریوهای تست رایج فراهم می‌کند
+- **پوشش تست (Test Coverage)**: برای ردیابی پوشش کد پیکربندی شده است
+- **تست چند مستأجری (Multisite Testing)**: تست‌ها در محیط چند مستأجری اجرا می‌شوند
+
+### استانداردهای کد (Code Standards)
+
+- **استانداردهای کدنویسی وردپرس**: از طریق PHPCS اعمال می‌شود
+- **سازگاری با PHP ۷.۴+**: از ویژگی‌های مدرن PHP پشتیبانی می‌کند
+- **تحلیل استاتیک (Static Analysis)**: یکپارچه‌سازی PHPStan برای بررسی نوع داده (type checking)
+- **مدرن‌سازی کد (Code Modernization)**: قوانین Rector برای ارتقاء PHP
+
+### سیستم ساخت (Build System)
+
+- **پردازش دارایی‌ها (Asset Processing)**: کوچک‌سازی (Minification) فایل‌های CSS/JS
+- **ترجمه (Translation)**: تولید فایل POT
+- **بسته‌بندی (Packaging)**: ایجاد آرشیو برای توزیع
+- **حالت توسعه (Development Mode)**: دارایی‌های بدون کوچک‌سازی برای اشکال‌زدایی
+
+## پیکربندی (Configuration)
+
+این افزونه از گزینه‌های پیکربندی مختلفی پشتیبانی می‌کند که از طریق رابط کاربری پنل مدیریت شبکه قابل دسترسی هستند.
+
+## هوک‌ها و فیلترها (Hooks and Filters)
+
+### اکشن‌ها (Actions)
+
+- `ultimate-multisite-addon-template_init` - پس از مقداردهی اولیه افزونه اجرا می‌شود
+- `ultimate-multisite-addon-template_loaded` - پس از بارگذاری تمام فایل‌های افزونه اجرا می‌شود
+
+### فیلترها (Filters)
+
+- `ultimate-multisite-addon-template_settings` - برای تغییر تنظیمات افزونه
+- `ultimate-multisite-addon-template_enabled` - برای بازنویسی وضعیت فعال/غیرفعال بودن افزونه
+
+## مجوز (License)
+
+این افزونه تحت مجوز GPL v3 یا نسخه‌های جدیدتر منتشر شده است.
+
+## پشتیبانی (Support)
+
+برای پشتیبانی و مستندات، از [MultisiteUltimate.com](https://multisiteultimate.com) دیدن فرمایید.
+## تاریخچه تغییرات (Changelog)
+
+- نسخه ۱.۰.۱ (۲۰۲۵-۰۹-۲۸): تغییر پیشوند به ultimate-multisite؛ به‌روزرسانی دامنه متن؛ افزایش نسخه.
+
+
+- نسخه (۲۰۲۵-۰۹-۲۸): تغییر پیشوند به ultimate-multisite؛ به‌روزرسانی دامنه متن؛ افزایش نسخه.
