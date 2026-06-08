@@ -1,0 +1,124 @@
+---
+title: एआई साइट बिल्डर
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Requirements
+
+- WordPress 5.3 या इससे उच्च संस्करण (higher)
+- PHP 7.4 या इससे उच्च संस्करण
+- Multisite Ultimate plugin (सक्रिय होना चाहिए)
+
+## Installation
+
+1. ऐडऑन फ़ाइलों को अपने `/wp-content/plugins/` डायरेक्टरी में अपलोड करें।
+2. WordPress में 'Plugins' मेनू के माध्यम से plugin को सक्रिय (Activate) करें।
+3. नेटवर्क एडमिन में ऐडऑन सेटिंग्स को कॉन्फ़िगर करें।
+
+## Development
+
+### Setup
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Project Structure
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes और includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Testing
+
+इस ऐडऑन में एक व्यापक टेस्टिंग फ्रेमवर्क शामिल है:
+
+- **Unit Tests**: WordPress test suite के साथ PHPUnit-आधारित टेस्ट।
+- **Base Test Class**: सामान्य टेस्ट परिदृश्यों (common test scenarios) के लिए सहायक तरीके (helper methods) प्रदान करता है।
+- **Test Coverage**: कोड कवरेज को ट्रैक करने के लिए कॉन्फ़िगर किया गया है।
+- **Multisite Testing**: टेस्ट multisite environment में चलते हैं।
+
+### Code Standards
+
+- **WordPress Coding Standards**: PHPCS के माध्यम से लागू (Enforced) किया जाता है।
+- **PHP 7.4+ Compatibility**: आधुनिक PHP सुविधाओं का समर्थन।
+- **Static Analysis**: टाइप चेकिंग के लिए PHPStan इंटीग्रेशन।
+- **Code Modernization**: PHP अपग्रेड के लिए Rector नियम।
+
+### Build System
+
+- **Asset Processing**: CSS/JS फ़ाइलों के लिए मिनिफिकेशन (Minification)।
+- **Translation**: POT फ़ाइल जनरेशन।
+- **Packaging**: वितरण (distribution) के लिए आर्काइव बनाना।
+- **Development Mode**: डीबगिंग के लिए अनमिनिफाइड एसेट्स।
+
+## Configuration
+
+यह ऐडऑन नेटवर्क एडमिन इंटरफ़ेस के माध्यम से एक्सेस किए जा सकने वाले विभिन्न कॉन्फ़िगरेशन विकल्प (configuration options) का समर्थन करता है।
+
+## Hooks and Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - ऐडऑन शुरू होने के बाद ट्रिगर होता है।
+- `ultimate-multisite-ai-site-builder_loaded` - सभी ऐडऑन फ़ाइलें लोड होने के बाद ट्रिगर होता है।
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - ऐडऑन सेटिंग्स को संशोधित (Modify) करता है।
+- `ultimate-multisite-ai-site-builder_enabled` - ऐडऑन के enable/disable स्टेटस को ओवरराइड करता है।
+
+## License
+
+यह ऐडऑन GPL v3 या बाद के संस्करण के तहत लाइसेंस प्राप्त है।
+
+## Support
+
+सपोर्ट और डॉक्यूमेंटेशन के लिए, [MultisiteUltimate.com](https://multisiteultimate.com) पर जाएँ।
+## Changelog
+
+- Version 1.0.1 (2025-09-28): prefix को ultimate-multisite में बदला; text domain अपडेट किया; version bump।
+
+
+- Version (2025-09-28): prefix को ultimate-multisite में बदला; text domain अपडेट किया; version bump।

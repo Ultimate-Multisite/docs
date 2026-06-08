@@ -1,0 +1,143 @@
+---
+title: وكيل ذكاء اصطناعي مجاني
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent)
+
+وكيل الذكاء الاصطناعي المجاني هو مساعد ذكاء اصطناعي مستقل لمنصة WordPress، يمكنه تخطيط وبناء وإدارة مواقع WordPress كاملة بالاعتماد على التعليمات النصية الطبيعية. إنه يعرض مجموعة منظمة من **القدرات (abilities)** — وهي إجراءات منفصلة وقابلة للاختبار يمكن للوكيل استدعاؤها — تغطي كل شيء بدءًا من إدارة المحتوى وصولاً إلى تخصيص أنظمة التصميم. في الإصدار 1.9.0، تمت إضافة قدرات إنشاء المحتوى، والمراجعة البصرية للصفحات عبر لقطات الشاشة من جانب العميل، وخمسة ملفات تعريف مدمجة للوكيل، بالإضافة إلى مفاتيح الميزات (feature flags) للتحكم في الوصول والعلامة التجارية.
+
+## الميزات الرئيسية
+
+- **نظام القدرات (Abilities system)** — كتالوج معياري وقابل للتوسيع للإجراءات التي يمكن للوكيل تنفيذها على تثبيت WordPress الخاص بك.
+- **إدارة المحتوى (Content Management)** — إنشاء المنشورات والصفحات (بما في ذلك تعيين قوالب الصفحات)، وإنشاء عدة منشورات دفعة واحدة في استدعاء واحد، وتعيين الصور المميزة، وبناء نماذج الاتصال.
+- **المراجعة البصرية (Visual Review)** — التقاط لقطات شاشة للصفحات الحية، ومقارنة حالات "قبل/بعد"، والحصول على مراجعة تصميم مولدة بالذكاء الاصطناعي تغطي التخطيط، والطباعة، والألوان، وإمكانية الوصول.
+- **خمسة وكلاء مدمجين (Five built-in agents)** — كاتب المحتوى (Content Writer)، وباني المواقع (Site Builder)، واستوديو التصميم (Design Studio)، ومدير الإضافات (Plugin Manager)، ومساعد الدعم (Support Assistant)؛ يمكن التبديل بينها عبر أداة اختيار الوكيل في رأس المحادثة.
+- **مفاتيح الميزات (Feature flags)** — مفاتيح تشغيل وإيقاف للتحكم في الوصول والعلامة التجارية في الإعدادات (Settings) → مفاتيح الميزات (Feature Flags) لتقييد الأدوار، وتسمية العلامة التجارية (white-label)، وتخصيص الأدوات (widget customisation).
+- **إدارة أنواع المحتوى المخصصة (Custom Post Type management)** — تسجيل وتعداد وحذف أنواع المحتوى المخصصة مع استمراريتها عبر عمليات إعادة التشغيل.
+- **إدارة التصنيفات المخصصة (Custom Taxonomy management)** — تسجيل وتعداد وحذف التصنيفات المخصصة مع استمراريتها.
+- **قدرات نظام التصميم (Design System abilities)** — حقن CSS مخصص، وإدارة أنماط الكتل المنسقة، وتعيين شعار الموقع، وتطبيق إعدادات theme.json.
+- **إدارة الأنماط العامة (Global Styles management)** — قراءة وكتابة قيم theme.json لوحات الألوان، والطباعة، والتباعد، والمزيد.
+- **إدارة قوائم التنقل (Navigation Menu management)** — إنشاء وتحديث قوائم التنقل وعناصرها برمجيًا.
+- **إدارة الخيارات (Options Management)** — قراءة وكتابة خيارات WordPress مع قائمة حظر أمان مدمجة لحماية الإعدادات الحيوية.
+- **سجل القدرات القابلة للتثبيت (Installable Abilities Registry)** — اكتشاف وتفعيل حزم القدرات الإضافية دون تعديل ملفات الإضافة الأساسية.
+- **تنظيم بناء الموقع v2 (Site Builder Orchestration v2)** — خطط بناء مواقع متعددة الخطوات مع اكتشاف الإضافات، وتتبع التقدم، واستعادة الأخطاء.
+- **أمر قياس الأداء لـ WP-CLI (WP-CLI benchmark command)** — تشغيل مجموعة اختبار قياس قدرات الوكيل من سطر الأوامر لأغراض التكامل المستمر (CI) وتقييم النموذج.
+
+## المتطلبات
+
+- WordPress 6.0 أو أعلى
+- PHP 8.1 أو أعلى
+- WordPress Multisite (مفعل على مستوى الشبكة) أو تثبيت موقع واحد.
+- إضافة موفر ذكاء اصطناعي نشطة (Anthropic، OpenAI، أو متوافقة).
+
+## التثبيت
+
+1. قم بتحميل ملفات الإضافة إلى المسار التالي: `/wp-content/plugins/gratis-ai-agent`
+2. قم بتفعيل الإضافة عبر شاشة **الإضافات (Plugins)** في WordPress.
+3. انتقل إلى **وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent) → الإعدادات (Settings)** وقم بتوصيل موفر الذكاء الاصطناعي الخاص بك.
+4. (اختياري) تصفح **سجل القدرات (Abilities Registry)** لتثبيت حزم قدرات إضافية.
+
+## البدء السريع
+
+بمجرد التفعيل والتوصيل بموفر ذكاء اصطناعي، افتح لوحة **وكيل الذكاء الاصطناعي المجاني** في الشريط الجانبي لإدارة WordPress. اكتب تعليمات بلغة طبيعية وسيقوم الوكيل بتخطيط وتنفيذ الخطوات المطلوبة باستخدام القدرات المتاحة له.
+
+**أمثلة على التعليمات:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## نظرة عامة على القدرات (Abilities Overview)
+
+القدرات هي الإجراءات الذرية التي يمكن للوكيل تنفيذها. كل قدرة هي فئة PHP مسجلة تعرض مخططًا (parameters and return types) يقرأه الوكيل أثناء التشغيل. يتم تجميع القدرات في مجالات وظيفية:
+
+| المجال | القدرات |
+|---|---|
+| **إدارة المحتوى** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **المراجعة البصرية** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **أنواع المحتوى المخصصة** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **التصنيفات المخصصة** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **نظام التصميم** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **الأنماط العامة** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **قوائم التنقل** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **إدارة الخيارات** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **القدرات القابلة للتثبيت** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **بناء الموقع** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+راجع [مرجع القدرات (Abilities Reference)](./abilities) للحصول على التوثيق الكامل للمعلمات وأمثلة الاستخدام.
+
+## WP-CLI
+
+يوفر وكيل الذكاء الاصطناعي المجاني عائلة أوامر `wp gratis-ai-agent` لتشغيل اختبارات قياس الأداء وإدارة القدرات من سطر الأوامر. راجع [مرجع WP-CLI (WP-CLI Reference)](./wp-cli) للحصول على قائمة الأوامر الكاملة.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## الإعدادات (Configuration)
+
+جميع الإعدادات موجودة تحت **وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent) → الإعدادات (Settings)** في لوحة تحكم WordPress:
+
+| الإعداد | الوصف |
+|---|---|
+| **AI Provider** | اختر وقم بتكوين موفر الذكاء الاصطناعي النشط. |
+| **Model** | اختر نموذج اللغة الذي سيتم استخدامه لجلسات الوكيل. |
+| **Max Tokens** | ميزانية الرموز لكل طلب (الافتراضي 4096). |
+| **Ability Timeout** | الحد الأقصى للثواني التي يمكن أن يعمل فيها قدرة فردية (الافتراضي 30). |
+| **Debug Logging** | تسجيل استدعاءات القدرات ومنطق الوكيل في سجل تصحيح أخطاء WordPress. |
+
+## قائمة الحظر لأمان إدارة الخيارات (Options Management Safety Blocklist)
+
+تتضمن قدرة إدارة الخيارات قائمة حظر مدمجة تمنع الوكيل من قراءة أو كتابة خيارات WordPress الحساسة. تغطي قائمة الحظر الافتراضية ما يلي:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (خيارات عناوين URL — استخدم أداة ترحيل مخصصة لهذه الخيارات)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (المفاتيح السرية)
+- `active_plugins`, `template` (تفعيل الإضافات/القوالب — استخدم قدرات مخصصة)
+- بيانات اعتماد بوابة الدفع ومفاتيح API المسجلة بواسطة الإضافات المثبتة.
+
+يمكن إضافة إدخالات إضافية عبر الفلتر `gratis_ai_agent_options_blocklist`.
+
+## الخطافات والفلاتر (Hooks and Filters)
+
+### الإجراءات (Actions)
+
+- `gratis_ai_agent_ability_registered` — يتم تشغيله بعد تسجيل قدرة، ويتلقى اسم فئة القدرة.
+- `gratis_ai_agent_plan_started` — يتم تشغيله عند بدء تنفيذ خطة بناء الموقع.
+- `gratis_ai_agent_plan_completed` — يتم تشغيله عند اكتمال الخطة بنجاح.
+- `gratis_ai_agent_plan_failed` — يتم تشغيله عند مواجهة الخطة لخطأ لا يمكن التعافي منه.
+
+### الفلاتر (Filters)
+
+- `gratis_ai_agent_abilities` — لتعديل قائمة القدرات المسجلة قبل أن يقوم الوكيل بتحميلها.
+- `gratis_ai_agent_options_blocklist` — لتوسيع أو تقليل قائمة الحظر لأمان الخيارات.
+- `gratis_ai_agent_benchmark_questions` — لإضافة أسئلة قياس أداء مخصصة إلى مجموعة التقييم.
+- `gratis_ai_agent_plan_plugins` — لتعديل قائمة اكتشاف الإضافات أثناء إنشاء خطة الموقع.
+
+## الدعم (Support)
+
+للحصول على الدعم، يرجى زيارة [ultimatemultisite.com](https://ultimatemultisite.com) أو فتح مشكلة في مستودع الإضافة.
+
+## سجل التغييرات (Changelog)
+
+راجع [سجل التغييرات (Changelog)](./changelog) للاطلاع على تاريخ الإصدار الكامل.

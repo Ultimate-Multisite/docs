@@ -1,0 +1,144 @@
+---
+title: एडमिन पेज क्रिएटर
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Content
+Admin page creator का उपयोग करके आप WordPress admin dashboard के अंदर आसानी से नए admin pages और sub-pages जोड़ सकते हैं। इसका उपयोग एक वेलकम पेज या ट्यूटोरियल पेज बनाने के लिए किया जा सकता है, जो नए उपयोगकर्ताओं के लिए एक लैंडिंग पेज के रूप में काम कर सकता है। आप Beaver Builder, Elementor, Brizy, और Oxygen जैसे page builder का उपयोग करके बिना किसी परेशानी के पेज डिज़ाइन कर सकते हैं।
+
+यह कस्टम HTML, CSS और JavaScript सपोर्ट भी प्रदान करता है, साथ ही प्लान और user role के आधार पर access control भी देता है!
+
+## Features
+* Support Custom HTML and CSS
+* JavaScript Support
+* PHP Content Mode
+* Permission based on User role
+* Support to page builders
+
+## Documentation
+[Creating Custom Admin Pages and Sub-pages using Multisite Ultimate: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installation
+
+1. **ultimate-multisite-admin-page-creator** को **/wp-content/plugins/** डायरेक्टरी में अपलोड करें
+2. अपने WordPress Network Admin में **Plugins** मेनू के माध्यम से प्लगइन को एक्टिवेट करें
+
+## Usage Guide
+
+हालांकि WordPress साइटों के front end पर content जोड़ना बहुत आसान बनाता है, लेकिन admin side पर pages और sub-pages बनाना कुछ basic coding skills मांगता है। Ultimate Multisite: Admin Page Creator का उद्देश्य आपके network sites के back end पर भी front end जैसी ही उपयोग में आसानी लाना है।
+
+## Why use Admin Page Creator?
+
+हो सकता है कि आप अपने क्लाइंट के admin panel पर ट्यूटोरियल के साथ एक कस्टम पेज देना चाहते हों, या शायद आप FAQs और एक contact widget के साथ एक कस्टम पेज जोड़ना चाहते हों। Admin Page Creator के साथ संभावनाएं अंतहीन हैं, और यही हम आज के ट्यूटोरियल में देखेंगे।
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_YouTube प्लेलिस्ट के साथ एक ट्यूटोरियल पेज बनाना अब संभव है!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_यह user के Dashboard Panel पर अंतिम परिणाम है_
+
+## Creating your first Custom Admin Page
+
+Ultimate Multisite: Admin Page Creator को install और activate करने के बाद, अपने network admin menu पर जाएं और Admin Pages पर क्लिक करें।
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Network Admin पर Custom Admin Pages की सूची_
+
+आपको उन सभी admin pages की एक सूची दिखाई देगी जिन्हें आपने अब तक बनाया है (चूंकि यह आपकी पहली विज़िट है, इसलिए सूची खाली होगी)। आगे बढ़ें और **Add new Admin Page** पर क्लिक करें। आपको Admin Page editor पर रीडायरेक्ट कर दिया जाएगा।
+
+## The elements of a Custom Admin Page
+
+Admin Page editor पर, आपके पेज को कस्टमाइज़ करने के लिए कई अलग-अलग विकल्प होंगे।
+
+### Page Title
+
+यह वह शीर्षक है जो पेज के शीर्ष पर प्रदर्शित होगा, न कि admin menu label।
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_एक Page Title दर्ज करें_
+
+### Content Type Selector
+
+Ultimate Multisite: Admin Page Creator आपको पेज की content के संबंध में दो विकल्प देता है: आप या तो default WordPress WYSIWYG editor का उपयोग कर सकते हैं या HTML editor पर स्विच कर सकते हैं।
+
+यदि आप HTML से परिचित नहीं हैं, तो default WordPress editor का उपयोग करें। आप पेज की सामग्री को वैसे ही एडिट कर पाएंगे जैसे आप किसी सामान्य Post या Page के साथ करते हैं।
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_default WordPress WYSIWYG editor का उपयोग करना_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_HTML editor विकल्प का उपयोग करना, जिसमें सिंटैक्स हाइलाइट और एरर अलर्ट हैं_
+
+## Menu Options
+
+साइड में, General Options meta-box पर, आप menu type, label, और बहुत कुछ कॉन्फ़िगर कर पाएंगे।
+
+### Menu Types
+
+आपके नए कस्टम admin page में दो अलग-अलग menu types हो सकते हैं: top-level menu और submenu।
+
+एक top-level menu page, जैसा कि नाम से पता चलता है, आपके द्वारा बनाए गए नए पेज को default WordPress pages के साथ admin menu में जोड़ देगा।
+
+यदि आप top-level विकल्प चुनते हैं, तो आप menu order और एक menu icon भी चुन पाएंगे।
+
+यदि आप इस पेज को एक sub-menu page बनाना चाहते हैं, तो आप एक parent page चुन पाएंगे जिससे इस पेज को जोड़ा जा सके। आप अपने कस्टम पेज को default WordPress pages या अपने top-level custom admin pages में जोड़ सकते हैं।
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_इस कस्टम पेज के लिए मेनू आइटम को पूरी तरह से कस्टमाइज़ करें_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_आप इस पेज को अन्य मेनू पेजों के sub-menu के रूप में भी जोड़ सकते हैं, जिसमें आपके अपने कस्टम top-level पेज भी शामिल हैं।_
+
+## Advanced Options
+
+आप अपने कस्टम admin pages में हर तरह की content जोड़ पाएंगे। इसमें CSS rules और files, JavaScript, और external libraries भी शामिल हैं। आप यह Advanced Options Tab का उपयोग करके कर सकते हैं।
+
+### Custom CSS
+
+CSS tab पर, आप अपना कस्टम CSS कोड जोड़ सकते हैं, साथ ही remote sites (जैसे CDNs, Google Fonts, आदि) से CSS files भी import कर सकते हैं।
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_कस्टम CSS भी समर्थित है। आप बाहरी स्टाइल फ़ाइलें भी शामिल कर सकते हैं!_
+
+### Custom JavaScript
+
+JavaScript के लिए भी यही बात लागू होती है। आप अपने कस्टम JavaScript कोड का उपयोग करने के लिए external libraries जोड़ सकते हैं।
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_अपना खुद का JavaScript कोड जोड़ें!_
+
+## Permissions
+
+Advanced Options में भी, आप यह चुन पाएंगे कि किन sub-sites को इस पेज तक एक्सेस मिलेगा। यह उपयोगी है यदि आप विभिन्न प्लान टियर को अलग-अलग एक्सक्लूसिव content देने की योजना बना रहे हैं, उदाहरण के लिए।
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_आपके पास इस पेज के दिखने की जगह पर पूरा नियंत्रण है_
+
+**महत्वपूर्ण** : पेज के प्रदर्शित होने के लिए दोनों शर्तों का पूरा होना आवश्यक है। इसका मतलब है कि यदि उपयोगकर्ता किसी दिए गए प्लान का क्लाइंट है, लेकिन उसके पास चयनित भूमिकाओं (roles) में से कोई एक नहीं है (या इसके विपरीत), तो पेज उसके पैनल पर दिखाई नहीं देगा।
+
+## Active
+
+यदि आप किसी कस्टम admin page को डिलीट किए बिना या permissions से छेड़छाड़ किए बिना अक्षम (disable) करना चाहते हैं, तो बस Active विकल्प को अनचेक कर दें।
+
+एक top-level पेज को deactivate करने से उस parent page से जुड़े सभी sub-pages स्वचालित रूप से deactivate हो जाएंगे।
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_user panel पर अंतिम परिणाम!_

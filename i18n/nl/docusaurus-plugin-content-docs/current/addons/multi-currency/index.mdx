@@ -1,0 +1,117 @@
+---
+title: Meerdere valuta's
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency stelt uw netwerk in staat om betalingen te accepteren in meerdere valuta's. Het converteert automatisch prijzen met behulp van live of handmatige wisselkoersen, stelt u in staat om exacte prijzen per product in elke valuta in te stellen en detecteert de voorkeursvaluta van elke bezoeker via geolocatie — alles beheerd vanuit één admin dashboard.
+
+## Belangrijkste functies
+
+- **Automatische wisselkoersconversie** — prijzen worden geconverteerd van uw basisvaluta met behulp van koersen die worden opgehaald bij uw gekozen aanbieder.
+- **Prijsbepaling per product overschrijven** — stel exacte valuta-specifieke prijzen in op elk product om automatische conversie te omzeilen.
+- **Valutaselector-aanmeldveld** — laat klanten hun voorkeursvaluta kiezen tijdens het afrekenen/aanmelden.
+- **Meerdere wisselkoersaanbieders** — ECB, Frankfurter, Stripe, of volledig handmatige koersen.
+- **Valutadetectie op basis van geolocatie** — selecteert automatisch de valuta die overeenkomt met het land van de bezoeker.
+- **Admin dashboard** — beheert actieve valuta's, wisselkoersen en aanbiedersinstellingen vanaf één plek.
+
+## Vereisten
+
+- Ultimate Multisite 2.0.0 of hoger
+- WordPress Multisite installatie
+- PHP 7.4 of hoger
+
+## Installatie
+
+1. Upload de pluginbestanden naar `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Activeer de plugin via het scherm **Plugins** in WordPress (Netwerk activeren)
+3. Navigeer naar **Ultimate Multisite → Multi-Currency** om het admin dashboard te openen.
+4. Voeg de valuta's toe die u wilt accepteren en configureer uw wisselkoersaanbieder.
+
+## Configuratie
+
+### Admin Dashboard
+
+Het Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) is de centrale plek om:
+
+- Valuta's toe te voegen, in te schakelen of uit te schakelen.
+- Een wisselkoersaanbieder te kiezen en koersen op aanvraag te vernieuwen.
+- De huidige koersen voor alle actieve valuta's te bekijken.
+- Handmatige koersen in te stellen wanneer automatische aanbieders niet geschikt zijn.
+
+### Wisselkoersaanbieders
+
+| Aanbieder | Beschrijving |
+|---|---|
+| **ECB** | European Central Bank — gratis dagelijkse koersen voor EUR-gebaseerde netwerken. |
+| **Frankfurter** | Open-source ECB mirror API — gratis, vereist geen API-sleutel. |
+| **Stripe** | Gebruikt de live FX-koersen van Stripe — vereist een actieve Stripe-integratie. |
+| **Handmatig** | U voert de koersen direct in; geen externe API-aanroepen. |
+
+Kies uw aanbieder onder **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Koersen kunnen op elk moment handmatig worden vernieuwd of worden ingepland om automatisch bijgewerkt te worden.
+
+### Prijsbepaling per product overschrijven
+
+Wanneer automatische conversie niet nauwkeurig genoeg is, kunt u een exacte prijs voor een specifieke valuta instellen op elk product:
+
+1. Open de producteditor (**Ultimate Multisite → Products → Edit**)
+2. Scroll naar de sectie **Currency Pricing** (Valutaprijzen).
+3. Voer de exacte prijs in voor elke valuta die u wilt overschrijven.
+4. Sla het product op.
+
+Producten zonder overschrijving gebruiken de geconverteerde prijs van uw basisvaluta.
+
+### Valutaselector-aanmeldveld
+
+Het valutaselectorveld kan aan uw aanmeld-/checkout-proces worden toegevoegd, zodat klanten hun voorkeursvaluta kiezen bij registratie:
+
+1. Ga naar **Ultimate Multisite → Multi-Currency → Settings**.
+2. Schakel **Show currency selector on signup** (Valutaselector tonen bij aanmelding) in.
+3. Stel optioneel een standaardvaluta in of laat geolocatie de vooraf geselecteerde waarde bepalen.
+
+De geselecteerde valuta wordt opgeslagen bij het abonnement en gebruikt voor alle volgende factureringen.
+
+### Valutadetectie op basis van geolocatie
+
+Wanneer detectie op basis van geolocatie is ingeschakeld, koppelt de addon het land van de bezoeker aan een valuta en selecteert deze vooraf in het valutaselectorveld. Om dit in te schakelen:
+
+1. Ga naar **Ultimate Multisite → Multi-Currency → Settings**.
+2. Schakel **Detect currency from visitor location** (Valuta detecteren op basis van bezoekerlocatie) in.
+3. Koppel landen aan valuta's in de tabel **Geolocation Mapping**.
+
+Als er geen koppeling bestaat voor het land van de bezoeker, wordt de basisvaluta van het netwerk gebruikt als fallback.
+
+## Veelgestelde vragen
+
+### Wat gebeurt er als een wisselkoersaanbieder niet beschikbaar is?
+
+De addon valt terug op de laatst succesvol opgehaalde koersen. Als er nog nooit koersen zijn opgehaald, valt het terug op de handmatige koersen die u heeft geconfigureerd. Het wordt aanbevolen om handmatige koersen in te stellen als een vangnet.
+
+### Kan ik verschillende aanbieders gebruiken voor verschillende valuta's?
+
+Nee — er is op elk moment één aanbieder actief voor alle valuta's. Gebruik **Handmatig** als u volledige controle over individuele koersen nodig heeft.
+
+### Vereist geolocatie een aparte plugin?
+
+Er is geen externe geolocatie plugin nodig. De addon gebruikt de ingebouwde IP-naar-land detectie van WordPress. Voor een hogere nauwkeurigheid kan een specifieke geolocatieservice worden geïntegreerd via de verstrekte filter hooks.
+
+### Worden de prijsbepalingen per product toegepast vóór of ná belastingen?
+
+Prijsbepalingen per product stellen de prijs vóór belastingen in de doelvaluta in. Belastingen worden bovenop de overschrijvingsprijs berekend met behulp van uw bestaande belastingconfiguratie.
+
+## Changelog
+
+### Versie 1.0.0 — Uitgebracht op 2026-04-02
+
+- Nieuw: Multi-valuta ondersteuning met automatische wisselkoersconversie.
+- Nieuw: Prijsbepaling per product overschrijving voor exacte valuta-specifieke prijzen.
+- Nieuw: Valutaselector-aanmeldveld voor het checkout-proces.
+- Nieuw: Wisselkoersaanbieders: ECB, Frankfurter, Stripe en handmatig.
+- Nieuw: Valutadetectie op basis van geolocatie.
+- Nieuw: Admin dashboard voor het beheren van valuta's en wisselkoersen.
+- Fix: Dashboard toont altijd prijzen in de basisvaluta, ongeacht de geselecteerde valuta.

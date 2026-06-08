@@ -1,0 +1,116 @@
+---
+title: ट्यूटर मल्टीसाइट संगतता
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+एक WordPress प्लगइन जो Tutor LMS के लिए multisite वातावरण में compatibility fixes जोड़ता है।
+
+## Description
+
+यह प्लगइन WordPress multisite networks पर Tutor LMS चलाने के लिए ज़रूरी compatibility fixes प्रदान करता है। यह user enrollment, instructor management, course limitations, और अन्य multisite-specific functionality को संभालता है।
+
+## Features
+
+- **Database Table Management**: स्वचालित रूप से उन Tutor LMS tables का पता लगाता है और उन्हें बनाता है जो multisite foreign key constraints के कारण विफल हो जाते हैं।
+- **Multisite User Enrollment**: network के विभिन्न sites पर user enrollment को मैनेज करने के लिए कस्टम AJAX handlers।
+- **Instructor Role Management**: multisite environments में automatic instructor role assignment और management।
+- **Course Limitations**: site plans के आधार पर course और funnel creation limits को मैनेज करने के लिए Ultimate Multisite के साथ इंटीग्रेशन।
+- **Custom Admin Views**: multisite-aware instructor list और management interface।
+- **Admin Tools**: network और site administrators के लिए database management interface।
+
+## Requirements
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (automatically enforced via `Requires Plugins` header)
+- WordPress Multisite installation
+- Ultimate Multisite plugin (course limitations functionality के लिए)
+
+## Installation
+
+1. प्लगइन फ़ाइलों को `/wp-content/plugins/tutor-multisite-compatibility/` पर अपलोड करें।
+2. सुनिश्चित करें कि Tutor LMS इंस्टॉल और एक्टिवेट है।
+3. WordPress में 'Plugins' मेनू के माध्यम से प्लगइन को एक्टिवेट करें।
+4. प्लगइन स्वचालित रूप से Tutor LMS के साथ इंटीग्रेट हो जाएगा।
+
+## File Structure
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality Moved from MU Plugin
+
+इस प्लगइन में वह functionality शामिल है जो पहले `wp-content/mu-plugins/daves.php` में थी:
+
+- Course status change limitations
+- Course creation limitations
+- CartFlows integration and limits
+- Tutor instructor role management
+- Multisite user enrollment handling
+- Course product ID display
+
+## Database Management
+
+### The Problem
+
+WordPress multisite environments में, Tutor LMS table creation उन tables के लिए विफल हो जाती है जिनमें users table के साथ foreign key constraints होते हैं। ऐसा इसलिए होता है क्योंकि:
+
+- Site-specific tables `wp_2_tutor_carts` जैसे prefixes का उपयोग करते हैं।
+- foreign keys `wp_2_users` को reference करते हैं (जो मौजूद नहीं है)।
+- actual users table `wp_users` है (जो network में साझा होता है)।
+
+### The Solution
+
+यह प्लगइन स्वचालित रूप से:
+
+1. **Detects Missing Tables**: उन tables की जाँच करता है जो foreign key constraints के कारण create नहीं हो पाए थे।
+2. **Creates Tables with Correct References**: proper user table name (`wp_users` in multisite) का उपयोग करता है।
+3. **Handles Multiple Scenarios**:
+   - Plugin activation/reactivation
+   - network में नया site creation
+   - admin interface के माध्यम से manual table checking
+
+### Affected Tables
+
+- `tutor_coupon_usages` - users table का foreign key रखता है
+- `tutor_carts` - users table का foreign key रखता है
+- `tutor_notification_preferences` - users table का foreign key वाला TutorPro table
+
+### Admin Interface
+
+database management tools तक पहुंचने के लिए:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+यह interface आपको ये करने की अनुमति देता है:
+- सभी sites पर missing tables देखना
+- table creation को मैन्युअल रूप से ट्रिगर करना
+- database configuration की जाँच करना
+- विस्तृत status information देखना
+
+## Support
+
+यह प्लगइन विशेष रूप से KursoPro platform के लिए डिज़ाइन किया गया है। technical support के लिए, development team से संपर्क करें।

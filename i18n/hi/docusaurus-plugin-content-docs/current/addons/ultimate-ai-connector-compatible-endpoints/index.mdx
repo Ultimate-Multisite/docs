@@ -1,0 +1,111 @@
+---
+title: संगत एंडपॉइंट्स के लिए अल्टीमेट एआई कनेक्टर
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints आपके WordPress multisite network में OpenAI-compatible AI provider APIs को इंटीग्रेट करता है। आप कई AI providers को कॉन्फ़िगर कर सकते हैं — जिनमें से प्रत्येक का अपना endpoint URL, API key और default model होता है — और जब कोई provider अनुपलब्ध हो, तो स्वचालित फॉलबैक (automatic fallback) के साथ requests को रूट कर सकते हैं।
+
+## मुख्य विशेषताएँ (Key Features)
+
+- **मल्टी-प्रदाता समर्थन (Multi-provider support)**: आप कई AI provider कार्ड जोड़ सकते हैं, जिनमें से प्रत्येक का अपना endpoint URL, API key और default model होता है।
+- **ड्रैग-टू-रीऑर्डर (Drag-to-reorder)**: प्रत्येक कार्ड पर दिए गए ग्रिप हैंडल का उपयोग करके आप प्राथमिकता के अनुसार providers को व्यवस्थित कर सकते हैं; requests क्रम से providers का उपयोग करती हैं।
+- **स्वचालित फॉलबैक रूटिंग (Automatic fallback routing)**: यदि प्राथमिक provider अनुपलब्ध है, तो requests स्वचालित रूप से अगले कॉन्फ़िगर किए गए provider पर फॉलबैक करती हैं।
+- **प्रत्येक प्रदाता के लिए कॉन्फ़िगरेशन (Per-provider configuration)**: प्रत्येक provider को उसकी अपनी क्रेडेंशियल्स और मॉडल चयन के साथ स्वतंत्र रूप से कॉन्फ़िगर किया जाता है।
+- **कार्ड-आधारित सेटिंग्स UI (Card-based settings UI)**: यह स्थिर WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider) पर बनाया गया है।
+- **जोड़ने पर स्वतः विस्तार (Auto-expand on add)**: नए provider कार्ड स्वचालित रूप से फैल जाते हैं ताकि आप तुरंत विवरण भर सकें।
+- **स्क्रिप्ट कैश बस्टिंग (Script cache busting)**: प्लगइन अपडेट पर provider scripts को कैश-बस्ट किया जाता है ताकि यह सुनिश्चित हो सके कि नवीनतम संस्करण लोड हो।
+
+## आवश्यकताएँ (Requirements)
+
+- WordPress 5.3 या इससे उच्च
+- PHP 7.4 या इससे उच्च
+- Ultimate Multisite प्लगइन (सक्रिय)
+- एक OpenAI-compatible API endpoint (स्व-होस्टेड या थर्ड-पार्टी)
+
+## इंस्टॉलेशन (Installation)
+
+1. addon फ़ाइलों को अपने `/wp-content/plugins/` डायरेक्टरी में अपलोड करें।
+2. WordPress में 'Plugins' मेनू के माध्यम से प्लगइन को सक्रिय करें।
+3. addon को कॉन्फ़िगर करने के लिए **Ultimate Multisite → AI Connector** पर जाएँ।
+
+## कॉन्फ़िगरेशन (Configuration)
+
+### मल्टी-प्रदाता सेटअप (Multi-Provider Setup)
+
+कॉन्फ़िगरेशन स्क्रीन में एक कार्ड-आधारित लेआउट का उपयोग किया जाता है, जहाँ प्रत्येक कार्ड एक AI provider का प्रतिनिधित्व करता है। आप जितने चाहें उतने providers जोड़ सकते हैं।
+
+#### एक प्रदाता जोड़ना (Adding a Provider)
+
+1. नेटवर्क एडमिन में **Ultimate Multisite → AI Connector** पर जाएँ।
+2. **Add Provider** पर क्लिक करें।
+3. एक नया provider कार्ड दिखाई देता है और स्वचालित रूप से फैल जाता है।
+4. provider का विवरण भरें:
+   - **Provider Name** — इस provider की पहचान करने के लिए एक लेबल (उदाहरण के लिए, "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — OpenAI-compatible API का बेस URL (उदाहरण के लिए, `https://api.openai.com/v1`)
+   - **API Key** — इस provider के लिए आपकी API key
+   - **Default Model** — इस provider के लिए डिफ़ॉल्ट रूप से उपयोग किया जाने वाला मॉडल आइडेंटिफ़ायर (उदाहरण के लिए, `gpt-4o`, `mistral-small`)
+5. **Save Settings** पर क्लिक करें।
+
+#### एक प्रदाता हटाना (Removing a Provider)
+
+इसे हटाने के लिए किसी भी provider कार्ड पर **Remove** बटन पर क्लिक करें। बदलाव लागू करने के लिए सेटिंग्स सेव करें।
+
+#### providers को पुनर्व्यवस्थित करना (Reordering Providers)
+
+किसी भी provider कार्ड के बाईं ओर दिए गए ग्रिप आइकन (⣿) को खींचकर (drag) आप इसे पुनर्व्यवस्थित कर सकते हैं। यह क्रम फॉलबैक प्राथमिकता निर्धारित करता है: requests पहले provider को भेजी जाती हैं और यदि कोई request विफल हो जाती है तो यह बाद के providers पर फॉलबैक करती हैं।
+
+### फॉलबैक रूटिंग (Fallback Routing)
+
+जब प्राथमिक provider को एक request विफल हो जाती है — चाहे वह टाइमआउट, रेट लिमिट, या सर्विस आउटेज के कारण हो — तो कनेक्टर स्वचालित रूप से सूची में अगले provider के साथ पुनः प्रयास (retries) करता है। यह सूची में तब तक जारी रहता है जब तक कि कोई provider सफल नहीं हो जाता या सभी providers को आज़मा लिया जाता है।
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+फॉलबैक calling plugin या theme के लिए पारदर्शी (transparent) होता है — उन्हें या तो एक सफल response मिलता है या एक अंतिम error, भले ही कितने providers को आज़माया गया हो।
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Display label for this provider |
+| Endpoint URL | Yes | Base URL of the OpenAI-compatible API |
+| API Key | Yes | Authentication key for this provider |
+| Default Model | Yes | Model identifier used when no model is specified in the request |
+
+## समस्या निवारण (Troubleshooting)
+
+### कोई provider सूचीबद्ध नहीं है (No providers are listed)
+
+सेव करने के बाद यदि provider सूची खाली है, तो पुष्टि करें कि:
+
+- आपने providers जोड़ने के बाद **Save Settings** पर क्लिक किया है।
+- आपके ब्राउज़र ने सेटिंग्स पेज को सेव होने से नहीं रोका (जावास्क्रिप्ट त्रुटियों के लिए ब्राउज़र कंसोल की जाँच करें)।
+- प्लगइन सक्रिय है और आप नेटवर्क एडमिन स्क्रीन पर हैं।
+
+### सभी providers के लिए requests विफल हो रही हैं (Requests are failing for all providers)
+
+- सत्यापित करें कि प्रत्येक provider का endpoint URL आपके सर्वर से सुलभ है (केवल आपके ब्राउज़र से नहीं)।
+- जांच लें कि प्रत्येक API key वैध है और समाप्त नहीं हुई है।
+- अपने डैशबोर्ड में provider की rate-limit और quota स्थिति की समीक्षा करें।
+- कनेक्टर से विस्तृत error messages कैप्चर करने के लिए WordPress debug logging (`WP_DEBUG_LOG`) सक्षम करें।
+
+### फॉलबैक के लिए कोई provider उपयोग नहीं हो रहा है (A provider is not being used for fallback)
+
+ड्रैग-टू-रीऑर्डर फॉलबैक क्रम बदल देता है। पुष्टि करें कि जिस provider को आपको फॉलबैक requests प्राप्त होने की उम्मीद है, वह सूची में सही जगह पर है और उसका endpoint URL और API key सही है।
+
+### नया provider कार्ड स्वचालित रूप से नहीं फैलता है (New provider card does not expand automatically)
+
+ऑटो-एक्सपैंड के लिए आपके ब्राउज़र में जावास्क्रिप्ट (JavaScript) सक्षम होना आवश्यक है। यदि कार्ड क्लिक करने पर नहीं फैलता है, तो ब्राउज़र कंसोल में त्रुटियों की जाँच करें। कार्ड की सामग्री हमेशा कार्ड हेडर पर क्लिक करके सुलभ होती है, भले ही ऑटो-एक्सपैंड ट्रिगर न हो।
+
+## Changelog
+
+पूरे वर्ज़न इतिहास के लिए [Changelog](./changelog) देखें।

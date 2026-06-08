@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent is een autonoom WordPress AI-assistent die volledige WordPress-sites kan plannen, bouwen en beheren op basis van natuurlijke taalinstructies. Het biedt een gestructureerde set van **mogelijkheden** (abilities) — discrete, testbare acties die de agent kan oproepen — die alles bestrijken, van contentbeheer tot de aanpassing van het designsysteem. Versie 1.9.0 voegt contentcreatie-mogelijkheden, visuele paginanalyse via client-side screenshots, vijf ingebouwde agentprofielen en feature flags toe voor toegangscontrole en branding.
+
+## Belangrijkste functies
+
+- **Mogelijkheden systeem (Abilities system)** — een modulair, uitbreidbaar catalogus van acties die de agent op uw WordPress-installatie kan uitvoeren
+- **Contentbeheer** — creëer berichten en pagina's (inclusief het toewijzen van paginatemplates), creëer meerdere berichten in één keer, stel featured images in en bouw contactformulieren
+- **Visuele analyse** — maak screenshots van live pagina's, vergelijk 'voor' en 'na' statussen, en ontvang een AI-gegenereerde designreview over lay-out, typografie, kleur en toegankelijkheid
+- **Vijf ingebouwde agents** — Content Writer, Site Builder, Design Studio, Plugin Manager en Support Assistant; schakelbaar via de Agent Picker in de chatheader
+- **Feature flags** — toegangscontrole- en branding-schakelaars in Instellingen → Feature Flags voor rolbeperkingen, white-label naamgeving en widgetaanpassing
+- **Beheer van Custom Post Types** — registreer, listeer en verwijder custom post types met persistentie na herstarts
+- **Beheer van Custom Taxonomies** — registreer, listeer en verwijder custom taxonomies met persistentie
+- **Design System mogelijkheden** — injecteer custom CSS, beheer gecureerde block patterns, stel het site-logo in en pas theme.json presets toe
+- **Beheer van globale stijlen** — lees en schrijf theme.json waarden voor kleurenpaletten, typografie, spatiëring en meer
+- **Beheer van navigatiemenu's** — creëer en update navigatiemenu's en hun items programmeermatig
+- **Optiesbeheer** — lees en schrijf WordPress opties met een ingebouwde veiligheidsblocklist om kritieke instellingen te beschermen
+- **Installeerbare Mogelijkheden Registry** — ontdek en activeer extra ability packs zonder de core plugin bestanden aan te passen
+- **Site Builder Orchestration v2** — meerstaps sitebouwplannen met pluginontdekking, voortgangsregistratie en foutopsporing
+- **WP-CLI benchmark commando** — voer de agent capability benchmark suite vanuit de command line uit voor CI en modelevaluatie
+
+## Vereisten
+
+- WordPress 6.0 of hoger
+- PHP 8.1 of hoger
+- WordPress Multisite (netwerk-geactiveerd) of single-site installatie
+- Een actieve AI provider connector plugin (Anthropic, OpenAI of compatibel)
+
+## Installatie
+
+1. Upload de pluginbestanden naar `/wp-content/plugins/gratis-ai-agent`
+2. Activeer de plugin via het **Plugins** scherm in WordPress
+3. Ga naar **Gratis AI Agent → Settings** en verbind uw AI provider
+4. (Optioneel) Blader door de **Abilities Registry** om extra ability packs te installeren
+
+## Quick Start
+
+Nadat u de plugin heeft geactiveerd en verbonden met een AI provider, opent u het **Gratis AI Agent** paneel in de WordPress admin sidebar. Typ een instructie in natuurlijke taal en de agent zal de vereiste stappen plannen en uitvoeren met behulp van zijn beschikbare mogelijkheden.
+
+**Voorbeeldinstructies:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Overzicht van Mogelijkheden (Abilities Overview)
+
+Mogelijkheden zijn de atomaire acties die de agent kan uitvoeren. Elke mogelijkheid is een geregistreerde PHP-klasse die een schema (parameters en retourtypen) blootlegt dat de agent tijdens de runtime leest. Mogelijkheden zijn gegroepeerd in functionele gebieden:
+
+| Area | Abilities |
+|---|---|
+| **Content Management** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual Review** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Zie de [Abilities Reference](./abilities) voor volledige parameterdocumentatie en gebruiksexemples.
+
+## WP-CLI
+
+Gratis AI Agent levert een `wp gratis-ai-agent` commando-familie voor het uitvoeren van benchmarks en het beheren van mogelijkheden vanuit de command line. Zie de [WP-CLI Reference](./wp-cli) voor de volledige commando-lijst.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuratie
+
+Alle instellingen staan onder **Gratis AI Agent → Settings** in de WordPress admin:
+
+| Setting | Description |
+|---|---|
+| **AI Provider** | Selecteer en configureer de actieve AI provider connector |
+| **Model** | Kies het taalmodel dat gebruikt moet worden voor agent-sessies |
+| **Max Tokens** | Token-budget per verzoek (standaard 4096) |
+| **Ability Timeout** | Maximale seconden dat een individuele mogelijkheid kan draaien (standaard 30) |
+| **Debug Logging** | Log de oproepen van mogelijkheden en de redenering van de agent naar het WordPress debug log |
+
+## Options Management Veiligheidsblocklist
+
+De Options Management mogelijkheid bevat een ingebouwde blocklist die de agent ervan weerhoudt om gevoelige WordPress opties te lezen of te schrijven. De standaard blocklist dekt:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-opties — gebruik hiervoor een speciaal migratietool)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (geheime sleutels)
+- `active_plugins`, `template` (plugin/thema activatie — gebruik specifieke mogelijkheden)
+- Betaalpoortgegevens en API-sleutels geregistreerd door geïnstalleerde plugins
+
+Aanvullende vermeldingen kunnen worden toegevoegd via de `gratis_ai_agent_options_blocklist` filter.
+
+## Hooks en Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — wordt afgevuurd nadat een mogelijkheid is geregistreerd, ontvangt de naam van de ability-klasse
+- `gratis_ai_agent_plan_started` — wordt afgevuurd wanneer een site builder plan begint met uitvoeren
+- `gratis_ai_agent_plan_completed` — wordt afgevuurd wanneer een plan succesvol is voltooid
+- `gratis_ai_agent_plan_failed` — wordt afgevuurd wanneer een plan een onherstelbare fout tegenkomt
+
+### Filters
+
+- `gratis_ai_agent_abilities` — wijzig de geregistreerde lijst met mogelijkheden voordat de agent deze laadt
+- `gratis_ai_agent_options_blocklist` — breid of verminder de optiesveiligheidsblocklist
+- `gratis_ai_agent_benchmark_questions` — voeg aangepaste benchmarkvragen toe aan de evaluatiesuite
+- `gratis_ai_agent_plan_plugins` — wijzig de pluginontdekkingslijst tijdens de siteplan-generatie
+
+## Ondersteuning
+
+Voor ondersteuning bezoeken wij [ultimatemultisite.com](https://ultimatemultisite.com) of openen een issue in het plugin repository.
+
+## Changelog
+
+Zie de [Changelog](./changelog) voor de volledige versiegeschiedenis.

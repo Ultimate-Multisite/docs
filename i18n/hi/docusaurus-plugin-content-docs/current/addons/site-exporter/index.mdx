@@ -1,0 +1,101 @@
+---
+title: साइट एक्सपोर्टर
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+हम समझते हैं कि आपके नेटवर्क के भीतर सबसाइट्स को एक सिंगल साइट इंस्टॉलेशन में और इसके विपरीत भी ले जाने की ज़रूरत होती है, खासकर यदि आपके ग्राहक अपनी वेबसाइट माइग्रेट करने का फैसला करते हैं। Site Exporter और Importer add-on इस काम को आसान बनाता है। यह टूल ज़िप फ़ाइलों का उपयोग करके साइट्स को एक्सपोर्ट और इंपोर्ट करता है, जिसका उपयोग बैकअप के रूप में भी किया जा सकता है।
+
+## Features
+
+* साइट्स को एक्सपोर्ट और इंपोर्ट करना
+
+* इस्तेमाल में आसान इंटरफ़ेस
+
+* साइट का बैकअप बनाना
+
+## Documentation
+**साइट को एक्सपोर्ट और इंपोर्ट कैसे करें**
+
+## Installation
+
+1. **ultimate-multisite-site-exporter** को **/wp-content/plugins/** डायरेक्टरी में अपलोड करें
+2. WordPress में **Plugins** मेनू के माध्यम से प्लगइन को एक्टिवेट करें
+3. प्लगइन को सेट अप करने के लिए स्टेप-बाय-स्टेप विज़ार्ड का पालन करें
+
+## Usage Guide
+
+Ultimate Multisite के साथ, आप अपने नेटवर्क से एक साइट एक्सपोर्ट कर सकते हैं या अपनी मल्टीसाइट या सिंगल-साइट इंस्टॉलेशन में एक साइट इंपोर्ट कर सकते हैं।
+
+प्रक्रिया शुरू करने के लिए, हमारे add-ons पेज पर जाएं और Ultimate Multisite: Site Exporter & Importer add-on इंस्टॉल करें।![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+अपने Plugins पेज पर जाएं और उस add-on को **Network Activate** करने के लिए क्लिक करें जिसे आपने अभी इंस्टॉल किया है।<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** विकल्प Ultimate Multisite मेनू पर, बाईं ओर मिल जाएगा।
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+अपने नेटवर्क से एक साइट एक्सपोर्ट करने के लिए, Ultimate Multisite मेनू पर **Export & Import** पर जाएं और, **Export Sites** टैब पर, **Generate new Site Export** पर क्लिक करें।
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+उस साइट को खोजें जिसे आप एक्सपोर्ट करना चाहते हैं और उन आइटम्स का चयन करें जिन्हें आप एक्सपोर्ट की गई फ़ाइल में शामिल करना चाहते हैं। आप थीम्स, प्लगइन्स और अपलोड्स शामिल कर सकते हैं। यदि आपकी साइट बहुत बड़ी है, तो आप बैकग्राउंड में एक्सपोर्ट प्रक्रिया चलाने का विकल्प चुन सकते हैं।<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** बटन पर क्लिक करें। आपकी एक्सपोर्ट की गई साइट **Existing Exports** सूची में उपलब्ध होगी। फ़ाइल डाउनलोड करने के लिए **Download ZIP** बटन पर क्लिक करें। एक्सपोर्ट ZIPs में एक सेल्फ-बूटींग `index.php` और `readme.txt` शामिल होते हैं, इसलिए इन्हें पहले से एक अलग इंपोर्टर प्लगइन इंस्टॉल किए बिना एक फ्रेश होस्ट पर इंस्टॉल किया जा सकता है।<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+सभी सबसाइट्स को एक साथ एक्सपोर्ट करने के लिए, Ultimate Multisite मेनू पर **Export & Import** पर जाएं और एक्सपोर्ट स्क्रीन पर **Network Export** विकल्प का उपयोग करें। जनरेट किया गया आर्काइव होस्ट माइग्रेशन, स्टेजिंग रीबिल्ड्स, या नेटवर्क-लेवल बैकअप के लिए सभी सबसाइट्स को एक ही ZIP में रखता है।
+
+नेटवर्क एक्सपोर्ट बड़े हो सकते हैं। इन्हें तब चलाएं जब ट्रैफिक कम हो और पुष्टि करें कि सर्वर में आर्काइव और किसी भी शामिल अपलोड्स, प्लगइन्स और थीम्स के लिए पर्याप्त स्टोरेज है।
+
+## How to import a site
+
+एक साइट इंपोर्ट करने के लिए, **Import a Site** टैब पर जाएं और उस साइट की .zip फ़ाइल अपलोड करें जिसे आप इंपोर्ट करना चाहते हैं। आप URL को एक नए URL में बदल सकते हैं या जगह खाली छोड़कर पुराने URL को रख सकते हैं। साथ ही, आप इंपोर्ट के बाद अपनी इंस्टॉलेशन से .zip फ़ाइल को डिलीट करने के लिए बॉक्स को चेक कर सकते हैं। फिर **Begin Import** पर क्लिक करें।
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+इस प्रक्रिया में थोड़ा समय लग सकता है। आपको इंपोर्टर के नीचे सूची में एक पेंडिंग इंपोर्ट दिखाई देगा।
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+आप **Cancel Import** पर क्लिक करके प्रक्रिया रोक सकते हैं।
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+प्रक्रिया पूरी होने के बाद, आपकी साइट पहले से ही आपके नेटवर्क पर उपलब्ध होगी।
+
+## How to import a site on a single install
+
+एक साइट को अपनी सिंगल इंस्टॉलेशन में इंपोर्ट करने के लिए, पहले अपनी साइट पर इंपोर्टर इंस्टॉल और एक्टिवेट करें। आप इसे डाउनलोड करने का लिंक एक्सपोर्टर टैब पर पा सकते हैं।
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+आप इंपोर्टर को **Tools** मेनू पर, बाईं ओर, सब-आइटम **Export & Import** पर पा सकते हैं।
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+उस साइट की .zip फ़ाइल अपलोड करें जिसे आप इंपोर्ट करना चाहते हैं। आप URL को एक नए URL में बदल सकते हैं या जगह खाली छोड़कर पुराने URL को रख सकते हैं। साथ ही, आप इंपोर्ट के बाद अपनी इंस्टॉलेशन से .zip फ़ाइल को डिलीट करने के लिए बॉक्स को चेक कर सकते हैं। फिर **Begin Import** पर क्लिक करें।
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+इस प्रक्रिया में थोड़ा समय लग सकता है। आपको इंपोर्टर के नीचे सूची में एक पेंडिंग इंपोर्ट दिखाई देगा।
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+आप **Cancel Import** पर क्लिक करके प्रक्रिया रोक सकते हैं।
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+प्रक्रिया पूरी होने के बाद, आपकी साइट उस साइट से बदल जाएगी जिसे आपने अभी इंपोर्ट किया है।

@@ -1,0 +1,143 @@
+---
+title: मुफ्त एआई एजेंट
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent एक स्वायत्त (autonomous) WordPress AI सहायक है जो प्राकृतिक भाषा के निर्देशों का उपयोग करके पूरे WordPress साइट्स को प्लान कर सकता है, बना सकता है और मैनेज कर सकता है। यह **क्षमताओं (abilities)** का एक संरचित सेट उजागर करता है — ये अलग-अलग, टेस्ट करने योग्य कार्य हैं जिन्हें एजेंट शुरू कर सकता है — जो कंटेंट मैनेजमेंट से लेकर डिज़ाइन सिस्टम कस्टमाइज़ेशन तक सब कुछ कवर करते हैं। वर्ज़न 1.9.0 में कंटेंट बनाने की क्षमताएं, क्लाइंट-साइड स्क्रीनशॉट के माध्यम से विज़ुअल पेज रिव्यू, पाँच इन-बिल्ट एजेंट प्रोफाइल, और एक्सेस कंट्रोल और ब्रांडिंग के लिए फीचर फ्लैग्स जोड़े गए हैं।
+
+## मुख्य विशेषताएँ (Key Features)
+
+- **क्षमता प्रणाली (Abilities system)** — एक मॉड्यूलर, विस्तार योग्य कार्य सूची (catalogue) जिसे एजेंट आपकी WordPress इंस्टॉलेशन पर शुरू कर सकता है।
+- **कंटेंट मैनेजमेंट (Content Management)** — पोस्ट और पेज बनाना (पेज टेम्पलेट असाइन करना भी शामिल है), एक ही कॉल में कई पोस्ट बनाना, फीचर्ड इमेज सेट करना, और कॉन्टैक्ट फॉर्म बनाना।
+- **विज़ुअल रिव्यू (Visual Review)** — लाइव पेजों के स्क्रीनशॉट कैप्चर करना, पहले/बाद की स्थिति (before/after states) का अंतर देखना, और लेआउट, टाइपोग्राफी, रंग और एक्सेसिबिलिटी को कवर करते हुए AI-जनरेटेड डिज़ाइन रिव्यू प्राप्त करना।
+- **पाँच इन-बिल्ट एजेंट (Five built-in agents)** — कंटेंट राइटर, साइट बिल्डर, डिज़ाइन स्टूडियो, प्लगइन मैनेजर, और सपोर्ट असिस्टेंट; इन्हें चैट हेडर में एजेंट पिकर के माध्यम से बदला जा सकता है।
+- **फीचर फ्लैग्स (Feature flags)** — सेटिंग्स → फीचर फ्लैग्स में एक्सेस-कंट्रोल और ब्रांडिंग टॉगल, जो रोल प्रतिबंध, व्हाइट-लेबल नामकरण और विजेट कस्टमाइज़ेशन के लिए हैं।
+- **कस्टम पोस्ट टाइप मैनेजमेंट (Custom Post Type management)** — कस्टम पोस्ट टाइप को रजिस्टर करना, सूचीबद्ध करना और डिलीट करना, जो रीस्टार्ट होने पर भी बना रहता है।
+- **कस्टम टैक्सोनॉमी मैनेजमेंट (Custom Taxonomy management)** — कस्टम टैक्सोनॉमी को रजिस्टर करना, सूचीबद्ध करना और डिलीट करना, जिसमें निरंतरता बनी रहती है।
+- **डिज़ाइन सिस्टम क्षमताएं (Design System abilities)** — कस्टम CSS इंजेक्ट करना, क्यूरेटेड ब्लॉक पैटर्न को मैनेज करना, साइट लोगो सेट करना, और theme.json प्रीसेट लागू करना।
+- **ग्लोबल स्टाइल्स मैनेजमेंट (Global Styles management)** — कलर पैलेट, टाइपोग्राफी, स्पेसिंग आदि के लिए theme.json मान पढ़ना और लिखना।
+- **नेविगेशन मेनू मैनेजमेंट (Navigation Menu management)** — नेविगेशन मेनू और उनकी आइटम्स को प्रोग्रामेटिक रूप से बनाना और अपडेट करना।
+- **ऑप्शंस मैनेजमेंट (Options Management)** — महत्वपूर्ण सेटिंग्स की सुरक्षा के लिए एक इन-बिल्ट सेफ्टी ब्लॉकलिस्ट के साथ WordPress ऑप्शंस को पढ़ना और लिखना।
+- **इंस्टॉल करने योग्य क्षमता रजिस्ट्री (Installable Abilities Registry)** — कोर प्लगइन फ़ाइलों को बदले बिना अतिरिक्त क्षमता पैक (ability packs) को खोजें और सक्रिय करें।
+- **साइट बिल्डर ऑर्केस्ट्रेशन v2 (Site Builder Orchestration v2)** — प्लगइन डिस्कवरी, प्रोग्रेस ट्रैकिंग और एरर रिकवरी के साथ मल्टी-स्टेप साइट बिल्ड प्लान।
+- **WP-CLI बेंचमार्क कमांड (WP-CLI benchmark command)** — CI और मॉडल मूल्यांकन के लिए कमांड लाइन से एजेंट क्षमता बेंचमार्क सूट चलाना।
+
+## आवश्यकताएँ (Requirements)
+
+- WordPress 6.0 या इससे अधिक
+- PHP 8.1 या इससे अधिक
+- WordPress Multisite (नेटवर्क-एक्टिवेटेड) या सिंगल-साइट इंस्टॉलेशन
+- एक सक्रिय AI प्रोवाइडर कनेक्टर प्लगइन (Anthropic, OpenAI, या संगत)
+
+## इंस्टॉलेशन (Installation)
+
+1. प्लगइन फ़ाइलों को `/wp-content/plugins/gratis-ai-agent` पर अपलोड करें।
+2. WordPress में **Plugins** स्क्रीन के माध्यम से प्लगइन को सक्रिय करें।
+3. **Gratis AI Agent → Settings** पर जाएँ और अपने AI प्रोवाइडर को कनेक्ट करें।
+4. (वैकल्पिक) अतिरिक्त क्षमता पैक इंस्टॉल करने के लिए **Abilities Registry** ब्राउज़ करें।
+
+## त्वरित शुरुआत (Quick Start)
+
+एक बार सक्रिय हो जाने और AI प्रोवाइडर से कनेक्ट हो जाने के बाद, WordPress एडमिन साइडबार में **Gratis AI Agent** पैनल खोलें। एक प्राकृतिक भाषा निर्देश टाइप करें और एजेंट उपलब्ध क्षमताओं का उपयोग करके आवश्यक चरणों को प्लान और एग्जीक्यूट करेगा।
+
+**उदाहरण निर्देश:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## क्षमताओं का अवलोकन (Abilities Overview)
+
+क्षमताएं वे परमाणु कार्य (atomic actions) हैं जो एजेंट कर सकता है। प्रत्येक क्षमता एक पंजीकृत PHP क्लास होती है जो एक स्कीमा (parameters और return types) उजागर करती है जिसे एजेंट रनटाइम पर पढ़ता है। क्षमताओं को कार्यात्मक क्षेत्रों में समूहीकृत किया गया है:
+
+| क्षेत्र (Area) | क्षमताएं (Abilities) |
+|---|---|
+| **कंटेंट मैनेजमेंट (Content Management)** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **विज़ुअल रिव्यू (Visual Review)** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **कस्टम पोस्ट टाइप्स (Custom Post Types)** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **कस्टम टैक्सोनॉमी (Custom Taxonomies)** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **डिज़ाइन सिस्टम (Design System)** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **ग्लोबल स्टाइल्स (Global Styles)** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **नेविगेशन मेनू (Navigation Menus)** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **ऑप्शंस मैनेजमेंट (Options Management)** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **इंस्टॉल करने योग्य क्षमताएं (Installable Abilities)** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **साइट बिल्डर (Site Builder)** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+पूरी पैरामीटर डॉक्यूमेंटेशन और उपयोग के उदाहरणों के लिए [Abilities Reference](./abilities) देखें।
+
+## WP-CLI
+
+Gratis AI Agent बेंचमार्क चलाने और कमांड लाइन से क्षमताओं को मैनेज करने के लिए `wp gratis-ai-agent` कमांड फ़ैमिली प्रदान करता है। पूरी कमांड सूची के लिए [WP-CLI Reference](./wp-cli) देखें।
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## कॉन्फ़िगरेशन (Configuration)
+
+सभी सेटिंग्स WordPress एडमिन में **Gratis AI Agent → Settings** के तहत उपलब्ध हैं:
+
+| सेटिंग (Setting) | विवरण (Description) |
+|---|---|
+| **AI Provider** | सक्रिय AI प्रोवाइडर कनेक्टर चुनें और कॉन्फ़िगर करें। |
+| **Model** | एजेंट सेशन के लिए उपयोग किया जाने वाला भाषा मॉडल चुनें। |
+| **Max Tokens** | प्रति-अनुरोध टोकन बजट (डिफ़ॉल्ट 4096)। |
+| **Ability Timeout** | एक व्यक्तिगत क्षमता अधिकतम कितने सेकंड तक चल सकती है (डिफ़ॉल्ट 30)। |
+| **Debug Logging** | WordPress डिबग लॉग में क्षमता कॉल्स और एजेंट रीजनिंग को लॉग करें। |
+
+## ऑप्शंस मैनेजमेंट सेफ्टी ब्लॉकलिस्ट (Options Management Safety Blocklist)
+
+ऑप्शंस मैनेजमेंट क्षमता में एक इन-बिल्ट ब्लॉकलिस्ट शामिल है जो एजेंट को संवेदनशील WordPress ऑप्शंस को पढ़ने या लिखने से रोकती है। डिफ़ॉल्ट ब्लॉकलिस्ट में शामिल हैं:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL ऑप्शंस — इनके लिए एक समर्पित माइग्रेशन टूल का उपयोग करें)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (गुप्त कुंजियाँ)
+- `active_plugins`, `template` (प्लगइन/थीम सक्रियण — समर्पित क्षमताओं का उपयोग करें)
+- इंस्टॉल किए गए प्लगइन्स द्वारा पंजीकृत पेमेंट गेटवे क्रेडेंशियल्स और API कुंजियाँ।
+
+अतिरिक्त प्रविष्टियों को `gratis_ai_agent_options_blocklist` फ़िल्टर के माध्यम से जोड़ा जा सकता है।
+
+## हुक्स और फिल्टर्स (Hooks and Filters)
+
+### एक्शन (Actions)
+
+- `gratis_ai_agent_ability_registered` — एक क्षमता रजिस्टर होने के बाद ट्रिगर होता है, क्षमता क्लास का नाम प्राप्त करता है।
+- `gratis_ai_agent_plan_started` — जब साइट बिल्डर प्लान निष्पादन शुरू करता है तो ट्रिगर होता है।
+- `gratis_ai_agent_plan_completed` — जब प्लान सफलतापूर्वक समाप्त होता है तो ट्रिगर होता है।
+- `gratis_ai_agent_plan_failed` — जब प्लान को अपूरणीय त्रुटि (unrecoverable error) का सामना करना पड़ता है तो ट्रिगर होता है।
+
+### फ़िल्टर (Filters)
+
+- `gratis_ai_agent_abilities` — एजेंट द्वारा लोड करने से पहले पंजीकृत क्षमता सूची को संशोधित करें।
+- `gratis_ai_agent_options_blocklist` — ऑप्शंस सेफ्टी ब्लॉकलिस्ट का विस्तार या उसे कम करें।
+- `gratis_ai_agent_benchmark_questions` — मूल्यांकन सूट में कस्टम बेंचमार्क प्रश्न जोड़ें।
+- `gratis_ai_agent_plan_plugins` — साइट प्लान जनरेशन के दौरान प्लगइन डिस्कवरी सूची को संशोधित करें।
+
+## समर्थन (Support)
+
+समर्थन के लिए, [ultimatemultisite.com](https://ultimatemultisite.com) पर जाएँ या प्लगइन रिपॉजिटरी में एक इशू खोलें।
+
+## चेंजलॉग (Changelog)
+
+पूरे वर्ज़न इतिहास के लिए [Changelog](./changelog) देखें।

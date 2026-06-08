@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector voor WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+De Ultimate AI Connector for WebLLM brengt AI-inferentie rechtstreeks in de browser naar uw WordPress multisite netwerk. Het draait grote taalmodellen volledig in de browser met behulp van WebLLM en de MLC engine — zonder API-sleutels, zonder externe oproepen en zonder dat gegevens de apparaat van de gebruiker verlaten.
+
+## Belangrijkste functies
+
+- **Inferentie in de browser**: Het LLM draait lokaal in de browser van de bezoeker via WebLLM/MLC — geen server-GPU vereist
+- **Vloeiend chatwidget**: Ingelogde gebruikers kunnen de browser-side LLM direct vanuit de front-end aansturen
+- **Statusindicator in de admin-balk**: De real-time status van de WebLLM engine is zichtbaar in de WordPress admin-balk
+- **SharedWorker runtime**: Meerdere browser-tabs delen één GPU-sessie in plaats van om GPU-bronnen te vechten
+- **apiFetch middleware**: WordPress REST-verzoeken die het AI Client SDK-patroon matchen, worden transparant doorgestuurd naar de lokale WebLLM broker — geen loopback HTTP round-trip
+- **Widget instellingen UI**: Een connectorpaneel met instellingen om het chatwidget in te schakelen en het gedrag van de auto-prompt te configureren
+- **IndexedDB cache**: Modelgewichtdownloads overleven CDN-redirects die het standaard Cache API-pad verstoren
+- **wpai filter-integratie**: Haakt in op de `wpai_preferred_text_models` filter, zodat de AI Experiments functie naar de browser-engine wordt geleid wanneer deze is geconfigureerd
+
+## Vereisten
+
+- WordPress 5.3 of hoger
+- PHP 7.4 of hoger
+- Ultimate Multisite plugin (actief)
+- Een browser met WebGPU-ondersteuning (Chrome 113+, Edge 113+, of Firefox Nightly met WebGPU ingeschakeld)
+
+## Installatie
+
+1. Upload de addonbestanden naar uw `/wp-content/plugins/` map
+2. Activeer de plugin via het 'Plugins'-menu in WordPress
+3. Navigeer naar **Ultimate Multisite → AI Connector** om de addon te configureren
+
+## Vloeiend Chatwidget
+
+Het vloeiende chatwidget stelt elke ingelogde gebruiker in staat om direct met de browser-side LLM te interageren vanaf uw front-end, zonder de pagina te verlaten waar hij zich bevindt.
+
+### Wat het doet
+
+Wanneer het ingeschakeld is, verschijnt er een chaticoon in de hoek van elke front-end pagina voor ingelogde gebruikers. Door op het icoon te klikken, opent er een chatpaneel waar de gebruiker prompts kan typen en antwoorden kan ontvangen van het lokaal draaiende WebLLM-model. Omdat het model volledig in de browser draait, zijn de antwoorden privé en zijn er geen server-side verwerkingen nodig.
+
+### Statusindicator in de Admin-Balk
+
+De WordPress admin-balk bevat een statusindicator die de huidige staat van de WebLLM engine weergeeft:
+
+| Status | Betekenis |
+|--------|---------|
+| **Loading** | De MLC engine initialiseert of downloadt modelgewichten |
+| **Ready** | Het model is geladen en beschikbaar voor inferentie |
+| **Idle** | De engine is geladen, maar de SharedWorker tab is niet actief |
+| **Error** | De engine kon niet initialiseren — controleer de browserconsole voor details |
+
+De indicator wordt in real-time bijgewerkt zonder dat een paginalaadt is nodig.
+
+### Hoe u het Widget inschakelt of uitschakelt
+
+1. Ga naar **Ultimate Multisite → AI Connector** in het netwerk-admin
+2. Zoek het **Connector** paneel
+3. Schakel **Enable floating chat widget** in of uit
+4. Sla de instellingen op
+
+Het widget kan ook per site worden ingeschakeld of uitgeschakeld vanuit het admin van de site zelf, indien de netwerkbeheerder die bevoegdheid heeft verleend.
+
+## Widget Instellingen
+
+Het Connector paneel in **Ultimate Multisite → AI Connector** bevat de volgende instellingen voor het vloeiende chatwidget:
+
+### Enable Floating Chat Widget
+
+Schakelt het chatwidget voor het hele netwerk in of uit. Als het uitgeschakeld is, verschijnt het widget niet op een enkele front-end pagina, ongeacht de gebruikersrol.
+
+**Standaard:** Uit
+
+### Auto-Prompt Gedrag
+
+Bepaalt of het chatwidget automatisch een prompt stuurt wanneer een gebruiker het opent.
+
+| Optie | Gedrag |
+|--------|-----------|
+| **Disabled** | Het widget opent op een leeg chatblad — de gebruiker typt zijn eigen prompt |
+| **Page context** | Het widget opent met een vooraf ingevulde prompt op basis van de titel en inhoud van de huidige pagina |
+| **Custom prompt** | Het widget opent met een aangepaste prompt die u definieert in het veld hieronder |
+
+Bij **Custom prompt** verschijnt er een extra tekstveld waar u de standaard prompttekst kunt invoeren. Ondersteunt basis template variabelen:
+
+- `{site_name}` — de naam van de huidige site
+- `{page_title}` — de titel van de huidige pagina
+- `{user_display_name}` — de weergegeven naam van de ingelogde gebruiker
+
+**Standaard:** Uit
+
+## SharedWorker Runtime
+
+Versie 1.1.0 introduceert een SharedWorker runtime voor de MLC engine. Voorheen laadde elke browser-tab die WebLLM gebruikte zijn eigen instantie van het model, wat concurreerde om GPU-geheugen en prestatieproblemen veroorzaakte op apparaten met beperkt VRAM.
+
+Met de SharedWorker runtime fungeert één tab als de engine host. Alle andere tabs communiceren met die enkele instantie via het berichtkanaal van de worker. Het resultaat:
+
+- Eén GPU-sessie die wordt gedeeld door alle geopende tabs
+- Snellere antwoorden nadat het model is geladen (geen herhaalde initialisatie)
+- Lager piekmemoriaan gebruik op het apparaat
+
+De SharedWorker is transparant voor de gebruikers. De statusindicator in de admin-balk weerspiegelt altijd de staat van de gedeelde engine, niet die van de individuele tab.
+
+## apiFetch Middleware
+
+De addon installeert een `apiFetch` middleware die WordPress REST API-verzoeken onderschept die het AI Client SDK-patroon matchen. In plaats van een loopback HTTP-verzoek naar de server te sturen, worden deze verzoeken rechtstreeks doorgestuurd naar de lokale WebLLM broker die in de SharedWorker draait.
+
+Dit betekent dat plugins en thema's die de standaard WordPress `apiFetch` API gebruiken om AI-endpoints aan te roepen, automatisch profiteren van het model in de browser wanneer dit beschikbaar is, zonder dat er codeaanpassingen nodig zijn.
+
+## Hooks en Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Registreert de WebLLM browser engine als een voorkeurs tekstmodel. De addon haakt automatisch in op deze filter wanneer de engine is geconfigureerd en beschikbaar is.
+- `ultimate_webllm_widget_enabled` — Overruled de ingeschakelde status van het widget voor een specifieke gebruiker of context. Retourneer `true` of `false`.
+- `ultimate_webllm_auto_prompt` — Wijzigt de auto-prompt tekst voordat deze naar het widget wordt gestuurd. Ontvangt de prompt string en het huidige `WP_Post` object.
+
+## Probleemoplossing
+
+### Het chatwidget verschijnt niet
+
+- Bevestig dat de gebruiker is ingelogd — het widget wordt alleen getoond aan geauthenticeerde gebruikers
+- Controleer of **Enable floating chat widget** is ingeschakeld in het Connector paneel
+- Controleer of de browser van de gebruiker WebGPU ondersteunt (zie Vereisten hierboven)
+
+### De admin-balk indicator toont "Error"
+
+Open de browser ontwikkelaarscollectie (F12) en zoek naar WebLLM-gerelateerde fouten. Veelvoorkomende oorzaken:
+
+- De browser ondersteunt WebGPU niet
+- Download van modelgewichten mislukt — controleer de netwerkverbinding en probeer de IndexedDB cache te wissen in de browser ontwikkelaarstools (Application → IndexedDB)
+- Een browser-extensie blokkeert de SharedWorker
+
+### Modelgewichten downloaden elke keer
+
+De addon gebruikt IndexedDB als cache-backend om ervoor te zorgen dat modelgewichten overleven CDN-redirects. Als gewichten bij elk bezoek opnieuw worden gedownload, controleer dan of IndexedDB niet wordt gewist door een browser privacy-instelling of extensie.
+
+## Changelog
+
+Zie [Changelog](./changelog) voor de volledige versiegeschiedenis.

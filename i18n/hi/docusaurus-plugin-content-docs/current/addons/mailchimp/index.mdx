@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# MailChimp
+
+Multisite Ultimate: MailChimp Integration
+
+अपने Multisite Ultimate नेटवर्क को अपने MailChimp से जोड़ें। आप कुछ खास प्लान्स को MailChimp Lists से लिंक कर सकते हैं और साइनअप के समय स्वचालित रूप से सब्सक्राइबर्स को उन लिस्ट्स में जोड़ सकते हैं।
+
+## Installation
+
+1. 'ultimate-multisite-mailchimp' को '/wp-content/plugins/' डायरेक्टरी में अपलोड करें
+2. अपने WordPress Network Admin में 'Plugins' मेनू के माध्यम से प्लगइन को एक्टिवेट करें
+
+## Usage Guide
+
+हमारे Ultimate Multisite: MailChimp Integration Add-on के साथ सब्सक्राइबर्स के ईमेल को अपनी MailChimp लिस्ट्स के साथ सिंक करना बहुत आसान है। यह ट्यूटोरियल आपको सब कुछ सेट अप करने में मदद करने के लिए है!
+
+## Getting an API key
+
+विभिन्न सेटिंग्स को समझने से पहले, हमें एक MailChimp API key की ज़रूरत है। यह Ultimate Multisite को MailChimp API से बात करने की अनुमति देगा ताकि वह लिस्ट्स, ग्रुप्स प्राप्त कर सके और जब उपयोगकर्ता साइनअप करें तो ईमेल पते को उन लिस्ट्स और ग्रुप्स में जोड़ सके।
+
+अपना MailChimp API key प्राप्त करने के लिए इस ट्यूटोरियल का पालन करें: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_अपने MailChimp API key को_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_ _पर जोड़ें_
+
+## Integration Mode
+
+MailChimp Integration add-on दो "integration modes" प्रदान करता है, जिसका मतलब है कि ईमेल पते को सिंक करने के लिए आप इस add-on का उपयोग दो अलग-अलग तरीकों से कर सकते हैं।
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_अधिक लचीलेपन के लिए दो इंटीग्रेशन मोड!_
+
+### Mode 1: Multiple Lists
+
+डिफ़ॉल्ट मोड **Multiple Lists** का उपयोग करता है। यह मोड आपको प्रत्येक प्लान के लिए कई MailChimp लिस्ट्स चुनने की अनुमति देगा। यदि आप अपने उपयोगकर्ताओं को अलग-अलग लिस्ट्स में सेगमेंट (segment) करते हैं, तो यह सबसे अच्छा विकल्प है।
+
+उदाहरण के लिए, मान लीजिए आपके MailChimp अकाउंट पर 3 अलग-अलग लिस्ट्स हैं: **Newsletter**, **Plan A**, और **Plan B**। आप चाहते हैं कि सभी उपयोगकर्ता, चाहे उनका प्लान कुछ भी हो, Newsletter लिस्ट में भी शामिल हों, ताकि वे आपके अपडेट्स से न चूकें।
+
+ऐसा करने के लिए, आप Multiple Lists मोड का उपयोग करके Plan A MailChimp Settings में **Newsletter** और **Plan A** दोनों लिस्ट्स जोड़ सकते हैं, और Plan B MailChimp Settings में **Newsletter** और **Plan B** दोनों लिस्ट्स जोड़ सकते हैं।
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_नए अकाउंट्स और रद्द किए गए अकाउंट्स के लिए डिफ़ॉल्ट लिस्ट चुनें_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp आपको अपनी लिस्ट को उपयोगकर्ताओं के छोटे ग्रुप्स में सेगमेंट करने की अनुमति देता है जिन्हें **Groups** कहा जाता है। यह आपको अधिक नियंत्रण देता है क्योंकि आप एक विशिष्ट उपसमूह (subset) के सब्सक्राइबर्स को कैंपेन भेज सकते हैं, बिना MailChimp पर एक ही कैंपेन की कई कॉपी बनाने के (जिससे बाद में उस कैंपेन के मेट्रिक्स का विश्लेषण करना मुश्किल हो जाता है)।
+
+उदाहरण के लिए, आपके पास **My Network Subscribers** नाम की एक सिंगल लिस्ट हो सकती है, और इसके अंदर **Plan A** और **Plan B** के लिए ग्रुप्स हो सकते हैं।
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_डिफ़ॉल्ट लिस्ट और ग्रुप्स चुनें, यदि आप “single list + multiple groups” इंटीग्रेशन मोड का उपयोग कर रहे हैं_
+
+## Default Lists and Groups
+
+एक बार जब आप चुन लेते हैं कि कौन सा इंटीग्रेशन मोड आपके विशेष उपयोग के मामले के लिए अधिक उपयुक्त है, तो डिफ़ॉल्ट लिस्ट (और मोड के आधार पर ग्रुप्स) चुनने का समय आ गया है। डिफ़ॉल्ट लिस्ट का उपयोग तब किया जाएगा जब किसी दिए गए प्लान के लिए कोई विशिष्ट लिस्ट नहीं चुनी गई हो।
+
+आप रद्द किए गए अकाउंट्स के लिए भी डिफ़ॉल्ट लिस्ट चुन सकते हैं। जब भी कोई उपयोगकर्ता अपनी सदस्यता समाप्त करता है और अपने अकाउंट को आपके नेटवर्क से हटाता है, तो उसका ईमेल पता रद्द किए गए अकाउंट्स के लिए सेट की गई लिस्ट में चला जाएगा।
+
+## Enabling Double Subscription
+
+उसी सेटिंग्स पेज पर, आप **Double Subscription** को सक्षम (enable) कर पाएंगे। यह विकल्प उपयोगकर्ता को डिफ़ॉल्ट रूप से चुनी गई लिस्ट और उस उपयोगकर्ता के प्लान के लिए चुनी गई लिस्ट दोनों में जोड़ देगा। यदि यह विकल्प सक्षम नहीं है, तो उपयोगकर्ता को केवल उपयोगकर्ता के प्लान के लिए चुनी गई लिस्ट में जोड़ा जाएगा। यदि उस विशेष प्लान के लिए कुछ भी सेट नहीं है, तो उपयोगकर्ता को चुनी गई डिफ़ॉल्ट लिस्ट में जोड़ा जाएगा।
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_साइन-अप पर आप अपने उपयोगकर्ताओं को डिफ़ॉल्ट लिस्ट और प्लान की लिस्ट दोनों में सब्सक्राइब करवा सकते हैं_
+
+## Selecting Lists and Groups for each of the Plans
+
+अपने **Plans** पर जाएं और उस प्लान का चयन करें जिसे आप एडिट करना चाहते हैं। ध्यान दें कि **Advanced Options** मेटा-बॉक्स पर, MailChimp नाम का एक नया टैब उपलब्ध होगा।
+
+उस टैब पर, आप उस प्लान के लिए कई लिस्ट्स या एक सिंगल लिस्ट और कई ग्रुप्स (इंटीग्रेशन मोड के आधार पर) का चयन कर पाएंगे।
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_अपने प्रत्येक प्लान के लिए उपयोग की जाने वाली लिस्ट्स और ग्रुप्स चुनें_
+
+जब कोई नया उपयोगकर्ता उस प्लान के लिए साइनअप करता है, तो उसका ईमेल पता चुनी गई लिस्ट्स और ग्रुप्स में जोड़ा जाएगा!

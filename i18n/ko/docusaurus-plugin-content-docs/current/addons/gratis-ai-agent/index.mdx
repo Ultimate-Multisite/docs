@@ -1,0 +1,143 @@
+---
+title: 무료 AI 에이전트
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent는 자연어 지침만으로 전체 WordPress 사이트를 기획하고, 구축하며, 관리할 수 있는 자율적인 WordPress AI 어시스턴트입니다. 이 에이전트는 콘텐츠 관리부터 디자인 시스템 커스터마이징에 이르기까지 모든 것을 포괄하는, **능력(abilities)**이라는 구조화된 일련의 기능을 노출합니다. 이 능력들은 개별적이고 테스트 가능한 액션들입니다. 버전 1.9.0에서는 콘텐츠 생성 능력, 클라이언트 측 스크린샷을 통한 시각적 페이지 검토, 5가지 내장 에이전트 프로필, 그리고 접근 제어 및 브랜딩을 위한 기능 플래그가 추가되었습니다.
+
+## 주요 기능
+
+- **능력 시스템(Abilities system)** — 에이전트가 사용자의 WordPress 설치에서 호출할 수 있는 모듈식이며 확장 가능한 액션 목록입니다.
+- **콘텐츠 관리(Content Management)** — 포스트와 페이지 생성(페이지 템플릿 할당 포함), 여러 포스트를 한 번에 일괄 생성, 대표 이미지 설정, 연락처 폼 구축 등을 지원합니다.
+- **시각적 검토(Visual Review)** — 라이브 페이지의 스크린샷을 캡처하고, 이전/이후 상태를 비교하며, 레이아웃, 타이포그래피, 색상, 접근성을 포함하는 AI 기반 디자인 검토를 받을 수 있습니다.
+- **5가지 내장 에이전트** — 콘텐츠 작성기(Content Writer), 사이트 빌더(Site Builder), 디자인 스튜디오(Design Studio), 플러그인 관리자(Plugin Manager), 지원 어시스턴트(Support Assistant)가 있으며, 채팅 헤더의 에이전트 선택기(Agent Picker)를 통해 전환할 수 있습니다.
+- **기능 플래그(Feature flags)** — 설정(Settings) → 기능 플래그(Feature Flags)에서 역할 제한, 화이트 라벨 명명, 위젯 커스터마이징을 위한 접근 제어 및 브랜딩 토글을 제공합니다.
+- **커스텀 포스트 타입 관리(Custom Post Type management)** — 커스텀 포스트 타입을 등록, 목록화, 삭제할 수 있으며, 재시작 시에도 데이터가 유지됩니다.
+- **커스텀 분류 관리(Custom Taxonomy management)** — 커스텀 분류를 등록, 목록화, 삭제할 수 있으며, 데이터가 유지됩니다.
+- **디자인 시스템 능력(Design System abilities)** — 커스텀 CSS 주입, 선별된 블록 패턴 관리, 사이트 로고 설정, theme.json 프리셋 적용 등을 수행합니다.
+- **글로벌 스타일 관리(Global Styles management)** — 색상 팔레트, 타이포그래피, 간격 등 theme.json 값을 읽고 쓸 수 있습니다.
+- **내비게이션 메뉴 관리(Navigation Menu management)** — 내비게이션 메뉴와 그 항목들을 프로그래밍 방식으로 생성하고 업데이트할 수 있습니다.
+- **옵션 관리(Options Management)** — 중요한 설정을 보호하기 위해 내장 안전 블록리스트를 갖추고 WordPress 옵션을 읽고 쓸 수 있습니다.
+- **설치 가능한 능력 레지스트리(Installable Abilities Registry)** — 핵심 플러그인 파일을 수정하지 않고도 추가 능력 팩을 발견하고 활성화할 수 있습니다.
+- **사이트 빌더 오케스트레이션 v2(Site Builder Orchestration v2)** — 플러그인 검색, 진행 상황 추적, 오류 복구 기능을 갖춘 다단계 사이트 구축 계획을 지원합니다.
+- **WP-CLI 벤치마크 명령어(WP-CLI benchmark command)** — CI 및 모델 평가를 위해 명령줄에서 에이전트 기능 벤치마크 스위트를 실행할 수 있습니다.
+
+## 요구 사항
+
+- WordPress 6.0 이상
+- PHP 8.1 이상
+- WordPress Multisite (네트워크 활성화) 또는 단일 사이트 설치
+- 활성화된 AI 제공자 커넥터 플러그인 (Anthropic, OpenAI 또는 호환되는 플러그인)
+
+## 설치
+
+1. 플러그인 파일을 `/wp-content/plugins/gratis-ai-agent`에 업로드합니다.
+2. WordPress의 **플러그인(Plugins)** 화면에서 플러그인을 활성화합니다.
+3. **Gratis AI Agent → 설정(Settings)**으로 이동하여 AI 제공자를 연결합니다.
+4. (선택 사항) **능력 레지스트리(Abilities Registry)**를 탐색하여 추가 능력 팩을 설치합니다.
+
+## 빠른 시작
+
+플러그인을 활성화하고 AI 제공자와 연결한 후, WordPress 관리자 사이드바에서 **Gratis AI Agent** 패널을 엽니다. 자연어 지침을 입력하면 에이전트가 사용 가능한 능력을 활용하여 필요한 단계를 계획하고 실행합니다.
+
+**예시 지침:**
+
+```
+"Portfolio" 커스텀 포스트 타입과 "Project Category" 분류를 생성해 줘.
+```
+
+```
+테마에 다크 모드 색상 팔레트를 주입하고 기본 색상을 #1a1a2e로 설정해 줘.
+```
+
+```
+온라인 메뉴, 예약 폼, 연락처 페이지가 있는 레스토랑 웹사이트를 만들어 줘.
+```
+
+## 능력 개요 (Abilities Overview)
+
+능력(Abilities)은 에이전트가 수행할 수 있는 원자적인 액션입니다. 각 능력은 에이전트가 런타임에 읽는 스키마(매개변수 및 반환 유형)를 노출하는 등록된 PHP 클래스입니다. 능력들은 기능별 영역으로 그룹화되어 있습니다.
+
+| 영역 | 능력 |
+|---|---|
+| **콘텐츠 관리** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **시각적 검토** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **커스텀 포스트 타입** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **커스텀 분류** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **디자인 시스템** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **글로벌 스타일** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **내비게이션 메뉴** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **옵션 관리** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **설치 가능한 능력** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **사이트 빌더** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+전체 매개변수 문서와 사용 예시는 [능력 참조(Abilities Reference)](./abilities)를 참고하세요.
+
+## WP-CLI
+
+Gratis AI Agent는 명령줄에서 벤치마크를 실행하고 능력을 관리하기 위한 `wp gratis-ai-agent` 명령어 패밀리를 제공합니다. 전체 명령어 목록은 [WP-CLI 참조(WP-CLI Reference)](./wp-cli)를 참고하세요.
+
+```bash
+# 전체 벤치마크 스위트 실행
+wp gratis-ai-agent benchmark
+
+# 설치된 능력 목록 보기
+wp gratis-ai-agent abilities list
+
+# 능력 팩 설치
+wp gratis-ai-agent abilities install <slug>
+```
+
+## 설정 (Configuration)
+
+모든 설정은 WordPress 관리자에서 **Gratis AI Agent → 설정(Settings)**에 있습니다.
+
+| 설정 | 설명 |
+|---|---|
+| **AI 제공자** | 활성화할 AI 제공자 커넥터를 선택하고 구성합니다. |
+| **모델** | 에이전트 세션에 사용할 언어 모델을 선택합니다. |
+| **최대 토큰(Max Tokens)** | 요청당 토큰 예산 (기본값 4096) |
+| **능력 시간 초과(Ability Timeout)** | 개별 능력이 실행될 수 있는 최대 시간 (초, 기본값 30) |
+| **디버그 로깅(Debug Logging)** | 능력 호출 및 에이전트 추론 과정을 WordPress 디버그 로그에 기록합니다. |
+
+## 옵션 관리 안전 블록리스트 (Options Management Safety Blocklist)
+
+옵션 관리 능력에는 에이전트가 민감한 WordPress 옵션을 읽거나 쓰는 것을 방지하는 내장 블록리스트가 포함되어 있습니다. 기본 블록리스트는 다음 항목들을 포함합니다.
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL 옵션 — 이 경우 전용 마이그레이션 도구를 사용하세요)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (비밀 키)
+- `active_plugins`, `template` (플러그인/테마 활성화 — 전용 능력을 사용하세요)
+- 설치된 플러그인에 의해 등록된 결제 게이트웨이 자격 증명 및 API 키
+
+추가 항목은 `gratis_ai_agent_options_blocklist` 필터를 통해 추가할 수 있습니다.
+
+## Hooks 및 Filters
+
+### Actions (액션)
+
+- `gratis_ai_agent_ability_registered` — 능력이 등록된 후 발생하며, 능력 클래스 이름을 받습니다.
+- `gratis_ai_agent_plan_started` — 사이트 빌더 계획 실행이 시작될 때 발생합니다.
+- `gratis_ai_agent_plan_completed` — 계획이 성공적으로 완료될 때 발생합니다.
+- `gratis_ai_agent_plan_failed` — 계획이 복구할 수 없는 오류를 만났을 때 발생합니다.
+
+### Filters (필터)
+
+- `gratis_ai_agent_abilities` — 에이전트가 로드하기 전에 등록된 능력 목록을 수정합니다.
+- `gratis_ai_agent_options_blocklist` — 옵션 안전 블록리스트를 확장하거나 축소합니다.
+- `gratis_ai_agent_benchmark_questions` — 평가 스위트에 사용자 지정 벤치마크 질문을 추가합니다.
+- `gratis_ai_agent_plan_plugins` — 사이트 계획 생성 중 플러그인 검색 목록을 수정합니다.
+
+## 지원 (Support)
+
+지원 문의는 [ultimatemultisite.com](https://ultimatemultisite.com)을 방문하거나 플러그인 저장소에 이슈를 열어주세요.
+
+## 변경 로그 (Changelog)
+
+전체 버전 기록은 [변경 로그(Changelog)](./changelog)를 참고하세요.
