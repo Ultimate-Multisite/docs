@@ -4,8 +4,9 @@
  * Translate Docusaurus docs to multiple languages using AI APIs.
  *
  * Supports two providers:
- * - "openai"       — Any OpenAI-compatible API (OpenAI, Ollama, Mistral, etc.)
- * - "claude-proxy" — Claude Max Proxy (uses local Claude CLI subscription credentials)
+ * - "openai"        — Any OpenAI-compatible API (OpenAI, Mistral, etc.)
+ * - "ollama-native" — Ollama native /api/chat endpoint with thinking disabled
+ * - "claude-proxy"  — Claude Max Proxy (uses local Claude CLI subscription credentials)
  *
  * Based on the docusaurus-i18n approach but rewritten to support:
  * - .md and .mdx files
@@ -51,12 +52,15 @@ Translate Docusaurus docs to multiple languages using AI APIs.
 Options:
   --locales <codes>     Comma-separated locale codes, or "all" (required)
   --priority <n>        Only translate files at this priority level or higher (1-4)
-  --provider <name>     API provider: "openai" (default) or "claude-proxy"
+  --provider <name>     API provider: "openai" (default), "ollama-native", or "claude-proxy"
   --model <model>       Model name (default depends on provider)
   --base-url <url>      API base URL (default depends on provider)
   --api-key <key>       API key (not needed for claude-proxy)
   --concurrency <n>     Parallel requests (default: 5)
   --timeout <seconds>   Per-request timeout in seconds (default: 900)
+  --num-ctx <tokens>    Ollama native per-request context length (default: env OLLAMA_REQUEST_NUM_CTX or unset)
+  --num-predict <n>     Ollama native max generated tokens (default: env OLLAMA_NUM_PREDICT or 4096)
+  --chunk-max-chars <n> Split body content above this size for local models (default: env TRANSLATE_CHUNK_MAX_CHARS or 1500)
   --dry-run             Show what would be translated without making API calls
   --debug               Print prompts, responses, and timing details
   --commit              Git commit each translated file immediately
@@ -69,7 +73,8 @@ Priority Levels:
   4                     Addon changelogs + hooks, developer hooks (everything else)
 
 Providers:
-  openai                Any OpenAI-compatible API (OpenAI, Ollama, Mistral, etc.)
+  openai                Any OpenAI-compatible API (OpenAI, Mistral, etc.)
+  ollama-native         Ollama native /api/chat endpoint; disables Gemma/Qwen thinking
   claude-proxy          Claude Max Proxy using local Claude CLI credentials
                         Requires: https://github.com/rynfar/opencode-claude-max-proxy
 
@@ -107,6 +112,9 @@ Examples:
   # Use Ollama locally
   node scripts/translate.js --base-url http://localhost:11434/v1 --model llama3 --locales es
 
+  # Use Ollama native API with thinking disabled
+  node scripts/translate.js --provider ollama-native --base-url http://localhost:11434 --model gemma4:e2b-it-qat --locales es
+
   # Translate only user guide (priority 1)
   node scripts/translate.js --provider claude-proxy --priority 1 --locales fr
 
@@ -140,6 +148,9 @@ function parseArgs() {
 		model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
 		baseUrl: process.env.OPENAI_API_BASE || 'https://api.openai.com/v1',
 		apiKey: process.env.OPENAI_API_KEY || '',
+		numCtx: parseInt(process.env.OLLAMA_REQUEST_NUM_CTX || process.env.OLLAMA_NUM_CTX || '', 10) || 0,
+		numPredict: parseInt(process.env.OLLAMA_NUM_PREDICT || '', 10) || 4096,
+		chunkMaxChars: parseInt(process.env.TRANSLATE_CHUNK_MAX_CHARS || '', 10) || 1500,
 	};
 
 	for (let i = 0; i < args.length; i++) {
@@ -174,6 +185,15 @@ function parseArgs() {
 			case '--timeout':
 				opts.timeout = parseInt(args[++i], 10) * 1000; // Convert seconds to ms
 				break;
+			case '--num-ctx':
+				opts.numCtx = parseInt(args[++i], 10);
+				break;
+			case '--num-predict':
+				opts.numPredict = parseInt(args[++i], 10);
+				break;
+			case '--chunk-max-chars':
+				opts.chunkMaxChars = parseInt(args[++i], 10);
+				break;
 			case '--commit':
 				opts.commit = true;
 				break;
@@ -187,6 +207,14 @@ function parseArgs() {
 		}
 		if (opts.model === 'gpt-4o-mini') {
 			opts.model = 'claude-sonnet-4-5-20250929';
+		}
+	}
+	if (opts.provider === 'ollama-native' || opts.provider === 'ollama') {
+		if (opts.baseUrl === 'https://api.openai.com/v1') {
+			opts.baseUrl = 'http://127.0.0.1:11434';
+		}
+		if (opts.model === 'gpt-4o-mini') {
+			opts.model = 'gemma4:e2b-it-qat';
 		}
 	}
 
@@ -380,6 +408,87 @@ async function translateOpenAI(text, systemPrompt, opts) {
 }
 
 /**
+ * Send translation request via Ollama's native chat API.
+ *
+ * Gemma 4 exposes thinking by default in Ollama. The OpenAI-compatible
+ * endpoint may stream reasoning-only chunks for these models, so use the
+ * native endpoint where `think: false` reliably suppresses reasoning output.
+ */
+async function translateOllamaNative(text, systemPrompt, opts) {
+	const baseUrl = opts.baseUrl.replace(/\/+$/, '').replace(/\/v1$/, '');
+	const options = {
+		temperature: 0.1,
+		num_predict: opts.numPredict,
+	};
+	if (opts.numCtx > 0) {
+		options.num_ctx = opts.numCtx;
+	}
+
+	const response = await fetch(`${baseUrl}/api/chat`, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		signal: AbortSignal.timeout(opts.timeout),
+		body: JSON.stringify({
+			model: opts.model,
+			stream: true,
+			think: false,
+			keep_alive: -1,
+			options,
+			messages: [
+				{role: 'system', content: systemPrompt},
+				{role: 'user', content: text},
+			],
+		}),
+	});
+
+	if (!response.ok) {
+		const body = await response.text();
+		throw new Error(`API error ${response.status}: ${body}`);
+	}
+
+	// Stream Ollama NDJSON format: {"message":{"content":"..."},"done":false}
+	const reader = response.body.getReader();
+	const decoder = new TextDecoder();
+	let content = '';
+	let buffer = '';
+
+	while (true) {
+		const {done, value} = await reader.read();
+		if (done) break;
+
+		buffer += decoder.decode(value, {stream: true});
+		const lines = buffer.split('\n');
+		buffer = lines.pop() || '';
+
+		for (const line of lines) {
+			const trimmed = line.trim();
+			if (!trimmed) continue;
+
+			try {
+				const json = JSON.parse(trimmed);
+				if (json.error) {
+					throw new Error(json.error);
+				}
+				const delta = json.message?.content;
+				if (delta) {
+					content += delta;
+					if (opts.debug) process.stdout.write(delta);
+				}
+			} catch (err) {
+				if (err.message && !err.message.startsWith('Unexpected')) {
+					throw err;
+				}
+				// Skip malformed/incomplete JSON chunks.
+			}
+		}
+	}
+
+	return content;
+}
+
+/**
  * Send translation request via Claude Max Proxy (Anthropic Messages API format).
  * The proxy runs locally and uses Claude CLI subscription credentials.
  */
@@ -491,6 +600,8 @@ async function translate(text, targetLocale, opts, context = {}) {
 		} else {
 			content = await translateClaudeProxy(text, systemPrompt, opts);
 		}
+	} else if (opts.provider === 'ollama-native' || opts.provider === 'ollama') {
+		content = await translateOllamaNative(text, systemPrompt, opts);
 	} else {
 		content = await translateOpenAI(text, systemPrompt, opts);
 	}
@@ -516,6 +627,81 @@ async function translate(text, targetLocale, opts, context = {}) {
 	}
 
 	return content;
+}
+
+function splitMarkdownBody(text, maxChars) {
+	if (!maxChars || maxChars <= 0 || Buffer.byteLength(text, 'utf-8') <= maxChars) {
+		return [text];
+	}
+
+	const lines = text.split('\n');
+	const chunks = [];
+	let current = [];
+	let currentBytes = 0;
+	let inCodeBlock = false;
+	let lastSafeIndex = -1;
+
+	function resetSafeIndex() {
+		lastSafeIndex = -1;
+		for (let i = 0; i < current.length; i++) {
+			if (current[i].trim() === '') {
+				lastSafeIndex = i + 1;
+			}
+		}
+	}
+
+	function flushChunk(splitIndex) {
+		const chunkLines = current.slice(0, splitIndex);
+		if (chunkLines.length > 0) {
+			chunks.push(chunkLines.join('\n'));
+		}
+		current = current.slice(splitIndex);
+		currentBytes = Buffer.byteLength(current.join('\n'), 'utf-8');
+		resetSafeIndex();
+	}
+
+	for (const line of lines) {
+		const lineBytes = Buffer.byteLength(line, 'utf-8') + (current.length > 0 ? 1 : 0);
+
+		if (current.length > 0 && currentBytes + lineBytes > maxChars && !inCodeBlock) {
+			const splitIndex = lastSafeIndex > 0 ? lastSafeIndex : current.length;
+			flushChunk(splitIndex);
+		}
+
+		current.push(line);
+		currentBytes = Buffer.byteLength(current.join('\n'), 'utf-8');
+
+		if (/^\s*```/.test(line)) {
+			inCodeBlock = !inCodeBlock;
+		}
+		if (!inCodeBlock && line.trim() === '') {
+			lastSafeIndex = current.length;
+		}
+	}
+
+	if (current.length > 0) {
+		chunks.push(current.join('\n'));
+	}
+
+	return chunks.filter(chunk => chunk.length > 0);
+}
+
+async function translateBody(body, targetLocale, opts, context = {}) {
+	const chunks = splitMarkdownBody(body, opts.chunkMaxChars);
+
+	if (chunks.length === 1) {
+		return translateWithRetry(body, targetLocale, opts, context);
+	}
+
+	const translatedChunks = [];
+	for (let i = 0; i < chunks.length; i++) {
+		translatedChunks.push(await translateWithRetry(chunks[i], targetLocale, opts, {
+			...context,
+			file: `${context.file || 'unknown'} chunk ${i + 1}/${chunks.length}`,
+		}));
+	}
+
+	return translatedChunks.join('\n\n');
 }
 
 /**
@@ -620,7 +806,7 @@ async function translateFile(srcPath, targetLocale, opts, existingSet) {
 	const timings = [];
 
 	// Translate the body
-	const translatedBody = await translateWithRetry(body, targetLocale, opts, {
+	const translatedBody = await translateBody(body, targetLocale, opts, {
 		file: relPath,
 		field: 'body',
 		timings,
@@ -838,7 +1024,7 @@ function getFilePriority(relPath) {
 async function main() {
 	const opts = parseArgs();
 
-	if (!opts.apiKey && opts.provider !== 'claude-proxy' && !opts.dryRun) {
+	if (!opts.apiKey && opts.provider !== 'claude-proxy' && opts.provider !== 'ollama-native' && opts.provider !== 'ollama' && !opts.dryRun) {
 		console.error('Error: OPENAI_API_KEY is required. Set it as an environment variable or pass --api-key.');
 		process.exit(1);
 	}
