@@ -1,0 +1,139 @@
+---
+title: 'Lesson 2: Choosing Your Niche'
+sidebar_position: 3
+_i18n_hash: 4526ed4637937d4520afe876e8ced03f
+---
+# Ders 2: Nişinizi Belirleme
+
+Ders 1'de nişin neden genel olmaktan daha iyi olduğunu öğrendik. Şimdi sıra sizin nişinizi seçmekte. Bu ders, zaman harcayıp bir şey inşa etmeden önce bir niş bulmanız ve bunu doğrulamanız için bir çerçeve sunuyor.
+
+## Nerede Kalmıştık
+
+FitSite konseptini tanımladık: fitness stüdyoları için bir web sitesi platformu. Peki, özellikle fitness stüdyolarına nasıl odaklandık? Bu ders, bu süreci adım adım anlatıyor, böylece kendi nişinizi bulmak için bu adımları uygulayabilirsiniz.
+
+## Üç Kriter
+
+Bir web sitesi platformu için iyi bir niş, üç koşulu karşılar:
+
+### 1. Web Sitesine İhtiyaç Duyuyor Ama İyi Bir Site Yapmakta Zorlanıyorlar
+
+Şu endüstrileri arayın:
+
+- İşletmelerin bir web varlığı olması bekleniyor
+- Endüstrideki mevcut web sitelerinin çoğu düşük kalitede
+- Genel site kurucuları (builder'lar) onların özel ihtiyaçlarını karşılamıyor
+- Özel geliştirme, tipik bir işletme büyüklüğü için çok pahalı
+
+**Fitness stüdyoları uyuyor**: üyeler online olarak ders programlarını, fiyatlandırmayı ve rezervasyon yapmayı bekliyor. Çoğu stüdyo web sitesi güncel değil veya amaçlarına hizmet etmeyen genel şablonlar üzerine kurulmuş.
+
+### 2. İşletmeler Aylık Abonelik Ödeyebilecek Durumda
+
+Hedef müşterilerinizin:
+
+- Pazarlama bütçesi olacak kadar köklü olması
+- Yazılım abonelikleri (rezervasyon sistemleri, ödeme işlemleri vb.) ödemeye alışkın olması
+- Aylık 49-199$ gibi bir maliyetin makul bir iş gideri olduğu bir ölçekte faaliyet göstermesi
+
+**Fitness stüdyoları uyuyor**: zaten rezervasyon yazılımı, ödeme işlemleri ve pazarlama araçları için ödeme yapıyorlar. Bir web sitesi aboneliği doğal bir ekleme oluyor.
+
+### 3. Birbirleriyle İletişim Kuruyorlar
+
+En iyi nişler şunlara sahiptir:
+
+- Sektörel dernekler, konferanslar veya fuarlar
+- Aktif çevrimiçi topluluklar (Facebook grupları, forumlar, subreddits)
+- İş sahiplerinin tavsiye paylaştığı yerel ağlar
+
+**Fitness stüdyoları uyuyor**: stüdyo sahipleri fitness endüstrisi etkinliklerine katılıyor, çevrimiçi topluluklarda yer alıyor ve araçları/hizmetleri sık sık meslektaşlarıyla paylaşıyor.
+
+## Niş Adayları Nasıl Bulunur
+
+### Bildiklerinizle Başlayın
+
+Mevcut deneyiminiz bir avantajdır. Şunları düşünün:
+
+- Çalıştığınız veya web sitesi yaptığınız endüstriler
+- Topluluğu anladığınız hobiler veya ilgi alanları
+- Halihazırda üye olduğunuz profesyonel ağlar
+
+### Sorun İşaretleri Arayın
+
+Bir nişteki işletmelerin web siteleri konusunda zorlandığına dair kanıt arayın:
+
+- Google'da "[endüstri] website builder" diye aratın ve ne olduğunu görün
+- Web varlığı hakkındaki şikayetler için endüstri forumlarında gezin
+- Nişteki gerçek web sitelerine bakın — çoğu kötü mü?
+- Rakip olup olmadığını ve pazara ne kadar iyi hizmet verdiklerini kontrol edin
+
+### Ekonomik Durumu Değerlendirin
+
+Her aday niş için şunları tahmin edin:
+
+- **Pazar büyüklüğü**: Bu nişte kaç işletme var? (Ülkeniz/bölgenizle başlayın)
+- **Ödeme istekliliği**: Benzer araçlara şu anda ne kadar harcıyorlar?
+- **Ömür boyu değer potansiyeli**: Bu işletmeler istikrarlı mı, yoksa çabuk mı terk ediyorlar?
+
+## Nişinizi Doğrulama
+
+Bir şey inşa etmeden önce, talebi doğrulayın:
+
+### Potansiyel Müşterilerle Konuşun
+
+Hedef nişinizdeki 10-15 iş sahibiyle iletişime geçin. Şu soruları sorun:
+
+- Mevcut web sitenizi nasıl yaptırdınız?
+- Yapmasını istediğiniz ama yapamadığı ne var?
+- Şu anda bunun için ne kadar ödüyorsunuz?
+- Eğer [nişiniz] için özel olarak yapılmış bir platform olsaydı, ilgilenir miydiniz?
+
+Henüz satış yapmıyorsunuz. Dinliyorsunuz.
+
+### Rakip Manzarasını Kontrol Edin
+
+- **Rakip yok**: Bu, talep olmadığı anlamına gelebilir veya keşfedilmemiş bir fırsat anlamına gelebilir. Müşteri konuşmaları hangisinin olduğunu söyleyecektir.
+- **Birkaç rakip**: İyi bir işaret. Talebi doğruluyor. Nelerde iyi olduklarını ve nelerde eksik kaldıklarını inceleyin.
+- **Çok fazla rakip**: Girmek daha zor, ama net bir şekilde farklılaşabilirseniz hala mümkün.
+
+### Bir Açılış Sayfası Oluşturun
+
+Platformu inşa etmeden önce, niş çözümünüzü anlatan basit bir açılış sayfası oluşturun ve e-posta kaydı toplayın. İlgi test etmek için küçük bir hedefli reklam verin. İnsanlar kaydolursa, elinizde bir doğrulama var demektir.
+
+## Bunu FitSite'a Uygulama
+
+FitSite'ın kriterlere göre nasıl puanladığı aşağıdadır:
+
+| Kriter | Değerlendirme |
+|-----------|------------|
+| Web sitesine ihtiyaç var ama zorlanıyor | Evet -- çoğu stüdyo sitesi genel veya güncel değil |
+| Abonelik ödeyebilir | Evet -- zaten rezervasyon yazılımı için aylık 50-200$ ödüyorlar |
+| Birbirleriyle iletişim kuruyorlar | Evet -- aktif topluluklar, endüstri etkinlikleri, yerel ağlar |
+| Pazar büyüklüğü | Sadece ABD'de 100.000+ tesis |
+| Rakip manzarası | Nişe özel web sitesi platformu az bulunuyor |
+
+Doğrulama, fırsatı teyit etti. Şimdi inşa ediyoruz.
+
+## Dikkate Alınabilecek Niş Fikirleri
+
+Eğer fitness sizin pazarınız değilse, kriterleri karşılayan başka nişler şunlardır:
+
+- **Restoranlar ve kafeler** -- menüler, rezervasyonlar, saatler, teslimat entegrasyonu
+- **Emlak acenteleri** -- ilanlar, acente profilleri, mahalle rehberleri
+- **Hukuk büroları** -- uzmanlık alanları, avukat biyografileri, danışmanlık randevusu
+- **Kiliseler ve kar amacı gütmeyen kuruluşlar** -- etkinlikler, vaazlar, bağış, topluluk
+- **Ticaret yüklenicileri** (tesisatçılar, elektrikçiler, HVAC) -- hizmet alanları, rezervasyon, yorumlar
+- **Salonlar ve spa'lar** -- hizmetler, rezervasyon, stilist profilleri, galeriler
+- **Veteriner klinikleri** -- hizmetler, evcil hayvan portalları, randevu alma
+- **Müzik okulları** -- eğitmen profilleri, ders programı, konser bilgileri
+
+Bunların her birinin aynı özellikleri var: net web sitesi ihtiyaçları, ödeme gücü ve topluluk ağzıyla pazarlama.
+
+## Bu Derste Neler İnşa Ettik
+
+- **Bir niş seçme çerçevesi**: Her nişi değerlendirmek için üç kriter
+- **Doğrulama yöntemleri**: Müşteri görüşmeleri, rakip analizi, açılış sayfası testi
+- **FitSite doğrulaması**: Fitness stüdyolarının tüm kriterleri karşıladığını doğruladı
+- **Alternatif nişler**: Bu çerçeveyi uygulayabileceğiniz diğer dikey alanlar listesi
+
+---
+
+**Sonraki:** [Ders 3: Ağınızı Kurmak](lesson-3-setting-up) -- Ultimate Multisite'ı kuracak ve FitSite için temeli yapılandıracağız.

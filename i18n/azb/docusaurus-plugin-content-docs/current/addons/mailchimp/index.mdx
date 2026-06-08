@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimp Entegrasyonu
+
+Multisite Ultimate ağınızı Mailchimp hesabınıza entegre edin. Belirli planları Mailchimp Listeleri'ne bağlayabilir ve kullanıcı kayıt olduğunda aboneleri otomatik olarak bu listelere ekleyebilirsiniz.
+
+## Kurulum
+
+1. 'ultimate-multisite-mailchimp' dosyasını '/wp-content/plugins/' dizinine yükleyin
+2. WordPress Network Admin'deki 'Eklentiler' menüsünden eklentiyi etkinleştirin
+
+## Kullanım Kılavuzu
+
+Abone e-postalarını MailChimp listelerinizle senkronize etmek, Ultimate Multisite: MailChimp Entegrasyonu Eklentimiz ile çok kolay. Bu rehber, her şeyi nasıl kuracağınız konusunda size yardımcı olmayı amaçlıyor!
+
+## Bir API Anahtarı Alma
+
+Farklı ayarları incelemeden önce bir MailChimp API anahtarına ihtiyacımız var. Bu anahtar, Ultimate Multisite'ın MailChimp API ile konuşmasını, listeleri ve grupları almasını ve kullanıcılar kayıt olduğunda e-posta adreslerini bu listelere ve gruplara eklemesini sağlayacaktır.
+
+Kendi MailChimp API anahtarınızı almak için bu rehberi takip edin: [About API Keys | Mailchimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_MailChimp API anahtarınızı_ _**Ultimate Multisite Ayarları - > Eklenti Ayarları -> MailChimp**_
+
+## Entegrasyon Modu
+
+MailChimp Entegrasyonu eklentisi, e-posta adreslerini senkronize etmek için kullanabileceğiniz iki farklı "entegrasyon modu" sunar.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Daha fazla esneklik için iki entegrasyon modu!_
+
+### Mod 1: Birden Çok Liste (Multiple Lists)
+
+Varsayılan mod, **Birden Çok Liste** özelliğini kullanır. Bu mod, her plan için birden fazla MailChimp listesi seçmenize olanak tanır. Kullanıcılarınızı farklı listelere ayırmak (segment etmek) istiyorsanız bu en iyi seçenektir.
+
+Örneğin, MailChimp hesabınızda 3 farklı listeniz olduğunu varsayalım: **Bülten** , **Plan A** ve **Plan B**. Tüm kullanıcıların, hangi planda olursa olsun, Bülten listesinde de yer almasını istiyorsunuz ki güncellemelerden haberdar olmasınlar.
+
+Bunu başarmak için, Plan A MailChimp Ayarlarına hem **Bülten** hem de **Plan A** listesini, Plan B MailChimp Ayarlarına ise **Bülten** ve **Plan B** listesini eklemek için Birden Çok Listeler modunu kullanabilirsiniz.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Yeni hesaplar ve iptal edilen hesaplar için varsayılan listeleri seçin_
+
+### Mod 2: Tek Liste + Birden Çok Grup (Single List + Multiple Groups)
+
+MailChimp, listenizi **Gruplar** adı verilen daha küçük kullanıcı gruplarına ayırmanıza olanak tanır. Bu, daha fazla kontrol sağlar çünkü aynı kampanyanın birden fazla kopyasını MailChimp'te oluşturmak zorunda kalmadan belirli bir abone alt kümesine kampanya gönderebilirsiniz (bu da daha sonra o kampanyanın metriklerini analiz etmeyi zorlaştırır).
+
+Örneğin, **Ağ Aboneleri** adında tek bir listeniz olabilir ve bu listenin içinde **Plan A** ve **Plan B** için gruplar bulunabilir.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_“Tek liste + birden çok grup” entegrasyon modunu kullanıyorsanız varsayılan listeleri ve grupları seçin_
+
+## Varsayılan Listeler ve Gruplar
+
+Hangi entegrasyon modunun özel kullanım senaryonuza daha uygun olduğuna karar verdikten sonra, varsayılan listeleri (ve moda bağlı olarak grupları) seçme zamanı gelmiştir. Belirli bir plan için özel bir Liste seçilmediğinde varsayılan liste kullanılacaktır.
+
+Ayrıca iptal edilen hesaplar için varsayılan listeyi de seçebilirsiniz. Bir kullanıcı aboneliğini sonlandırıp hesabını ağınızdan kaldırdığında, e-posta adresi iptal edilen hesaplar için belirlenen listeye taşınacaktır.
+
+## Çift Aboneliği Etkinleştirme (Double Subscription)
+
+Aynı ayarlar sayfasında **Çift Abonelik** özelliğini etkinleştirebileceksiniz. Bu seçenek, kullanıcıyı hem seçilen varsayılan listeye hem de o kullanıcıya ait plana seçilen listeye ekleyecektir. Bu seçenek etkinleştirilmezse, kullanıcı yalnızca o plan için seçilen listeye eklenecektir. Eğer o özel plan için hiçbir şey ayarlanmamışsa, kullanıcı varsayılan listeye eklenecektir.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Kullanıcılarınızın kayıt olurken hem varsayılan listeye hem de plan listesine abone olmasını sağlayabilirsiniz_
+
+## Planlar İçin Listeleri ve Grupları Seçme
+
+**Planlar** bölümüne gidin ve düzenlemek istediğiniz planı seçin. **Gelişmiş Seçenekler** meta kutusunda, MailChimp adında yeni bir sekme göreceğinize dikkat edin.
+
+Bu sekmede, o plan için birden fazla liste veya tek bir liste ve birden fazla grup (entegrasyon moduna bağlı olarak) seçebileceksiniz.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Planlarınız için kullanmak istediğiniz Listeleri ve Grupları seçin_
+
+Yeni bir kullanıcı o plan için kayıt olduğunda, e-posta adresi seçilen listelere ve gruplara eklenecektir!

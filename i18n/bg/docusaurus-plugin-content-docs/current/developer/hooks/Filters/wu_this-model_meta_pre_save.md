@@ -1,0 +1,24 @@
+---
+id: wu_this-model_meta_pre_save
+title: 'Филтър - wu_{$this->model}_meta_pre_save'
+sidebar_label: 'wu_{$this->model}_meta_pre_save'
+_i18n_hash: bd7ee30a03af6a465129c990e5cded7e
+---
+# Filter: wu_\{$this->model\}_meta_pre_save
+
+Филтрира мета данните, преди те да бъдат сериализирани за съхранение в базата данни.
+
+## Параметри
+
+| Име | Тип | Описание |
+|------|------|-------------|
+| $meta | `array` | Мета данните, които ще бъдат съхранени, десериализирани. |
+| $data_unserialized | `array` | Обектовата информация, която ще бъде съхранена. |
+| $this | `\Base_Model` | Инстанцията на обекта. |
+
+### От версия
+
+- 2.0.0
+### Източник
+
+Определен в [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) на линия 534

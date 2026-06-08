@@ -1,0 +1,124 @@
+---
+title: AI সাইট বিল্ডার
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI সাইট বিল্ডার
+
+ultimate-multisite-ai-site-builder
+
+## প্রয়োজনীয়তা
+
+- WordPress ৫.৩ বা তার বেশি
+- PHP ৭.৪ বা তার বেশি
+- Multisite Ultimate প্লাগইন (সক্রিয়)
+
+## ইনস্টলেশন
+
+১. অ্যাডন ফাইলগুলো আপনার `/wp-content/plugins/` ডিরেক্টরিতে আপলোড করুন।
+২. ওয়ার্ডপ্রেসের 'Plugins' মেনু থেকে প্লাগইনটি সক্রিয় করুন।
+৩. নেটওয়ার্ক অ্যাডমিনে অ্যাডন সেটিংস কনফিগার করুন।
+
+## ডেভেলপমেন্ট
+
+### সেটআপ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### প্রজেক্ট স্ট্রাকচার
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP ক্লাস এবং ইনক্লুড
+│   ├── class-multisite-ultimate-updater.php  # আপডেট হ্যান্ডলার
+│   └── class-ai_site_builder-main.php             # মূল কার্যকারিতা
+├── tests/                        # ইউনিট টেস্টস
+│   ├── bootstrap.php            # টেস্ট বুটস্ট্র্যাপ
+│   ├── class-*-base.php         # বেস টেস্ট ক্লাস
+│   └── class-*-test.php         # টেস্ট কেস
+├── views/                       # টেমপ্লেট ফাইল
+├── assets/                      # স্ট্যাটিক অ্যাসেট
+│   ├── css/                     # স্টাইলশীট
+│   ├── js/                      # জাভাস্ক্রিপ্ট ফাইল
+│   └── images/                  # ছবি
+├── lang/                        # ভাষা ফাইল
+├── composer.json                # PHP ডিপেন্ডেন্সি
+├── package.json                 # Node.js ডিপেন্ডেন্সি
+├── phpunit.xml.dist             # PHPUnit কনফিগারেশন
+├── .phpcs.xml.dist              # কোড স্ট্যান্ডার্ডস কনফিগারেশন
+└── rector.php                   # কোড মডার্নাইজেশন নিয়মাবলী
+```
+
+### টেস্টিং
+
+অ্যাডনটিতে একটি সম্পূর্ণ টেস্টিং ফ্রেমওয়ার্ক রয়েছে:
+
+- **ইউনিট টেস্টস**: ওয়ার্ডপ্রেস টেস্ট স্যুট সহ PHPUnit-ভিত্তিক টেস্ট।
+- **বেস টেস্ট ক্লাস**: সাধারণ টেস্ট পরিস্থিতির জন্য সহায়ক পদ্ধতি (helper methods) সরবরাহ করে।
+- **টেস্ট কভারেজ**: কোডের কভারেজ ট্র্যাক করার জন্য কনফিগার করা হয়েছে।
+- **মাল্টিসাইট টেস্টিং**: মাল্টিসাইট পরিবেশে টেস্টগুলো চালানো হয়।
+
+### কোড স্ট্যান্ডার্ডস
+
+- **WordPress কোডিং স্ট্যান্ডার্ডস**: PHPCS এর মাধ্যমে প্রয়োগ করা হয়।
+- **PHP 7.4+ কম্প্যাটিবিলিটি**: আধুনিক PHP ফিচারগুলো সমর্থিত।
+- **স্ট্যাটিক অ্যানালাইসিস**: টাইপ চেকিংয়ের জন্য PHPStan ইন্টিগ্রেশন।
+- **কোড মডার্নাইজেশন**: PHP আপগ্রেডের জন্য Rector নিয়মাবলী।
+
+### বিল্ড সিস্টেম
+
+- **অ্যাসেট প্রসেসিং**: CSS/JS ফাইলগুলোর জন্য মিনিফিকেশন।
+- **ট্রান্সলেশন**: POT ফাইল তৈরি।
+- **প্যাকেজিং**: বিতরণের জন্য আর্কাইভ তৈরি।
+- **ডেভেলপমেন্ট মোড**: ডিবাগিংয়ের জন্য আনমিনিফাইড অ্যাসেট।
+
+## কনফিগারেশন
+
+অ্যাডনটি নেটওয়ার্ক অ্যাডমিন ইন্টারফেসের মাধ্যমে অ্যাক্সেস করা বিভিন্ন কনফিগারেশন অপশন সমর্থন করে।
+
+## হুকস এবং ফিল্টারস
+
+### অ্যাকশনস
+
+- `ultimate-multisite-ai-site-builder_init` - অ্যাডন ইনিশিয়ালাইজেশনের পরে ট্রিগার হয়।
+- `ultimate-multisite-ai-site-builder_loaded` - সমস্ত অ্যাডন ফাইল লোড হওয়ার পরে ট্রিগার হয়।
+
+### ফিল্টারস
+
+- `ultimate-multisite-ai-site-builder_settings` - অ্যাডন সেটিংস পরিবর্তন করুন।
+- `ultimate-multisite-ai-site-builder_enabled` - অ্যাডন সক্রিয়/নিষ্ক্রিয় অবস্থা ওভাররাইড করুন।
+
+## লাইসেন্স
+
+এই অ্যাডনটি GPL v3 বা তার পরবর্তী সংস্করণের অধীনে লাইসেন্স করা হয়েছে।
+
+## সাপোর্ট
+
+সাপোর্ট এবং ডকুমেন্টেশনের জন্য, [MultisiteUltimate.com](https://multisiteultimate.com) ভিজিট করুন।
+## চেঞ্জলগ
+
+- ভার্সন ১.০.১ (২০২৫-০৯-২৮): প্রিফিক্স ultimate-multisite এ রিনেম করা হয়েছে; টেক্সট ডোমেইন আপডেট করা হয়েছে; ভার্সন বৃদ্ধি।
+
+
+- ভার্সন (২০২৫-০৯-২৮): প্রিফিক্স ultimate-multisite এ রিনেম করা হয়েছে; টেক্সট ডোমেইন আপডেট করা হয়েছে; ভার্সন বৃদ্ধি।

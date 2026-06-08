@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentasi",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Jamoat",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Daha fazla",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "İstifadəçi İpuçları",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Geliştirici Dokümantasyonu",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Ekstansiyalar",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Tartışmaları",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Veb-sayt",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Təhlükəsizlik hüquqları © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

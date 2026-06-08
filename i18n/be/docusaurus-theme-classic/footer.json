@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Дакументацыя",
+    "description": "Footer column title"
+  },
+  "link.title.Community": {
+    "message": "Супрадзячнасць",
+    "description": "Footer column title"
+  },
+  "link.title.More": {
+    "message": "Дадаткова",
+    "description": "Footer column title"
+  },
+  "link.item.label.User Guide": {
+    "message": "По інструкцыі карыстальніка",
+    "description": "Footer link"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Дакументацыя для розробнікаў",
+    "description": "Footer link"
+  },
+  "link.item.label.Addons": {
+    "message": "Адказіны",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "Обсуджвання GitHub",
+    "description": "Footer link"
+  },
+  "link.item.label.WordPress.org": {
+    "message": "WordPress.org",
+    "description": "Footer link"
+  },
+  "link.item.label.Website": {
+    "message": "Веб-сайт",
+    "description": "Footer link"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Footer link"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ultimate Multisite.",
+    "description": "Footer copyright"
+  }
+}

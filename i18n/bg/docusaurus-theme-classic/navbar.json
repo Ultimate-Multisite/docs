@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ultimate Multisite",
+    "description": "The title in the navbar"
+  },
+  "item.label.User Guide": {
+    "message": "Ръководство за потребителя",
+    "description": "Navbar item"
+  },
+  "item.label.Developer": {
+    "message": "Разработчик",
+    "description": "Navbar item"
+  },
+  "item.label.Addons": {
+    "message": "Допълнителни функции",
+    "description": "Navbar item"
+  },
+  "item.label.Website": {
+    "message": "Уебсайт",
+    "description": "Navbar item"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item"
+  }
+}

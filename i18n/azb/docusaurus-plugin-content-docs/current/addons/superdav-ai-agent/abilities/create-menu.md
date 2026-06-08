@@ -1,0 +1,116 @@
+---
+title: Krea Menū
+sidebar_position: 3
+_i18n_hash: 916268f55a4ba451a8d8561d077b07f3
+---
+# Menü Oluşturma
+
+**Menü Oluşturma** özelliği, sayfa başlıklarından ayrı, farklı gezinme etiketlerini destekleyen WordPress gezinme menüleri oluşturmanızı sağlar.
+
+## Genel Bakış
+
+Bu özellik, standart menü oluşturma işlevselliğini, bir `navigation_label` parametresi belirleme yeteneğiyle genişletir. Bu sayede, gezinme menüsünde gösterilen etiketin, sayfa başlığından farklı olabileceği menüler oluşturabilirsiniz. Bu da site yapısı ve kullanıcı deneyimi açısından daha fazla esneklik sağlar.
+
+## Parametreler
+
+| Parametre | Tip | Zorunlu | Açıklama |
+|-----------|------|----------|-------------|
+| `name` | string | Evet | Menü adı, örn: `Ana Gezinme` |
+| `location` | string | Hayır | Bu menüyü atamak istediğiniz tema konumu, örn: `primary` |
+| `navigation_label` | string | Hayır | Gezinme menüsünde gösterilecek etiket (sayfa başlığından farklı) |
+
+## Dönüş Değeri
+
+```json
+{
+  "success": true,
+  "menu_id": 7,
+  "name": "Primary Navigation",
+  "navigation_label": "Main Menu"
+}
+```
+
+## Gezinme Etiketi vs. Sayfa Başlığı
+
+`navigation_label` parametresi, dahili menü adını kullanıcıya gösterilen etiketten ayırmanıza olanak tanır:
+
+- **`name`** — WordPress tarafından kullanılan dahili menü tanımlayıcısı (örn: "Primary Navigation")
+- **`navigation_label`** — Site ziyaretçilerine gezinme menüsünde gösterilen etiket (örn: "Main Menu")
+
+Bu durum şu durumlarda kullanışlıdır:
+- Dahili isimlendirme kuralınız, kullanıcıya gösterilen etiketlerden farklıysa
+- Yönetici panelinde olduğundan daha kısa etiketler istiyorsanız
+- Farklı uzunluklarda etiketler gerektiren çoklu dil desteği sağlamanız gerekiyorsa
+- Belirli bölgeler veya kullanıcı grupları için menüler oluşturuyorsanız
+
+## Kullanım Örnekleri
+
+### Örnek 1: Gezinme Etiketli Basit Menü
+
+**Komut:**
+```
+"Menu" gezinme etiketiyle "Main Navigation" adında bir ana gezinme menüsü oluştur.
+```
+
+**Sonuç:**
+```json
+{
+  "success": true,
+  "menu_id": 7,
+  "name": "Main Navigation",
+  "navigation_label": "Menu"
+}
+```
+
+### Örnek 2: Belirli Tema Konumu İçin Menü
+
+**Komut:**
+```
+"Quick Links" gezinme etiketiyle "Footer Links" adında bir altbilgi menüsü oluştur ve bunu altbilgi konumuna ata.
+```
+
+**Sonuç:**
+```json
+{
+  "success": true,
+  "menu_id": 8,
+  "name": "Footer Links",
+  "navigation_label": "Quick Links",
+  "location": "footer"
+}
+```
+
+## Tema Oluşturucu ile Entegrasyon
+
+Tema Oluşturucu kullanılırken, Menü Oluşturma özelliği:
+
+1. Mevcut tema menü konumlarını otomatik olarak algılar
+2. Tasarımınız için uygun gezinme etiketleriyle menüler oluşturur
+3. Menüleri doğru tema konumlarına atar
+4. Oluşturulduktan sonra menü öğeleri eklenmesini destekler
+
+## İlgili Özellikler
+
+- **`add_menu_item`** — Mevcut bir menüye öğe ekler
+- **`update_menu`** — Bir menünün adını değiştirir veya onu bir tema konumuna yeniden atar
+- **`delete_menu`** — Sitenizden bir menüyü kaldırır
+
+## En İyi Uygulamalar
+
+- **Açık gezinme etiketleri kullanın** — Etiketleri kullanıcılar için kısa ve açıklayıcı tutun
+- **Tema konumlarıyla eşleştirin** — Doğru görüntüleme için menüleri doğru tema konumuna atayın
+- **Menü yapısını planlayın** — Öğeler oluşturmadan önce menü hiyerarşinize karar verin
+- **Duyarlılığı test edin** — Menülerin mobil cihazlarda doğru göründüğünü doğrulayın
+- **Etiketleri yerelleştirin** — Farklı dil sürümleri için farklı gezinme etiketleri kullanın
+
+## Sınırlamalar
+
+- Gezinme etiketleri sadece gösterim amaçlıdır; dahili `name` hala WordPress tanımlaması için kullanılır
+- Tema desteği değişiklik gösterir; tüm temalar tüm menü konumlarını desteklemez
+- Menü öğeleri, menü oluşturulduktan sonra ayrı olarak eklenmelidir
+- Bir gezinme etiketini değiştirmek, menünün güncellenmesini gerektirir
+
+## İlgili Özellikler
+
+- [Generate Logo SVG](./generate-logo-svg.md) — site başlığı için logo oluşturur
+- [Validate Palette Contrast](./validate-palette-contrast.md) — erişilebilir renk şemalarını sağlar

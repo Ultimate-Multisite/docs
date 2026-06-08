@@ -1,0 +1,18 @@
+---
+id: wp_ultimo_payfast_load
+title: অ্যাকশন - wp_ultimo_payfast_load
+sidebar_label: wp_ultimo_payfast_load
+_i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
+---
+# Action: wp_ultimo_payfast_load
+
+যখন সমস্ত নির্ভরতা (dependencies) লোড হয়ে যায়, তখন এটি ট্রিগার হয়।
+
+প্লাগইন ডেভেলপারদের নতুন কার্যকারিতা যোগ করতে এটি সাহায্য করে। উদাহরণস্বরূপ, নতুন হোস্টিং প্রোভাইডারের জন্য সাপোর্ট যোগ করা যেতে পারে।
+
+### Since
+
+- 1.0.0
+### Source
+
+[`inc/class-wp-ultimo-payfast.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-wp-ultimo-payfast.php#L84)-এ লাইন ৮৪-এ সংজ্ঞায়িত।

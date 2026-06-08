@@ -1,0 +1,124 @@
+---
+title: Многаадраджэўнасць
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Распыленне субсайтаў па розных сэрверاح і базах дадзеных для павышэння прадукцыйнасці і бяспекі
+
+## Патрабаванні
+
+- WordPress 5.3 або больш высокі
+- PHP 7.4 або больш высокі
+- Plugin Ultimate Multisite (актыўны)
+
+## Устаноўка
+
+1. Загрузіце файлы аддотка ў каталог `/wp-content/plugins/`
+2. Актывуйце plugin праз меню «Plugins» у WordPress
+3. Наладзьце параметры аддотка ў адмініструванні сеткі
+
+## Разработка
+
+### Наладка
+
+```bash
+# Устаноўка залежнасцей
+composer install
+npm install
+
+# Выконванне тэставання
+npm run test
+
+# Праверка стандартаў кода
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Выпраўленне стылістычных памылак кода
+vendor/bin/phpcbf
+
+# Пабудова для прадукцыі
+npm run build
+```
+
+### Структура праекта
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP класы і ўключаелі
+│   ├── class-multisite-ultimate-updater.php  # Апрацоўнік абнаўлення
+│   └── class-multi_tenancy-main.php             # Асноўная функцыянальнасць
+├── tests/                        # Тэставанне ад unit
+│   ├── bootstrap.php            # Bootstrap тэставання
+│   ├── class-*-base.php         # Басковы клас тэставання
+│   └── class-*-test.php         # Выпадкі тэставання
+├── views/                       # Файлы шаблонаў
+├── assets/                      # Статычныя актывы
+│   ├── css/                     # Стылістычныя кастылі
+│   ├── js/                      # Файлы JavaScript
+│   └── images/                  # Калінгі
+├── lang/                        # Моўныя файлы
+├── composer.json                # PHP залежнасці
+├── package.json                 # Node.js залежнасці
+├── phpunit.xml.dist             # Канфігурацыя PHPUnit
+├── .phpcs.xml.dist              # Канфігурацыя стандартаў кода
+└── rector.php                   # Правілы мадэрнізацыі кода
+```
+
+### Тэставанне
+
+Аддотак уключае паўнавартасны фрэймворк тэставання:
+
+- **Unit Tests**: Тэставанне на аснове PHPUnit з наборам тэстаў WordPress
+- **Base Test Class**: Прадугледжвае дапаможнікі для агульных сценарыяў тэставання
+- **Test Coverage**: Наладжаны для адсоткаў пакрыцця кода
+- **Multisite Testing**: Тэсты праходзяць у асяроддзі Multisite
+
+### Стандарты кода
+
+- **WordPress Coding Standards**: Вымушаны праз PHPCS
+- **PHP 7.4+ Compatibility**: Падтрымка сучасных функцый PHP
+- **Static Analysis**: Інтеграцыя PHPStan для праверкі тыпаў
+- **Code Modernization**: Правілы Rector для апгрэйду PHP
+
+### Сістэма пабудовы
+
+- **Asset Processing**: Мініфікацыя для файлаў CSS/JS
+- **Translation**: Генерацыя файлаў POT
+- **Packaging**: Стваৰэнне архіва для распылення
+- **Development Mode**: Немініфікаваныя актывы для наладжвання
+
+## Канфігурацыя
+
+Аддотак падтрымлівае розныя варыянты канфігурацыі, даступныя праз інтэрфейс адміністрування сеткі.
+
+## Хукі і фільтры
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Выконваецца пасля ініцыялізацыі аддотка
+- `ultimate-multisite-addon-template_loaded` - Выконваецца пасля загрузкі ўсіх файлаў аддотка
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Змяніць налады аддотка
+- `ultimate-multisite-addon-template_enabled` - Прымусова вызначаць стан актывацыі/дэактывацыі аддотка
+
+## Ліцэнзія
+
+Гэты аддотак ліцэнзіяваны па GPL v3 або паўнавартаней.
+
+## Падтрымка
+
+Для падтрымкі і дакументацыі наведайце [MultisiteUltimate.com](https://multisiteultimate.com)
+## Журнал змены
+
+- Версія 1.0.1 (2025-09-28): змяніў прафікс на ultimate-multisite; абнавіў тэкстовы домен; павысіў версію.
+
+
+- Версія (2025-09-28): змяніў прафікс на ultimate-multisite; абнавіў тэкстовы домен; павысіў версію.

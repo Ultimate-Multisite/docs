@@ -1,0 +1,117 @@
+---
+title: Baham-valyuta
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency eklentisi ağınızın birden fazla para biriminde ödeme kabul etmesini sağlar. Bu eklenti, canlı veya manuel döviz kurlarını kullanarak fiyatları otomatik olarak dönüştürür, herhangi bir ürün için belirli para birimlerinde tam fiyatlar belirlemenize olanak tanır ve coğrafi konum (geolocation) yoluyla her ziyaretçinin tercih ettiği para birimini tespit eder — tüm bunlar tek bir admin dashboard üzerinden yönetilir.
+
+## Temel Özellikler
+
+- **Otomatik döviz kuru dönüşümü** — fiyatlar, seçtiğiniz sağlayıcıdan alınan kurlar kullanılarak temel para biriminizden dönüştürülür.
+- **Ürüne özel fiyatlandırma geçersiz kılmaları** — otomatik dönüşümü atlamak için herhangi bir üründe para birimine özel tam fiyatlar belirleyin.
+- **Para birimi seçici kayıt alanı** — müşterilerin ödeme/kayıt sırasında tercih ettikleri para birimini seçmelerine olanak tanır.
+- **Birden fazla döviz kuru sağlayıcısı** — ECB, Frankfurter, Stripe veya tamamen manuel kurlar.
+- **Coğrafi konuma dayalı para birimi tespiti** — ziyaretçinin ülkesine uyan para birimini otomatik olarak önceden seçer.
+- **Admin dashboard** — aktif para birimlerini, döviz kurlarını ve sağlayıcı ayarlarını tek bir yerden yönetin.
+
+## Gereksinimler
+
+- Ultimate Multisite 2.0.0 veya üzeri
+- WordPress Multisite kurulumu
+- PHP 7.4 veya üzeri
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-multi-currency` konumuna yükleyin.
+2. Eklentiyi WordPress'teki **Plugins** ekranından etkinleştirin (Ağda Etkinleştir).
+3. Admin dashboard'u açmak için **Ultimate Multisite → Multi-Currency** yolunu izleyin.
+4. Kabul etmek istediğiniz para birimlerini ekleyin ve döviz kuru sağlayıcınızı yapılandırın.
+
+## Yapılandırma
+
+### Admin Dashboard
+
+Multi-Currency admin dashboard'u (**Ultimate Multisite → Multi-Currency**) şunlar için merkezi bir yerdir:
+
+- Para birimleri ekleme, etkinleştirme veya devre dışı bırakma.
+- Bir döviz kuru sağlayıcısı seçme ve kurları talep üzerine yenileme.
+- Tüm aktif para birimlerinin mevcut kurlarını gözden geçirme.
+- Otomatik sağlayıcılar uygun olmadığında manuel kurlar belirleme.
+
+### Döviz Kuru Sağlayıcıları
+
+| Provider | Description |
+|---|---|
+| **ECB** | Avrupa Merkez Bankası — EUR tabanlı ağlar için ücretsiz günlük kurlar. |
+| **Frankfurter** | Açık kaynaklı ECB yansıtma API'si — ücretsiz, API anahtarı gerekmez. |
+| **Stripe** | Stripe'ın canlı FX kurlarını kullanır — aktif bir Stripe entegrasyonu gerektirir. |
+| **Manual** | Kurları doğrudan siz girersiniz; harici API çağrısı yok. |
+
+Sağlayıcınızı **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** altından seçin. Kurlar istediğiniz zaman manuel olarak veya otomatik güncellenmesi için zamanlanarak yenilenebilir.
+
+### Ürüne Özel Fiyatlandırma Geçersiz Kılmaları
+
+Otomatik dönüşüm yeterince hassas olmadığında, herhangi bir üründe belirli bir para birimi için tam bir fiyat belirleyebilirsiniz:
+
+1. Ürün düzenleyicisini açın (**Ultimate Multisite → Products → Edit**).
+2. **Currency Pricing** bölümüne kaydırın.
+3. Geçersiz kılmak istediğiniz her para birimi için tam fiyatı girin.
+4. Ürünü kaydedin.
+
+Geçersiz kılma yapılmayan ürünler, temel para biriminizden dönüştürülmüş fiyatı kullanır.
+
+### Para Birimi Seçici Kayıt Alanı
+
+Para birimi seçici alanı, müşterilerin kayıt sırasında tercih ettikleri para birimini seçmelerini sağlamak için kayıt/ödeme akışınıza eklenebilir:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** yolunu izleyin.
+2. **Show currency selector on signup** seçeneğini etkinleştirin.
+3. İsteğe bağlı olarak bir varsayılan para birimi belirleyin veya coğrafi konumun önceden seçilen değeri belirlemesine izin verin.
+
+Seçilen para birimi abonelikle birlikte saklanır ve sonraki tüm faturalandırmalar için kullanılır.
+
+### Coğrafi Konuma Dayalı Para Birimi Tespiti
+
+Coğrafi konum tespiti etkinleştirildiğinde, eklenti ziyaretçinin ülkesini bir para birimine eşleştirir ve bunu para birimi seçici alanında önceden seçer. Etkinleştirmek için:
+
+1. **Ultimate Multisite → Multi-Currency → Settings** yolunu izleyin.
+2. **Detect currency from visitor location** seçeneğini etkinleştirin.
+3. Ülke-para birimi eşleştirmelerini **Geolocation Mapping** tablosunda yapın.
+
+Bir ziyaretçinin ülkesi için eşleştirme yoksa, ağın temel para birimi yedek olarak kullanılır.
+
+## Sıkça Sorulan Sorular
+
+### Bir döviz kuru sağlayıcısı kullanılamazsa ne olur?
+
+Eklenti, en son başarılı bir şekilde çekilen kurlara geri döner. Hiç kur çekilmemişse, yapılandırdığınız manuel kurlara geri döner. Güvenlik ağı olarak manuel kurları yapılandırmanız önerilir.
+
+### Farklı para birimleri için farklı sağlayıcılar kullanabilir miyim?
+
+Hayır — tüm para birimleri için tek bir sağlayıcı aktif olur. Bireysel kurlar üzerinde tam kontrol istiyorsanız **Manual** kullanın.
+
+### Coğrafi konum ayrı bir eklenti gerektirir mi?
+
+Harici bir coğrafi konum eklentisi gerekmez. Eklenti, WordPress'in yerleşik IP'den ülkeye tespit özelliğini kullanır. Daha yüksek doğruluk için, sağlanan filtre hook'ları aracılığıyla özel bir coğrafi konum hizmeti entegre edilebilir.
+
+### Ürüne özel geçersiz kılmalar vergi öncesi mi yoksa sonrası mı uygulanır?
+
+Ürüne özel geçersiz kılmalar, hedef para biriminde vergi öncesi fiyatı belirler. Vergi, mevcut vergi yapılandırmanızı kullanarak geçersiz kılma fiyatı üzerine hesaplanır.
+
+## Değişiklik Günlüğü
+
+### Version 1.0.0 — Yayınlanma Tarihi 2026-04-02
+
+- Yeni: Otomatik döviz kuru dönüşümü ile çok para birimi desteği.
+- Yeni: Tam para birimi özel fiyatları için ürüne özel fiyatlandırma geçersiz kılmaları.
+- Yeni: Ödeme akışı için para birimi seçici kayıt alanı.
+- Yeni: Döviz kuru sağlayıcıları: ECB, Frankfurter, Stripe ve manuel.
+- Yeni: Coğrafi konuma dayalı para birimi tespiti.
+- Yeni: Para birimlerini ve döviz kurlarını yönetmek için admin dashboard.
+- Düzeltme: Seçilen para birimi ne olursa olsun dashboard'un her zaman temel para biriminde fiyat göstermesi.

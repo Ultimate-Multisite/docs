@@ -1,0 +1,26 @@
+---
+id: wu_gocardless_cleanup_pending_site
+title: Филтър - wu_gocardless_cleanup_pending_site
+sidebar_label: wu_gocardless_cleanup_pending_site
+_i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
+---
+# Filter: wu_gocardless_cleanup_pending_site
+
+Този филтър се изпълнява преди да бъде изтрит изоставен чакащ сайт, свързан с отменено членство GoCardless.
+
+За да предотвратите изтриването, върнете `false` от този филтър.
+
+## Параметри
+
+| Name | Type | Description |
+|------|------|-------------|
+| $blog_id | `int` | ID на блога в WordPress на изоставения сайт. |
+| $membership | `\WP_Ultimo\Models\Membership` | Отмененото членство. |
+| $old_status | `string` | Статусът преди отмяната. |
+
+### От
+
+- 2.0.0
+### Източник
+
+Дефиниран в [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) на линия 1086

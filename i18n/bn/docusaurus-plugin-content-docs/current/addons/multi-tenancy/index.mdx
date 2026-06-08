@@ -1,0 +1,124 @@
+---
+title: মাল্টি-টেন্যান্সি
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# মাল্টি-টেন্যান্সি (Multi-Tenancy)
+
+কর্মক্ষমতা এবং নিরাপত্তার জন্য সাবসাইটগুলিকে সার্ভার এবং ডেটাবেস জুড়ে বিতরণ করা
+
+## প্রয়োজনীয়তা (Requirements)
+
+- WordPress ৫.৩ বা তার বেশি সংস্করণ
+- PHP ৭.৪ বা তার বেশি সংস্করণ
+- মাল্টিসাইট আলটিমেট প্লাগইন (সক্রিয় থাকতে হবে)
+
+## ইনস্টলেশন (Installation)
+
+১. অ্যাডন ফাইলগুলি আপনার `/wp-content/plugins/` ডিরেক্টরিতে আপলোড করুন।
+২. ওয়ার্ডপ্রেসের 'Plugins' মেনু থেকে প্লাগইনটি সক্রিয় করুন।
+৩. নেটওয়ার্ক অ্যাডমিনে অ্যাডন সেটিংস কনফিগার করুন।
+
+## ডেভেলপমেন্ট (Development)
+
+### সেটআপ (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### প্রজেক্ট স্ট্রাকচার (Project Structure)
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP ক্লাস এবং ইনক্লুড ফাইল
+│   ├── class-multisite-ultimate-updater.php  # আপডেট হ্যান্ডলার
+│   └── class-multi_tenancy-main.php             # মূল কার্যকারিতা
+├── tests/                        # ইউনিট টেস্ট
+│   ├── bootstrap.php            # টেস্ট বুটস্ট্র্যাপ
+│   ├── class-*-base.php         # বেস টেস্ট ক্লাস
+│   └── class-*-test.php         # টেস্ট কেস
+├── views/                       # টেমপ্লেট ফাইল
+├── assets/                      # স্ট্যাটিক অ্যাসেট
+│   ├── css/                     # স্টাইলশীট
+│   ├── js/                      # জাভাস্ক্রিপ্ট ফাইল
+│   └── images/                  # ছবি
+├── lang/                        # ভাষা ফাইল
+├── composer.json                # PHP নির্ভরতা
+├── package.json                 # Node.js নির্ভরতা
+├── phpunit.xml.dist             # PHPUnit কনফিগারেশন
+├── .phpcs.xml.dist              # কোড স্ট্যান্ডার্ড কনফিগারেশন
+└── rector.php                   # কোড আধুনিকীকরণের নিয়ম
+```
+
+### টেস্টিং (Testing)
+
+এই অ্যাডনটিতে একটি ব্যাপক টেস্টিং ফ্রেমওয়ার্ক রয়েছে:
+
+- **ইউনিট টেস্ট (Unit Tests)**: ওয়ার্ডপ্রেস টেস্ট স্যুট সহ PHPUnit-ভিত্তিক টেস্ট।
+- **বেস টেস্ট ক্লাস (Base Test Class)**: সাধারণ টেস্ট পরিস্থিতির জন্য সহায়ক পদ্ধতি সরবরাহ করে।
+- **টেস্ট কভারেজ (Test Coverage)**: কোড কভারেজ ট্র্যাক করার জন্য কনফিগার করা হয়েছে।
+- **মাল্টিসাইট টেস্টিং (Multisite Testing)**: মাল্টিসাইট পরিবেশে টেস্ট চালানো হয়।
+
+### কোড স্ট্যান্ডার্ড (Code Standards)
+
+- **ওয়ার্ডপ্রেস কোডিং স্ট্যান্ডার্ড (WordPress Coding Standards)**: PHPCS এর মাধ্যমে প্রয়োগ করা হয়।
+- **PHP ৭.৪+ সামঞ্জস্যতা (PHP 7.4+ Compatibility)**: আধুনিক PHP বৈশিষ্ট্যগুলি সমর্থিত।
+- **স্ট্যাটিক অ্যানালাইসিস (Static Analysis)**: টাইপ চেকিংয়ের জন্য PHPStan ইন্টিগ্রেশন।
+- **কোড আধুনিকীকরণ (Code Modernization)**: PHP আপগ্রেডের জন্য Rector নিয়ম।
+
+### বিল্ড সিস্টেম (Build System)
+
+- **অ্যাসেট প্রসেসিং (Asset Processing)**: CSS/JS ফাইলগুলির জন্য মিনিফিকেশন।
+- **অনুবাদ (Translation)**: POT ফাইল তৈরি।
+- **প্যাকেজিং (Packaging)**: বিতরণের জন্য আর্কাইভ তৈরি।
+- **ডেভেলপমেন্ট মোড (Development Mode)**: ডিবাগিংয়ের জন্য মিনিফাই না করা অ্যাসেট।
+
+## কনফিগারেশন (Configuration)
+
+এই অ্যাডনটি নেটওয়ার্ক অ্যাডমিন ইন্টারফেসের মাধ্যমে অ্যাক্সেস করা বিভিন্ন কনফিগারেশন অপশন সমর্থন করে।
+
+## হুকস এবং ফিল্টার (Hooks and Filters)
+
+### অ্যাকশনস (Actions)
+
+- `ultimate-multisite-addon-template_init` - অ্যাডন ইনিশিয়ালাইজেশনের পরে ট্রিগার হয়।
+- `ultimate-multisite-addon-template_loaded` - সমস্ত অ্যাডন ফাইল লোড হওয়ার পরে ট্রিগার হয়।
+
+### ফিল্টারস (Filters)
+
+- `ultimate-multisite-addon-template_settings` - অ্যাডন সেটিংস পরিবর্তন করুন।
+- `ultimate-multisite-addon-template_enabled` - অ্যাডন সক্ষম/নিষ্ক্রিয় অবস্থা ওভাররাইড করুন।
+
+## লাইসেন্স (License)
+
+এই অ্যাডনটি GPL v3 বা পরবর্তী সংস্করণের অধীনে লাইসেন্সপ্রাপ্ত।
+
+## সাপোর্ট (Support)
+
+সাপোর্ট এবং ডকুমেন্টেশনের জন্য, [MultisiteUltimate.com](https://multisiteultimate.com) ভিজিট করুন।
+## চেঞ্জলগ (Changelog)
+
+- Version 1.0.1 (2025-09-28): প্রিফিক্স ultimate-multisite এ রিনেম করা হয়েছে; টেক্সট ডোমেইন আপডেট করা হয়েছে; ভার্সন বৃদ্ধি।
+
+
+- Version (2025-09-28): প্রিফিক্স ultimate-multisite এ রিনেম করা হয়েছে; টেক্সট ডোমেইন আপডেট করা হয়েছে; ভার্সন বৃদ্ধি।

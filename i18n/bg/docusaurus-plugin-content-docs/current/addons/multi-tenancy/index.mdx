@@ -1,0 +1,124 @@
+---
+title: Мулти-наемане
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Разпределяне на подсайтове върху сървъри и бази данни за подобряване на производителността и сигурността
+
+## Изисквания
+
+- WordPress 5.3 или по-висока
+- PHP 7.4 или по-висок
+- Multisite Ultimate плагин (активен)
+
+## Инсталация
+
+1. Качете файловете на адъона в директорията `/wp-content/plugins/`
+2. Активирайте плагина през менюто 'Plugins' в WordPress
+3. Настройте настройките на адъона в network admin
+
+## Разработка
+
+### Настройка
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Структура на проекта
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP класове и включвания
+│   ├── class-multisite-ultimate-updater.php  # Обработка на актуализации
+│   └── class-multi_tenancy-main.php             # Основна функционалност
+├── tests/                        # Unit тестове
+│   ├── bootstrap.php            # Bootstrap за тестове
+│   ├── class-*-base.php         # Базов клас за тестове
+│   └── class-*-test.php         # Тестови случаи
+├── views/                       # Файлове на шаблони
+├── assets/                      # Статични активи
+│   ├── css/                     # Файлове за стилове
+│   ├── js/                      # JavaScript файлове
+│   └── images/                  # Изображения
+├── lang/                        # Файлове за езици
+├── composer.json                # PHP зависимости
+├── package.json                 # Node.js зависимости
+├── phpunit.xml.dist             # Конфигурация на PHPUnit
+├── .phpcs.xml.dist              # Конфигурация на стандартите за код
+└── rector.php                   # Правила за модернизация на кода
+```
+
+### Тестване
+
+Адъонът включва изчерпателен тестови фреймуърк:
+
+- **Unit Tests**: Тестове, базирани на PHPUnit, с тестова среда на WordPress
+- **Base Test Class**: Осигурява помощни методи за често срещани тестови сценарии
+- **Test Coverage**: Настроен за проследяване на покритието на кода
+- **Multisite Testing**: Тестовете се изпълняват в multisite среда
+
+### Стандарти за код
+
+- **WordPress Coding Standards**: Налагани чрез PHPCS
+- **PHP 7.4+ Compatibility**: Поддържа модерни PHP функции
+- **Static Analysis**: Интеграция на PHPStan за проверка на типовете
+- **Code Modernization**: Правила на Rector за надграждане на PHP
+
+### Система за изграждане (Build System)
+
+- **Asset Processing**: Минифициране на CSS/JS файлове
+- **Translation**: Генериране на POT файлове
+- **Packaging**: Създаване на архив за разпространение
+- **Development Mode**: Неминифицирани активи за дебъгване
+
+## Конфигурация
+
+Адъонът поддържа различни опции за конфигурация, достъпни през интерфейса на network admin.
+
+## Хукове и филтри (Hooks and Filters)
+
+### Actions (Действия)
+
+- `ultimate-multisite-addon-template_init` - Изстрелва се след инициализацията на адъона
+- `ultimate-multisite-addon-template_loaded` - Изстрелва се след зареждането на всички файлове на адъона
+
+### Filters (Филтри)
+
+- `ultimate-multisite-addon-template_settings` - Променя настройките на адъона
+- `ultimate-multisite-addon-template_enabled` - Презаписва статуса на активиране/деактивиране на адъона
+
+## Лиценз
+
+Този адъон е лицензиран под GPL v3 или по-късен.
+
+## Поддръжка
+
+За поддръжка и документация посетете [MultisiteUltimate.com](https://multisiteultimate.com)
+## Журнал на промените (Changelog)
+
+- Версия 1.0.1 (2025-09-28): преименуване на префикс на ultimate-multisite; актуализиране на домейна на текста; повишаване на версията.
+
+
+- Версия (2025-09-28): преименуване на префикс на ultimate-multisite; актуализиране на домейна на текста; повишаване на версията.

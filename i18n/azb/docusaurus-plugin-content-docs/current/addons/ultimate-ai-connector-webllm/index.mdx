@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector for WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM, WordPress çok sitenizde tarayıcı tabanlı yapay zeka çıkarımını (inference) kullanmanızı sağlar. Büyük dil modellerini (LLM) tamamen tarayıcı içinde WebLLM ve MLC motorunu kullanarak çalıştırır — API anahtarı, harici çağrı, kullanıcı cihazından veri çıkışı yok.
+
+## Temel Özellikler
+
+- **Tarayıcı Üzerinde Çıkarım (Browser-side inference)**: LLM, WebLLM/MLC aracılığıyla ziyaretçinin kendi tarayıcısında çalışır — sunucu GPU'suna gerek yok.
+- **Yüzen Sohbet Widget'ı (Floating chat widget)**: Giriş yapmış kullanıcılar, tarayıcı üzerindeki LLM'e doğrudan ön uçtan komut verebilir.
+- **Admin-Bar Durum Göstergesi**: WebLLM motorunun gerçek zamanlı durumunu WordPress admin barında görebilirsiniz.
+- **SharedWorker Çalışma Zamanı**: Birden fazla tarayıcı sekmesi, GPU kaynakları için rekabet etmek yerine tek bir GPU oturumunu paylaşır.
+- **apiFetch Middleware**: Yapay Zeka Client SDK desenine uyan WordPress REST istekleri, şeffaf bir şekilde yerel WebLLM broker'ına yönlendirilir — döngüsel HTTP gidiş-dönüşü yok.
+- **Widget Ayarları Arayüzü**: Sohbet widget'ını açıp kapatmak ve otomatik komut (auto-prompt) davranışını yapılandırmak için Connector paneli ayarları.
+- **IndexedDB Önbelleği**: Model ağırlıklarının indirilmesi, varsayılan Cache API yolunu bozan CDN yönlendirmelerinden etkilenmez.
+- **wpai filtre entegrasyonu**: Yapay Zeka Deneyleri özelliğinin, yapılandırıldığında tarayıcı motoruna yönlendirilmesi için `wpai_preferred_text_models` filtresine bağlanır.
+
+## Gereksinimler
+
+- WordPress 5.3 veya üzeri
+- PHP 7.4 veya üzeri
+- Ultimate Multisite eklentisi (aktif)
+- WebGPU desteği olan bir tarayıcı (Chrome 113+, Edge 113+ veya WebGPU etkinleştirilmiş Firefox Nightly)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin.
+2. WordPress'te 'Plugins' menüsünden eklentiyi etkinleştirin.
+3. Eklentiyi yapılandırmak için **Ultimate Multisite → AI Connector** yolunu izleyin.
+
+## Yüzen Sohbet Widget'ı
+
+Yüzen sohbet widget'ı, giriş yapmış herhangi bir kullanıcının sayfadan ayrılmadan, doğrudan ön uçtan tarayıcı üzerindeki LLM ile etkileşim kurmasını sağlar.
+
+### Ne İşe Yarar?
+
+Etkinleştirildiğinde, giriş yapmış kullanıcılar için her ön uç sayfasının köşesinde bir sohbet simgesi belirir. Bu simgeye tıklamak, kullanıcının komutlar yazabileceği ve yerel olarak çalışan WebLLM modelinden yanıtlar alabileceği bir sohbet paneli açar. Model tamamen tarayıcıda çalıştığı için yanıtlar özeldir ve herhangi bir sunucu tarafı işlem gerektirmez.
+
+### Admin-Bar Durum Göstergesi
+
+WordPress admin barı, WebLLM motorunun mevcut durumunu gösteren bir durum göstergesi içerir:
+
+| Durum | Anlamı |
+|--------|---------|
+| **Loading** | MLC motoru başlatılıyor veya model ağırlıkları indiriliyor. |
+| **Ready** | Model yüklendi ve çıkarım için hazır. |
+| **Idle** | Motor yüklü ancak SharedWorker sekmesi aktif değil. |
+| **Error** | Motor başlatılamadı — ayrıntılar için tarayıcı konsolunu kontrol edin. |
+
+Gösterge, sayfa yenilenmesine gerek kalmadan gerçek zamanlı olarak güncellenir.
+
+### Widget'ı Etkinleştirme veya Devre Dışı Bırakma
+
+1. Ağ yöneticisinde **Ultimate Multisite → AI Connector** sayfasına gidin.
+2. **Connector** paneline ulaşın.
+3. **Enable floating chat widget** seçeneğini açın veya kapatın.
+4. Ayarları kaydedin.
+
+Widget, ağ yöneticisi bu yeteneği vermişse, sitenin kendi admin panelinden de site bazında etkinleştirilebilir veya devre dışı bırakılabilir.
+
+## Widget Ayarları
+
+**Ultimate Multisite → AI Connector** içindeki Connector paneli, yüzen sohbet widget'ı için aşağıdaki ayarları içerir:
+
+### Yüzen Sohbet Widget'ını Etkinleştir
+
+Widget'ı tüm ağ için açar veya kapatır. Devre dışı bırakıldığında, widget kullanıcı rolünden bağımsız olarak hiçbir ön uç sayfasında görünmez.
+
+**Varsayılan:** Kapalı
+
+### Otomatik Komut Davranışı (Auto-Prompt Behaviour)
+
+Sohbet widget'ının kullanıcı tarafından açıldığında otomatik olarak bir komut gönderip göndermeyeceğini kontrol eder.
+
+| Seçenek | Davranış |
+|--------|-----------|
+| **Disabled** | Widget boş bir sohbet ile açılır — kullanıcı kendi komutunu yazar. |
+| **Page context** | Widget, mevcut sayfanın başlığına ve içeriğine göre önceden doldurulmuş bir komut ile açılır. |
+| **Custom prompt** | Widget, aşağıdaki alanda tanımladığınız özel bir komut ile açılır. |
+
+**Custom prompt** olarak ayarlandığında, varsayılan komut metnini girebileceğiniz ek bir metin alanı görünür. Temel şablon değişkenlerini destekler:
+
+- `{site_name}` — mevcut sitenin adı
+- `{page_title}` — mevcut sayfanın başlığı
+- `{user_display_name}` — giriş yapmış kullanıcının görüntü adı
+
+**Varsayılan:** Kapalı
+
+## SharedWorker Çalışma Zamanı
+
+Sürüm 1.1.0, MLC motoru için bir SharedWorker çalışma zamanı getiriyor. Daha önce, WebLLM kullanan her tarayıcı sekmesi modelinin kendi örneğini yükler, bu da sınırlı VRAM'a sahip cihazlarda GPU belleği için rekabete neden olur ve performans sorunlarına yol açardı.
+
+SharedWorker çalışma zamanı ile, tek bir sekme motoru barındırıcı (host) görevi görür. Diğer tüm sekmeler, o tek örneğe worker'ın mesaj kanalı üzerinden iletişim kurar. Sonuç:
+
+- Tüm açık sekmeler arasında paylaşılan tek bir GPU oturumu.
+- Model yüklendikten sonra daha hızlı yanıtlar (tekrarlanan başlatma yok).
+- Cihazda daha düşük zirve bellek kullanımı.
+
+SharedWorker kullanıcılar için şeffaftır. Admin-bar durum göstergesi her zaman paylaşılan motorun durumunu yansıtır, bireysel sekmeyi değil.
+
+## apiFetch Middleware
+
+Bu eklenti, Yapay Zeka Client SDK desenine uyan WordPress REST API isteklerini yakalayan bir `apiFetch` middleware'i kurar. Bu istekler, sunucuya döngüsel bir HTTP isteği yapmak yerine, SharedWorker içinde çalışan yerel WebLLM broker'ına doğrudan yönlendirilir.
+
+Bu, standart WordPress `apiFetch` API'sini kullanarak yapay zeka uç noktalarını çağıran eklentilerin ve temaların, herhangi bir kod değişikliği yapılmasına gerek kalmadan, model mevcut olduğunda otomatik olarak tarayıcı tabanlı modelden faydalanacağı anlamına gelir.
+
+## Hooks ve Filtreler
+
+### Filtreler
+
+- `wpai_preferred_text_models` — WebLLM tarayıcı motorunu tercih edilen bir metin modeli olarak kaydeder. Eklenti, motor yapılandırılıp kullanıma hazır olduğunda bu filtreye otomatik olarak bağlanır.
+- `ultimate_webllm_widget_enabled` — Belirli bir kullanıcı veya bağlam için widget etkin durumunu geçersiz kılar. `true` veya `false` döndürün.
+- `ultimate_webllm_auto_prompt` — Widget'a gönderilmeden önce otomatik komut metnini değiştirir. Komut dizesini ve mevcut `WP_Post` nesnesini alır.
+
+## Sorun Giderme
+
+### Sohbet widget'ı görünmüyor
+
+- Kullanıcının giriş yapmış olduğundan emin olun — widget yalnızca kimliği doğrulanmış kullanıcılara gösterilir.
+- Connector panelinde **Enable floating chat widget** seçeneğinin açık olduğundan emin olun.
+- Kullanıcının tarayıcısının WebGPU desteklediğini doğrulayın (Yukarıdaki Gereksinimlere bakın).
+
+### Admin-bar göstergesi "Error" gösteriyor
+
+Tarayıcı geliştirici konsolunu (F12) açın ve WebLLM ile ilgili hataları arayın. Yaygın nedenler:
+
+- Tarayıcı WebGPU'yu desteklemiyor.
+- Model ağırlığı indirilmesi başarısız oldu — ağ bağlantısını kontrol edin ve tarayıcı geliştirici araçlarında IndexedDB önbelleğini temizlemeyi deneyin (Application → IndexedDB).
+- Bir tarayıcı uzantısı SharedWorker'ı engelliyor.
+
+### Model ağırlıkları her seferinde indiriliyor
+
+Eklenti, model ağırlıklarının CDN yönlendirmelerinden etkilenmemesi için IndexedDB'yi önbellek arka ucu olarak kullanır. Ağırlıklar her ziyarette yeniden indiriliyorsa, IndexedDB'nin bir tarayıcı gizlilik ayarı veya uzantısı tarafından temizlenmediğini kontrol edin.
+
+## Değişiklik Geçmişi
+
+Tüm sürüm geçmişi için [Changelog](./changelog)'a bakın.

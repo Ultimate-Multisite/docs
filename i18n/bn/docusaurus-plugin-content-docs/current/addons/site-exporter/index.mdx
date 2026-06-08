@@ -1,0 +1,99 @@
+---
+title: সাইট এক্সপোর্টার
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Content
+
+আমরা বুঝি যে আপনার নেটওয়ার্কের সাবসাইটগুলিকে একটি একক সাইট ইনস্টলেশনে এবং এর বিপরীত দিকে নিয়ে যাওয়ার প্রয়োজন হতে পারে, যদি আপনার গ্রাহক তাদের ওয়েবসাইট মাইগ্রেট করার সিদ্ধান্ত নেন। Site Exporter এবং Importer অ্যাড-অন এই কাজটি সহজ করে তোলে। এই টুলটি জিপ ফাইল ব্যবহার করে সাইট এক্সপোর্ট এবং ইমপোর্ট করে, যা ব্যাকআপ হিসেবেও কাজ করতে পারে।
+
+## Features
+
+* সাইট এক্সপোর্ট এবং ইমপোর্ট
+* ব্যবহার করা সহজ ইন্টারফেস
+* সাইট ব্যাকআপ তৈরি করুন
+
+## Documentation
+**একটি সাইট কীভাবে এক্সপোর্ট এবং ইমপোর্ট করবেন**
+
+## Installation
+
+1. **ultimate-multisite-site-exporter** ফাইলটি **/wp-content/plugins/** ডিরেক্টরিতে আপলোড করুন
+2. ওয়ার্ডপ্রেসের **Plugins** মেনু থেকে প্লাগইনটি সক্রিয় করুন
+3. প্লাগইনটি সেটআপ করার জন্য ধাপে ধাপে উইজার্ডটি অনুসরণ করুন
+
+## Usage Guide
+
+Ultimate Multisite ব্যবহার করে আপনি আপনার নেটওয়ার্ক থেকে একটি সাইট এক্সপোর্ট করতে পারেন অথবা আপনার মাল্টিসাইট বা একক-সাইট ইনস্টলেশনে একটি সাইট ইমপোর্ট করতে পারেন।
+
+প্রক্রিয়া শুরু করতে, আমাদের অ্যাড-অনস পেজে যান এবং Ultimate Multisite: Site Exporter & Importer অ্যাড-অনটি ইনস্টল করুন।![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+আপনার Plugins পেজে যান এবং আপনি যে অ্যাড-অনটি ইনস্টল করেছেন, সেটি **Network Activate** করতে ক্লিক করুন।<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+**Export & Import** অপশনটি Ultimate Multisite মেনুতে, বাম দিকে খুঁজে পাবেন।
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## How to export a site
+
+আপনার নেটওয়ার্ক থেকে একটি সাইট এক্সপোর্ট করতে, Ultimate Multisite মেনুতে **Export & Import** এ যান এবং **Export Sites** ট্যাবে গিয়ে **Generate new Site Export** এ ক্লিক করুন।
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+আপনি যে সাইটটি এক্সপোর্ট করতে চান তা অনুসন্ধান করুন এবং এক্সপোর্ট করা ফাইলে আপনি কোন আইটেমগুলি অন্তর্ভুক্ত করতে চান তা নির্বাচন করুন। আপনি থিম, প্লাগইন এবং আপলোডগুলি অন্তর্ভুক্ত করতে পারেন। যদি আপনার সাইট খুব বড় হয়, তবে আপনি ব্যাকগ্রাউন্ডে এক্সপোর্ট প্রক্রিয়া চালানোর বিকল্প বেছে নিতে পারেন।<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+**Export Site** বাটনে ক্লিক করুন। আপনার এক্সপোর্ট করা সাইটটি **Existing Exports** তালিকায় পাওয়া যাবে। ফাইলটি ডাউনলোড করতে **Download ZIP** বাটনে ক্লিক করুন। এক্সপোর্ট করা ZIP-গুলিতে একটি সেলফ-বুট করার `index.php` এবং `readme.txt` থাকে, তাই এগুলো আলাদা ইমপোর্টার প্লাগইন ইনস্টল না করেও একটি নতুন হোস্টে ইনস্টল করা যায়।<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## How to export the whole network
+
+সব সাবসাইট একসাথে এক্সপোর্ট করতে, Ultimate Multisite মেনুতে **Export & Import** এ যান এবং এক্সপোর্ট স্ক্রিনে **Network Export** অপশনটি ব্যবহার করুন। তৈরি হওয়া আর্কাইভটি হোস্ট মাইগ্রেশন, স্টেজিং রিবিল্ড বা নেটওয়ার্ক-স্তরের ব্যাকআপের জন্য সমস্ত সাবসাইটকে একটি একক ZIP-এ ধারণ করে।
+
+নেটওয়ার্ক এক্সপোর্টগুলি বড় হতে পারে। তাই যখন ট্র্যাফিক কম থাকে তখন এগুলো চালান এবং নিশ্চিত করুন যে আর্কাইভ এবং অন্তর্ভুক্ত যেকোনো আপলোড, প্লাগইন এবং থিমের জন্য সার্ভারে পর্যাপ্ত স্টোরেজ আছে।
+
+## How to import a site
+
+একটি সাইট ইমপোর্ট করতে, **Import a Site** ট্যাবে যান এবং আপনি যে সাইটটি ইমপোর্ট করতে চান তার .zip ফাইলটি আপলোড করুন। আপনি URL পরিবর্তন করে নতুন কিছু দিতে পারেন অথবা স্থানটি ফাঁকা রেখে পুরোনো URL রাখতে পারেন। এছাড়াও, ইমপোর্ট করার পরে আপনার ইনস্টলেশন থেকে .zip ফাইলটি মুছে ফেলার জন্য আপনি একটি চেকবক্স চেক করতে পারেন। তারপর **Begin Import** এ ক্লিক করুন।
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+এই প্রক্রিয়াটি কিছুটা সময় নিতে পারে। আপনি ইমপোর্টারের নিচের তালিকায় একটি পেন্ডিং ইমপোর্ট দেখতে পাবেন।
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+**Cancel Import** এ ক্লিক করে আপনি প্রক্রিয়াটি বন্ধ করতে পারেন।
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+প্রক্রিয়াটি সম্পূর্ণ হওয়ার পরে, আপনার সাইটটি ইতিমধ্যেই আপনার নেটওয়ার্কে উপলব্ধ।
+
+## How to import a site on a single install
+
+আপনার একক ইনস্টলেশনে একটি সাইট ইমপোর্ট করতে প্রথমে আপনার সাইটে ইমপোর্টার ইনস্টল এবং সক্রিয় করুন। আপনি এক্সপোর্টার ট্যাবে এটি ডাউনলোড করার লিঙ্কটি খুঁজে পাবেন।
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+আপনি **Tools** মেনুতে, বাম দিকে, **Export & Import** সাব-আইটেমে ইমপোর্টারটি খুঁজে পাবেন।
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+আপনি যে সাইটটি ইমপোর্ট করতে চান তার .zip ফাইলটি আপলোড করুন। আপনি URL পরিবর্তন করে নতুন কিছু দিতে পারেন অথবা স্থানটি ফাঁকা রেখে পুরোনো URL রাখতে পারেন। এছাড়াও, ইমপোর্ট করার পরে আপনার ইনস্টলেশন থেকে .zip ফাইলটি মুছে ফেলার জন্য আপনি একটি চেকবক্স চেক করতে পারেন। তারপর **Begin Import** এ ক্লিক করুন।
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+এই প্রক্রিয়াটি কিছুটা সময় নিতে পারে। আপনি ইমপোর্টারের নিচের তালিকায় একটি পেন্ডিং ইমপোর্ট দেখতে পাবেন।
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+**Cancel Import** এ ক্লিক করে আপনি প্রক্রিয়াটি বন্ধ করতে পারেন।
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+প্রক্রিয়াটি শেষ হওয়ার পরে, আপনার সাইটটি আপনি যে সাইটটি ইমপোর্ট করেছেন তা দিয়ে প্রতিস্থাপিত হবে।

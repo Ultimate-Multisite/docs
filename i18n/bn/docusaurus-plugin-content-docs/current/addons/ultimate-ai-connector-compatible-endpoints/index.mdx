@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector for Compatible Endpoints
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints
+
+Ultimate AI Connector for Compatible Endpoints আপনার WordPress multisite network-এর সাথে OpenAI-compatible AI provider API গুলিকে যুক্ত করে। আপনি একাধিক AI provider কনফিগার করতে পারেন — প্রতিটি নিজস্ব endpoint URL, API key এবং default model সহ — এবং কোনো provider অনুপলব্ধ হলে স্বয়ংক্রিয়ভাবে ফলব্যাক (fallback) করে রিকোয়েস্টগুলো রুট করতে পারেন।
+
+## Key Features
+
+- **Multi-provider support**: একাধিক AI provider কার্ড যোগ করুন, যার প্রতিটির নিজস্ব endpoint URL, API key এবং default model থাকবে।
+- **Drag-to-reorder**: প্রতিটি কার্ডের গ্রিপ হ্যান্ডেল ব্যবহার করে অগ্রাধিকার অনুযায়ী provider সাজান; রিকোয়েস্টগুলো ক্রমানুসারে provider ব্যবহার করে।
+- **Automatic fallback routing**: যদি প্রাথমিক provider অনুপলব্ধ হয়, তবে রিকোয়েস্টগুলো স্বয়ংক্রিয়ভাবে পরবর্তী কনফিগার করা provider-এ ফলব্যাক করে।
+- **Per-provider configuration**: প্রতিটি provider নিজস্ব ক্রেডেনশিয়াল এবং মডেল নির্বাচন দিয়ে স্বাধীনভাবে কনফিগার করা যায়।
+- **Card-based settings UI**: স্থিতিশীল WordPress 6.9+ Card components (CardBody, CardHeader, CardDivider)-এর উপর তৈরি।
+- **Auto-expand on add**: নতুন provider কার্ডগুলো স্বয়ংক্রিয়ভাবে প্রসারিত হয়, যাতে আপনি সাথে সাথে বিবরণগুলো পূরণ করতে পারেন।
+- **Script cache busting**: প্লাগইন আপডেট করার সময় provider স্ক্রিপ্টগুলো ক্যাশে বাস্ট (cache-busted) হয়, যাতে নিশ্চিত করা যায় যে সর্বশেষ সংস্করণটি লোড হয়েছে।
+
+## Requirements
+
+- WordPress 5.3 বা তার বেশি
+- PHP 7.4 বা তার বেশি
+- Ultimate Multisite প্লাগইন (সক্রিয়)
+- একটি OpenAI-compatible API endpoint (self-hosted বা third-party)
+
+## Installation
+
+1. অ্যাডন ফাইলগুলো আপনার `/wp-content/plugins/` ডিরেক্টরিতে আপলোড করুন।
+2. WordPress-এর 'Plugins' মেনু থেকে প্লাগইনটি অ্যাক্টিভেট করুন।
+3. অ্যাডন কনফিগার করতে **Ultimate Multisite → AI Connector** এ যান।
+
+## Configuration
+
+### Multi-Provider Setup
+
+কনফিগারেশন স্ক্রিনটি একটি কার্ড-ভিত্তিক লেআউট ব্যবহার করে, যেখানে প্রতিটি কার্ড একটি AI provider-কে প্রতিনিধিত্ব করে। আপনি যতগুলি provider প্রয়োজন, ততগুলি যোগ করতে পারেন।
+
+#### Adding a Provider
+
+1. নেটওয়ার্ক অ্যাডমিন-এ **Ultimate Multisite → AI Connector** এ যান।
+2. **Add Provider** এ ক্লিক করুন।
+3. একটি নতুন provider কার্ড প্রদর্শিত হয় এবং স্বয়ংক্রিয়ভাবে প্রসারিত হয়।
+4. provider বিবরণগুলো পূরণ করুন:
+   - **Provider Name** — এই provider শনাক্ত করার জন্য একটি লেবেল (যেমন: "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — OpenAI-compatible API-এর বেস URL (যেমন: `https://api.openai.com/v1`)
+   - **API Key** — এই provider-এর জন্য আপনার API key
+   - **Default Model** — এই provider-এর জন্য ডিফল্টভাবে ব্যবহার করার মডেল শনাক্তকারী (যেমন: `gpt-4o`, `mistral-small`)
+5. **Save Settings** এ ক্লিক করুন।
+
+#### Removing a Provider
+
+কোনো provider কার্ডের উপর থাকা **Remove** বোতামে ক্লিক করে এটি মুছে ফেলুন। পরিবর্তনটি প্রয়োগ করতে সেটিংস সেভ করুন।
+
+#### Reordering Providers
+
+কোনো provider কার্ডের বাম দিকে থাকা গ্রিপ আইকন (⣿) টেনে নিয়ে গিয়ে আপনি এটি পুনর্বিন্যাস করতে পারেন। এই ক্রমটি ফলব্যাক অগ্রাধিকার নির্ধারণ করে: রিকোয়েস্টগুলো প্রথম provider-এ পাঠানো হয় এবং যদি কোনো রিকোয়েস্ট ব্যর্থ হয় তবে পরবর্তী provider-গুলিতে ফলব্যাক করে।
+
+### Fallback Routing
+
+যখন প্রাথমিক provider-এ কোনো রিকোয়েস্ট ব্যর্থ হয় — যেমন টাইমআউট, রেট লিমিট বা সার্ভিস আউটএজের কারণে — তখন কানেক্টরটি স্বয়ংক্রিয়ভাবে তালিকায় থাকা পরবর্তী provider দিয়ে পুনরায় চেষ্টা করে। এটি তালিকা ধরে চলতে থাকে যতক্ষণ না কোনো provider সফল হয় বা সমস্ত provider চেষ্টা করা হয়ে যায়।
+
+| Scenario | Behaviour |
+|----------|-----------|
+| Primary provider responds | Request is served normally |
+| Primary provider fails | Request retried with next provider |
+| All providers fail | Error returned to the caller |
+
+ফলব্যাক কল করা প্লাগইন বা থিমের কাছে স্বচ্ছ থাকে — তারা একটি সফল প্রতিক্রিয়া বা একটি চূড়ান্ত ত্রুটি পায়, তা যতগুলি provider চেষ্টা করা হয়েছে তার উপর নির্ভর করে না।
+
+### Provider Configuration Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | এই provider-এর জন্য ডিসপ্লে লেবেল |
+| Endpoint URL | Yes | OpenAI-compatible API-এর বেস URL |
+| API Key | Yes | এই provider-এর জন্য প্রমাণীকরণ key |
+| Default Model | Yes | যখন রিকোয়েস্টে কোনো মডেল নির্দিষ্ট করা থাকে না তখন ব্যবহৃত মডেল শনাক্তকারী |
+
+## Troubleshooting
+
+### No providers are listed
+
+সেভ করার পরে যদি provider তালিকা খালি থাকে, তবে নিশ্চিত করুন যে:
+
+- আপনি provider যোগ করার পরে **Save Settings** এ ক্লিক করেছেন।
+- আপনার ব্রাউজার সেটিংস পেজটি সেভ হতে ব্লক করেনি (জাভাস্ক্রিপ্ট ত্রুটির জন্য ব্রাউজার কনসোল চেক করুন)।
+- প্লাগইনটি সক্রিয় এবং আপনি নেটওয়ার্ক অ্যাডমিন স্ক্রিনে আছেন।
+
+### Requests are failing for all providers
+
+- যাচাই করুন যে প্রতিটি provider-এর endpoint URL আপনার সার্ভার থেকে (শুধুমাত্র আপনার ব্রাউজার থেকে নয়) অ্যাক্সেস করা যায়।
+- নিশ্চিত করুন যে প্রতিটি API key বৈধ এবং মেয়াদোত্তীর্ণ হয়নি।
+- তাদের ড্যাশবোর্ডে provider-এর rate-limit এবং quota status পর্যালোচনা করুন।
+- কানেক্টর থেকে বিস্তারিত ত্রুটি বার্তা ক্যাপচার করতে WordPress debug logging (`WP_DEBUG_LOG`) সক্ষম করুন।
+
+### A provider is not being used for fallback
+
+ড্র্যাগ-টু-রিঅর্ডার ফলব্যাক ক্রম পরিবর্তন করে। নিশ্চিত করুন যে আপনি যে provider-কে ফলব্যাক রিকোয়েস্ট পেতে আশা করছেন, সেটি তালিকায় সঠিকভাবে অবস্থান করছে এবং এর endpoint URL ও API key সঠিক।
+
+### New provider card does not expand automatically
+
+অটো-এক্সপ্যান্ড করার জন্য আপনার ব্রাউজারে জাভাস্ক্রিপ্ট সক্ষম থাকা প্রয়োজন। যদি কার্ডটি ক্লিক করার সময় প্রসারিত না হয়, তবে ব্রাউজার কনসোলে ত্রুটিগুলি পরীক্ষা করুন। কার্ডের বিষয়বস্তু সর্বদা কার্ড হেডার ক্লিক করার মাধ্যমে অ্যাক্সেস করা যায়, এমনকি যদি অটো-এক্সপ্যান্ড ট্রিগার না হয়।
+
+## Changelog
+
+সম্পূর্ণ ভার্সন ইতিহাসের জন্য [Changelog](./changelog) দেখুন।

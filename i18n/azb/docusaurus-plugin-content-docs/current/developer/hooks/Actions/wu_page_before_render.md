@@ -1,0 +1,23 @@
+---
+id: wu_page_before_render
+title: Action - wu_page_before_render
+sidebar_label: wu_page_before_render
+_i18n_hash: 80ace5356783d6d6ad2789d77480ace2
+---
+# Aksiyon: wu_page_before_render
+
+Eklenti geliştiricilerinin sayfa basılmadan önce ek içerik eklemesine izin verir.
+
+## Parametreler
+
+| Ad | Tip | Açıklama |
+|------|------|-------------|
+| $page_id | `string` | Bu sayfanın kimliği. |
+| $page | `object` | Sayfa nesnesi. |
+
+### Versiyon
+
+- 1.8.2
+### Kaynak
+
+[`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L388) dosyasında 388. satırda tanımlanmıştır.

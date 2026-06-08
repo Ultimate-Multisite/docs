@@ -1,0 +1,101 @@
+---
+title: Экспорцітар сайта
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Экспортар сайта
+
+## Змест
+
+Мы разумеем, як важна магчымасць перамяшчэння сабсайтаў у межах вашай сеткі на адзін інстыляванне сайта і наадварот, калі ваш кліент прымае рашэнне міграваць свой сайт. Ад-он Site Exporter і Importer палёгчвае гэтую задачу. Гэты інструмент экспорт і імпарт сайтаў выкарыстоўваючы zip-файлы, якія таксама могуць слуžiť ўкамэч.
+
+## Функцыі
+
+* Экспорт і імпарт сайтаў
+
+* Паслядоўна выкарыстоўваць інтэрфейс
+
+* Ствараць камэч сайта
+
+## Дакументацыя
+**Як экспортваць і імпартаваць сайт**
+
+## Устаноўка
+
+1. Загрузіце **ultimate-multisite-site-exporter** у каталог **/wp-content/plugins/**
+2. Актывуйце плагін праз меню **Plugins** у WordPress
+3. Выкончыце крок за крокам Паказальнік, каб наладзіць плагін
+
+## Паказальнік выкарыстання
+
+З Ultimate Multisite вы можаце экспортваць сайт з вашай сеткі або імпартаваць сайт на ваша multisite ці single-site інстыляванне.
+
+Каб пачаць гэты працэс, зайдзіце на нашу старонку ад-онаў і ўсталюйце ад-он Ultimate Multisite: Site Exporter & Importer.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Зайдзіце на сваю старонку Plugins і націсніце **Network Activate** на ад-он, які вы толькі ўсталювалі.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Варыянт **Export & Import** можна знайсці ў меню Ultimate Multisite, злева.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Як экспортваць сайт
+
+Каб экспортваць сайт з вашай сеткі, зайдзіце ў **Export & Import** у меню Ultimate Multisite і на тэбе **Export Sites** націсніце **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Знайдзіце сайт, які вы хочаце экспортваць, і выберыце элементы, якія вы хочаце ўключыць у экспортны файл. Вы можаце ўключыць тэмы, плагіны і загрузкі. Калі ваш сайт занадта вялікі, вы можаце выбраць прагон працэсу экспорту ў фоновым рэжыме.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Націсніце кнопку **Export Site**. Ваш экспортваны сайт будзе даступны ў спісе **Existing Exports**. Націсніце кнопку **Download ZIP**, каб загрузіць файл. Экспортныя ZIP-файлы ўключаюць самостартны `index.php` і `readme.txt`, таму іх можна ўсталюваць на свежым хосці без першага ўсталявання асобнага плагіна імпарта.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Як экспортваць усю сетку
+
+Каб экспортваць усе сабсайты разам, зайдзіце ў **Export & Import** у меню Ultimate Multisite і выкарыстоўвайце варыянт **Network Export** на экране экспорту. Згенераваны архів змяшчае ўсе сабсайты ў адным ZIP для міграцыі хостаў, пабудовы ў рэжыме staging або камэчных камэчаў сеткі.
+
+Экспорты сеткі могуць быць вялікімі. Выконвайце іх, калі трафік нізвычай нізкі, і пацверце, што сервер мае дастаткова месца для архіву і любых ўключаных загрузкі, плагінаў і тэмаў.
+
+## Як імпартаваць сайт
+
+Каб імпартаваць сайт, зайдзіце на тэбе **Import a Site** і загрузіце .zip файл сайта, які вы хочаце імпартаваць. Вы можаце змяніць URL на новы або захаваць стары URL, пакінуўшы гэтае месца пустым. Акрамя таго, вы можаце паставіць адзначку, каб выдаліць .zip файл з вашага інстылявання пасля імпарту. Пасля гэтага націсніце **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Гэты працэс можа заняць трохі часу. Вы ўбачыце чакальны імпарт у спісе пад імпартарам.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Вы можаце спыніць працэс, націснуўшы **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Пасля завершэння працэсу ваш сайт ужо даступны ў вашай сетцы.
+
+## Як імпартаваць сайт на single install
+
+Каб імпартаваць сайт на ваша single install, перш усё ўсталюйце і актывуйце імпартар на сваім сайце. Вы можаце знайсці спасылку для яго загрузкі на тэбе экспортэра.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Вы можаце знайсці імпартар у меню **Tools**, злева, у падпункце **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Загрузіце .zip файл сайта, які вы хочаце імпартаваць. Вы можаце змяніць URL на новы або захаваць стары URL, пакінуўшы гэтае месца пустым. Акрамя таго, вы можаце паставіць адзначку, каб выдаліць .zip файл з вашага інстылявання пасля імпарту. Пасля гэтага націсніце **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Гэты працэс можа заняць трохі часу. Вы ўбачыце чакальны імпарт у спісе пад імпартарам.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Вы можаце спыніць працэс, націснуўшы **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Пасля завяршэння працэсу ваш сайт будзе заменён сайтам, які вы толькі імпартавалі.

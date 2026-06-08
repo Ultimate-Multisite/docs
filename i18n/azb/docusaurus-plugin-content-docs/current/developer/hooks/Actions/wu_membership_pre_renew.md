@@ -1,0 +1,24 @@
+---
+id: wu_membership_pre_renew
+title: Action - wu_membership_pre_renew
+sidebar_label: wu_membership_pre_renew
+_i18n_hash: 404f491e8f2f80099b721e1f475b4668
+---
+# Action: wu_membership_pre_renew
+
+Üyelik yenilenmesinden önce tetiklenir.
+
+## Parametreler
+
+| Name | Type | Description |
+|------|------|-------------|
+| $expiration | `string` | Ayarlanacak yeni bitiş tarihi. |
+| $membership_id | `int` | Üyelik kimliği (ID). |
+| $membership | `\Membership` | Üyelik nesnesi (object). |
+
+### Kullanılmaya Başladığı Versiyon
+
+- 2.0
+### Kaynak
+
+2204. satırda [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) içinde tanımlanmıştır.

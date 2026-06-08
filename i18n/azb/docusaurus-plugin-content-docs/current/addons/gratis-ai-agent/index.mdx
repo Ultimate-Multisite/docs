@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent, doğal dil komutları aracılığıyla tam WordPress siteleri planlayabilen, oluşturabilen ve yönetebilen otonom bir WordPress yapay zeka asistanıdır. İçerik yönetiminden tasarım sistemi özelleştirmesine kadar her şeyi kapsayan, ajanın çağırabileceği ayrık, test edilebilir eylemler olan yapılandırılmış bir **yetenekler (abilities)** kümesi sunar. 1.9.0 sürümü, içerik oluşturma yetenekleri, istemci tarafı ekran görüntüleri yoluyla görsel sayfa incelemesi, beş yerleşik ajan profili ve erişim kontrolü ile markalama için özellik bayrakları ekler.
+
+## Temel Özellikler
+
+- **Yetenekler sistemi (Abilities system)** — ajanın WordPress kurulumunuzda çağırabileceği modüler, genişletilebilir bir eylem kataloğu
+- **İçerik Yönetimi (Content Management)** — yazı ve sayfalar oluşturma (sayfa şablonu atamayı dahil), birden fazla yazıyı tek bir çağrıda toplu oluşturma, öne çıkan görseller belirleme ve iletişim formları oluşturma
+- **Görsel İnceleme (Visual Review)** — canlı sayfaların ekran görüntülerini yakalama, önce/son durumları karşılaştırma ve düzen, tipografi, renk ve erişilebilirlik konularını kapsayan yapay zeka tarafından oluşturulmuş bir tasarım incelemesi alma
+- **Beş yerleşik ajan (Five built-in agents)** — İçerik Yazarı (Content Writer), Site Oluşturucu (Site Builder), Tasarım Stüdyosu (Design Studio), Eklenti Yöneticisi (Plugin Manager) ve Destek Asistanı (Support Assistant); sohbet başlığındaki Ajan Seçici (Agent Picker) aracılığıyla değiştirilebilir
+- **Özellik Bayrakları (Feature flags)** — Rol kısıtlamaları, beyaz etiketleme (white-label) isimlendirme ve widget özelleştirmesi için Ayarlar → Özellik Bayrakları'nda erişim kontrolü ve markalama anahtarları
+- **Özel İçerik Türü Yönetimi (Custom Post Type management)** — yeniden başlatmalarda kalıcılıkla özel içerik türleri kaydetme, listeleme ve silme
+- **Özel Taksonomi Yönetimi (Custom Taxonomy management)** — yeniden başlatmalarda kalıcılıkla özel taksonomiler kaydetme, listeleme ve silme
+- **Tasarım Sistemi Yetenekleri (Design System abilities)** — özel CSS enjekte etme, küratörlü blok desenlerini yönetme, site logosunu ayarlama ve theme.json ön ayarlarını uygulama
+- **Global Stiller Yönetimi (Global Styles management)** — renk paletleri, tipografi, boşluk ve daha fazlası için theme.json değerlerini okuma ve yazma
+- **Navigasyon Menüsü Yönetimi (Navigation Menu management)** — navigasyon menüleri ve öğelerini programatik olarak oluşturma ve güncelleme
+- **Seçenekler Yönetimi (Options Management)** — kritik ayarları korumak için yerleşik bir güvenlik kara listesi ile WordPress seçeneklerini okuma ve yazma
+- **Yüklenebilir Yetenekler Kaydı (Installable Abilities Registry)** — çekirdek eklenti dosyalarını değiştirmeden ek yetenek paketleri keşfetme ve etkinleştirme
+- **Site Oluşturucu Orkestrasyon v2 (Site Builder Orchestration v2)** — eklenti keşfi, ilerleme takibi ve hata kurtarma içeren çok adımlı site oluşturma planları
+- **WP-CLI kıyaslama komutu (WP-CLI benchmark command)** — CI ve model değerlendirmesi için ajanın yetenek kıyaslama paketini komut satırından çalıştırma
+
+## Gereksinimler
+
+- WordPress 6.0 veya üzeri
+- PHP 8.1 veya üzeri
+- WordPress Multisite (ağ düzeyinde etkinleştirilmiş) veya tek site kurulumu
+- Aktif bir yapay zeka sağlayıcı bağlayıcı eklentisi (Anthropic, OpenAI veya uyumlu)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/gratis-ai-agent` konumuna yükleyin
+2. WordPress'te **Eklentiler** ekranı üzerinden eklentiyi etkinleştirin
+3. **Gratis AI Agent → Ayarlar** bölümüne gidin ve yapay zeka sağlayıcınızı bağlayın
+4. (İsteğe bağlı) Ek yetenek paketlerini kurmak için **Yetenekler Kaydı (Abilities Registry)**'ne göz atın
+
+## Hızlı Başlangıç
+
+Etkinleştirilip bir yapay zeka sağlayıcısına bağlandıktan sonra, WordPress yönetici kenar çubuğundaki **Gratis AI Agent** paneline gidin. Doğal bir dil komutu yazın ve ajan, mevcut yeteneklerini kullanarak gerekli adımları planlayacak ve yürütecektir.
+
+**Örnek komutlar:**
+
+```
+"Bir 'Portföy' özel içerik türü ve bir 'Proje Kategorisi' taksonomisi oluştur."
+```
+
+```
+"Tema içine koyu mod renk paleti enjekte et ve ana rengi #1a1a2e olarak ayarla."
+```
+
+```
+"Online menü, rezervasyon formu ve iletişim sayfası içeren bir restoran web sitesi oluştur."
+```
+
+## Yetenekler Genel Bakış (Abilities Overview)
+
+Yetenekler, ajanın gerçekleştirebileceği atomik eylemlerdir. Her yetenek, bir şema (parametreler ve dönüş tipleri) açığa çıkaran, ajanın çalışma zamanında okuduğu kayıtlı bir PHP sınıfıdır. Yetenekler işlevsel alanlara gruplandırılmıştır:
+
+| Alan | Yetenekler |
+|---|---|
+| **İçerik Yönetimi** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Görsel İnceleme** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Özel İçerik Türleri** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Özel Taksonomiler** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Tasarım Sistemi** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Stiller** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigasyon Menüleri** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Seçenekler Yönetimi** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Yüklenebilir Yetenekler** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Oluşturucu** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Tam parametre dokümantasyonu ve kullanım örnekleri için [Yetenekler Referansı (Abilities Reference)](./abilities)'na bakın.
+
+## WP-CLI
+
+Gratis AI Agent, komut satırından kıyaslama çalıştırmak ve yetenekleri yönetmek için bir `wp gratis-ai-agent` komut ailesi ile birlikte gelir. Tüm komut listesi için [WP-CLI Referansı (WP-CLI Reference)](./wp-cli)'na bakın.
+
+```bash
+# Tüm kıyaslama paketini çalıştır
+wp gratis-ai-agent benchmark
+
+# Yüklü yetenekleri listele
+wp gratis-ai-agent abilities list
+
+# Bir yetenek paketi kur
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Yapılandırma
+
+Tüm ayarlar WordPress yönetici panelinde **Gratis AI Agent → Ayarlar** altında bulunur:
+
+| Ayar | Açıklama |
+|---|---|
+| **Yapay Zeka Sağlayıcısı (AI Provider)** | Aktif yapay zeka sağlayıcı bağlayıcısını seçin ve yapılandırın |
+| **Model (Model)** | Ajan oturumları için kullanılacak dil modelini seçin |
+| **Maksimum Token (Max Tokens)** | İstek başına token bütçesi (varsayılan 4096) |
+| **Yetenek Zaman Aşımı (Ability Timeout)** | Bir yeteneğin çalışabileceği maksimum saniye (varsayılan 30) |
+| **Hata Ayıklama Günlüğü (Debug Logging)** | Yetenek çağrılarını ve ajan muhakemesini WordPress hata ayıklama günlüğüne kaydet |
+
+## Seçenekler Yönetimi Güvenlik Kara Listesi
+
+Seçenekler Yönetimi yeteneği, ajanın hassas WordPress seçeneklerini okumasını veya yazmasını engelleyen yerleşik bir kara liste içerir. Varsayılan kara liste şunları kapsar:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL seçenekleri — bunlar için özel bir geçiş aracı kullanın)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (gizli anahtarlar)
+- `active_plugins`, `template` (eklenti/tema etkinleştirme — özel yetenekler kullanın)
+- Yüklü eklentiler tarafından kaydedilen ödeme ağ geçidi kimlik bilgileri ve API anahtarları
+
+Ek girişler, `gratis_ai_agent_options_blocklist` filtresi aracılığıyla eklenebilir.
+
+## Hook'lar ve Filtreler
+
+### Eylemler (Actions)
+
+- `gratis_ai_agent_ability_registered` — bir yetenek kaydedildikten sonra tetiklenir, yetenek sınıf adını alır
+- `gratis_ai_agent_plan_started` — bir site oluşturma planı yürütülmeye başladığında tetiklenir
+- `gratis_ai_agent_plan_completed` — bir plan başarıyla tamamlandığında tetiklenir
+- `gratis_ai_agent_plan_failed` — bir plan kurtarılamayacak bir hata ile karşılaştığında tetiklenir
+
+### Filtreler (Filters)
+
+- `gratis_ai_agent_abilities` — ajanın yüklemesinden önce kaydedilmiş yetenek listesini değiştirir
+- `gratis_ai_agent_options_blocklist` — seçenekler güvenlik kara listesini genişletir veya daraltır
+- `gratis_ai_agent_benchmark_questions` — değerlendirme paketine özel kıyaslama soruları ekler
+- `gratis_ai_agent_plan_plugins` — site planı oluşturulması sırasında eklenti keşif listesini değiştirir
+
+## Destek
+
+Destek için [ultimatemultisite.com](https://ultimatemultisite.com)'u ziyaret edin veya eklenti deposunda bir sorun açın.
+
+## Değişiklik Günlüğü (Changelog)
+
+Tüm sürüm geçmişi için [Değişiklik Günlüğü (Changelog)](./changelog)'ne bakın.

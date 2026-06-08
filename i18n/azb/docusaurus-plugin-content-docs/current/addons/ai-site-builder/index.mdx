@@ -1,0 +1,124 @@
+---
+title: AI Site Builder
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Gereksinimler
+
+- WordPress 5.3 veya üzeri
+- PHP 7.4 veya üzeri
+- Multisite Ultimate eklentisi (aktif olmalı)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
+2. WordPress'te 'Eklentiler' menüsünden eklentiyi etkinleştirin
+3. Eklenti ayarlarını ağ yöneticisinden yapılandırın
+
+## Geliştirme
+
+### Kurulum
+
+```bash
+# Bağımlılıkları kurun
+composer install
+npm install
+
+# Testleri çalıştırın
+npm run test
+
+# Kod standartları kontrollerini çalıştırın
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Kod stil sorunlarını düzeltin
+vendor/bin/phpcbf
+
+# Üretim için derleyin
+npm run build
+```
+
+### Proje Yapısı
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP sınıfları ve dahil edilen dosyalar
+│   ├── class-multisite-ultimate-updater.php  # Güncelleme işleyicisi
+│   └── class-ai_site_builder-main.php             # Ana işlevsellik
+├── tests/                        # Birim testleri
+│   ├── bootstrap.php            # Test başlangıç dosyası
+│   ├── class-*-base.php         # Temel test sınıfı
+│   └── class-*-test.php         # Test senaryoları
+├── views/                       # Şablon dosyaları
+├── assets/                      # Statik varlıklar
+│   ├── css/                     # Stil sayfaları
+│   ├── js/                      # JavaScript dosyaları
+│   └── images/                  # Görseller
+├── lang/                        # Dil dosyaları
+├── composer.json                # PHP bağımlılıkları
+├── package.json                 # Node.js bağımlılıkları
+├── phpunit.xml.dist             # PHPUnit yapılandırması
+├── .phpcs.xml.dist              # Kod standartları yapılandırması
+└── rector.php                   # Kod modernizasyon kuralları
+```
+
+### Test Etme
+
+Bu eklenti, kapsamlı bir test sistemi içerir:
+
+- **Birim Testleri (Unit Tests)**: WordPress test paketi ile çalışan PHPUnit tabanlı testler
+- **Temel Test Sınıfı (Base Test Class)**: Ortak test senaryoları için yardımcı metotlar sağlar
+- **Test Kapsamı (Test Coverage)**: Kod kapsamını izlemek için yapılandırılmıştır
+- **Multisite Test Etme**: Testler multisite ortamında çalışır
+
+### Kod Standartları
+
+- **WordPress Kod Standartları**: PHPCS aracılığıyla zorunlu kılınmıştır
+- **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
+- **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
+- **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
+
+### Derleme Sistemi (Build System)
+
+- **Varlık İşleme (Asset Processing)**: CSS/JS dosyaları için küçültme (Minification)
+- **Çeviri (Translation)**: POT dosyası oluşturma
+- **Paketleme (Packaging)**: Dağıtım için arşiv oluşturma
+- **Geliştirme Modu (Development Mode)**: Hata ayıklama için küçültülmemiş varlıklar
+
+## Yapılandırma
+
+Bu eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
+
+## Hook'lar ve Filtreler
+
+### Aksiyonlar (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - Eklenti başlatıldıktan sonra tetiklenir
+- `ultimate-multisite-ai-site-builder_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
+
+### Filtreler (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - Eklenti ayarlarını değiştirir
+- `ultimate-multisite-ai-site-builder_enabled` - Eklenti etkin/devre dışı durumunu geçersiz kılar
+
+## Lisans
+
+Bu eklenti GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
+
+## Destek
+
+Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin.
+## Değişiklik Geçmişi (Changelog)
+
+- Sürüm 1.0.1 (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+
+
+- Sürüm (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.

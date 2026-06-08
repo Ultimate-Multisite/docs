@@ -1,0 +1,117 @@
+---
+title: Usage-based Plans
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Ölçümlü Planlar" />
+
+# Ölçümlü Planlar
+
+Ultimate Multisite: Ölçümlü Planlar eklentisi, müşterilerinize fatura kesme şeklinizi değiştirerek esnek, kullanıma dayalı faturalandırma yetenekleri sunar. Kullanıcıları engelleyen katı sabit limitler yerine, fazla kullanımı otomatik olarak faturalandırarak ek kullanım için ücretlendirme yapmanızı sağlar.
+
+## Temel Özellikler
+
+* **Ölçümlü Faturalandırma**: Müşterilere sabit katmanlar yerine gerçek kullanıma göre ücretlendirme yapın.
+* **Fazla Kullanım Yönetimi**: Plan limitlerini aşan kullanımlar için otomatik faturalandırma yapın.
+* **Kullanım Takibi**: Müşteri kaynak tüketimini gerçek zamanlı izleyin.
+* **Esnek Fiyatlandırma**: Farklı kaynaklar (depolama, bant genişliği, site sayısı vb.) için özel oranlar belirleyin.
+* **AI Token Faturalandırması**: Müşteri alt siteleri genelindeki yapay zeka kullanımı için giriş ve çıkış token'larını takip edin ve faturalandırın.
+* **Otomatik Faturalandırma**: Kullanım eşikleri aşıldığında faturaları otomatik olarak oluşturun.
+* **Kullanım Raporları**: Müşteriler ve yöneticiler için ayrıntılı kullanım analizi ve raporlama.
+
+## Kimler İçin İdeal?
+
+* **Hosting Sağlayıcıları**: Müşteri ihtiyaçlarıyla büyüyebilen ölçeklenebilir planlar sunun.
+* **SaaS Platformları**: Gerçek kaynak tüketimine göre faturalandırın.
+* **Ajans Ağları**: Müşteri projeleri için esnek fiyatlandırma modelleri oluşturun.
+* **Yenileme Hosting**: Ortakların kullanıma dayalı fiyatlandırma yapmasını sağlayın.
+
+## Nasıl Çalışır?
+
+1. Ölçümlü kaynakları yapılandırın (disk alanı, bant genişliği, site sayısı vb.).
+2. Temel plan limitlerini ve fazla kullanım oranlarını belirleyin.
+3. Sistem, ağınız genelindeki kullanımı otomatik olarak takip eder.
+4. Müşteriler limitleri aştığında, fazla kullanım ücretleri hesaplanır.
+5. Faturalar, faturalandırma döngüsüne göre otomatik olarak oluşturulur.
+6. Müşteriler, kullanım ve yaklaşan ücretlerini gerçek zamanlı olarak görebilirler.
+
+## AI Token Faturalandırması
+
+Sürüm 1.1.0, WordPress AI Client SDK aracılığıyla yapay zeka özellikleri sunan ağlar için AI token faturalandırması ekler. Ölçümlü Planlar, tamamlanmış AI oluşturma isteklerini dinler, mevcut alt site için giriş ve çıkış token sayılarını kaydeder ve bu token'ları müşterinin mevcut faturalandırma dönemine faturalandırılabilir AI harcamasına dönüştürür.
+
+Tahmin edilemeyen model maliyetlerini üstlenmek istemeden müşteri sitelerinde AI araçları sunmak istediğinizde AI token faturalandırmasını kullanın. Her istek, alt siteye, müşteriye, üyeliğe, sağlayıcıya ve modele atfedilir, böylece yöneticiler kullanımı denetleyebilirken müşteriler de AI tüketimlerinin hesaplarını nasıl etkilediğini görebilir.
+
+### Token Başına Oranları Yapılandırma
+
+AI oranları, ayrı giriş ve çıkış oranları olarak model başına yapılandırılır. Oranlar, yaygın AI sağlayıcı fiyatlandırma sayfalarıyla uyumlu olan 1 milyon token başına hesaplanır.
+
+1. Ağ yöneticisinde, **Multisite Ultimate → Ayarlar → Ölçümlü Planlar** yolunu izleyin.
+2. AI kullanımını faturalandıracak ürün veya üyeliğin AI harcaması ölçümlemesini etkinleştirin.
+3. Bağlayıcınız tarafından döndürülen model kimliklerini kullanarak model oranı girişleri ekleyin; örneğin, `gpt-4o`, `gpt-4o-mini` veya başka bir OpenAI uyumlu model tanımlayıcısı.
+4. Sitenizin para biriminde, 1 milyon token başına ayrı **Giriş Oranı** ve **Çıkış Oranı** değerleri girin.
+5. Müşterinin dahil edilmiş AI harcama hakkını ve plan için fazla kullanım davranışını ayarlayın.
+
+Kesin bir model kimliği yapılandırılmadığında, Ölçümlü Planlar model ön eki ile eşleştirme yapabilir. Örneğin, `claude-sonnet-4` için yapılandırılan bir oran, bu ön ekle başlayan zaman damgalı model kimliklerine uygulanabilir. Geliştiriciler ayrıca [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filtresi ile nihai oran tablosunu ayarlayabilirler.
+
+### Desteklenen AI Bağlayıcıları
+
+AI token faturalandırması, WordPress AI Client SDK oluşturma olaylarını yayan ve token kullanımını yanıt meta verilerine dahil eden bağlayıcılarla çalışır. Bu, Ultimate Multisite AI bağlayıcı ailesini içerir ve burada belgelenmiştir:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) OpenAI uyumlu API'ler için, OpenAI, Mistral, Ollama uyumlu ağ geçitleri ve uyumlu token kullanım meta verisi açığa çıkaran diğer sağlayıcılar dahil.
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) İstekler AI Client SDK olay akışı üzerinden yönlendirildiğinde tarayıcı yerel WebLLM kullanımı için.
+* [Gratis AI Agent](../gratis-ai-agent/) tarafından kullanılan ve seçilen sağlayıcı istem ve tamamlama token sayılarını SDK üzerinden raporladığında AI sağlayıcı bağlayıcıları.
+
+Özel bağlayıcılar, standart `wp_ai_client_before_generate_result` ve `wp_ai_client_after_generate_result` olaylarını model, sağlayıcı ve token kullanım meta verileriyle tetikleyerek sürece dahil olabilir. Bağlayıcı ayarları, müşteri sitelerinin ağ tarafından onaylanmış sağlayıcıları ve limitleri kullanması için ana siteden alt sitelere zorlanır.
+
+### Müşteri Hesap Kullanımı
+
+Müşteriler, AI kullanımını diğer ölçümlü kaynaklarının yanı sıra hesap alanlarında görürler. AI harcaması satırı, kaydedilen istem ve tamamlama token'larından, yapılandırılmış model oranlarından ve plandaki dahil edilmiş haklardan türetilen mevcut faturalandırma döneminin toplamını gösterir.
+
+Bir müşterinin ödeme yöntemi kayıtlıysa, dahil edilen hakkı aşan kullanım faturalandırılabilir fazla kullanım olarak kabul edilir. Plan katı bir kesinti için yapılandırılmışsa ve müşterinin kullanabileceği bir ödeme yöntemi yoksa, hak dolduğunda ve müşteri devam etmeden önce ödeme detayları eklemesi gerektiği uyarısıyla AI istekleri engellenebilir.
+
+## Desteklenen Kaynaklar
+
+* Disk depolama
+* Bant genişliği/Veri transferi
+* Site sayısı
+* Kullanıcı sayısı
+* AI token kullanımı ve AI harcaması
+* Özel kaynak türleri
+
+## Gereksinimler
+
+* Multisite Ultimate 2.0.0 veya üzeri
+* WordPress Multisite kurulumu
+* PHP 7.4 veya üzeri
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-metered-plans` konumuna yükleyin.
+2. WordPress'te 'Eklentiler' ekranından eklentiyi etkinleştirin.
+3. Multisite Ultimate → Ayarlar → Ölçümlü Planlar'a gidin.
+4. Ölçümlü kaynaklarınızı ve fiyatlandırmanızı yapılandırın.
+5. Ürün düzenleyicisinde ürünler için ölçümlü faturalandırmayı etkinleştirin.
+
+## Sıkça Sorulan Sorular
+
+## Bir müşteri limitini aşarsa ne olur?
+
+Erişimi engellemek yerine, sistem fazla kullanımı takip eder ve yapılandırdığınız oranlara göre bir sonraki faturasına ekler.
+
+## Farklı ürünler için farklı fazla kullanım oranları belirleyebilir miyim?
+
+Evet, her ürün benzersiz ölçümlü kaynaklara ve fazla kullanım fiyatlandırmasına sahip olabilir.
+
+## Müşteriler kullanımları hakkında nasıl bilgilendirilir?
+
+Müşteriler mevcut kullanımlarını dashboard'larında görebilir ve limitlere yaklaşırken veya aşılırken isteğe bağlı bildirimler alabilirler.
+
+## AI token kullanımı nasıl fiyatlandırılır?
+
+AI token kullanımı, modelin yapılandırılmış giriş ve çıkış oranlarına göre 1 milyon token başına fiyatlandırılır. Ölçümlü Planlar, her isteğin istem ve tamamlama token sayılarını bu oranlarla çarpar, sonucu müşterinin mevcut faturalandırma dönemindeki AI harcamasına ekler ve planın hakkı veya fazla kullanım kurallarını uygular.
+
+## Hala katı limitler kullanabilir miyim?
+
+Evet, ölçümlü faturalandırma ürün başına isteğe bağlıdır. Geleneksel katı limitli ürünleri ölçümlü ürünlerle karıştırabilirsiniz.

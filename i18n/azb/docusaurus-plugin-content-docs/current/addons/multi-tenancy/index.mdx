@@ -1,0 +1,124 @@
+---
+title: Multi-Tenancy
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Performans ve güvenlik için alt siteleri sunucular ve veritabanları arasında dağıtma
+
+## Gereksinimler
+
+- WordPress 5.3 veya üzeri
+- PHP 7.4 veya üzeri
+- Multisite Ultimate eklentisi (aktif olmalı)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
+2. WordPress'te 'Eklentiler' menüsünden eklentiyi etkinleştirin
+3. Eklenti ayarlarını ağ yöneticisinden yapılandırın
+
+## Geliştirme
+
+### Kurulum
+
+```bash
+# Bağımlılıkları kurun
+composer install
+npm install
+
+# Testleri çalıştırın
+npm run test
+
+# Kod standartları kontrollerini çalıştırın
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Kod stil sorunlarını düzeltin
+vendor/bin/phpcbf
+
+# Üretim için derleyin
+npm run build
+```
+
+### Proje Yapısı
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP sınıfları ve dahil edilen dosyalar
+│   ├── class-multisite-ultimate-updater.php  # Güncelleme işleyicisi
+│   └── class-multi_tenancy-main.php             # Ana işlevsellik
+├── tests/                        # Birim testleri
+│   ├── bootstrap.php            # Test başlangıç dosyası
+│   ├── class-*-base.php         # Temel test sınıfı
+│   └── class-*-test.php         # Test senaryoları
+├── views/                       # Şablon dosyaları
+├── assets/                      # Statik varlıklar
+│   ├── css/                     # Stil sayfaları
+│   ├── js/                      # JavaScript dosyaları
+│   └── images/                  # Görseller
+├── lang/                        # Dil dosyaları
+├── composer.json                # PHP bağımlılıkları
+├── package.json                 # Node.js bağımlılıkları
+├── phpunit.xml.dist             # PHPUnit yapılandırması
+├── .phpcs.xml.dist              # Kod standartları yapılandırması
+└── rector.php                   # Kod modernizasyonu kuralları
+```
+
+### Test Etme
+
+Eklenti, kapsamlı bir test çatısı içerir:
+
+- **Birim Testleri (Unit Tests)**: WordPress test paketi ile PHPUnit tabanlı testler
+- **Temel Test Sınıfı (Base Test Class)**: Ortak test senaryoları için yardımcı yöntemler sağlar
+- **Test Kapsamı (Test Coverage)**: Kod kapsamını izlemek için yapılandırılmıştır
+- **Multisite Test Etme**: Testler çok siteli ortamda çalışır
+
+### Kod Standartları
+
+- **WordPress Kod Standartları**: PHPCS aracılığıyla zorunlu kılınır
+- **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
+- **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
+- **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
+
+### Derleme Sistemi
+
+- **Varlık İşleme (Asset Processing)**: CSS/JS dosyaları için küçültme (Minification)
+- **Çeviri (Translation)**: POT dosyası oluşturma
+- **Paketleme (Packaging)**: Dağıtım için arşiv oluşturma
+- **Geliştirme Modu (Development Mode)**: Hata ayıklama için küçültülmemiş varlıklar
+
+## Yapılandırma
+
+Eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
+
+## Hook'lar ve Filtreler
+
+### Aksiyonlar (Actions)
+
+- `ultimate-multisite-addon-template_init` - Eklenti başlatıldıktan sonra tetiklenir
+- `ultimate-multisite-addon-template_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
+
+### Filtreler (Filters)
+
+- `ultimate-multisite-addon-template_settings` - Eklenti ayarlarını değiştirir
+- `ultimate-multisite-addon-template_enabled` - Eklentinin etkin/devre dışı durumunu geçersiz kılar
+
+## Lisans
+
+Bu eklenti GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
+
+## Destek
+
+Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin.
+## Değişiklik Günlüğü
+
+- Sürüm 1.0.1 (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+
+
+- Sürüm (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.

@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent, tema farkındalığı yetenekleri, gelişmiş internet arama özellikleri ve geliştirilmiş site oluşturucu özellikleri ile Gratis AI Agent'ı genişleten gelişmiş bir WordPress AI asistanıdır. 1.16.0 sürümü, özel logo oluşturma, palet kontrast doğrulama, keşif görüşmesine fotoğraf yükleme, yapılandırılmış otel menüsü oluşturma ve Tema Oluşturucuda masaüstü/mobil önizleme render etme özelliklerini ekler.
+
+## Temel Özellikler
+
+- **Tema'ya özel yetenekler** — Aktif WordPress temanıza ve yüklü eklentilerinize göre rehberliği ve yetenekleri otomatik olarak uyarlar.
+- **Çoklu internet arama sağlayıcıları** — Daha zengin arama sonuçları ve gelişmiş araştırma yetenekleri için Brave Search ve Tavily arasından seçim yapın.
+- **Site oluşturucu iletişim formları** — Kurulumunuzdaki form eklentisini kullanarak doğrudan sohbet arayüzünden tam işlevli iletişim formları oluşturun.
+- **Gelişmiş site oluşturucu** — Daha iyi eklenti keşfi ve hata kurtarma ile geliştirilmiş çok aşamalı site oluşturma planları.
+- **Yerleşik tema yetenekleri** — Block Themes, Classic Themes, Kadence Blocks ve Kadence Theme için özel rehberlik.
+- **Geliştirilmiş WooCommerce entegrasyonu** — Daha iyi güvenilirlik ve uyumluluk için yerel WooCommerce API'lerini kullanacak şekilde yeniden düzenlendi.
+- **Otomatik sağlayıcı algılama** — Eklentiler veya temalar etkinleştirildiğinde veya devre dışı bırakıldığında mevcut eklenti ve temaları otomatik olarak algılar ve yeniler.
+- **Özel logo oluşturma** — Otomatik namespace-safe sanitizasyon ile özel SVG logolar oluşturun ve gömün.
+- **Palet kontrast doğrulama** — Temanıza uygulamadan önce renk çiftlerini WCAG erişilebilirlik standartlarına uygunluk açısından kontrol edin.
+- **Fotoğraflarla zenginleştirilmiş keşif** — Tasarım yönünü etkilemek için Tema Oluşturucu keşif görüşmesi sırasında fotoğraflar yükleyin.
+- **Otel menüleri** — Restoranlar, kafeler ve otel işletmeleri için yapılandırılmış yiyecek ve içecek menü sayfaları oluşturun.
+- **Masaüstü ve mobil önizlemeler** — Tasarım yönü seçimi sırasında tasarımınızı masaüstü ve mobil cihazlarda önizleyin.
+- **Tier 1 site kazıma (scraping)** — sd-ai-agent/site-scrape, artık rakip ve ilham verici web sitelerini analiz etmek için varsayılan olarak kullanıma sunulmuştur.
+
+## Gereksinimler
+
+- WordPress 6.0 veya üzeri
+- PHP 8.1 veya üzeri
+- WordPress Multisite (ağ düzeyinde etkinleştirilmiş) veya tek site kurulumu
+- Aktif bir AI sağlayıcı bağlayıcı eklentisi (Anthropic, OpenAI veya uyumlu)
+- Gratis AI Agent v1.9.0 veya üzeri (Superdav AI Agent, Gratis AI Agent'ı genişletir)
+
+## Kurulum
+
+1. Eklenti dosyalarını `/wp-content/plugins/superdav-ai-agent` konumuna yükleyin.
+2. WordPress'te **Eklentiler** ekranından eklentiyi etkinleştirin.
+3. Gratis AI Agent'ın da etkinleştirildiğinden emin olun.
+4. **Gratis AI Agent → Ayarlar** bölümüne gidin ve internet arama sağlayıcınızı yapılandırın (isteğe bağlı).
+
+## Hızlı Başlangıç
+
+Etkinleştirildikten sonra Superdav AI Agent, Gratis AI Agent kurulumunuzu tema farkındalığı yetenekleri ve ek özelliklerle otomatik olarak geliştirir. WordPress yönetici kenar çubuğundaki **Gratis AI Agent** paneline girin ve yeni özellikleri kullanmaya başlayın.
+
+**Örnek komutlar:**
+
+```
+Contact sayfasına bir iletişim formu ekle.
+```
+
+```
+En son WordPress güvenlik en iyi uygulamaları hakkında web'de ara.
+```
+
+```
+Aktif temanın blok şablonlarını kullanarak bir kahraman bölümü oluştur.
+```
+
+## Tema'ya Özel Yetenekler
+
+Superdav AI Agent, aktif temanızı ve yüklü eklentilerinizi otomatik olarak algılar ve uygun tema farkındalığı yeteneğini asistanın bağlamına yükler. Mevcut yetenekler şunları içerir:
+
+| Yetenek | Uygulama Alanı |
+|---|---|
+| **Block Themes** | WordPress blok tabanlı (Full Site Editing) mimarisini kullanan temalar |
+| **Classic Themes** | PHP şablonları ve klasik editörü kullanan geleneksel WordPress temaları |
+| **Kadence Blocks** | Kadence Blocks eklentisi etkin olan siteler |
+| **Kadence Theme** | Aktif tema olarak Kadence Theme kullanılan siteler |
+
+Her yetenek hakkında ayrıntılı rehberlik için [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) bölümüne bakın.
+
+## İnternet Arama Sağlayıcıları
+
+Superdav AI Agent v1.10.0, internet arama sorguları için Brave Search'e alternatif olarak **Tavily** ekler. Her iki sağlayıcı da gerçek zamanlı arama sonuçları sunar ve **Gratis AI Agent → Ayarlar → Advanced** bölümünden yapılandırılabilir.
+
+| Sağlayıcı | Özellikler | Kurulum |
+|---|---|---|
+| **Brave Search** | Hızlı, gizlilik odaklı arama sonuçları | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Daha zengin arama sonuçları, gelişmiş araştırma yetenekleri | [Tavily API](https://tavily.com/) |
+
+Yapılandırma talimatları için [Internet Search](../../user-guide/configuration/internet-search) bölümüne bakın.
+
+## Site Oluşturucu İletişim Formları
+
+Site Oluşturucu ajanı artık iletişim formlarını doğrudan sohbet arayüzünden oluşturabilir. Site Oluşturucu'dan bir iletişim formu oluşturmasını istemeniz yeterlidir; bu, yüklü form eklentinizi (Contact Form 7, WPForms, Fluent Forms veya Gravity Forms) otomatik olarak algılayacak ve kullanıma hazır bir form oluşturacaktır.
+
+Ayrıntılı rehberlik için [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) bölümüne bakın.
+
+## Tema Oluşturucu Özellikleri
+
+Superdav AI Agent v1.16.0'daki Tema Oluşturucu, güçlü yeni yetenekler içerir:
+
+### Fotoğraf Yüklemeli Keşif Görüşmesi
+
+Tema Oluşturucu keşif görüşmesi artık, görsel ilham sağlayabileceğiniz bir fotoğraf yükleme adımı içerir. Tema Oluşturucunun tasarım yönünüzü anlamasına yardımcı olmak için markanızın, rakip sitelerin veya tasarım ilhamlarının fotoğraflarını yükleyin.
+
+Ayrıntılı rehberlik için [Discovery Interview](./theme-builder/discovery-interview.md) bölümüne bakın.
+
+### Masaüstü ve Mobil Önizlemeli Tasarım Yönü
+
+Tema Oluşturucu tüm temanızı oluşturmadan önce tasarımınızı hem masaüstü hem de mobil cihazlarda inceleyin. Birden fazla duyarlı kırılma noktasında gerçek zamanlı önizlemeler görün.
+
+Ayrıntılı rehberlik için [Design Direction](./theme-builder/design-direction.md) bölümüne bakın.
+
+### Otel Menüleri
+
+Tema Oluşturucu, artık restoranlar, kafeler, barlar ve diğer otel işletmeleri için yapılandırılmış yiyecek ve içecek menü sayfaları oluşturabilir. Menüler fiyatlandırma, açıklamalar, diyet bilgileri ve alerjen uyarıları içerir.
+
+Ayrıntılı rehberlik için [Hospitality Menus](./theme-builder/hospitality-menus.md) bölümüne bakın.
+
+### Yeni Yetenekler
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — otomatik sanitizasyon ile özel SVG logolar oluşturun.
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — renk çiftlerini WCAG uyumluluğu açısından kontrol edin.
+- **[Create Menu](./abilities/create-menu.md)** — farklı navigasyon etiketleriyle navigasyon menüleri oluşturun.
+
+Mevcut araçlar ve Tier 1 site-scrape aracı hakkında bilgi için [Tools and Configuration](./theme-builder/tools.md) bölümüne bakın.
+
+## Yapılandırma
+
+Tüm ayarlar WordPress yönetici panelinde **Gratis AI Agent → Ayarlar** altında bulunur. Superdav AI Agent aşağıdaki yapılandırma seçeneklerini ekler:
+
+| Ayar | Açıklama |
+|---|---|
+| **Internet Search Provider** | Brave Search ve Tavily arasından seçim yapın (isteğe bağlı) |
+| **Tavily API Key** | Tavily internet araması için API anahtarı (Tavily seçilirse) |
+
+## v1.16.0'da İyileştirmeler
+
+- **AI Client önbelleği** — Artık istekler arası kalıcılık için geçici (transient) verilerle desteklenir, bu da uzun süren ajan görevlerinde veri kaybını önler.
+- **Tier 1 site-scrape aracı** — sd-ai-agent/site-scrape, artık Tema Oluşturucuda rakip ve ilham verici web sitelerini analiz etmek için varsayılan olarak kullanıma sunulmuştur.
+- **Eklenti satırı eylem bağlantıları** — Netlik için düzeltildi ve yeniden adlandırıldı.
+
+## v1.10.0'da İyileştirmeler
+
+- **WooCommerce entegrasyonu yeniden düzenlendi** — Daha iyi güvenilirlik ve uyumluluk için artık yerel WooCommerce API'lerini kullanıyor.
+- **Sağlayıcı listesi otomatik yenileme** — Eklentiler etkinleştirildiğinde veya devre dışı bırakıldığında bunu otomatik olarak algılar ve mevcut sağlayıcı listesini günceller.
+- **Gelişmiş site oluşturucu** — Daha iyi hata kurtarma ile geliştirilmiş çok aşamalı site oluşturma planları.
+- **Tema'ya özel yetenekler** — Aktif temanıza otomatik olarak uyum sağlayan dört yeni yerleşik yetenek.
+
+## v1.10.0'da Hata Düzeltmeleri
+
+- Bazı yönetici sayfalarında sonsuz yeniden yükleme döngisine neden olan `navigate-to` yeteneği düzeltildi.
+- Kategori ve etiket adlarını doğru bir şekilde slug'lara çözemeyen `list-posts` yeteneği düzeltildi.
+- Önceki bir yeniden düzenlemeden sonra WP-CLI komutlarının namespace takma adları eksikliği düzeltildi.
+- Otomasyon tabloları henüz oluşturulmamış siteleri zarifçe ele alan olay otomasyonu düzeltildi.
+- Sistem talimat oluşturucusunda doğru namespace öneki kullanan `memory-save` yeteneği düzeltildi.
+- Skaler araç sonuçlarının AI'ya döndürülmeden önce doğru şekilde sarılması düzeltildi.
+- Kullanım istatistiklerinin, eski sürümlerden yükseltilirken eski yetenek anahtar formatını doğru şekilde işlemesi düzeltildi.
+
+## Destek
+
+Destek için [ultimatemultisite.com](https://ultimatemultisite.com) adresini ziyaret edin veya eklenti deposunda bir sorun açın.
+
+## Değişiklik Günlüğü
+
+Tüm sürüm geçmişi için [Changelog](./changelog) bölümüne bakın.
