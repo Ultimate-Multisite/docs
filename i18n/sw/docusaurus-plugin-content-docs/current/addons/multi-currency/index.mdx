@@ -1,0 +1,117 @@
+---
+title: Sarafu Mbalimbali
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency inaruhusu mtandao wako kupokea malipo kwa sarafu nyingi. Inabadilisha bei kiotomatiki kwa kutumia viwango vya kubadilishana vya moja kwa moja au kwa mikono, inakuwezesha kuweka bei sahihi kwa bidhaa yoyote kwa sarafu yoyote, na inatambua sarafu anayopendelea kila mtumiaji kupitia eneo la kijiografia (geolocation) — zote hizi zikisimamiwa kutoka kwenye dashboard moja ya admin.
+
+## Vipengele Muhimu
+
+- **Ubadilishaji kiotomatiki wa viwango vya kubadilishana** — bei hubadilishwa kutoka sarafu yako ya msingi kwa kutumia viwango vinavyopatikana kutoka kwa mtoa huduma uliyechagua
+- **Kubadilisha bei kwa bidhaa moja** — weka bei sahihi kulingana na sarafu yoyote kwenye bidhaa yoyote ili kupita ubadilishaji kiotomatiki
+- **Sehemu ya kuchagua sarafu wakati wa usajili** — inamruhusu mteja kuchagua sarafu anayopendelea wakati wa usajili/malipo
+- **Watoa huduma mbalimbali wa viwango vya kubadilishana** — ECB, Frankfurter, Stripe, au viwango vya mikono kabisa
+- **Kutambua sarafu kulingana na eneo la kijiografia** — inachagua kiotomatiki sarafu inayolingana na nchi ya mtumiaji
+- **Dashboard ya Admin** — simamia sarafu zilizofanya kazi, viwango vya kubadilishana, na mipangilio ya watoa huduma kutoka mahali pamoja
+
+## Mahitaji
+
+- Ultimate Multisite 2.0.0 au zaidi
+- Usajili wa WordPress Multisite
+- PHP 7.4 au zaidi
+
+## Usakinishaji
+
+1. Pakia faili za plugin kwenye `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Washa plugin kupitia skrini ya **Plugins** ndani ya WordPress (Network Activate)
+3. Nenda kwenye **Ultimate Multisite → Multi-Currency** ili kufungua dashboard ya admin
+4. Ongeza sarafu unazotaka kupokea na kusanidi mtoa huduma wako wa viwango vya kubadilishana
+
+## Kuweka Mipangilio (Configuration)
+
+### Dashboard ya Admin
+
+Dashboard ya Multi-Currency (**Ultimate Multisite → Multi-Currency**) ni sehemu kuu ya:
+
+- Kuongeza, kuwezesha, au kuzima sarafu
+- Kuchagua mtoa huduma wa viwango vya kubadilishana na kuwezesha upya viwango kwa mahitaji
+- Kupitia viwango vya sasa kwa sarafu zote zilizofanya kazi
+- Kuweka viwango kwa mikono wakati watoa huduma kiotomatiki hawafaa
+
+### Watoa Huduma wa Viwango vya Kubadilishana
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — viwango vya kila siku bure kwa mitandao inayotegemea EUR |
+| **Frankfurter** | API ya kio wazi ya ECB mirror — bure, haihitaji API key |
+| **Stripe** | Inatumia viwango halisi vya FX vya Stripe — inahitaji ushirikishwaji wa Stripe unaofanya kazi |
+| **Manual** | Wewe unapoingiza viwango moja kwa moja; hakuna wito wa API wa nje |
+
+Chagua mtoa huduma wako chini ya **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Viwango vinaweza kuwekwa upya kwa mikono wakati wowote au kupangwa kuwekwa upya kiotomatiki.
+
+### Kubadilisha Bei kwa Bidhaa Moja (Per-Product Pricing Overrides)
+
+Wakati ubadilishaji kiotomatiki haufiki usahihi wa kutosha, unaweza kuweka bei sahihi kwa sarafu maalum kwenye bidhaa yoyote:
+
+1. Fungua kuhariri bidhaa (**Ultimate Multisite → Products → Edit**)
+2. Skrol hadi sehemu ya **Currency Pricing**
+3. Ingiza bei sahihi kwa kila sarafu unayotaka kubadilisha
+4. Hifadhi bidhaa
+
+Bidhaa ambazo hazina ubadilishaji (override) hutumia bei iliyobadilishwa kutoka kwa sarafu yako ya msingi.
+
+### Sehemu ya Kuchagua Sarafu wakati wa Usajili
+
+Sehemu ya kuchagua sarafu inaweza kuongezwa kwenye mtiririko wako wa usajili/malipo ili wateja wachague sarafu anayopendelea wakati wa kujisajili:
+
+1. Nenda kwenye **Ultimate Multisite → Multi-Currency → Settings**
+2. Washa **Show currency selector on signup**
+3. Chaguo ni kuweka sarafu ya msingi au kumruhusu geolocation kutambua thamani iliyochaguliwa awali
+
+Sarafu iliyochaguliwa inahifadhiwa na usajili na kutumika kwa bili zote zilizofuata.
+
+### Kutambua Sarafu Kulingana na Eneo la Kijiografia
+
+Wakati utambuzi wa geolocation umeanzishwa, addon inahusisha nchi ya mtumiaji na sarafu na kuichagua awali kwenye sehemu ya kuchagua sarafu. Ili kuwezesha:
+
+1. Nenda kwenye **Ultimate Multisite → Multi-Currency → Settings**
+2. Washa **Detect currency from visitor location**
+3. Husisha nchi na sarafu kwenye jedwali la **Geolocation Mapping**
+
+Ikiwa hakuna usihusisho kwa nchi ya mtumiaji, sarafu ya msingi ya mtandao hutumika kama njia mbadala.
+
+## Maswali Yanayoulizwa Mara kwa Mara
+
+### Nini kinatokea ikiwa mtoa huduma wa viwango vya kubadilishana haipo?
+
+Addon inarudi kwenye viwango vya mwisho vilivyopatikana kwa mafanikio. Ikiwa hakuna viwango vilivyopatikana kamwe, inarudi kwenye viwango vya mikono uliyoweka. Inapendekezwa kusanidi viwango vya mikono kama mtandao wa usalama.
+
+### Je, naweza kutumia watoa huduma tofauti kwa sarafu tofauti?
+
+Hapana — mtoa huduma mmoja anafanya kazi kwa wakati mmoja kwa sarafu zote. Tumia **Manual** ikiwa unahitaji udhibiti kamili juu ya viwango vya mtu binafsi.
+
+### Je, geolocation inahitaji plugin tofauti?
+
+Hakuna plugin ya nje ya geolocation inayohitajika. Addon inatumia utambuzi wa IP-kwenye-nchi ulioko ndani ya WordPress. Kwa usahihi zaidi, huduma maalum ya geolocation inaweza kuunganishwa kupitia hook za filter zilizotolewa.
+
+### Je, ubadilishaji kwa bidhaa moja unatumika kabla au baada ya kodi?
+
+Ubadilishaji kwa bidhaa moja unoweka bei kabla ya kodi kwa sarafu lengwa. Kodi huhesabiwa juu ya bei ya ubadilishaji kwa kutumia usanidi wako wa kodi uliopo.
+
+## Changelog
+
+### Version 1.0.0 — Iliachishwa tarehe 2026-04-02
+
+- Jipya: Usaidizi wa sarafu nyingi na ubadilishaji kiotomatiki wa viwango vya kubadilishana
+- Jipya: Kubadilisha bei kwa bidhaa moja kwa ajili ya bei sahihi kulingana na sarafu
+- Jipya: Sehemu ya kuchagua sarafu wakati wa usajili kwa mtiririko wa malipo
+- Jipya: Watoa huduma wa viwango vya kubadilishana: ECB, Frankfurter, Stripe, na mikono
+- Jipya: Kutambua sarafu kulingana na eneo la kijiografia
+- Jipya: Dashboard ya admin kwa kusimamia sarafu na viwango vya kubadilishana
+- Marekebisho: Dashboard inadhihirisha bei kila wakati kwa sarafu ya msingi bila kujali sarafu iliyochaguliwa

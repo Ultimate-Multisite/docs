@@ -1,0 +1,124 @@
+---
+title: Wielodostępność (Multi-Tenancy)
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Wielodostępność (Multi-Tenancy)
+
+Rozdzielanie podstron na różnych serwerach i bazach danych w celu poprawy wydajności i bezpieczeństwa.
+
+## Wymagania
+
+- WordPress 5.3 lub nowszy
+- PHP 7.4 lub nowszy
+- Plugin Multisite Ultimate (aktywny)
+
+## Instalacja
+
+1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
+2. Aktywuj wtyczkę za pomocą menu „Wtyczki” w WordPressie
+3. Skonfiguruj ustawienia dodatku w panelu administracyjnym sieci (network admin)
+
+## Rozwój
+
+### Konfiguracja środowiska
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura projektu
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Klasy PHP i pliki włączane
+│   ├── class-multisite-ultimate-updater.php  # Obsługa aktualizacji
+│   └── class-multi_tenancy-main.php             # Główna funkcjonalność
+├── tests/                        # Testy jednostkowe
+│   ├── bootstrap.php            # Bootstrap testów
+│   ├── class-*-base.php         # Klasa bazowa testów
+│   └── class-*-test.php         # Przypadki testowe
+├── views/                       # Pliki szablonów
+├── assets/                      # Zasoby statyczne
+│   ├── css/                     # Arkusze stylów
+│   ├── js/                      # Pliki JavaScript
+│   └── images/                  # Obrazy
+├── lang/                        # Pliki językowe
+├── composer.json                # Zależności PHP
+├── package.json                 # Zależności Node.js
+├── phpunit.xml.dist             # Konfiguracja PHPUnit
+├── .phpcs.xml.dist              # Konfiguracja standardów kodu
+└── rector.php                   # Reguły modernizacji kodu
+```
+
+### Testowanie
+
+Dodatek zawiera kompleksowy framework testowy:
+
+- **Unit Tests**: Testy jednostkowe oparte na PHPUnit z zestawem testowym WordPressa
+- **Base Test Class**: Klasa bazowa testów, która dostarcza metody pomocnicze dla typowych scenariuszy testowych
+- **Test Coverage**: Skonfigurowane do śledzenia pokrycia kodu
+- **Multisite Testing**: Testy uruchamiane w środowisku multisite
+
+### Standardy kodu
+
+- **WordPress Coding Standards**: Egzekwowane za pomocą PHPCS
+- **PHP 7.4+ Compatibility**: Wsparcie dla nowoczesnych funkcji PHP
+- **Static Analysis**: Integracja PHPStan do sprawdzania typów
+- **Code Modernization**: Reguły Rector do ulepszania kodu PHP
+
+### System budowania
+
+- **Asset Processing**: Minifikacja plików CSS/JS
+- **Translation**: Generowanie plików POT
+- **Packaging**: Tworzenie archiwum do dystrybucji
+- **Development Mode**: Nie-minifikowane zasoby do debugowania
+
+## Konfiguracja
+
+Dodatek obsługuje różne opcje konfiguracyjne, dostępne przez interfejs panelu administracyjnego sieci (network admin).
+
+## Akcje (Actions) i Filtry (Filters)
+
+### Akcje (Actions)
+
+- `ultimate-multisite-addon-template_init` - Wywoływane po inicjalizacji dodatku
+- `ultimate-multisite-addon-template_loaded` - Wywoływane po załadowaniu wszystkich plików dodatku
+
+### Filtry (Filters)
+
+- `ultimate-multisite-addon-template_settings` - Modyfikacja ustawień dodatku
+- `ultimate-multisite-addon-template_enabled` - Nadpisanie statusu włączenia/wyłączenia dodatku
+
+## Licencja
+
+Ten dodatek jest licencjonowany na podstawie GPL v3 lub nowszej.
+
+## Wsparcie
+
+W celu uzyskania wsparcia i dokumentacji odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
+## Historia zmian (Changelog)
+
+- Version 1.0.1 (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstu; zwiększenie wersji.
+
+
+- Version (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstu; zwiększenie wersji.

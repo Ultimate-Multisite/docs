@@ -1,0 +1,117 @@
+---
+title: Flera valutor
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency låter dig ta emot betalningar i flera valutor på din nätverkswebbplats. Det konverterar automatiskt priser med hjälp av live- eller manuella växlingskurser, låter dig ställa in exakta priser per produkt för vilken valuta som helst och känner av besökarens föredragna valuta via geolokalisering – allt hanteras från en enda administrationspanel.
+
+## Huvudfunktioner
+
+- **Automatisk växlingskurskonvertering** — priser konverteras från din basvaluta med hjälp av kurser hämtade från din valda leverantör
+- **Överskrivning av priser per produkt** — ställ in exakta valuta-specifika priser på vilken produkt som helst för att kringgå automatisk konvertering
+- **Valutorväljare i registreringsfältet** — låter kunder välja sin föredragna valuta under kassan/registreringen
+- **Flera växlingskurshanterare** — ECB, Frankfurter, Stripe eller helt manuella kurser
+- **Valukätning baserat på geolokalisering** — föreslår automatiskt den valuta som matchar besökarens land
+- **Administrationspanel** — hantera aktiva valutor, växlingskurser och leverantörsinställningar från ett ställe
+
+## Krav
+
+- Ultimate Multisite 2.0.0 eller högre
+- WordPress Multisite-installation
+- PHP 7.4 eller högre
+
+## Installation
+
+1. Ladda upp plugin-filerna till `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivera pluginet via **Plugins**-skärmen i WordPress (Nätverksaktivera)
+3. Gå till **Ultimate Multisite → Multi-Currency** för att öppna administrationspanelen
+4. Lägg till de valutor du vill acceptera och konfigurera din växlingskurshanterare
+
+## Konfiguration
+
+### Administrationspanelen
+
+Multi-Currency-administrationspanelen (**Ultimate Multisite → Multi-Currency**) är den centrala platsen för att:
+
+- Lägga till, aktivera eller inaktivera valutor
+- Välja en växlingskurshanterare och uppdatera kurser på begäran
+- Granska aktuella kurser för alla aktiva valutor
+- Ställa in manuella kurser när automatiska leverantörer inte är lämpliga
+
+### Växlingskurshanterare
+
+| Provider | Description |
+|---|---|
+| **ECB** | European Central Bank — gratis dagliga kurser för EUR-baserade nätverk |
+| **Frankfurter** | Open-source ECB mirror API — gratis, inget API-nyckel krävs |
+| **Stripe** | Använder Stripes live FX-kurser — kräver en aktiv Stripe-integration |
+| **Manual** | Du anger kurserna direkt; inga externa API-anrop |
+
+Välj din leverantör under **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurser kan uppdateras manuellt när som helst eller schemaläggas för automatisk uppdatering.
+
+### Överskrivning av priser per produkt
+
+När automatisk konvertering inte är tillräckligt exakt kan du ställa in ett exakt pris för en specifik valuta på vilken produkt som helst:
+
+1. Öppna redigeraren för produkten (**Ultimate Multisite → Products → Edit**)
+2. Scrolla ner till avsnittet **Currency Pricing**
+3. Ange det exakta priset för varje valuta du vill överskriva
+4. Spara produkten
+
+Produkter utan överskrivning använder det konverterade priset från din basvaluta.
+
+### Valutorväljare i registreringsfältet
+
+Valutorväljaren kan läggas till i ditt registrerings-/kassafölo så att kunderna väljer sin föredragna valuta vid registreringen:
+
+1. Gå till **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktivera **Show currency selector on signup**
+3. Ställ eventuellt in en standardvaluta eller låt geolokaliseringen bestämma det förvalda värdet
+
+Den valda valutan sparas med prenumerationen och används för all efterföljande fakturering.
+
+### Valukätning baserat på geolokalisering
+
+När geolokalisering är aktiverad mappar tillägget besökarens land till en valuta och föreslår den i valutorväljaren. För att aktivera:
+
+1. Gå till **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktivera **Detect currency from visitor location**
+3. Mappa länder till valutor i tabellen **Geolocation Mapping**
+
+Om ingen mappning finns för ett lands besökare används nätverkets basvaluta som fallback.
+
+## Vanliga frågor
+
+### Vad händer om en växlingskurshanterare är otillgänglig?
+
+Tillägget faller tillbaka på de senast framgångsrikt hämtade kurserna. Om inga kurser någonsin har hämtats, faller det tillbaka på de manuella kurser du har konfigurerat. Det rekommenderas att konfigurera manuella kurser som en säkerhetsåtgärd.
+
+### Kan jag använda olika leverantörer för olika valutor?
+
+Nej – en leverantör är aktiv åt gången för alla valutor. Använd **Manual** om du behöver full kontroll över individuella kurser.
+
+### Kräver geolokalisering ett separat plugin?
+
+Inget externt geolokalisationsplugin krävs. Tillägget använder WordPress inbyggda IP-till-land-detektering. För högre noggrannhet kan en dedikerad geolokaliseringstjänst integreras via de tillhandahållna filter-hookarna.
+
+### Tillämpas överskrivningar per produkt före eller efter skatt?
+
+Överskrivningar per produkt ställer in priset före skatt i målvvalutan. Skatten beräknas ovanpå överskrivningspriset med hjälp av din befintliga skattekonfiguration.
+
+## Changelog
+
+### Version 1.0.0 — Släppt den 2026-04-02
+
+- Nytt: Flera valuta-stöd med automatisk växlingskurskonvertering
+- Nytt: Överskrivning av priser per produkt för exakta valuta-specifika priser
+- Nytt: Valutorväljare i registreringsfältet för kassafölo
+- Nytt: Växlingskurshanterare: ECB, Frankfurter, Stripe och manuell
+- Nytt: Valukätning baserat på geolokalisering
+- Nytt: Administrationspanel för hantering av valutor och växlingskurser
+- Fix: Dashboard visar alltid priser i basvalutan oavsett vald valuta

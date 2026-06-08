@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimp-integration
+
+Koppla ditt Multisite Ultimate-nätverk till din Mailchimp. Du kan länka vissa planer till Mailchimp-listor och automatiskt lägga till prenumeranter i dessa listor vid registrering.
+
+## Installation
+
+1. Ladda upp 'ultimate-multisite-mailchimp' till katalogen '/wp-content/plugins/'
+2. Aktivera pluginet via menyn 'Plugins' i ditt WordPress Network Admin
+
+## Användningsguide
+
+Att synkronisera prenumeranternas e-postadresser med dina MailChimp-listor är väldigt enkelt med vårt Ultimate Multisite: MailChimp Integration Add-on. Den här guiden hjälper dig att få allt på plats!
+
+## Hämta en API-nyckel
+
+Innan vi går in på de olika inställningarna behöver vi en MailChimp API-nyckel. Detta gör att Ultimate Multisite kan kommunicera med MailChimp API för att hämta listor, grupper och lägga till e-postadresser i dessa listor och grupper när användare registrerar sig.
+
+Följ den här guiden för att få din egen MailChimp API-nyckel: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Lägg till din MailChimp API-nyckel på_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integrationsläge
+
+MailChimp Integration add-onet erbjuder två ”integrationslägen”, vilket innebär att det finns två olika sätt du kan använda add-onet för att synkronisera e-postadresser.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Två integrationslägen för större flexibilitet!_
+
+### Läge 1: Flera listor (Multiple Lists)
+
+Standardläget använder **Flera listor**. Detta läge låter dig välja flera MailChimp-listor för varje plan. Detta är det bästa alternativet om du vill segmentera dina användare i olika listor.
+
+Antag till exempel att du har 3 olika listor i ditt MailChimp-konto: **Newsletter**, **Plan A** och **Plan B**. Du vill att alla användare, oavsett vilken plan de har, också ska finnas med i Newsletter-listan, så att de inte missar dina uppdateringar.
+
+För att uppnå detta kan du använda läget Flera listor för att lägga till både listorna **Newsletter** och **Plan A** i Plan A MailChimp Settings, och **Newsletter** och **Plan B** i Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Välj standardlistorna för nya konton och för avslutade konton_
+
+### Läge 2: En lista + Flera grupper (Single List + Multiple Groups)
+
+MailChimp låter dig segmentera din lista i mindre användargrupper som kallas **Grupper**. Detta ger dig mer kontroll eftersom du kan skicka en kampanj till en specifik delmängd av dina prenumeranter utan att behöva skapa flera kopior av samma kampanj i MailChimp (vilket gör det svårt att analysera kampanjens mätvärden efteråt).
+
+Till exempel kan du ha en enda lista som heter **My Network Subscribers**, och inuti den ha grupper för **Plan A** och **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Välj standardlistorna och grupperna, om du använder integrationsläget ”en lista + flera grupper“_
+
+## Standardlistor och grupper
+
+Efter att du har valt vilket integrationsläge som passar bäst för ditt specifika användningsfall, är det dags att välja standardlistorna (och grupperna, beroende på läget). Standardlistan används när en given plan inte har en specifik lista vald.
+
+Du kan också välja standardlistan för avslutade konton. När en användare avslutar sitt abonnemang och tar bort sitt konto från ditt nätverk, flyttas dennes e-postadress till listan som är inställd för avslutade konton.
+
+## Aktivera dubbel prenumeration
+
+På samma inställningssida kan du aktivera **Double Subscription**. Detta alternativ lägger till användaren i både den standardlista som är vald OCH listan som är vald för användarens plan. Om detta alternativ inte är aktiverat läggs användaren endast till i listan som är vald för användarens plan. Om ingen lista är angiven för den specifika planen, läggs användaren till i den standardlista som är vald.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Dina användare kan prenumerera på både standardlistan och planens lista vid registrering_
+
+## Välja listor och grupper för varje plan
+
+Gå till dina **Plans** och välj den plan du vill redigera. Observera att en ny flik som heter MailChimp kommer att finnas tillgänglig i meta-boxen **Advanced Options**.
+
+På den fliken kan du välja flera listor eller en enda lista och flera grupper (beroende på integrationsläget) för den planen.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Välj de listor och grupper du vill använda för var och en av dina planer_
+
+När en ny användare registrerar sig för den planen läggs dennes e-postadress till de valda listorna och grupperna!

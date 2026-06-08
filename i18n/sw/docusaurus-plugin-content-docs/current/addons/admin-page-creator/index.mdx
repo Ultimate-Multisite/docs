@@ -1,0 +1,144 @@
+---
+title: Muumba wa Ukurasa wa Msimamizi
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Maudhui
+Admin page creator itakuruhusu kuongeza kurasa mpya za admin na sub-pages ndani ya WordPress admin dashboard kwa urahisi. Inaweza kutumika kuunda ukurasa wa karibisho au ukurasa wa mafunzo ambao unaweza kutumika kama ukurasa wa kuingia kwa watumiaji wapya. Unaweza kutumia page builder kama Beaver Builder, Elementor, Brizy, na Oxygen kutengeneza kurasa bila shida.
+
+Pia inatoa uwezo wa kuongeza HTML, CSS, na JavaScript maalum, pamoja na udhibiti wa ufikiaji kulingana na mpango (plan) na jukumu la mtumiaji (user role)!
+
+## Vipengele
+* Inasaidia HTML na CSS Maalum
+* Usaidizi wa JavaScript
+* Hali ya Maudhui ya PHP
+* Ruhusa kulingana na Jukumu la Mtumiaji
+* Inasaidia page builders
+
+## Waraka
+[Kuunda Admin Pages na Sub-pages Maalum kwa kutumia Ultimate Multisite: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Usakinishaji
+
+1. Upload **ultimate-multisite-admin-page-creator** kwenye saraka ya **/wp-content/plugins/**
+2. Washa plugin kupitia menyu ya **Plugins** katika WordPress Network Admin yako
+
+## Mwongozo wa Matumizi
+
+Ingawa WordPress inafanya iwe rahisi sana kuongeza maudhui kwenye sehemu ya mbele (front end) ya tovuti, kuunda kurasa na sub-pages upande wa admin kunahitaji ujuzi wa msingi wa kuandika code. Ultimate Multisite: Admin Page Creator inalenga kuleta urahisi huo wa matumizi wa sehemu ya mbele hadi upande wa nyuma (back end) wa tovuti zako za network.
+
+## Kwa nini kutumia Admin Page Creator?
+
+Labda unataka kutoa ukurasa maalum kwenye panel ya admin ya wateja wako wenye mafunzo, labda unataka kuongeza ukurasa maalum wenye maswali ya mara kwa mara (FAQs) na widget ya mawasiliano. Uwezekano ni mwingi na Admin Page Creator, na ndio tutachopitia katika mafunzo ya leo.
+
+![Admin Pages list](/img/admin/admin-pages-list.png)
+
+_Kuunda Ukurasa wa Mafunzo wenye orodha ya YouTube iliyoingizwa sasa ni iwezekano!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Hii ndiyo matokeo ya mwisho kwenye Dashboard Panel ya mtumiaji_
+
+## Kuunda Admin Page yako ya Kwanza Maalum
+
+Baada ya kusakinisha na kuwasha Ultimate Multisite: Admin Page Creator, nenda kwenye menyu yako ya network admin na ubonyeze Admin Pages.
+
+![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+
+_Orodha ya Custom Admin Pages kwenye Network Admin_
+
+Utaona orodha ya admin pages zote ulizozitengeneza hadi sasa (kwa kuwa hii ni ziara yako ya kwanza, orodha itakuwa tupu). Endelea na kubonyeza **Add new Admin Page**. Utahukariwa kwenye editor ya Admin Page.
+
+## Vipengele vya Custom Admin Page
+
+Kwenye Admin Page editor, utakuwa na chaguo nyingi tofauti za kubadilisha kurasa yako.
+
+### Page Title (Kichwa cha Ukurasa)
+
+Hii ndiyo kichwa kitakachoonekana juu ya kurasa, si jina la menyu ya admin.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Ingiza Page Title_
+
+### Content Type Selector (Chaguo la Aina ya Maudhui)
+
+Ultimate Multisite: Admin Page Creator inakupa chaguo mbili kuhusu maudhui ya kurasa: unaweza kutumia default WordPress WYSIWYG editor au kubadilisha kwenda kwa HTML editor.
+
+Ikiwa hujafahamiana na HTML, endelea kutumia default WordPress editor. Utakuwa na uwezo wa kuhariri maudhui ya kurasa kama vile ungehariri Post au Page ya kawaida.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Kutumia default WordPress WYSIWYG editor_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Kutumia chaguo la HTML editor, na kuonyesha syntax na arifa za makosa_
+
+## Chaguo za Menyu
+
+Kando, kwenye meta-box ya General Options, utaweza kuweka mipangilio ya aina ya menyu, jina, na mengi zaidi.
+
+### Menu Types (Aina za Menyu)
+
+Admin page yako mpya ya custom inaweza kuwa na aina mbili tofauti za menyu: menyu kuu (top-level menu) na sub-menu.
+
+Ukurasa wa menyu kuu, kama jina linavyopendekeza, utaongeza ukurasa wako mpya kwenye menyu ya admin pamoja na kurasa za kawaida za WordPress.
+
+Ikiwa utachagua chaguo la kiwango cha juu (top-level), utaweza kuchagua mpangilio wa menyu na ikoni ya menyu pia.
+
+Ikiwa unataka kufanya kurasa hii kuwa sub-menu page, utaweza kuchagua ukurasa mkuu (parent page) kuunganisha kurasa hii nayo. Unaweza kuongeza ukurasa wako maalum kwenye kurasa za kawaida za WordPress au kwenye admin pages zako za custom za kiwango cha juu.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Badilisha kabisa kipengele cha menyu kwa ajili ya Custom Page hii_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Pia unaweza kuongeza kurasa hii kama sub-menu ya kurasa zingine za menyu, ikiwemo zile zako za kiwango cha juu za custom._
+
+## Chaguo za Advanced (Za Juu)
+
+Unapaswa kuwa na uwezo wa kuongeza aina zote za maudhui kwenye custom admin pages zako. Hii inajumuisha CSS rules na files, JavaScript, na vilevile libraries za nje. Unaweza kufanya hivyo kwa kutumia Advanced Options Tab.
+
+### Custom CSS
+
+Kwenye tab ya CSS, unaweza kuongeza code yako ya CSS maalum, pamoja na kuingiza (import) CSS files kutoka kwa sites za mbali (kama CDNs, Google Fonts, n.k.).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_CSS maalum pia inasaudiwa. Unaweza pia kuingiza faili za mtindo (style files) za nje!_
+
+### Custom JavaScript
+
+Kile kile kinatumika kwa JavaScript. Unaweza kuongeza libraries za nje kutumia kwenye code yako ya JavaScript maalum.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Ongeza code yako ya JavaScript!_
+
+## Ruhusa (Permissions)
+
+Pia kwenye Advanced Options, utaweza kuchagua sub-sites zipi zitakuwa na ufikiaji kwenye kurasa hii. Hii ni muhimu ikiwa unalenga kutoa maudhui tofauti ya kipekee kwa viwango tofauti vya mpango, kwa mfano.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Una udhibiti kamili wa mahali pa kurasa hii kuonekana_
+
+**Muhimu** : Masharti yote mawili lazima yatimizwe ili kurasa ionekane. Hii inamaanisha kwamba ikiwa mtumiaji ni mteja wa mpango fulani, lakini hana moja ya majukumu yaliyochaguliwa (au kinyume chake), kurasa haitawapo kwenye panel yake.
+
+## Active (Imehudhurika)
+
+Ikiwa unataka kuzima custom admin page bila kuifuta au kuingilia mipangilio ya ruhusa, toa tu tiki kwenye chaguo la Active.
+
+Kuzima kurasa ya kiwango cha juu (top-level page) kutazima kiotomatiki sub-pages zote zilizounganishwa na kurasa kuu hiyo.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Matokeo ya mwisho kwenye user panel!_

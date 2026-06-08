@@ -1,0 +1,18 @@
+---
+id: wp_ultimo_support_agents_load
+title: Action - wp_ultimo_support_agents_load
+sidebar_label: wp_ultimo_support_agents_load
+_i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
+---
+# Action: wp_ultimo_support_agents_load
+
+Wyzwala się, gdy wszystkie zależności zostaną załadowane.
+
+Pozwala deweloperom pluginów dodać nową funkcjonalność. Na przykład, wsparcie dla nowych dostawców hostingu itp.
+
+### Since
+
+- 1.0.0
+### Source
+
+Zdefiniowane w [`inc/class-wp-ultimo-support-agents.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-support-agents/blob/main/inc/class-wp-ultimo-support-agents.php#L114) na linii 114

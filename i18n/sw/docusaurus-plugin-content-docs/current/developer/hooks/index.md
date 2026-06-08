@@ -1,0 +1,119 @@
+---
+title: Waraka wa Hooks
+sidebar_position: 1
+_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+---
+# Marejeo ya Hooks
+
+Waraka ulioundwa kiotomatiki kwa ajili ya **vitendo 59** na **vichujio 115** vyote katika Ultimate Multisite.
+
+## Vitendo (Actions)
+
+- [auth_redirect](./Actions/auth_redirect) — Inatokea kabla ya upirection wa uthibitisho.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Inatokea mara moja kabla ya kuwekwa kwa cookie ya uthibitisho.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Inatokea mara moja kabla ya kuwekwa kwa cookie ya uthibitisho ya kuingia.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Inaruhusu watengenezaji kuongeza viunganishi vya watoaji wa hosting wao kupitia wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Inachochea wakati vyanzo vyote vya utegemaji (dependencies) vimekupangwa.
+- [wu_activation](./Actions/wu_activation) — Inaruhusu sehemu zingine za plugin kuunganisha utaratibu wao wa kuwasha.
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Inaruhusu watengenezaji wa plugin kuunganisha kazi baada ya mtumiaji au super admin kubadilisha muundo wa tovuti.
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Katika baadhi ya hali, tutahitaji kupakia nguvu za ziada ili kushughulikia vitendo.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Inatokea kabla ya kuchakatwa kwa ombi la utafutaji.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Inaruhusu watengenezaji kufanya mabadiliko zaidi kwenye kitu cha malipo (checkout object).
+- [wu_cart_setup](./Actions/wu_cart_setup) — Inaruhusu watengenezaji kufanya mabadiliko zaidi kwenye kitu cha malipo (checkout object).
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Inatokea kabla ya kuongezwa kwa sehemu kwenye fomu ya malipo.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Inaruhusu watengenezaji kuchochea viunganishi zaidi.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Kabla ya kuchakata malipo.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Inatokea baada ya agizo la malipo kukamilika kabisa.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Inaruhusu watengenezaji wa plugin kuongeza widgets kwenye ukurasa wa Dashboard wa Mtandao (Network Dashboard Panel).
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Inaruhusu kuongeza widgets kwenye dashboard.
+- [wu_site_url] — Inaruhusu kuongeza widgets kwenye tovuti.
+- [wu_user_profile] — Inaruhusu kuongeza widgets kwenye wasifu wa mtumiaji.
+- [wu_user_dashboard] — Inaruhusu kuongeza widgets kwenye dashboard ya mtumiaji.
+- [wu_site_settings] — Inaruhusu kuongeza widgets kwenye mipangilio ya tovuti.
+- [wu_user_settings] — Inaruhusu kuongeza widgets kwenye mipangilio ya mtumiaji.
+- [wu_user_account] — Inaruhusu kuongeza widgets kwenye akaunti ya mtumiaji.
+- [wu_user_billing] — Inaruhusu kuongeza widgets kwenye bili ya mtumiaji.
+- [wu_user_shipping] — Inaruhusu kuongeza widgets kwenye usafirishaji wa mtumiaji.
+- [wu_user_payment] — Inaruhusu kuongeza widgets kwenye malipo ya mtumiaji.
+- [wu_user_address] — Inaruhusu kuongeza widgets kwenye anwani ya mtumiaji.
+- [wu_user_phone] — Inaruhusu kuongeza widgets kwenye namba ya simu ya mtumiaji.
+- [wu_user_email] — Inaruhusu kuongeza widgets kwenye barua pepe ya mtumiaji.
+- [wu_user_name] — Inaruhusu kuongeza widgets kwenye jina la mtumiaji.
+- [wu_user_description] — Inaruhusu kuongeza widgets kwenye maelezo ya mtumiaji.
+- [wu_user_bio] — Inaruhusu kuongeza widgets kwenye wasifu wa mtumiaji.
+- [wu_user_avatar] — Inaruhusu kuongeza widgets kwenye picha ya mtumiaji.
+- [wu_user_picture] — Inaruhusu kuongeza widgets kwenye picha ya mtumiaji.
+- [wu_user_thumbnail] — Inaruhusu kuongeza widgets kwenye picha ndogo ya mtumiaji.
+- [wu_user_avatar_thumbnail] — Inaruhusu kuongeza widgets kwenye picha ndogo ya wasifu wa mtumiaji.
+- [wu_user_avatar_large] — Inaruhusu kuongeza widgets kwenye picha kubwa ya wasifu wa mtumiaji.
+- [wu_user_avatar_medium] — Inaruhusu kuongeza widgets kwenye picha ya wasifu ya wastani.
+- [wu_user_avatar_small] — Inaruhusu kuongeza widgets kwenye picha ndogo ya wasifu.
+- [wu_user_avatar_tiny] — Inaruhusu kuongeza widgets kwenye picha ndogo sana ya wasifu.
+- [wu_user_avatar_icon] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu.
+- [wu_user_avatar_icon_small] — Inaruhusu kuongeza widgets kwenye ikoni ndogo ya wasifu.
+- [wu_user_avatar_icon_medium] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana ya wasifu.
+- [wu_user_avatar_icon_small_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
+- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
+- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
+- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana

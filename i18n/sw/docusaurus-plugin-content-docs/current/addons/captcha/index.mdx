@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Simamisha Bots. Linda Mapato. Bila Maumivu ya Kuweka Mipangilio.**
+
+Unasimamia mtandao wa multisite kwa kutumia namba za anwani tofauti (custom domains)? Unajua maumivu hayo: Google reCAPTCHA na hCaptcha zinakuhitaji urejeshwe *kila namba ya anwani* katika console yao ya kiadmin. Unoongeza tovuti mpya ya mteja? Badilisha mipangilio ya captcha. Unapanga namba ya anwani tofauti? Badilisha tena. Hii haishindikani.
+
+**Ultimate Multisite: Captcha inabadilisha kila kitu.**
+
+## Cap Captcha: Ulinzi wa Kujisimamia ambao Unafanya Kazi
+
+Mtoa huduma wetu mpya wa **Cap Captcha** ni mabadiliko makubwa kwa mitandao ya multisite:
+
+* **Hakuna Mipangilio (Zero Configuration)** — Washa addon na unakuwa ulinzi. Hakuna funguo za API, hakuna akaunti ya Google, hakuna dashboard ya hCaptcha, hakuna orodha ya namba za anwani zilizoidhinishwa.
+* **Inafanya Kazi Kwenye Namba Zote za Anwani Kwenye Otomatiki** — Subdomains, namba za anwani zilizopangwa, namba za anwani za wateja—zote zinalindwa mara moja.
+* **Inajisimamia na Ni Binafsi (Self-Hosted & Private)** — Data yako haitawahi kuondoka kwenye seva yako. Inazingatia kikamilifu GDPR bila kufuatilia kutoka kwa upande wa tatu.
+* **Uthibitisho wa Kufanya Kazi Usioonekana (Invisible Proof-of-Work)** — Watumiaji wanatatua puzzle ya kompyuta nyuma ya pazia. Hakuna kubonyeza bomba la moto, hakuna gridi za picha zinazokera.
+* **Nyenye Uzito Mdogo (Lightweight)** — Ni 20KB tu. Haitaifanya checkout yako ipungue kasi.
+
+## Ulinzi wa Jaribio la Kadi za WooCommerce
+
+Mashambulio ya jaribio la kadi yanagharimu wafanyabiashara mabilioni kila mwaka. Wabaya hutumia bots kuthibitisha kadi za mkopo zilizowibiwa dhidi ya checkout yako ya WooCommerce—wewe unalipa ada za usindikaji, wao wanapata namba za kadi halali.
+
+**Tunalinda mahali ambapo ni muhimu zaidi:**
+
+* **Ulinzi wa API ya Maduka (Store API Protection)** — Inazuia mashambulio ya bots kwenye `/wp-json/wc/store/v1/checkout` ambayo yanapita captcha za kawaida za fomu
+* **Inafaa na Malipo ya PayPal** — Inafanya kazi kwa urahisi na WooCommerce PayPal Payments
+* **Takwimu Halisi (Real-Time Statistics)** — Tazama hasa ni mashambulio ngapi unazuia
+
+## Bado Unahitaji Google reCAPTCHA au hCaptcha?
+
+Tupo na suluhisho. Tunatoa usaidizi kamili kwa:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Badilisha kati ya watoa huduma wowote wakati wowote kutoka kwenye mipangilio ya mtandao wako.
+
+## Imejengwa kwa Ukubwa
+
+* Mipangilio ya mtandao mzima na uwezo wa kubadilisha kwa kila tovuti
+* Dashboard ya takwimu ili kufuatilia ulinzi
+* Viwango vya usalama vinavyoweza kurekebishwa (Haraka, Kati, Zaidi)
+* Inasaidia watengenezaji na ina usanifu wa watoa huduma unaoweza kupanuzwa
+
+## Usakinishaji
+
+1. Pakia `ultimate-multisite-captcha` kwenye saraka yako ya `/wp-content/plugins/`
+2. Washa plugin kwa kiwango cha mtandao (Network Activate)
+3. **Hapo ndipo imekwisha. Ulinzi wako umefanikiwa.**
+
+Cap Captcha inawashwa kiotomatiki—hakuna mipangilio ya kuweka, hakuna funguo za API za kuingiza. Kila sehemu inayoungwa mkono katika mtandao wako mzima inalindwa mara tu unapowasha.
+
+**Hiari:** Ili kutumia Google reCAPTCHA au hCaptcha badala yake, nenda kwenye **Ultimate Multisite → Settings → Captcha** na uchague mtoa huduma wako anayependeza.
+
+## Maswali Yanayoulizwa Mara kwa Mara
+
+## Je, nahitaji kuweka mipangilio yoyote?
+
+Hapana! Cap Captcha inawashwa kiotomatiki unapowasha addon. Mtandao wako mzima unalindwa mara moja—hakuna mipangilio ya kuweka, hakuna funguo za API za kuingiza.
+
+## Je, ninahitaji funguo za API kwa Cap Captcha?
+
+Hapana. Cap Captcha inajisimamia kabisa. Hakuna akaunti za nje, hakuna usajili wa namba za anwani, hakuna maumivu ya mipangilio.
+
+## Je, itapunguza kasi ya checkout yangu?
+
+Cap Captcha ni 20KB tu na inafanya changamoto za uthibitisho wa kazi nyuma ya pazia. Wateja wako hawataona ucheleweshaji wowote.
+
+## Je, inalinda dhidi ya mashambulio ya jaribio la kadi?
+
+Ndiyo! Tofauti na captcha za kawaida ambazo zinalinda tu fomu za HTML, muunganiko wetu wa WooCommerce unashughulikia moja kwa moja na Store API ili kuzuia mashambulio ya bots kwenye kiwango cha API—ambapo mashambulio mengi ya jaribio la kadi hutokea.
+
+## Naweza kutumia watoa huduma tofauti wa captcha kwenye tovuti tofauti?
+
+Mtoa huduma wa captcha huwekwa kwa kiwango cha mtandao mzima, lakini unaweza kurekebisha mipangilio ya ugumu kulingana na mahitaji yako.
+
+## Je, inazingatia GDPR?
+
+Cap Captcha inajisimamia 100% bila data yoyote inayotumwa kwa huduma za nje. Kwa Google reCAPTCHA na hCaptcha, tafadhali zingatia sera zao za faragha husika.
+
+## Kupunguza Kiwango (Rate Limiting)
+
+Ultimate Multisite: Captcha v1.5.0 inatambulisha kipunguza kiwango cha hali ngumu kinacholinda mtandao wako dhidi ya mashambulio ya brute-force na ya jaribio la kadi.
+
+### Inafanya Kazi Vipi
+
+Kipunguza kiwango kinakagua kila ombi la GET na POST kwenye sehemu zilizolindwa na captcha:
+
+* **Sehemu za kuingia kwa WordPress** — wp-login, register, lost-password, comments
+* **Checkout ya WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Mtu anayetembea anapozidi kiwango cha kupunguza, plugin inajibu kwa:
+
+* **Hali ya HTTP 429 (Too Many Requests)**
+* **Header ya Retry-After** inayoonyesha wakati wa kujaribu tena
+* **Usingaji wa kupumzisha kwa utaratibu (Randomised tarpit sleep)** (1–5 sekunde kwa msingi, ikiwa imefungwa kwa 15 sekunde) ili kupunguza kasi ya washambuliaji
+
+### Mipangilio
+
+#### Muda wa Kupumzisha (Tarpit Timing)
+
+Dhibiti ucheleweshaji wa utaratibu unaotumika kwa maombi yaliyopunguzwa kiwango:
+
+* **`cap_rate_limit_tarpit_min`** — Muda wa chini wa kulala kwa sekunde (kiwango: 1)
+* **`cap_rate_limit_tarpit_max`** — Muda wa juu wa kulala kwa sekunde (kiwango: 5, ikiwa imefungwa kwa 15)
+
+Mipangilio hii inapatikana katika **Ultimate Multisite → Settings → Captcha**.
+
+### Uwezo wa Kupanua (Extensibility)
+
+#### Filter ya Orodha Nyeusi ya IP (IP Whitelist Filter)
+
+Toa anwani za IP zinazotegemewa kutoka kwa kupunguza kiwango:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Orodhesha huduma yako ya ufuatiliaji
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Kitendo Kabla ya Kuzuia (Pre-Block Action)
+
+Tekeleza mantiki maalum mara moja kabla ya kuzungusha kizuizi cha kiwango:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Rekodi kizuizi, arifu waadmin, au sasisha takwimu maalum
+    error_log( "Kiwanja cha kiwango kimezua kwa $ip kwenye $surface" );
+}, 10, 2 );
+```
+
+## Kugundua IP ya Mteja na Proxies Zinazotegemewa
+
+Ultimate Multisite: Captcha v1.5.0 inatambulisha utambuzi wa client-IP usio na uwezo wa kuiga (spoof-resistant). Njia ya `Captcha_Core::get_client_ip()` sasa ni chanzo kimoja cha ukweli kwa utambulisho wa IP ya mtumiaji katika:
+
+* Funguo za vikundi vya kupunguza kiwango
+* `remoteip` ya mtoa huduma wa captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hashi za IP za takwimu
+
+### Mfumo wa Uaminifu (Trust Model)
+
+Plugin inamlazimisha ngazi kali ya uaminifu wa IP:
+
+1. **REMOTE_ADDR** — Daima inaminika (IP ya jirani wa moja kwa moja)
+2. **CF-Connecting-IP** — Inathaminiwa tu wakati:
+   - Jirani wa moja kwa moja yuko ndani ya kiwango cha IP cha Cloudflare kilichoendelea
+   - `cap_trust_cloudflare_headers` imewashwa (kiwango: OFF)
+3. **X-Forwarded-For** — Inathaminiwa tu wakati:
+   - Jirani wa moja kwa moja yuko kwenye orodha yako ya proxies zinazotegemewa zilizowekwa na admin
+   - Header inachakatuliwa kutoka upande wa kulia kwenda kushoto, ikipuuza hatua za kuaminika/Cloudflare
+
+### Mipangilio
+
+#### Uaminifu wa Header ya Cloudflare
+
+Washa uaminifu wa header ya `CF-Connecting-IP` ya Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Weka kwenye ON ili kuingia kwenye uaminifu wa `CF-Connecting-IP`
+  - Kiwango cha msingi: OFF (imezimishwa)
+  - Plugin inakuja na nakala ya Cloudflare CIDR
+  - Kiwango cha CIDR kinasasishwa kila wiki kupitia wp-cron
+  - Nakala ya fallback inatumika ikiwa usasishaji unashindikana
+
+#### Mipangilio ya Proxy Zinazotegemewa
+
+Fafanua proxies na load-balancers zako za mbele:
+
+* **`cap_trusted_proxies`** — Textarea ya CIDRs au IP za wazi (moja kwa kila mstari)
+  - Maoni yanaruhusiwa (mistari inayoanza na `#`)
+  - Bila mipangilio hii, `X-Forwarded-For` inapuuza hata wakati kipunguza kiwango kimefunguliwa
+  - Mfano:
+    ```
+    # Load balancer yetu
+    192.0.2.0/24
+
+    # Proxy ya dharura
+    198.51.100.50
+    ```
+
+#### Kugundua Kiotomatiki kwa Kuwasha kwa Mara ya Kwanza
+
+Unapowasha kipunguza kiwango kwa mara ya kwanza, plugin inagundua hali yako inayowezekana ya Cloudflare na proxy na kuonyesha arifa ya "Weka mipangilio iliyogunduliwa kwa kubonyeza mara moja" ya admin.
+
+* Plugin **haina kuandika upya** thamani zako zilizohifadhiwa
+* Ikiwa trafiki inayofuata inadhihirisha kwamba mipangilio yako haifanani tena na uhalisia (k.m., Cloudflare imebadilisha viwango vya CIDR), arifa ya kutolingana ambayo haiwezi kufutishwa inatoa sasisho linalopendekezwa
+
+### Kwa Nini Hii Ni Muhimu
+
+Mfumo kali wa uaminifu wa IP unafunga njia muhimu ya kuiga (spoofing vector): maombi ya moja kwa moja kutoka kwa seva asili yanayobeba header ya `CF-Connecting-IP` iliyoiga hapo awali yalikuwa yamewekwa kwenye vikundi kwa IP iliyoiga badala ya jirani halisi. Hii ni muhimu sana kwa:
+
+* **Kupunguza Kiwango** — Washambuliaji hawawezi kupita mipaka kwa kuiga IP
+* **Takwimu** — Vipimo vyako vya mashambulio vinaonyesha IP halisi za wageni, sio zile zilizogaushiwa
+* **Uthibitisho wa Captcha** — Watoa huduma wanapokea IP halisi ya mgeni kwa tathmini ya hatari

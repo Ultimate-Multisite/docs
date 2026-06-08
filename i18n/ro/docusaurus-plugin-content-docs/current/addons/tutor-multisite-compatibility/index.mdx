@@ -1,0 +1,116 @@
+---
+title: Compatibilitate Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Un plugin WordPress care adaugă soluții de compatibilitate pentru Tutor LMS în mediile multisite.
+
+## Descriere
+
+Acest plugin oferă soluții esențiale de compatibilitate pentru rularea Tutor LMS pe rețelele WordPress multisite. El gestionează înscrierea utilizatorilor, administrarea instructorilor, limitările de cursuri și alte funcționalități specifice mediilor multisite.
+
+## Funcționalități
+
+- **Managementul Tabelelor de Bază de Date**: Detectează și creează automat tabelele lipsă ale Tutor LMS care eșuează din cauza restricțiilor de cheie străină (foreign key constraints) specifice mediilor multisite.
+- **Înscrierea Utilizatorilor Multisite**: Handler-e AJAX personalizate pentru gestionarea înscrierii utilizatorilor pe site-urile din rețea.
+- **Managementul Rolului de Instructor**: Atribuirea și gestionarea automată a rolului de instructor în mediile multisite.
+- **Limitări de Cursuri**: Integrare cu Ultimate Multisite pentru gestionarea limitelor de creare a cursurilor și a funnel-urilor, bazate pe planurile de site.
+- **Vederi Admin Personalizate**: Interfață de listă și management a instructorilor, conștientă de structura multisite.
+- **Instrumente Admin**: Interfață de management al bazei de date pentru administratorii de rețea și de site.
+
+## Cerințe
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (aplicat automat prin antetul `Requires Plugins`)
+- Instalare WordPress Multisite
+- Plugin Ultimate Multisite (pentru funcționalitatea limitărilor de cursuri)
+
+## Instalare
+
+1. Urcați fișierele plugin-ului în directorul `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Asigurați-vă că Tutor LMS este instalat și activat
+3. Activați plugin-ul prin meniul 'Plugins' din WordPress
+4. Plugin-ul va integra automat cu Tutor LMS
+
+## Structura Fișierelor
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Fișierul principal al plugin-ului)
+├── includes/
+│   ├── class-database-manager.php (Crearea și managementul tabelelor de bază de date)
+│   ├── class-admin-interface.php (Interfața admin pentru managementul bazei de date)
+│   ├── class-course-limits.php (Handler-e pentru limitările de cursuri și funnel-uri)
+│   ├── class-instructor-manager.php (Managementul rolului de instructor)
+│   ├── class-ajax-handlers.php (Handler-e AJAX personalizate)
+│   ├── class-query-helper.php (Utilități de interogare a bazei de date)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model pentru utilizatorul multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Lista personalizată de instructori)
+│       └── views/
+│           └── instructors.php (Vizualizarea admin pentru instructori)
+└── README.md
+```
+
+## Funcționalități Mutate de la Plugin-ul MU
+
+Acest plugin conține funcționalități care erau anterior în `wp-content/mu-plugins/daves.php`:
+
+- Limitări de schimbare a statusului cursului
+- Limitări de creare a cursurilor
+- Integrarea și limitările CartFlows
+- Managementul rolului de instructor Tutor
+- Gestionarea înscrierii utilizatorilor multisite
+- Afișarea ID-ului produsului de curs
+
+## Managementul Bazei de Date
+
+### Problema
+
+În mediile WordPress multisite, crearea tabelelor Tutor LMS eșuează pentru tabelele care au restricții de cheie străină către tabela de utilizatori. Acest lucru se întâmplă deoarece:
+
+- Tabelele specifice site-ului folosesc prefixe precum `wp_2_tutor_carts`
+- Cheile străine fac referire la `wp_2_users` (care nu există)
+- Tabela reală de utilizatori este `wp_users` (care este partajată pe întreaga rețea)
+
+### Soluția
+
+Acest plugin face automat următoarele:
+
+1. **Detectează Tabele Lipsă**: Verifică tabelele care nu au reușit să fie create din cauza restricțiilor de cheie străină.
+2. **Creează Tabele cu Referințe Corecte**: Utilizează numele corect al tabelei de utilizatori (`wp_users` în multisite).
+3. **Gestionează Multiple Scenarii**:
+   - Activarea/reactivarea plugin-ului
+   - Crearea unui site nou în rețea
+   - Verificarea manuală a tabelelor prin interfața admin
+
+### Tabelele Afectate
+
+- `tutor_coupon_usages` - Conține o cheie străină către tabela de utilizatori
+- `tutor_carts` - Conține o cheie străină către tabela de utilizatori
+- `tutor_notification_preferences` - Tabela TutorPro cu o cheie străină către tabela de utilizatori
+
+### Interfața Admin
+
+Accesați instrumentele de management al bazei de date la:
+
+- **Admin Rețea**: Settings → Tutor Multisite DB
+- **Admin Site**: Tools → Tutor Multisite DB
+
+Interfața vă permite să:
+- Vizualizați tabelele lipsă pe toate site-urile
+- A activa manual crearea tabelelor
+- Verificați configurația bazei de date
+- Vizualizați informații detaliate de stare
+
+## Suport
+
+Acest plugin este conceput în mod specific pentru platforma KursoPro. Pentru suport tehnic, vă rugăm să contactați echipa de dezvoltare.

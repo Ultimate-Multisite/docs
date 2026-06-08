@@ -1,0 +1,124 @@
+---
+title: Uanachama wa Wateja Wengi
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Utekelezaji wa Wateja Wengi (Multi-Tenancy)
+
+Kugawa subsite (sito za ndani) kwenye seva na hifadhidata tofauti kwa ajili ya ufanisi na usalama.
+
+## Mahitaji
+
+- WordPress 5.3 au zaidi
+- PHP 7.4 au zaidi
+- Plugin ya Ultimate Multisite (inapaswa iwe hai)
+
+## Usakinishaji
+
+1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
+2. Washa plugin kupitia menyu ya 'Plugins' ndani ya WordPress
+3. Weka mipangilio ya addon kwenye kiunganishi cha kiutawala cha mtandao (network admin)
+
+## Uendelezaji
+
+### Kuandaa
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Muundo wa Mradi
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes na sehemu za kuunganisha
+│   ├── class-multisite-ultimate-updater.php  # Handler ya kuweka masasisho
+│   └── class-multi_tenancy-main.php             # Utendaji mkuu
+├── tests/                        # Vipimo vya kitengo (Unit tests)
+│   ├── bootstrap.php            # Bootstrap ya vipimo
+│   ├── class-*-base.php         # Darasa la msingi la vipimo
+│   └── class-*-test.php         # Mifano ya vipimo
+├── views/                       # Faili za muundo (Template files)
+├── assets/                      # Rasilimali zisizo badilika (Static assets)
+│   ├── css/                     # Faili za mitindo (Stylesheets)
+│   ├── js/                      # Faili za JavaScript
+│   └── images/                  # Picha
+├── lang/                        # Faili za lugha
+├── composer.json                # Dependencies za PHP
+├── package.json                 # Dependencies za Node.js
+├── phpunit.xml.dist             # Mipangilio ya PHPUnit
+├── .phpcs.xml.dist              # Mipangilio ya viwango vya msimbo
+└── rector.php                   # Kanuni za kuboresha msimbo
+```
+
+### Upimaji (Testing)
+
+Addon hii inajumuisha mfumo kamili wa upimaji:
+
+- **Unit Tests**: Vipimo vinavyotegemea PHPUnit na seti ya vipimo vya WordPress
+- **Base Test Class**: Inatoa njia za msaada kwa ajili ya matukio ya kawaida ya upimaji
+- **Test Coverage**: Imewekwa kufuatilia ufuatiliaji wa msimbo
+- **Multisite Testing**: Vipimo vinatendeka katika mazingira ya multisite
+
+### Viwango vya Msimbo (Code Standards)
+
+- **WordPress Coding Standards**: Vinatunzwa kupitia PHPCS
+- **PHP 7.4+ Compatibility**: Vipengele vya kisasa vya PHP vinasaudiwa
+- **Static Analysis**: Ujumuishaji wa PHPStan kwa ajili ya kuangalia aina za data (type checking)
+- **Code Modernization**: Kanuni za Rector kwa ajili ya kuboresha PHP
+
+### Mfumo wa Kuunda (Build System)
+
+- **Asset Processing**: Kupunguza ukubwa wa faili za CSS/JS (Minification)
+- **Translation**: Kuunda faili za POT
+- **Packaging**: Kuunda hifadhi kwa ajili ya usambazaji
+- **Development Mode**: Rasilimali zisizopunguzwa kwa ajili ya kuangalia makosa (debugging)
+
+## Utekelezaji (Configuration)
+
+Addon hii inasaidia chaguo mbalimbali za uteuzi ambazo zinaweza kupatikana kupitia kiunganishi cha kiutawala cha mtandao (network admin interface).
+
+## Hooks na Filters
+
+### Actions (Vitendo)
+
+- `ultimate-multisite-addon-template_init` - Inatokea baada ya kuanzishwa kwa addon
+- `ultimate-multisite-addon-template_loaded` - Inatokea baada ya kuingizwa kwa faili zote za addon
+
+### Filters (Vifilta)
+
+- `ultimate-multisite-addon-template_settings` - Kubadilisha mipangilio ya addon
+- `ultimate-multisite-addon-template_enabled` - Kubatilisha hali ya kuwasha/kizima kwa addon
+
+## Leseni
+
+Addon hii inasimamiwa chini ya GPL v3 au baadaye.
+
+## Msaada
+
+Kwa msaada na waraka, tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
+## Historia ya Mabadiliko (Changelog)
+
+- Version 1.0.1 (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kuboresha eneo la maandishi (text domain); kuongeza namba ya toleo.
+
+
+- Version (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kuboresha eneo la maandishi (text domain); kuongeza namba ya toleo.

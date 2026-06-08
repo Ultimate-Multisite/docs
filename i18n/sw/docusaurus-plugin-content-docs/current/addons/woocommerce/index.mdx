@@ -1,0 +1,94 @@
+---
+title: WooCommerce Uunganishaji
+sidebar_position: 1
+_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Uunganishaji wa WooCommerce
+
+Uunganishaji wa WooCommerce unafanya kazi kwa njia inayofanana sana na jinsi Gateway yetu ya Kideli (Manual Gateway) inavyofanya kazi. Unatoa uwezo mkubwa kwa watumiaji wako, ukimruhusu kuchagua aina yoyote ya njia za malipo zilizopo kwenye usakinishaji wako wa WooCommerce. Na ni rahisi: mara tu mzunguko wa malipo wa mtumiaji unapokwisha, usajili wa mtumiaji huwekwa kwenye kusimamishwa. Wakati huo huo, agizo litaundwa kwenye usakinishaji wa WooCommerce kwenye tovuti kuu ya mtandao. Kisha mtumiaji anapokea anwani ya malipo (invoice) kwenye barua pepe yake, ikiwa na kiungo cha kufanya malipo. Baada ya malipo kupokelewa, usajili unarejeshwa.
+
+## Vipengele
+
+- Uunganishaji rahisi kati ya Ultimate Multisite na WooCommerce
+- Njia mbalimbali za malipo zinapatikana
+- Mchakato wa kiotomatiki kabisa kwa kutumia WooCommerce Subscriptions
+
+## Waraka
+
+**Kusakinisha Uunganishaji wa WooCommerce**
+
+**Kuongeza Chaguo zako za Malipo kwa Ultimate Multisite: Uunganishaji wa WooCommerce**
+
+## Usakinishaji
+
+1. Pakia 'ultimate-multisite-woocommerce' kwenye saraka ya '/wp-content/plugins/'
+2. Washa plugin kupitia menyu ya 'Plugins' kwenye WordPress
+3. Fuata Mwongozo wa hatua kwa hatua ili kusakinisha plugin
+
+## Mwongozo wa Matumizi
+
+_**TAARIFA MUHIMU: Makala hii inarejelea toleo la Ultimate Multisite la 2.x.**_
+
+_**TAZAMA:** Ultimate Multisite: WooCommerce Integration inahitaji WooCommerce iwe imewashwa angalau kwenye tovuti yako kuu._
+
+Tunajua kwamba _Stripe_ na _PayPal_ hazipatikani katika nchi zingine, jambo ambalo linapunguza au kizuizi watumiaji wa Ultimate Multisite kutumia plugin yetu kwa ufanisi. Kwa hivyo, tumetengeneza **kiambato (add-on) cha kuunganisha _WooCommerce_**.
+
+_WooCommerce_ ni plugin maarufu sana ya eCommerce. Watu wa maendeleo kote ulimwenguni wameunda viambato vya kuunganisha malango tofauti ya malipo nalo. Tumetumia fursa hii kupanua malango ya malipo unayoweza kutumia katika mfumo wa malipo wa Ultimate Multisite.
+
+## Kuusakinisha
+
+Kwanza, unahitaji kusakinisha kiambato cha WooCommerce Integration ambacho **kina bure kwa watumiaji wenye leseni**. Ili kusakinisha, bonyeza Ultimate Multisite kwenye dashboard yako ya super admin na uchague **Add-ons**.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+Hapa unaweza kupata viambato vyote vya Ultimate Multisite. Bonyeza kiambato cha **Ultimate Multisite: WooCommerce Integration**.
+
+![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+
+Dirisha litafunguka lenye maelezo ya kiambato. Bonyeza tu **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa plugins. Hapa, bonyeza tu **Network Activate** na kiambato cha _WooCommerce_ kitawashwa kwenye mtandao wako.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Baada ya kuwezesha, ikiwa bado hujasakinisha na kuwezesha plugin ya WooCommerce kwenye tovuti yako, **utapokea ukumbusho**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Baada ya kusakinishwa, utaona chaguo la ziada chini ya mipangilio ya malipo ya Ultimate Multisite. Kisha unaweza **kuwezesha** chaguo la _WooCommerce_ kutoka hapo.
+
+![Payment gateway settings](/img/config/settings-payment-gateways.png)
+
+Unaweza kupanga mipangilio ya msingi kama vile jina la kuonyeshwa ambalo litatokea kwenye sehemu ya mbele (front end) na maelekezo ya kuongoza watumiaji wako katika mchakato wao wa malipo (checkout flow). Kisha unaweza kwenda kwenye **mipangilio ya _WooCommerce_ ya tovuti yako kuu** ili kuwezesha na kupanga malango ya malipo unayopendelea kutumia.
+
+## Jinsi ya kusimamia malipo
+
+Uunganishaji wa WooCommerce unafanya kazi kwa njia inayofanana sana na jinsi **Gateway yetu ya Kideli (Manual Gateway)** inavyofanya kazi. Kipungufu ni kwamba kila malipo lazima lipokelewe kwa mikono mwishoni mwa mzunguko wa malipo. Hivi ndivyo mchakato unavyofanya kazi:
+
+  * Mara tu mzunguko wa malipo wa mtumiaji umekwisha, usajili huwekwa **kwenye kusimamishwa**. Wakati huo huo, agizo litaundwa kwenye usakinishaji wa _WooCommerce_ kwenye tovuti kuu ya mtandao wako.
+
+  * Kisha watumiaji wanapokea anwani ya malipo kwenye barua pepe yao, ikiwa na kiungo cha kufanya malipo (kiungo hicho kinaonekana pia kwenye historia yao ya malipo kutoka kwenye dashboard yao ya subsite). Kiungo hicho kinawapelekea mtumiaji kwenye **checkout ya _WooCommerce_**, ambapo watumiaji wataweza kuchagua moja ya **malango ya _WooCommerce_ yanayopatikana** ili kuchakata malipo yao.
+
+  * Baada ya malipo kupokelewa, usajili **unarejeshwa**, malipo hurekodiwa kwenye Ultimate Multisite na agizo linowekwa kuwa limekamilika.
+
+### Kumbukumbu Muhimu:
+
+  * Uwezo wa msingi wa Ultimate Multisite bado unafanya kazi na muunganisho huu. Kwa mfano, **kutoa malipo ya kurudisha (issuing refunds)** kutoka kwenye skrini ya **Subscription Management** kutawasiliana na WooCommerce ili kutoa malipo ya kurudisha kwa kutumia aina ya malipo iliyochaguliwa.
+
+  * Ultimate Multisite: WooCommerce Integration inategemea WP-Cron kufanya kazi. Hii inafanya kazi vizuri sana mara nyingi, lakini ikiwa tovuti ina trafiki ndogo, cron haitawashauri kuangalia matukio yaliyopangwa na tukio linapotea, ambacho kinaweza kusababisha kucheleweshwa kwa utekelezaji.
+
+## Plugin ya Woocommerce Subscriptions
+
+Kuanzisha malipo kwa mikono kila mwezi si jambo bora kwa watumiaji wa mwisho, kwani usajili unatarajiwa kurudiwa kiotomatiki kila mzunguko wa malipo. Kwa hivyo, tumebuni kiambato cha WooCommerce Integration ili **kuunga mkono plugin ya WooCommerce Subscriptions**. Hii itafanya malipo kiotomatiki na kufanya miamala kuwa rahisi kwa watumiaji wako wa mwisho.
+
+Yote unayohitaji kufanya ni **kusakinisha** [plugin ya Woocommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) na kuifanya **iwashwe kwenye tovuti yako kuu**. Kisha rudi kwenye mipangilio ya malipo ya Ultimate Multisite na **wezesha uunganishaji**.
+
+Na ndivyo imekwisha. Watumiaji wako wa mwisho hawatahitaji tena kufanya malipo kwa mikono mwishoni mwa mzunguko wao wa malipo.
+
+Mbali na agizo kuundwa kwenye tovuti yako kuu chini ya _WooCommerce_, pia itaunda usajili kwa kila akaunti.

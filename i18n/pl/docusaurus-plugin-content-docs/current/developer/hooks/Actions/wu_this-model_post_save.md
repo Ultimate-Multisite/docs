@@ -1,0 +1,25 @@
+---
+id: wu_this-model_post_save
+title: 'Action - wu_{$this->model}_post_save'
+sidebar_label: 'wu_{$this->model}_post_save'
+_i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
+---
+# Action: wu_\{$this->model\}_post_save
+
+Wyzwala się po zapisaniu obiektu do bazy danych.
+
+## Parametry
+
+| Name | Type | Description |
+|------|------|-------------|
+| $data | `array` | Dane obiektu, które zostaną zapisane. |
+| $this | `\Base_Model` | Instancja obiektu. |
+| $new | `bool` | Prawda, jeśli obiekt jest nowy. |
+
+### Since
+
+- 2.0.0
+### Source
+
+- Zdefiniowane w [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) w linii 624
+- Zdefiniowane w [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) w linii 1754

@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector för WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM tar med sig AI-inferens direkt i webbläsaren till ditt WordPress multisite-nätverk. Det kör stora språkmodeller helt i webbläsaren med hjälp av WebLLM och MLC-motorn – inga API-nycklar, inga externa anrop och ingen data lämnar användarens enhet.
+
+## Huvudfunktioner
+
+- **Inferens i webbläsaren**: LLM körs lokalt i besökarens webbläsare via WebLLM/MLC – ingen server-GPU krävs
+- **Flytande chattwidget**: Inloggade användare kan ge prompts till webbläsarens LLM direkt från front-end
+- **Statusindikator i admin-fältet**: Realtidsstatus för WebLLM-motorn synlig i WordPress admin-fältet
+- **SharedWorker-körning**: Flera webbläsarflikar delar en GPU-session istället för att konkurrera om GPU-resurser
+- **apiFetch middleware**: WordPress REST-anrop som matchar AI Client SDK-mönstret dirigeras transparent till den lokala WebLLM-mäklaren – inget loopback HTTP-rundtur
+- **Widget-inställningar UI**: Panelinställningar för att slå på/av chattwidgeten och konfigurera auto-prompt-beteendet
+- **IndexedDB-cache**: Nedladdningar av modellvikter överlever CDN-omdirigeringar som bryter standard Cache API-sökväg
+- **wpai filterintegration**: Krokas in i filtret `wpai_preferred_text_models` så att AI Experiments-funktionen dirigeras till webbläsarmotorn när den är konfigurerad
+
+## Krav
+
+- WordPress 5.3 eller högre
+- PHP 7.4 eller högre
+- Ultimate Multisite plugin (aktiverat)
+- En webbläsare med WebGPU-stöd (Chrome 113+, Edge 113+, eller Firefox Nightly med WebGPU aktiverat)
+
+## Installation
+
+1. Ladda upp addon-filerna till din `/wp-content/plugins/` katalog
+2. Aktivera pluginet via menyn 'Plugins' i WordPress
+3. Gå till **Ultimate Multisite → AI Connector** för att konfigurera addon
+
+## Flytande chattwidget
+
+Den flytande chattwidgeten låter vilken inloggad användare som helst interagera med webbläsarens LLM direkt från din front-end, utan att lämna sidan de befinner sig på.
+
+### Vad den gör
+
+När den är aktiverad visas en chattikon i hörnet av varje front-end-sida för inloggade användare. Genom att klicka på ikonen öppnas en chattpanel där användaren kan skriva prompts och få svar från den lokalt körande WebLLM-modellen. Eftersom modellen körs helt i webbläsaren är svaren privata och involverar ingen serverbunden bearbetning.
+
+### Statusindikator i admin-fältet
+
+WordPress admin-fältet inkluderar en statusindikator som visar det aktuella tillståndet för WebLLM-motorn:
+
+| Status | Betydelse |
+|--------|---------|
+| **Loading** | MLC-motorn initialiseras eller laddar ner modellvikter |
+| **Ready** | Modellen är laddad och tillgänglig för inferens |
+| **Idle** | Motorn är laddad, men SharedWorker-fliken är inte aktiv |
+| **Error** | Motorn kunde inte initialiseras – kontrollera webbläsarens konsol för detaljer |
+
+Indikatoren uppdateras i realtid utan att kräva en sidomladdning.
+
+### Hur du aktiverar eller inaktiverar widgeten
+
+1. Gå till **Ultimate Multisite → AI Connector** i nätverksadminen
+2. Hitta panelen **Connector**
+3. Slå på eller av **Enable floating chat widget**
+4. Spara inställningarna
+
+Widgeten kan också aktiveras eller inaktiveras per webbplats från själva webbplatsens admin om nätverksadministratören har gett den behörigheten.
+
+## Widget-inställningar
+
+Panelen Connector i **Ultimate Multisite → AI Connector** innehåller följande inställningar för den flytande chattwidgeten:
+
+### Enable Floating Chat Widget
+
+Slår chattwidgeten på eller av för hela nätverket. När den är inaktiverad visas inte widgeten på någon front-end-sida, oavsett användarroll.
+
+**Standard:** Av
+
+### Auto-Prompt Behaviour
+
+Styr om chattwidgeten automatiskt skickar en prompt när en användare öppnar den.
+
+| Option | Beteende |
+|--------|-----------|
+| **Disabled** | Widgeten öppnas till en tom chatt – användaren skriver sin egen prompt |
+| **Page context** | Widgeten öppnas med en förifylld prompt baserad på den aktuella sidans titel och innehåll |
+| **Custom prompt** | Widgeten öppnas med en anpassad prompt du definierar i fältet nedan |
+
+När det är inställt på **Custom prompt** visas ett extra textfält där du kan ange standardprompttexten. Stöder grundläggande mallvariabler:
+
+- `{site_name}` — namnet på den aktuella webbplatsen
+- `{page_title}` — titeln på den aktuella sidan
+- `{user_display_name}` — inloggad användares visningsnamn
+
+**Standard:** Av
+
+## SharedWorker Runtime
+
+Version 1.1.0 introducerar en SharedWorker-körning för MLC-motorn. Tidigare laddade varje webbläsarflik som använde WebLLM sin egen instans av modellen, vilket konkurrerade om GPU-minne och orsakade prestandaproblem på enheter med begränsat VRAM.
+
+Med SharedWorker-körningen fungerar en flik som motorvärd. Alla andra flikar kommunicerar med den enda instansen via arbetarens meddelandekanal. Resultatet:
+
+- En GPU-session delad mellan alla öppna flikar
+- Snabbare svar när modellen väl är laddad (ingen upprepad initialisering)
+- Lägre toppminnesanvändning på enheten
+
+SharedWorker är osynligt för användarna. Statusindikatorn i admin-fältet återspeglar alltid tillståndet för den delade motorn, inte den enskilda fliken.
+
+## apiFetch Middleware
+
+Addonet installerar en `apiFetch` middleware som fångar upp WordPress REST API-anrop som matchar AI Client SDK-mönstret. Istället för att göra ett loopback HTTP-anrop till servern dirigeras dessa anrop direkt till den lokala WebLLM-mäklaren som körs i SharedWorker.
+
+Detta innebär att plugins och teman som använder standard WordPress `apiFetch` API för att anropa AI-slutpunkter automatiskt kommer att dra nytta av webbläsarmodellen när den är tillgänglig, utan att kräva kodändringar.
+
+## Hooks and Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Registrera WebLLM webbläsarmotorn som en föredragen textmodell. Addonet krockar automatiskt in i detta filter när motorn är konfigurerad och tillgänglig.
+- `ultimate_webllm_widget_enabled` — Överskriver widgetens aktiveringsstatus för en specifik användare eller kontext. Returnera `true` eller `false`.
+- `ultimate_webllm_auto_prompt` — Modifierar auto-prompt-texten innan den skickas till widgeten. Tar emot promptsträngen och det aktuella `WP_Post`-objektet.
+
+## Felsökning
+
+### Chattwidgeten visas inte
+
+- Bekräfta att användaren är inloggad – widgeten visas endast för autentiserade användare
+- Kontrollera att **Enable floating chat widget** är slagit på i Connector-panelen
+- Verifiera att användarens webbläsare stöder WebGPU (se Krav ovan)
+
+### Admin-fältets indikator visar "Error"
+
+Öppna webbläsarens utvecklarkonsol (F12) och leta efter WebLLM-relaterade fel. Vanliga orsaker:
+
+- Webbläsaren stöder inte WebGPU
+- Nedladdning av modellvikter misslyckades – kontrollera nätverksanslutningen och försök rensa IndexedDB-cachen i webbläsarens utvecklarverktyg (Application → IndexedDB)
+- Ett webbläsartillägg blockerar SharedWorker
+
+### Modellvikter laddas ner varje gång
+
+Addonet använder IndexedDB som cache-backend för att säkerställa att modellvikterna överlever CDN-omdirigeringar. Om vikterna laddas ner på nytt vid varje besök, kontrollera att IndexedDB inte rensas av en webbläsarintegritetsinställning eller ett tillägg.
+
+## Changelog
+
+Se [Changelog](./changelog) för hela versionshistoriken.

@@ -1,0 +1,24 @@
+---
+id: wu_rest_delete_item
+title: Filter - wu_rest_delete_item
+sidebar_label: wu_rest_delete_item
+_i18n_hash: ea4a29625c1aef260edc421b300d59cc
+---
+# Filter: wu_rest_delete_item
+
+Filtrerar om det är tillåtet att fortsätta med begäran eller inte.
+
+## Parametrar
+
+| Namn | Typ | Beskrivning |
+|------|------|-------------|
+| $allowed | `bool` | Det initiala returvärdet. |
+| $rest_base | `array` | Entitets-slug. |
+| $this | `\Base_Manager` | Objektinstansen. |
+
+### Sedan
+
+- 2.0.0
+### Källa
+
+Definieras i [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) på rad 440

@@ -1,0 +1,100 @@
+---
+title: Multi-Sieciowy
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Dodatek Ultimate Multisite: Multinetwork rozszerza Twoją platformę Ultimate Multisite o zaawansowaną funkcjonalność wielo-sieciową (multinetwork). Ten dodatek pozwala Twoim klientom kupować i zarządzać całymi sieciami WordPress multisite, a nie tylko pojedynczymi stronami.
+
+## Kluczowe funkcje
+
+* **Provisioning sieci**: Automatyczne tworzenie i konfiguracja kompletnych sieci WordPress multisite dla Twoich klientów.
+* **Szablony sieci**: Pozwala klientom przeglądać, podglądać i wybierać gotowy szablon sieci przed rejestracją.
+* **Zarządzanie siecią**: Pełne możliwości zarządzania środowiskami wielo-sieciowymi.
+* **Izolowane sieci**: Każda sieć klienta działa niezależnie, posiadając własne tabele baz danych i konfigurację.
+* **SSO między sieciami**: Zapewnia klientom płynny dostęp do swoich podsieci za pomocą uwierzytelniania magicznym linkiem (magic-link).
+* **Skalowalna architektura**: Efektywne zarządzanie wieloma sieciami dzięki zoptymalizowanemu przydzielaniu zasobów.
+* **Integracja**: Bezproblemowa integracja z systemami subskrypcji i rozliczeń Ultimate Multisite.
+
+## Przykłady użycia
+
+* **White Label Hosting**: Umożliwienie klientom posiadania własnych, własnych marek sieci multisite.
+* **Rozwiązania dla agencji**: Pozwala agencjom zarządzać wieloma sieciami klientów z jednej platformy.
+* **Wdrożenia korporacyjne**: Wsparcie dużych organizacji o złożonych wymaganiach wielo-sieciowych.
+* **Platformy edukacyjne**: Tworzenie oddzielnych sieci dla różnych szkół lub wydziałów.
+
+## Wymagania
+
+* Ultimate Multisite 2.0.0 lub nowszy
+* Instalacja WordPress Multisite
+* PHP 7.4 lub nowszy
+* MySQL 5.6 lub nowszy
+
+## Instalacja
+
+1. Prześlij pliki plugin do katalogu `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktywuj plugin w sekcji „Plugins” w WordPress.
+3. Skonfiguruj ustawienia wielo-sieciowe w Ultimate Multisite → Settings.
+
+## Szablony sieci
+
+Wersja 1.3.0 dodaje proces odkrywania i wyboru szablonu dla klientów kupujących nowe sieci. Używaj szablonów sieci, gdy chcesz, aby każda nowa sieć klienta zaczynała od przygotowanej struktury, projektu, biblioteki treści lub specyficznej dla branży konfiguracji.
+
+### Podgląd szablonu
+
+Podglądarz szablonów sieci pozwala klientom przeglądać dostępne szablony przed finalizacją zakupu. Każdy szablon można otworzyć w panelu podglądu na żywo, dzięki czemu klienci mogą porównać układy i treści, zanim zdecydują się na zakup sieci.
+
+Użyj podglądacza, aby pomóc klientom:
+
+* Przejrzeć wygląd i strukturę każdego dostępnego szablonu sieci.
+* Porównać wiele szablonów bez opuszczania procesu zakupu.
+* Wybrać szablon, który najlepiej pasuje do ich potrzeb, zanim się zarejestrują.
+
+Pamiętaj, aby nazwy i opisy szablonów były przyjazne dla klienta. Podglądarz jest najbardziej przydatny, gdy klienci rozumieją zamierzone zastosowanie, np. sieci dla agencji, sieci szkolne, sieci franczyzowe lub pakiety white-label hosting.
+
+### Wybór szablonu przy kasie
+
+Wybór szablonu można dodać do procesu checkout/rejestracji jako pole. Po skonfigurowaniu klienci wybierają szablon sieci, który chcą, podczas finalizacji zakupu, a wybrany szablon jest używany, gdy provisionowana jest ich nowa sieć.
+
+Aby używać wybieracza w procesie checkout:
+
+1. Przygotuj sieci, które chcesz zaoferować jako szablony.
+2. Włącz pole wyboru szablonu wielo-sieciowego w odpowiednim formularzu rejestracji lub checkout.
+3. Wybierz, które szablony mają być dostępne dla danego procesu checkout.
+4. Opublikuj proces checkout i przetestuj rejestrację, aby upewnić się, że wybrany szablon jest stosowany do nowej sieci.
+
+Jeśli proces checkout oferuje tylko jeden produkt sieciowy, wybieracz nadal może być przydatny jako etap ułatwiający onboarding. W przypadku lejków wieloplanowych, wyświetl tylko szablony kompatybilne z wybranym produktem lub planem.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO pozwala klientom poruszać się między swoim głównym obszarem konta a podsieciami bez konieczności ponownego ręcznego logowania. Gdy klient klika w link do dostępu między sieciami, Ultimate Multisite generuje magiczny link o ograniczonym czasie ważności i uwierzytelnia klienta w docelowej sieci.
+
+Poprawia to doświadczenie dla klientów, którzy zarządzają więcej niż jedną siecią lub którzy muszą uzyskać dostęp do nowo sklonowanych sieci szablonów natychmiast po zakupie.
+
+Lista kontrolna dla administratora:
+
+* Upewnij się, że dodatek Multinetwork jest aktywny we wszystkich instalacjach WordPress multisite.
+* Upewnij się, że klienci mają prawidłowy dostęp do sieci, zanim zostaną im zaoferowane linki między sieciami.
+* Utrzymuj prawidłową konfigurację domen sieciowych i domen mapowanych, aby magiczne linki kierowały do zamierzonej sieci docelowej.
+* Przetestuj dashboard klienta oraz wszelkie przyciski dostępu po zakończeniu zakupu, po zmianie ustawień sieci, domeny lub checkout.
+
+Magic linki należy traktować jako linki logowania. Są zaprojektowane dla płynnego dostępu klienta i nie powinny być przekazywane ani używane poza zamierzonym sesją.
+
+## Najczęściej zadawane pytania
+
+### Co to jest multinetwork?
+
+Multinetwork to funkcja WordPress, która pozwala uruchomić wiele niezależnych sieci multisite na jednej instalacji WordPress.
+
+### Jak to się różni od zwykłego multisite?
+
+Zwykłe multisite pozwala na wiele stron w ramach jednej sieci. Multinetwork pozwala na wiele sieci, z których każda ma własne strony, a wszystko to w ramach jednej instalacji WordPress.
+
+### Czy wymaga to specjalnej konfiguracji serwera?
+
+Tak, multinetwork wymaga specyficznej konfiguracji i ustawień serwera. Zapoznaj się z dokumentacją, aby uzyskać szczegółowe instrukcje konfiguracji.

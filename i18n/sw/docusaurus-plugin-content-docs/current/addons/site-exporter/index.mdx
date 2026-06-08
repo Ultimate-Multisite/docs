@@ -1,0 +1,99 @@
+---
+title: Mtoanishi wa Tovuti
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Maudhui
+
+Tunatambua haja ya uwezo wa kuhamisha subsites ndani ya mtandao wako kwenda kwenye usakinishaji wa tovuti moja, na kinyume chake, iwapo mteja wako atamaliza kuhamisha tovuti yake. Addon ya Site Exporter na Importer inafanya kazi hii kuwa rahisi. Zana hii inasafirisha na kuingiza tovuti kwa kutumia faili za zip, ambazo pia zinaweza kutumika kama nakala ya dharura (backup).
+
+## Vipengele
+
+* Kusafirisha na Kuingiza Tovuti
+* Kiolesura rahisi kutumia
+* Kuunda nakala ya dharura ya tovuti
+
+## Waraka (Documentation)
+**Jinsi ya Kusafirisha na Kuingiza Tovuti**
+
+## Usakinishaji
+
+1. Pakua **ultimate-multisite-site-exporter** kwenye saraka ya **/wp-content/plugins/**
+2. Washa plugin kupitia menyu ya **Plugins** ndani ya WordPress
+3. Fuata Mwongozo (Wizard) hatua kwa hatua ili kusanisha plugin
+
+## Mwongozo wa Matumizi
+
+Kwa Ultimate Multisite, unaweza kusafirisha tovuti kutoka mtandao wako au kuingiza tovuti kwenye usakinishaji wako wa multisite au wa tovuti moja.
+
+Ili kuanza mchakato, nenda kwenye ukurasa wetu wa add-ons na usakinisha Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Nenda kwenye ukurasa wako wa Plugins na bonyeza **Network Activate** add-on uliouweka hivi karibuni.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Chaguo la **Export & Import** linaweza kupatikana kwenye menyu ya Ultimate Multisite, upande wa kushoto.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Jinsi ya kusafirisha tovuti
+
+Ili kusafirisha tovuti kutoka mtandao wako, nenda kwenye **Export & Import** kwenye menyu ya Ultimate Multisite na, kwenye tab ya **Export Sites**, bonyeza **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Tafuta tovuti unayotaka kusafirisha na uchague vipengele unavyotaka kuyaweka kwenye faili iliyosafirishwa. Unaweza kuweka mandhari (themes), plugins, na uploads. Ikiwa tovuti yako ni kubwa sana, unaweza kuchagua kuendesha mchakato wa usafirishaji kwa background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Bonyeza kitufe cha **Export Site**. Tovuti yako iliyosafirishwa itapatikana kwenye orodha ya **Existing Exports**. Bonyeza kitufe cha **Download ZIP** kupakua faili. ZIP za Export zina `index.php` na `readme.txt` zinazoweza kuanza kazi zenyewe, kwa hivyo zinaweza kusakinishwa kwenye host mpya bila kwanza kusakinisha plugin tofauti ya importer.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Jinsi ya kusafirisha mtandao mzima
+
+Ili kusafirisha subsites zote pamoja, nenda kwenye **Export & Import** kwenye menyu ya Ultimate Multisite na tumia chaguo la **Network Export** kwenye skrini ya usafirishaji. Hati ya archive iliyoundwa inabeba subsites zote katika ZIP moja kwa ajili ya uhamisho wa host, ujenzi wa staging, au nakala za dharura za kiwango cha mtandao.
+
+Usafirishaji wa mtandao unaweza kuwa mkubwa. Uendeshe wakati trafiki ni ndogo na thibitisha kwamba seva ina nafasi ya kutosha kwa ajili ya archive na uploads, plugins, na themes zozote zilizojumuishwa.
+
+## Jinsi ya kuingiza tovuti
+
+Ili kuingiza tovuti, nenda kwenye tab ya **Import a Site** na pakua faili ya .zip ya tovuti unayotaka kuingiza. Unaweza kubadilisha URL kuwa mpya au kuweka URL ya zamani kwa kuacha nafasi tupu. Pia, unaweza kuchagua kisanduku cha kufuta faili ya .zip kutoka kwenye usakinishaji wako baada ya kuingiza. Kisha bonyeza **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Mchakato unaweza kuchukua muda kidogo. Utaona import iliyoendelea kwenye orodha chini ya importer.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Unaweza kusimamisha mchakato kwa kubonyeza **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Baada ya mchakato kukamilika, tovuti yako tayari ipo kwenye mtandao wako.
+
+## Jinsi ya kuingiza tovuti kwenye usakinishaji wa tovuti moja
+
+Ili kuingiza tovuti kwenye usakinishaji wako wa tovuti moja, kwanza usakinisha na uwashe importer kwenye tovuti yako. Unaweza kupata kiungo cha kupakua kwenye tab ya exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Unaweza kupata importer kwenye menyu ya **Tools**, upande wa kushoto, kwenye sehemu ndogo ya **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Pakua faili ya .zip ya tovuti unayotaka kuingiza. Unaweza kubadilisha URL kuwa mpya au kuweka URL ya zamani kwa kuacha nafasi tupu. Pia, unaweza kuchagua kisanduku cha kufuta faili ya .zip kutoka kwenye usakinishaji wako baada ya kuingiza. Kisha bonyeza **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Mchakato unaweza kuchukua muda kidogo. Utaona import iliyoendelea kwenye orodha chini ya importer.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Unaweza kusimamisha mchakato kwa kubonyeza **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+Baada ya mchakato kukamilika, tovuti yako itabadilishwa na tovuti uliyoiingiza hivi karibuni.

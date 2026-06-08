@@ -1,0 +1,124 @@
+---
+title: Jengo la Tovuti la AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Mahitaji (Requirements)
+
+- WordPress 5.3 au zaidi
+- PHP 7.4 au zaidi
+- Plugin ya Ultimate Multisite (iwe imefunguliwa/active)
+
+## Usakinishaji (Installation)
+
+1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
+2. Fungulia plugin kupitia menyu ya 'Plugins' ndani ya WordPress
+3. Sanifisha mipangilio ya addon katika sehemu ya kiadmini ya network (network admin)
+
+## Uendelezaji (Development)
+
+### Kuandaa (Setup)
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Muundo wa Mradi (Project Structure)
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes na sehemu za kuunganisha (includes)
+│   ├── class-multisite-ultimate-updater.php  # Handler ya kusasisha
+│   └── class-ai_site_builder-main.php             # Utendaji mkuu
+├── tests/                        # Vipimo vya unit (Unit tests)
+│   ├── bootstrap.php            # Bootstrap ya vipimo
+│   ├── class-*-base.php         # Class ya msingi ya vipimo
+│   └── class-*-test.php         # Mifano ya vipimo (Test cases)
+├── views/                       # Faili za template
+├── assets/                      # Rasilimali zisizobadilika (Static assets)
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Faili za JavaScript
+│   └── images/                  # Picha
+├── lang/                        # Faili za lugha
+├── composer.json                # Dependencies za PHP
+├── package.json                 # Dependencies za Node.js
+├── phpunit.xml.dist             # Configuration ya PHPUnit
+├── .phpcs.xml.dist              # Configuration ya viwango vya msimbo
+└── rector.php                   # Kanuni za kuboresha msimbo
+```
+
+### Vipimo (Testing)
+
+Addon inajumuisha mfumo kamili wa kufanya vipimo:
+
+- **Unit Tests**: Vipimo vinavyotegemea PHPUnit na seti ya vipimo ya WordPress
+- **Base Test Class**: Inatoa njia za msaada kwa ajili ya matukio ya kawaida ya vipimo
+- **Test Coverage**: Imewekwa kufuatilia ufuatiliaji wa msimbo
+- **Multisite Testing**: Vipimo vinatendeka katika mazingira ya multisite
+
+### Viwango vya Msimbo (Code Standards)
+
+- **WordPress Coding Standards**: Vinatunzwa kupitia PHPCS
+- **PHP 7.4+ Compatibility**: Vipengele vya kisasa vya PHP vinasaudiwa
+- **Static Analysis**: Uunganishaji wa PHPStan kwa ajili ya kuangalia aina za data (type checking)
+- **Code Modernization**: Kanuni za Rector kwa ajili ya kuboresha PHP
+
+### Mfumo wa Kuunda (Build System)
+
+- **Asset Processing**: Kupunguza ukubwa (Minification) kwa faili za CSS/JS
+- **Translation**: Kuunda faili za POT
+- **Packaging**: Kuunda archive kwa ajili ya usambazaji
+- **Development Mode**: Rasilimali zisizopunguzwa ukubwa kwa ajili ya kutatua matatizo (debugging)
+
+## Kuweka Mipangilio (Configuration)
+
+Addon inasaidia chaguo mbalimbali za kuweka mipangilio ambazo zinaweza kufikiwa kupitia kiadmini cha network.
+
+## Hooks na Filters
+
+### Actions (Vitendo)
+
+- `ultimate-multisite-ai-site-builder_init` - Inatokea baada ya kuanzishwa kwa addon
+- `ultimate-multisite-ai-site-builder_loaded` - Inatokea baada ya faili zote za addon kupakiwa
+
+### Filters (Vichujio)
+
+- `ultimate-multisite-ai-site-builder_settings` - Kubadilisha mipangilio ya addon
+- `ultimate-multisite-ai-site-builder_enabled` - Kubatilisha hali ya kuwasha/kizima kwa addon
+
+## Leseni (License)
+
+Addon hii inasimamiwa chini ya GPL v3 au baadaye.
+
+## Msaada (Support)
+
+Kwa msaada na waraka (documentation), tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Version 1.0.1 (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kusasisha eneo la maandishi (text domain); kuongeza namba ya toleo.
+
+
+- Version (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kusasisha eneo la maandishi (text domain); kuongeza namba ya toleo.

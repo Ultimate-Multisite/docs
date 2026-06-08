@@ -1,0 +1,101 @@
+---
+title: Exportator de Site-uri
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Conținut
+
+Înțelegem nevoia de a putea muta sub-site-uri din cadrul rețelei (network) către o singură instalare de site și invers, în cazul în care clientul decide să migreze site-ul său. Addon-ul Site Exporter și Importer face această sarcină mult mai ușoară. Acest instrument exportă și importează site-uri folosind fișiere zip, care pot servi și drept backup.
+
+## Funcționalități
+
+* Exportare și importare site-uri
+
+* Interfață ușor de utilizat
+
+* Creare backup site
+
+## Documentație
+**Cum să exportați și să importați un site**
+
+## Instalare
+
+1. Urcați **ultimate-multisite-site-exporter** în directorul **/wp-content/plugins/**
+2. Activați plugin-ul din meniul **Plugins** din WordPress
+3. Urmați Wizard-ul pas cu pas pentru a configura plugin-ul
+
+## Ghid de utilizare
+
+Cu Ultimate Multisite puteți exporta un site din rețeaua dvs. sau puteți importa un site în instalarea dvs. multisite sau single-site.
+
+Pentru a începe procesul, mergeți la pagina noastră de add-ons și instalați add-on-ul Ultimate Multisite: Site Exporter & Importer.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Mergeți la pagina dvs. Plugins și faceți clic pe **Network Activate** pentru a activa add-on-ul pe care l-ați instalat.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Opțiunea **Export & Import** se găsește în meniul Ultimate Multisite, pe partea stângă.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Cum să exportați un site
+
+Pentru a exporta un site din rețeaua dvs., mergeți la **Export & Import** din meniul Ultimate Multisite și, pe tab-ul **Export Sites**, faceți clic pe **Generate new Site Export**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Căutați site-ul pe care doriți să îl exportați și selectați elementele pe care doriți să le includeți în fișierul exportat. Puteți include teme, plugin-uri și upload-uri. Dacă site-ul este prea mare, puteți alege să rulați procesul de export în fundal.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Faceți clic pe butonul **Export Site**. Site-ul exportat va fi disponibil în lista **Existing Exports**. Faceți clic pe butonul **Download ZIP** pentru a descărca fișierul. ZIP-urile de export includ un `index.php` și un `readme.txt` auto-booting, astfel încât să poată fi instalate pe un host nou fără a instala mai întâi un plugin de importator separat.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Cum să exportați întreaga rețea
+
+Pentru a exporta toate sub-site-urile împreună, mergeți la **Export & Import** din meniul Ultimate Multisite și folosiți opțiunea **Network Export** de pe ecranul de export. Arhivele generate conțin toate sub-site-urile într-un singur ZIP, pentru migrații de host, reconstrucții de staging sau backup-uri la nivel de rețea.
+
+Exporturile la nivel de rețea pot fi mari. Rulați-le când traficul este scăzut și confirmați că serverul are suficient spațiu de stocare pentru arhivă și pentru orice upload-uri, plugin-uri și teme incluse.
+
+## Cum să importați un site
+
+Pentru a importa un site, mergeți la tab-ul **Import a Site** și urcați fișierul .zip al site-ului pe care doriți să îl importați. Puteți modifica URL-ul pentru unul nou sau puteți păstra URL-ul vechi lăsând spațiul gol. De asemenea, puteți bifa căsuța pentru a șterge fișierul .zip din instalarea dvs. după import. Apoi faceți clic pe **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Procesul poate dura puțin timp. Veți vedea un import în așteptare în lista de mai jos, sub importator.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Puteți opri procesul făcând clic pe **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+După ce procesul este finalizat, site-ul dvs. este deja disponibil în rețeaua dvs.
+
+## Cum să importați un site pe o instalare single
+
+Pentru a importa un site pe instalarea single, instalați și activați importatorul pe site-ul dvs. Puteți găsi link-ul pentru descărcarea acestuia pe tab-ul exporter.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Puteți găsi importatorul în meniul **Tools**, pe partea stângă, la subelementul **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Urcați fișierul .zip al site-ului pe care doriți să îl importați. Puteți modifica URL-ul pentru unul nou sau puteți păstra URL-ul vechi lăsând spațiul gol. De asemenea, puteți bifa căsuța pentru a șterge fișierul .zip din instalarea dvs. după import. Apoi faceți clic pe **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Procesul poate dura puțin timp. Veți vedea un import în așteptare în lista de mai jos, sub importator.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Puteți opri procesul făcând clic pe **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+După ce procesul este terminat, site-ul dvs. va fi înlocuit de site-ul pe care l-ați importat.

@@ -1,0 +1,143 @@
+---
+title: Agent AI Gratuit
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent este un asistent AI autonom pentru WordPress care poate planifica, construi și gestiona site-uri web complete de WordPress folosind instrucțiuni în limbaj natural. Acesta expune un set structurat de **abilități** — acțiuni discrete, testabile pe care agentul le poate invoca — acoperind totul, de la gestionarea conținutului până la personalizarea sistemului de design. Versiunea 1.9.0 adaugă abilități de creare a conținutului, revizuirea vizuală a paginilor prin capturi de ecran la client, cinci profiluri de agent încorporate și feature flags pentru controlul accesului și branding.
+
+## Funcționalități Cheie
+
+- **Sistemul de abilități** — un catalog modular și extins de acțiuni pe care agentul le poate invoca pe instalarea dvs. WordPress
+- **Gestionarea Conținutului** — crearea de postări și pagini (inclusiv atribuirea șablonelor de pagină), crearea în masă a mai multor postări dintr-o singură cerere, setarea imaginilor în evidență și construirea de formulare de contact
+- **Revizuire Vizuală** — capturarea de screenshot-uri ale paginilor live, compararea stărilor înainte/după și obținerea unei revizii de design generate de AI, care acoperă layout-ul, tipografia, culoarea și accesibilitatea
+- **Cinci agenți încorporați** — Content Writer, Site Builder, Design Studio, Plugin Manager și Support Assistant; comutabili prin Agent Picker din antetul chat-ului
+- **Feature flags** — comutatoare de control al accesului și branding găsite în Settings → Feature Flags, pentru restricții bazate pe rol, denumiri white-label și personalizarea widget-urilor
+- **Gestionarea Tipurilor de Conținut Personalizate (Custom Post Type)** — înregistrarea, listarea și ștergerea tipurilor de conținut personalizate cu persistență în cazul repornirilor
+- **Gestionarea Taxonomiilor Personalizate (Custom Taxonomy)** — înregistrarea, listarea și ștergerea taxonomiilor personalizate cu persistență
+- **Abilități de Design System** — injectarea de CSS personalizat, gestionarea modelelor de blocuri curate, setarea logo-ului site-ului și aplicarea presetărilor theme.json
+- **Gestionarea Stilurilor Globale** — citirea și scrierea valorilor theme.json pentru palete de culori, tipografie, spațiere și multe altele
+- **Gestionarea Meniului de Navigație** — crearea și actualizarea meniurilor de navigare și a elementelor acestora programatic
+- **Gestionarea Opțiunilor** — citirea și scrierea opțiunilor WordPress cu o listă neagră de siguranță încorporată pentru a proteja setările critice
+- **Registrul Abilităților Instalabile** — descoperirea și activarea unor pachete de abilități suplimentare fără a modifica fișierele core ale plugin-ului
+- **Orchestrarea Site Builder v2** — planuri de construire a site-ului în mai multe etape, cu descoperirea plugin-urilor, urmărirea progresului și recuperarea erorilor
+- **Comanda de benchmark WP-CLI** — rularea suitei de benchmark a capacităților agentului de pe linie de comandă pentru CI și evaluarea modelelor
+
+## Cerințe
+
+- WordPress 6.0 sau mai mare
+- PHP 8.1 sau mai mare
+- WordPress Multisite (activat la nivel de rețea) sau instalare single-site
+- Un plugin conector de AI activ (Anthropic, OpenAI sau compatibil)
+
+## Instalare
+
+1. Urcați fișierele plugin-ului în `/wp-content/plugins/gratis-ai-agent`
+2. Activați plugin-ul prin ecranul **Plugins** din WordPress
+3. Navigați la **Gratis AI Agent → Settings** și conectați furnizorul dvs. AI
+4. (Opțional) Explorați **Abilities Registry** pentru a instala pachete suplimentare de abilități
+
+## Start Rapid
+
+După ce ați activat și conectați la un furnizor AI, deschideți panoul **Gratis AI Agent** în bara laterală a admin-ului WordPress. Introduceți o instrucțiune în limbaj natural și agentul va planifica și executa pașii necesari folosind abilitățile disponibile.
+
+**Exemple de instrucțiuni:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Prezentare Abilități (Abilities Overview)
+
+Abilitățile sunt acțiunile atomice pe care agentul le poate executa. Fiecare abilitate este o clasă PHP înregistrată care expune un schema (parametri și tipuri de returnare) pe care agentul îl citește la rulare. Abilitățile sunt grupate în domenii funcționale:
+
+| Domeniu | Abilități |
+|---|---|
+| **Gestionarea Conținutului** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Revizuire Vizuală** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Tipuri de Conținut Personalizate** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Taxonomii Personalizate** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Stiluri Globale** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Meniuri de Navigație** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Gestionarea Opțiunilor** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Abilități Instalabile** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Vedeți [Abilities Reference](./abilities) pentru documentația completă a parametrilor și exemplele de utilizare.
+
+## WP-CLI
+
+Gratis AI Agent livrează o familie de comenzi `wp gratis-ai-agent` pentru rularea benchmark-urilor și gestionarea abilităților de pe linie de comandă. Vedeți [WP-CLI Reference](./wp-cli) pentru lista completă de comenzi.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configurare
+
+Toate setările se găsesc la **Gratis AI Agent → Settings** în admin-ul WordPress:
+
+| Setare | Descriere |
+|---|---|
+| **AI Provider** | Selectați și configurați conectorul activ de furnizor AI |
+| **Model** | Alegeți modelul lingvistic de utilizat pentru sesiunile agentului |
+| **Max Tokens** | Buget de token pe cerere (implicit 4096) |
+| **Ability Timeout** | Timpul maxim în secunde pe care o abilitate individuală poate rula (implicit 30) |
+| **Debug Logging** | Înregistrează apelurile de abilități și raționamentul agentului în jurnalul de debug WordPress |
+
+## Lista Neagră de Siguranță pentru Gestionarea Opțiunilor
+
+Abilitatea de Management al Opțiunilor include o listă neagră încorporată care împiedică agentul să citească sau să scrie opțiuni WordPress sensibile. Lista neagră implicit acoperă:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (opțiuni URL — folosiți un instrument de migrare dedicat pentru acestea)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (chei secrete)
+- `active_plugins`, `template` (activarea plugin-urilor/temelor — folosiți abilități dedicate)
+- Credențialele și cheile API ale gateway-urilor de plată înregistrate de plugin-uri instalate
+
+Se pot adăuga și alte intrări prin filtrul `gratis_ai_agent_options_blocklist`.
+
+## Hooks și Filtre
+
+### Acțiuni (Actions)
+
+- `gratis_ai_agent_ability_registered` — declanșat după ce o abilitate este înregistrată, primește numele clasei abilității
+- `gratis_ai_agent_plan_started` — declanșat când începe execuția unui plan de site builder
+- `gratis_ai_agent_plan_completed` — declanșat când un plan se finalizează cu succes
+- `gratis_ai_agent_plan_failed` — declanșat când un plan întâmpină o eroare irecuperabilă
+
+### Filtre (Filters)
+
+- `gratis_ai_agent_abilities` — modifică lista de abilități înregistrate înainte ca agentul să o încarce
+- `gratis_ai_agent_options_blocklist` — extinde sau reduce lista neagră de siguranță a opțiunilor
+- `gratis_ai_agent_benchmark_questions` — adaugă întrebări personalizate de benchmark la setul de evaluare
+- `gratis_ai_agent_plan_plugins` — modifică lista de descoperire a plugin-urilor în timpul generării planului de site
+
+## Suport
+
+Pentru suport, vizitați [ultimatemultisite.com](https://ultimatemultisite.com) sau deschideți o problemă în repository-ul plugin-ului.
+
+## Changelog
+
+Vedeți [Changelog](./changelog) pentru istoricul complet al versiunilor.

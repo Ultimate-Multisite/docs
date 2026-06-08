@@ -1,0 +1,116 @@
+---
+title: Tutor Kompatybilność Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Kompatybilność Tutor Multisite
+
+Plugin WordPress, który dodaje poprawki kompatybilności dla Tutor LMS w środowiskach multisite.
+
+## Opis
+
+Ten plugin zapewnia niezbędne poprawki kompatybilności, aby Tutor LMS działał w sieciach WordPress multisite. Obsługuje zarządzanie zapisami użytkowników, zarządzanie instruktorami, ograniczenia kursów i inne funkcjonalności specyficzne dla środowisk multisite.
+
+## Funkcje
+
+- **Zarządzanie tabelami bazy danych**: Automatycznie wykrywa i tworzy brakujące tabele Tutor LMS, które nie mogły zostać utworzone z powodu ograniczeń kluczy obcych multisite.
+- **Zapis użytkowników multisite**: Niestandardowe obsługa AJAX do zarządzania zapisami użytkowników w różnych stronach sieci.
+- **Zarządzanie rolami instruktorów**: Automatyczne przypisywanie i zarządzanie rolami instruktorów w środowiskach multisite.
+- **Ograniczenia kursów**: Integracja z Ultimate Multisite do zarządzania limitami tworzenia kursów i lejków w zależności od planów strony.
+- **Niestandardowe widoki administracyjne**: Interfejs zarządzania i listy instruktorów świadomy środowiska multisite.
+- **Narzędzia administracyjne**: Interfejs zarządzania bazą danych dla administratorów sieci i stron.
+
+## Wymagania
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (automatycznie wymuszane przez nagłówek `Requires Plugins`)
+- Instalacja WordPress Multisite
+- Plugin Ultimate Multisite (dla funkcjonalności ograniczeń kursów)
+
+## Instalacja
+
+1. Prześlij pliki pluginu do katalogu `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Upewnij się, że Tutor LMS jest zainstalowany i aktywowany
+3. Aktywuj plugin w menu 'Plugins' w WordPress
+4. Plugin automatycznie zintegruje się z Tutor LMS
+
+## Struktura plików
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Główny plik pluginu)
+├── includes/
+│   ├── class-database-manager.php (Tworzenie i zarządzanie tabelami bazy danych)
+│   ├── class-admin-interface.php (Interfejs administracyjny do zarządzania bazą danych)
+│   ├── class-course-limits.php (Obsługa ograniczeń kursów i lejków)
+│   ├── class-instructor-manager.php (Zarządzanie rolami instruktorów)
+│   ├── class-ajax-handlers.php (Niestandardowe obsługa AJAX)
+│   ├── class-query-helper.php (Narzędzia zapytań do bazy danych)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model użytkownika multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Niestandardowa lista instruktorów)
+│       └── views/
+│           └── instructors.php (Widok administracyjny instruktorów)
+└── README.md
+```
+
+## Funkcjonalności przeniesione z pluginu MU
+
+Ten plugin zawiera funkcjonalności, które wcześniej znajdowały się w `wp-content/mu-plugins/daves.php`:
+
+- Ograniczenia zmiany statusu kursu
+- Ograniczenia tworzenia kursów
+- Integracja i limity CartFlows
+- Zarządzanie rolami instruktorów Tutor
+- Obsługa zapisów użytkowników multisite
+- Wyświetlanie ID produktu kursu
+
+## Zarządzanie bazą danych
+
+### Problem
+
+W środowiskach WordPress multisite, tworzenie tabel Tutor LMS zawodzi dla tabel z ograniczeniami kluczy obcych do tabeli użytkowników. Dzieje się tak, ponieważ:
+
+- Tabele specyficzne dla strony używają prefiksów takich jak `wp_2_tutor_carts`
+- Klucze obce odwołują się do `wp_2_users` (która nie istnieje)
+- Faktyczna tabela użytkowników to `wp_users` (dzielona przez całą sieć)
+
+### Rozwiązanie
+
+Ten plugin automatycznie:
+
+1. **Wykrywa brakujące tabele**: Sprawdza tabele, które nie mogły zostać utworzone z powodu ograniczeń kluczy obcych.
+2. **Tworzy tabele z poprawnymi odwołaniami**: Używa prawidłowej nazwy tabeli użytkowników (`wp_users` w multisite).
+3. **Obsługuje wiele scenariuszy**:
+   - Aktywacja/reaktywacja pluginu
+   - Tworzenie nowej strony w sieci
+   - Ręczne sprawdzanie tabel przez interfejs administracyjny
+
+### Dotknięte tabele
+
+- `tutor_coupon_usages` - Zawiera klucz obcy do tabeli użytkowników
+- `tutor_carts` - Zawiera klucz obcy do tabeli użytkowników
+- `tutor_notification_preferences` - Tabela TutorPro z kluczem obcym do tabeli użytkowników
+
+### Interfejs administracyjny
+
+Dostęp do narzędzi zarządzania bazą danych:
+
+- **Admin sieci**: Ustawienia → Tutor Multisite DB
+- **Admin strony**: Narzędzia → Tutor Multisite DB
+
+Interfejs pozwala na:
+- Wyświetlanie brakujących tabel we wszystkich stronach
+- Ręczne wyzwolenie tworzenia tabel
+- Sprawdzenie konfiguracji bazy danych
+- Wyświetlanie szczegółowych informacji o statusie
+
+## Wsparcie
+
+Plugin został zaprojektowany specjalnie dla platformy KursoPro. W celu uzyskania wsparcia technicznego, skontaktuj się z zespołem deweloperskim.

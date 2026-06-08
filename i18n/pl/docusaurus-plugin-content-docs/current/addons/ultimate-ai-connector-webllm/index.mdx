@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector dla WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM przenosi wnioskowanie AI (AI inference) natywne dla przeglądarki do Twojej sieci multisite WordPress. Uruchamia duże modele językowe (LLM) całkowicie w przeglądarce, wykorzystując WebLLM i silnik MLC — nie wymaga kluczy API, nie wykonuje wywołań zewnętrznych i nie wysyła danych poza urządzenie użytkownika.
+
+## Kluczowe funkcje
+
+- **Wnioskowanie po stronie przeglądarki (Browser-side inference)**: LLM działa lokalnie w przeglądarce odwiedzającego za pomocą WebLLM/MLC — nie jest wymagany GPU serwera
+- **Pływający widget czatu (Floating chat widget)**: Zalogowani użytkownicy mogą bezpośrednio wysyłać zapytania do LLM po stronie przeglądarki z front endu
+- **Wskaźnik statusu w admin-bar**: Status działania silnika WebLLM w czasie rzeczywistym widoczny w pasku administracyjnym WordPress
+- **SharedWorker runtime**: Wiele zakładek przeglądarki dzieli jedną sesję GPU zamiast konkurować o zasoby GPU
+- **apiFetch middleware**: Żądania WordPress REST pasujące do wzorca AI Client SDK są transparentnie przekierowywane do lokalnego brokera WebLLM — bez pętli HTTP round-trip
+- **UI ustawień widgetu**: Panel ustawień Connectora do włączania/wyłączania widgetu czatu i konfigurowania zachowania automatycznego zapytania (auto-prompt)
+- **Cache IndexedDB**: Pobieranie wag modelu przetrwa przekierowania CDN, które zakłócają domyślną ścieżkę Cache API
+- **Integracja filtra wpai**: Podłącza się do filtra `wpai_preferred_text_models`, dzięki czemu funkcja AI Experiments kieruje do silnika przeglądarki, gdy jest skonfigurowana
+
+## Wymagania
+
+- WordPress 5.3 lub nowszy
+- PHP 7.4 lub nowszy
+- Plugin Ultimate Multisite (aktywny)
+- Przeglądarka z obsługą WebGPU (Chrome 113+, Edge 113+ lub Firefox Nightly z włączonym WebGPU)
+
+## Instalacja
+
+1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
+2. Aktywuj plugin w menu „Plugins” w WordPress
+3. Przejdź do **Ultimate Multisite → AI Connector**, aby skonfigurować dodatek
+
+## Pływający widget czatu
+
+Pływający widget czatu pozwala każdemu zalogowanemu użytkownikowi na interakcję z LLM po stronie przeglądarki bezpośrednio z front endu, bez opuszczania aktualnej strony.
+
+### Co robi
+
+Po włączeniu w rogu każdej strony front-endowej pojawia się ikona czatu dla zalogowanych użytkowników. Kliknięcie ikony otwiera panel czatu, w którym użytkownik może wpisać zapytania i otrzymywać odpowiedzi od lokalnie działającego modelu WebLLM. Ponieważ model działa całkowicie w przeglądarce, odpowiedzi są prywatne i nie wiążą się z żadnym przetwarzaniem po stronie serwera.
+
+### Wskaźnik statusu w admin-bar
+
+Pasek administracyjny WordPress zawiera wskaźnik statusu, który pokazuje aktualny stan silnika WebLLM:
+
+| Status | Znaczenie |
+|--------|---------|
+| **Loading** | Silnik MLC inicjalizuje lub pobiera wagi modelu |
+| **Ready** | Model został załadowany i jest dostępny do wnioskowania |
+| **Idle** | Silnik jest załadowany, ale zakładka SharedWorker nie jest aktywna |
+| **Error** | Silnik nie udało się zainicjalizować — sprawdź konsolę przeglądarki pod kątem szczegółów |
+
+Wskaźnik aktualizuje się w czasie rzeczywistym bez konieczności odświeżania strony.
+
+### Jak włączyć lub wyłączyć widget
+
+1. Przejdź do **Ultimate Multisite → AI Connector** w panelu administracyjnym sieci
+2. Znajdź panel **Connector**
+3. Włącz lub wyłącz przełącznik **Enable floating chat widget**
+4. Zapisz ustawienia
+
+Widget można również włączyć lub wyłączyć dla poszczególnych stron z własnego panelu administracyjnego, jeśli administrator sieci przyznał taką możliwość.
+
+## Ustawienia widgetu
+
+Panel Connector w **Ultimate Multisite → AI Connector** zawiera następujące ustawienia dla pływającego widgetu czatu:
+
+### Enable Floating Chat Widget
+
+Włącza lub wyłącza widget czatu dla całej sieci. Gdy jest wyłączony, widget nie pojawia się na żadnej stronie front-endowej, niezależnie od roli użytkownika.
+
+**Domyślnie:** Wyłączony
+
+### Auto-Prompt Behaviour
+
+Kontroluje, czy widget czatu automatycznie wysyła zapytanie, gdy użytkownik go otwiera.
+
+| Opcja | Zachowanie |
+|--------|-----------|
+| **Disabled** | Widget otwiera się z pustym czatem — użytkownik wpisuje własne zapytanie |
+| **Page context** | Widget otwiera się z wstępnie wypełnionym zapytaniem na podstawie tytułu i treści bieżącej strony |
+| **Custom prompt** | Widget otwiera się z niestandardowym zapytaniem, które definiujesz w polu poniżej |
+
+Ustawienie **Custom prompt** powoduje pojawienie się dodatkowego pola tekstowego, do którego możesz wprowadzić domyślny tekst zapytania. Obsługuje podstawowe zmienne szablonu:
+
+- `{site_name}` — nazwa bieżącej strony
+- `{page_title}` — tytuł bieżącej strony
+- `{user_display_name}` — wyświetlana nazwa zalogowanego użytkownika
+
+**Domyślnie:** Wyłączony
+
+## SharedWorker Runtime
+
+Wersja 1.1.0 wprowadza SharedWorker runtime dla silnika MLC. Wcześniej każda zakładka przeglądarki używająca WebLLM ładowała własną instancję modelu, konkurując o pamięć GPU i powodując problemy z wydajnością na urządzeniach z ograniczoną VRAM.
+
+Dzięki SharedWorker runtime, jedna zakładka działa jako host silnika. Wszystkie inne zakładki komunikują się z tą pojedynczą instancją za pośrednictwem kanału wiadomości pracownika (worker's message channel). Wynik:
+
+- Jedna sesja GPU współdzielona przez wszystkie otwarte zakładki
+- Szybsze odpowiedzi po załadowaniu modelu (brak powtarzającej się inicjalizacji)
+- Niższe szczytowe zużycie pamięci na urządzeniu
+
+SharedWorker jest niewidoczny dla użytkowników. Wskaźnik statusu w admin-bar zawsze odzwierciedla stan współdzielonego silnika, a nie pojedynczej zakładki.
+
+## apiFetch Middleware
+
+Dodatek instaluje middleware `apiFetch`, który przechwytuje żądania WordPress REST API pasujące do wzorca AI Client SDK. Zamiast wysyłać żądanie HTTP pętli zwrotnej do serwera, te żądania są przekierowywane bezpośrednio do lokalnego brokera WebLLM działającego w SharedWorker.
+
+Oznacza to, że pluginy i motywy, które używają standardowego API `apiFetch` WordPress do wywoływania punktów końcowych AI, automatycznie skorzystają z modelu po stronie przeglądarki, gdy będzie dostępny, bez konieczności zmian w kodzie.
+
+## Hooks i Filtry
+
+### Filtry
+
+- `wpai_preferred_text_models` — Rejestruje silnik przeglądarki WebLLM jako preferowany model tekstowy. Dodatek automatycznie podłącza się do tego filtra, gdy silnik jest skonfigurowany i dostępny.
+- `ultimate_webllm_widget_enabled` — Nadpisuje stan włączenia widgetu dla konkretnego użytkownika lub kontekstu. Zwróć `true` lub `false`.
+- `ultimate_webllm_auto_prompt` — Modyfikuje tekst automatycznego zapytania przed wysłaniem go do widgetu. Otrzymuje ciąg zapytania oraz bieżący obiekt `WP_Post`.
+
+## Rozwiązywanie problemów
+
+### Widget czatu nie pojawia się
+
+- Upewnij się, że użytkownik jest zalogowany — widget jest wyświetlany tylko dla uwierzytelnionych użytkowników
+- Sprawdź, czy przełącznik **Enable floating chat widget** jest włączony w panelu Connector
+- Zweryfikuj, czy przeglądarka użytkownika obsługuje WebGPU (patrz Wymagania powyżej)
+
+### Wskaźnik w admin-bar pokazuje „Error”
+
+Otwórz konsolę deweloperską przeglądarki (F12) i poszukaj błędów związanych z WebLLM. Najczęstsze przyczyny:
+
+- Przeglądarka nie obsługuje WebGPU
+- Nie udało się pobrać wag modelu — sprawdź łączność sieciową i spróbuj wyczyścić cache IndexedDB w narzędziach deweloperskich przeglądarki (Application → IndexedDB)
+- Rozszerzenie przeglądarki blokuje SharedWorker
+
+### Wagi modelu pobierane za każdym razem
+
+Dodatek używa IndexedDB jako backendu cache, aby upewnić się, że wagi modelu przetrwają przekierowania CDN. Jeśli wagi są ponownie pobierane przy każdej wizycie, sprawdź, czy IndexedDB nie jest wyczyszczany przez ustawienia prywatności przeglądarki lub rozszerzenie.
+
+## Changelog
+
+Zobacz [Changelog](./changelog) po pełną historię wersji.

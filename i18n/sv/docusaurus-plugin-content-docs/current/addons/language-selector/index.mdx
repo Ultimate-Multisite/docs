@@ -1,0 +1,75 @@
+---
+title: Språkväljare
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Language Selector
+
+Ultimate Multisite: Language Selector vid registrering
+
+Lägg till ett språkvalfält i registreringsflödet.
+
+## Installation
+
+1. Ladda upp 'ultimate-multisite-language-selector' till katalogen '/wp-content/plugins/'
+2. Aktivera pluginet via menyn 'Plugins' i din WordPress Network Admin
+
+## Användningsguide
+
+Med detta gratis tillägg kan du låta dina användare välja vilket språk de vill se på registreringsflödet och på inloggningssidan.
+
+Efter att du har [aktiverat din licens](../../user-guide/getting-started/installing-ultimate-multisite.md) kan du installera de Ultimate Multisite-tillägg som din licens ger dig tillgång till.
+
+Gå till din Ultimate Multisite-inställningssida och klicka sedan på etiketten _Add-ons_ i menyn till vänster.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+_Gå till Add-ons-sidan för att börja installera Language Selector_
+
+Där hittar du alla tillägg vi erbjuder.
+
+Gratis tillägg är tillgängliga för alla våra kunder, oavsett vilket abonnemang de tecknade.
+
+Klicka på knappen _Install it Now!_ under tilläggets miniatyrbild. Aktivera det sedan på Plugins-sidan.
+
+![Add-ons page with install button](/img/admin/addons-page.png)
+
+_Klicka på knappen för att installera tillägget_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_Aktivera det på din Plugins-sida_
+
+Gå nu till Ultimate Multisites Inställningar-meny och välj fliken _Network Settings_. Där, längst ner på sidan, hittar du en ny sektion som heter _Languages_.
+
+![Settings page](/img/config/settings-general.png)
+
+_En helt ny sektion dyker upp!_
+
+Du kan lämna den tom för att visa alla språk som alternativ, eller välja vilka du vill göra tillgängliga. Språken är de du har installerat i din WordPress-uppsättning.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_Lista över språk tillgängliga i denna WP-installation_
+
+Efter att du har sparat ändringarna som du gjort, kommer en rullgardinsmeny med de språk du valde att visas på både inloggningssidan och på registreringsflödet.
+
+![Login and Registration settings](/img/config/settings-login-registration.png)
+
+_Language Selector på inloggningssidan_
+
+![Registration page](/img/config/registration-page.png)
+
+_Language Selector på registreringsflödet_
+
+## Ställa in språket via URL:en
+
+Du kan också ändra sidans språk genom att hoppa över lokalkonfigurationsparametern i URL:en. Om du till exempel vill omdirigera till en registreringssida på italienska, lägg till ?locale=it_IT i URL:en.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Språket måste vara installerat i ditt WordPress-nätverk för att detta ska fungera.

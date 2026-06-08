@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent to autonomiczny asystent AI dla WordPress, który potrafi planować, budować i zarządzać kompletnymi stronami WordPress za pomocą instrukcji w języku naturalnym. Udostępnia ustrukturyzowany zestaw **zdolności** (abilities) — czyli dyskretne, testowalne akcje, które agent może wywołać — obejmujący wszystko, od zarządzania treścią po dostosowywanie systemu projektowego. Wersja 1.9.0 dodaje możliwości tworzenia treści, wizualną recenzję stron na podstawie zrzutów ekranu po stronie klienta, pięć wbudowanych profili agentów oraz flagi funkcji do kontroli dostępu i brandingu.
+
+## Kluczowe funkcje
+
+- **System zdolności (Abilities system)** — modułowy, rozszerzalny katalog akcji, które agent może wywołać w Twojej instalacji WordPress
+- **Zarządzanie treścią (Content Management)** — tworzenie postów i stron (w tym przypisywanie szablonów stron), masowe tworzenie wielu postów w jednym wywołaniu, ustawianie obrazów wyróżniających i budowanie formularzy kontaktowych
+- **Wizualna recenzja (Visual Review)** — przechwytywanie zrzutów ekranu żywych stron, porównywanie stanów „przed/po” oraz otrzymywanie recenzji projektu wygenerowanej przez AI, obejmującej układ, typografię, kolor i dostępność
+- **Pięć wbudowanych agentów** — Content Writer, Site Builder, Design Studio, Plugin Manager i Support Assistant; można je przełączać za pomocą wyboru agenta w nagłówku czatu
+- **Flagi funkcji (Feature flags)** — przełączniki kontroli dostępu i brandingu w Ustawienia → Flagi funkcji (Settings → Feature Flags) do ograniczania ról, nazewnictwa typu white-label i dostosowywania widżetów
+- **Zarządzanie niestandardowymi typami postów (Custom Post Type management)** — rejestrowanie, listowanie i usuwanie niestandardowych typów postów z zachowaniem danych po ponownym uruchomieniu
+- **Zarządzanie niestandardowymi taksonomiami (Custom Taxonomy management)** — rejestrowanie, listowanie i usuwanie niestandardowych taksonomii z zachowaniem danych
+- **Zdolności systemu projektowego (Design System abilities)** — wstrzykiwanie niestandardowego CSS, zarządzanie wyselekcjonowanymi wzorami bloków, ustawianie logo strony i stosowanie presetów theme.json
+- **Zarządzanie globalnymi stylami (Global Styles management)** — odczytywanie i zapisywanie wartości theme.json dla palet kolorów, typografii, odstępów i innych
+- **Zarządzanie menu nawigacyjnymi (Navigation Menu management)** — programowe tworzenie i aktualizowanie menu nawigacyjnych i ich elementów
+- **Zarządzanie opcjami (Options Management)** — odczytywanie i zapisywanie opcji WordPress z wbudowaną listą blokującą bezpieczeństwa, chroniącą krytyczne ustawienia
+- **Rejestr instalowalnych zdolności (Installable Abilities Registry)** — odkrywanie i aktywowanie dodatkowych pakietów zdolności bez modyfikowania plików rdzenia pluginu
+- **Orkiestracja Site Builder v2 (Site Builder Orchestration v2)** — wieloetapowe plany budowy stron z wykrywaniem pluginów, śledzeniem postępów i odzyskiwaniem po błędach
+- **Polecenie benchmarkowe WP-CLI (WP-CLI benchmark command)** — uruchamianie zestawu testów wydajności agenta z linii poleceń do CI i ewaluacji modelu
+
+## Wymagania
+
+- WordPress 6.0 lub nowszy
+- PHP 8.1 lub nowszy
+- WordPress Multisite (aktywny na poziomie sieci) lub instalacja na pojedynczej stronie
+- Aktywny plugin łączący z dostawcą AI (Anthropic, OpenAI lub kompatybilny)
+
+## Instalacja
+
+1. Prześlij pliki pluginu do `/wp-content/plugins/gratis-ai-agent`
+2. Aktywuj plugin na ekranie **Plugins** w WordPress
+3. Przejdź do **Gratis AI Agent → Settings** i połącz swojego dostawcę AI
+4. (Opcjonalnie) Przeglądaj **Abilities Registry**, aby zainstalować dodatkowe pakiety zdolności
+
+## Szybki start
+
+Po aktywacji i połączeniu z dostawcą AI, otwórz panel **Gratis AI Agent** w bocznym pasku administracyjnym WordPress. Wpisz instrukcję w języku naturalnym, a agent zaplanuje i wykona wymagane kroki, używając dostępnych zdolności.
+
+**Przykładowe instrukcje:**
+
+```
+Create a "Portfolio" custom post type with a "Project Category" taxonomy.
+```
+
+```
+Inject a dark-mode colour palette into the theme and set the primary colour to #1a1a2e.
+```
+
+```
+Build a restaurant website with an online menu, booking form, and contact page.
+```
+
+## Przegląd zdolności (Abilities Overview)
+
+Zdolności to atomowe akcje, które agent może wykonać. Każda zdolność to zarejestrowany klasa PHP, która udostępnia schemat (parametry i typy zwracanych danych), który agent odczytuje w czasie działania. Zdolności są pogrupowane według obszarów funkcjonalnych:
+
+| Obszar | Zdolności |
+|---|---|
+| **Zarządzanie treścią** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Wizualna recenzja** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Niestandardowe typy postów** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Niestandardowe taksonomie** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **System projektowy** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globalne style** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menu nawigacyjne** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Zarządzanie opcjami** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Instalowalne zdolności** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Zobacz [Abilities Reference](./abilities), aby zapoznać się z pełną dokumentacją parametrów i przykładami użycia.
+
+## WP-CLI
+
+Gratis AI Agent zawiera rodzinę poleceń `wp gratis-ai-agent` do uruchamiania benchmarków i zarządzania zdolnościami z linii poleceń. Pełną listę poleceń znajdziesz w [WP-CLI Reference](./wp-cli).
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguracja
+
+Wszystkie ustawienia znajdują się w **Gratis AI Agent → Settings** w panelu administracyjnym WordPress:
+
+| Ustawienie | Opis |
+|---|---|
+| **AI Provider** | Wybierz i skonfiguruj aktywny łącznik dostawcy AI |
+| **Model** | Wybierz model językowy do użycia podczas sesji agenta |
+| **Max Tokens** | Budżet tokenów na żądanie (domyślnie 4096) |
+| **Ability Timeout** | Maksymalny czas, przez jaki może działać pojedyncza zdolność (domyślnie 30) |
+| **Debug Logging** | Logowanie wywołań zdolności i rozumowania agenta do dziennika debugowania WordPress |
+
+## Lista blokująca bezpieczeństwa dla zarządzania opcjami
+
+Zdolność Options Management zawiera wbudowaną listę blokującą, która zapobiega odczytywaniu lub zapisywaniu wrażliwych opcji WordPress. Domyślna lista blokująca obejmuje:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (opcje URL — do tych użyj dedykowanego narzędzia migracyjnego)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (sekretne klucze)
+- `active_plugins`, `template` (aktywacja pluginów/motywów — użyj dedykowanych zdolności)
+- Poświadczenia bramki płatniczej i klucze API zarejestrowane przez zainstalowane pluginy
+
+Dodatkowe wpisy można dodać za pomocą filtra `gratis_ai_agent_options_blocklist`.
+
+## Akcje i filtry (Hooks and Filters)
+
+### Akcje (Actions)
+
+- `gratis_ai_agent_ability_registered` — wywoływana po zarejestrowaniu zdolności, otrzymuje nazwę klasy zdolności
+- `gratis_ai_agent_plan_started` — wywoływana, gdy rozpoczyna się wykonanie planu Site Builder
+- `gratis_ai_agent_plan_completed` — wywoływana, gdy plan zakończy się pomyślnie
+- `gratis_ai_agent_plan_failed` — wywoływana, gdy plan napotka nieodwracalny błąd
+
+### Filtry (Filters)
+
+- `gratis_ai_agent_abilities` — modyfikuje zarejestrowaną listę zdolności przed załadowaniem przez agenta
+- `gratis_ai_agent_options_blocklist` — rozszerza lub redukuje listę blokującą bezpieczeństwa opcji
+- `gratis_ai_agent_benchmark_questions` — dodaje niestandardowe pytania benchmarkowe do zestawu ewaluacji
+- `gratis_ai_agent_plan_plugins` — modyfikuje listę wykrywanych pluginów podczas generowania planu strony
+
+## Wsparcie
+
+W celu uzyskania wsparcia odwiedź [ultimatemultisite.com](https://ultimatemultisite.com) lub otwórz zgłoszenie w repozytorium pluginu.
+
+## Historia zmian (Changelog)
+
+Zobacz [Changelog](./changelog), aby zapoznać się z pełną historią wersji.

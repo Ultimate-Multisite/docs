@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector pentru Endpoints Compatibile
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector pentru Endpoints Compatibili
+
+Ultimate AI Connector pentru Endpoints Compatibili integrează API-urile furnizorilor AI compatibile cu OpenAI cu rețeaua dvs. WordPress multisite. Configurați mai mulți furnizori AI — fiecare cu URL-ul propriu de endpoint, cheia API și modelul implicit — și rutează cererile cu un fallback automat atunci când un furnizor nu este disponibil.
+
+## Funcționalități Cheie
+
+- **Suport pentru mai mulți furnizori**: Adăugați mai multe cărți de furnizori AI, fiecare având propriul URL de endpoint, cheie API și model implicit.
+- **Reordonare prin trasare**: Aranjați furnizorii în funcție de prioritate folosind manopera de prindere de pe fiecare carte; cererile folosesc furnizorii în ordine.
+- **Rutare automată cu fallback**: Dacă furnizorul principal nu este disponibil, cererile sunt reîncercate automat cu următorul furnizor configurat.
+- **Configurare per-furnizor**: Fiecare furnizor este configurat independent cu propriile credențiale și selecția de modele.
+- **Interfață de utilizare bazată pe cărți**: Construite pe componentele Card stabile WordPress 6.9+ (CardBody, CardHeader, CardDivider).
+- **Auto-expansiune la adăugare**: Cărțile de furnizori noi se extind automat, astfel încât să puteți completa detaliile imediat.
+- **Evitarea cache-ului scripturilor**: Scripturile furnizorilor își evită cache-ul la actualizarea pluginului pentru a garanta încărcarea celei mai noi versiuni.
+
+## Cerințe
+
+- WordPress 5.3 sau mai nou
+- PHP 7.4 sau mai nou
+- Plugin-ul Ultimate Multisite (activ)
+- Un endpoint API compatibil cu OpenAI (self-hosted sau terță parte)
+
+## Instalare
+
+1. Urcați fișierele addon-ului în directorul dvs. `/wp-content/plugins/`
+2. Activați plugin-ul prin meniul „Plugins” din WordPress
+3. Navigați la **Ultimate Multisite → AI Connector** pentru a configura addon-ul
+
+## Configurare
+
+### Setarea Multi-Furnizori
+
+Ecranul de configurare folosește o aranjare bazată pe cărți, unde fiecare carte reprezintă un furnizor AI. Puteți adăuga câți furnizori doriți.
+
+#### Adăugarea unui Furnizor
+
+1. Mergeți la **Ultimate Multisite → AI Connector** în adminul rețelei.
+2. Faceți clic pe **Add Provider** (Adaugă Furnizor).
+3. Apare și se extinde automat o nouă carte de furnizor.
+4. Completați detaliile furnizorului:
+   - **Provider Name** (Nume Furnizor) — o etichetă pentru identificarea acestui furnizor (ex. "OpenAI", "Mistral", "Local Ollama").
+   - **Endpoint URL** (URL Endpoint) — URL-ul de bază al API-ului compatibil cu OpenAI (ex. `https://api.openai.com/v1`).
+   - **API Key** (Cheie API) — cheia API pentru acest furnizor.
+   - **Default Model** (Model Implicit) — identificatorul modelului de utilizat implicit pentru acest furnizor (ex. `gpt-4o`, `mistral-small`).
+5. Faceți clic pe **Save Settings** (Salvează Setările).
+
+#### Eliminarea unui Furnizor
+
+Faceți clic pe butonul **Remove** (Elimină) de pe orice carte de furnizor pentru a o șterge. Salvați setările pentru a aplica modificarea.
+
+#### Reordonarea Furnizorilor
+
+Trasați manopera de prindere (⣿) de pe partea stângă a oricărei cărți de furnizor pentru a o reordona. Ordinea determină prioritatea fallback-ului: cererile sunt trimise către primul furnizor și se reîncercă cu furnizorii următori dacă o cerere eșuează.
+
+### Rutarea cu Fallback
+
+Când o cerere către furnizorul principal eșuează — din cauza unui timeout, a limitării de rate sau a unei întreruperi de serviciu — connector-ul reîncearcă automat cu următorul furnizor din listă. Acest proces continuă pe lista până când un furnizor reușește sau până când au fost încercate toți furnizorii.
+
+| Scenariu | Comportament |
+|----------|-----------|
+| Furnizorul principal răspunde | Cererea este servită normal |
+| Furnizorul principal eșuează | Cererea este reîncercată cu următorul furnizor |
+| Toți furnizorii eșuează | Se returnează o eroare solicitantului |
+
+Fallback-ul este transparent pentru plugin-ul sau tema care apelează — acestea primesc fie o răspuns de succes, fie o eroare finală, indiferent de câte furnizori au fost încercați.
+
+### Referință Configurare Furnizor
+
+| Câmp | Obligatoriu | Descriere |
+|-------|----------|-------------|
+| Provider Name | Da | Eticheta de afișare pentru acest furnizor |
+| Endpoint URL | Da | URL-ul de bază al API-ului compatibil cu OpenAI |
+| API Key | Da | Cheia de autentificare pentru acest furnizor |
+| Default Model | Da | Identificatorul modelului folosit când nu este specificat un model în cerere |
+
+## Depanare
+
+### Nu sunt listați furnizori
+
+Dacă lista de furnizori este goală după salvare, confirmați că:
+
+- Ați făcut clic pe **Save Settings** (Salvează Setările) după adăugarea furnizorilor.
+- Browser-ul nu a blocat salvarea paginii de setări (verificați consola browser-ului pentru erori JavaScript).
+- Plugin-ul este activ și vă aflați pe ecranul de administrare al rețelei.
+
+### Cererile eșuează pentru toți furnizorii
+
+- Verificați că URL-ul endpoint-ului fiecărui furnizor este accesibil de pe serverul dvs. (nu doar de pe browser-ul dvs.).
+- Asigurați-vă că fiecare cheie API este validă și nu a expirat.
+- Revizuiți statusul limitării de rate și al cotei furnizorului în dashboard-ul acestuia.
+- Activați logarea debug WordPress (`WP_DEBUG_LOG`) pentru a captura mesajele detaliate de eroare de la connector.
+
+### Un furnizor nu este folosit pentru fallback
+
+Reordonarea prin trasare schimbă ordinea fallback-ului. Confirmați că furnizorul pe care vă așteptați să primească cererile de fallback este poziționat corect în listă și că URL-ul endpoint-ului și cheia API sunt corecte.
+
+### Noua carte de furnizor nu se extinde automat
+
+Auto-expansiunea necesită ca JavaScript să fie activat în browser-ul dvs. Dacă cartea nu se extinde la clic, verificați consola browser-ului pentru erori. Conținutul cărții este întotdeauna accesibil făcând clic pe antetul cărții, chiar dacă auto-expansiunea nu se declanșează.
+
+## Changelog
+
+Vedeți [Changelog](./changelog) pentru istoricul complet al versiunilor.

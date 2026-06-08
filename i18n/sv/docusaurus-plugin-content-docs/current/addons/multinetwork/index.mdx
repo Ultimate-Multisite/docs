@@ -1,0 +1,100 @@
+---
+title: Multinätverk
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork-tillägget utökar din Ultimate Multisite-plattform med kraftfull multinetwork-funktionalitet. Detta tillägg gör det möjligt för dina kunder att köpa och hantera hela WordPress multisite-nätverk, inte bara enskilda webbplatser.
+
+## Key Features
+
+* **Network Provisioning**: Skapa och konfigurera automatiskt kompletta WordPress multisite-nätverk för dina kunder
+* **Network Templates**: Låt kunder bläddra, förhandsgranska och välja en förbyggd nätverksmall innan registrering
+* **Network Management**: Fullständig hanteringskapacitet för multinetwork-miljöer
+* **Isolated Networks**: Varje kundnätverk fungerar oberoende med egna databassistabler och konfigurationer
+* **Cross-Network SSO**: Ger kunder sömlig åtkomst till sina undernätverk med magic-link-autentisering
+* **Scalable Architecture**: Hantera flera nätverk effektivt med optimerad resursallokering
+* **Integration**: Integreras sömlöst med Ultimate Multisites prenumerations- och faktureringssystem
+
+## Use Cases
+
+* **White Label Hosting**: Erbjud kunder sina egna varumärkta multisite-nätverk
+* **Agency Solutions**: Gör det möjligt för byråer att hantera flera klientnätverk från en enda plattform
+* **Enterprise Deployments**: Stöd stora organisationer med komplexa flernätverkskrav
+* **Education Platforms**: Skapa separata nätverk för olika skolor eller avdelningar
+
+## Requirements
+
+* Ultimate Multisite 2.0.0 or higher
+* WordPress Multisite installation
+* PHP 7.4 or higher
+* MySQL 5.6 or higher
+
+## Installation
+
+1. Ladda upp plugin-filerna till katalogen `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivera pluginet via fliken 'Plugins' i WordPress
+3. Konfigurera multinetwork-inställningar via Ultimate Multisite → Settings
+
+## Network Templates
+
+Version 1.3.0 lägger till ett flöde för upptäckt och val av mall för kunder som köper nya nätverk. Använd nätverksmallar när du vill att varje nytt kundnätverk ska starta från en förberedd struktur, design, innehållsbibliotek eller branschspecifik uppsättning.
+
+### Template previewer
+
+Nätverksmallförhandsgranskaren låter kunder bläddra bland tillgängliga mallar innan kassan. Varje mall kan öppnas i en live-förhandsgranskningspanel, så att kunder kan jämföra layouter och innehåll innan de köper ett nätverk.
+
+Använd förhandsgranskaren för att hjälpa kunder att:
+
+* Granska utseendet och strukturen för varje tillgänglig nätverksmall
+* Jämföra flera mallar utan att lämna köpförloppet
+* Välja den mall som bäst matchar deras användningsområde innan registrering
+
+Behåll mallnamn och beskrivningar kundvänliga. Förhandsgranskaren är mest användbar när kunderna kan förstå det avsedda användningsområdet, till exempel byrånätverk, skolnätverk, franchinenätverk eller white-label-hosting-paket.
+
+### Template picker at checkout
+
+Mallväljaren kan läggas till i registreringskassaflödet som ett fält. När den är konfigurerad väljer kunderna den nätverksmall de vill ha under kassan, och den valda mallen används när deras nya nätverk skapas.
+
+För att använda väljaren i ett kassaflöde:
+
+1. Förbered de nätverk du vill erbjuda som mallar.
+2. Aktivera fältet för val av Multinetwork-mall i det relevanta registrerings- eller kassaförområdet.
+3. Välj vilka mallar som ska vara tillgängliga för det kassaflödet.
+4. Publicera kassaflödet och testa en registrering för att bekräfta att den valda mallen tillämpas på det nya nätverket.
+
+Om ett kassaflöde endast erbjuder en nätverksprodukt kan väljaren fortfarande vara användbar som ett vägledande onboarding-steg. För flermålsfunnels, visa endast de mallar som är kompatibla med det valda produkten eller planet.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO låter kunder röra sig mellan sitt primära kontoområde och undernätverk utan att behöva logga in manuellt igen. När en kund följer en cross-network-åtkomstlänk genererar Ultimate Multisite en tidsbegränsad magic link och autentiserar kunden till destinationsnätverket.
+
+Detta förbättrar upplevelsen för kunder som hanterar mer än ett nätverk eller som behöver komma åt nyligen klonade mallnätverk direkt efter köp.
+
+Admin checklist:
+
+* Bekräfta att Multinetwork-tillägget är aktivt över hela WordPress multisite-installationen.
+* Se till att kunderna har rätt nätverksåtkomst innan de erbjuds cross-network-länkar.
+* Håll nätverksdomäner och mappade domäner korrekt konfigurerade så att magic links leder till det avsedda destinationsnätverket.
+* Testa kunddashboarden och eventuella åtkomstknappar efter kassan efter ändringar i nätverk, domän eller kassainställningar.
+
+Magic links bör behandlas som inloggningslänkar. De är utformade för sömlig kundåtkomst och får inte vidarebefordras eller återanvändas utanför den avsedda sessionen.
+
+## Frequently Asked Questions
+
+### What is multinetwork?
+
+Multinetwork är en WordPress-funktion som låter dig köra flera oberoende multisite-nätverk på en enda WordPress-installation.
+
+### How is this different from regular multisite?
+
+Ett vanligt multisite tillåter flera webbplatser inom ett nätverk. Multinetwork tillåter flera nätverk, var och en med sina egna webbplatser, allt inom en enda WordPress-installation.
+
+### Does this require special server configuration?
+
+Ja, multinetwork kräver specifik serveruppsättning och konfiguration. Konsultera dokumentationen för detaljerade instruktioner.

@@ -1,0 +1,117 @@
+---
+title: Planuri cu măsurătoare
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Planuri cu Taxare pe Consum" />
+
+# Planuri cu Taxare pe Consum
+
+Addon-ul Ultimate Multisite: Planuri cu Taxare pe Consum vă transformă modul în care facturați clienții, introducând capacități flexibile de taxare bazată pe consum. În loc să folosiți limite stricte care blochează utilizatorii la depășirea acestora, activați taxele pentru utilizarea în exces, care facturează automat clienților utilizarea suplimentară.
+
+## Funcționalități Cheie
+
+* **Taxare pe Consum (Metered Billing)**: Taxați clienții în funcție de utilizarea reală, nu de niveluri fixe
+* **Gestionarea Utilizării în Exces (Overage Management)**: Facturare automată pentru utilizarea care depășește limitele planului
+* **Urmărirea Consumului (Usage Tracking)**: Monitorizați consumul resurselor clienților în timp real
+* **Prețuri Flexibile**: Setați tarife personalizate pentru diferite resurse (stocare, lățime de bandă, site-uri etc.)
+* **Taxare AI Token**: Urmăriți și facturați token-urile de intrare și ieșire pentru utilizarea AI pe subsite-urile clienților
+* **Facturare Automată**: Generați facturi automat atunci când sunt depășite pragurile de utilizare
+* **Raportări de Utilizare**: Analiză și raportare detaliate a utilizării pentru clienți și administratorii de sistem
+
+## Ideal Pentru
+
+* **Furnizori de Găzduire (Hosting Providers)**: Oferiți planuri scalabile care cresc odată cu nevoile clienților
+* **Platforme SaaS**: Facturați în funcție de consumul real al resurselor
+* **Rețele de Agenții**: Modele de prețuri flexibile pentru proiectele clienților
+* **Găzduire Reseller**: Permiteți partenerilor să ofere prețuri bazate pe utilizare
+
+## Cum Funcționează
+
+1. Configurați resursele cu taxare (spațiu pe disc, lățime de bandă, număr de site-uri etc.)
+2. Setați limitele planului de bază și tarifele pentru utilizarea în exces
+3. Sistemul urmărește automat utilizarea în întreaga dumneavoastră rețea
+4. Când clienții depășesc limitele, se calculează taxele pentru utilizarea în exces
+5. Facturile sunt generate automat în baza ciclului de facturare
+6. Clienții își pot vizualiza utilizarea și taxele viitoare în timp real
+
+## Taxare AI Token
+
+Versiunea 1.1.0 adaugă taxarea AI token pentru rețelele care oferă funcționalități AI prin WordPress AI Client SDK. Planurile cu Taxare pe Consum urmărește cererile de generare AI finalizate, înregistrează numărul de token-uri de intrare și ieșire pentru subsite-ul curent și convertesc aceste token-uri în cheltuieli AI facturabile pentru perioada curentă de facturare a clientului.
+
+Folosiți taxarea AI token atunci când doriți să oferiți instrumente AI pe site-urile clienților fără a absorbi costurile imprevizibile ale modelelor. Fiecare solicitare este atribuită subsite-ului, clientului, membretății, furnizorului și modelului, astfel încât administratorii să poată audita utilizarea, iar clienții să vadă cum afectează consumul lor AI contul.
+
+### Configurarea Tarifelor pe Token
+
+Tarifele AI sunt configurate pe model, ca rate separate pentru intrare și ieșire. Ratele se calculează pe 1 milion de token-uri, ceea ce se potrivește cu paginile de prețuri comune ale furnizorilor AI.
+
+1. În zona administratorului rețelei, deschideți **Multisite Ultimate → Settings → Metered Plans**.
+2. Activați taxarea cheltuielilor AI pentru produsul sau membretății care ar trebui să factureze utilizarea AI.
+3. Adăugați intrări de rate pentru modele folosind ID-urile modelelor returnate de connector, cum ar fi `gpt-4o`, `gpt-4o-mini` sau alt identificator de model compatibil cu OpenAI.
+4. Introduceți valorile separate de **Input Rate** și **Output Rate** în moneda site-ului, pentru fiecare 1 milion de token-uri.
+5. Setați alocarea AI inclusă a clientului și comportamentul pentru utilizarea în exces pentru plan.
+
+Când un ID de model exact nu este configurat, Planurile cu Taxare pe Consum pot face potrivirea după prefixul modelului. De exemplu, o rată configurată pentru `claude-sonnet-4` poate fi aplicată ID-urilor de modele temporizate care încep cu acel prefix. Dezvoltatorii pot ajusta și tabela finală a ratelor cu filtru-ul [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Connectoare Suportate pentru AI
+
+Taxarea AI token funcționează cu connectorii care emit evenimente de generare WordPress AI Client SDK și care includ utilizarea token-urilor în metadatele răspunsului. Acesta include familia de connectoare Ultimate Multisite AI documentată aici:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) pentru API-uri compatibile cu OpenAI, incluzând OpenAI, Mistral, gateway-uri compatibile cu Ollama și alte furnizori care expun metadate compatibile de utilizare a token-urilor
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) pentru utilizarea WebLLM nativă în browser, atunci când solicitările sunt direcționate prin fluxul de evenimente AI Client SDK
+* Connectoarele furnizorilor AI folosite de [Gratis AI Agent](../gratis-ai-agent/) atunci când furnizorul selectat raportează numărul de token-uri de prompt și completare prin SDK
+
+Connectorii personalizați pot participa prin declanșarea evenimentelor standard `wp_ai_client_before_generate_result` și `wp_ai_client_after_generate_result` cu metadate despre model, furnizor și utilizarea token-urilor. Setările connectorului sunt impuse de la site-ul principal către subsite-uri, astfel încât site-urile clienților să folosească furnizorii și limitele aprobate la nivel de rețea.
+
+### Utilizarea Contului Clientului
+
+Clienții văd utilizarea AI alături de celelalte resurse cu taxare din zona lor de cont. Coloana AI spend arată totalul perioadei de facturare curent, derivat din token-urile de prompt și completare înregistrate, ratele modelului configurate și orice alocare inclusă în plan.
+
+Dacă un client are o metodă de plată înregistrată, utilizarea care depășește alocarea inclusă este considerată utilizare în exces facturabilă. Dacă planul este configurat pentru o limită strictă și clientul nu are o metodă de plată disponibilă, solicitările AI pot fi blocate odată ce alocarea este atinsă și clientul este solicitat să adauge detalii de plată înainte de a continua.
+
+## Resurse Suportate
+
+* Stocare pe disc
+* Lățime de bandă/Transfer de date
+* Număr de site-uri
+* Număr de utilizatori
+* Utilizarea token-urilor AI și cheltuielile AI
+* Tipuri de resurse personalizate
+
+## Cerințe
+
+* Multisite Ultimate 2.0.0 sau mai nou
+* Instalare WordPress Multisite
+* PHP 7.4 sau mai nou
+
+## Instalare
+
+1. Uploadați fișierele plugin-ului în `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Activați plugin-ul din ecranul 'Plugins' din WordPress
+3. Navigați la Multisite Ultimate → Settings → Metered Plans
+4. Configurați resursele și prețurile cu taxare
+5. Activați taxarea pe consum pentru produsele din editorul de produse
+
+## Întrebări Frecvente
+
+## Ce se întâmplă când un client depășește limita?
+
+În loc să blocheze accesul, sistemul urmărește utilizarea în exces și o adaugă următoarei facturi, în baza ratelor pe care le-ați configurat.
+
+## Pot seta rate diferite pentru utilizarea în exces pentru diferite produse?
+
+Da, fiecare produs poate avea resurse cu taxare unice și prețuri pentru utilizarea în exces.
+
+## Cum sunt informați clienții despre utilizare?
+
+Clienții își pot vizualiza utilizarea curentă în dashboard-ul lor și pot primi notificări opționale când se apropie sau depășește limitele.
+
+## Cum se facturează utilizarea AI token?
+
+Utilizarea AI token se facturează în baza ratelor de intrare și ieșire configurate pentru model, pe 1 milion de token-uri. Planurile cu Taxare pe Consum înmulțește numărul de token-uri de prompt și completare pentru fiecare solicitare cu aceste rate, adaugă rezultatul cheltuielii AI curente a clientului pentru perioada de facturare și aplică alocarea sau regulile de utilizare în exces ale planului.
+
+## Pot folosi totuși limite stricte?
+
+Da, taxarea pe consum este opțională pentru fiecare produs. Puteți combina produsele tradiționale cu limite stricte cu produsele cu taxare pe consum.

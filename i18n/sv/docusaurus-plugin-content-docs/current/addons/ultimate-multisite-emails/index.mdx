@@ -1,0 +1,114 @@
+---
+title: E-postmeddelanden
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-post
+
+Ultimate Multisite: Emails-tillägget låter nätverksägare tillhandahålla och hantera kundernas e-postkonton tillsammans med webbplatser och medlemskap. Version 1.1.0 lägger till hantering av e-postkonton för kunden, webmail single sign-on, stöd för CyberPanel forwarders och förbättringar av provisioneringen vid kassan.
+
+## Huvudfunktioner
+
+* **Widget för e-postkonton:** Kunder kan skapa och hantera e-postkonton från sin kontosida utan att behöva öppna ett supportärende.
+* **Webmail SSO och magiska länkar:** Kunder kan öppna webmail direkt från kontosidan med en-klick-autentisering när provajdören stöder det.
+* **Ändring av lösenord:** Både kunder och administratörer kan uppdatera inkorgslösenord från widgeten för e-posthantering.
+* **Provisionering vid kassan:** Skapandet av kundens e-postkonto kan köras under kassan, så att inkorgen är redo när köpprocessen är klar.
+* **CyberPanel forwarders:** Nätverk som använder CyberPanel kan skapa och hantera e-postforwarders som en del av e-posttjänsten.
+* **Inställningar med provajdörsmedvetenhet:** Inställningssidan filtrerar provajdörer till aktiva, konfigurerade integrationer, så att administratörer bara ser användbara alternativ.
+
+## Krav
+
+* Ultimate Multisite 2.0.0 eller högre
+* WordPress Multisite-installation
+* Minst en konfigurerad e-postprovajdörsintegration
+* Provajdörens API-uppgifter med behörighet att skapa inkorgar, ändra lösenord och utfärda webmail-åtkomstlänkar där det stöds
+
+## Installation
+
+1. Ladda upp plugin-filerna till `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktivera tillägget på nätverksnivå från **Plugins** i WordPress nätverksadmin.
+3. Gå till **Ultimate Multisite** > **Settings** och öppna e-postinställningarna för tillägget.
+4. Aktivera de e-postprovajdörsintegrationer du vill att kunderna ska använda.
+5. Spara inställningarna, och testa sedan kontoskapandet med en icke-produktionskund eller en staging-sida.
+
+## Hantering av kundkonton och e-post
+
+Version 1.1.0 lägger till en widget för e-posthantering på kundkontosidan. Använd den när kunder ska kunna hantera skapandet och underhållet av sin egen inkorg via självbetjäning.
+
+Från kontosidan kan kunder:
+
+1. Visa e-postkonton kopplade till deras nuvarande medlemskap eller webbplats.
+2. Skapa en ny inkorg om deras plan tillåter ytterligare konton.
+3. Ändra lösenordet till en befintlig inkorg.
+4. Öppna stödda webmail-provajder via SSO eller inloggning med magisk länk.
+
+Widgeten använder Ultimate Multisite:s nuvarande system för kontosidan, så åtgärderna är begränsade till den kontokontext kunden tittar på. Detta förhindrar att kunder hanterar e-postkonton som tillhör ett annat medlemskap eller en annan webbplats.
+
+## Webmail SSO och inloggning med magiska länkar
+
+Webmail SSO ger kunderna en direkt åtgärd för **Öppna webmail** från kontosidan. När det stöds av den aktiva provajdören begär tillägget en kortlivad åtkomst-URL och omdirigerar kunden till webmail utan att be dem kopiera inkorgsuppgifter.
+
+Provajdörens beteende kan variera:
+
+* Provajdörer med inbyggda SSO API:er kan skapa en direkt autentiserad webmail-session.
+* Provajdörer med stöd för magiska länkar kan generera en tidsbegränsad inloggningslänk.
+* Provajdörer utan SSO- eller magiska länk-stöd bör fortfarande visa inkorgsdetaljer och åtgärder för lösenordshantering, men ingen en-klick-webmail-knapp.
+
+Aktivera webmail-åtkomst endast för de provajdörer där du har konfigurerat de nödvändiga API-uppgifterna. Om åtgärden saknas för en provajdör, bekräfta först att provajdören är aktiv, konfigurerad och stöder webmail-inloggningslänkar.
+
+## Provisionering vid kassan
+
+Tillägget kan skapa kundens e-postkonton som en del av kassan. Detta är användbart när planen inkluderar en inkorg som standard, eller när kassan samlar in e-postkontodetaljer.
+
+Rekommenderad utrullning:
+
+1. Konfigurera provajdören och planbegränsningarna innan du aktiverar provisionering vid kassan.
+2. Testa ett köp med en staging-produkt och bekräfta att inkorgen skapas efter kassan.
+3. Granska kundkontosidan för att bekräfta att den nya inkorgen visas i e-postwidgeten.
+4. Bekräfta åtgärder för lösenordsändring och webmail innan du aktiverar flödet för produktionsprodukter.
+
+Om provisioneringen misslyckas kan kundkontot och medlemskapet fortfarande existera, men inkorgen kräver administrativ uppföljning. Kontrollera Ultimate Multisite aktivitetsloggar och provajdörens loggar innan du försöker igen.
+
+## CyberPanel E-postforwarders
+
+För nätverk som använder CyberPanel lägger version 1.1.0 till stöd för e-postforwarders. Använd forwarders när kunder behöver adresser som `info@customer-domain.test` för att omdirigera e-post till en annan inkorg utan att skapa en fullständig inkorg.
+
+Innan du erbjuder forwarders, bekräfta att CyberPanel-integrationen är konfigurerad och nåbar. Se guiden [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) för de nödvändiga värd-, användar-, lösenords- och paketkonstanterna.
+
+## Ändringslogg
+
+### Version 1.1.0 - Släppt den 2026-05-05
+
+* Nytt: Webmail SSO och inloggning med magiska länkar — kunder kan komma åt webmail direkt från sitt konto med en-klick-autentisering.
+* Nytt: Funktion för att ändra lösenord lagd till widgeten för e-posthantering.
+* Nytt: Stöd för CyberPanel e-postforwarders.
+* Nytt: Widget för e-posthantering på kundkontosidan för självbetjäning av kontoskapande och hantering.
+* Nytt: Skapande av kundens e-postkonto integrerat i kassaflödet för automatisk provisionering.
+* Fix: Widget-hook på kontosidan uppdaterad för att använda det korrekta UMS registreringsmönstret.
+* Fix: Create Account-formuläret ersatt med vanilla JS och korrekt fullständigt HTML-dokumentutdata.
+* Fix: Widgeten för e-posthantering använder nu UMS currents system för admin-kontosidor.
+* Fix: Admin e-postkontoskapande-formuläret inkluderar lösenordsfält och använder Email_Account_Manager.
+* Fix: Loggspam per begäran borttagen från Email_Account_Manager initialisering.
+* Förbättrat: Inställningssidan filtrerar nu för att endast visa aktiva och konfigurerade e-postprovajdörer.
+
+## Vanliga frågor
+
+## Kan kunder skapa sina egna e-postkonton?
+
+Ja. När widgeten för kundkonton är aktiverad och planen tillåter e-postkonton, kan kunder skapa och hantera sina egna inkorgar från kontosidan.
+
+## Stöder alla provajdörer webmail SSO?
+
+Nej. Stödet för SSO och magiska länkar beror på den aktiva e-postprovajdören. Provajdörer utan ett åtkomstlänk-API kan fortfarande stödja inkorgsskapande och lösenordsändringar.
+
+## Kan administratörer skapa e-postkonton åt kunder?
+
+Ja. Administratörer kan skapa e-postkonton från admin-gränssnittet, inklusive att ställa in det initiala lösenordet vid skapandet av kontot.
+
+## Är forwarders samma sak som inkorgar?
+
+Nej. En inkorg lagrar e-post och har inloggningsuppgifter. En forwarder omdirigerar e-post till en annan adress och tillhandahåller inget separat inkorg.

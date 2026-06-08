@@ -1,0 +1,144 @@
+---
+title: Skapare av administrationssidor
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator
+
+## Innehåll
+Admin Page Creator låter dig enkelt lägga till nya administrationssidor och under-sidor i WordPress-administratörspanelen. Det kan användas för att skapa en välkomstsida eller en handledningssida som fungerar som en landningssida för nya användare. Du kan använda sidbyggare som Beaver Builder, Elementor, Brizy och Oxygen för att designa sidorna utan krångel.
+
+Det erbjuder också stöd för anpassad HTML, CSS och JavaScript, samt åtkomstkontroll baserat på plan och användarroll!
+
+## Funktioner
+* Stöd för anpassad HTML och CSS
+* JavaScript-stöd
+* PHP-innehållsläge
+* Behörigheter baserat på användarroll
+* Stöd för sidbyggare
+
+## Dokumentation
+[Skapa anpassade administrationssidor och under-sidor med Ultimate Multisite: Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Installation
+
+1. Ladda upp **ultimate-multisite-admin-page-creator** till katalogen **/wp-content/plugins/**
+2. Aktivera pluginet via menyn **Plugins** i din WordPress Network Admin
+
+## Guide för användning
+
+Medan WordPress gör det väldigt enkelt att lägga till innehåll på sidorna (front end), kräver det att skapa sidor och under-sidor på administrationssidan (admin side) viss grundläggande kodkunskap. Ultimate Multisite: Admin Page Creator syftar till att föra över samma användarvänlighet som front end till back end av dina nätverkswebbplatser.
+
+## Varför använda Admin Page Creator?
+
+Kanske vill du erbjuda en anpassad sida på dina kunders administrationspanel med handledningar, eller så vill du lägga till en anpassad sida med FAQ och ett kontaktwidget. Möjligheterna är oändliga med Admin Page Creator, och det är vad vi ska utforska i dagens guide.
+
+![Lista över administrationssidor](/img/admin/admin-pages-list.png)
+
+_Nu är det möjligt att skapa en handledningssida med en inbäddad YouTube-spellista!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Här är det slutgiltiga resultatet på användarens Dashboard Panel_
+
+## Skapa din första anpassade administrationssidan
+
+Efter att du har installerat och aktiverat Ultimate Multisite: Admin Page Creator, gå till din nätverksadministratörsmeny och klicka på Admin Pages.
+
+![Lista över anpassade administrationssidor i Network Admin](/img/admin/admin-pages-list.png)
+
+_Lista över anpassade administrationssidor i Network Admin_
+
+Du kommer att se en lista över alla de administrationssidor du hittills har skapat (eftersom det är ditt första besök kommer listan att vara tom). Klicka på **Add new Admin Page**. Du kommer att omdirigeras till redigeraren för administrationssidan.
+
+## Elementen i en anpassad administrationssida
+
+I redigeraren för administrationssidan har du ett antal olika alternativ för att anpassa din sida.
+
+### Sidtitel
+
+Detta är titeln som visas högst upp på sidan, inte etiketten i administrationsmenyn.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Ange en sidtitel_
+
+### Väljare för innehållstyp
+
+Ultimate Multisite: Admin Page Creator ger dig två alternativ när det gäller sidans innehåll: du kan antingen använda WordPress standard WYSIWYG-redigerare eller byta till en HTML-redigerare.
+
+Om du inte är bekant med HTML, håll dig till WordPress standardredigerare. Då kan du redigera sidans innehåll precis som du skulle göra med ett vanligt inlägg eller en sida.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Använda WordPress standard WYSIWYG-redigerare_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Använda HTML-redigeraralternativet, med syntaxmarkering och felvarningar_
+
+## Menyalternativ
+
+Längre över, i meta-rutan för Allmänna alternativ (General Options), kan du konfigurera menytyp, etikett och mycket mer.
+
+### Menutyper
+
+Din nya anpassade administrationssida kan ha två olika menutyper: överordnat menyalternativ och underordnat menyalternativ.
+
+En överordnad meny sida, som namnet antyder, lägger till din nyskapade sida i administrationsmenyn tillsammans med de standard WordPress-sidorna.
+
+Om du väljer överordnat alternativ kan du också välja menyordning och en menyikon.
+
+Om du vill göra denna sida till ett underordnat menyalternativ kan du välja en föräldrasida som denna sida ska kopplas till. Du kan lägga till din anpassade sida till standard WordPress-sidor eller till dina överordnade anpassade administrationssidor.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Anpassa menyalternativet för denna anpassade sidan_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Du kan också lägga till denna sida som ett underordnat menyalternativ till andra menyalternativ, inklusive dina egna överordnade anpassade alternativ._
+
+## Avancerade alternativ
+
+Du bör kunna lägga till alla typer av innehåll i dina anpassade administrationssidor. Det inkluderar CSS-regler och filer, JavaScript och externa bibliotek. Du kan göra detta med fliken Avancerade alternativ (Advanced Options Tab).
+
+### Anpassad CSS
+
+På fliken CSS kan du lägga till din egen anpassade CSS-kod, samt importera CSS-filer från externa platser (som CDN:er, Google Fonts, etc.).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Anpassad CSS stöds också. Du kan också inkludera externa stilfiler!_
+
+### Anpassat JavaScript
+
+Samma gäller för JavaScript. Du kan lägga till externa bibliotek som ska användas i din anpassade JavaScript-kod.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Lägg till din egen JavaScript-kod!_
+
+## Behörigheter
+
+Även i Avancerade alternativ kan du välja vilka underwebbplatser som ska ha tillgång till denna sida. Detta är användbart om du planerar att visa olika exklusivt innehåll till olika planer, till exempel.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Du har total kontroll över var denna sida ska visas_
+
+**Viktigt**: Båda villkoren måste vara uppfyllda för att sidan ska visas. Det innebär att om användaren är en kund på en given plan, men inte har någon av de valda rollerna (eller vice versa), kommer sidan inte att visas på deras panel.
+
+## Aktiv
+
+Om du vill inaktivera en anpassad administrationssida utan att ta bort den eller röra vid behörigheterna, bara avmarkera alternativet Aktiv (Active).
+
+Att inaktivera en överordnad sida kommer automatiskt att inaktivera alla underordnade sidor som är kopplade till den föräldrasidan.
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Det slutgiltiga resultatet på användarpanelet!_

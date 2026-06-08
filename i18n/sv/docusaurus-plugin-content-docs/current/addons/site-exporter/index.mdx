@@ -1,0 +1,101 @@
+---
+title: Site Exporter
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter
+
+## Innehåll
+
+Vi förstår behovet av att kunna flytta underwebbplatser inom ditt nätverk till en enda webbplatsinstallation och vice versa, om din kund bestämmer sig för att migrera sin webbplats. Site Exporter och Importer-addonet gör denna uppgift enklare. Detta verktyg exporterar och importerar webbplatser med hjälp av zip-filer, vilket också kan fungera som en säkerhetskopia.
+
+## Funktioner
+
+* Exportera och importera webbplatser
+
+* Lättanvänt gränssnitt
+
+* Skapa webbplatsbackup
+
+## Dokumentation
+**Hur du exporterar och importerar en webbplats**
+
+## Installation
+
+1. Ladda upp **ultimate-multisite-site-exporter** till katalogen **/wp-content/plugins/**
+2. Aktivera pluginet via menyn **Plugins** i WordPress
+3. Följ guiden steg för steg för att ställa in pluginet
+
+## Användningsguide
+
+Med Ultimate Multisite kan du exportera en webbplats från ditt nätverk eller importera en webbplats till din multisite- eller single-site-installation.
+
+För att starta processen, gå till vår add-ons-sida och installera Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+
+![Add-ons page with install option](/img/admin/addons-page.png)
+
+Gå till din Plugins-sida och klicka på **Network Activate** för add-onet du precis installerat.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+
+Alternativet **Export & Import** hittar du på Ultimate Multisite-menyn, till vänster.
+
+<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+
+## Hur du exporterar en webbplats
+
+För att exportera en webbplats från ditt nätverk, gå till **Export & Import** på Ultimate Multisite-menyn och klicka på **Generate new Site Export** under fliken **Export Sites**.
+
+<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+
+Sök efter den webbplats du vill exportera och välj de objekt du vill inkludera i den exporterade filen. Du kan inkludera teman, plugins och uppladdningar. Om din webbplats är för stor kan du välja att köra exportprocessen i bakgrunden.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+
+Klicka på knappen **Export Site**. Din exporterade webbplats kommer att finnas tillgänglig i listan **Existing Exports**. Klicka på knappen **Download ZIP** för att ladda ner filen. Exporterade ZIP-filer innehåller ett självstartande `index.php` och `readme.txt`, så att de kan installeras på en ny värd utan att först installera ett separat importer-plugin.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+
+## Hur du exporterar hela nätverket
+
+För att exportera alla underwebbplatser tillsammans, gå till **Export & Import** på Ultimate Multisite-menyn och använd alternativet **Network Export** på exportskärmen. Den genererade arkiven innehåller alla underwebbplatser i en enda ZIP-fil för värd-migrationer, staging-återuppbyggnader eller nätverksnivåbackuper.
+
+Nätverks-export kan bli stora. Kör dem när trafiken är låg och bekräfta att servern har tillräckligt med lagringsplats för arkivet och alla inkluderade uppladdningar, plugins och teman.
+
+## Hur du importerar en webbplats
+
+För att importera en webbplats, gå till fliken **Import a Site** och ladda upp .zip-filen av webbplatsen du vill importera. Du kan ändra URL:en till en ny eller behålla den gamla URL:en genom att lämna fältet tomt. Du kan också bocka i rutan för att ta bort .zip-filen från din installation efter importen. Klicka sedan på **Begin Import**.
+
+<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+
+Processen kan ta en stund. Du kommer att se en väntande import i listan under importorn.
+
+<!-- Screenshot unavailable: Pending import in the list below the importer -->
+
+Du kan stoppa processen genom att klicka på **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+När processen är klar är din webbplats redan tillgänglig i ditt nätverk.
+
+## Hur du importerar en webbplats på en enskild installation
+
+För att importera en webbplats till din enskilda installation, installera och aktivera importorn på din webbplats först. Du kan hitta länken för att ladda ner den på exporter-fliken.
+
+<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+
+Du hittar importorn på menyn **Tools**, till vänster, under underobjektet **Export & Import**.
+
+<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+
+Ladda upp .zip-filen av webbplatsen du vill importera. Du kan ändra URL:en till en ny eller behålla den gamla URL:en genom att lämna fältet tomt. Du kan också bocka i rutan för att ta bort .zip-filen från din installation efter importen. Klicka sedan på **Begin Import**.
+
+<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+
+Processen kan ta en stund. Du kommer att se en väntande import i listan under importorn.
+
+<!-- Screenshot unavailable: Single-site pending import in the list -->
+
+Du kan stoppa processen genom att klicka på **Cancel Import**.
+
+<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+
+När processen är klar kommer din webbplats att ersättas av den webbplats du just har importerat.

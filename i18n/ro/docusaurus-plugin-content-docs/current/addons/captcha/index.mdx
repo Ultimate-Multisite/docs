@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Oprește Bot-urile. Protejează Veniturile. Fără Complicări de Configurare.**
+
+Rulezi o rețea multisite cu domenii personalizate? Știi ce înseamnă: Google reCAPTCHA și hCaptcha îți cer să înregistrezi *fiecare singur domeniu* în consola lor de administrare. Adaugi un nou site de client? Actualizezi configurația captcha. Mapezi un domeniu personalizat? Ești nevoit să actualizezi din nou. Nu se termină niciodată.
+
+**Ultimate Multisite: Captcha schimbă totul.**
+
+## Cap Captcha: Protecție Self-Hosted care Funcționează Pur și Simplu
+
+Noul nostru furnizor, **Cap Captcha**, este un schimbător de joc pentru rețelele multisite:
+
+* **Zero Configurare** — Activezi addon-ul și ești protejat. Nicio cheie API, nici cont Google, nici dashboard hCaptcha, nici listă de domenii albe.
+* **Funcționează pe Toate Domeniile Automat** — Subdomenii, domenii mapate, domenii de client—toate sunt protejate instantaneu.
+* **Self-Hosted și Privat** — Datele tale nu părăsesc niciodată serverul tău. Complet conform GDPR, fără urmărire de la terțe părți.
+* **Dovada de Lucru Invizibilă** — Utilizatorii rezolvă o ghicitoare computațională în fundal. Nici așezări de turnuri de pompieri, nici grilă de imagini frustrante.
+* **Ușor** — Doar 20KB. Nu va încetini checkout-ul tău.
+
+## Protecția Împaginilor de Testare cu Carduri WooCommerce
+
+Atacurile de testare cu carduri costă milioane de dolari comercianților în fiecare an. Fraudatorii folosesc bot-uri pentru a valida carduri de credit furate împotriva checkout-ului tău WooCommerce—tu plătești taxele de procesare, iar ei primesc numere de card valide.
+
+**Protejăm acolo unde contează cel mai mult:**
+
+* **Protecția API Store** — Blochează atacurile bot pe `/wp-json/wc/store/v1/checkout` care ocolesc captcha-urile tradiționale de formulare
+* **Compatibil cu Plățile PayPal** — Funcționează perfect cu WooCommerce PayPal Payments
+* **Statistici în Timp Real** — Vezi exact câte atacuri blochezi
+
+## Ai Încă Nevoie de Google reCAPTCHA sau hCaptcha?
+
+Te acoperim. Suport complet pentru:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Comută între furnizori oricând din setările rețelei tale.
+
+## Construcție pentru Scală
+
+* Setări la nivel de rețea cu suprascrieri pe site
+* Dashboard de statistici pentru monitorizarea protecției
+* Niveluri de securitate ajustabile (Rapid, Mediu, Maxim)
+* Prietenos dezvoltatorilor cu o arhitectură de furnizori extinsă
+
+## Instalare
+
+1. Încarcă `ultimate-multisite-captcha` în directorul tău `/wp-content/plugins/`
+2. Activează plugin-ul la nivel de rețea
+3. **Gata. Ești protejat.**
+
+Cap Captcha se activează automat—nu trebuie să configurezi setări, nici să introduci chei API. Fiecare endpoint suportat pe întreaga ta rețea este protejat în momentul activării.
+
+**Opțional:** Pentru a folosi Google reCAPTCHA sau hCaptcha în schimb, navighează la **Ultimate Multisite → Settings → Captcha** și selectează furnizorul preferat.
+
+## Întrebări Frecvente
+
+## Trebuie să configurez ceva?
+
+Nu! Cap Captcha este activat automat când activezi addon-ul. Întreaga ta rețea este protejată imediat—nu trebuie să configurezi setări, nici să introduci chei API.
+
+## Am nevoie de chei API pentru Cap Captcha?
+
+Nu. Cap Captcha este complet self-hosted. Nici conturi externe, nici înregistrări de domenii, nici capcane de configurare.
+
+## Va încetini checkout-ul meu?
+
+Cap Captcha are doar 20KB și rulează ghicitori de dovadă de lucru în fundal. Clienții tăi nu vor observa nicio întârziere.
+
+## Protejează împotriva atacurilor de testare cu carduri?
+
+Da! Spre deosebire de captcha-urile tradiționale care protejează doar formularele HTML, integrarea noastră WooCommerce se conectează direct la Store API pentru a bloca atacurile bot la nivelul API—acolo unde au loc majoritatea atacurilor de testare cu carduri.
+
+## Pot folosi furnizori de captcha diferiți pe site-uri diferite?
+
+Furnizorul de captcha este setat la nivel de rețea, dar poți ajusta setările de dificultate în funcție de nevoile tale.
+
+## Este conform cu GDPR?
+
+Cap Captcha este 100% self-hosted, fără date trimise către servicii externe. Pentru Google reCAPTCHA și hCaptcha, te rugăm să revizuiezi politicile lor de confidențialitate respective.
+
+## Rate Limiting (Limitarea Ratei)
+
+Ultimate Multisite: Captcha v1.5.0 introduce un limitator de rată de oprire forțată care protejează rețeaua ta de atacuri de tip *brute-force* și de testare cu carduri.
+
+### Cum Funcționează
+
+Limitatorul de rată numără fiecare solicitare GET și POST pe suprafețe protejate de captcha:
+
+* **Endpoint-uri de login WordPress** — wp-login, register, lost-password, comments
+* **Checkout WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Când un vizitator depășește limita de rată, plugin-ul răspunde cu:
+
+* Codul de stare **HTTP 429 (Too Many Requests)**
+* Antetul **Retry-After** care indică când poate încerca din nou
+* **Tarpit sleep randomizat** (implicit 1–5 secunde, limitat la 15 secunde) pentru a încetini atacatorii
+
+### Configurarea
+
+#### Timing Tarpit
+
+Controlează întârzierea randomizată aplicată solicitărilor limitate de rată:
+
+* **`cap_rate_limit_tarpit_min`** — Durata minimă de așteptare în secunde (implicit: 1)
+* **`cap_rate_limit_tarpit_max`** — Durata maximă de așteptare în secunde (implicit: 5, limitat la 15)
+
+Aceste setări sunt disponibile în **Ultimate Multisite → Settings → Captcha**.
+
+### Extensibilitate
+
+#### Filtru Whitelist IP
+
+Exemte intervalele IP de încredere de limitarea de rată:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist-uiește serviciul tău de monitorizare
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Acțiune Pre-Blocare
+
+Execută o logică personalizată imediat înainte de trimiterea unei blocări de limită de rată:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Înregistrează blocarea, notifică administratorii sau actualizează metrici personalizate
+    error_log( "Rate limit declanșat pentru $ip pe $surface" );
+}, 10, 2 );
+```
+
+## Detectarea IP-ului Client și Proxy-urile de Încredere
+
+Ultimate Multisite: Captcha v1.5.0 introduce detectarea client-IP rezistentă la *spoofing*. Metoda `Captcha_Core::get_client_ip()` este acum sursa unică de adevăr pentru atribuirea IP-ului vizitatorului în următoarele domenii:
+
+* Cheile de *bucket* de limitare a ratei
+* `remoteip` al furnizorului de captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hash-uri IP de statistici
+
+### Modelul de Încredere
+
+Plugin-ul impune o ierarhie strictă a încrederii IP:
+
+1. **REMOTE_ADDR** — Întotdeauna de încredere (IP-ul vecinului imediat)
+2. **CF-Connecting-IP** — Respectat doar când:
+   - Vecinul imediat se află într-un interval IP Cloudflare curent
+   - `cap_trust_cloudflare_headers` este activat (implicit: OFF)
+3. **X-Forwarded-For** — Respectat doar când:
+   - Vecinul imediat se află în lista ta de proxy-uri de încredere configurate în admin
+   - Antetul este parsat de la dreapta spre stânga, sărit peste hop-urile de încredere/Cloudflare
+
+### Configurarea
+
+#### Încrederea în Antetul Cloudflare
+
+Activează încrederea în antetul `CF-Connecting-IP` al Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Setat pe ON pentru a opta pentru încrederea în `CF-Connecting-IP`
+  - Implicit: OFF (dezactivat)
+  - Plugin-ul vine cu o instantanee Cloudflare CIDR încorporată
+  - Intervalele CIDR sunt reîmprospătate săptămânal prin wp-cron
+  - Se folosește o rezervă încorporată dacă reîmprospătarea eșuează
+
+#### Configurarea Proxy-urilor de Încredere
+
+Definește proxy-urile și load-balancer-ele tale de primă linie:
+
+* **`cap_trusted_proxies`** — Textarea de CIDR-uri sau IP-uri simple (un pe linie)
+  - Sunt permise comentariile (linii care încep cu `#`)
+  - Fără această setare, `X-Forwarded-For` este ignorat chiar și când limitatorul de rată este activat
+  - Exemplu:
+    ```
+    # Load balancer-ul nostru
+    192.0.2.0/24
+
+    # Proxy de rezervă
+    198.51.100.50
+    ```
+
+#### Detectare Auto la Prima Activare
+
+Când activezi pentru prima dată limitatorul de rată, plugin-ul detectează postura ta probabilă Cloudflare și proxy și afișează o notificare în dashboard cu un singur clic: "Aplică setările detectate".
+
+* Plugin-ul **nu suprascrie** valorile salvate de tine
+* Dacă traficul ulterior sugerează că configurația ta nu mai corespunde realității (de exemplu, Cloudflare și-a schimbat intervalele CIDR), apare o notificare de neignorat care sugerează actualizarea recomandată
+
+### De Ce Este Important
+
+Un model strict de încredere IP închide un vector critic de *spoofing*: solicitările directe de la serverul de origine care conțin un antet forjat `CF-Connecting-IP` ar fi fost anterior plasate în *bucket*-ul IP-ului forjat, în loc de vecinul real. Acest lucru este deosebit de important pentru:
+
+* **Limitarea ratei** — Atacatorii nu pot ocoli limitele prin *spoofing* IP-urilor
+* **Statistici** — Metricile tale de atac reflectă IP-urile reale ale vizitatorilor, nu cele forjate
+* **Verificarea Captcha** — Furnizorii primesc IP-ul corect al vizitatorului pentru evaluarea riscului

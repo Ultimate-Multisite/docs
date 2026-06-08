@@ -1,0 +1,117 @@
+---
+title: Multicurrency
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency permite rețelei dvs. să accepte plăți în mai multe monede. Acesta convertesc automat prețurile folosind rate de schimb în timp real sau manuale, vă permite să setați prețuri exacte per produs pentru orice monedă și detectează moneda preferată a fiecărui vizitator prin geolocație — toate gestionate dintr-un singur dashboard de administrare.
+
+## Funcționalități Cheie
+
+- **Conversie automată a ratei de schimb** — prețurile sunt convertite din moneda de bază folosind rate prelevate de la furnizorul ales
+- **Suprascri scrierea prețurilor per produs** — setați prețuri exacte, specifice unei monede, pe orice produs pentru a ocoli conversia automată
+- **Câmp de înregistrare cu selector de monede** — permite clienților să își aleagă moneda preferată în timpul checkout-ului/înregistrării
+- **Multiple furnizori de rate de schimb** — ECB, Frankfurter, Stripe sau rate complet manuale
+- **Detectarea monedei bazată pe geolocație** — selectează automat moneda care corespunde țării vizitatorului
+- **Dashboard de administrare** — gestionați monedele active, ratele de schimb și setările furnizorului dintr-un singur loc
+
+## Cerințe
+
+- Ultimate Multisite 2.0.0 sau mai mare
+- Instalare WordPress Multisite
+- PHP 7.4 sau mai mare
+
+## Instalare
+
+1. Uploadați fișierele plugin-ului în `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Activați plugin-ul prin ecranul **Plugins** din WordPress (Network Activate)
+3. Navigați la **Ultimate Multisite → Multi-Currency** pentru a deschide dashboard-ul de administrare
+4. Adăugați monedele pe care doriți să le acceptați și configurați furnizorul de rate de schimb
+
+## Configurare
+
+### Dashboard-ul de Administrare
+
+Dashboard-ul Multi-Currency (**Ultimate Multisite → Multi-Currency**) este locul central pentru:
+
+- Adăugarea, activarea sau dezactivarea monedelor
+- Alegerea unui furnizor de rate de schimb și actualizarea ratelor la cerere
+- Revizuirea ratelor curente pentru toate monedele active
+- Setarea ratelor manuale atunci când furnizorii automatici nu sunt potriviți
+
+### Furnizori de Rate de Schimb
+
+| Provider | Descriere |
+|---|---|
+| **ECB** | Banca Centrală Europeană — rate zilnice gratuite pentru rețele bazate pe EUR |
+| **Frankfurter** | API oglindă open-source al ECB — gratuit, nu necesită cheie API |
+| **Stripe** | Utilizează ratele FX live ale Stripe — necesită o integrare Stripe activă |
+| **Manual** | Introduceți ratele direct; fără apeluri API externe |
+
+Selectați furnizorul sub **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Ratele pot fi actualizate manual în orice moment sau programate pentru a se actualiza automat.
+
+### Suprascri scrierea prețurilor per produs
+
+Când conversia automată nu este suficient de precisă, puteți seta un preț exact pentru o monedă specifică pe orice produs:
+
+1. Deschideți editorul produsului (**Ultimate Multisite → Products → Edit**)
+2. Derulați până la secțiunea **Currency Pricing**
+3. Introduceți prețul exact pentru fiecare monedă pe care doriți să o suprascrieți
+4. Salvați produsul
+
+Produsele fără suprascriere folosesc prețul convertit din moneda de bază.
+
+### Câmp de înregistrare cu selector de monede
+
+Câmpul selector de monede poate fi adăugat fluxului dvs. de înregistrare/checkout, astfel încât clienții să își aleagă moneda preferată la înregistrare:
+
+1. Mergeți la **Ultimate Multisite → Multi-Currency → Settings**
+2. Activați **Show currency selector on signup**
+3. Opțional, setați o monedă implicită sau lăsați geolocația să determine valoarea preselectată
+
+Moneda selectată este stocată împreună cu abonamentul și folosită pentru toate facturările ulterioare.
+
+### Detectarea monedei bazată pe geolocație
+
+Când detectarea geolocației este activată, addon-ul mapează țara vizitatorului la o monedă și o selectează preselectat în câmpul selector de monede. Pentru a activa:
+
+1. Mergeți la **Ultimate Multisite → Multi-Currency → Settings**
+2. Activați **Detect currency from visitor location**
+3. Mappați țările la monede în tabela **Geolocation Mapping**
+
+Dacă nu există o mapare pentru țara vizitatorului, se folosește moneda de bază a rețelei ca fallback.
+
+## Întrebări Frecvente
+
+### Ce se întâmplă dacă un furnizor de rate de schimb nu este disponibil?
+
+Addon-ul revine la ultimele rate prelevate cu succes. Dacă nu au fost prelevate rate niciodată, revine la ratele manuale pe care le-ați configurat. Este recomandat să configurați ratele manuale ca măsură de siguranță.
+
+### Pot folosi furnizori diferiți pentru monede diferite?
+
+Nu — un singur furnizor este activ în orice moment pentru toate monedele. Folosiți **Manual** dacă aveți nevoie de control complet asupra ratelor individuale.
+
+### Geolocația necesită un plugin separat?
+
+Nu este necesar un plugin extern de geolocație. Addon-ul folosește detectarea IP-la-țară încorporată în WordPress. Pentru o precizie mai mare, o serviciu dedicat de geolocație poate fi integrat prin hook-urile de filtrare furnizate.
+
+### Suprascrierile per produs se aplică înainte sau după taxă?
+
+Suprascrierile per produs setează prețul înainte de taxă în moneda țintă. Taxa este calculată peste prețul de suprascriere, folosind configurarea dvs. existentă a taxelor.
+
+## Changelog
+
+### Versiunea 1.0.0 — Lansat pe 2026-04-02
+
+- Nou: Suport multi-monedă cu conversie automată a ratei de schimb
+- Nou: Suprascrieri per produs pentru prețuri exacte, specifice unei monede
+- Nou: Câmp de înregistrare cu selector de monede pentru fluxul de checkout
+- Nou: Furnizori de rate de schimb: ECB, Frankfurter, Stripe și manual
+- Nou: Detectare a monedei bazată pe geolocație
+- Nou: Dashboard de administrare pentru gestionarea monedelor și ratei de schimb
+- Fix: Dashboardul afișează întotdeauna prețurile în moneda de bază, indiferent de moneda selectată

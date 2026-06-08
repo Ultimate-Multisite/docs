@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector kwa WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM huleta uwezo wa kufanya uchanganuzi wa AI moja kwa moja kwenye kivinjari (browser-native AI inference) kwenye mtandao wako wa WordPress multisite. Huendesha mifumo mikubwa ya lugha (LLMs) kabisa ndani ya kivinjari kwa kutumia WebLLM na injini ya MLC — hakuna funguo za API, hakuna wito wa nje, na hakuna data inayotoka kwenye kifaa cha mtumiaji.
+
+## Vipengele Muhimu
+
+- **Uchanganuzi kwenye kivinjari (Browser-side inference)**: LLM inatembea ndani ya kivinjari cha mtumiaji kupitia WebLLM/MLC — haihitaji GPU ya seva
+- **Kidoko cha mazungumzo kinachotoka (Floating chat widget)**: Watumiaji walio kuingia wanaweza kuomba (prompt) LLM ya kivinjari moja kwa moja kutoka kwenye ukurasa mkuu (front end)
+- **Kiashiria cha hali kwenye admin-bar**: Hali halisi ya injini ya WebLLM inaonekana kwenye admin bar ya WordPress
+- **SharedWorker runtime**: Tab nyingi za kivinjari hughawazana na kikao kimoja cha GPU badala ya kupigana kwa rasilimali za GPU
+- **apiFetch middleware**: Maombi ya WordPress REST yanayolingana na mfumo wa AI Client SDK yanapumbelewa kiotomatiki kwenda kwenye broker wa WebLLM wa ndani — hakuna safari ya HTTP ya kurudi (loopback)
+- **UI ya mipangilio ya widget**: Mipangilio ya sehemu ya Connector ili kuwasha/kuzima widget ya mazungumzo na kupanga tabia ya auto-prompt
+- **IndexedDB cache**: Upakuaji wa uzito wa mfumo (model weight downloads) unabaki hata kama kuna upinduzi wa CDN ambao unavunja njia ya kawaida ya Cache API
+- **wpai filter integration**: Huunganisha kwenye filter ya `wpai_preferred_text_models` ili kipengele cha AI Experiments kielekeze kwenye injini ya kivinjari inapopangwa
+
+## Mahitaji
+
+- WordPress 5.3 au zaidi
+- PHP 7.4 au zaidi
+- Plugin ya Ultimate Multisite (imefunguliwa)
+- Kivinjari chenye uwezo wa WebGPU (Chrome 113+, Edge 113+, au Firefox Nightly yenye WebGPU imewashwa)
+
+## Usakinishaji
+
+1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
+2. Fungulia plugin kupitia menyu ya 'Plugins' ndani ya WordPress
+3. Nenda kwenye **Ultimate Multisite → AI Connector** kupanga addon
+
+## Kidoko cha Mazungumzo Kinachotoka (Floating Chat Widget)
+
+Kidoko cha mazungumzo kinachotoka kinawezesha mtumiaji yeyote aliye kuingia kuingiliana na LLM ya kivinjari moja kwa moja kutoka kwenye ukurasa wako mkuu, bila kuondoka kwenye ukurasa walipo.
+
+### Inafanya Nini
+
+Inapowashwa, ikoni ya mazungumzo inaonekana kwenye kona ya kila ukurasa wa mbele kwa watumiaji walio kuingia. Kubonyeza ikoni hiyo huifungua sehemu ya mazungumzo ambapo mtumiaji anaweza kuandika maombi (prompts) na kupokea majibu kutoka kwa mfumo wa WebLLM unaoendesha ndani ya kifurushi. Kwa kuwa mfumo unatembea kabisa ndani ya kivinjari, majibu ni binafsi na hayohusishi usindikaji wowote wa upande wa seva.
+
+### Kiashiria cha Hali kwenye Admin-Bar
+
+Admin bar ya WordPress ina kiashiria cha hali kinachoonyesha hali ya sasa ya injini ya WebLLM:
+
+| Hali | Maana |
+|--------|---------|
+| **Loading** | Injini ya MLC inaanza au inapakua uzito wa mfumo |
+| **Ready** | Mfumo umepakuliwa na uko tayari kwa uchanganuzi |
+| **Idle** | Injini imeapakuliwa lakini tab ya SharedWorker haiko hai |
+| **Error** | Injini imashindwa kuanzishwa — angalia konsoli ya kivinjari kwa maelezo |
+
+Kiashiria hiki kinaonyesha hali halisi bila kuhitaji kupakia upya ukurasa.
+
+### Jinsi ya Kuwasha au Kuzima Widget
+
+1. Nenda kwenye **Ultimate Multisite → AI Connector** kwenye admin ya mtandao
+2. Tafuta sehemu ya **Connector**
+3. Washa au zima **Enable floating chat widget**
+4. Hifadhi mipangilio
+
+Widget pia inaweza kuwashwa au kuzimwa kwa kila tovuti kutoka kwa admin ya tovuti yenyewe ikiwa msimamizi wa mtandao amempa uwezo huo.
+
+## Mipangilio ya Widget
+
+Sehemu ya Connector katika **Ultimate Multisite → AI Connector** ina mipangilio ifuatayo kwa widget ya mazungumzo kinachotoka:
+
+### Washa Widget ya Mazungumzo Kinachotoka
+
+Inawezesha widget ya mazungumzo kuwaka au kuzima kwa mtandao mzima. Ikiwa imezimwa, widget haionekani kwenye ukurasa wowote wa mbele, bila kujali jukumu la mtumiaji.
+
+**Kiima:** Zimezimwa
+
+### Tabia ya Auto-Prompt
+
+Inadhibiti kama widget ya mazungumzo inatuma moja kwa moja ombi (prompt) wakati mtumiaji anapoifungua.
+
+| Chaguo | Tabia |
+|--------|-----------|
+| **Disabled** | Widget inafunguliwa na mazungumzo tupu — mtumiaji anaanza kuandika ombi lake mwenyewe |
+| **Page context** | Widget inafunguliwa na ombi lililojaa awali kulingana na kichwa na maudhui ya ukurasa wa sasa |
+| **Custom prompt** | Widget inafunguliwa na ombi maalum ambalo wewe unalifafanua kwenye sehemu hapa chini |
+
+Wakati imewekwa kwenye **Custom prompt**, sehemu nyingine ya maandishi inaonekana ambapo unaweza kuingiza maandishi ya ombi la kiwango. Inasaidia vigezo vya kipekee vya muundo (template variables):
+
+- `{site_name}` — jina la tovuti ya sasa
+- `{page_title}` — kichwa cha ukurasa wa sasa
+- `{user_display_name}` — jina la kuonyesha la mtumiaji aliye kuingia
+
+**Kiima:** Zimezimwa
+
+## SharedWorker Runtime
+
+Toleo 1.1.0 linatangulia SharedWorker runtime kwa ajili ya injini ya MLC. Hapo awali, kila tab ya kivinjari iliyotumia WebLLM ilipakua toleo lake la mfumo, ikipigana kwa kumbukumbu ya GPU na kusababisha matatizo ya utendaji kwenye vifaa vyenye kumbukumbu ndogo ya VRAM.
+
+Kwa SharedWorker runtime, tab moja inatumika kama mwenyeji wa injini. Tab zote zingine zinawasiliana na toleo hilo moja kupitia chaneli ya ujumbe ya mfanyakazi (worker's message channel). Matokeo ni:
+
+- Kikao kimoja cha GPU kinachoshirikiwa kwenye tab zote zilizo wazi
+- Majibu ya haraka zaidi mara tu mfumo unapopakuliwa (hakuna uanzishaji uliojaririka)
+- Matumizi ya kumbukumbu ya kilele (peak memory usage) ya chini kwenye kifaa
+
+SharedWorker ni ya uwazi kwa watumiaji. Kiashiria cha hali kwenye admin-bar daima kinaonyesha hali ya injini iliyoshirikiwa, sio tab binafsi.
+
+## apiFetch Middleware
+
+Addon inasakinisha `apiFetch` middleware ambayo inazuia maombi ya WordPress REST API yanayolingana na mfumo wa AI Client SDK. Badala ya kufanya ombi la HTTP la kurudi kwenye seva, maombi haya yanapumbelewa moja kwa moja kwenda kwenye broker wa WebLLM wa ndani unaoendesha kwenye SharedWorker.
+
+Hii inamaanisha kuwa plugins na themes zinazotumia API ya kawaida ya WordPress `apiFetch` kuita endpoints za AI zitapata faida kiotomatiki kutoka kwa mfumo wa kivinjari wakati uko tayari, bila kuhitaji mabadiliko yoyote ya msimbo.
+
+## Hooks na Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Sajili injini ya kivinjari ya WebLLM kama mfumo wa maandishi unaopendekezwa. Addon inahusishwa na filter hii kiotomatiki wakati injini inapopangwa na kuwa tayari.
+- `ultimate_webllm_widget_enabled` — Badilisha hali ya widget iliyowashwa kwa mtumiaji au muktadha maalum. Rudisha `true` au `false`.
+- `ultimate_webllm_auto_prompt` — Badilisha maandishi ya auto-prompt kabla ya kutumwa kwenye widget. Inapokea mchanganyiko wa maandishi ya ombi na kitu cha `WP_Post` cha sasa.
+
+## Kutatua Matatizo
+
+### Widget ya mazungumzo haionekani
+
+- Thibitisha kuwa mtumiaji ameingia — widget inaonyeshwa kwa watumiaji walio thibitishwa tu
+- Angalia kuwa **Enable floating chat widget** imewashwa kwenye sehemu ya Connector
+- Thibitisha kuwa kivinjari cha mtumiaji kinasaidia WebGPU (angalia Mahitaji hapo juu)
+
+### Kiashiria cha admin-bar kinaonyesha "Error"
+
+Fungua konsoli ya developer ya kivinjari (F12) na kutafuta makosa yanayohusiana na WebLLM. Sababu za kawaida:
+
+- Kivinjari hakisaudi WebGPU
+- Upakuaji wa uzito wa mfumo umeshindwa — angalia muunganisho wa mtandao na jaribu kufuta cache ya IndexedDB kwenye zana za developer za kivinjari (Application → IndexedDB)
+- Plugin ya kivinjari inazuia SharedWorker
+
+### Uzito wa mfumo unapakuliwa kila wakati
+
+Addon inatumia IndexedDB kama backend ya cache ili kuhakikisha uzito wa mfumo unabaki hata kama kuna upinduzi wa CDN. Ikiwa uzito unapakuliwa upya kila wakati wa kutembelea, angalia kuwa IndexedDB haifutwi na mipangilio ya faragha ya kivinjari au plugin.
+
+## Changelog
+
+Tazama [Changelog](./changelog) kwa historia kamili ya toleo.

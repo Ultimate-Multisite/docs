@@ -1,0 +1,116 @@
+---
+title: Ufundishaji Upatikanaji wa Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Utangamano wa Tutor Multisite
+
+Plugin ya WordPress ambayo inaongeza marekebisho ya utangamano kwa ajili ya Tutor LMS katika mazingira ya multisite.
+
+## Maelezo
+
+Plugin hii inatoa marekebisho muhimu ya utangamano kwa ajili ya kuendesha Tutor LMS kwenye mitandao ya WordPress multisite. Inashughulikia usajili wa watumiaji, usimamizi wa walimu, mapungufu ya kozi, na utendakazi mwingine wowote unaohusiana na multisite.
+
+## Vipengele
+
+- **Usimamizi wa Meza za Database**: Inagundua na kuunda kiotomatiki meza za Tutor LMS ambazo zimepotea kwa sababu ya vikwazo vya foreign key katika multisite
+- **Usajili wa Watumiaji wa Multisite**: Handlers maalum za AJAX kwa ajili ya kusimamia usajili wa watumiaji katika tovuti zote za mtandao
+- **Usimamizi wa Nafasi ya Mwalimu**: Utekelezaji na usimamizi wa nafasi ya mwalimu kiotomatiki katika mazingira ya multisite
+- **Mapungufu ya Kozi**: Kuunganisha na Ultimate Multisite kwa ajili ya kusimamia mapungufu ya kuunda kozi na funnels kulingana na mipango ya tovuti
+- **Mitazamo Maalum ya Admin**: Kiolesura cha orodha na usimamizi wa walimu kinachojua multisite
+- **Zana za Admin**: Kiolesura cha usimamizi wa database kwa waendesha mtandao na waendesha tovuti
+
+## Mahitaji
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin ya Tutor LMS (inazimwa kiotomatiki kupitia kichwa cha `Requires Plugins`)
+- Usakinishaji wa WordPress Multisite
+- Plugin ya Ultimate Multisite (kwa utendakazi wa mapungufu ya kozi)
+
+## Usakinishaji
+
+1. Pakia faili za plugin kwenye `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Hakikisha Tutor LMS imesakinishwa na kuwakiwa
+3. Wakiwa plugin kupitia menyu ya 'Plugins' katika WordPress
+4. Plugin itajumuishwa kiotomatiki na Tutor LMS
+
+## Muundo wa Faili
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Faili kuu la plugin)
+├── includes/
+│   ├── class-database-manager.php (Uundaji na usimamizi wa meza za database)
+│   ├── class-admin-interface.php (Kiolesura cha admin kwa usimamizi wa database)
+│   ├── class-course-limits.php (Wasimamizi wa mapungufu ya kozi na funnels)
+│   ├── class-instructor-manager.php (Usimamizi wa nafasi ya mwalimu)
+│   ├── class-ajax-handlers.php (Handlers maalum za AJAX)
+│   ├── class-query-helper.php (Zana za utafiti wa database)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Mfumo wa mtumiaji wa multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Orodha maalum ya walimu)
+│       └── views/
+│           └── instructors.php (Mtazamo wa admin wa walimu)
+└── README.md
+```
+
+## Utendakazi Ulihamishwa kutoka Plugin ya MU
+
+Plugin hii ina utendakazi ambao ulikuwa hapo awali katika `wp-content/mu-plugins/daves.php`:
+
+- Mapungufu ya kubadilisha hali ya kozi
+- Mapungufu ya kuunda kozi
+- Uunganishaji na mapungufu ya CartFlows
+- Usimamizi wa nafasi ya mwalimu wa Tutor
+- Kushughulikia usajili wa watumiaji wa multisite
+- Kuonyesha ID ya bidhaa ya kozi
+
+## Usimamizi wa Database
+
+### Tatizo
+
+Katika mazingira ya WordPress multisite, uundaji wa meza za Tutor LMS unashindikana kwa meza zenye vikwazo vya foreign key kwa meza ya watumiaji. Hii hutokea kwa sababu:
+
+- Meza maalum za tovuti hutumia prefixes kama `wp_2_tutor_carts`
+- Foreign keys zinarejelea `wp_2_users` (ambalo halipo)
+- Meza halisi ya watumiaji ni `wp_users` (inashiriki katika mtandao mzima)
+
+### Suluhisho
+
+Plugin hii inafanya kiotomatiki:
+
+1. **Inagundua Meza Zinazopotea**: Inangalia kwa meza ambazo zilishindikana kuundwa kutokana na vikwazo vya foreign key
+2. **Inaunda Meza na Marejeo Sahihi**: Inatumia jina sahihi la meza ya watumiaji (`wp_users` katika multisite)
+3. **Inashughulikia Matukio Mengi**:
+   - Kuwakiwa/kuwakiwa upya kwa plugin
+   - Kuunda tovuti mpya katika mtandao
+   - Ukaguzi wa meza kwa mikono kupitia kiolesura cha admin
+
+### Meza Zinazohusika
+
+- `tutor_coupon_usages` - Ina foreign key kwa meza ya watumiaji
+- `tutor_carts` - Ina foreign key kwa meza ya watumiaji
+- `tutor_notification_preferences` - Meza ya TutorPro na foreign key kwa meza ya watumiaji
+
+### Kiolesura cha Admin
+
+Pata zana za usimamizi wa database hapa:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Kiolesura hiki kinakuwezesha:
+- Kuona meza zinazopotea katika tovuti zote
+- Kichochea kuunda meza kwa mikono
+- Kukagua usanidi wa database
+- Kuona taarifa za kina za hali
+
+## Usaidizi
+
+Plugin hii imebuniwa mahsusi kwa ajili ya jukwaa la KursoPro. Kwa usaidizi wa kiufundi, wasiliana na timu ya maendeleo.

@@ -1,0 +1,114 @@
+---
+title: Emailuri
+sidebar_position: 1
+_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Email-uri
+
+Addon-ul Ultimate Multisite: Emails permite administratorilor de rețea să sărăcu și să gestioneze conturile de e-mail ale clienților, alături de site-uri și membrii. Versiunea 1.1.0 adaugă gestionarea conturilor de e-mail pentru clienți, autentificarea unică (SSO) pentru webmail, suport pentru redirecționatori CyberPanel și îmbunătățiri la provisionarea la checkout.
+
+## Funcționalități Cheie
+
+* **Widget de cont de e-mail pentru clienți**: Clienții pot crea și gestiona conturile de e-mail direct de pe pagina lor de cont, fără a fi nevoie să deschidă un ticket de suport.
+* **SSO Webmail și magic-link**: Clienții pot accesa webmail direct de pe pagina de cont, cu autentificare cu un singur click, dacă furnizorul suportă această funcționalitate.
+* **Schimbarea parolei**: Clienții și administratorii pot actualiza parolele de la cutia poșta din widget-ul de gestionare a e-mailurilor.
+* **Provisionare la checkout**: Crearea contului de e-mail al clientului poate avea loc în timpul procesului de checkout, astfel încât cutia poștală să fie gata după finalizarea achiziției.
+* **Redirecționatori CyberPanel**: Rețelele bazate pe CyberPanel pot crea și gestiona redirecționatori de e-mail ca parte a fluxului de servicii de e-mail.
+* **Setări adaptate furnizorului**: Pagina de setări filtrează furnizorii pentru a afișa doar integrarile active și configurate, astfel încât administratorii să vadă doar opțiunile utilizabile.
+
+## Cerințe
+
+* Ultimate Multisite 2.0.0 sau versiune mai mare
+* Instalare WordPress Multisite
+* Cel puțin o integrare de furnizor de e-mail configurată
+* Credențiale API ale furnizorului cu permisiunea de a crea cutii poștale, de a schimba parolele și de a emite link-uri de acces webmail, acolo unde este suportat
+
+## Instalare
+
+1. Urcați fișierele plugin-ului în `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activați addon-ul la nivel de rețea din secțiunea **Plugins** în administratorul de rețea WordPress.
+3. Mergeți la **Ultimate Multisite** > **Settings** și deschideți setările addon-ului de e-mail.
+4. Activați integrarile de furnizori de e-mail pe care doriți ca clienții să le folosească.
+5. Salvați setările și apoi testați crearea contului cu un client non-producțional sau un site de staging.
+
+## Gestionarea E-mailurilor în Contul Clientului
+
+Versiunea 1.1.0 adaugă un widget de gestionare a e-mailurilor pe pagina de cont a clientului. Folosiți acest widget atunci când clienții ar trebui să își gestioneze singuri crearea și întreținerea cutiei poștale pentru propriile site-uri.
+
+De pe pagina de cont, clienții pot:
+
+1. Vizualiza conturile de e-mail conectate de la membrii sau site-ul lor curent.
+2. Crea o cutie poștală nouă dacă planul lor permite conturi suplimentare.
+3. Schimba parola unei cutii poștale existente.
+4. Accesa furnizorii webmail suportați prin SSO sau un login cu magic-link.
+
+Widget-ul folosește sistemul curent de pagină de cont al Ultimate Multisite, astfel încât acțiunile sunt limitate la contextul contului pe care îl vizualizează clientul. Acest lucru previne ca clienții să gestioneze conturi de e-mail care aparțin unui alt membru sau site.
+
+## SSO Webmail și Login cu Magic-Link
+
+SSO Webmail oferă clienților o acțiune directă de tip **Open webmail** de pe pagina de cont. Când este suportat de furnizorul activ, addon-ul solicită un URL de acces cu durată limitată și redirecționează clientul către webmail, fără a cere acestuia să copieze credențialele cutiei poștale.
+
+Comportamentul furnizorului poate varia:
+
+* Furnizorii cu API-uri native SSO pot crea o sesiune webmail autentificată direct.
+* Furnizorii cu suport pentru magic-link pot genera un link de login cu durată limitată.
+* Furnizorii fără suport SSO sau magic-link ar trebui să afișeze totuși detaliile cutiei poștale și acțiunile de gestionare a parolei, dar fără butonul webmail cu un singur click.
+
+Activați accesul webmail doar pentru furnizorii pentru care ați configurat credențialele API necesare. Dacă acțiunea lipsește pentru un furnizor, confirmați mai întâi că furnizorul este activ, configurat și suportă link-uri de login webmail.
+
+## Provisionare la Checkout
+
+Addon-ul poate crea conturi de e-mail ale clienților ca parte a procesului de checkout. Acest lucru este util atunci când planul include o cutie poștală implicit sau când formularul de checkout colectează detalii despre contul de e-mail.
+
+Flux de implementare recomandat:
+
+1. Configurați limitările furnizorului și ale planului înainte de a activa provisionarea la checkout.
+2. Testați o achiziție cu un produs de staging și confirmați că cutia poștală este creată după checkout.
+3. Revizuiți pagina de cont a clientului pentru a confirma că noua cutie poștală apare în widget-ul de e-mail.
+4. Confirmați acțiunile de schimbare a parolei și webmail înainte de a activa acest flux pentru produsele de producție.
+
+Dacă provisionarea eșuează, contul și membrii clientului pot exista, în timp ce cutia poștală necesită urmărirea administratorului. Verificați jurnalele de activitate Ultimate Multisite și jurnalele furnizorului înainte de a reporni procesul.
+
+## Redirecționatori de E-mail CyberPanel
+
+Pentru rețelele bazate pe CyberPanel, versiunea 1.1.0 adaugă suport pentru redirecționatori de e-mail. Folosiți redirecționatorii atunci când clienții au nevoie de adrese precum `info@customer-domain.test` pentru a redirecționa e-mailurile către o altă cutie poștală, fără a crea o cutie poștală completă.
+
+Înainte de a oferi redirecționatori, confirmați că integrarea CyberPanel este configurată și accesibilă. Consultați ghidul [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) pentru constantele necesare de gazdă, utilizator, parolă și pachet.
+
+## Changelog
+
+### Versiunea 1.1.0 - Lansată pe 2026-05-05
+
+* Nou: SSO Webmail și login cu magic-link — clienții pot accesa webmail direct de pe contul lor cu autentificare cu un singur click.
+* Nou: Funcționalitatea de schimbare a parolei adăugată în widget-ul de gestionare a contului de e-mail.
+* Nou: Suport pentru redirecționatori de e-mail CyberPanel.
+* Nou: Widget de gestionare a e-mailurilor pe pagina de cont a clientului pentru crearea și gestionarea contului în auto-serviciu.
+* Nou: Crearea contului de e-mail al clientului integrată în fluxul de checkout pentru provisionare automată.
+* Fix: Hook-ul widget-ului de pagină de cont actualizat pentru a folosi modelul corect de înregistrare UMS.
+* Fix: Formularul Create Account înlocuit cu vanilla JS și ieșirea corectă a documentului HTML complet.
+* Fix: Widget-ul de gestionare a e-mailurilor folosește acum sistemul UMS currents pentru paginile de cont ale administratorilor.
+* Fix: Formularul de creare a contului de e-mail pentru administrator include câmpul de parolă și folosește Email_Account_Manager.
+* Fix: Spam-ul jurnalului per-solicitare eliminat din inițializarea Email_Account_Manager.
+* Îmbunătățit: Pagina de setări filtrează acum pentru a afișa doar furnizorii de e-mail activi și configurați.
+
+## Întrebări Frecvente
+
+## Clienții pot crea propriile conturi de e-mail?
+
+Da. Când widget-ul de cont al clientului este activat și planul permite conturi de e-mail, clienții pot crea și gestiona propriile cutii poștale de pe pagina de cont.
+
+## Toți furnizorii suportă SSO Webmail?
+
+Nu. Suportul pentru SSO și magic-link depinde de furnizorul de e-mail activ. Furnizorii fără API de link de acces pot suporta totuși crearea de cutii poștale și schimbarea parolelor.
+
+## Administratorii pot crea conturi de e-mail pentru clienți?
+
+Da. Administratorii pot crea conturi de e-mail din interfața de administrare, inclusiv setarea parolei inițiale la crearea contului.
+
+## Sunt redirecționatorii la fel ca și cutiile poștale?
+
+Nu. O cutie poștală stochează e-mailuri și are credențiale de login. Un redirecționator redirecționează e-mailurile către o altă adresă și nu oferă o cutie poștală separată.

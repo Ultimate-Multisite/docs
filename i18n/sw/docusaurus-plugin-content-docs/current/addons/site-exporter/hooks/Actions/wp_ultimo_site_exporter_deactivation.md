@@ -1,0 +1,16 @@
+---
+id: wp_ultimo_site_exporter_deactivation
+title: Action - wp_ultimo_site_exporter_deactivation
+sidebar_label: wp_ultimo_site_exporter_deactivation
+_i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
+---
+# Action: wp_ultimo_site_exporter_deactivation
+
+Hii inaruhusu sehemu zingine za plugin kuunganisha utaratibu wao wa kufuta (deactivation).
+
+### Tangu
+
+- 1.9.6
+### Chanzo
+
+Imefafanuliwa katika [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-hooks.php#L99) kwenye mstari wa 99

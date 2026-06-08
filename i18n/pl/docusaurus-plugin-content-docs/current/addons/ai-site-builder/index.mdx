@@ -1,0 +1,124 @@
+---
+title: Konstruktor stron AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Wymagania
+
+- WordPress 5.3 lub nowszy
+- PHP 7.4 lub nowszy
+- Wtyczka Ultimate Multisite (aktywna)
+
+## Instalacja
+
+1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
+2. Aktywuj wtyczkę w menu „Plugins” w WordPress
+3. Skonfiguruj ustawienia dodatku w panelu administracyjnym sieci (network admin)
+
+## Rozwój
+
+### Konfiguracja
+
+```bash
+# Instalacja zależności
+composer install
+npm install
+
+# Uruchomienie testów
+npm run test
+
+# Sprawdzenie zgodności ze standardami kodu
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Naprawienie problemów ze stylem kodu
+vendor/bin/phpcbf
+
+# Budowanie dla środowiska produkcyjnego
+npm run build
+```
+
+### Struktura Projektu
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Klasy i pliki PHP
+│   ├── class-multisite-ultimate-updater.php  # Obsługa aktualizacji
+│   └── class-ai_site_builder-main.php             # Główna funkcjonalność
+├── tests/                        # Testy jednostkowe
+│   ├── bootstrap.php            # Bootstrap testów
+│   ├── class-*-base.php         # Klasa bazowa testów
+│   └── class-*-test.php         # Przypadki testowe
+├── views/                       # Pliki szablonów
+├── assets/                      # Zasoby statyczne
+│   ├── css/                     # Arkusze stylów
+│   ├── js/                      # Pliki JavaScript
+│   └── images/                  # Obrazy
+├── lang/                        # Pliki językowe
+├── composer.json                # Zależności PHP
+├── package.json                 # Zależności Node.js
+├── phpunit.xml.dist             # Konfiguracja PHPUnit
+├── .phpcs.xml.dist              # Konfiguracja standardów kodu
+└── rector.php                   # Zasady modernizacji kodu
+```
+
+### Testowanie
+
+Dodatek zawiera kompleksowy framework testowy:
+
+- **Testy jednostkowe (Unit Tests)**: Testy oparte na PHPUnit z zestawem testów WordPress
+- **Klasa bazowa testów (Base Test Class)**: Dostarcza metody pomocnicze dla powszechnych scenariuszy testowych
+- **Pokrycie testami (Test Coverage)**: Skonfigurowane do śledzenia pokrycia kodu
+- **Testowanie Multisite**: Testy uruchamiane w środowisku multisite
+
+### Standardy Kodu
+
+- **Standardy Kodowania WordPress**: Egzekwowane za pomocą PHPCS
+- **Kompatybilność PHP 7.4+**: Wspierane nowoczesne funkcje PHP
+- **Analiza Statyczna (Static Analysis)**: Integracja PHPStan do sprawdzania typów
+- **Modernizacja Kodu**: Zasady Rector dla ulepszeń PHP
+
+### System Budowania (Build System)
+
+- **Przetwarzanie Zasobów (Asset Processing)**: Minifikacja plików CSS/JS
+- **Tłumaczenie (Translation)**: Generowanie plików POT
+- **Pakowanie (Packaging)**: Tworzenie archiwum do dystrybucji
+- **Tryb Rozwojowy (Development Mode)**: Nie-minifikowane zasoby do debugowania
+
+## Konfiguracja
+
+Dodatek obsługuje różne opcje konfiguracyjne, dostępne przez interfejs administracyjny sieci (network admin).
+
+## Akcje i Filtry (Hooks and Filters)
+
+### Akcje (Actions)
+
+- `ultimate-multisite-ai-site-builder_init` - Wywoływana po inicjalizacji dodatku
+- `ultimate-multisite-ai-site-builder_loaded` - Wywoływana po załadowaniu wszystkich plików dodatku
+
+### Filtry (Filters)
+
+- `ultimate-multisite-ai-site-builder_settings` - Modyfikacja ustawień dodatku
+- `ultimate-multisite-ai-site-builder_enabled` - Nadpisanie statusu włączenia/wyłączenia dodatku
+
+## Licencja
+
+Dodatek jest licencjonowany na warunkach GPL v3 lub nowszych.
+
+## Wsparcie
+
+W celu uzyskania wsparcia i dokumentacji odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
+## Historia zmian (Changelog)
+
+- Wersja 1.0.1 (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstowej; zwiększenie wersji.
+
+
+- Wersja (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstowej; zwiększenie wersji.

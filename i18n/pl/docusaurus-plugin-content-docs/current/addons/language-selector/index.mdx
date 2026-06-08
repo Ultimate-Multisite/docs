@@ -1,0 +1,75 @@
+---
+title: Wybór języka
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Wybór Języka
+
+Ultimate Multisite: Wybór Języka podczas Rejestracji
+
+Dodaj pole wyboru języka do procesu rejestracji.
+
+## Instalacja
+
+1. Prześlij 'ultimate-multisite-language-selector' do katalogu '/wp-content/plugins/'
+2. Aktywuj plugin w menu 'Plugins' w panelu administracyjnym sieci WordPress.
+
+## Przewodnik Użycia
+
+Dzięki temu bezpłatnemu dodatkowi możesz pozwolić użytkownikom na wybranie języka, który mają widzieć podczas rejestracji i na stronie logowania.
+
+Po [aktywacji licencji](../../user-guide/getting-started/installing-ultimate-multisite.md) będziesz mógł instalować dodatki Ultimate Multisite, do których daje Ci dostęp Twoja licencja.
+
+Przejdź do ustawień Ultimate Multisite, a następnie w menu po lewej stronie kliknij etykietę _Add-ons_.
+
+![Add-ons page](/img/admin/addons-page.png)
+
+_Przejdź do strony Add-ons, aby rozpocząć instalację Language Selector_
+
+Znajdziesz tam wszystkie dodatki, które oferujemy.
+
+Bezpłatne dodatki są dostępne dla wszystkich naszych klientów, niezależnie od planu subskrypcji, który wybrali.
+
+Kliknij przycisk _Install it Now!_ pod miniaturą dodatku. Następnie aktywuj go na stronie Plugins.
+
+![Add-ons page with install button](/img/admin/addons-page.png)
+
+_Kliknij przycisk, aby zainstalować dodatek_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_Aktywuj go na stronie Plugins_
+
+Teraz przejdź do menu Ustawienia Ultimate Multisite i wybierz zakładkę _Network Settings_. Na dole strony znajdziesz nowy раздел o nazwie _Languages_.
+
+![Settings page](/img/config/settings-general.png)
+
+_Pojawia się zupełnie nowa sekcja!_
+
+Możesz zostawić to puste, aby wyświetlić wszystkie języki jako opcje, lub wybrać te, które chcesz udostępnić. Języki to te, które masz zainstalowane w swojej konfiguracji WordPress.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_Lista języków dostępnych w tej instalacji WP_
+
+Po zapisaniu dokonanych zmian, menu wyboru z wybranymi językami zostanie wyświetlone zarówno na stronie Logowania, jak i w Procesie Rejestracji.
+
+![Login and Registration settings](/img/config/settings-login-registration.png)
+
+_Wybór Języka na Stronie Logowania_
+
+![Registration page](/img/config/registration-page.png)
+
+_Wybór Języka w Procesie Rejestracji_
+
+## Ustawianie Języka za Pomocą URL
+
+Możesz również zmienić język strony, pomijając parametr lokalizacji (locale) w URL. Jeśli chcesz przekierować się na stronę rejestracji w języku włoskim, na przykład, dodaj do URL ?locale=it_IT.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Aby to działało, język musi być zainstalowany w Twojej sieci WordPress.

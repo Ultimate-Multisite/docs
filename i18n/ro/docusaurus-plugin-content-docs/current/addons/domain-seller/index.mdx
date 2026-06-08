@@ -1,0 +1,129 @@
+---
+title: Vânzător de domenii
+sidebar_position: 1
+_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
+
+# Domain Seller
+
+**Multisite Ultimate: Domain Seller** transformă rețeaua dvs. WordPress Multisite într-o platformă puternică de vânzare de domenii. Permite clienților să își înregistreze domenii personalizate direct în timpul înscrierii sau de pe dashboard-ul lor, cu verificare a disponibilității în timp real și tarife transparente.
+
+### De ce Domain Seller?
+
+Înregistrarea de domenii este unul dintre cele mai solicitate servicii suplimentare pentru orice platformă WaaS (Website as a Service). În loc să trimiteți clienții să interacționeze cu un registrar terț, puteți oferi domenii direct — păstrând astfel mai multe venituri în rețeaua dvs., dar oferind clienților o experiență fluidă.
+
+### Funcționalități Cheie
+
+#### Suport pentru Multiple Registrări de Domenii
+* **OpenSRS** — Înregistrare, reînnoire și gestionare complete
+* **Namecheap** — Integrare completă cu WhoisGuard și testare în sandbox
+* **Arhitectură Extensibilă** — Construite pe modelul Integration Registry, ceea ce face adăugarea mai ușoară a altor furnizori
+* **Testare Conexiune Integrată** — Validează credențialele și conectivitatea furnizorului înainte de a fi activat
+
+#### Wizard de Configurare Ghidat
+* **Onboarding cu un click** — Vă ghidează prin configurarea furnizorului, importul TLD-urilor și crearea produselor de domenii
+* **Sincronizare TLD automată** — Importă toate TLD-urile disponibile și tarifele în vrac de la furnizorii conectați
+* **Creare de produs implicit** — Creează un produs de domeniu gata de utilizare, cu marje implicite sensate
+
+#### Tarife Flexibile pentru Domenii
+* **Treispremarji de marjă** — Marjă procentuală, marjă fixă sau preț fix per TLD
+* **Produse specifice TLD** — Creează produse de domenii separate pentru diferite grupuri de TLD-uri (.com/.net, .io, coduri de țară, etc.)
+* **Tarife introductive** — Oferă un preț redus pentru prima lună pentru a atrage noi înregistrări
+* **Tarife în timp real** — Tarife în vrac live de la furnizori, cu caching inteligent
+* **Suport pentru cupoane** — Compatibilitate completă cu codurile de reduceri Multisite Ultimate
+
+#### Protecția de Confidențialitate WHOIS
+* **Configurare per produs** — Setează confidențialitatea WHOIS pe Dezactivat, Întotdeauna Inclus sau Alegerea Clientului
+* **Optare client** — Când este setat pe Alegerea Clientului, o casetă de verificare în timpul checkout-ului permite clienților să adauge protecția de confidențialitate
+* **Tarifă configurabilă** — Setează un preț pe an pentru addon-ul de confidențialitate, sau oferă gratuit
+* **Integrare cu registrarul** — Activează automat WhoisGuard (Namecheap) sau confidențialitatea WHOIS (OpenSRS) la momentul înregistrării
+
+#### Experiență Unificată de Checkout
+* **Treispremarji de domenii** — Clienții aleg între un subdomain (gratuit), înregistrarea unui domeniu nou sau maparea unui domeniu existent pe care îl dețin deja
+* **Căutare de domenii în timp real** — Verificare a disponibilității alimentată de AJAX, fără reîncărcări de pagină
+* **Sugestii inteligente** — Sugestii alternative de TLD atunci când domeniul preferat este ocupat
+* **Tarife transparente** — Afișare clară a prețului de înregistrare, prețului de reînnoire și al taxei opționale de confidențialitate WHOIS
+* **Câmpuri de contact ale înregistrantului** — Colectează informațiile necesare ale înregistrantului (nume, adresă, telefon) în mod inline în timpul checkout-ului
+* **URL de site generat automat** — Adresa site-ului este derivată automat din domeniul ales
+
+#### Sistem de Reînnoire Automată
+* **Reînnoiri legate de membru** — Domeniile se reînnoiezi automat atâta timp cât membrii clientului este activ
+* **Programare inteligentă** — Sarcinile de reînnoire sunt puse în coadă pe baza datelor de expirare a domeniului
+* **Logica de reîncercare** — Reîncercări inteligente pentru încercările de reînnoire eșuate
+* **Notificări prin e-mail** — Alerte configurabile pentru reînnoiri iminente, reînnoiri reușite, eșecuri și expirări
+
+#### Management DNS al Clientului
+* **DNS Self-service** — Clienții pot adăuga, edita și șterge înregistrări DNS (A, AAAA, CNAME, MX, TXT) de pe dashboard-ul lor
+* **Statusul domeniului** — Statusul înregistrării în timp real, datele de expirare și informațiile despre nameserver
+* **Mapare automată a domeniului** — Domeniile înregistrate sau existente sunt mapate automat către site-ul clientului
+
+#### Instrumente pentru Administrator
+* **Înregistrare manuală de domenii** — Înregistrează domenii în numele clienților din panoul de administrare
+* **Monitorizare domenii** — Vizualizează toate domeniile clienților, statusurile și datele de expirare de pe o singură pagină
+* **Logare specifică furnizorului** — Canale de log separate pentru fiecare registrar (ex: domain-seller-namecheap.log)
+* **Detalii de înregistrare** — Vizualizează informațiile înregistrantului și datele de înregistrare pe pagina de editare a domeniului principal
+
+### Furnizori Suportați
+
+* **OpenSRS** — Integrare completă cu înregistrarea, reînnoirea, managementul DNS și confidențialitatea WHOIS
+* **Namecheap** — Integrare completă cu înregistrarea, reînnoirea, verificarea disponibilității în grup și WhoisGuard gratuit
+* **GoDaddy** — Înregistrare și reînnoire
+* **ResellerClub** — Înregistrare, reînnoire și management DNS
+* **NameSilo** — Înregistrare și reînnoire
+* **Enom** — Înregistrare, reînnoire și management DNS
+
+### Detalii Tehnice
+
+* **Necesită:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Arhitectură:** Modelul Integration Registry cu interfața Domain_Selling_Capability
+* **Autoloading:** Jetpack autoloader cu maparea claselor PSR-4
+* **Standarde:** Standardele de codare WordPress, tipare stricte, statement-uri pregătite
+
+## Instalare
+
+1. Asigurați-vă că **Multisite Ultimate v2.4.12+** este instalat și activat la nivel de rețea
+2. Urcați plugin-ul în `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Activați plugin-ul la nivel de rețea din **Plugins** în WordPress Network Admin
+4. **Setup Wizard** pornește automat la prima activare — urmați pașii pentru a:
+   * Conecta registrarul dvs. de domenii (OpenSRS sau Namecheap)
+   * Testa conexiunea
+   * Importa TLD-urile și tarifele în vrac disponibile
+   * Crea primul produs de domenii cu marjă de preț
+5. Adăugați câmpul **Domain Selection** în formularul de checkout din **Ultimate Multisite > Checkout Forms**
+
+## Întrebări Frecvente
+
+### Ce versiune a Multisite Ultimate este necesară?
+
+Versiunea 2.4.12 sau mai mare. Addon-ul nu este compatibil cu WP Ultimo v1.x sau versiunile Ultimate Multisite sub 2.4.12.
+
+### Ce furnizori de domenii sunt suportați?
+
+Șase registrari sunt suportați integral: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo** și **Enom**. Arhitectura Integration Registry a addon-ului face adăugarea furnizorilor personalizați foarte simplă — consultați [ghidul dezvoltatorului](/developer/integration-guide/custom-registrar).
+
+### Pot oferi protecția de confidențialitate WHOIS?
+
+Da. Fiecare produs de domeniu are o setare de confidențialitate WHOIS cu trei moduri: Dezactivat, Întotdeauna Inclus sau Alegerea Clientului. Când este setat pe Alegerea Clientului, clienții văd o casetă de verificare în timpul checkout-ului, împreună cu prețul (sau „Gratis” pentru WhoisGuard-ul Namecheap). Flag-ul de confidențialitate este transmis automat registrarului la momentul înregistrării.
+
+### Pot seta tarife diferite pentru TLD-uri diferite?
+
+Da. Creați produse de domenii separate pentru diferite grupuri de TLD-uri. Fiecare produs poate avea propriul tip de marjă (procentuală, marjă fixă sau preț fix), TLD-uri suportate și tarife introductive.
+
+### Ce opțiuni de checkout văd clienții?
+
+Câmpul Domain Selection oferă clienților trei tab-uri: **Subdomain** (folosește un subdomain gratuit pe rețeaua dvs.), **Register New Domain** (caută și înregistrează un domeniu nou) și **Existing Domain** (mapă un domeniu pe care îl dețin deja). Vă vor apărea doar modurile pe care le activați.
+
+### Suportă reînnoiri automate?
+
+Da. Domeniile pot fi setate să se reînnoie automat și sunt legate de statutul de membru al clientului. Plățile de reînnoire sunt procesate prin gateway-ul de plăți existent al clientului.
+
+### Pot clienții să își gestioneze înregistrările DNS?
+
+Da. Clienții primesc o interfață de management DNS în dashboard-ul lor pentru a adăuga, edita și șterge înregistrări A, AAAA, CNAME, MX și TXT. Managementul DNS este disponibil cu OpenSRS, ResellerClub și Enom.
+
+### Există un setup wizard?
+
+Da. Setup wizard rulează automat la prima activare și vă ghidează prin conectarea unui registrar, importarea TLD-urilor și crearea primului produs de domenii. De asemenea, puteți relansa wizard-ul din setările addon-ului.

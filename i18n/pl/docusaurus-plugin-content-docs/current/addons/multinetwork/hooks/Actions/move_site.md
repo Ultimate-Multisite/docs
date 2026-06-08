@@ -1,0 +1,24 @@
+---
+id: move_site
+title: Akcja - move_site
+sidebar_label: move_site
+_i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
+---
+# Action: move_site
+
+Wywoływane po przeniesieniu witryny do nowej sieci.
+
+## Parametry
+
+| Nazwa | Typ | Opis |
+|------|------|-------------|
+| $site_id | `int` | ID witryny, która została przeniesiona. |
+| $old_network_id | `int` | ID oryginalnej sieci dla witryny. |
+| $new_network_id | `int` | ID sieci, do której witryna została przeniesiona. |
+
+### Od wersji
+
+- 1.3.0
+### Źródło
+
+Zdefiniowane w [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) w linii 1587

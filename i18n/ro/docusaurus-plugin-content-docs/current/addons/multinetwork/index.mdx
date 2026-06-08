@@ -1,0 +1,100 @@
+---
+title: Multi-Rețea
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Addon-ul Ultimate Multisite: Multinetwork extinde platforma dvs. Ultimate Multisite cu funcționalități puternice de multinetwork. Acest addon permite clienților să achiziționeze și să gestioneze întregi rețele WordPress multisite, nu doar site-uri individuale.
+
+## Funcționalități Cheie
+
+* **Alocarea Rețelelor (Network Provisioning)**: Creează și configurează automat rețele complete WordPress multisite pentru clienții dvs.
+* **Șabloane de Rețelă (Network Templates)**: Permite clienților să navigheze, să preview-eze și să aleagă un șablon de rețea preconfigurat înainte de înscriere.
+* **Managementul Rețelelor**: Capacități complete de management pentru medii multinetwork.
+* **Rețele Izolate**: Fiecare rețea a clientului funcționează independent, cu propriile tabele de bază de date și configurări.
+* **SSO Cross-Network**: Oferă clienților acces fluid la sub-rețelele lor folosind autentificarea prin magic-link.
+* **Arhitectură Scalabilă**: Gestionează mai multe rețele în mod eficient, alocând resurse optim.
+* **Integrare**: Se integrează fluid cu sistemele de abonament și facturare ale Ultimate Multisite.
+
+## Cazuri de Utilizare
+
+* **Hosting White Label**: Oferiți clienților propriile lor rețele multisite cu branding propriu.
+* **Soluții de Agenție**: Permite agențiilor să gestioneze multiple rețele de clienți dintr-o singură platformă.
+* **Implementări Enterprise**: Suportă organizațiile mari cu cerințe complexe de multirețea.
+* **Platforme Educaționale**: Creează rețele separate pentru diferite școli sau departamente.
+
+## Cerințe
+
+* Ultimate Multisite 2.0.0 sau mai nou
+* Instalare WordPress Multisite
+* PHP 7.4 sau mai nou
+* MySQL 5.6 sau mai nou
+
+## Instalare
+
+1. Uploadați fișierele plugin-ului în directorul `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Activați plugin-ul prin ecranul 'Plugins' din WordPress
+3. Configurați setările multinetwork prin Ultimate Multisite → Settings
+
+## Șabloane de Rețelă
+
+Versiunea 1.3.0 adaugă un flux de descoperire și selecție a șablonelor pentru clienții care achiziționează rețele noi. Folosiți șabloanele de rețea atunci când doriți ca fiecare rețea nouă a clientului să pornească de la o structură pregătită, un design, o bibliotecă de conținut sau o configurare specifică unei nișe.
+
+### Previewer de Șabloane
+
+Previewer-ul de șabloane de rețea permite clienților să navigheze prin șabloanele disponibile înainte de checkout. Fiecare șablon poate fi deschis într-un panou de preview live, astfel încât clienții să poată compara layout-urile și conținutul înainte de a achiziționa o rețea.
+
+Folosiți previewer-ul pentru a ajuta clienții să:
+
+* Revizeze aspectul și structura fiecărui șablon de rețea disponibil
+* Compare mai multe șabloane fără a părăsi fluxul de achiziție
+* Alegă șablonul care se potrivește cel mai bine cazului lor de utilizare înainte de înscriere
+
+Păstrați numele și descrierile șabloanelor prietenoase pentru clienți. Previewer-ul este cel mai util atunci când clienții pot înțelege cazul de utilizare intenționat, cum ar fi rețelele de agenții, rețelele școlilor, rețelele de franchise sau bundle-uri de hosting white-label.
+
+### Selector de Șabloane la Checkout
+
+Selectorul de șabloane poate fi adăugat în fluxul de checkout de înscriere ca câmp. Când este configurat, clienții selectează șablonul de rețea dorit în timpul checkout-ului, iar șablonul selectat este utilizat atunci când rețeaua lor nouă este alocată.
+
+Pentru a folosi selectorul într-un flux de checkout:
+
+1. Pregătiți rețelele pe care doriți să le oferiți ca șabloane.
+2. Activați câmpul de selecție a șablonului Multinetwork în formularul de înscriere sau de checkout relevant.
+3. Alegeți ce șabloane ar trebui să fie disponibile pentru acel flux de checkout.
+4. Publicați fluxul de checkout și testați o înscriere pentru a confirma că șablonul selectat este aplicat rețelei noi.
+
+Dacă un flux de checkout oferă doar un singur produs de rețea, selectorul poate fi totuși util ca pas de onboarding ghidat. Pentru funneli multi-plan, expuneți doar șabloanele care sunt compatibile cu produsul sau planul selectat.
+
+## SSO Magic Link Cross-Network
+
+SSO Magic Link Cross-Network permite clienților să treacă între zona lor principală de cont și sub-rețele fără a trebui să se autentifice manual din nou. Când un client accesează un link de acces cross-network, Ultimate Multisite generează un magic link cu durată limitată și îl autentifică pe client în rețeaua de destinație.
+
+Acest lucru îmbunătățește experiența pentru clienții care gestionează mai mult de o rețea sau care trebuie să acceseze imediat rețelele șablon create după achiziție.
+
+Lista de verificare pentru administrator:
+
+* Confirmați că addon-ul Multinetwork este activat pe întreaga instalare WordPress multisite.
+* Asigurați-vă că clienții au accesul corect la rețea înainte de a le fi oferite link-uri cross-network.
+* Păstrați domeniile rețelei și domeniile mapate configurate corect pentru ca magic link-urile să rezolve către rețeaua de destinație dorită.
+* Testați dashboard-ul clientului și orice butoane de acces post-checkout după modificarea setărilor de rețea, domeniu sau checkout.
+
+Magic link-urile trebuie tratate ca link-uri de login. Ele sunt concepute pentru accesul fluid al clientului și nu trebuie redirecționate sau reutilizate în afara sesiunii prevăzute.
+
+## Întrebări Frecvente
+
+### Ce este multinetwork?
+
+Multinetwork este o funcționalitate WordPress care vă permite să rulați mai multe rețele multisite independente pe o singură instalare WordPress.
+
+### Cum este diferit de multisite-ul obișnuit?
+
+Multisite-ul obișnuit permite mai multe site-uri în cadrul unei singure rețele. Multinetwork permite mai multe rețele, fiecare cu propriile sale site-uri, toate în cadrul unei singure instalări WordPress.
+
+### Necesită configurare specială a serverului?
+
+Da, multinetwork necesită o configurare și o setare specifică a serverului. Vă rugăm să consultați documentația pentru instrucțiuni detaliate de configurare.

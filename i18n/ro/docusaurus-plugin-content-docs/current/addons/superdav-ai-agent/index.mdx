@@ -1,0 +1,161 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent este un asistent AI avansat pentru WordPress care extinde Gratis AI Agent cu abilități conștiente de temă, capacități îmbunătățite de căutare pe internet și funcționalități îmbunătățite pentru constructorul de site. Versiunea 1.16.0 adaugă generarea de logo personalizat, validarea contrastului paletei de culori, încărcarea foto în interviul de descoperire, generarea de meniuri structurate pentru ospitalitate și randarea preview pentru desktop/mobil în Theme Builder.
+
+## Funcționalități Cheie
+
+- **Abilități conștiente de temă** — se adaptează automat ghidajul și capacitățile în funcție de tema activă WordPress și de plugin-urile instalate
+- **Multiple furnizori de căutare pe internet** — alegeți între Brave Search și Tavily pentru rezultate de căutare mai bogate și capacități avansate de cercetare
+- **Formulare de contact pentru constructorul de site** — creați formulare de contact complet funcționale direct din interfața de chat, folosind plugin-ul de formulare instalat
+- **Constructor de site îmbunătățit** — planuri de construire a site-ului îmbunătățite în mai multe etape, cu descoperire mai bună a plugin-urilor și recuperare a erorilor
+- **Abilități încorporate pentru teme** — ghidaj specializat pentru Block Themes, Classic Themes, Kadence Blocks și Kadence Theme
+- **Integrare îmbunătățită cu WooCommerce** — refactorizat pentru a folosi API-urile native WooCommerce, asigurând o fiabilitate și compatibilitate mai bune
+- **Detectare automată a furnizorului** — detectează și actualizează automat plugin-urile și temele disponibile atunci când acestea sunt activate sau dezactivate
+- **Generare de logo personalizat** — generați și încorporați logo-uri SVG personalizate cu sanitizare automată, sigură la namespace
+- **Validare a contrastului paletei de culori** — verificați perechile de culori pentru conformitatea cu accesibilitatea WCAG înainte de a le aplica temei
+- **Descoperire îmbunătățită cu fotografii** — încărcați fotografii în timpul interviului de descoperire din Theme Builder pentru a influența direcția de design
+- **Meniuri pentru ospitalitate** — generați pagini structurate de meniuri de alimente și băuturi pentru restaurante, cafenele și afaceri din domeniul ospitalității
+- **Preview pentru desktop și mobil** — vizualizați designul pe dispozitive desktop și mobile în timpul selecției direcției de design
+- **Scraping de site de Nivel 1** — sd-ai-agent/site-scrape este acum disponibil implicit pentru analiza site-urilor concurente și de inspirație
+
+## Cerințe
+
+- WordPress 6.0 sau mai mare
+- PHP 8.1 sau mai mare
+- WordPress Multisite (activat la nivel de rețea) sau instalare single-site
+- Un plugin connector de AI activ (Anthropic, OpenAI sau compatibil)
+- Gratis AI Agent v1.9.0 sau mai mare (Superdav AI Agent extinde Gratis AI Agent)
+
+## Instalare
+
+1. Încărcați fișierele plugin-ului în `/wp-content/plugins/superdav-ai-agent`
+2. Activați plugin-ul din ecranul **Plugins** din WordPress
+3. Asigurați-vă că Gratis AI Agent este, de asemenea, activat
+4. Navigați la **Gratis AI Agent → Settings** și configurați furnizorul de căutare pe internet (opțional)
+
+## Pornire Rapidă
+
+După activare, Superdav AI Agent îmbunătățește automat instalarea Gratis AI Agent cu abilități conștiente de temă și capacități suplimentare. Deschideți panoul **Gratis AI Agent** din bara laterală a adminului WordPress și începeți să folosiți noile funcționalități.
+
+**Instrucțiuni de exemplu:**
+
+```
+Adaugă o formă de contact pe pagina de Contact.
+```
+
+```
+Caută pe web cele mai recente practici de securitate pentru WordPress.
+```
+
+```
+Creează o secțiune hero folosind pattern-urile de bloc ale temei active.
+```
+
+## Abilități Conștiente de Temă
+
+Superdav AI Agent detectează automat tema activă și plugin-urile instalate, încărcând abilitatea conștientă de temă potrivită în contextul asistentului. Abilitățile disponibile includ:
+
+| Abilitate | Se aplică la |
+|---|---|
+| **Block Themes** | Temele care folosesc arhitectura bazată pe blocuri (Full Site Editing) a WordPress |
+| **Classic Themes** | Temele WordPress tradiționale care folosesc șabloane PHP și editorul clasic |
+| **Kadence Blocks** | Site-uri cu plugin-ul Kadence Blocks activat |
+| **Kadence Theme** | Site-uri cu tema Kadence ca tema activă |
+
+Vedeți [Abilitățile conștiente de temă](../../user-guide/configuration/theme-aware-skills) pentru ghidaj detaliat despre fiecare abilitate.
+
+## Furnizori de Căutare pe Internet
+
+Superdav AI Agent v1.10.0 adaugă **Tavily** ca alternativă Brave Search pentru interogări de căutare pe internet. Ambele furnizori oferă rezultate de căutare în timp real și pot fi configurate în **Gratis AI Agent → Settings → Advanced**.
+
+| Furnizor | Funcționalități | Setare |
+|---|---|---|
+| **Brave Search** | Rezultate de căutare rapide, axate pe confidențialitate | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Rezultate de căutare mai bogate, capacități avansate de cercetare | [Tavily API](https://tavily.com/) |
+
+Vedeți [Căutare pe Internet](../../user-guide/configuration/internet-search) pentru instrucțiuni de configurare.
+
+## Formulare de Contact pentru Constructorul de Site
+
+Agentul Site Builder poate crea acum formulare de contact direct din interfața de chat. Pur și simplu cereți Site Builder să creeze o formă de contact, iar acesta va detecta automat plugin-ul de formulare instalat (Contact Form 7, WPForms, Fluent Forms sau Gravity Forms) și va genera o formă gata de utilizare.
+
+Vedeți [Formulare de contact pentru constructorul de site](../../user-guide/administration/site-builder-contact-forms) pentru ghidaj detaliat.
+
+## Funcționalități Theme Builder
+
+Theme Builder în Superdav AI Agent v1.16.0 include noi capacități puternice:
+
+### Interviu de Descoperire cu Încărcarea de Foto
+
+Interviul de descoperire al Theme Builder include acum un pas de încărcare a fotografiilor, unde puteți oferi inspirație vizuală. Încărcați fotografii ale brandului, ale site-urilor concurente sau ale inspirației de design pentru a ajuta Theme Builder să înțeleagă direcția dumneavoastră de design.
+
+Vedeți [Interviu de descoperire](./theme-builder/discovery-interview.md) pentru ghidaj detaliat.
+
+### Direcția de Design cu Previzuuri Desktop și Mobile
+
+Revizuiți designul pe dispozitivele desktop și mobile înainte ca Theme Builder să genereze tema completă. Vedeți preview-uri în timp real la mai multe puncte de ruptură responsive.
+
+Vedeți [Direcția de design](./theme-builder/design-direction.md) pentru ghidaj detaliat.
+
+### Meniuri pentru Ospitalitate
+
+Theme Builder poate genera acum pagini structurate de meniuri de alimente și băuturi pentru restaurante, cafenele, baruri și alte afaceri din domeniul ospitalității. Meniurile includ prețuri, descrieri, informații dietetice și avertismente privind alergenii.
+
+Vedeți [Meniuri pentru ospitalitate](./theme-builder/hospitality-menus.md) pentru ghidaj detaliat.
+
+### Abilități Noi
+
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — creați logo-uri SVG personalizate cu sanitizare automată
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — verificați perechile de culori pentru conformitatea WCAG
+- **[Create Menu](./abilities/create-menu.md)** — creați meniuri de navigare cu etichete de navigare distincte
+
+Vedeți [Tools and Configuration](./theme-builder/tools.md) pentru informații despre instrumentele disponibile și despre instrumentul de scraping de site de Nivel 1.
+
+## Configurare
+
+Toate setările se găsesc în **Gratis AI Agent → Settings** în adminul WordPress. Superdav AI Agent adaugă următoarele opțiuni de configurare:
+
+| Setare | Descriere |
+|---|---|
+| **Internet Search Provider** | Alegeți între Brave Search și Tavily (opțional) |
+| **Tavily API Key** | Cheia API pentru căutarea pe internet Tavily (dacă este selectat Tavily) |
+
+## Îmbunătățiri în v1.16.0
+
+- **Cache AI Client** — acum susținut de transients pentru persistență între cereri, prevenind pierderea datelor la sarcini lungi ale agentului
+- **Instrumentul de scraping de site de Nivel 1** — sd-ai-agent/site-scrape este acum disponibil implicit în Theme Builder pentru analiza site-urilor concurente și de inspirație
+- **Link-uri de acțiune pentru rândul de plugin-uri** — corectate și redenumite pentru claritate
+
+## Îmbunătățiri în v1.10.0
+
+- **Integrarea WooCommerce refactorizată** — folosește acum API-urile native WooCommerce, asigurând o fiabilitate și compatibilitate mai bune
+- **Reîmprospătare automată a listei de furnizori** — detectează automat când plugin-urile sunt activate sau dezactivate și actualizează lista de furnizori disponibile
+- **Constructor de site îmbunătățit** — planuri de construire a site-ului îmbunătățite în mai multe etape, cu recuperare a erorilor mai bună
+- **Abilități conștiente de temă** — patru abilități încorporate noi care se adaptează automat temei active
+
+## Corecții de Bug în v1.10.0
+
+- Corectat `navigate-to` care cauza bucle de reîncărcare infinite pe unele pagini de admin
+- Corectat abilitatea `list-posts` care nu rezolva corect numele categoriilor și tag-urilor în slug-uri
+- Corectate comenzile WP-CLI care lipsceau aliasuri de namespace după o refactorizare anterioară
+- Corectat gestionarea gracefulă a evenimentelor pentru site-uri unde tabelele de automatizare nu au fost încă create
+- Corectată abilitatea `memory-save` care folosește prefixul de namespace corect în builderul de instrucțiuni sistem
+- Corectate rezultatele instrumentelor scalare care sunt încapsulate corect înainte de a fi returnate AI-ului
+- Corectate statisticile de utilizare care gestionează corect formatul vechi de cheie a abilității la upgrade de la versiuni mai vechi
+
+## Suport
+
+Pentru suport, vizitați [ultimatemultisite.com](https://ultimatemultisite.com) sau deschideți o problemă în repository-ul plugin-ului.
+
+## Changelog
+
+Vedeți [Changelog](./changelog) pentru istoricul complet al versiunilor.

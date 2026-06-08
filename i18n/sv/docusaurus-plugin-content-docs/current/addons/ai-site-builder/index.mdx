@@ -1,0 +1,124 @@
+---
+title: AI Webbplatsbyggare
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Krav
+
+- WordPress 5.3 eller högre
+- PHP 7.4 eller högre
+- Multisite Ultimate plugin (aktivt)
+
+## Installation
+
+1. Ladda upp tilläggsfilerna till din `/wp-content/plugins/` katalog
+2. Aktivera pluginet via menyn 'Plugins' i WordPress
+3. Konfigurera tilläggsinställningarna i nätverksadministratören
+
+## Utveckling
+
+### Uppställning
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projektstruktur
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP-klasser och inkluderade filer
+│   ├── class-multisite-ultimate-updater.php  # Uppdateringshanterare
+│   └── class-ai_site_builder-main.php             # Huvudfunktionalitet
+├── tests/                        # Enhetstester
+│   ├── bootstrap.php            # Test-bootstrap
+│   ├── class-*-base.php         # Basklass för tester
+│   └── class-*-test.php         # Testfall
+├── views/                       # Mallfiler
+├── assets/                      # Statiska tillgångar
+│   ├── css/                     # Stilblad
+│   ├── js/                      # JavaScript-filer
+│   └── images/                  # Bilder
+├── lang/                        # Språkfiler
+├── composer.json                # PHP-beroenden
+├── package.json                 # Node.js-beroenden
+├── phpunit.xml.dist             # PHPUnit-konfiguration
+├── .phpcs.xml.dist              # Kodstandardkonfiguration
+└── rector.php                   # Regler för kodmodernisering
+```
+
+### Testning
+
+Tillägget inkluderar ett omfattande testramverk:
+
+- **Enhetstester (Unit Tests)**: PHPUnit-baserade tester med WordPress test suite
+- **Basklass (Base Test Class)**: Tillhandahåller hjälpmetoder för vanliga testscenarier
+- **Testtäckning (Test Coverage)**: Konfigurerad för att spåra kodtäckning
+- **Multisite-testning**: Tester körs i en multisite-miljö
+
+### Kodstandarder
+
+- **WordPress Kodstandarder**: Hålls i ordning via PHPCS
+- **PHP 7.4+ Kompatibilitet**: Stöder moderna PHP-funktioner
+- **Statisk Analys**: PHPStan-integration för typkontroll
+- **Kodmodernisering**: Rector-regler för PHP-uppgraderingar
+
+### Byggsystem (Build System)
+
+- **Tillgångsprocessering (Asset Processing)**: Minifiering av CSS/JS-filer
+- **Översättning (Translation)**: Generering av POT-filer
+- **Paketering (Packaging)**: Skapande av arkiv för distribution
+- **Utvecklingsläge (Development Mode)**: Ominifierade tillgångar för felsökning
+
+## Konfiguration
+
+Tillägget stöder olika konfigurationsalternativ som är tillgängliga via nätverksadministratörsgränssnittet.
+
+## Hooks och Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Utlöses efter tilläggsinitialisering
+- `ultimate-multisite-ai-site-builder_loaded` - Utlöses efter att alla tilläggsfiler har laddats
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifiera tilläggsinställningarna
+- `ultimate-multisite-ai-site-builder_enabled` - Överskriva tilläggets aktiverings-/avaktiveringsstatus
+
+## Licens
+
+Detta tillägg är licensierat under GPL v3 eller senare.
+
+## Support
+
+För support och dokumentation, besök [MultisiteUltimate.com](https://multisiteultimate.com)
+## Ändringslogg (Changelog)
+
+- Version 1.0.1 (2025-09-28): bytte prefix till ultimate-multisite; uppdaterade textdomän; versionsökning.
+
+
+- Version (2025-09-28): bytte prefix till ultimate-multisite; uppdaterade textdomän; versionsökning.

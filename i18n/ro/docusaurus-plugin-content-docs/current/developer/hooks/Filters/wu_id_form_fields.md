@@ -1,0 +1,22 @@
+---
+id: wu_id_form_fields
+title: 'Filtru - wu_{$id}_form_fields'
+sidebar_label: 'wu_{$id}_form_fields'
+_i18n_hash: 4ce34f82555356308c280b58fd6b4b26
+---
+# Filter: wu_\{$id\}_form_fields
+
+Filtrează câmpurile unui formular. Formularul este identificat prin ID-ul inclus în numele filtrui.
+
+## Parametri
+
+| Name | Type | Description |
+|------|------|-------------|
+| $fields | `array` | Lista de câmpuri ale formularului. |
+
+### De la
+
+- 2.0.0
+### Sursă
+
+Definit în [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) la linia 148

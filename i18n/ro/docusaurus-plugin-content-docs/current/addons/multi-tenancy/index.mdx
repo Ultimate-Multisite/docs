@@ -1,0 +1,124 @@
+---
+title: Multitenanță
+sidebar_position: 1
+_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multitenanță
+
+Distribuirea subsite-urilor pe servere și baze de date pentru performanță și securitate
+
+## Cerințe
+
+- WordPress 5.3 sau mai nou
+- PHP 7.4 sau mai nou
+- Plugin-ul Ultimate Multisite (activ)
+
+## Instalare
+
+1. Încarcă fișierele addon-ului în directorul tău `/wp-content/plugins/`
+2. Activează plugin-ul din meniul „Plugins” din WordPress
+3. Configurează setările addon-ului în administratorul de rețea
+
+## Dezvoltare
+
+### Configurare
+
+```bash
+# Instalează dependențele
+composer install
+npm install
+
+# Rulează testele
+npm run test
+
+# Rulează verificările standardelor de cod
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Corectează problemele de stil al codului
+vendor/bin/phpcbf
+
+# Construiește pentru producție
+npm run build
+```
+
+### Structura proiectului
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Clase și include-uri PHP
+│   ├── class-multisite-ultimate-updater.php  # Handler de actualizare
+│   └── class-multi_tenancy-main.php             # Funcționalitatea principală
+├── tests/                        # Teste unitare
+│   ├── bootstrap.php            # Bootstrap pentru testare
+│   ├── class-*-base.php         # Clasa de testă de bază
+│   └── class-*-test.php         # Cazuri de testare
+├── views/                       # Fișiere de șablon
+├── assets/                      # Active statice
+│   ├── css/                     # Fișiere CSS
+│   ├── js/                      # Fișiere JavaScript
+│   └── images/                  # Imagini
+├── lang/                        # Fișiere de limbă
+├── composer.json                # Dependențe PHP
+├── package.json                 # Dependențe Node.js
+├── phpunit.xml.dist             # Configurația PHPUnit
+├── .phpcs.xml.dist              # Configurația standardelor de cod
+└── rector.php                   # Regulile de modernizare a codului
+```
+
+### Testare
+
+Addon-ul include un cadru de testare cuprinzător:
+
+- **Teste unitare**: Teste bazate pe PHPUnit, cu suite-ul de test WordPress
+- **Clasa de testă de bază**: Oferă metode auxiliare pentru scenarii comune de testare
+- **Acoperirea testelor**: Configurată pentru a urmări acoperirea codului
+- **Testare Multisite**: Testele rulează într-un mediu multisite
+
+### Standarde de cod
+
+- **Standarde de cod WordPress**: Aplicate prin PHPCS
+- **Compatibilitate PHP 7.4+**: Suport pentru funcționalitățile moderne PHP
+- **Analiză statică**: Integrarea PHPStan pentru verificare de tip
+- **Modernizare cod**: Regulile Rector pentru actualizările PHP
+
+### Sistem de build
+
+- **Procesarea activelor**: Minificare pentru fișierele CSS/JS
+- **Traducere**: Generarea fișierelor POT
+- **Ambalarea**: Crearea unui arhiv pentru distribuție
+- **Mod de dezvoltare**: Active ne-minificate pentru depanare
+
+## Configurare
+
+Addon-ul suportă diverse opțiuni de configurare, accesibile prin interfața administratorului de rețea.
+
+## Hooks și Filtre
+
+### Acțiuni
+
+- `ultimate-multisite-addon-template_init` - Se declanșează după inițializarea addon-ului
+- `ultimate-multisite-addon-template_loaded` - Se declanșează după încărcarea tuturor fișierelor addon-ului
+
+### Filtre
+
+- `ultimate-multisite-addon-template_settings` - Modifică setările addon-ului
+- `ultimate-multisite-addon-template_enabled` - Supraîntinde statutul de activare/dezactivare al addon-ului
+
+## Licență
+
+Acest addon este licențiat sub GPL v3 sau mai nou.
+
+## Suport
+
+Pentru suport și documentație, vizitează [MultisiteUltimate.com](https://multisiteultimate.com)
+## Istoric de modificări
+
+- Versiunea 1.0.1 (2025-09-28): se redenumește prefixul în ultimate-multisite; se actualizează domeniul de text; creștere a versiunii.
+
+
+- Versiunea (2025-09-28): se redenumește prefixul în ultimate-multisite; se actualizează domeniul de text; creștere a versiunii.

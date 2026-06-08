@@ -1,0 +1,117 @@
+---
+title: Wielowalutowy
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency pozwala Twojej sieci akceptować płatności w wielu walutach. Automatycznie konwertuje ceny, używając kursów wymiany (żywych lub ręcznie ustawionych), umożliwia ustawienie dokładnych cen dla każdego produktu w dowolnej walucie oraz wykrywa preferowaną walutę każdego odwiedzającego za pomocą geolokalizacji — wszystko zarządzane z jednego panelu administracyjnego.
+
+## Kluczowe funkcje
+
+- **Automatyczna konwersja kursów wymiany** — ceny są konwertowane z Twojej waluty bazowej, używając kursów pobranych od wybranego dostawcy.
+- **Nadpisywanie cen na poziomie produktu** — ustaw dokładne ceny specyficzne dla waluty na dowolnym produkcie, aby ominąć automatyczną konwersję.
+- **Pole wyboru waluty podczas rejestracji** — pozwala klientom wybrać preferowaną walutę podczas finalizacji zakupu/rejestracji.
+- **Wiele dostawców kursów wymiany** — ECB, Frankfurter, Stripe lub kursy w pełni ręczne.
+- **Wykrywanie waluty na podstawie geolokalizacji** — automatycznie wstępnie wybiera walutę pasującą do kraju odwiedzającego.
+- **Panel administracyjny** — zarządzaj aktywnymi walutami, kursami wymiany i ustawieniami dostawców z jednego miejsca.
+
+## Wymagania
+
+- Ultimate Multisite 2.0.0 lub nowszy
+- Instalacja WordPress Multisite
+- PHP 7.4 lub nowszy
+
+## Instalacja
+
+1. Prześlij pliki pluginu do `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktywuj plugin w ekranie **Plugins** w WordPress (Aktywacja sieciowa)
+3. Przejdź do **Ultimate Multisite → Multi-Currency**, aby otworzyć panel administracyjny.
+4. Dodaj waluty, które chcesz akceptować, i skonfiguruj dostawcę kursów wymiany.
+
+## Konfiguracja
+
+### Panel administracyjny
+
+Panel administracyjny Multi-Currency (**Ultimate Multisite → Multi-Currency**) to centralne miejsce, gdzie możesz:
+
+- Dodawać, aktywować lub dezaktywować waluty.
+- Wybrać dostawcę kursów wymiany i odświeżyć kursy na żądanie.
+- Sprawdzić aktualne kursy dla wszystkich aktywnych walut.
+- Ustawić ręczne kursy, gdy automatyczne dostawcy nie są odpowiednie.
+
+### Dostawcy kursów wymiany
+
+| Provider | Opis |
+|---|---|
+| **ECB** | Europejski Bank Centralny — darmowe dzienne kursy dla sieci oparte na EUR. |
+| **Frankfurter** | Open-source API lustrzane ECB — darmowe, nie wymaga klucza API. |
+| **Stripe** | Wykorzystuje żywe kursy walutowe Stripe — wymaga aktywnej integracji ze Stripe. |
+| **Manual** | Wprowadzasz kursy bezpośrednio; brak wywołań zewnętrznego API. |
+
+Wybierz swojego dostawcę w **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kursy można ręcznie odświeżyć w dowolnym momencie lub zaplanować automatyczne aktualizacje.
+
+### Nadpisywanie cen na poziomie produktu
+
+Jeśli automatyczna konwersja nie jest wystarczająco precyzyjna, możesz ustawić dokładną cenę dla konkretnej waluty na dowolnym produkcie:
+
+1. Otwórz edytor produktu (**Ultimate Multisite → Products → Edit**)
+2. Przewiń do sekcji **Currency Pricing** (Cennik walutowy).
+3. Wprowadź dokładną cenę dla każdej waluty, którą chcesz nadpisać.
+4. Zapisz produkt.
+
+Produkty bez nadpisu użyją skonwertowanej ceny z Twojej waluty bazowej.
+
+### Pole wyboru waluty podczas rejestracji
+
+Pole wyboru waluty można dodać do procesu rejestracji/finalizacji zakupu, dzięki czemu klienci wybierają preferowaną walutę podczas rejestracji:
+
+1. Przejdź do **Ultimate Multisite → Multi-Currency → Settings**.
+2. Włącz **Show currency selector on signup** (Pokaż wybór waluty podczas rejestracji).
+3. Opcjonalnie ustaw walutę domyślną lub pozwól, aby geolokalizacja ustaliła wstępnie wybrana wartość.
+
+Wybrana waluta jest zapisywana wraz z subskrypcją i używana do wszystkich kolejnych rozliczeń.
+
+### Wykrywanie waluty na podstawie geolokalizacji
+
+Gdy wykrywanie geolokalizacji jest włączone, addon mapuje kraj odwiedzającego do waluty i wstępnie wybiera ją w polu wyboru waluty. Aby włączyć:
+
+1. Przejdź do **Ultimate Multisite → Multi-Currency → Settings**.
+2. Włącz **Detect currency from visitor location** (Wykrywaj walutę z lokalizacji odwiedzającego).
+3. Mapuj kraje do walut w tabeli **Geolocation Mapping** (Mapowanie geolokalizacji).
+
+Jeśli nie istnieje mapowanie dla kraju odwiedzającego, jako wartość zapasową używana jest waluta bazowa sieci.
+
+## Najczęściej zadawane pytania
+
+### Co się dzieje, jeśli dostawca kursów wymiany jest niedostępny?
+
+Addon przechodzi na kursy z ostatniego udanego pobrania. Jeśli nigdy nie pobrano kursów, przechodzi na ręcznie skonfigurowane kursy. Zaleca się skonfigurowanie kursów ręcznych jako zabezpieczenia.
+
+### Czy mogę używać różnych dostawców dla różnych walut?
+
+Nie — dla wszystkich walut aktywny jest tylko jeden dostawca. Użyj **Manual**, jeśli potrzebujesz pełnej kontroli nad indywidualnymi kursami.
+
+### Czy geolokalizacja wymaga osobnego pluginu?
+
+Nie jest wymagany zewnętrzny plugin geolokalizacyjny. Addon używa wbudowanego wykrywania IP-do-kraju w WordPress. Dla wyższej dokładności można zintegrować dedykowaną usługę geolokalizacyjną za pomocą udostępnionych hooków filtrów.
+
+### Czy nadpisywanie cen na poziomie produktu jest stosowane przed czy po podatku?
+
+Nadpisywanie cen na poziomie produktu ustawia cenę przed opodatkowaniem w docelowej walucie. Podatek jest obliczany na podstawie ceny nadpisanej, używając Twojej istniejącej konfiguracji podatkowej.
+
+## Changelog
+
+### Wersja 1.0.0 — Wydana 2026-04-02
+
+- Nowość: Wsparcie dla wielu walut z automatyczną konwersją kursów wymiany.
+- Nowość: Nadpisywanie cen na poziomie produktu dla dokładnych cen specyficznych dla waluty.
+- Nowość: Pole wyboru waluty podczas rejestracji dla procesu finalizacji zakupu.
+- Nowość: Dostawcy kursów wymiany: ECB, Frankfurter, Stripe i ręczne.
+- Nowość: Wykrywanie waluty na podstawie geolokalizacji.
+- Nowość: Panel administracyjny do zarządzania walutami i kursami wymiany.
+- Poprawka: Dashboard zawsze wyświetla ceny w walucie bazowej, niezależnie od wybranej waluty.
