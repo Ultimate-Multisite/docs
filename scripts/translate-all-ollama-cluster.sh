@@ -6,18 +6,21 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 RUN_ID="$(date +%Y%m%d-%H%M%S)"
 
-MODEL="${MODEL:-gemma4:e2b-it-qat}"
-HOSTS_CSV="${TRANSLATE_OLLAMA_HOSTS:-http://127.0.0.1:11434,http://192.168.0.191:11434}"
+MODEL="${MODEL:-gemma4:12b-it-qat}"
+HOSTS_CSV="${TRANSLATE_OLLAMA_HOSTS:-http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.191:11435,http://192.168.0.191:11436}"
 LOCALES_REQUESTED="${LOCALES:-all}"
 RUN_DIR="${RUN_DIR:-/tmp/ultimate-multisite-translate-cluster-${RUN_ID}}"
 REQUEST_NUM_CTX="${OLLAMA_REQUEST_NUM_CTX:-${OLLAMA_CONTEXT_LENGTH:-8192}}"
 NUM_PREDICT="${OLLAMA_NUM_PREDICT:-4096}"
 CHUNK_MAX_CHARS="${TRANSLATE_CHUNK_MAX_CHARS:-1500}"
-SHARDS_PER_HOST="${TRANSLATE_SHARDS_PER_HOST:-4}"
-CONCURRENCY_PER_SHARD="${TRANSLATE_CONCURRENCY_PER_SHARD:-1}"
+SHARDS_PER_HOST="${TRANSLATE_SHARDS_PER_HOST:-1}"
+CONCURRENCY_PER_SHARD="${TRANSLATE_CONCURRENCY_PER_SHARD:-2}"
 REQUEST_TIMEOUT_SECONDS="${TRANSLATE_TIMEOUT_SECONDS:-900}"
 MONITOR_INTERVAL="${MONITOR_INTERVAL:-30}"
 PRIORITY="${TRANSLATE_PRIORITY:-0}"
+PRELOAD_HOSTS="${TRANSLATE_PRELOAD_OLLAMA_HOSTS:-1}"
+AUTH_TOKEN="${TRANSLATE_OLLAMA_API_KEY:-${OLLAMA_API_KEY:-${OLLAMA_BEARER_TOKEN:-${CONDUCTOR_TENANT_TOKEN:-}}}}"
+REQUEST_API_KEY="${AUTH_TOKEN:-ollama}"
 
 TRANSLATE_PIDS=()
 TRANSLATE_LOGS=()
@@ -79,7 +82,11 @@ parse_hosts() {
 check_host() {
 	local host="$1"
 	local log_file="$2"
-	if ! curl -fsS "${host}/api/tags" >"${log_file}" 2>&1; then
+	local auth_args=()
+	if [[ -n "${AUTH_TOKEN}" ]]; then
+		auth_args=(-H "Authorization: Bearer ${AUTH_TOKEN}")
+	fi
+	if ! curl -fsS "${auth_args[@]}" "${host}/api/tags" >"${log_file}" 2>&1; then
 		die "Ollama host is not reachable: ${host} (details: ${log_file})"
 	fi
 	return 0
@@ -91,6 +98,39 @@ check_hosts() {
 	for host in "${HOSTS[@]}"; do
 		check_host "${host}" "${RUN_DIR}/host-${index}.json"
 		log "Ollama host ready: ${host}"
+		index=$((index + 1))
+	done
+	return 0
+}
+
+preload_host() {
+	local host="$1"
+	local index="$2"
+	local preload_file="${RUN_DIR}/preload-host-${index}.json"
+	local auth_args=()
+	if [[ -n "${AUTH_TOKEN}" ]]; then
+		auth_args=(-H "Authorization: Bearer ${AUTH_TOKEN}")
+	fi
+
+	log "Preloading ${MODEL} on ${host}"
+	curl -fsS "${host}/api/chat" \
+		"${auth_args[@]}" \
+		-H 'Content-Type: application/json' \
+		-d "{\"model\":\"${MODEL}\",\"messages\":[{\"role\":\"user\",\"content\":\"Translate to French: ready\"}],\"stream\":false,\"think\":false,\"keep_alive\":-1,\"options\":{\"num_ctx\":${REQUEST_NUM_CTX},\"num_predict\":8}}" \
+		>"${preload_file}"
+	return 0
+}
+
+preload_hosts() {
+	if [[ "${PRELOAD_HOSTS}" != "1" ]]; then
+		log "Skipping Ollama host preload because TRANSLATE_PRELOAD_OLLAMA_HOSTS=${PRELOAD_HOSTS}"
+		return 0
+	fi
+
+	local index=0
+	local host=""
+	for host in "${HOSTS[@]}"; do
+		preload_host "${host}" "${index}"
 		index=$((index + 1))
 	done
 	return 0
@@ -133,7 +173,7 @@ run_dry_run() {
 		extra_priority_args=(--priority "${PRIORITY}")
 	fi
 	log "Calculating translation quantity with dry-run via ${host}" >&2
-	OPENAI_API_KEY="ollama" node scripts/translate.js \
+	if ! OPENAI_API_KEY="${REQUEST_API_KEY}" node scripts/translate.js \
 		--provider ollama-native \
 		--base-url "${host}" \
 		--model "${MODEL}" \
@@ -141,7 +181,9 @@ run_dry_run() {
 		--concurrency 1 \
 		--dry-run \
 		"${extra_priority_args[@]}" \
-		"$@" >"${dry_log}" 2>&1
+		"$@" >"${dry_log}" 2>&1; then
+		die "Dry-run failed; see ${dry_log}"
+	fi
 	printf '%s\n' "${dry_log}"
 	return 0
 }
@@ -177,7 +219,7 @@ start_translation() {
 	fi
 
 	log "Starting translation on ${name} (${host}): $(printf '%s' "${locales}" | tr ',' ' ')"
-	OPENAI_API_KEY="ollama" node scripts/translate.js \
+	OPENAI_API_KEY="${REQUEST_API_KEY}" node scripts/translate.js \
 		--provider ollama-native \
 		--base-url "${host}" \
 		--model "${MODEL}" \
@@ -268,6 +310,7 @@ cleanup() {
 	for pid in "${TRANSLATE_PIDS[@]}"; do
 		if kill -0 "${pid}" >/dev/null 2>&1; then
 			kill "${pid}" >/dev/null 2>&1 || true
+			wait "${pid}" >/dev/null 2>&1 || true
 		fi
 	done
 	return 0
@@ -290,6 +333,7 @@ main() {
 	log "Locales: ${LOCALES_REQUESTED}; priority: ${PRIORITY:-0}"
 	log "Request ctx: ${REQUEST_NUM_CTX}; num_predict: ${NUM_PREDICT}; chunk chars: ${CHUNK_MAX_CHARS}"
 	log "Shards/host: ${SHARDS_PER_HOST}; translation concurrency/shard: ${CONCURRENCY_PER_SHARD}"
+	preload_hosts
 
 	local total_shards=$((SHARDS_PER_HOST * ${#HOSTS[@]}))
 	local locale_shards=()

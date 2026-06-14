@@ -6,23 +6,32 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 RUN_ID="$(date +%Y%m%d-%H%M%S)"
 
-MODEL="${MODEL:-gemma4:e2b-it-qat}"
-NUM_PARALLEL="${OLLAMA_NUM_PARALLEL:-4}"
+MODEL="${MODEL:-gemma4:12b-it-qat}"
+NUM_PARALLEL="${OLLAMA_NUM_PARALLEL:-2}"
 CONTEXT_LENGTH="${OLLAMA_CONTEXT_LENGTH:-8192}"
 REQUEST_NUM_CTX="${OLLAMA_REQUEST_NUM_CTX:-${CONTEXT_LENGTH}}"
 NUM_PREDICT="${OLLAMA_NUM_PREDICT:-4096}"
 CHUNK_MAX_CHARS="${TRANSLATE_CHUNK_MAX_CHARS:-1500}"
-SHARDS_PER_SERVER="${TRANSLATE_SHARDS_PER_SERVER:-4}"
-CONCURRENCY_PER_SHARD="${TRANSLATE_CONCURRENCY_PER_SHARD:-1}"
+SHARDS_PER_SERVER="${TRANSLATE_SHARDS_PER_SERVER:-1}"
+CONCURRENCY_PER_SHARD="${TRANSLATE_CONCURRENCY_PER_SHARD:-2}"
 REQUEST_TIMEOUT_SECONDS="${TRANSLATE_TIMEOUT_SECONDS:-900}"
 MONITOR_INTERVAL="${MONITOR_INTERVAL:-30}"
+PRIORITY="${TRANSLATE_PRIORITY:-0}"
 PORT_A="${OLLAMA_PORT_A:-11435}"
 PORT_B="${OLLAMA_PORT_B:-11436}"
+BIND_HOST="${OLLAMA_BIND_HOST:-127.0.0.1}"
 HOST_A="http://127.0.0.1:${PORT_A}"
 HOST_B="http://127.0.0.1:${PORT_B}"
 LOCALES_REQUESTED="${LOCALES:-all}"
 RUN_DIR="${RUN_DIR:-/tmp/ultimate-multisite-translate-${RUN_ID}}"
 MODELS_DIR="${OLLAMA_MODELS:-/mnt/data/models/}"
+CUDA_DEVICE_ORDER_VALUE="${CUDA_DEVICE_ORDER:-PCI_BUS_ID}"
+OLLAMA_LLM_LIBRARY_VALUE="${OLLAMA_LLM_LIBRARY:-cuda_v12}"
+OLLAMA_VULKAN_VALUE="${OLLAMA_VULKAN:-false}"
+OLLAMA_SCHED_SPREAD_VALUE="${OLLAMA_SCHED_SPREAD:-false}"
+START_ONLY="${START_ONLY:-0}"
+AUTH_TOKEN="${TRANSLATE_OLLAMA_API_KEY:-${OLLAMA_API_KEY:-${OLLAMA_BEARER_TOKEN:-${CONDUCTOR_TENANT_TOKEN:-}}}}"
+REQUEST_API_KEY="${AUTH_TOKEN:-ollama}"
 
 SERVER_PIDS=()
 TRANSLATE_PIDS=()
@@ -119,10 +128,14 @@ start_ollama_server() {
 
 	port_is_free "${port}" || die "Port ${port} is already in use"
 
-	log "Starting Ollama ${name} on ${gpu_uuid}, port ${port}, OLLAMA_NUM_PARALLEL=${NUM_PARALLEL}"
+	log "Starting Ollama ${name} on ${gpu_uuid}, bind ${BIND_HOST}:${port}, OLLAMA_NUM_PARALLEL=${NUM_PARALLEL}"
+	CUDA_DEVICE_ORDER="${CUDA_DEVICE_ORDER_VALUE}" \
 	CUDA_VISIBLE_DEVICES="${gpu_uuid}" \
-	OLLAMA_HOST="127.0.0.1:${port}" \
+	OLLAMA_HOST="${BIND_HOST}:${port}" \
 	OLLAMA_MODELS="${MODELS_DIR}" \
+	OLLAMA_LLM_LIBRARY="${OLLAMA_LLM_LIBRARY_VALUE}" \
+	OLLAMA_VULKAN="${OLLAMA_VULKAN_VALUE}" \
+	OLLAMA_SCHED_SPREAD="${OLLAMA_SCHED_SPREAD_VALUE}" \
 	OLLAMA_NUM_PARALLEL="${NUM_PARALLEL}" \
 	OLLAMA_MAX_LOADED_MODELS="1" \
 	OLLAMA_CONTEXT_LENGTH="${CONTEXT_LENGTH}" \
@@ -136,6 +149,14 @@ start_ollama_server() {
 	SERVER_PIDS+=("${pid}")
 	wait_for_server "http://127.0.0.1:${port}" "${name}"
 	log "Ollama ${name} ready (pid ${pid}, log ${log_file})"
+	return 0
+}
+
+wait_forever() {
+	log "START_ONLY=1: Ollama servers are ready; press Ctrl-C to stop them."
+	while true; do
+		sleep 3600
+	done
 	return 0
 }
 
@@ -183,15 +204,22 @@ run_dry_run() {
 	local locales="$1"
 	shift 1
 	local dry_log="${RUN_DIR}/dry-run.log"
+	local extra_priority_args=()
+	if [[ "${PRIORITY}" -gt 0 ]]; then
+		extra_priority_args=(--priority "${PRIORITY}")
+	fi
 	log "Calculating translation quantity with dry-run" >&2
-	OPENAI_API_KEY="ollama" node scripts/translate.js \
+	if ! OPENAI_API_KEY="${REQUEST_API_KEY}" node scripts/translate.js \
 		--provider ollama-native \
 		--base-url "${HOST_A}" \
 		--model "${MODEL}" \
 		--locales "${locales}" \
 		--concurrency 1 \
 		--dry-run \
-		"$@" >"${dry_log}" 2>&1
+		"${extra_priority_args[@]}" \
+		"$@" >"${dry_log}" 2>&1; then
+		die "Dry-run failed; see ${dry_log}"
+	fi
 	printf '%s\n' "${dry_log}"
 	return 0
 }
@@ -216,6 +244,10 @@ start_translation() {
 	local locales="$3"
 	shift 3
 	local log_file="${RUN_DIR}/translate-${name}.log"
+	local extra_priority_args=()
+	if [[ "${PRIORITY}" -gt 0 ]]; then
+		extra_priority_args=(--priority "${PRIORITY}")
+	fi
 
 	if [[ -z "${locales}" ]]; then
 		log "Skipping ${name}: no locales assigned"
@@ -223,7 +255,7 @@ start_translation() {
 	fi
 
 	log "Starting translation on ${name}: $(printf '%s' "${locales}" | tr ',' ' ')"
-	OPENAI_API_KEY="ollama" node scripts/translate.js \
+	OPENAI_API_KEY="${REQUEST_API_KEY}" node scripts/translate.js \
 		--provider ollama-native \
 		--base-url "${host}" \
 		--model "${MODEL}" \
@@ -233,6 +265,7 @@ start_translation() {
 		--num-ctx "${REQUEST_NUM_CTX}" \
 		--num-predict "${NUM_PREDICT}" \
 		--chunk-max-chars "${CHUNK_MAX_CHARS}" \
+		"${extra_priority_args[@]}" \
 		"$@" >"${log_file}" 2>&1 &
 
 	local pid="$!"
@@ -313,11 +346,13 @@ cleanup() {
 	for pid in "${TRANSLATE_PIDS[@]}"; do
 		if kill -0 "${pid}" >/dev/null 2>&1; then
 			kill "${pid}" >/dev/null 2>&1 || true
+			wait "${pid}" >/dev/null 2>&1 || true
 		fi
 	done
 	for pid in "${SERVER_PIDS[@]}"; do
 		if kill -0 "${pid}" >/dev/null 2>&1; then
 			kill "${pid}" >/dev/null 2>&1 || true
+			wait "${pid}" >/dev/null 2>&1 || true
 		fi
 	done
 	return 0
@@ -337,6 +372,8 @@ main() {
 	log "Run directory: ${RUN_DIR}"
 	log "Model: ${MODEL}"
 	log "GPUs: ${GPU_A}, ${GPU_B}"
+	log "Locales: ${LOCALES_REQUESTED}; priority: ${PRIORITY:-0}"
+	log "Ollama bind host: ${BIND_HOST}; backend: ${OLLAMA_LLM_LIBRARY_VALUE}; Vulkan: ${OLLAMA_VULKAN_VALUE}; spread: ${OLLAMA_SCHED_SPREAD_VALUE}"
 	log "Context length: ${CONTEXT_LENGTH}; request ctx: ${REQUEST_NUM_CTX}; num_predict: ${NUM_PREDICT}; chunk chars: ${CHUNK_MAX_CHARS}"
 	log "Ollama parallel/server: ${NUM_PARALLEL}; shards/server: ${SHARDS_PER_SERVER}; translation concurrency/shard: ${CONCURRENCY_PER_SHARD}"
 
@@ -354,6 +391,10 @@ main() {
 	start_ollama_server "${GPU_B}" "${PORT_B}" "gpu1"
 	preload_model "${HOST_A}" "gpu0"
 	preload_model "${HOST_B}" "gpu1"
+	if [[ "${START_ONLY}" == "1" ]]; then
+		wait_forever
+		return 0
+	fi
 
 	local dry_log=""
 	dry_log="$(run_dry_run "${locales_all}" "$@")"
