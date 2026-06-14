@@ -15,7 +15,7 @@ Met die Ultimate Multisite uitroepberig-kenmerk kan jy **admin-kennisgewings** b
 
 Dit is uiters nuttig indien jy 'n aankondiging moet maak, soos stelselonderhoud of die aanbieding van nuwe produkte of dienste aan jou bestaande gebruikers. So lyk die admin-kennisgewing op jou gebruiker se dashboard.
 
-![Admin-kennisgewing uitgestuur op 'n kliënt se subsite dashboard](/img/frontend/broadcast-customer-dashboard.png)
+<!-- Screenshot unavailable: Admin-kennisgewing uitgestuur op 'n kliënt se subsite dashboard -->
 
 Om 'n admin-kennisgewing te begin, gaan na jou netwerk-admin-dashboard en onder die **Ultimate Multisite**-menu sal jy die **Broadcasts**-opsie vind.
 
@@ -75,7 +75,7 @@ Sodra jou teikengehoor geselekteer is, kan jy op **Next Step** klik.
 
 Die volgende venster is waar jy kan begin met die opstel van jou e-pos deur die onderwerp en die inhoud/boodskap wat jy wil aan die gebruikers stuur, in te voer.
 
-![E-pos uitroepberig onderwerp en inhoud redigeerder op die opstel-stap](/img/admin/broadcast-email-compose.png)
+<!-- Screenshot unavailable: E-pos uitroepberig onderwerp en inhoud redigeerder op die opstel-stap -->
 
 Nadat jy jou boodskap geskep het, kan jy op die **Send**-knoppie klik.
 
@@ -101,7 +101,7 @@ Gaan na jou Ultimate Multisite Instellingsbladsy en navigeer na die **Emails**-t
 
 Klik dan, aan die sybalk, op die **Customize System Emails**-knoppie.
 
-![Customize System Emails button on the System Emails sidebar panel](/img/config/settings-emails-customize-button.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
 Op die Sisteem-e-posse bladsy, sal jy die **Reset & Import**-aksie-knoppie bo-op sien. Om op daardie knoppie te klik, sal die import- en herstelmodale venster oopmaak.
 
@@ -109,7 +109,7 @@ Op die Sisteem-e-posse bladsy, sal jy die **Reset & Import**-aksie-knoppie bo-op
 
 Dan kan jy die Import Emails-opsies omskakel om te sien watter stelsel-e-posse beskikbaar is vir import.
 
-![Reset and Import modal with the Import Emails options expanded](/img/admin/system-emails-import-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
 #### Herstel van Sisteem-e-posse
 
@@ -121,4 +121,4 @@ Of jy kan die **Reset & Import tool** gebruik om daardie e-pos-template te herst
 
 Om 'n e-pos-template te herstel, kan jy die stappe hierbo volg totdat jy by die Reset & Import tool kom, en dan, die **Reset**-opsie omskakel en die e-posse kies wat jy wil herstel na hul standaardinhoud.
 
-![Reset and Import modal with the Reset Emails options expanded](/img/admin/system-emails-reset-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

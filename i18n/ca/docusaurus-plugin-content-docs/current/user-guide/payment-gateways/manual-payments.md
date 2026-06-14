@@ -29,7 +29,7 @@ Després d'ho configurar, només has de fer clic a **Save Settings** i està fet
 
 I també tindran un missatge a la teva pàgina de **Gràcies** amb les instruccions del teu pagament.
 
-![Pàgina de Gràcies que mostra les instruccions de pagament després del checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Pàgina de Gràcies que mostra les instruccions de pagament després del checkout -->
 
 ## Confirmar pagaments manuals
 

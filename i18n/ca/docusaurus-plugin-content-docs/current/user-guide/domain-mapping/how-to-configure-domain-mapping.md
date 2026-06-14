@@ -19,7 +19,7 @@ El mapeig de domini requereix alguna configuració de la teva part per funcionar
 
 Durant l'instal·lació d'Ultimate Multisite, l'assistència (wizard) copiarà i instal·larà automàticament el **sunrise.php** a la carpeta designada. **L'assistència no et permetrà continuar fins que aquest pas estigui completat**.
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 Això significa que una vegada que l'assistència d'instal·lació d'Ultimate Multisite hagi acabat de configurar el teu network, pots començar a mapejar el domini personalitzat de seguida.
 
@@ -71,9 +71,9 @@ Això començarà el procés de verificar i obtenir la informació DNS del domin
 
 El **Stage** o l'estat hauria de canviar de **Checking DNS** a **Ready** si tot està configurat correctament.
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 Si cliqueu al nom de domini, podreu veure algunes opcions dins. Veiem un cop ràpid:
 
@@ -95,7 +95,7 @@ Els administradors de subsites també poden mapejar noms de domini personalitzat
 
 Primer, has de comprovar que has d'habilitar aquesta opció dins de la configuració de **Domain mapping**. Veu la captura de pantalla a continuació.
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 També pots configurar o ajustar aquesta opció al nivell del **Plan** o les opcions de producte en **Ultimate Multisite > Products**.
 
@@ -103,17 +103,17 @@ També pots configurar o ajustar aquesta opció al nivell del **Plan** o les opc
 
 Quan qualsevol d'aquestes opcions estan habilitades i a un usuari de subsite es li permet mapejar noms de domini personalitzats, l'usuari de subsite hauria de veure una metabox sota la pàgina **Account** anomenada **Domains**.
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 L'usuari pot clicar al botó **Add Domain** i això t'mostrarà una finestra modal amb algunes instruccions.
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 L'usuari pot després clicar a **Next Step** i continuar amb l'afecció del nom de domini personalitzat. També pot triar si aquest serà el domini principal o no.
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 Cliquar a **Add Domain** començarà el procés de verificar i obtenir la informació DNS del domini personalitzat.
 
@@ -127,6 +127,6 @@ Hauràs de activar aquesta integració a la configuració d'Ultimate Multisite s
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _Ten en compte que si el teu proveïdor d'hosting no és un dels proveïdors esmentats anteriorment,**hauràs de sincronitzar o afegir manualment el nom de domini** al teu compte d'hosting._

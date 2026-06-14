@@ -88,17 +88,17 @@ Ultimate Multisite не адпраўляе і не выплачвае падат
 
 Вас перанакіруе на нашу старонку аддоткаў. Там вы можаце знайсці **Ultimate Multisite VAT add-on** і ўсталяваць яго.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Затым, зайдзіце ў **Network Admin > Plugins** і актывуйце гэты add-on на ўсім сетцы.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 Калі вы вернёцеся на **Tax Settings tab**, вы ўбачыце новыя магчымасці. Пераключыце пераключальнік **Enable VAT Support**, каб актывуваць новыя інструменты VAT. Не забывайце **захаваць** свае настройкі!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Загрузка падатковых ста{:rate} VAT
 
@@ -114,6 +114,6 @@ Ultimate Multisite не адпраўляе і не выплачвае падат
 
 Калі ўкрэслена падтрымка VAT, Ultimate Multisite дадасць дадатковае поле ў форму кассы, пад паляй адрасы для выстаўлення рахункаў. Гэта поле будзе бачна толькі для кліентаў, якія знаходзяцца ў ЕС.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 Затым Ultimate Multisite праверыць Номер VAT, і калі ён будзе спаўдалены як валідна, будзе прымянены механізм зваротнага падатку, і падатковая ста{:rate} будзе ўсталена на 0% для гэтага замовы.

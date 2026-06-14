@@ -29,7 +29,7 @@ Kurulumu yaptıktan sonra sadece **Ayarları Kaydet (Save Settings)** düğmesin
 
 Ayrıca, **Teşekkürler (Thank You)** sayfanızda da ödeme talimatlarınızla ilgili bir mesaj alacaklardır.
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Manuel Ödemeleri Onaylama
 

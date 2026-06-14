@@ -19,7 +19,7 @@ Mapiranje domena zahtijeva da vi nešto postavite da bi funkcionisalo. Srećom, 
 
 Tokom instalacije Ultimate Multisite, čarobnik će automatski kopirati i instalirati **sunrise.php** u određenu mapu. **Čarobnik neće dozvoliti nastavak sve dok ovaj korak nije završen**.
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 To znači da, nakon što Ultimate Multisite instalacioni čarobnik završi sa postavljanjem vaše mreže, možete odmah početi sa mapiranjem prilagođenog domena.
 
@@ -71,9 +71,9 @@ Ovo će započeti proces provjere i dohvaćanja DNS informacija prilagođenog do
 
 **Stage** ili status bi trebalo da se promijeni sa **Checking DNS** na **Ready** ako je sve pravilno postavljeno.
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 Ako kliknete na ime domena, moći ćete da vidite neke opcije unutar njega. Pogledajmo ih:
 
@@ -95,7 +95,7 @@ Administratori pod-sajtova takođe mogu mapirati prilagođene domene sa admin da
 
 Prvo, morate osigurati da uključite ovu opciju pod postavkama **Domain mapping**. Pogledajte snimak ekrana ispod.
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 Takođe možete postaviti ili konfigurirati ovu opciju na nivou **Plan** ili opcija proizvoda na **Ultimate Multisite > Products**.
 
@@ -103,17 +103,17 @@ Takođe možete postaviti ili konfigurirati ovu opciju na nivou **Plan** ili opc
 
 Kada su bilo koje od tih opcija uključene i korisniku pod-sajta je dozvoljeno mapiranje prilagođenih domena, korisnik pod-sajta bi trebao vidjeti metaboks pod stranicom **Account** nazvan **Domains**.
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 Korisnik može kliknuti na dugme **Add Domain**, što će otvoriti modalni prozor sa nekim uputstvima.
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 Korisnik zatim može kliknuti **Next Step** i nastaviti sa dodavanjem prilagođenog domena. Takođe može odabrati da li će ovo biti primarni domen ili ne.
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 Klik na **Add Domain** započeti će proces provjere i dohvaćanja DNS informacija prilagođenog domena.
 
@@ -127,6 +127,6 @@ Morat ćete aktivirati ovu integraciju u postavkama Ultimate Multisite pod karti
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _Napomena: Ako vaš hosting provajder nije jedan od navedenih provajdera,**morat ćete ručno sinhronizovati ili dodati ime domena** na vaš hosting račun._

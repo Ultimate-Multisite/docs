@@ -161,7 +161,7 @@ Voordat jy die Period Selection-veld byvoeg, maak seker dat jou produkte prysvar
 
 Jy kan ook die veldopsies direk konfigureer:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Kies 'n **Period Selector Template** (Clean is die standaard, wat 'n eenvoudige gestileerde keuse skep wat gereed is vir aangepaste CSS).
 

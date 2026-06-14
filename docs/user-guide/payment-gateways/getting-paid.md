@@ -19,7 +19,7 @@ Before you setup your payment gateway, please take a look at the basic payment s
 
 **Force auto-rene** **w:** This will make sure that the payment will automatically recur at the end of every billing cycle depending on the billing frequency the user selected.
 
-![Force Auto-Renew toggle setting on the Payments settings page](/img/config/payments-force-auto-renew.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
 Ultimate Multisite v2.13.0 checks whether the active gateway has a reusable renewal credential before saving a recurring membership with auto-renewal enabled. A renewal credential can be a gateway subscription, billing agreement, saved vault token, or equivalent reusable payment method. If the gateway reports that no usable credential exists, Ultimate Multisite saves the membership but turns off auto-renewal and records the missing-credential state so an administrator or support flow can ask the customer to re-authorize payment before the renewal date.
 
@@ -27,17 +27,17 @@ This prevents a membership from appearing to auto-renew when the gateway can onl
 
 **Allow trials without payment** **method:** With this option enabled your client won't have to add any financial information during the registration process. This will only be required once the trial period expires.
 
-![Allow Trials Without Payment Method toggle on the Payments settings page](/img/config/payments-allow-trials.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
 **Send invoice on payment confirmation:** This gives you an option whether or not to send an invoice after payment. Note that users will have access to their payment history under their subsite dashboard. This option doesn't apply to the Manual Gateway.
 
-![Send Invoice on Payment Confirmation toggle on the Payments settings page](/img/config/payments-send-invoice.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
 **Invoice numbering scheme:** Here, you can select either a payment reference code or a sequential number scheme. If you choose to use a payment reference code for your invoices, you don't need to configure anything. If you choose to use a sequential number scheme, you will need to configure the **next invoice number** (This number will be used as the invoice number for the next invoice generated on the system. It is incremented by one every time a new invoice is created. You can change it and save it to reset the invoice sequential number to a specific value) and the **invoice number prefix.**
 
-![Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options](/img/config/payments-invoice-scheme.png)
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-![Next invoice number and invoice number prefix fields shown when Sequential Number is selected](/img/config/payments-invoice-sequential.png)
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
 ## Where to find the gateways:
 
@@ -75,7 +75,7 @@ _**IMPORTANT:** Ultimate Multisite: WooCommerce Integration requires WooCommerce
 
 First, please go to the add-ons page. You can find it by going to **Ultimate Multisite > Settings**. You should see the **Add-ons** table. Click on **Check our Add-ons**.
 
-![Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link](/img/config/settings-addons-table.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
 After clicking on **Check our Add-ons** , you will be redirected to the add-ons page. Here you can find all Ultimate Multisite add-ons. Click on the **Ultimate Multisite: WooCommerce Integration** add-on.
 
@@ -83,15 +83,15 @@ After clicking on **Check our Add-ons** , you will be redirected to the add-ons 
 
 A window will pop up with the add-on details. Just click on **Install Now**.
 
-![Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button](/img/addons/addon-install-woocommerce.png)
+<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
 
 After the installation is done, you will be redirected to the plugins page. Here, just click on **Network Activate** and the WooCommerce add-on will be activated on your network.
 
-![Plugins page with the Network Activate link for the WooCommerce Integration add-on](/img/addons/addon-network-activate-woocommerce.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
 
 After activating it, if you still don't have the WooCommerce plugin installed and activated on your website, you will receive a reminder.
 
-![Admin notice reminding the administrator to install and activate the WooCommerce plugin](/img/addons/addon-woocommerce-reminder.png)
+<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
 
 To read more about the WooCommerce Integration add-on, **click here**.
 
@@ -99,15 +99,15 @@ To read more about the WooCommerce Integration add-on, **click here**.
 
 The steps to install the _GoCardless_ add-on are pretty much the same as the _WooCommerce_ add-on. Please go to the add-ons page and select the **Ultimate Multisite: GoCardless Gateway** add-on.
 
-![Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted](/img/addons/addons-page-gocardless.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
 
 The add-on window will pop up. Click on **Install Now**.
 
-![Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button](/img/addons/addon-install-gocardless.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
 
 After the installation is done, you will be redirected to the plugins page. Here, just click on **Network Activate** and the _GoCardless_ add-on will be activated on your network.
 
-![Plugins page with the Network Activate link for the GoCardless Gateway add-on](/img/addons/addon-network-activate-gocardless.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
 
 To learn how to get started with the _GoCardless_ gateway, **read this article**.
 
@@ -115,12 +115,12 @@ To learn how to get started with the _GoCardless_ gateway, **read this article**
 
 Go to the add-ons page and select the **Ultimate Multisite: Payfast Gateway** add-on.
 
-![Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted](/img/addons/addons-page-payfast.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
 
 The add-on window will pop up. Click on **Install Now.**
 
-![Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button](/img/addons/addon-install-payfast.png)
+<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
 
 After the installation is done, you will be redirected to the plugins page. Here, just click on **Network Activate** and the _Payfast_ add-on will be activated on your network.
 
-![Plugins page with the Network Activate link for the Payfast Gateway add-on](/img/addons/addon-network-activate-payfast.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->

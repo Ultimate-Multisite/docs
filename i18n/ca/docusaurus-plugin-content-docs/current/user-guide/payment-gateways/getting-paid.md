@@ -19,21 +19,21 @@ Abans d'configurar la teva portella de pagament, consulta les configuracions bà
 
 **Forçar renovació automàtica** **w:** Això assegura que el pagament es renovi automàticament al final de cada cicle de facturació, segons la freqüència de facturació que hagi seleccionat l'usuari.
 
-![Configuració del interruptor Forçar Renovació Automàtica a la pàgina de configuració de pagaments](/img/config/payments-force-auto-renew.png)
+<!-- Screenshot unavailable: Configuració del interruptor Forçar Renovació Automàtica a la pàgina de configuració de pagaments -->
 
 **Permitir proves sense pagament** **method:** Amb aquesta opció activada, el teu client no hauria de proporcionar informació financera durant el procés d'inscripció. Això només serà necessari una vegada que l'període de prova expiri.
 
-![Permettre pruebas sin método de pago en la página de configuración de pagos](/img/config/payments-allow-trials.png)
+<!-- Screenshot unavailable: Permettre pruebas sin método de pago en la página de configuración de pagos -->
 
 **Enviar factura tras confirmación del pago:** Esto te da la opción de enviar una factura o no después de que se realiza el pago. Ten en cuenta que los usuarios tendrán acceso a su historial de pagos en el panel de control de su subsitio. Esta opción no se aplica al Manual Gateway.
 
-![Alternar Enviar Factura tras Confirmación del Pago en la página de configuración de pagos](/img/config/payments-send-invoice.png)
+<!-- Screenshot unavailable: Alternar Enviar Factura tras Confirmación del Pago en la página de configuración de pagos -->
 
 **Esquema de numeración de facturas:** Aquí puedes elegir entre un código de referencia de pago o un esquema de número secuencial. Si eliges usar un código de referencia de pago para tus facturas, no necesitas configurar nada. Si eliges un esquema de número secuencial, deberás configurar el **siguiente número de factura** (Este número se usará como número de factura para la siguiente factura generada en el sistema. Se incrementa en uno cada vez que se crea una nueva factura. Puedes cambiarlo y guardarlo para restablecer el número secuencial de la factura a un valor específico) y el **prefijo del número de factura**.
 
-![Menú desplegable del esquema de numeración de facturas con opciones de Código de Referencia de Pago y Número Secuencial](/img/config/payments-invoice-scheme.png)
+<!-- Screenshot unavailable: Menú desplegable del esquema de numeración de facturas con opciones de Código de Referencia de Pago y Número Secuencial -->
 
-![Campos para el siguiente número de factura y prefijo del número de factura cuando se selecciona Número Secuencial](/img/config/payments-invoice-sequential.png)
+<!-- Screenshot unavailable: Campos para el siguiente número de factura y prefijo del número de factura cuando se selecciona Número Secuencial -->
 
 ## Dónde encontrar los gateways:
 
@@ -71,7 +71,7 @@ Entenc que _Stripe_ i _PayPal_ no estan disponibles en alguns països, cosa que 
 
 Primer, ve a la pàgina d'add-ons. Pots trobar-la anomenant **Ultimate Multisite > Settings**. Debes veure la taula d'**Add-ons**. Clica a **Check our Add-ons**.
 
-![Taula d'add-ons en el lateral de configuració de Ultimate Multisite amb el llink Check our Add-ons](/img/config/settings-addons-table.png)
+<!-- Screenshot unavailable: Taula d'add-ons en el lateral de configuració de Ultimate Multisite amb el llink Check our Add-ons -->
 
 Després de clicar a **Check our Add-ons**, seran redirigid a la pàgina d'add-ons. Aquí pots trobar tots els add-ons de Ultimate Multisite. Clica a l'add-on **Ultimate Multisite: WooCommerce Integration**.
 
@@ -79,15 +79,15 @@ Després de clicar a **Check our Add-ons**, seran redirigid a la pàgina d'add-o
 
 Aparetarà una finestra amb els detalls de l'add-on. Simplement, clica a **Install Now**.
 
-![Diàleg de detalls de l'add-on Ultimate Multisite WooCommerce Integration amb el botó Install Now](/img/addons/addon-install-woocommerce.png)
+<!-- Screenshot unavailable: Diàleg de detalls de l'add-on Ultimate Multisite WooCommerce Integration amb el botó Install Now -->
 
 Després de la instal·lació, s'ha redirigit a la pàgina de plugins. Allà, només has de fer clic en **Network Activate** i l'add-on WooCommerce es activarà a la teva xarxa.
 
-![Pàgina de plugins amb el vincul Network Activate per a l'add-on d'integració WooCommerce](/img/addons/addon-network-activate-woocommerce.png)
+<!-- Screenshot unavailable: Pàgina de plugins amb el vincul Network Activate per a l'add-on d'integració WooCommerce -->
 
 Després de activar-lo, si encara no tens instal·lat i activat el plugin WooCommerce al teu web, t'arreu farà un record.
 
-![Notificació d'administració que recorda a l'administrador instal·lar i activar el plugin WooCommerce](/img/addons/addon-woocommerce-reminder.png)
+<!-- Screenshot unavailable: Notificació d'administració que recorda a l'administrador instal·lar i activar el plugin WooCommerce -->
 
 Per saber més sobre l'add-on d'integració WooCommerce, **haz clic aquí**.
 
@@ -95,15 +95,15 @@ Per saber més sobre l'add-on d'integració WooCommerce, **haz clic aquí**.
 
 Els passos per instal·lar l'add-on _GoCardless_ són pràcticament els mateixos que per a l'add-on _WooCommerce_. Per favor, anomena a la pàgina d'addons i selecciona l'add-on **Ultimate Multisite: GoCardless Gateway**.
 
-![Pàgina d'addons amb l'add-on Ultimate Multisite GoCardless Gateway destacat](/img/addons/addons-page-gocardless.png)
+<!-- Screenshot unavailable: Pàgina d'addons amb l'add-on Ultimate Multisite GoCardless Gateway destacat -->
 
 Es desplegarà una finestra de l'add-on. Haz clic en **Install Now** (Instalar ara).
 
-![Diàleg de detalls de l'add-on Ultimate Multisite GoCardless Gateway amb el botó Install Now](/img/addons/addon-install-gocardless.png)
+<!-- Screenshot unavailable: Diàleg de detalls de l'add-on Ultimate Multisite GoCardless Gateway amb el botó Install Now -->
 
 Després de fer la instal·lació, s'ha redirigit a la pàgina de plugins. Allà, només has de fer clic en **Network Activate** i l'add-on _GoCardless_ es activarà a la teva xarxa.
 
-![Pàgina de plugins amb el llink Network Activate per a la add-on GoCardless Gateway](/img/addons/addon-network-activate-gocardless.png)
+<!-- Screenshot unavailable: Pàgina de plugins amb el llink Network Activate per a la add-on GoCardless Gateway -->
 
 Per saber com començar amb la gateway _GoCardless_, **llegeu aquest article**.
 
@@ -111,12 +111,12 @@ Per saber com començar amb la gateway _GoCardless_, **llegeu aquest article**.
 
 Veu a la pàgina d'add-ons i selecciona l'add-on **Ultimate Multisite: Payfast Gateway**.
 
-![Pàgina d'add-ons amb l'add-on Ultimate Multisite Payfast Gateway destacat](/img/addons/addons-page-payfast.png)
+<!-- Screenshot unavailable: Pàgina d'add-ons amb l'add-on Ultimate Multisite Payfast Gateway destacat -->
 
 S'obre la finestra de l'add-on. Clica a **Install Now** (Instalar ara).
 
-![Diàleg de detalls de l'add-on Ultimate Multisite Payfast Gateway amb el botó Install Now](/img/addons/addon-install-payfast.png)
+<!-- Screenshot unavailable: Diàleg de detalls de l'add-on Ultimate Multisite Payfast Gateway amb el botó Install Now -->
 
 Després que la instal·lació estigui acabada, seran redirigits a la pàgina de plugins. Aquí, simplement fes clic a **Network Activate** i l'add-on _Payfast_ es activarà en la vostra xarxa.
 
-![Pàgina de plugins amb el llink Network Activate per a l'add-on Payfast Gateway](/img/addons/addon-network-activate-payfast.png)
+<!-- Screenshot unavailable: Pàgina de plugins amb el llink Network Activate per a l'add-on Payfast Gateway -->

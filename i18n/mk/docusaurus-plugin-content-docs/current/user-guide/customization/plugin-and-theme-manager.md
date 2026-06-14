@@ -1,0 +1,10 @@
+---
+title: Управувач на плагини и теми
+sidebar_position: 11
+_i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
+---
+# Управувач на плагини и теми
+
+Оваа функција е обезбедена од аддон **Plugin & Theme Manager**.
+
+За целосна документација, видите [документација за аддонот Plugin & Theme Manager](/addons/plugin-and-theme-manager).

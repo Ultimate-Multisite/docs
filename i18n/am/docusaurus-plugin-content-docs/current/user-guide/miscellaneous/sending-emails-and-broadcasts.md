@@ -15,7 +15,7 @@ Ultimate Multisite በደንበኞችዎ ላይ ኢሜይል በመላክ ወይ
 
 ይህ ለምሳሌ እንደ ሲስተም ጥገና ማስታወቂያ ወይም ለነባር ተጠቃሚዎች አዳዲስ ምርቶችን ወይም አገልግሎቶችን ለመስጠት የሚያስፈልግዎ ከሆነ እጅግ በጣም ጠቃሚ ነው። የአስተዳዳሪው ማስታወቂያ በየተጠቃሚው ዳሽቦርድ ላይ የሚታየው በዚህ መልኩ ነው።
 
-![Admin notice broadcast shown on a customer's subsite dashboard](/img/frontend/broadcast-customer-dashboard.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
 የአስተዳዳሪ ማስታወቂያ ለመጀመር፣ ወደ የኔትወርክ አስተዳዳሪ ዳሽቦርድ በመሄድ በ**Ultimate Multisite** ሜኑ ስር **Broadcasts** አማራጩን ያገኛሉ።
 
@@ -75,7 +75,7 @@ Ultimate Multisite በደንበኞችዎ ላይ ኢሜይል በመላክ ወይ
 
 የሚቀጥለው መስኮት ደግሞ ርዕሱን እና ለተጠቃሚዎች ሊልኩት የሚፈልጉትን ይዘት/መልእክት በማስገባት ኢሜይልዎን መቅረጽበት ነው።
 
-![Email broadcast subject and content editor on the compose step](/img/admin/broadcast-email-compose.png)
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
 መልእክትዎን ከፈጠሩ በኋላ፣ **Send** ቁልፉን መጫን ይችላሉ።
 
@@ -101,7 +101,7 @@ Ultimate Multisite በደንበኞችዎ ላይ ኢሜይል በመላክ ወይ
 
 ከዚያም፣ በጎን አሞሌው ላይ፣ **Customize System Emails** ቁልፍ ላይ ይጫኑ።
 
-![Customize System Emails button on the System Emails sidebar panel](/img/config/settings-emails-customize-button.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
 በSystem Emails ገጽ ላይ፣ በላይ ባለው **Reset & Import** የአction ቁልፍ ይታያል። ይህን ቁልፍ መጫን የimport እና reset ሞዳል መስኮት ይከፍታል።
 
@@ -109,7 +109,7 @@ Ultimate Multisite በደንበኞችዎ ላይ ኢሜይል በመላክ ወይ
 
 ከዚያም፣ የትኞቹ የስርዓት ኢሜይሎች ሊሰበሰቡ እንደሚችሉ ለማየት የImport Emails አማራጮችን መጫን ይችላሉ።
 
-![Reset and Import modal with the Import Emails options expanded](/img/admin/system-emails-import-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
 #### የስርዓት ኢሜይሎችን ዳግም ማስጀመር (Resetting System Emails)
 
@@ -121,4 +121,4 @@ Ultimate Multisite በደንበኞችዎ ላይ ኢሜይል በመላክ ወይ
 
 የኢሜይል ቴምፕሌት ዳግም ለማስጀመር፣ ከላይ ያሉትን እርምጃዎች ተከትለው እስከ Reset & Import tool ድረስ ይሂዱ፣ ከዚያም **Reset** አማራጩን አብረው እና ወደ መነሻ ይዘት እንዲመለሱ የሚፈልጓቸውን ኢሜይሎች ይምረጡ።
 
-![Reset and Import modal with the Reset Emails options expanded](/img/admin/system-emails-reset-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

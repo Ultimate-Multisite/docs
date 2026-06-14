@@ -19,21 +19,21 @@ Voordat jy jou betalingspoort instel, kyk asseblief na die basiese betalingsinst
 
 **Force auto-renew:** Dit verseker dat die betaling outomaties sal herhaal aan die einde van elke faktuurkring, afhangende van die faktuentempo wat die gebruiker gekies het.
 
-![Force Auto-Renew toggle setting on the Payments settings page](/img/config/payments-force-auto-renew.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
 **Allow trials without payment method:** Met hierdie opsie ingeskakel, hoef jou kliënt nie enige finansiële inligting tydens die registrasieproses by te voeg nie. Dit sal eers vereis word sodra die proefperiode verby is.
 
-![Allow Trials Without Payment Method toggle on the Payments settings page](/img/config/payments-allow-trials.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
 **Send invoice on payment confirmation:** Dit gee jou die opsie of nie om 'n faktuur te stuur na betalingsbevestiging nie. Onthou dat gebruikers toegang tot hul betalingsgeskiedenis sal hê onder hul subsite-blaaikbord. Hierdie opsie geld nie vir die Handmatige Poort nie.
 
-![Send Invoice on Payment Confirmation toggle on the Payments settings page](/img/config/payments-send-invoice.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
 **Invoice numbering scheme:** Hier kan jy óf 'n betalingsverwysingskode óf 'n opeenvolgende nommerreeks skakel. As jy kies om 'n betalingsverwysingskode vir jou fakture te gebruik, hoef jy niks te konfigureer nie. As jy kies om 'n opeenvolgende nommerreeks te gebruik, sal jy die **volgende faktuurnommer** (Hierdie nommer sal as die faktuurnommer vir die volgende faktuur wat op die stelsel gegenereer word, gebruik word. Dit word elke keer dat 'n nuwe faktuur geskep word, met een verhoog. Jy kan dit verander en dit stoor om die faktuuropeenvolgende nommer na 'n spesifieke waarde te reset) en die **faktuurnommer-voorsetsel** moet konfigureer.
 
-![Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options](/img/config/payments-invoice-scheme.png)
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-![Next invoice number and invoice number prefix fields shown when Sequential Number is selected](/img/config/payments-invoice-sequential.png)
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
 ## Waar om die poorte te vind:
 
@@ -71,7 +71,7 @@ _**BELANGRIK:** Ultimate Multisite: WooCommerce Integrasie vereis dat WooCommerc
 
 Gaan eers na die add-onsbladsy. Jy kan dit vind deur na **Ultimate Multisite > Instellings** te gaan. Jy behoort die **Add-ons** tabel te sien. Klik op **Check our Add-ons**.
 
-![Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link](/img/config/settings-addons-table.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
 Nadat jy op **Check our Add-ons** geklik het, word jy na die add-onsbladsy herlei. Hier kan jy al die Ultimate Multisite add-ons vind. Klik op die **Ultimate Multisite: WooCommerce Integration** add-on.
 
@@ -79,15 +79,15 @@ Nadat jy op **Check our Add-ons** geklik het, word jy na die add-onsbladsy herle
 
 'n Venster sal met die add-on besonderhede oopspring. Klik net op **Install Now**.
 
-![Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button](/img/addons/addon-install-woocommerce.png)
+<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
 
 Nadat die installasie voltooi is, word jy na die pluginsbladsy herlei. Hier, klik net op **Network Activate** en die WooCommerce add-on sal op jou netwerk geaktiveer word.
 
-![Plugins page with the Network Activate link for the WooCommerce Integration add-on](/img/addons/addon-network-activate-woocommerce.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
 
 Nadat dit geaktiveer is, as jy steeds nie die WooCommerce plugin op jou webwerf geïnstalleer en geaktiveer het nie, sal jy 'n herinnering ontvang.
 
-![Admin notice reminding the administrator to install and activate the WooCommerce plugin](/img/addons/addon-woocommerce-reminder.png)
+<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
 
 Om meer oor die WooCommerce Integration add-on te lees, **klik hier**.
 
@@ -95,15 +95,15 @@ Om meer oor die WooCommerce Integration add-on te lees, **klik hier**.
 
 Die stappe om die _GoCardless_ add-on te installeer is byna dieselfde as die _WooCommerce_ add-on. Gaan asseblief na die add-onsbladsy en kies die **Ultimate Multisite: GoCardless Gateway** add-on.
 
-![Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted](/img/addons/addons-page-gocardless.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
 
 Die add-on venster sal oopspring. Klik op **Install Now**.
 
-![Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button](/img/addons/addon-install-gocardless.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
 
 Nadat die installasie voltooi is, word jy na die pluginsbladsy herlei. Hier, klik net op **Network Activate** en die _GoCardless_ add-on sal op jou netwerk geaktiveer word.
 
-![Plugins page with the Network Activate link for the GoCardless Gateway add-on](/img/addons/addon-network-activate-gocardless.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
 
 Om te leer hoe om met die _GoCardless_ poort te begin, **lees hierdie artikel**.
 
@@ -111,12 +111,12 @@ Om te leer hoe om met die _GoCardless_ poort te begin, **lees hierdie artikel**.
 
 Gaan na die add-onsbladsy en kies die **Ultimate Multisite: Payfast Gateway** add-on.
 
-![Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted](/img/addons/addons-page-payfast.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
 
 Die add-on venster sal oopspring. Klik op **Install Now.**
 
-![Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button](/img/addons/addon-install-payfast.png)
+<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
 
 Nadat die installasie voltooi is, word jy na die pluginsbladsy herlei. Hier, klik net op **Network Activate** en die _Payfast_ add-on sal op jou netwerk geaktiveer word.
 
-![Plugins page with the Network Activate link for the Payfast Gateway add-on](/img/addons/addon-network-activate-payfast.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->

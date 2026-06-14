@@ -1,0 +1,10 @@
+---
+title: Wu_GoCardless Gateway
+sidebar_position: 8
+_i18n_hash: dbf9269ae462e506432cf441e86b9647
+---
+# GoCardless Gateway
+
+Wannan ƙwarewa tana bayarwa ta hanyar addon ɗin **GoCardless**.
+
+Don karatu dokokin da suka dace, ga [GoCardless addon documentation](/addons/gocardless).

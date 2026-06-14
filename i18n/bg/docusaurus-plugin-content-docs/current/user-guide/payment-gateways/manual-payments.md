@@ -29,7 +29,7 @@ _**ВАЖНА ЗАБЕЛЕЖКА: Тази статия се отнася до U
 
 И също така ще получат съобщение на вашата страница **Thank You** с вашите плащателни инструкции.
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Потвърждаване на ръчните плащания
 

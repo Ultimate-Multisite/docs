@@ -35,7 +35,7 @@ If you prefer to have taxes included in your product's price, you can do so by e
 
 Don't forget to **save** the changes you've made.
 
-### 
+###
 
 ## Creating Tax Rates
 
@@ -89,17 +89,17 @@ To install that add-on, go to **Ultimate Multisite > Settings** and then click o
 
 You'll be redirected to our add-ons page. There, you can search for the **Ultimate Multisite VAT add-on** and install it.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Then, head to **Network Admin > Plugins** and activate that add-on network-wide.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 If you head back to the **Tax Settings tab** , you'll see new options available. Toggle the **Enable VAT Support** option to enable the new VAT tools. Don't forget to **save** your settings!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Pulling on VAT Tax Rates
 
@@ -115,6 +115,6 @@ You can also edit the values after pulling them. To do it, simply edit the table
 
 When VAT support is enabled, Ultimate Multisite will add an additional field to the checkout form, bellow the billing address field. The field will only show up for customers located in the EU.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 Ultimate Multisite will then validate the VAT Number and if it comes back as a valid one, the reverse charge mechanism is applied and the tax rate is set to 0% on that order.

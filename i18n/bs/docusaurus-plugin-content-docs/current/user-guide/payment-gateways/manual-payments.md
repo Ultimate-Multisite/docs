@@ -29,7 +29,7 @@ Nakon podešavanja, samo kliknite na **Save Settings** i gotovo je. Kada se kori
 
 Takođe će dobiti poruku na vašoj stranici **Thank You** sa vašim uputstvima za plaćanje.
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Potvrđivanje ručnih plaćanja
 

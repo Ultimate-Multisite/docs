@@ -159,7 +159,7 @@ _**ማስታወሻ:** username, email, password, site title, site URL, order sum
 
 በተጨማሪም የfield አማራጮችን በቀጥታ ማዋቀር ይችላሉ፡
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6.  **Period Selector Template** (Clean በቅድፋት ነው፣ ይህም ለበይበል ያለ CSS ዝግጁ የሆነ ቀላል የተዋቀረ መምረጥን ያሳያል) ይምረጡ።
 

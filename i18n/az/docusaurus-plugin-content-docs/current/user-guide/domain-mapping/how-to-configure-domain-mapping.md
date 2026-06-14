@@ -19,7 +19,7 @@ Domain mapping işləməsi üçün sizin tərəfinizdən bəzi qurulmalar tələ
 
 Ultimate Multisite quraşdırılması zamanı, wizard avtomatik olaraq **sunrise.php** faylını müəyyən edilmiş qovluğa kopyalayıb quraşdıracaq. **Wizard bu addım tamamlanana qədər davam etməyə icazə verməyəcək**.
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 Bu o deməkdir ki, Ultimate Multisite quraşdırma wizard-i network-inizi qurmağa bitirdikdən sonra, dərhal özəl domenləri xəritələməyə başlaya bilərsiniz.
 
@@ -71,9 +71,9 @@ Bu, özəl domenin DNS məlumatlarını yoxlama və alma prosesini başlatacaq. 
 
 Hər şey düzgün qurulubsa, **Stage** və ya status **Checking DNS**-dən **Ready**-yə keçməlidir.
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 Domen adına klik etsəniz, onun içində bəzi seçimlər görmək mümkün olacaq. Onlara bir baxaq:
 
@@ -95,7 +95,7 @@ Subsite administratorları öz subsite admin dashboard-larından da özəl domen
 
 Əvvəlcə, **Domain mapping** ayarları altında bu seçimi aktivləşdirməli olduğunuzdan əmin olun. Aşağıdakı skrinşota baxın.
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 Bu seçimi **Ultimate Multisite > Products** altında **Plan** səviyyəsində və ya məhsul seçimlərində də təyin edə və ya konfiqurasiya edə bilərsiniz.
 
@@ -103,17 +103,17 @@ Bu seçimi **Ultimate Multisite > Products** altında **Plan** səviyyəsində v
 
 Bu seçimlərdən hər hansı biri aktivləşdirildiyi və subsite istifadəçisinə özəl domen adlarını xəritələməyə icazə verildiyi zaman, subsite istifadəçisi **Account** səhifəsi altında **Domains** adlı bir metabox görməlidir.
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 İstifadəçi **Add Domain** düyməsinə klik edə bilər və bu, bəzi təlimatlar olan bir modal pəncərə açacaq.
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 İstifadəçi sonra **Next Step** düyməsinə klik edib özəl domen adını əlavə etmək prosesinə davam edə bilər. Həmçinin, bunun əsas domen olub-olmayacağını da seçə bilər.
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 **Add Domain** düyməsinə klik etmək, özəl domenin DNS məlumatlarını yoxlama və alma prosesini başlatacaq.
 
@@ -127,6 +127,6 @@ Bu inteqrasiyanı Ultimate Multisite ayarları altında **Integration** tabında
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _Qeyd edin ki, əgər hosting provayderiniz yuxarıda qeyd olunan provayderlərdən biri deyilsə,**domen adını əl ilə sinxronizasiya etməli və ya əlavə etməlisiniz**._

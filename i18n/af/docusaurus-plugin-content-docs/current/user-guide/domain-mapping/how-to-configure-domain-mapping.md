@@ -19,7 +19,7 @@ Domeinmapping vereis 'n bietjie opstelling van jou kant om te werk. Gelukkig out
 
 Tydens die Ultimate Multisite-installasie sal die wizard outomaties die **sunrise.php** na die aangewese lêerhouer kopieer en installeer. **Die wizard sal jou nie toelaat om voort te gaan totdat hierdie stap voltooi is nie.**
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 Dit beteken dat sodra die Ultimate Multisite-installasie-wizard jou netwerk ingestel het, kan jy dadelik met die mappasie van die aangepaste domein begin.
 
@@ -71,9 +71,9 @@ Dit sal die proses van verifieer en ophaal van die DNS-inligting van die aangepa
 
 Die **Stage** of die status moet van **Checking DNS** na **Ready** verander as alles korrek ingestel is.
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 As jy op die domeinnaam klik, sal jy 'n paar opsies binne daarin kan sien. Kom ons kyk vinnig na hulle:
 
@@ -95,7 +95,7 @@ Subwerfadministrateurs kan ook aangepaste domeinname vanaf hul subwerf-admin-das
 
 Eerstens moet jy verseker dat jy hierdie opsie aktiveer onder die **Domain mapping**-instellings. Kyk na die skermkiekie hieronder.
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 Jy kan ook hierdie opsie stel of konfigureer onder die **Plan**-vlak of produkopsies op **Ultimate Multisite > Products**.
 
@@ -103,17 +103,17 @@ Jy kan ook hierdie opsie stel of konfigureer onder die **Plan**-vlak of produkop
 
 Wanneer enige van daardie opsies geaktiveer is en 'n subwerfgebruiker toegelaat word om aangepaste domeinname te map, sal die subwerfgebruiker 'n metaboks onder die **Account**-bladsy genaamd **Domains** sien.
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 Die gebruiker kan op die **Add Domain**-knoppie klik en dit sal 'n modale venster met 'n paar instruksies oopmaak.
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 Die gebruiker kan dan op **Next Step** klik en voortgaan met die byvoeging van die aangepaste domeinnaam. Hulle kan ook kies of dit die primêre domein sal wees of nie.
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 Klik op **Add Domain** sal die proses van verifieer en ophaal van die DNS-inligting van die aangepaste domein begin.
 
@@ -127,6 +127,6 @@ Jy sal hierdie integrasie op Ultimate Multisite-instellings onder die **Integrat
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _Let op dat as jou hosting-verskaareder nie een van die verskaareder wat hierbo genoem is nie,**sal jy die domeinnaam handmatig moet sinkroniseer of by jou hosting-rekening moet voeg]._

@@ -304,6 +304,25 @@ function formatDuration(ms) {
 	return `${(ms / 60000).toFixed(1)}m`;
 }
 
+function getOllamaHeaders(apiKey, baseUrl) {
+	const normalizedBaseUrl = (baseUrl || '').replace(/\/+$/, '');
+	const isConductorPool = /\/v1\.0\/api\/ollama-pool/.test(normalizedBaseUrl);
+	const headers = {
+		'Content-Type': 'application/json',
+	};
+
+	if (!isConductorPool) {
+		return headers;
+	}
+
+	const bearerToken = apiKey || process.env.OLLAMA_API_KEY || process.env.OLLAMA_BEARER_TOKEN || process.env.CONDUCTOR_TENANT_TOKEN || '';
+	if (bearerToken) {
+		headers.Authorization = `Bearer ${bearerToken}`;
+	}
+
+	return headers;
+}
+
 function buildPrompts(targetLocale, field) {
 	const langName = getLocaleName(targetLocale);
 
@@ -416,6 +435,7 @@ async function translateOpenAI(text, systemPrompt, opts) {
  */
 async function translateOllamaNative(text, systemPrompt, opts) {
 	const baseUrl = opts.baseUrl.replace(/\/+$/, '').replace(/\/v1$/, '');
+	const headers = getOllamaHeaders(opts.apiKey, opts.baseUrl);
 	const options = {
 		temperature: 0.1,
 		num_predict: opts.numPredict,
@@ -426,9 +446,7 @@ async function translateOllamaNative(text, systemPrompt, opts) {
 
 	const response = await fetch(`${baseUrl}/api/chat`, {
 		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
+		headers,
 		signal: AbortSignal.timeout(opts.timeout),
 		body: JSON.stringify({
 			model: opts.model,

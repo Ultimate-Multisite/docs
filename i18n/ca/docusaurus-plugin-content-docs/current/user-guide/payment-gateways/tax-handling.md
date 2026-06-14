@@ -87,17 +87,17 @@ Per instal·lar aquest add-on, anar a **Ultimate Multisite > Settings** i despr�
 
 Serà redirigit a la nostra pàgina d'add-ons. Allà, pots buscar el **Ultimate Multisite VAT add-on** i instal·lar-lo.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Després, ve a la secció **Administració de Xarxes > Plugins** i activa aquest add-on a nivell complet del sistema.
 
-![Acció d'activació de xarxa per al plugin VAT en la pàgina de Plugins](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Acció d'activació de xarxa per al plugin VAT en la pàgina de Plugins -->
 
 Si vuelves a la **pesta de Configuració de Taxes**, veurrà que hi ha noves opcions disponibles. Toca el commutador **Activar suport a IVA** per activar les noves eines d'IVA. No et distenguis de **guardar** els teus configuracions!
 
-![Comutador Activar suport a IVA en la configuració de taxes després de l'activació del plugin](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Comutador Activar suport a IVA en la configuració de taxes després de l'activació del plugin -->
 
 ### Trencant les Rates d'IVA (Pulling on VAT Tax Rates)
 
@@ -113,6 +113,6 @@ També pots editar els valors després de trencarr-los. Per fer-ho, simplement e
 
 Quan el suport a IVA està activat, Ultimate Multisite afegirà un camp addicional al formulari de càrrec (checkout), sota el camp de l'adreç de facturació. Aquest camp només apareixerà per als clients ubicats a la UE.
 
-![Campos de número de IVA en el formulari de càrrec del front](img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: Campos de número de IVA en el formulari de càrrec del front -->
 
 Ultimate Multisite validarà el número de IVA i, si resulta ser un número valid, s'aplicarà el mecanisme de reversió de càrrecs i es setgeixà la taxa d'impost a 0% en aquell ordre.

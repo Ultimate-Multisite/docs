@@ -29,7 +29,7 @@ _**গুৰুত্বপূৰ্ণ টোকা: এই article টি Ulti
 
 আৰু তেওঁলোকে আপোনাৰ **Thank You** পৃষ্ঠাখনতও আপোনাৰ পেমেন্ট নিৰ্দেশনা লাভ কৰিব।
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## ম্যানুৱেল পেমেন্ট নিশ্চিত কৰা
 

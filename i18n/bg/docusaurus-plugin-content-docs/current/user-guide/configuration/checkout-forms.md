@@ -159,7 +159,7 @@ _**Забележка:** username, email, password, site title, site URL, order 
 
 Можете също така да конфигурирате опциите на полето директно:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Изберете **Period Selector Template** (Шаблон за избор на период) (Clean е по подразбиране, което рендира прост стилизиран избор, готов за персонализиран CSS).
 

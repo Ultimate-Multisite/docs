@@ -19,21 +19,21 @@ Ultimate Multisite በራሱ የ membership እና የክፍያ ሥርዓት አ
 
 **Force auto-renew:** ይህ የሚያረጋግጠው ተጠቃሚው የመረጠውን የክፍያ ጊዜ (billing frequency) መሠረት በማድረግ ክፍያው በየክፍያ ጊዜው በራስ-ሰር እንደሚደገም ነው።
 
-![Force Auto-Renew toggle setting on the Payments settings page](/img/config/payments-force-auto-renew.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
 **Allow trials without payment method:** ይህ አማራጭ ሲበራ፣ ተጠቃሚዎ በምዝገባ ሂደት ውስጥ ምንም የፋይናንስ መረጃ ማስገባት አይጠበቅበትም። ይህ የሚያስፈልገው የሙከራ ጊዜው ካለቀቀ በኋላ ብቻ ነው።
 
-![Allow Trials Without Payment Method toggle on the Payments settings page](/img/config/payments-allow-trials.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
 **Send invoice on payment confirmation:** ይህ ክፍያ ከተረጋገጠ በኋላ ደረሰኝ (invoice) መላክ አለመላክ የሚል አማራጭ ይሰጥዎታል። ተጠቃሚዎች የክፍያ ታሪካቸውን በየsubsite dashboard שלהם ማግኘት እንደሚችሉ ልብ ይበሉ። ይህ አማራጭ ለ Manual Gateway አይሠራም።
 
-![Send Invoice on Payment Confirmation toggle on the Payments settings page](/img/config/payments-send-invoice.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
 **Invoice numbering scheme:** እዚህ፣ የክፍያ ማጣቀሻ ኮድ (payment reference code) ወይስ ተከታታይ ቁጥር ሥርዓት (sequential number scheme) መምረጥ ይችላሉ። ለደረሰኞችዎ የክፍያ ማጣቀሻ ኮድ ለመጠቀም ከመረጡ፣ ምንም ነገር ማዋቀር አያስፈልግዎትም። ተከታታይ ቁጥር ሥርዓት ለመጠቀም ከመረጡ፣ **የሚቀጥለው የደረሰኝ ቁጥር (next invoice number)** (ይህ ቁጥር በሚቀጥለው በስርዓቱ በሚፈጠረው ደረሰኝ ላይ እንደ ደረሰኝ ቁጥር ጥቅም ላይ ይውላል። አዲስ ደረሰኝ በሚፈጠርበት ጊዜ አንድ ይጨምራል። ወደ አንድ የተወሰነ ዋጋ ለመቀየር እና የደረሰኝ ተከታታይ ቁጥርን ለመቀየር ሊለውጡት እና ማስቀመጥ ይችላሉ) እና **የደረሰኝ ቁጥር ቅድመ-ጽሑፍ (invoice number prefix)** ያስፈልግዎታል።
 
-![Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options](/img/config/payments-invoice-scheme.png)
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-![Next invoice number and invoice number prefix fields shown when Sequential Number is selected](/img/config/payments-invoice-sequential.png)
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
 ## የ Gateway ቦታ:
 
@@ -71,7 +71,7 @@ _**አስፈላጊ፡ Ultimate Multisite: WooCommerce Integration የሚለው A
 
 በመጀመሪያ፣ እባክዎ ወደ add-ons ገጹ ይሂዱ። ወደ **Ultimate Multisite > Settings** በመሄድ ማግኘት ይችላሉ። **Add-ons** የሚል ሠንጠረዥ (table) ማየት አለብዎት። በ **Check our Add-ons** ላይ ይጫኑ።
 
-![Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link](/img/config/settings-addons-table.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
 በ **Check our Add-ons** ላይ ከጫኑ በኋላ፣ ወደ add-ons ገጹ ይመራሉ። እዚህ ላይ ሁሉንም የUltimate Multisite add-ons ማግኘት ይችላሉ። በ **Ultimate Multisite: WooCommerce Integration** add-on ላይ ይጫኑ።
 
@@ -79,15 +79,15 @@ _**አስፈላጊ፡ Ultimate Multisite: WooCommerce Integration የሚለው A
 
 የadd-on ዝርዝሮች ባለው መስኮት ይከፈታል። በ **Install Now** ላይ ይጫኑ።
 
-![Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button](/img/addons/addon-install-woocommerce.png)
+<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
 
 ከመጫኑ በኋላ፣ ወደ plugins ገጹ ይመራሉ። እዚህ ላይ በ **Network Activate** ላይ በመጫን የWooCommerce add-on በኔትዎርክዎ ላይ ይንቀሳቀሳል።
 
-![Plugins page with the Network Activate link for the WooCommerce Integration add-on](/img/addons/addon-network-activate-woocommerce.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
 
 ከማንቃት በኋላ፣ በድረ-ገጽዎ ላይ የWooCommerce ፕልጊን ካልተጫነ እና ካልተንቀሳቀሰ፣ የማስታወሻ መልዕክት ይቀበላሉ።
 
-![Admin notice reminding the administrator to install and activate the WooCommerce plugin](/img/addons/addon-woocommerce-reminder.png)
+<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
 
 ስለ WooCommerce Integration add-on ተጨማሪ ለማንበብ፣ **እዚህ ይጫኑ**።
 
@@ -95,15 +95,15 @@ _**አስፈላጊ፡ Ultimate Multisite: WooCommerce Integration የሚለው A
 
 የ_GoCardless_ add-onን የመጫን ደረጃዎች ከ_WooCommerce_ add-on ጋር በጣም ተመሳሳይ ናቸው። እባክዎ ወደ add-ons ገጹ በመሄድ **Ultimate Multisite: GoCardless Gateway** add-on ይምረጡ።
 
-![Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted](/img/addons/addons-page-gocardless.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
 
 የadd-on መስኮት ይከፈታል። በ **Install Now** ላይ ይጫኑ።
 
-![Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button](/img/addons/addon-install-gocardless.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
 
 ከመጫኑ በኋላ፣ ወደ plugins ገጹ ይመራሉ። እዚህ ላይ በ **Network Activate** ላይ በመጫን የ_GoCardless_ add-on በኔትዎርክዎ ላይ ይንቀሳቀሳል።
 
-![Plugins page with the Network Activate link for the GoCardless Gateway add-on](/img/addons/addon-network-activate-gocardless.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
 
 ስለ _GoCardless_ gateway እንዴት መጀመር እንደሚችሉ ለማወቅ፣ **ይህንን ጽሑፍ ያንብቡ**።
 
@@ -111,12 +111,12 @@ _**አስፈላጊ፡ Ultimate Multisite: WooCommerce Integration የሚለው A
 
 ወደ add-ons ገጹ በመሄድ **Ultimate Multisite: Payfast Gateway** add-on ይምረጡ።
 
-![Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted](/img/addons/addons-page-payfast.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
 
 የadd-on መስኮት ይከፈታል። በ **Install Now.** ላይ ይጫኑ።
 
-![Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button](/img/addons/addon-install-payfast.png)
+<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
 
 ከመጫኑ በኋላ፣ ወደ plugins ገጹ ይመራሉ። እዚህ ላይ በ **Network Activate** ላይ በመጫን የ_Payfast_ add-on በኔትዎርክዎ ላይ ይንቀሳቀሳል።
 
-![Plugins page with the Network Activate link for the Payfast Gateway add-on](/img/addons/addon-network-activate-payfast.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
