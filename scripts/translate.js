@@ -113,7 +113,7 @@ Examples:
   node scripts/translate.js --base-url http://localhost:11434/v1 --model llama3 --locales es
 
   # Use Ollama native API with thinking disabled
-  node scripts/translate.js --provider ollama-native --base-url http://localhost:11434 --model gemma4:e2b-it-qat --locales es
+  node scripts/translate.js --provider ollama-native --base-url http://localhost:11434 --model gemma4:12b-it-qat --locales es
 
   # Translate only user guide (priority 1)
   node scripts/translate.js --provider claude-proxy --priority 1 --locales fr
@@ -214,7 +214,7 @@ function parseArgs() {
 			opts.baseUrl = 'http://127.0.0.1:11434';
 		}
 		if (opts.model === 'gpt-4o-mini') {
-			opts.model = 'gemma4:e2b-it-qat';
+			opts.model = 'gemma4:12b-it-qat';
 		}
 	}
 
@@ -315,7 +315,8 @@ function getOllamaHeaders(apiKey, baseUrl) {
 		return headers;
 	}
 
-	const bearerToken = apiKey || process.env.OLLAMA_API_KEY || process.env.OLLAMA_BEARER_TOKEN || process.env.CONDUCTOR_TENANT_TOKEN || '';
+	const normalizedApiKey = apiKey === 'ollama' ? '' : apiKey;
+	const bearerToken = normalizedApiKey || process.env.OLLAMA_API_KEY || process.env.OLLAMA_BEARER_TOKEN || process.env.CONDUCTOR_TENANT_TOKEN || '';
 	if (bearerToken) {
 		headers.Authorization = `Bearer ${bearerToken}`;
 	}
