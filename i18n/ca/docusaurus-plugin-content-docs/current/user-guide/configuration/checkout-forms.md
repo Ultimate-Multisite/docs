@@ -159,7 +159,7 @@ Abans d'afegir el camp de Selecció de Període, assegura't que els teus product
 
 També pots configurar les opcions del camp directament:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Escolle una **Plantilla de Selecció de Període** (Clean és el defecte, que renderitza un selector estilitzat senzill preparat per CSS personalitzat).
 

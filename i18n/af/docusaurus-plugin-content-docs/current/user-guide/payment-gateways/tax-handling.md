@@ -89,17 +89,17 @@ Om daardie add-on te installeer, gaan na **Ultimate Multisite > Settings** en kl
 
 U sal na ons add-ons bladsy herlei word. Daar kan u na die **Ultimate Multisite VAT add-on** soek en dit installeer.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Gaan dan na **Network Admin > Plugins** en aktiveer daardie add-on netwerkwyd.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 As u teruggaan na die **Tax Settings tab**, sal u nuwe opsies sien beskikbaar. Skakel die **Enable VAT Support** opsie om die nuwe VAT-gereedskap te aktiveer. Moenie vergeet om u instellings te **stoor** nie!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Die Inhaal van VAT Belastingtariewe
 
@@ -115,6 +115,6 @@ U kan ook die waardes wysig nadat u dit inghaal het. Om dit te doen, wysig eenvo
 
 Wanneer VAT-ondersteuning ingeskakel is, sal Ultimate Multisite 'n bykomende veld by die afrekeningsformulier voeg, onder die faktuuradresveld. Die veld sal slegs vir kliënte wat in die EU geleë is, wys.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 Ultimate Multisite sal dan die VAT-nommer valideer en indien dit as geldig terugkom, word die omgekeerde heffingsmeganisme toegepas en word die belastingtarief op daardie bestelling op 0% gestel.

@@ -15,7 +15,7 @@ Usando la función de transmisiones de Ultimate Multisite, puedes añadir **avis
 
 Esto es extremadamente útil si necesitas hacer un anuncio como mantenimiento del sistema o para ofrecer nuevos productos o servicios a tus usuarios existentes. Así es como se verá el aviso de administrador en el panel de control de tu usuario.
 
-![Broadcast de aviso de administrador mostrado en el panel de control de un subdominio de cliente](/img/frontend/broadcast-customer-dashboard.png)
+<!-- Screenshot unavailable: Broadcast de aviso de administrador mostrado en el panel de control de un subdominio de cliente -->
 
 Para empezar un aviso de administrador, ve a tu panel de administración de red y, bajo el menú **Ultimate Multisite**, encontrarás la opción **Broadcasts** (Transmisiones).
 
@@ -75,7 +75,7 @@ Una vegada hagués seleccionat el teu públic objectiu, pots fes clic al botó *
 
 La següent finestra és on podrà començar a redactar el teu email ingressant el subject (assumpte) i el contingut/mensatge que vols enviar als usuaris.
 
-![Editor de subject i contingut del broadcast d'Email en el pas de composició](/img/admin/broadcast-email-compose.png)
+<!-- Screenshot unavailable: Editor de subject i contingut del broadcast d'Email en el pas de composició -->
 
 Després de crear el teu missatge, pots pulsar al botó **Enviar**.
 
@@ -101,7 +101,7 @@ Ves a la pàgina de Configuració d'Ultimate Multisite i anar a la pestaña **Em
 
 Després, al lateral, fes clic al botó **Customize System Emails** (Personalitzar Correus del Sistema).
 
-![Botó Customize System Emails al panel lateral de System Emails](/img/config/settings-emails-customize-button.png)
+<!-- Screenshot unavailable: Botó Customize System Emails al panel lateral de System Emails -->
 
 En la pàgina de correus del sistema (System Emails), veureu el botó d'acció **Reset & Import** a la part superior. Clicant en aquest botó s'obre la finestra modal d'import i reset.
 
@@ -109,7 +109,7 @@ En la pàgina de correus del sistema (System Emails), veureu el botó d'acció *
 
 Després, podries activar les opcions d'Importar Correus (Import Emails) per veure quins correus del sistema estan disponibles per ser importats.
 
-![Modal de Reset i Import amb les opcions d'Importar Correus expandides](/img/admin/system-emails-import-options.png)
+<!-- Screenshot unavailable: Modal de Reset i Import amb les opcions d'Importar Correus expandides -->
 
 #### Reset de Correu del Sistema
 
@@ -121,4 +121,4 @@ O potser utilitzis l'eina **Reset & Import tool** per reiniciar aquell template 
 
 Per reiniciar un template de correu, pots seguir els passos anteriors fins que arribis a la Reset & Import tool, i després, activa l'opció **Reset** i selecciona els correus que vols reiniciar al seu contingut predefinit.
 
-![Modal de Reset i Import amb les opcions de Reset de Correus expandides](/img/admin/system-emails-reset-options.png)
+<!-- Screenshot unavailable: Modal de Reset i Import amb les opcions de Reset de Correus expandides -->

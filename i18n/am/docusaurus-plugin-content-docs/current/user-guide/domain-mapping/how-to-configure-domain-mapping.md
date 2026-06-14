@@ -19,7 +19,7 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 በUltimate Multisite ሲጫን፣ הwizard (የማስጫው) በራስ-ሰር **sunrise.php** ወደ ተመደበው አቃፊ ውስጥ ይገለብጣል። **ይህ እርምጃ እስኪጠናቀቅ ድረስ הwizard እንዲቀጥል አይፈቅድልዎትም።**
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 ይህ ማለት Ultimate Multisite installation wizard ኔትወርክዎን ማዘጋጀቱን እንደጨረሰ፣ ወዲያውኑ የራሳቸውን ዶሜን ማዛመድ መጀመር ይችላሉ።
 
@@ -71,9 +71,9 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 ሁሉም ነገር በትክክል ከተዘጋጀ፣ **Stage** ወይም ሁኔታ ከ**Checking DNS** ወደ **Ready** መቀየር አለበት።
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 በየዶሜን ስም ላይ ጠቅ ካደረጉ፣ በውስጡ ያሉ አንዳንድ አማራጮችን ማየት ይችላሉ። በፍጥነት እንመልከታቸው፦
 
@@ -95,7 +95,7 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 በመጀመሪያ፣ ይህንን አማራጭ በ**Domain mapping** ቅንብሮች ውስጥ ማብራት ያስፈልግዎታል። ከታች ያለውን ስክሪንሾት ይመልከቱ።
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 ይህንን አማራጭ በ**Ultimate Multisite > Products** ላይ ባለው **Plan** ደረጃ ወይም የምርት አማራጮች ስር ማዘጋጀት ወይም ማዋቀር ይችላሉ።
 
@@ -103,17 +103,17 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 ከእነዚህ አማራጮች ውስጥ አንዱ ቢበራ እና የsubsite ተጠቃሚ የራሳቸውን ዶሜን ስም እንዲያዛምድ ከተፈቀደላቸው፣ የsubsite ተጠቃሚ በ**Account** ገጽ ስር **Domains** የሚል ሜታቦክ (metabox) ያያል።
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 ተጠቃሚው በ**Add Domain** ቁልፍ ላይ ጠቅ ማድረግ ይችላል እና አንዳንድ መመሪያዎች ባሉበት የሞዳል መስኮት ይከፈታል።
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 ተጠቃሚው ከዚያ **Next Step** ላይ ጠቅ በማድረግ የcustom domain ስም ለመጨመር ይቀጥላል። ዋናው ዶሜን መሆኑን ወይስ አለመሆኑን መምረጥም ይችላል።
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 በ**Add Domain** ላይ ጠቅ ማድረግ የcustom domain ስም የDNS መረጃ የማረጋገጥ እና የመቅሰም ሂደትን ይጀምራል።
 
@@ -127,6 +127,6 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _ማስታወሱ፡ የሆስቲንግ ሰሪዎ ከላይ ከተጠቀሱት ሰሪዎች አንዱ ካልሆነ፣**የዶሜን ስሙን በእጅ መመሳሰል (manually sync) ወይም ወደ የሆስቲንግ አካውንትዎ መጨመር ያስፈልግዎታል**።_

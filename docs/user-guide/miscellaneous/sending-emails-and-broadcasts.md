@@ -15,7 +15,7 @@ Using the Ultimate Multisite broadcast feature, you can add **admin notices** to
 
 This is extremely helpful should you need to make an announcement like system maintenance or offering new products or services to your existing users. This is how the admin notice will look on your user’s dashboard.
 
-![Admin notice broadcast shown on a customer's subsite dashboard](/img/frontend/broadcast-customer-dashboard.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
 To start an admin notice, go to your network admin dashboard and under the **Ultimate Multisite** menu, you will find the **Broadcasts** option.
 
@@ -75,7 +75,7 @@ Once your target audience is selected, you can click **Next Step**.
 
 The next window is where you can start composing your email by entering the subject and the content/message you wish to send to the users.
 
-![Email broadcast subject and content editor on the compose step](/img/admin/broadcast-email-compose.png)
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
 After creating your message, you can hit the **Send** button.
 
@@ -101,7 +101,7 @@ Go to your Ultimate Multisite Settings page and head to the **Emails** tab.
 
 Then, on the sidebar, click on the **Customize System Emails** button.
 
-![Customize System Emails button on the System Emails sidebar panel](/img/config/settings-emails-customize-button.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
 On the System Emails page, you'll see the **Reset & Import** action button on the top. Clicking that button should open the import and reset modal window.
 
@@ -109,7 +109,7 @@ On the System Emails page, you'll see the **Reset & Import** action button on th
 
 Then, you can toggle the Import Emails options to see which system emails are available to be imported.
 
-![Reset and Import modal with the Import Emails options expanded](/img/admin/system-emails-import-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
 #### Reseting System Emails
 
@@ -121,4 +121,4 @@ Or you can use the **Reset & Import tool** to reset that email template.
 
 To reset an email template, you can follow the steps above until you reach the Reset & Import tool, and then, toggle the **Reset** option and select the emails you want to reset back to their default content.
 
-![Reset and Import modal with the Reset Emails options expanded](/img/admin/system-emails-reset-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

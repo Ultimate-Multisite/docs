@@ -19,21 +19,21 @@ Bu ödəniş qapılarının hamısını Ultimate Multisite ödəniş parametrlə
 
 **Avtomatik Yeniləməni Zorlama (Force auto-renew):** Bu, istifadəçinin seçdiyi hesablaşma tezliyinə əsasən ödənişin hər hesablaşma dövrünün sonunda avtomatik olaraq təkrarlanmasını təmin edir.
 
-![Force Auto-Renew toggle setting on the Payments settings page](/img/config/payments-force-auto-renew.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
 **Ödəniş Yolu olmadan sınaqları icazə et (Allow trials without payment method):** Bu seçimlər aktiv olduqda, müştəriniz qeydiyyat prosesi zamanı heç bir maliyyə məlumatı əlavə etməyəcək. Bu, yalnız sınaq müddəti bitdikdən sonra tələb olunacaq.
 
-![Allow Trials Without Payment Method toggle on the Payments settings page](/img/config/payments-allow-trials.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
 **Ödəniş təsdiq edildikdə faktura göndər (Send invoice on payment confirmation):** Bu, ödənişdən sonra faktura göndərmək və ya göndərməmək imkanı verir. Qeyd edin ki, istifadəçilər öz ödəniş tarixçələrinə öz subsite dashboardları vasitəsilə daxil olacaqlar. Bu seçim Əl ilə Qapı (Manual Gateway) üçün keçərli deyil.
 
-![Send Invoice on Payment Confirmation toggle on the Payments settings page](/img/config/payments-send-invoice.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
 **Faktura nömrələmə sxemi (Invoice numbering scheme):** Burada ödəniş istinad kodu (payment reference code) və ya ardıcıl nömrə sxemi (sequential number scheme) seçə bilərsiniz. Fakturalarınız üçün ödəniş istinad kodu istifadə etməyi seçsəniz, heç nə konfiqurasiya etməyiniz lazım deyil. Əgər ardıcıl nömrə sxemi istifadə etməyi seçsəniz, **növbəti faktura nömrəsini** (Bu nömrə sistemdə yaradılan növbəti faktura üçün faktura nömrəsi kimi istifadə ediləcək. Hər yeni faktura yaradıldıqda bir vahid artırılır. Onu dəyişdirib, faktura ardıcıl nömrəsini müəyyən bir dəyərə sıfırlamaq üçün yadda saxlaya bilərsiniz) və **faktura nömrəsi prefiksini** konfiqurasiya etməlisiniz.
 
-![Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options](/img/config/payments-invoice-scheme.png)
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-![Next invoice number and invoice number prefix fields shown when Sequential Number is selected](/img/config/payments-invoice-sequential.png)
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
 ## Qapıları Harada Tapmaq Olar:
 
@@ -71,7 +71,7 @@ Bilirik ki, \_Stripe\_ və \_PayPal\_ bəzi ölkələrdə mövcud deyil və bu d
 
 Əvvəlcə, zəhmət olmasa add-onlar səhifəsinə gedin. Buna **Ultimate Multisite > Settings** yolundan çata bilərsiniz. **Add-ons** cədvəlini görməlisiniz. **Check our Add-ons** düyməsinə klikləyin.
 
-![Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link](/img/config/settings-addons-table.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
 **Check our Add-ons** düyməsinə kliklədikdən sonra, add-onlar səhifəsinə yönləndiriləcəksiniz. Burada bütün Ultimate Multisite add-onlarını tapa bilərsiniz. **Ultimate Multisite: WooCommerce Integration** add-onuna klikləyin.
 
@@ -79,15 +79,15 @@ Bilirik ki, \_Stripe\_ və \_PayPal\_ bəzi ölkələrdə mövcud deyil və bu d
 
 Add-on detalları ilə bir pəncərə açılacaq. Sadəcə **Install Now** düyməsinə klikləyin.
 
-![Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button](/img/addons/addon-install-woocommerce.png)
+<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
 
 Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** düyməsinə klikləyin və WooCommerce add-onu şəbəkənizdə aktiv olacaq.
 
-![Plugins page with the Network Activate link for the WooCommerce Integration add-on](/img/addons/addon-network-activate-woocommerce.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
 
 Aktivləşdirildikdən sonra, əgər hələ də saytınızda WooCommerce plugin-i quraşdırılıb aktivləşdirilməyibsə, bir xatırlatma alacaqsınız.
 
-![Admin notice reminding the administrator to install and activate the WooCommerce plugin](/img/addons/addon-woocommerce-reminder.png)
+<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
 
 WooCommerce Integration add-onu haqqında daha çox məlumat oxumaq üçün **bura klikləyin**.
 
@@ -95,15 +95,15 @@ WooCommerce Integration add-onu haqqında daha çox məlumat oxumaq üçün **bu
 
 \_GoCardless\_ add-onunu quraşdırmaq addımları \_WooCommerce\_ add-onuna çox oxşardır. Zəhmət olmasa add-onlar səhifəsinə gedin və **Ultimate Multisite: GoCardless Gateway** add-onunu seçin.
 
-![Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted](/img/addons/addons-page-gocardless.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
 
 Add-on pəncərəsi açılacaq. **Install Now** düyməsinə klikləyin.
 
-![Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button](/img/addons/addon-install-gocardless.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
 
 Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** düyməsinə klikləyin və \_GoCardless\_ add-onu şəbəkənizdə aktiv olacaq.
 
-![Plugins page with the Network Activate link for the GoCardless Gateway add-on](/img/addons/addon-network-activate-gocardless.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
 
 \_GoCardless\_ qapısı ilə necə başlamaq öyrənmək üçün **bu məqaləni oxuyun**.
 
@@ -111,12 +111,12 @@ Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcək
 
 Add-onlar səhifəsinə gedin və **Ultimate Multisite: Payfast Gateway** add-onunu seçin.
 
-![Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted](/img/addons/addons-page-payfast.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
 
 Add-on pəncərəsi açılacaq. **Install Now.** düyməsinə klikləyin.
 
-![Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button](/img/addons/addon-install-payfast.png)
+<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
 
 Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** düyməsinə klikləyin və \_Payfast\_ add-onu şəbəkənizdə aktiv olacaq.
 
-![Plugins page with the Network Activate link for the Payfast Gateway add-on](/img/addons/addon-network-activate-payfast.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->

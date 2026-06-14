@@ -15,7 +15,7 @@ Ultimate Multisite yayın özelliğini kullanarak, kullanıcılarınızın subsi
 
 Bu özellik, sistem bakımı gibi bir duyuru yapmanız veya mevcut kullanıcılara yeni ürünler ya da hizmetler sunmanız gerektiğinde çok işinize yarayacaktır. Admin bildirimi, kullanıcılarınızın dashboard'unda şu şekilde görünecektir.
 
-![Admin notice broadcast shown on a customer's subsite dashboard](/img/frontend/broadcast-customer-dashboard.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
 Bir admin bildirimi oluşturmak için, network admin dashboard'unuza gidin ve **Ultimate Multisite** menüsü altından **Broadcasts** seçeneğini bulun.
 
@@ -75,7 +75,7 @@ Hedef kitlenizi seçtikten sonra, **Next Step**'e tıklayabilirsiniz.
 
 Bir sonraki pencere, kullanıcılarınıza göndermek istediğiniz konuyu ve içeriği/mesajı girerek e-postanızı oluşturmaya başlayabileceğiniz yerdir.
 
-![Email broadcast subject and content editor on the compose step](/img/admin/broadcast-email-compose.png)
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
 Mesajınızı oluşturduktan sonra, **Send** düğmesine basabilirsiniz.
 
@@ -101,7 +101,7 @@ Ultimate Multisite Ayarlar sayfanıza gidin ve **Emails** sekmesine ulaşın.
 
 Ardından, kenar çubuktaki **Customize System Emails** düğmesine tıklayın.
 
-![Customize System Emails button on the System Emails sidebar panel](/img/config/settings-emails-customize-button.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
 System Emails sayfasında, en üstte **Reset & Import** eylem düğmesini göreceksiniz. Bu düğmeye tıklamak, içe aktarma ve sıfırlama modal penceresini açmalıdır.
 
@@ -109,7 +109,7 @@ System Emails sayfasında, en üstte **Reset & Import** eylem düğmesini görec
 
 Ardından, hangi sistem e-postalarının içe aktarılabilir olduğunu görmek için Import Emails seçeneklerini açabilirsiniz.
 
-![Reset and Import modal with the Import Emails options expanded](/img/admin/system-emails-import-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
 #### Sistem E-postalarını Sıfırlama
 
@@ -121,4 +121,4 @@ Veya bu e-posta şablonunu sıfırlamak için **Reset & Import tool**'u kullanab
 
 Bir e-posta şablonunu sıfırlamak için, yukarıdaki adımları Reset & Import aracına ulaşana kadar takip edebilir ve ardından **Reset** seçeneğini açıp varsayılan içeriğine sıfırlamak istediğiniz e-postaları seçebilirsiniz.
 
-![Reset and Import modal with the Reset Emails options expanded](/img/admin/system-emails-reset-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

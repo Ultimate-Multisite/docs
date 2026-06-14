@@ -1,0 +1,264 @@
+---
+title: Migracija v tretji strani
+sidebar_position: 17
+_i18n_hash: 21e66c5c40d03011402c58addf6d96f3
+---
+# Migracija na režim tretjih oseb (Third-Party Mode Migration)
+
+Superdav AI Agent v1.12.0 spremeni način obdelave sposobnosti tretjih oseb. **Režim tretjih oseb se zdaj po defaultu uporablja "auto"**, kar omogoča natavno integracijo WordPress Abilities API na WordPress 7.0+ brez ručne konfiguracije.
+
+## Kaj se spremenilo?
+
+### Pred v1.12.0
+
+Sposobnosti tretjih oseb so zahtevale ručno konfiguracijo:
+
+- Morali ste eksplicitno vključiti "third-party mode"
+- Sposobnosti so bile vnosjene iz prilagojene registrcije (custom registry)
+- Integracija z WordPress Abilities API je bila opcionalna
+- Starostni režim (legacy mode) je bil default
+
+### Po v1.12.0
+
+Sposobnosti tretjih oseb delujejo samodejno:
+
+- Režim tretjih oseb se po defaultu uporablja "auto"
+- Sposobnosti se natavno integrirajo z WordPress Abilities API
+- Na WordPress 7.0+ ni potrebna ručna konfiguracija
+- Starostni režim je še vedno na voljo za stareje verzije WordPressa
+
+## Kdo je vpljen?
+
+### Novi uporabi (WordPress 7.0+)
+
+**Ni potrebn nobene akciji.** Režim tretjih oseb se samodejno postavi na "auto", in sposobnosti delujejo iz paketa (out of the box).
+
+### Obstajajoči uporabniki
+
+**Vaše nastavitve so ohranjene.** Če ste uporabili:
+
+- **Starostni režim (Legacy mode)**: Ostanete v starostnem režimu (ni sprememb)
+- **Ručni režim tretjih oseb**: Ostanete v ručnem načinu (ni sprememb)
+- **Auto režim**: Nadaljuješ z auto režimom (ni sprememb)
+
+### Verzije WordPressa pred 7.0
+
+**Starostni režim je še vedno na voljo.** Če ste na WordPressu 6.x ali starejšem:
+
+- Režim tretjih oseb se po defaultu uporablja "legacy"
+- Lahko ručno vključite režim tretjih oseb, če želite
+- Ažirajte na WordPress 7.0+ za uporabo natavnega Abilities API
+
+## Razumevanje režimov
+
+### Auto Režim (Novi default)
+
+**Auto režim** uporablja natavno integracijo WordPress Abilities API:
+
+- Sposobnosti so registrirane preko WordPress hookov
+- Polna kompatibilnost z WordPress 7.0+ Abilities API
+- Avtomatsko odkrivanje sposobnosti tretjih oseb
+- Ni potrebna ručna konfiguracija
+
+**Kaj uporabiti**: WordPress 7.0+ z možnostmi tretjih strank
+
+### Manualni način (Manual Mode)
+
+**Manualni način** zahteva navodilo in konfiguracijo:
+
+- Določite, kakšne možnosti tretjih strank želite vključiti
+- Uporabno za testiranje ali izbirano vključitev mozošnosti
+- Zahteva ureditev konfiguracijskih datotek
+- Več kontrole, vendar več postavitve
+
+**Kaj uporabiti**: Testiranje, izbirana vključitev mozošnosti ali prilagojene konfiguracije
+
+### Starostni način (Legacy Mode)
+
+**Starostni način** uporablja stare sistem tretjih strank:
+
+- Prilagodljiv registar mozošnosti (ne WordPress Abilities API)
+- Zaenkratno kompatibilen z starejšimi različicami WordPressa
+- Ni natančno integriran z WordPressom
+- Je zastarejen, vendar je še vedno podprt
+
+**Kaj uporabiti**: WordPress 6.x ali starejši, ali ko potrebujete starostno kompatibilnost
+
+## Preverjanje trenutnega načina
+
+### Splet admin panela (Admin Panel)
+
+1. Pojdite na **WordPress Admin** → **Superdav AI Agent** → **Settings**
+2. Poiščite nastavitvo **Third-Party Mode**
+3. Tam boste videli svoj trenutni način in možnosti za njegovo spremembo
+
+### Splet kode (Code)
+
+```php
+$mode = get_option( 'superdav_third_party_mode' );
+echo $mode; // 'auto', 'manual', ali 'legacy'
+```
+
+## Sprememba načina
+
+### Preklap na Auto Mode
+
+Če ste na WordPress 7.0+ in želite uporabiti auto mode:
+
+1. Pojdite na **Superdav AI Agent** → **Settings**
+2. Poiščite **Third-Party Mode**
+3. Izberite **Auto (WordPress Abilities API)**
+4. Kliknite na **Save**
+
+Superdav AI Agent bo sam odkril in registriral tretjine mozošnosti.
+
+### Preklap na Manualni način
+
+Če želite sami upravljati, kakšne mozošnosti se vključijo:
+
+1. Pojdite na **Superdav AI Agent** → **Settings**
+2. Poiščite **Third-Party Mode**
+3. Izberite **Manual**
+4. Kliknite na **Save**
+5. Uredite svoj konfiguracijski datotek, da navedete, kakšne mozošnosti želite vključiti
+
+### Preklap na Starostni način (Legacy Mode)
+
+Če potrebujete starostno kompatibilnost:
+
+1. Poi v **Superdav AI Agent** → **Settings**
+2. Poi najdete **Third-Party Mode** (Trtiti stranski način)
+3. Izberite **Legacy** (Staro načino)
+4. Kliknite na **Save** (Shrani)
+
+## Prednosti Auto Mode
+
+### Avtomatsko odkritje
+
+Sposobnosti se avtomatsko odkrijeta iz:
+
+- Instaliranih pluginov
+- Aktivenega teme
+- Obveznih pluginov
+- Drop-in pluginov
+
+Ni potrebno ručno registracijo.
+
+### Deželna integracija (Native Integration)
+
+Sposobnosti se integrirajo z WordPress Abilities API:
+
+- U skladu z WordPress core
+- Deluje z WordPress adminom
+- Compatibilno je z drugimi pluginami, ki uporabljajo Abilities API
+- Prihodnostna varnost glede na razvoj WordPressa
+
+### Preprosto upravljanje (Simplified Management)
+
+- Ni potrebno urediti konfiguracijske datoteke
+- Ni potrebno ručno registrirati sposobnosti
+- Kontrole vidljivosti sposobnosti delujejo avtomatsko
+- Admine obvestijo vas o neklasificiranih sposobnostih
+
+### Boljša zmogljivost (Better Performance)
+
+- Sposobnosti so v cache
+- Lazy-loaded na zahtevo
+- Optimizirano za WordPress 7.0+
+
+## Pot za migracijo
+
+### Če ste na WordPressu 6.x
+
+1. **Ažirajte na WordPress 7.0+** (ko je pripravljen)
+2. **Ažirajte Superdav AI Agent** na v1.12.0+
+3. **Preimenujte third-party mode na Auto** (opcionalno; legacy mode še vedno deluje)
+4. **Pregledajte vidljivost sposobnosti**, da se zagotvate, da so pravilne kontrole dostopa
+
+### Če ste na WordPressu 7.0+
+
+1. **Ažirajte Superdav AI Agent** na v1.12.0+
+2. **Preverite, da je third-party mode nastavljen na Auto** (bi bi bil po defaultu)
+3. **Pregledajte vidljivost sposobnosti**, da se zagotvate, da so pravilne kontrole dostopa
+4. **Preizkusite third-party sposobnosti**, da potrdite, da delujejo
+
+## Reševanje težav (Troubleshooting)
+
+### Sposobnosti se ne vklajajo v auto mode
+
+- Preverite, da ste na WordPressu 7.0+
+- Preverite, da je third-party mode nastavljen na "Auto"
+- Preverite, da je plugin, ki zagotavlja sposobnost, aktiven
+- Preverite WordPress error logs za napake pri registraciji
+
+### Želim ohraniti legacy mode
+
+- Poi v **Settings** → **Third-Party Mode**
+- Izberite **Legacy** (Staro načino)
+- Kliknite na **Save** (Shrani)
+- Legacy mode bo nadalje deloval
+
+### Moja prilagodljiva sposobnosti se ne prikazuje
+
+- Preverite ali so jih registrirali preko WordPress hookov
+- Preverite da pravilno implementirate Abilities API
+- Pregledajte WordPress error logove
+- Uporabite admin stran **Ability Visibility** za vidik vseh registriranih sposobnosti
+
+### Dobavljam sporočila "nepoznatne sposobnosti" (unclassified ability)
+
+- To je normalno pri novih tretjih strank sposobnostih
+- Pregledajte in klasifikirajte jih v admin noticah
+- Vidite **Ability Visibility** za podrobnosti o klasifikaciji
+
+## Zgodnost z starejšimi verzijami (Backward Compatibility)
+
+### Obstojna konfiguracija (Existing Configurations)
+
+Če imate obstoječe konfiguracije tretjih strank sposobnosti:
+
+- **Legacy mode**: Vaša konfiguracija nadaljuje delovanje
+- **Manual mode**: Vaša konfiguracija nadaljuje delovanje
+- **Auto mode**: Vaša konfiguracija je ignorirana (auto mode prevzame nad)
+
+Da bi ohranili svojo prilagodljive konfiguracijo, ostajte v Manual ali Legacy modu.
+
+### Vременi izobraževanja (Deprecation Timeline)
+
+- **v1.12.0**: Mode Legacy in Manual še vedno popolnoma podporni
+- **v1.13.0+**: Mode Legacy lahko prikazuje sporočila o izobraževanju (deprecation notices)
+- **v2.0.0**: Mode Legacy se lahko odstrani (odločeno)
+
+## Najboljše prakse (Best Practices)
+
+### Za nove instalacije
+
+- Uporabite Auto mode (to je zadana nastavitva)
+- Dajte Superdav AI Agentu sposobnostih samodejno odkrijati
+- Uporabite Ability Visibility za nadzor dostopa
+
+### Za obstoječe instalacije
+
+- Posodobite na WordPress 7.0+ če je to mogoče
+- Preklapajte se na Auto mode za preprosto upravljanje
+- Pregledajte in klasifikirajte sposobnosti z uporabo Ability Visibility
+
+### Za prilagodljive sposobnosti (Custom Abilities)
+
+- Registrirajte sposobnosti preko WordPress hookov (Abilities API)
+- Izogibajte se registraciji prilagodljivih sposobnosti (custom ability registries)
+- Testirajte na WordPress 7.0+ z Auto mode
+
+## Naslednji koraki (Next Steps)
+
+1. **Preverite svojo verzijo WordPressa**: Preverite, da ste na 7.0+ za Auto mode
+2. **Pregledajte svoj tredj party mode**: Pojdite v Settings in preverite trenutni mod
+3. **Obnovite če je potrebno**: Preklopite na Auto mode, če ste na WordPressu 7.0+
+4. **Kategorizirajte sposobnosti**: Pregledajte in kategorizirajte kakršne koli nekatestrirane sposobnosti
+5. **Testiranje**: Preverite, da delujejo vaši tredj party abilities pravilno
+
+## Povezani pod temami
+
+- **Vidljivost sposobnosti (Ability Visibility)**: Kontrolirajte, kjer so expozirane določene sposobnosti
+- **WordPress Abilities API**: Učite se o nativni registraciji WordPress ability
+- **Razvoj tredj party ability**: Ustvarite sposobnosti, ki delujejo z Auto mode

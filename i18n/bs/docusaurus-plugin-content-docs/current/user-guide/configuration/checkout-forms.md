@@ -159,7 +159,7 @@ Prije dodavanja polja Period Selection, pobrinite se da vaši proizvodi imaju ko
 
 Također možete konfigurisati opcije polja direktno:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Odaberite **Period Selector Template** (Clean je podrazumevano, što prikazuje jednostavan stilizovani selektor spreman za custom CSS).
 

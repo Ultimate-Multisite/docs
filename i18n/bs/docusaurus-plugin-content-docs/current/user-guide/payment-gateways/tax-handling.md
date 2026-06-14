@@ -88,17 +88,17 @@ Da biste instalirali taj add-on, idite na **Ultimate Multisite > Settings** i za
 
 Preusmjerat ćete se na našu stranicu add-on-a. Tamo možete potražiti **Ultimate Multisite VAT add-on** i instalirati ga.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Zatim, idite na **Network Admin > Plugins** i aktivirajte taj add-on na nivou mreže.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 Ako se vratite na **Tax Settings tab**, vidjet ćete nove opcije. Prebacite (toggle) opciju **Enable VAT Support** da biste omogućili nove PDV alate. Ne zaboravite da **sačuvate** svoje postavke!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Učitavanje PDV Stavki Poreza
 
@@ -114,6 +114,6 @@ Takođe možete uređivati vrijednosti nakon što ih učitate. Da biste to učin
 
 Kada je podrška za PDV omogućena, Ultimate Multisite će dodati dodatno polje na formular za naplatu, ispod polja za adresu za naplatu. Polje će se prikazivati samo za klijente smještene u EU.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 Ultimate Multisite će zatim validirati PDV broj, i ako je validan, primjenjuje se mehanizam obrnuto naplaćivanja (reverse charge) i stopa poreza se postavlja na 0% za tu porudžbinu.

@@ -29,7 +29,7 @@ After setting it up, just click on **Save Settings** and it is done. When users 
 
 And they will also receive a message on your **Thank You** page with your payment instructions.
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Confirming manual payments
 

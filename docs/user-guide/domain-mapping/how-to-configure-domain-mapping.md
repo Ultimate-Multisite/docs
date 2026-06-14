@@ -19,7 +19,7 @@ Domain mapping requires some setting up on your part to work. Thankfully, Ultima
 
 During Ultimate Multisite installation, the wizard will automatically copy and install the **sunrise.php** to the designated folder. **The wizard won't allow you to proceed until this step is completed**.
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 This means that once the Ultimate Multisite installation wizard has completed setting up your network, you can start mapping the custom domain right away.
 
@@ -43,7 +43,7 @@ There are two ways to map a custom domain. The first is by mapping the domain na
 
 But before you start mapping the custom domain to one of the subsites in your network, you will need to make sure that the **DNS settings** of the domain name are properly configured.
 
-### 
+###
 
 ### Making sure the domain DNS settings are properly configured
 
@@ -73,9 +73,9 @@ Ultimate Multisite v2.13.0 also creates the internal domain record automatically
 
 The **Stage** or the status should change from **Checking DNS** to **Ready** if everything is properly set up.
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 If you click on the domain name, you will be able to see some options inside it. Lets take a quick look at them:
 
@@ -97,7 +97,7 @@ Subsite administrators can also map custom domain names from their subsite admin
 
 First, you need to make sure that you enable this option under the **Domain mapping** settings. See the screenshot below.
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 You can also set or configure this option under the **Plan** level or product options on **Ultimate Multisite > Products**.
 
@@ -105,17 +105,17 @@ You can also set or configure this option under the **Plan** level or product op
 
 When any of those options are enabled and a subsite user is allowed to map custom domain names, the subsite user should see a metabox under the **Account** page called **Domains**.
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 The user can click the **Add Domain** button and it will bring up a modal window with some instructions.
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 The user can then click **Next Step** and proceed to add the custom domain name. They can also choose if this will be the primary domain or not.
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
 
@@ -131,6 +131,6 @@ You will need to activate this integration on Ultimate Multisite settings under 
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _Note that if your hosting provider is not one of those providers mentioned above,**you will need to manually sync or add the domain name** to your hosting account._

@@ -29,7 +29,7 @@ Qurulumu bitirdikdən sonra sadəcə **Save Settings** (Ayarları Saxla) düymə
 
 Həmçinin, **Thank You** (Təşəkkür) səhifənizdə də ödəniş təlimatlarınızla bağlı bir mesaj alacaqlar.
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Əl ilə Ödənişləri Təsdiqləmək
 

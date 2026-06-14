@@ -15,7 +15,7 @@ Koristeći funkciju Broadcasts u Ultimate Multisite-u, možete dodati **admin ob
 
 Ovo je izuzetno korisno ako trebate objaviti neku obavijest, poput održavanja sistema ili predstavljanja novih proizvoda ili usluga vašim postojećim korisnicima. Tako će izgledati admin obavijest na dashboard-u vašeg korisnika.
 
-![Admin notice broadcast shown on a customer's subsite dashboard](/img/frontend/broadcast-customer-dashboard.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
 Da biste kreirali admin obavijest, idite na admin dashboard vaše mreže i pod menijem **Ultimate Multisite** pronaći ćete opciju **Broadcasts**.
 
@@ -75,7 +75,7 @@ Nakon što je vaša ciljna publika odabrana, možete kliknuti **Next Step**.
 
 Sljedeći prozor je mjesto gdje možete početi sastavljati e-mail unosom teme i sadržaja/poruke koju želite poslati korisnicima.
 
-![Email broadcast subject and content editor on the compose step](/img/admin/broadcast-email-compose.png)
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
 Nakon kreiranja poruke, možete pritisnuti gumb **Send** (Pošalji).
 
@@ -101,7 +101,7 @@ Idite na stranicu Postavke Ultimate Multisite-a i idite na karticu **Emails** (E
 
 Zatim, na bočnom panelu, kliknite na gumb **Customize System Emails** (Prilagodi sistemske e-mailove).
 
-![Customize System Emails button on the System Emails sidebar panel](/img/config/settings-emails-customize-button.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
 Na stranici Sistemski e-mailovi, vidjet ćete akcioni gumb **Reset & Import** (Resetovanje i uvoz) na vrhu. Klikom na taj gumb bi trebalo da se otvori modalni prozor za uvoz i resetovanje.
 
@@ -109,7 +109,7 @@ Na stranici Sistemski e-mailovi, vidjet ćete akcioni gumb **Reset & Import** (R
 
 Zatim, možete uključiti opcije Import Emails da vidite koji sistemski e-mailovi su dostupni za uvoz.
 
-![Reset and Import modal with the Import Emails options expanded](/img/admin/system-emails-import-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
 #### Resetovanje sistemskih e-mailova
 
@@ -121,4 +121,4 @@ Ili možete koristiti **Reset & Import tool** za resetovanje tog e-mail šablona
 
 Da biste resetovali e-mail šablon, možete pratiti gore navedene korake sve dok ne stignete do alata Reset & Import, a zatim uključiti opciju **Reset** i odabrati e-mailove koje želite vratiti na podrazumevano stanje sadržaja.
 
-![Reset and Import modal with the Reset Emails options expanded](/img/admin/system-emails-reset-options.png)
+<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

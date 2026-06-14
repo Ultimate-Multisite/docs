@@ -159,7 +159,7 @@ Dönem Seçimi alanını eklemeden önce, ürünlerinizin fiyat varyasyonları y
 
 Alan seçeneklerini doğrudan da yapılandırabilirsiniz:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Bir **Dönem Seçici Şablonu** seçin (Temiz varsayılandır, bu da özel CSS için hazır basit bir stilize edici oluşturur).
 

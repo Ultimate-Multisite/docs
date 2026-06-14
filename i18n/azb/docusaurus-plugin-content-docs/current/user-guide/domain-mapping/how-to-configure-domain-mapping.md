@@ -19,7 +19,7 @@ Domain eşleştirmenin çalışması için sizin tarafınızdan bazı kurulumlar
 
 Ultimate Multisite kurulumu sırasında, sihirbaz (wizard) otomatik olarak **sunrise.php** dosyasını belirlenen klasöre kopyalar ve kurar. **Sihirbaz, bu adım tamamlanmadan ilerlemenize izin vermeyecektir.**
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/installation/install-wizard.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
 Bu, Ultimate Multisite kurulum sihirbazı ağınızı kurmayı bitirdiğinde, özel alan adını hemen eşleştirmeye başlayabileceğiniz anlamına gelir.
 
@@ -71,9 +71,9 @@ Bu, özel alan adının DNS bilgilerini doğrulama ve çekme sürecini başlatac
 
 Her şey düzgün ayarlanmışsa, **Durum** (Stage) **DNS Kontrol Ediliyor**'dan **Hazır**'a değişmelidir.
 
-![Domain row showing the Checking DNS stage in the domains list](/img/admin/domain-stage-checking.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain row showing the Ready stage with the green status indicator](/img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
 Alan adına tıklarsanız, içinde bazı seçenekler görebilirsiniz. Hızlıca bir göz atalım:
 
@@ -95,7 +95,7 @@ Alt site yöneticileri de kendi alt site yöneticisi kontrol panelinden özel al
 
 Öncelikle, bu seçeneği **Domain mapping** (Domain eşleştirme) ayarları altından etkinleştirdiğinizden emin olmalısınız. Aşağıdaki ekran görüntüsüne bakın.
 
-![Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle](/img/config/domain-mapping-customer-dns.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
 Bu seçeneği ayrıca **Ultimate Multisite > Products** altındaki **Plan** seviyesinde veya ürün seçeneklerinde de ayarlayabilir veya yapılandırabilirsiniz.
 
@@ -103,17 +103,17 @@ Bu seçeneği ayrıca **Ultimate Multisite > Products** altındaki **Plan** sevi
 
 Bu seçeneklerden herhangi biri etkinleştirilmişse ve bir alt site kullanıcısına özel alan adları eşleştirme izni verilmişse, alt site kullanıcısı **Hesap** sayfasında **Domains** (Alan Adları) adında bir metabox görmelidir.
 
-![Domains metabox on the subsite Account page with Add Domain button](/img/account-page/domains-metabox.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
 Kullanıcı **Domain Ekle** düğmesine tıklayabilir ve bu, bazı talimatlarla birlikte bir modal pencere açar.
 
-![Add Domain modal showing DNS A-record instructions for subsite users](/img/account-page/domain-add-instructions.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
 Kullanıcı daha sonra **Next Step** (Sonraki Adım) düğmesine tıklayarak özel alan adını ekleme işlemine devam edebilir. Ayrıca bunun birincil alan adı olup olmayacağını da seçebilir.
 
-![Add Domain form with custom domain name field and primary domain toggle](/img/account-page/domain-add-form.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Add Domain confirmation step that triggers DNS verification](/img/account-page/domain-add-confirm.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
 **Domain Ekle**'ye tıklamak, özel alan adının DNS bilgilerini doğrulama ve çekme sürecini başlatacaktır.
 
@@ -127,6 +127,6 @@ Bu entegrasyonu Ultimate Multisite ayarlarında **Integration** (Entegrasyon) se
 
 ![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
 
-![Hosting provider Configuration links on the Integrations settings tab](/img/config/integrations-providers.png)
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
 _Not: Barındırma sağlayıcınız yukarıda bahsedilen sağlayıcılardan biri değilse,**alan adını manuel olarak senkronize etmeniz veya eklemeniz gerekecektir.**_

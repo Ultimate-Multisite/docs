@@ -88,17 +88,17 @@ Bu add-onu quraşdırmaq üçün **Ultimate Multisite > Settings** səhifəsinə
 
 Sizi add-on-lar səhifəmizə yönləndirəcək. Orada **Ultimate Multisite VAT add-on** axtarıb onu quraşdıra bilərsiniz.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Sonra, **Network Admin > Plugins** səhifəsinə keçin və bu add-onu bütün şəbəkə üçün aktivləşdirin.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 Əgər **Tax Settings tab** səhifəsinə qayıtsanız, yeni seçimlər görməyəcəksiniz. Yeni ƏDV alətlərini aktivləşdirmək üçün **Enable VAT Support** seçiminə keçirin. Ayarlarınızı **yadda saxlamağı** unutmayın!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### ƏDV Vergi Tariflərini Çəkmək (Pulling)
 
@@ -114,6 +114,6 @@ Səhifənin altında ƏDV çəkmə (pulling) seçimlərini görəcəksiniz. Bir 
 
 ƏDV dəstəyi aktivləşdirildikdə, Ultimate Multisite ödəniş formasına, fakturalandırma ünvanı sahəsinin altına əlavə bir sahə əlavə edəcək. Bu sahə yalnız EU-da yerləşən müştərilər üçün görünəcək.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 Ultimate Multisite sonra ƏDV Nömrəsini yoxlayacaq və əgər bu nömrə etibarlı olaraq gəlsə, tərs vergiləndirmə mexanizmi tətbiq ediləcək və həmin sifariş üzrə vergi faizi 0% olaraq təyin ediləcək.

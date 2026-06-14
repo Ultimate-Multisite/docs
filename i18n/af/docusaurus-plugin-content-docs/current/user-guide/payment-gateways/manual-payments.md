@@ -29,7 +29,7 @@ Nadat jy dit opgestel het, klik net op **Save Settings** en dit is done. Wanneer
 
 En hulle sal ook 'n boodskap op jou **Thank You**-bladsy met jou betalingsinstruksies ontvang.
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Bevestiging van Handmatige Betalings
 

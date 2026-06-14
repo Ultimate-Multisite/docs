@@ -159,7 +159,7 @@ Period Selection sahəsini əlavə etməzdən əvvəl, məhsullarınızda qiymə
 
 Sahə seçimlərini birbaşa konfiqurasiya edə bilərsiniz:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Bir **Period Selector Template** seçin (Clean defaultdur və xüsusi CSS üçün hazır, sadə bir şablon göstərir).
 

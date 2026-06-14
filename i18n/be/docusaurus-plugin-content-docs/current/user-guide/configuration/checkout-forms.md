@@ -159,7 +159,7 @@ _**Заўвага:** username, email, password, site title, site URL, order summ
 
 Вы таксама можаце сканфігураваць варыянты поля непасрэдна:
 
-![Period selection field options](/img/config/period-selection-field-options.png)
+<!-- Screenshot unavailable: Period selection field options -->
 
 6. Выберыце **Шаблон выбара перыяду** (Period Selector Template) (Clean па спецыфікацыі, які рэндэрыруе просты стылізаваны выбар, гатовы для карыстальніцкіга CSS).
 

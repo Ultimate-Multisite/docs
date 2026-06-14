@@ -29,7 +29,7 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 እንዲሁም፣ በ **Thank You** ገጽዎ ላይ የክፍያ መመሪያዎችዎ የሚታዩበት መልዕክት ይቀበላሉ።
 
-![Thank You page showing payment instructions after checkout](/img/frontend/manual-thank-you.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## በእጅ ክፍያዎችን ማረጋገጥ
 

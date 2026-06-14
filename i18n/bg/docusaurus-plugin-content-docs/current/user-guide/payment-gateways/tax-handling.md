@@ -88,17 +88,17 @@ Ultimate Multisite не подава или не предава данъците
 
 Ще бъдете пренасочени към страницата ни с ад-ъон-и. Там можете да потърсите **Ultimate Multisite VAT add-on** и да го инсталирате.
 
-![VAT add-on tile on the Add-ons page](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 След това отидете на **Network Admin > Plugins** и активирайте този ад-он за цялата мрежа.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 Ако се върнете на **Tax Settings tab**, ще видите налични нови опции. Включете опцията **Enable VAT Support**, за да активирате новите инструменти за ДДС. Не забравяйте да **запазите** настройките си!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Извличане на ставки за ДДС
 
@@ -114,6 +114,6 @@ Ultimate Multisite не подава или не предава данъците
 
 Когато поддръжката за ДДС е активирана, Ultimate Multisite ще добави допълнително поле към формуляра за каса, под полето за адрес за начисляване. Полето ще се показва само за клиенти, разположени в ЕС.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 След това Ultimate Multisite ще валидира номера за ДДС и ако той бъде валиден, се прилага механизъм за обратно начисляване и данъчната ставка се задава на 0% за този поръчка.

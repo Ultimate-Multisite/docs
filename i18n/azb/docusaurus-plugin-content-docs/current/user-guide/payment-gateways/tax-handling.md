@@ -88,17 +88,17 @@ Bu add-onu kurmak için **Ultimate Multisite > Ayarlar** sayfasına gidin ve ard
 
 Add-on sayfamıza yönlendirileceksiniz. Orada **Ultimate Multisite VAT add-on** araması yapabilir ve kurabilirsiniz.
 
-![Add-ons page'deki VAT add-on karosu](/img/admin/addons-page-vat.png)
+<!-- Screenshot unavailable: Add-ons page'deki VAT add-on karosu -->
 
-![VAT add-on Install Now dialog](/img/admin/addon-install-vat.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
 Ardından, **Network Admin > Plugins** bölümüne gidin ve bu add-onu ağ genelinde etkinleştirin.
 
-![Network Activate action for the VAT add-on on the Plugins page](/img/admin/addons-list-vat.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
 **Vergi Ayarları** sekmesine geri döndüğünüzde, yeni seçenekler göreceksiniz. Yeni KDV araçlarını etkinleştirmek için **Enable VAT Support** düğmesini açın. Ayarlarınızı **kaydetmeyi** unutmayın!
 
-![Enable VAT Support toggle in the Tax settings after add-on activation](/img/config/settings-taxes-vat-toggle.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### KDV Vergi Oranlarını Çekme
 
@@ -114,6 +114,6 @@ Sayfanın altında KDV çekme seçeneklerini göreceksiniz. Bir oran türü seç
 
 KDV desteği etkinleştirildiğinde, Ultimate Multisite ödeme formuna, fatura adresi alanının altına ek bir alan ekleyecektir. Bu alan yalnızca AB'de bulunan müşteriler için görünecektir.
 
-![VAT Number field on the frontend checkout form below the billing address](/img/frontend/checkout-vat-field.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
 Ultimate Multisite daha sonra KDV Numarasını doğrulayacak ve geçerli çıkarsa, ters kayıt mekanizması uygulanacak ve o sipariş için vergi oranı %0 olarak ayarlanacaktır.
