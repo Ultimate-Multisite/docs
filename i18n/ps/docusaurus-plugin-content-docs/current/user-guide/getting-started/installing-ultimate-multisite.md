@@ -1,86 +1,85 @@
 ---
-title: Ultimate Multisite نصب کول
+title: نصب کولو تهUltimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite نصب کول
+# د Ultimate Multisite نصب کول
 
 :::note
-دا راهنما فرض را بر این می‌گیرد که شما قبلاً WordPress Multisite نصب و تنظیم شده دارید. برای یادگیری چگونگی انجام این کار، به [این راهنما](https://www.wpbeginner.com/glossary/multisite/) توسط WP Beginner مراجعه کنید.
+دا لارښود فرض کوي چې تاسو دمخه WordPress Multisite نصب او تنظیم کړی دی. که څنګه یې، پدې [لارښود](https://www.wpbeginner.com/glossary/multisite/) کې وګورئ چې WP Beginner یې خپره کړې ده.
 :::
 
-## نصب پلاگین
+## د پلگ ان (Plugin) نصب کول
 
-Ultimate Multisite رایگان در [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) موجود است.
+Ultimate Multisite په وړیا توګه په [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) کې شتون لري.
 
-از **Network Admin Dashboard** خود، به مسیر **Plugins → Add New Plugin** بروید.
+له خپل **شبکې مدیر ډیش بورډ** څخه، **Plugins → Add New Plugin** ته لاړ شئ.
 
-![صفحه افزودن افزونه در Network Admin](/img/installation/add-new-plugin.png)
+![د شبکې مدیر "نوی پلگ ان اضافه کړئ" پاڼه](/img/installation/add-new-plugin.png)
 
-دنبال عبارت **"Ultimate Multisite"** (با کوتیشن برای تطابق دقیق) جستجو کنید و این اولین نتیجه خواهد بود. روی **Install Now** کلیک کنید.
+د **"Ultimate Multisite"** (د دقیق تطابق لپاره د کوټونو سره) لټون وکړئ او دا به د لومړۍ پایلې په توګه څرګند شي. **Install Now** باندې کلیک وکړئ.
 
-![نتایج جستجو که Ultimate Multisite را نشان می‌دهد](/img/installation/search-ultimate-multisite.png)
+![د "Ultimate Multisite" پلگ ان ښودونکي لټون پایلې](/img/installation/search-ultimate-multisite.png)
 
-پس از نصب، روی **Network Activate** کلیک کنید تا افزونه در کل شبکه شما فعال شود.
+کله چې نصب شو، د دې لپاره چې پلگ ان ستاسو په ټولې شبکې کې فعال کړئ، **Network Activate** باندې کلیک وکړئ.
 
-![افزونه با دکمه Network Activate نصب شده است](/img/installation/plugin-installed.png)
+![نصب شوی پلگ ان او "شبکه فعال کړئ" تڼګه](/img/installation/plugin-installed.png)
 
-بعد از فعال‌سازی، به طور خودکار به Setup Wizard هدایت خواهید شد.
+د فعالولو وروسته، تاسو به په اوتومات ډول د تنظیم کولو جادوګر (Setup Wizard) تهredirect شئ.
 
-![افزونه فعال شده و به wizard هدایت شده است](/img/installation/plugin-activated.png)
+![فعال شوی پلگ ان او جادوګر تهredirect شوي پاڼه](/img/installation/plugin-activated.png)
 
-## Setup Wizard (راهنمای تنظیمات)
+## تنظیم کولو جادوګر
 
-Setup Wizard شما را در حدود ۱۰ دقیقه راهنمایی می‌کند تا Ultimate Multisite را پیکربندی کنید.
+تنظیم کولو جادوګر به تاسو ته په شاوخوا 10 دقیقو کې د Ultimate Multisite تنظیم کولو لپاره لارښود کړي.
 
-### Welcome (خوش آمدید)
+### ښه راغلاست
 
-برای شروع، روی **Get Started** کلیک کنید.
+د پیل لپاره **Get Started** باندې کلیک وکړئ.
 
-![صفحه خوش‌آمدگویی Setup Wizard](/img/installation/wizard-welcome.png)
+![تنظیم کولو جادوګر، ښه راغلاست سکرین](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (بررسی‌های پیش از نصب)
+### دمخه نصب ت checks
+دا مرحله ستاسو د سیسټم معلومات او WordPress نصب چک کوي ترڅو ډاډ ترلاسه کړي چې دا د Ultimate Multisite اړتیاوې پوره کوي. که هر څه ښه وي، **Go to the Next Step** باندې کلیک وکړئ.
 
-این مرحله اطلاعات سیستم و نصب وردپرس شما را بررسی می‌کند تا مطمئن شود با الزامات Ultimate Multisite مطابقت دارد. اگر همه چیز خوب به نظر می‌رسد، روی **Go to the Next Step** کلیک کنید.
+![دمخه نصب ت checks، د سیسټم اړتیاوې ښودونکي سکرین](/img/installation/wizard-pre-install-checks.png)
 
-![بررسی‌های پیش از نصب که نیازهای سیستمی را نشان می‌دهد](/img/installation/wizard-pre-install-checks.png)
+:::note "شبکه فعال کړئ" تڼګه (v2.6.1+)
+که Ultimate Multisite نصب شوی و، مګر لاهم **لا تر اوسه په شبکه کې نه وي فعال شوی** - د مثال په توګه، که تاسو د شبکې پلگ انونو سکرین څخه **Activate** (یوازې سایټ) ته کلیک کړی وي، نو دمخه نصب ت checks مرحله به دا کشف کړي او **Network Activate** تڼګه ښکاري.
 
-:::note دکمه Network Activate (v2.6.1+)
-که څنګه چې Ultimate Multisite هم 설치 شوی، خو **هغه هنوز هم network-activated نه دی** - 써 په مثال سره، که تاسو د network plugins screen څخه **Activate** (single-site) بدل له **Network Activate** باندې کلیک کړی - نو Pre-install Checks مرحله دا تشخیصلنه او یو **Network Activate** دکمه ښایي.
-
-د **Network Activate** باندې کلیک کولو له لارې، دا plugin په خودکاریت سره تر ټول multisite network کې فعال کیږي. এবাৰ فعال شو، wizard به په معمول ډول Installation مرحله ته دوام ورکړي. تاسو باید د فعال حالت اصلاح کولو لپاره wizard څخه لاړ نشئ.
+د **Network Activate** باندې کلیک کول په اوتومات ډول د دې پلگ ان ستاسو په ټولې شبکې کې فعالوي. وروسته له فعالولو، جادوګر په نورمال ډول نصب کولو مرحلې ته دوام ورکوي. تاسو اړتیا نلرئ چې د فعالولو حالت سمولو لپاره جادوګر پریږدئ.
 :::
 
-### Installare (نصب)
+### نصب کول
 
-Installer هغه لازم database tables جوړوي او `sunrise.php` فایل نصبوي چې Ultimate Multisite کار کولو لپاره یې اړتیا لري. Proceed کولو لپاره **Install** باندې کلیک وکړئ.
+نصب کونکی به اړین ډیټابیس میزونه جوړ کړي او `sunrise.php` فایل نصب کړي چې Ultimate Multisite ته اړتیا لري ترڅو کار وکړي. د دوام لپاره **Install** باندې کلیک وکړئ.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![نصب مرحله، د ډیټابیس میزونو او sunrise.php ښودونکي سکرین](/img/installation/wizard-installation.png)
 
-### ستاسو شرکت (Your Company)
+### ستاسو شرکت
 
-ستاسو د شرکت معلومات پوره کړئ او خپل default currency تنظیم کړئ. دا معلومات په ستاسو WaaS platform کې ټول ځایونه کارولai به کارول شي. کله چې پوره وشئ، **Continue** باندې کلیک وکړئ.
+ستاسو د شرکت معلومات ډک کړئ او خپل ډیفالټ اسعارو ټاکلو. دا معلومات به ستاسو په WaaS پلیټ فارم کې وکارول شي. کله چې پای ته ورسید، **Continue** باندې کلیک وکړئ.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+!["ستاسو شرکت" تنظیم کولو مرحله](/img/installation/wizard-your-company.png)
 
-### Default Content (پایله والی محتوا)
+### ډیفالټ مینځپانګه
 
-دا مرحله تاسو ته اجازه ورکوي predefined templates، products او نور starter content نصب کړئ. دا یو ښه لار ده چې ستاسو د Ultimate Multisite خوندونه په features سره آشنا شئ. default content اضافه کولو لپاره **Install** باندې کلیک وکړئ، یا که تاسو غواړئ له零 څخه پیل کړئ نو دا مرحله ورته لاړ شئ.
+دا مرحله تاسو ته اجازه درکوي چې دمخه ټاکل شوي ټیمپلیټونه، محصولات او نور پیل کونکي مینځپانګې نصب کړئ. دا یو عالي لاره ده ترڅو د Ultimate Multisite ځانګړتیاو سره آشنا شئ. که غواړئ له ابتدا څخه پیل وکړئ، نو دا مرحله پریږدئ.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![ډیفالټ مینځپانګه، نصب کولو مرحله](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins (توصیه شوي pluginونه)
+### وړاندیز شوي پلگ انونه
 
-دا اختیاري دی چې توصیه شوي companion plugins نصب کړئ. د اضافه کولو لپاره **Install** باندې کلیک وکړئ او دوام ورکولو لپاره ورته لاړ شئ.
+اختیاري ډول وړاندیز شوي ملګري پلگ انونه نصب کړئ. د دوی اضافه کولو لپاره **Install** باندې کلیک وکړئ یا دوام ته لاړ شئ.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![وړاندیز شوي پلگ انونه، مرحله](/img/installation/wizard-recommended-plugins.png)
 
-### Ready! (तयार!)
+### چمتو!
 
-دا ختم شواړم! د خپل Ultimate Multisite نصب پوره شوی دی. تاسو اوس کولی شئ له **Network Admin Dashboard** څخه خپل Website as a Service platform جوړ کړئ.
+دا یې ده! ستاسو Ultimate Multisite نصب پای ته ورسید. تاسو اوس کولی شئ د **Network Admin Dashboard** څخه خپل "د ویب سایټ په توګه خدمت" پلیټ فارم جوړ کړئ.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![تنظیم بشپړ - چمتو سکرین](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![شبکې مدیر ډیش بورډ، Ultimate Multisite فعال شوی](/img/installation/network-dashboard.png)
 
-دلته وکړئ او مزه وکړئ!
+لاړ شئ او خوند واخلئ!

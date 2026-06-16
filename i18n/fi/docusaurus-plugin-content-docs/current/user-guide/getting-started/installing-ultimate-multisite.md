@@ -1,86 +1,86 @@
 ---
-title: Asennetaan Ultimate Multisite
+title: Ultimate Multisiten asentaminen
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisiten asennus
+# Ultimate Multisiten asentaminen
 
 :::note
-Tämä ohje olettaa, että sinulla on jo asennettuna ja konfiguroitu WordPress Multisite. Tiedät tarkemmin siitä, miten se tehdään [tässä ohjeessa](https://www.wpbeginner.com/glossary/multisite/) WP Beginnerin ohjeesta.
+Tämä opas olettaa, että WordPress Multisite on jo asennettu ja määritetty. Lisätietoja löydät tästä oppaasta [this tutorial](https://www.wpbeginner.com/glossary/multisite/) WP Beginner -sivustolta.
 :::
 
-## Pluginin asentaminen
+## Laajennuksen asentaminen
 
-Ultimate Multisite on saatavilla ilmaiseksi [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite on saatavilla ilmaiseksi osoitteessa [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Siirry **Network Admin Dashboard** -valikosta kohtaan **Plugins → Add New Plugin**.
+Siirry **Verkkoadmin-hallintapaneelissa** kohtaan **Laajennukset → Lisää uusi laajennus**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Verkkoadminin "Lisää uusi laajennus" -sivu](/img/installation/add-new-plugin.png)
 
-Etsi hakukentästä **"Ultimate Multisite"** (käytä lainausmerkkejä tarkkaa vastaavuutta varten), ja se ilmestyy ensimmäiseksi tulokseksi. Napsauta **Install Now**.
+Hae termillä **"Ultimate Multisite"** (lainausmerkit tarkkaa hakua varten), jolloin se näkyy ensimmäisenä tuloksena. Napsauta **Asenna nyt**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Hakutulokset, joissa näkyy Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Asennuksen jälkeen napsauta **Network Activate** -painiketta aktivoitaksesi pluginin koko verkostosi alueella.
+Kun asennus on valmis, napsauta **Aktivoi verkossa** aktivoidaksesi laajennuksen koko verkossasi.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Laajennus asennettu ja "Aktivoi verkossa" -painike näkyvissä](/img/installation/plugin-installed.png)
 
-Aktivoimisen jälkeen sinut ohjataan automaattisesti Setup Wizardiin.
+Aktivoinnin jälkeen sinut ohjataan automaattisesti asetusvelhoon.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Laajennus aktivoitu ja ohjaa käyttäjän velhoon](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Asetusvelho
 
-Setup Wizard ohjaa sinua konfiguroimaan Ultimate Multisite noin 10 minuutissa.
+Asetusvelho opastaa sinua Ultimate Multisiten määrittämisessä noin 10 minuutissa.
 
 ### Tervetuloa
 
-Napsauta **Get Started** aloittaaksesi.
+Napsauta **Aloita** aloittaaksesi.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Asetusvelhon tervetulosivu](/img/installation/wizard-welcome.png)
 
-### Asennuksen esikatselut
+### Esiasennuksen tarkistukset
 
-Tämä vaihe tarkistaa järjestelmän tiedot ja WordPressin asennuksen varmistaakseen, että ne täyttävät Ultimate Multisiten vaatimukset. Jos kaikki näyttää kunnolliselta, napsauta **Go to the Next Step**.
+Tässä vaiheessa tarkistetaan järjestelmätietosi ja WordPress-asennuksesi varmistaaksesi, että ne täyttävät Ultimate Multisiten vaatimukset. Jos kaikki näyttää hyvältä, napsauta **Siirry seuraavaan vaiheeseen**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Esiasennuksen tarkistukset, joissa näkyvät järjestelmävaatimukset](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate -painoke (v2.6.1+)
-Jos Ultimate Multisite on asennettu mutta sitä **ei ole vielä aktivoitu verkossa** – esimerkiksi jos klikit **Aktivoi** (yksikkö-sivusto) sen sijaan, että klikkaisit **Verkkoaktivoi** verkko-lisäosien näytöltä – Pre-install Checks -vaihe havaitsee tämän ja näyttää sinulle **Network Activate** -painikkeen.
+:::note Aktivoi verkossa -painike (v2.6.1+)
+Jos Ultimate Multisite on asennettu, mutta **sitä ei ole vielä aktivoitu verkossa** – esimerkiksi jos napsautit **Aktivoi** (yksittäinen sivusto) sen sijaan, että olisit napsauttanut **Aktivoi verkossa** laajennusten hallintanäytöltä – esiasennuksen tarkistusvaihe havaitsee tämän ja näyttää **Aktivoi verkossa** -painikkeen.
 
-**Network Activate** -painikkeen klikkaaminen aktivoi lisäosan automaattisesti koko multisite-verkossasi. Aktivoit sen jälkeen ohjain jatkaa normaalisti asennusvaiheeseen. Sinun ei tarvitse poistua ohjaimesta korjataksesi aktivaatiotilaa.
+Napsauttamalla **Aktivoi verkossa** aktivoit laajennuksen automaattisesti koko multisivustoverkossasi. Kun aktivointi on suoritettu, velho jatkaa normaalisti asennusvaiheeseen. Sinun ei tarvitse poistua velhosta korjataksesi aktivointitilaa.
 :::
 
 ### Asennus
 
-Asennin ohjelma luo tarvittavat tietokantataulut ja asentaa `sunrise.php`-tiedoston, jota Ultimate Multisite tarvitsee toimimaan. Klikkaa **Install** jatkaaksesi.
+Asentaja luo tarvittavat tietokantataulut ja asentaa `sunrise.php`-tiedoston, jota Ultimate Multisite tarvitsee toimiakseen. Napsauta **Asenna** jatkaaksesi.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Asennusvaihe, jossa näkyvät tietokantataulut ja sunrise.php](/img/installation/wizard-installation.png)
 
-### Yrjäsi
+### Yrityksesi tiedot
 
-Täytä yritystietosi ja aseta oletuskurenssi. Tätä tietoa käytetään koko WaaS-alustallasi. Klikkaa **Continue** kun olet valmis.
+Täytä yrityksesi tiedot ja määritä oletusvaluutta. Näitä tietoja käytetään koko WaaS-alustallasi. Napsauta **Jatka**, kun olet valmis.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Yrityksen tietojen määritysvaihe](/img/installation/wizard-your-company.png)
 
 ### Oletussisältö
 
-Tässä vaiheessa voit asentaa määriteltyjä malleja, tuotteita ja muuta aloitussisältöä. Tämä on hyvä tapa tutustua Ultimate Multisiten ominaisuuksiin. Klikkaa **Install** lisätäksesi oletus sisällön tai ohita tämä vaihe, jos haluat aloittaa tyhjästä.
+Tässä vaiheessa voit asentaa ennalta määritettyjä malleja, tuotteita ja muuta aloitusmateriaalia. Tämä on loistava tapa tutustua Ultimate Multisiten ominaisuuksiin. Napsauta **Asenna** lisätäksesi oletussisällön tai ohita tämä vaihe, jos haluat aloittaa puhtaalta pöydältä.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Oletussisällön asennusvaihe](/img/installation/wizard-default-content.png)
 
-### Suositellut lisäosat (Plugins)
+### Suositellut laajennukset
 
-Asenna valinnaisesti suositellut kumppanilistat. Klikkaa **Install** niiden lisäämiseksi tai ohita jatkaaksesi.
+Asenna valinnaisesti suositeltuja lisälaajennuksia. Napsauta **Asenna** lisätäksesi ne tai ohita jatkaaksesi.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Suositeltujen laajennusten vaihe](/img/installation/wizard-recommended-plugins.png)
 
 ### Valmis!
 
-Valmis! Ultimate Multisite -asennuksesi on valmis. Voit nyt aloittaa verkkosivustosi rakentamisen Website as a Service -alustana **Network Admin Dashboard** -painikkeen kautta.
+Siinä kaikki! Ultimate Multisite -asennuksesi on valmis. Voit nyt aloittaa Website as a Service -alustan rakentamisen **Verkkoadmin-hallintapaneelista**.
 
-![Asennus valmis - Valmiit ruutu](/img/installation/wizard-ready.png)
+![Asetus valmis – Valmis-näyttö](/img/installation/wizard-ready.png)
 
-![Verkkoadminin hallintapaneeli Ultimate Multisite aktiivisena](/img/installation/network-dashboard.png)
+![Verkkoadmin-hallintapaneeli, jossa Ultimate Multisite on aktiivinen](/img/installation/network-dashboard.png)
 
-Mene ja nauti!
+Pidä hauskaa!

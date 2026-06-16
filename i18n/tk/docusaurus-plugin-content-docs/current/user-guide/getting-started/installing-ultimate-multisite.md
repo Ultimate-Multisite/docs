@@ -1,85 +1,86 @@
 ---
-title: Ultimate Multisite kurmak
+title: Ultimate Multisite-i quraşdyrmaq
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite Kurulama
+# Ultimate Multisite-iň gurulmagy
 
-:::note
-Bu tutorial WordPress Multisite kurup we sozlamagyňiz bar bolmagyny kabul edýär. Näme etmelidigini bilmek üçin WP Beginner-iň [bu tutorialyny](https://www.wpbeginner.com/glossary/multisite/) okap görüň.
+:::eslatma
+Bu okuw materialy, WordPress Multisite-iň ýaýdan hem-de gurnama diliniň özleşdirilendigini çaklaýar. Görnüşini öwrenmek üçin, WP Beginner-iň [şu okuw materialyna](https://www.wpbeginner.com/glossary/multisite/) seredip geçiň.
 :::
 
-## Plugin Kurmak
+## Plugin gurulmagy
 
-Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) durynda bedava bar.
+Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) saýtynda ýörite berilýär.
 
-**Network Admin Dashboard**-dan **Plugins → Add New Plugin** bölümini geçiň.
+**Torbasy administratorynyň paneliňden**, **Pluginler → Täze plugin goşmak** bölümine geçiň.
 
-![Network Admin Add New Plugin sayfası](/img/installation/add-new-plugin.png)
+![Torbasy administratorynyň täze plugin goşmak sahypasy](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** diýlip gözleň (tam eşleşmek üçin ýaşyl tırnaklar bilen), ol ilkinji netije hökmünde görkeziljekdir. **Install Now** düwmenine basyň.
+**"Ultimate Multisite"** sözlerini (dogry tapylmagy üçin tirme içinde ýazylan) gözläň, we ol ilkinji netijede peýda bolar. **Häzir gurmak** düwmä basyň.
 
-![Ultimate Multisite-i görkezýän gözleg netijeleri](/img/installation/search-ultimate-multisite.png)
+![Netijelerde Ultimate Multisite görnüşi](/img/installation/search-ultimate-multisite.png)
 
-Kurulandan soň, pluginini sizeň ähli ulgamanyzda işlemek üçin **Network Activate** düwmenine basyň.
+Gurulandan soňra, pluginleri torunyzyň ähli böleklerinde işläp durmagy üçin **Torbada işlädirmek** düwmä basyň.
 
-![Network Activate düwmeni bilen kurulan plugin](/img/installation/plugin-installed.png)
+![Plugin guruldy we Torbada işlädirmek düwmesi](/img/installation/plugin-installed.png)
 
-Aktiwizden soň, siz awtomatiki we Setup Wizard (Kurulum Wizarady) bilen ýol berilip geçýärsiňiz.
+Aktiwleşdirilenden soňra, awtomatiki ýolla gurnama usulynda geçirilýärsiňiz.
 
-![Plugin aktiw edildi we wizard bilen yöneltildi](/img/installation/plugin-activated.png)
+![Plugin aktiwleşdirildi we usula geçirildi](/img/installation/plugin-activated.png)
 
-## Kurulum Wizarady
+## Gurnama usuly
 
-Setup Wizard size Ultimate Multisite-i goşmak üçin manylyk 10 minutda howa goýar.
+Gurnama usuly, Ultimate Multisite-iň 10 minutda gurulmagy üçin talyp edýär.
 
-### Galkynçy Saz
-Başlamak üçin **Get Started** düwmenine basyň.
+### Salamlaşma
 
-![Kurulum Wizarady başlanmagy ekrany](/img/installation/wizard-welcome.png)
+Başlamak üçin **Başlaýaýyn** düwmä basyň.
 
-### Kurulama Öňü Barlaglary
+![Gurnama usulynda salamlaşma sahypasy](/img/installation/wizard-welcome.png)
 
-Bu ädim size sistem maglumatlaryny we WordPress goşulmasyny barlap, ol Ultimate Multisite-i talaplaryna laýykdyr diýip barlap biler. Her zat dogry görünse, **Go to the Next Step** düwmenine basyň.
+### Öňden barlaglar
 
-![Sistem talaplaryny görkezýän kurulum öňü barlaglary](/img/installation/wizard-pre-install-checks.png)
+Bu ädim, sistemanyň we WordPress gurşagynyň maglumatlaryny barlap, Ultimate Multisite-iň talaplaryna laýyk gelýänligini anyklaýar. Eger her zady gowy bolan bolsa, **Kiçi ädime geç** düwmä basyň.
 
-:::note Network Activate düwmesi (v2.6.1+)
-Eğer Ultimate Multisite yüklenmiş, ancak **henüz ağa aktivasiya edilmemişse** — örneğin, ağ eklentileri ekranından **Network Activate** yerine **Activate** (single-site) düğmesine tıkladıysanız — Pre-install Checks (Yükleme Öncesi Kontroller) adımı bunu algılayacak ve size bir **Network Activate** düwmesi gösterecektir.
+![Öňden barlaglar, sistemanyň talaplaryny görkezýär](/img/installation/wizard-pre-install-checks.png)
 
-**Network Activate**'a tıklamak, eklentiyi bütün multisite ağınızda avtomatik olarak aktive eder. Aktivasyon tamamlandıktan sonra sihirbaz normalde kurulum adımına devam eder. Aktivasyon durumunu düzeltmek için sihirbazdan ayrılmanıza gerek yoktur.
+:::eslatma Torbada işlädirmek düwmesi (v2.6.1+)
+Eger Ultimate Multisite gurulan bolsa, emma **heniz torunyň ähli böleklerinde işlädirilmedik** bolsa - mysal üçin, eger **Aktiwleşdirmek** (tek saýt) düwmä basan bolsuňyz, ýerine **Torbada işlädirmek** düwmä basan bolsaňyz - Öňden barlaglar ädimi bu zady anyklap, **Torbada işlädirmek** düwmesini görkezer.
+
+**Torbada işlädirmek** düwmä basmak, pluginleri awtomatiki ýolla torunyzyň ähli böleklerinde işlädirer. Aktiwleşdirilenden soňra, usul normalda gurnama ädimine geçýär. Usuly tamamlamak üçin, usuldan çykman gerek däl.
 :::
 
-### Kurulum
+### Gurma
 
-Kurucu (installer) Ultimate Multisite'ın işlemek için ihtiyaç duyduğu gerekli veritabanı tablolarını oluşturacak we `sunrise.php` dosyasını kurar. Devam etmek için **Install** (Kur)a tıklayın.
+Gurnama programmasy, zerur maglumat bazalaryny döreder we Ultimate Multisite-iň işlemesi üçin zerur bolan `sunrise.php` faýlyny gurar. Dowam etmek üçin **Gurmak** düwmä basyň.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Gurnama ädiminde maglumat bazalary we sunrise.php](/img/installation/wizard-installation.png)
 
-### Şirketiniz
+### Siziň kompaniýaňyz
 
-Şirketinizin bilgilerini doldurun ve varsayılan para biriminizi ayarlayın. Bu bilgiler WaaS platformunuz boyunca kullanılacaktır. İşiniz bittiğinde **Continue** (Devam et)a tıklayın.
+Kompaniýanyň maglumatlaryny giriziň we özüňiz üçin ýörite pul birligini saýtlaň. Bu maglumatlar, WaaS platformasyňyzyň ähli böleklerinde ulanylýar. Gutardygyňyzdan soňra **Dowam et** düwmä basyň.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Siziň kompaniýaňyz konfigurasiýa ädimi](/img/installation/wizard-your-company.png)
 
-### Varsayılan İçerik
+### Ýönekeý maglumatlar
 
-Bu adımda önceden tanımlanmış şablonları, ürünleri ve diğer başlangıç içeriklerini kurabilirsiniz. Bu, Ultimate Multisite'ın özelliklerine aşina olmanın harika bir yoludur. Varsayılan içeriği eklemek için **Install**a tıklayın veya sıfırdan başlamak isterseniz bu adımı atlayın.
+Bu ädim, öňünden döredilen şablonlary, önümleri we beýleki başlangyç maglumatlary gurmagyna mümkinçilik berýär. Bu, Ultimate Multisite-iň funksiýalary bilen tanyşmak üçin peýdaly usuldyr. Ýönekeý maglumatlary goşmak üçin **Gurmak** düwmä basyň ýa-da bu ädimden geçmek isleseňiz, özbaşdak başlaň.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Ýönekeý maglumatlar gurma ädimi](/img/installation/wizard-default-content.png)
 
-### Önerilen Eklentiler
+### Maslahat berilýän pluginler
 
-İsteğe bağlı olarak önerilen eşlikçi eklentileri kurun. Onları eklemek için **Install**a tıklayın veya devam etmek için atlayın.
+Maslahat berilýän goşmaça pluginleri ýa-da isleseňiz, bu ädimden geçip bilersiňiz.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Maslahat berilýän pluginler ädimi](/img/installation/wizard-recommended-plugins.png)
 
-### Hazır!
+### Taýyndy!
 
-Bu dijiwar! Siziň Ultimate Multisite kurulumy tamamlandy. Indi **Network Admin Dashboard** arkaly Web sayt üçin Hizmet platformasyny quryp bilersiňiz.
+Şuňa galdy! Siziň Ultimate Multisite gurşagynyzyň gurulmagy tamamlandy. Indi **Torbasy administratorynyň paneli** arkaly öz Web saýt platformasyňyzda işläp bilersiňiz.
 
-![Kurulum tamamlandı - Hazır ekran](/img/installation/wizard-ready.png)
+![Gurnama tamamlandy - Taýyndy sahypasy](/img/installation/wizard-ready.png)
 
-![Ultimate Multisite aktif olan Network Admin Dashboard](/img/installation/network-dashboard.png)
+![Torbasy administratorynyň paneli, Ultimate Multisite aktiwleşdirilen](/img/installation/network-dashboard.png)
 
-Indi özüňizden ene!
+Öziňizden başga zatlar edin!

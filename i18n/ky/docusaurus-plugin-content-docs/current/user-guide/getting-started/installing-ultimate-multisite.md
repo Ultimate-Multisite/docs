@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite орноо
+title: Ultimate Multisite орнотуу
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite'ı Kurma
+# Ultimate Multisite орнотуу
 
 :::note
-Bu eğitim, WordPress Multisite'ın zaten kurulu ve yapılandırılmış olduğunu varsayar. Nasıl yapacağınızı öğrenmek için WP Beginner'ın [bu eğitimi](https://www.wpbeginner.com/glossary/multisite/) inceleyebilirsiniz.
+Бул окуу куралы сизде WordPress Multisite орнотулган жана конфигурацияланган деп эсептейт. Кантип орнотолурун билүү үчүн, WP Beginnerдин [бул окуу куралын](https://www.wpbeginner.com/glossary/multisite/) караңыз.
 :::
 
-## Eklentiyi Kurma
+## Плагинди орнотуу
 
-Ultimate Multisite ücretsiz olarak [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) adresinde mevcuttur.
+Ultimate Multisite акысыз түрдө [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) сайтында жеткиликтүү.
 
-**Network Admin Dashboard**'unuzdan **Plugins → Add New Plugin** (Eklentiler → Yeni Eklenti Ekle) bölümüne gidin.
+**Тармак администраторунун панелинен**, **Плагиндер → Жаңы плагин кошуу** бөлүмүнө өтүңүз.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Тармак администраторунун жаңы плагин кошуу барагы](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** diye aratın (tam eşleşme için tırnak işaretlerini kullanın), ilk sonuç olarak görünecektir. **Install Now** (Şimdi Kur) butonuna tıklayın.
+**"Ultimate Multisite"** деп издеңиз (так дал келүү үчүн тырмач ичинде), анда ал биринчи натыйжа катары пайда болот. **Азыр орнотуу** баскычын чыкылдатыңыз.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Ultimate Multisite плагинин көрсөткөн издөө натыйжалары](/img/installation/search-ultimate-multisite.png)
 
-Kurulumdan sonra, tüm ağınızda eklentiyi etkinleştirmek için **Network Activate** (Ağı Etkinleştir) butonuna tıklayın.
+Орнотулгандан кийин, плагинди бүтүндөй тармагыңызда активдештирүү үчүн **Тармак боюнча активдештирүү** баскычын чыкылдатыңыз.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Плагин орнотулду жана "Тармак боюнча активдештирүү" баскычы менен](/img/installation/plugin-installed.png)
 
-Etkinleştirmeden sonra, otomatik olarak Kurulum Sihirbazına yönlendirileceksiniz.
+Активдештиргенден кийин, сиз автоматтык түрдө Орнотуу ассистентине багытталыңыз.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Плагин активдештирилди жана колдонуучу орнотуу ассистентине багытталды](/img/installation/plugin-activated.png)
 
-## Kurulum Sihirbazı
+## Орнотуу ассистенти
 
-Kurulum Sihirbazı Ultimate Multisite'ı yaklaşık 10 dakikada yapılandırmanız için size rehberlik edecektir.
+Орнотуу ассистенти сиздин Ultimate Multisite конфигурациясын болжол менен 10 мүнөттө аткарууга жардам берет.
 
-### Hoş Geldiniz
+### Баштоо
 
-Başlamak için **Get Started** (Başlayın) butonuna tıklayın.
+Баштоого **Баштоо** баскычын чыкылдатыңыз.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Орнотуу ассистентинин коштолуу экраны](/img/installation/wizard-welcome.png)
 
-### Kurulum Öncesi Kontroller
+### Алдын ала текшерүүлөр
 
-Bu adım, sistem bilgilerinizi ve WordPress kurulumunuzu kontrol ederek Ultimate Multisite'ın gereksinimlerini karşıladığından emin olur. Her şeyin iyi göründüğünü düşünüyorsanız, **Go to the Next Step** (Bir Sonraki Adıma Geç) butonuna tıklayın.
+Бул кадам сиздин система маалыматыңызды жана WordPress орнотууңузду Ultimate Multisite талаптарына дал келерин текшерет. Эгерде бардык нерсе жакшы болсо, **Кийинки кадамга өтүү** баскычын чыкылдатыңыз.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Системанын талаптарын көрсөткөн алдын ала текшерүүлөр](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate düğmeni (v2.6.1+)
-Eğer Ultimate Multisite орнотулдуңуңуз орнотулса, бирок **азыркы учурда орнотулган болсо** — мисалы, орнотулгон плагиндердин экранынан **Network Activate** (орнотулгон сетка үчүн) эмес, **Activate** (бир сайт үчүн) баскып калтырган болсо — Pre-install Checks кадамы бул абалды аныктап, сизге **Network Activate** dü음үнү көрсөтөт.
+:::note Тармак боюнча активдештирүү баскычы (v2.6.1+)
+Эгерде Ultimate Multisite орнотулган, бирок **дагы эле тармак боюнча активдештирилбеген** болсо — мисалы, эгер сиз плагиндер экранынан **Активдештирүү** (бир сайт үчүн) баскычын чыкылдаткандырсыз, андан кийин **Тармак боюнча активдештирүү** баскычын орнотот.
 
-**Network Activate**-га басуу плагиндерди сиздин бүтүндөй мультисайт сеткаңызга автоматтык түрдө иштетүү үчүн активдештирет. Активдештирилгенден кийин, wizards (жанагы программа) орнотуу кадамына кадимки ыраазычылык менен улантат. Активдештирүү абалын оңдоо үчүн wizardsдан чыгууңуз керек эмес.
+**Тармак боюнча активдештирүү** баскычын чыкылдатуу менен плагин автоматтык түрдө бүтүндөй мультисайт тармагыңызда активдештирилет. Активдештирилгенден кийин, колдонуучу орнотуу кадамдарына өтөт. Активация абалын оңдоо үчүн колдонуучу ассистенттен чыгуунун кажети жок.
 :::
 
 ### Орнотуу
 
-Инсталлятор зарыл болгон базалык таблицаларды түзөт жана Ultimate Multisite-тын иштөө үчүн керектүү `sunrise.php` файлына орнотат. Улантуу үчүн **Install**-га басыңыз.
+Орноткуч керектүү маалымат базасынын таблицаларын түзөт жана Ultimate Multisite иштеши үчүн зарыл болгон `sunrise.php` файлын орнотот. Уланткыңыз келсе, **Орнотуу** баскычын чыкылдатыңыз.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Маалымат базасынын таблицаларын жана sunrise.php файлын көрсөткөн орнотуу кадамдары](/img/installation/wizard-installation.png)
 
-### Сиздин Компанияңыз
+### Сиздин компанияңыз
 
-Компанияңыздын маалыматтарын толтуруп, дефолдук валютяңызды белгилеңиз. Бул маалымат WaaS платформаңызда бүтүндөй колдонулат. Аяктагандан кийин **Continue**-га басыңыз.
+Компаниңиздин маалыматын толтуруңуз жана демейки валютаңызды белгилеңиз. Бул маалымат сиздин WaaS платформаңызда колдонулат. Аяктай калганда **Улантуу** баскычын чыкылдатыңыз.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Компаниңизди конфигурациялоо кадамдары](/img/installation/wizard-your-company.png)
 
-### Дефолдук Мазмун
+### Демейки мазмун
 
-Бул кадамы сизге атайын жасалган шаблондорду, продукттарды жана башка баштапкы мазмунду орнотууга мүмкүндүк берет. Бул Ultimate Multisite'тын функциялары менен таанышуунун мыкты жолу. Дефолдук мазмунду кошуу үчүн **Install**-га басыңыз, же эгер сиз баштаннан жаңыдан баштоону кааласаңыз, бул кадамы өткөрүп жибере аласыз.
+Бул кадам сизге алдын ала аныкталган шаблондорду, өнүмдөрдү жана башка колдонуучу мазмунду орнотууга мүмкүндүк берет. Бул Ultimate Multisite мүмкүнчүлүктөрү менен таанышуунун эң жакшы ыкмасы. Демейки мазмунду кошуу үчүн **Орнотуу** баскычын чыкылдатыңыз же бул кадамды өткөрүп жиберсеңиз, баштапкы абалда баштоого болот.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Демейки мазмунду орнотуу кадамдары](/img/installation/wizard-default-content.png)
 
-### Сунушталган Плагиндер
+### Сунушталган плагиндер
 
-Сунушталган келеттин плагиндерди опционалдуу орнотуңуз. Аларды кошуу үчүн **Install**-га басыңыз же улантуу үчүн өткөрүп жибере аласыз.
+Колдонуучу плагиндерди орнотуңуз. Аларды кошуу үчүн **Орнотуу** баскычын чыкылдатыңыз же улантуу үчүн өткөрүп жибериңиз.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Сунушталган плагиндер кадамдары](/img/installation/wizard-recommended-plugins.png)
 
 ### Даяр!
 
-Сонун! Сиздин Ultimate Multisite орносоңуз аяктады. Эми **Network Admin Dashboard** аркылуу Веб-сайтты Сервис платформасы катары курууну баштасаңыз болот.
+Баары бүтүрдү! Сиздин Ultimate Multisite орнотууңуз аяктады. Азыр сиз **Тармак администраторунун панелинен** өзүнүн Веб-сайтты Кызмат катары куруу платформасын кура баштай аласыз.
 
 ![Орнотуу аяктады - Даяр экран](/img/installation/wizard-ready.png)
 
-![Ultimate Multisite активдүү Network Admin Dashboard](/img/installation/network-dashboard.png)
+![Ultimate Multisite активдештирилген Тармак администраторунун панели](/img/installation/network-dashboard.png)
 
-Эми ойноп көрүңүз!
+Келип, көңүл ачыңыз!

@@ -3,84 +3,84 @@ title: Инсталирање на Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Инсталирање Ultimate Multisite
+# Инсталирање на Ultimate Multisite
 
 :::note
-Овај туториал претпоставува дека веќе имате инсталиран и конфигуриран WordPress Multisite. За да научите како, проверете [овој туториал](https://www.wpbeginner.com/glossary/multisite/) од WP Beginner.
+Овој водич претпоставува дека веќе имате инсталирано и конфигурирано WordPress Multisite. За да дознаете како, проверете го [овој водич](https://www.wpbeginner.com/glossary/multisite/) од WP Beginner.
 :::
 
-## Инсталирање на плагинот
+## Инсталирање на приклучокот (Plugin)
 
-Ultimate Multisite е бесплатен и достапен на [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite е достапен бесплатно на [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Од вашата **Network Admin Dashboard**, отидете на **Plugins → Add New Plugin**.
+Од вашиот **Network Admin Dashboard**, одете во **Plugins → Add New Plugin**.
 
-![Страна за добав Губи нови плагини](/img/installation/add-new-plugin.png)
+![Страница „Додај нов приклучок“ во Network Admin](/img/installation/add-new-plugin.png)
 
-Пребарајте **"Ultimate Multisite"** (со цитаци за точен мач) и ќе се појави како прв резултат. Кликнете на **Install Now**.
+Пребарајте го "**Ultimate Multisite**" (со наведниците за точно совпаѓање) и ќе се појави како прв резултат. Кликнете **Install Now**.
 
-![Резултати од пребарување со Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Резултати од пребарувањето што покажуваат Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-По инсталирањето, кликнете на **Network Activate** за да активирате плагинот во целата вашата мрежа.
+Откако ќе биде инсталиран, кликнете **Network Activate** за да го активирате приклучокот во целата ваша мрежа.
 
-![Плагинот инсталиран со копче Network Activate](/img/installation/plugin-installed.png)
+![Инсталиран приклучок со копче „Network Activate“](/img/installation/plugin-installed.png)
 
-По активирањето, ќе бидете автоматски пренасочени на Setup Wizard (Мастер за поставување).
+По активацијата, автоматски ќе бидете пренасочени до Setup Wizard (Водениот процес на поставување).
 
-![Плагинот активиран и пренасочен на мастер](/img/installation/plugin-activated.png)
+![Приклучокот е активиран и пренасочен кон воден процес](/img/installation/plugin-activated.png)
 
-## Setup Wizard (Мастер за поставување)
+## Воден процес на поставување (Setup Wizard)
 
-Setup Wizard ќе ви ги води со конфигурацијата на Ultimate Multisite во околу 10 минути.
+Водениот процес ќе ве води низ конфигурирањето на Ultimate Multisite за околу 10 минути.
 
-### Welcome (Добро доаѓајте)
+### Добредојдовте
 
-Кликнете на **Get Started** за да започнете.
+Кликнете **Get Started** за да започнете.
 
-![Екран за добродоаѓање на Setup Wizard](/img/installation/wizard-welcome.png)
+![Добредојдовна страница на воден процес](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Провери пред инсталирањето)
+### Претходни проверки (Pre-install Checks)
 
-Оваа чекор проверува информациите од вашата система и инсталацијата на WordPress за да се осигура дека ги исполнува барањата на Ultimate Multisite. Ако сè изгледа добро, кликнете на **Go to the Next Step** (Оди на следната чекор).
+Овој чекор ги проверува вашите системски информации и WordPress инсталацијата за да се увери дека ги исполнува барањата на Ultimate Multisite. Ако сè изгледа во ред, кликнете **Go to the Next Step**.
 
-![Провери пред инсталирањето со системските барања](/img/installation/wizard-pre-install-checks.png)
+![Претходни проверки што покажуваат системски барања](/img/installation/wizard-pre-install-checks.png)
 
-:::note Кнопка Network Activate (v2.6.1+)
-Ако Ultimate Multisite е инсталиран, но **се не е активиран за мрежа** — на пример, ако сте кликнувале на **Activate** (single-site) наместо **Network Activate** од екранот на плагините за мрежа — чекор Pre-install Checks ќе го забележи ова и ќе прикаже копче **Network Activate**.
+:::note Копче „Network Activate“ (верзија 2.6.1+)
+Ако Ultimate Multisite е инсталиран, но **сè уште не е активиран во мрежата** — на пример, ако кликнете **Activate** (за единична локација) наместо **Network Activate** од екранот со приклучоци за мрежата — чекорот „Претходни проверки“ ќе го открие ова и ќе прикаже копче **Network Activate**.
 
-Кликнувањето на **Network Activate** активира плагинот автоматски низ целата вашата мрежа со multisite. Обезбеденост, по активирано, wizards-от продолжува нормално до чекорот за инсталација. Не треба да го напуштите wizard-от за да го исправите состојбата на активација.
+Кликнете **Network Activate** за да го активирате приклучокот во целата ваша мултисајтна мрежа автоматски. Откако ќе биде активиран, водениот процес продолжува нормално до чекорот на инсталација. Не треба да го напуштате водениот процес за да го поправите статусот на активација.
 :::
 
-### Инсталација
+### Инсталација (Installation)
 
-Инсталаторот ќе создаде потребните табели во базата на податоци и ќе инсталираат `sunrise.php` 파일을 што Ultimate Multisite му треба за да функционира. Кликнете на **Install** за да продолжиме.
+Инсталаторот ќе ги креира потребните табели во базата на податоци и ќе ја инсталира datoteka-та `sunrise.php` што Ultimate Multisite треба за да функционира. Кликнете **Install** за да продолжите.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Чекор на инсталација што покажува табели во базата на податоци и sunrise.php](/img/installation/wizard-installation.png)
 
-### Вашата компанија
+### Ваша компанија (Your Company)
 
-Пополнете ја информацијата за вашата компанија и поставите ја вашата предсметна валута. Оваа информација ќе се користи низ целата вашата WaaS платформа. Кликнете на **Continue** кога ќе завршите.
+Пополнете ги информациите за вашата компанија и поставете ја вашата стандардна валута. Овие информации ќе се користат во целата платформа WaaS. Кликнете **Continue** кога ќе завршите.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Чекор „Ваша компанија“ за конфигурирање](/img/installation/wizard-your-company.png)
 
-### Предлажни содржини
+### Стандарден содржина (Default Content)
 
-Овој чекор ви овозможува да инсталирате преддефинирани шаблони, производи и друга почетна содржина. Ова е одлична можност за да се запознаете со функциите на Ultimate Multisite. Кликнете на **Install** за да додадете ја предделната содржина, или пропуштете овој чекор ако предпочитате да почнете од нула.
+Овој чекор ви овозможува да инсталирате претходно дефинирани шаблони, производи и друга почетна содржина. Ова е одличен начин да се запознаете со функциите на Ultimate Multisite. Кликнете **Install** за да ја додадете стандардната содржина или прескокнете го овој чекор ако сакате да започнете од нула.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Чекор за инсталирање стандардна содржина](/img/installation/wizard-default-content.png)
 
-### Препорачани плагини
+### Препорачани приклучоци (Recommended Plugins)
 
-По избор инсталирајте препорачлени сопутствувачки плагини. Кликнете на **Install** за да ги додадете или пропуштете за да продолжиме.
+Опционално, инсталирајте ги препорачаните придружни приклучоци. Кликнете **Install** за да ги додадете или прескокнете за да продолжите.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Чекор „Препорачани приклучоци“](/img/installation/wizard-recommended-plugins.png)
 
-### Готово!
+### Готово! (Ready!)
 
-Тоа е тоа! Инсталацијата на вашата Ultimate Multisite е завршена. Сега можете да започнете со изградење на вашата веб-платформа како услуга од **Network Admin Dashboard**.
+Тоа е сè! Вашата инсталација на Ultimate Multisite е завршена. Сега можете да започнете со изградба на вашата платформа „Веб-страница како услуга“ од **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Инсталацијата е комплетна - екран „Готово“](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard со активиран Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Сега можете да се забавувате!
+Продолжете и забавувајте се!

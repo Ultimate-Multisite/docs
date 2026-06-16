@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite instalatzen ari den
+title: Ultimate Multisite instalatzen
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite Instalazioa
+# Ultimate Multisite instalatzea
 
 :::note
-Hau ezagutzea, WordPress Multisite aldatu eta konfiguratuta dagoela. Zerren jakinarazteko, WP Beginner-ren [horri](https://www.wpbeginner.com/glossary/multisite/) tutorial-era jartzen duzu.
+Tutoriale honek espezifikatzen du WordPress Multisite dagoeneko instalatuta eta konfiguraturik egon behar dela. Nola egin jakiteko, ikus WP Beginner-ek sortutako tutorial hau: [this tutorial](https://www.wpbeginner.com/glossary/multisite/).
 :::
 
-## Plugin Instalazioa
+## Pluginaren instalazioa
 
-Ultimate Multisite-ak WordPress.org-aldean guztiz jardutzeko libre da.
+Ultimate Multisite doan eskuragarri dago [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) webgunean.
 
-**Network Admin Dashboard**-etik, **Plugins → Add New Plugin** (Pluginak → Plugin berri gehitu) funtziara jarraitu.
+**Sareko Administratzailearen Dashboardetik**, joan **Plugins → Gehitu plugin berria**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Sareko administratzailearen "Plugin berria gehitu" orrialdea](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (ezpugak hartuz, erabilizten) bilatu, eta lehen rezultatu gisa erakusten du. **Install Now** (Instaluatu dugu) klikatu.
+Bilatu **"Ultimate Multisite"** (komatxoekin, hobekuntza zehatzagoa lortzeko), eta lehen emaitza gisa agertuko da. Klik egin **Instalatu**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Emaitzak "Ultimate Multisite" erakusten ditu](/img/installation/search-ultimate-multisite.png)
 
-Instalatu ondoren, pluginaren guztiaren network-an aktibatu eta Network Activate (Network Aktibatu) funtziara klikatu.
+Behin instalatuta, klik egin **Sare aktibatu** pluginaren funtzionalitatea zure sare osoan aktibatzeko.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin bat instalatuta eta "Sare aktibatu" botoiarekin](/img/installation/plugin-installed.png)
 
-Aktibatuta jakinai duzu, automatican Setup Wizard (Konfigurazioa Goiditzen duen Aritmoa) zuzen dira.
+Aktibatzean, automatikoki bideratuko zaitu Konfigurazio Aulkietara.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin bat aktibatuta eta aulkietara bideratuta](/img/installation/plugin-activated.png)
 
-## Setup Wizard (Konfigurazioa Goiditzen duen Aritmoa)
+## Konfigurazio Aulkia
 
-Setup Wizard-ek Ultimate Multisite konfiguratzea 10 min batean gurekin batzuk egiten du.
+Konfigurazio Aulkiak Ultimate Multisite konfiguratzeko gidatzen zaitu, gutxi gorabehera 10 minututan.
 
-### Welcome (Egun on)
+### Ongi etorri
 
-Lehen aurrera egin eta **Get Started** (Lehen Aurrera Egitu) klikatu.
+Klik egin **Hasi** botoian hasi ahal izateko.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Konfigurazio Aulkiaren ongietorri pantaila](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Instalazioaren Aurreko Kontrolak)
+### Aurreinstalazioaren egiaztapenak
 
-Hau da sistema informazioa eta WordPress instalazioa kontrolatzen duen iradokoa, Ultimate Multisite-ren eskakiz onartzen duen jakinarazteko. Hau guztia ondo dagoela ikusten duzu, **Go to the Next Step** (Irri Beste Iradokora) klikatu.
+Urrats honek zure sistemako informazioa eta WordPress instalazioa egiazten ditu, Ultimate Multisiteren baldintzak betetzen dituela ziurtatzeko. Dena ondo badago, klik egin **Joan hurrengo urratsera**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Aurreinstalazioaren egiaztapenak sistema-baldintzak erakusten ditu](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate botoi (v2.6.1+)
-Ultimate Multisite instalatu ari baina, baina **network-aktivatza ez da** — adibidez, network pluginak menuagatik **Activate** (single-site) irikusi duten beste bat duzue — Pre-install Checks edo itxera izango da eta **Network Activate** botoia erakusten du.
+:::note "Sare aktibatu" botoia (b2.6.1+)
+Ultimate Multisite instalatuta badago, baina **oraindik ez sarean aktibatuta** —adibidez, "Aktibatu" (gune bakarreko) klik egin baduzu, sareko pluginen pantailatik ordez "Sare aktibatu" botoian—, aurreinstalazioaren egiaztapen urratzak hori hautemango du eta **Sare aktibatu** botoia erakutsiko du.
 
-**Network Activate** irikusia da, pluginak guztizko multisite networkan awtomatiko aktibatu egiten du. Aktibatuta jakin denean, wizard-ek normalmenta instalazio urtera jarraitzen du. Aktibazio eta eraguntzu edo ezagutzeko beharrezkoa izango da wizard-ek lortu behar izan.
+**Sare aktibatu** botoian klik eginez pluginaren funtzionalitatea automatikoki aktibatuko da zure multisite sare osoan. Aktibatuta, aulkia normalean jarraituko du instalazio urratsera. Ez dago aukeratatik irten beharrik aktibazio egoera konpontzeko.
 :::
 
 ### Instalazioa
 
-Installer-ek beharrezko database tables sortuzkin eta Ultimate Multisite-i fisiko egiteko `sunrise.php` file-a instalatu egiten du. Aurrera egin dezakezu eta **Install** irikusia da.
+Instalatzaileak beharrezko datu-base taulak sortuko ditu eta `sunrise.php` fitxategia instalatuko du, Ultimate Multisitek funtzionatzeko behar duen fitxategia. Klik egin **Instalatu** aurrera egiteko.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Instalazio urratsa datu-base taulak eta sunrise.php erakusten ditu](/img/installation/wizard-installation.png)
 
-### Zerbitzua (Your Company)
+### Zure enpresa
 
-Zerbitzuaren informazioa pliratu eta currencya defaultak emitu. Horrek WaaS platforman guztiz erabiltara izango da. Aurrera egin dezakezu horren alde egiten duenean.
+Sartu zure enpresaren informazioa eta ezarri lehenetsitako moneta. Informazio hau zure WaaS plataforman zehar erabiliko da. Klik egin **Jarraitu** amaitu ondoren.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Zure enpresaren konfigurazio urratsa](/img/installation/wizard-your-company.png)
 
-### Kontentua Defaulta (Default Content)
+### Lehenetsitako edukia
 
-Ezaugarri templateak, produkzioak eta beste kontentuak instalatu dezakezu. Ultimate Multisite-ren funtzioak ezagutzeko modua handia da hau. Aurrera egin dezakezu default kontentua gehituz, edo gure irudiak lehenetik hasten nahi duzu, hori ezaugarri pasoa ezdu.
+Urrats honek aurrez definitutako txantiloiak, produktuak eta beste hasierako eduki batzuk instalatzeko aukera ematen dizu. Hau Ultimate Multisiteren funtzioez ezagutzeko modu bikaina da. Klik egin **Instalatu** lehenetsitako edukia gehitzeko, edo utzi urrats hau nahiago baduzu hasiera batean.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Lehenetsitako eduki instalazio urratsa](/img/installation/wizard-default-content.png)
 
-### Pluginak Rekomendatuak (Recommended Plugins)
+### Gomendatutako pluginak
 
-Rekomenduko pluginak instalatu dezakezu opsionala da. Gehituz gehituzu edo aurrera egin dezakezu.
+Aukeran, gomendatutako laguntzaile pluginak instala ditzakezu. Klik egin **Instalatu** gehitzeko edo utzi aurrera egiteko.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Gomendatutako pluginen urratsa](/img/installation/wizard-recommended-plugins.png)
 
-### Aurrez!
+### Prest!
 
-Zer da! Ultimate Multisite instalazioa amaitu da. Astezko **Network Admin Dashboard**-eko partirak tenure Website as a Service platform-a ez dira egin dezake.
+Hori da dena! Zure Ultimate Multisite instalazioa amaituta dago. Orain hasi dezakezu zure "Webgunea Zerbitzu gisa" plataforma eraikitzen **Sareko Administratzailearen Dashboardetik**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Konfigurazioa amaituta - Prest pantaila](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Sareko administratzailearen dashboard, Ultimate Multisite aktibatuta](/img/installation/network-dashboard.png)
 
-Zer da, joko hasi!
+Aurrera eta ondo pasatu!

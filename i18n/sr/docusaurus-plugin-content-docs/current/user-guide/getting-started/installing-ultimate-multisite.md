@@ -1,86 +1,86 @@
 ---
-title: Instaliranje Ultimate Multisite
+title: Инсталирање Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalacija Ultimate Multisite
+# Инсталација Ultimate Multisite
 
 :::note
-Ovaj tutorial pretpostavlja da već imate instaliran i podešen WordPress Multisite. Da biste naučili kako, pogledajte [ovaj tutorial](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner-a.
+Овај туториал претпоставља да већ имате инсталиран и конфигурисан WordPress Multisite. Да бисте сазнали како то учинити, погледајте [овај туторијал](https://www.wpbeginner.com/glossary/multisite/) на WP Beginner-у.
 :::
 
-## Instalacija Plagana (Plugin)
+## Инсталација плугина
 
-Ultimate Multisite je besplatan na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite је доступан бесплатно на [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Iz **Network Admin Dashboard**-a, idite na **Plugins → Add New Plugin**.
+Из вашег **Network Admin Dashboard**-а, идите на **Plugins → Add New Plugin**.
 
-![Stranica za dodavanje novog plugina u Network Adminu](/img/installation/add-new-plugin.png)
+![Страница Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Pretražite **"Ultimate Multisite"** (sa navodnicima za tačno poklapanje) i pojavit će se kao prvi rezultat. Kliknite na **Install Now**.
+Претражите **"Ultimate Multisite"** (са наводницима за тачно подударање) и појавиће се као први резултат. Кликните на **Install Now**.
 
-![Rezultati pretrage koji pokazuju Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Резултати претраге који приказују Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Nakon instalacije, kliknite na **Network Activate** da aktivirate plugin u cijeloj mreži.
+Након инсталације, кликните на **Network Activate** да бисте активирали плугин широм ваше мреже.
 
-![Plugin instaliran sa dugmetom Network Activate](/img/installation/plugin-installed.png)
+![Плугин инсталиран са дугметом Network Activate](/img/installation/plugin-installed.png)
 
-Nakon aktivacije, automatski ćete biti preusmjereni na Setup Wizard.
+Након активирања, аутоматски ћете бити преусмерени на Setup Wizard.
 
-![Plugin aktiviran i preusmjeren na wizardu](/img/installation/plugin-activated.png)
+![Плугин активиран и преусмерен на чаробњака](/img/installation/plugin-activated.png)
 
-## Setup Wizard (Wizard za podešavanje)
+## Setup Wizard
 
-Setup Wizard će vas voditi kroz konfigurisanje Ultimate Multisite u otprilike 10 minuta.
+Setup Wizard ће вас водити кроз конфигурацију Ultimate Multisite-а у року од око 10 минута.
 
-### Welcome (Dobrodošli)
+### Добродошли
 
-Kliknite na **Get Started** da počnete.
+Кликните на **Get Started** да бисте почели.
 
-![Ekran dočekivanja Setup Wizard-a](/img/installation/wizard-welcome.png)
+![Почетни екран Setup Wizard-а](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Provere pre instalacije)
+### Прегледи пре инсталације
 
-Ovaj korak proverava informacije o vašem sistemu i WordPress instalaciji kako bi se osiguralo da ispunjavate zahteve Ultimate Multisite. Ako sve izgleda dobro, kliknite na **Go to the Next Step**.
+Овај корак проверава информације о вашем систему и WordPress инсталацији како би се уверио да испуњава захтеве Ultimate Multisite-а. Ако је све у реду, кликните на **Go to the Next Step**.
 
-![Pre-instalacijske provere koje pokazuju sistemske zahteve](/img/installation/wizard-pre-install-checks.png)
+![Прегледи пре инсталације који приказују системске захтеве](/img/installation/wizard-pre-install-checks.png)
 
-:::note Dugme za dugme Network Activate (v2.6.1+)
-Ako je Ultimate Multisite instaliran, ali **jo još nije aktiviran u mreži** — na primer, ako ste kliknuli na **Activate** (single-site) umesto **Network Activate** sa ekrana za pluginove mreže — korak Pre-install Checks će to primetiti i prikazati dugme **Network Activate**.
+:::note Дугме Network Activate (v2.6.1+)
+Ако је Ultimate Multisite инсталиран, али **још није мрежно активиран** — на пример, ако сте кликнули на **Activate** (за један сајт) уместо на **Network Activate** са екрана плугина за мрежу — корак Прегледи пре инсталације ће то детектовати и приказати дугме **Network Activate**.
 
-Klikom na **Network Activate** plugin se automatski aktivira u celoj vašoj multisite mreži. Nakon aktivacije, wizard nastavlja normalno do koraka instalacije. Ne morate napustiti wizard da biste popravili stanje aktivacije.
+Кликнућем на **Network Activate**, плугин се аутоматски активира широм ваше multisite мреже. Након активирања, чаробњак нормално наставља до корака инсталације. Нема потребе да напустите чаробњака ради поправке стања активирања.
 :::
 
-### Instalacija
+### Инсталација
 
-Installer će kreirati potrebne baze podataka i instalirati fajl `sunrise.php` koji Ultimate Multisite treba da radi. Kliknite na **Install** da nastavite.
+Инсталатор ће креирати неопходне табеле базе података и инсталирати `sunrise.php` фајл који Ultimate Multisite-у треба да би функционисао. Кликните на **Install** да бисте наставили.
 
-![Korak instalacije prikazuje tabele baze podataka i sunrise.php](/img/installation/wizard-installation.png)
+![Корак инсталације који приказује табеле базе података и sunrise.php](/img/installation/wizard-installation.png)
 
-### Vaša kompanija
+### Ваша компанија
 
-Popunite informacije o vašoj firmi i postavite svoju podrazumevanu valutu. Ove informacije će se koristiti tokom cele vaše WaaS platforme. Kliknite na **Continue** kada završite.
+Попуните информације о вашој компанији и поставите валуту по подразумеваном. Ове информације ће се користити широм ваше WaaS платформе. Кликните на **Continue** када завршите.
 
-![Korak konfiguracije vaše kompanije](/img/installation/wizard-your-company.png)
+![Корак конфигурације Your Company](/img/installation/wizard-your-company.png)
 
-### Podrazumevani sadržaj
+### Подразумевани садржај
 
-Ovim korakom možete instalirati unapred definisane šablone, proizvode i drugi početni sadržaj. Ovo je odličan način da se upoznate sa funkcijama Ultimate Multisite. Kliknite na **Install** da dodate podrazumevani sadržaj, ili preskočite ovaj korak ako preferirate da počnete od nule.
+Овај корак вам омогућава да инсталирате предефинисане шаблоне, производе и други почетни садржај. Ово је одличан начин да упознате функције Ultimate Multisite-а. Кликните на **Install** да бисте додали подразумевани садржај или пропустите овај корак ако желите да почнете од нуле.
 
-![Korak instalacije podrazumevanog sadržaja](/img/installation/wizard-default-content.png)
+![Корак инсталације подразумеваног садржаја](/img/installation/wizard-default-content.png)
 
-### Preporučeni pluginovi
+### Препоручени плугини
 
-Opciono instalirajte preporučene dopunske pluginove. Kliknite na **Install** da ih dodate ili preskočite da biste nastavili.
+Опционо инсталирајте препоручене придружене плугине. Кликните на **Install** да бисте их додали или пропустите да бисте наставили.
 
-![Korak preporučenih pluginova](/img/installation/wizard-recommended-plugins.png)
+![Корак препоручених плугина](/img/installation/wizard-recommended-plugins.png)
 
-### Spremni!
+### Спремно!
 
-To je to sve! Vaša instalacija Ultimate Multisite je završena. Sada možete početi da gradite svoju platformu za veb sa uslugom (Website as a Service) iz **Network Admin Dashboard**.
+То је то! Ваша инсталација Ultimate Multisite-а је комплетна. Сада можете почети да градите вашу Website as a Service платформу из **Network Admin Dashboard**-а.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Инсталација завршена - Екран Ready](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard са активним Ultimate Multisite-ом](/img/installation/network-dashboard.png)
 
-Sada slobodno počnite da se zabavljate!
+Напредујте и забављајте се!

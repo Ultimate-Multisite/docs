@@ -1,78 +1,86 @@
 ---
 title: Installation von Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installieren von Ultimate Multisite
+# Installation von Ultimate Multisite
 
 :::note
-Dieses Tutorial geht davon aus, dass Sie bereits WordPress Multisite installiert und konfiguriert haben. Um zu erfahren, wie, schauen Sie sich [dieses Tutorial](https://www.wpbeginner.com/glossary/multisite/) von WP Beginner an.
+Dieses Tutorial geht davon aus, dass Sie bereits WordPress Multisite installiert und konfiguriert haben. Wie dies funktioniert, erfahren Sie in [diesem Tutorial](https://www.wpbeginner.com/glossary/multisite/) von WP Beginner.
 :::
 
-## Installieren des Plugins
+## Plugin installieren
 
 Ultimate Multisite ist kostenlos auf [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) verfügbar.
 
-Von Ihrem **Network Admin Dashboard** zu **Plugins → Add New Plugin** gehen.
+Gehen Sie in Ihrem **Network Admin Dashboard** zu **Plugins → Neues Plugin hinzufügen**.
 
-![Network Admin Add New Plugin Seite](/img/installation/add-new-plugin.png)
+![Netzwerk-Admin-Seite zum Hinzufügen eines neuen Plugins](/img/installation/add-new-plugin.png)
 
-Suchen Sie nach **"Ultimate Multisite"** (mit Anführungszeichen für eine exakte Übereinstimmung) und es wird als erstes Ergebnis angezeigt. Klicken Sie auf **Install Now**.
+Suchen Sie nach **"Ultimate Multisite"** (mit Anführungszeichen für eine exakte Übereinstimmung), und es wird als erstes Ergebnis angezeigt. Klicken Sie auf **Jetzt installieren**.
 
 ![Suchergebnisse, die Ultimate Multisite anzeigen](/img/installation/search-ultimate-multisite.png)
 
-Sobald die Installation abgeschlossen ist, klicken Sie auf **Network Activate**, um das Plugin im gesamten Netzwerk zu aktivieren.
+Sobald die Installation abgeschlossen ist, klicken Sie auf **Netzwerkweit aktivieren**, um das Plugin in Ihrem gesamten Netzwerk zu aktivieren.
 
-![Plugin installiert mit Network Activate Button](/img/installation/plugin-installed.png)
+![Plugin installiert mit Button zur Netzwerkaktivierung](/img/installation/plugin-installed.png)
 
-Nach der Aktivierung werden Sie automatisch zum Setup Wizard weitergeleitet.
+Nach der Aktivierung werden Sie automatisch zum Setup-Assistenten weitergeleitet.
 
-![Plugin aktiviert und zum Wizard weitergeleitet](/img/installation/plugin-activated.png)
+![Plugin aktiviert und Weiterleitung zum Assistenten](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup-Assistent
+
+Der Setup-Assistent führt Sie in etwa 10 Minuten durch die Konfiguration von Ultimate Multisite.
 
 ### Willkommen
 
-Klicken Sie auf **Get Started**, um zu beginnen.
+Klicken Sie auf **Loslegen**, um zu beginnen.
 
-![Setup Wizard Willkommensbildschirm](/img/installation/wizard-welcome.png)
+![Willkommensbildschirm des Setup-Assistenten](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### Vorinstallationsprüfungen
 
-Dieser Schritt überprüft Ihre Systeminformationen und die WordPress-Installation, um sicherzustellen, dass sie die Anforderungen von Ultimate Multisite erfüllt. Wenn alles in Ordnung ist, klicken Sie auf **Go to the Next Step**.
+In diesem Schritt werden Ihre Systeminformationen und Ihre WordPress-Installation überprüft, um sicherzustellen, dass sie die Anforderungen von Ultimate Multisite erfüllen. Wenn alles in Ordnung ist, klicken Sie auf **Zum nächsten Schritt**.
 
-![Pre-install Checks, die Systemanforderungen anzeigen](/img/installation/wizard-pre-install-checks.png)
+![Vorinstallationsprüfungen mit angezeigten Systemanforderungen](/img/installation/wizard-pre-install-checks.png)
+
+:::note Button zur Netzwerkaktivierung (v2.6.1+)
+Wenn Ultimate Multisite installiert, aber **noch nicht netzwerkweit aktiviert** wurde – zum Beispiel, wenn Sie auf **Aktivieren** (für eine einzelne Site) statt auf **Netzwerkweit aktivieren** im Bildschirm für Netzwerk-Plugins geklickt haben –, erkennt der Schritt „Vorinstallationsprüfungen“ dies und zeigt einen Button zur **Netzwerkaktivierung** an.
+
+Durch Klicken auf **Netzwerkweit aktivieren** wird das Plugin automatisch in Ihrem gesamten Multisite-Netzwerk aktiviert. Sobald es aktiviert ist, fährt der Assistent wie gewohnt mit dem Installationsschritt fort. Sie müssen den Assistenten nicht verlassen, um den Aktivierungsstatus zu korrigieren.
+:::
 
 ### Installation
 
-Der Installer erstellt die erforderlichen Datenbanktabellen und installiert die Datei `sunrise.php`, die Ultimate Multisite zum Funktionieren benötigt. Klicken Sie auf **Install**, um fortzufahren.
+Der Installer erstellt die erforderlichen Datenbanktabellen und installiert die `sunrise.php`-Datei, die Ultimate Multisite zum Funktionieren benötigt. Klicken Sie auf **Installieren**, um fortzufahren.
 
-![Installationsschritt, der Datenbanktabellen und sunrise.php anzeigt](/img/installation/wizard-installation.png)
+![Installationsschritt mit angezeigten Datenbanktabellen und sunrise.php](/img/installation/wizard-installation.png)
 
-### Your Company
+### Ihr Unternehmen
 
-Füllen Sie Ihre Unternehmensinformationen aus und legen Sie Ihre Standardwährung fest. Diese Informationen werden auf Ihrer WaaS-Plattform verwendet. Klicken Sie auf **Continue**, wenn Sie fertig sind.
+Geben Sie Ihre Unternehmensinformationen ein und legen Sie Ihre Standardwährung fest. Diese Informationen werden in Ihrer gesamten WaaS-Plattform verwendet. Klicken Sie nach Abschluss auf **Weiter**.
 
-![Your Company Konfiguration Schritt](/img/installation/wizard-your-company.png)
+![Konfigurationsschritt „Ihr Unternehmen“](/img/installation/wizard-your-company.png)
 
-### Default Content
+### Standardinhalte
 
-Dieser Schritt ermöglicht es Ihnen, vordefinierte Vorlagen, Produkte und andere Starter-Inhalte zu installieren. Das ist eine großartige Möglichkeit, sich mit den Funktionen von Ultimate Multisite vertraut zu machen. Klicken Sie auf **Install**, um die Standardinhalte hinzuzufügen, oder überspringen Sie diesen Schritt, wenn Sie lieber von Grund auf neu beginnen möchten.
+In diesem Schritt können Sie vordefinierte Vorlagen, Produkte und andere Startinhalte installieren. Dies ist ein guter Weg, um sich mit den Funktionen von Ultimate Multisite vertraut zu machen. Klicken Sie auf **Installieren**, um die Standardinhalte hinzuzufügen, oder überspringen Sie diesen Schritt, wenn Sie lieber bei Null anfangen möchten.
 
-![Default Content Installationsschritt](/img/installation/wizard-default-content.png)
+![Installationsschritt für Standardinhalte](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins
+### Empfohlene Plugins
 
-Installieren Sie optional empfohlene Begleit-Plugins. Klicken Sie auf **Install**, um sie hinzuzufügen, oder überspringen Sie, um fortzufahren.
+Optional können Sie empfohlene Begleit-Plugins installieren. Klicken Sie auf **Installieren**, um sie hinzuzufügen, oder überspringen Sie diesen Schritt, um fortzufahren.
 
-![Recommended Plugins Schritt](/img/installation/wizard-recommended-plugins.png)
+![Schritt für empfohlene Plugins](/img/installation/wizard-recommended-plugins.png)
 
-### Bereit!
+### Fertig!
 
-Das war's! Ihre Ultimate Multisite-Installation ist abgeschlossen. Sie können jetzt Ihre Website-as-a-Service-Plattform vom **Network Admin Dashboard** aus erstellen.
+Das war's! Ihre Ultimate Multisite-Installation ist abgeschlossen. Sie können jetzt mit dem Aufbau Ihrer Website-as-a-Service-Plattform im **Network Admin Dashboard** beginnen.
 
-![Setup abgeschlossen - Ready Bildschirm](/img/installation/wizard-ready.png)
+![Setup abgeschlossen – Bildschirm „Fertig“](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard mit Ultimate Multisite aktiv](/img/installation/network-dashboard.png)
+![Network Admin Dashboard mit aktivem Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Los geht's und viel Spaß!
+Machen Sie sich bereit und haben Sie Spaß!

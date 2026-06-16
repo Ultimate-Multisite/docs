@@ -1,86 +1,86 @@
 ---
-title: Mae cynrychioli Ultimate Multisite
+title: Gosod Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Mae'r Chwarae Ultimate Multisite
+# Gosod Ultimate Multisite
 
 :::note
-Mae'r cyfrifol hwn yn sylwi ar gyfer bod chi wedi cael WordPress Multisite wedi'i chwarae a'i sicrhau. I weld sut i wneud hyn, gwylio [this tutorial](https://www.wpbeginner.com/glossary/multisite/) gan WP Beginner.
+Mae'r cwrs hwn yn tybio bod gennych WordPress Multisite wedi ei osod a'i ffurfweddu eisoes. I ddysgu sut, gwyliwch y cwrs hwn [yma](https://www.wpbeginner.com/glossary/multisite/) gan WP Beginner.
 :::
 
-## Chwarae'r Plugin
+## Gosod y Plugin
 
-Mae Ultimate Multisite ar gael yn llawn am y cyfrifol ar [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Mae Ultimate Multisite ar gael am ddim ar [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-O'ch **Network Admin Dashboard**, mynd i **Plugins → Add New Plugin**.
+O'ch **Dashboard Gweinyddol Rhwydwaith**, ewch i **Plugins → Ychwanegu Plugin Newydd**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Tudalen "Ychwanegu Plugin Newydd" Gweinyddol Rhwydwaith](/img/installation/add-new-plugin.png)
 
-Cyfarchwch ar **"Ultimate Multisite"** ( gyda phyrddion i ddarganfod cywir) ac fydd yn dangos fel y cyflwyniad cyntaf. Clic ar **Install Now**.
+Chwiliwch am **"Ultimate Multisite"** (gyda dyblygion ar gyfer geiriau cywir) a bydd yn ymddangos fel y canlyniad cyntaf. Cliciwch **Gosod Nawr**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Canlyniadau chwilio sy'n dangos Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Ar ôl cael ei chwarae, clywed ar **Network Activate** i chwarae'r plugin yn gyffredinol arall eich rheol.
+Ar ôl ei osod, cliciwch **Actifio Rhwydwaith** i actifadu'r plugin ar draws eich rhwydwaith gyfan.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin wedi ei osod gyda botwm "Actifio Rhwydwaith"](/img/installation/plugin-installed.png)
 
-Ar ôl cael ei chwarae, byddwch yn cael chi ddirgoi'n ddefnyddio'r Setup Wizard.
+Ar ôl actifadu, byddwch yn cael eich cyfarwyddo'n awtomatig i'r Swyddfa Gosodiad.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin wedi ei actifadu ac wedi ei gyfarwyddo i'r swyddfa](/img/installation/plugin-activated.png)
 
-## Ymddangos y Setup Wizard
+## Swyddfa Gosodiad
 
-Bydd y Setup Wizard yn rhoi'ch cyfarwyddiadau drwy sicrhau chi i gyfrifol Ultimate Multisite mewn cyflym o 10 min.
+Bydd y Swyddfa Gosodiad yn eich arwain trwy ffurfweddu Ultimate Multisite mewn tua 10 munud.
 
-### Cyfeiriad Cynllunio (Welcome)
+### Croeso
 
-Cliciw ar **Get Started** i ddechrau.
+Cliciwch **Dechreuwch** i ddechrau.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Sgrin croeso Swyddfa Gosodiad](/img/installation/wizard-welcome.png)
 
-### Cynrhau Cynwarae (Pre-install Checks)
+### Archwiliadau Cyn-osod
 
-Mae'r cynrhau hwn yn gwerto eich gairiad system a'r chwarae WordPress i sicrhau ei fod yn llwybrol gyda'r hanesau Ultimate Multisite. Os mae كلis yn dda, clywed ar **Go to the Next Step**.
+Mae'r cam hwn yn archwilio eich gwybodaeth system a gosodiad WordPress i sicrhau ei bod yn cyflawni gofynion Ultimate Multisite. Os edrychwch yn dda, cliciwch **Ewch i'r Cam Nesaf**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Archwiliadau cyn-osod sy'n dangos gofynion system](/img/installation/wizard-pre-install-checks.png)
 
-:::note Botyn Network Activate button (v2.6.1+)
-Os oes Ultimate Multisite wedi cael ei chwarae ond **nid yw'n cael ei chwarae yn rheol cyd-llwybr** — er enghân, os eich bod wedi clisiad **Activate** (single-site) yn lle **Network Activate** o'r screen y pluginau rheol cyd-llwybr — bydd y cynllunio Pre-install Checks yn gweld hyn ac yn dangos un **Network Activate**.
+:::note Botwm Actifio Rhwydwaith (v2.6.1+)
+Os gosodwyd Ultimate Multisite ond **ni chafodd ei actifadu ar draws y rhwydwaith** - er enghraifft, os gliciwch **Actifio** (safle unigol) yn hytrach na **Actifio Rhwydwaith** o'r sgrin pluginau rhwydwaith - bydd cam Archwiliadau Cyn-osod yn canfod hyn ac yn dangos botwm **Actifio Rhwydwaith**.
 
-Mae clisiad **Network Activate** yn chwarae'r plugin arall gan gyfrifol i gyd yn eich rheol cyd-llwybr yn awtomatig. Ar ôl ei chwarae, mae'r cyfarwyddiad yn parhau'n dda i'r y cynllunio i'r stadau. Nid oes angen i chi gadael y cynllunio i gyfathogi'r stat o chwarae.
+Cliciwch **Actifio Rhwydwaith** i actifadu'r plugin ar draws eich rhwydwaith multisite. Ar ôl actifadu, parha y swyddfa fel arfer i'r cam gosodiad. Nid oes angen i chi adael y swyddfa er mwyn atgyweirio'r cyflwr actifio.
 :::
 
-### Cyfluniad (Installation)
+### Gosodiad
 
-Bydd y cyfluniador yn creu'r tabelau datab sydd ei angen a fynd â'r ffeil `sunrise.php` sydd ei angen i'r Ultimate Multisite i fod yn gweithredu. Clisiad **Install** i ddechrau.
+Bydd y gosodwr yn creu'r tablau cronfa data a phosiblerch hefyd, bydd yn gosod y ffeil `sunrise.php` sydd ei angen i Ultimate Multisite weithredu. Cliciwch **Gosod** er mwyn mynd ymlaen.
 
-![Cyfluniad stad yn dangos tabelau datab a sunrise.php](/img/installation/wizard-installation.png)
+![Cam gosodiad sy'n dangos tablau cronfa data a sunrise.php](/img/installation/wizard-installation.png)
 
-### eich Cynllun (Your Company)
+### Eich Cwmni
 
-Rhowch eich informadau'r cwmni ac set eich cyfrifol ddefnyddiol. Bydd y informadau hyn yn cael eu defnyddio yn gyffredinol arall i'r platform WaaS eich. Clisiad **Continue** pan fydd chi wedi gwblhau.
+Llenwch eich gwybodaeth cwmni ac arwyddwch eich arian cyfredol. Bydd y wybodaeth hon yn cael ei defnyddio trwy gydag eich platfform WaaS. Cliciwch **Parhau** pan fyddwch chi wedi gwneud.
 
-![Cyfluniad stad eich Cynllun](/img/installation/wizard-your-company.png)
+![Cam ffurfweddu "Eich Cwmni"](/img/installation/wizard-your-company.png)
 
-### Cynnwys Defnyddiol (Default Content)
+### Cynnwys Difeiriol
 
-Mae'r stad hwn yn gallu chi chwarae templau arosol, produsau, ac cynnwys ychwanegol sydd wedi'i cyfluniad. Mae hyn yn ffordd dda i ddod yn gwyllt â'r ffyddau'r Ultimate Multisite. Clisiad **Install** i dros y cynnwys arosol, neu gwahanwch y stad hwn os ydych chi'n hoffi dechrau o'r dechrau.
+Mae'r cam hwn yn eich galluogi i osod templatau, cynhyrchion a rhywfaint o gynulliad dechreuol. Mae hyn yn ffordd wych i ddysgu am nodweddion Ultimate Multisite. Cliciwch **Gosod** er mwyn ychwanegu'r cynnwys difeiriol, neu eglureddwch y cam hwn os hoffech ddechrau o scratch.
 
-![Cyfluniad stad cynnwys arosol](/img/installation/wizard-default-content.png)
+![Cam gosodiad cynnwys difeiriol](/img/installation/wizard-default-content.png)
 
-### Pluginau Arall Cyfluniwyd (Recommended Plugins)
+### Plugins Argymhegedig
 
-Mae'n gallu chi chwarae pluginau cymysgoliad arall sydd wedi'u cyfluniad yn ddefnyddiol. Clisiad **Install** i sicr eu cyfluniad neu gwahanwch y stad hwn i ddechrau.
+Gallwch osod plugins cyfeilliol argymhegedig. Cliciwch **Gosod** er mwyn ychwanegu nhw neu eglureddwch i barhau.
 
-![Cyfluniad stad pluginau arall cyfluniwyd](/img/installation/wizard-recommended-plugins.png)
+![Cam pluginau argymhegedig](/img/installation/wizard-recommended-plugins.png)
 
-### Radd!
+### Parha!
 
-Daeth y cyflwyniadau! Mae eich cyflwyniadau Ultmate Multisite yn gwblhau. Gallwch chi ddim ond i'w dechrau llwybr gyda'r eich gwefan fel platform Gwefan fel Gwasanaeth o'r **Network Admin Dashboard**.
+Dyma'r hwnnw! Mae eich gosodiad Ultimate Multisite wedi ei gwblhau. Gallwch nawr ddechrau adeiladu eich platfform Gwefan fel Gwasanaeth o'r **Dashboard Gweinyddol Rhwydwaith**.
 
-![Cyflwyniadau wedi'i gwblhau - Screen parobennol](/img/installation/wizard-ready.png)
+![Gosodiad wedi cwblhau - Sgrin Parha](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard gyda Ultmate Multisite yn weithredol](/img/installation/network-dashboard.png)
+![Dashboard Gweinyddol Rhwydwaith gyda Ultimate Multisite wedi ei actifadu](/img/installation/network-dashboard.png)
 
-Dechrau a gwneud rhywbeth hwyl!
+Mwynhewch!

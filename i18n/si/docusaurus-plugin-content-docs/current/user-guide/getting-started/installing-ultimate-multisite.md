@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite ස්ථාපනය කිරීම
+title: අල්ටිමේට් මൾටිසයිට් ස්ථාපනය කිරීම
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite ස්ථාපනය කිරීම
+# අල්ටිමේට් මൾටිසයිට් ස්ථාපනය කිරීම
 
 :::note
-මෙම මාර්ගෝපදේශය ඔබ දැනටමත් WordPress Multisite ස්ථාපනය කර සකසා ඇති බව උපකල්පනය කරයි. එය ඉගෙන ගැනීමට, WP Beginner විසින් [මෙම මාර්ගෝපදේශය](https://www.wpbeginner.com/glossary/multisite/) බලන්න.
+මෙම උපදෙස් මාලාවෙන්, ඔබට දැනටමත් WordPress Multisite ස්ථාපිත කර සකසා ඇති බව උපකල්පනය කෙරේ. එය කරන්නේ කෙසේදැ යි ඉගෙන ගැනීමට, WP Beginner විසින් ඉදිරිපත් කරන [මෙම උපදෙස් මාලාව](https://www.wpbeginner.com/glossary/multisite/) බලන්න.
 :::
 
-## ප්ලගින (Plugin) ස්ථාපනය කිරීම
+## ප්ලගීන ස්ථාපනය කිරීම
 
-Ultimate Multisite නොමිලේ [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) වෙතින් ලබා ගත හැකියි.
+අල්ටිමේට් මൾටිසයිට් නොමිලේ [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) හි ලබාගත හැකිය.
 
-ඔබේ **Network Admin Dashboard** එකට ගොස්, **Plugins → Add New Plugin** වෙත යන්න.
+ඔබේ **Network Admin Dashboard** වෙතින්, **Plugins → Add New Plugin** වෙත යන්න.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin පිටුව](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (නිවැරදිව ගැලපෙන ප්‍රතිඵලයක් සඳහා උපුටා දැක්වීම සමඟ) සොයන්න, එය පළමු ප්‍රතිඵලයක් ලෙස දිස් වනු ඇත. **Install Now** ක්ලික් කරන්න.
+**"අල්ටිමේට් මൾටිසයිට්"** (පරිච්ඡේදක තුළින්, නිවැරදිව සොයා ගැනීමට) යන වචනවලට අනුව සෙවුම් කර එය පළමු ප්‍රතිඵලයක් ලෙස දිස්වේ. **Install Now** මත ක්ලික් කරන්න.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![අල්ටිමේට් මൾටිසයිට් පෙන්වන සෙවුම් ප්‍රතිඵල](/img/installation/search-ultimate-multisite.png)
 
-එය ස්ථාපනය වූ පසු, ඔබේ මුළු ජාලයටම ප්ලගින් ක්‍රියාත්මක කිරීමට **Network Activate** ක්ලික් කරන්න.
+ස්ථාපනය වූ පසු, ප්ලගීන ඔබේ සම්පූර්ණ ජාලය පුරා ක්‍රියාත්මක කිරීමට **Network Activate** මත ක්ලික් කරන්න.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![ප්ලගීන ස්ථාපනය කර Network Activate බොත්තම සහිතව](/img/installation/plugin-installed.png)
 
-ක්‍රියාත්මක කිරීමෙන් පසු, ඔබ ස්වයංක්‍රීයව Setup Wizard එකට යොමු වනු ඇත.
+ක්‍රියාත්මක කිරීමෙන් පසු, ඔබ ස්වයංක්‍රීයව Setup Wizard වෙත යොමු වනු ඇත.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![ප්ලගීන ක්‍රියාත්මක වී විසරධ වෙත යොමු විය](/img/installation/plugin-activated.png)
 
-## Setup Wizard (සැකසීමේ මඟ පෙන්වීම)
+## Setup Wizard
 
-Setup Wizard එක හරහා Ultimate Multisite සකස් කිරීම සඳහා විනාඩි 10ක් පමණ ඔබට මඟ පෙන්වනු ඇත.
+Setup Wizard ඔබට අවසන් කිරීමට 10 මිනිත්තු පමණ ගතවන අල්ටිමේට් මൾටිසයිට් සකසන්නට උදව් කරනු ඇත.
 
-### Welcome (පිළිගැනීම)
+### පිළිගැනීම
 
-ආරම්භ කිරීමට **Get Started** ක්ලික් කරන්න.
+ආරම්භ කිරීමට **Get Started** මත ක්ලික් කරන්න.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Setup Wizard පිළිගැනීමේ තිරය](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (ස්ථාපනය කිරීමට පෙර පරීක්ෂා කිරීම්)
+### පෙර ස්ථාපන පරීක්ෂා කිරීම්
 
-මෙම පියවර මඟින් Ultimate Multisite හි අවශ්‍යතා සපුරා ඇත්දැයි ඔබේ පද්ධති තොරතුරු සහ WordPress ස්ථාපනය පරීක්ෂා කරයි. සියල්ල හොඳින් පෙනේ නම්, **Go to the Next Step** ක්ලික් කරන්න.
+මෙම පියවර ඔබේ ක්‍රමයේ සහ WordPress ස්ථාපනයේ තොරතුරු පරීක්ෂා කර, එය අල්ටිමේට් මൾටිසයිට් අවශ්‍යතා සපුරා කරන බවට වග බලා ගන්න. සෑම දෙයක්ම හොඳ නම්, **Go to the Next Step** මත ක්ලික් කරන්න.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![ක්‍රමයේ අවශ්‍යතා පෙන්වන පෙර ස්ථාපන පරීක්ෂා කිරීම්](/img/installation/wizard-pre-install-checks.png)
 
 :::note Network Activate බොත්තම (v2.6.1+)
-Ultimate Multisite ස්ථාපනය කර තිබුණත් එය **අවශ්‍ය පරිදි ජාලයට සක්‍රිය කර නොමැති** නම් — උදාහරණයක් ලෙස, ජාල ප්ලගින් මෙනුවෙන් **Network Activate** වෙනුවට **Activate** (single-site) ක්ලික් කළහොත් — Pre-install Checks පියවර මෙය හඳුනාගෙන **Network Activate** බොත්තමක් පෙන්වනු ඇත.
+අල්ටිමේට් මൾටිසයිට් ස්ථාපනය කර ඇති නමුත් **යන්තම් ජාලය ක්‍රියාත්මක නොකර** තිබේ නම් - උදාහරණයක් ලෙස, ඔබ network plugins තිරයෙන් **Activate** (ඒක-තැන) වෙනුවට **Network Activate** මත ක්ලික් කළේ නම් - පෙර ස්ථාපන පරීක්ෂා කිරීම් පියවර මෙය හඳුනාගෙන **Network Activate** බොත්තමක් පෙන්වනු ඇත.
 
-**Network Activate** ක්ලික් කිරීමෙන් ඔබේ මුළු multisite ජාලය පුරාම ප්ලගින් එක ස්වයංක්‍රීයව සක්‍රිය වේ. සක්‍රිය වූ පසු, මයික්‍රෝසොෆ්ට් (wizard) සාමාන්‍ය පරිදි ස්ථාපන පියවරට ඉදිරියට යනු ඇත. සක්‍රිය කිරීමේ තත්ත්වය නිවැරදි කිරීමට ඔබ මයික්‍රෝසොෆ්ට් එකෙන් පිටවීමට අවශ්‍ය නොවේ.
+**Network Activate** මත ක්ලික් කිරීමෙන්, ප්ලගීනය ඔබේ සම්පූර්ණ multisite ජාලය පුරා ස්වයංක්‍රීයව ක්‍රියාත්මක වේ. ක්‍රියාත්මක වූ පසු, විසරධ සාමාන්‍යයෙන් ස්ථාපන පියවරට දිගෙන යනු ඇත. ඔබට ක්‍රියාත්මක කිරීමේ තත්වය නිවැරදි කිරීමට විසරධයෙන් ඉවත් වීමට අවශ්‍ය නොවේ.
 :::
 
-### ස්ථාපනය (Installation)
+### ස්ථාපනය
 
-ස්ථාපන වැඩසටහන (installer) අවශ්‍ය දත්ත සමුදා වගු (database tables) නිර්මාණය කර Ultimate Multisite ක්‍රියාත්මක වීමට අවශ්‍ය `sunrise.php` ගොනුව ස්ථාපනය කරයි. ඉදිරියට යාමට **Install** ක්ලික් කරන්න.
+ස්ථාපකය අවශ්‍ය දත්ත ගබඩා ප්‍රදේශයේ அட்டவணைகள் සාදා, අල්ටිමේට් මൾටිසයිට් ක්‍රියා කිරීමට අවශ්‍ය `sunrise.php` கோப்பு நிறுவනු ඇත. ඉදිරියට යාමට **Install** මත ක්ලික් කරන්න.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![දත්ත ගබඩා அட்டவணைகள் සහ sunrise.php පෙන්වන ස්ථාපන පියවර](/img/installation/wizard-installation.png)
 
-### ඔබේ සමාගම (Your Company)
+### ඔබේ සමාගම
 
-ඔබේ සමාගම් තොරතුරු පුරවා ඔබේ පෙරනිමි මුදල් ඒකකය (default currency) සකසන්න. මෙම තොරතුරු ඔබගේ WaaS වේදිකාව පුරා භාවිතා කරනු ඇත. අවසන් වූ පසු **Continue** ක්ලික් කරන්න.
+ඔබේ සමාගමේ තොරතුරු ඇතුළත් කර, පෙරනිසා මුදලාව සකසන්න. මෙම තොරතුරු ඔබේ WaaS වේදිකාවේ සෑම තැනකම භාවිතා වනු ඇත. අවසන් වූ පසු **Continue** මත ක්ලික් කරන්න.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![ඔබේ සමාගම් සැකසුම් පියවර](/img/installation/wizard-your-company.png)
 
-### පෙරනිමි අන්තර්ගතය (Default Content)
+### පෙරනිසා අන්තර්ගතය
 
-මෙම පියවර මගින් ඔබට කලින් නිර්වචනය කරන ලද template, නිෂ්පාදන සහ වෙනත් ආරම්භක අන්තර්ගතයන් ස්ථාපනය කළ හැකිය. Ultimate Multisite හි විශේෂාංග පිළිබඳව හුරුපුරුදු වීමට මෙය හොඳ ක්‍රමයකි. පෙරනිමි අන්තර්ගතය එක් කිරීමට **Install** ක්ලික් කරන්න, නැතිනම් මුල සිට ආරම්භ කිරීමට කැමති නම් මෙම පියවර මඟහරින්න.
+මෙම පියවර ඔබට පෙරනිසා සැකිලි, නිෂ්පාදන සහ අනෙකුත් ආරම්භක අන්තර්ගත ස්ථාපනය කිරීමට ඉඩ සලසයි. මෙය අල්ටිමේට් මൾටිසයිට් විශේෂාංග සමඟ ඔබ හුරු වීමට හොඳ ක්‍රමයකි. පෙරනිසා අන්තර්ගතය එක් කිරීමට **Install** මත ක්ලික් කරන්න, නැතහොත් ඔබට අවශ්‍ය නම් මෙම පියවර පසු කර යා හැකිය.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![පෙරනිසා අන්තර්ගත ස්ථාපන පියවර](/img/installation/wizard-default-content.png)
 
-### නිර්දේශිත ප්ලගින් (Recommended Plugins)
+### නිර්දේශිත ප්ලගීන
 
-අවශ්‍ය පරිදි නිර්දේශිත සහායක ප්ලගින් ස්ථාපනය කරන්න. ඒවා එක් කිරීමට **Install** ක්ලික් කරන්න, නැතිනම් ඉදිරියට යාමට මඟහරින්න.
+අවශ්‍ය නම්, නිර්දේශිත සහකාර ප්ලගීන ස්ථාපනය කරන්න. ඒවා එක් කිරීමට **Install** මත ක්ලික් කරන්න හෝ ඉදිරියට යාමට පසු කර යන්න.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![නිර්දේශිත ප්ලගීන පියවර](/img/installation/wizard-recommended-plugins.png)
 
-### සූදානම්! (Ready!)
+### සූදානම්!
 
-ඒක තමයි! ඔබේ Ultimate Multisite ස්ථාපනය අවසන් වී ඇත. දැන් ඔබට **Network Admin Dashboard** එකෙන් ඔබේ Website as a Service වේදිකාව ගොඩනැගීමට පටන් ගත හැකියි.
+ඒ සියල්ලයි! ඔබේ අල්ටිමේට් මൾටිසයිට් ස්ථාපනය සම්පූර්ණ විය. දැන් ඔබට **Network Admin Dashboard** වෙතින්, ඔබේ Website as a Service වේදිකාව ගොඩ නැගීමට ආරම්භ කළ හැකිය.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![ස්ථාපනය අවසන් - සූදානම් තිරය](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![ක්‍රියාත්මක වූ අල්ටිමේට් මൾටිසයිට් සමඟ Network Admin Dashboard](/img/installation/network-dashboard.png)
 
-දැන් විනෝද වෙන්න!
+ඉදිරියට ගොස් විනෝද වන්න!

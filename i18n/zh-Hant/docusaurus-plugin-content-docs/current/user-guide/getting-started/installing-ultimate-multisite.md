@@ -1,80 +1,86 @@
 ---
 title: 安裝 Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # 安裝 Ultimate Multisite
 
 :::note
-本教學假設您已經安裝並設定好 WordPress Multisite。如需了解設定方式，請參閱 WP Beginner 的[這篇教學](https://www.wpbeginner.com/glossary/multisite/)。
+本教學假設您已安裝並設定好 WordPress Multisite。如需了解如何操作，請參閱 WP Beginner 的 [這篇教學](https://www.wpbeginner.com/glossary/multisite/)。
 :::
 
 ## 安裝外掛
 
-Ultimate Multisite 可在 [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) 免費下載。
+Ultimate Multisite 可於 [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) 免費取得。
 
 從您的 **Network Admin Dashboard**，前往 **Plugins → Add New Plugin**。
 
-![Network Admin Add New Plugin 頁面](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
 
-搜尋 **"Ultimate Multisite"**（加上引號可精確搜尋），它會出現在第一個結果。點擊 **Install Now**。
+搜尋 **"Ultimate Multisite"**（加上引號以進行精確比對），它將作為第一個結果出現。點擊 **Install Now**。
 
-![搜尋結果顯示 Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-安裝完成後，點擊 **Network Activate** 在整個網站網路中啟用外掛。
+安裝完成後，點擊 **Network Activate** 以在您整個網路中啟用此外掛。
 
-![外掛已安裝，顯示 Network Activate 按鈕](/img/installation/plugin-installed.png)
+![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
 
-啟用後，您會自動跳轉到設定精靈。
+啟用後，您將自動重新導向至 Setup Wizard。
 
-![外掛已啟用並跳轉至精靈](/img/installation/plugin-activated.png)
+![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
 
-## 設定精靈
+## Setup Wizard
 
-設定精靈將引導您完成 Ultimate Multisite 的設定，大約需要 10 分鐘。
+Setup Wizard 將引導您在約 10 分鐘內完成 Ultimate Multisite 的設定。
 
-### 歡迎
+### Welcome
 
 點擊 **Get Started** 開始。
 
-![設定精靈歡迎畫面](/img/installation/wizard-welcome.png)
+![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
 
-### 安裝前檢查
+### Pre-install Checks
 
-這個步驟會檢查您的系統資訊和 WordPress 安裝，確保符合 Ultimate Multisite 的需求。如果一切正常，點擊 **Go to the Next Step**。
+此步驟會檢查您的系統資訊與 WordPress 安裝，以確保符合 Ultimate Multisite 的需求。若一切正常，請點擊 **Go to the Next Step**。
 
-![安裝前檢查顯示系統需求](/img/installation/wizard-pre-install-checks.png)
+![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
 
-### 安裝
+:::note Network Activate button (v2.6.1+)
+若 Ultimate Multisite 已安裝但**尚未網路啟用**——例如，您在網路外掛畫面中點擊了 **Activate**（單一網站）而非 **Network Activate**——Pre-install Checks 步驟將偵測到此狀況並顯示 **Network Activate** 按鈕。
 
-安裝程式會建立必要的資料庫表格，並安裝 Ultimate Multisite 運作所需的 `sunrise.php` 檔案。點擊 **Install** 繼續。
+點擊 **Network Activate** 會自動在您整個多站網路中啟用此外掛。啟用後，精靈將正常繼續至安裝步驟。您無需離開精靈來修正啟用狀態。
+:::
 
-![安裝步驟顯示資料庫表格和 sunrise.php](/img/installation/wizard-installation.png)
+### Installation
 
-### 您的公司
+安裝程式將建立必要的資料庫表格並安裝 Ultimate Multisite 運作所需的 `sunrise.php` 檔案。點擊 **Install** 以繼續。
 
-填寫您的公司資訊並設定預設貨幣。這些資訊會用於您的 WaaS 平台各處。完成後點擊 **Continue**。
+![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
 
-![您的公司設定步驟](/img/installation/wizard-your-company.png)
+### Your Company
 
-### 預設內容
+填寫您的公司資訊並設定預設貨幣。此資訊將用於您的 WaaS 平台各處。完成後點擊 **Continue**。
 
-這個步驟讓您安裝預先定義的範本、產品和其他入門內容。這是熟悉 Ultimate Multisite 功能的好方法。點擊 **Install** 新增預設內容，或跳過此步驟從頭開始。
+![Your Company configuration step](/img/installation/wizard-your-company.png)
 
-![預設內容安裝步驟](/img/installation/wizard-default-content.png)
+### Default Content
 
-### 推薦外掛
+此步驟讓您安裝預定義的模板、產品與其他起始內容。這是熟悉 Ultimate Multisite 功能的絕佳方式。點擊 **Install** 以新增預設內容，或跳過此步驟若您偏好從頭開始。
 
-可選擇安裝推薦的配套外掛。點擊 **Install** 新增，或跳過繼續。
+![Default content installation step](/img/installation/wizard-default-content.png)
 
-![推薦外掛步驟](/img/installation/wizard-recommended-plugins.png)
+### Recommended Plugins
 
-### 完成！
+選擇性安裝推薦的配套外掛。點擊 **Install** 以新增它們，或跳過以繼續。
 
-大功告成！您的 Ultimate Multisite 安裝已完成。現在可以從 **Network Admin Dashboard** 開始建立您的網站即服務平台了。
+![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
 
-![設定完成 - 完成畫面](/img/installation/wizard-ready.png)
+### Ready!
 
-![啟用 Ultimate Multisite 的 Network Admin Dashboard](/img/installation/network-dashboard.png)
+完成了！您的 Ultimate Multisite 安裝已完成。您現在可以從 **Network Admin Dashboard** 開始建立您的 Website as a Service 平台。
 
-開始盡情探索吧！
+![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+
+![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+
+放手去享受吧！

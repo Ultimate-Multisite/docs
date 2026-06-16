@@ -1,80 +1,86 @@
 ---
-title: Ultimate Multisite ကို ထည့်သွင်းခြင်း
+title: Ultimate Multisite ကို ထည့်သွင်းခြင်း။
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite ကို ထည့်သွင်းခြင်း
+# အာလ်တစ်မိတ် မൾတီဆိုက်ကို တပ်ဆင်ခြင်း
 
 :::note
-ဤသင်ခန်းစာသည် သင့်တွင် WordPress Multisite ကို ထည့်သွင်းပြီး configure လုပ်ထားပြီးဖြစ်သည်ဟု ယူဆထားပါသည်။ လုပ်နည်းကို လေ့လာလိုပါက WP Beginner မှ [ဤသင်ခန်းစာ](https://www.wpbeginner.com/glossary/multisite/) ကို ကြည့်ရှုပါ။
+ဤလမ်းညွှန်သည် သင်သည် WordPress Multisite ကို ထိုကဲ့သို့ လုပ်ဆောင်ရန်အတွက် [ဤလမ်းညွှန်](https://www.wpbeginner.com/glossary/multisite/) (WP Beginner မှ) ကို ကြည့်ရှုပါ။
 :::
 
-## Plugin ကို ထည့်သွင်းခြင်း
+## ပလပ်အင်ကို တပ်ဆင်ခြင်း
 
-Ultimate Multisite ကို [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) တွင် အခမဲ့ရယူနိုင်ပါသည်။
+အာလ်တစ်မိတ် မൾတီဆိုက်သည် [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) တွင် အခမဲ့ ရရှိနိုင်သည်။
 
-သင့် **Network Admin Dashboard** မှ **Plugins → Add New Plugin** သို့ သွားပါ။
+သင်၏ **Network Admin Dashboard** မှ **Plugins → Add New Plugin** သို့သွားပါ။
 
 ![Network Admin Add New Plugin စာမျက်နှာ](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (တိကျစွာရှာဖွေရန် quotation marks နှင့်) ဟု ရှာပါ၊ ပထမဆုံး ရလဒ်အဖြစ် ပေါ်လာပါမည်။ **Install Now** ကို နှိပ်ပါ။
+**"အာလ်တစ်မိတ် မൾတီဆိုက်"** (အတိတိကျကို ရှာရန်အတွက် အပိုအကွပ်ပါ) ဖြင့် ရှာပြီး ပထမဆုံးရလဒ်အဖြစ်ပေါ်လာလိမ့်မည်။ **Install Now** ကိုနှိပ်ပါ။
 
-![Ultimate Multisite ပြသနေသော ရှာဖွေမှုရလဒ်များ](/img/installation/search-ultimate-multisite.png)
+![Ultimate Multisite ကိုပြသော ရှာဖွေမှု ရလဒ်များ](/img/installation/search-ultimate-multisite.png)
 
-ထည့်သွင်းပြီးသည်နှင့် သင့် network တစ်ခုလုံးတွင် plugin ကို အသက်သွင်းရန် **Network Activate** ကို နှိပ်ပါ။
+တပ်ဆင်ပြီးသည်နှင့် **Network Activate** ဖြင့် ပလပ်အင်ကို သင်၏ လုပ်ငန်းခွင်အတွင်းတွင် တက်ကြွစေပါ။
 
-![Plugin ထည့်သွင်းပြီး Network Activate ခလုတ်ပါသော](/img/installation/plugin-installed.png)
+![ပလပ်အင်ကို တပ်ဆင်ပြီး Network Activate ခလုတ်](/img/installation/plugin-installed.png)
 
-အသက်သွင်းပြီးနောက် Setup Wizard သို့ အလိုအလျောက် ရောက်သွားပါမည်။
+တက်ကြွပြီးနောက်၊ သင်သည် အလိုလို Setup Wizard သို့ ပြောင်းရွှေ့သွားလိမ့်မည်။
 
-![Plugin အသက်သွင်းပြီး wizard သို့ ရောက်သွားသည်](/img/installation/plugin-activated.png)
+![ပလပ်အင်ကို တက်ကြွစေပြီး wizard သို့ ပြောင်းရွှေ့ခြင်း](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard သည် Ultimate Multisite ကို မိနစ် ၁၀ ခန့်အတွင်း configure လုပ်ရာတွင် လမ်းညွှန်ပေးပါမည်။
+Setup Wizard သည် ၁၀ မိနစ်ခန့်တွင် အာလ်တစ်မိတ် မൾတီဆိုက်ကို စီမံဆောင်ရန်အတွက် သင်တို့ကို လမ်းညွှန်ပေးလိမ့်မည်။
 
-### ကြိုဆိုပါသည်
+### ကြိုဆိုပါ
 
-စတင်ရန် **Get Started** ကို နှိပ်ပါ။
+စတင်ရန် **Get Started** ကိုနှိပ်ပါ။
 
-![Setup Wizard ကြိုဆိုမှု မျက်နှာပြင်](/img/installation/wizard-welcome.png)
+![Setup Wizard ကြိုဆိုသည့် မျက်နှာပြင်](/img/installation/wizard-welcome.png)
 
-### ထည့်သွင်းမှုမတိုင်မီ စစ်ဆေးခြင်းများ
+### တပ်ဆင်ခြင်းမပြုမီ စစ်ဆေးမှုများ
 
-ဤအဆင့်သည် သင့်စနစ်အချက်အလက်နှင့် WordPress ထည့်သွင်းမှုကို Ultimate Multisite ၏ လိုအပ်ချက်များနှင့် ကိုက်ညီမှုရှိမရှိ စစ်ဆေးပါသည်။ အားလုံးကောင်းမွန်ပါက **Go to the Next Step** ကို နှိပ်ပါ။
+ဤအဆင့်တွင် သင်၏ စနစ်သတင်းနှင့် WordPress အထောက်အထားကို အာလ်တစ်မိတ် မൾတီဆိုက်၏ လိုအပ်ချက်များကို ဖြည့်ဆည်းနိုင်သည် কিনা စစ်ဆေးသည်။ အရာအားလုံး ကောင်းမွန်နေပါက **Go to the Next Step** ကိုနှိပ်ပါ။
 
-![စနစ်လိုအပ်ချက်များ ပြသနေသော ထည့်သွင်းမှုမတိုင်မီ စစ်ဆေးခြင်းများ](/img/installation/wizard-pre-install-checks.png)
+![စနစ်လိုအပ်ချက်များနှင့်အတူ တပ်ဆင်ခြင်းမပြုမီ စစ်ဆေးမှုများ](/img/installation/wizard-pre-install-checks.png)
 
-### ထည့်သွင်းခြင်း
+:::note Network Activate ခလုတ် (v2.6.1+)
+အာလ်တစ်မိတ် မൾတီဆိုက်ကို တပ်ဆင်ထားသော်လည်း **စကေးတက်ကြွမရှိသေးပါက**—ဥပမာအားဖြင့်၊ network plugins မျက်နှာပြင်မှ **Activate** (တစ်ခုစီ site) ကို နှိပ်ပြီး **Network Activate** ကို နှိပ်ခြင်း မဟုတ်ပါက—တပ်ဆင်ခြင်းမပြုမီ စစ်ဆေးမှုအဆင့်တွင် ဤသို့တွေ့ရှိပြီး **Network Activate** ခလုတ်ကို ပြသလိမ့်မည်။
 
-Installer သည် လိုအပ်သော database tables များနှင့် Ultimate Multisite အလုပ်လုပ်ရန် လိုအပ်သော `sunrise.php` ဖိုင်ကို တည်ဆောက်ပါမည်။ ဆက်လက်ဆောင်ရွက်ရန် **Install** ကို နှိပ်ပါ။
+**Network Activate** ကိုနှိပ်ခြင်းသည် ပလပ်အင်ကို သင်၏ လုပ်ငန်းခွင်အတွင်း အားလုံးအတွက် တက်ကြွစေသည်။ တက်ကြွပြီးနောက်၊ wizard သည် စာရင်းသွင်းသည့်အဆင့်သို့ သာမန်အတိုင်း ဆက်လက်သွားလိမ့်မည်။ ဤလုပ်ဆောင်ချက်ကို ပြီးမြောက်အောင်ပြုရန်အတွက် wizard မှ ထွက်ရန် မလိုအပ်ပါ။
+:::
 
-![Database tables နှင့် sunrise.php ပြသနေသော ထည့်သွင်းခြင်း အဆင့်](/img/installation/wizard-installation.png)
+### တပ်ဆင်ခြင်း
 
-### သင့်ကုမ္ပဏီ
+installer သည် လိုအပ်သော database table များအား ဖန်တီးပြီး အာလ်တစ်မိတ် မൾတီဆိုက် လုပ်ဆောင်နိုင်စေရန် `sunrise.php` ဖိုင်ကို တပ်ဆင်လိမ့်မည်။ ဆက်လက်လုပ်ဆောင်ရန် **Install** ကိုနှိပ်ပါ။
 
-သင့်ကုမ္ပဏီအချက်အလက်များကို ဖြည့်သွင်းပြီး မူရင်းငွေကြေးကို သတ်မှတ်ပါ။ ဤအချက်အလက်များကို သင့် WaaS platform တစ်လျှောက်တွင် အသုံးပြုပါမည်။ ပြီးသွားသောအခါ **Continue** ကို နှိပ်ပါ။
+![database table များနှင့် sunrise.php တို့ကို ပြသော တပ်ဆင်ခြင်းအဆင့်](/img/installation/wizard-installation.png)
 
-![သင့်ကုမ္ပဏီ configure လုပ်ခြင်း အဆင့်](/img/installation/wizard-your-company.png)
+### သင်၏ကုမ္ပဏီ
 
-### မူရင်း Content
+သင်၏ ကုမ္ပဏီသတင်းများကို ထည့်သွင်းပြီး သင့်အတွက် အလိုရှိသည့် ငွေကြေးစနစ်ကို စီမံပါ။ ဤသတင်းများသည် သင်၏ WaaS ပလပ်ဖောင်းတွင် အသုံးပြုလိမ့်မည်။ ပြီးဆုံးလျှင် **Continue** ကိုနှိပ်ပါ။
 
-ဤအဆင့်တွင် ကြိုတင်ပြင်ဆင်ထားသော templates၊ products နှင့် အခြား starter content များကို ထည့်သွင်းနိုင်ပါသည်။ Ultimate Multisite ၏ features များနှင့် ရင်းနှီးကျွမ်းဝင်စေရန် အကောင်းဆုံးနည်းလမ်းတစ်ခုဖြစ်ပါသည်။ မူရင်း content ထည့်ရန် **Install** ကို နှိပ်ပါ၊ သို့မဟုတ် အစကနေစတင်လိုပါက ဤအဆင့်ကို ကျော်သွားပါ။
+![သင်၏ ကုမ္ပဏီ အချက်အလက်များကို ပြုပြင်ခြင်းအဆင့်](/img/installation/wizard-your-company.png)
 
-![မူရင်း content ထည့်သွင်းခြင်း အဆင့်](/img/installation/wizard-default-content.png)
+### အသင့်ရှိသော အကြောင်းအရာ
 
-### အကြံပြုထားသော Plugins များ
+ဤအဆင့်တွင် သင်သည် ကြိုတင်သတ်မှတ်ထားသည့် template များ၊ ထုတ်ကုန်များနှင့် အခြား စတင်ရန်အတွက် အသုံးပြုနိုင်သည့် အကြောင်းအရာများကို တပ်ဆင်နိုင်သည်။ ၎င်းသည် အာလ်တစ်မိတ် မൾတီဆိုက်၏ လုပ်ဆောင်ချက်များဖြင့် လေ့ကျင့်ရန် ကောင်းမွန်သော နည်းလမ်းတစ်ခုဖြစ်သည်။ အသင့်ရှိသော အကြောင်းအရာကို ထည့်သွင်းရန် **Install** ကိုနှိပ်ပါ သို့မဟုတ် သင်က စတင်မှန်းချင်ပါက ဤအဆင့်ကို ကျော်လွှားနိုင်သည်။
 
-အကြံပြုထားသော companion plugins များကို ရွေးချယ်ထည့်သွင်းနိုင်ပါသည်။ ၎င်းတို့ကို ထည့်ရန် **Install** ကို နှိပ်ပါ သို့မဟုတ် ဆက်လက်ဆောင်ရွက်ရန် ကျော်သွားပါ။
+![အသင့်ရှိသော အကြောင်းအရာ တပ်ဆင်ခြင်းအဆင့်](/img/installation/wizard-default-content.png)
 
-![အကြံပြုထားသော plugins အဆင့်](/img/installation/wizard-recommended-plugins.png)
+### အကြံပြုထားသည့် ပလပ်အင်များ
 
-### အဆင်သင့်ဖြစ်ပါပြီ!
+ရွေးချယ်၍ အကြံပြုထားသည့် နောက်ဆက်တွဲ ပလပ်အင်များကို တပ်ဆင်ပါ။ ၎င်းတို့ကို ထည့်သွင်းရန် **Install** ကိုနှိပ်ပါ သို့မဟုတ် ဆက်လက်လုပ်ဆောင်ပါ။
 
-ဒါပါပဲ! သင့် Ultimate Multisite ထည့်သွင်းမှု ပြီးစီးပါပြီ။ ယခု **Network Admin Dashboard** မှ သင့် Website as a Service platform ကို စတင်တည်ဆောက်နိုင်ပါပြီ။
+![အကြံပြုထားသည့် ပလပ်အင်များ အဆင့်](/img/installation/wizard-recommended-plugins.png)
 
-![Setup ပြီးစီး - အဆင်သင့် မျက်နှာပြင်](/img/installation/wizard-ready.png)
+### အဆင်သင့်!
 
-![Ultimate Multisite အသက်ဝင်နေသော Network Admin Dashboard](/img/installation/network-dashboard.png)
+ပြီးပြီ! သင်၏ အာလ်တစ်မိတ် မൾတီဆိုက် တပ်ဆင်မှု ပြီးစီးသွားသည်။ ယခု သင်သည် **Network Admin Dashboard** မှ သင်၏ Website as a Service ပလပ်ဖောင်းကို တည်ဆောက်ရန် စတင်နိုင်သည်။
 
-ပျော်ရွှင်စွာ အသုံးပြုလိုက်ပါ!
+![Setup ပြီးဆုံး - အဆင်သင့်ရှိသော မျက်နှာပြင်](/img/installation/wizard-ready.png)
+
+![Network Admin Dashboard နှင့် အာလ်တစ်မိတ် မൾတီဆိုက် တက်ကြွနေသည်](/img/installation/network-dashboard.png)
+
+ပျော်ရွှင်စွာ လုပ်ဆောင်နိုင်ပါစေ!

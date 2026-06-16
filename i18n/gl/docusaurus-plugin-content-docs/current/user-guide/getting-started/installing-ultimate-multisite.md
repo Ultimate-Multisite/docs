@@ -1,86 +1,86 @@
 ---
-title: Instalación de Ultimate Multisite
+title: Instalando o Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalación de Ultimate Multisite
+# Instalando o Ultimate Multisite
 
 :::note
-Este tutorial supón que ya tienes instalado y configurado WordPress Multisite. Para aprender cómo hacerlo, consulta [este tutorial](https://www.wpbeginner.com/glossary/multisite/) por WP Beginner.
+Este titorial asume que xa tes instalado e configurado o WordPress Multisite. Para aprender como facelo, consulta este titorial [este titorial](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner.
 :::
 
-## Instalando el Plugin
+## Instalando o plugin
 
-Ultimate Multisite está disponible de forma gratuita en [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite está dispoñible gratuitamente en [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Desde el **Network Admin Dashboard**, ve a **Plugins → Add New Plugin**.
+Desde o teu **Panel de administración da rede**, vai a **Plugins → Engadir novo plugin**.
 
-![Página Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
+![Páxina "Engadir novo plugin" do Panel de administración da rede](/img/installation/add-new-plugin.png)
 
-Busca **"Ultimate Multisite"** (con comillas para una coincidencia exacta) y aparecerá como el primer resultado. Haz clic en **Install Now** (Instalar ahora).
+Busca **"Ultimate Multisite"** (con comiñas para unha coincidencia exacta) e aparecerá como o primeiro resultado. Fai clic en **Instalar agora**.
 
-![Resultados de búsqueda mostrando Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Resultados da busca mostrando Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Una vez instalado, haz clic en **Network Activate** (Activar red) para activar el plugin en toda tu red.
+Unha vez instalado, fai clic en **Activar na rede** para activar o plugin en toda a túa rede.
 
-![Plugin instalado con botón Network Activate](/img/installation/plugin-installed.png)
+![Plugin instalado co botón "Activar na rede"](/img/installation/plugin-installed.png)
 
-Después de la activación, serás redirigido automáticamente al Asistente de Configuración (Setup Wizard).
+Despois da activación, serás redirixido automaticamente ao asistente de configuración.
 
-![Plugin activado y redirigido al asistente](/img/installation/plugin-activated.png)
+![Plugin activado e redirixido ao asistente](/img/installation/plugin-activated.png)
 
-## Asistente de Configuración (Setup Wizard)
+## Asistente de configuración
 
-El Asistente de Configuración te guiará a través de la configuración de Ultimate Multisite en unos 10 minutos.
+O asistente de configuración guiarache na configuración do Ultimate Multisite en aproximadamente 10 minutos.
 
-### Bienvenida
+### Benvida
 
-Haz clic en **Get Started** (Empezar) para comenzar.
+Fai clic en **Comezar** para comezar.
 
-![Pantalla de bienvenida del Setup Wizard](/img/installation/wizard-welcome.png)
+![Pantalla de benvida do asistente de configuración](/img/installation/wizard-welcome.png)
 
-### Verificaciones Preinstalación
+### Comprobacións previas á instalación
 
-Este paso comprueba la información de tu sistema y la instalación de WordPress para asegurarte de que cumple con los requisitos de Ultimate Multisite. Si todo parece correcto, haz clic en **Go to the Next Step** (Ir al siguiente paso).
+Este paso verifica a información do teu sistema e a instalación de WordPress para asegurarse de que cumpra os requisitos do Ultimate Multisite. Se todo parece correcto, fai clic en **Ir ao seguinte paso**.
 
-![Verificaciones preinstalación mostrando requisitos del sistema](/img/installation/wizard-pre-install-checks.png)
+![Comprobacións previas á instalación mostrando os requisitos do sistema](/img/installation/wizard-pre-install-checks.png)
 
-:::note Botón Activar Red (v2.6.1+)
-Se instaló Ultimate Multisite pero **aún no está activada en la red** — por ejemplo, si pulsaste **Activar** (sitio único) en vez de **Activar Red** desde la pantalla de plugins de red — el paso de Verificación Previa detectará esto y mostrará un botón de **Activar Red**.
+:::note Botón "Activar na rede" (v2.6.1+)
+Se Ultimate Multisite foi instalado pero **aínda non se activou na rede** — por exemplo, se fixeches clic en **Activar** (un só sitio) en lugar de **Activar na rede** desde a pantalla de plugins da rede —, o paso de comprobacións previas á instalación detectaráo e mostrará un botón **Activar na rede**.
 
-Al pulsar **Activar Red**, o activa o plugin ao todo o seu sistema multisite automáticamente. Uma vez activado, o wizard continúa normalmente para o paso de instalación. Non hai que sair do wizard para arratar o estado de activación.
+Facer clic en **Activar na rede** activa o plugin en toda a túa rede multisite automaticamente. Unha vez activado, o asistente continúa normalmente co paso de instalación. Non é necesario que abandones o asistente para solucionar o estado da activación.
 :::
 
 ### Instalación
 
-O instalador creará as tábulas de base de datos necesarias e instalará o ficheiro `sunrise.php` que Ultimate Multisite necesita para funcionar. Pulse **Instalar** para continuar.
+O instalador creará as táboas de base de datos necesarias e instalará o ficheiro `sunrise.php` que Ultimate Multisite necesita para funcionar. Fai clic en **Instalar** para continuar.
 
-![Paso de instalación mostrando tábulas de base de datos e sunrise.php](/img/installation/wizard-installation.png)
+![Paso de instalación mostrando as táboas da base de datos e sunrise.php](/img/installation/wizard-installation.png)
 
-### A Sua Empresa
+### A túa empresa
 
-Preencha a súa información da empresa e estableza a súa moeda predeterminada. Esta información será utilizada durante toda a súa plataforma WaaS. Pulse **Continuar** ao terminar.
+Introduce a información da túa empresa e define a túa moeda predeterminada. Esta información utilizarase en toda a túa plataforma WaaS. Fai clic en **Continuar** cando remates.
 
-![Paso de configuración da súa empresa](/img/installation/wizard-your-company.png)
+![Paso de configuración "A túa empresa"](/img/installation/wizard-your-company.png)
 
-### Contido Predefinido
+### Contido predeterminado
 
-Este paso permite instalar modelos, produtos e outro contido inicial predefinido. É unha gran forma de familiarizarse coas características de Ultimate Multisite. Pulse **Instalar** para añadir o contido predefinido, ou salte este paso se preferir empezar do zero.
+Este paso permíteche instalar modelos predefinidos, produtos e outro contido inicial. Esta é unha boa forma de familiarizarte coas funcións do Ultimate Multisite. Fai clic en **Instalar** para engadir o contido predeterminado ou omite este paso se prefires comezar desde cero.
 
-![Paso de instalación de contido predefinido](/img/installation/wizard-default-content.png)
+![Paso de instalación de contido predeterminado](/img/installation/wizard-default-content.png)
 
-### Plugins Recomendados
+### Plugins recomendados
 
-Instale opcionalmente os plugins compañeiros recomendados. Pulse **Instalar** para añádelos ou salte para continuar.
+Opcionalmente, instala os plugins complementarios recomendados. Fai clic en **Instalar** para engadilos ou omite este paso para continuar.
 
 ![Paso de plugins recomendados](/img/installation/wizard-recommended-plugins.png)
 
 ### Listo!
 
-¡Está feito! A súa instalación de Ultimate Multisite está completada. Agora podes empezar a construir a túa plataforma de Website as a Service desde o **Network Admin Dashboard**.
+Xa está! A túa instalación de Ultimate Multisite finalizou. Agora podes comezar a construír a túa plataforma de sitios web como servizo desde o **Panel de administración da rede**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Configuración completa - Pantalla "Listo"](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Panel de administración da rede con Ultimate Multisite activo](/img/installation/network-dashboard.png)
 
-¡Póntete en marcha e dónate a currar!
+Aproveita e divírtete!

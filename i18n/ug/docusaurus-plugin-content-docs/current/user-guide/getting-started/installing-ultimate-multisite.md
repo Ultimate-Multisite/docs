@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite yükleme
+title: Ultimate Multisite-نى قۇرۇش
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite نۆلشکردırma (Installing Ultimate Multisite)
+# Ultimate Multisite نىڭ قۇرۇلۇشى
 
-:::note
-این آموزش فرض می‌کند شما قبلاً وردپرس 멀티사이트 را نصب و تنظیم کرده‌اید. برای یادگیری چگونگی انجام این کار، لطفاً [این آموزش](https://www.wpbeginner.com/glossary/multisite/) از WP Beginner را ببینید.
+:::ئەسۋاس
+بۇ يېتەكچىدە سىز WordPress Multisite نىڭ ئالدىنلا قۇرۇلغانلىقىنى بىلدۈرىدۇ. ئۇنىڭ قېتىپ قېلىشنى بىلىش ئۈچۈن، WP Beginner تەرەپىدىن تارقاق قىلىنغان [بۇ يېتەكچى](https://www.wpbeginner.com/glossary/multisite/)نى كۆرۈڭ.
 :::
 
-## افزونه (Plugin) را نصب کنید
+## پلاگىننىڭ قۇرۇلۇشى
 
-Ultimate Multisite در [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) رایگان است.
+Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/)دا بېپۇل تەمىنلىنىدۇ.
 
-از **Network Admin Dashboard** خود، به مسیر **Plugins → Add New Plugin** بروید.
+**تارماق باشقارغۇچ داشبوردىڭىزدىن**، **Plugins → Add New Plugin**غا بارىڭ.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin بەتى](/img/installation/add-new-plugin.png)
 
-دنبال عبارت **"Ultimate Multisite"** (برای تطابق دقیق از نقل قول استفاده کنید) جستجو کنید و این اولین نتیجه خواهد بود. روی **Install Now** کلیک کنید.
+**"Ultimate Multisite"**نى (ئەينى تۈركۈشتە) ئىزدەڭ، ئۇ بىرىنچى نەتىجە سۈپىتىدە كۆرۈنۈپ چىقىدۇ. **Install Now** نى چېكىڭ.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Ultimate Multisite نى كۆرسىتىدىغان ئىزدەش نەتىجىلىرى](/img/installation/search-ultimate-multisite.png)
 
-پس از نصب، روی **Network Activate** کلیک کنید تا افزونه در کل شبکه شما فعال شود.
+قۇرۇلغاندىن كېيىن، پلاگىننى تارماقىڭىزنىڭ بارلىق بىر قىسىمىدا ئېچىش ئۈچۈن **Network Activate** نى چېكىڭ.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Network Activate تۇتمىقى بار بولغان قۇرۇلغان پلاگىن](/img/installation/plugin-installed.png)
 
-بعد از فعال‌سازی، به طور خودکار به راهنمای تنظیمات (Setup Wizard) هدایت خواهید شد.
+ئېچىلغاندىن كېيىن، سىز ئوتوماتىك ھالدا قۇرۇلۇش يۆلەكچىسىگە يۆتكىلىسىز.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![قۇرۇلۇپ، يۆلەكچىگە يۆتكىلىدىغان پلاگىن](/img/installation/plugin-activated.png)
 
-## راهنمای تنظیمات (Setup Wizard)
+## قۇرۇلۇش يۆلەكچىسى
 
-راهنمای تنظیمات در حدود ۱۰ دقیقه به شما کمک می‌کند تا Ultimate Multisite را پیکربندی کنید.
+قۇرۇلۇش يۆلەكچىسى سىزگە Ultimate Multisite نىڭ تەڭشىلىشىدە 10 مىنۇت ئىچىدە ياردەم بېرىدۇ.
 
-### خوش آمدید (Welcome)
+### باشلاش
 
-برای شروع، روی **Get Started** کلیک کنید.
+باشلىغىچە **Get Started** نى چېكىڭ.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![قۇرۇلۇش يۆلەكچىسىنىڭ باشلاش بەتى](/img/installation/wizard-welcome.png)
 
-### بررسی‌های پیش از نصب (Pre-install Checks)
+### ئالدىن تەكشۈرۈش
 
-این مرحله اطلاعات سیستم و نصب وردپرس شما را بررسی می‌کند تا مطمئن شویم با الزامات Ultimate Multisite مطابقت دارد. اگر همه چیز خوب به نظر می‌رسد، روی **Go to the Next Step** کلیک کنید.
+بۇ قەدەم سىزنىڭ سېستىمە ئۇچۇرلىرىڭىز ۋە WordPress قۇرۇلۇشىڭىزنى Ultimate Multisite نىڭ تەۋسەنلىرىگە ئۇيغۇن كېلىپ كەلمىدىمۇ دەپ تەكشۈرۈدۇ. ھەممىسى ياخشى بولسا، **Go to the Next Step** نى چېكىڭ.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![سېستىمە تەۋسەنلىرىنى كۆرسىتىدىغان ئالدىن تەكشۈرۈش](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate düğmeni (v2.6.1+)
-Ultimate Multisite o'rnatilgan, lekin hali **tarmoq faollashtirilmagan** bo'lsa — masalan, tarmoq pluginlari ekranidan **Network Activate** o'rniga **Activate** (single-site) tugmasini bosgan bo'lsangiz — Pre-install Checks qadamida bu holatni aniqlaydi va sizga **Network Activate** tugmasini ko'rsatadi.
+:::ئەسۋاس Network Activate تۇتمىقى (v2.6.1+)
+Ultimate Multisite قۇرۇلغان بولسىمۇ، لېكىن **يەنىلا تارماقتا ئېچىلمىغان** بولسا - مەسىلەن، سىز تارماق پلاگىنلىرىدىن تېخىمىچىلىك (single-site) قاچىلاش ئورنىغا **Activate** نى چېكتىڭىز - ئالدىن تەكشۈرۈش قەدەملىرى بۇنىڭنى بايقىپ، **Network Activate** تۇتمىقىنى كۆرسىتىدۇ.
 
-**Network Activate** tugmasini bosish pluginni butun multisite tarmoq bo'ylab avtomatik faollashtiradi. Faollashtirilgandan so'ng, wizard normal ravishda o'rnatish qadamiga davom etadi. Faollashtirish holatini tuzatish uchun siz wizarddan chiqishingiz shart emas.
+**Network Activate** نى چېكىڭ، ئۇ پلاگىننى تارماقتا ئوتوماتىك ھالدا ئېچىدۇ. ئېچىلغاندىن كېيىن، يۆلەكچى قۇرۇلۇش قەدەملىرىگە نورمال تەرىقىدىن داۋاملىشىدۇ. سىزنىڭ بۇنى تۈزىتىش ئۈچۈن يۆلەكچىدىن چىقىپ كېتىشىڭىز شارت ئەمەس.
 :::
 
-### O'rnatish (Installation)
+### قۇرۇلۇش
 
-Installer kerakli ma'lumotlar bazasi jadvallarini yaratadi va Ultimate Multisite ishlay olishi uchun zarur bo'lgan `sunrise.php` faylini o'rnatadi. Davom etish uchun **Install** tugmasini bosing.
+قۇرۇلما، زۆرۈر بولغان ماھىيەتلىك قائىدە ۋە Ultimate Multisite نىڭ ئىشتىن قىلىشى ئۈچۈن كېرەك بولغان `sunrise.php` پەيلنى ياسايدۇ. داۋاملاشتۇرۇش ئۈچۈن **Install** نى چېكىڭ.
 
-![O'rnatish qadamida ma'lumotlar bazasi jadvallari va sunrise.php ko'rsatilgan](/img/installation/wizard-installation.png)
+![ماھىيەتلىك قائىدە ۋە sunrise.php نى كۆرسىتىدىغان قۇرۇلۇش قەدەملىرى](/img/installation/wizard-installation.png)
 
-### Sizning Kompaniyangiz (Your Company)
+### سىزنىڭ شىركىتىىڭىز
 
-Kompaniya ma'lumotlaringizni to'ldiring va default valyutani belgilang. Bu ma'lumotlar WaaS platformangiz davomida ishlatiladi. Barcha narsani tugatganingizda **Continue** tugmasini bosing.
+شىركىتىڭىز ھەققىدىكى ئۇچۇرلارنى تولدۇرۇڭ ۋە ئادەتتىكى پۇل بېلىمىنى بەلگىلىڭ. بۇ ئۇچۇر سىزنىڭ WaaS پلاتفورماڭىزدا ئىشلىتىلىدۇ. بولغاندىن كېيىن **Continue** نى چېكىڭ.
 
-![Sizning kompaniya konfiguratsiya qadam](/img/installation/wizard-your-company.png)
+![سىزنىڭ شىركىتىىڭىز تەڭشىلىشى قەدەملىرى](/img/installation/wizard-your-company.png)
 
-### Default Kontent (Default Content)
+### ئادەتتىكى ئۇقۇم
 
-Bu qadam sizga oldindan belgilangan shablonlarni, mahsulotlarni va boshqa boshlovchi kontentni o'rnatish imkonini beradi. Bu Ultimate Multisite xususiyatlari bilan tanishishning ajoyib yo'li. Default kontentni qo'shish uchun **Install** tugmasini bosing, yoki boshidan boshlashni afzal ko'rsangiz bu qadamdan o'ting.
+بۇ قەدەم سىزگە ئالدىن بېلىگىلەنگەن تېمپلاتلار، مەھسۇللار ۋە باشقا باشلانغۇچ ئۇقۇملارنى قۇرۇشقا ياردەم بېرىدۇ. بۇ Ultimate Multisite نىڭ ئىقتىدارلىقى بىلەن تونۇشىشنىڭ ياخشى ۋاسىتەسىدۇر. ئادەتتىكى ئۇقۇمنى قوشۇش ئۈچۈن **Install** نى چېكىڭ، يەكى ئەگەر سىز باشقا تۇرتۇم قۇرماقچى بولسىڭىز، بۇ قەدەمگە ئۆتۈپ كېتىڭ.
 
-![Default kontentni o'rnatish qadami](/img/installation/wizard-default-content.png)
+![ئادەتتىكى ئۇقۇمنى قۇرۇش قەدەملىرى](/img/installation/wizard-default-content.png)
 
-### Tavsiya Etilgan Pluginlar (Recommended Plugins)
+### تەۋسىيە قىلىنغان پلاگىنلار
 
-Tavsiya etilgan qo'shimcha pluginlarni ixtiyoriy ravishda o'rnating. Ularni qo'shish uchun **Install** tugmasini bosing yoki davom etish uchun tashlang.
+ئىختىيارلىق ھالدا، تەۋسىيە قىلىنغان ياردەمچى پلاگىنلارنى قۇرۇڭ. ئۇلارنى قوشۇش ئۈچۈن **Install** نى چېكىڭ ياكى داۋاملاشتۇرۇڭ.
 
-![Tavsiya etilgan pluginlar qadami](/img/installation/wizard-recommended-plugins.png)
+![تەۋسىيە قىلىنغان پلاگىنلار قەدەملىرى](/img/installation/wizard-recommended-plugins.png)
 
-### Tayyormiz! (Ready!)
+### تەييار!
 
-Ҳамсё, сизнинг Ultimate Multisite ўрнатилишингиз тугади. Энди **Network Admin Dashboard** орқали Веб-сайтни Хизмат сифати (Website as a Service) платформаси сифати қуришга бошлай аласыз.
+شۇنىڭ بىلەن بولدى! سىزنىڭ Ultimate Multisite قۇرۇلۇشى توغرىلىدى. ھېزىڭىزنى **Network Admin Dashboard**تىن Website as a Service پلاتفورماڭىزنى ياساشقا باشلايسىز.
 
-![Установка тугади - Тайёрлаш экрани](/img/installation/wizard-ready.png)
+![قۇرۇلۇش تاماملاندى - تەييار بولغان بەت](/img/installation/wizard-ready.png)
 
-![Ultimate Multisite фаоллаштирилган Network Admin Dashboard](/img/installation/network-dashboard.png)
+![Ultimate Multisite ئېچىلغان Network Admin Dashboard](/img/installation/network-dashboard.png)
 
-Энди ўйинлашинг!
+ئۆزىڭىزنىڭ قىزىقىشىڭىزنى ئىزدەپ كۆرۈڭ!

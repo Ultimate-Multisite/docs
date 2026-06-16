@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite نصب ڪرڻ
+title: الٽميٽ ملٽي سائٽ جي تنصيب
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite انسٹال ڪرڻ
+# الٽيميٽ ملٽي سائيٽ جي انسٽاليشن
 
-:::note
-هي ट्यूटोरियल मान्नु छ कि तपाईँसँग पहिले नै WordPress Multisite इन्स्टल र सेट गरिएको छ। कसरी गर्ने जान्नको लागि, WP Beginner को [यो ट्यूटोरियल](https://www.wpbeginner.com/glossary/multisite/) हेर्नुहोस्।
+:::نوٽ
+هي ٽيوٽوريل فرض ڪري ٿو ته توهان وٽ اڳ ۾ ئي ورڊ پريس ملٽي سائيٽ انسٽال ۽ ڪانفيگر ٿيل آهي. اهو ڪرڻ جي معلومات لاءِ، WP بيگنر پاران [هن ٽيوٽوريل](https://www.wpbeginner.com/glossary/multisite/) چيڪ ڪريو.
 :::
 
-## प्लगइन इन्स्टल गर्नु
+## پلگ ان جي انسٽاليشن
 
-Ultimate Multisite मुफ्री रूपमा [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) मा उपलब्ध छ।
+الٽيميٽ ملٽي سائيٽ مفت ۾ [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) تي دستياب آهي.
 
-तपाईंको **Network Admin Dashboard** बाट, जानुहोस्: **Plugins → Add New Plugin**.
+پنھنجي **نيٽ ورڪ اڊمن ڊاش بورڊ** مان، **پلگ انز → نئون پلگ ان شامل ڪريو** وڃو.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![نيٽ ورڪ اڊمن نئون پلگ ان صفحا](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (सटीक मिलानका लागि उद्धरण चिह्न राखेर खोज्नुहोस्) खोज्नुहोस् र यो पहिलो नतिजाको रूपमा देखिनेछ। **Install Now** मा क्लिक गर्नुहोस्।
+**"الٽيميٽ ملٽي سائيٽ"** (بيھتر ميچ لاءِ ڪوٽس سان) ڳولجو ۽ اهو پهريون نتيجو طور ظاهر ٿيندو. **هاڻي انسٽال ڪريو** تي ڪلڪ ڪريو.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![نتيجن ۾ الٽيميٽ ملٽي سائيٽ ڏيکاريل آهي](/img/installation/search-ultimate-multisite.png)
 
-इन्स्टल भएपछि, सम्पूर्ण नेटवर्कमा प्लगइन सक्रिय गर्न **Network Activate** मा क्लिक गर्नुहोस्।
+هوءَ انسٽال ٿيڻ کان پوءِ، پلگ ان کي پنهنجي سڀني نيٽ ورڪ تي هلائڻ لاءِ **نيٽ ورڪ هلائڻ** تي ڪلڪ ڪريو.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![انسٽال ٿيل پلگ ان ۽ نيٽ ورڪ هلائڻ واري بٽڻ](/img/installation/plugin-installed.png)
 
-सक्रिय गरेपछि, तपाईँलाई स्वचालित रूपमा Setup Wizard मा पठाइनेछ।
+هلائڻ کان پوءِ، توهان خودڪار طريقي سان سيٽ اپ وزرڊ ڏانهن ريڊائرڪٽ ڪيو ويندو.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![پلگ ان هلائي ۽ وزرڊ ڏانهن ريڊائرڪٽ ٿيو](/img/installation/plugin-activated.png)
 
-## सेटअप विजरड (Setup Wizard)
+## سيٽ اپ وزرڊ
 
-सेटअप विजरडले तपाईंलाई लगभग १० मिनेटमा Ultimate Multisite कन्फिगर गर्न मद्दत गर्नेछ।
+سيٽ اپ وزرڊ توهان کي الٽيميٽ ملٽي سائيٽ کي 10 منٽن ۾ ڪانفيگر ڪرڻ جي عمل ۾ هدايت ڪندو.
 
-### स्वागत (Welcome)
+### خوش آمديد
 
-शुरू गर्न **Get Started** मा क्लिक गर्नुहोस्।
+شروع ڪرڻ لاءِ **شروع ڪريو** تي ڪلڪ ڪريو.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![سيٽ اپ وزرڊ خوش آمديد اسڪرين](/img/installation/wizard-welcome.png)
 
-### इन्स्टल गर्नुअघि जाँचहरू (Pre-install Checks)
+### اڳي کان چيڪ
 
-यो चरणले तपाईँको सिस्टम जानकारी र WordPress इन्स्टल गरिएको अवस्था जाँच गर्छ ताकि यो Ultimate Multisite को माग पूरा गरिरहेको छ कि छैन, हेर्न सकिन्छ। यदि सबै राम्रो देखिन्छ भने, **Go to the Next Step** मा क्लिक गर्नुहोस्।
+هي قدم توهان جي سسٽم جي معلومات ۽ ورڊ پريس انسٽاليشن کي چيڪ ڪري ٿو ته اهو الٽيميٽ ملٽي سائيٽ جي ضرورتن سان گڏ آهي يا نه. جيڪڏهن سڀ ڪجهه مڪمل آهي، پوءِ **اڳيون قدم ڏانهن وڃو** تي ڪلڪ ڪريو.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![سيٽ اپ کان اڳ چيڪ ۾ سسٽم جون ضرورتون ڏيکاريل آهن](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate बटन (v2.6.1+)
-যদি Ultimate Multisite ইনস্টল করা থাকে কিন্তু **এখনও নেটওয়ার্ক অ্যাক্টিভেট না করা হয়ে থাকে** — যেমন, আপনি নেটওয়ার্ক প্লাগইন স্ক্রিন থেকে **Network Activate** এর বদলে **Activate** (single-site) ক্লিক করে থাকেন — তাহলে Pre-install Checks ধাপটি এটি সনাক্ত করবে এবং একটি **Network Activate** বাটন দেখাবে।
+:::نوٽ نيٽ ورڪ هلائڻ واري بٽڻ (v2.6.1+)
+جيڪڏهن الٽيميٽ ملٽي سائيٽ انسٽال ٿي چڪي آهي پر اڃا تائين نيٽ ورڪ تي هلائي نه ويا آهن - مثال طور، جيڪڏهن توهان **هلائڻ** (سنگل سائيٽ) تي ڪلڪ ڪيو آهي ان جي بدرد ۾ ته **نيٽ ورڪ هلائڻ** نيٽ ورڪ پلگ انز اسڪرين کان - سيٽ اپ کان اڳ چيڪ قدم اهو ڏسي ۽ هڪ **نيٽ ورڪ هلائڻ واري بٽڻ** ظاهر ڪري ٿو.
 
-**Network Activate** ক্লিক করলে আপনার পুরো মাল্টিসাইট নেটওয়ার্কে প্লাগইনটি স্বয়ংক্রিয়ভাবে অ্যাক্টিভেট হয়ে যাবে। একবার অ্যাক্টিভেট হলে, উইজার্ড স্বাভাবিকভাবে ইনস্টলেশন ধাপে চলে যাবে। অ্যাক্টিভেশন অবস্থা ঠিক করার জন্য আপনাকে উইজার্ড থেকে বের হতে হবে না।
+**نيٽ ورڪ هلائڻ** تي ڪلڪ ڪرڻ سان پلگ ان کي خودڪار طريقي سان توهان جي سڀني ملٽي سائيٽ نيٽ ورڪ تي هلائيندو آهي. هلائڻ کان پوءِ، وزرڊ عام طور تي انسٽاليشن قدم ڏانهن وڌندو آهي. توهان کي هلائڻ جي حالت کي صحيح ڪرڻ لاءِ وزرڊ ڇڏڻ جي ضرورت ناهي.
 :::
 
-### ইনস্টলেশন (Installation)
+### انسٽاليشن
 
-ইনস্টলার প্রয়োজনীয় ডেটাবে টেবিল তৈরি করবে এবং Ultimate Multisite-এর কাজ করার জন্য `sunrise.php` ফাইলটি ইনস্টল করবে। এগিয়ে যাওয়ার জন্য **Install** ক্লিক করুন।
+انسٽالر ضروري ڊيٽابيس ٽيبلن کي بڻائي ۽ `sunrise.php` فائل انسٽال ڪندو جنهن جي ضرورت الٽيميٽ ملٽي سائيٽ کي هلائڻ لاءِ آهي. اڳتي وڌڻ لاءِ **انسٽال ڪريو** تي ڪلڪ ڪريو.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![انسٽاليشن قدم ۾ ڊيٽابيس ٽيبلن ۽ sunrise.php ڏيکاريل آهن](/img/installation/wizard-installation.png)
 
-### আপনার কোম্পানি (Your Company)
+### توهان جي ڪمپني
 
-আপনার কোম্পানির তথ্য পূরণ করুন এবং আপনার ডিফল্ট কারেন্সি সেট করুন। এই তথ্যটি আপনার WaaS প্ল্যাটফর্ম জুড়ে ব্যবহার করা হবে। কাজ শেষ হলে **Continue** ক্লিক করুন।
+پنھنجي ڪمپني جي معلومات ڀريو ۽ پنھنجي ڊفالٽ ڪرنسي سيٽ ڪريو. ھن معلومات کي توھان جي WaaS پليٽ فارم ۾ استعمال ڪيو ويندو. ٿيڻ کان پوءِ **جاري رکو** تي ڪلڪ ڪريو.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![توهان جي ڪمپني جي ڪانفيگيوريشن قدم](/img/installation/wizard-your-company.png)
 
-### ডিফল্ট কন্টেন্ট (Default Content)
+### ڊفالٽ مواد
 
-এই ধাপে আপনি আগে থেকে তৈরি টেমপ্লেট, প্রোডাক্ট এবং অন্যান্য স্টার্টার কন্টেন্ট ইনস্টল করতে পারবেন। Ultimate Multisite-এর ফিচারগুলো সম্পর্কে পরিচিত হওয়ার এটি একটি দারুণ উপায়। ডিফল্ট কন্টেন্ট যোগ করতে **Install** ক্লিক করুন, অথবা যদি আপনি একদম নতুন করে শুরু করতে চান তবে এই ধাপটি এড়িয়ে যেতে পারেন।
+هي قدم توهان کي پيشه ور مضمون، پراڊڪٽس ۽ ٻيا شروع ڪرڻ وارا مواد انسٽال ڪرڻ جي اجازت ڏئي ٿو. هي الٽيميٽ ملٽي سائيٽ جي خاصيتن سان واقف ٿيڻ جو عظيم طريقو آهي. ڊفالٽ مواد شامل ڪرڻ لاءِ **انسٽال ڪريو** تي ڪلڪ ڪريو، يا جيڪڏهن توهان شروع کان شروع ڪرڻ چاهيو ٿا ته هي قدم وسائي ڇڏيو.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![ڊفالٽ مواد جي انسٽاليشن قدم](/img/installation/wizard-default-content.png)
 
-### প্রস্তাবিত প্লাগইন (Recommended Plugins)
+### تجويز ڪيل پلگ انز
 
-ঐচ্ছিকভাবে প্রস্তাবিত সহযোগী প্লাগইনগুলো ইনস্টল করুন। সেগুলোকে যোগ করতে **Install** ক্লিক করুন অথবা চালিয়ে যাওয়ার জন্য এটি এড়িয়ে যান।
+مڪمل ڪرڻ وارا تجويز ڪيل پلگ انز اختيار ڪريو. انهن کي شامل ڪرڻ لاءِ **انسٽال ڪريو** تي ڪلڪ ڪريو يا جاري رکو.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![تجويز ڪيل پلگ انز قدم](/img/installation/wizard-recommended-plugins.png)
 
-### প্রস্তুত!
+### تيار!
 
-هي بس! توهان جو Ultimate Multisite installation مکمل ڪري ڇڏيو آهي. اها وقت اچي وئي آهي ته توهان **Network Admin Dashboard** کان توهان جي Website as a Service platform کي بنانا شروع ڪري سگهو ٿا.
+بس، توهان جي الٽيميٽ ملٽي سائيٽ جي انسٽاليشن مڪمل ٿي چڪي آهي. هاڻي توهان پنهنجو ويبسائيٽ اسٽاروڙ سروس پليٽ فارم **نيٽ ورڪ اڊمن ڊاش بورڊ** کان بڻائڻ شروع ڪري سگهو ٿا.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![سيٽ اپ مڪمل - تيار اسڪرين](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![نيٽ ورڪ اڊمن ڊاش بورڊ جنهن ۾ الٽيميٽ ملٽي سائيٽ هلندي آهي](/img/installation/network-dashboard.png)
 
-جنهن سان مزا ڪندا!
+مزيد مزو ڪريو!

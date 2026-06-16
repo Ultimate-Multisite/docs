@@ -1,86 +1,86 @@
 ---
-title: Shigarwa Ultimate Multisite
+title: Sanya Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# نصب Ultimate Multisite
+# Shigar da Ultimate Multisite
 
 :::note
-این آموزش فرض می‌کند شما قبلاً WordPress Multisite را نصب و پیکربندی کرده‌اید. برای یادگیری چگونگی انجام این کار، به [این آموزش](https://www.wpbeginner.com/glossary/multisite/) توسط WP Beginner مراجعه کنید.
+Wannan koyawa tana ɗauka cewa an riga an shigar da kuma tsara WordPress Multisite. Don koyon yadda ake yi, duba wannan koyawa [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) daga WP Beginner.
 :::
 
-## نصب پلاگین
+## Shigar da Plugin ɗin
 
-Ultimate Multisite رایگان در [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) موجود است.
+Ultimate Multisite yana samuwa kyauta a [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-از **Network Admin Dashboard** خود، به مسیر **Plugins → Add New Plugin** بروید.
+Daga **Network Admin Dashboard** ɗinka, je zuwa **Plugins → Add New Plugin**.
 
-![صفحه افزودن پلاگین مدیر شبکه](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
 
-دنبال عبارت **"Ultimate Multisite"** (با نقل قول برای تطابق دقیق) جستجو کنید و این در اولین نتیجه ظاهر می‌شود. روی **Install Now** کلیک کنید.
+Neman **"Ultimate Multisite"** (tare da alamar tambaya don samun sakamako daidai) kuma zai bayyana a matsayin sakamakon farko. Danna **Install Now**.
 
-![نتایج جستجو که Ultimate Multisite را نشان می‌دهد](/img/installation/search-ultimate-multisite.png)
+![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-پس از نصب، روی **Network Activate** کلیک کنید تا پلاگین را در کل شبکه خود فعال کنید.
+Da zarar an shigar, danna **Network Activate** don kunna plugin ɗin a duk hanyoyin sadarwa.
 
-![پلاگین با دکمه Network Activate نصب شده است](/img/installation/plugin-installed.png)
+![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
 
-بعد از فعال‌سازی، شما به طور خودکار به راهنمای تنظیمات (Setup Wizard) هدایت خواهید شد.
+Bayan kunna shi, za a kai ku ta atomatik zuwa Setup Wizard.
 
-![پلاگین فعال شده و به wizard هدایت شده است](/img/installation/plugin-activated.png)
+![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
 
-## راهنمای تنظیمات (Setup Wizard)
+## Setup Wizard
 
-راهنمای تنظیمات، شما را در حدود ۱۰ دقیقه در پیکربندی Ultimate Multisite راهنمایی می‌کند.
+Setup Wizard zai jagorantar ku wajen tsara Ultimate Multisite cikin mintuna 10.
 
-### خوش آمدید (Welcome)
+### Barka da Zuwa
 
-برای شروع، روی **Get Started** کلیک کنید.
+Danna **Get Started** don fara.
 
-![صفحه خوش‌آمدگویی راهنمای تنظیمات](/img/installation/wizard-welcome.png)
+![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
 
-### بررسی‌های پیش از نصب (Pre-install Checks)
+### Duba Kafin Shigar
 
-این مرحله اطلاعات سیستم و نصب وردپرس شما را بررسی می‌کند تا مطمئن شود با الزامات Ultimate Multisite مطابقت دارد. اگر همه چیز خوب به نظر می‌رسد، روی **Go to the Next Step** کلیک کنید.
+Wannan mataki yana duba bayanan tsarin ku da shigar WordPress don tabbatar da cewa ya bi ka'idojin Ultimate Multisite. Idan komai yana da kyau, danna **Go to the Next Step**.
 
-![بررسی‌های پیش از نصب که نیازهای سیستمی را نشان می‌دهد](/img/installation/wizard-pre-install-checks.png)
+![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
 
-:::note Tuƙkar "Network Activate" button (v2.6.1+)
-Idan Ultimate Multisite an installa amma **ba aka fi a ƙirƙirar hanyar sadarwa ba** — misali, idan ka danna **Activate** (single-site) maimakon **Network Activate** daga matsalar plugin na network — matakin Bincike na Wurin Shigarwa zai gani wannan kuma ya nuna maka babban mai danna "Network Activate".
+:::note Maɓallin Network Activate (v2.6.1+)
+Idan an shigar da Ultimate Multisite amma ba a kunna shi a duk hanyoyin sadarwa ba — alal misali, idan kun danna **Activate** (shiga ɗaya) maimakon **Network Activate** daga allon plugins na hanyoyin sadarwa — matakin Duba Kafin Shigar zai gano wannan kuma ya nuna maɓallin **Network Activate**.
 
-Danna "Network Activate" zai fi ƙirƙirar plugin a duk wajen multisite ɗinka ko'ina kai tsaye. Bayan an fi aiki, wanda zai ci gaba da matakin shigarwa yadda ya kamata. Ba dole ba ka tafi daga wannan binciken don gyara yanayin fi aiki.
+Danna **Network Activate** yana kunna plugin ɗin a duk hanyoyin sadarwar ku ta atomatik. Da zarar an kunna shi, wizard ɗin zai ci gaba da al'ada zuwa matakin shigar. Ba kwa buƙatar barin wizard ɗin don gyara yanayin kunna.
 :::
 
-### Shigarwa (Installation)
+### Shigar
 
-Mai shigarwa zai ƙirƙiro jadawalin database na buƙatar da ita kuma ya install fayil `sunrise.php` wanda Ultimate Multisite ke bukata don aiki. Danna **Install** don ci gaba.
+Mai shigar zai ƙirƙiri tebur ɗin bayanai da ake buƙata kuma ya shigar da fayil ɗin `sunrise.php` wanda Ultimate Multisite ke buƙata don aiki. Danna **Install** don ci gaba.
 
-![Matakin shigarwa yana nuna jadawalin database da sunrise.php](/img/installation/wizard-installation.png)
+![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
 
-### Kamfaninka (Your Company)
+### Kamfaninka
 
-Ka cika bayanan kamfaninka kuma ka sanya kuɗin da kake amfani da shi a matsayin na asali. Wannan bayanai za a yi amfani da shi a duk manhajar WaaS ɗinka. Danna **Continue** lokacin da ka gama.
+Ka cika bayanan kamfaninka kuma ka saita kuɗin da ake amfani da shi. Za a yi amfani da wannan bayanin a duk faɗin tsarin WaaS ɗinka. Danna **Continue** idan kun gama.
 
-![Matakin tsara Kamfaninka](/img/installation/wizard-your-company.png)
+![Your Company configuration step](/img/installation/wizard-your-company.png)
 
-### Abubuwan Asali (Default Content)
+### Abubuwan Da Aka Sanya A Asali
 
-Wannan mataki zai ba ka damar shigar da mallakan shabillan da aka tayar da, kayayyaki, da wasu abubuwa na farko. Wannan hanya ce mai kyau don samun amfani da ƙarin ƙwarewa a cikin siffolin Ultimate Multisite. Danna **Install** don ƙara abubuwan asali, ko ka tafi ba shi idan kana son fara daga asali.
+Wannan mataki yana ba ku damar shigar da samfuran, da sauran abubuwan da ake amfani da su a farko. Wannan hanya ce mai kyau don sanin yadda ake amfani da fasalolin Ultimate Multisite. Danna **Install** don ƙara abubuwan da aka sanya a asali, ko kuma bar wannan mataki idan kuna son fara daga baya.
 
-![Matakin shigar da abubuwan asali](/img/installation/wizard-default-content.png)
+![Default content installation step](/img/installation/wizard-default-content.png)
 
-### Pluginin da aka Ba da Shawara (Recommended Plugins)
+### Plugins Da Aka Ba Shawara
 
-Zai iya shigar da wasu pluginin da aka ba da shawara a matsayin na biyu. Danna **Install** don ƙara su ko ka tafi ba shi don ci gaba.
+Zaɓi shigar da plugins ɗin da ake ba shawara. Danna **Install** don ƙara su ko kuma bar wannan mataki don ci gaba.
 
-![Matakin pluginin da aka ba da shawara](/img/installation/wizard-recommended-plugins.png)
+![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
 
-### Aiki! (Ready!)
+### An Gama!
 
-Kada ya yi! Shigar da ake gina Ultimate Multisite ɗinka ya kammala. Yanzu za ka iya fara gina shafin ka a matsayin wajen sabis (Website as a Service platform) ta **Network Admin Dashboard**.
+An gama! Shigarwa na Ultimate Multisite ya kammala. Yanzu za ku iya fara gina tsarin Website as a Service ɗinku daga **Network Admin Dashboard**.
 
 ![Setup complete - Ready screen](/img/installation/wizard-ready.png)
 
 ![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
 
-Yanzu ka fara sha'awar!
+Ku ci gaba kuma ku yi amfani da shi!

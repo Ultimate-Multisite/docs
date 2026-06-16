@@ -1,86 +1,86 @@
 ---
-title: A' chluainteach Ultimate Multisite
+title: A’ stàladh an Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Aistalladh Ultimate Multisite
+# A’ stàladh an Ultimate Multisite
 
 :::note
-Tha an tòr-lughinn seo a' tuilleadh a' tuilleadh gu cunntas air WordPress Multisite a' stiall agus a' sgrùdadh. Tha eadar-fhaighinn na chuid a' tuilleadh seo, tha thuair a' tuilleadh seo (check out [an tòr-lughinn seo](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner).
+Tha am teachdaireachd seo a’ cur gu làimh rium nach eil an WordPress Multisite air a stàladh agus a chur air dòigh. Gus faighinn a-mach mar, thèidibh chun [am teachdaireachd seo](https://www.wpbeginner.com/glossary/multisite/) le WP Beginner.
 :::
 
-## Aistalladh an Tuilleadh (Plugin)
+## A’ stàladh an Plugin
 
-Tha Ultimate Multisite aig fada free ar [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Tha an Ultimate Multisite rim faotainn an-asgaidh air [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-No **Network Admin Dashboard** agad, ràdh an t-sealladh: **Plugins → Add New Plugin**.
+Bho **Dashboard Riaghlaiche a’ lìonra**, rach gu **Plugins → Cuir ris plugin ùr**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Duilleag Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Gabhail a' chluarach **"Ultimate Multisite"** (le comharrach airson a' chluarach sin) agus tha e ag tòiseachadh gu am beag. Chluich ar **Install Now**.
+Searbh air son **"Ultimate Multisite"** (le comharran airson co-fhreagairt dìreach) agus nochdaidh e mar a’ chiad thoradh. Cliodhnich **Stàladh A-nis**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Na toraidhean sgrùdaidh a’ sealltainn an Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Tha e air aistalladh, lughich ar **Network Activate** chun an tuilleadh a' sgrùdadh air an t-sealladh fada.
+Nuair a stàladaidh e, cliòdhnich **Cuir air bhog airson a’ lìonra** gus am plugin a chuir gu gnìomh air feadh a’ lìonra agad.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![An plugin air a stàladh le putan Network Activate](/img/installation/plugin-installed.png)
 
-Tha eair a sgrùdadh, tha thuair a' tuilleadh seo a' sgrùdadh gu mbeidh e air a' sgrùdadh.
+Às deidh a bhith air a chur gu gnìomh, gheibh thu ath-stiùireadh gu fèin-bhoidheachad.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![An plugin air a chuir gu gnìomh agus air ath-stiùireadh chun neach-buidhne](/img/installation/plugin-activated.png)
 
-## Aistalladh an Tòr-lughinn (Setup Wizard)
+## Neach-buidhne
 
-Tha an Tòr-lughinn a' tuilleadh gu leithidh dhut a' sgrùdadh Ultimate Multisite air am beag 10 minut.
+Bidh an Neach-buidhne gad threòrach tro bhith a’ cur air dòigh an Ultimate Multisite ann am 10 mionaidan.
 
-### Bheannachadh (Welcome)
+### Fàilte
 
-Chluich ar **Get Started** chun a' chomharrachadh a' fháil a' sgrùdadh.
+Cliodhnich **Tòisich** gus tòiseachadh.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Sgrìn fàilte an Neach-buidhne](/img/installation/wizard-welcome.png)
 
-### Cneachd a' stiùireach (Pre-install Checks)
+### Sgrùdaidhean ro-stàladh
 
-Tha an stiùireach seo ag ceannach air faicinn eair a' chàrachadh a' chuid a' tuilleadh agus WordPress chun a' faicinn gu bheil e a' ghràdhach airson Ultimate Multisite. Tha eair a' sgrùdadh, lughich ar **Go to the Next Step**.
+Tha am ceum seo a’ sgrùdadh do fhiosrachas siostaim agus stàladh WordPress gus dèanamh cinnteach gu bheil e a’ coinneachadh ri riatanasan an Ultimate Multisite. Ma tha a h-uile càil coltach gu math, cliòdhnich **Rachaibh chun ath cheum**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Sgrùdaidhean ro-stàladh a’ sealltainn riatanasan siostaim](/img/installation/wizard-pre-install-checks.png)
 
-:::note Bottair an nút "Network Activate" (v2.6.1+)
-Tha Ultimate Multisite wedi' sgairta ach **cha tha a' tòiseachadh air na ngrath** — mar a tha eisimpleir, mar a bha thu a' tòiseachadh air **Activate** (single-site) gu leathanach plugin de network a stiall a' tòiseachadh air **Network Activate** frum sealladh plugin de network — beidh an stiùr Pre-install Checks a faicinn sin agus salaidh un nút **Network Activate**.
+:::note Putan Network Activate (v2.6.1+)
+Ma chaidh stàladh an Ultimate Multisite ach **cha deach a chuir gu gnìomh airson a’ lìonra fhathast** - mar eisimpleir, ma chliodhnich thu **Cuir air bhog** (làrach-lìn singilte) an àite **Network Activate** bho na plugins lìonra - bidh am ceum Sgrùdaidhean ro-stàladh a’ faicinn seo agus a’ nochdadh putan **Network Activate**.
 
-Tha a' tòiseachadh air **Network Activate** a' tòiseachadh an plugin air pàirtneachd a' chùlchnaich. An sin, tha an sealladh a' tòiseachadh gu nàdar air an stiùr de sgairta. Cha thu a' tòiseachadh air an sealladh airson a' leughadh an stat de tòiseachadh.
+Ma chliodhnich thu **Network Activate**, tha e gad chuir gu gnìomh air feadh a’ lìonra agad. Nuair a thèid a chur gu gnìomh, bidh an neach-buidhne ag itheadh gu nàdarrach chun ceum stàlaidh. Chan fheumar dhut fhàgail an neach-buidhne gus am faigh thu deagh dheidhinn air an t-stàit gnìomh.
 :::
 
-### Sgairta (Installation)
+### Stàladh
 
-Bhaidh an stiùr a' tòiseachadh na tablaiche de database sin sin agus a stiall an latha `sunrise.php` a tha Ultimate Multisite ag iarraidh airson a' obairt. Cha thu a' tòiseachadh air **Install** airson a' tòiseachadh.
+Bidh an inneal-stàlaidh a’ cruthachadh na h-ùbhlar stòr riatanach agus a’ stàladh am faidhle `sunrise.php` a tha feum aig an Ultimate Multisite airson obrachadh. Cliodhnich **Stàladh** gus a dhol air adhart.
 
-![Scthaid sgairta a' tòiseachadh tablaiche de database agus sunrise.php](/img/installation/wizard-installation.png)
+![Ceum stàlaidh a’ sealltainn ùbhlar stòr agus sunrise.php](/img/installation/wizard-installation.png)
 
-### An Dàrraidh Chanachair (Your Company)
+### Do Chompanaidh
 
-Gaisidh thu an fòcas de dhìonchas chompanyair a tha thu agus sealladh curtha air a' chùlchnaich. Baidh an fòcas seo a' sgairdeadh air a' chùlchnaich. Cha thu a' tòiseachadh air **Continue** nuair a tharraing thu.
+Lìon fiosrachas do chompanaidh agus cuir air dòigh an t-airgead gnàthach. Cleachdar am fiosrachas seo air feadh a’ phlataform WaaS agad. Cliodhnich **Lean air adhart** nuair a bhios tu deòilte.
 
-![Scthaid curtha air an dàrraidh chanachair](/img/installation/wizard-your-company.png)
+![Ceum rèiteachadh do Chompanaidh](/img/installation/wizard-your-company.png)
 
-### Contagat (Default Content)
+### Stuth Gnàthach
 
-Tha an stiùr seo ag leughadh a' tòiseachadh chàrrtainn de dhìonchas, eòganacha, agus curtha chàrrtainn de luchd air a' tòiseachadh. Tha seo a' tòiseachadh gu mhath airson a bhith a' faicinn air feàinean Ultimate Multisite. Cha thu a' tòiseachadh air **Install** airson curtha an dàrraidh chàrrtainn de dhìonchas, no cha thu a' tòiseachadh air an stiùr seo mar a tha thu a' tòiseachadh gu nàdar.
+Leigidh am ceum seo leat teimplidean, toraidhean agus stuth tòiseachaidh eile a stàladh. Is dòcha gum bi sin mar dhòigh mhath air fiosrachadh mu dheidhinn feartan an Ultimate Multisite. Cliodhnich **Stàladh** gus am stuth gnàthach a chuir ris, no leig às an ceum seo ma tha thu airson tòiseachadh bho thùs.
 
-![Scthaid sgairta curtha air an dàrraidh chàrrtainn de dhìonchas](/img/installation/wizard-default-content.png)
+![Ceum stàlaidh stuth gnàthach](/img/installation/wizard-default-content.png)
 
-### Plugin De Rèidh (Recommended Plugins)
+### Plugins air a mholadh
 
-Cha thu a' tòiseachadh air a stiall plugin de pàirtneachd a tha a' tòiseachadh. Cha thu a' tòiseachadh air **Install** airson a' tòiseachadh, no cha thu a' tòiseachadh air an stiùr seo.
+Cuir air bhog plugins co-rèireamh air am moladh, ma tha thu airson sin a dhèanamh. Cliodhnich **Stàladh** gus an cur ris no leig às gus lean air adhart.
 
-![Scthaid plugin de rèidh](/img/installation/wizard-recommended-plugins.png)
+![Ceum plugins air a mholadh](/img/installation/wizard-recommended-plugins.png)
 
-### Rèidh!
+### Deòilte!
 
-Se cheann! Tha an t-sìleadh agad de **Ultimate Multisite** a th'annach. Lá thu le fhirinn a th'annach airson a bhith a' tòiseachadh air a' sgeuladh e-siteachd (Website as a Service) a' chluainteachd a' chùl **Network Admin Dashboard**.
+Sin e! Tha stàladh an Ultimate Multisite agad deòilte. Faodaidh tu tòiseachadh a-nis air togail do phlataform Làrach-lìn mar Sheirbheis bho **Dashboard Riaghlaiche a’ lìonra**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Stàladh deòilte - Sgrìn Deòilte](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Dashboard Riaghlaiche a’ lìonra le Ultimate Multisite air a chuir gu gnìomh](/img/installation/network-dashboard.png)
 
-Tha thu a' tòiseachadh air fhirinn!
+Leigidh thu dheth agus bidh spòrs agad!

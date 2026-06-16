@@ -1,86 +1,86 @@
 ---
-title: Installatio Ultimate Multisite
+title: Installatio Ultimi Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installare Ultimate Multisite
+# Installatio Ultimi Multisite
 
 :::note
-Hoc tutorial presupponit quod tu iam habes WordPress Multisite installatum et configuratum. Ad studium quomodo, consulta [hoc tutorial](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner.
+Hoc praeceptum supponit te iam habere WordPress Multisite installatum et configuratum. Ut discas quomodo, vide [hoc praeceptum](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner.
 :::
 
-## Installare Plugin
+## Installatio Plugin
 
-Ultimate Multisite est gratis in [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimus Multisite est liber in [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-A **Network Admin Dashboard** tuo, ad **Plugins → Add New Plugin** (Plugin novo addere) ire.
+Ab **Tabula Administri Retis**, vade ad **Plugins → Add New Plugin**.
 
-![Pagina Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
+![Pagina "Add New Plugin" Tabulae Administri Retis](/img/installation/add-new-plugin.png)
 
-Quaere **"Ultimate Multisite"** (cum citatis pro concordantia exacta), et aparecerit ut primum resultatum. Clipe in **Install Now** (Installa nunc).
+Quaere **"Ultimus Multisite"** (cum citatis pro exacta concordia) et apparebit ut primum resultatum. Click **Install Now**.
 
-![Resultata quaerendi ostendentes Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Resultata quaestionis ostendens Ultimum Multisite](/img/installation/search-ultimate-multisite.png)
 
-Post installationem, clipe in **Network Activate** (Activa rete) ad plugin in totam network tu activare.
+Postquam installatur, click **Network Activate** ad plugin in omni rete tua activare.
 
-![Plugin installatum cum boton Network Activate](/img/installation/plugin-installed.png)
+![Plugin installatum cum button "Network Activate"](/img/installation/plugin-installed.png)
 
-Post activationem, automatico ad Setup Wizard rediregeris.
+Post activationem, automatice redireberis ad Magum Configurationis.
 
-![Plugin activatus et redirectus ad wizard](/img/installation/plugin-activated.png)
+![Plugin activatus et redirectus ad magum](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Magus Configurationis
 
-Setup Wizard te guidabit per configuration Ultimate Multisite in circa 10 minutis.
+Magus Configurationis ducet te per configurationem Ultimi Multisite in circiter 10 minutis.
 
-### Welcome (Bienvenue)
+### Salve
 
-Clipe in **Get Started** (Inicia) ut incipias.
+Click **Get Started** ut incipias.
 
-![Schermas welcome wizard](/img/installation/wizard-welcome.png)
+![Schermo salutatorius Magus Configurationis](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Verificatio ante installationem)
+### Prae-installatio Repetitiones
 
-Hoc step system information et installation WordPress tu verificabit ut cum requiritibus Ultimate Multisite concordet. Si omnia bene oritur, clipe in **Go to the Next Step** (Ad step successivo ire).
+Haec gradus inspicit informationem systematis tui et installationem WordPress ut curat ut occurrat requisitis Ultimi Multisite. Si omnia bona videntur, click **Go to the Next Step**.
 
-![Pre-install checks ostendentes requiritibus system](/img/installation/wizard-pre-install-checks.png)
+![Repetitiones prae-installationis ostendens requisita systematis](/img/installation/wizard-pre-install-checks.png)
 
-:::note Botón Activar Red (v2.6.1+)
-Si Ultimate Multisite está instalado pero **aún no ha sido activado en la red** — por ejemplo, si hiciste clic en **Activar** (sitio único) en lugar de **Activar Red** desde la pantalla de plugins de red — el paso de Verificaciones Pre-instalación detectará esto y mostrará un botón de **Activar Red**.
+:::note Button "Network Activate" (v2.6.1+)
+Si Ultimus Multisite installatus est sed **non adhuc in rete activus** — exempli gratia, si clickisti **Activate** (unius situs) potius quam **Network Activate** ab pagina plugin retis — gradus Repetitionum Prae-installationis hoc detegit et ostendet buttonem **Network Activate**.
 
-Hacer clic en **Activar Red** activa automáticamente el plugin en toda tu red multisite. Una vez activado, el asistente continúa normalmente al paso de instalación. No necesitas salir del asistente para corregir el estado de activación.
+Clickando **Network Activate**, plugin in omni rete multisite tua automatice activatur. Post activationem, magus normaliter ad gradum installationis procedit. Non debes exire ab mago ut statum activationis corrigas.
 :::
 
-### Instalación
+### Installatio
 
-El instalador creará las tablas de base de datos necesarias e instalará el archivo `sunrise.php` que Ultimate Multisite necesita para funcionar. Haz clic en **Instalar** para continuar.
+Installator creabit tabulas necessarias et installabit fasciculum `sunrise.php` quod Ultimus Multisite indiget ut operetur. Click **Install** ut procedas.
 
-![Paso de instalación mostrando tablas de base de datos y sunrise.php](/img/installation/wizard-installation.png)
+![Gradus installationis ostendens tabulas databasium et sunrise.php](/img/installation/wizard-installation.png)
 
-### Tu Empresa
+### Societas Tua
 
-Rellena la información de tu empresa y establece tu moneda predeterminada. Esta información se utilizará durante toda tu plataforma WaaS. Haz clic en **Continuar** cuando termines.
+Imple informationem societatis tuae et pone pecuniam defaltam. Haec informatio usitari erit per totam platformam WaaS tuam. Click **Continue** cum perficiatur.
 
-![Paso de configuración de tu empresa](/img/installation/wizard-your-company.png)
+![Gradus configurationis "Your Company"](/img/installation/wizard-your-company.png)
 
-### Contenido Predeterminado
+### Defalta Contentum
 
-Este paso te permite instalar plantillas, productos y otro contenido inicial predefinido. Esta es una excelente manera de familiarizarte con las características de Ultimate Multisite. Haz clic en **Instalar** para añadir el contenido predeterminado, o omite este paso si prefieres empezar desde cero.
+Hic gradus permittit te installare praedefinitas formas, producta et alia contenta initialia. Hoc est bonus modus ut familiaris fias cum proprietatibus Ultimi Multisite. Click **Install** ad contentum defaltum addendum, vel omittes hunc gradum si potius vis ex nihilo incipere.
 
-![Paso de instalación de contenido predeterminado](/img/installation/wizard-default-content.png)
+![Gradus installationis contenti defalti](/img/installation/wizard-default-content.png)
 
-### Plugins Recomendados
+### Plugin Commendati
 
-Instala opcionalmente los plugins complementarios recomendados. Haz clic en **Instalar** para añadirlos o omite para continuar.
+Optionaliter installa plugin commendata comites. Click **Install** ad ea addenda vel omittes ut procedas.
 
-![Paso de plugins recomendados](/img/installation/wizard-recommended-plugins.png)
+![Gradus plugin commendatorum](/img/installation/wizard-recommended-plugins.png)
 
-### ¡Listo!
+### Paratus!
 
-Finis! Installatio tua Ultima Multisite est conclusa. Nunc potes uti in platforma Website as a Service ex **Network Admin Dashboard**.
+Id est! Installatio Ultimi Multisite tua completa est. Nunc potes incipere aedificare platformam tuam "Website as a Service" ab **Tabula Administri Retis**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Configuratio completa - Schermo paratus](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Tabula Administri Retis cum Ultimo Multisite activo](/img/installation/network-dashboard.png)
 
-Ibi, ludere potes!
+Vade et gaude!

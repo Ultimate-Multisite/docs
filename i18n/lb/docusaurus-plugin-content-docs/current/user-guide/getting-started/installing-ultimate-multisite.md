@@ -1,86 +1,86 @@
 ---
-title: Installiere Ultimate Multisite
+title: Installatioun vun Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite installiere
+# Installatioun vun Ultimate Multisite
 
 :::note
-Dëse Tutorial setzt aannahm voraus, datt Dir scho WordPress Multisite installiert und konfiguriert hät. Um z'lerne, wie das gaht, luegt Dir Dir de [diesen Tutorial](https://www.wpbeginner.com/glossary/multisite/) vo WP Beginner ah.
+Dës Enseignung setzt vir, datt Dir schonn WordPress Multisite installéiert an konfiguréiert hutt. Fir ze léieren wéi, kuckt d'Enseignung [hei](https://www.wpbeginner.com/glossary/multisite/) vun WP Beginner.
 :::
 
-## Plugin installiere
+## Installatioun vum Plugin
 
-Ultimate Multisite isch gratis uf [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) verfügbar.
+Ultimate Multisite ass gratis op [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) verfügbar.
 
-Vom **Network Admin Dashboard** gaht Dir zu **Plugins → Add New Plugin**.
+Am **Network Admin Dashboard** gitt zu **Plugins → Add New Plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin Säit](/img/installation/add-new-plugin.png)
 
-Suche nach **"Ultimate Multisite"** (mit Anführungszeichen für en exakte Match), und es wird als erschts Resultat auftauche. Klick uf **Install Now**.
+Sicht no **"Ultimate Multisite"** (mat Guëtzéichen fir eng exakt Ofgestëmung) an et wäert als éischt Resultat erscheinen. Klickt op **Install Now**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Suchresultater, déi Ultimate Multisite weisen](/img/installation/search-ultimate-multisite.png)
 
-Nachdem es installiert isch, klick uf **Network Activate**, um de Plugin über s'ganze Netzwerk z'aktivierä.
+Nodeems et installéiert ass, klickt op **Network Activate** fir de Plugin an Ärem ganze Réseau ze aktivéieren.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin installéiert mat der Network Activate Knäppchen](/img/installation/plugin-installed.png)
 
-Nach de Aktivierig werdet Dir automatisch zum Setup Wizard gschickt.
+No der Aktivatioun gëtt Dir automatesch op den Setup Wizard weidergeleet.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin aktivéiert a weidergeleet zum Wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-De Setup Wizard wird Dir bi de Konfigurierig vo Ultimate Multisite i rund 10 Minute begleite.
+De Setup Wizard guidet Iech duerch d'Konfiguratioun vun Ultimate Multisite an ongeféier 10 Minutten.
 
-### Willkomme
+### Wëllkomme
 
-Klick uf **Get Started**, um azfange.
+Klickt op **Get Started** fir ze starten.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Setup Wizard, Wëllkomm-Säit](/img/installation/wizard-welcome.png)
 
-### Vorinstallationsprüefige
+### Pré-Installatiounskontrollen
 
-Diesen Schritt prüeft Dir d'Systeminformatione und d'WordPress-Installation, um sicherzstelle, dass alles de Aaforderige vo Ultimate Multisite entspricht. Wenn alles guet usgseht, klick uf **Go to the Next Step**.
+Dës Schrëtt kontrolléiert Är Systeminformatioun an WordPress Installatioun, fir sécherzestellen datt et d'Ufuerderunge vun Ultimate Multisite erfëllt. Wann alles gutt ausgesäit, klickt op **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Pré-Installatiounskontrollen, déi Systemufuerderungen weisen](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate button (v2.6.1+)
-Wenn Ultimate Multisite installiert isch, aber no **nöd aktiviert** isch — zum Bischpil, wenn Sie uf **Aktivierä** (Single-Site) geklickt händ statt uf **Network Activate** vo de Netzwerk-Plugins-Schiin — wird de Schritt Pre-install Checks das erkenne und en **Network Activate** Button aazeige.
+:::note Network Activate Knäppchen (v2.6.1+)
+Wann Ultimate Multisite installéiert ass, awer **net nach am Réseau aktivéiert** ass – zum Beispill, wann Dir op **Activate** (Single-Site) ampléischt op **Network Activate** vun der Säit mat de Réseau-Plugins geklickt hutt – wäert d'Schrëtt vun den Pré-Installatiounskontrollen dat erkennen an eng **Network Activate** Knäppchen weisen.
 
-Wenn Sie uf **Network Activate** klicke, aktiviert sich s Plugin automatisch über ganz Ihr Multisite-Netzwerk. Sobald es aktiviert isch, lauft de Wizard normal wiiter zum Installationsschritt. Sie müend nöd us em Wizard usecho, um de Aktivierungsstatus z'korrigiere.
+Klickt op **Network Activate** fir de Plugin automatesch am ganze Multisite-Rései ze aktivéieren. Nodeems et aktivéiert ass, geet de Wizard normalerweis zur Installatiounsschrëtt weider. Dir musst den Wizard net verleave fir den Aktivéierungsstatus ze korrigéieren.
 :::
 
-### Installation
+### Installatioun
 
-De Installer erstellt d'nötige Datenbank-Tabellen und installiert d`sunrise.php`-Datei, wo Ultimate Multisite brucht, um funktioniere z'chönne. Klicke uf **Install**, um wiiterzgah.
+Den Installer wäert déi néideg Datenbanktabellen erstellen an d'Datei `sunrise.php` installéieren, déi Ultimate Multisite brauch fir ze funktionnéieren. Klickt op **Install** fir weiderzegoen.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Installatiounsschrëtt, déi d'Datenbanktabellen an d'Datei sunrise.php weisen](/img/installation/wizard-installation.png)
 
-### Ihr Unternehmen
+### Äert Firma
 
-Fülle d'Informatione vo Ihrem Unternehmen us und stell Ihre Standardwährig i. D'Informatione werded über ganz Ihr WaaS-Plattform brucht. Klicke uf **Continue**, wenn Sie fertig sind.
+Fëllt Är Firmeninformatioun aus a setzt Är Standardwährung fest. Dës Informatioun gëtt duerchout Är WaaS-Plattform benotzt. Klickt op **Continue** wann et fäerdeg ass.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Konfiguratiounsschrëtt "Är Firma"](/img/installation/wizard-your-company.png)
 
 ### Standardinhalt
 
-Dä Schritt erlaubt Ihne, vorbestimmti Templates, Produkt und anderi Startinhalte z'installiere. Das isch e super Art, sich mit de Feature vo Ultimate Multisite vertraut z'mache. Klicke uf **Install**, um de Standardinhalt hinzuzfüege, oder überspringe dä Schritt, wenn Sie lieber vo Grund uf starte wend.
+Dës Schrëtt erlaabt Iech vordefinéiert Templates, Produkter an aner Startinhalter ze installéieren. Et ass eng super Manéier fir mat den Ultimate Multisite Funktiounen vertraut ze ginn. Klickt op **Install** fir den Standardinhalt hinzemaachen oder übersprangt dës Schrëtt wann Dir léiwer vun Ufank ugefaange wëllt.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Installatiounsschrëtt vum Standardinhalt](/img/installation/wizard-default-content.png)
 
-### Empfohleni Plugins
+### Recommandéiert Plugins
 
-Installiere optional empfohleni Begleit-Plugins. Klicke uf **Install**, um sie hinzuzfüege, oder überspringe zum wiiterzgah.
+Optional installéiert recommandéiert Begleitplugins. Klickt op **Install** fir se hinzemaachen oder fuert weider.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Schrëtt mat de recommandéierte Plugins](/img/installation/wizard-recommended-plugins.png)
 
-### Fertig!
+### Fäerdeg!
 
-Dat isch's! Dini Ultimate Multisite Installation isch fertig. Du chasch jetz mit em Bau vo dinere Website as a Service Plattform starte vom **Network Admin Dashboard**.
+Dat ass alles! Är Ultimate Multisite Installatioun ass fäerdeg. Dir kënnt elo ufänken, Är Website als Service Plattform aus dem **Network Admin Dashboard** ze bauen.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Setup fäerdeg - Fäerdig-Säit](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard mat aktivem Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Go ahead und ha Spass!
+Gitt vir a loosst et sech gutt goen!

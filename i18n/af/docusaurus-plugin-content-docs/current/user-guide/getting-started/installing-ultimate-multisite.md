@@ -1,86 +1,86 @@
 ---
-title: Installeer Ultimate Multisite
+title: Die installering van Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installeer Ultimate Multisite
+# Die installering van Ultimate Multisite
 
-:::note
-Hierdie handleiding gaan uit dat jy reeds WordPress Multisite geïnstalleer en geconfigureer het. Om te leer hoe, kyk na hierdie handleiding by WP Beginner.
+:::letop
+Hierdie tutoriaal gaan daarvan uit dat jy reeds WordPress Multisite geïnstalleer en gekonfigureer het. Om te leer hoe, kyk na [hierdie tutoriaal](https://www.wpbeginner.com/glossary/multisite/) deur WP Beginner.
 :::
 
-## Installeer die Plugin
+## Die installering van die inpropstuk
 
 Ultimate Multisite is gratis beskikbaar op [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Gaan van jou **Network Admin Dashboard** na **Plugins → Add New Plugin**.
+Van jou **Netwerkadministrasie-paneel**, gaan na **Inproppstukke → Voeg nuwe inproppstuk by**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Netwerkadministrasie, bladsy om 'n nuwe inproppstuk by te voeg](/img/installation/add-new-plugin.png)
 
-Soek na **"Ultimate Multisite"** (met aanhalingstekens vir 'n presiese pas) en dit sal as die eerste resultaat verskyn. Klik op **Install Now**.
+Soek vir **"Ultimate Multisite"** (met aanhalingstekens vir 'n presiese ooreenkoms), en dit sal as die eerste resultaat verskyn. Klik op **Installeer nou**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Soekresultate wat Ultimate Multisite wys](/img/installation/search-ultimate-multisite.png)
 
-Nadat dit geïnstalleer is, klik op **Network Activate** om die plugin oor jou hele network te aktiveer.
+Sodra dit geïnstalleer is, klik op **Netwerkaktiveer** om die inproppstuk oor jou hele netwerk te aktiveer.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Inproppstuk geïnstalleer met Netwerkaktiveer-knoppie](/img/installation/plugin-installed.png)
 
-Na aktivering word jy outomaties na die Setup Wizard herlei.
+Na aktivering sal jy outomaties na die Opstelling-towenaar oorgelei word.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Inproppstuk geaktiveer en na die towenaar oorgelei](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Opstelling-towenaar
 
-Die Setup Wizard sal jou deur die konfigurasie van Ultimate Multisite lei binne ongeveer 10 minute.
+Die Opstelling-towenaar sal jou lei deur die konfigurasie van Ultimate Multisite in ongeveer 10 minute.
 
 ### Welkom
 
-Klik op **Get Started** om te begin.
+Klik op **Begin** om te begin.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Opstelling-towenaar, welkome skerm](/img/installation/wizard-welcome.png)
 
-### Voor-installasie Kontrole
+### Voorinstallasie-toetse
 
-Hierdie stap kontroleer jou stelsel-inligting en WordPress-installasie om te verseker dat dit aan Ultimate Multisite se vereistes voldoen. As alles goed lyk, klik op **Go to the Next Step**.
+Hierdie stap kyk na jou stelselinligting en WordPress-installasie om seker te maak dat dit aan Ultimate Multisite se vereistes voldoen. As alles goed lyk, klik op **Gaan na die volgende stap**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Voorinstallasie-toetse wat stelselvereiste wys](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate button (v2.6.1+)
-As Ultimate Multisite geïnstalleer is maar **nog nie network-geaktiveer** is — byvoorbeeld, as jy **Activate** (single-site) geklik het in plaas van **Network Activate** vanaf die network plugins skerm — sal die Voor-installasie Kontrole stap dit opmerk en 'n **Network Activate** knoppie vertoon.
+:::letop Netwerkaktiveer-knoppie (v2.6.1+)
+As Ultimate Multisite geïnstalleer is, maar **nie nog netwerkgeaktiveer nie** — byvoorbeeld, as jy op **Aktiveer** (enkelwerf) in plaas van **Netwerkaktiveer** vanaf die netwerkinproppstukskerm geklik het — sal die Voorinstallasie-toetse-stap dit opspoor en 'n **Netwerkaktiveer**-knoppie vertoon.
 
-Om op **Network Activate** te klik, aktiveer die plugin outomaties oor jou hele multisite network. Sodra dit geaktiveer is, gaan die wizard normaalweg na die installasiestap. Jy hoef nie die wizard te verlaat om die aktiveringsstatus reg te stel nie.
+Deur op **Netwerkaktiveer** te klik, word die inproppstuk outomaties oor jou hele multisiternetwerk geaktiveer. Sodra dit geaktiveer is, gaan die towenaar normaalweg voort na die installasiestap. Jy hoef nie die towenaar te verlaat om die aktiveringstoestand reg te stel nie.
 :::
 
 ### Installasie
 
-Die installer sal die nodige database-tabels skep en die `sunrise.php` lêer installeer wat Ultimate Multisite benodig om te funksioneer. Klik op **Install** om voort te gaan.
+Die installer sal die nodige databastabelle skep en die `sunrise.php`-lêer installeer wat Ultimate Multisite benodig om te funksioneer. Klik op **Installeer** om voort te gaan.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Installasiestap wat databastabelle en sunrise.php wys](/img/installation/wizard-installation.png)
 
-### Jou Maatskappy
+### Jou maatskappy
 
-Vul jou maatskinligting in en stel jou standaardvaluut in. Hierdie inligting sal deur jou WaaS platform gebruik word. Klik op **Continue** wanneer jy klaar is.
+Vul jou maatskappy se inligting in en stel jou verstek geldeenheid. Hierdie inligting sal deur die hele WaaS-platform gebruik word. Klik op **Gaan voort** wanneer dit voltooi is.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Jou maatskappy, konfigurasiestap](/img/installation/wizard-your-company.png)
 
-### Standaardinhoud
+### Verstekinhoud
 
-Hierdie stap laat jou toe om vooraf gedefinieerde templates, produkte en ander begininhoud te installeer. Dit is 'n goeie manier om bekend te raak met Ultimate Multisite se kenmerke. Klik op **Install** om die standaardinhoud by te voeg, of skip hierdie stap oor as jy verkies om van die begin af te begin.
+Hierdie stap laat jou toe om vooraf gedefinieerde sjablone, produkte en ander begininhoud te installeer. Dit is 'n goeie manier om met Ultimate Multisite se kenmerke vertroud te raak. Klik op **Installeer** om die verstekinhoud by te voeg, of sla hierdie stap oor as jy verkies om van voor af te begin.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Verstekinhoudinstallasiestap](/img/installation/wizard-default-content.png)
 
-### Aanbevole Plugins
+### Aanbevole inproppstukke
 
-Installeer opsioneel aanbevole bygehangde plugins. Klik op **Install** om hulle by te voeg of skip om voort te gaan.
+Installeer opsioneel aanbevole bykomende inproppstukke. Klik op **Installeer** om dit by te voeg of gaan voort.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Aanbevole inproppstukke stap](/img/installation/wizard-recommended-plugins.png)
 
 ### Gereed!
 
-Dit is dit! Jou Ultimate Multisite-installasie is voltooi. Jy kan nou begin om jou Website as a Service platform vanaf die **Network Admin Dashboard** te bou.
+Dit is alles! Jou Ultimate Multisite-installasie is voltooi. Jy kan nou begin met die bou van jou "Webwerf as 'n Diens"-platform vanaf die **Netwerkadministrasie-paneel**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Opstelling voltooi - Gereed skerm](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Netwerkadministrasie-paneel met Ultimate Multisite geaktiveer](/img/installation/network-dashboard.png)
 
-Gaan en het pret!
+Wees asseblief vry om dit te geniet!

@@ -1,80 +1,86 @@
 ---
-title: نصب Ultimate Multisite
+title: نصب افزونه‌ی Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # نصب Ultimate Multisite
 
 :::note
-این آموزش فرض می‌کند که WordPress Multisite را قبلاً نصب و پیکربندی کرده‌اید. برای یادگیری نحوه انجام این کار، [این آموزش](https://www.wpbeginner.com/glossary/multisite/) از WP Beginner را ببینید.
+این آموزش فرض می‌کند که شما قبلاً WordPress Multisite را نصب و پیکربندی کرده‌اید. برای یادگیری نحوه انجام این کار، [این آموزش](https://www.wpbeginner.com/glossary/multisite/) از WP Beginner را بررسی کنید.
 :::
 
 ## نصب افزونه
 
-Ultimate Multisite به صورت رایگان در [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) در دسترس است.
+Ultimate Multisite به صورت رایگان در [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) موجود است.
 
-از **پیشخوان مدیریت شبکه**، به **افزونه‌ها ← افزودن افزونه جدید** بروید.
+از **داشبورد Network Admin** خود، به **Plugins → Add New Plugin** بروید.
 
-![صفحه افزودن افزونه جدید در مدیریت شبکه](/img/installation/add-new-plugin.png)
+![صفحه افزودن افزونه جدید در Network Admin](/img/installation/add-new-plugin.png)
 
-عبارت **"Ultimate Multisite"** را جستجو کنید (با گیومه برای نتیجه دقیق) و به عنوان اولین نتیجه نمایش داده می‌شود. روی **نصب** کلیک کنید.
+به دنبال **"Ultimate Multisite"** (با علامت نقل قول برای تطابق دقیق) بگردید و به عنوان اولین نتیجه ظاهر می‌شود. روی **Install Now** کلیک کنید.
 
-![نتایج جستجو نشان‌دهنده Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![نتایج جستجو که Ultimate Multisite را نشان می‌دهد](/img/installation/search-ultimate-multisite.png)
 
-پس از نصب، روی **فعال‌سازی در شبکه** کلیک کنید تا افزونه در کل شبکه فعال شود.
+پس از نصب، روی **Network Activate** کلیک کنید تا افزونه در سراسر شبکه شما فعال شود.
 
-![افزونه نصب شده با دکمه فعال‌سازی در شبکه](/img/installation/plugin-installed.png)
+![افزونه نصب شده با دکمه Network Activate](/img/installation/plugin-installed.png)
 
-پس از فعال‌سازی، به صورت خودکار به ویزارد راه‌اندازی هدایت می‌شوید.
+پس از فعال‌سازی، به طور خودکار به Setup Wizard هدایت می‌شوید.
 
-![افزونه فعال شده و هدایت به ویزارد](/img/installation/plugin-activated.png)
+![فعال‌سازی افزونه و هدایت به ویزارد](/img/installation/plugin-activated.png)
 
-## ویزارد راه‌اندازی
+## Setup Wizard (ویزارد پیکربندی)
 
-ویزارد راه‌اندازی شما را در پیکربندی Ultimate Multisite در حدود ۱۰ دقیقه راهنمایی می‌کند.
+Setup Wizard شما را در طی حدود 10 دقیقه برای پیکربندی Ultimate Multisite راهنمایی می‌کند.
 
-### خوش‌آمدید
+### خوش آمدگویی
 
-روی **شروع کنید** کلیک کنید تا آغاز شود.
+برای شروع، روی **Get Started** کلیک کنید.
 
-![صفحه خوش‌آمدگویی ویزارد راه‌اندازی](/img/installation/wizard-welcome.png)
+![صفحه خوش‌آمدگویی Setup Wizard](/img/installation/wizard-welcome.png)
 
 ### بررسی‌های پیش از نصب
 
-این مرحله اطلاعات سیستم و نصب WordPress شما را بررسی می‌کند تا مطمئن شود الزامات Ultimate Multisite را برآورده می‌کند. اگر همه چیز درست است، روی **رفتن به مرحله بعد** کلیک کنید.
+این مرحله اطلاعات سیستم و نصب WordPress شما را بررسی می‌کند تا اطمینان حاصل شود که الزامات Ultimate Multisite را برآورده می‌کند. اگر همه چیز خوب به نظر می‌رسد، روی **Go to the Next Step** کلیک کنید.
 
-![بررسی‌های پیش از نصب نشان‌دهنده الزامات سیستم](/img/installation/wizard-pre-install-checks.png)
+![بررسی‌های پیش از نصب که الزامات سیستم را نشان می‌دهد](/img/installation/wizard-pre-install-checks.png)
+
+:::note دکمه Network Activate (نسخه 2.6.1+)
+اگر Ultimate Multisite نصب شده است اما **هنوز به صورت شبکه فعال نشده** است - برای مثال، اگر به جای **Network Activate** از صفحه افزونه‌های شبکه، روی **Activate** (تک‌سایتی) کلیک کرده‌اید - مرحله بررسی‌های پیش از نصب این موضوع را تشخیص می‌دهد و یک دکمه **Network Activate** نمایش می‌دهد.
+
+با کلیک بر روی **Network Activate**، افزونه به طور خودکار در سراسر شبکه چند سایتی شما فعال می‌شود. پس از فعال‌سازی، ویزارد به طور معمول به مرحله نصب ادامه می‌دهد. نیازی نیست که برای رفع وضعیت فعال‌سازی، ویزارد را ترک کنید.
+:::
 
 ### نصب
 
-نصب‌کننده جداول پایگاه داده لازم را ایجاد کرده و فایل `sunrise.php` را که Ultimate Multisite برای عملکرد نیاز دارد، نصب می‌کند. روی **نصب** کلیک کنید تا ادامه دهید.
+نصب کننده جداول پایگاه داده لازم را ایجاد می‌کند و فایل `sunrise.php` را نصب می‌کند که Ultimate Multisite برای عملکرد خود به آن نیاز دارد. برای ادامه روی **Install** کلیک کنید.
 
-![مرحله نصب نشان‌دهنده جداول پایگاه داده و sunrise.php](/img/installation/wizard-installation.png)
+![مرحله نصب که جداول پایگاه داده و sunrise.php را نشان می‌دهد](/img/installation/wizard-installation.png)
 
-### اطلاعات شرکت شما
+### شرکت شما
 
-اطلاعات شرکت خود را وارد کرده و واحد پول پیش‌فرض را تنظیم کنید. این اطلاعات در سراسر پلتفرم WaaS شما استفاده خواهد شد. پس از اتمام روی **ادامه** کلیک کنید.
+اطلاعات شرکت خود را وارد کرده و ارز پیش‌فرض را تنظیم کنید. این اطلاعات در سراسر پلتفرم WaaS شما استفاده خواهد شد. پس از اتمام، روی **Continue** کلیک کنید.
 
-![مرحله پیکربندی اطلاعات شرکت شما](/img/installation/wizard-your-company.png)
+![مرحله پیکربندی "شرکت شما"](/img/installation/wizard-your-company.png)
 
 ### محتوای پیش‌فرض
 
-این مرحله به شما امکان می‌دهد قالب‌ها، محصولات و سایر محتوای آماده از پیش تعریف‌شده را نصب کنید. این روش عالی برای آشنایی با قابلیت‌های Ultimate Multisite است. روی **نصب** کلیک کنید تا محتوای پیش‌فرض اضافه شود، یا اگر ترجیح می‌دهید از صفر شروع کنید، این مرحله را رد کنید.
+این مرحله به شما امکان می‌دهد الگوهای از پیش تعریف شده، محصولات و سایر محتوای اولیه را نصب کنید. این یک روش عالی برای آشنایی با ویژگی‌های Ultimate Multisite است. برای افزودن محتوای پیش‌فرض روی **Install** کلیک کنید، یا اگر ترجیح می‌دهید از ابتدا شروع کنید، این مرحله را رد کنید.
 
 ![مرحله نصب محتوای پیش‌فرض](/img/installation/wizard-default-content.png)
 
 ### افزونه‌های پیشنهادی
 
-به صورت اختیاری افزونه‌های مکمل پیشنهادی را نصب کنید. روی **نصب** کلیک کنید تا اضافه شوند یا رد کنید تا ادامه دهید.
+به صورت اختیاری، افزونه‌های کمکی پیشنهادی را نصب کنید. برای افزودن آنها روی **Install** کلیک کنید یا برای ادامه این مرحله را رد کنید.
 
 ![مرحله افزونه‌های پیشنهادی](/img/installation/wizard-recommended-plugins.png)
 
-### آماده است!
+### آماده!
 
-همین بود! نصب Ultimate Multisite شما کامل شد. اکنون می‌توانید ساخت پلتفرم وب‌سایت به عنوان سرویس خود را از **پیشخوان مدیریت شبکه** شروع کنید.
+همین است! نصب Ultimate Multisite شما کامل شد. اکنون می‌توانید شروع به ساخت پلتفرم Website as a Service خود از **داشبورد Network Admin** کنید.
 
-![راه‌اندازی کامل شد - صفحه آماده](/img/installation/wizard-ready.png)
+![پیکربندی کامل - صفحه "آماده"](/img/installation/wizard-ready.png)
 
-![پیشخوان مدیریت شبکه با Ultimate Multisite فعال](/img/installation/network-dashboard.png)
+![داشبورد Network Admin با Ultimate Multisite فعال](/img/installation/network-dashboard.png)
 
-حالا بروید و لذت ببرید!
+پیش به سوی سرگرمی!

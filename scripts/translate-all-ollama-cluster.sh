@@ -6,8 +6,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 RUN_ID="$(date +%Y%m%d-%H%M%S)"
 
-MODEL="${MODEL:-gemma4:12b-it-qat}"
-HOSTS_CSV="${TRANSLATE_OLLAMA_HOSTS:-http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.191:11435,http://192.168.0.191:11436}"
+MODEL="${MODEL:-translategemma:27b}"
+MODEL_MAP="${TRANSLATE_MODEL_MAP:-single}"
+HOSTS_CSV="${TRANSLATE_OLLAMA_HOSTS:-http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.131:11435,http://192.168.0.131:11436}"
 LOCALES_REQUESTED="${LOCALES:-all}"
 RUN_DIR="${RUN_DIR:-/tmp/ultimate-multisite-translate-cluster-${RUN_ID}}"
 REQUEST_NUM_CTX="${OLLAMA_REQUEST_NUM_CTX:-${OLLAMA_CONTEXT_LENGTH:-8192}}"
@@ -122,6 +123,11 @@ preload_host() {
 }
 
 preload_hosts() {
+	if [[ "${MODEL_MAP}" != "single" ]]; then
+		log "Skipping single-model preload because TRANSLATE_MODEL_MAP=${MODEL_MAP}"
+		return 0
+	fi
+
 	if [[ "${PRELOAD_HOSTS}" != "1" ]]; then
 		log "Skipping Ollama host preload because TRANSLATE_PRELOAD_OLLAMA_HOSTS=${PRELOAD_HOSTS}"
 		return 0
@@ -177,6 +183,7 @@ run_dry_run() {
 		--provider ollama-native \
 		--base-url "${host}" \
 		--model "${MODEL}" \
+		--model-map "${MODEL_MAP}" \
 		--locales "${locales}" \
 		--concurrency 1 \
 		--dry-run \
@@ -223,6 +230,7 @@ start_translation() {
 		--provider ollama-native \
 		--base-url "${host}" \
 		--model "${MODEL}" \
+		--model-map "${MODEL_MAP}" \
 		--locales "${locales}" \
 		--concurrency "${CONCURRENCY_PER_SHARD}" \
 		--timeout "${REQUEST_TIMEOUT_SECONDS}" \

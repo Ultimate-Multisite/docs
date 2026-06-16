@@ -1,80 +1,86 @@
 ---
-title: Kufunga Ultimate Multisite
+title: Kusakinisha Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Kusakinisha Ultimate Multisite
 
 :::note
-Mwongozo huu unadhani tayari una WordPress Multisite imesakinishwa na kusanidiwa. Kujifunza jinsi ya kufanya hivyo, angalia [mwongozo huu](https://www.wpbeginner.com/glossary/multisite/) kutoka WP Beginner.
+Mwongozo huu unadhani tayari umesakinisha na kusanidi WordPress Multisite. Ili kujifunza jinsi ya kufanya hivyo, angalia [mwongozo huu](https://www.wpbeginner.com/glossary/multisite/) kutoka WP Beginner.
 :::
 
 ## Kusakinisha Plugin
 
-Ultimate Multisite inapatikana bure kwenye [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite inapatikana kwa bure kwenye [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Kutoka kwenye **Network Admin Dashboard** yako, nenda **Plugins → Add New Plugin**.
+Kutoka kwa **Dashboard ya Msimamizi wa Mtandao**, nenda kwenye **Plugins → Ongeza Plugin Mpya**.
 
-![Ukurasa wa Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
+![Ukurasa wa "Ongeza Plugin Mpya" katika Dashboard ya Msimamizi wa Mtandao](/img/installation/add-new-plugin.png)
 
-Tafuta **"Ultimate Multisite"** (na alama za kunukuu kwa matokeo sahihi) na itaonekana kama tokeo la kwanza. Bonyeza **Install Now**.
+Tafuta **"Ultimate Multisite"** (na alama za nukuu kwa mechi kamili) na itaonekana kama matokeo ya kwanza. Bofya **Sakinisha Sasa**.
 
-![Matokeo ya utafutaji yakionyesha Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Matokeo ya utaftaji yanaonyesha Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Baada ya kusakinishwa, bonyeza **Network Activate** kuiwezesha plugin kwenye mtandao wako wote.
+Baada ya kusakinishwa, bofya **Washa kwa Mtandao** ili kuwezesha plugin katika mtandao wako mzima.
 
-![Plugin imesakinishwa na kitufe cha Network Activate](/img/installation/plugin-installed.png)
+![Plugin imesakinishwa na kitufe cha "Washa kwa Mtandao"](/img/installation/plugin-installed.png)
 
-Baada ya kuiwasha, utaelekezwa moja kwa moja kwenye Setup Wizard.
+Baada ya uanzishaji, utaelekezwa moja kwa moja kwenye Mchawi wa Usanidi.
 
-![Plugin imewashwa na kuelekezwa kwenye wizard](/img/installation/plugin-activated.png)
+![Plugin imeanzishwa na umeelekezwa kwenye mchawi](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Mchawi wa Usanidi
 
-Setup Wizard itakuongoza katika kusanidi Ultimate Multisite kwa takriban dakika 10.
+Mchawi wa Usanidi utakuelekeza katika kusanisha Ultimate Multisite kwa takribani dakika 10.
 
 ### Karibu
 
-Bonyeza **Get Started** kuanza.
+Bofya **Anza** ili uanze.
 
-![Skrini ya kukaribisha ya Setup Wizard](/img/installation/wizard-welcome.png)
+![Skrini ya karibu ya Mchawi wa Usanidi](/img/installation/wizard-welcome.png)
 
-### Ukaguzi wa Awali
+### Ukaguzi Kabla ya Ufungaji
 
-Hatua hii inakagua taarifa za mfumo wako na usakinishaji wa WordPress kuhakikisha unakidhi mahitaji ya Ultimate Multisite. Ikiwa kila kitu kinaonekana sawa, bonyeza **Go to the Next Step**.
+Hatua hii inakagua taarifa ya mfumo wako na usakinishaji wa WordPress ili kuhakikisha kuwa inakidhi mahitaji ya Ultimate Multisite. Ikiwa kila kitu kinaonekana vizuri, bofya **Nenda kwenye Hatua Inayofuata**.
 
-![Ukaguzi wa awali ukionyesha mahitaji ya mfumo](/img/installation/wizard-pre-install-checks.png)
+![Ukaguzi kabla ya ufugaji unaonyesha mahitaji ya mfumo](/img/installation/wizard-pre-install-checks.png)
 
-### Usakinishaji
+:::note Kitufe cha "Washa kwa Mtandao" (toleo 2.6.1+)
+Ikiwa Ultimate Multisite imesakinishwa lakini **bado haijaanzishwa katika mtandao** — kwa mfano, ikiwa ulibofya **Anzisha** (tovuti moja) badala ya **Washa kwa Mtandao** kutoka kwenye skrini ya plugins ya mtandao — hatua ya Ukaguzi Kabla ya Ufungaji itatambua hili na itaonyesha kitufe cha **Washa kwa Mtandao**.
 
-Kisakinishaji kitaunda jedwali muhimu za database na kusakinisha faili ya `sunrise.php` ambayo Ultimate Multisite inahitaji kufanya kazi. Bonyeza **Install** kuendelea.
+Kubofya **Washa kwa Mtandao** huwezesha plugin katika mtandao wako mzima moja kwa moja. Baada ya kuwashwa, mchawi unaendelea kawaida hadi hatua ya usakinishaji. Huna haja ya kuondoka kwenye mchawi ili kurekebisha hali ya uanzishaji.
+:::
 
-![Hatua ya usakinishaji ikionyesha jedwali za database na sunrise.php](/img/installation/wizard-installation.png)
+### Ufungaji
+
+Msanikishaji ataunda meza muhimu za hifadhidata na kusakinisha faili ya `sunrise.php` ambayo Ultimate Multisite inahitaji kufanya kazi. Bofya **Sakinisha** ili uendelee.
+
+![Hatua ya usakinishaji inaonyesha meza za hifadhidata na sunrise.php](/img/installation/wizard-installation.png)
 
 ### Kampuni Yako
 
-Jaza taarifa za kampuni yako na weka sarafu yako ya kawaida. Taarifa hizi zitatumika katika jukwaa lako lote la WaaS. Bonyeza **Continue** ukimaliza.
+Jaza taarifa ya kampuni yako na uweke sarafu chaguomsingi. Taarifa hii itatumika katika jukwaa lako la WaaS. Bofya **Endelea** baada ya kumaliza.
 
-![Hatua ya usanidi wa Kampuni Yako](/img/installation/wizard-your-company.png)
+![Hatua ya usanidi wa "Kampuni Yako"](/img/installation/wizard-your-company.png)
 
-### Maudhui ya Msingi
+### Maudhui Chaguomsingi
 
-Hatua hii inakuruhusu kusakinisha violezo vilivyotayarishwa, bidhaa, na maudhui mengine ya kuanzia. Hii ni njia nzuri ya kufahamiana na vipengele vya Ultimate Multisite. Bonyeza **Install** kuongeza maudhui ya msingi, au ruka hatua hii ikiwa unapendelea kuanza upya bila kitu.
+Hatua hii inakuwezesha kusakinisha violezo vilivyotanguliwa, bidhaa na maudhui mengine ya kuanzia. Hii ni njia nzuri ya kujifahamisha na vipengele vya Ultimate Multisite. Bofya **Sakinisha** ili kuongeza maudhui chaguomsingi, au ruka hatua hii ikiwa unapendelea kuanza kutoka mwanzo.
 
-![Hatua ya usakinishaji wa maudhui ya msingi](/img/installation/wizard-default-content.png)
+![Hatua ya usakinishaji wa maudhui chaguomsingi](/img/installation/wizard-default-content.png)
 
-### Plugins Zinazopendekezwa
+### Plugins Inayopendekezwa
 
-Kwa hiari sakinisha plugins shirikishi zinazopendekezwa. Bonyeza **Install** kuziweka au ruka kuendelea.
+Sakinishe hiari plugins zinazopendekezwa. Bofya **Sakinisha** ili kuongeza au uendelee bila kusakinisha.
 
-![Hatua ya plugins zinazopendekezwa](/img/installation/wizard-recommended-plugins.png)
+![Hatua ya plugins inayopendekezwa](/img/installation/wizard-recommended-plugins.png)
 
 ### Tayari!
 
-Hiyo ndiyo yote! Usakinishaji wako wa Ultimate Multisite umekamilika. Sasa unaweza kuanza kujenga jukwaa lako la Website as a Service kutoka kwenye **Network Admin Dashboard**.
+Hiyo ndiyo! Usakinishaji wako wa Ultimate Multisite umekamilika. Sasa unaweza kuanza kujenga jukwaa lako la Tovuti kama Huduma kutoka kwa **Dashboard ya Msimamizi wa Mtandao**.
 
-![Usanidi umekamilika - Skrini ya Tayari](/img/installation/wizard-ready.png)
+![Usanidi umekamilika - skrini ya "Tayari"](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard na Ultimate Multisite ikifanya kazi](/img/installation/network-dashboard.png)
+![Dashboard ya Msimamizi wa Mtandao na Ultimate Multisite imewashwa](/img/installation/network-dashboard.png)
 
 Endelea na ufurahie!

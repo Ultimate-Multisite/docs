@@ -3,84 +3,84 @@ title: Ultimate Multisite-ийг суулгах
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite суулгах
+# Ultimate Multisite-ийг суулгах
 
 :::note
-Энэ зааврыг ашиглахын тулд та WordPress Multisite суурьсан бөгөөд тохируулсан байх ёстой гэж үзэж байна. Хэрхэн хийхийг мэдэхийг хүсвэл WP Beginner-ийн [энэ зааврыг](https://www.wpbeginner.com/glossary/multisite/) үзээрэй.
+Энэхүү заавар нь та WordPress Multisite-ийг аль хэдийнээ суулсан, тохируулсан гэж үздэг. Үүнийг хэрхэн хийхийг мэдэх бол WP Beginner-ийн [энэхүү зааврыг](https://www.wpbeginner.com/glossary/multisite/) үзээрэй.
 :::
 
-## Плагины суулгах
+## Плагиныг суулгах
 
-Ultimate Multisite нь [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) дээр үнэгүй байгаа.
+Ultimate Multisite нь [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) дээр үнэгүй байрлуулсан болно.
 
-Таны **Network Admin Dashboard**-д орж, **Plugins → Add New Plugin** руу очино.
+**Сүлжээний администраторын самбар** (Network Admin Dashboard)-аас **Плагин → Шинэ плагин нэмэх** (Plugins → Add New Plugin) руу очно уу.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Сүлжээний администраторын самбарын "Шинэ плагин нэмэх" хуудас](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** гэж хайхад (нарийвчлалтай тохирохын тулд дуугүйг ашиглана уу), хамгийн эхний үр дүнд гарна. **Install Now**-д дарна.
+**"Ultimate Multisite"** гэсэн үгийг (яг таарвал хайхын тулд түүвэрлэж өгөх) бичиж, эхний үр дүнд гарч ирэх болно. **Одоо суулбал** (Install Now) дарна уу.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Ultimate Multisite-ийг хайлтын үр дүнд гаргаж ирэх дэлгэц](/img/installation/search-ultimate-multisite.png)
 
-Суулгасны дараа, бүх сүлжээнд плагиныг идэвхжүүлэхийн тулд **Network Activate**-д дарна.
+Суулгаад дуусахад **Сүлжээнд идэвхжүүлэх** (Network Activate) товчийг дарж, плагиныг бүх сүлжээндээ идэвхжүүлнэ үү.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Плагин сулгалж, "Сүлжээнд идэвхжүүлэх" товчтой дэлгэц](/img/installation/plugin-installed.png)
 
-Идэвхжүүлсний дараа та автомат хэлбэрээр Setup Wizard руу чиглэгдэнэ.
+Идэвхжүүлсний дараа та автоматаар Тохиргооны Визард (Setup Wizard)-д чиглэгдэх болно.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Плагин идэвхжүүлж, визардад чиглүүлэх дэлгэц](/img/installation/plugin-activated.png)
 
-## Setup Wizard (Тохируулгын үйл явц)
+## Тохиргооны Визард
 
-Setup Wizard нь Ultimate Multisite-ийг ойролцоогоор 10 минутад тохируулах туслах болно.
+Тохиргооны Визард та Ultimate Multisite-ийг 10 минутын дотор тохируулахад тусална.
 
-### Тавтай морил
+### Урьтал мэдээлэл
 
-Эхлэхийн тулд **Get Started**-д дарна уу.
+**Эхлэх** (Get Started) товчийг дарж эхэлнэ үү.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Тохиргооны Визардын урьтал мэдээллийн дэлгэц](/img/installation/wizard-welcome.png)
 
-### Суулгах өмнөх шалгалт
+### Урьдчилсан шалгалт
 
-Энэ алхам нь таны систем мэдээлэл болон WordPress суулгалыг Ultimate Multisite-ийн шаардлагыг хангаж байгаа эсэхийг шалгана. Бүх зүйл сайн харагдаж байвал **Go to the Next Step** руу очдог.
+Энэ алхам нь таны системийн мэдээлэл, WordPress суулгацыг Ultimate Multisite-ийн шаардлагыг хангаж байгаа эсэхийг шалгана. Бүх зүйл сайн байвал **Дараагийн алхамыг үргэлжлүүлэх** (Go to the Next Step) товчийг дарна уу.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Системийн шаардлагыг харуулсан урьдчилсан шалгалт](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate товч (v2.6.1+)
-Хэрэв Ultimate Multisite суулгагдсан боловч **хагалсан биш** бол — жишээлбэл, сүлжээний плагины дэлгэцээс **Network Activate**-ыг бус, харин (single-site) **Activate**-ыг дарсан бол — Pre-install Checks алхам нь үүнийг илрүүлж, танд **Network Activate** товчийг харуулна.
+:::note Сүлжээнд идэвхжүүлэх товч (v2.6.1+)
+Ultimate Multisite сулгалсан боловч **сүлжээнд идэвхжүүлээгүй** бол — жишээлбэл, сүлжээний плагины дэлгэцнээс **Идэвхжүүлэх** (single-site) товчийг дарсан байхад — Урьдчилсан шалгалт алхам нь үүнийг илрүүлж, **Сүлжээнд идэвхжүүлэх** товчийг гаргана.
 
-**Network Activate**-ыг дарах нь плагиныг таны бүх multisite сүлжээнд автоматаар идэвхжүүлнэ. Идэвхжсэн дараа wizard нь суулгах алхам руу ердийн хэлбэрээр үргэлжилнэ. Идэвхжилтийн төлөвийг засахын тулд та wizard-ээ гарах шаардлагагүй.
+**Сүлжээнд идэвхжүүлэх** товчийг дарснаар плагин автоматаар бүх мультисайт сүлжээндээ идэвхжүүлэгдэнэ. Идэвхжүүлсний дараа визард суулгалт руу хэвийн үргэлжилнэ. Та идэвхжүүлэлийн төлөвийг засварлахаар визардыг орхиж гарах шаардлагагүй болно.
 :::
 
-### Суулгалт (Installation)
+### Суулгалтын алхам
 
-Installer нь Ultimate Multisite ажиллахад шаардлагатай database tables болон `sunrise.php` файлыг үүсгэж суулгана. Үргэлжлүүлэхийн тулд **Install**-ыг дарна уу.
+Суулгагч нь шаардлагатай сав баазны хүснэгтийг үүсгээд Ultimate Multisite-ийн ажиллахын тулд хэрэгтэй `sunrise.php` файлыг суулгана. Үргэлжлүүлэхийн тулд **Суулгах** (Install) товчийг дарна уу.
 
-![Суулгалт алхам дээрх database tables ба sunrise.php файл](/img/installation/wizard-installation.png)
+![Сав баазны хүснэгт, sunrise.php-ийг харуулсан суулгалтын алхам](/img/installation/wizard-installation.png)
 
-### Таны компани (Your Company)
+### Таны компани
 
-Таны компанийн мэдээллийг оруулж, анхны валютыг тохируулна уу. Энэ мэдээллийг таны WaaS платформын туршид ашиглана. Гүйцэтгэсэн бол **Continue**-ыг дарна уу.
+Компанийнхаа мэдээллийг бөглөж, анхдагч валютаа тохируулаарай. Энэ мэдээлэл нь таны WaaS платформ дээр ашиглагдана. Дуусахад **Үргэлжлүүлэх** (Continue) товчийг дарна уу.
 
-![Таны компанийн тохиргооны алхам](/img/installation/wizard-your-company.png)
+![Компанийн мэдээллийг тохируулах алхам](/img/installation/wizard-your-company.png)
 
-### Анхны контент (Default Content)
+### Анхдагч контент
 
-Энэ алхам нь танд өмнө нь тодорхойлогдсон template, бүтээгдэхүүн болон бусад эхлэл дахь контентыг суулгах боломжийг олгоно. Энэ бол Ultimate Multisite-ийн онцлогийг тань таних хамгийн сайн арга юм. Анхны контент нэмэхийн тулд **Install**-ыг дарна, эсвэл бүрэн шинээр эхлэхийг хүсвэл энэ алхамд алгасаа болно.
+Энэ алхам нь танд өмнөөр тодорхойлогдсон загвар, бүтээгдэхүүн болон бусад эхэлж ашиглахад хэрэгтэй контентыг суулгах боломжийг олгоно. Энэ нь Ultimate Multisite-ийн функцуудыг мэдэхэд тустай. Анхдагч контент нэмэхийн тулд **Суулгах** (Install) товчийг дарна уу, эсвэл өөрөө бүтээнэ гэж үзээд энэ алхамыг хайх болно.
 
-![Анхны контенты суулгах алхам](/img/installation/wizard-default-content.png)
+![Анхдагч контентыг суулгах алхам](/img/installation/wizard-default-content.png)
 
-### Зөвлөмжтэй плагинууд (Recommended Plugins)
+### Санал болгосон плагинүүд
 
-Хэрэв шаардлагатай бол зөвлөмжтэй хамтрагч плагинуудыг суулгана уу. Нэмэхээр **Install**-ыг дарна, эсвэл үргэлжлүүлэхийн тулд алгасаа болно.
+Санал болгосон туслах плагинууд байвал суулгана уу. Суулгахаар **Суулгах** (Install) товчийг дарна уу, эсвэл үргэлжлүүлнэ.
 
-![Зөвлөмжтэй плагинууд алхам](/img/installation/wizard-recommended-plugins.png)
+![Санал болгосон плагинүүдийн алхам](/img/installation/wizard-recommended-plugins.png)
 
-### Бэлэн байна! (Ready!)
+### Бэлэн!
 
-Энэ бол бүх зүйл дууссан! Таны Ultimate Multisite суулгалт дууссан. Одоо **Network Admin Dashboard**-аса таны Вэбсайт ашиглалтад бэлэн платформыг барьж эхлэх боломжтой.
+Тэр л боллоо! Ultimate Multisite суулгалтын ажил дууслаа. Одоо та **Сүлжээний администраторын самбар** (Network Admin Dashboard)-аас Website as a Service платформыг байгуулж эхлэх боломжтой.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Суулгалт дуусахад гарч ирэх дэлгэц](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Сүлжээний администраторын самбар, Ultimate Multisite идэвхтэй байгаа дэлгэц](/img/installation/network-dashboard.png)
 
-Одоо таашаа тоглож үзээрэй!
+Өөрийгөө сорьж үзээрэй!

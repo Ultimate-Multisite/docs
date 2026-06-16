@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite-ის დაყენება
+title: ულტიმატ მულტისაიტის ინსტალაცია
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ultimate Multisite-ის დაყენება
 
 :::note
-ეს ტუტორიალი იმას ეფუძნება იმას, რომ თქვენ უკვე გაქვთ WordPress Multisite დაყენებული და კონფიგურირებული. თუ როგორ უნდა ისწავლოთ ეს, შეამოწმეთ [ეს ტუტორიალი](https://www.wpbeginner.com/glossary/multisite/) WP Beginner-ის მიერ.
+ეს სახელმძღვანელო გ assumes, რომ თქვენ უკვე დაინსტალირებული და კონფიგურირებული გაქვთ WordPress Multisite. თუ როგორ უნდა გააკეთოთ ეს, გადახედეთ WP Beginner-ის [ამ სახელმძღვანელოს](https://www.wpbeginner.com/glossary/multisite/).
 :::
 
-## პლაგინის დამატება
+## პლაგინის დაყენება
 
-Ultimate Multisite უფასოდ ხელმისაწვდომია [WordPress.org]-ზე.
+Ultimate Multisite უფასოდ ხელმისაწვდომია [WordPress.org]-ზე ([https://wordpress.org/plugins/ultimate-multisite/](https://wordpress.org/plugins/ultimate-multisite/)).
 
-თქვენი **Network Admin Dashboard**-დან გადადით **Plugins → Add New Plugin**-ში.
+**Network Admin Dashboard-დან** გადადით **Plugins → Add New Plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin გვერდი](/img/installation/add-new-plugin.png)
 
-მოძებნეთ **"Ultimate Multisite"** (სიტყვების ციტატებით ზუსტი შესაბამისობისთვის), და ის გამოჩნდება პირველი შედეგი. დააჭირეთ **Install Now**.
+მოძებნეთ **"Ultimate Multisite"** (ციტატებში, ზუსტი შეხამებისთვის) და ის გამოჩნდება პირველ შედეგად. დააწკაპუნეთ **Install Now**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![საძიებო შედეგები, რომელშიც Ultimate Multisite არის ნაჩვენები](/img/installation/search-ultimate-multisite.png)
 
-დაყენების შემდეგ, დააჭირეთ **Network Activate**-ს პლაგინის აქტივაციისთვის მთელ ქსელზე.
+დაინსტალირების შემდეგ, დააწკაპუნეთ **Network Activate**, რათა პლაგინი აქტიური იყოს თქვენი მთელი ქსელის მასშტაბით.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![დაინსტალირებული პლაგინი Network Activate ღილაკით](/img/installation/plugin-installed.png)
 
-აქტივაციის შემდეგ, თქვენ ავტომატურად გადახрельდებით Setup Wizard-ზე.
+აქტივაციის შემდეგ, ავტომატურად გადაამისამართებთ Setup Wizard-ში.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![პლაგინი აქტივირებულია და გადამისამართებულია ვიზარდზე](/img/installation/plugin-activated.png)
 
-## Setup Wizard (დაყენების მეგზური)
+## Setup Wizard
 
-Setup Wizard დაგეხმარება Ultimate Multisite-ის კონფიგურაციაში დაახლოებით 10 წუთში.
+Setup Wizard დაგეხმარებათ Ultimate Multisite-ის კონფიგურაციაში დაახლოებით 10 წუთში.
 
-### 환영 (Welcome)
+### კეთილი იყოს თქვენი მობრძანება
 
-დააჭირეთ **Get Started**-ს დასაწყებად.
+დააწკაპუნეთ **Get Started**, რათა დაიწყოთ.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Setup Wizard-ის შესასვლელი ეკრანი](/img/installation/wizard-welcome.png)
 
-### წინასწარი შემოწმებები (Pre-install Checks)
+### წინასწარი შემოწმება
 
-ეს ნაბიჯი გამოწმებს თქვენს სისტემის ინფორმაციას და WordPress-ის ინსტალაციას, რომ დარწმუნდეთ, რომ ის აკმაყოფილებს Ultimate Multisite-ის მოთხოვნებს. თუ ყველაფერი რიგზეა, დააჭირეთ **Go to the Next Step**.
+ეს ნაბიჯი გადაამოწმებს თქვენს სისტემის ინფორმაციას და WordPress-ის ინსტალაციას, რათა დარწმუნდეს, რომ ის აკმაყოფილებს Ultimate Multisite-ის მოთხოვნებს. თუ ყველაფერი კარგად არის, დააწკაპუნეთ **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![წინასწარი შემოწმება, რომელიც აჩვენებს სისტემის მოთხოვნებს](/img/installation/wizard-pre-install-checks.png)
 
 :::note Network Activate ღილაკი (v2.6.1+)
-თუ Ultimate Multisite დაინსტალირებულია, მაგრამ ** aún არ არის ქსელში აქტიური** — მაგალითად, თუ თქვენ დააჭირეთ **Activate** (ერთ-საიტზე) ნაცვლად **Network Activate**-ს ქსელის პლაგინების ეკრანისგან — Pre-install Checks ნაბიჯი ამას აღმოაჩენს და აჩვენებს **Network Activate** ღილაკს.
+თუ Ultimate Multisite დაინსტალირებულია, მაგრამ **ჯერ არ არის ქსელურად აქტივირებული** — მაგალითად, თუ თქვენ დააწკაპუნეთ **Activate** (ერთმომხმარებლიანი ვერსია), ნაცვლად იმისა, რომ დაეწკაპუნათ **Network Activate** ქსელის პლაგინების ეკრანზე — წინასწარი შემოწმის ნაბიჯი ამას აღმოაჩენს და აჩვენებს **Network Activate** ღილაკს.
 
-**Network Activate**-ის დაჭერით, პლაგინი ავტომატურად აქტიურდება თქვენს მთელ მულტი-საიტების ქსელში. აქტიური მას შემდეგ, ვიზარდი ნორმალურად გრძელდება ინსტალაციის ნაბიჯამდე. არ არის საჭირო ვიზარდის დატოვება activations სტატუსის შესწორებისთვის.
+დააწკაპუნეთ **Network Activate**, რათა პლაგინი ავტომატურად აქტიური იყოს თქვენი მთელი მულტისაიტული ქსელის მასშტაბით. აქტივაციის შემდეგ, ვიზარდი ჩვეულებრივად გაგრძელდება ინსტალაციის ნაბიჯზე. არ არის საჭირო, რომ ვიზარი დატოვოთ, რათა გამოსწორდეს აქტივაციის სტატუსი.
 :::
 
 ### ინსტალაცია
 
-ინსტალერი შექმნის საჭირო მონაცემთა ბაზის ცხრილებს და დაამონტაჟებს `sunrise.php` ფაილს, რომელიც Ultimate Multisite-ს ფუნქციონირებისთვის სჭირდება. გადასასვლელად დააჭირეთ **Install**.
+ინსტალატორი შექმნის საჭირო ბაზის მონაცემების ცხრილებს და დაასხამს `sunrise.php` ფაილს, რომელიც Ultimate Multisite-ს ფუნქციონირებისთვის ესაჭიროება. პროცედურის გასაგრძელებლად დააწკაპუნეთ **Install**.
 
-![ინსტალაციის ნაბიჯი მონაცემთა ბაზის ცხრილებისა და sunrise.php-ის ჩვენებით](/img/installation/wizard-installation.png)
+![ინსტალაციის ნაბიჯი, რომელიც აჩვენებს ბაზის მონაცემების ცხრილებს და sunrise.php-ს](/img/installation/wizard-installation.png)
 
 ### თქვენი კომპანია
 
-შეავსეთ თქვენი კომპანიის ინფორმაცია და დაადგინეთ თქვენი დეფულტური ვალუტა. ეს ინფორმაცია გამოყენებული იქნება WaaS პლატფორმაზე მთელი პერიოდის განმავლობაში. დასრულების შემდეგ დააჭირეთ **Continue**.
+შეავსეთ თქვენი კომპანიის ინფორმაცია და დააყენეთ თქვენი სტანდარტული ვალუტა. ეს ინფორმაცია გამოყენებული იქნება თქვენს WaaS პლატფორმაში. როდესაც დასრულდება, დააწკაპუნეთ **Continue**.
 
 ![თქვენი კომპანიის კონფიგურაციის ნაბიჯი](/img/installation/wizard-your-company.png)
 
-### დეფულტური კონტენტი
+### სტანდარტული შინაარსი
 
-ამ ნაბიჯით შეგიძლიათ დაინსტალიროთ წინასწარ განსაზღვრული შაბლონები, პროდუქტები და სხვა საწყისი კონტენტი. ეს შესანიშნავი საშუალებაა Ultimate Multisite-ის ფუნქციების გაცნობისთვის. დაამატეთ დეფულტური კონტენტით დამატებისას დააჭირეთ **Install**, ან გამოტოვეთ ეს ნაბიჯი, თუ გსურთ თავიდან დაწყება.
+ეს ნაბიჯი საშუალებას გაძლევთ, დააინსტალიროთ წინასწარ განსაზღვრული თემები, პროდუქტები და სხვა საწყისი შინაარსი. ეს შესანიშნავი გზაა Ultimate Multisite-ის ფუნქციების გასაცნობად. დააწკაპუნეთ **Install**, რათა დაამატოთ სტანდარტული შინაარსი, ან გადაახვიეთ ეს ნაბიჯი, თუ ამჯობინებთ, რომ თავიდან დაიწყოთ.
 
-![დეფულტური კონტენტის ინსტალაციის ნაბიჯი](/img/installation/wizard-default-content.png)
+![სტანდარტული შინაარსის ინსტალაციის ნაბიჯი](/img/installation/wizard-default-content.png)
 
 ### რეკომენდებული პლაგინები
 
-არასდროს არ არის საჭირო, მაგრამ შეგიძლიათ დაამატოთ რეკომენდებული თანმხლები პლაგინები. დაამატეთ ისინი **Install**-ით ან გამოტოვეთ და გააგრძელეთ.
+შეგიძლიათ დააინსტალიროთ რეკომენდებული დამხმარე პლაგინები. მათი დასამატებლად დააწკაპუნეთ **Install** ან გადაახვიეთ, რომ გააგრძელოთ.
 
 ![რეკომენდებული პლაგინების ნაბიჯი](/img/installation/wizard-recommended-plugins.png)
 
-### მზად!
+### მზადა ხართ!
 
-Все готово! Ваша установка Ultimate Multisite завершена. Теперь вы можете начать создавать свою платформу как услугу (Website as a Service) из **Панели администратора сети** (Network Admin Dashboard).
+ეს არის! თქვენი Ultimate Multisite ინსტალაცია დასრულებულია. ახლა შეგიძლიათ დაიწყოთ თქვენი Website as a Service პლატფორმის შექმნა **Network Admin Dashboard-დან**.
 
-![Настройка завершена - Экран готов к работе](/img/installation/wizard-ready.png)
+![ინსტალაცია დასრულდა - მზად ეკრანი](/img/installation/wizard-ready.png)
 
-![Панель администратора сети с активным Ultimate Multisite](/img/installation/network-dashboard.png)
+![Network Admin Dashboard, რომელშიც Ultimate Multisite აქტიურია](/img/installation/network-dashboard.png)
 
-Смело начинайте работу!
+გაერთეთ!
