@@ -1,80 +1,86 @@
 ---
-title: Instalowanie Ultimate Multisite
+title: Instalacja wtyczki Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Instalacja Ultimate Multisite
 
 :::note
-Ten poradnik zakłada, że masz już zainstalowany i skonfigurowany WordPress Multisite. Jeśli nie wiesz, jak to zrobić, sprawdź [ten poradnik](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner.
+Niniejszy samouczek zakłada, że masz już zainstalowany i skonfigurowany WordPress Multisite. Aby dowiedzieć się, jak to zrobić, zapoznaj się z tym poradnikiem [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) autorstwa WP Beginner.
 :::
 
 ## Instalacja wtyczki
 
-Ultimate Multisite jest dostępny bezpłatnie na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite jest dostępny bezpłatnie na stronie [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-W **Kokpicie administratora sieci** przejdź do **Wtyczki → Dodaj nową wtyczkę**.
+W **Panelu administratora sieci** przejdź do **Wtyczki → Dodaj nową wtyczkę**.
 
-![Strona dodawania nowej wtyczki w panelu administratora sieci](/img/installation/add-new-plugin.png)
+![Strona „Dodaj nową wtyczkę” w panelu administratora sieci](/img/installation/add-new-plugin.png)
 
-Wyszukaj **"Ultimate Multisite"** (w cudzysłowie, aby uzyskać dokładne dopasowanie) — wtyczka pojawi się jako pierwszy wynik. Kliknij **Zainstaluj teraz**.
+Wyszukaj **„Ultimate Multisite”** (w cudzysłowach, aby uzyskać dokładne dopasowanie), a pojawi się jako pierwszy wynik. Kliknij **Zainstaluj teraz**.
 
 ![Wyniki wyszukiwania pokazujące Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Po zainstalowaniu kliknij **Włącz w całej sieci**, aby aktywować wtyczkę na wszystkich stronach w sieci.
+Po zainstalowaniu kliknij **Aktywuj w sieci**, aby aktywować wtyczkę w całej Twojej sieci.
 
-![Zainstalowana wtyczka z przyciskiem Włącz w całej sieci](/img/installation/plugin-installed.png)
+![Wtyczka zainstalowana z przyciskiem „Aktywuj w sieci”](/img/installation/plugin-installed.png)
 
-Po aktywacji zostaniesz automatycznie przekierowany do Kreatora konfiguracji.
+Po aktywacji zostaniesz automatycznie przekierowany do kreatora konfiguracji.
 
-![Aktywowana wtyczka i przekierowanie do kreatora](/img/installation/plugin-activated.png)
+![Wtyczka aktywowana i przekierowanie do kreatora](/img/installation/plugin-activated.png)
 
 ## Kreator konfiguracji
 
-Kreator konfiguracji przeprowadzi Cię przez proces ustawiania Ultimate Multisite w około 10 minut.
+Kreator konfiguracji poprowadzi Cię przez proces konfigurowania Ultimate Multisite w około 10 minut.
 
-### Powitanie
+### Witamy
 
-Kliknij **Rozpocznij**, aby zacząć.
+Kliknij **Rozpocznij**, aby rozpocząć.
 
-![Ekran powitalny Kreatora konfiguracji](/img/installation/wizard-welcome.png)
+![Ekran powitalny kreatora konfiguracji](/img/installation/wizard-welcome.png)
 
-### Sprawdzenie wymagań
+### Wstępne sprawdzenie
 
-Ten krok weryfikuje informacje o Twoim systemie i instalacji WordPress, aby upewnić się, że spełniają wymagania Ultimate Multisite. Jeśli wszystko jest w porządku, kliknij **Przejdź do następnego kroku**.
+Ten krok sprawdza informacje o Twoim systemie i instalacji WordPress, aby upewnić się, że spełniają one wymagania Ultimate Multisite. Jeśli wszystko wygląda dobrze, kliknij **Przejdź do następnego kroku**.
 
-![Sprawdzenie wymagań systemowych](/img/installation/wizard-pre-install-checks.png)
+![Wstępne sprawdzanie pokazujące wymagania systemu](/img/installation/wizard-pre-install-checks.png)
+
+:::note Przycisk „Aktywuj w sieci” (wersja 2.6.1+)
+Jeśli Ultimate Multisite został zainstalowany, ale **jeszcze nie aktywowany w sieci** — na przykład, jeśli kliknąłeś **Aktywuj** (dla pojedynczej witryny) zamiast **Aktywuj w sieci** z ekranu wtyczek sieciowych — krok wstępnego sprawdzania to wykryje i wyświetli przycisk **Aktywuj w sieci**.
+
+Kliknięcie **Aktywuj w sieci** aktywuje wtyczkę w całej Twojej sieci multisite. Po aktywacji kreator przejdzie normalnie do kroku instalacji. Nie musisz opuszczać kreatora, aby naprawić stan aktywacji.
+:::
 
 ### Instalacja
 
-Instalator utworzy niezbędne tabele w bazie danych oraz zainstaluje plik `sunrise.php`, który jest wymagany do działania Ultimate Multisite. Kliknij **Zainstaluj**, aby kontynuować.
+Instalator utworzy niezbędne tabele bazy danych i zainstaluje plik `sunrise.php`, który jest potrzebny do działania Ultimate Multisite. Kliknij **Zainstaluj**, aby kontynuować.
 
-![Krok instalacji pokazujący tabele bazy danych i sunrise.php](/img/installation/wizard-installation.png)
+![Krok instalacji pokazujący tabele bazy danych i plik sunrise.php](/img/installation/wizard-installation.png)
 
 ### Twoja firma
 
-Uzupełnij dane swojej firmy i ustaw domyślną walutę. Te informacje będą używane w całej Twojej platformie WaaS. Po zakończeniu kliknij **Kontynuuj**.
+Wprowadź informacje o swojej firmie i ustaw domyślną walutę. Te informacje będą używane w całej platformie WaaS. Kliknij **Kontynuuj**, gdy skończysz.
 
-![Krok konfiguracji danych firmy](/img/installation/wizard-your-company.png)
+![Krok konfiguracji „Twoja firma”](/img/installation/wizard-your-company.png)
 
-### Domyślna zawartość
+### Domyślne treści
 
-W tym kroku możesz zainstalować gotowe szablony, produkty i inną przykładową zawartość. To świetny sposób na zapoznanie się z funkcjami Ultimate Multisite. Kliknij **Zainstaluj**, aby dodać domyślną zawartość, lub pomiń ten krok, jeśli wolisz zacząć od zera.
+Ten krok pozwala zainstalować wstępnie zdefiniowane szablony, produkty i inne przykładowe treści. To świetny sposób na zapoznanie się z funkcjami Ultimate Multisite. Kliknij **Zainstaluj**, aby dodać domyślne treści lub pomiń ten krok, jeśli wolisz zacząć od zera.
 
-![Krok instalacji domyślnej zawartości](/img/installation/wizard-default-content.png)
+![Krok instalacji domyślnych treści](/img/installation/wizard-default-content.png)
 
-### Polecane wtyczki
+### Zalecane wtyczki
 
-Opcjonalnie możesz zainstalować polecane wtyczki towarzyszące. Kliknij **Zainstaluj**, aby je dodać, lub pomiń, aby kontynuować.
+Opcjonalnie zainstaluj zalecane wtyczki uzupełniające. Kliknij **Zainstaluj**, aby je dodać, lub pomiń ten krok, aby kontynuować.
 
-![Krok z polecanymi wtyczkami](/img/installation/wizard-recommended-plugins.png)
+![Krok z zalecanymi wtyczkami](/img/installation/wizard-recommended-plugins.png)
 
 ### Gotowe!
 
-To wszystko! Instalacja Ultimate Multisite została zakończona. Możesz teraz zacząć budować swoją platformę Website as a Service z poziomu **Kokpitu administratora sieci**.
+To wszystko! Instalacja Ultimate Multisite została zakończona. Możesz teraz zacząć tworzyć platformę Website as a Service z **Panelu administratora sieci**.
 
-![Konfiguracja zakończona - ekran Gotowe](/img/installation/wizard-ready.png)
+![Konfiguracja ukończona — ekran „Gotowe”](/img/installation/wizard-ready.png)
 
-![Kokpit administratora sieci z aktywnym Ultimate Multisite](/img/installation/network-dashboard.png)
+![Panel administratora sieci z aktywnym Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Miłej zabawy!
+Śmiało, baw się dobrze!

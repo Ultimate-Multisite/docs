@@ -6,80 +6,81 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 # Instalimi i Ultimate Multisite
 
 :::note
-Ky tutorial supon që të keni tashmë një WordPress Multisite të instaluar dhe të konfiguruar. Për të mësuar se si, shihni [këtë tutorial](https://www.wpbeginner.com/glossary/multisite/) nga WP Beginner.
+Ky udhëzues presupozon se tashmë keni instaluar dhe konfiguruar WordPress Multisite. Për të mësuar si, shikoni [ky udhëzues](https://www.wpbeginner.com/glossary/multisite/) nga WP Beginner.
 :::
 
-## Instalimi i Pluginit
+## Instalimi i Plugin-it
 
-Ultimate Multisite është i lirë në [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite është e disponueshme falas në [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Nga **Dashboard-i i Administratorit të rrjetit** (Network Admin Dashboard), shkoni te **Plugins → Add New Plugin**.
+Nga **Dashboardi juaj i Administratorit të Rrjetit**, shkoni te **Plugins → Shto Plugin të Ri**.
 
-![Page për shtimin e një plugin](https://example.com/img/installation/add-new-plugin.png)
+![Faqja "Shto Plugin të Ri" e Administratorit të Rrjetit](/img/installation/add-new-plugin.png)
 
-Kërkoni **"Ultimate Multisite"** (me citime për një përafësim të saktë) dhe do të shfaqet si rezultati i parë. Klikoni **Install Now**.
+Kërkoni **"Ultimate Multisite"** (me virgjuleza për një përputhje të saktë) dhe do të shfaqet si rezultati i parë. Klikoni **Instalo tani**.
 
-![Rezultatet e kërkimit që shfaqin Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Rezultatet e kërkimt, duke treguar Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Pasi të instaloni, klikoni në **Network Activate** për të aktivizuar plugin-in gjatë gjithë rrjetit tuaj.
+Pasi të instalohet, klikoni **Aktivo në Rrjet** për të aktivizuar plugin-in në gjithë rrjetin tuaj.
 
-![Plugin i instaluar me butonin Network Activate](/img/installation/plugin-installed.png)
+![Plugin i instaluar me butonin "Aktivo në Rrjet"](/img/installation/plugin-installed.png)
 
-Pas aktivizimit, do të kesh redirektuar automatikisht te Setup Wizard (Marrja në punë).
+Pas aktivimit, do të ridrejtoheni automatikisht te Asistenti i Konfigurimit.
 
-![Plugin i aktivizuar dhe i redirektuar te wizard](/img/installation/plugin-activated.png)
+![Plugin i aktivizuar dhe i ridrejtuar në asistent](/img/installation/plugin-activated.png)
 
-## Wizard i Konfigurimit
+## Asistenti i Konfigurimit
 
-Wizard-i i konfiguroimit do t'ju udhëzojë në përgjatë rreth 10 minuta për të konfiguruar Ultimate Multisite.
+Asistenti i Konfigurimit do t'ju udhëheqë përmes konfigurimit të Ultimate Multisite në rreth 10 minuta.
 
-### Mirëseja
+### Mirëseardhje
 
-Klikoni **Get Started** (Filloni me këtë) për të nisur.
+Klikoni **Fillo** për të filluar.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Ekran mirëpritës i Asistentit të Konfigurimit](/img/installation/wizard-welcome.png)
 
 ### Kontrollet Para Instalimit
 
-Ky hap kontrollon informacionin e sistemit dhe instalimin e WordPress për të siguruar që i plotësojnë kërkesat e Ultimate Multisite. Nëse gjithçka duket mirë, klikoni në **Shko te Hapi i Ardhshëm**.
+Ky hap kontrollon informacionin e sistemit tuaj dhe instalimin e WordPress për të siguruar që ai plotëson kërkesat e Ultimate Multisite. Nëse gjithçka duket mirë, klikoni **Shko te Hapi i Ardhshëm**.
 
-![Kontojet parainstalimi që tregojnë kërkesat e sistemit](/img/installation/wizard-pre-install-checks.png)
+![Kontrollet para instalimit duke treguar kërkesat e sistemit](/img/installation/wizard-pre-install-checks.png)
 
-:::note Butoni Network Activate (v2.6.1+)
-Nëse Ultimate Multisite është instaluar por **nuk është aktiv ende në rrjet** – për shembull, po keni klikuar **Activate** (single-site) në vend të **Network Activate** nga shfletimi i plugin-eve të rrjetit – hapi Pre-install Checks do e zbulojë këtë dhe do t'ju tregoj një buton **Network Activate**.
+:::note Butoni "Aktivo në Rrjet" (v2.6.1+)
+Nëse Ultimate Multisite është instaluar, por **akoma nuk është aktivizuar në rrjet** — për shembull, nëse keni klikuar **Aktivo** (faqe e vetme) në vend të **Aktivo në Rrjet** nga ekrani i plugin-ëve të rrjetit — hapi i Kontrollit Para Instalimit do ta zbulojë këtë dhe do të shfaqë një buton **Aktivo në Rrjet**.
 
-Klikimi në **Network Activate** aktivizon plugin-in automatikisht në të gjithë rrjetin tuaj multisite. Pasi të aktivizoni, wizardi vazhdon normalisht drejt hapi i instalimit. Nuk keni nevojë ta lësh wizardin për të rregulluar statusin e aktivizimit.
+Klikimi në **Aktivo në Rrjet** aktivizon plugin-in në gjithë rrjetin tuaj multisite automatikisht. Pasi të aktivizohet, asistenti vazhdon normalisht te hapi i instalimit. Nuk keni nevojë të largoheni nga asistenti për të zgjidhur gjendjen e aktivimit.
+:::
 
 ### Instalimi
 
-Instaluesi do të krijojë tabelat e nevojshme të bazës dhe do të instaloje skurtin `sunrise.php` që Ultimate Multisite i nevojitet për të funksionuar. Klikoni **Install** për të vazhduar.
+Instaluesi do të krijojë tabelat e nevojshme të bazës së të dhënave dhe do të instaloje ​​skedarin `sunrise.php` që Ultimate Multisite ka nevojë për të funksionuar. Klikoni **Instalo** për të vazhduar.
 
-![Hapi i instalimit që tregon tabelat e bazës dhe sunrise.php](/img/installation/wizard-installation.png)
+![Hapi i instalimit duke treguar tabelat e bazës së të dhënave dhe skedarin sunrise.php](/img/installation/wizard-installation.png)
 
 ### Kompania Juaj
 
-Plotësoni informacionin e kompanisë dhe vendosni monedën tuaj standarde. Kjo informacion do të përdoret gjatë të gjithë platformës suaj WaaS. Klikoni **Kërcosh** kur keni mbaruar.
+Plotësoni informacionin e kompanisë suaj dhe vendosni valutën tuaj parazgjedhëse. Ky informacion do të përdoret në gjithë platformën tuaj WaaS. Klikoni **Vazhdo** kur të mbarojë.
 
-![Hapi i konfigurimit të kompanisë juaj](/img/installation/wizard-your-company.png)
+![Hapi i konfigurimit "Kompania Juaj"](/img/installation/wizard-your-company.png)
 
-### Përmbajtja Paraprake
+### Përmbajtja Parazgjedhëse
 
-Kjo hap ju lejon të instaloni template-të e përcaktuara, produktet dhe përmbajtjen fillestare të tjera. Kjo është një mënyrë fantastike për të qenur i njohur me veçoritë e Ultimate Multisite. Klikoni **Install** (Instalo) për të shtuar përmbajtjen standarde, ose kaloni këtë hap nëse dëshironi të filloni nga e para.
+Ky hap ju lejon të instaloni shabllone, produkte dhe përmbajtje tjetër fillestare të paracaktuara. Kjo është një mënyrë e mirë për t'u familiarizuar me veçoritë e Ultimate Multisite. Klikoni **Instalo** për të shtuar përmbajtjen parazgjedhëse, ose hidheni këtë hap nëse preferoni të filloni nga zero.
 
-![Hapi i instalimit të përmbajtjes](https://example.com/img/installation/wizard-default-content.png)
+![Hapi i instalimit të përmbajtjes parazgjedhëse](/img/installation/wizard-default-content.png)
 
-### Plugin e Rekomenduara
+### Plugin-ët e Rekomanduara
 
-Opsionale, instaloni pluginet shoqëruese të rekomanduara. Klikoni **Install** për t'i shtuar ose kaloni për të vazhduar.
+Instaloni opsionalisht plugin-ët bashkëpunues të rekomanduar. Klikoni **Instalo** për t'i shtuar ose hidheni për të vazhduar.
 
-![Hapat e rekomanduar të pluginëve](/img/installation/wizard-recommended-plugins.png)
+![Hapi i plugin-ëve të rekomanduar](/img/installation/wizard-recommended-plugins.png)
 
-### Përgatitur!
+### Gatshëm!
 
-Kjo është ajo! Instalimi i Ultimate Multisite ju është përfunduar. Tani mund të filloni të ndërtoni platformën tuaj të Website as a Service nga **Network Admin Dashboard**.
+Ka mbaruar! Instalimi juaj i Ultimate Multisite është përfunduar. Tani mund të filloni të ndërtoni platformën tuaj "Website as a Service" nga **Dashboardi i Administratorit të Rrjetit**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Konfigurim i përfunduar - Ekran "Gatshëm"](/img/installation/wizard-ready.png)
 
-![Dashboard i Administratorit të Aplikimit me Ultimate Multisite aktiv](/img/installation/network-dashboard.png)
+![Dashboardi i Administratorit të Rrjetit me Ultimate Multisite aktive](/img/installation/network-dashboard.png)
 
-Shkoni dhe bëni diçka të këndshme!
+Vazhdoni dhe argjëtohuni!

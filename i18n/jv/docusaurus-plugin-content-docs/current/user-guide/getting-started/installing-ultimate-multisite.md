@@ -1,86 +1,86 @@
 ---
-title: Nggolek Ultimate Multisite
+title: Nginstal Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Nginstal Ultimate Multisite
+# Instalasi Ultimate Multisite
 
-:::note
-Tutorial iki ngasumsi sampeyan wis duwe WordPress Multisite sing wis diinstal lan dikonfigurasi. Kanggo sinau babagan cara nggawe, deloken [tutorial iki](https://www.wpbeginner.com/glossary/multisite/) saka WP Beginner.
+:::cathetan
+Tutorial iki nyatakake yen sampeyan wis nginstal lan dikonfigurasi WordPress Multisite. Kanggo sinau carane, delengen [tutorial iki](https://www.wpbeginner.com/glossary/multisite/) dening WP Beginner.
 :::
 
-## Nginstal Plugin
+## Instalasi Plugin
 
-Ultimate Multisite gratis kanggo didapat ing [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite kasedhiya gratis ing [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Saka **Network Admin Dashboard** sampeyan, tindakake **Plugins → Add New Plugin**.
+Saka **Dashboard Admin Jaringan** sampeyan, bukak **Plugins → Tambah Plugin Anyar**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Kaca Tambah Plugin Anyar Admin Jaringan](/img/installation/add-new-plugin.png)
 
-Cari **"Ultimate Multisite"** ( nganggo kutipan supaya pas banget) lan iku bakal muncul minangka hasil kapisan. Klik **Install Now**.
+Goleki **"Ultimate Multisite"** (kanthi tanda kutip kanggo cocog persis) lan bakal katon minangka asil pisanan. Klik **Instal Saiki**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Asil panelapan nuduhake Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Sawise diinstal, klik **Network Activate** kanggo ngaktifake plugin ing sak jaringan sampeyan kabeh.
+Sawise diinstal, klik **Aktifake Jaringan** kanggo ngaktifake plugin ing kabeh jaringan sampeyan.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin diinstal kanthi tombol Aktifake Jaringan](/img/installation/plugin-installed.png)
 
-Sawise aktif, sampeyan bakal otomatis diarahkan menyang Setup Wizard.
+Banjur aktivasi, sampeyan bakal otomatis diarahkan menyang Wizard Pengaturan.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin diaktifake lan diarahkan menyang wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Wizard Pengaturan
 
-Setup Wizard bakal nuntun sampeyan ngatur Ultimate Multisite kira-kira 10 menit.
+Wizard Pengaturan bakal nuntun sampeyan liwat konfigurasi Ultimate Multisite ing sekitar 10 menit.
 
-### Welcome
+### Selamat Datang
 
-Klik **Get Started** kanggo miwiti.
+Klik **Mulai** kanggo miwiti.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Layar selamat datang Wizard Pengaturan](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### Pamariksaan Pra-instalasi
 
-Langkah iki bakal ngecek informasi sistem lan instalasi WordPress sampeyan supaya mesthi cocog karo syarat Ultimate Multisite. Yen kabeh katon apik, klik **Go to the Next Step**.
+Langkah iki mriksa informasi sistem lan instalasi WordPress sampeyan kanggo mesthekake yen cocog karo syarat Ultimate Multisite. Yen kabeh katon apik, klik **Mlebu menyang Langkah Sabanjure**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Pamariksaan pra-instalasi nuduhake syarat sistem](/img/installation/wizard-pre-install-checks.png)
 
-:::note Tombol Network Activate (v2.6.1+)
-Yenane Ultimate Multisite wis dipasang nanging durung **aktif jaringan** — contone, yen sampeyan klik **Activate** (single-site) tinimbang **Network Activate** saka layar plugin jaringan — langkah Pre-install Checks bakal ngadekelake iki lan nuduhake tombol **Network Activate**.
+:::cathetan Tombol Aktifake Jaringan (v2.6.1+)
+Yen Ultimate Multisite diinstal nanging **ora aktif ing jaringan** - contone, yen sampeyan klik **Aktifake** (situs tunggal) tinimbang **Aktifake Jaringan** saka layar plugin jaringan - langkah Pamariksaan Pra-instalasi bakal ndeteksi iki lan nuduhake tombol **Aktifake Jaringan**.
 
-Nalika diklik **Network Activate**, plugin kasebut bakal aktif ing sak jaringan multisite panjenengan kanthi otomatis. Sawise diaktifake, wizard bakal lanjut kan urutan normal menyang langkah instalasi. Panjenengan ora perlu ninggal wizard kanggo ngresiki status aktivasi iki.
+Klik **Aktifake Jaringan** kanggo ngaktifake plugin ing kabeh jaringan multisite sampeyan. Sawise diaktifake, wizard bakal terus menyang langkah instalasi. Sampeyan ora perlu ninggalake wizard kanggo mbenerake status aktivasi.
 :::
 
 ### Instalasi
 
-Installer bakal nggawe tabel database sing dibutuhake lan nginstal file `sunrise.php` sing dibutuhake Ultimate Multisite supaya bisa makarya. Klik **Install** kanggo lanjut.
+Installer bakal nggawe tabel basis data sing dibutuhake lan nginstal file `sunrise.php` sing dibutuhake Ultimate Multisite supaya bisa digunakake. Klik **Instal** kanggo nerusake.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Langkah instalasi nuduhake tabel basis data lan sunrise.php](/img/installation/wizard-installation.png)
 
-### Perusahaan Panjenengan
+### Perusahaan Sampeyan
 
-Isi informasi perusahaan panjenengan lan tetepake mata uang default. Informasi iki bakal digunakake ing sak platform WaaS panjenengan. Klik **Continue** nalika wis rampung.
+Isi informasi perusahaan sampeyan lan atur mata uang standar. Informasi iki bakal digunakake ing kabeh platform WaaS sampeyan. Klik **Terusake** nalika rampung.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Langkah konfigurasi Perusahaan Sampeyan](/img/installation/wizard-your-company.png)
 
-### Konten Default
+### Konten Standar
 
-Langkah iki ngidini panjenengan nginstal template, produk, lan konten awal liyane sing wis ditentokake. Iki cara apik kanggo kenalan karo fitur Ultimate Multisite. Klik **Install** kanggo nambah konten default, utawa lewati langkah iki yen panjenengan milih kanggo miwiti saka nol.
+Langkah iki ngidini sampeyan nginstal template sing wis diatur, produk, lan konten awal liyane. Iki minangka cara sing apik kanggo sinau fitur Ultimate Multisite. Klik **Instal** kanggo nambah konten standar, utawa lewati langkah iki yen sampeyan luwih gedhe miwiwi saka wiwitan.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Langkah instalasi konten standar](/img/installation/wizard-default-content.png)
 
-### Plugin Rekomendasi
+### Plugin Sing Disaranake
 
-Secara opsional instal plugin pendamping sing direkomendasikake. Klik **Install** kanggo nambahake utawa lewati kanggo lanjut.
+Opsional nginstal plugin pendukung sing disaranake. Klik **Instal** kanggo nambah utawa lewati kanggo nerusake.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Langkah plugin sing disaranake](/img/installation/wizard-recommended-plugins.png)
 
-### Siap!
+### Wis!
 
-Wis, wis! Instalasi Ultimate Multisite-mu wis rampung. Saiki kowe bisa mulai bangun platform Website as a Service-mu saka **Network Admin Dashboard**.
+Rampung! Instalasi Ultimate Multisite sampeyan wis rampung. Saiki sampeyan bisa miwiti mbangun platform Website as a Service saka **Dashboard Admin Jaringan**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Pengaturan rampung - Layar Siap](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Dashboard Admin Jaringan kanthi Ultimate Multisite aktif](/img/installation/network-dashboard.png)
 
-Monggo, ayo seru-seruan!
+Ayo, coba!

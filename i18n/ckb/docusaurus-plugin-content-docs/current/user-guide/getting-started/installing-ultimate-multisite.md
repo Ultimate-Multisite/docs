@@ -1,86 +1,85 @@
 ---
-title: ناردنی Ultimate Multisite
+title: سەرنجدان بە Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# ناردنکردنی Ultimate Multisite
+# دامەزراندنی Ultimate Multisite
 
 :::note
-ئەم ڕێنماییە پێویستی بەوەیە کە ئێستا WordPress Multisite دامەزراوە و ڕێکخراوەتەوە. بۆ فێربوونی چۆن ئەوە بکەیت، سەرنجی بدە بە [ئەم ڕێنماییە](https://www.wpbeginner.com/glossary/multisite/) لە WP Beginner.
+ئەم بابەتەکە پێش ئەوەی دەستپێ بکات، باسی ئەوە دەکات کە تۆ پێشتر WordPress Multisite دابەش کردووە و ڕێکخراوتەوە. بۆ فێر بوون لەسەر چۆنێتی، سەردانی [ئەم بابەتە](https://www.wpbeginner.com/glossary/multisite/) بکەن لە WP Beginner.
 :::
 
-## دامەزراندنی Pluginەکە
+## دامەزراندنی پلاگینەکە
 
-Ultimate Multisite بە بێ بەرامبەر لەسەر [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) دەستاییە.
+Ultimate Multisite بە خۆڕایی لە [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) دەست دەکەوێت.
 
-لە **Network Admin Dashboard** (داشبۆردی ئیدارەی تۆڕەکەت)، بگواشبە **Plugins → Add New Plugin**.
+لە **پەڕەی سەرجەم کۆنتڕۆڵی تۆڕەکەت**، بچە ناو **پلاگینەکان → زیادکردنی پلاگینی نوێ**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![پەڕەی زیادکردنی پلاگینی نوێ لە سەرجەم کۆنتڕۆڵی تۆڕەکە](/img/installation/add-new-plugin.png)
 
-ئەو شتێک بەدوای لێبگرە کە دەڵێیت **"Ultimate Multisite"** (بە کوتیشن بۆ یەک دەستکاریی ورد)، و ئەوە وەک یەکەم ئەنجام دەردەکەوێت. **Install Now** (هاتوانەیە: ئێستا دامەزران بکە) بگرە.
+گەڕا بۆ **"Ultimate Multisite"** (بە کوتەکان، بۆ ئەوەی بە تەواوی یەکگرێت)، و دەردەکەوێت وەک ئەنجامی یەکەم. کلیک بکە لەسەر **دامەزراندنی ئێستا**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![ئەنجامەکانی گەڕان کە Ultimate Multisite دەریخست](/img/installation/search-ultimate-multisite.png)
 
-کاتێک دامەزران کرد، **Network Activate** (فعۆڕکردنی تۆڕەکە) بگرە بۆ چالاککردنەوەی Pluginەکە لەسەر هەموو تۆڕەکەتدا.
+دوای دامەزراندن، کلیک بکە لەسەر **چالاککردنی تۆڕەکە** بۆ ئەوەی پلاگینەکە لە سەرجەم تۆڕەکەت چالاک بکرێت.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![پلاگینەکە دامەزراوە و دەستەڵاتێکی چالاککردنی تۆڕەکە هەیە](/img/installation/plugin-installed.png)
 
-پاش چالاککردنەوە، بە شێوەیەکی ئۆتۆماتیک دەبێت ڕێنمایی Setup Wizard (ڕێنمای دامەزراندن) بۆ تۆ بکات.
+دوای چالاکبوون، بە شێوەیەکی خۆکار ڕەنگە بۆ پەڕەی "سەرجەم کۆنتڕۆڵی" یەکخستنەوە بکرێت.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![پلاگینەکە چالاک کراوە و بۆ سەرجەم کۆنتڕۆڵی یەکخستنەوە کراوە](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## سەرجەم کۆنتڕۆڵی یەکخستنەوە
 
-Setup Wizard یەکەت دەبێت بە چەند خولۆڵەی ١٠ خرداد ڕێنمایی بکات کە Ultimate Multisite لەسەر ئاستی تۆڕەکەت ڕێکبخەیتەوە.
+سەرجەم کۆنتڕۆڵی یەکخستنەوە بە شێوەیەکی خێرا ڕێنمایی دەکات بۆ ئەوەی Ultimate Multisite لە ماوەی دە هەفتەدا ڕێک بخات.
 
-### Welcome (بەخێربێیت)
+### سەرەتایەک
+کلیک بکە لەسەر **دەستپێکردن** بۆ دەستپێکردنی پرۆسەکە.
 
-**Get Started** (دەستپێکردن) بگرە بۆ دەستپێکردن.
+![پەڕەی سەرەتایی سەرجەم کۆنتڕۆڵی یەکخستنەوە](/img/installation/wizard-welcome.png)
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+### هەڵسەنگاندنی پێش دامەزراندن
 
-### Pre-install Checks (پشکنینەکانی پێش دامەزراندن)
+ئەم هەنگاوە زانیاری سیستەم و دامەزراندنی WordPress-ت دەهەڵسەنگێنێت، بۆ ئەوەی دڵنیا بێتەوە کە پێویستیەکانی Ultimate Multisite جێبەجێ کردووە. ئەگەر هەموو شتێک باش بوو، کلیک بکە لەسەر **بچە سەر هەنگاوی دواتر**.
 
-ئەم هەنگاوە زانیاریی سیستەمی تۆ و دامەزراوە WordPress یەکەت دەدات بەبۆ ئەوەی دڵنیابیت کە پێداویستی Ultimate Multisite لەسەر ڕێژەیە. ئەگەر هەموو شتێک باش بێت، **Go to the Next Step** (بڕۆ بۆ هەنگاوە دوایین) بگرە.
+![هەڵسەنگاندنی پێش دامەزراندن کە پێویستیەکانی سیستەم دەریخست](/img/installation/wizard-pre-install-checks.png)
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+:::note دەستەڵاتی چالاککردنی تۆڕەکە (v2.6.1+)
+ئەگەر Ultimate Multisite دامەزراوە، بەڵام **هێشتا لە سەرجەم تۆڕەکەدا چالاک نەکراوە** - بۆ نموونە، ئەگەر کلیکت کردووە لەسەر **چالاککردن** (تەنها ماڵپەڕ)، بە پێچەوانەی **چالاککردنی تۆڕەکە** لە پەڕەی پلاگینەکانی تۆڕەکە - هەنگاوی هەڵسەنگاندنی پێش دامەزراندن ئەمەش دەدۆزێتەوە و دەستەڵاتێکی **چالاککردنی تۆڕەکە** نمایش دەکات.
 
-:::note बटنی Network Activate (v2.6.1+)
-ئەگەر Ultimate Multisite دامەزراوەکەت دامەزرێت بەڵام **هێشتا نەکاتە ئاستی تۆڕی** — بۆ نموونە، ئەگەر لەسەر شاشەی پلاتفۆرمی پلاتینی پلاگینە **Activate** (single-site) هەڵبژاردن کردیت لەبری **Network Activate** لە منوچەی plugins — هەنگاوی Pre-install Checks ئەم حاڵەتان دەدات و बटانی **Network Activate** دەردەخات.
-
-کلیککردن لەسەر **Network Activate** پلاگینەکە بە شێوەیەکی ئۆتۆماتیکی لە سەرانسەری تۆڕی multisite یەکەت دەگرێتەوە. دوای چالاککردن، wizard بە شێوەیەکی ئاسایی بۆ هەنگاوی دامەزراندنی بەردەوام دەبێت. پێویست نییە لە wizard بڕۆیت بۆ چارەسەرکردنی دۆخی چالاککردن.
+کلیک کردن لەسەر **چالاککردنی تۆڕەکە** بە شێوەیەکی خۆکار پلاگینەکە لە سەرجەم تۆڕی ماڵپەڕەکان چالاک دەکات. دوای چالاکبوون، سەرجەم کۆنتڕۆڵی یەکخستنەوە بە شێوەیەکی ئاسایی بەرەو هەنگاوی دامەزراندن دەچێت. پێویست نییە سەرجەم کۆنتڕۆڵی یەکخستنەوە بەجێ بهێڵیت بۆ ئەوەی ستاتۆسی چالاککردنەکە ڕێک بخات.
 :::
 
-### دامەزراندن (Installation)
+### دامەزراندن
 
-Installer ئەو خشتەی داتابەیسانە پێویستان دروست دەکات و فایل `sunrise.php` ی پێویست بۆ کارکردنی Ultimate Multisite دەدات. کلیک بکە بەسەر **Install** بۆ بەردەوامبوون.
+کۆدەکە ئەو مێزەکانەی داتابەیس دروست دەکات و فایلەکە `sunrise.php` دامەزرێنێت کە Ultimate Multisite پێویستیەتی بۆ کارکردن. کلیک بکە لەسەر **دامەزراندن** بۆ بەردەوام بوون.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![هەنگاوی دامەزراندن کە مێزەکانی داتابەیس و فایلەکە `sunrise.php` دەریخست](/img/installation/wizard-installation.png)
 
-### کۆمپانیای تۆ (Your Company)
+### کۆمپانیایەکەت
 
-ئامۆژگاریی کۆمپانیاکەت پڕ بکە و یەکەم فەرمی خودت بۆ دروست بکە. ئەم زانیارییە لە سەرانسەری platformەکەدا بەکاردێت. کاتێک تەواو کردیت، کلیک بکە بەسەر **Continue**.
+زانیاری کۆمپانیایەکەت دابنێ و دراوەی پێشوەختە ڕێک بخە. ئەم زانیاریانەش لە سەرانسەری پلاتفۆرمی WaaS-تدا بەکاردەبرێت. دوای تەواو بوون، کلیک بکە لەسەر **بەردەوام بە**.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![هەنگاوی ڕێکخستنی کۆمپانیایەکەت](/img/installation/wizard-your-company.png)
 
-### ناوەڕۆکی پیش‌دێت (Default Content)
+### ناوەڕۆکی پێشوەختە
 
-ئەم هەنگاوە دەبێت ڕێگە بداتت کە template هاوسەنگی پێشوەخت، بەرهەم و ناوەڕۆکی دەستپێکی دیکە دامەزراو بکەیت. ئەمە شێوازێکی باشە بۆ ئەوەی ئارامی لە تایبەتمەندیەکانی Ultimate Multisite وەربگریت. کلیک بکە بەسەر **Install** بۆ زیادکردنی ناوەڕۆکی پیش‌دێت، یان ئەم هەنگاوە بپێخسەرەوە ئەگەر دەتەوێت لە سەرەتادا دەست بکەیت.
+ئەم هەنگاوە دەتوێت ناوەڕۆکی پێشوەختەی دیزاین کراو، بەرھەمەکان و ناوەڕۆکی سەرەتایی تری دامەزرێنێت. ئەمەش ڕێگایەکێکی باشە بۆ ئەوەی بە تایبەتمەندەکانی Ultimate Multisite ئاشنا بیت. کلیک بکە لەسەر **دامەزراندن** بۆ زیادکردنی ناوەڕۆکی پێشوەختە، یان ئەم هەنگاوەی پەڕێبکە ئەگەر حەزت نییە کە بە شێوەی سەرەتایی دەستپێ بکەیت.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![هەنگاوی دامەزراندنەوەی ناوەڕۆکی پێشوەختە](/img/installation/wizard-default-content.png)
 
-### پلاگینە پێشنیوەکان (Recommended Plugins)
+### پلاگینەکانی ڕەشباز
 
-بە ئارامی، پلاگینەکانی هاوبەشی پێشنیوەکان دامەزرێنە. کلیک بکە بەسەر **Install** بۆ زیادکردنیان یان بپێخسەرەوە بۆ بەردەوامبوون.
+بەڵکوو پلاگینەکانی هاودەم کە پێشکەش دەکرێن، دامەزرێن. کلیک بکە لەسەر **دامەزراندن** بۆ زیادکردنیان، یان هەڵبژێرە بەردەوام بێت.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![هەنگاوی پلاگینەکانی ڕەشباز](/img/installation/wizard-recommended-plugins.png)
 
-### ئامادە!
+### ئامادەیە!
 
-ئەووەیە تەواو بووە! دامەزراندنی Ultimate Multisite یەکەت تەواو بووە. ئێستا دەتوانی لە **Network Admin Dashboard**دا پلاتفۆرمی وێبسایتی خۆت بە شێوەی Service دروست بکەیتەوە.
+ئەمە هەمووی بوو! دامەزراندنی Ultimate Multisite تەواو بوو. ئێستا دەتوانیت پلاتفۆمی "ماڵپەڕ وەک خزمەت" دروست بکەیت لە پەڕەی **سەرجەم کۆنتڕۆڵی تۆڕەکە**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![دامەزراندن تەواو بوو - پەڕەی ئامادەیە](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![پەڕەی سەرجەم کۆنتڕۆڵی تۆڕەکە بە Ultimate Multisite چالاک کراو](/img/installation/network-dashboard.png)
 
-بۆ ئەوەی دەستپێبکەیت و خۆت ببینیت!
+دەست پێ کە و خۆش بژێرە!

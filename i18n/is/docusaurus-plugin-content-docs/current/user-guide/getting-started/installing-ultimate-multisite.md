@@ -1,86 +1,86 @@
 ---
-title: Innstillingar Ultimate Multisite
+title: Uppsetning á Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Innstalling Ultimate Multisite
+# Uppsetning á Ultimate Multisite
 
 :::note
-Þessi leiðbeining hefur fyrir þér framfari að þú ert að hafa WordPress Multisite sett upp og hlut sett upp. Til að læra hvernig það gerist, skoða [þessa leiðbeininguna](https://www.wpbeginner.com/glossary/multisite/) af WP Beginner.
+Þessi kennsluefni gerir ráð fyrir að þú hafir þegar sett upp og stillt WordPress Multisite. Til að læra hvernig, skoðaðu [þetta kennsluefni](https://www.wpbeginner.com/glossary/multisite/) frá WP Beginner.
 :::
 
-## Innstalling Plugin-inn
+## Uppsetning á viðbótinni
 
-Ultimate Multisite er til að skila freljandi á [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite er fáanlegt ókeypis á [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Frá **Network Admin Dashboard** þínu, ferðu yfir í **Plugins → Add New Plugin**.
+Í **Network Admin Dashboard**, farðu í **Plugins → Add New Plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin síða](/img/installation/add-new-plugin.png)
 
-Leita eftir **"Ultimate Multisite"** (með einkennum fyrir nákvæma samsvar) og það mun sýna sig sem fyrsta skýrslu. Klikka á **Install Now**.
+Leitaðu að **"Ultimate Multisite"** (með gæsafjötrum fyrir nákvæma samsvörun) og það mun birtast sem fyrsta niðurstaðan. Smelltu á **Install Now**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Leitarniðurstöður sem sýna Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Eftir að þú hefur sett upp það, klikka á **Network Activate** til að aktíva plugin-inn í hellu netinu þínu.
+Þegar það er sett upp, smelltu á **Network Activate** til að virkja viðbótina í öllu netkerfinu þínu.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Viðbót sett upp með Network Activate hnappi](/img/installation/plugin-installed.png)
 
-Eftir aktívað það verður þú sjálf án þess að vera leiðréttur á Setup Wizard.
+Eftir virkjun verður þú sjálfkrafa beint á leiðsögukerfið (Setup Wizard).
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Viðbót virk og beind á leiðsögukerfið](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Leiðsögukerfi
 
-Setup Wizard mun leiða þig í uppsetningu Ultimate Multisite í nýjum 10 mínútum.
+Leiðsögukerfið mun leiða þig í gegnum uppsetningu Ultimate Multisite á um 10 mínútum.
 
-### Velkomið
+### Velkomin
 
-Klikka á **Get Started** til að byrja.
+Smelltu á **Get Started** til að hefja.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Velkominn skjár leiðsögukerfisins](/img/installation/wizard-welcome.png)
 
-### Fyrir innstalls skrekkar
+### Foruppsetningarathugun
 
-Þessi skref er skoðað yfir upplýsingar um kerfi þitt og WordPress innstallsinn til að tryggja að það uppfylli kröfur Ultimate Multisite. Ef allt sé í raunræða, klikka á **Go to the Next Step**.
+Þessi stig athugar kerfisupplýsingar þínar og WordPress uppsetningu til að tryggja að hún uppfylli kröfur Ultimate Multisite. Ef allt lítur vel út, smelltu á **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Foruppsetningarathugun sem sýnir kerfisþörf](/img/installation/wizard-pre-install-checks.png)
 
-:::note Knúinn Aktivér nút (v2.6.1+)
-Ef Ultimate Multisite var nýtt, en **hefur ekki enn aktivert netið** — t.d. ef þú klikkt **Activate** (single-site) í stað **Network Activate** frá skráningum fyrir netinu — mun Pre-install Checks stigið upptíma þetta og sýna nútíma **Network Activate** nút.
+:::note Network Activate hnappur (v2.6.1+)
+Ef Ultimate Multisite var sett upp en **enn ekki virkjað í netinu** – til dæmis, ef þú smelltir á **Activate** (einstaklingssíða) frekar en **Network Activate** frá skjánum fyrir viðbótir í netinu – mun foruppsetningarathugunarstigið greina þetta og sýna **Network Activate** hnapp.
 
-Þegar þú klikkur á **Network Activate** aktiviserir þú plugininn í heildar netinu þínu sjálf. Eftir að hann er aktivert, haldar leiðræðin nálægt annars sem við innreiðslu. Þú þarft ekki að láta leyndarmálið til að laga aktivationsáttan.
+Þegar þú smellir á **Network Activate**, virkjar það viðbótina sjálfkrafa í öllu multisite netkerfinu þínu. Eftir virkjun heldur leiðsögukerfið áfram venjulega til næsta skrefa. Þú þarft ekki að yfirgefa leiðsögukerfið til að laga virkjunina.
 :::
 
-### Innreiðsla
+### Uppsetning
 
-Installerinn mun skapa nauðsynlegar database-taflur og installa `sunrise.php` skráann sem Ultimate Multisite þarf til að virka. Klikka á **Install** til að halda fram.
+Uppsetjarinn mun búa til nauðsynlegu gagnagrunnstöflurnar og setja upp `sunrise.php` skrána sem Ultimate Multisite þarf til að virka. Smelltu á **Install** til að halda áfram.
 
-![Innreiðslu stigi sýn database-taflur og sunrise.php](/img/installation/wizard-installation.png)
+![Uppsetningarstig sem sýnir gagnagrunnstöflur og sunrise.php](/img/installation/wizard-installation.png)
 
-### Fyrir fyrirtilshópinn þinn
+### Fyrirtækið þitt
 
-Fulli inn upplýsingum um fyrirtilið þitt og setja á skilvirkjafangurinn þinn. Þessi upplýsingar verða nota í heildar WaaS platform þinni. Klikka á **Continue** þegar þú ert færdur.
+Fylltu út upplýsingar um fyrirtækið þitt og stilltu sjálfgefið gjaldmiðil. Þessar upplýsingar verða notaðar í gegnum WaaS (Website as a Service) kerfið þitt. Smelltu á **Continue** þegar þú ert búinn.
 
-![Stigi fyrir fyrirtilshópinn þinn](/img/installation/wizard-your-company.png)
+![Fyrirtækisuppsetningarstig](/img/installation/wizard-your-company.png)
 
-### Skilvirkur innihaldi
+### Sjálfgefið efni
 
-Þessi stigi leysir þér að installa fyrirhugaðar mallar, vörur og annað startinhaldi. Þetta er glínn leið til að fari með þér í kjarnafyrirfarandi eiginleika Ultimate Multisite. Klikka á **Install** til að bæta við skilvirkjann innihaldi, eða skoða stigið ef þú vilt byrja frá nulli.
+Þetta stig gerir þér kleift að setja upp fyrirfram skilgreindar sniðmátar, vörur og annað byrjunarefni. Þetta er frábær leið til að kynnast eiginleikum Ultimate Multisite. Smelltu á **Install** til að bæta við sjálfgefu efni eða slepptu þessu stigi ef þú vilt hefja frá grunni.
 
-![Stigi fyrir skilvirkjan innihaldinn](/img/installation/wizard-default-content.png)
+![Uppsetning sjálfgefins efnis](/img/installation/wizard-default-content.png)
 
-### Aðskilinn pluginir
+### Mæltu viðbótir
 
-Valfræðlega installa tillaga samstarfsgildi pluginir. Klikka á **Install** til að bæta við þær eða skoða stigið ef þú vilt halda fram.
+Valkvæmt er að setja upp mæltar tengdviðbótir. Smelltu á **Install** til að bæta þeim við eða slepptu þessu stigi til að halda áfram.
 
-![Stigi fyrir tillaga pluginir](/img/installation/wizard-recommended-plugins.png)
+![Mæltu viðbótir stig](/img/installation/wizard-recommended-plugins.png)
 
-### Klár!
+### Tilbúið!
 
-Það er klár! Innstallsinn á Ultimate Multisite þínu er fullbiður. Þú getur nú byrjað að byggja síðu sem webssérvi (Website as a Service) frá **Network Admin Dashboard**.
+Það er allt! Uppsetningin á Ultimate Multisite er lokið. Þú getur nú byrjað að byggja upp Website as a Service kerfið þitt frá **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Uppsetning lokið - Tilbúinn skjár](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard með virkri Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Byrjaðu að leika!
+Farðu í gang og skemmtu þér!

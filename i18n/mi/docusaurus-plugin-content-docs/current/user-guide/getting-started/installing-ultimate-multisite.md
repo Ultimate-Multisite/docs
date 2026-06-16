@@ -1,86 +1,86 @@
 ---
-title: Te whaiaro Ultimate Multisite
+title: Te whakauru Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Whakarite i Ultimate Multisite
+# Te Whakaurunga o te Ultimate Multisite
 
 :::note
-Ko tēnei tutorial e tino whai ana ki te mea he hekea koe i WordPress Multisite he whakatō a koe me te whakarite i ai. Kei te pēhea te māmā, he tino mārama ahau i te [tutoriri tēnei](https://www.wpbeginner.com/glossary/multisite/) epehekea mai i WP Beginner.
+Ka whakaarohia e tēnei akoranga kua whakaurua, kua whakaritea rānei e koe te WordPress Multisite. Hei ako mō tēnei, tirohia [tēnei akoranga](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner.
 :::
 
-## Whakarite i te Plugin
+## Te Whakaurunga o te Pūnaha Tautoko
 
-He tino pai ko Ultimate Multisite, he tino pai ana i te WordPress.org i [WordPress.org/plugins/ultimate-multisite/](https://wordpress.org/plugins/ultimate-multisite/).
+Kei te wātea te Ultimate Multisite mō te kore utu ki [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-I tō **Network Admin Dashboard**, pahi ki **Plugins → Add New Plugin**.
+Mai i tō **Network Admin Dashboard**, haere ki **Plugins → Add New Plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Te whārangi Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Tohu i **"Ultimate Multisite"** (he tino whakahua ana i te whakamārama) ā, ka tū mai ai ko te whaiako hoki. Whakawākea **Install Now**.
+Rapua te **"Ultimate Multisite"** (me ngā tohu mō te hāngai tika) ā, ka puta mai hei hua tuatahi. Pāwhiri **Install Now**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Ngā hua rapu e whakaatu ana i te Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-I tō pēke koe, whakatika **Network Activate** kia whakatau i te plugin i roto i tō wāhi katoa o te network.
+I muri i te whakaurunga, pāwhiri **Network Activate** hei whakahohe i te pūnaha tautoko puta noa i tō rārangi katoa.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Kua whakaurua te pūnaha tautoko me te pātene Network Activate](/img/installation/plugin-installed.png)
 
-I taro atu i te whakataunga, ka whai ake koe ki te Setup Wizard.
+I muri i te whakahohe, ka hurihia koe aunoatia ki te Setup Wizard.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Kua whakahohea te pūnaha tautoko, kua hurihia ki te wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Te Setup Wizard
 
-Ka tū mai i te Setup Wizard kia tutuki ai koe i te whakarite Ultimate Multisite i wahi 10 miniti.
+Ka ārahi ake te Setup Wizard i a koe mā te whakarite i te Ultimate Multisite i roto i ngā meneti 10.
 
-### Welcome (Kia ora)
+### Nau mai
 
-Whakawākea **Get Started** kia tīmata.
+Pāwhiri **Get Started** hei tīmata.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Te mata nau mai o te Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Pikaha Whakarite I te Whakarite)
+### Ngā Patu Tirohanga Muri-mua
 
-Ko tēnei apa e tino tikanga i tō mōhioinga o te system me te whakatō WordPress kia kore i te mea he tino tika ana ia ki ngā āhuatanga o Ultimate Multisite. Ko ko te mea katoa he tino tika, pahi ki **Go to the Next Step**.
+Ka tirohia e tēnei hīkoi i ngā mōhiohio pūnaha me te whakaurunga WordPress kia mōhio ai he hāngai ki ngā here o te Ultimate Multisite. Ki te pai katoa, pāwhiri **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Ngā patu tirohanga muri-mua e whakaatu ana i ngā here pūnaha](/img/installation/wizard-pre-install-checks.png)
 
-:::note Button Activate Network (v2.6.1+)
-Ko Ultimate Multisite i whakaurua ahau engari **a rātou e kore ana whakatika network** — hei te i roto i, ko i whakatipu koe i **Activate** (single-site) i tētahi i runga i te skrin screen **Network Activate** mai i te mātakitaki plugin o network — ka whakapaihia e te Pre-install Checks i te mea he whakaatu i **Network Activate** button.
+:::note Te pātene Network Activate (v2.6.1+)
+Ki te kore anō kia whakahohea a Ultimate Multisite puta noa i te rārangi — hei tauira, ki te pāwhiria e koe **Activate** (pae kotahi) kaua ko **Network Activate** mai i te mata pūnaha tautoko rārangi — ka kitea e te hīkoi Patu Tirohanga Muri-mua tēnei ā ka whakaatuhia he pātene **Network Activate**.
 
-Ka whakatika ai te **Network Activate** ko te plugin i roto i te wāhi katoa o koe i te multisite automatically. I tō rā, ka pai te mahi i te wizard ki te langkah installation. Ko koe e kore e pēnei i te wizard ki te whakaora te state activation.
+Mā te pāwhiri ki te **Network Activate** ka whakahohea aunoatia te pūnaha tautoko puta noa i tō rārangi multisite katoa. I muri i te whakahohe, ka haere tonu te wizard ki te hīkoi whakaurunga. Kāore he mea e hiahiatia ana kia waiho e koe te wizard hei whakatika i te āhua whakahohe.
 :::
 
-### Whakaritenga (Installation)
+### Te Whakaurunga
 
-Ka whakamaoritia te installer i ngā database tables e puta ake ana me te whakatipu i te file `sunrise.php` na te Ultimate Multisite mō tō mahi. Whakawāhi **Install** ki te whakatika i te mahi.
+Ka hangaia e te kaiwhakauru ngā ripanga raraunga e hiahiatia ana, ka whakaurua rānei te kōnae `sunrise.php` e hiahiatia ana e te Ultimate Multisite kia mahi pai. Pāwhiri **Install** hei haere tonu.
 
-![Whakaritenga step e whakaatu i ngā database tables me sunrise.php](/img/installation/wizard-installation.png)
+![Te hīkoi whakaurunga e whakaatu ana i ngā ripanga raraunga me te sunrise.php](/img/installation/wizard-installation.png)
 
-### Iwhiako (Your Company)
+### Tō Kamupene
 
-Whakarite i ngā whakamohana o koe i tō whānau me te rite i tō currency default. Ka whakamahia i tēnei mō i roto i tō WaaS platform. Whakawāhi **Continue** i roto i te mea ka whakatika koe.
+Whakakiia ngā mōhiohio kamupene, whakaritea rānei tō moni taketake. Ka whakamahia ēnei mōhiohio puta noa i tō papa WaaS. Pāwhiri **Continue** ina oti.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Te hīkoi whakaritenga Tō Kamupene](/img/installation/wizard-your-company.png)
 
-### Kaitohutohu Content (Default Content)
+### Ngā Taipitopito Taketake
 
-Ka whakatika i tēnei langkah ko e pēnei ana ki te whakaurua o ngā template, products, me ngā content whakatupu e puta ake ana. He wahi tino pai mō te whakatū i koe i ngā āhuatanga o Ultimate Multisite. Whakawāhi **Install** ki te whai i tēnei content default, ka taea hoki koe te whai i tēnei langkah i te mea he pēnei i te whakatū i a koe i te mea hou.
+Ka taea e tēnei hīkoi te whakauru i ngā tauira, hua, me ētahi atu taipitopito tīmatanga kua whakaritea. He huarahi pai tēnei hei mōhio ki ngā āhuatanga o te Ultimate Multisite. Pāwhiri **Install** hei tāpiri i ngā taipitopito taketake, ka waiho rānei tēnei hīkoi ki te hiahia koe ki te tīmata mai i te kore.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Te hīkoi whakaurunga o ngā taipitopito taketake](/img/installation/wizard-default-content.png)
 
-### Plugin Whakamahinga (Recommended Plugins)
+### Ngā Pūnaha Tautoko I Whakaarohia
 
-Ka taea e koe te whakaurua i ngā plugin whakahou e kaha ana ki te whakamahi. Whakawāhi **Install** ki te whai i ahau, ka taea hoki koe te whai i tēnei langkah i te mea he pēnei i te whakatū i a koe i te mea hou.
+Tōna whakauru i ngā pūnaha tautoko kua whakaarohia hei hoa. Pāwhiri **Install** hei tāpiri, ka waiho rānei hei haere tonu.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Te hīkoi o ngā pūnaha tautoko i whakaarohia](/img/installation/wizard-recommended-plugins.png)
 
-### Imōhi! (Ready!)
+### Kua Rite!
 
-He pai! He whakatū i tō Ultimate Multisite ka whakatou. I te ora, e taea ai koe te tīmata ki te whakamaoritanga o tō Website as a Service platform mai te **Network Admin Dashboard**.
+Kua oti! Kua kapi tō whakaurunga Ultimate Multisite. Ka taea e koe ināianei te tīmata i te hanga i tō papa Website as a Service mai i te **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Kua oti te whakaritenga - Te mata Rite](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Te Network Admin Dashboard me te Ultimate Multisite e mahi ana](/img/installation/network-dashboard.png)
 
-Kia kaha, he whakatā!
+Haere tonu, ka pai!

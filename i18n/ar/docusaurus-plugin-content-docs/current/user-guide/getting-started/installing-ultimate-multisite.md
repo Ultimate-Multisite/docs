@@ -1,80 +1,86 @@
 ---
-title: تثبيت Ultimate Multisite
+title: تثبيت إضافة Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # تثبيت Ultimate Multisite
 
 :::note
-يفترض هذا الدليل أنك قد قمت بالفعل بتثبيت وتكوين WordPress Multisite. لمعرفة كيفية ذلك، اطلع على [هذا الدليل](https://www.wpbeginner.com/glossary/multisite/) من WP Beginner.
+يفترض هذا البرنامج التعليمي أن لديك بالفعل WordPress Multisite مثبتًا ومُعدًا. لمعرفة كيفية القيام بذلك، تحقق من [هذا البرنامج التعليمي](https://www.wpbeginner.com/glossary/multisite/) بواسطة WP Beginner.
 :::
 
-## تثبيت البرنامج المساعد
+## تثبيت المكون الإضافي
 
-Ultimate Multisite متاح مجانًا على [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+يتوفر Ultimate Multisite مجانًا على [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-من لوحة تحكم **Network Admin Dashboard**، انتقل إلى **Plugins → Add New Plugin**.
+من **لوحة تحكم مسؤول الشبكة**، انتقل إلى **المكونات الإضافية ← إضافة مكون إضافي جديد**.
 
-![صفحة إضافة البرنامج المساعد في Network Admin](/img/installation/add-new-plugin.png)
+![صفحة إضافة مكون إضافي جديد في لوحة تحكم مسؤول الشبكة](/img/installation/add-new-plugin.png)
 
-ابحث عن **"Ultimate Multisite"** (مع علامات الاقتباس لمطابقة دقيقة) وسيظهر كأول نتيجة. انقر على **Install Now**.
+ابحث عن "**Ultimate Multisite**" (مع علامات الاقتباس للحصول على تطابق تام)، وسيظهر كأول نتيجة. انقر فوق **تثبيت الآن**.
 
-![نتائج البحث التي تظهر Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![نتائج البحث التي تعرض Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-بمجرد التثبيت، انقر على **Network Activate** لتفعيل البرنامج المساعد عبر شبكتك بأكملها.
+بمجرد التثبيت، انقر فوق **تفعيل الشبكة** لتفعيل المكون الإضافي عبر شبكتك بأكملها.
 
-![البرنامج المساعد مثبت مع زر Network Activate](/img/installation/plugin-installed.png)
+![تم تثبيت المكون الإضافي مع زر تفعيل الشبكة](/img/installation/plugin-installed.png)
 
-بعد التفعيل، سيتم إعادة توجيهك تلقائيًا إلى معالج الإعداد.
+بعد التفعيل، سيتم توجيهك تلقائيًا إلى معالج الإعداد.
 
-![البرنامج المساعد مفعل ومُعاد توجيهه إلى المعالج](/img/installation/plugin-activated.png)
+![تم تفعيل المكون الإضافي وإعادة توجيهه إلى المعالج](/img/installation/plugin-activated.png)
 
 ## معالج الإعداد
 
-سيقودك معالج الإعداد خلال تكوين Ultimate Multisite في حوالي 10 دقائق.
+سيرشدك معالج الإعداد خلال عملية إعداد Ultimate Multisite في حوالي 10 دقائق.
 
 ### مرحبًا
 
-انقر على **Get Started** للبدء.
+انقر فوق **ابدأ** للبدء.
 
-![شاشة الترحيب بمعالج الإعداد](/img/installation/wizard-welcome.png)
+![شاشة ترحيب معالج الإعداد](/img/installation/wizard-welcome.png)
 
 ### فحوصات ما قبل التثبيت
 
-يقوم هذا الخطوة بفحص معلومات نظامك وتثبيت WordPress للتأكد من تلبية متطلبات Ultimate Multisite. إذا كان كل شيء يبدو جيدًا، انقر على **Go to the Next Step**.
+تتحقق هذه الخطوة من معلومات النظام وتثبيت WordPress للتأكد من أنها تلبي متطلبات Ultimate Multisite. إذا كان كل شيء يبدو جيدًا، فانقر فوق **الانتقال إلى الخطوة التالية**.
 
-![فحوصات ما قبل التثبيت التي تُظهر متطلبات النظام](/img/installation/wizard-pre-install-checks.png)
+![فحوصات ما قبل التثبيت التي تعرض متطلبات النظام](/img/installation/wizard-pre-install-checks.png)
+
+:::note زر تفعيل الشبكة (الإصدار 2.6.1+)
+إذا تم تثبيت Ultimate Multisite ولكن **لم يتم تفعيله على مستوى الشبكة بعد** - على سبيل المثال، إذا نقرت فوق **تفعيل** (موقع واحد) بدلاً من **تفعيل الشبكة** من شاشة مكونات الشبكة الإضافية - فستكتشف خطوة فحوصات ما قبل التثبيت ذلك وستعرض زر **تفعيل الشبكة**.
+
+سيؤدي النقر فوق **تفعيل الشبكة** إلى تفعيل المكون الإضافي عبر شبكة المواقع المتعددة بأكملها تلقائيًا. بمجرد التفعيل، يستمر المعالج بشكل طبيعي في خطوة التثبيت. لست بحاجة إلى مغادرة المعالج لإصلاح حالة التفعيل.
+:::
 
 ### التثبيت
 
-سيقوم المُثبت بإنشاء جداول قاعدة البيانات اللازمة وتثبيت ملف `sunrise.php` الذي يحتاجه Ultimate Multisite للعمل. انقر على **Install** للمتابعة.
+سيقوم المثبت بإنشاء جداول قاعدة البيانات الضرورية وتثبيت ملف `sunrise.php` الذي يحتاجه Ultimate Multisite للعمل. انقر فوق **تثبيت** للمتابعة.
 
-![خطوة التثبيت التي تُظهر جداول قاعدة البيانات وsunrise.php](/img/installation/wizard-installation.png)
+![خطوة التثبيت التي تعرض جداول قاعدة البيانات وملف sunrise.php](/img/installation/wizard-installation.png)
 
 ### شركتك
 
-املأ معلومات شركتك وحدد عملتك الافتراضية. ستُستخدم هذه المعلومات في جميع أنحاء منصة WaaS الخاصة بك. انقر على **Continue** عند الانتهاء.
+املأ معلومات شركتك وحدد عملتك الافتراضية. سيتم استخدام هذه المعلومات في جميع أنحاء منصة WaaS الخاصة بك. انقر فوق **متابعة** عند الانتهاء.
 
 ![خطوة تكوين شركتك](/img/installation/wizard-your-company.png)
 
 ### المحتوى الافتراضي
 
-تتيح لك هذه الخطوة تثبيت القوالب المحددة مسبقًا، والمنتجات، ومحتوى بدء التشغيل الآخر. إنها طريقة رائعة للتعرف على ميزات Ultimate Multisite. انقر على **Install** لإضافة المحتوى الافتراضي، أو تخطي هذه الخطوة إذا كنت تفضل البدء من الصفر.
+تتيح لك هذه الخطوة تثبيت قوالب محددة مسبقًا ومنتجات ومحتوى بدء تشغيل آخر. إنها طريقة رائعة للتعرف على ميزات Ultimate Multisite. انقر فوق **تثبيت** لإضافة المحتوى الافتراضي، أو تخطى هذه الخطوة إذا كنت تفضل البدء من الصفر.
 
 ![خطوة تثبيت المحتوى الافتراضي](/img/installation/wizard-default-content.png)
 
-### الإضافات الموصى بها
+### المكونات الإضافية الموصى بها
 
-اختياريًا، قم بتثبيت الإضافات المرافقة الموصى بها. انقر على **Install** لإضافتها أو تخطي للمتابعة.
+قم بتثبيت المكونات الإضافية المصاحبة الموصى بها اختياريًا. انقر فوق **تثبيت** لإضافتها أو تخط هذه الخطوة للمتابعة.
 
-![خطوة الإضافات الموصى بها](/img/installation/wizard-recommended-plugins.png)
+![خطوة المكونات الإضافية الموصى بها](/img/installation/wizard-recommended-plugins.png)
 
 ### جاهز!
 
-هذا كل شيء! اكتملت تثبيت Ultimate Multisite الخاص بك. يمكنك الآن البدء في بناء منصة Website as a Service من لوحة تحكم **Network Admin Dashboard**.
+هذا كل شيء! اكتمل تثبيت Ultimate Multisite الخاص بك. يمكنك الآن البدء في بناء منصة "الموقع كخدمة" الخاصة بك من **لوحة تحكم مسؤول الشبكة**.
 
-![شاشة الإعداد المكتملة - جاهز](/img/installation/wizard-ready.png)
+![تم الإعداد - شاشة جاهزة](/img/installation/wizard-ready.png)
 
-![لوحة تحكم Network Admin مع Ultimate Multisite نشطة](/img/installation/network-dashboard.png)
+![لوحة تحكم مسؤول الشبكة مع تفعيل Ultimate Multisite](/img/installation/network-dashboard.png)
 
-تقدم واستمتع!
+استمتع!

@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite স্থাপন কৰি থকা
+title: আল্টিমেট মাল্টিসাইট ইনস্টল কৰা হৈছে।
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite इन्स्टल কৰা
+# আল্টিমেট মাল্টিসাইট স্থাপন কৰা
 
 :::note
-এই ট्युटोरियलले मान्छ যে আপুনি पहिले नै WordPress Multisite इन्स्टल আৰু কনফিগার কৰি লৈছে। কেনেকৈ কৰিব লাগে জানিবলৈ, WP Beginner-ৰ এই ট्युटोरিয়ালটো চাওক: [this tutorial](https://www.wpbeginner.com/glossary/multisite/).
+এই টিউট’ৰিয়েলত ধৰি লোৱা হৈছে যে আপোনাৰ বাবে WordPress মাল্টিসাইট ইতিমধ্যে স্থাপন আৰু কনফিগাৰ কৰা আছে। ইয়াৰ প্ৰক্ৰিয়া জানিবলৈ, WP Beginner-ৰ [এই টিউট’ৰিয়েল](https://www.wpbeginner.com/glossary/multisite/) চাওক।
 :::
 
-## Plugin इन्स्टल কৰা
+## প্লাগইনটো স্থাপন কৰা
 
-Ultimate Multisite [WordPress.org]-ত বিনামূলীয়াকৈ উপলব্ধ।
+আল্টিমেট মাল্টিসাইট বিনামূল্যে [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/)-ত উপলব্ধ।
 
-আপোনাৰ **Network Admin Dashboard** बाट, **Plugins → Add New Plugin** লৈ যাওক।
+আপোনাৰ **নেটৱৰ্ক এডমিন ড্যাশব’ৰ্ড**ৰ পৰা, **প্লাগিন → নতুন প্লাগইন যোগ কৰক** অপচনলৈ যাওক।
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![নেটৱৰ্ক এডমিন এډ নিউ প্লাগইন পেজ](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (সঠিক মিলৰ বাবে কোৱটেৰে) বিচাৰক আৰু ই প্ৰথম ফলাফল হিচাপে দেখিব। **Install Now** ক্লিক কৰক।
+**"আল্টিমেট মাল্টিসাইট"** (সঠিক ফলাফলৰ বাবে উদ্ধৃতি চিহ্ন ব্যৱহাৰ কৰক) লিখি সন্ধান কৰক আৰু ই প্ৰথমটো ফলাফল হিচাপে দেখিব। **এতিয়াই স্থাপন কৰক** ক্লিক কৰক।
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![আল্টিমেট মাল্টিসাইট দেখুওৱা অনুসন্ধানৰ ফলাফলসমূহ](/img/installation/search-ultimate-multisite.png)
 
-ইনस्टल কৰাৰ পিছত, আপোনাৰ সমগ্ৰ নেটৱৰ্কত প্লাগইনটো aktivate কৰিবলৈ **Network Activate** ক্লিক কৰক।
+একবাৰ স্থাপন কৰাৰ পিছত, আপোনাৰ নেটৱৰ্কজুৰি প্লাগইনটো সক্ৰিয় কৰিবলৈ **নেটৱৰ্ক এ্যাক্টিভেট** ক্লিক কৰক।
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![প্লাগইন স্থাপন কৰা হৈছে আৰু নেটৱৰ্ক এ্যাক্টিভেট বাটনটো দেখা গৈছে](/img/installation/plugin-installed.png)
 
-অ্যাক্টিভেট কৰাৰ পিছত, আপোনাক স্বয়ংক্রিয়ভাৱে Setup Wizard লৈ পুনৰ পথ প্ৰদৰ্শন কৰা হ'ব।
+সক্ৰিয় কৰাৰ পিছত, আপুনি স্বয়ংক্রিয়ভাবে চেটআপ উইজাৰ্ডলৈ পুনঃদিশ নিৰ্দেশিত হ’ব।
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![প্লাগইন সক্ৰিয় কৰা হৈছে আৰু উইজাৰ্ডলৈ পুনঃদিশ নিৰ্দেশিত](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## চেটআপ উইজাৰ্ড
 
-Setup Wizard-এ আপোনাক প্ৰায় ১০ মিনিটৰ ভিতৰত Ultimate Multisite কনফিগার কৰাত সহায় কৰিব।
+চেটআপ উইজাৰ্ডে আপোনাক প্ৰায় ১০ মিনিটৰ ভিতৰত আল্টিমেট মাল্টিসাইট কনফিগাৰ কৰাত সহায় কৰিব।
 
-### Welcome
+### স্বাগতম
 
-শুরু কৰিবলৈ **Get Started** ক্লিক কৰক।
+শুরু কৰিবলৈ **শুরু কৰক** ক্লিক কৰক।
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![চেটআপ উইজাৰ্ডৰ স্বাগতম পৰ্দা](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### প্ৰি-ইনষ্টলেশ্বন চেকসমূহ
 
-এই ধাপটোৱে আপোনাৰ ছিষ্টেমৰ তথ্য আৰু WordPress इन्ষ্টলেচন পৰীক্ষা কৰে যাতে ই Ultimate Multisite-ৰ প্ৰয়োজনীয়তা পূৰণ কৰে। যদি সকলো ঠিক লাগে, তেন্তে **Go to the Next Step** ক্লিক কৰক।
+এই পদক্ষেপত আপোনাৰ ছিষ্টেম তথ্য আৰু WordPress স্থাপন পৰীক্ষা কৰা হয়, যাতে ই আল্টিমেট মাল্টিসাইটৰ প্ৰয়োজনীয়তা পূৰণ কৰে। যদি সকলো ঠিক থাকে, **প্ৰৱৰ্তমান পৰ্যায়লৈ যাওক** ক্লিক কৰক।
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![সিস্টেমৰ প্ৰয়োজনীয়তাসমূহ দেখুওৱা প্ৰি-ইনষ্টলেশ্বন চেকসমূহ](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate button (v2.6.1+)
-যদি Ultimate Multisite इन्स्टल হৈছে কিন্তু **আহিম নেটৱৰ্ক-অ্যাক্টিভেট** হোৱা নাই — উদাহৰণস্বৰূপে, যদি আপুনি নেটৱৰ্ক প্লাগইন স্ক্ৰীণৰ পৰা **Network Activate** বুলি কৰাৰ সলনি **Activate** (single-site) ক্লিক কৰিছিল — তেন্তে Pre-install Checks ধাপটোৱে ইয়াক ধৰিব আৰু এটা **Network Activate** বাটন দেখুৱাব।
+:::note নেটৱৰ্ক এ্যাক্টিভেট বাটন (v2.6.1+)
+যদি আল্টিমেট মাল্টিসাইট স্থাপন কৰা হৈছে কিন্তু **অজিও নেটৱৰ্কত সক্ৰিয় কৰা হোৱা নাই**— উদাহৰণস্বৰূপে, যদি আপুনি নেটৱৰ্ক প্লাগইন পৰ্দাৰ পৰা **এ্যাক্টিভেট** (এক-সাইট) ক্লিক কৰিছিলেন, **নেটৱৰ্ক এ্যাক্টিভেট**ৰ সলত— প্ৰি-ইনষ্টলেশ্বন চেক পদক্ষেপত এই কথা গম পাব আৰু এটা **নেটৱৰ্ক এ্যাক্টিভেট** বাটন দেখুওৱা হ’ব।
 
-**Network Activate** ক্লিক কৰিলে প্লাগইনটো স্বয়ংক্রিয়ভাৱে আপোনাৰ সমগ্ৰ multisite নেটৱৰ্কত aktivate হৈ যায়। aktivate হোৱাৰ পিছত, wizard-এ সাধাৰণভাৱে इन्ষ্টলেচন ধাপলৈ আগুৱাই যায়। aktivation state ঠিক কৰিবলৈ আপুনি wizard এৰি যাব প্ৰয়োজন নাই।
+**নেটৱৰ্ক এ্যাক্টিভেট** ক্লিক কৰিলে প্লাগইনটো স্বয়ংক্রিয়ভাবে আপোনাৰ সম্পূৰ্ণ মাল্টিসাইট নেটৱৰ্কত সক্ৰিয় হ’ব। সক্ৰিয় হোৱাৰ পিছত, উইজাৰ্ডে স্বাভাৱিকতে ইনষ্টলেশ্বন পদক্ষেপলৈ আগবাঢ়িব। আপুনি চেটআপ উইজাৰ্ড এৰি এইটো কৰিবলগা নাই।
 :::
 
-### Installation
+### স্থাপন
 
-ইনষ্টেলেৰে প্ৰয়োজনীয় ডাটাবেছ টেবুলবোৰ সৃষ্টি কৰিব আৰু `sunrise.php` ফাইলটো ইনষ্টল কৰিব যিটো Ultimate Multisite-ক কাৰ্য্য কৰিবলৈ লাগে। আগুৱাই যাবলৈ **Install** ক্লিক কৰক।
+ইনষ্টলাৰে প্ৰয়োজনীয় ডাটাবেছ টেবিলসমূহ সৃষ্টি কৰিব আৰু `sunrise.php` ফাইলটো স্থাপন কৰিব, যিটো আল্টিমেট মাল্টিসাইটৰ কাৰ্য্যক্ষমতাৰ বাবে প্ৰয়োজন। আগবাঢ়িবলৈ **স্থাপন কৰক** ক্লিক কৰক।
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![ডাটাবেছ টেবিল আৰু sunrise.php দেখুওৱা ইনষ্টলেশ্বন পদক্ষেপ](/img/installation/wizard-installation.png)
 
-### Your Company
+### আপোনাৰ কোম্পানী
 
-আপোনাৰ কোম্পানীৰ তথ্য ভৰাওক আৰু আপোনাৰ ডিফল্ট currrency সেট কৰক। এই তথ্যবোৰ আপোনাৰ WaaS platfrom ত ব্যৱহাৰ কৰা হ'ব। হোৱা শেষ হ'লে **Continue** ক্লিক কৰক।
+আপোনাৰ কোম্পানীৰ তথ্য ভৰাই আৰু ডিফল্ট মুদ্ৰা নিৰ্ধাৰণ কৰক। এই তথ্যসমূহ আপোনাৰ WaaS প্লেটফর্মজুৰি ব্যৱহাৰ কৰা হ’ব। শেষ কৰি **অগ্ৰসৰ যাওক** ক্লিক কৰক।
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![আপোনাৰ কোম্পানী কনফিগাৰেচন পদক্ষেপ](/img/installation/wizard-your-company.png)
 
-### Default Content
+### ডিফল্ট বিষয়বস্তু
 
-এই ধাপটোৱে আপোনাক আগতে নিৰ্ধাৰিত টেমপ্লেট, প্ৰডাক্ট আৰু আন আৰম্ভণি বিষয়বস্তু (starter content) ইনষ্টল কৰিবলৈ দিয়ে। Ultimate Multisite-ৰ বৈশিষ্ট্যবোৰ চিনাকি হোৱাৰ বাবে এইটো এটা ভাল উপায়। ডিফল্ট বিষয়বস্তু যোগ কৰিবলৈ **Install** ক্লিক কৰক, অথবা যদি আপুনি শূন্যৰ পৰা আৰম্ভ কৰিব বিচাৰে তেন্তে এই ধাপটো এৰি যাব পাৰে।
+এই পদক্ষেপত আপুনি পূৰ্ব-নিৰ্ধাৰিত টেমপ্লেট, সামগ্ৰী আৰু অন্যান্য আৰম্ভণিৰ বিষয়বস্তু স্থাপন কৰিব পাৰি। এইটো আল্টিমেট মাল্টিসাইটৰ বৈশিষ্ট্যসমূহৰ লগত পৰিচিত হোৱাৰ এক ভাল উপায়। ডিফল্ট বিষয়বস্তু যোগ কৰিবলৈ **স্থাপন কৰক** ক্লিক কৰক, অথবা আপুনি যদি নিজে আৰম্ভ কৰিব বিচাৰে তেন্তে এই পদক্ষেপটো এৰি যোৱা হ’ব।
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![ডিফল্ট বিষয়বস্তু স্থাপনৰ পদক্ষেপ](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins
+### পৰামৰ্শিত প্লাগইনসমূহ
 
-ঐচ্ছিকভাৱে পৰামৰ্শ দিয়া সহযোগী প্লাগইনবোৰ ইনষ্টল কৰক। যোগ কৰিবলৈ **Install** ক্লিক কৰক বা আগুৱাই যাবলৈ এৰি যাব পাৰে।
+ঐচ্ছিকভাবে পৰামৰ্শিত সহায়ক প্লাগইনসমূহ স্থাপন কৰক। এইসমূহ যোগ কৰিবলৈ **স্থাপন কৰক** ক্লিক কৰক অথবা আগবাঢ়ি যাওক।
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![পৰামৰ্শিত প্লাগইনসমূহৰ পদক্ষেপ](/img/installation/wizard-recommended-plugins.png)
 
-### Ready!
+### প্ৰস্তুত!
 
-এইটোৱেই! আপোনাৰ Ultimate Multisite इन्ষ্টলেচন সম্পূৰ্ণ হ'ল। এতিয়া আপুনি **Network Admin Dashboard** बाट আপোনাৰ Website as a Service platfrom নিৰ্মাণ কৰিবলৈ আৰম্ভ কৰিব পাৰে।
+এইয়া মাথোঁ! আপোনাৰ আল্টিমেট মাল্টিসাইট স্থাপন সম্পূৰ্ণ হ’ল। এতিয়াই আপুনি **নেটৱৰ্ক এডমিন ড্যাশব’ৰ্ড**ৰ পৰা আপোনাৰ ৱেবছাইট এচ এজ এ চিৰ্ভিচ প্লেটফর্ম নিৰ্মাণ কৰিবলৈ আৰম্ভ কৰিব পাৰি।
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![চেটআপ সম্পূৰ্ণ - প্ৰস্তুত পৰ্দা](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![নেটৱৰ্ক এডমিন ড্যাশব’ৰ্ডত আল্টিমেট মাল্টিসাইট সক্ৰিয় হৈ আছে](/img/installation/network-dashboard.png)
 
-আগুৱাই যাওক আৰু মজা কৰক!
+এতিয়ে, আনন্দ কৰক!

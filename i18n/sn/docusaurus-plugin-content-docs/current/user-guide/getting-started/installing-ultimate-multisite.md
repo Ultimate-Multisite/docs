@@ -1,84 +1,86 @@
 ---
-title: Kutanga Ultimate Multisite
+title: Kuisa Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kurudzera Ultimate Multisite
+# Kuisa Ultimate Multisite
 
 :::note
-Iyi tutorial iyi inosirisi kuti unenge uine WordPress Multisite wakanizedwe nekuva kune. Kuti ukwazivane, ndichida uone [iyi tutorial](https://www.wpbeginner.com/glossary/multisite/) ye WP Beginner.
+Iri renyoro rinotarisira kuti iwe watova neWordPress Multisite yakaiswa uye yakagadziridzwa. Kuti udzidze maitiro, tarisa [iri renyoro](https://www.wpbeginner.com/glossary/multisite/) naWP Beginner.
 :::
 
-## Kurudzera Plugin
+## Kuisa Plugin
 
-Ultimate Multisite inoshandiswa kubva kuita. Unogona kuita nechi mweya wako we **Network Admin Dashboard**, ndaenda ku **Plugins → Add New Plugin**.
+Ultimate Multisite inowanikwa mahara pa[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+Kubva ku**Network Admin Dashboard**, enda ku**Plugins → Add New Plugin**.
 
-Tsvaka **"Ultimate Multisite"** (unenge uine quotes kuti uve nechokwadi chako) uye ichaonekwa sezvinhu zvakare. Chidzidzisa **Install Now**.
+![Network Admin Add New Plugin peji](/img/installation/add-new-plugin.png)
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+Tsvaga **"Ultimate Multisite"** (ine zviratidzo kuti zvive kurongeka kwakakwana) uye ichaonekwa seichi chirevo chekutanga. Dzvanya **Install Now**.
 
-Ngekurudzwa, ndaenda kuita **Network Activate** kuti uva plugin wako munzvimbo yose ya network yako.
+![Mhedzisiro yekutsvaga inoratidza Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+Painge yaiswa, dzvanya **Network Activate** kuti uise plugin mu network yako yese.
 
-Panguva ungarudzirwa, uchakidza neSetup Wizard.
+![Plugin yakaiswa ne Network Activate bhatani](/img/installation/plugin-installed.png)
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+Mushure mekuiswa, uchadzokororwa kuenda kuSetup Wizard.
+
+![Plugin yakaiswa uye yakadzokorora kuenda ku wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard uingopazvifambira kuti uingane Ultimate Multisite munzvimbo ya minuto 10.
+Iyo Setup Wizard ichakutungamira mukugadzirisa Ultimate Multisite munguva pfupi, inenge maminitsi 10.
 
 ### Welcome
 
-Chakidza **Get Started** kuti uanenge uyu.
+Dzvanya **Get Started** kuti utange.
 
 ![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
 
 ### Pre-install Checks
 
-Iyi nzira inogona kuona mahengetsi ako ekurimo uye WordPress kuti zvinhu zvako zvinenge zvine kudzwa nemazuva anotsanana ya Ultimate Multisite. Nekuti zvose zvinhu zvinoonekwa zvakanaka, chidzidzisa **Go to the Next Step**.
+Iyi nhanho inoongorora ruzivo rwako uye kuisa kweWordPress kuti uone kana zvinoenderana nezvinodiwa neUltimate Multisite. Kana zvese zviri kushanda, dzvanya **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Pre-install checks inoratidza zvinodiwa nerudzi](/img/installation/wizard-pre-install-checks.png)
 
-:::note Button ya "Network Activate" (v2.6.1+)
-Kana Ultimate Multisite yakaitwa asi haakaana **kuyakativate network** — onero, kana ndichitiye **Activate** (single-site) chete kuno **Network Activate** kubva munyoriyo weplugins — chine Pre-install Checks ichigona kuona izvi uye inoshumbira button ya **Network Activate**.
+:::note Network Activate bhatani (v2.6.1+)
+Kana Ultimate Multisite yakaiswa asi **isina kuve network-activated** — semuenzaniso, kana ukadzvanya **Activate** (single-site) panzvimbo pe **Network Activate** kubva pa network plugins screen — iyo Pre-install Checks nhanho ichazviwana uye inoratidza bhatani re **Network Activate**.
 
-Kutichitika **Network Activate** kunokativate plugin yese mune network yako nekuti zvinhasi. Ndachishandisa, wizard inodzivirirwa kuti iende kune step ye installation. Haunoda kuenda kuwizard kuti urekere state ya activation.
+Kudzvanya **Network Activate** kunoisa plugin mu network yako yese. Painge yakaiswa, wizard inoenderera mberi zvakajairika kuenda kunhanho yekuiswa. Haufanirire kuburuka kubva kuwizard kuti ugadzirise mamiriro ekuisa.
 :::
 
-### Installation (Kutanga)
+### Installation
 
-Installer ichakwanisa kuita database tables dzine kuitika uye kuita file `sunrise.php` inoshandiswa Ultimate Multisite kuti ibudirire. Chiti **Install** kuti utange.
+Iyo installer ichagadzira mataburi ezvinyorwa uye isa iyo `sunrise.php` faira yaUltimate Multisite inoda kuti ishande. Dzvanya **Install** kuti uenderere mberi.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Installation nhanho inoratidza mataburi ezvinyorwa uye sunrise.php](/img/installation/wizard-installation.png)
 
-### Your Company (Ndinogona)
+### Your Company
 
-Chinjira maitemo yaina dzinogona uye shandisa currency yako inotanga. Izvi maitemo anozoshandiswa munzvimbo yakanaka ye WaaS yako. Chiti **Continue** kana uenda.
+Ita zvese nezve kambani yako uye gadzira mari yako yakasarudzika. Ruzivo urwu ruchashandiswa mu WaaS platform yako yese. Dzvanya **Continue** painge yapera.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Your Company nhanho yekugadzirisa](/img/installation/wizard-your-company.png)
 
-### Default Content (Zvinogona Kubva)
+### Default Content
 
-Ichi step chinokubvira kuita predefined templates, products, uye zvinhasi zvinotanga. Iyi nzira yakagadzirwa kuti uone Ultimate Multisite inenge ine matare. Chiti **Install** kuti utange kuita content yese inotanga, kana uchitenda izvi step iye kana unoda kuita kubva kune zero.
+Iyi nhanho inokubvumidza kuisa matemplate, zvigadzirwa uye mamwe zvekutanga. Iyi inzira yakanaka yekuziva nezve maficha eUltimate Multisite. Dzvanya **Install** kuti uwedzere zvekutanga, kana usasade, unogona kupfuura nhanho iyi.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Default content nhanho yekuiswa](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins (Plugins dzine Zvinogona Kubva)
+### Recommended Plugins
 
-Unogona kuita recommended companion plugins nekuti zvinhasi. Chiti **Install** kuti utiwe kana uchitenda kuti uende.
+Ita zvese nekugadzirisa maplugins anokurudzirwa. Dzvanya **Install** kuti uwedzere kana kupfuura kuti uenderere mberi.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Recommended plugins nhanho](/img/installation/wizard-recommended-plugins.png)
 
-### Ready! (Kutanga!)
+### Ready!
 
-Kuti! Kuti! Kuratidzo rako rine Ultimate Multisite rinokera. Ndatenda kuti ndiri kuita Website as a Service platform yako kubva pa **Network Admin Dashboard**.
+Zvakapera! Kuisa kweUltimate Multisite kwapera. Iye zvino unogona kutanga kuvaka yako Website as a Service platform kubva ku**Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Setup yakapera - Ready screen](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard ine Ultimate Multisite yaiswa](/img/installation/network-dashboard.png)
 
-Ndiri kuita, ndiri kuita!
+Enda mberi uye unakirwe!

@@ -1,86 +1,86 @@
 ---
-title: Instaluojama Ultimate Multisite
+title: Diegiant „Ultimate Multisite“
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalavimas Ultimate Multisite
+# „Ultimate Multisite“ įdiegimas
 
-:::note
-Šis tutorial prasideda tam tada, kad turite įdaliotą ir konfigūrintą WordPress Multisite. Norėdami sužinoti daugiau apie tai, rekomenduojame peržiūrėti [šį tutorialį](https://www.wpbeginner.com/glossary/multisite/) WP Beginner.
+:::pastaba
+Šioje instrukcijoje daroma prielaida, kad „WordPress Multisite“ jau yra įdiegtas ir sukonfigūruotas. Norėdami sužinoti kaip tai padaryti, peržiūrėkite šią instrukciją [čia](https://www.wpbeginner.com/glossary/multisite/) (WP Beginner).
 :::
 
-## Pluginio įdalioti
+## Priedo įdiegimas
 
-Ultimate Multisite yra laisvai naudoti platformoje [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+„Ultimate Multisite“ galima nemokamai atsisiųsti iš [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Nuo savo **Network Admin Dashboard** eikite į **Plugins → Add New Plugin**.
+Savo **tinklo administratoriaus valdymo skydelyje** eikite į **Priedai → Įdiegti naują priedą**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Tinklo administratoriaus „Įdiegti naują priedą“ puslapis](/img/installation/add-new-plugin.png)
 
-Paieškite **"Ultimate Multisite"** (su citraidomis, kad būtų tikslus atitinkamas) ir jis pasirodys kaip pirmasis rezultatas. Spauskite **Install Now**.
+Ieškokite frazės **„Ultimate Multisite“** (su kabutėmis, kad būtų tikslus atitikmuo), ir jis pasirodys kaip pirmasis rezultatas. Spustelėkite **Įdiegti dabar**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Paieškos rezultatai, kuriuose rodomas „Ultimate Multisite“](/img/installation/search-ultimate-multisite.png)
 
-Po įdaliotoje instalacijoje spauskite **Network Activate**, kad aktyvuotumėte pluginį visame savo tinkluose.
+Po įdiegimo spustelėkite **Aktyvuoti tinkle**, kad aktyvuotumėte priedą visame jūsų tinkle.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Įdiegtas priedas su mygtuku „Aktyvuoti tinkle“](/img/installation/plugin-installed.png)
 
-Aktyvuojimo po to jūs būsite automatiškai nukreipti į Setup Wizard.
+Po aktyvacijos būsite automatiškai nukreipti į nustatymo vedlį.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Priedas aktyvuotas ir nukreiptas į vedlį](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Nustatymo vedlys
 
-Setup Wizard padės jums nustatyti Ultimate Multisite apie 10 minučių.
+Nustatymo vedlys padės jums sukonfigūruoti „Ultimate Multisite“ maždaug per 10 minučių.
 
-### Prisijungimas
+### Sveiki atvykę
 
-Spauskite **Get Started**, kad pradėtumėte.
+Spustelėkite **Pradėti**, kad pradėtumėte.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Nustatymo vedlio pasveikinimo ekranas](/img/installation/wizard-welcome.png)
 
-### Pre-install patikrinimai
+### Prieš įdiegiant patikrinimai
 
-Šis žingsnis patikrina jūsų sistemos informaciją ir WordPress įdaliotą, kad užtikrintų, kad jis atitinka Ultimate Multisite reikalavimus. Jei viskas atrodo tinkamai, spauskite **Go to the Next Step**.
+Šiame etape patikrinama jūsų sistemos informacija ir „WordPress“ diegimas, kad būtų užtikrinta, jog jie atitinka „Ultimate Multisite“ reikalavimus. Jei viskas atrodo gerai, spustelėkite **Pereiti prie kito žingsnio**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Prieš įdiegiant patikrinimai, rodantys sistemos reikalavimus](/img/installation/wizard-pre-install-checks.png)
 
-:::note Mytažinimo mygtukas Network Activate (v2.6.1+)
-Jei Ultimate Multisite buvo įdėtas, bet **neatsisijunčiam** — pavyzdžiui, jei pasirinkote **Activate** (vienas-site) instead of **Network Activate** iš tinklo pluginų ekrano — Pre-install Checks žingsnis tai pamatys ir pateiks jums mygtuką **Network Activate**.
+:::pastaba Mygtukas „Aktyvuoti tinkle“ (v2.6.1+)
+Jei „Ultimate Multisite“ buvo įdiegtas, bet **dar neaktyvuotas visame tinkle** – pavyzdžiui, jei spustelėjote **Aktyvuoti** (vieno svetainės) vietoj **Aktyvuoti tinkle** iš tinklo priedų ekrano – prieš įdiegiant patikrinimų žingsnis tai aptiks ir parodys mygtuką **Aktyvuoti tinkle**.
 
-Spausdami **Network Activate**, jūs automatiškai aktyvuojate šį plugin visame jūsų multisite tinklu. Aktyvuotas po to, vizualizator tęsiasi normaliai į įdėjimų žingsnį. Jums ne reikia išeiti iš vizualizatoriaus, kad sužeiktumėte aktyvavimo būseną.
+Spustelėjus **Aktyvuoti tinkle**, priedas bus automatiškai aktyvuotas visame jūsų „multisite“ tinkle. Po aktyvacijos vedlys tęsis įprastai, pereinant prie diegimo žingsnio. Jums nereikės palikti vedlio, kad išspręstumėte aktyvacijos problemą.
 :::
 
-### Įdėjimas
+### Diegimas
 
-Instalator sukurs reikiamus duomenų bazos lentelė ir įdės `sunrise.php` failą, kurį Ultimate Multisite reikia naudoti veikti. Spauskite **Install**, kad tęstumėte.
+Diegimo priemonė sukurs reikiamus duomenų bazės lenteles ir įdiegia failą `sunrise.php`, kurio reikia „Ultimate Multisite“ veikimui. Spustelėkite **Įdiegti**, kad tęstumėte.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Diegimo žingsnis, rodantis duomenų bazės lenteles ir failą sunrise.php](/img/installation/wizard-installation.png)
 
-### Jūsų Kompietis
+### Jūsų įmonė
 
-Įrašykite savo įmonės informaciją ir nustatykite jūsų pagrindinę valūtą. Šią informaciją bus naudoti visame jūsų WaaS platformoje. Spauskite **Continue**, kai užbaigsite.
+Užpildykite savo įmonės informaciją ir nustatykite numatytąją valiutą. Ši informacija bus naudojama visoje jūsų „WaaS“ platformoje. Kai būsite baigę, spustelėkite **Tęsti**.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Jūsų įmonės konfigūracijos žingsnis](/img/installation/wizard-your-company.png)
 
-### Pagrindinis Skaičius (Default Content)
+### Numatytasis turinys
 
-Šis žingsnis leidžia įdėti predefiniotus šablonus, produktus ir kitą pradines turinį. Tai puikus būdas sužinoti Ultimate Multisite funkcijas. Spauskite **Install**, kad pridėtumėte pagrindinį turinį, arba praleiskite šį žingsnį, jei norite pradėti nuo nulio.
+Šiame etape galite įdiegti iš anksto nustatytus šablonus, produktus ir kitą pradinį turinį. Tai puikus būdas susipažinti su „Ultimate Multisite“ funkcijomis. Spustelėkite **Įdiegti**, kad pridėtumėte numatytąjį turinį, arba praleiskite šį žingsnį, jei norite pradėti nuo naujo.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Numatytojo turinio diegimo žingsnis](/img/installation/wizard-default-content.png)
 
-### Rekomenduojami Pluginai
+### Rekomenduojami priedai
 
-Valstybiškai įdėkite rekomenduojamus palaikymo pluginus. Spauskite **Install**, kad juos pridėtumėte arba praleiskite, kad tęstumėtumėte.
+Pasirenkamai įdiekite rekomenduojamus papildomus priedus. Spustelėkite **Įdiegti**, kad juos pridėtumėte, arba tęskite.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Rekomenduojamų priedų žingsnis](/img/installation/wizard-recommended-plugins.png)
 
-### Pasirinkta!
+### Pasiruošta!
 
-Tai jau viskas! Jūsų Ultimate Multisite įdiegimas baigėsi. Dabar galite pradėti naujo svetainės platformos kūrimą iš **Network Admin Dashboard**.
+Viskas! Jūsų „Ultimate Multisite“ diegimas baigtas. Dabar galite pradėti kurti savo „Website as a Service“ platformą iš **tinklo administratoriaus valdymo skydelio**.
 
-![Įdiegimo pabaiga - Pasirinkimo ekrano vaizdas](/img/installation/wizard-ready.png)
+![Nustatymas baigtas – pasiruošimo ekranas](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard su aktyviai Ultimate Multisite](/img/installation/network-dashboard.png)
+![Tinklo administratoriaus valdymo skydelis, kuriame aktyvuotas „Ultimate Multisite“](/img/installation/network-dashboard.png)
 
-Atsimirkite ir pradėkite daryti!
+Pradėkite ir smagiai praleiskite laiką!

@@ -3,84 +3,84 @@ title: Instal·lant Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instal·lació d'Ultimate Multisite
+# Instal·lació de l'Ultimate Multisite
 
 :::note
-Aquest tutorial assumeix que ja teniu instal·lat i configurat WordPress Multisite. Per aprendre com fer-ho, consulteu [aquest tutorial](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner.
+Aquest tutorial assumeix que ja teniu instal·lat i configurat el WordPress Multisite. Per obtenir més informació, consulteu [aquest tutorial](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner.
 :::
 
-## Instal·lar el Plugin
+## Instal·lació del connector
 
-Ultimate Multisite és disponible de manera gratuïta a [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+L'Ultimate Multisite està disponible gratuïtament a [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Des del vostre **Network Admin Dashboard**, aneu a **Plugins → Add New Plugin**.
+Des del vostre **Panell d'administració de la xarxa**, aneu a **Connectors → Afegeix un nou connector**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Pàgina "Afegeix un nou connector" al panell d'administració de la xarxa](/img/installation/add-new-plugin.png)
 
-Cercareu **"Ultimate Multisite"** (amb com quotes per a una cerca exacta) i apareixerà com el primer resultat. Cliqueu sobre **Install Now**.
+Cerqueu **"Ultimate Multisite"** (amb les cometes per a una coincidència exacta) i apareixerà com el primer resultat. Feu clic a **Instal·la ara**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Resultats de la cerca que mostren l'Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Una vegada instal·lat, cliqueu sobre **Network Activate** per activar el plugin a tot el vostre network.
+Un cop instal·lat, feu clic a **Activa a tota la xarxa** per activar el connector a tota la vostra xarxa.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Connector instal·lat amb el botó "Activa a tota la xarxa"](/img/installation/plugin-installed.png)
 
-Després de l'activació, sereu rediriguts automàticament al Setup Wizard.
+Després de l'activació, se us redirigirà automàticament al màquina d'instal·lació.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Connector activat i redirigit al màquina](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Màquina d'instal·lació
 
-El Setup Wizard us guiarà per configurar Ultimate Multisite en uns 10 minuts.
+La màquina d'instal·lació us guiarà en la configuració de l'Ultimate Multisite en uns 10 minuts.
 
-### Welcome
+### Benvingut
 
-Cliqueu sobre **Get Started** per començar.
+Feu clic a **Comença** per començar.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Pantalla de benvinguda de la màquina d'instal·lació](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### Comprovacions prèvies a la instal·lació
 
-Aquest pas comprueba la informació del vostre sistema i l'instal·lació de WordPress per assegurar-se que compleix amb els requisits d'Ultimate Multisite. Si tot té bé, cliqueu sobre **Go to the Next Step**.
+Aquest pas comprova la informació del sistema i la instal·lació de WordPress per assegurar-se que compleix els requisits de l'Ultimate Multisite. Si tot està bé, feu clic a **Vés al següent pas**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Comprovacions prèvies a la instal·lació que mostren els requisits del sistema](/img/installation/wizard-pre-install-checks.png)
 
-:::note Botó Network Activate (v2.6.1+)
-Si Ultimate Multisite s'ha instal·lat però **no s'ha activat encara a nivell de network** — per exemple, si cliqueu sobre **Activate** (a nivell de site) en lloc de **Network Activate** des de la pantalla de plugins del network — el pas de Pre-install Checks ho detectarà i mostrarà un botó de **Network Activate**.
+:::note Botó "Activa a tota la xarxa" (v2.6.1+)
+Si l'Ultimate Multisite s'ha instal·lat però **encara no s'ha activat a tota la xarxa** —per exemple, si heu fet clic a **Activa** (d'un sol lloc) en comptes de **Activa a tota la xarxa** des de la pantalla de connectors de la xarxa— el pas de les comprovacions prèvies a la instal·lació ho detectarà i mostrarà un botó **Activa a tota la xarxa**.
 
-Faire clic a **Network Activate** activa el plugin a tot el vostre network multisite automàticament. Una vegada activat, el wizard continua normalment fins al pas d'instal·lació. No necessiteu abandonar el wizard per corregir l'estat d'activació.
+En fer clic a **Activa a tota la xarxa**, s'activarà el connector a tota la vostra xarxa multisite automàticament. Un cop activat, la màquina continuarà normalment fins al pas d'instal·lació. No cal que sortiu de la màquina per solucionar l'estat d'activació.
 :::
 
-### Installation
+### Instal·lació
 
-L'instal·lador crearà les taules de la base de dades necessàries i instal·larà el fitxer `sunrise.php` que Ultimate Multisite necessita per funcionar. Cliqueu sobre **Install** per continuar.
+El programa d'instal·lació crearà les taules de base de dades necessàries i instal·larà el fitxer `sunrise.php` que l'Ultimate Multisite necessita per funcionar. Feu clic a **Instal·la** per continuar.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Pas d'instal·lació que mostra les taules de la base de dades i el fitxer sunrise.php](/img/installation/wizard-installation.png)
 
-### Your Company
+### La vostra empresa
 
-Rengeu la informació de la vostra empresa i configureu la vostra moneda per defecte. Aquesta informació es farà servir a tot el vostre platform WaaS. Cliqueu sobre **Continue** quan terminiu.
+Ompliu la informació de la vostra empresa i configureu la moneda predeterminada. Aquesta informació s'utilitzarà a tota la vostra plataforma WaaS. Feu clic a **Continua** quan hàgiu acabat.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Pas de configuració "La vostra empresa"](/img/installation/wizard-your-company.png)
 
-### Default Content
+### Contingut per defecte
 
-Aquest pas us permet instal·lar templates, productes i altre contingut inicial predefinits. És un bon manera de familiaritzar-se amb les funcionalitats d'Ultimate Multisite. Cliqueu sobre **Install** per afegir el contingut per defecte, o saltieu aquest pas si preferiu començar des de zero.
+Aquest pas us permet instal·lar plantilles predefinides, productes i altres continguts d'inici. Aquesta és una bona manera de familiaritzar-vos amb les funcions de l'Ultimate Multisite. Feu clic a **Instal·la** per afegir el contingut per defecte o salteu aquest pas si preferiu començar des de zero.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Pas d'instal·lació del contingut per defecte](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins
+### Connectors recomanats
 
-Instal·leu opcionalment plugins complementaris recomanats. Cliqueu sobre **Install** per afegir-los o saltieu per continuar.
+Instal·leu connectors complementaris recomanats, si voleu. Feu clic a **Instal·la** per afegir-los o continueu sense fer-ho.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Pas dels connectors recomanats](/img/installation/wizard-recommended-plugins.png)
 
-### Ready!
+### A punt!
 
-És tot! La vostra instal·lació d'Ultimate Multisite està completada. Ara podeu començar a construir la vostra plataforma Website as a Service des del **Network Admin Dashboard**.
+I ja està! La vostra instal·lació de l'Ultimate Multisite s'ha completat. Ara podeu començar a construir la vostra plataforma de servei de llocs web des del **Panell d'administració de la xarxa**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Instal·lació completa: pantalla "A punt"](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Panell d'administració de la xarxa amb l'Ultimate Multisite activat](/img/installation/network-dashboard.png)
 
-Ara només has de divertir-te!
+Endavant, diverteix-vos!

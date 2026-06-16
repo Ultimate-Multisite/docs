@@ -1,86 +1,86 @@
 ---
-title: Tsim sijhawm Ultimate Multisite
+title: Txhim kho Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# ຕິດຕັ້ງ Ultimate Multisite
+# Kev Txhim Kho Ultimate Multisite
 
-:::note
-ᱱᱚᱣᱟ 튜토리얼​က WordPress Multisite ຕິດຕັ້ງ​ပြီး​ configurate လုပ်ထား​ཡོད་​လို့​ສົມუშ🇨️ ຖື​ວ່າ​ເລີ່ມຕົ້ນ​ပြီ။ ဘယ်လိုလုပ်ရမလဲ သိချင်ရင် WP Beginner ရဲ့ [ဒီ tutorial](https://www.wpbeginner.com/glossary/multisite/) ကို ကြည့်နိုင်ပါတယ်။
+:::ceb toom
+Cov lus qhia no xav tias koj twb tau txhim kho thiab teeb tsa WordPress Multisite lawm. Yog xav paub yuav ua li cas, saib [cov lus qhia no](https://www.wpbeginner.com/glossary/multisite/) los ntawm WP Beginner.
 :::
 
-## Plugin ຕິດຕັ້ງလုပ်နည်း
+## Kev Txhim Kho Plugin
 
-Ultimate Multisite ကို [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) မှာ အခမဲ့ ရရှိနိုင်ပါတယ်။
+Ultimate Multisite muaj rau dawb nyob rau [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-သင့်ရဲ့ **Network Admin Dashboard** ကနေ သွားပြီး **Plugins → Add New Plugin** ကို ရွေးပါ။
+Los ntawm koj **Network Admin Dashboard**, mus rau **Plugins → Ntxiv Plugin Tshiab**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Nplooj ntawv Network Admin Ntxiv Plugin Tshiab](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** လို့ ရှာလိုက်ရင် ပထမဆုံး ရလာမှာ ဖြစ်ပါတယ်။ **Install Now** ကို နှိပ်ပါ။
+Tshawg kom pom **"Ultimate Multisite"** (nrog cov cim txheem rau kev tshawb nrhiav raug), thiab nws yuav tshwm sim raws li qhov tshwj xeeb. Nyem **Txhim Kho Tam Sim**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Cov txiaj ntsig ntawm kev tshawg uas qhia Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-တပ်ဆင်ပြီးသွားရင် သင့်ရဲ့ network တစ်ခုလုံးမှာ plugin အလုပ်လုပ်ဖို့အတွက် **Network Activate** ကို နှိပ်လိုက်ပါ။
+Thaum tau txhim kho, nyem **Network Activate** kom ua rau plugin no muaj zog thoob plaws koj lub network.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin tau txhim kho nrog tus khawm Network Activate](/img/installation/plugin-installed.png)
 
-Activate လုပ်ပြီးတာနဲ့ Setup Wizard ဆီကို အလိုအလျောက် ပြောင်းသွားပါလိမ့်မယ်။
+Tom qab ua tiav, koj yuav raug tig mus rau Setup Wizard.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin tau ua kom muaj zog thiab tig mus rau wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard က Ultimate Multisite ကို ဘယ်လို configure လုပ်ရမလဲဆိုတာ မိနစ် ၁၀ လောက်အတွင်း သင့်ကို လမ်းညွှန်ပေးပါလိမ့်မယ်။
+Setup Wizard yuav pab koj teeb tsa Ultimate Multisite nyob ib ncig li 10 feeb.
 
-### ကြိုဆိုခြင်း (Welcome)
+### Txais Tos Menyuam
 
-စတင်ဖို့အတွက် **Get Started** ကို နှိပ်ပါ။
+Nyem **Pib** los pib.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Nplooj ntawv txais tos ntawm Setup Wizard](/img/installation/wizard-welcome.png)
 
-### တပ်ဆင်မှု မလုပ်ခင် စစ်ဆေးမှုများ (Pre-install Checks)
+### Kev Tshawb Xyuas Ua Ntej
 
-ဒီအဆင့်က သင့်ရဲ့ system အချက်အလက်တွေနဲ့ WordPress installation ကို Ultimate Multisite လိုအပ်ချက်တွေနဲ့ ကိုက်ညီမှုရှိမရှိ စစ်ဆေးပေးပါလိမ့်မယ်။ အရာအားလုံး ကောင်းနေရင် **Go to the Next Step** ကို နှိပ်ပါ။
+Cov kauj ruab no tshawg koj cov ntaub ntawv system thiab WordPress installation kom paub tias nws ua tau raws li Ultimate Multisite xav tau. Yog tias txhua yam zoo, nyem **Mus Rau Ib Kauj Ruab Tom Ntej**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Kev tshawb xyuas ua ntej uas qhia cov yuav tsum muaj ntawm system](/img/installation/wizard-pre-install-checks.png)
 
-:::note ប៊ូតុង Network Activate (v2.6.1+)
-ប្រសិនបើអ្នកបានដំឡើង Ultimate Multisite ប៉ុន្តែ**មិនទាន់បានបើកដំណើរការជាបណ្តាញទេ** — ឧទាហរណ៍ ប្រសិនបើអ្នកចុច **Activate** (single-site) ជំនួសឱ្យ **Network Activate** ពីអេក្រង់ plugin network — ជំហាន Pre-install Checks នឹងរកឃើញរឿងនេះ ហើយបង្ហាញប៊ូតុង **Network Activate**។
+:::ceb toom Tus khawm Network Activate (v2.6.1+)
+Yog tias Ultimate Multisite tau txhim kho tab sis **tsis tau ua kom muaj zog thoob plaws lub network** — piv txwv, yog tias koj nyem **Activate** (ib-chaw) es tsis txhob **Network Activate** los ntawm nplooj ntawv plugins ntawm lub network — cov kauj ruab Kev Tshawb Xyuas Ua Ntej yuav pom qhov no thiab qhia ib tug **Tus Khawm Network Activate**.
 
-ការចុច **Network Activate** នឹងបើកដំណើរការ plugin នោះពេញបណ្តាញ multisite របស់អ្នកដោយស្វ័យប្រវត្តិ។ នៅពេលបានបើកហើយ wizard នឹងបន្តទៅជំហាន installation ជាធម្មតា។ អ្នកមិនចាំបាច់ចាកចេញពី wizard ដើម្បីជួសជុលស្ថានភាព activation ទេ។
+Nyem **Network Activate** ua rau plugin muaj zog thoob plaws koj lub multisite network. Thaum tau ua kom muaj zog, wizard yuav txuas mus rau cov kauj ruab tso tawm. Tsis tas yuav tawm ntawm wizard los kho qhov kev ua kom muaj zog.
 :::
 
-### ការដំឡើង (Installation)
+### Kev Txhim Kho
 
-Installer នឹងបង្កើត database tables ដែលចាំបាច់ និងដំឡើង file `sunrise.php` ដែល Ultimate Multisite ត្រូវការដើម្បីដំណើរការ។ ចុច **Install** ដើម្បីបន្ត។
+Cov cuab yeej no yuav tsim cov database tables uas xav tau thiab txhim cov ntawv `sunrise.php` uas Ultimate Multisite xav tau kom ua hauj lwm. Nyem **Txhim Kho** kom mus tom ntej.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Ib kauj ruab kev txhim kho uas qhia cov database tables thiab sunrise.php](/img/installation/wizard-installation.png)
 
-### ក្រុមហ៊ុនរបស់អ្នក (Your Company)
+### Koj Lub Tuam Txhab
 
-បំពេញព័ត៌មានក្រុមហ៊ុនរបស់អ្នក និងកំណត់រូបិយប័ណ្ណលំនាំដើមរបស់អ្នក។ ព័ត៌មាននេះនឹងត្រូវបានប្រើពេញវេទិកា WaaS របស់អ្នក។ ចុច **Continue** នៅពេលរួចរាល់។
+Sau koj lub tuam txhab cov ntaub ntawv thiab teeb tsa koj tus nyiaj tso lis. Cov ntaub ntawv no yuav raug siv thoob plaws koj lub WaaS platform. Nyem **Txuas Mus** thaum ua tiav.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Ib kauj ruab Kev Teeb Tsaj Tuam Txhab](/img/installation/wizard-your-company.png)
 
-### មាតិកាលំនាំដើម (Default Content)
+### Cov Ntawv Qhia Tseem Ceeb
 
-ជំហាននេះអនុញ្ញាតឱ្យអ្នកដំឡើង template, products និងមាតិកាចាប់ផ្តើមផ្សេងទៀតដែលបានកំណត់ទុកជាមុន។ នេះគឺជាវិធីដ៏ល្អដើម្បីស្គាល់ពីមុខងាររបស់ Ultimate Multisite។ ចុច **Install** ដើម្បីបន្ថែមមាតិកាលំនាំដើម ឬលុបជំហាននេះ ប្រសិនបើអ្នកចង់ចាប់ផ្តើមពីការចាប់ផ្តើមថ្មី។
+Cov kauj ruab no tso cai rau koj kom txhim cov qauv, khoom, thiab lwm yam ntawv uas ua tiav ua ntej. Qhov no yog ib txoj hauv kev zoo los paub txog Ultimate Multisite. Nyem **Txhim Kho** kom ntxiv cov ntawv tseem ceeb, lossis tsis txhob siv qhov no yog tias koj xav pib tshiab.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Ib kauj ruab Kev Txhim Cov Ntawv Qhia Tseem Ceeb](/img/installation/wizard-default-content.png)
 
-### Plugin ដែលត្រូវបានណែនាំ (Recommended Plugins)
+### Cov Plugins Ua Ntej
 
-ជាជម្រើស ដំឡើង plugin គaccompaniers ដែលត្រូវបានណែនាំ។ ចុច **Install** ដើម្បីបន្ថែមពួកវា ឬលុបដើម្បីបន្ត។
+Tso cai kom txhim cov plugins uas zoo ib yam. Nyem **Txhim Kho** kom ntxiv lawv lossis tsis siv qhov no kom mus tom ntej.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Ib kauj ruab Cov Plugins Ua Ntej](/img/installation/wizard-recommended-plugins.png)
 
-### រួចរាល់ហើយ! (Ready!)
+### Tos Ib Lub Sij Hawm!
 
-Tsis txhob tsis txhob! Installation ntawm **Ultimate Multisite** cua koj zoo heev. Kuv yuav txhua tus tsim phoj (Website as a Service platform) los ntawm **Network Admin Dashboard**.
+Uas yog tag nrho! Koj tau txhim Ultimate Multisite tiav lawm. Tam sim no koj tuaj yeem pib tsim koj lub platform Website as a Service los ntawm **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Setup ua tiav - Nplooj ntawv Tos Ib Lub Sij Hawm](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Nplooj ntawv Network Admin Dashboard nrog Ultimate Multisite tau ua kom muaj zog](/img/installation/network-dashboard.png)
 
-Tsis txhob tsis txhob, hais rau koj ua siab!
+Mus ua si!

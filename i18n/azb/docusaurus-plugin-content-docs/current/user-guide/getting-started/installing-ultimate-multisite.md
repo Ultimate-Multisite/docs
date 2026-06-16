@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite-ni quraş qilish
+title: Ultimate Multisite-ی قوروشدورماق
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite Kurulumu
+# Ultimate Multisite-ین قورولماسی
 
 :::note
-Bu rehber, Ultimate Multisite'ın zaten kurulmuş ve yapılandırılmış olduğunu varsaymaktadır. Nasıl yapılacağını öğrenmek için WP Beginner tarafından hazırlanan [bu rehbere](https://www.wpbeginner.com/glossary/multisite/) göz atabilirsiniz.
+بو دَرسلیک، WordPress Multisite-ین آرتدان قورولدوغونو و تنظیم اولوندوغونو فرض ائدیر. نئجه ائدیلدیگینی اویرنمک اوچون، WP Beginner طرفیندن [بو دَرسلیگه](https://www.wpbeginner.com/glossary/multisite/) باخین.
 :::
 
-## Plugin Kurulumu
+## پلاگین-ین قورولماسی
 
-Ultimate Multisite, [WordPress.org'da](https://wordpress.org/plugins/ultimate-multisite/) ücretsiz olarak mevcuttur.
+Ultimate Multisite, [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/)-ده پۇلsuz اولاراق مووجوددور.
 
-**Ağ Yöneticisi Paneli'niz'nden** (Network Admin Dashboard), **Eklentiler → Yeni Eklenti Ekle** yolunu izleyin.
+**Network Admin Dashboard**-دان، **Plugins → Add New Plugin**-ه گئدین.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin صفحه‌سی](/img/installation/add-new-plugin.png)
 
-Arama çubuğuna **"Ultimate Multisite"** yazın (tam eşleşme için tırnak işaretleri kullanın) ve bu, ilk sonuç olarak görünecektir. **Şimdi Yükle** (Install Now) butonuna tıklayın.
+**"Ultimate Multisite"** (دقیق اوچون تیکلی علامتله) آختارین و ایلک نتیجه کیمی ظاهر اولاجاق. **Install Now**-ا کلیک ائدین.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Ultimate Multisite-ی گؤسته‌رن آختاریش نتیجه‌لری](/img/installation/search-ultimate-multisite.png)
 
-Yüklendikten sonra, eklentiyi tüm ağınızda etkinleştirmek için **Ağda Etkinleştir** (Network Activate) butonuna tıklayın.
+قورولدوغوندان سوْنرا، پلاگینی بوتون شبکه اوستونده فعال ائتمک اوچون **Network Activate**-ه کلیک ائدین.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Network Activate دۆیمه‌سی ایله قورولموش پلاگین](/img/installation/plugin-installed.png)
 
-Etkinleştirme tamamlandıktan sonra, otomatik olarak Kurulum Sihirbazı'na (Setup Wizard) yönlendirileceksiniz.
+فعاللاشدیریلدیقدان سوْنرا، آوتوماتیک اولاراق Setup Wizard-ه یؤنلندیریلجکسینیز.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![پلاگین فعاللاشدیریلیب و ویزاردا یؤنلندیریلیب](/img/installation/plugin-activated.png)
 
-## Kurulum Sihirbazı
+## Setup Wizard
 
-Kurulum Sihirbazı, Ultimate Multisite'ı yaklaşık 10 dakika içinde yapılandırmanızda size rehberlik edecektir.
+Setup Wizard، Ultimate Multisite-ی تقریباً 10 دَقیقه‌ده تنظیم ائتمک اوچون سیزه رهبرلیک ائدجک.
 
-### Hoş Geldiniz
+### خوش گلمیسینیز
 
-Başlamak için **Başla** (Get Started) butonuna tıklayın.
+باشلاماق اوچون **Get Started**-ه کلیک ائدین.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Setup Wizard خوش گلمیسینیز صفحه‌سی](/img/installation/wizard-welcome.png)
 
-### Ön Kurulum Kontrolleri
+### قورولمازدان اونجه‌کی یؤخلامالار
 
-Bu adım, Ultimate Multisite'ın gereksinimlerini karşılayıp karşılamadığını kontrol etmek için sistem bilgilerinizi ve WordPress kurulumunuzu kontrol eder. Her şey yolundaysa, **Sonraki Adıma Git** (Go to the Next Step) butonuna tıklayın.
+بو آددیم، سیستم معلوماتلارینیزی و WordPress قورولمانızı یؤخلاییر کی، Ultimate Multisite-ین طلباتلارینی ائده بیلیر. هر شئی یاخشی گؤرونورسه‌، **Go to the Next Step**-ه کلیک ائدین.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![سیستم طلباتلارینی گؤسته‌رن قورولمازدان اونجه‌کی یؤخلامالار](/img/installation/wizard-pre-install-checks.png)
 
-:::note Ağda Etkinleştir Butonu (v2.6.1+)
-Eğer Ultimate Multisite yüklendi ancak **henüz ağda etkinleştirilmediyse** — örneğin, ağ eklentileri ekranından **Ağda Etkinleştir** yerine **Etkinleştir** (tek site) butonuna tıkladıysanız — Ön Kurulum Kontrolleri adımı bunu algılayacak ve bir **Ağda Etkinleştir** butonu gösterecektir.
+:::note Network Activate دۆیمه‌سی (v2.6.1+)
+Ultimate Multisite قورولدوغوندا، آنجاق **هالا شبکه اوستونده فعاللاشدیریلمامیشسا** — مثلاً، شبکه پلاگینلاری صفحه‌سیندن **Activate** (تک سایتدان) یئرینه **Network Activate**-ه کلیک ائتمیشسیزسه — قورولمازدان اونجه‌کی یؤخلامالار آددیمی بۇنو آشکار ائده‌جک و **Network Activate** دۆیمه‌سینی گؤستره‌جک.
 
-**Ağda Etkinleştir** butonuna tıklamak, eklentiyi tüm multisite ağınızda otomatik olarak etkinleştirir. Etkinleştirildikten sonra, sihirbaz normal bir şekilde kurulum adımına devam eder. Aktivasyon durumunu düzeltmek için sihirbazdan ayrılmanıza gerek yoktur.
+**Network Activate**-ه کلیک ائتمه‌سی، پلاگینی بوتون multisite شبکه اوستونده آوتوماتیک اولاراق فعاللاشدیراجاق. فعاللاشدیریلدیقدان سوْنرا، ویزارد نورمال شکیلده قورولما آددیمینا داوام ائده‌جک. فعالاخیشما وضعیتینی düzeltmek اوچون ویزاردی تərk ائتمه‌یه احتیاج یوخدور.
 :::
 
-### Kurulum
+### قورولما
 
-Kurulum aracı, gerekli veritabanı tablolarını oluşturacak ve Ultimate Multisite'ın çalışması için ihtiyaç duyduğu `sunrise.php` dosyasını kuracaktır. Devam etmek için **Kur** (Install) butonuna tıklayın.
+قورولدوغوجو، لازیملی داتاباز جدوللرینی یاراداجاق و Ultimate Multisite-ین ایشله‌مه‌سی اوچون لازیم اولان `sunrise.php` فایلینی قوراجاق. داوام ائتمک اوچون **Install**-ه کلیک ائدین.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![داتاباز جدوللرینی و sunrise.php-ی گؤسته‌رن قورولما آددیمی](/img/installation/wizard-installation.png)
 
-### Şirketiniz
+### شیرکتینیز
 
-Şirket bilgilerinizi doldurun ve varsayılan para biriminizi ayarlayın. Bu bilgiler, WaaS platformunuz boyunca kullanılacaktır. İşiniz bittiğinde **Devam Et** (Continue) butonuna tıklayın.
+شیرکت معلوماتلارینیزی دۆلدۇرون و ایسته‌دیگینیز default valyutanızı تعیین ائدین. بۇ معلومات، WaaS پلاتفورمانیزدا ایستیفاده اولاجاق. بیتیردیگیزده **Continue**-ه کلیک ائدین.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![شیرکتینیز تنظیم آددیمی](/img/installation/wizard-your-company.png)
 
-### Varsayılan İçerik
+### Default Content
 
-Bu adım, önceden tanımlanmış şablonlar, ürünler ve diğer başlangıç içeriklerini kurmanıza olanak tanır. Bu, Ultimate Multisite'ın özelliklerine alışmak için harika bir yoldur. Varsayılan içeriği eklemek için **Kur** (Install) butonuna tıklayın veya sıfırdan başlamayı tercih ederseniz bu adımı atlayın.
+بو آددیم، اوْنجه‌دن تعیین ائدیلمیش شابلونلار، محصوللار و باشقا باشلانغیج محتوالارینی قورماغا ایمکان وئریر. بۇ، Ultimate Multisite-ین خوصوصیتلرینه آشناشماغین عالی بیر یولودور. Default content-ی اضافه ائتمک اوچون **Install**-ه کلیک ائدین یا دا باشلاماغی ایسته‌میرسیزسه بۇ آددیمی تərk ائدین.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Default content قورولما آددیمی](/img/installation/wizard-default-content.png)
 
-### Önerilen Eklentiler
+### تووسیه اولونان پلاگینلر
 
-İsteğe bağlı olarak önerilen yardımcı eklentileri kurun. Bunları eklemek için **Kur** (Install) butonuna tıklayın veya devam etmek için atlayın.
+تووسیه اولونان یاردیمچی پلاگینلری isteğe bağlı اولاراق قورون. اونلاری اضافه ائتمک اوچون **Install**-ه کلیک ائدین یا دا داوام ائتمک اوچون بۇ آددیمی تərk ائدین.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![تووسیه اولونان پلاگینلر آددیمی](/img/installation/wizard-recommended-plugins.png)
 
-### Hazır!
+### حاضیر!
 
-İşte bu kadar! Ultimate Multisite kurulumunuz tamamlandı. Artık **Ağ Yöneticisi Paneli'nden** (Network Admin Dashboard) Web Sitesi Hizmeti (Website as a Service) platformunuzu oluşturmaya başlayabilirsiniz.
+بۇ قەدەر! Ultimate Multisite قورولمانیز بیتدی. ایندی **Network Admin Dashboard**-دان Website as a Service پلاتفورمانızı یاراتماغا باشلایا بیلرسینیز.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![قورولما بیتدی — حاضیر صفحه‌سی](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Ultimate Multisite فعال اولان Network Admin Dashboard](/img/installation/network-dashboard.png)
 
-Şimdi eğlenmeye başlayabilirsiniz!
+ایندی گئدین و اؤزونوزدن لذت آلین!

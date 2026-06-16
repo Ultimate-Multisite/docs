@@ -1,86 +1,86 @@
 ---
-title: Installation af Ultimate Multisite
+title: Installering af Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Installation af Ultimate Multisite
 
 :::note
-Denne guide antager, at du allerede har installeret og opsat WordPress Multisite. For at lære hvordan du gør det, tjek [denne tutorial](https://www.wpbeginner.com/glossary/multisite/) fra WP Beginner.
+Denne vejledning forudsætter, at du allerede har WordPress Multisite installeret og konfigureret. For at lære hvordan, kan du se denne vejledning [her](https://www.wpbeginner.com/glossary/multisite/) fra WP Beginner.
 :::
 
-## Installation af Plugin'et
+## Installation af plugin'et
 
-Ultimate Multisite er gratis tilgængelig på [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite er tilgængeligt gratis på [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Fra dit **Network Admin Dashboard** skal du gå til **Plugins → Add New Plugin**.
+Fra dit **Netværksadministrator-dashboard** skal du gå til **Plugins → Tilføj nyt plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Side med "Tilføj nyt plugin" i Netværksadministrator](/img/installation/add-new-plugin.png)
 
-Søg efter **"Ultimate Multisite"** (med anførselstegn for en præcis match), og den vil dukke op som det første resultat. Klik på **Install Now**.
+Søg efter **"Ultimate Multisite"** (med anførselstegn for et præcist match), og det vil vises som det første resultat. Klik på **Installer nu**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Søgeresultater, der viser Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Når installationen er færdig, klik på **Network Activate** for at aktivere plugin'et i hele dit netværk.
+Når det er installeret, skal du klikke på **Netværksaktiver** for at aktivere plugin'et i hele dit netværk.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin installeret med knappen "Netværksaktiver"](/img/installation/plugin-installed.png)
 
-Efter aktivering bliver du automatisk omdirigeret til Opsætningsguiden (Setup Wizard).
+Efter aktivering bliver du automatisk omdirigeret til installationsguiden.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin aktiveret og omdirigeret til guiden](/img/installation/plugin-activated.png)
 
-## Opsætningsguide (Setup Wizard)
+## Installationsguide
 
-Opsætningsguiden vil guide dig i at konfigurere Ultimate Multisite på omkring 10 minutter.
+Installationsguiden vil guide dig gennem konfigurationen af Ultimate Multisite på cirka 10 minutter.
 
 ### Velkommen
 
-Klik på **Get Started** for at komme i gang.
+Klik på **Kom i gang** for at starte.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Velkomstskærm til installationsguiden](/img/installation/wizard-welcome.png)
 
-### Forudgående tjek
+### Forudgående kontrol
 
-Dette trin tjekker din systeminformation og WordPress-installationen for at sikre, at den opfylder kravene til Ultimate Multisite. Hvis alt ser rigtigt ud, klik på **Go to the Next Step**.
+Dette trin kontrollerer dine systemoplysninger og WordPress-installation for at sikre, at den opfylder Ultimate Multisites krav. Hvis alt ser godt ud, skal du klikke på **Gå til næste trin**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Forudgående kontrol, der viser systemkrav](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate knappen (v2.6.1+)
-Hvis Ultimate Multisite er installeret, men **ikke endnu aktiveret i netværket** – for eksempel hvis du klikkede på **Aktiver** (single-site) i stedet for **Network Activate** fra plugin-skærmen for netværksprodukter – vil trinnet Pre-install Checks opdage dette og vise en knap til **Network Activate**.
+:::note Knap "Netværksaktiver" (v2.6.1+)
+Hvis Ultimate Multisite er installeret, men **endnu ikke netværksaktiveret** – for eksempel hvis du klikkede på **Aktiver** (enkeltstående side) i stedet for **Netværksaktiver** fra skærmen med netværksplugins – vil trinnet "Forudgående kontrol" registrere dette og vise en knap **Netværksaktiver**.
 
-Ved at klikke på **Network Activate** aktiverer du automatisk plugin'et på tværs af hele dit multisite netværk. Når det er aktiveret, fortsætter wizarden normalt videre til installations trinnet. Du behøver ikke forlade wizarden for at rette aktiveringsstatus.
+Ved at klikke på **Netværksaktiver** aktiveres plugin'et automatisk i hele dit multisite-netværk. Når det er aktiveret, fortsætter guiden normalt til installationstrinnet. Du behøver ikke forlade guiden for at rette aktiveringstilstanden.
 :::
 
 ### Installation
 
-Installer vil oprette de nødvendige database-tabeller og installere filen `sunrise.php`, som Ultimate Multisite har brug for til at fungere. Klik på **Install** for at fortsætte.
+Installationsprogrammet opretter de nødvendige databasetabeller og installerer filen `sunrise.php`, som Ultimate Multisite har brug for for at fungere. Klik på **Installer** for at fortsætte.
 
-![Installation trin, der viser database-tabeller og sunrise.php](/img/installation/wizard-installation.png)
+![Installationstrin, der viser databasetabeller og sunrise.php](/img/installation/wizard-installation.png)
 
-### Dit Firmanavn
+### Din virksomhed
 
-Udfyld virksomhedsinformation og sæt din standardvaluta. Denne information vil blive brugt gennem hele din WaaS platform. Klik på **Fortsæt**, når du er færdig.
+Udfyld dine virksomhedsoplysninger, og angiv din standardvaluta. Disse oplysninger vil blive brugt i hele din WaaS-platform. Klik på **Fortsæt**, når du er færdig.
 
-![Dit firmanavns konfigurations trin](/img/installation/wizard-your-company.png)
+![Konfigurationstrin "Din virksomhed"](/img/installation/wizard-your-company.png)
 
 ### Standardindhold
 
-Dette trin lader dig installere foruddefinerede skabeloner, produkter og andet startindhold. Det er en god måde at komme bekendt med Ultimate Multisites funktioner på. Klik på **Install** for at tilføje standardindhold, eller spring dette trin over, hvis du foretrækker at starte helt fra bunden.
+Dette trin giver dig mulighed for at installere foruddefinerede skabeloner, produkter og andet startindhold. Dette er en god måde at blive fortrolig med Ultimate Multisites funktioner. Klik på **Installer** for at tilføje standardindholdet, eller spring dette trin over, hvis du foretrækker at starte fra bunden.
 
 ![Installationstrin for standardindhold](/img/installation/wizard-default-content.png)
 
 ### Anbefalede plugins
 
-Installer eventuelt anbefalede tilbehørsprodukter (companion plugins). Klik på **Install** for at tilføje dem eller spring over for at fortsætte.
+Du kan eventuelt installere anbefalede tilhørende plugins. Klik på **Installer** for at tilføje dem, eller spring over for at fortsætte.
 
-![Trin for anbefalede plugins](/img/installation/wizard-recommended-plugins.png)
+![Trin med anbefalede plugins](/img/installation/wizard-recommended-plugins.png)
 
 ### Klar!
 
-Det er det! Din Ultimate Multisite installation er færdig. Du kan nu begynde at bygge din Website as a Service platform fra **Network Admin Dashboard**.
+Det var det! Din Ultimate Multisite-installation er fuldført. Du kan nu begynde at opbygge din Website as a Service-platform fra **Netværksadministrator-dashboardet**.
 
-![Opsætning fuldført - Klar skærm](/img/installation/wizard-ready.png)
+![Installation fuldført - skærm "Klar"](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard med Ultimate Multisite aktiv](/img/installation/network-dashboard.png)
+![Netværksadministrator-dashboard med aktiveret Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Gå bare i gang og ha lidt sjov!
+God fornøjelse!

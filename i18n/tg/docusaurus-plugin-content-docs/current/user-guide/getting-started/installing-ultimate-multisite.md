@@ -1,86 +1,80 @@
 ---
-title: Насоз кардани Ultimate Multisite
+title: Насби Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Настаед Ultimate Multisite
+# Насб кардани Ultimate Multisite
 
 :::note
-Инструкция предполагает, что у вас уже установлен и настроен WordPress Multisite. Чтобы узнать как это сделать, посмотрите [этот туториал](https://www.wpbeginner.com/glossary/multisite/) от WP Beginner.
+Ин дастури амал фарз мекунад, ки шумо аллака бо WordPress Multisite насб ва танзим кардаед. Барои маълумот дар бораи он, ба [ин дастури амал](https://www.wpbeginner.com/glossary/multisite/) аз WP Beginner муроҷиат кунед.
 :::
 
-## Установка плагина
+## Насби плагин
 
-Ultimate Multisite доступен бесплатно на [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite роёгон дар [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) дастрас аст.
 
-Из вашей **Панели администратора сети** перейдите в **Плагины → Добавить новый плагин**.
+Аз **Панели идоракунии Network Admin**, ба **Plugins → Add New Plugin** равед.
 
-![Страница добавления нового плагина в Панели администратора сети](/img/installation/add-new-plugin.png)
+![Саҳифаи Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Найдите **"Ultimate Multisite"** (с кавычками для точного совпадения), и он появится как первый результат. Нажмите **Установить сейчас**.
+Барои ёфтан, **"Ultimate Multisite"** (бо нишонҳои аломат барои мувофиқати дақиқ) нависед ва он ҳамчун натиҷаи аввал пайдо мешавад. Ба **Install Now** клик кунед.
 
-![Результаты поиска, показывающие Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Натоиҷи ҷустуҷӯ, ки Ultimate Multisite -ро нишон медиҳад](/img/installation/search-ultimate-multisite.png)
 
-После установки нажмите **Активировать сеть**, чтобы активировать плагин во всей вашей сети.
+Пас аз насб, барои фаъол кардани плагин дар тамоми шабакаи худ, ба **Network Activate** клик кунед.
 
-![Плагин установлен с кнопкой Активировать сеть](/img/installation/plugin-installed.png)
+![Плагин насб шудааст бо тугмаи Network Activate](/img/installation/plugin-installed.png)
 
-После активации вас автоматически перенаправит на Мастер настройки (Setup Wizard).
+Пас аз фаъолсозӣ, шумо ба таври автоматикӣ ба Setup Wizard идома хоҳед дошт.
 
-![Плагин активирован и перенаправлен в мастер](/img/installation/plugin-activated.png)
+![Плагин фаъол карда шуд ва ба wizard идома дода шуд](/img/installation/plugin-activated.png)
 
-## Мастер настройки (Setup Wizard)
+## Setup Wizard
 
-Мастер настройки проведет вас через настройку Ultimate Multisite примерно за 10 минут.
+Setup Wizard ба шумо дар танзими Ultimate Multisite дар давоми тақрибан 10 дақиқа кумак мекунад.
 
-### Приветствие
+### Хуш омад
+Барои оғоз, ба **Get Started** клик кунед.
 
-Нажмите **Начать**, чтобы начать.
+![Саҳифаи хуш омад Setup Wizard](/img/installation/wizard-welcome.png)
 
-![Экран приветствия Мастера настройки](/img/installation/wizard-welcome.png)
+### Назорати пеш аз насб
 
-### Проверки перед установкой (Pre-install Checks)
+Ин қадам маълумоти система ва насби WordPress -ро барои боварӣ ҳосил кардан дар он ки он ба талаботи Ultimate Multisite мувофиқат мекунад, назорат мекунад. Агар ҳама чиз хуб бошад, ба **Go to the Next Step** клик кунед.
 
-Этот шаг проверяет информацию о вашей системе и установку WordPress, чтобы убедиться, что они соответствуют требованиям Ultimate Multisite. Если все выглядит хорошо, нажмите **Перейти к следующему шагу**.
+![Назорати пеш аз насб, ки талаботи системаро нишон медиҳад](/img/installation/wizard-pre-install-checks.png)
 
-![Проверки перед установкой, показывающие системные требования](/img/installation/wizard-pre-install-checks.png)
+:::note Тугмаи Network Activate (v2.6.1+)
+Агар Ultimate Multisite насб шуда бошад, аммо **ҳануз дар сатҳи шабака фаъол карда нашудааст** — масалан, агар шумо ба ҷои **Network Activate** аз экрани плагинҳои шабака ба **Activate** (сайтро танҳо) клик карда бошед — қадами Назорати пеш аз насб инро ошкор мекунад ва тугмаи **Network Activate** -ро нишон медиҳад.
 
-:::note Даткони (Network Activate button v2.6.1+)
-Агар Ultimate Multisite о安装 карда бошад, аммо **هنوز ба сеть фаъол нашуда** — масалан, агар шумо аз экран плагиноҳо **"Activate"** (single-site) вместо **"Network Activate"** аз меню плагиноҳои network расоне — марҳила Pre-install Checks инро мефаҳмояд ва як даступен кардани **"Network Activate"**-ро нишон медиҳад.
-
-Нақши **"Network Activate"**-ро фиристодан, плагинро томе аз тамоми сети Multisite шумо авалои автомат фаъол мекунад. Баъди фаъоли шудан, wizard ба таври маъмул ба марҳила инсталӣ идома меёбад. Шумо барои танзими ҳолати фаъоли шудан лозим нест, ки аз wizard равед.
+Бо клик кардан ба **Network Activate**, плагин дар тамоми шабакаи мултисайтии шумо фаъол карда мешавад. Пас аз фаъолсозӣ, wizard ба таври оддӣ ба қадами насб идома хоҳад дошт. Шумо лозим нест, ки барои ислоҳи ҳолати фаъолсозӣ аз wizard баромада равед.
 :::
 
-### Инсталл (Installation)
+### Насб
+Насбкунанда ҷадвали зарурӣ дар пойгоҳи додаҳоро эҷод мекунад ва файли `sunrise.php`-ро насб мекунад, ки барои кор кардани Ultimate Multisite лозим аст. Барои идома ба **Install** клик кунед.
 
-Инсталтор ҷадвалҳои зарурӣ ва файли `sunrise.php`-ро сохта ва инсталл мекунад, ки Ultimate Multisite барои кор кардан ба он ниёз дорад. Барои идома додани кор, **"Install"**-ро фиристонед.
+![Қадами насб, ки ҷадвали пойгоҳи додаҳо ва sunrise.php -ро нишон медиҳад](/img/installation/wizard-installation.png)
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+### Ширкати шумо
+Маълумоти ширкати худро пур кунед ва арзи пешфарзро муқаррар кунед. Ин маълумот дар тамоми платформаи WaaS -и шумо истифода хоҳад бурд. Пас аз анҷом, ба **Continue** клик кунед.
 
-### Ширкати шумо (Your Company)
+![Қадами танзимоти "Ширкати шумо"](/img/installation/wizard-your-company.png)
 
-Маълумоти ширкати худро пур кунед ва валюи воситаи худсонеро муайян намоед. Ин маълумот то тамоми платформаи WaaS шумо истифода мешавад. Вақте кор хутон карде, **"Continue"**-ро фиристонед.
+### Мазмуни пешфарз
+Ин қадам ба шумо имкон медиҳад, ки шаблонуҳои пешакӣ, маҳсулот ва дигар мазмунҳои ибтидоиро насб кунед. Ин роҳи хубест барои ошно шудан бо хусусиятҳои Ultimate Multisite. Барои илова кардани мазмуни пешфарз ба **Install** клик кунед ё агар шумо мехоҳед, ки аз аввал оғоз кунед, ин қадамро рад кунед.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Қадами насби мазмуни пешфарз](/img/installation/wizard-default-content.png)
 
-### Мундариҷаи восита (Default Content)
+### Плагинҳои тавсияшуда
+Агар хоҳед, плагинҳои ёрӣ ва тавсияшударо насб кунед. Барои илова кардани онҳо ба **Install** клик кунед ё барои идома ин қадамро рад кунед.
 
-Ин марҳила ба шумо имкон медиҳад, ки шаблонҳо, маҳсулотҳо ва дигар мундариҷаҳои оғозӣ-ро инсталл кунед. Ин равиши хубист барои шинос шудан бо хусусиятҳои Ultimate Multisite. Барои илова кардани мундариҷаи восита, **"Install"**-ро фиристонед ё агар лозим набошад аз ин марҳила гузаред, агар шумо ба оғоз аз нав шурӯъ карданро афзал бинед.
+![Қадами плагинҳои тавсияшуда](/img/installation/wizard-recommended-plugins.png)
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+### Омода!
+Ҳамма чиз! Насби Ultimate Multisite -и шумо ба поён расид. Ҳоло шумо метавонед аз **Панели идоракунии Network Admin** оғоз кунед ва платформаи Website as a Service -и худро эҷод кунед.
 
-### Плагиноҳои пайвастшаванда (Recommended Plugins)
+![Танзимот ба поён расид - Саҳифаи "Омода"](/img/installation/wizard-ready.png)
 
-Барои инсталл кардани плагинҳои ҳамроҳ, ки тавсия дода шудаанд, имконият доред. Барои илова кардани онҳо **"Install"**-ро фиристонед ё барои идома додани кор аз ин марҳила гузаред.
+![Панели идоракунии Network Admin бо Ultimate Multisite фаъол](/img/installation/network-dashboard.png)
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
-
-### Гоҳ аст! (Ready!)
-
-Ҳама чиз ба таври мукамдел! Насозии Ultimate Multisite шумо омода шуд. Ин замон метавонед бо **Network Admin Dashboard** вебсайти худро ҳамчун платформаи "Website as a Service" сохта재вед.
-
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
-
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
-
-Инро ба кор оред ва аз онҳо хурсанд шавед!
+Барояш, сар кунед ва хуб истод!

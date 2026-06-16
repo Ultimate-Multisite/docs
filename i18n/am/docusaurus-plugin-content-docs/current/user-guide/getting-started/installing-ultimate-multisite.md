@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisiteን መጫን
+title: የኡልቲమేት መልቲሳይት መጫኛ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite መጫን
+# የመጨረሻው ማልቲሳይት መጫን
 
-:::note
-ይህ መመሪያ የ WordPress Multisite ቀድሞውንም ተጭኖና ተዋቅሮ መሆኑን ያስባል። እንዴት እንደሚሰራ ለማወቅ፣ በWP Beginner የቀረበውን [ይህንን መመሪያ](https://www.wpbeginner.com/glossary/multisite/) ይመልከቱ።
+:::ማስታወሻ
+ይህ ትምህርት፣ የዎርድፕረስ ማልቲሳይት አስቀድሞ ተጭኖ እና ተዋቅሮ እንዲኖር ይጠብቃል፡፡ እንዴት እንደሚሰራ ለመማር፣ በ WP Beginner ላይ ያለውን [እዚህ ትምህርት](https://www.wpbeginner.com/glossary/multisite/) ይመለከቱ።
 :::
 
-## ፕልጊኑን መጫን
+## የመተግበሪያው መጫን
 
-Ultimate Multisite በ[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) ላይ በነጻ ይገኛል።
+የመጨረሻው ማልቲሳይት በ[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) ላይ ለነጻ ይገኛል።
 
-ከ**Network Admin Dashboard**ዎ፣ ወደ **Plugins → Add New Plugin** ይሂዱ።
+ከ **Network Admin Dashboard**፣ ወደ **Plugins → Add New Plugin** ይሂዱ።
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin ገጽ](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (ትክክለኛ ፍለጋ ለማድረግ በቅንፍ ውስጥ) ይፈልጉና እንደ የመጀመሪያው ውጤት ይታያል። **Install Now** የሚለውን ይጫኑ።
+**"የመጨረሻው ማልቲሳይት"** (ለ ትክክለኛ ግጥሚያ በሁለት ምልክቶች) በመጠቀም ይፈልጉ፣ እና የመጀመሪያው ውጤት ሆኖ ይታያል። **Install Now** ላይ ጠቅ ያድርጉ።
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![የ "የመጨረሻው ማልቲሳይት" የሚለው ፍለጋ ውጤት](/img/installation/search-ultimate-multisite.png)
 
-በተጫነበት ጊዜ፣ ፕልጊኑን በጠቅላላው ኔትወርክዎ ለማንቃት **Network Activate** የሚለውን ይጫኑ።
+ከተጫኑ በኋላ፣ በመላው የእርስዎ መረብ ላይ ለመተግበሩ **Network Activate** ላይ ጠቅ ያድርጉ።
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![የተጫነ የመተግበሪያ እና Network Activate ቁልፍ ያለው ገጽ](/img/installation/plugin-installed.png)
 
-ከማንቃት በኋላ፣ በSetup Wizard በራስ-ሰር ወደሚመራዎት ቦታ ይተላለፋሉ።
+ከተመሰረተ በኋላ፣ በራስዎ ወደ የSetup Wizard ይመራሉ።
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![የተመሰረተ የመተግበሪያ እና ወደ wizard የተመለሰው ገጽ](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard የ Ultimate Multisiteን እንዴት ማዋቀር እንደሚቻል በግምት በ10 ደቂቃ ውስጥ ይመራዎታል።
+የSetup Wizard፣ የመጨረሻውን ማልቲሳይት ለመዋቅር በመոտ 10 ደቂቃዎች ውስጥ ይመራዎታል።
 
-### እንኳን በደህና መጡ (Welcome)
+### እንኳን ደህና መጡ
 
-ለመጀመር **Get Started** የሚለውን ይጫኑ።
+ለመጀመር **Get Started** ላይ ጠቅ ያድርጉ።
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![የSetup Wizard እንኳን ደህና መጣ ገጽ](/img/installation/wizard-welcome.png)
 
-### ከማስቀመጥ በፊት የሚደረጉ ፍተሻዎች (Pre-install Checks)
+### ቅድመ-መጫኛ ፍተሻዎች
 
-ይህ ደረጃ ሲስተም መረጃዎን እና የ WordPress ጭነትዎን ይፈትሻል፣ Ultimate Multisite የሚያስፈልጉትን መስፈርቶች የሚያሟላ መሆኑን ለማረጋገጥ። ሁሉም ነገር ጥሩ ከሆነ፣ **Go to the Next Step** የሚለውን ይጫኑ።
+ይህ ደረጃ፣ የእርስዎ ስርዓት እና የዎርድፕረስ መጫኛ የመጨረሻውን ማልቲሳይት መስፈርቶች ያሟላሉ ለማረጋገጥ ይፈትሻል። ሁሉም ነገር ጥሩ ከታየ፣ **Go to the Next Step** ላይ ጠቅ ያድርጉ።
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![የስርዓት መስፈርቶችን የሚያሳዩ ቅድመ-መጫኛ ፍተሻዎች](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate button (v2.6.1+)
-Ultimate Multisite ተጭኖ ነገር ግን **በኔትወርክ አልተንቀሳቀሰም** ከሆነ — ለምሳሌ፣ ከኔትወርክ ፕልጊን ስክሪን ላይ **Network Activate** ከመጫን ይልቅ **Activate** (በአንድ ድረ-ገጽ) ከጫኑ — የPre-install Checks ደረጃ ይህንን ይገነዘባል እና **Network Activate** የሚል አዝራር ያሳያል።
+:::ማስታወሻ Network Activate ቁልፍ (v2.6.1+)
+የመጨረሻው ማልቲሳይት ተጭኖ፣ ነገር ግን **በእርግጥም በሙሉ መረብ ላይ አልተሰራም** - ለምሳሌ፣ ከኔትዎርክ የመተግበሪያዎች ገጽ ውስጥ **Activate** (ለአንድ ጣቢያ) ይልቅ **Network Activate** ጠቅ ካደረጉ - ቅድመ-መጫኛ ፍተሻው ይህን ያገኛል እና **Network Activate** ቁልፍ ያሳያል።
 
-**Network Activate** መጫን ፕልጊኑን በጠቅላላው Multisite ኔትወርክዎ በራስ-ሰር ያንቀሳቅሳል። ከተንቀሳቀሰ በኋላ፣ ዊዘርዱ ወደ መጫን ደረጃ በቅደም ተከተል ይቀጥላል። የማንቃት ሁኔታውን ለማስተካከል ዊዘርዱን መተው አያስፈልግዎትም።
+**Network Activate** ላይ ጠቅ በማድረግ፣ የመተግበሪያውን በመላው የእርስዎ ማልቲሳይት መረብ ላይ በራስዎ ይተግባዋል። አንዴ ከተሰበረ በኋላ፣ wizard ወደ መጫኛ ደረጃ ይቀጥላል። ለመተግበሩ እንዲስተካከል ከwizard ውጪ መሄድ አያስፈልግም።
 :::
 
-### መጫን (Installation)
+### መጫኛ
 
-የመጫኛው (installer) አስፈላጊ የሆኑ የዳታቤዝ ሰንጠረዦችን ይፈጥራል እንዲሁም Ultimate Multisite እንዲሰራ የሚያስፈልገውን `sunrise.php` ፋይል ይጭናል። ለመቀጠል **Install** የሚለውን ይጫኑ።
+የመጫኛው፣ አስፈላጊዎቹን የዳታቤስ ጠረጴዛዎች ይፈጥራል እና የመጨረሻው ማልቲሳይት ለመሰራት የሚያስፈልገውን `sunrise.php` ፋይል ይጭናል። ለመቀጠል **Install** ላይ ጠቅ ያድርጉ።
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![የዳታቤስ ጠረጴዛዎችን እና sunrise.php የሚያሳዩ መጫኛ ደረጃ](/img/installation/wizard-installation.png)
 
-### ኩባንያዎ (Your Company)
+### የእርስዎ ኩባንያ
 
-የኩባንያዎን መረጃ ይሙሉ እና መደበኛ ምንዛሪዎን ያዘጋጁ። ይህ መረጃ በWaaS መድረክዎ በሙሉ ጥቅም ላይ ይውላል። ሲጨርሱ **Continue** የሚለውን ይጫኑ።
+የኩባንያዎን መረጃ ይሙሉ እና የነባር ምንዛሬዎን ያስቀምጡ። ይህ መረጃ በመላው WaaS መድረክዎ ውስጥ ጥቅም ላይ ይውላል። ከጨረሱ በኋላ **Continue** ላይ ጠቅ ያድርጉ።
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![የ "እርስዎ ኩባንያ" ውቅር ደረጃ](/img/installation/wizard-your-company.png)
 
-### መደበኛ ይዘት (Default Content)
+### ነባር ይዘት
 
-ይህ ደረጃ አስቀድሞ የተዘጋጁ ቴምሌቶችን፣ ምርቶችን እና ሌሎች የመነሻ ይዘቶችን እንድትጭን ያስችልዎታል። ይህ የ Ultimate Multisite ባህሪያትን ለመተዋወቅ ጥሩ መንገድ ነው። መደበኛ ይዘትን ለመጨመር **Install** የሚለውን ይጫኑ፣ ወይም ከባዶ ለመጀመር ከፈለጉ ይህን ደረጃ ዘልቀው ይሂዱ።
+ይህ ደረጃ፣ አስቀድሞ የተዘጋጁ አብነቶችን፣ ምርቶች እና ሌሎች መጀመሪያ ይዘቶችን እንዲጭኑ ያስችልዎታል። ይህ የመጨረሻውን ማልቲሳይት ባህሪያትን ለመረዳት ጥሩ መንገድ ነው። የነባሩን ይዘት ለማከል **Install** ላይ ጠቅ ያድርጉ ወይም ከፈለጉ ይህንን ደረጃ ይዝገቡ።
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![የነባር ይዘት መጫኛ ደረጃ](/img/installation/wizard-default-content.png)
 
-### የሚመከሩ ፕልጊኖች (Recommended Plugins)
+### የሚመከሩ የመተግበሪያዎች
 
-በተፈለገው መሰረት የሚመከሩ አጋር ፕልጊኖችን ይጫኑ። ለመጨመር **Install** የሚለውን ይጫኑ ወይም ለመቀጠል ዘልቀው ይሂዱ።
+አማራጭ፣ የሚመከሩ ተጨማሪ የመተግበሪያዎችን ይጭኑ። ለማከል **Install** ላይ ጠቅ ያድርጉ ወይም ለመቀጠል ይዝገቡ።
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![የሚመከሩ የመተግበሪያዎች ደረጃ](/img/installation/wizard-recommended-plugins.png)
 
-### ተዘጋጅቷል! (Ready!)
+### ዝግጁ!
 
-ይኸውልዎ! የ Ultimate Multisite መጫንዎ ተጠናቅቋል። አሁን የ Website as a Service መድረክዎን ከ**Network Admin Dashboard** ጀምሮ መገንባት ይችላሉ።
+አሁን ጨርሷል። የመጨረሻው ማልቲሳይት መጫኛዎ ተጠናቋል። ከ **Network Admin Dashboard**፣ የእርስዎን Website as a Service መድረክ መገንባት ጀምረዋል።
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![የተጠናቀረ Setup - ዝግጁ ገጽ](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![በ Network Admin Dashboard ላይ የመጨረሻው ማልቲሳይት የተሰበረ](/img/installation/network-dashboard.png)
 
-በመዝናናት ይጀምሩ!
+ሂደን እና ይደሰቱ!

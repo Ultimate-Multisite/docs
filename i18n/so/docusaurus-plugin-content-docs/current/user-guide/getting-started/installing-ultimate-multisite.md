@@ -1,84 +1,86 @@
 ---
-title: Waxay ku soo installaysaa Ultimate Multisite
+title: Rakibaya Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Waxay Misee Ku Dhisaysaa Ultimate Multisite
+# Rakibaadda Ultimate Multisite
 
 :::note
-Tani casharka wuxuu ka raacayaa in aad horey u haysato WordPress Multisite oo la dejiyay. Si aad si faahfaahsan u barato sida loo sameeyo, eeg [casharka kan](https://www.wpbeginner.com/glossary/multisite/) ee WP Beginner.
+Tilmaamahan waxay kuu sheegayaan in aad hore u rakibtay oo aad qaabaysay WordPress Multisite. Si aad wax uga barato, eeg [tilmaame-kan](https://www.wpbeginner.com/glossary/multisite/) ee WP Beginner.
 :::
 
-## Wax Ku Dhiska Plugin-ka (Plugin)
+## Rakibaadda Plugin-ka
 
-Ultimate Multisite waa mid bilaash ah oo laga heli karo [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite waxay bilaash ku heli kartaa [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Ka **Network Admin Dashboard**-kaaga, u socda **Plugins → Add New Plugin**.
+Ka soo jeedo **Network Admin Dashboard**, tag **Plugins → Add New Plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Bogga Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Waxaad raadinaysaa **"Ultimate Multisite"** (waxaad isticmaali kartaa qofka si aad si sax ah u hesho) waxayna ka soo muuqataa natiijada koowaad. Guji **Install Now**.
+Raadi **"Ultimate Multisite"** (oo ku qor xariif si aad u hesho natiijo sax ah), waxay ka muuqan doontaa sida natiijada ugu horeysa. Guji **Install Now**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Natiijooyinka raadinta oo muujinaya Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Marka aad ku soo installayso, riix **Network Activate** si aad plugin-ka ugu faafiso dhammaan shabakadahaaga.
+Marka la rakibo, guji **Network Activate** si aad u dhaqaajiso plugin-ka dhamaan shabakadaada.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin-ka ayaa la rakibay oo leh badhanka Network Activate](/img/installation/plugin-installed.png)
 
-Kadib marka la furayo, waxaad si toos ah u diirid Setup Wizard-ka.
+Ka dib marka la dhaqaajiyo, waxaa lagu soo jeedin doonaa si toos ah Setup Wizard.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin-ka wuxuu ahaa dhaqaajiyey oo loo soo jeediyay wizard-ka](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard-ku wuxuu ku hagayaa sida aad Ultimate Multisite ugu hagaajinayso 10 daqiiqo.
+Setup Wizard ayaa ku hagidoonaya qaabeynta Ultimate Multisite qiyaas ahaan 10 daqiiqo gudahood.
 
-### Welcome
+### Soo dhoweyn
 
-Rixi **Get Started** si aad u bilowdo.
+Guji **Get Started** si aad u bilowdo.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Shaashadda soo dhoweynta ee Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### Hubinta Kahor Rakibaadda
 
-Tani qaybta waxay hubisaa macluumaadka nidaamkaaga iyo install-ka WordPress-ka si loo hubiyo inuu kuugu habboon yahay shuruudaha Ultimate Multisite. Haddii dhammaan wax walba ay si wanaagsan u muuqdaan, riix **Go to the Next Step**.
+Tallaabadan waxay hubisaa macluumaadka nidaamkaaga iyo rakibaadda WordPress si ay u xaqiijiso in ay buuxiso shuruudaha Ultimate Multisite. Haddii wax walba ay fiican yihiin, guji **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Hubinta kahor rakibaadda oo muujinaya shuruudaha nidaamka](/img/installation/wizard-pre-install-checks.png)
 
-:::note Badhanka "Network Activate" (v2.6.1+)
-Haddii Ultimate Multisite la soo installay laakiin **hadal-network-ka aysan la hubin** — tusaale ahaan, haddii aad dooratay **Activate** (single-site) halkii aad ka dooratay **Network Activate** laga soo qaaday fariinta plugins-ka network-ka — Tallaabada Pre-install Checks waxay ogaanaysaa tani waxayna muujin doontaa badhan lagu magacaabo **Network Activate**.
+:::note Badhanka Network Activate (v2.6.1+)
+Haddii Ultimate Multisite la rakibay laakiin **weligiis lama dhaqaajin** shabakada — tusaale ahaan, haddii aad gujiso **Activate** (site kaliya) halkii aad ka gujin lahayd **Network Activate** ee shaashadda plugin-ka shabakada — tallaabada Hubinta Kahor Rakibaadda waxay ogaan doontaa tan oo soo bandhigidoonaa **Badhanka Network Activate**.
 
-Marka la riixdo **Network Activate**, plugin-ka wuxuu si toos ah u hubinayaa dhammaan shabakadaha multisite-kaaga. Marka la hubiyo, wizard-ku wuxuu sii socdaa habka caadiga ah tallaabada installation-ka. Ma inaad ka baxdo wizard-ka si aad dib u hagaajiso xaaladda activation-ka.
+Gujinta **Network Activate** waxay dhaqaajisaa plugin-ka dhamaan shabakadaada. Marka la dhaqaajiyo, wizard-ku wuxuu sii socdaa si caadi ah ilaa tallaabada rakibaadda. Uma baahnid inaad ka baxdo wizard-ka si aad u hagaajiso xaaladda dhaqaajinta.
 :::
 
-### Installation
+### Rakibaad
 
-Waxay samurtiye (installer) waxay abuuri doontaa miisaska database-ka loo baahan yahay iyo faylka `sunrise.php` ee Ultimate Multisite si uu u shaqeeyo. Ku riix **Install** si aad u sii socoto.
+Rakibayaashu waxay abuuri doonaan miisaska xogta loo baahan yahay oo ay ku rakibi doonaan faylka `sunrise.php` ee Ultimate Multisite u baahan inuu shaqeeyo. Guji **Install** si aad u socoto.
 
-![Tallaabada installation-ka oo muujinaysa miisaska database-ka iyo sunrise.php](/img/installation/wizard-installation.png)
+![Tallaabada rakibaadda oo muujinaysa miisaska xogta iyo sunrise.php](/img/installation/wizard-installation.png)
 
 ### Shirkaddaada
 
-Ka buuxiso macluumaadka shirkaddaada oo qorshe lacagta (currency) aad dooratay. Macluumaadkaani wuxuu isticman doonaa dhammaan platformka WaaS-kaaga. Marka aad dhammaystirto, ku riix **Continue**.
+Buuxi macluumaadka shirkaddaada oo dhig lacagtaaga caadiga ah. Macluumaadkan waxaa loo isticmaali doonaa dhammaan platformkaaga WaaS. Guji **Continue** marka la dhammeeyo.
 
-![Tallaabada qorsheynta shirkaddaada](/img/installation/wizard-your-company.png)
+![Tallaabada qaabaynta Shirkaddaada](/img/installation/wizard-your-company.png)
 
-### Waxyaabaha La Soo Diiwaan Geliye (Default Content)
+### Qalabka Caadiga ah
 
-Tani waxay kuu oggolaanaysaa inaad ku rakibto qoraallo (templates), alaabaha (products), iyo waxyaabo kale oo bilaash ah. Waa hab aad u wanaagsan inaad la yaacdo astaamaha Ultimate Multisite. Ku riix **Install** si aad u ku darto waxyaabaha asalka ah, ama ka dhaaf halkan haddii aad dooratay inaad bilowdo mid cusub oo bilaash ah.
+Tallaabadani waxay kuu ogolaaneysaa inaad ku rakibto tusaalooyin hore, alaabooyinka, iyo qalabka kale ee bilowga. Tani waa hab fiican oo aad wax uga barato astaamaha Ultimate Multisite. Guji **Install** si aad u rakibto qalabka caadiga ah, ama ka bood tallaabadan haddii aad doorato inaad ka bilowdo.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Tallaabada rakibaadda qalabka caadiga ah](/img/installation/wizard-default-content.png)
 
-### Plugins la Talooyin
-Waxaad si dooran ah u rakobi kartaa plugins (add-ons) ee la talinayo. Ku riix **Install** si aad ugu darto ama ka dhaaf inaad sii socoto.
+### Plugin-yada La Tixgeliyo
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+Si ikhtiyaari ah, ku rakib plugin-yada la tixgeliyo. Guji **Install** si aad u rakibto ama ka bood inaad sii waddo.
+
+![Tallaabada plugin-yada la tixgeliyo](/img/installation/wizard-recommended-plugins.png)
 
 ### Diyaar!
-Waan kuugu dhammaaday! Waxaad haysataa rakibka Ultimate Multisite. Hadda waxaad bilaabi kartaa inaad dhisto Platform-ka Website as a Service (as a service) iyadoo la isticmaalayo **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+Taasi waa dhamee! Rakibaadda Ultimate Multisite ayaa dhammaystiran. Hadda waxaad bilaabi kartaa inaad dhisato platformkaaga Website as a Service ee ka soo jeeda **Network Admin Dashboard**.
 
-![Dashboard Maamulka Shirkadda Weyn ee Ultimate Multisite oo shaqaynaya](/img/installation/network-dashboard.png)
+![Rakibaadda dhammaystiran - Shaashadda Diyaar](/img/installation/wizard-ready.png)
 
-Dhaqso oo raaxo la'aan!
+![Network Admin Dashboard oo leh Ultimate Multisite dhaqaajiyey](/img/installation/network-dashboard.png)
+
+Waa inaad ku raaxaysataa!

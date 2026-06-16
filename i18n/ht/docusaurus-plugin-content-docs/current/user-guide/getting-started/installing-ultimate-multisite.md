@@ -6,81 +6,81 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 # Enstalasyon Ultimate Multisite
 
 :::note
-Sa tutorial sa a, nou deja enstale epi configure WordPress Multisite la. Pou aprann kijan pou w fè sa, gade [sa tutorial la](https://www.wpbeginner.com/glossary/multisite/) pa WP Beginner.
+Tutorial sa a presize ke ou deja gen WordPress Multisite enstale ak konfigire. Pou aprann kijan, tcheke [tutorial sa a](https://www.wpbeginner.com/glossary/multisite/) pa WP Beginner.
 :::
 
-## Enstalasyon Plugin an
+## Enstalasyon Plugin nan
 
-Ultimate Multisite gratis sou [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite disponib gratis sou [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Soti nan **Network Admin Dashboard** ou, ale nan **Plugins → Add New Plugin**.
+Nan **Panèl Administratè Rezo ou a**, ale nan **Plugins → Add New Plugin**.
 
-![Page Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
+![Paj Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Chèche **"Ultimate Multisite"** (avèk guillemets pou yon korespondans egzak), epi li ap parèt kòm premye rezilta a. Klike sou **Install Now**.
+Chèche pou **"Ultimate Multisite"** (avèk sitasyon pou yon matche egzak) epi li pral parèt kòm premye rezilta a. Klike sou **Install Now**.
 
-![Rezilta chèche ki montre Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Rezulta rechèch yo montre Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Yon fwa ou enstale li, klike sou **Network Activate** pou aktive plugin an nan tout rezo ou la.
+Yon fwa enstale, klike sou **Network Activate** pou aktive plugin nan atravè tout rezo ou.
 
-![Plugin enstale ak bouton Network Activate](/img/installation/plugin-installed.png)
+![Plugin enstale avèk bouton Network Activate](/img/installation/plugin-installed.png)
 
-Aprè aktivasyon an, ou pral otomatikman redirekti nan Setup Wizard la.
+Apre aktivasyon an, ou pral otomatikman dirije nan Asistan Enstalasyon an.
 
-![Plugin active epi redirekti nan wizard a](/img/installation/plugin-activated.png)
+![Plugin aktif epi dirije nan asistan an](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Asistan Enstalasyon
 
-Setup Wizard la ap gide ou atravè konfigirasyon Ultimate Multisite nan rapò 10 minit.
+Asistan Enstalasyon an ap gide w atravè konfigirasyon Ultimate Multisite an apeprè 10 minit.
 
-### Welcome (Bwèl)
+### Byenvini
 
 Klike sou **Get Started** pou kòmanse.
 
-![Ekran welcome Setup Wizard a](/img/installation/wizard-welcome.png)
+![Ekran byenvini Asistan Enstalasyon](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Kontwòl anvan enstalasyon)
+### Tcheke Anvan Enstalasyon
 
-Etap sa a ap kontwole enfòmasyon sistèm ou ak enstalasyon WordPress la pou asire li reponn egzijans Ultimate Multisite a. Si tout bagay san pwoblèm, klike sou **Go to the Next Step**.
+Etap sa a tcheke enfòmasyon sistèm ou ak enstalasyon WordPress ou pou asire ke li satisfè kondisyon Ultimate Multisite yo. Si tout bagay bon, klike sou **Go to the Next Step**.
 
-![Pre-install checks ki montre kondisyon sistèm](/img/installation/wizard-pre-install-checks.png)
+![Tcheke anvan enstalasyon yo montre kondisyon sistèm nan](/img/installation/wizard-pre-install-checks.png)
 
 :::note Bouton Network Activate (v2.6.1+)
-Si Ultimate Multisite a été installé mais qu'il n'est **pas encore activé sur le réseau** — par exemple, si vous avez cliqué sur **Activer** (single-site) au lieu de **Network Activate** depuis l'écran des plugins réseau — l'étape Pre-install Checks détectera cela et affichera un bouton **Network Activate**.
+Si Ultimate Multisite te enstale men **pa ankò aktive sou rezo a** — pa egzanp, si ou te klike sou **Activate** (sèl sit) olye de **Network Activate** nan ekran plugin rezo a — etap Tcheke Anvan Enstalasyon an ap detekte sa epi li pral montre yon bouton **Network Activate**.
 
-Cliquer sur **Network Activate** active automatiquement le plugin sur tout votre réseau multisite. Une fois activé, l'assistant continue normalement jusqu'à l'étape d'installation. Vous n'avez pas besoin de quitter l'assistant pour corriger l'état d'activation.
+Klike sou **Network Activate** aktive plugin nan atravè tout rezo milti-sit ou otomatikman. Yon fwa aktif, asistan an kontinye nòmalman nan etap enstalasyon an. Ou pa bezwen kite asistan an pou korije eta aktivasyon an.
 :::
 
-### Installation
+### Enstalasyon
 
-L'installateur va créer les tables de base de données nécessaires et installer le fichier `sunrise.php` dont Ultimate Multisite a besoin pour fonctionner. Cliquez sur **Install** pour continuer.
+Enstalatè a pral kreye tab baz done ki nesesè yo epi li pral enstale dosye `sunrise.php` ke Ultimate Multisite bezwen pou fonksyone. Klike sou **Install** pou kontinye.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Etap enstalasyon an montre tab baz done ak sunrise.php](/img/installation/wizard-installation.png)
 
-### Votre Entreprise
+### Konpayi Ou
 
-Remplissez vos informations d'entreprise et définissez votre devise par défaut. Ces informations seront utilisées tout au long de votre plateforme WaaS. Cliquez sur **Continue** lorsque vous avez terminé.
+Ranpli enfòmasyon konpayi ou epi mete lajan kouran default ou. Enfòmasyon sa a pral itilize atravè platfòm WaaS ou. Klike sou **Continue** lè w fin fè li.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Etap Konfigirasyon Konpayi Ou](/img/installation/wizard-your-company.png)
 
-### Contenu par Défaut
+### Kontni Default
 
-Cette étape vous permet d'installer des modèles prédéfinis, des produits et d'autres contenus de démarrage. C'est un excellent moyen de vous familiariser avec les fonctionnalités d'Ultimate Multisite. Cliquez sur **Install** pour ajouter le contenu par défaut, ou sautez cette étape si vous préférez commencer à zéro.
+Etap sa a pèmèt ou enstale modèl predefini, pwodwi ak lòt kontni kòmanse. Sa se yon bon fason pou w vin abitye avèk karakteristik Ultimate Multisite yo. Klike sou **Install** pou ajoute kontni default la, oswa sote etap sa a si ou pito kòmanse nan fèy blan.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Etap enstalasyon kontni default](/img/installation/wizard-default-content.png)
 
-### Plugins Recommandés
+### Plugin Rekòmande
 
-Installez facultativement les plugins compagnons recommandés. Cliquez sur **Install** pour les ajouter ou passez pour continuer.
+Enstale opsyonèlman plugin konpayi rekòmande yo. Klike sou **Install** pou ajoute yo oswa sote pou kontinye.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Etap plugin rekòmande](/img/installation/wizard-recommended-plugins.png)
 
-### Prêt !
+### Pare!
 
-Sa se li! Enstalasyon Ultimate Multisite ou a fin fini. Kounye a ou ka kòmanse bati platfòm Wèb ou a kòm yon sèvis (Website as a Service) nan **Network Admin Dashboard** la.
+Se sa li ye! Enstalasyon Ultimate Multisite ou fini. Ou ka kounye a kòmanse bati platfòm Website as a Service ou soti nan **Panèl Administratè Rezo a**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Enstalasyon konplèt - Ekran pare](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Panèl Administratè Rezo avèk Ultimate Multisite aktif](/img/installation/network-dashboard.png)
 
-Kòmanse jwe!
+Ale, amize w!

@@ -1,86 +1,86 @@
 ---
-title: ការដំឡើង Ultimate Multisite
+title: กำลังติดตั้ง Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # ការដំឡើង Ultimate Multisite
 
 :::note
-ការណែនាំនេះសន្មត់ថាអ្នកបានដំឡើង និងកំណត់រចនាសម្ព័ន្ធ WordPress Multisite រួចហើយ។ ដើម្បីស្វែងយល់ពីរបៀបធ្វើបែបនោះ សូមមើល [ការណែនាំនេះ](https://www.wpbeginner.com/glossary/multisite/) ដោយ WP Beginner។
+ការណែនាំនេះ គឺតម្រូវឱ្យអ្នកបានដំឡើង និងកំណត់រចនាសម្ព័ន្ធ WordPress Multisite រួចហើយ។ ដើម្បីស្វែងយល់ពីរបៀបធ្វើ សូមពិនិត្យមើល [ការណែនាំនេះ](https://www.wpbeginner.com/glossary/multisite/) ដោយ WP Beginner។
 :::
 
 ## ការដំឡើង Plugin
 
-Ultimate Multisite មានឥតគិតថ្លៃនៅលើ [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/)។
+Ultimate Multisite អាចរកបានដោយឥតគិតថ្លៃនៅលើ [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/)។
 
 ពី **Network Admin Dashboard** របស់អ្នក សូមចូលទៅកាន់ **Plugins → Add New Plugin**។
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![ទំព័រ Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-ស្វែងរក **"Ultimate Multisite"** (ដាក់ក្នុងវង់ក្រចកដើម្បីរកការផ្គូផ្គងត្រឹមត្រូវ) ហើយវាលេចឡើងជាលទ្ធផលដំបូង។ ចុចលើ **Install Now**។
+ស្វែងរក **"Ultimate Multisite"** (ដាក់នៅក្នុង "" ដើម្បីទទួលបានលទ្ធផលដែលស៊ីគ្នា) ហើយវានឹងបង្ហាញជាលទ្ធផលដំបូង។ ចុច **Install Now**។
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![លទ្ធផលការស្វែងរកដែលបង្ហាញ Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-បន្ទាប់ពីដំឡើងរួច សូមចុច **Network Activate** ដើម្បីបើកដំណើរការ plugin នេះទូទាំង network របស់អ្នក។
+បន្ទាប់ពីបានដំឡើងរួច សូមចុច **Network Activate** ដើម្បីធ្វើឱ្យ plugin ដំណើរការពេញលេញនៅក្នុងបណ្តាញរបស់អ្នក។
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin បានដំឡើងជាមួយនឹងប៊ូតុង Network Activate](/img/installation/plugin-installed.png)
 
-បន្ទាប់ពីបើកដំណើរការហើយ អ្នកនឹងត្រូវបានបញ្ជូនដោយស្វ័យប្រវត្តិទៅ Setup Wizard។
+បន្ទាប់ពីធ្វើឱ្យដំណើរការរួច អ្នកនឹងត្រូវបានបញ្ជូនទៅកាន់ Setup Wizard ដោយស្វ័យប្រវត្តិច្បាស់។
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin បានធ្វើឱ្យដំណើរការ និងបញ្ជូនទៅកាន់ wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard នឹងណែនាំអ្នកតាមរយៈការកំណត់រចនាសម្ព័ន្ធ Ultimate Multisite ក្នុងរយៈពេលប្រហែល ១០ នាទី។
+Setup Wizard នឹងជួយអ្នកក្នុងការកំណត់រចនាសម្ព័ន្ធ Ultimate Multisite ក្នុងរយៈពេលប្រមាណ ១០នាទី។
 
-### Welcome
+### ការស្វាគមន៍
 
-ចុចលើ **Get Started** ដើម្បីចាប់ផ្តើម។
+ចុច **Get Started** ដើម្បីចាប់ផ្តើម។
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![អេក្រង់ស្វាគមន៍ Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### ការត្រួតពិនិត្យមុនដំឡើង
 
-ជំហាននេះនឹងពិនិត្យព័ត៌មានប្រព័ន្ធ និងការដំឡើង WordPress របស់អ្នក ដើម្បីធានាថាវាបំពេញតាមតម្រូវការរបស់ Ultimate Multisite។ ប្រសិនបើអ្វីៗមើលទៅល្អ សូមចុច **Go to the Next Step**។
+ជំហាននេះ នឹងធ្វើការត្រួតពិនិត្យព័ត៌មានប្រព័ន្ធ និងការដំឡើង WordPress របស់អ្នក ដើម្បីឱ្យប្រាកដថា វាបំពេញតាមតម្រូវការរបស់ Ultimate Multisite។ ប្រសិនបើអ្វីៗគ្រប់យ៉ាងដំណើរការបានល្អ សូមចុច **Go to the Next Step**។
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![ការត្រួតពិនិត្យមុនដំឡើងដែលបង្ហាញតម្រូវការប្រព័ន្ធ](/img/installation/wizard-pre-install-checks.png)
 
 :::note ប៊ូតុង Network Activate (v2.6.1+)
-ប្រសិនបើ Ultimate Multisite ត្រូវបានដំឡើងរួចហើយ ប៉ុន្តែ**មិនទាន់បានបើកដំណើរការជាបណ្តាញទេ** — ឧទាហរណ៍ ប្រសិនបើអ្នកចុច **Activate** (single-site) ជំនួសឱ្យ **Network Activate** ពីអេក្រង់ plugin បណ្តាញ — ជំហាន Pre-install Checks នឹងរកឃើញបញ្ហានេះ ហើយបង្ហាញប៊ូតុង **Network Activate**។
+ប្រសិនបើ Ultimate Multisite បានដំឡើងរួច ប៉ុន្តែ **មិនទាន់បានធ្វើឱ្យដំណើរការពេញបណ្តាញ** នោះទេ — ឧទាហរណ៍ ប្រសិនបើអ្នកចុច **Activate** (សម្រាប់តំបន់តែមួយ) ជំនួសឱ្យ **Network Activate** ពីអេក្រង់ plugin នៅក្នុងបណ្តាញ ការត្រួតពិនិត្យមុនដំឡើង នឹងរកឃើញបញ្ហានេះ ហើយបង្ហាញប៊ូតុង **Network Activate**។
 
-ការចុច **Network Activate** នឹងបើកដំណើរការ plugin នេះទូទាំងបណ្តាញ multisite របស់អ្នកដោយស្វ័យប្រវត្តិ។ នៅពេលបានបើកដំណើរការហើយ wizard នឹងបន្តទៅជំហាន installation ជាធម្មតា។ អ្នកមិនចាំបាច់ចាកចេញពី wizard ដើម្បីជួសជុលស្ថានភាព activation នោះទេ។
+ការចុច **Network Activate** នឹងធ្វើឱ្យ plugin ដំណើរការពេញលេញនៅក្នុងបណ្តាញ multisite របស់អ្នក ដោយស្វ័យប្រវត្តិច្បាស់។ នៅពេលដែលបានធ្វើឱ្យដំណើរការរួច ដំណើរការ wizard នឹងបន្តទៅជំហានដំឡើងតាមធម្មតា។ អ្នកមិនចាំបាច់ចេញពី wizard ដើម្បីដោះស្រាយបញ្ហាការធ្វើឱ្យដំណើរការនោះទេ។
 :::
 
-### ការដំឡើង (Installation)
+### ការដំឡើង
 
-Installer នឹងបង្កើត database tables ដែលចាំបាច់ និងដំឡើង file `sunrise.php` ដែល Ultimate Multisite ត្រូវការដើម្បីដំណើរការ។ ចុច **Install** ដើម្បីបន្ត។
+កម្មវិធីដំឡើង នឹងបង្កើតតារាងទិន្នន័យដែលត្រូវការ និងដំឡើង `sunrise.php` ដែលជាឯកសារដែល Ultimate Multisite ត្រូវការដើម្បីដំណើរការ។ ចុច **Install** ដើម្បីបន្ត។
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![ជំហានដំឡើងដែលបង្ហាញតារាងទិន្នន័យ និង sunrise.php](/img/installation/wizard-installation.png)
 
-### ក្រុមហ៊ុនរបស់អ្នក (Your Company)
+### ក្រុមហ៊ុនរបស់អ្នក
 
-បំពេញព័ត៌មានក្រុមហ៊ុនរបស់អ្នក និងកំណត់រូបិយប័ណ្ណលំនាំដើមរបស់អ្នក។ ព័ត៌មាននេះនឹងត្រូវបានប្រើទូទាំង platform WaaS របស់អ្នក។ ចុច **Continue** នៅពេលធ្វើរួច។
+បំពេញព័ត៌មានអំពីក្រុមហ៊ុនរបស់អ្នក ហើយកំណត់រូបិយប័ណ្ណជាលំនាំដើម។ ព័ត៌មាននេះនឹងត្រូវបានប្រើប្រាស់នៅក្នុងវេదిక WaaS របស់អ្នក។ ចុច **Continue** នៅពេលដែលបានបញ្ចប់។
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![ជំហានការកំណត់រចនាសម្ព័ន្ធ Your Company](/img/installation/wizard-your-company.png)
 
-### មាតិកាលំនាំដើម (Default Content)
+### មាតិកាជាលំនាំដើម
 
-ជំហាននេះអនុញ្ញាតឱ្យអ្នកដំឡើង template, products និងមាតិកាចាប់ផ្តើមផ្សេងទៀតដែលបានកំណត់ទុកជាមុន។ នេះគឺជាវិធីដ៏ល្អដើម្បីធ្វើឱ្យអ្នកស្គាល់ពីមុខងាររបស់ Ultimate Multisite។ ចុច **Install** ដើម្បីបន្ថែមមាតិកាលំនាំដើម ឬលុបជំហាននេះ ប្រសិនបើអ្នកចង់ចាប់ផ្តើមពីការចាប់ផ្តើមថ្មី។
+ជំហាននេះ អនុញ្ញាតឱ្យអ្នកដំឡើងទម្រង់ ផលិតផល និងមាតិកាចាប់ផ្តើមផ្សេងទៀតដែលបានកំណត់ទុកមុន។ នេះគឺជាវិធីដ៏ល្អដើម្បីស្វែងយល់ពីមុខងាររបស់ Ultimate Multisite។ ចុច **Install** ដើម្បីបន្ថែមមាតិកាជាលំនាំដើម ឬរំលងជំហាននេះ ប្រសិនបើអ្នកចង់ចាប់ផ្តើមពីដំបូង។
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![ជំហានការដំឡើងមាតិកាជាលំនាំដើម](/img/installation/wizard-default-content.png)
 
-### Plugin ដែលត្រូវបានណែនាំ (Recommended Plugins)
+### Plugin ដែលបានណែនាំ
 
-ជាជម្រើស សូមដំឡើង plugin គូដែលបានណែនាំ។ ចុច **Install** ដើម្បីបន្ថែមពួកវា ឬលុបជំហាននេះដើម្បីបន្ត។
+ដំឡើង plugin ជំនួយដែលបានណែនាំតាមតម្រូវការ។ ចុច **Install** ដើម្បីបន្ថែមពួកវា ឬរំលងដើម្បីបន្ត។
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![ជំហាន plugin ដែលបានណែនាំ](/img/installation/wizard-recommended-plugins.png)
 
-### រួចរាល់ហើយ! (Ready!)
+### សelesai!
 
-រួចរាល់ហើយ! ការដំឡើង Ultimate Multisite របស់អ្នកបានបញ្ចប់។ អ្នកឥឡូវអាចចាប់ផ្តើមបង្កើតវេទិកា Website as a Service របស់អ្នកពី **Network Admin Dashboard** បានហើយ។
+ចប់ហើយ! ការដំឡើង Ultimate Multisite របស់អ្នក បានបញ្ចប់រួចហើយ។ អ្នកអាចចាប់ផ្តើមបង្កើតវេదిక Website as a Service របស់អ្នកពី **Network Admin Dashboard** ។
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![ការកំណត់រចនាសម្ព័ន្ធបានបញ្ចប់ - អេក្រង់ Ready](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard ដែលមាន Ultimate Multisite បានធ្វើឱ្យដំណើរការ](/img/installation/network-dashboard.png)
 
-ចូលទៅលេងសប្បាយបានហើយ!
+សូមរីករាយ!

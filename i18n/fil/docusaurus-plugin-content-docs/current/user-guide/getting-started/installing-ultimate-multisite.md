@@ -1,80 +1,86 @@
 ---
-title: Pag-install ng Ultimate Multisite
+title: Pag-i-install ng Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Pag-install ng Ultimate Multisite
 
-:::note
-Ipinapalagay ng tutorial na ito na naka-install at naka-configure na ang WordPress Multisite sa iyong system. Para malaman kung paano, tingnan ang [tutorial na ito](https://www.wpbeginner.com/glossary/multisite/) mula sa WP Beginner.
+:::tandaan
+Ipinapalagay ng tutorial na ito na naka-install at nakakonfigura mo na ang WordPress Multisite. Para malaman kung paano, tingnan ang [tutorial na ito](https://www.wpbeginner.com/glossary/multisite/) mula sa WP Beginner.
 :::
 
 ## Pag-install ng Plugin
 
-Available ang Ultimate Multisite nang libre sa [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Available nang libre ang Ultimate Multisite sa [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
 Mula sa iyong **Network Admin Dashboard**, pumunta sa **Plugins → Add New Plugin**.
 
 ![Pahina ng Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Hanapin ang **"Ultimate Multisite"** (may panipi para sa eksaktong tugma) at lalabas ito bilang unang resulta. I-click ang **Install Now**.
+Maghanap para sa **"Ultimate Multisite"** (gamit ang mga panipi para sa eksaktong tugma), at lalabas ito bilang unang resulta. I-click ang **Install Now**.
 
 ![Mga resulta ng paghahanap na nagpapakita ng Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Kapag naka-install na, i-click ang **Network Activate** para i-activate ang plugin sa buong network mo.
+Kapag naka-install, i-click ang **Network Activate** upang i-activate ang plugin sa buong iyong network.
 
-![Naka-install na plugin na may Network Activate button](/img/installation/plugin-installed.png)
+![Plugin na naka-install kasama ang button na Network Activate](/img/installation/plugin-installed.png)
 
-Pagkatapos ng activation, awtomatiko kang ire-redirect sa Setup Wizard.
+Pagkatapos ng pag-activate, awtomatikong mare-redirect ka sa Setup Wizard.
 
-![Na-activate na plugin at na-redirect sa wizard](/img/installation/plugin-activated.png)
+![Plugin na na-activate at nire-redirect sa wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Gagabayan ka ng Setup Wizard sa pag-configure ng Ultimate Multisite sa loob ng humigit-kumulang 10 minuto.
+Gagabayan ka ng Setup Wizard sa pagkokonfigura ng Ultimate Multisite sa loob ng humigit-kumulang 10 minuto.
 
-### Welcome
+### Maligayang Pagdating
 
-I-click ang **Get Started** para magsimula.
+I-click ang **Get Started** upang magsimula.
 
-![Welcome screen ng Setup Wizard](/img/installation/wizard-welcome.png)
+![Maligayang pagdating na screen ng Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### Mga Pre-install Check
 
-Tinitingnan ng hakbang na ito ang impormasyon ng iyong system at WordPress installation para matiyak na natutugunan nito ang mga kinakailangan ng Ultimate Multisite. Kung maayos ang lahat, i-click ang **Go to the Next Step**.
+Sinusuri ng hakbang na ito ang iyong impormasyon ng system at pag-install ng WordPress upang matiyak na natutugunan nito ang mga kinakailangan ng Ultimate Multisite. Kung mukhang maayos ang lahat, i-click ang **Go to the Next Step**.
 
-![Pre-install checks na nagpapakita ng system requirements](/img/installation/wizard-pre-install-checks.png)
+![Mga pre-install check na nagpapakita ng mga kinakailangan sa system](/img/installation/wizard-pre-install-checks.png)
 
-### Installation
+:::tandaan Button na Network Activate (v2.6.1+)
+Kung naka-install ang Ultimate Multisite ngunit **hindi pa ito na-network-activate** — halimbawa, kung nag-click ka ng **Activate** (single-site) sa halip na **Network Activate** mula sa screen ng mga network plugin — matutukoy ito ng hakbang na Pre-install Checks at ipapakita ang isang **Network Activate** button.
 
-Gagawa ang installer ng mga kinakailangang database table at i-install ang `sunrise.php` file na kailangan ng Ultimate Multisite para gumana. I-click ang **Install** para magpatuloy.
+Ang pag-click sa **Network Activate** ay nag-a-activate ng plugin sa buong iyong multisite network nang awtomatiko. Kapag na-activate, magpapatuloy ang wizard nang normal sa hakbang ng pag-install. Hindi mo kailangang umalis sa wizard upang ayusin ang estado ng pag-activate.
+:::
 
-![Hakbang sa installation na nagpapakita ng database tables at sunrise.php](/img/installation/wizard-installation.png)
+### Pag-install
 
-### Your Company
+Lilikha ang installer ng mga kinakailangang talahanayan ng database at i-i-install ang `sunrise.php` file na kailangan ng Ultimate Multisite upang gumana. I-click ang **Install** upang magpatuloy.
 
-Punan ang impormasyon ng iyong kompanya at itakda ang iyong default na currency. Gagamitin ang impormasyong ito sa buong WaaS platform mo. I-click ang **Continue** kapag tapos na.
+![Hakbang sa pag-install na nagpapakita ng mga talahanayan ng database at sunrise.php](/img/installation/wizard-installation.png)
 
-![Hakbang sa configuration ng Your Company](/img/installation/wizard-your-company.png)
+### Ang Iyong Kumpanya
+
+Punan ang impormasyon ng iyong kumpanya at itakda ang iyong default na pera. Gagamitin ang impormasyong ito sa buong iyong WaaS platform. I-click ang **Continue** kapag tapos na.
+
+![Hakbang sa pagkokonfigura ng Your Company](/img/installation/wizard-your-company.png)
 
 ### Default Content
 
-Pinapahintulutan ka ng hakbang na ito na mag-install ng mga predefined na template, produkto, at iba pang starter content. Magandang paraan ito para maging pamilyar sa mga feature ng Ultimate Multisite. I-click ang **Install** para idagdag ang default content, o laktawan ang hakbang na ito kung mas gusto mong magsimula mula sa simula.
+Hinahayaan ka ng hakbang na ito na i-install ang mga paunang natukoy na template, produkto, at iba pang panimulang nilalaman. Ito ay isang mahusay na paraan upang maging pamilyar sa mga tampok ng Ultimate Multisite. I-click ang **Install** upang idagdag ang default na nilalaman, o laktawan ang hakbang na ito kung mas gusto mong magsimula mula sa simula.
 
-![Hakbang sa pag-install ng default content](/img/installation/wizard-default-content.png)
+![Hakbang sa pag-install ng default na nilalaman](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins
+### Mga Inirerekomendang Plugin
 
-Opsyonal na mag-install ng mga inirerekomendang companion plugin. I-click ang **Install** para idagdag sila o laktawan para magpatuloy.
+Opsyonal na i-install ang mga inirerekomendang kasamang plugin. I-click ang **Install** upang idagdag ang mga ito o laktawan upang magpatuloy.
 
-![Hakbang sa recommended plugins](/img/installation/wizard-recommended-plugins.png)
+![Hakbang ng mga inirerekomendang plugin](/img/installation/wizard-recommended-plugins.png)
 
-### Ready!
+### Handa na!
 
-Tapos na! Kumpleto na ang iyong Ultimate Multisite installation. Maaari ka nang magsimulang bumuo ng iyong Website as a Service platform mula sa **Network Admin Dashboard**.
+Iyon na! Kumpleto na ang iyong pag-install ng Ultimate Multisite. Maaari ka nang magsimulang bumuo ng iyong Website as a Service platform mula sa **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Kumpletong setup - handang screen](/img/installation/wizard-ready.png)
 
 ![Network Admin Dashboard na may aktibong Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Sige, mag-enjoy ka!
+Sige at magsaya!

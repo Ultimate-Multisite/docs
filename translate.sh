@@ -2,10 +2,9 @@
 
 set -Eeuo pipefail
 
-# Default next-run launcher: split remaining translations across one Ollama
-# endpoint per GPU. Gemma 4 12B QAT fits on each 10 GB P102 at 8k context when
-# Ollama is CUDA-pinned, so the fastest measured topology is one model per GPU,
-# not one model split across both GPUs.
+# Default next-run launcher: split remaining translations across Ollama
+# endpoints and let scripts/translate.js choose the recommended local model and
+# locale-specific prompt profile for each locale.
 #
 # Start the endpoints on each two-GPU machine first:
 #
@@ -14,7 +13,7 @@ set -Eeuo pipefail
 # Then run this controller. Override TRANSLATE_OLLAMA_HOSTS if the LAN machine
 # has a different address or if Conductor exposes a pooled endpoint.
 #
-#   TRANSLATE_OLLAMA_HOSTS=http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.191:11435,http://192.168.0.191:11436 ./translate.sh
+#   TRANSLATE_OLLAMA_HOSTS=http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.131:11435,http://192.168.0.131:11436 ./translate.sh
 #
 # To route through Conductor instead, export CONDUCTOR_TENANT_TOKEN or
 # TRANSLATE_OLLAMA_API_KEY and use:
@@ -26,8 +25,9 @@ set -Eeuo pipefail
 #
 # The script writes logs to /tmp/ultimate-multisite-translate-cluster-*/.
 
-TRANSLATE_OLLAMA_HOSTS="${TRANSLATE_OLLAMA_HOSTS:-http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.191:11435,http://192.168.0.191:11436}" \
-MODEL="${MODEL:-gemma4:12b-it-qat}" \
+TRANSLATE_OLLAMA_HOSTS="${TRANSLATE_OLLAMA_HOSTS:-http://127.0.0.1:11435,http://127.0.0.1:11436,http://192.168.0.131:11435,http://192.168.0.131:11436}" \
+TRANSLATE_MODEL_MAP="${TRANSLATE_MODEL_MAP:-recommended}" \
+MODEL="${MODEL:-translategemma:27b}" \
 LOCALES="${LOCALES:-all}" \
 TRANSLATE_PRIORITY="${TRANSLATE_PRIORITY:-0}" \
 TRANSLATE_SHARDS_PER_HOST="${TRANSLATE_SHARDS_PER_HOST:-1}" \

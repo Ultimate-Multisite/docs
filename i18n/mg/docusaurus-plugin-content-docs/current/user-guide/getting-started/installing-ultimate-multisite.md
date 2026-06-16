@@ -1,86 +1,86 @@
 ---
-title: Fampidirana Ultimate Multisite
+title: Mametraka ny Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Fanomezana ny Ultimate Multisite
+# Fametrahana ny Ultimate Multisite
 
 :::note
-Ity tutorial ity dia manaiky fa efa manana WordPress Multisite vita sy voaomana ianao. Raha tianao ho fantatra, jereo eto ity [tutorial ity](https://www.wpbeginner.com/glossary/multisite/) nataon'i WP Beginner.
+Ity torolalana ity dia mifanaraka amin'ny fepetra fa efa napetraka sy namboarina ny WordPress Multisite. Raha te hianatra ny fomba, jereo [ity torolalana ity](https://www.wpbeginner.com/glossary/multisite/) avy any WP Beginner.
 :::
 
 ## Fametrahana ny Plugin
 
-Ny Ultimate Multisite dia azo alaina maimaim-poana ao amin'ny [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ny Ultimate Multisite dia azo alaina maimaim-poana amin'ny [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Avy amin'ny **Network Admin Dashboard** anao, mandehana any amin'ny **Plugins → Add New Plugin**.
+Avy amin'ny **Network Admin Dashboard**, mandehana any **Plugins → Add New Plugin**.
 
-![Page fampidirana ny Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
+![Pejy Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Mitadiava ny **"Ultimate Multisite"** (amin'ny tsindrim-peo mba hahazoana vokatra marina) ary hita ho vokatra voalohany izy. Tsindrio ny **Install Now**.
+Mitadiava ny hoe **"Ultimate Multisite"** (amin'ny alalan'ny fanoratra anarana manontolo mba hahazoana fahombiazan'ny fikarohana), ary hiseho ho vokatry ny fikarohana voalohany. Tsindrio **Install Now**.
 
-![Fampisehoana ny vokatra mitady Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Vokatra fikarohana mampiseho ny Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Rehefa vita, tsindrio ny **Network Activate** mba hampandehanana ny plugin eo amin'ny tambajotra rehetra anao.
+Rehefa napetraka, tsindrio **Network Activate** mba hampavitrika ny plugin manerana ny tambajotrao rehetra.
 
-![Plugin vita tamin'ny Network Activate button](/img/installation/plugin-installed.png)
+![Plugin napetraka miaraka amin'ny bokotra Network Activate](/img/installation/plugin-installed.png)
 
-Aorian'ny fanatanterahana azy, dia ho tonga mivantana any amin'ny Setup Wizard ianao.
+Aorian'ny fametrahana, hamoaka anao ho any amin'ny Setup Wizard izany.
 
-![Plugin vita ary miantso ny wizard](/img/installation/plugin-activated.png)
+![Plugin nampavitrika ary nanao redirection mankany amin'ny wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Ny Setup Wizard dia hitarika anao amin'ny fampanaraka Ultimate Multisite mandritra 10 minitra eo ho eo.
+Ny Setup Wizard dia hitarika anao amin'ny fanamboarana ny Ultimate Multisite ao anatin'ny 10 minitra eo ho eo.
 
-### Fandraisana anjara (Welcome)
+### Fanasokajiana
 
-Tsindrio ny **Get Started** mba hanombohanao.
+Tsindrio **Get Started** mba hanombohana.
 
-![Ekrana fandraisana anjara Setup Wizard](/img/installation/wizard-welcome.png)
+![Efijery fandraisana mampiseho ny Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Fanamarinana mialoha (Pre-install Checks)
+### Fanaraha-maso alohan'ny fametrahana
 
-Ity dingana ity dia manamarina ny fampahalalana momba ny rafitrao sy ny fanatontosana WordPress mba hahazoana antoka fa mifanaraka amin'ny fepetra takian'ny Ultimate Multisite. Raha toa ka tsara ny zava-drehetra, tsindrio ny **Go to the Next Step**.
+Ity dingana ity dia manamarina ny mombamomba ny rafitrao sy ny fametrahana WordPress mba hahazoana antoka fa mifanaraka amin'ny fepetra takian'ny Ultimate Multisite. Raha tsara ny zava-drehetra, tsindrio **Go to the Next Step**.
 
-![Fampisehoana ny Pre-install checks mampiseho ny fepetra an-tserasera](/img/installation/wizard-pre-install-checks.png)
+![Fanaraha-maso alohan'ny fametrahana mampiseho ny fepetra takiana](/img/installation/wizard-pre-install-checks.png)
 
-:::note Boina ny bokotra Network Activate (v2.6.1+)
-Raha nisy Ultimate Multisite napetraka fa **tsy mbola natao network activation** — ohatra, raha nanindry an'ny **Activate** (single-site) ianao fa tsy **Network Activate** avy amin'ny fizarana plugin an'ny network — dia hitroatra io dingana Pre-install Checks io ary haneho bokotra **Network Activate**.
+:::note Bokotra Network Activate (v2.6.1+)
+Raha napetraka ny Ultimate Multisite fa **tsy mbola navitrika amin'ny tambajotra** — ohatra, raha tsindrio **Activate** (single-site) fa tsy **Network Activate** avy amin'ny efijery plugin an'ny tambajotra — dia hita izany ao amin'ny dingana Fanaraha-maso alohan'ny fametrahana ary hiseho ny bokotra **Network Activate**.
 
-Ny tsindrim-peo ny **Network Activate** dia hampandeha ho automatique ilay plugin manerana ny rehetra ao amin'ny multisite network anareo. Rehefa natao activation, dia hitohy ara-dalàna ny wizard mankany amin'ny dingana installation. Tsy mila miala amin'ny wizard ianao mba hanamboarana ny fepetra activation.
+Ny fanindriana **Network Activate** dia hampavitrika ny plugin manerana ny tambajotran'ny multisiteo. Rehefa avitrika, dia hitohy amin'ny dingana fametrahana ny wizard. Tsy mila miala amin'ny wizard ianao mba hanitsy ny toe-javatra fametrahana.
 :::
 
-### Installation (Fanatanterahana)
+### Fametrahana
 
-Ny installer dia hamorona ireo database tables ilaina ary hapetraka ny rakitra `sunrise.php` izay ilain'ny Ultimate Multisite mba hiara-miasa. Tsindrio **Install** mba handefasana.
+Ny mpamorona dia hamorona ireo latabatra database ilaina ary hampiditra ny rakitra `sunrise.php` izay ilain'ny Ultimate Multisite hiasa. Tsindrio **Install** mba hanohy.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Dingana fametrahana mampiseho ny latabatra database sy ny sunrise.php](/img/installation/wizard-installation.png)
 
-### Your Company (Ny Orinao)
+### Ny orinasanao
 
-Ampidiro ny fampahalalana momba ny orinao ary apetaho ny vola fototra anareo. Ity fampahalalana ity dia hampiasaina manerana ny WaaS platform anareo. Tsindrio **Continue** rehefa vita.
+Ampeno ireo mombamomba ny orinasanao ary apetraho ny vola madinika tany am-boalohany. Ity vaovao ity dia hampiasaina manerana ny sehatra WaaS anao. Tsindrio **Continue** rehefa vita.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Dingana fametrahana Ny orinasanao](/img/installation/wizard-your-company.png)
 
-### Default Content (Vatana Fototra)
+### Votoaty tany am-boalohany
 
-Ity dingana ity dia ahafahanao mametraka templates, vokatra ary votoaty fanombohana hafa efa voatendry. Ity fomba tsara mba hahafantarana ny fahaiza-manao an'ny Ultimate Multisite ianao. Tsindrio **Install** mba hanampiana votoaty fototra, na dia tsy mila mandalo ity dingana ity raha tianao manomboka amin'ny fanombohana vaovao aza.
+Ity dingana ity dia ahafahanao mametraka ireo tempoly, vokatra ary votoaty fanombohana hafa. Ity dia fomba tsara hianaranao ny mombamomba ny endri-javatra Ultimate Multisite. Tsindrio **Install** mba hampidirana ny votoaty tany am-boalohany, na esory ity dingana ity raha te hanomboka amin'ny lafiny hafa.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Dingana fametrahana votoaty tany am-boalohany](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins (Plugins Atao Amin'ny Fandrefesana)
+### Plugins soso-kevitra
 
-Azo atao ny mametraka ireo plugin mpanohana voatendry. Tsindrio **Install** mba hanampiana azy ireo na mandalo raha tianao.
+Mametraka ireo plugins mifanaraka amin'izany, raha tiana. Tsindrio **Install** mba hampidirana azy ireo na esory izy ireo raha te hanohy.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Dingana plugin soso-kevitra](/img/installation/wizard-recommended-plugins.png)
 
-### Ready! (Vonona!)
+### Vonona!
 
-Eto izy! Vita ny fametrahana anao dia vita tanteraka ny Ultimate Multisite. Afaka manomboka manangana ny Website a Service (Website as a Service platform) anao ianao amin'ny alalan'ny **Network Admin Dashboard**.
+Vita izany! Vita ny fametrahana Ultimate Multisite anao. Afaka manomboka mamorona ny sehatra Website as a Service avy amin'ny **Network Admin Dashboard** ianao.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Fametrahana vita - Efijery vonona](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard miaraka amin'ny Ultimate Multisite mavitrika](/img/installation/network-dashboard.png)
 
-Andao, dia manao zavatra mahafinaritra!
+Manomboka mahazo aina!

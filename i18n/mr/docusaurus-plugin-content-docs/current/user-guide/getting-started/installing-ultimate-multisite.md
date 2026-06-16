@@ -1,80 +1,86 @@
 ---
-title: Ultimate Multisite इंस्टॉल करणे
+title: अल्टिमेट मल्टिसाइट इंस्टॉल करत आहे
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite इन्स्टॉल करणे
+# Ultimate Multisite इंस्टॉल करणे
 
 :::note
-या ट्युटोरियलमध्ये असे गृहीत धरले आहे की तुमच्याकडे आधीच WordPress Multisite इन्स्टॉल आणि कॉन्फिगर केलेले आहे. हे कसे करायचे ते जाणून घेण्यासाठी, WP Beginner चे [हे ट्युटोरियल](https://www.wpbeginner.com/glossary/multisite/) पहा.
+या ट्यूटोरियलमध्ये असे गृहीत धरले आहे की तुमच्याकडे आधीच WordPress Multisite इंस्टॉल आणि कॉन्फिगर केले आहे. हे कसे करावे ते जाणून घेण्यासाठी, WP Beginner द्वारे तयार केलेला [हा ट्यूटोरियल](https://www.wpbeginner.com/glossary/multisite/) पहा.
 :::
 
-## Plugin इन्स्टॉल करणे
+## प्लगइन इंस्टॉल करणे
 
-Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) वर मोफत उपलब्ध आहे.
+Ultimate Multisite हे [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) वर मोफत उपलब्ध आहे.
 
 तुमच्या **Network Admin Dashboard** मधून, **Plugins → Add New Plugin** वर जा.
 
-![Network Admin Add New Plugin पेज](/img/installation/add-new-plugin.png)
+![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** (अचूक जुळणीसाठी अवतरण चिन्हांसह) शोधा आणि ते पहिल्या निकालात दिसेल. **Install Now** वर क्लिक करा.
+**"Ultimate Multisite"** (अचूक जुळणीसाठी कोटेशन चिन्हांसह) शोधा आणि ते पहिल्या निकालात दिसेल. **Install Now** वर क्लिक करा.
 
-![Ultimate Multisite दाखवणारे शोध निकाल](/img/installation/search-ultimate-multisite.png)
+![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-इन्स्टॉल झाल्यावर, तुमच्या संपूर्ण नेटवर्कवर plugin सक्रिय करण्यासाठी **Network Activate** वर क्लिक करा.
+इंस्टॉल झाल्यानंतर, प्लगइन तुमच्या संपूर्ण नेटवर्कवर सक्रिय करण्यासाठी **Network Activate** वर क्लिक करा.
 
-![Plugin इन्स्टॉल झाले आणि Network Activate बटण](/img/installation/plugin-installed.png)
+![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
 
-सक्रिय झाल्यानंतर, तुम्हाला आपोआप Setup Wizard वर पुनर्निर्देशित केले जाईल.
+सक्रिय झाल्यानंतर, तुम्हाला स्वयंचलितपणे Setup Wizard वर रीडायरेक्ट केले जाईल.
 
-![Plugin सक्रिय आणि wizard वर पुनर्निर्देशित](/img/installation/plugin-activated.png)
+![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## सेटअप विझार्ड
 
-Setup Wizard तुम्हाला सुमारे १० मिनिटांत Ultimate Multisite कॉन्फिगर करण्यात मार्गदर्शन करेल.
+सेटअप विझार्ड तुम्हाला सुमारे १० मिनिटांत Ultimate Multisite कॉन्फिगर करण्यासाठी मार्गदर्शन करेल.
 
 ### स्वागत
 
 सुरू करण्यासाठी **Get Started** वर क्लिक करा.
 
-![Setup Wizard स्वागत स्क्रीन](/img/installation/wizard-welcome.png)
+![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
 
-### पूर्व-इन्स्टॉल तपासण्या
+### प्री-इंस्टॉल तपासणी
 
-हा टप्पा तुमची सिस्टम माहिती आणि WordPress इन्स्टॉलेशन तपासतो की ते Ultimate Multisite च्या आवश्यकता पूर्ण करते का. सर्व काही ठीक असल्यास, **Go to the Next Step** वर क्लिक करा.
+या टप्प्यात तुमची सिस्टम माहिती आणि WordPress इंस्टॉलेशन तपासले जाते जेणेकरून ते Ultimate Multisite च्या आवश्यकता पूर्ण करते हे सुनिश्चित करता येईल. सर्व काही बरोबर असेल तर, **Go to the Next Step** वर क्लिक करा.
 
-![सिस्टम आवश्यकता दाखवणाऱ्या पूर्व-इन्स्टॉल तपासण्या](/img/installation/wizard-pre-install-checks.png)
+![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
 
-### इन्स्टॉलेशन
+:::note Network Activate बटण (v2.6.1+)
+जर Ultimate Multisite इंस्टॉल केले असेल पण **अजून नेटवर्क-सक्रिय केले नसेल** — उदाहरणार्थ, जर तुम्ही नेटवर्क प्लगइन स्क्रीनवरून **Network Activate** ऐवजी **Activate** (सिंगल-साइट) वर क्लिक केले असेल — तर प्री-इंस्टॉल तपासणी टप्प्यात हे ओळखले जाईल आणि **Network Activate** बटण दाखवले जाईल.
 
-इन्स्टॉलर आवश्यक database टेबल्स तयार करेल आणि Ultimate Multisite ला काम करण्यासाठी आवश्यक असलेली `sunrise.php` फाइल इन्स्टॉल करेल. पुढे जाण्यासाठी **Install** वर क्लिक करा.
+**Network Activate** वर क्लिक केल्याने प्लगइन तुमच्या संपूर्ण मल्टीसाइट नेटवर्कवर स्वयंचलितपणे सक्रिय होते. एकदा सक्रिय झाल्यानंतर, विझार्ड सामान्यपणे इंस्टॉलेशन टप्प्यात पुढे जातो. सक्रियकरण स्थिती दुरुस्त करण्यासाठी तुम्हाला विझार्ड सोडण्याची गरज नाही.
+:::
 
-![Database टेबल्स आणि sunrise.php दाखवणारा इन्स्टॉलेशन टप्पा](/img/installation/wizard-installation.png)
+### इंस्टॉलेशन
+
+इंस्टॉलर आवश्यक डेटाबेस टेबल्स तयार करेल आणि Ultimate Multisite च्या कार्यासाठी लागणारा `sunrise.php` फाइल इंस्टॉल करेल. पुढे जाण्यासाठी **Install** वर क्लिक करा.
+
+![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
 
 ### तुमची कंपनी
 
-तुमची कंपनी माहिती भरा आणि तुमचे डीफॉल्ट चलन सेट करा. ही माहिती तुमच्या संपूर्ण WaaS प्लॅटफॉर्मवर वापरली जाईल. पूर्ण झाल्यावर **Continue** वर क्लिक करा.
+तुमची कंपनी माहिती भरा आणि तुमची डिफॉल्ट चलन सेट करा. ही माहिती तुमच्या WaaS प्लॅटफॉर्ममध्ये संपूर्णपणे वापरली जाईल. पूर्ण झाल्यावर **Continue** वर क्लिक करा.
 
-![तुमची कंपनी कॉन्फिगरेशन टप्पा](/img/installation/wizard-your-company.png)
+![Your Company configuration step](/img/installation/wizard-your-company.png)
 
-### डीफॉल्ट कंटेंट
+### डिफॉल्ट कंटेंट
 
-हा टप्पा तुम्हाला पूर्वनिर्धारित टेम्पलेट्स, उत्पादने आणि इतर स्टार्टर कंटेंट इन्स्टॉल करण्याची परवानगी देतो. Ultimate Multisite च्या वैशिष्ट्यांशी परिचित होण्याचा हा एक उत्तम मार्ग आहे. डीफॉल्ट कंटेंट जोडण्यासाठी **Install** वर क्लिक करा, किंवा तुम्हाला सुरुवातीपासून सुरू करायचे असल्यास हा टप्पा वगळा.
+या टप्प्यात तुम्ही पूर्वनिर्धारित टेम्पलेट्स, प्रॉडक्ट्स आणि इतर स्टार्टर कंटेंट इंस्टॉल करू शकता. हे Ultimate Multisite च्या वैशिष्ट्यांशी परिचित होण्यासाठी एक उत्तम मार्ग आहे. डिफॉल्ट कंटेंट जोडण्यासाठी **Install** वर क्लिक करा, किंवा जर तुम्हाला शून्यापासून सुरू करायचे असेल तर हा टप्पा वगळा.
 
-![डीफॉल्ट कंटेंट इन्स्टॉलेशन टप्पा](/img/installation/wizard-default-content.png)
+![Default content installation step](/img/installation/wizard-default-content.png)
 
-### शिफारस केलेले Plugins
+### शिफारस केलेले प्लगइन
 
-वैकल्पिकरित्या शिफारस केलेले companion plugins इन्स्टॉल करा. ते जोडण्यासाठी **Install** वर क्लिक करा किंवा पुढे जाण्यासाठी वगळा.
+ऐच्छिकपणे शिफारस केलेले सहकारी प्लगइन इंस्टॉल करा. त्यांना जोडण्यासाठी **Install** वर क्लिक करा किंवा पुढे जाण्यासाठी वगळा.
 
-![शिफारस केलेले plugins टप्पा](/img/installation/wizard-recommended-plugins.png)
+![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
 
 ### तयार!
 
-बस्स! तुमचे Ultimate Multisite इन्स्टॉलेशन पूर्ण झाले. तुम्ही आता **Network Admin Dashboard** मधून तुमचे Website as a Service प्लॅटफॉर्म बांधणे सुरू करू शकता.
+इतकेच! तुमची Ultimate Multisite इंस्टॉलेशन पूर्ण झाली आहे. आता तुम्ही **Network Admin Dashboard** मधून तुमचा Website as a Service प्लॅटफॉर्म बनवण्यास सुरुवात करू शकता.
 
-![सेटअप पूर्ण - तयार स्क्रीन](/img/installation/wizard-ready.png)
+![Setup complete - Ready screen](/img/installation/wizard-ready.png)
 
-![Ultimate Multisite सक्रिय असलेला Network Admin Dashboard](/img/installation/network-dashboard.png)
+![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
 
-आता पुढे जा आणि मजा करा!
+पुढे जा आणि मजा करा!

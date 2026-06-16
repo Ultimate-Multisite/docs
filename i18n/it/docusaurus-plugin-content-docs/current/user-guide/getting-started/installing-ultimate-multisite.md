@@ -1,63 +1,86 @@
 ---
 title: Installazione di Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-**Answer**
+# Installazione di Ultimate Multisite
 
-The “real” answer is that the problem is *not* a bug in the compiler – it is a bug in the *standard*.  
-The standard says that a *constexpr* function can be evaluated at compile‑time *only* if it is
-*trivially* evaluable.  
-A function that contains a `switch` over a non‑integral type is not considered trivially
-evaluable, so the compiler is free to reject it.  GCC and Clang are following the
-standard, MSVC is being permissive.
+:::note
+Questo tutorial presuppone che tu abbia già installato e configurato WordPress Multisite. Per scoprire come fare, consulta [questo tutorial](https://www.wpbeginner.com/glossary/multisite/) di WP Beginner.
+:::
 
-The fix is to rewrite the function so that the compiler can see that the `switch`
-is over an integral type.  The usual trick is to use a helper that turns the enum
-into an integer and then switch on that integer.
+## Installazione del plugin
 
-```cpp
-enum class E { A, B, C };
+Ultimate Multisite è disponibile gratuitamente su [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-constexpr int to_int(E e) noexcept
-{
-    return static_cast<int>(e);          // integral value of the enum
-}
+Dal tuo **Pannello di amministrazione della rete**, vai a **Plugin → Aggiungi nuovo plugin**.
 
-constexpr int f(E e) noexcept
-{
-    switch (to_int(e))                   // switch on an integral value
-    {
-        case 0: return 1;                // E::A
-        case 1: return 2;                // E::B
-        case 2: return 3;                // E::C
-    }
-}
-```
+![Pagina "Aggiungi nuovo plugin" nel pannello di amministrazione della rete](/img/installation/add-new-plugin.png)
 
-Now `f` is a valid `constexpr` function on all compilers, and the compiler can
-evaluate it at compile time.
+Cerca **"Ultimate Multisite"** (con le virgolette per una corrispondenza esatta) e apparirà come primo risultato. Clicca su **Installa ora**.
 
-If you want to keep the enum values in the `switch` labels, you can use a
-`constexpr` helper that maps the enum to an integer:
+![Risultati della ricerca che mostrano Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-```cpp
-constexpr int to_int(E e) noexcept
-{
-    return static_cast<int>(e);
-}
+Una volta installato, clicca su **Attiva nella rete** per attivare il plugin in tutta la tua rete.
 
-constexpr int f(E e) noexcept
-{
-    switch (to_int(e))
-    {
-        case to_int(E::A): return 1;
-        case to_int(E::B): return 2;
-        case to_int(E::C): return 3;
-    }
-}
-```
+![Plugin installato con il pulsante "Attiva nella rete"](/img/installation/plugin-installed.png)
 
-Either way, the key point is that the `switch` must be over an integral type
-for the function to be considered `constexpr`‑friendly.  This is the reason
-why GCC and Clang reject the original code while MSVC accepts it.
+Dopo l'attivazione, sarai automaticamente reindirizzato alla procedura guidata di configurazione.
+
+![Plugin attivato e reindirizzato alla procedura guidata](/img/installation/plugin-activated.png)
+
+## Procedura guidata di configurazione
+
+La procedura guidata ti guiderà nella configurazione di Ultimate Multisite in circa 10 minuti.
+
+### Benvenuto
+
+Clicca su **Inizia** per iniziare.
+
+![Schermata di benvenuto della procedura guidata](/img/installation/wizard-welcome.png)
+
+### Controlli pre-installazione
+
+Questo passaggio controlla le informazioni del tuo sistema e l'installazione di WordPress per assicurarsi che soddisfi i requisiti di Ultimate Multisite. Se tutto sembra a posto, clicca su **Vai al passaggio successivo**.
+
+![Controlli pre-installazione che mostrano i requisiti di sistema](/img/installation/wizard-pre-install-checks.png)
+
+:::note Pulsante "Attiva nella rete" (v2.6.1+)
+Se Ultimate Multisite è stato installato ma **non ancora attivato a livello di rete** — ad esempio, se hai cliccato su **Attiva** (sito singolo) invece di **Attiva nella rete** dalla schermata dei plugin della rete — il passaggio dei controlli pre-installazione lo rileverà e visualizzerà un pulsante **Attiva nella rete**.
+
+Cliccando su **Attiva nella rete**, il plugin verrà attivato automaticamente in tutta la tua rete multisito. Una volta attivato, la procedura guidata continuerà normalmente al passaggio di installazione. Non è necessario uscire dalla procedura guidata per correggere lo stato di attivazione.
+:::
+
+### Installazione
+
+L'installer creerà le tabelle del database necessarie e installerà il file `sunrise.php` di cui Ultimate Multisite ha bisogno per funzionare. Clicca su **Installa** per procedere.
+
+![Passaggio di installazione che mostra le tabelle del database e sunrise.php](/img/installation/wizard-installation.png)
+
+### La tua azienda
+
+Inserisci le informazioni sulla tua azienda e imposta la valuta predefinita. Queste informazioni verranno utilizzate in tutta la tua piattaforma WaaS. Clicca su **Continua** quando hai finito.
+
+![Passaggio di configurazione "La tua azienda"](/img/installation/wizard-your-company.png)
+
+### Contenuti predefiniti
+
+Questo passaggio ti consente di installare modelli predefiniti, prodotti e altri contenuti iniziali. Questo è un ottimo modo per familiarizzare con le funzionalità di Ultimate Multisite. Clicca su **Installa** per aggiungere i contenuti predefiniti o salta questo passaggio se preferisci iniziare da zero.
+
+![Passaggio di installazione dei contenuti predefiniti](/img/installation/wizard-default-content.png)
+
+### Plugin consigliati
+
+Installa facoltativamente i plugin complementari consigliati. Clicca su **Installa** per aggiungerli o salta per continuare.
+
+![Passaggio dei plugin consigliati](/img/installation/wizard-recommended-plugins.png)
+
+### Pronto!
+
+Fatto! L'installazione di Ultimate Multisite è completa. Ora puoi iniziare a creare la tua piattaforma Website as a Service dal **Pannello di amministrazione della rete**.
+
+![Configurazione completata - Schermata "Pronto"](/img/installation/wizard-ready.png)
+
+![Pannello di amministrazione della rete con Ultimate Multisite attivo](/img/installation/network-dashboard.png)
+
+Divertiti!

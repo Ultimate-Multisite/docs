@@ -1,84 +1,86 @@
 ---
-title: Uzstādīt Ultimate Multisite
+title: Ultimate Multisite instalēšana
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Uzlabojums Ultimate Multisite instalēšana
+# Ultimate Multisite instalēšana
 
 :::note
-Šis uzdevums pieprasa, ka jums jau ir instalēts un konfigurēts WordPress Multisite. Lai uzzinātu, kā to darīt, apskatiet [šķirto uzdevumu](https://www.wpbeginner.com/glossary/multisite/) WP Beginner.
+Šī apmācība pieņem, ka jums jau ir instalēts un konfigurēts WordPress Multisite. Lai uzzinātu, kā to izdarīt, apskatiet šo WP Beginner apmācību: [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/).
 :::
 
-## Plugins instalēšana
+## Spraudņa instalēšana
 
-Ultimate Multisite ir bezmaksas pieejams [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite ir pieejams bez maksas vietnē [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-No savas **Network Admin Dashboard** pārvietojieties uz **Plugins → Add New Plugin**.
+No jūsu **Tīkla administratora informācijas panelī**, dodieties uz **Spraudņi → Pievienot jaunu spraudni**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Tīkla administratora lapa, kurā var pievienot jaunus spraudņus](/img/installation/add-new-plugin.png)
 
-Meklējiet pēc **"Ultimate Multisite"** (ar citriem apakšgrafiem, lai nodrošinātu precīzu atbilstošumu), un tas parādīsies kā pirmais rezultāts. Nospressiet **Install Now**.
+Meklējiet "**Ultimate Multisite**" (ar dubļiem, lai iegūtu precīzu atbilstību), un tas parādīsies kā pirmais rezultāts. Noklikšķiniet uz **Instalēt tagad**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Meklēšanas rezultāti, kuros redzams Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Instalētas pēc instalēšanas nospressiet **Network Activate**, lai aktivizētu pluginu visā jūsu tīklā.
+Pēc instalēšanas noklikšķiniet uz **Aktivizēt visā tīklā**, lai aktivizētu spraudni visā jūsu tīklā.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Instalēts spraudnis ar pogu Aktivizēt visā tīklā](/img/installation/plugin-installed.png)
 
-Aktivizēšanas pēc tam jūs automātiski pārvietos uz Iestatījumus (Setup Wizard).
+Pēc aktivizācijas jūs automātiski tiksiet novirzīts uz iestatīšanas vedni.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Aktivizētais spraudnis un novirzīšana uz vedni](/img/installation/plugin-activated.png)
 
-## Iestatījumu viedoklis (Setup Wizard)
+## Iestatīšanas vednis
 
-Iestatījumu viedoklis palīdz jums konfigurēt Ultimate Multisite apmēram 10 minūtes laikā.
+Iestatīšanas vednis palīdzēs jums konfigurēt Ultimate Multisite aptuveni 10 minūšu laikā.
 
-### Sveicieni
-Nospressiet **Get Started**, lai sāktu.
+### Sākums
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+Noklikšķiniet uz **Sākt**, lai sāktu.
 
-### Pre-instalācijas pārbaudes
-Šis soļums pārbauda jūsu sistēmas informāciju un WordPress instalāciju, lai pārliecinātos, ka tās atbilst Ultimate Multisite prasībām. Ja viss ir labi, nospressiet **Go to the Next Step**.
+![Iestatīšanas vedņa sākuma ekrāns](/img/installation/wizard-welcome.png)
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+### Pirmsinstalēšanas pārbaudes
 
-:::note Uzlabojums "Network Activate" pogas (v2.6.1+)
-Ja Ultimate Multisite ir instalēts, bet **vēl nav aktivizēts tīklā** — piemēram, ja jūs klikšķinājāt uz **Aktivizēt** (single-site) vietā uz **Network Activate** no tīkla pluginu saraksta — Pre-install Checks solis to pamanīs šo un parādīs **Network Activate** pogu.
+Šajā solī tiek pārbaudīta jūsu sistēmas informācija un WordPress instalācija, lai pārliecinātos, ka tā atbilst Ultimate Multisite prasībām. Ja viss izskatās labi, noklikšķiniet uz **Doties uz nākamo soli**.
 
-Klikšķinot uz **Network Activate**, jūs automātiski aktivizējat pluginu visā jūsu multisite tīklā. Aktivizētas pēc tam, wizard turpinās normāli instalācijas solī. Jums nav nepieciešams pamesties no wizard'a, lai labotu aktivācijas stāvokli.
+![Pirmsinstalēšanas pārbaudes, kas parāda sistēmas prasības](/img/installation/wizard-pre-install-checks.png)
+
+:::note Aktivizēt visā tīklā poga (v2.6.1+)
+Ja Ultimate Multisite ir instalēts, bet **vēl nav aktivizēts visā tīklā** — piemēram, ja no spraudņu ekrāna esat noklikšķinājis uz **Aktivizēt** (vienvietes vietnei), nevis uz **Aktivizēt visā tīklā** —, pirmsinstalēšanas pārbaudes solis to atklās un parādīs pogu **Aktivizēt visā tīklā**.
+
+Noklikšķinot uz **Aktivizēt visā tīklā**, spraudnis automātiski tiek aktivizēts visā jūsu daudzvietņu tīklā. Pēc aktivizācijas vednis turpina darboties kā parasti, pārejot pie instalēšanas soļa. Jums nav jāpamet vedni, lai labotu aktivizācijas statusu.
 :::
 
 ### Instalēšana
 
-Instalētājs izveidzi nepieciešamos databāzes tabulas un instalē `sunrise.php` failu, ko Ultimate Multisite vajadzīgs veiktam darbību. Klikšķiniet uz **Install**, lai turpinātu.
+Instalētājs izveidos nepieciešamās datubāzes tabulas un instalēs failu `sunrise.php`, kas Ultimate Multisite darbībai ir nepieciešams. Noklikšķiniet uz **Instalēt**, lai turpinātu.
 
-![Instalācijas solis, kas redz database tabulas un sunrise.php](/img/installation/wizard-installation.png)
+![Instalēšanas solis, kurā redzamas datubāzes tabulas un fails sunrise.php](/img/installation/wizard-installation.png)
 
-### Jūsu Uzņēmums
+### Jūsu uzņēmums
 
-Ieiet savu uzņēmuma informāciju un noteikiet savu defaultu valutu. Šī informācija tiks lietota visās jūsu WaaS platformā. Klikšķiniet uz **Continue**, kad būsies beidzies.
+Aizpildiet savu uzņēmuma informāciju un iestatiet noklusējumu valūtu. Šī informācija tiks izmantota visā jūsu WaaS platformā. Kad esat pabeidzis, noklikšķiniet uz **Turpināt**.
 
 ![Jūsu uzņēmuma konfigurācijas solis](/img/installation/wizard-your-company.png)
 
-### Default Saturs
+### Noklusējums saturs
 
-Šis solis ļauj instalēt precizēti noteiktu šablonus, produktus un citu sākumu saturu. Tas ir lielisks veids, lai iepazītos ar Ultimate Multisite funkcijām. Klikšķiniet uz **Install**, lai pievienotu defaultu saturu, vai pārsniegt šo solī, ja vēlaties sākt no nol.
+Šajā solī var instalēt iepriekš definētas veidnes, produktus un citu sākuma saturu. Tas ir lielisks veids, kā iepazīties ar Ultimate Multisite funkcijām. Noklikšķiniet uz **Instalēt**, lai pievienotu noklusējumu saturu, vai izlaidiet šo soli, ja vēlaties sākt no nulles.
 
-![Default satura instalācijas solis](/img/installation/wizard-default-content.png)
+![Noklusējuma satura instalēšanas solis](/img/installation/wizard-default-content.png)
 
-### Ieteicamie Plugin'i
+### Ieteicamie spraudņi
 
-Optiāli instalējiet ieteicamo uzlabojumu pluginus. Klikšķiniet uz **Install**, lai tos pievienotu, vai pārsniegt šo solī turpināt.
+Pēc izvēles instalējiet ieteiktos papildspraudņus. Noklikšķiniet uz **Instalēt**, lai tos pievienotu, vai pārejiet tālāk.
 
-![Ieteicamie pluginu solis](/img/installation/wizard-recommended-plugins.png)
+![Ieteikto spraudņu solis](/img/installation/wizard-recommended-plugins.png)
 
-### Sveiks!
+### Gatavs!
 
-Tas ir beidzies! Jums ir gatava uzstādīt Ultimate Multisite. Tagad varat sākt izveidot savu vietnes platformu kā lietojamā pakalpojumu no **Network Admin Dashboard**.
+Tas viss! Jūsu Ultimate Multisite instalēšana ir pabeigta. Tagad varat sākt izveidot savu Website as a Service platformu no **Tīkla administratora informācijas panelī**.
 
-![Uzstādīšana pabeigta - Gatava ekrāns](/img/installation/wizard-ready.png)
+![Iestatīšana pabeigta — gatavs ekrāns](/img/installation/wizard-ready.png)
 
-![Datu tīkla admina dashboard ar Ultimate Multisite aktivizētu](/img/installation/network-dashboard.png)
+![Tīkla administratora informācijas panelis, kurā Ultimate Multisite ir aktīvs](/img/installation/network-dashboard.png)
 
-Varat sākāt veidot!
+Dodieties un izklaidējieties!

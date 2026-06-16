@@ -1,86 +1,86 @@
 ---
-title: Ultimate Multisite quraşdırmaq
+title: Ultimate Multisite-in quraşdırılması
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-ı Qurmaq
+# Ultimate Multisite-in quraşdırılması
 
-:::note
-Bu təlimat, sizin artıq WordPress Multisite quraşdırılıb və konfiqurasiya edildiyini fərz edir. Necə edəcəyinizi öyrənmək üçün WP Beginner tərəfindən hazırlanmış [bu təlimata](https://www.wpbeginner.com/glossary/multisite/) baxın.
+:::qeyd
+Bu təlimatda, WordPress Multisite-nin artıq quraşdırılmış və konfiqurasiya edilmiş olduğu güman edilir. Nə etmək lazım olduğunu öyrənmək üçün WP Beginner tərəfindən hazırlanmış [bu təlimata](https://www.wpbeginner.com/glossary/multisite/) baxın.
 :::
 
-## Plugin-i Qurmaq
+## Pluginin quraşdırılması
 
-Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) saytında pulsuz mövcuddur.
+Ultimate Multisite pulsuz olaraq [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) saytında mövcuddur.
 
-**Network Admin Dashboard**-unuzdan, **Plugins → Add New Plugin** yolunu izləyin.
+**Şəbəkə Administratoru Paneli**ndən **Pluginlər → Yeni Plugin əlavə et** bölməsinə keçin.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Şəbəkə Administratoru, Yeni Plugin əlavə et səhifəsi](/img/installation/add-new-plugin.png)
 
-**"Ultimate Multisite"** axtarın (dəqiq uyğunluq üçün tırnaq içində) və bu, ilk nəticə olaraq görünəcək. **Install Now** düyməsinə klikləyin.
+**"Ultimate Multisite"** (dəqiq uyğunluq üçün dırnaqlara alınmış halda) axtarın və ilk nəticə olaraq görünəcək. **İndi quraşdırın** düyməsini klikləyin.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Nəticələr arasında Ultimate Multisite göstərilib](/img/installation/search-ultimate-multisite.png)
 
-Quraşdırıldıqdan sonra, plugin-i bütün şəbəkənizdə aktivləşdirmək üçün **Network Activate** düyməsinə klikləyin.
+Quraşdırıldıqdan sonra, pluginin bütün şəbəkədə aktivləşdirilməsi üçün **Şəbəkə Aktivləşdir** düyməsini klikləyin.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin quraşdırılıb və Şəbəkə Aktivləşdir düyməsi göstərilib](/img/installation/plugin-installed.png)
 
-Aktivasiyadan sonra, avtomatik olaraq Setup Wizard-a yönləndiriləcəksiniz.
+Aktivləşdirmədən sonra, avtomatik olaraq Quraşdırma Sehrbazına yönləndiriləcəksiniz.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin aktivləşdirilib və sehrbazda yönlendirilib](/img/installation/plugin-activated.png)
 
-## Setup Wizard (Qurulum Sihirli Pencərəsi)
+## Quraşdırma Sehrbazı
 
-Setup Wizard, Ultimate Multisite-ı konfiqurasiya etmək barədə sizə təxminən 10 dəqiqə ərzində bələdlik edəcək.
+Quraşdırma Sehrbazı, Ultimate Multisite-i təxminən 10 dəqiqə ərzində konfiqurasiya etməyiniz üçün sizə kömək edəcək.
 
-### Welcome (Xoş Gəlmisiniz)
+### Xoş gəldiniz
 
-Başlamaq üçün **Get Started** düyməsinə klikləyin.
+Başlamaq üçün **Başlayın** düyməsini klikləyin.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Quraşdırma Sehrbazı, xoş gəlmə ekranı](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Ön-quraşdırma Yoxlamaları)
+### Quraşdırmadan əvvəl yoxlamalar
 
-Bu addım sistem məlumatlarınızı və WordPress quraşdırmanızı yoxlayır ki, Ultimate Multisite-ın tələblərinə cavab verir. Hər şey qaydasındadırsa, **Go to the Next Step** düyməsinə klikləyin.
+Bu addım sistem məlumatlarınızı və WordPress quraşdırılmasını yoxlayaraq, onların Ultimate Multisite-in tələblərinə cavab verdiyinə əmin olur. Hər şey yaxşı görünürsə, **Növbəti Addıma Keçin** düyməsini klikləyin.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Quraşdırmadan əvvəl yoxlamalar, sistem tələbləri göstərilib](/img/installation/wizard-pre-install-checks.png)
 
-:::note Network Activate düyməsi (v2.6.1+)
-Əgər Ultimate Multisite quraşdırılıb, lakin **hələ şəbəkə aktivasiya edilməyibsə** — məsələn, şəbəkə pluginlər ekranından **Network Activate** əvəzinə **Activate** (tək sayt) düyməsinə klikləmisinizsə — Pre-install Checks addımı bunu aşkarlayacaq və bir **Network Activate** düyməsi göstərəcək.
+:::qeyd Şəbəkə Aktivləşdir düyməsi (v2.6.1+)
+Ultimate Multisite quraşdırılıbsa, lakin **hələ şəbəkədə aktivləşdirilibməmisdir** — məsələn, əgər şəbəkə pluginləri ekranından **Aktivləşdir** (tək sayt) düyməsini klikləyərək **Şəbəkə Aktivləşdir** düyməsini klikləməmisinizsə — Quraşdırmadan əvvəl yoxlamalar addımı bunu aşkar edəcək və **Şəbəkə Aktivləşdir** düyməsini göstərəcək.
 
-**Network Activate** düyməsinə klikləmək plugin-i avtomatik olaraq bütün multisite şəbəkənizdə aktivləşdirir. Aktivasiya edildikdən sonra, wizard normal şəkildə quraşdırma addımına davam edir. Aktivasiya vəziyyətini düzəltmək üçün wizard-dan çıxmağınıza ehtiyac yoxdur.
+**Şəbəkə Aktivləşdir** düyməsini klikləyərək pluginin bütün multisite şəbəkənizdə aktivləşdirilməsini təmin edin. Aktivləşdirdikdən sonra, sehrbaz normal şəkildə quraşdırma addımına davam edəcək. Sehrbazdan çıxıb aktivasiya vəziyyətini düzəltməyinizə ehtiyac yoxdur.
 :::
 
-### Installation (Quraşdırma)
+### Quraşdırma
 
-Quraşdırıcı zəruri verilənlər bazası cədvəllərini yaradacaq və Ultimate Multisite-ın işləməsi üçün lazım olan `sunrise.php` faylını quraşdıracaq. Davam etmək üçün **Install** düyməsinə klikləyin.
+Quraşdırıcı zəruri verilənlər bazası cədvəllərini yaradacaq və Ultimate Multisite-in işləməsi üçün lazım olan `sunrise.php` faylını quraşdıracaq. Davam etmək üçün **Quraşdırın** düyməsini klikləyin.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Quraşdırma addımı, verilənlər bazası cədvəlləri və sunrise.php göstərilib](/img/installation/wizard-installation.png)
 
-### Your Company (Şirkətiniz)
+### Şirkətiniz
 
-Şirkət məlumatlarınızı doldurun və standart valyutanızı təyin edin. Bu məlumatlar WaaS platformanız boyunca istifadə ediləcək. Bitirəndə **Continue** düyməsinə klikləyin.
+Şirkət məlumatlarınızı daxil edin və standart valyutanı təyin edin. Bu məlumatlar WaaS platformanızda istifadə ediləcəkdir. Bitirdikdən sonra **Davam Edin** düyməsini klikləyin.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Şirkətiniz konfiqurasiya addımı](/img/installation/wizard-your-company.png)
 
-### Default Content (Standart Məzmun)
+### Standart Məlumatlar
 
-Bu addım sizə əvvəlcədən təyin edilmiş şablonlar, məhsullar və digər başlanğıc məzmununu quraşdırmağa imkan verir. Bu, Ultimate Multisite'ın xüsusiyyətlərinə alışmaq üçün əla bir yoldur. Standart məzmunu əlavə etmək üçün **Install** düyməsinə, yoxsa sıfırdan başlamağı üstün tutursunuzsa bu addımı atlayın.
+Bu addım, öncədən hazırlanmış şablonları, məhsulları və digər başlanğıc məzmununu quraşdırmağa imkan verir. Bu, Ultimate Multisite-in funksiyalarına aşna olmaq üçün əla bir yoldur. Standart məzmunu əlavə etmək üçün **Quraşdırın** düyməsini klikləyin və ya üstünlük verirsinizsə bu addımı atlayın.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Standart məzmun quraşdırma addımı](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins (Tövsiyə Olunan Pluginlər)
+### Tövsiyə Olunan Pluginlər
 
-İxtiyari olaraq tövsiyə olunan əlavə pluginləri quraşdırın. Onları əlavə etmək üçün **Install** düyməsinə və ya davam etmək üçün atlayın.
+İsteğe bağlı olaraq tövsiyə edilən əlavə pluginləri quraşdırın. Onları əlavə etmək üçün **Quraşdırın** düyməsini klikləyin və ya davam etmək üçün bu addımı atlayın.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Tövsiyə olunan pluginlər addımı](/img/installation/wizard-recommended-plugins.png)
 
-### Ready! (Hazırdır!)
+### Hazırdır!
 
-Budur! Ultimate Multisite quraşdırmanız tamamlandı. İndi **Network Admin Dashboard**-dan Website as a Service platformunuzu qurmağa başlaya bilərsiniz.
+Bu qədər! Ultimate Multisite quraşdırılması tamamlandı. İndi **Şəbəkə Administratoru Paneli**ndən öz Website as a Service platformanızı qurmağa başlaya bilərsiniz.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Quraşdırma tamamlandı - Hazır ekran](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Şəbəkə Administratoru Paneli, Ultimate Multisite aktivləşdirilib](/img/installation/network-dashboard.png)
 
 İndi əylənin!

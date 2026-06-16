@@ -1,86 +1,86 @@
 ---
-title: Inštalácia Ultimate Multisite
+title: Inštalácia systému Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalácia Ultimate Multisite
+# Inštalácia Ultimate Multisite
 
-:::note
-Tento návod predpokladá, že máte už nainštalovaný a skonfigurovaný WordPress Multisite. Aby ste sa naučili, ako to urobiť, pozrite si tento návod [tento návod](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner.
+:::poznámka
+Tento návod predpokladá, že už máte nainštalovaný a nakonfigurovaný WordPress Multisite. Ak sa chcete dozvedieť ako na to, pozrite si tento návod [this tutorial](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner.
 :::
 
-## Instalácia pluginu
+## Inštalácia pluginu
 
-Ultimate Multisite je k dispozícii zadarmo na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite je dostupný zadarmo na stránke [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Z **Admin Dashboard siete** sa prejdite do **Plugins → Pridať nový plugin**.
+Z vášho **Network Admin Dashboard**, prejdite do sekcie **Plugins → Add New Plugin**.
 
-![Strana pridaní nového pluginu v Admin Dashboard siete](/img/installation/add-new-plugin.png)
+![Stránka Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Vyhľadajte **"Ultimate Multisite"** (s vkladmi, aby ste našli presnú výpadku) a bude to prvý výsledok. Kliknite na **Install Now**.
+Vyhľadajte výraz **"Ultimate Multisite"** (v úvodzovkách, aby sa hľadal presný reťazec) a zobrazí sa ako prvý výsledok. Kliknite na tlačidlo **Install Now**.
 
 ![Výsledky vyhľadávania zobrazujúce Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Po stiahnutí kliknite na **Network Activate**, aby ste plugin aktivovali v celej sieti.
+Po inštalácii kliknite na tlačidlo **Network Activate**, aby ste aktivovali plugin v celej vašej sieti.
 
 ![Plugin nainštalovaný s tlačidlom Network Activate](/img/installation/plugin-installed.png)
 
-Po aktivácii budete automaticky presmerovaní na Wizard nastavenia.
+Po aktivácii budete automaticky presmerovaní do sprievodcu nastavením.
 
-![Plugin aktivovaný a presmerovaný na wizard](/img/installation/plugin-activated.png)
+![Plugin aktivovaný a presmerovaný do sprievodcu](/img/installation/plugin-activated.png)
 
-## Wizard nastavenia
+## Sprievodca nastavením
 
-Wizard nastavenia vás krok za krokom popriete s konfiguráciou Ultimate Multisite približne v 10 minútach.
+Sprievodca nastavením vás prevedie konfiguráciou Ultimate Multisite približne za 10 minút.
 
 ### Vitajte
 
 Kliknite na **Get Started**, aby ste začali.
 
-![Welcome obrazovka Wizard nastavenia](/img/installation/wizard-welcome.png)
+![Úvodná obrazovka sprievodcu nastavením](/img/installation/wizard-welcome.png)
 
-### Predinstalované kontroly
+### Predbežné kontroly
 
-Tento krok skontroluje informácie o vašom systéme a nainštalovaný WordPress, aby si uistil, že splňujú požiadavky Ultimate Multisite. Ak všetko vyzerá dobre, kliknite na **Go to the Next Step**.
+Tento krok kontroluje informácie o vašom systéme a inštalácii WordPress, aby sa uistil, že spĺňajú požiadavky Ultimate Multisite. Ak je všetko v poriadku, kliknite na **Go to the Next Step**.
 
-![Predinstalované kontroly zobrazujúce požiadavky na systém](/img/installation/wizard-pre-install-checks.png)
+![Predbežné kontroly zobrazujúce systémové požiadavky](/img/installation/wizard-pre-install-checks.png)
 
-:::note Tlačidlo Network Activate (v2.6.1+)
-Ak ste nainštalovali Ultimate Multisite, ale **nie je ešte aktivovaný v sieti** — napríklad ak ste klikli na **Activate** (single-site) namiesto **Network Activate** z obrazovky pluginov siete — krok Pre-install Checks to to určí a zobrazí tlačidlo **Network Activate**.
+:::poznámka Tlačidlo Network Activate (v2.6.1+)
+Ak bol Ultimate Multisite nainštalovaný, ale **zatiaľ nie je aktivovaný v celej sieti** – napríklad ak ste klikli na tlačidlo **Activate** (pre jednu lokalitu) namiesto **Network Activate** z obrazovky sieťových pluginov – krok predbežných kontrol to rozpozná a zobrazí tlačidlo **Network Activate**.
 
-Kliknutím na **Network Activate** aktivujete plugin automaticky po celej vašej sieti multisite. Po aktivácii pokračuje wizard normálne do kroku inštalácie. Nemusíte opustiť wizard, aby ste opravili stav aktivácie.
+Kliknutím na **Network Activate** aktivujete plugin automaticky v celej vašej multisite sieti. Po aktivácii sprievodca pokračuje normálne do kroku inštalácie. Nie je potrebné opustiť sprievodcu, aby ste opravili stav aktivácie.
 :::
 
 ### Inštalácia
 
-Inštalátor vytvorí potrebné tabuľky v databáze a nainštaluje súbor `sunrise.php`, ktorý Ultimate Multisite potrebuje na fungovanie. Kliknite na **Install**, aby ste pokračovali.
+Inštalačný program vytvorí potrebné databázové tabuľky a nainštaluje súbor `sunrise.php`, ktorý Ultimate Multisite potrebuje na fungovanie. Kliknite na **Install**, aby ste pokračovali.
 
-![Krok inštalácie zobrazujúci tabuľky v databáze a sunrise.php](/img/installation/wizard-installation.png)
+![Krok inštalácie zobrazujúci databázové tabuľky a sunrise.php](/img/installation/wizard-installation.png)
 
-### Vaša firma
+### Vaša spoločnosť
 
-Vyplňte informácie o vašej firme a nastavte svoju štandardnú valutu. Táto informácia bude používaná po celom platforme WaaS. Kliknite na **Continue**, keď ste dokončili.
+Vyplňte informácie o vašej spoločnosti a nastavte predvolenú menu. Tieto informácie budú použité v celej vašej WaaS platforme. Po dokončení kliknite na **Continue**.
 
-![Krok konfigurácie vašej firmy](/img/installation/wizard-your-company.png)
+![Krok konfigurácie Your Company](/img/installation/wizard-your-company.png)
 
-### Štandardný obsah
+### Predvolený obsah
 
-Tento krok vám umožní nainštalovať preddefinované šablóny, produkty a iný štartovací obsah. Je to skvelý spôsob, ako sa zvyknúť na funkcie Ultimate Multisite. Kliknite na **Install**, aby ste prispôsobil štandardný obsah, alebo tento krok prepojte, ak preferujete začať od začiatku.
+Tento krok vám umožní nainštalovať preddefinované šablóny, produkty a iný úvodný obsah. Je to skvelý spôsob, ako sa oboznámiť s funkciami Ultimate Multisite. Kliknite na **Install**, aby ste pridali predvolený obsah, alebo tento krok preskočte, ak chcete začať od nuly.
 
-![Krok inštalácie štandardného obsahu](/img/installation/wizard-default-content.png)
+![Krok inštalácie predvoleného obsahu](/img/installation/wizard-default-content.png)
 
-### Doplnkové pluginy
+### Odporúčané pluginy
 
-Voliteľne nainštalujte doporučené spoločné pluginy. Kliknite na **Install**, aby ste ich prispôsobil alebo prepojte, ak chcete pokračovať.
+Voliteľne nainštalujte odporúčané doplnkové pluginy. Kliknite na **Install**, aby ste ich pridali, alebo pokračujte bez nich.
 
-![Krok doporučených pluginov](/img/installation/wizard-recommended-plugins.png)
+![Krok odporúčaných pluginov](/img/installation/wizard-recommended-plugins.png)
 
-### Presne!
+### Hotovo!
 
-To dokončené! Vaša inštalácia Ultimate Multisite je dokončená. Môžete teraz začať stavba vašej platformy Web as a Service z **Network Admin Dashboard**.
+To je všetko! Vaša inštalácia Ultimate Multisite je dokončená. Teraz môžete začať budovať svoju platformu Website as a Service z **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Nastavenie dokončené – obrazovka Ready](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard s aktivovaným Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Terď si zaberať do práce!
+Užite si to!

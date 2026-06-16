@@ -1,83 +1,86 @@
 ---
-title: Installazzjoni tal-Ultimate Multisite
+title: L-installazzjoni ta' Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installazzjoni ta Ultimate Multisite
+# Installazzjoni ta' Ultimate Multisite
 
 :::note
-Dan tutorial jiddeq li għandek it-installat u konfigurat WordPress Multisite. Biex tieħu bixx, għandu tqedda [dan tutorial](https://www.wpbeginner.com/glossary/multisite/) ta WP Beginner.
+Dan it-tutorjal jassumi li diġà għandek WordPress Multisite installat u konfigurata. Biex titgħallem kif, iċċekkja [dan it-tutorjal](https://www.wpbeginner.com/glossary/multisite/) minn WP Beginner.
 :::
 
 ## Installazzjoni tal-Plugin
 
-Ultimate Multisite huwa disponibbli mill-gratu (free) fuq [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite huwa disponibbli b'xejn fuq [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Min-fil **Network Admin Dashboard** tiegħek, tqedda għal **Plugins → Add New Plugin**.
+Mill- **Dashboard ta' Amministratur tan-Netwerk** tiegħek, mur għal **Plugins → Żid Plugin Ġdid**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Paġna "Żid Plugin Ġdid" tal-Amministratur tan-Netwerk](/img/installation/add-new-plugin.png)
 
-Iċċekkja biex tiċċaqa **"Ultimate Multisite"** (ma' citazzjoni biex tkun it-eksakt) u se juri ukoll iż-riżultat ewliem. Iċċekkja **Install Now**.
+Fittex għal **"Ultimate Multisite"** (b'virgoletti għal korrispondenza eżatta) u se jidhru bħala l-ewwel riżultat. Ikklikka fuq **Installa Issa**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Riżultati tat-tfittix li juru Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Wara li tista' installat, iċċekkja **Network Activate** biex tivitalizza (activate) il-plugin f'kull nnetz tiegħek.
+Ladarba jiġi installat, ikklikka fuq **Attiva fin-Netwerk** biex tattiva l-plugin madwar in-netwerk kollu tiegħek.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin installat bil-buttuna "Attiva fin-Netwerk"](/img/installation/plugin-installed.png)
 
-Wara l-attivazzjoni, tit-tivitalizza awtomatik għal Setup Wizard.
+Wara l-attivazzjoni, ser tiġi awtomatikament dirett lejn il-Wizard tal-Isetup.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin attiv u mwaqqaf għall-wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Wizard tal-Isetup
 
-Il-Setup Wizard jiddireddikkomandek biex tikkonga Ultimate Multisite f'daqqa ta 10 minuti.
+Il-Wizard tal-Isetup jiggwidak fit-tip ta' Ultimate Multisite f'madwar 10 minuti.
 
-### Welcome
+### Merħba
 
-Iċċekkja **Get Started** biex tibda.
+Ikklikka fuq **Ibda** biex tibda.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Skrin tal-merħba tal-Wizard tal-Isetup](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks
+### Kontrolli ta' Qabel l-Installazzjoni
 
-Dan it-step jikkontrolla informazzjoni tas-sistema tiegħek u l-installazzjoni ta WordPress biex tqassir li jidher li jittlaq il-reqiżum tal-Ultimate Multisite. Jekk kollha tista' tkun tajba, iċċekkja **Go to the Next Step**.
+Dan il-pass jivverifika l-informazzjoni tas-sistema tiegħek u l-installazzjoni ta' WordPress biex jiżgura li jissodisfa r-rekwiżiti ta' Ultimate Multisite. Jekk kollox jidher tajjeb, ikklikka fuq **Mur għall-Pass Li Jmiss**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Kontrolli ta' qabel l-installazzjoni li juru r-rekwiżiti tas-sistema](/img/installation/wizard-pre-install-checks.png)
 
-:::note Botta Network Activate button (v2.6.1+)
-Se Ultimate Multisite kien il-installat bil **m'għandhom ma jkun attivat fil-network** — biex naħares, se cliccaw fuq **Activate** (single-site) invece tal-**Network Activate** mill-screen tal-plugins ta network — il-step Pre-install Checks se jiskopri dan u tispari butta' **Network Activate**.
+:::note Buttuna "Attiva fin-Netwerk" (v2.6.1+)
+Jekk Ultimate Multisite ġie installat iżda **għadu mhux attiv fil-livell tan-netwerk** — pereżempju, jekk ikklikkajt fuq **Attiva** (single-site) minflok **Attiva fin-Netwerk** mill-iskrin tal-plugins tan-netwerk — il-pass tal-Kontrolli ta' Qabel l-Installazzjoni se jinduna f'dan u juru buttuna **Attiva fin-Netwerk**.
 
-Biklikka fuq **Network Activate**, attivat il-plugin kulli l-network tiegħek awtomatikament. Wakad it-attiva, il-wizard jkompli normalment għall-step ta installazzjoni. Ma għandekx tixleb mill-wizard biex tfixxi l-stato tal-attivazzjoni.
+L-ikklikkjar fuq **Attiva fin-Netwerk** tattiva l-plugin madwar in-netwerk multisite kollu tiegħek awtomatikament. Ladarba jkun attiv, il-wizard ikompli normalment għall-pass tal-installazzjoni. M'hemmx bżonn li toħroġ mill-wizard biex issolva l-istatus tal-attivazzjoni.
 :::
 
 ### Installazzjoni
 
-L-installer se tgħmlu l-database tables li għalih huma bżonn u se tiinstalli l-file `sunrise.php` li Ultimate Multisite għandu biex jgħin. Clicka fuq **Install** biex tkompli.
+L-installer joħloq it-tabelli meħtieġa tad-database u jinstalla l-fajl `sunrise.php` li Ultimate Multisite jeħtieġ biex jaħdem. Ikklikka fuq **Installa** biex tkompli.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Pass tal-installazzjoni li juru t-tabelli tad-database u sunrise.php](/img/installation/wizard-installation.png)
 
-### Il-Kumprija Tieħed
-Iġib informazzjoni ta' l-kumprija tiegħek u issaħħel il-currency diġament. Dan l-informazzjoni se tistabbilita kulli fl-platform WaaS tiegħek. Clicka fuq **Continue** meta tgħmlit.
+### Il-Kumpanija Tiegħek
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+Imla l-informazzjoni tal-kumpanija tiegħek u stabbilixxi l-munita default tiegħek. Din l-informazzjoni se tintuża matul il-pjattaforma WaaS tiegħek. Ikklikka fuq **Kompli** meta tkun lest.
 
-### Kontenut Diġament
-Dan l-step jippermettik lek tinstall template predefinita, prodotti u kontenut oħra biex tibda. Dan huwa mod aħtonem biex ti tiffaħaq b'il-features ta Ultimate Multisite. Clicka fuq **Install** biex tista' l-content diġament, jew tixleb dan l-step se tista' tibda min il-zero.
+![Pass tal-konfigurazzjoni "Il-Kumpanija Tiegħek"](/img/installation/wizard-your-company.png)
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+### Kontenut Default
 
-### Plugins Mjħallin
-Tista' ti installa opzjonalment plugins kompanjoni mjerruġi. Clicka fuq **Install** biex tista' tininstallih jew tixleb biex tkun normalment.
+Dan il-pass jippermettilek tinstalla templat, prodotti u kontenut ieħor ta' avviċinament definit minn qabel. Dan huwa mod tajjeb biex familjarizza ruħek mal-karatteristiċi ta' Ultimate Multisite. Ikklikka fuq **Installa** biex iżżid il-kontenut default, jew agħfas dan il-pass jekk tippreferi tibda mill-bidu.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Pass tal-installazzjoni tal-kontenut default](/img/installation/wizard-default-content.png)
 
-### Pronti!
+### Plugins Rakkomandati
 
-Sehħi! L-installazzjoni tal-Ultimate Multisite tiegħek għad ssiġġa. Jidprogramma tista' tibda تبني il-Website tiegħek b'mod "as a Service" mill-**Network Admin Dashboard**.
+Installa fakultattivament plugins kompann rakkomandati. Ikklikka fuq **Installa** biex iżżidhom jew agħfas biex tkompli.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Pass tal-plugins rakkomandati](/img/installation/wizard-recommended-plugins.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+### Lest!
 
-Mrid tista' tibda tfarxa!
+Hekk hu! L-installazzjoni ta' Ultimate Multisite tiegħek hija kompluta. Issa tista 'tibda tibni l-pjattaforma Website as a Service tiegħek mill- **Dashboard tal-Amministratur tan-Netwerk**.
+
+![Isetup lest - Skrin "Lest"](/img/installation/wizard-ready.png)
+
+![Dashboard tal-Amministratur tan-Netwerk b'Ultimate Multisite attiv](/img/installation/network-dashboard.png)
+
+Mur u ibda tgawdi!

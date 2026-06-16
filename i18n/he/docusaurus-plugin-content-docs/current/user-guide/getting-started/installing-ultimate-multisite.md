@@ -1,80 +1,86 @@
 ---
 title: התקנת Ultimate Multisite
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # התקנת Ultimate Multisite
 
 :::note
-מדריך זה מניח שכבר התקנתם והגדרתם WordPress Multisite. כדי ללמוד איך לעשות זאת, עיינו [במדריך הזה](https://www.wpbeginner.com/glossary/multisite/) של WP Beginner.
+מדריך זה מניח שכבר התקנת והגדרת את WordPress Multisite. כדי ללמוד כיצד לעשות זאת, עיין ב[מדריך זה](https://www.wpbeginner.com/glossary/multisite/) של WP Beginner.
 :::
 
 ## התקנת התוסף
 
-Ultimate Multisite זמין בחינם ב-[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite זמין בחינם ב[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-מתוך **לוח הבקרה של מנהל הרשת**, עברו אל **תוספים → הוסף תוסף חדש**.
+מלוח הבקרה **Network Admin Dashboard**, עבור ל-**Plugins → Add New Plugin**.
 
-![דף הוספת תוסף חדש במנהל הרשת](/img/installation/add-new-plugin.png)
+![דף הוספת תוסף חדש ב- Network Admin](/img/installation/add-new-plugin.png)
 
-חפשו **"Ultimate Multisite"** (עם מרכאות להתאמה מדויקת) והתוסף יופיע כתוצאה הראשונה. לחצו על **התקן עכשיו**.
+חפש את **"Ultimate Multisite"** (עם גרשיים להתאמה מדויקת) והוא יופיע כתוצאה הראשונה. לחץ על **Install Now**.
 
 ![תוצאות חיפוש המציגות את Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-לאחר ההתקנה, לחצו על **הפעל ברשת** כדי להפעיל את התוסף בכל הרשת שלכם.
+לאחר ההתקנה, לחץ על **Network Activate** כדי להפעיל את התוסף בכל הרשת שלך.
 
-![התוסף מותקן עם כפתור הפעלה ברשת](/img/installation/plugin-installed.png)
+![התוסף מותקן עם כפתור Network Activate](/img/installation/plugin-installed.png)
 
-לאחר ההפעלה, תועברו אוטומטית לאשף ההגדרה.
+לאחר ההפעלה, תועבר אוטומטית לאשף ההגדרות (Setup Wizard).
 
 ![התוסף הופעל והועבר לאשף](/img/installation/plugin-activated.png)
 
-## אשף ההגדרה
+## אשף ההגדרות
 
-אשף ההגדרה ידריך אתכם בהגדרת Ultimate Multisite בכ-10 דקות.
+אשף ההגדרות ילווה אותך בתהליך הגדרת Ultimate Multisite בכ-10 דקות.
 
 ### ברוכים הבאים
 
-לחצו על **בואו נתחיל** כדי להתחיל.
+לחץ על **Get Started** כדי להתחיל.
 
-![מסך הפתיחה של אשף ההגדרה](/img/installation/wizard-welcome.png)
+![מסך ברוכים הבאים של אשף ההגדרות](/img/installation/wizard-welcome.png)
 
-### בדיקות טרום-התקנה
+### בדיקות לפני ההתקנה
 
-שלב זה בודק את מידע המערכת שלכם ואת התקנת WordPress כדי לוודא שהיא עומדת בדרישות של Ultimate Multisite. אם הכל נראה תקין, לחצו על **המשך לשלב הבא**.
+שלב זה בודק את מידע המערכת וההתקנת WordPress שלך כדי לוודא שהם עומדים בדרישות Ultimate Multisite. אם הכל נראה תקין, לחץ על **Go to the Next Step**.
 
-![בדיקות טרום-התקנה המציגות דרישות מערכת](/img/installation/wizard-pre-install-checks.png)
+![בדיקות לפני ההתקנה המציגות דרישות מערכת](/img/installation/wizard-pre-install-checks.png)
+
+:::note כפתור Network Activate (גרסה 2.6.1 ומעלה)
+אם Ultimate Multisite הותקן אך **טרם הופעל ברמה של רשת** — למשל, אם לחצת על **Activate** (אתר בודד) במקום **Network Activate** ממסך התוספים ברמת הרשת — שלב הבדיקות לפני ההתקנה יזהה זאת ויציג כפתור **Network Activate**.
+
+לחיצה על **Network Activate** מפעילה את התוסף בכל רשת ה-multisite שלך באופן אוטומטי. לאחר ההפעלה, האשף ממשיך כרגיל לשלב ההתקנה. אין צורך לעזוב את האשף כדי לתקן את מצב ההפעלה.
+:::
 
 ### התקנה
 
-המתקין ייצור את טבלאות מסד הנתונים הנדרשות ויתקין את קובץ ה-`sunrise.php` שנחוץ לפעולת Ultimate Multisite. לחצו על **התקן** כדי להמשיך.
+מתקין יצור את טבלאות המסד הנתונים הנדרשות ויבצע התקנה של קובץ `sunrise.php` ש- Ultimate Multisite זקוק לו כדי לפעול. לחץ על **Install** כדי להמשיך.
 
-![שלב ההתקנה המציג טבלאות מסד נתונים ו-sunrise.php](/img/installation/wizard-installation.png)
+![שלב ההתקנה המציג טבלאות מסד נתונים ואת sunrise.php](/img/installation/wizard-installation.png)
 
-### החברה שלכם
+### החברה שלך
 
-מלאו את פרטי החברה שלכם והגדירו את המטבע ברירת המחדל. מידע זה ישמש בכל פלטפורמת ה-WaaS שלכם. לחצו על **המשך** כשסיימתם.
+מלא את פרטי החברה שלך והגדר את המטבע ברירת המחדל. מידע זה יישמש בכל פלטפורמת ה-WaaS שלך. לחץ על **Continue** לאחר השלמה.
 
-![שלב הגדרת החברה שלכם](/img/installation/wizard-your-company.png)
+![שלב הגדרת החברה שלך](/img/installation/wizard-your-company.png)
 
 ### תוכן ברירת מחדל
 
-שלב זה מאפשר לכם להתקין תבניות מוגדרות מראש, מוצרים ותוכן התחלתי נוסף. זו דרך מצוינת להכיר את התכונות של Ultimate Multisite. לחצו על **התקן** כדי להוסיף את תוכן ברירת המחדל, או דלגו על שלב זה אם אתם מעדיפים להתחיל מאפס.
+שלב זה מאפשר לך להתקין תבניות מוגדרות מראש, מוצרים ותוכן התחלה אחר. זו דרך מצוינת להכיר את תכונות Ultimate Multisite. לחץ על **Install** כדי להוסיף את תוכן ברירת המחדל, או דלג על שלב זה אם מעדיפים להתחיל מאפס.
 
-![שלב התקנת תוכן ברירת המחדל](/img/installation/wizard-default-content.png)
+![שלב התקנת תוכן ברירת מחדל](/img/installation/wizard-default-content.png)
 
 ### תוספים מומלצים
 
-התקינו באופן אופציונלי תוספים נלווים מומלצים. לחצו על **התקן** כדי להוסיף אותם או דלגו כדי להמשיך.
+התקן באופן אופציונלי תוספי לוויה מומלצים. לחץ על **Install** כדי להוסיף אותם או דלג כדי להמשיך.
 
 ![שלב התוספים המומלצים](/img/installation/wizard-recommended-plugins.png)
 
 ### מוכנים!
 
-זהו! התקנת Ultimate Multisite הושלמה. כעת תוכלו להתחיל לבנות את פלטפורמת ה-Website as a Service שלכם מתוך **לוח הבקרה של מנהל הרשת**.
+זהו! התקנת Ultimate Multisite הושלמה. כעת תוכל להתחיל לבנות את פלטפורמת Website as a Service שלך מ-**Network Admin Dashboard**.
 
-![ההגדרה הושלמה - מסך מוכנים](/img/installation/wizard-ready.png)
+![הגדרות הושלמו - מסך מוכן](/img/installation/wizard-ready.png)
 
-![לוח הבקרה של מנהל הרשת עם Ultimate Multisite פעיל](/img/installation/network-dashboard.png)
+![לוח בקרה של Network Admin עם Ultimate Multisite פעיל](/img/installation/network-dashboard.png)
 
-קדימה, תהנו!
+קדימה ותיהנו!

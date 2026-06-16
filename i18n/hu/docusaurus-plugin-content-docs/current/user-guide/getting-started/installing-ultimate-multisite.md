@@ -1,80 +1,86 @@
 ---
 title: Az Ultimate Multisite telepítése
 sidebar_position: 12
-_i18n_hash: 400c7f9fc01ce3a8275a1710ef7e903a
+_i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Az Ultimate Multisite telepítése
 
 :::note
-Ez az útmutató feltételezi, hogy a WordPress Multisite már telepítve van és megfelelően be van állítva. Ha még nincs, a WP Beginner [ebben az útmutatóban](https://www.wpbeginner.com/glossary/multisite/) részletesen bemutatja a folyamatot.
+Ez az útmutató feltételezi, hogy már telepítette és konfigurálta a WordPress Multisitet. Ha szeretné megtudni, hogyan kell ezt megtenni, nézze meg ezt az [útmutatót](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner oldalán.
 :::
 
-## A plugin telepítése
+## A bővítmény telepítése
 
 Az Ultimate Multisite ingyenesen elérhető a [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) oldalon.
 
-A **Hálózati adminisztrációs vezérlőpultban** navigálj a **Bővítmények → Új bővítmény** menüpontra.
+A **Hálózati adminisztrációs panelről** lépjen a **Bővítmények → Új bővítmény hozzáadása** menüpontra.
 
-![Hálózati adminisztráció – Új bővítmény oldal](/img/installation/add-new-plugin.png)
+![A Hálózati adminisztrációs panelen az „Új bővítmény hozzáadása” oldal](/img/installation/add-new-plugin.png)
 
-Keress rá az **"Ultimate Multisite"** kifejezésre (idézőjelekkel a pontos egyezéshez), és az első találatként fog megjelenni. Kattints a **Telepítés most** gombra.
+Keresse meg a **„Ultimate Multisite”** kifejezést (idézőjelekkel, hogy pontos találatot kapjon), és ez fog megjelenni az első eredményként. Kattintson a **Most telepítse** gombra.
 
-![Keresési találatok az Ultimate Multisite bővítménnyel](/img/installation/search-ultimate-multisite.png)
+![A keresési eredmények között megjelenik az Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-A telepítés után kattints a **Hálózati aktiválás** gombra, hogy a plugin a teljes hálózaton aktívvá váljon.
+A telepítés után kattintson a **Hálózati aktiválás** gombra, hogy aktiválja a bővítményt a teljes hálózatában.
 
-![Telepített plugin a Hálózati aktiválás gombbal](/img/installation/plugin-installed.png)
+![A bővítmény telepítve, és megjelenik a „Hálózati aktiválás” gomb](/img/installation/plugin-installed.png)
 
-Az aktiválás után automatikusan átirányítunk a Beállítási varázslóhoz.
+Az aktiválás után automatikusan átirányítja az beállítási varázslóhoz.
 
-![Plugin aktiválva, átirányítás a varázslóhoz](/img/installation/plugin-activated.png)
+![A bővítmény aktiválva, és átirányítás a varázslóhoz](/img/installation/plugin-activated.png)
 
 ## Beállítási varázsló
 
-A Beállítási varázsló végigvezet az Ultimate Multisite konfigurálásán, ami körülbelül 10 percet vesz igénybe.
+A beállítási varázsló végigvezeti Önt az Ultimate Multisite konfigurálásán, ami körülbelül 10 percet vesz igénybe.
 
-### Üdvözlő képernyő
+### Üdvözöljük
 
-Kattints az **Első lépések** gombra a kezdéshez.
+Kattintson a **Kezdés** gombra a folytatáshoz.
 
-![Beállítási varázsló üdvözlő képernyő](/img/installation/wizard-welcome.png)
+![A beállítási varázsló üdvözlő képernyője](/img/installation/wizard-welcome.png)
 
-### Telepítés előtti ellenőrzések
+### Előtelepítési ellenőrzések
 
-Ez a lépés ellenőrzi a rendszerinformációkat és a WordPress-telepítést, hogy megfelel-e az Ultimate Multisite követelményeinek. Ha minden rendben van, kattints a **Tovább a következő lépésre** gombra.
+Ez a lépés ellenőrzi a rendszerinformációkat és a WordPress telepítését, hogy megbizonyosodjon arról, hogy megfelelnek-e az Ultimate Multisite követelményeinek. Ha minden rendben van, kattintson a **Menjen a következő lépésre** gombra.
 
-![Telepítés előtti ellenőrzések a rendszerkövetelményekkel](/img/installation/wizard-pre-install-checks.png)
+![Az előtelepítési ellenőrzések megjelenítik a rendszerkövetelményeket](/img/installation/wizard-pre-install-checks.png)
+
+:::note Hálózati aktiválás gomb (v2.6.1+)
+Ha az Ultimate Multisite telepítve van, de **még nem lett hálózaton aktiválva** – például ha a „Aktiválás” (egyes webhelyhez tartozó) helyett a „Hálózati aktiválás” gombra kattintott a hálózati bővítmények képernyőjén –, akkor az előtelepítési ellenőrzések lépése felismeri ezt, és megjeleníti egy **Hálózati aktiválás** gombot.
+
+A **Hálózati aktiválás** gombra kattintva automatikusan aktiválja a bővítményt a teljes multisite hálózatában. Az aktiválás után a varázsló normál módon folytatódik a telepítési lépéssel. Nem kell elhagynia a varázslót az aktiválási állapot javításához.
+:::
 
 ### Telepítés
 
-A telepítő létrehozza a szükséges adatbázis-táblákat és telepíti a `sunrise.php` fájlt, amelyre az Ultimate Multisite működéséhez szükség van. Kattints a **Telepítés** gombra a folytatáshoz.
+A telepítő létrehozza a szükséges adatbázis-táblákat, és telepíti a `sunrise.php` fájlt, amelyre az Ultimate Multisite-nak szüksége van a működéshez. Kattintson a **Telepítés** gombra a folytatáshoz.
 
-![Telepítési lépés az adatbázis-táblákkal és a sunrise.php fájllal](/img/installation/wizard-installation.png)
+![A telepítési lépés megjeleníti az adatbázis-táblákat és a sunrise.php fájlt](/img/installation/wizard-installation.png)
 
-### Céged adatai
+### Cégadatai
 
-Add meg a céged adatait és állítsd be az alapértelmezett pénznemet. Ezek az információk a WaaS platformod egészén megjelennek majd. Ha kész, kattints a **Folytatás** gombra.
+Töltse ki cége adatait, és állítsa be az alapértelmezett pénznemet. Ezeket az információkat a WaaS platformján fogja használni. A kész után kattintson a **Folytatás** gombra.
 
-![Cégadatok konfigurálása](/img/installation/wizard-your-company.png)
+![A „Cégadatai” konfigurációs lépése](/img/installation/wizard-your-company.png)
 
-### Alapértelmezett tartalmak
+### Alapértelmezett tartalom
 
-Ebben a lépésben előre elkészített sablonokat, termékeket és egyéb kezdő tartalmakat telepíthetsz. Ez remek módja annak, hogy megismerkedj az Ultimate Multisite funkcióival. Kattints a **Telepítés** gombra az alapértelmezett tartalmak hozzáadásához, vagy hagyd ki ezt a lépést, ha inkább a nulláról szeretnél indulni.
+Ez a lépés lehetővé teszi, hogy telepítsen előre definiált sablonokat, termékeket és más alapvető tartalmakat. Ez egy nagyszerű módja annak, hogy megismerje az Ultimate Multisite funkcióit. Kattintson a **Telepítés** gombra, ha hozzá szeretné adni az alapértelmezett tartalmat, vagy hagyja ki ezt a lépést, ha inkább a semmiből szeretne elindulni.
 
-![Alapértelmezett tartalmak telepítése](/img/installation/wizard-default-content.png)
+![Az alapértelmezett tartalom telepítési lépése](/img/installation/wizard-default-content.png)
 
 ### Ajánlott bővítmények
 
-Opcionálisan telepíthetsz ajánlott kiegészítő bővítményeket. Kattints a **Telepítés** gombra a hozzáadásukhoz, vagy ugorj tovább a folytatáshoz.
+Opcionálisan telepítheti az ajánlott kiegészítő bővítményeket. Kattintson a **Telepítés** gombra, ha hozzá szeretné adni őket, vagy hagyja ki, hogy folytathassa.
 
-![Ajánlott bővítmények lépés](/img/installation/wizard-recommended-plugins.png)
+![Az ajánlott bővítmények lépése](/img/installation/wizard-recommended-plugins.png)
 
 ### Kész!
 
-Ennyi az egész! Az Ultimate Multisite telepítése befejeződött. Mostantól elkezdheted építeni a Website as a Service platformodat a **Hálózati adminisztrációs vezérlőpultból**.
+Ennyi! Az Ultimate Multisite telepítése befejeződött. Most már elkezdheti a Website as a Service platform építését a **Hálózati adminisztrációs panelről**.
 
-![Telepítés befejezve – Kész képernyő](/img/installation/wizard-ready.png)
+![A beállítás befejezve – „Kész” képernyő](/img/installation/wizard-ready.png)
 
-![Hálózati adminisztrációs vezérlőpult aktív Ultimate Multisite-tal](/img/installation/network-dashboard.png)
+![A Hálózati adminisztrációs panelen az Ultimate Multisite aktiválva van](/img/installation/network-dashboard.png)
 
-Hajrá, fedezd fel és jó szórakozást!
+Megyünk, és szórakozzunk!

@@ -1,86 +1,86 @@
 ---
-title: An tsláthadh Ultimate Multisite
+title: Ag dul i mbun suite Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installáil Ultimate Multisite
+# Suiteáil Ultimate Multisite
 
 :::note
-Is an túsáid an tús seo ag cur chuir go bhfuil WordPress Multisite curtha agus ceangailte agat. Mar a bheith ag iarraidh a bheith ag fáil smaoineamh ar é seo, léigh [an túsáid seo](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner.
+Glacann an treoir seo go bhfuil WordPress Multisite suite agus cumraithe cheana féin. Chun a fháil amach conas, seiceáil an treoir seo [seo](https://www.wpbeginner.com/glossary/multisite/) ó WP Beginner.
 :::
 
-## Installáil an Plugin
+## Suiteáil na Breiseáin
 
-Tá Ultimate Multisite mionta go raibh deatach ar [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Tá Ultimate Multisite ar fáil saor in aisce ar [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Ó **Network Admin Dashboard** (Dashboard Rannpháirtí) duit, rag méid go **Plugins → Add New Plugin**.
+Ó do **Dashboard Ríomhairc**, téigh chuig **Breiseáin → Cuir Breiseán Nua le**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Leathanach Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Clann ar **"Ultimate Multisite"** (le citaí chun é a bheith cinnte) agus beidh sé ag teacht mar an curtha ar an ábhar céanna. Clann ar **Install Now**.
+Cuardaigh **"Ultimate Multisite"** (le comharthaí brata chun comhoiriúnacht cruinn a fháil) agus beidh sé mar an toradh céad. Cliceáil **Suiteáil Anois**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Torthaí cuardaigh ag taispeáint Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Ach tar éifeachtúil, clann ar **Network Activate** chun an plugin a chrialú ar fáil ar chluainteilin go léir.
+Nuair a bheidh sé suite, cliceáil **Gníomhaithe ar an Líonra** chun an breiseán a ghníomhachtú ar do líonra iomlán.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Breiseán suite le cnaipe Gníomhaithe ar an Líonra](/img/installation/plugin-installed.png)
 
-Tar éifeachtúil, beidh tú ag cur chuir go dtí an Setup Wizard (An Túsáid An Déan).
+Tar éis na gníomhachta, bheofar tú go huathoibríoch chuig an Draoi Suiteála.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Breiseán ghníomhachtaithe agus athdhíreamh chuig an draoi](/img/installation/plugin-activated.png)
 
-## An Setup Wizard
+## Draoi Suiteála
 
-Beidh an Setup Wizard ag cur chuir go dtí ceangailte Ultimate Multisite ar fáil ag tairiscint 10 minuta.
+Treoróidh an Draoi Suiteála thú tríd an gcumraíocht de Ultimate Multisite i dtart ar 10 nóiméad.
 
-### Welcome (Fáilte)
+### Fáilte
 
-Clann ar **Get Started** chun an tús a dhéanamh.
+Cliceáil **Tosaigh** chun tús a chur leis.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Scáileán fáilte Draoi Suiteála](/img/installation/wizard-welcome.png)
 
-### Pre-install Checks (Chreideanna Pre-install)
+### Seiceálacha Réamhsuiteála
 
-Tá an chéim seo ag chreideáil do chuid fhorchas agus do WordPress chun a bheith cinnte go bhfuil sé ag tairiscintacha Ultimate Multisite. Má tá sin an gcuid fhorchas ar fáil, clann ar **Go to the Next Step**.
+Seiceann an céim seo do eolas córais agus suiteáil WordPress chun a chinntiú go gcomhlonn sé riachtanais Ultimate Multisite. Má tá gach rud in ord, cliceáil **Téigh chuig an gCéim Eile**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Seiceálacha réamhsuiteála ag taispeáint riachtanais córais](/img/installation/wizard-pre-install-checks.png)
 
-:::note Botúil an nút "Network Activate" (v2.6.1+)
-Má tá Ultimate Multisite chomh foirmiúil ach **níl é ar fáil netwrík** — mar example, má chluinn tú **Activate** (single-site) gan **Network Activate** ó chuid plugin network — beidh an step Pre-install Checks ag éidhiomhairt é seo agus ag tairbheint an nút **Network Activate**.
+:::note Cnaipe Gníomhaithe ar an Líonra (v2.6.1+)
+Má suiteáladh Ultimate Multisite ach **níor ghníomhaíodh é fós ar an líonra** — mar shampla, má chliceáil tú **Gníomhaithe** (láithreán aonair) in ionad **Gníomhaithe ar an Líonra** ón scáileán breiseáin líonra — bhrathfaidh an céim Seiceálacha Réamhsuiteála é seo agus taispeánfaidh sé cnaipe **Gníomhaithe ar an Líonra**.
 
-Má luachfadh tú **Network Activate**, leasfaidh an plugin ar fáil ar chluainnet (multisite) láithreach. Cé sin, déanann an wíse faoi bhealach náor go dtí an step installation. Níl tú ag iarraidh a bheith i ngach an wíse chun an stát activation a cheartú.
+Má chliceáil tú **Gníomhaithe ar an Líonra**, ghníomhaítear an breiseán go huathoibríoch ar do líonra il-láithreán. Tar éis na gníomhachta, leanfaidh an draoi de ghnáth chuig an céim suiteála. Ní bheidh ort fágáil den draoi chun an stad gníomhachtaithe a cheartú.
 :::
 
-### Installation
+### Suiteáil
 
-Beidh an installer ag creachtáil na tablaí deacair a bheidh ag an chuid database agus ag installáil an cilim `sunrise.php` a bhíonn Ultimate Multisite ag teacht ar aghaidh. Luachfadh tú **Install** chun é a thógáil.
+Cruthóidh an suiteoir na táblaí bunachar sonraí riachtanacha agus suiteoidh sé an comhad `sunrise.php` atá de dhíth ar Ultimate Multisite chun oibriú. Cliceáil **Suiteáil** chun dul ar aghaidh.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Céim suiteála ag taispeáint táblaí bunachar sonraí agus sunrise.php](/img/installation/wizard-installation.png)
 
-### Your Company
+### Do Chumann
 
-Chruinn go léir do chuid fhorchas agus déan an cur le chéile ar do cur le chéile. Beidh an fhorchas seo ag úsáid go léir i do platform WaaS. Luachfadh tú **Continue** nuair atá thuairim.
+Lán isteach faisnéis do chuideachta agus socróidh tú do thionchar réamhshocraithe. Úsáideofar an eolas seo ar fud d’ardán WaaS. Cliceáil **Lean Ar Aghaidh** nuair a bheidh tú críochnaithe.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Céim chumraíochta Do Chumann](/img/installation/wizard-your-company.png)
 
-### Default Content
+### Ábhar Réamhshocraithe
 
-Línte seo leasfaidh tú templates, products agus cur le chéile eile a bhaineann ar an chuid starter content. Is é seo cur foirfeallt chun feabhas a chur ar do chuid feoirithe Ultimate Multisite. Luachfadh tú **Install** chun an cur le chéile faoi bhealach, nó déanann tú an step seo ar aghaidh má tá tú ag iarraidh deith ar an t-am.
+Ligeann an céim seo duit teimpléidí réamhshainithe, táirgí agus ábhar tús eile a suiteáil. Is bealach iontach é seo chun bheith eolach ar ghnéithe Ultimate Multisite. Cliceáil **Suiteáil** chun an t-ábhar réamhshocraithe a chur leis, nó fág an céim seo isteach más fearr leat tús a chur ó thús.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Céim suiteála ábhair réamhshocraithe](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins
+### Breiseáin Molta
 
-Is é seo ar fáil chun plugin companion a bhaineann ar chuid foirmiúil. Luachfadh tú **Install** chun é a thógáil nó déanann tú an t-am chun é a bheith ar fáil.
+Suiteáil roghnach breiseáin chomórtha molta. Cliceáil **Suiteáil** chun iad a chur leis nó léime ar aghaidh.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Céim na mbreiseán molta](/img/installation/wizard-recommended-plugins.png)
 
-### Ready!
+### Réidh!
 
-Tá sé! Tá an t-aistisiú Ultimate Multisite tá leat. Can tú lá atáint a bhfáinneat agat as an **Network Admin Dashboard**.
+Sin é! Tá do suiteáil Ultimate Multisite críochnaithe. Is féidir leat tús a chur le d’ardán Láithreáin mar Sheirbhís ón **Dashboard Ríomhairc**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Suiteáil chriochnaithe - Scáileán réidh](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Dashboard Ríomhairc le Ultimate Multisite gníomhachtaithe](/img/installation/network-dashboard.png)
 
-Go ahead and have some fun!
+Téigh ar aghaidh agus bain tairbhe as!

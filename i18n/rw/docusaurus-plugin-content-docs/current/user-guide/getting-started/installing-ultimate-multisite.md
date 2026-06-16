@@ -1,86 +1,86 @@
 ---
-title: Gukoresha Ultimate Multisite
+title: Gutangiza gushyira mu bikorwa Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Gukoresha Ultimate Multisite
+# Gutanga Ultimate Multisite
 
 :::note
-Iyi tutorial irashyira ko wamuhere uza WordPress Multisite yariwe kandi yariwe. Uko gushobora gukora, ahuburiramo [iki tutorial](https://www.wpbeginner.com/glossary/multisite/) kuri WP Beginner.
+Iyi myigishirize ikwibutsa ko Ultimate Multisite yamaze gutangwa kandi ikoreshwa neza. Kugira ngo uzi uko ibigenza, reba iyi myigishirize [iyi](https://www.wpbeginner.com/glossary/multisite/) ya WP Beginner.
 :::
 
-## Gukoresha Plugin
+## Gutanga Plugin
 
-Ultimate Multisite iri mu rubuga rwa WordPress.org kandi ari mu gihe cyiza (free).
+Ultimate Multisite iraboneka ku buryo bw'ubuntu kuri [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Ku **Network Admin Dashboard** yawe, gukora **Plugins → Add New Plugin**.
+Muri **Network Admin Dashboard**, jya aheza **Plugins → Add New Plugin**.
 
-![Network Admin Add New Plugin page](/img/installation/add-new-plugin.png)
+![Urupapuro rwo gushaka plugin nshya muri Network Admin](/img/installation/add-new-plugin.png)
 
-Gusubiza **"Ultimate Multisite"** (nshya mu quotes kugira ngo umenye cyane) kandi izaboneka nk'urwego rwo mbere. Gukora **Install Now**.
+Shakisha **"Ultimate Multisite"** (ukoresheje ibitekerezo kugira ngo ubona ibisubizo byemewe), kandi izagaragara nk'igisubizo cya mbere. Kanda kuri **Install Now**.
 
-![Search results showing Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Ibisubiso bigaragaza Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Icyiza cyane cyane, gukora **Network Activate** kugira ngo ugire plugin ku rugo rwose rwawe.
+Ubwo yamaze gutangwa, kanda kuri **Network Activate** kugira ngo itangwe mu ishami ryose.
 
-![Plugin installed with Network Activate button](/img/installation/plugin-installed.png)
+![Plugin yashyizweho n'igikoresho cya Network Activate](/img/installation/plugin-installed.png)
 
-Nyuma y'ubwumvikana, uza gushyirwa mu Setup Wizard.
+Nyuma yo gutangwa, uzajyanwa ku buryo butomoye muri Setup Wizard.
 
-![Plugin activated and redirected to wizard](/img/installation/plugin-activated.png)
+![Plugin yatanzwe kandi yajyanye mu wizard](/img/installation/plugin-activated.png)
 
 ## Setup Wizard
 
-Setup Wizard izabigisha kugira ngo utangire gukoresha Ultimate Multisite mu gihe cyo gukora ibyo, kandi iri mu gihe cyo gukora ibyo, hari igihe cyiza cyane (10 minutes).
+Setup Wizard izagufasha mu gukora ibikenewe kuri Ultimate Multisite mu minsi mike.
 
-### Ubusobanuro
+### Ubutaha
 
-Gukora **Get Started** kugira ngo utangire.
+Kanda kuri **Get Started** kugira ngo utangire.
 
-![Setup Wizard welcome screen](/img/installation/wizard-welcome.png)
+![Urupapuro rwo kwishimira muri Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Gukoresha Icyiza mbere y'ubwumvikana (Pre-install Checks)
+### Ibyo hagomba gukorwa mbere yo gutanga
 
-Iki gihe kigisha ibyo mu gihe cyo gukora ibyo, kandi kigisha amakuru yawe y'urwego rwawe rwa WordPress kugira ngo uzi ko ari inyungu zikoreshwa n'Ultimate Multisite. Niba byose byari neza, gukora **Go to the Next Step**.
+Iyi ntambwe ikora ibizamini ku makuru ya sisitemu n'uburyo WordPress bwateganyijwe kugira ngo izamenye ko byujuje ibisabwa na Ultimate Multisite. Iyo byose bimeze neza, kanda kuri **Go to the Next Step**.
 
-![Pre-install checks showing system requirements](/img/installation/wizard-pre-install-checks.png)
+![Ibyo hagomba gukorwa mbere yo gutanga bigaragaza ibizamini ku makuru ya sisitemu](/img/installation/wizard-pre-install-checks.png)
 
-:::note Button ya ko gukoresha (v2.6.1+)
-Iyo Ultimate Multisite yashyemo ariwe kandi **yashyemo cyangwa yashyemo** — umuntu yashyize, kugira ngo ubyumve **Activate** (single-site) ubwo wari utagukoresheye **Network Activate** ku gice cy'ama plugins — ibyo Pre-install Checks zizera kandi zishobora guhuza igice cy'ubwo **Network Activate**.
+:::note Igikoresho cya Network Activate (v2.6.1+)
+Niba Ultimate Multisite yamaze gutangwa ariko **ntiyakorerwa mu ishami ryose** — nko kuburyo, waba warakandaga kuri **Activate** (ku rubuga rumwe) ahubwo kw'igikoresho cya **Network Activate** ku rupapuro rwo gushaka plugin — iyi ntambwe ya Pre-install Checks izabimenya kandi ikagaragaza igikoresho cya **Network Activate**.
 
-Gukoresha **Network Activate** bikorera plugin yose mu rwego rwa multisite yawe mu gihe. Iyo yakoreshwa, umugambi (wizard) ukonyera gukomeza mu gihe cyo gukora installation. Ukenya ko ugomba kwitera ku mugambi kugira ngo uburyo bwo gukoresha plugin buhurirwe.
+Kanda kuri **Network Activate** kugira ngo itangwe mu ishami ryose ku buryo butomoye. Nyuma yo gutangwa, wizard izakomeza nk'ibisanzwe. Nta gukenera kureka wizard kugira ngo ukore ibikenewe.
 :::
 
-### Gukoresha (Installation)
+### Gutanga
 
-Installer izakora ibyemezo by'ubwoko bw'umare (database tables) kandi izakoresha file `sunrise.php` uko Ultimate Multisite yashobora gukora umugambi. Gukoresha **Install** kugira ngo uburyo bwo gukomeza.
+Uburyo bwo gutanga buzashyiraho imizindiro y'amajwi ikenewe kandi bushizeho ifayiri ya `sunrise.php` Ultimate Multisite ikenera kugira ngo ikorere neza. Kanda kuri **Install** kugira ngo ukomeze.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Intambwe yo gutanga igaragaza imizindiro y'amajwi n'ifayiri ya sunrise.php](/img/installation/wizard-installation.png)
 
-### Icyo Ubushya (Your Company)
+### Inyubako yawe
 
-Gusa ibyo mu gihe cyo gukoresha amakuru y'ubushya rwawe kandi ugereye igice cyo gukoresha ubwoko bw'umare bwawe. Iyi makuru zizakoreshwa mu gihe cyose cy'ama WaaS yawe. Gusa **Continue** iyo wamenye ibyo.
+Oshora amakuru y'inyubako yawe kandi ushyireho amafaranga akoreshwa mu buryo bwumvikana. Ibi bikenewe bizakoreshwa ku isiose ya WaaS. Kanda kuri **Continue** nyuma yo gukora ibikenewe.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Intambwe yo gusobanura inyubako](/img/installation/wizard-your-company.png)
 
-### Inyandiko Zikoreshwa (Default Content)
+### Ibikoresho byo gutangira
 
-Iyi gihe igaragaza ko uza gukora inyandiko zikoreshwa, ibintu by'ubushya bishoboraga, n'ibindi byo bikoreshwa mu gukora umugambi. Iki ni uburyo mwiza kugira ngo murebe mu features za Ultimate Multisite. Gusa **Install** iyo uza gukora inyandiko zikoreshwa, cyangwa ugabanye iki gihe iyo wumva ko uza gushyize ku gice cyose.
+Iyi ntambwe ikwemerera gushyiraho imizindiro y'ibintu, ibicuruzwa n'ibindi bikenewe mu buryo bwumvikana. Ni uburyo buteye neza wo kumenya ibikorwa bya Ultimate Multisite. Kanda kuri **Install** kugira ngo ushyireho ibikoresho byo gutangira, cyangwa ureke iyi ntambwe niba ushaka gutangira ukoresheje ibintu bitandukanye.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Intambwe yo gushyiraho ibikoresho byo gutangira](/img/installation/wizard-default-content.png)
 
-### Plugins Zizera (Recommended Plugins)
+### Plugins zashyizweho
 
-Iyo ushaka, ugukoresha plugins zizera zikoreshwa mu gukorera. Gusa **Install** iyo uza zikora cyangwa ugabanye kugira ngo wumva ko uza gukomeza.
+Ushobora gushyiraho plugins z'ingenzi. Kanda kuri **Install** kugira ngo uzishyireho cyangwa ureke ukomeze.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Intambwe ya plugins zashyizweho](/img/installation/wizard-recommended-plugins.png)
 
-### Wamenye!
+### Biteguye!
 
-Ibiye! Urahire y'Ultimate Multisite yawe yariweye. Ufite uburyo bwo kwiga Website as a Service platform ku **Network Admin Dashboard**.
+Birarangiye! Ultimate Multisite yamaze gutangwa neza. Ubu ushobora gutangira gukora ku rubuga rwawe ukoresheje ikoranabuhanga ya Website as a Service muri **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Gutangwa kwemere, urupapuro rw'ibyateguwe](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard ifite Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Mugisha umwanya kandi wumva!
+Jya gukora ibintu byiza!

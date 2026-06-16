@@ -1,86 +1,86 @@
 ---
-title: Nkwado Ultimate Multisite
+title: Ịwụnye Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Install Ultimate Multisite
+# Ntinye nke Ultimate Multisite
 
 :::note
-Tutorial này giả định bạn đã cài đặt và cấu hình WordPress Multisite rồi. Để tìm hiểu cách làm, bạn có thể xem hướng dẫn [này](https://www.wpbeginner.com/glossary/multisite/) của WP Beginner.
+Ntụziaka a na-ekwu na ị enyela WordPress Multisite ma mee ya ka ọ rụọ ọrụ. Ka ị mụta otú e si eme ya, lelee [ntụziaka a](https://www.wpbeginner.com/glossary/multisite/) nke WP Beginner.
 :::
 
-## Cài Đặt Plugin
+## Ntinye Plugin
 
-Ultimate Multisite miễn phí trên [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
+Ultimate Multisite dị n'efu na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
-Từ **Network Admin Dashboard** (Bảng điều khiển Quản trị Mạng), hãy vào **Plugins → Add New Plugin**.
+Site na **Network Admin Dashboard** gị, gaa na **Plugins → Add New Plugin**.
 
-![Trang thêm plugin của Network Admin](/img/installation/add-new-plugin.png)
+![Ibe Network Admin Add New Plugin](/img/installation/add-new-plugin.png)
 
-Tìm kiếm **"Ultimate Multisite"** (dùng dấu ngoặc kép để tìm chính xác) và nó sẽ hiện ra là kết quả đầu tiên. Nhấn **Install Now** (Cài đặt ngay).
+Chọọ **"Ultimate Multisite"** (jiri akara ndị ahụ maka nhazi ziri ezi), ọ ga-apụta dị ka ihe mbụ. Pịa **Install Now**.
 
-![Kết quả tìm kiếm hiển thị Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
+![Nchọpụta na-egosi Ultimate Multisite](/img/installation/search-ultimate-multisite.png)
 
-Sau khi cài xong, hãy nhấn **Network Activate** (Kích hoạt Mạng) để kích hoạt plugin này trên toàn bộ mạng của bạn.
+Mgbe emechara, pịa **Network Activate** iji mee ka plugin rụọ ọrụ n'ime netwọk gị niile.
 
-![Plugin đã được cài đặt với nút Network Activate](/img/installation/plugin-installed.png)
+![Plugin arụnyere na bọtịnụ Network Activate](/img/installation/plugin-installed.png)
 
-Sau khi kích hoạt, bạn sẽ tự động được chuyển đến Trình hướng dẫn Thiết lập (Setup Wizard).
+Mgbe ịmechara, a ga-ebugharị gị ozugbo gaa na Setup Wizard.
 
-![Plugin đã được kích hoạt và chuyển hướng đến trình hướng dẫn](/img/installation/plugin-activated.png)
+![Plugin rụrụ ọrụ ma bugharịa gaa na wizard](/img/installation/plugin-activated.png)
 
-## Trình Hướng Dẫn Thiết Lập (Setup Wizard)
+## Setup Wizard
 
-Trình Hướng Dẫn Thiết Lập sẽ hướng dẫn bạn cấu hình Ultimate Multisite trong khoảng 10 phút.
+Setup Wizard ga-eduzi gị n'ime nhazi nke Ultimate Multisite n'ime minit 10.
 
-### Chào Mừng
+### Nnabata
 
-Nhấn **Get Started** (Bắt đầu) để bắt đầu.
+Pịa **Get Started** iji malite.
 
-![Màn hình chào mừng của Setup Wizard](/img/installation/wizard-welcome.png)
+![Ibe nnabata nke Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Kiểm Tra Trước Khi Cài Đặt (Pre-install Checks)
+### Nlele Tupu Ntụnye
 
-Bước này sẽ kiểm tra thông tin hệ thống và cài đặt WordPress của bạn để đảm bảo nó đáp ứng các yêu cầu của Ultimate Multisite. Nếu mọi thứ đều ổn, hãy nhấn **Go to the Next Step** (Chuyển sang Bước Tiếp theo).
+Ukwu a na-elele ozi sistemụ gị na nrụnye WordPress iji hụ ma ọ na-akwado ihe ndị Ultimate Multisite chọrọ. Ọ bụrụ na ihe niile dị mma, pịa **Go to the Next Step**.
 
-![Kiểm tra trước khi cài đặt hiển thị yêu cầu hệ thống](/img/installation/wizard-pre-install-checks.png)
+![Nlele tupu ntụnye na-egosi ihe ndị sistemụ chọrọ](/img/installation/wizard-pre-install-checks.png)
 
-:::note Button Activate Network (v2.6.1+)
-Ka Ultimate Multisite nwere install but **ekwu na-akịta network** — ọ bụrụ na ị chọrọ **Activate** (single-site) ma ọ bụ **Network Activate** n'ụzọ dị ka na siri screen plugins network — Pre-install Checks step ahụ ga-adị n'ụzọ ahụ na ọ ga-nwe button **Network Activate**.
+:::note Bọtịnụ Network Activate (v2.6.1+)
+Ọ bụrụ na etinyechara Ultimate Multisite mana **enwebeghị ya ka ọ rụọ ọrụ n'ime netwọk** — dịka ọmụmaatụ, ọ bụrụ na pịa gị **Activate** (single-site) kama **Network Activate** site na ihuenyo plugins nke netwọk — ụkwu Nlele Tupu Ntụnye ga-ahụ nke a ma gosipụta bọtịnụ **Network Activate**.
 
-Ihe ị chọrọ **Network Activate** ga-nwere plugin ahụ dịka ọkụkọ (multisite) gị ma ọ bụrụ. Oge ị chọrọ, wizard ahụ ga-enwe onye na step installation. Ọ dịghị ihe ị chọrọ ịlụ, ka ị chọrọ ịgbanwe akụkọ activation state.
+Ịpị **Network Activate** na-eme ka plugin rụọ ọrụ n'ime netwọk gị niile ozugbo. Ozugbo emechara, wizard ahụ ga-aga n'ihu na usoro nrụnye. Ọ dịghị mkpa ịhapụ wizard iji dozie ọnọdụ nrụnye.
 :::
 
-### Installation
+### Nrụnye
 
-Installer ahụ ga-nwere database tables ndị dị mkpa ma ga-nwere file `sunrise.php` nke Ultimate Multisite na-agba n'ụzọ ahụ. Chọrọ **Install** ka ị chọrọ ịgbanwe.
+Onye nrụnye ga-eme ihe ndị a chọrọ, mebeere tebụl data ma wuo faịl `sunrise.php` nke Ultimate Multisite chọrọ ka ọ rụọ ọrụ. Pịa **Install** iji gaa n'ihu.
 
-![Installation step showing database tables and sunrise.php](/img/installation/wizard-installation.png)
+![Ukwu nrụnye na-egosi tebụl data na sunrise.php](/img/installation/wizard-installation.png)
 
-### Your Company
+### Ụlọ Ọrụ Gị
 
-Jiji maara ihe nkwado gị na information company gị ma ria set default currency (ara anyị mụta ihe dị n'ụzọ ahụ). Information a ga-e risiti n'ụzọ ahụ ọ bụrụ na ị na-agba WaaS platform gị. Chọrọ **Continue** mgbe ị chụrụ ihe ị chọrọ.
+Debe ozi ụlọ ọrụ gị ma setịpụ ego ị ga-eji. A ga-eji ozi a n'ime ikpo okwu WaaS gị niile. Pịa **Continue** mgbe emechara.
 
-![Your Company configuration step](/img/installation/wizard-your-company.png)
+![Ukwu nhazi nke Ụlọ Ọrụ Gị](/img/installation/wizard-your-company.png)
 
-### Default Content
+### Ihe Ndị Na-adịghị Anyịhụ
 
-Ihe a bụ step ahụ ga-nwe gị ịba templates, products, na ihe ndị ọzọ dị n'ụzọ ahụ. Oge a bụ ọ dị mma ịmata features Ultimate Multisite. Chọrọ **Install** ka ị chọrọ ịba content default, ma ọ bụ ria pasoọ step a ma ọ bụrụ na ị chọrọ ịgbanwe site n'ụzọ ahụ.
+Ukwu a na-enye gị ohere ịwụnye ihe atụpụtara, ngwaahịa, na ndị ọzọ. Ọ bụ ụzọ dị mma iji mata akụkụ nke Ultimate Multisite. Pịa **Install** iji wụnye ihe ndị ahụ, ma ọ bụ hapụrụ ukwu a ka ị malite site n'isi.
 
-![Default content installation step](/img/installation/wizard-default-content.png)
+![Ukwu nrụnye ihe ndị na-adịghị anyịhụ](/img/installation/wizard-default-content.png)
 
-### Recommended Plugins
+### Plugins Ndị Ọ Ga-enwe Mmasi
 
-Ọ dị mma ịba companion plugins ndị a mere. Chọrọ **Install** ka ị chọrọ ịba ha ma ọ bụ ria pasoọ ka ị chọrọ ịgbanwe.
+Wụnye plugins enyemaka a na-atụ anya. Pịa **Install** iji wụnye ha ma ọ bụ hapụ ya ka ị gaa n'ihu.
 
-![Recommended plugins step](/img/installation/wizard-recommended-plugins.png)
+![Ukwu plugins ndụmọ](/img/installation/wizard-recommended-plugins.png)
 
-### Ready!
+### Emela!
 
-Done! Installation Ultimate Multisite của bạn đã hoàn tất rồi. Bây giờ bạn có thể bắt đầu xây dựng nền tảng Website as a Service của mình từ **Network Admin Dashboard**.
+Ọ dịla! Nrụnye Ultimate Multisite gị emechara. Ị nwere ike malite iwulite ikpo okwu Website as a Service site na **Network Admin Dashboard**.
 
-![Setup complete - Ready screen](/img/installation/wizard-ready.png)
+![Nrụnye emechara - Ibe Emela](/img/installation/wizard-ready.png)
 
-![Network Admin Dashboard with Ultimate Multisite active](/img/installation/network-dashboard.png)
+![Network Admin Dashboard na-arụ ọrụ Ultimate Multisite](/img/installation/network-dashboard.png)
 
-Cứ thoải mái thử nghiệm đi!
+Gaa n'ihu ma na-eji ya!
