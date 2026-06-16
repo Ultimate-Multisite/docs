@@ -53,9 +53,10 @@ jobs:
     outputs:
       locales: ${{ steps.detect.outputs.locales }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Detect locales to build
         id: detect
@@ -79,19 +80,31 @@ jobs:
           python3 <<'PY'
           import json
           import os
+          import re
           from pathlib import Path
+
+          safe_locale = re.compile(r'^[A-Za-z0-9-]+$')
 
           input_locales = os.environ.get('INPUT_LOCALES', '').strip()
           include_default = os.environ.get('INCLUDE_DEFAULT_LOCALE', 'true').lower() != 'false'
           locales = []
 
           if input_locales:
-              locales = [locale.strip() for locale in input_locales.split(',') if locale.strip()]
+              locales = [
+                  locale.strip()
+                  for locale in input_locales.split(',')
+                  if locale.strip() and safe_locale.fullmatch(locale.strip())
+              ]
           else:
               changed_files = Path('changed-files.txt').read_text().splitlines()
               for file_path in changed_files:
                   parts = file_path.split('/')
-                  if len(parts) > 1 and parts[0] == 'i18n' and parts[1] not in locales:
+                  if (
+                      len(parts) > 1
+                      and parts[0] == 'i18n'
+                      and safe_locale.fullmatch(parts[1])
+                      and parts[1] not in locales
+                  ):
                       locales.append(parts[1])
 
               if include_default or not locales:
@@ -121,10 +134,12 @@ jobs:
       matrix:
         locale: ${{ fromJSON(needs.detect-locales.outputs.locales) }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
+        with:
+          persist-credentials: false
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
           node-version: '20'
           cache: 'npm'
@@ -133,4 +148,6 @@ jobs:
         run: npm ci
 
       - name: Build Docusaurus locale
-        run: npx docusaurus build --locale "${{ matrix.locale }}"
+        env:
+          LOCALE: ${{ matrix.locale }}
+        run: npx docusaurus build --locale "$LOCALE"
