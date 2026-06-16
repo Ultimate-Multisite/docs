@@ -1,0 +1,153 @@
+name: Validate Documentation
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/validate-docs.yml'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'docs/**'
+      - 'i18n/**'
+      - 'scripts/**'
+      - 'src/**'
+      - 'static/**'
+  push:
+    branches-ignore: [main]
+    paths:
+      - '.github/workflows/validate-docs.yml'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'docs/**'
+      - 'i18n/**'
+      - 'scripts/**'
+      - 'src/**'
+      - 'static/**'
+  workflow_dispatch:
+    inputs:
+      locales:
+        description: 'Comma-separated locales to build, e.g. en,ceb,my. Leave empty to detect changed locales.'
+        required: false
+        type: string
+      include_default_locale:
+        description: 'Also build the default English locale when detecting changed locales.'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-docs-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  detect-locales:
+    name: Detect locales
+    runs-on: ubuntu-latest
+    outputs:
+      locales: ${{ steps.detect.outputs.locales }}
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Detect locales to build
+        id: detect
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          INPUT_LOCALES: ${{ inputs.locales }}
+          INCLUDE_DEFAULT_LOCALE: ${{ inputs.include_default_locale }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${EVENT_NAME}" = "pull_request" ]; then
+            git diff --name-only "${PR_BASE_SHA}" "${PR_HEAD_SHA}" > changed-files.txt
+          else
+            git fetch origin main
+            git diff --name-only origin/main...HEAD > changed-files.txt
+          fi
+
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          safe_locale = re.compile(r'^[A-Za-z0-9-]+$')
+
+          input_locales = os.environ.get('INPUT_LOCALES', '').strip()
+          include_default = os.environ.get('INCLUDE_DEFAULT_LOCALE', 'true').lower() != 'false'
+          locales = []
+
+          if input_locales:
+              locales = [
+                  locale.strip()
+                  for locale in input_locales.split(',')
+                  if locale.strip() and safe_locale.fullmatch(locale.strip())
+              ]
+          else:
+              changed_files = Path('changed-files.txt').read_text().splitlines()
+              for file_path in changed_files:
+                  parts = file_path.split('/')
+                  if (
+                      len(parts) > 1
+                      and parts[0] == 'i18n'
+                      and safe_locale.fullmatch(parts[1])
+                      and parts[1] not in locales
+                  ):
+                      locales.append(parts[1])
+
+              if include_default or not locales:
+                  locales.insert(0, 'en')
+
+          # Preserve order while removing duplicates.
+          deduped = []
+          for locale in locales:
+              if locale not in deduped:
+                  deduped.append(locale)
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f"locales={json.dumps(deduped)}\n")
+
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              summary.write('## Locales selected for validation\n\n')
+              for locale in deduped:
+                  summary.write(f'- `{locale}`\n')
+          PY
+
+  build:
+    name: Build ${{ matrix.locale }}
+    needs: detect-locales
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        locale: ${{ fromJSON(needs.detect-locales.outputs.locales) }}
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Docusaurus locale
+        env:
+          LOCALE: ${{ matrix.locale }}
+        run: npx docusaurus build --locale "$LOCALE"
