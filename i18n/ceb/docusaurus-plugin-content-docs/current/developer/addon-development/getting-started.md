@@ -23,6 +23,7 @@ my-addon/
 
 ## Template sa Panguna nga File sa Addon
 
+```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
@@ -150,6 +151,7 @@ class My_Addon {
         return $fields;
     }
 }
+```
 
 ## Pananglitan sa Custom Model
 
@@ -179,6 +181,7 @@ Imagine nga naghimo ka og usa ka e-commerce store gamit ang WooCommerce, ug gust
 
 Sa laktod nga pagkasulti, ang custom model kay ang imong kaugalingong "blueprint" o plano kung unsaon pagtrabaho sa data sulod sa WordPress, imbes nga mosunod lang sa default setup.
 
+```php
 <?php
 
 namespace My_Addon\Models;
@@ -253,6 +256,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
         return $customer;
     }
 }
+```
 
 ## Integrasyon sa Admin Page
 
