@@ -13,10 +13,10 @@ The Ultimate Multisite: Emails addon lets network owners provision and manage cu
 
 ## Key Features
 
-* **Customer email account widget**: Customers can create and manage email accounts from their account page without opening a support ticket.
+* **Customer email account widget**: Customers can create and manage mailboxes from their account page after they have an active email membership.
 * **Webmail SSO and magic links**: Customers can open webmail directly from the account page with one-click authentication when the provider supports it.
 * **Password changes**: Customers and administrators can update mailbox passwords from the email management widget.
-* **Checkout provisioning**: Customer email account creation can run during checkout so the mailbox is ready after the purchase flow completes.
+* **Checkout entitlement provisioning**: Checkout creates the email membership, links it to the customer's site domain, and makes the account-page mailbox tools available.
 * **CyberPanel forwarders**: CyberPanel-backed networks can create and manage email forwarders as part of the email service flow.
 * **Provider-aware settings**: The settings page filters providers to active, configured integrations so administrators only see usable options.
 
@@ -35,18 +35,92 @@ The Ultimate Multisite: Emails addon lets network owners provision and manage cu
 4. Enable the email provider integrations you want customers to use.
 5. Save settings, then test account creation with a non-production customer or staging site.
 
+## How the Email Seller Flow Works
+
+Email selling has two separate layers:
+
+1. **Entitlement** — an Ultimate Multisite email product/membership that says the customer is allowed to use email for a specific site domain, provider, quota, and account limit.
+2. **Mailbox creation** — the actual provider mailbox, such as `info@example.com`, created when the customer or a network administrator chooses the local part and password.
+
+During checkout, the addon creates or activates the **email membership** and records the customer's site domain and provider on that membership. It does not guess a mailbox name or password. After the purchase is complete and the site/domain context exists, the customer can open the account page and create the mailbox names they want.
+
+This means a normal customer flow is:
+
+1. The customer buys a site plan and adds an email product during checkout.
+2. Ultimate Multisite creates the site membership and the secondary email membership.
+3. The Emails addon links the email membership to the customer's site domain and provider.
+4. The customer opens **Account** in their dashboard.
+5. The **Email Accounts** panel appears for that active email membership.
+6. The customer clicks **Create Account**, enters the local part such as `info`, sets a password, and the addon creates `info@their-domain.com` at the configured provider.
+
+## Configure an Email Product
+
+Create one email product for each email package you want to sell or give away. If you are new to product setup, start with [Creating Your First Subscription Product](../../user-guide/configuration/creating-your-first-subscription-product) and then return here for the email-specific settings.
+
+1. Go to **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Set **Product Type** to **Email**.
+3. Configure pricing. Use a paid recurring price for a sold plan, or set the product to free/zero-priced if it should be a complimentary email plan.
+4. Open the **Email Settings** section.
+5. Select the configured **Email Provider**.
+6. Set **Number of Accounts**, **Storage Quota (MB)**, alias limits, forwarders, and autoresponders as needed.
+7. Save the product.
+
+Only providers that are enabled and fully configured on the **Integrations** page appear in the provider selector. If the selector is empty, configure and test the provider first.
+
+## Add Email to Checkout
+
+Email products are usually offered as add-ons to a site plan. See [Checkout Forms](../../user-guide/configuration/checkout-forms) for the general checkout editor workflow.
+
+1. Create or edit the site plan that customers buy first.
+2. Add the email product as an available add-on/order bump for that checkout flow.
+3. Confirm the checkout form still includes the normal required site fields, especially the site URL/domain field.
+4. Run a test checkout with a staging customer.
+5. After checkout, open the customer's [account page](../../user-guide/client-management/account-page) and confirm the **Email Accounts** panel appears.
+
+The email domain is taken from the customer's site domain. Customers do not enter the email domain in the email product step.
+
 ## Customer Account Email Management
 
 Version 1.1.0 adds an email management widget to the customer account page. Use it when customers should self-service mailbox creation and maintenance for their own sites.
 
 From the account page, customers can:
 
-1. View email accounts connected to their current membership or site.
-2. Create a new mailbox when their plan allows additional accounts.
+1. View email accounts connected to their current email membership/site domain.
+2. Create a new mailbox when their email product allows additional accounts.
 3. Change an existing mailbox password.
 4. Open supported webmail providers through SSO or a magic-link login.
 
 The widget uses the Ultimate Multisite account-page currents system, so actions are scoped to the account context the customer is viewing. This prevents customers from managing email accounts that belong to another membership or site.
+
+If the customer does not see the email panel, check that they have an **active Email product membership**, that the membership has been linked to a site domain, and that the product has a configured provider.
+
+## Giving a Customer a Free Email Plan
+
+To give a customer email without charging them, grant the **email entitlement** first, then create or let the customer create the mailbox.
+
+Recommended options:
+
+* **Create a free email product**: set the email product price to free/zero, then add an active membership for that customer from **Ultimate Multisite > Memberships > Add Membership**. Select the email product and the customer. Free memberships are lifetime until changed or cancelled. If the email membership is meant to follow an existing site, make sure it is linked to that site/domain context.
+* **Use a 100% discount or free checkout link**: let the customer go through checkout so Ultimate Multisite creates the email membership and payment record automatically.
+* **Admin-create a mailbox**: go to **Ultimate Multisite > Email Accounts > Add Email Account** to create a specific mailbox at the provider for a customer. This is useful for support, but it does not replace the email product membership that powers the customer's self-service account-page tools.
+
+If you want the customer to manage the mailbox themselves from the account page, make sure they have an active email membership for the domain. A manually created provider mailbox without that membership can exist, but the customer may not see the self-service email panel for it.
+
+## Admin-Created Accounts and "No Order Number"
+
+The **Email Accounts** admin page creates or edits a provider mailbox. It is not the first step for selling or granting an email plan.
+
+When editing an email account, the **Membership** field searches existing Ultimate Multisite memberships by their reference/order number. If you try to assign an account before the customer has an email membership, there may be no order number to select.
+
+Use this order of operations instead:
+
+1. Create or locate the customer's email membership. For purchases, checkout does this. For a complimentary plan, create the membership manually from [Memberships](../../user-guide/administration/managing-memberships) or send the customer through a free checkout.
+2. Confirm the membership is active and uses an Email product.
+3. Confirm the email membership is linked to the site domain/provider.
+4. Create the mailbox from the customer account page or from **Ultimate Multisite > Email Accounts**.
+5. If needed, edit the mailbox record and assign the customer, membership, and site.
+
+If you only need to create a provider mailbox for the customer and do not need self-service account-page management, the admin-created account can be enough. If you want the customer to see and manage it in Ultimate Multisite, create the email membership too.
 
 ## Webmail SSO and Magic-Link Login
 
@@ -62,16 +136,17 @@ Enable webmail access only for providers where you have configured the required 
 
 ## Checkout Provisioning
 
-The addon can create customer email accounts as part of checkout. This is useful when the plan includes a mailbox by default or when the checkout form collects email-account details.
+The addon provisions the email **membership context** during checkout. It records the provider, account limit, quota, and site domain so customers can create their own mailbox names from the account page after purchase.
 
 Recommended rollout:
 
-1. Configure the provider and plan limits before enabling checkout provisioning.
-2. Test a purchase with a staging product and confirm the mailbox is created after checkout.
-3. Review the customer account page to confirm the new mailbox appears in the email widget.
-4. Confirm password-change and webmail actions before enabling the flow for production products.
+1. Configure the provider and product limits before offering the email product.
+2. Test a purchase with a staging product and confirm the email membership is created.
+3. Review the customer account page to confirm the **Email Accounts** widget appears for the domain.
+4. Create a test mailbox from the widget.
+5. Confirm password-change and webmail actions before enabling the flow for production products.
 
-If provisioning fails, the customer account and membership can still exist while the mailbox requires administrator follow-up. Check the Ultimate Multisite activity logs and the provider logs before retrying.
+If provisioning fails, the customer account and membership can still exist while the email membership or provider mailbox requires administrator follow-up. Check the Ultimate Multisite activity logs and the provider logs before retrying.
 
 ## CyberPanel Email Forwarders
 
@@ -87,7 +162,7 @@ Before offering forwarders, confirm that the CyberPanel integration is configure
 * New: Change password functionality added to the email account management widget.
 * New: CyberPanel email forwarder support.
 * New: Email management widget on the customer account page for self-service account creation and management.
-* New: Customer email account creation integrated into the checkout flow for automatic provisioning.
+* New: Customer email account entitlement provisioning integrated into the checkout flow.
 * Fix: Account page widget hook updated to use the correct UMS registration pattern.
 * Fix: Create Account form replaced with vanilla JS and correct full HTML document output.
 * Fix: Email management widget now uses the UMS currents system for admin account pages.
@@ -97,18 +172,26 @@ Before offering forwarders, confirm that the CyberPanel integration is configure
 
 ## Frequently Asked Questions
 
-## Can customers create their own email accounts?
+### Can customers create their own email accounts?
 
-Yes. When the customer account widget is enabled and the plan allows email accounts, customers can create and manage their own mailboxes from the account page.
+Yes. When the customer has an active email membership for a domain and the product allows additional accounts, customers can create and manage their own mailboxes from the account page.
 
-## Does every provider support webmail SSO?
+### Does every provider support webmail SSO?
 
 No. SSO and magic-link support depends on the active email provider. Providers without an access-link API can still support mailbox creation and password changes.
 
-## Can administrators create email accounts for customers?
+### Can administrators create email accounts for customers?
 
-Yes. Administrators can create email accounts from the admin interface, including setting the initial password when creating the account.
+Yes. Administrators can create email accounts from the admin interface, including setting the initial password when creating the account. For customer self-service management, also make sure the customer has an active email membership for the domain.
 
-## Are forwarders the same as mailboxes?
+### Can I give an email account away for free?
+
+Yes. Create a free/zero-priced Email product and add it as an active membership for the customer, or let the customer complete checkout with a 100% discount. After the email membership exists, the customer or an administrator can create the actual mailbox.
+
+### Why does assigning an email account ask for an order number?
+
+The Membership field looks up an existing Ultimate Multisite membership by its reference/order number. If the customer did not purchase an email product and you have not manually created an email membership, there is no email membership/order to assign. Create the email membership first, then create or assign the mailbox.
+
+### Are forwarders the same as mailboxes?
 
 No. A mailbox stores mail and has login credentials. A forwarder redirects mail to another address and does not provide a separate inbox.
