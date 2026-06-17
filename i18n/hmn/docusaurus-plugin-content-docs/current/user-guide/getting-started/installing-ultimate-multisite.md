@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Kev Txhim Kho Ultimate Multisite
 
-:::ceb toom
+:::note
 Cov lus qhia no xav tias koj twb tau txhim kho thiab teeb tsa WordPress Multisite lawm. Yog xav paub yuav ua li cas, saib [cov lus qhia no](https://www.wpbeginner.com/glossary/multisite/) los ntawm WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Cov kauj ruab no tshawg koj cov ntaub ntawv system thiab WordPress installation 
 
 ![Kev tshawb xyuas ua ntej uas qhia cov yuav tsum muaj ntawm system](/img/installation/wizard-pre-install-checks.png)
 
-:::ceb toom Tus khawm Network Activate (v2.6.1+)
+:::note Tus khawm Network Activate (v2.6.1+)
 Yog tias Ultimate Multisite tau txhim kho tab sis **tsis tau ua kom muaj zog thoob plaws lub network** — piv txwv, yog tias koj nyem **Activate** (ib-chaw) es tsis txhob **Network Activate** los ntawm nplooj ntawv plugins ntawm lub network — cov kauj ruab Kev Tshawb Xyuas Ua Ntej yuav pom qhov no thiab qhia ib tug **Tus Khawm Network Activate**.
 
 Nyem **Network Activate** ua rau plugin muaj zog thoob plaws koj lub multisite network. Thaum tau ua kom muaj zog, wizard yuav txuas mus rau cov kauj ruab tso tawm. Tsis tas yuav tawm ntawm wizard los kho qhov kev ua kom muaj zog.

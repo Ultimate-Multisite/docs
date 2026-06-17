@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ultimate Multisite نىڭ قۇرۇلۇشى
 
-:::ئەسۋاس
+:::note
 بۇ يېتەكچىدە سىز WordPress Multisite نىڭ ئالدىنلا قۇرۇلغانلىقىنى بىلدۈرىدۇ. ئۇنىڭ قېتىپ قېلىشنى بىلىش ئۈچۈن، WP Beginner تەرەپىدىن تارقاق قىلىنغان [بۇ يېتەكچى](https://www.wpbeginner.com/glossary/multisite/)نى كۆرۈڭ.
 :::
 
@@ -45,7 +45,7 @@ Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multis
 
 ![سېستىمە تەۋسەنلىرىنى كۆرسىتىدىغان ئالدىن تەكشۈرۈش](/img/installation/wizard-pre-install-checks.png)
 
-:::ئەسۋاس Network Activate تۇتمىقى (v2.6.1+)
+:::note Network Activate تۇتمىقى (v2.6.1+)
 Ultimate Multisite قۇرۇلغان بولسىمۇ، لېكىن **يەنىلا تارماقتا ئېچىلمىغان** بولسا - مەسىلەن، سىز تارماق پلاگىنلىرىدىن تېخىمىچىلىك (single-site) قاچىلاش ئورنىغا **Activate** نى چېكتىڭىز - ئالدىن تەكشۈرۈش قەدەملىرى بۇنىڭنى بايقىپ، **Network Activate** تۇتمىقىنى كۆرسىتىدۇ.
 
 **Network Activate** نى چېكىڭ، ئۇ پلاگىننى تارماقتا ئوتوماتىك ھالدا ئېچىدۇ. ئېچىلغاندىن كېيىن، يۆلەكچى قۇرۇلۇش قەدەملىرىگە نورمال تەرىقىدىن داۋاملىشىدۇ. سىزنىڭ بۇنى تۈزىتىش ئۈچۈن يۆلەكچىدىن چىقىپ كېتىشىڭىز شارت ئەمەس.

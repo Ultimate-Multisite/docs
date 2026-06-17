@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Pag-install ng Ultimate Multisite
 
-:::tandaan
+:::note
 Ipinapalagay ng tutorial na ito na naka-install at nakakonfigura mo na ang WordPress Multisite. Para malaman kung paano, tingnan ang [tutorial na ito](https://www.wpbeginner.com/glossary/multisite/) mula sa WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Sinusuri ng hakbang na ito ang iyong impormasyon ng system at pag-install ng Wor
 
 ![Mga pre-install check na nagpapakita ng mga kinakailangan sa system](/img/installation/wizard-pre-install-checks.png)
 
-:::tandaan Button na Network Activate (v2.6.1+)
+:::note Button na Network Activate (v2.6.1+)
 Kung naka-install ang Ultimate Multisite ngunit **hindi pa ito na-activate sa network** — halimbawa, kung nag-click ka ng **Activate** (single-site) sa halip na **Network Activate** mula sa screen ng mga plugin ng network — madedetect ito ng hakbang na Pre-install Checks at ipapakita ang isang **Network Activate** button.
 
 Ang pag-click sa **Network Activate** ay nag-a-activate ng plugin sa buong iyong multisite network nang awtomatiko. Kapag na-activate, magpapatuloy ang wizard nang normal sa hakbang ng pag-install. Hindi mo kailangang umalis sa wizard upang ayusin ang estado ng pag-activate.

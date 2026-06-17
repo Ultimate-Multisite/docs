@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ultimate Multisite-iň gurulmagy
 
-:::eslatma
+:::note
 Bu okuw materialy, WordPress Multisite-iň ýaýdan hem-de gurnama diliniň özleşdirilendigini çaklaýar. Görnüşini öwrenmek üçin, WP Beginner-iň [şu okuw materialyna](https://www.wpbeginner.com/glossary/multisite/) seredip geçiň.
 :::
 
@@ -45,7 +45,7 @@ Bu ädim, sistemanyň we WordPress gurşagynyň maglumatlaryny barlap, Ultimate 
 
 ![Öňden barlaglar, sistemanyň talaplaryny görkezýär](/img/installation/wizard-pre-install-checks.png)
 
-:::eslatma Torbada işlädirmek düwmesi (v2.6.1+)
+:::note Torbada işlädirmek düwmesi (v2.6.1+)
 Eger Ultimate Multisite gurulan bolsa, emma **heniz torunyň ähli böleklerinde işlädirilmedik** bolsa - mysal üçin, eger **Aktiwleşdirmek** (tek saýt) düwmä basan bolsuňyz, ýerine **Torbada işlädirmek** düwmä basan bolsaňyz - Öňden barlaglar ädimi bu zady anyklap, **Torbada işlädirmek** düwmesini görkezer.
 
 **Torbada işlädirmek** düwmä basmak, pluginleri awtomatiki ýolla torunyzyň ähli böleklerinde işlädirer. Aktiwleşdirilenden soňra, usul normalda gurnama ädimine geçýär. Usuly tamamlamak üçin, usuldan çykman gerek däl.

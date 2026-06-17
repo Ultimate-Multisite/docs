@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ngamimitahan Ultimate Multisite
 
-:::catetan
+:::note
 Tutorial ieu nyangka yén anjeun parantos ngamimitahan sareng ngonpigurasikeun WordPress Multisite. Pikeun diajar kumaha, tingali [tutorial ieu](https://www.wpbeginner.com/glossary/multisite/) ku WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Langkung ieu mariksa inpormasi sistem anjeun sareng pamasangan WordPress pikeun 
 
 ![Pamariksaan pré-install nembongkeun syarat sistem](/img/installation/wizard-pre-install-checks.png)
 
-:::catetan Tombol Network Activate (v2.6.1+)
+:::note Tombol Network Activate (v2.6.1+)
 Upami Ultimate Multisite parantos dianggo tapi teu acan **diaktipkeun jaringan** — contona, upami anjeun ngaklik **Activate** (situs tunggal) tibatan **Network Activate** ti layar plugin jaringan — léngkah Pamariksaan Pré-install bakal mendeteksi ieu sareng nembongkeun tombol **Network Activate**.
 
 Ngaklik **Network Activate** ngaktipkeun plugin dina sakumna jaringan multisite anjeun sacara otomatis. Saatos diaktipkeun, wizard diteruskeun sacara normal ka léngkah pamasangan. Anjeun teu kedah ninggalkeun wizard pikeun ngalereskeun status aktivasi.
