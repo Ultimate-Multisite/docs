@@ -1,11 +1,11 @@
 ---
-title: የኡልቲమేት መልቲሳይት መጫኛ
+title: Ultimate Multisite መጫኛ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # የመጨረሻው ማልቲሳይት መጫን
 
-:::ማስታወሻ
+:::note
 ይህ ትምህርት፣ የዎርድፕረስ ማልቲሳይት አስቀድሞ ተጭኖ እና ተዋቅሮ እንዲኖር ይጠብቃል፡፡ እንዴት እንደሚሰራ ለመማር፣ በ WP Beginner ላይ ያለውን [እዚህ ትምህርት](https://www.wpbeginner.com/glossary/multisite/) ይመለከቱ።
 :::
 
@@ -31,7 +31,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 
 ## Setup Wizard
 
-የSetup Wizard፣ የመጨረሻውን ማልቲሳይት ለመዋቅር በመոտ 10 ደቂቃዎች ውስጥ ይመራዎታል።
+የSetup Wizard፣ የመጨረሻውን ማልቲሳይት ለመዋቅር በግምት 10 ደቂቃዎች ውስጥ ይመራዎታል።
 
 ### እንኳን ደህና መጡ
 
@@ -45,7 +45,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 
 ![የስርዓት መስፈርቶችን የሚያሳዩ ቅድመ-መጫኛ ፍተሻዎች](/img/installation/wizard-pre-install-checks.png)
 
-:::ማስታወሻ Network Activate ቁልፍ (v2.6.1+)
+:::note Network Activate ቁልፍ (v2.6.1+)
 የመጨረሻው ማልቲሳይት ተጭኖ፣ ነገር ግን **በእርግጥም በሙሉ መረብ ላይ አልተሰራም** - ለምሳሌ፣ ከኔትዎርክ የመተግበሪያዎች ገጽ ውስጥ **Activate** (ለአንድ ጣቢያ) ይልቅ **Network Activate** ጠቅ ካደረጉ - ቅድመ-መጫኛ ፍተሻው ይህን ያገኛል እና **Network Activate** ቁልፍ ያሳያል።
 
 **Network Activate** ላይ ጠቅ በማድረግ፣ የመተግበሪያውን በመላው የእርስዎ ማልቲሳይት መረብ ላይ በራስዎ ይተግባዋል። አንዴ ከተሰበረ በኋላ፣ wizard ወደ መጫኛ ደረጃ ይቀጥላል። ለመተግበሩ እንዲስተካከል ከwizard ውጪ መሄድ አያስፈልግም።

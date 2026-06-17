@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Instalasi Ultimate Multisite
 
-:::cathetan
+:::note
 Tutorial iki nyatakake yen sampeyan wis nginstal lan dikonfigurasi WordPress Multisite. Kanggo sinau carane, delengen [tutorial iki](https://www.wpbeginner.com/glossary/multisite/) dening WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Langkah iki mriksa informasi sistem lan instalasi WordPress sampeyan kanggo mest
 
 ![Pamariksaan pra-instalasi nuduhake syarat sistem](/img/installation/wizard-pre-install-checks.png)
 
-:::cathetan Tombol Aktifake Jaringan (v2.6.1+)
+:::note Tombol Aktifake Jaringan (v2.6.1+)
 Yen Ultimate Multisite diinstal nanging **ora aktif ing jaringan** - contone, yen sampeyan klik **Aktifake** (situs tunggal) tinimbang **Aktifake Jaringan** saka layar plugin jaringan - langkah Pamariksaan Pra-instalasi bakal ndeteksi iki lan nuduhake tombol **Aktifake Jaringan**.
 
 Klik **Aktifake Jaringan** kanggo ngaktifake plugin ing kabeh jaringan multisite sampeyan. Sawise diaktifake, wizard bakal terus menyang langkah instalasi. Sampeyan ora perlu ninggalake wizard kanggo mbenerake status aktivasi.

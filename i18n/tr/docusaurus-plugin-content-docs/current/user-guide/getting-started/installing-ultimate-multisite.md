@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ultimate Multisite'in Kurulumu
 
-:::not
+:::note
 Bu eğitim, WordPress Multisite'ın zaten kurulu ve yapılandırılmış olduğunu varsayar. Nasıl yapılacağını öğrenmek için WP Beginner tarafından hazırlanan [bu eğitime](https://www.wpbeginner.com/glossary/multisite/) göz atın.
 :::
 
@@ -45,7 +45,7 @@ Bu adım, sistem bilgilerinizin ve WordPress kurulumunuzun Ultimate Multisite'ı
 
 ![Ön kurulum kontrolleri, sistem gereksinimlerini gösteriyor](/img/installation/wizard-pre-install-checks.png)
 
-:::not Ağ Üzerinde Etkinleştir düğmesi (v2.6.1+)
+:::note Ağ Üzerinde Etkinleştir düğmesi (v2.6.1+)
 Ultimate Multisite kuruldu ancak **henüz ağ üzerinde etkinleştirilmediyse** (örneğin, ağ eklentileri ekranından **Etkinleştir**'e (tek site için) tıkladıysanız), Ön Kurulum Kontrolleri adımı bunu algılayacak ve bir **Ağ Üzerinde Etkinleştir** düğmesi görüntüleyecektir.
 
 **Ağ Üzerinde Etkinleştir**'e tıklamak, eklentiyi tüm çoklu sitenizin ağında otomatik olarak etkinleştirir. Etkinleştirdikten sonra sihirbaz normal şekilde kurulum adımına devam eder. Etkinleştirme durumunu düzeltmek için sihirbazdan ayrılmanız gerekmez.

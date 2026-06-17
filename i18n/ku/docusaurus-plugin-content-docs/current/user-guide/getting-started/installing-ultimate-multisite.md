@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Sazkirina Ultimate Multisite
 
-:::not
+:::note
 Ev perwerdehiyê texmîn dike ku hûn berê WordPress Multisite saz kirine û konfîgûr kiriye. Ji bo fêrkirina çawa, [ev perwerdehî](https://www.wpbeginner.com/glossary/multisite/) ji WP Beginner kontrol bikin.
 :::
 
@@ -45,7 +45,7 @@ Ev gav agahiyên pergal û sazkirina WordPress-a we kontrol dike da ku ew pê ba
 
 ![Çekên berî sazkirinê yên ku hewcedariyên pergalê nîşan dide](/img/installation/wizard-pre-install-checks.png)
 
-:::not Tuşeka Çalak Kirina Torê (v2.6.1+)
+:::note Tuşeka Çalak Kirina Torê (v2.6.1+)
 Ger Ultimate Multisite hatibe saz kirin lê **henûz ne li ser torê çalak bûye** - mînak, ger hûn li şopa pluginên torê de li ser **Çalak Kirin** (malper-yek) bikirtine, ne li ser **Çalak Kirina Torê** - gavê Çekên Berî Sazkirinê wê vê tespît bike û tuşeka **Çalak Kirina Torê** nîşan dide.
 
 Li ser **Çalak Kirina Torê** bikirtîne da ku plugin bi xweber li ser torê we yê multisite çalak bike. Piştrê çalakbûnê, wîzer normal li ber gavên sazkirinê berdewam dike. Hûn ne hewce ne ji bo ku hûn rewşa çalakiyê rast bikin, ji wîzerê derkevin.

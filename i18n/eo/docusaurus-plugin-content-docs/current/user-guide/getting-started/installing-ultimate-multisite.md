@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Instali la Ultimate Multisite
 
-:::noto
+:::note
 Ĉi tiu instrukciaĵo supozas, ke vi jam instalis kaj agordis WordPress Multisite. Por lerni kiel fari tion, kontrolu ĉi tiun instrukciaĵon [ĉi tie](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Klaku **Ekkomencu** por komenci.
 
 ![Antaŭinstalaj kontroloj montrantaj sistembezonojn](/img/installation/wizard-pre-install-checks.png)
 
-:::noto Butono "Retuma Aktivigo" (v2.6.1+)
+:::note Butono "Retuma Aktivigo" (v2.6.1+)
 Se Ultimate Multisite estis instalita sed **ne ankoraŭ retume aktivigita** — ekzemple, se vi klakis **Aktivi** (unueca retejo) anstataŭe de **Retuma Aktivigo** el la ekrano de retaj ĉefplugiloj — la paŝo Antaŭinstalaj Kontroloj detektos tion kaj montros butonon **Retuma Aktivigo**.
 
 Klaku **Retuma Aktivigo** por aktivigi la Ĉefplugilon tra via tuta multreteja reto aŭtomate. Post aktivigo, la majstro daŭras normale al la instala paŝo. Vi ne bezonas foriri de la majstro por solvi la staton de aktivigo.

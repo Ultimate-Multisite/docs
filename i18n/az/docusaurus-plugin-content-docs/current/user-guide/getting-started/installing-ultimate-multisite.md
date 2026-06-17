@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ultimate Multisite-in quraşdırılması
 
-:::qeyd
+:::note
 Bu təlimatda, WordPress Multisite-nin artıq quraşdırılmış və konfiqurasiya edilmiş olduğu güman edilir. Nə etmək lazım olduğunu öyrənmək üçün WP Beginner tərəfindən hazırlanmış [bu təlimata](https://www.wpbeginner.com/glossary/multisite/) baxın.
 :::
 
@@ -45,7 +45,7 @@ Bu addım sistem məlumatlarınızı və WordPress quraşdırılmasını yoxlaya
 
 ![Quraşdırmadan əvvəl yoxlamalar, sistem tələbləri göstərilib](/img/installation/wizard-pre-install-checks.png)
 
-:::qeyd Şəbəkə Aktivləşdir düyməsi (v2.6.1+)
+:::note Şəbəkə Aktivləşdir düyməsi (v2.6.1+)
 Ultimate Multisite quraşdırılıbsa, lakin **hələ şəbəkədə aktivləşdirilibməmisdir** — məsələn, əgər şəbəkə pluginləri ekranından **Aktivləşdir** (tək sayt) düyməsini klikləyərək **Şəbəkə Aktivləşdir** düyməsini klikləməmisinizsə — Quraşdırmadan əvvəl yoxlamalar addımı bunu aşkar edəcək və **Şəbəkə Aktivləşdir** düyməsini göstərəcək.
 
 **Şəbəkə Aktivləşdir** düyməsini klikləyərək pluginin bütün multisite şəbəkənizdə aktivləşdirilməsini təmin edin. Aktivləşdirdikdən sonra, sehrbaz normal şəkildə quraşdırma addımına davam edəcək. Sehrbazdan çıxıb aktivasiya vəziyyətini düzəltməyinizə ehtiyac yoxdur.

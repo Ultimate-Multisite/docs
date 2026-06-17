@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Memasang Ultimate Multisite
 
-:::catatan
+:::note
 Tutorial ini menganggap bahawa anda sudah memasang dan mengkonfigurasi WordPress Multisite. Untuk mengetahui cara melakukannya, lihat [tutorial ini](https://www.wpbeginner.com/glossary/multisite/) oleh WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Langkah ini menyemak maklumat sistem dan pemasangan WordPress anda untuk memasti
 
 ![Semakan pra-pemasangan yang menunjukkan keperluan sistem](/img/installation/wizard-pre-install-checks.png)
 
-:::catatan Butang Aktifkan Rangkaian (v2.6.1+)
+:::note Butang Aktifkan Rangkaian (v2.6.1+)
 Jika Ultimate Multisite telah dipasang tetapi **belum diaktifkan pada peringkat rangkaian** — contohnya, jika anda mengklik **Aktifkan** (tapak tunggal) dan bukannya **Aktifkan Rangkaian** daripada skrin plugin rangkaian — langkah Semak Pra-pemasangan akan mengesan ini dan memaparkan butang **Aktifkan Rangkaian**.
 
 Mengklik **Aktifkan Rangkaian** mengaktifkan plugin di seluruh rangkaian multisite anda secara automatik. Setelah diaktifkan, wizard akan berterusan seperti biasa ke langkah pemasangan. Anda tidak perlu meninggalkan wizard untuk menyelesaikan keadaan pengaktifan.

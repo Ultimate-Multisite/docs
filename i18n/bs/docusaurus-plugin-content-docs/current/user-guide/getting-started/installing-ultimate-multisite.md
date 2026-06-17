@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Instaliranje Ultimate Multisite
 
-:::napomena
+:::note
 Ovaj vodič pretpostavlja da već imate instaliran i konfigurisan WordPress Multisite. Da biste saznali kako to učiniti, pogledajte ovaj tutorijal [ovdje](https://www.wpbeginner.com/glossary/multisite/) na WP Beginner-u.
 :::
 
@@ -45,7 +45,7 @@ Ovaj korak provjerava informacije o vašem sistemu i WordPress instalaciji kako 
 
 ![Prethodne provjere koje prikazuju sistemske zahtjeve](/img/installation/wizard-pre-install-checks.png)
 
-:::napomena Dugme Network Activate (v2.6.1+)
+:::note Dugme Network Activate (v2.6.1+)
 Ako je Ultimate Multisite instaliran, ali **još nije aktiviran na nivou mreže** — na primjer, ako ste kliknuli **Activate** (za jednu lokaciju) umjesto **Network Activate** sa ekrana mrežnih dodataka — korak prethodnih provjera će to otkriti i prikazati dugme **Network Activate**.
 
 Klikom na **Network Activate**, aktivira se dodatak u cijeloj vašoj multisite mreži. Nakon aktivacije, čarobnjak normalno nastavlja do koraka instalacije. Nema potrebe da napustite čarobnjak kako biste riješili stanje aktivacije.
