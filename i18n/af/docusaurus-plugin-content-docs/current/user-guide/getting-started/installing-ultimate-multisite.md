@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Die installering van Ultimate Multisite
 
-:::letop
+:::note
 Hierdie tutoriaal gaan daarvan uit dat jy reeds WordPress Multisite geïnstalleer en gekonfigureer het. Om te leer hoe, kyk na [hierdie tutoriaal](https://www.wpbeginner.com/glossary/multisite/) deur WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Hierdie stap kyk na jou stelselinligting en WordPress-installasie om seker te ma
 
 ![Voorinstallasie-toetse wat stelselvereiste wys](/img/installation/wizard-pre-install-checks.png)
 
-:::letop Netwerkaktiveer-knoppie (v2.6.1+)
+:::note Netwerkaktiveer-knoppie (v2.6.1+)
 As Ultimate Multisite geïnstalleer is, maar **nie nog netwerkgeaktiveer nie** — byvoorbeeld, as jy op **Aktiveer** (enkelwerf) in plaas van **Netwerkaktiveer** vanaf die netwerkinproppstukskerm geklik het — sal die Voorinstallasie-toetse-stap dit opspoor en 'n **Netwerkaktiveer**-knoppie vertoon.
 
 Deur op **Netwerkaktiveer** te klik, word die inproppstuk outomaties oor jou hele multisiternetwerk geaktiveer. Sodra dit geaktiveer is, gaan die towenaar normaalweg voort na die installasiestap. Jy hoef nie die towenaar te verlaat om die aktiveringstoestand reg te stel nie.

@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # „Ultimate Multisite“ įdiegimas
 
-:::pastaba
+:::note
 Šioje instrukcijoje daroma prielaida, kad „WordPress Multisite“ jau yra įdiegtas ir sukonfigūruotas. Norėdami sužinoti kaip tai padaryti, peržiūrėkite šią instrukciją [čia](https://www.wpbeginner.com/glossary/multisite/) (WP Beginner).
 :::
 
@@ -45,7 +45,7 @@ Spustelėkite **Pradėti**, kad pradėtumėte.
 
 ![Prieš įdiegiant patikrinimai, rodantys sistemos reikalavimus](/img/installation/wizard-pre-install-checks.png)
 
-:::pastaba Mygtukas „Aktyvuoti tinkle“ (v2.6.1+)
+:::note Mygtukas „Aktyvuoti tinkle“ (v2.6.1+)
 Jei „Ultimate Multisite“ buvo įdiegtas, bet **dar neaktyvuotas visame tinkle** – pavyzdžiui, jei spustelėjote **Aktyvuoti** (vieno svetainės) vietoj **Aktyvuoti tinkle** iš tinklo priedų ekrano – prieš įdiegiant patikrinimų žingsnis tai aptiks ir parodys mygtuką **Aktyvuoti tinkle**.
 
 Spustelėjus **Aktyvuoti tinkle**, priedas bus automatiškai aktyvuotas visame jūsų „multisite“ tinkle. Po aktyvacijos vedlys tęsis įprastai, pereinant prie diegimo žingsnio. Jums nereikės palikti vedlio, kad išspręstumėte aktyvacijos problemą.

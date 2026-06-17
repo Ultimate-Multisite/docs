@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Instaliranje Ultimate Multisite
 
-:::napomena
+:::note
 Ovaj vodič pretpostavlja da već imate instaliran i konfiguriran WordPress Multisite. Za više informacija pogledajte [ovu lekciju](https://www.wpbeginner.com/glossary/multisite/) na WP Beginneru.
 :::
 
@@ -45,7 +45,7 @@ Ovaj korak provjerava informacije o vašem sustavu i instalaciji WordPressa kako
 
 ![Predinstalacijske provjere koje prikazuju sistemske zahtjeve](/img/installation/wizard-pre-install-checks.png)
 
-:::napomena Gumb Aktiviraj u mreži (v2.6.1+)
+:::note Gumb Aktiviraj u mreži (v2.6.1+)
 Ako je Ultimate Multisite instaliran, ali **još nije aktiviran u mreži** – na primjer, ako ste kliknuli **Aktiviraj** (za jednu web-lokaciju) umjesto **Aktiviraj u mreži** s ekrana mrežnih dodataka – korak predinstalacijskih provjera to će otkriti i prikazati gumb **Aktiviraj u mreži**.
 
 Klikom na **Aktiviraj u mreži** automatski se aktivira dodatak u cijeloj vašoj multisite mreži. Nakon aktivacije, čarobnjak nastavlja normalno do koraka instalacije. Ne morate napustiti čarobnjaka da biste ispravili stanje aktivacije.

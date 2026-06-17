@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Inštalácia Ultimate Multisite
 
-:::poznámka
+:::note
 Tento návod predpokladá, že už máte nainštalovaný a nakonfigurovaný WordPress Multisite. Ak sa chcete dozvedieť ako na to, pozrite si tento návod [this tutorial](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner.
 :::
 
@@ -45,7 +45,7 @@ Tento krok kontroluje informácie o vašom systéme a inštalácii WordPress, ab
 
 ![Predbežné kontroly zobrazujúce systémové požiadavky](/img/installation/wizard-pre-install-checks.png)
 
-:::poznámka Tlačidlo Network Activate (v2.6.1+)
+:::note Tlačidlo Network Activate (v2.6.1+)
 Ak bol Ultimate Multisite nainštalovaný, ale **zatiaľ nie je aktivovaný v celej sieti** – napríklad ak ste klikli na tlačidlo **Activate** (pre jednu lokalitu) namiesto **Network Activate** z obrazovky sieťových pluginov – krok predbežných kontrol to rozpozná a zobrazí tlačidlo **Network Activate**.
 
 Kliknutím na **Network Activate** aktivujete plugin automaticky v celej vašej multisite sieti. Po aktivácii sprievodca pokračuje normálne do kroku inštalácie. Nie je potrebné opustiť sprievodcu, aby ste opravili stav aktivácie.

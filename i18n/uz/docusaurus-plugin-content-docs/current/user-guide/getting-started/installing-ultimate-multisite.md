@@ -5,7 +5,7 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
 # Ultimate Multisite ni o'rnatish
 
-:::eslatma
+:::note
 Ushbu qo'llanmada sizda WordPress Multisite allaqachon o'rnatilgan va sozlangan deb taxmin qilinadi. Buni qanday qilishni bilish uchun WP Beginner tomonidan tayyorlangan [shu qo'llanmani](https://www.wpbeginner.com/glossary/multisite/) ko'rib chiqing.
 :::
 
@@ -45,7 +45,7 @@ Ushbu bosqich sizning tizim ma'lumotlaringiz va WordPress o'rnatuvini tekshirib,
 
 ![Oldindan tekshirish tizim talablari ko'rsatilgan](/img/installation/wizard-pre-install-checks.png)
 
-:::eslatma Tarmoq bo'ylab faollashtirish tugmasi (v2.6.1+)
+:::note Tarmoq bo'ylab faollashtirish tugmasi (v2.6.1+)
 Agar Ultimate Multisite o'rnatilgan bo'lsa, lekin **haligi tarmoq bo'ylab faollashtirilmagan** bo'lsa — masalan, agar siz "Tarmoq pluginlari" ekranda **Faollashtirish** (bitta sayt uchun) emas, balki **Tarmoq bo'ylab faollashtirish** tugmasini bosgan bo'lsangiz — Oldindan tekshirish bosqichi buni aniqlaydi va **Tarmoq bo'ylab faollashtirish** tugmasini ko'rsatadi.
 
 **Tarmoq bo'ylab faollashtirish** tugmasini bosish orqali plugin butun multisite tarmoqingizda avtomatik ravishda faollashtiriladi. Faollashtirgandan so'ng, sehrgar odatdagi tartibda o'rnatish bosqichiga o'tadi. Sehrgardan chiqib, faollashtirish holatini tuzatishingiz shart emas.
