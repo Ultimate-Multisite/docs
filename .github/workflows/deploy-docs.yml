@@ -109,8 +109,57 @@ jobs:
           echo "No changes detected across docs repo or any addon since $LAST_RUN — skipping build."
           echo "changed=false" >> "$GITHUB_OUTPUT"
 
-  # ── Build & deploy ───────────────────────────────────────────────────────────
-  build-and-deploy:
+  # ── Locale chunk planning ────────────────────────────────────────────────────
+  plan-locale-chunks:
+    needs: check-changes
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.plan.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Plan locale chunks
+        id: plan
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          chunk_size = 10
+          config = Path('docusaurus.config.js').read_text(encoding='utf-8')
+          match = re.search(r'locales:\s*\[(.*?)\]\s*,\s*localeConfigs', config, re.S)
+          if not match:
+              raise SystemExit('Unable to find i18n.locales in docusaurus.config.js')
+
+          locales = re.findall(r"'([^']+)'", match.group(1))
+          if not locales or locales[0] != 'en':
+              raise SystemExit('Expected en to be the first Docusaurus locale')
+
+          chunks = [{'chunk': '00-en', 'locales': 'en'}]
+          translated_locales = locales[1:]
+          for index in range(0, len(translated_locales), chunk_size):
+              chunk_number = (index // chunk_size) + 1
+              chunk_locales = translated_locales[index:index + chunk_size]
+              chunks.append({
+                  'chunk': f'{chunk_number:02d}',
+                  'locales': ' '.join(chunk_locales),
+              })
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f'chunks={json.dumps(chunks)}\n')
+
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              summary.write('## Locale build chunks\n\n')
+              for chunk in chunks:
+                  summary.write(f"- `{chunk['chunk']}`: `{chunk['locales']}`\n")
+          PY
+
+  # ── Generated source preparation ─────────────────────────────────────────────
+  prepare-docs-source:
     needs: check-changes
     # Always build on push/manual; skip scheduled runs when nothing changed.
     if: needs.check-changes.outputs.changed == 'true' || github.event_name != 'schedule'
@@ -190,8 +239,109 @@ jobs:
         run: bash scripts/generate-hooks.sh
         continue-on-error: true
 
-      - name: Build documentation site
-        run: npx docusaurus build
+      - name: Upload prepared docs source
+        uses: actions/upload-artifact@v4
+        with:
+          name: prepared-docs-source
+          path: |
+            docs
+            i18n
+            scripts
+            src
+            static
+            docusaurus.config.js
+            sidebars.js
+            package.json
+            package-lock.json
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 3
+
+  # ── Parallel locale builds ───────────────────────────────────────────────────
+  build-locale-chunk:
+    name: Build locale chunk ${{ matrix.chunk }}
+    needs:
+      - check-changes
+      - plan-locale-chunks
+      - prepare-docs-source
+    # Always build on push/manual; skip scheduled runs when nothing changed.
+    if: needs.check-changes.outputs.changed == 'true' || github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan-locale-chunks.outputs.chunks) }}
+    steps:
+      - name: Download prepared docs source
+        uses: actions/download-artifact@v4
+        with:
+          name: prepared-docs-source
+          path: .
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build locale chunk
+        env:
+          LOCALES: ${{ matrix.locales }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          locale_args=()
+          for locale in $LOCALES; do
+            echo "Building locale: $locale"
+            locale_args+=(--locale "$locale")
+          done
+          rm -rf build .docusaurus
+          npx docusaurus build "${locale_args[@]}"
+
+      - name: Upload locale build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-build-${{ matrix.chunk }}
+          path: build/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 3
+
+  # ── Build assembly & deploy ──────────────────────────────────────────────────
+  assemble-and-deploy:
+    needs:
+      - check-changes
+      - build-locale-chunk
+    # Always assemble on push/manual; skip scheduled runs when nothing changed.
+    if: needs.check-changes.outputs.changed == 'true' || github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download locale build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: docs-build-*
+          path: locale-builds
+
+      - name: Assemble documentation site
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          for artifact_dir in locale-builds/docs-build-*; do
+            if [ ! -d "$artifact_dir" ] || [ "$(basename "$artifact_dir")" = "docs-build-00-en" ]; then
+              continue
+            fi
+            rsync -a "$artifact_dir"/ build/
+          done
+          if [ ! -d locale-builds/docs-build-00-en ]; then
+            echo "Missing default English build artifact" >&2
+            exit 1
+          fi
+          rsync -a locale-builds/docs-build-00-en/ build/
+          test -f build/index.html
 
       - name: Deploy to server
         if: github.ref == 'refs/heads/main'
