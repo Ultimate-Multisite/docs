@@ -57,7 +57,7 @@ Ultimate Multisite uchta turli narx turini qo'llab-quvvatlaydi. **paid** (to'lan
 
 Narx komponenti asosiy mahsulot narxini va hisoblash oralig'ini belgilaydi.
 
-![Narxlash va saqlash bo'limi](/)
+![Narxlash va saqlash bo'limi](/img/config/product-pricing-save.png)
 
 shunday qilib, masalan, $29.99 narxi va 1 oylik sozlama bilan har oyda $29.99 to'lanadi. Shunga o'xshash tarzda, 3 oylik sozlama bilan $89.97 narxlisi har choraklik (quarter) ravishda shu miqdorda to'lanadi.
 
@@ -65,7 +65,7 @@ shunday qilib, masalan, $29.99 narxi va 1 oylik sozlama bilan har oyda $29.99 to
 
 To'lov sikllari bo'limi yuqorida aytilgan to'lov oralig'ining chastotasini belgilaydi va bu odatda shartnomalar yoki aniq muddatlar ko'rsatiladi.
 
-![Narxlash va saqlash bo'limi](/)
+![Narxlash va saqlash bo'limi](/img/config/product-pricing-save.png)
 
 Masalan, 1 oylik oralig'li va 12 ta to'lov sikllari bilan $29.99 narxidagi mahsulot uchun har oyda $29.99 to'lanadi va bu mahsulot uchun keyingi 12 oy davomida amal qiladi. Boshqacha qilib aytganda, bunday sozlama 12 oylik muddatga $29.99 narxli aniq narxlash shartnomasi yaratadi va undan keyin to'lov tugaydi.
 
@@ -73,7 +73,7 @@ Masalan, 1 oylik oralig'li va 12 ta to'lov sikllari bilan $29.99 narxidagi mahsu
 
 Taklif sinovini yoqish orqali tarmoq administrator mahsulot uchun sinov muddatini belgilashi mumkin.
 
-![Narxlash va saqlash bo'limi](/)
+![Narxlash va saqlash bo'limi](/img/config/product-pricing-save.png)
 
 Sinov muddati davomida mijozlar mahsulotdan bepul foydalanishlari mumkin va sinov muddati tugaguncha ularga hech qanday to'lov qo'yilmaydi.
 
@@ -81,7 +81,7 @@ Sinov muddati davomida mijozlar mahsulotdan bepul foydalanishlari mumkin va sino
 
 Shuningdek, siz o'zingizning rejaingizga o'rnatish haqida to'lovni qo'llashingiz mumkin.
 
-![Narxlash va saqlash bo'limi](/)
+![Narxlash va saqlash bo'limi](/img/config/product-pricing-save.png)
 
 Bu shuni anglatadiki, mijozlar birinchi to'lovda (reja narxidan tashqari) ushbu bo'limda belgilagan haqga mos keladigan qo'shimcha miqdorni to'laydi.
 
@@ -89,7 +89,7 @@ Bu shuni anglatadiki, mijozlar birinchi to'lovda (reja narxidan tashqari) ushbu 
 
 Faol (active) tugmasi mahsulot yangi ro'yxatdan olinayotgan mijozlar uchun mavjudligini samarali belgilaydi.
 
-![Faol tugma](/)
+![Faol tugma](/img/config/product-active.png)
 
 Agar bu reja uchun mavjud mijozlar bo'lsa, tugmani o'chirilgan (disabled) holatga qo'yish ushbu rejani faol holatlardan olib tashlaydi. **Reja uchun mavjud mijozlar yangi rejaga o'tmaguncha yoki rejadagi danlanmaguncha davomida hisoboti amalga oshiriladi.**
 
