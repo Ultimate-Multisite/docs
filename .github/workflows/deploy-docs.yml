@@ -112,6 +112,8 @@ jobs:
   # ── Locale chunk planning ────────────────────────────────────────────────────
   plan-locale-chunks:
     needs: check-changes
+    # Always build on push/manual; skip scheduled runs when nothing changed.
+    if: needs.check-changes.outputs.changed == 'true' || github.event_name != 'schedule'
     runs-on: ubuntu-latest
     outputs:
       chunks: ${{ steps.plan.outputs.chunks }}
