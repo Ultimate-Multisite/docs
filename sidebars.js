@@ -75,6 +75,7 @@ const sidebars = {
         'user-guide/domain-seller/setup',
         'user-guide/domain-seller/domain-products',
         'user-guide/domain-seller/checkout-and-dns',
+        'user-guide/domain-seller/header-search',
       ],
     },
      {
