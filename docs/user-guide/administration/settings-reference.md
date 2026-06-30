@@ -25,6 +25,12 @@ If you maintain internal runbooks or screenshots for the settings page, remove r
 
 The **Import/Export** settings tab describes which settings it controls and links directly to **Ultimate Multisite > Site Export** for site and network archives. Use the settings tab for import/export configuration, use **Tools > Export & Import** for the single-site export/import workflow, and use the Site Export tool when you need a full Network Export archive.
 
+## Domain Seller HostAfrica balance warning
+
+When the Domain Seller addon is connected to HostAfrica, network administrators now see a dismissible balance-low warning when the reseller account balance is too low for reliable domain registration or renewal processing.
+
+Treat this notice as an operational warning: top up the HostAfrica reseller balance before accepting more paid domain registrations, then return to the Domain Seller settings or domain-monitoring screen to confirm registrations and renewals can continue normally.
+
 ## AI provider connector settings
 
 AI provider connector settings now expose only the supported OAuth account pools:
