@@ -9,7 +9,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, and improved site builder features. Version 1.16.0 adds custom logo generation, palette contrast validation, photo uploads in the discovery interview, structured hospitality menu generation, and desktop/mobile preview rendering in Theme Builder.
+Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, site builder features, and optional automation integrations. Version 1.18.0 adds Google Calendar read tools, contact and attendee mapping, human approval gates, reminder deduplication, TextBee SMS notifications, managed Superdav service provisioning, and a separately distributed Advanced companion package for trusted developer workflows.
 
 ## Key Features
 
@@ -26,6 +26,13 @@ Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI A
 - **Hospitality menus** — generate structured food and beverage menu pages for restaurants, cafes, and hospitality businesses
 - **Desktop and mobile previews** — preview your design on desktop and mobile devices during design-direction selection
 - **Tier 1 site scraping** — sd-ai-agent/site-scrape is now available by default for analyzing competitor and inspiration websites
+- **Google Calendar read tools** — read configured calendars and events so automations can reason about upcoming schedule context
+- **Contact and attendee mapping** — match calendar participants to known site users and contacts before generating follow-up work
+- **Human approval gates** — pause sensitive automations for review before sending messages, resuming work, or making changes
+- **Reminder records and deduplication** — track reminders that have already been sent so repeat automation runs do not notify the same recipient twice
+- **TextBee SMS notifications** — send configured text-message notifications through TextBee when an SMS provider is enabled
+- **Managed Superdav service provisioning** — connect supported sites to hosted Superdav endpoints with automatic setup instead of manual endpoint configuration
+- **Advanced companion package** — separately distributed trusted-developer tools for filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, and benchmark workflows
 
 ## Requirements
 
@@ -40,7 +47,9 @@ Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI A
 1. Upload the plugin files to `/wp-content/plugins/superdav-ai-agent`
 2. Activate the plugin through the **Plugins** screen in WordPress
 3. Ensure Gratis AI Agent is also activated
-4. Navigate to **Gratis AI Agent → Settings** and configure your internet search provider (optional)
+4. Navigate to **Gratis AI Agent → Settings** and configure your internet search provider, managed Superdav service connection, Google Calendar, or TextBee credentials as needed
+
+The WordPress.org package contains the core Superdav AI Agent features. The Advanced companion package is built and distributed separately for environments where trusted developer tools are explicitly installed and authorised.
 
 ## Quick Start
 
@@ -58,6 +67,14 @@ Search the web for the latest WordPress security best practices.
 
 ```
 Create a hero section using the active theme's block patterns.
+```
+
+```
+Review tomorrow's configured Google Calendar events and draft reminders for attendees.
+```
+
+```
+Send an SMS reminder after I approve the message.
 ```
 
 ## Theme-Aware Skills
@@ -83,6 +100,18 @@ Superdav AI Agent v1.10.0 adds **Tavily** as an alternative to Brave Search for 
 | **Tavily** | Richer search results, advanced research capabilities | [Tavily API](https://tavily.com/) |
 
 See [Internet Search](../../user-guide/configuration/internet-search) for configuration instructions.
+
+## Calendar, Approval, and Notification Workflows
+
+Superdav AI Agent v1.18.0 expands automation workflows beyond content and site-building tasks:
+
+- **Google Calendar tools** let the agent read configured calendars and event details when calendar credentials are available.
+- **Contact and attendee helpers** map event participants to WordPress users or known contacts before preparing reminders or follow-up tasks.
+- **Human approval gates** allow an automation to pause until an authorised user reviews the proposed action.
+- **Reminder records** prevent duplicate calendar or notification reminders when an automation is retried or scheduled repeatedly.
+- **TextBee SMS support** enables text-message notifications when the TextBee provider is configured.
+
+Use these tools for schedule-aware assistance, attendee follow-up, and reminder workflows that still require human review before sensitive messages are sent.
 
 ## Site Builder Contact Forms
 
@@ -128,6 +157,26 @@ All settings are under **Gratis AI Agent → Settings** in the WordPress admin. 
 |---|---|
 | **Internet Search Provider** | Choose between Brave Search and Tavily (optional) |
 | **Tavily API Key** | API key for Tavily internet search (if Tavily is selected) |
+| **Managed Superdav Service** | Connect supported sites to the hosted Superdav service with automatic endpoint provisioning |
+| **Google Calendar Credentials** | Configure calendar access so the agent can read calendars and events |
+| **TextBee SMS Provider** | Configure TextBee credentials for approved SMS notification workflows |
+
+## Advanced Companion Package
+
+Superdav AI Agent v1.18.0 adds a separately distributed Advanced companion package for trusted developer workflows. These capabilities are not bundled in the WordPress.org core package. Install the companion package only on sites where administrators explicitly trust the agent to access developer tooling.
+
+Advanced tools include filesystem operations, database access, WP-CLI, REST dispatcher workflows, plugin builder utilities, git snapshots, user-management helpers, and benchmark tooling. Keep these tools limited to trusted administrators and review approval-gate configuration before enabling them on production sites.
+
+## Improvements in v1.18.0
+
+- **Google Calendar support** — read configured calendars and events for schedule-aware automations
+- **Contact and attendee mapping** — match calendar participants to site users and contacts
+- **Human approval gates** — pause sensitive automations for review before continuing
+- **Reminder deduplication** — record reminders to avoid duplicate notifications on retries or repeated runs
+- **TextBee SMS provider** — send configured text-message notifications after required approvals
+- **Managed Superdav service setup** — provision hosted service endpoints automatically for supported sites
+- **Advanced companion distribution** — publish trusted-developer tools separately from the WordPress.org core build
+- **Reliability fixes** — improve model selection, request timeouts, default setup model handling, reasoning-text handling, retry guidance, calendar token hardening, reminder hardening, onboarding launches, confirmed ability resumes, and WordPress.org packaging review issues
 
 ## Improvements in v1.16.0
 

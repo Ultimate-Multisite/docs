@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Tools and Configuration
 
-Theme Builder uses a set of tools to analyze, design, and build your WordPress site. In version 1.16.0, **sd-ai-agent/site-scrape is now a Tier 1 tool**, making it available by default in Theme Builder.
+Theme Builder uses a set of tools to analyze, design, and build your WordPress site. In version 1.16.0, **sd-ai-agent/site-scrape is now a Tier 1 tool**, making it available by default in Theme Builder. Superdav AI Agent v1.18.0 also introduces a separately distributed Advanced companion package for trusted developer workflows; those tools are not part of the WordPress.org core package and must be installed and authorised separately.
 
 ## Available Tools
 
@@ -99,6 +99,23 @@ Provides advanced design capabilities:
 - Advanced color theory
 - Typography optimization
 
+### Advanced Companion Tools (Separate Package)
+
+The Advanced companion package is distributed separately from the core Superdav AI Agent release. It is intended for trusted developer and site-owner environments where administrators explicitly allow the agent to use high-impact tooling.
+
+Advanced companion capabilities can include:
+
+- **Filesystem tools** — inspect and modify approved files in trusted environments
+- **Database tools** — query or update site data when explicitly authorised
+- **WP-CLI tools** — run WordPress maintenance and inspection commands
+- **REST dispatcher tools** — call registered REST endpoints through controlled dispatch workflows
+- **Plugin builder tools** — scaffold and iterate on plugin code
+- **Git snapshot tools** — create snapshots before risky developer operations
+- **User-management tools** — help review or adjust user records where permitted
+- **Benchmark tools** — run performance or capability benchmarks for development review
+
+Do not document these as generally available Theme Builder tools for every installation. They are available only when the Advanced companion package is installed, enabled, and restricted to trusted administrators.
+
 ## Tool Configuration
 
 ### Enabling Tools
@@ -118,6 +135,7 @@ Some tools require permissions:
 - **Analytics** — requires Google Analytics integration
 - **Content generation** — requires API keys
 - **Advanced features** — may require premium subscription
+- **Advanced companion tools** — require the separately distributed Advanced package and explicit administrator trust
 
 ### API Keys and Credentials
 
@@ -127,6 +145,10 @@ Configure API keys for tools that require them:
 2. Enter credentials for each tool
 3. Test connection
 4. Save securely
+
+### Installing the Advanced Companion Package
+
+The Advanced companion package is released separately from the WordPress.org core ZIP. Install it only from the official project distribution channel for the release, then restrict access to trusted administrators. Review human approval gates and git snapshot behaviour before enabling filesystem, database, WP-CLI, REST dispatcher, plugin builder, user-management, or benchmark tools on a production site.
 
 ## Using sd-ai-agent/site-scrape
 

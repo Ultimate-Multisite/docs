@@ -5,6 +5,28 @@ sidebar_position: 5
 
 # Changelog
 
+## 1.18.0 — Released on 2026-06-29
+
+### New
+
+- **Google Calendar tools** — read configured calendars and events for schedule-aware automations
+- **Contact mapping and attendee helpers** — match calendar participants to site users and contacts
+- **Human approval gates and reminder records** — pause automations for review and avoid duplicate notifications
+- **TextBee SMS provider** — send configured text-message notifications through TextBee
+- **Advanced companion package** — add trusted-developer filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, and benchmark tools distributed separately from the WordPress.org build
+
+### Improved
+
+- **Managed Superdav service setup** — add hosted service endpoints and automatic connection provisioning for supported sites
+- **Release packaging** — build separate core and Advanced ZIPs, publish both on GitHub, and send only the core package to WordPress.org
+
+### Fixed
+
+- **AI request reliability** — improve model selection, request timeouts, default setup model, reasoning-text handling, and retry guidance for invalid tool calls
+- **Calendar and reminder hardening** — strengthen Google Calendar tokens and reminder deduplication
+- **Onboarding and approval resumes** — fix frontend onboarding launches and confirmed ability resumes
+- **WordPress.org packaging review issues** — address packaging review feedback for the core release
+
 ## 1.16.0 — Released on 2026-05-20
 
 ### New
