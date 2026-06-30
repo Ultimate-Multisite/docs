@@ -71,6 +71,8 @@ This will start the process of verifying and fetching the DNS information of the
 
 Ultimate Multisite v2.13.0 also creates the internal domain record automatically when a new site is created on a host that should be treated as a per-site domain. If the host is the network's primary domain, or one of the shared checkout-form base domains configured on a **Site URL** field, the automatic mapped-domain record is skipped so that shared base domain remains available to every site that uses it.
 
+When a customer registers a new domain through Domain Seller v1.3.0 or newer, Ultimate Multisite automatically maps the registered domain to the customer's network site by default. Administrators no longer need to add a separate mapped-domain record after a successful registration unless they want to adjust options such as the primary-domain flag, activation state, or SSL handling.
+
 The **Stage** or the status should change from **Checking DNS** to **Ready** if everything is properly set up.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->

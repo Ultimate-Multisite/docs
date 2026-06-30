@@ -5,6 +5,19 @@ sidebar_position: 99
 
 # Domain Seller Changelog
 
+Version 1.3.0 - Released on 2026-06-02
+- New: Added a network-admin warning when HostAfrica reseller balance gets too low
+- New: Added automatic mapping of newly registered domains to the network site
+- Fix: Applied registrant field requirements only when registering a new domain
+- Fix: Made monitor balance notices dismissible
+- Fix: Ensured WooCommerce registrant billing details are preserved
+- Fix: Enforced registrant contact requirements during registration
+- Fix: Prevented domain registration products from being created with 0% markup
+- Fix: Preserved domain selections and pricing through checkout session flow
+- Fix: Improved HostAfrica domain pricing currency display
+- Fix: Improved checkout form-action behavior to prevent WP-core query-var mismatches
+- Improved: Linked HostAfrica reseller configuration documentation in setup guidance
+
 Version 1.2.0 - Released on 2026-05-25
 - New: Added HostAfrica as a domain-selling integration with checkout, setup wizard, lookup, TLD/pricing, registration, renewal, transfer, nameserver, DNS, EPP code, registrar lock, and ID protection support
 - New: Added Openprovider as a domain-selling integration with reseller pricing, registration, renewal, transfer, nameserver, DNS, EPP code, registrar lock, WHOIS privacy, and TLD sync support
