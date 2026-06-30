@@ -5,7 +5,7 @@ sidebar_position: 22
 
 # Gratis AI Agent Settings
 
-The **Settings → Advanced** screen in Gratis AI Agent provides administrator-level configuration for backend integrations introduced in v1.5.0. This page documents the **Feedback Endpoint** fields and their expected format.
+The **Settings → Advanced** screen in Gratis AI Agent provides administrator-level configuration for backend integrations. This page documents feedback forwarding, search provider keys, managed Superdav service setup, Google Calendar controls, TextBee SMS settings, and network-wide feature flags.
 
 ## Accessing Settings
 
@@ -73,6 +73,42 @@ The field label includes a clickable link to the Brave Search API sign-up page. 
 
 See [Internet Search](../configuration/internet-search) for end-user documentation on this feature.
 
+## Managed Superdav Service
+
+Superdav AI Agent v1.18.0 adds managed Superdav service endpoints and automatic connection provisioning for supported sites. Use these controls when your site should connect to the hosted provider instead of a manually configured service endpoint.
+
+| Field | Description |
+|---|---|
+| **Managed Superdav Service** | Enables the hosted Superdav service connection for supported sites. |
+| **Provision Connection** | Starts automatic endpoint and credential provisioning. Use this after confirming the site should use the managed provider. |
+| **Service Endpoint / Connection Status** | Shows the current endpoint or connection state after provisioning. |
+
+After provisioning, save settings and verify the connection status before relying on managed-service workflows. If provisioning fails, review the displayed retry guidance and confirm the site has permission to use the hosted provider.
+
+## Google Calendar Configuration
+
+When Superdav AI Agent v1.18.0 calendar features are enabled, the agent can read configured calendars and event details. Calendar tools are read-oriented and are useful for schedule-aware reminders, attendee follow-up, and contact matching.
+
+| Field | Description |
+|---|---|
+| **Google Calendar Credentials** | Stores the credentials or token connection required to read calendar data. |
+| **Calendar Selection** | Limits which configured calendars the agent may inspect. |
+| **Calendar Connection Status** | Confirms whether the current credentials can read calendars and events. |
+
+Keep calendar credentials limited to the calendars the agent needs. Reconnect or rotate credentials if the status indicates an expired token.
+
+## TextBee SMS Notifications
+
+Superdav AI Agent v1.18.0 adds TextBee as an SMS provider for configured notification workflows. SMS notifications should be paired with human approval gates for sensitive or user-facing messages.
+
+| Field | Description |
+|---|---|
+| **TextBee API Key** | Authenticates requests to the TextBee SMS provider. |
+| **TextBee Device / Sender** | Selects the TextBee sender or device used for outgoing messages, when required by the provider. |
+| **SMS Notifications Enabled** | Allows approved workflows to send text-message notifications. Leave disabled to prevent SMS sends. |
+
+Send a test message only to an administrator-owned number, then confirm approval-gate behaviour before enabling scheduled or attendee-facing reminders.
+
 ## Feature Flags
 
 Also introduced in v1.9.0, the **Settings → Feature Flags** tab provides toggle switches for optional functionality. Each flag is either enabled or disabled network-wide; there is no per-site override at this time.
@@ -99,6 +135,17 @@ Also introduced in v1.9.0, the **Settings → Feature Flags** tab provides toggl
 | **Custom Agent Name** | *(blank)* | Replaces the default "Gratis AI Agent" label in the chat header and admin menu with your own product name. Leave blank to use the default. |
 | **Hide Agent Picker** | Off | When enabled, users cannot switch between the five built-in agents. The current agent is fixed to whatever is configured as the default in Settings → General. |
 | **Use Site Icon as Chat Avatar** | Off | Replaces the default AI icon in the chat widget header with the WordPress site icon (set under Appearance → Customize → Site Identity). |
+
+### Automation Safety Flags
+
+Superdav AI Agent v1.18.0 introduces human approval gates and reminder records for safer automation runs. These controls may appear in the feature flags or advanced automation settings, depending on the installed package.
+
+| Flag | Default | Description |
+|---|---|---|
+| **Require Human Approval** | Recommended on | Pauses sensitive automations until an authorised user reviews and confirms the proposed action. |
+| **Reminder Deduplication** | On | Records sent reminders so retries or scheduled runs do not send duplicate notifications. |
+| **Enable Calendar Tools** | Off until configured | Allows the agent to read configured Google calendars and events. |
+| **Enable SMS Notifications** | Off until configured | Allows approved workflows to send TextBee SMS notifications after credentials are saved. |
 
 ### Applying Changes
 

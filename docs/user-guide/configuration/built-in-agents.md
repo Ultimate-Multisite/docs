@@ -5,7 +5,7 @@ sidebar_position: 12
 
 # Built-in Agents
 
-Gratis AI Agent v1.9.0 ships five built-in agents, each pre-configured with a focused set of tools, a tailored system prompt, and starter suggestions matched to common tasks in that area. Switching between agents changes what the assistant can do and how it responds — without any configuration on your part.
+Gratis AI Agent v1.9.0 ships five built-in agents, each pre-configured with a focused set of tools, a tailored system prompt, and starter suggestions matched to common tasks in that area. Switching between agents changes what the assistant can do and how it responds — without any configuration on your part. Superdav AI Agent v1.18.0 can add schedule-aware tools, reminder records, approval gates, and SMS notifications to these workflows when the related integrations are configured.
 
 ## What Is an Agent?
 
@@ -30,18 +30,20 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 
 **Focus:** Creating and editing posts, pages, and contact forms.
 
-**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. With Superdav AI Agent v1.18.0 integrations enabled, configured calendar context, approval gates, reminders, and SMS notification tools may also be available to approved workflows.
 
 **What it does well:**
 - Drafting and publishing blog posts from a brief or outline
 - Creating batches of landing pages for a new site
 - Building contact and enquiry forms
 - Setting featured images on posts from a URL or search
+- Drafting event follow-up messages from configured Google Calendar context, then pausing for approval before sending notifications
 
 **Starter suggestions:**
 - *Write a 500-word blog post about the benefits of WordPress multisite.*
 - *Create an About, Services, and Contact page and publish them.*
 - *Add a booking enquiry form to the Contact page.*
+- *Draft a reminder for attendees on tomorrow's configured calendar event and wait for approval before sending it.*
 
 ---
 
@@ -49,7 +51,7 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 
 **Focus:** End-to-end website creation from a single prompt.
 
-**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. With Superdav AI Agent v1.18.0, configured managed-service, approval, reminder, calendar, and SMS tools may be available where administrators enable them.
 
 **What it does well:**
 - Generating a multi-phase site build plan for a described business type
@@ -57,12 +59,14 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 - Recovering from errors mid-plan without requiring manual intervention
 - Installing recommended plugins as part of the build
 - Creating contact forms directly from the chat interface (Superdav AI Agent v1.10.0+)
+- Coordinating launch reminders or attendee follow-up without duplicate notifications when approval gates and reminder records are enabled
 
 **Starter suggestions:**
 - *Build a photography portfolio site with a gallery post type, a booking page, and a contact form.*
 - *Create a restaurant website with an online menu, opening hours, and a table-booking enquiry form.*
 - *Set up a freelance consulting site with service pages, a portfolio section, and a blog.*
 - *Add a contact form to the Contact page using the site builder.*
+- *After the site launch checklist is approved, send an SMS reminder to the configured stakeholder contact.*
 
 ---
 
@@ -82,8 +86,6 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 - *Apply the warm-editorial preset and then set the primary colour to #2d6a4f.*
 - *Take a screenshot of the homepage and tell me what you'd improve.*
 - *Create a reusable hero block pattern with a full-width background image and centred heading.*
-
----
 
 ### Plugin Manager
 
@@ -119,6 +121,20 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 - *What plugins and settings are currently active on this site?*
 - *List all the custom post types registered on this site.*
 - *What navigation menus exist and where are they assigned?*
+
+---
+
+## Superdav Automation Integrations
+
+When Superdav AI Agent v1.18.0 integrations are configured, built-in agents can participate in safer schedule-aware automation workflows:
+
+- **Google Calendar read tools** allow agents to inspect configured calendars and events before drafting follow-up work.
+- **Contact and attendee mapping** helps match event participants to WordPress users or known contacts.
+- **Human approval gates** pause sensitive actions until an authorised user reviews and confirms them.
+- **Reminder records** prevent duplicate notifications when scheduled jobs retry or repeat.
+- **TextBee SMS notifications** send configured text messages only when SMS credentials and workflow permissions are enabled.
+
+Recommended workflow: ask the agent to prepare the message or action, review the approval prompt, then allow the approved action to resume. For recurring reminders, keep reminder deduplication enabled so the same event or contact is not notified repeatedly.
 
 ---
 
