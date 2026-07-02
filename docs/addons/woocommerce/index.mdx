@@ -16,6 +16,7 @@ The WooCommerce Integration works in a very similar way to the way our Manual Ga
 - Easy integration between Ultimate Multisite and WooCommerce
 - Several payment methods available
 - Automated recurring billing using the bundled subscriptions core, with optional WooCommerce Subscriptions plugin enhancements
+- Checkout totals include Ultimate Multisite taxes as separate, non-taxable WooCommerce fee lines so customers can review tax amounts before payment
 
 ## Documentation
 
@@ -67,6 +68,10 @@ Once installed, you will see an additional option under the Ultimate Multisite p
 
 You can configure some basic settings like the display name that will show in the front end and instructions to guide your users in their checkout flow. Then you can go to your **Main site’s _WooCommerce_ settings** to enable and configure the payment gateway you prefer to use.
 
+### Checkout tax fee lines
+
+When an Ultimate Multisite checkout includes taxes, the integration adds each Ultimate Multisite tax amount to WooCommerce checkout as a separate, non-taxable fee line. This keeps the tax total visible before payment while preventing WooCommerce from taxing the tax fee again.
+
 ## How to manage the payment
 
 The WooCommerce Integration works in a very similar way to the way our **Manual Gateway** works. The downside is that every payment must be paid manually at the end of the billing period. Here is how the flow works:
@@ -94,3 +99,11 @@ You do **not** need to purchase or install the separate [WooCommerce Subscriptio
 And that is it. Your end-users will no longer need to manually make a payment at the end of their billing cycle for recurring products.
 
 Aside from an order being created on your main site under _WooCommerce_, it will also create a subscription for each account.
+
+### Failed renewal suspension behavior
+
+By default, memberships remain active while WooCommerce Subscriptions processes its failed-payment retry schedule. This preserves the normal WooCommerce Subscriptions grace window so a recovered renewal can bring the subscription and membership back into sync without prematurely interrupting access.
+
+Administrators who want stricter access control can enable **Suspend Memberships Immediately on Failed Renewals** in the WooCommerce Integration settings. When this opt-in setting is enabled, Ultimate Multisite suspends the related membership as soon as a renewal payment fails instead of waiting for WooCommerce Subscriptions retry handling to finish.
+
+Developers can override the same decision with the `wu_woo_suspend_on_payment_failure` filter. Hook reference pages are generated from the add-on source, so this overview only calls out the filter name for custom suspension policies.

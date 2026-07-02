@@ -5,6 +5,15 @@ sidebar_position: 99
 
 # WooCommerce Integration Changelog
 
+Version 2.2.0 - Released on 2026-07-01
+* New: Ultimate Multisite tax amounts now appear as separate WooCommerce fee lines at checkout, making tax totals clearer before payment.
+* New: Added an opt-in "Suspend Memberships Immediately on Failed Renewals" setting and `wu_woo_suspend_on_payment_failure` filter for sites that want failed-renewal suspension during the WooCommerce Subscriptions retry window.
+* Fix: Reconciled WooCommerce Subscription statuses that could stay out of sync with Ultimate Multisite memberships after failed or recovered renewals.
+* Fix: Added the WooCommerce store currency to the Ultimate Multisite currency list when it was missing.
+* Fix: Preserved customer billing details when redirecting subscribers to WooCommerce checkout.
+* Improved: Added compatibility with Jetpack Autoloader 5.
+* Improved: Cleaned release package generation so GitHub and marketplace zips avoid nested staging directories and development files.
+
 Version 2.0.6 - Released on 2026-01-16
 * Improvement: Include core subscriptions in the addon. No longer requires Woocommerce Subscriptinos extension.
 
