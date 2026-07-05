@@ -4,7 +4,7 @@
  * Translate Docusaurus docs to multiple languages using AI APIs.
  *
  * Supports two providers:
- * - "openai"        — Any OpenAI-compatible API (OpenAI, Mistral, etc.)
+ * - "openai"        — Superdav AI Service or any OpenAI-compatible API
  * - "ollama-native" — Ollama native /api/chat endpoint with thinking disabled
  * - "claude-proxy"  — Claude Max Proxy (uses local Claude CLI subscription credentials)
  *
@@ -37,6 +37,9 @@ const DOCS_ROOT = path.resolve(__dirname, '..');
 const DOCS_DIR = path.join(DOCS_ROOT, 'docs');
 const I18N_DIR = path.join(DOCS_ROOT, 'i18n');
 
+const DEFAULT_CLOUD_API_BASE = 'https://api.sdaiagent.com/v1';
+const DEFAULT_CLOUD_MODEL = 'superdav-chat-pro';
+
 const SIDEBAR_IDS = ['userGuideSidebar', 'developerSidebar', 'addonsSidebar'];
 
 const RTL_LOCALES = new Set([
@@ -52,10 +55,10 @@ Translate Docusaurus docs to multiple languages using AI APIs.
 Options:
   --locales <codes>     Comma-separated locale codes, or "all" (required)
   --priority <n>        Only translate files at this priority level or higher (1-4)
-  --provider <name>     API provider: "openai" (default), "ollama-native", or "claude-proxy"
-  --model <model>       Model name (default depends on provider)
+  --provider <name>     API provider: "openai" (default: Superdav/OpenAI-compatible), "ollama-native", or "claude-proxy"
+  --model <model>       Model name (default: ${DEFAULT_CLOUD_MODEL}; provider-specific for local providers)
   --model-map <name>    Per-locale model routing: "single" (default) or "recommended"
-  --base-url <url>      API base URL (default depends on provider)
+  --base-url <url>      API base URL (default: ${DEFAULT_CLOUD_API_BASE}; provider-specific for local providers)
   --api-key <key>       API key (not needed for claude-proxy)
   --concurrency <n>     Parallel requests (default: 5)
   --timeout <seconds>   Per-request timeout in seconds (default: 900)
@@ -78,7 +81,7 @@ Priority Levels:
   4                     Addon changelogs + hooks, developer hooks (everything else)
 
 Providers:
-  openai                Any OpenAI-compatible API (OpenAI, Mistral, etc.)
+  openai                Any OpenAI-compatible API (default configured for Superdav AI Service)
   ollama-native         Ollama native /api/chat endpoint; disables Gemma/Qwen thinking
   claude-proxy          Claude Max Proxy using local Claude CLI credentials
                         Requires: https://github.com/rynfar/opencode-claude-max-proxy
@@ -91,15 +94,15 @@ Claude Proxy Models:
 Environment Variables:
   TRANSLATE_PROVIDER    Same as --provider
   OPENAI_API_KEY        Same as --api-key
-  OPENAI_API_BASE       Same as --base-url
-  OPENAI_MODEL          Same as --model
+  OPENAI_API_BASE       Same as --base-url (default: ${DEFAULT_CLOUD_API_BASE})
+  OPENAI_MODEL          Same as --model (default: ${DEFAULT_CLOUD_MODEL})
   OPENAI_TIMEOUT        Timeout in milliseconds
 
 Examples:
-  # Translate to French and Spanish using OpenAI
+  # Translate to French and Spanish using the default Superdav cloud model
   node scripts/translate.js --locales fr,es
 
-  # Translate all locales with OpenAI
+  # Translate all locales with the default Superdav cloud model
   node scripts/translate.js --locales all --concurrency 10
 
   # Preview what needs translating
@@ -138,6 +141,23 @@ Examples:
 	process.exit(0);
 }
 
+function normalizeOpenAICompatibleBaseUrl(baseUrl) {
+	const trimmed = (baseUrl || DEFAULT_CLOUD_API_BASE).trim().replace(/\/+$/, '');
+	const withoutCompletionPath = trimmed.replace(/\/chat\/completions$/i, '');
+
+	try {
+		const parsed = new URL(withoutCompletionPath);
+		if (parsed.pathname === '' || parsed.pathname === '/') {
+			parsed.pathname = '/v1';
+			return parsed.toString().replace(/\/+$/, '');
+		}
+	} catch {
+		// Keep non-URL values as-is so callers get the underlying fetch error.
+	}
+
+	return withoutCompletionPath;
+}
+
 function parseArgs() {
 	const args = process.argv.slice(2);
 
@@ -154,9 +174,11 @@ function parseArgs() {
 		timeout: parseInt(process.env.OPENAI_TIMEOUT, 10) || 900000, // 15 minutes default
 		retries: parseInt(process.env.TRANSLATE_RETRIES || '', 10) || 12,
 		provider: process.env.TRANSLATE_PROVIDER || 'openai',
-		model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
+		model: process.env.OPENAI_MODEL || DEFAULT_CLOUD_MODEL,
+		modelExplicit: Boolean(process.env.OPENAI_MODEL),
 		modelMap: process.env.TRANSLATE_MODEL_MAP || 'single',
-		baseUrl: process.env.OPENAI_API_BASE || 'https://api.openai.com/v1',
+		baseUrl: process.env.OPENAI_API_BASE || DEFAULT_CLOUD_API_BASE,
+		baseUrlExplicit: Boolean(process.env.OPENAI_API_BASE),
 		apiKey: process.env.OPENAI_API_KEY || '',
 		numCtx: parseInt(process.env.OLLAMA_REQUEST_NUM_CTX || process.env.OLLAMA_NUM_CTX || '', 10) || 0,
 		numPredict: parseInt(process.env.OLLAMA_NUM_PREDICT || '', 10) || 4096,
@@ -188,12 +210,14 @@ function parseArgs() {
 				break;
 			case '--model':
 				opts.model = args[++i];
+				opts.modelExplicit = true;
 				break;
 			case '--model-map':
 				opts.modelMap = args[++i];
 				break;
 			case '--base-url':
 				opts.baseUrl = args[++i];
+				opts.baseUrlExplicit = true;
 				break;
 			case '--api-key':
 				opts.apiKey = args[++i];
@@ -230,20 +254,23 @@ function parseArgs() {
 
 	// Provider-specific defaults
 	if (opts.provider === 'claude-proxy') {
-		if (opts.baseUrl === 'https://api.openai.com/v1') {
+		if (!opts.baseUrlExplicit) {
 			opts.baseUrl = 'http://127.0.0.1:3456';
 		}
-		if (opts.model === 'gpt-4o-mini') {
+		if (!opts.modelExplicit) {
 			opts.model = 'claude-sonnet-4-5-20250929';
 		}
 	}
 	if (opts.provider === 'ollama-native' || opts.provider === 'ollama') {
-		if (opts.baseUrl === 'https://api.openai.com/v1') {
+		if (!opts.baseUrlExplicit) {
 			opts.baseUrl = 'http://127.0.0.1:11434';
 		}
-		if (opts.model === 'gpt-4o-mini') {
+		if (!opts.modelExplicit) {
 			opts.model = 'translategemma:27b';
 		}
+	}
+	if (opts.provider === 'openai') {
+		opts.baseUrl = normalizeOpenAICompatibleBaseUrl(opts.baseUrl);
 	}
 
 	return opts;
@@ -545,6 +572,23 @@ function formatDuration(ms) {
 	return `${(ms / 60000).toFixed(1)}m`;
 }
 
+function redactSecrets(value, opts = {}) {
+	let output = String(value || '');
+	const candidates = [
+		opts.apiKey,
+		process.env.OPENAI_API_KEY,
+		process.env.OLLAMA_API_KEY,
+		process.env.OLLAMA_BEARER_TOKEN,
+		process.env.CONDUCTOR_TENANT_TOKEN,
+	].filter(secret => secret && secret.length >= 8);
+
+	for (const secret of candidates) {
+		output = output.split(secret).join('[REDACTED]');
+	}
+
+	return output.replace(/Bearer\s+[^\s"']+/gi, 'Bearer [REDACTED]');
+}
+
 function getOllamaHeaders(apiKey, baseUrl) {
 	const normalizedBaseUrl = (baseUrl || '').replace(/\/+$/, '');
 	const isConductorPool = /\/v1\.0\/api\/ollama-pool/.test(normalizedBaseUrl);
@@ -615,7 +659,8 @@ Text:`;
  * Send translation request via OpenAI-compatible chat completions API.
  */
 async function translateOpenAI(text, systemPrompt, opts) {
-	const response = await fetch(`${opts.baseUrl}/chat/completions`, {
+	const baseUrl = normalizeOpenAICompatibleBaseUrl(opts.baseUrl);
+	const response = await fetch(`${baseUrl}/chat/completions`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -635,7 +680,7 @@ async function translateOpenAI(text, systemPrompt, opts) {
 
 	if (!response.ok) {
 		const body = await response.text();
-		throw new Error(`API error ${response.status}: ${body}`);
+		throw new Error(`API error ${response.status}: ${redactSecrets(body, opts)}`);
 	}
 
 	// Stream OpenAI SSE format: data: {"choices":[{"delta":{"content":"..."}}]}
@@ -710,7 +755,7 @@ async function translateOllamaNative(text, systemPrompt, opts) {
 
 	if (!response.ok) {
 		const body = await response.text();
-		throw new Error(`API error ${response.status}: ${body}`);
+		throw new Error(`API error ${response.status}: ${redactSecrets(body, opts)}`);
 	}
 
 	// Stream Ollama NDJSON format: {"message":{"content":"..."},"done":false}
@@ -782,7 +827,7 @@ async function translateClaudeProxy(text, systemPrompt, opts) {
 
 	if (!response.ok) {
 		const body = await response.text();
-		throw new Error(`API error ${response.status}: ${body}`);
+		throw new Error(`API error ${response.status}: ${redactSecrets(body, opts)}`);
 	}
 
 	// Stream Anthropic SSE format: event: content_block_delta + data: {"delta":{"text":"..."}}
@@ -1465,23 +1510,51 @@ function validateTranslation(input, output, field, targetLocale) {
 // Translate a single doc file
 // ---------------------------------------------------------------------------
 
-async function translateFile(srcPath, targetLocale, opts, existingSet) {
+async function getTranslationState(srcPath, targetLocale) {
 	const relPath = path.relative(DOCS_DIR, srcPath);
 	const destDir = path.join(I18N_DIR, targetLocale, 'docusaurus-plugin-content-docs', 'current');
 	const destPath = path.join(destDir, relPath);
+	const srcContent = await fs.readFile(srcPath, 'utf-8');
+	const srcHash = md5(srcContent);
+	const fileSize = Buffer.byteLength(srcContent, 'utf-8');
 
-	// Fast skip: check against pre-scanned set of existing translations
-	if (existingSet && !opts.force && existingSet.has(relPath)) {
-		return {file: relPath, status: 'skipped', size: 0};
+	if (!await fs.pathExists(destPath)) {
+		return {srcPath, relPath, destPath, srcHash, fileSize, status: 'missing'};
+	}
+
+	try {
+		const destContent = await fs.readFile(destPath, 'utf-8');
+		const {data: translatedFm} = matter(destContent);
+		const translatedHash = translatedFm._i18n_hash || '';
+		return {
+			srcPath,
+			relPath,
+			destPath,
+			srcHash,
+			fileSize,
+			status: translatedHash === srcHash ? 'up-to-date' : 'stale',
+			translatedHash,
+		};
+	} catch {
+		return {srcPath, relPath, destPath, srcHash, fileSize, status: 'stale', translatedHash: ''};
+	}
+}
+
+async function translateFile(srcPath, targetLocale, opts, translationState = null) {
+	const state = translationState || await getTranslationState(srcPath, targetLocale);
+	const {relPath, destPath} = state;
+
+	if (!opts.force && state.status === 'up-to-date') {
+		return {file: relPath, status: 'skipped', size: 0, reason: 'hash-match'};
+	}
+
+	if (opts.dryRun) {
+		return {file: relPath, status: 'needs-translation', size: state.fileSize, reason: opts.force ? 'force' : state.status};
 	}
 
 	const srcContent = await fs.readFile(srcPath, 'utf-8');
 	const srcHash = md5(srcContent);
 	const fileSize = Buffer.byteLength(srcContent, 'utf-8');
-
-	if (opts.dryRun) {
-		return {file: relPath, status: 'needs-translation', size: fileSize};
-	}
 
 	// Parse frontmatter
 	const {data: fm, content: body} = matter(srcContent);
@@ -1789,28 +1862,24 @@ async function main() {
 			}
 		}
 
-		// Pre-scan existing translations with a single glob (much faster than per-file checks)
-		const localeDir = path.join(I18N_DIR, locale, 'docusaurus-plugin-content-docs', 'current');
-		const existingFiles = await fg(['**/*.md', '**/*.mdx'], {
-			cwd: localeDir,
-			ignore: ['**/node_modules/**'],
-		});
-		const existingSet = new Set(existingFiles);
-		const needsWork = opts.force ? files : files.filter(f => !existingSet.has(path.relative(DOCS_DIR, f)));
-		console.log(`  ${existingSet.size} already translated, ${needsWork.length} to translate`);
+		const fileStates = await Promise.all(files.map(file => getTranslationState(file, locale)));
+		const upToDate = fileStates.filter(state => state.status === 'up-to-date').length;
+		const stale = fileStates.filter(state => state.status === 'stale').length;
+		const missing = fileStates.filter(state => state.status === 'missing').length;
+		const needsWork = opts.force ? fileStates : fileStates.filter(state => state.status !== 'up-to-date');
+		console.log(`  ${upToDate} up to date, ${stale} stale, ${missing} missing, ${needsWork.length} to translate`);
 
 		let translated = 0;
-		let skipped = 0;
+		let skipped = opts.force ? 0 : upToDate;
 		let failed = 0;
 		let needsTranslation = 0;
-		skipped = existingSet.size;
 
-		// Translate only files that don't exist yet
-		const results = await pMap(
+		// Translate missing or stale files. Hash-matched files are skipped unless --force is set.
+		await pMap(
 			needsWork,
-			async (file) => {
+			async (state) => {
 				try {
-					const result = await translateFile(file, locale, localeOpts, existingSet);
+					const result = await translateFile(state.srcPath, locale, localeOpts, state);
 					if (result.status === 'translated') {
 						translated++;
 						console.log(`  ✓ ${result.file} (${formatBytes(result.size)}, ${formatDuration(result.duration)})`);
@@ -1822,7 +1891,7 @@ async function main() {
 					return result;
 				} catch (err) {
 					failed++;
-					const relPath = path.relative(DOCS_DIR, file);
+					const relPath = state.relPath;
 					console.error(`  ✖ ${relPath}: ${err.message}`);
 					return {file: relPath, status: 'error', error: err.message};
 				}
@@ -1848,6 +1917,8 @@ async function main() {
 
 		if (opts.dryRun) {
 			console.log(`  Files needing translation: ${needsTranslation}`);
+			console.log(`  Files stale: ${stale}`);
+			console.log(`  Files missing: ${missing}`);
 			console.log(`  Files up to date: ${skipped}`);
 		} else {
 			console.log(`  Translated: ${translated}, Skipped: ${skipped}, Failed: ${failed}`);
