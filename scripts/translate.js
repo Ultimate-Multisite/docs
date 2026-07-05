@@ -660,6 +660,16 @@ Text:`;
  */
 async function translateOpenAI(text, systemPrompt, opts) {
 	const baseUrl = normalizeOpenAICompatibleBaseUrl(opts.baseUrl);
+	const requestBody = {
+		model: opts.model,
+		temperature: 0.1,
+		stream: false,
+		messages: [
+			{role: 'system', content: systemPrompt},
+			{role: 'user', content: text},
+		],
+	};
+
 	const response = await fetch(`${baseUrl}/chat/completions`, {
 		method: 'POST',
 		headers: {
@@ -667,15 +677,7 @@ async function translateOpenAI(text, systemPrompt, opts) {
 			'Authorization': `Bearer ${opts.apiKey}`,
 		},
 		signal: AbortSignal.timeout(opts.timeout),
-		body: JSON.stringify({
-			model: opts.model,
-			temperature: 0.1,
-			stream: true,
-			messages: [
-				{role: 'system', content: systemPrompt},
-				{role: 'user', content: text},
-			],
-		}),
+		body: JSON.stringify(requestBody),
 	});
 
 	if (!response.ok) {
@@ -683,39 +685,44 @@ async function translateOpenAI(text, systemPrompt, opts) {
 		throw new Error(`API error ${response.status}: ${redactSecrets(body, opts)}`);
 	}
 
-	// Stream OpenAI SSE format: data: {"choices":[{"delta":{"content":"..."}}]}
-	const reader = response.body.getReader();
-	const decoder = new TextDecoder();
-	let content = '';
-	let buffer = '';
-
-	while (true) {
-		const {done, value} = await reader.read();
-		if (done) break;
-
-		buffer += decoder.decode(value, {stream: true});
-		const lines = buffer.split('\n');
-		buffer = lines.pop() || '';
-
-		for (const line of lines) {
-			const trimmed = line.trim();
-			if (!trimmed || trimmed === 'data: [DONE]') continue;
-			if (!trimmed.startsWith('data: ')) continue;
-
-			try {
-				const json = JSON.parse(trimmed.slice(6));
-				const delta = json.choices?.[0]?.delta?.content;
-				if (delta) {
-					content += delta;
-					if (opts.debug) process.stdout.write(delta);
-				}
-			} catch {
-				// Skip malformed JSON chunks
-			}
-		}
+	const body = await response.text();
+	let json;
+	try {
+		json = JSON.parse(body);
+	} catch {
+		throw new Error(`API returned non-JSON response: ${redactSecrets(body.slice(0, 1000), opts)}`);
 	}
 
+	if (json.error) {
+		const message = json.error.message || JSON.stringify(json.error);
+		throw new Error(`API error response: ${redactSecrets(message, opts)}`);
+	}
+
+	const content = extractOpenAIMessageContent(json);
+	if (!content) {
+		throw new Error('API response did not include choices[0].message.content');
+	}
+
+	if (opts.debug) process.stdout.write(content);
 	return content;
+}
+
+function extractOpenAIMessageContent(json) {
+	const choice = json.choices?.[0];
+	const content = choice?.message?.content ?? choice?.text;
+
+	if (typeof content === 'string') {
+		return content;
+	}
+
+	if (Array.isArray(content)) {
+		return content.map(part => {
+			if (typeof part === 'string') return part;
+			return part?.text || part?.content || '';
+		}).join('');
+	}
+
+	return '';
 }
 
 /**
