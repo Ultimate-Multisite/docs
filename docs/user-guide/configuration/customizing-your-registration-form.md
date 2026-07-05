@@ -75,7 +75,7 @@ As we mentioned before, you can create checkout forms for different purposes. In
 
 After navigating to the checkout form editor, give your form a name (that will be used for internal reference only) and a slug (used to create shortcakes, for example).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Checkout form editor with name and slug fields](/img/config/checkout-form-name-slug.png)
 
 Forms are made of steps and fields. You can add a new step by clicking on **Add New Checkout Step**.
 
@@ -95,13 +95,15 @@ Finally, configure the step style. These are optional fields.
 
 Now, it’s time to add fields to our first step. Just click to **Add New Field** and select the type of section you want.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Add New Field button](/img/config/checkout-form-add-field-button.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
 
 Each field has different parameters to be filled. For this first entrance, we will select the **Username** field.
 
 ![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
 
 You can add as many steps and fields as you need. To display your products for your customers to pick one, use the Pricing Table field. If you want to let your clients choose a template, add the Template Selection field. And so on.
+
+![Checkout form editor with template selection field](/img/config/checkout-form-with-template-field.png)
 
 _**Note:** If you create a product after creating your checkout form, you will need to add the product in the Pricing table section. If you don't add it, the product will not appear to your customers on the registration page._
 
