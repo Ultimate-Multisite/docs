@@ -43,22 +43,25 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ vars.OPENAI_API_BASE || secrets.OPENAI_API_BASE || 'https://api.sdaiagent.com/v1' }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'superdav-chat-pro' }}
+          LANGUAGES: ${{ inputs.languages }}
+          FORCE: ${{ inputs.force }}
+          DEBUG: ${{ inputs.debug }}
         run: |
-          ARGS=""
+          ARGS=()
 
-          if [ "${{ inputs.languages }}" != "all" ]; then
-            ARGS="$ARGS --locales ${{ inputs.languages }}"
+          if [ "$LANGUAGES" != "all" ]; then
+            ARGS+=(--locales "$LANGUAGES")
           fi
 
-          if [ "${{ inputs.force }}" == "true" ]; then
-            ARGS="$ARGS --force"
+          if [ "$FORCE" == "true" ]; then
+            ARGS+=(--force)
           fi
 
-          if [ "${{ inputs.debug }}" == "true" ]; then
-            ARGS="$ARGS --debug"
+          if [ "$DEBUG" == "true" ]; then
+            ARGS+=(--debug)
           fi
 
-          node scripts/translate.js --concurrency 2 --commit $ARGS
+          node scripts/translate.js --concurrency 2 --commit "${ARGS[@]}"
 
       - name: Push translations
         if: always() && !cancelled()
