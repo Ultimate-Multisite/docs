@@ -1,6 +1,7 @@
 node_modules/
 build/
 .docusaurus/
+static/ai/*.jsonl
 wp-hooks-docs/
 .hooks-tmp/
 .cache-loader/
