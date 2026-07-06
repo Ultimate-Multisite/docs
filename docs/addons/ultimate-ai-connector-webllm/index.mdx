@@ -111,6 +111,12 @@ The addon installs an `apiFetch` middleware that intercepts WordPress REST API r
 
 This means plugins and themes that use the standard WordPress `apiFetch` API to call AI endpoints will automatically benefit from the browser-side model when it is available, with no code changes required.
 
+## Metered Usage Notes
+
+If WebLLM requests are routed through the WordPress AI Client SDK event flow and report token usage, they can be tracked by [Metered Plans AI Usage Metering](../metered-plans/ai-usage-metering).
+
+Because WebLLM runs in the customer's browser and does not usually create provider API cost, decide whether you want to price it as a premium feature, include it for free, or leave it unmetered. If you do meter WebLLM models, add the model IDs to **Multisite Ultimate → AI Token Billing** so the models remain available on subsites.
+
 ## Hooks and Filters
 
 ### Filters
