@@ -241,6 +241,9 @@ jobs:
         run: bash scripts/generate-hooks.sh
         continue-on-error: true
 
+      - name: Build AI assistant knowledge manifests
+        run: node scripts/build-ai-docs-manifests.js
+
       - name: Upload prepared docs source
         uses: actions/upload-artifact@v4
         with:
