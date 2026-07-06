@@ -106,6 +106,12 @@ All settings are under **Gratis AI Agent → Settings** in the WordPress admin:
 | **Ability Timeout** | Maximum seconds an individual ability can run (default 30) |
 | **Debug Logging** | Log ability calls and agent reasoning to the WordPress debug log |
 
+## Metered AI Usage
+
+On multisite networks, Gratis AI Agent can be paired with [Metered Plans AI Usage Metering](../metered-plans/ai-usage-metering) so customer sites receive an included AI allowance and pay for usage above that allowance.
+
+When Metered Plans is active, AI requests made through the WordPress AI Client SDK can be attributed to the current subsite, customer, membership, provider, and model. The AI Agent UI can also use the Metered Plans payment-method status endpoint to warn no-card customers before they reach their AI allowance.
+
 ## Options Management Safety Blocklist
 
 The Options Management ability includes a built-in blocklist that prevents the agent from reading or writing sensitive WordPress options. The default blocklist covers:

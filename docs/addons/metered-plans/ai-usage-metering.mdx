@@ -1,0 +1,193 @@
+---
+title: "AI Usage Metering"
+sidebar_position: 2
+---
+
+# AI Usage Metering
+
+Use AI usage metering when you want to sell AI features to customer sites without absorbing unpredictable provider costs. Metered Plans records each completed AI generation request, converts prompt and completion tokens into a currency value, applies the customer's included allowance, and bills only the overage.
+
+This works especially well for networks that offer [Gratis AI Agent](../gratis-ai-agent/), OpenAI-compatible connectors, Anthropic/Google/OpenAI OAuth-pool providers, Ollama, or other WordPress AI Client SDK integrations.
+
+## What You Can Sell
+
+Common commercial models include:
+
+| Model | How to configure it |
+|---|---|
+| Included AI allowance | Give each plan an AI Usage allowance such as 5, 10, or 25 in your site currency per billing cycle. |
+| Pass-through usage | Set the AI Usage Overage Markup to `1.0` so customers pay roughly the provider cost above their allowance. |
+| Marked-up usage | Set the markup above `1.0`, such as `1.5`, to add margin on overage spend. |
+| Premium AI plan | Give higher-tier plans a larger allowance and optionally make more expensive models available by adding rates for them. |
+| Free trial with upgrade prompt | Enable Hard Cutoff so customers without a payment method are stopped at the allowance and prompted to add billing details. |
+
+## How Billing Works
+
+AI usage is tracked as the `ai_spend` metered resource.
+
+For every completed AI request, Metered Plans stores:
+
+- site ID
+- customer ID
+- membership ID
+- provider ID
+- model ID
+- input tokens
+- output tokens
+- calculated request cost
+- current billing period
+
+The request cost is calculated from the model's configured rates:
+
+```text
+input_cost = input_tokens / 1,000,000 × input_rate
+output_cost = output_tokens / 1,000,000 × output_rate
+request_cost = input_cost + output_cost
+```
+
+At billing time, overage is calculated against the plan allowance:
+
+```text
+billable_overage = max(0, current_ai_spend - allowance) × overage_markup
+```
+
+### Example
+
+Suppose a plan includes 10.00 of AI usage per month and charges a `1.5` markup on overage.
+
+If the customer uses 14.20 of AI provider cost during the billing period:
+
+```text
+overage_spend = 14.20 - 10.00 = 4.20
+billable_overage = 4.20 × 1.5 = 6.30
+```
+
+The customer is billed 6.30 as AI Usage overage for that period.
+
+## Setup Checklist
+
+### 1. Configure AI Connector Access
+
+Configure AI providers on the main site or network-approved connector screen before selling AI usage to subsites.
+
+Metered Plans enforces connector settings from the main site to subsites. Customer sites inherit the approved provider configuration instead of storing their own provider keys. This keeps billing, provider access, and model availability under network-owner control.
+
+### 2. Configure Per-Model Token Rates
+
+1. Open **Network Admin → Multisite Ultimate → AI Token Billing**.
+2. Review the seeded model rates.
+3. Add every model you want customers to be able to use.
+4. Enter separate **Input Rate** and **Output Rate** values per 1 million tokens.
+5. Save the rate table.
+
+Use the exact model IDs returned by your connector where possible, such as `gpt-4o`, `gpt-4o-mini`, or `claude-sonnet-4`.
+
+Metered Plans also supports prefix matching. A rate for `claude-sonnet-4` can match a versioned model ID that starts with that prefix.
+
+### 3. Enable AI Usage on a Product or Membership
+
+1. Open the product or membership in Multisite Ultimate.
+2. Open the **Metered Plans** section.
+3. Enable **Metered Plans**.
+4. Enable **AI Usage Metering**.
+5. Set the **AI Usage Allowance** in your site currency for each billing cycle.
+6. Set **AI Usage Overage Markup**.
+7. Decide whether to enable **Hard Cutoff for AI Usage**.
+8. Save the product or membership.
+
+### 4. Test the Customer Path
+
+Before launching a paid AI plan:
+
+1. Create or assign a test membership on a customer subsite.
+2. Confirm the subsite can use the approved AI provider.
+3. Run a small AI request.
+4. Open **Dashboard → AI Usage** on the subsite.
+5. Confirm current spend, allowance, remaining allowance, token totals, and projected overage update as expected.
+6. Test the no-payment-method path if you sell free trials.
+
+## Hard Cutoff and Payment Methods
+
+The Hard Cutoff option is designed for free-to-paid conversion.
+
+When Hard Cutoff is enabled:
+
+- Customers with no payment method are warned at about 80% of their allowance.
+- Customers with no payment method can be blocked once they reach the allowance.
+- Blocked customers are prompted to add a payment method through checkout.
+- Customers with a payment method can continue using AI and pay overage instead of being blocked.
+
+This lets you offer a safe free AI allowance while allowing paying customers to keep working without interruption.
+
+## Model Availability and Unpriced Models
+
+Only priced models should be available on customer subsites.
+
+On subsites, Metered Plans filters the AI Agent provider response so unpriced models do not appear in model pickers. It also blocks generation requests for unpriced models at runtime. This prevents a customer from selecting or programmatically requesting a model with no billing rate, which would otherwise produce zero-cost usage.
+
+Network admins can still see and configure unpriced models on the main site so new models can be added deliberately.
+
+## Customer Experience
+
+Customers can open **Dashboard → AI Usage** on their subsite to see:
+
+- current AI spend for the billing period
+- included allowance
+- remaining allowance
+- overage amount when allowance is exceeded
+- usage progress percentage
+- input token count
+- output token count
+- total token count
+- last model used
+- projected overage based on current usage rate
+
+The current storage model keeps cumulative token totals for the period and the latest provider/model identifiers on the usage record. Treat detailed per-request or per-model analytics as an operational enhancement rather than a current billing requirement.
+
+## AI Agent UI Integration
+
+Metered Plans exposes a REST status endpoint for companion AI interfaces:
+
+```text
+GET /wp-json/sd-metered/v1/payment-method-status
+```
+
+The response tells the UI whether the current subsite is metered, whether a payment method exists, current usage, allowance, usage ratio, severity, checkout URL, and membership hash.
+
+Use this endpoint to show in-product warnings before a customer is blocked or to send them directly to checkout to add a payment method.
+
+## Developer Hooks and Helpers
+
+Use [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) to modify the final model-rate table before costs are calculated.
+
+Use [`wu_connector_enforcement_option_keys`](./hooks/Filters/wu_connector_enforcement_option_keys) when a custom AI provider stores credentials in additional WordPress options that should inherit from the main site.
+
+Useful helper functions:
+
+```php
+// Current billing-period AI spend for a site.
+$spend = wu_get_current_ai_spend($site_id);
+
+// Cumulative token and cost breakdown for the current period.
+$breakdown = wu_get_ai_usage_breakdown($site_id);
+
+// All rates, or a single model's input/output rates.
+$all_rates = wu_get_ai_model_rates();
+$gpt_rates = wu_get_ai_model_rates('gpt-4o');
+
+// Whether the current site has reached its configured hard cutoff.
+$is_blocked = wu_is_ai_hard_cutoff_active($site_id);
+```
+
+## Launch Checklist
+
+Before advertising AI usage as a paid feature, confirm:
+
+- every customer-facing model has an input and output rate
+- unpriced experimental models are hidden from subsites
+- each paid plan has an AI Usage allowance
+- the overage markup matches your margin target
+- Hard Cutoff is enabled for free/no-card plans if you do not want unpaid overage
+- payment gateways are configured for recurring and overage billing
+- the customer AI Usage dashboard is visible on a test subsite
+- the AI Agent payment-method banner can read the metered status endpoint when used

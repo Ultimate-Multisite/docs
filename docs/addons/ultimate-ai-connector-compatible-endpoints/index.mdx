@@ -72,6 +72,12 @@ When a request to the primary provider fails — due to a timeout, rate limit, o
 
 Fallback is transparent to the calling plugin or theme — they receive either a successful response or a final error, regardless of how many providers were tried.
 
+### Metered Billing
+
+Pair this connector with [Metered Plans AI Usage Metering](../metered-plans/ai-usage-metering) when you want to resell OpenAI-compatible usage to customer subsites.
+
+Metered Plans uses the model IDs returned by this connector to calculate input-token and output-token cost. Add each customer-facing model to **Multisite Ultimate → AI Token Billing**, then enable **AI Usage Metering** on the relevant product or membership. Unpriced models are hidden from subsite model pickers and blocked at runtime.
+
 ### Provider Configuration Reference
 
 | Field | Required | Description |
