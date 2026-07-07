@@ -19,8 +19,9 @@ function appendAssistantStylesheet() {
 }
 
 function appendAssistantScript() {
-  if (document.getElementById(SCRIPT_ID)) {
-    return;
+  const existingScript = document.getElementById(SCRIPT_ID);
+  if (existingScript) {
+    return existingScript;
   }
 
   const script = document.createElement('script');
@@ -33,12 +34,32 @@ function appendAssistantScript() {
   script.dataset.locale = document.documentElement.lang || 'en';
   script.dataset.greeting = 'Ask me about Ultimate Multisite docs.';
   document.body.appendChild(script);
+
+  return script;
+}
+
+function syncAssistantTheme(script) {
+  script.dataset.theme = document.documentElement.dataset.theme || 'light';
 }
 
 export default function Root({children}) {
   useEffect(() => {
     appendAssistantStylesheet();
-    appendAssistantScript();
+    const script = appendAssistantScript();
+    syncAssistantTheme(script);
+
+    const observer = new MutationObserver(() => {
+      syncAssistantTheme(script);
+    });
+
+    observer.observe(document.documentElement, {
+      attributeFilter: ['data-theme'],
+      attributes: true,
+    });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return <>{children}</>;
