@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const matter = require('gray-matter');
 const path = require('path');
 
 const rootDir = process.cwd();
 const docsDir = path.join(rootDir, 'docs');
 const outputDir = path.join(rootDir, 'static', 'ai');
-const publicBaseUrl = 'https://ultimatemultisite.com/docs/';
+const docusaurusConfig = require(path.join(rootDir, 'docusaurus.config.js'));
+const publicBaseUrl = new URL(docusaurusConfig.baseUrl, docusaurusConfig.url).href;
 
 const docsManifestPath = path.join(outputDir, 'ums-docs-manifest.jsonl');
 const codeManifestPath = path.join(outputDir, 'ums-code-reference-manifest.jsonl');
@@ -31,29 +33,16 @@ function listMarkdownFiles(dir) {
   return files.sort();
 }
 
-function extractFrontmatter(content) {
-  if (!content.startsWith('---\n')) {
-    return {};
+function parseDocument(content, filePath) {
+  try {
+    return matter(content);
+  } catch (error) {
+    throw new Error(`Failed to parse frontmatter in ${path.relative(rootDir, filePath)}: ${error.message}`);
   }
+}
 
-  const end = content.indexOf('\n---\n', 4);
-  if (end === -1) {
-    return {};
-  }
-
-  const metadata = {};
-  const lines = content.slice(4, end).split('\n');
-  for (const line of lines) {
-    const match = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-    if (!match) {
-      continue;
-    }
-
-    const value = match[2].trim().replace(/^['"]|['"]$/g, '');
-    metadata[match[1]] = value;
-  }
-
-  return metadata;
+function extractFrontmatter(content, filePath) {
+  return parseDocument(content, filePath).data || {};
 }
 
 function routeFor(relativePath) {
@@ -98,33 +87,45 @@ function isCodeReference(relativePath) {
 
 function recordFor(filePath) {
   const relativePath = path.relative(docsDir, filePath).replace(/\\/g, '/');
-  const content = fs.readFileSync(filePath, 'utf8');
-  const frontmatter = extractFrontmatter(content);
+  let content;
+
+  try {
+    content = fs.readFileSync(filePath, 'utf8');
+  } catch (error) {
+    throw new Error(`Failed to read docs source ${relativePath}: ${error.message}`);
+  }
+
+  const parsedDocument = parseDocument(content, filePath);
+  const frontmatter = extractFrontmatter(content, filePath);
   const route = routeFor(relativePath);
+  const url = publicUrlFor(route);
 
   return {
     id: `docs:${route || 'index'}`,
     path: relativePath,
     title: titleFor(content, frontmatter, relativePath),
-    route: publicUrlFor(route),
-    url: publicUrlFor(route),
+    url,
     locale: 'en',
     metadata: {
       path: relativePath,
-      route,
+      slug: route,
       source: 'docusaurus',
       code_reference: isCodeReference(relativePath),
     },
-    content,
+    content: parsedDocument.content,
   };
 }
 
 function writeJsonl(filePath, records) {
-  fs.writeFileSync(
-    filePath,
-    `${records.map((record) => JSON.stringify(record)).join('\n')}\n`,
-    'utf8'
-  );
+  try {
+    fs.writeFileSync(
+      filePath,
+      `${records.map((record) => JSON.stringify(record)).join('\n')}\n`,
+      'utf8'
+    );
+  } catch (error) {
+    throw new Error(`Failed to write manifest ${path.relative(rootDir, filePath)}: ${error.message}`);
+  }
 }
 
 fs.mkdirSync(outputDir, {recursive: true});
