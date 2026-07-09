@@ -5,7 +5,7 @@ sidebar_position: 12
 
 # Built-in Agents
 
-Gratis AI Agent v1.9.0 ships five built-in agents, each pre-configured with a focused set of tools, a tailored system prompt, and starter suggestions matched to common tasks in that area. Switching between agents changes what the assistant can do and how it responds — without any configuration on your part. Superdav AI Agent v1.18.0 can add schedule-aware tools, reminder records, approval gates, and SMS notifications to these workflows when the related integrations are configured.
+Gratis AI Agent v1.9.0 ships five built-in agents, each pre-configured with a focused set of tools, a tailored system prompt, and starter suggestions matched to common tasks in that area. Switching between agents changes what the assistant can do and how it responds — without any configuration on your part. Superdav AI Agent v1.19.0 can add customer-facing assistant modes, documentation-chat knowledge, schedule-aware tools, reminder records, approval gates, and SMS notifications to these workflows when the related integrations are configured.
 
 ## What Is an Agent?
 
@@ -30,7 +30,7 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 
 **Focus:** Creating and editing posts, pages, and contact forms.
 
-**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. With Superdav AI Agent v1.18.0 integrations enabled, configured calendar context, approval gates, reminders, and SMS notification tools may also be available to approved workflows.
+**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. With Superdav AI Agent v1.19.0 integrations enabled, configured calendar context, approval gates, reminders, SMS notification tools, customer-chat setup, and documentation knowledge tools may also be available to approved workflows.
 
 **What it does well:**
 - Drafting and publishing blog posts from a brief or outline
@@ -38,12 +38,14 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 - Building contact and enquiry forms
 - Setting featured images on posts from a URL or search
 - Drafting event follow-up messages from configured Google Calendar context, then pausing for approval before sending notifications
+- Drafting customer-facing help copy that aligns with imported documentation knowledge
 
 **Starter suggestions:**
 - *Write a 500-word blog post about the benefits of WordPress multisite.*
 - *Create an About, Services, and Contact page and publish them.*
 - *Add a booking enquiry form to the Contact page.*
 - *Draft a reminder for attendees on tomorrow's configured calendar event and wait for approval before sending it.*
+- *Write a short customer-facing answer based on our imported documentation.*
 
 ---
 
@@ -51,7 +53,7 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 
 **Focus:** End-to-end website creation from a single prompt.
 
-**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. With Superdav AI Agent v1.18.0, configured managed-service, approval, reminder, calendar, and SMS tools may be available where administrators enable them.
+**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. With Superdav AI Agent v1.19.0, configured managed-service, approval, reminder, calendar, SMS, public-chat, docs-widget, and customer-chat setup tools may be available where administrators enable them.
 
 **What it does well:**
 - Generating a multi-phase site build plan for a described business type
@@ -60,6 +62,7 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 - Installing recommended plugins as part of the build
 - Creating contact forms directly from the chat interface (Superdav AI Agent v1.10.0+)
 - Coordinating launch reminders or attendee follow-up without duplicate notifications when approval gates and reminder records are enabled
+- Preparing customer chat and docs widget pages after administrators configure public chat and documentation imports
 
 **Starter suggestions:**
 - *Build a photography portfolio site with a gallery post type, a booking page, and a contact form.*
@@ -67,6 +70,7 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 - *Set up a freelance consulting site with service pages, a portfolio section, and a blog.*
 - *Add a contact form to the Contact page using the site builder.*
 - *After the site launch checklist is approved, send an SMS reminder to the configured stakeholder contact.*
+- *Create a help page with an embedded docs chat widget for customer questions.*
 
 ---
 
@@ -109,32 +113,40 @@ You can also switch agents mid-conversation — the new agent's system prompt ta
 
 **Focus:** Answering questions about site content, settings, and WordPress configuration.
 
-**Available tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Available tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`. With Superdav AI Agent v1.19.0 public/customer chat enabled, support workflows may also use imported documentation knowledge and customer simple chat settings selected by an administrator.
 
 **What it does well:**
 - Looking up current site settings and options
 - Explaining what post types, taxonomies, and menus are configured on the site
 - Answering "what does this setting do?" questions by reading live values
 - Serving as a read-only diagnostic layer before making changes
+- Answering customer documentation questions from approved imported knowledge sources when used through a docs chat widget
 
 **Starter suggestions:**
 - *What plugins and settings are currently active on this site?*
 - *List all the custom post types registered on this site.*
 - *What navigation menus exist and where are they assigned?*
+- *Answer this customer question using the imported docs knowledge base.*
 
 ---
 
 ## Superdav Automation Integrations
 
-When Superdav AI Agent v1.18.0 integrations are configured, built-in agents can participate in safer schedule-aware automation workflows:
+When Superdav AI Agent v1.19.0 integrations are configured, built-in agents can participate in customer-facing and safer schedule-aware automation workflows:
 
+- **Static documentation imports** allow customer-facing answers to use approved documentation knowledge instead of relying only on the current chat context.
+- **Anonymous public chat** lets visitors ask limited questions without a WordPress login when administrators enable public access.
+- **Embeddable docs chat widgets** place a documentation-aware assistant on help-centre, product, or documentation pages.
+- **Customer simple chat mode** gives customers a focused assistant interface with safer defaults than the internal administrator panel.
+- **Customer chat setup** guides administrators through widget, public access, knowledge-source, and safety configuration before publishing.
 - **Google Calendar read tools** allow agents to inspect configured calendars and events before drafting follow-up work.
 - **Contact and attendee mapping** helps match event participants to WordPress users or known contacts.
 - **Human approval gates** pause sensitive actions until an authorised user reviews and confirms them.
 - **Reminder records** prevent duplicate notifications when scheduled jobs retry or repeat.
 - **TextBee SMS notifications** send configured text messages only when SMS credentials and workflow permissions are enabled.
+- **Calendar SMS reminder setup** connects calendar selection, attendee/contact mapping, approval, deduplication, and SMS provider settings for reminder orchestration.
 
-Recommended workflow: ask the agent to prepare the message or action, review the approval prompt, then allow the approved action to resume. For recurring reminders, keep reminder deduplication enabled so the same event or contact is not notified repeatedly.
+Recommended workflow for documentation chat: import trusted docs, review the knowledge counts, test the customer simple chat experience, then embed the docs widget on a limited page before publishing it widely. Recommended workflow for reminders: ask the agent to prepare the message or action, review the approval prompt, then allow the approved action to resume. For recurring reminders, keep reminder deduplication enabled so the same event or contact is not notified repeatedly.
 
 ---
 

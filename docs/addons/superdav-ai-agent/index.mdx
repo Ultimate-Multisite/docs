@@ -9,7 +9,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, site builder features, and optional automation integrations. Version 1.18.0 adds Google Calendar read tools, contact and attendee mapping, human approval gates, reminder deduplication, TextBee SMS notifications, managed Superdav service provisioning, and a separately distributed Advanced companion package for trusted developer workflows.
+Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI Agent with theme-aware skills, enhanced internet search capabilities, site builder features, customer-facing chat modes, documentation knowledge imports, and optional automation integrations. Version 1.19.0 adds static documentation knowledge imports, anonymous public chat, embeddable documentation chat widgets, customer simple chat mode, a customer chat setup tool, and calendar SMS reminder setup/orchestration on top of the v1.18.0 calendar, approval, notification, managed-service, and Advanced companion workflows.
 
 ## Key Features
 
@@ -32,6 +32,12 @@ Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI A
 - **Reminder records and deduplication** — track reminders that have already been sent so repeat automation runs do not notify the same recipient twice
 - **TextBee SMS notifications** — send configured text-message notifications through TextBee when an SMS provider is enabled
 - **Managed Superdav service provisioning** — connect supported sites to hosted Superdav endpoints with automatic setup instead of manual endpoint configuration
+- **Static documentation knowledge imports** — build a searchable knowledge base from configured documentation sites for docs-aware answers
+- **Anonymous public chat** — allow approved visitors to ask limited questions without a WordPress login
+- **Embeddable docs chat widgets** — place a documentation-aware assistant on public docs, help, or product pages
+- **Customer simple chat mode** — present a focused customer-facing assistant with simplified controls and safer defaults
+- **Customer chat setup tool** — guide administrators through the settings needed for a public or customer-facing assistant
+- **Calendar SMS reminder orchestration** — configure calendar-driven text-message reminders with approval, mapping, and deduplication controls
 - **Advanced companion package** — separately distributed trusted-developer tools for filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, and benchmark workflows
 
 ## Requirements
@@ -47,13 +53,13 @@ Superdav AI Agent is an advanced WordPress AI assistant that extends Gratis AI A
 1. Upload the plugin files to `/wp-content/plugins/superdav-ai-agent`
 2. Activate the plugin through the **Plugins** screen in WordPress
 3. Ensure Gratis AI Agent is also activated
-4. Navigate to **Gratis AI Agent → Settings** and configure your internet search provider, managed Superdav service connection, Google Calendar, or TextBee credentials as needed
+4. Navigate to **Gratis AI Agent → Settings** and configure your internet search provider, managed Superdav service connection, Google Calendar, TextBee credentials, public chat mode, customer chat widget, or documentation import sources as needed
 
 The WordPress.org package contains the core Superdav AI Agent features. The Advanced companion package is built and distributed separately for environments where trusted developer tools are explicitly installed and authorised.
 
 ## Quick Start
 
-Once activated, Superdav AI Agent automatically enhances your Gratis AI Agent installation with theme-aware skills and additional capabilities. Open the **Gratis AI Agent** panel in the WordPress admin sidebar and start using the new features.
+Once activated, Superdav AI Agent automatically enhances your Gratis AI Agent installation with theme-aware skills and additional capabilities. Open the **Gratis AI Agent** panel in the WordPress admin sidebar to use internal assistant features, or use the customer chat setup tool when you want a public or customer-facing assistant.
 
 **Example instructions:**
 
@@ -75,6 +81,18 @@ Review tomorrow's configured Google Calendar events and draft reminders for atte
 
 ```
 Send an SMS reminder after I approve the message.
+```
+
+```
+Import our documentation site into the assistant knowledge base.
+```
+
+```
+Create a public docs chat widget for the product help centre.
+```
+
+```
+Set up customer simple chat mode for anonymous visitors.
 ```
 
 ## Theme-Aware Skills
@@ -101,17 +119,30 @@ Superdav AI Agent v1.10.0 adds **Tavily** as an alternative to Brave Search for 
 
 See [Internet Search](../../user-guide/configuration/internet-search) for configuration instructions.
 
+## Documentation Knowledge and Customer Chat
+
+Superdav AI Agent v1.19.0 adds customer-facing assistant experiences that can answer from approved documentation sources:
+
+- **Static documentation imports** fetch configured documentation sites and add their content to the assistant knowledge base, making public support answers more consistent with your published docs.
+- **Anonymous public chat** lets visitors ask approved questions without requiring a WordPress account. Keep public tools read-only and limit them to documentation or customer-support use cases.
+- **Embeddable docs chat widgets** can be placed on documentation, help-centre, or product pages so customers can ask questions in context.
+- **Customer simple chat mode** reduces the interface to a focused customer assistant instead of the full administrator chat panel.
+- **Customer chat setup tool** walks administrators through the required public-chat, widget, knowledge-source, and safety settings.
+
+Recommended setup: import trusted documentation sources first, review the generated knowledge counts, enable customer simple chat mode, then embed the docs widget on a limited page before making it broadly available.
+
 ## Calendar, Approval, and Notification Workflows
 
-Superdav AI Agent v1.18.0 expands automation workflows beyond content and site-building tasks:
+Superdav AI Agent v1.18.0 expanded automation workflows beyond content and site-building tasks, and v1.19.0 adds setup/orchestration controls for calendar-driven SMS reminders:
 
 - **Google Calendar tools** let the agent read configured calendars and event details when calendar credentials are available.
 - **Contact and attendee helpers** map event participants to WordPress users or known contacts before preparing reminders or follow-up tasks.
 - **Human approval gates** allow an automation to pause until an authorised user reviews the proposed action.
 - **Reminder records** prevent duplicate calendar or notification reminders when an automation is retried or scheduled repeatedly.
 - **TextBee SMS support** enables text-message notifications when the TextBee provider is configured.
+- **Calendar SMS reminder setup** helps administrators connect calendar selections, attendee/contact mappings, SMS provider settings, approval requirements, and reminder deduplication into one reminder workflow.
 
-Use these tools for schedule-aware assistance, attendee follow-up, and reminder workflows that still require human review before sensitive messages are sent.
+Use these tools for schedule-aware assistance, attendee follow-up, and reminder workflows that still require human review before sensitive messages are sent. For customer-facing reminders, test with an administrator-owned number before enabling recurring calendar SMS orchestration.
 
 ## Site Builder Contact Forms
 
@@ -160,12 +191,23 @@ All settings are under **Gratis AI Agent → Settings** in the WordPress admin. 
 | **Managed Superdav Service** | Connect supported sites to the hosted Superdav service with automatic endpoint provisioning |
 | **Google Calendar Credentials** | Configure calendar access so the agent can read calendars and events |
 | **TextBee SMS Provider** | Configure TextBee credentials for approved SMS notification workflows |
+| **Static Documentation Sources** | Add documentation URLs or sources that should be imported into the assistant knowledge base |
+| **Public / Customer Chat Mode** | Enable anonymous public chat, customer simple chat mode, and the embeddable docs chat widget |
+| **Calendar SMS Reminder Setup** | Connect calendar selections, contact mappings, approvals, and SMS settings for reminder orchestration |
 
 ## Advanced Companion Package
 
 Superdav AI Agent v1.18.0 adds a separately distributed Advanced companion package for trusted developer workflows. These capabilities are not bundled in the WordPress.org core package. Install the companion package only on sites where administrators explicitly trust the agent to access developer tooling.
 
 Advanced tools include filesystem operations, database access, WP-CLI, REST dispatcher workflows, plugin builder utilities, git snapshots, user-management helpers, and benchmark tooling. Keep these tools limited to trusted administrators and review approval-gate configuration before enabling them on production sites.
+
+## Improvements in v1.19.0
+
+- **Static documentation knowledge imports** — build searchable assistant knowledge from approved documentation sites
+- **Public and customer chat modes** — support anonymous public chat, customer simple chat mode, embeddable documentation chat widgets, and the customer chat setup tool
+- **Calendar SMS reminder setup** — orchestrate calendar selections, attendee/contact mapping, approvals, deduplication, and TextBee SMS settings for reminder workflows
+- **Public docs chat reliability** — improve public docs chat behaviour, packaging validation, and bundled DI cache packaging for more reliable releases
+- **Chat and provider fixes** — improve retry and recovery states, embedded assistant Markdown rendering, provider/model handling, knowledge count queries, calendar SMS mappings, and tool permission defaults
 
 ## Improvements in v1.18.0
 
