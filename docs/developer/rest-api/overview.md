@@ -309,6 +309,38 @@ The response returns one status object per requested package. Clients should han
 
 Superdav-backed jobs should not be treated as failed while they are pending approval, importing, processing, or packaging. Poll with backoff and download only when the endpoint reports `ready` with a `download_url`.
 
+## Support Tickets Chat Endpoints
+
+Ultimate Multisite: Support Tickets 1.1.0 adds REST coverage for the live chat widget and agent console under the `ultimate-multisite-support-tickets/v1` namespace. These routes are primarily used by the addon UI, but custom integrations can use them when building external support dashboards or chat widgets.
+
+The endpoint group covers chat session lifecycle, message exchange, attachments, availability checks, agent reports, canned replies, satisfaction ratings, ticket conversion, and agent time logs:
+
+```http
+GET /ultimate-multisite-support-tickets/v1/chat/availability
+POST /ultimate-multisite-support-tickets/v1/chat/sessions
+GET /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/messages
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/messages
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/attachments
+GET /ultimate-multisite-support-tickets/v1/chat/attachments/{attachment_id}/download
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/context
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/token
+GET /ultimate-multisite-support-tickets/v1/chat/agent/sessions
+GET /ultimate-multisite-support-tickets/v1/chat/agent/availability
+POST /ultimate-multisite-support-tickets/v1/chat/agent/availability
+GET /ultimate-multisite-support-tickets/v1/chat/agent/reports
+GET /ultimate-multisite-support-tickets/v1/chat/agent/canned-replies
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/assign
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/metadata
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/link-ticket
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/agent-time
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/convert-ticket
+POST /ultimate-multisite-support-tickets/v1/chat/sessions/{session_id}/satisfaction
+```
+
+Use the public availability endpoint before showing an online launcher state. Create a session with the customer, site, and page context, then post messages against that session. If realtime sidecar transport is unavailable or business-hours rules mark support as offline, integrations should create or preserve the related ticket fallback so follow-up is not lost.
+
+Agent-console integrations should filter sessions by assignment, status, customer, site, and date range where supported. Treat attachment responses as metadata references and render thumbnails defensively instead of trusting arbitrary uploaded content.
+
 ## Error Responses
 
 ```json

@@ -5,6 +5,13 @@ sidebar_position: 99
 
 # Support Tickets Changelog
 
+### 1.1.0 - 2026-07-09
+* New: Adds a full live support chat experience with customer chat widget, launcher button, realtime sidecar support, ticket fallback, availability, typing indicators, and page context.
+* New: Adds the agent chat console with inbox triage, session search and filters, customer/session metadata, canned replies, agent alerts, satisfaction ratings, SLA metrics, business-hours awareness, and agent time logging.
+* New: Supports live chat attachments with safer thumbnail rendering.
+* Fix: Repairs chat follow-up delivery, widget scrolling, fetch loops, validation blockers, sidecar bootstrapping, shortcode asset loading, site-admin session access, duplicate reply notifications, and ticket mutation permissions.
+* Improved: Polishes the live chat widget and admin console while hardening Workerman deployment, chat table registration, build output handling, and pre-WordPress autoload safety.
+
 ### 1.0.4 - 2026-05-05
 * Improved: Removed vendor/ directory from Git tracking (already covered by .gitignore), reducing repository size
 * Improved: Tested up to WordPress 7.0
